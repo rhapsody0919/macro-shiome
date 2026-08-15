@@ -1,0 +1,19 @@
+# 秘密情報 (public リポのため厳守。*.example のみ追跡)
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+
+# 依存・ビルド成果物
+node_modules/
+.next/
+out/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+
+# ローカル設定
+.claude/settings.local.json
+.DS_Store
