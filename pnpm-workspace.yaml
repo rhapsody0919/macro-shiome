@@ -1,0 +1,5 @@
+# unrs-resolver は eslint-import-resolver-typescript のネイティブ依存で、
+# インストール時のビルドを許可しないと pnpm install が失敗する。
+# 明示しておかないと CI でも同じ理由で落ちるため設定に残す。
+allowBuilds:
+  unrs-resolver: true
