@@ -47,6 +47,9 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data
           git commit -m "chore(#9): 週次データを更新する [why: 定期取得]"
+          # 実行中に別の push があると reject されるため、rebase してから送る。
+          # data/ は観測日をキーにした UPSERT で衝突しにくく、rebase で安全に載せられる。
+          git pull --rebase origin main
           git push
 
       # 取得ステップが失敗していたら job を赤にする。
