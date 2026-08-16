@@ -66,7 +66,7 @@
 
 spec + screens → plan → tasks → 実装 (1 タスク = 1 PR)、各ゲートでレビュー。起動は `.claude/commands/` の `/step1-spec` `/step1-screens` `/step2` `/step3` `/step4`。
 
-## STATE (2026-08-16 — SDD Step 1 完了、`docs/spec.md` 確定)
+## STATE (2026-08-16 — SDD Step 1 完了、`docs/spec.md` / `docs/screens.md` 確定)
 
 **開発規約の移植 (完了)**: hakumei-app の規約一式を移植した — `CLAUDE.md` (本ファイル)・`AGENTS.md`
 (Codex レビュアー規約)・`.claude/settings.json` + `hooks/`・`.claude/commands/` (SDD step1〜4 +
@@ -87,12 +87,17 @@ NASDAQ-100 連動のため、NASDAQ 総合では指数と PER の対象がずれ
 (実測で潰した経路: FactSet の EPS ページは画像、S&P Global xlsx は 403、Yardeni は 2023-12 で更新停止、
 WSJ は JS レンダリング + 内部 API 400、Yahoo は 429、Stooq は JS チャレンジ)。
 
+**SDD Step 1 (UI) — `docs/screens.md` (完了)**: 画面は 3 つ (S-1 ダッシュボード / S-2 利用規約・出所 /
+S-3 エラー)。S-1 は F-6 の「全要素が同一期間を参照する」要求から単一ページに集約し、C-1〜C-8 の
+コンポーネントに分解した。設計判断が 2 点 — (1) 相関サマリー (C-2) だけは期間フィルターに追従させない
+(半年 / 1 年 / 全期間の比較が目的のため。画面に明記する) (2) NASDAQ-100 の空状態は「取得経路が無い」
+(Forward EPS、恒久) と「蓄積中」(Trailing PER、時間で解消) を出し分ける。
+
 ### Next Action
 
 - **U-1 (ユーザー作業)**: [FRED API キー](https://fredaccount.stlouisfed.org/apikeys) を無料登録で取得。
   実装着手 (Step 4) 前まで
-- `/step1-screens` で `docs/screens.md` を作成
-- `/step2` で技術スタック選定 (複数案比較 → ADR) + データ設計 + 週次バッチ設計。ここで U-2 / U-3 /
-  U-4 / U-9 を解消する
+- `/step2` で技術スタック選定 (複数案比較 → ADR) + データ設計 + 週次バッチ設計。ここで spec の
+  U-2 / U-3 / U-4 / U-9 と screens の U-S1〜U-S4 を解消する
 - スタック確定後に `.claude/hooks/eslint-fix.sh` / `typecheck.sh` が実際に走ることを確認 (現状は
   `package.json` に該当スクリプトが無いため no-op)
