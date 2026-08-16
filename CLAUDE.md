@@ -66,18 +66,33 @@
 
 spec + screens → plan → tasks → 実装 (1 タスク = 1 PR)、各ゲートでレビュー。起動は `.claude/commands/` の `/step1-spec` `/step1-screens` `/step2` `/step3` `/step4`。
 
-## STATE (2026-08-16 — 開発フロー・Claude Code ルールを hakumei-app から移植)
+## STATE (2026-08-16 — SDD Step 1 完了、`docs/spec.md` 確定)
 
-hakumei-app の開発規約一式を macro-shiome 向けに移植した: `CLAUDE.md` (本ファイル)・`AGENTS.md`
-(Codex レビュアー規約)・`.claude/settings.json` + `hooks/` (機密ファイル書き込みブロック /
-eslint --fix / typecheck)・`.claude/commands/` (SDD step1〜4 + codex-review)・
-`scripts/codex-review*` (Codex レビューゲート)。hakumei 固有の AWS / Bedrock / ECS / デモ環境の
-記述は落とし、本プロジェクト固有の観点 (公開リポでの秘密情報・無料枠制約・時系列データ整合性・
-金融指標の定義裏取り) に差し替えた。技術スタックは未確定のまま (SDD Step 2 で決定)。
+**開発規約の移植 (完了)**: hakumei-app の規約一式を移植した — `CLAUDE.md` (本ファイル)・`AGENTS.md`
+(Codex レビュアー規約)・`.claude/settings.json` + `hooks/`・`.claude/commands/` (SDD step1〜4 +
+codex-review)・`scripts/codex-review*`。hakumei 固有の AWS / Bedrock / ECS / デモ環境の記述は落とし、
+本プロジェクト固有の観点に差し替えた。
+
+**SDD Step 1 (完了)**: `docs/spec.md` を確定。データソースの実現可能性を実測で調査した結果、
+当初要件から 4 点変更した。(1) EPS / PER は **as-reported (GAAP) ベース**に統一 — operating ベースの
+週次一次ソース (S&P Global 公式 xlsx) は curl 403・ブラウザも Access Denied で自動取得不可。一般的な
+投資レポート (operating) とは約 9% ずれる (2) 「NASDAQ」を **NASDAQ-100** に確定 — PER を取れる QQQ が
+NASDAQ-100 連動のため、NASDAQ 総合では指数と PER の対象がずれる (3) Forward P/E の基準線は**固定値を
+やめ FactSet PDF から毎週取得** — 当初の 19.5 / 18.0 倍は実値 (19.9 / 19.0) とずれており毎週更新される
+(4) **NASDAQ の Forward P/E は v1 スコープ外** — 無料経路が存在しない。
+
+データソースは 3 つに確定: FRED (指数・DGS10・VIX・USDJPY・PCE) + FactSet Earnings Insight 週次 PDF
+(S&P 500 の Forward / Trailing PER・各平均・終値) + stockanalysis.com (QQQ の Trailing PER)。
+**EPS の絶対値を一次取得できる無料経路は存在しない**ため、全て「指数 ÷ PER」の導出値とする
+(実測で潰した経路: FactSet の EPS ページは画像、S&P Global xlsx は 403、Yardeni は 2023-12 で更新停止、
+WSJ は JS レンダリング + 内部 API 400、Yahoo は 429、Stooq は JS チャレンジ)。
 
 ### Next Action
 
-- `/step1-spec` で `docs/spec.md` を作成 (機能要件・受入基準・非機能要件・未確定事項の確定)
-- 続けて `/step1-screens` → `/step2` (技術スタック選定 + ADR) → `/step3` → `/step4`
+- **U-1 (ユーザー作業)**: [FRED API キー](https://fredaccount.stlouisfed.org/apikeys) を無料登録で取得。
+  実装着手 (Step 4) 前まで
+- `/step1-screens` で `docs/screens.md` を作成
+- `/step2` で技術スタック選定 (複数案比較 → ADR) + データ設計 + 週次バッチ設計。ここで U-2 / U-3 /
+  U-4 / U-9 を解消する
 - スタック確定後に `.claude/hooks/eslint-fix.sh` / `typecheck.sh` が実際に走ることを確認 (現状は
   `package.json` に該当スクリプトが無いため no-op)
