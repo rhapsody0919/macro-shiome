@@ -140,11 +140,60 @@ export interface AppConfig {
   targetYield: Record<IndexKey, TargetYieldEntry[]>;
 }
 
+/** 相関の表示単位 (spec F-5)。期間フィルターに追従しない 3 つの窓。 */
+export interface CorrelationSummary {
+  halfYear: CorrelationValue;
+  oneYear: CorrelationValue;
+  all: CorrelationValue;
+}
+
+export type CorrelationValue =
+  | { kind: 'ok'; r: number; n: number }
+  | { kind: 'insufficient'; n: number };
+
+/** 指数ごとのビュー。 */
+export interface ValuationSeries {
+  points: ValuationPoint[];
+  /** Forward P/E の基準線。毎週更新される値で、固定値ではない (spec F-3)。 */
+  baselines: {
+    pe5y: number | null;
+    pe10y: number | null;
+    /** 基準線を取得した観測日。画面に表示する。 */
+    asOf: string | null;
+  };
+  /** この指数に適用した基準益回り (%)。設定依存の数値なので画面に必ず出す (spec F-13)。 */
+  targetYield: number;
+  /** 指数と Forward EPS の相関 (spec F-5)。 */
+  correlation: CorrelationSummary;
+  /** Forward EPS を持つか。NASDAQ-100 は取得経路が無いため false (screens C-2)。 */
+  hasForwardEps: boolean;
+}
+
+/** 画面用ビュー全体。 */
+export interface ValuationView {
+  generatedAt: string;
+  sp500: ValuationSeries;
+  nasdaq100: ValuationSeries;
+}
+
+/** 予想改定の 1 週分 (spec F-12)。 */
+export interface RevisionPoint {
+  date: string;
+  /** 進行中四半期の blended 増益率。今週 / 先週 / 四半期末の 3 時点。 */
+  blendedToday: number | null;
+  blendedLastWeek: number | null;
+  blendedQuarterEnd: number | null;
+  /** 暦年の予想増益率。対象年は date の年 / 年 + 1。 */
+  growthCurrentYear: number | null;
+  growthNextYear: number | null;
+}
+
 /** 画面用ビューの 1 週分 (#8 で生成する)。導出値はビルド時に計算済みにする。 */
 export interface ValuationPoint {
   /** "YYYY-MM-DD" (週の基準日)。 */
   date: string;
-  index: number;
+  /** 欠測は null。NaN を使うと JSON 化で null になり型と実態がずれる。 */
+  index: number | null;
   forwardPe: number | null;
   trailingPe: number | null;
   /** 指数 ÷ PER の導出値。実データではない (spec D-11 / D-12)。 */
