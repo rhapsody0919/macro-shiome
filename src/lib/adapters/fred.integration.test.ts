@@ -16,10 +16,12 @@ import { FredClient } from './fred';
 const API_KEY = process.env.FRED_API_KEY ?? '';
 
 describe.skipIf(API_KEY.length === 0)('実 FRED API での検証', () => {
-  const client = new FredClient({ apiKey: API_KEY });
+  // describe.skipIf はスキップ時も本体を評価するため、
+  // クライアントの生成をテストの中に置く (キー未設定でも読み込み時に落ちないように)。
+  const createClient = () => new FredClient({ apiKey: API_KEY });
 
   it('S&P 500 を取得できる', async () => {
-    const observations = await client.fetchSeries('SP500', { start: '2026-08-01' });
+    const observations = await createClient().fetchSeries('SP500', { start: '2026-08-01' });
 
     expect(Object.keys(observations).length).toBeGreaterThan(0);
     for (const [date, value] of Object.entries(observations)) {
@@ -32,7 +34,7 @@ describe.skipIf(API_KEY.length === 0)('実 FRED API での検証', () => {
 
   it('期待インフレ率を取得できる', async () => {
     // イールドスプレッドの計算に必須 (spec F-4)。
-    const observations = await client.fetchSeries('T10YIE', { start: '2026-08-01' });
+    const observations = await createClient().fetchSeries('T10YIE', { start: '2026-08-01' });
     expect(Object.keys(observations).length).toBeGreaterThan(0);
     for (const value of Object.values(observations)) {
       expect(value).toBeGreaterThan(-5);
@@ -48,7 +50,7 @@ describe.skipIf(API_KEY.length === 0)('実 FRED API での検証', () => {
 
     for (const [id, indicator] of fredIndicators) {
       if (indicator.source.adapter !== 'fred') continue;
-      const observations = await client.fetchSeries(indicator.source.seriesId, {
+      const observations = await createClient().fetchSeries(indicator.source.seriesId, {
         start: '2026-07-01',
       });
       expect(Object.keys(observations).length, `${id} が空`).toBeGreaterThan(0);
