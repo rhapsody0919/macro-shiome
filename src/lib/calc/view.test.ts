@@ -1,0 +1,189 @@
+import { describe, expect, it } from 'vitest';
+import type { AppConfig } from '../data/types';
+import { buildRevisionSeries, buildValuationView, type ObservationMap } from './view';
+
+const config: AppConfig = {
+  targetYield: {
+    sp500: [{ value: 4.0, from: '2020-01-01', reason: 'テスト' }],
+    nasdaq100: [{ value: 3.2, from: '2020-01-01', reason: 'テスト' }],
+  },
+};
+
+/** 2026-08-07 号の実測値をもとにした観測値。 */
+const observations: ObservationMap = {
+  sp500: { '2026-08-07': 7700.0, '2026-08-14': 7785.76 },
+  nasdaq100: { '2026-08-07': 29800.0, '2026-08-14': 30046.14 },
+  'sp500-close-factset': { '2026-08-07': 7709.96 },
+  'sp500-forward-pe': { '2026-08-07': 20.0 },
+  'sp500-trailing-pe': { '2026-08-07': 28.2 },
+  'sp500-forward-pe-5y-avg': { '2026-08-07': 19.9 },
+  'sp500-forward-pe-10y-avg': { '2026-08-07': 19.0 },
+  'qqq-trailing-pe': { '2026-08-07': 33.62, '2026-08-14': 34.33 },
+  dgs10: { '2026-08-07': 4.63, '2026-08-14': 4.69 },
+  t10yie: { '2026-08-07': 2.27, '2026-08-14': 2.24 },
+};
+
+const today = new Date(Date.UTC(2026, 7, 15));
+
+describe('buildValuationView', () => {
+  const view = buildValuationView({ observations, config, start: '2026-08-01', today });
+
+  it('金曜ごとの点を作る', () => {
+    expect(view.sp500.points.map((p) => p.date)).toEqual(['2026-08-07', '2026-08-14']);
+  });
+
+  it('EPS を FactSet の終値から逆算する', () => {
+    // PER と同一時点の終値を使う。FRED の指数 (7700.0) ではなく 7709.96 で割る。
+    const point = view.sp500.points[0];
+    expect(point.forwardEps).toBeCloseTo(385.5, 1);
+    expect(point.trailingEps).toBeCloseTo(273.4, 1);
+  });
+
+  it('イールドスプレッドを実質金利ベースで計算する', () => {
+    // 益回り 5.0% − 実質金利 (4.63 − 2.27 = 2.36%) = 2.64%
+    const point = view.sp500.points[0];
+    expect(point.earningsYield).toBeCloseTo(5.0, 2);
+    expect(point.realRate).toBeCloseTo(2.36, 2);
+    expect(point.yieldSpread).toBeCloseTo(2.64, 2);
+  });
+
+  it('理論値と割高率を計算する', () => {
+    // 273.4 ÷ 4.0% = 6835。指数 7700 に対し 11.2% の割高。
+    const point = view.sp500.points[0];
+    expect(point.fairValue).toBeCloseTo(6835, 0);
+    expect(point.overvaluation).toBeCloseTo(11.23, 1);
+  });
+
+  it('FactSet が欠測の週は PER 系を null にする', () => {
+    // 2026-08-14 は休刊週。前週の値で埋めると欠測が見えなくなる。
+    const point = view.sp500.points[1];
+    expect(point.forwardPe).toBeNull();
+    expect(point.forwardEps).toBeNull();
+    expect(point.yieldSpread).toBeNull();
+  });
+
+  it('指数は休場日を遡って埋める', () => {
+    // 日次系列なので直近の営業日の値を使う。
+    expect(view.sp500.points[1].index).toBeCloseTo(7785.76, 2);
+  });
+
+  it('指数の欠測は null にする', () => {
+    // NaN だと JSON 化で null になり、型と実態がずれる。
+    const empty = buildValuationView({
+      observations: { ...observations, sp500: {} },
+      config,
+      start: '2026-08-01',
+      today,
+    });
+    expect(empty.sp500.points[0].index).toBeNull();
+  });
+
+  it('基準線に取得日を添える', () => {
+    // 固定値ではなく毎週更新される値であることを画面に示すため (spec F-3)。
+    expect(view.sp500.baselines).toEqual({ pe5y: 19.9, pe10y: 19.0, asOf: '2026-08-07' });
+  });
+
+  it('適用した基準益回りを含める', () => {
+    // 理論値は設定依存なので、画面に必ず出せるようビューに持たせる (spec F-13)。
+    expect(view.sp500.targetYield).toBe(4.0);
+  });
+
+  it('過去最高値のフラグを立てる', () => {
+    const highs = view.sp500.points.map((p) => p.isForwardEpsHigh);
+    expect(highs[0]).toBe(true);
+    // 2 週目は欠測なので更新扱いにしない。
+    expect(highs[1]).toBe(false);
+  });
+
+  it('標本が少なければ相関を出さない', () => {
+    expect(view.sp500.correlation.all.kind).toBe('insufficient');
+  });
+});
+
+describe('NASDAQ-100 のビュー', () => {
+  const view = buildValuationView({ observations, config, start: '2026-08-01', today });
+
+  it('Forward EPS を持たないことを示す', () => {
+    // 取得経路が無い (spec D-17)。画面では「蓄積中」と区別して表示する。
+    expect(view.nasdaq100.hasForwardEps).toBe(false);
+    expect(view.nasdaq100.points[0].forwardEps).toBeNull();
+    expect(view.nasdaq100.points[0].forwardPe).toBeNull();
+  });
+
+  it('実績 EPS を QQQ の PER から逆算する', () => {
+    // 29800 ÷ 33.62 = 886.4
+    expect(view.nasdaq100.points[0].trailingEps).toBeCloseTo(886.4, 1);
+  });
+
+  it('基準線を持たない', () => {
+    // FactSet は S&P 500 専用レポートのため NASDAQ の平均は取れない。
+    expect(view.nasdaq100.baselines.asOf).toBeNull();
+  });
+
+  it('QQQ の PER は休場日を遡って埋める', () => {
+    // 日次で取得するため、週次系列と違い遡ってよい。
+    expect(view.nasdaq100.points[1].trailingPe).toBe(34.33);
+  });
+});
+
+describe('buildRevisionSeries', () => {
+  const revisionObservations: ObservationMap = {
+    'sp500-blended-growth-today': { '2026-08-07': 50.4 },
+    'sp500-blended-growth-last-week': { '2026-08-07': 47.4 },
+    'sp500-blended-growth-quarter-end': { '2026-08-07': 23.1 },
+    'sp500-growth-cy-current': { '2026-08-07': 30.0 },
+    'sp500-growth-cy-next': { '2026-08-07': 13.6 },
+  };
+
+  it('3 時点と暦年の予想を並べる', () => {
+    const points = buildRevisionSeries({
+      observations: revisionObservations,
+      config,
+      start: '2026-08-01',
+      today,
+    });
+
+    expect(points[0]).toEqual({
+      date: '2026-08-07',
+      blendedToday: 50.4,
+      blendedLastWeek: 47.4,
+      blendedQuarterEnd: 23.1,
+      growthCurrentYear: 30.0,
+      growthNextYear: 13.6,
+    });
+  });
+
+  it('休刊週は欠測にする', () => {
+    const points = buildRevisionSeries({
+      observations: revisionObservations,
+      config,
+      start: '2026-08-01',
+      today,
+    });
+    expect(points[1].blendedToday).toBeNull();
+  });
+});
+
+describe('基準益回りの変更履歴', () => {
+  it('観測日時点の値を適用する', () => {
+    // 前提が変われば見直す値なので、過去の点には当時の値を使う。
+    const withHistory: AppConfig = {
+      targetYield: {
+        sp500: [
+          { value: 4.5, from: '2020-01-01', reason: '旧' },
+          { value: 4.0, from: '2026-08-10', reason: '新' },
+        ],
+        nasdaq100: [{ value: 3.2, from: '2020-01-01', reason: 'テスト' }],
+      },
+    };
+    const view = buildValuationView({
+      observations,
+      config: withHistory,
+      start: '2026-08-01',
+      today,
+    });
+
+    // 2026-08-07 は旧値 4.5% が効く: 273.4 ÷ 4.5% = 6075.6
+    expect(view.sp500.points[0].fairValue).toBeCloseTo(6075.6, 0);
+  });
+});
