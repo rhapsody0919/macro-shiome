@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
+import { Footer } from '@/components/layout/footer';
+import { Header } from '@/components/layout/header';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -10,8 +12,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="ja">
-      <body className="min-h-dvh bg-white text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100">
-        {children}
+      <body className="flex min-h-dvh flex-col bg-white text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100">
+        <Header />
+        <main className="mx-auto w-full max-w-6xl flex-1 px-6 py-8">{children}</main>
+        <Footer />
       </body>
     </html>
   );
