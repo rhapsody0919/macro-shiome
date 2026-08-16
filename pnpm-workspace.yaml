@@ -2,4 +2,6 @@
 # インストール時のビルドを許可しないと pnpm install が失敗する。
 # 明示しておかないと CI でも同じ理由で落ちるため設定に残す。
 allowBuilds:
+  # tsx が依存する esbuild もネイティブバイナリの取得にビルドスクリプトを使う。
+  esbuild: true
   unrs-resolver: true

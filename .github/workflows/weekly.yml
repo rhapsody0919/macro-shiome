@@ -1,0 +1,58 @@
+name: Weekly data fetch
+
+on:
+  schedule:
+    # UTC 土曜 02:00 = JST 土曜 11:00。
+    # JST 土曜早朝にしないのは、FactSet が金曜発行で当日号がまだ公開されていない恐れがあるため。
+    - cron: '0 2 * * 6'
+  workflow_dispatch:
+
+# data/ を commit するため書き込み権限が要る。
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      # secrets は env で渡す。コマンドラインに書くと ps や set -x で見える。
+      # public リポの Actions ログは誰でも読めるため、値を echo しない。
+      - name: Fetch data
+        id: fetch
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+        run: pnpm fetch:weekly
+
+      # 取得が一部失敗しても、取れた分はコミットする (次回の差分を小さくするため)。
+      # job 自体は後段で失敗させる。
+      - name: Commit data
+        if: always()
+        run: |
+          if [ -z "$(git status --porcelain data)" ]; then
+            echo "data/ に差分なし"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git commit -m "chore(#9): 週次データを更新する [why: 定期取得]"
+          git push
+
+      # 取得ステップが失敗していたら job を赤にする。
+      # 「緑だが歯抜け」を作らないため、部分的な成功を成功として扱わない。
+      - name: Fail if fetch failed
+        if: always() && steps.fetch.outcome == 'failure'
+        run: |
+          echo "取得または検証に失敗した項目がある。上のログを確認する"
+          exit 1
