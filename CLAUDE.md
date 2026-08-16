@@ -71,7 +71,7 @@ SDD Step 2 で確定 (詳細 → `docs/plan.md`、判断の記録 → `docs/adr/
 
 spec + screens → plan → tasks → 実装 (1 タスク = 1 PR)、各ゲートでレビュー。起動は `.claude/commands/` の `/step1-spec` `/step1-screens` `/step2` `/step3` `/step4`。
 
-## STATE (2026-08-16 — SDD Step 2 完了、`docs/plan.md` + ADR 4 本)
+## STATE (2026-08-16 — SDD Step 3 完了、Issue #1〜#22 起票済み。実装フェーズへ)
 
 **開発規約の移植 (完了)**: hakumei-app の規約一式を移植した — `CLAUDE.md` (本ファイル)・`AGENTS.md`
 (Codex レビュアー規約)・`.claude/settings.json` + `hooks/`・`.claude/commands/` (SDD step1〜4 +
@@ -144,11 +144,22 @@ FRED 系の新指標は**マスタに 1 行足すだけでコード変更不要*
 大半が該当)。観測日をキーにすることで **UPSERT の冪等性を構造で保証**する。バッチは
 **UTC 土曜 02:00 (JST 土曜 11:00)** — FactSet が金曜発行で、JST 土曜早朝だと当日号が無い恐れがあるため。
 
+**SDD Step 3 (完了)**: `docs/tasks.md` に 22 タスクへ分解し、**GitHub Issue #1〜#22 として起票済み**
+(タスク番号 T-01〜T-22 と Issue 番号が一致)。Phase 1 基盤 (#1-#2) → Phase 2 データ取得 (#3-#8、
+アダプタ 3 種は並行可) → Phase 3 バッチ (#9-#10) → Phase 4 フロント基盤 (#11-#12) →
+Phase 5 バリュエーション画面 (#13-#19) → Phase 6 残りとデプロイ (#20-#22)。
+
+**#3 (FRED アダプタ) の着手には FRED API キーが必要** (spec U-1)。ユーザーが無料登録し
+GitHub Actions Secrets に `FRED_API_KEY` として登録する。**会話やコミットに貼らない**。
+キーが未取得の間は #1 / #2 / #4 / #5 を先に進められる。
+
 ### Next Action
 
 - **U-1 (ユーザー作業)**: [FRED API キー](https://fredaccount.stlouisfed.org/apikeys) を無料登録で取得。
   実装着手 (Step 4) 前まで
-- `/step3` で `docs/tasks.md` を作成し、**タスクをそのまま GitHub Issue として起票**する。旧: spec の
-  U-2 / U-3 / U-4 / U-9 と screens の U-S1〜U-S4 を解消する
+- **[#1](https://github.com/rhapsody0919/macro-shiome/issues/1) から着手**する (プロジェクト初期化)。
+  以降は `docs/tasks.md` の依存順に進める。着手時は Issue に assignee を設定する
+- **ユーザー作業**: [FRED API キー](https://fredaccount.stlouisfed.org/apikeys) を取得し
+  GitHub Actions Secrets に `FRED_API_KEY` を登録 (#3 の前提)
 - スタック確定後に `.claude/hooks/eslint-fix.sh` / `typecheck.sh` が実際に走ることを確認 (現状は
   `package.json` に該当スクリプトが無いため no-op)
