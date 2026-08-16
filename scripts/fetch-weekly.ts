@@ -208,4 +208,10 @@ function message(error: unknown): string {
   return error instanceof Error ? error.message : String(error);
 }
 
-await main();
+// top-level await は使わない。package.json に "type": "module" が無いため
+// tsx が CJS として扱い、Transform エラーになる。
+// catch を明示することで、未処理の rejection でログが出ないまま落ちるのも防ぐ。
+main().catch((error: unknown) => {
+  console.error(error instanceof Error ? error.stack : String(error));
+  process.exit(1);
+});
