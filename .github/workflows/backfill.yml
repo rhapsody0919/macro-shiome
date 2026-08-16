@@ -1,0 +1,71 @@
+name: Backfill FactSet history
+
+# 初回のみ手動で実行する。実行時間が長いため定時実行には含めない。
+on:
+  workflow_dispatch:
+    inputs:
+      years:
+        description: '遡る年数'
+        required: false
+        default: '5'
+      interval_ms:
+        description: 'リクエスト間隔 (ms)'
+        required: false
+        default: '2000'
+
+permissions:
+  contents: write
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    # 5 年 (約 260 週) × 2 秒 + ダウンロード時間で 20〜30 分を見込む。
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: Backfill
+        run: pnpm backfill --years ${{ inputs.years }} --interval-ms ${{ inputs.interval_ms }}
+
+      # 取得できた分は必ず残す。失敗した週があっても、再実行で差分だけ埋められる。
+      - name: Commit data
+        if: always()
+        run: |
+          if [ -z "$(git status --porcelain data)" ]; then
+            echo "data/ に差分なし"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git commit -m "chore(#10): FactSet の過去データをバックフィルする [why: 予想改定の推移を初日から表示するため]"
+          git push
+
+      # ビューを再生成して、取得した過去データを画面用に反映する。
+      - name: Rebuild views
+        if: always()
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+        run: pnpm fetch:weekly
+
+      - name: Commit views
+        if: always()
+        run: |
+          if [ -z "$(git status --porcelain data)" ]; then
+            echo "data/ に差分なし"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git commit -m "chore(#10): バックフィル後のビューを再生成する [why: 過去データを画面に反映するため]"
+          git push
