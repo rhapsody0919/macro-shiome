@@ -46,6 +46,24 @@ ADR-0001 でデータを静的 JSON にしたため、フロントに SSR は不
 3. **転送量に明示的上限が無い**。Vercel Hobby の 100GB/月 でも当面足りるが、
    商用利用制限を将来の制約として抱えずに済む
 
+## 実装時の補足 (2026-08-16、#1)
+
+実際に導入したバージョンと、**意図的に最新から下げた依存**を記録する。
+
+| | 採用 | 備考 |
+| --- | --- | --- |
+| Next.js | **16.3.1** | 設計時は 15 を想定していたが、実装時点の最新が 16 系 |
+| React | 19.2.8 | |
+| TypeScript | **6.0.3** | **7.0.2 を使わない** — `typescript-eslint@8` が TS 7 を拒否する (`typescript-eslint does not support TS 7.0`)。eslint-config-next 16 自体も TS 6 系を想定している |
+| ESLint | **9.39.5** | **10.8.1 を使わない** — eslint@10 + typescript-eslint@8 で `scopeManager.addGlobals is not a function` が発生する。eslint-config-next の peer は `>=9.0.0` |
+| Tailwind | 4.3.3 | v4 系。`@tailwindcss/postcss` を使い、設定ファイルではなく CSS 側で `@import 'tailwindcss'` する |
+
+TypeScript と ESLint を最新から下げているのは、**lint ツールチェーンが追随していないため**。
+typescript-eslint が TS 7 / ESLint 10 に対応したら追随する。
+
+また `pnpm-workspace.yaml` に `allowBuilds: unrs-resolver: true` が必要。
+明示しないと `pnpm install` が exit 1 になり、CI も落ちる。
+
 ## 影響・トレードオフ
 
 - Next.js 固有の動的機能 (ISR、Server Actions、Image Optimization) は使えない。

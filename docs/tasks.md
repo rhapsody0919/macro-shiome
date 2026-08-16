@@ -12,7 +12,7 @@
 ## Phase 1: 基盤
 
 - [ ] **T-01 プロジェクトを初期化する** (P1) — [#1](https://github.com/rhapsody0919/macro-shiome/issues/1)
-  - Next.js 15 (App Router, TS, `output: 'export'`) + Tailwind + Recharts + vitest + eslint、pnpm
+  - Next.js (App Router, TS, `output: 'export'`) + Tailwind + Recharts + vitest + eslint、pnpm
   - `.claude/launch.json` に dev 定義を追加し、`.claude/hooks/` の eslint/typecheck が実際に動くようにする
   - 受入基準: `pnpm dev` / `build` / `typecheck` / `lint` / `test` が全て通り、空のトップページが表示される
 
