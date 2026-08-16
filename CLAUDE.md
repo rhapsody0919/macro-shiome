@@ -1,21 +1,26 @@
 # macro-shiome (マクロ潮目)
 
-マクロ指標を横断して相場の潮目を読むための可視化アプリ。主要指数 (S&P 500 / NASDAQ) と
-フォワード / 実績 EPS、バリュエーション (Forward P/E、イールドスプレッド) を週次で蓄積・可視化する。
-将来は VIX・為替・金利・債券入札・個人消費など、証券口座のチャートでは集めづらい指標の集約表示へ広げる。
+**株式投資の判断に使う指標を 1 つの Web アプリに集約する**。段階を分け、**v1 = バリュエーション**
+(S&P 500 / NASDAQ-100 の EPS・PER・イールドスプレッド・予想改定・理論値と割高率)、
+**v2 = 市場サマリー** (日経平均・ゴールド・ドル指数・セクター別騰落率など)。
+参考にする分析者の記事は転載せず、同じ指標を自分でデータソースから集めて表示する。
 
 ## 前提・制約
 
-- **完全無料スタック** (課金しない)。無料枠の制限 (Supabase の容量・非活動時の一時停止、GitHub Actions の実行時間、データソース API のレート制限) は設計制約として扱う
-- **週次バッチ**: GitHub Actions が毎週土曜朝 (JST) に実行 → データ取得 → Supabase へ UPSERT
-- **公開リポジトリ**。NEVER: API キー・Supabase キー・トークンをコード / コミット / ログ / クライアントバンドルに残す。秘密情報は GitHub Actions Secrets と実行環境 env 経由のみ
+- **完全無料スタック** (課金しない)。無料枠の制限 (GitHub Actions の実行時間、データソース API のレート制限、Cloudflare Pages のビルド回数) は設計制約として扱う
+- **週次バッチ**: GitHub Actions が **UTC 土曜 02:00 (JST 土曜 11:00)** に実行 → データ取得 → **JSON をリポジトリに commit** → push が Cloudflare Pages のビルドをトリガ
+- **公開リポジトリ**。NEVER: API キー・トークンをコード / コミット / ログ / クライアントバンドルに残す。秘密情報は GitHub Actions Secrets のみ。**public リポの Actions ログは誰でも読める**
 - パッケージマネージャは pnpm
 
 ## 技術スタック
 
-**未確定** (SDD Step 2 = `/step2` で決定し `docs/plan.md` と `docs/adr/` に記録する)。
-確定済みは Supabase (データストア) と GitHub Actions (週次バッチ) のみ。
-フロント / ホスティング / チャートライブラリ / データソース API は未定 — 下記の技術選定ルールに従い複数案比較で決める。
+SDD Step 2 で確定 (詳細 → `docs/plan.md`、判断の記録 → `docs/adr/`)。
+
+- データストア: **Git 内 JSON** (DB を使わない。ADR-0001)。**Supabase は不採用** — 無料枠が「1 週間の非活動で停止」で週次更新の本アプリと噛み合わないため
+- フロント: **Next.js 静的エクスポート** + TypeScript + Tailwind (ADR-0002)
+- ホスティング: **Cloudflare Pages** (ADR-0002)
+- チャート: **Recharts** (ADR-0003)
+- データソース: FRED API / FactSet Earnings Insight 週次 PDF / stockanalysis.com の 3 つ
 
 ## 命令
 
@@ -56,7 +61,7 @@
 ### セルフレビュー観点 (Step 6)
 
 - 変更した関数 / 変数 / 型の呼び出し元を全列挙
-- regression リスク 3 つで影響なし確認 (時系列データの欠損・週境界 / タイムゾーン / UPSERT の冪等性 / DB スキーマ互換 / API スキーマ互換)
+- regression リスク 3 つで影響なし確認 (時系列データの欠損・週境界 / タイムゾーン / UPSERT の冪等性 / JSON スキーマ互換 / 導出値の計算式)
 - 影響画面を実機確認 (ダッシュボードの各チャート・相関サマリー・期間フィルター)
 - テスト 1 件以上 / コメントと実装の乖離なし / try-catch の error 経路を通す
 - `/code-review`・`/codex-review` 省略可: `docs/*.md`・`CLAUDE.md`・`.agent/*` のみ / typo 1 行 / フォーマットのみ。他 (`.ts` `.tsx` `.json` / SQL / CI) は必須
@@ -66,7 +71,7 @@
 
 spec + screens → plan → tasks → 実装 (1 タスク = 1 PR)、各ゲートでレビュー。起動は `.claude/commands/` の `/step1-spec` `/step1-screens` `/step2` `/step3` `/step4`。
 
-## STATE (2026-08-16 — SDD Step 1 完了、`docs/spec.md` / `docs/screens.md` 確定)
+## STATE (2026-08-16 — SDD Step 2 完了、`docs/plan.md` + ADR 4 本)
 
 **開発規約の移植 (完了)**: hakumei-app の規約一式を移植した — `CLAUDE.md` (本ファイル)・`AGENTS.md`
 (Codex レビュアー規約)・`.claude/settings.json` + `hooks/`・`.claude/commands/` (SDD step1〜4 +
@@ -125,11 +130,25 @@ v2 の指標も取得経路を実測済み: 日経平均 `NIKKEI225`・ドル指
 (`closes #N` で自動クローズ)、`gh` CLI で Claude が完結できる、public リポの秘密情報を増やさない、
 hakumei-app が Linear から移行済み。**Step 3 で tasks.md に分解したらそのまま Issue として起票する**。
 
+**SDD Step 2 (完了)**: `docs/plan.md` + ADR 4 本。最大の判断は **Supabase を使わないこと**
+([ADR-0001](docs/adr/0001-git-json-over-supabase.md))。公式で無料枠を確認したところ
+「Free projects are paused after 1 week of inactivity」と明記されており、**週次更新かつ低アクセスの
+本アプリは停止条件を踏みやすい**。データ量も約 3 万件 (数 MB) で DB が要らない規模のため、
+取得結果を JSON としてリポジトリに commit し静的配信する構成にした。副次的に**クライアントへ
+秘密情報が一切出なくなる** (anon key すら不要)。スタックは Next.js 静的エクスポート +
+Cloudflare Pages + Recharts。Recharts は `connectNulls: false` が既定で**欠測の穴あけが
+プラグイン無しで実現できる**ことをソースで確認 (screens U-S4 の選定条件)。
+
+データ設計は**指標マスタ + 観測値の縦持ち** ([ADR-0004](docs/adr/0004-indicator-master-schema.md))。
+FRED 系の新指標は**マスタに 1 行足すだけでコード変更不要**にした (輸入物価・CPI・PCE 等の追加候補の
+大半が該当)。観測日をキーにすることで **UPSERT の冪等性を構造で保証**する。バッチは
+**UTC 土曜 02:00 (JST 土曜 11:00)** — FactSet が金曜発行で、JST 土曜早朝だと当日号が無い恐れがあるため。
+
 ### Next Action
 
 - **U-1 (ユーザー作業)**: [FRED API キー](https://fredaccount.stlouisfed.org/apikeys) を無料登録で取得。
   実装着手 (Step 4) 前まで
-- `/step2` で技術スタック選定 (複数案比較 → ADR) + データ設計 + 週次バッチ設計。ここで spec の
+- `/step3` で `docs/tasks.md` を作成し、**タスクをそのまま GitHub Issue として起票**する。旧: spec の
   U-2 / U-3 / U-4 / U-9 と screens の U-S1〜U-S4 を解消する
 - スタック確定後に `.claude/hooks/eslint-fix.sh` / `typecheck.sh` が実際に走ることを確認 (現状は
   `package.json` に該当スクリプトが無いため no-op)

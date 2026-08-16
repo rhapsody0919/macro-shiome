@@ -16,7 +16,7 @@ S&P 500 / NASDAQ-100 の業績とバリュエーションを週次で蓄積・�
 - 指数と Forward EPS の相関 (直近半年 / 1 年 / 全期間)
 - 期間フィルター (1 年 / 3 年 / 5 年 / 全期間)
 
-データは GitHub Actions が毎週土曜朝 (JST) に取得し、Supabase へ UPSERT する。
+データは GitHub Actions が毎週 (JST 土曜 11:00) に取得し、**JSON としてリポジトリに commit** する。
 取得元は FRED・FactSet Earnings Insight (週次 PDF)・stockanalysis.com の 3 つ。
 
 ## v2: 市場サマリー
@@ -26,10 +26,19 @@ S&P 500 / NASDAQ-100 の業績とバリュエーションを週次で蓄積・�
 
 ## 制約
 
-完全無料スタックで構築する。リポジトリは public のため、API キー・Supabase キーは
-GitHub Actions Secrets と実行環境 env でのみ扱う。
+完全無料スタックで構築する。リポジトリは public のため、秘密情報は GitHub Actions Secrets
+でのみ扱う。**クライアントに秘密情報は一切出ない** (静的 JSON を配信するのみ)。
 
-技術スタックは未確定 (SDD Step 2 で決定し `docs/plan.md` と `docs/adr/` に記録)。
+## 技術スタック
+
+| | 選定 | 理由 |
+| --- | --- | --- |
+| データストア | **Git 内 JSON** | Supabase 無料枠は「1週間の非活動で停止」。週次更新の本アプリと噛み合わない ([ADR-0001](docs/adr/0001-git-json-over-supabase.md)) |
+| フロント | Next.js 静的エクスポート | 既存資産の流用。v1 に SSR 不要 ([ADR-0002](docs/adr/0002-nextjs-static-export.md)) |
+| ホスティング | Cloudflare Pages | 転送量に明示的上限なし ([ADR-0002](docs/adr/0002-nextjs-static-export.md)) |
+| チャート | Recharts | 欠測の穴あけ・基準線・マーカーがプラグイン無しで揃う ([ADR-0003](docs/adr/0003-recharts.md)) |
+
+設計の詳細は [docs/plan.md](docs/plan.md)。
 
 ## ドキュメント
 

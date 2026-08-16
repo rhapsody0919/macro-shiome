@@ -27,4 +27,11 @@
 ## 影響・トレードオフ
 ```
 
-まだ ADR は無い。最初の判断は SDD Step 2 (`/step2`) で技術スタックを選定するときに発生する。
+## 一覧
+
+| ADR | 判断 | 日付 |
+| --- | --- | --- |
+| [0001](0001-git-json-over-supabase.md) | データストアに Supabase ではなく Git 内 JSON を採用 | 2026-08-16 |
+| [0002](0002-nextjs-static-export.md) | フロントは Next.js 静的エクスポート、ホスティングは Cloudflare Pages | 2026-08-16 |
+| [0003](0003-recharts.md) | チャートライブラリに Recharts を採用 | 2026-08-16 |
+| [0004](0004-indicator-master-schema.md) | 指標マスタ + 観測値の縦持ちスキーマ | 2026-08-16 |
