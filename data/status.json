@@ -1,104 +1,146 @@
 {
-  "lastSuccessAt": "2026-08-16T23:19:35.082Z",
-  "lastRunAt": "2026-08-16T23:19:35.082Z",
+  "lastSuccessAt": "2026-08-16T23:48:13.793Z",
+  "lastRunAt": "2026-08-16T23:48:13.793Z",
   "recentGaps": [
     {
       "indicatorId": "sp500-blended-growth-last-week",
       "date": "2026-08-14",
       "reason": "publication-break",
       "detail": "レポートが公開されていない",
-      "recordedAt": "2026-08-16T23:19:35.082Z"
+      "recordedAt": "2026-08-16T23:48:13.793Z"
     },
     {
       "indicatorId": "sp500-blended-growth-quarter-end",
       "date": "2026-08-14",
       "reason": "publication-break",
       "detail": "レポートが公開されていない",
-      "recordedAt": "2026-08-16T23:19:35.082Z"
+      "recordedAt": "2026-08-16T23:48:13.793Z"
     },
     {
       "indicatorId": "sp500-blended-growth-today",
       "date": "2026-08-14",
       "reason": "publication-break",
       "detail": "レポートが公開されていない",
-      "recordedAt": "2026-08-16T23:19:35.082Z"
+      "recordedAt": "2026-08-16T23:48:13.793Z"
     },
     {
       "indicatorId": "sp500-close-factset",
       "date": "2026-08-14",
       "reason": "publication-break",
       "detail": "レポートが公開されていない",
-      "recordedAt": "2026-08-16T23:19:35.082Z"
+      "recordedAt": "2026-08-16T23:48:13.793Z"
     },
     {
       "indicatorId": "sp500-forward-pe",
       "date": "2026-08-14",
       "reason": "publication-break",
       "detail": "レポートが公開されていない",
-      "recordedAt": "2026-08-16T23:19:35.082Z"
+      "recordedAt": "2026-08-16T23:48:13.793Z"
     },
     {
       "indicatorId": "sp500-forward-pe-10y-avg",
       "date": "2026-08-14",
       "reason": "publication-break",
       "detail": "レポートが公開されていない",
-      "recordedAt": "2026-08-16T23:19:35.082Z"
+      "recordedAt": "2026-08-16T23:48:13.793Z"
     },
     {
       "indicatorId": "sp500-forward-pe-5y-avg",
       "date": "2026-08-14",
       "reason": "publication-break",
       "detail": "レポートが公開されていない",
-      "recordedAt": "2026-08-16T23:19:35.082Z"
+      "recordedAt": "2026-08-16T23:48:13.793Z"
     },
     {
       "indicatorId": "sp500-growth-cy-current",
       "date": "2026-08-14",
       "reason": "publication-break",
       "detail": "レポートが公開されていない",
-      "recordedAt": "2026-08-16T23:19:35.082Z"
+      "recordedAt": "2026-08-16T23:48:13.793Z"
     },
     {
       "indicatorId": "sp500-growth-cy-next",
       "date": "2026-08-14",
       "reason": "publication-break",
       "detail": "レポートが公開されていない",
-      "recordedAt": "2026-08-16T23:19:35.082Z"
+      "recordedAt": "2026-08-16T23:48:13.793Z"
     },
     {
       "indicatorId": "sp500-growth-next-quarter",
       "date": "2026-08-14",
       "reason": "publication-break",
       "detail": "レポートが公開されていない",
-      "recordedAt": "2026-08-16T23:19:35.082Z"
+      "recordedAt": "2026-08-16T23:48:13.793Z"
     },
     {
       "indicatorId": "sp500-growth-quarter-after-next",
       "date": "2026-08-14",
       "reason": "publication-break",
       "detail": "レポートが公開されていない",
-      "recordedAt": "2026-08-16T23:19:35.082Z"
+      "recordedAt": "2026-08-16T23:48:13.793Z"
     },
     {
       "indicatorId": "sp500-trailing-pe",
       "date": "2026-08-14",
       "reason": "publication-break",
       "detail": "レポートが公開されていない",
-      "recordedAt": "2026-08-16T23:19:35.082Z"
+      "recordedAt": "2026-08-16T23:48:13.793Z"
     },
     {
       "indicatorId": "sp500-trailing-pe-10y-avg",
       "date": "2026-08-14",
       "reason": "publication-break",
       "detail": "レポートが公開されていない",
-      "recordedAt": "2026-08-16T23:19:35.082Z"
+      "recordedAt": "2026-08-16T23:48:13.793Z"
     },
     {
       "indicatorId": "sp500-trailing-pe-5y-avg",
       "date": "2026-08-14",
       "reason": "publication-break",
       "detail": "レポートが公開されていない",
-      "recordedAt": "2026-08-16T23:19:35.082Z"
+      "recordedAt": "2026-08-16T23:48:13.793Z"
+    },
+    {
+      "indicatorId": "sp500-blended-growth-last-week",
+      "date": "2026-07-03",
+      "reason": "publication-break",
+      "detail": "レポートが公開されていない",
+      "recordedAt": "2026-08-16T23:37:27.680Z"
+    },
+    {
+      "indicatorId": "sp500-blended-growth-quarter-end",
+      "date": "2026-07-03",
+      "reason": "publication-break",
+      "detail": "レポートが公開されていない",
+      "recordedAt": "2026-08-16T23:37:27.680Z"
+    },
+    {
+      "indicatorId": "sp500-blended-growth-today",
+      "date": "2026-07-03",
+      "reason": "publication-break",
+      "detail": "レポートが公開されていない",
+      "recordedAt": "2026-08-16T23:37:27.680Z"
+    },
+    {
+      "indicatorId": "sp500-close-factset",
+      "date": "2026-07-03",
+      "reason": "publication-break",
+      "detail": "レポートが公開されていない",
+      "recordedAt": "2026-08-16T23:37:27.680Z"
+    },
+    {
+      "indicatorId": "sp500-forward-pe",
+      "date": "2026-07-03",
+      "reason": "publication-break",
+      "detail": "レポートが公開されていない",
+      "recordedAt": "2026-08-16T23:37:27.680Z"
+    },
+    {
+      "indicatorId": "sp500-forward-pe-10y-avg",
+      "date": "2026-07-03",
+      "reason": "publication-break",
+      "detail": "レポートが公開されていない",
+      "recordedAt": "2026-08-16T23:37:27.680Z"
     }
   ]
 }

@@ -2124,96 +2124,96 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 42.6,
+    "growthNextYear": 9.3
   },
   {
     "date": "2021-09-10",
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 42.6,
+    "growthNextYear": 9.4
   },
   {
     "date": "2021-09-17",
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 42.6,
+    "growthNextYear": 9.5
   },
   {
     "date": "2021-09-24",
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 42.6,
+    "growthNextYear": 9.5
   },
   {
     "date": "2021-10-01",
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 42.6,
+    "growthNextYear": 9.6
   },
   {
     "date": "2021-10-08",
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 42.8,
+    "growthNextYear": 9.7
   },
   {
     "date": "2021-10-15",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 30,
+    "blendedLastWeek": 27.5,
+    "blendedQuarterEnd": 27.5,
+    "growthCurrentYear": 43.2,
+    "growthNextYear": 9.5
   },
   {
     "date": "2021-10-22",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 32.7,
+    "blendedLastWeek": 30,
+    "blendedQuarterEnd": 27.5,
+    "growthCurrentYear": 44.1,
+    "growthNextYear": 9
   },
   {
     "date": "2021-10-29",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 36.6,
+    "blendedLastWeek": 32.6,
+    "blendedQuarterEnd": 27.4,
+    "growthCurrentYear": 44.4,
+    "growthNextYear": 8.6
   },
   {
     "date": "2021-11-05",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 39.1,
+    "blendedLastWeek": 36.5,
+    "blendedQuarterEnd": 27.4,
+    "growthCurrentYear": 44.6,
+    "growthNextYear": 8.6
   },
   {
     "date": "2021-11-12",
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 44.7,
+    "growthNextYear": 8.5
   },
   {
     "date": "2021-11-19",
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 44.9,
+    "growthNextYear": 8.7
   },
   {
     "date": "2021-11-26",
@@ -2244,8 +2244,8 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 45.1,
+    "growthNextYear": 9.2
   },
   {
     "date": "2021-12-24",
@@ -2268,8 +2268,8 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 45.2,
+    "growthNextYear": 9.4
   },
   {
     "date": "2022-01-14",
@@ -2289,18 +2289,18 @@
   },
   {
     "date": "2022-01-28",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "blendedToday": 24.3,
+    "blendedLastWeek": 23.1,
+    "blendedQuarterEnd": 21.4,
+    "growthCurrentYear": 9.5,
     "growthNextYear": null
   },
   {
     "date": "2022-02-04",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "blendedToday": 29.2,
+    "blendedLastWeek": 24.3,
+    "blendedQuarterEnd": 21.3,
+    "growthCurrentYear": 8.6,
     "growthNextYear": null
   },
   {
@@ -2313,10 +2313,10 @@
   },
   {
     "date": "2022-02-18",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "blendedToday": 30.9,
+    "blendedLastWeek": 30.2,
+    "blendedQuarterEnd": 21.2,
+    "growthCurrentYear": 8.6,
     "growthNextYear": null
   },
   {
@@ -2324,7 +2324,7 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "growthCurrentYear": 8.5,
     "growthNextYear": null
   },
   {
@@ -2332,7 +2332,7 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "growthCurrentYear": 8.6,
     "growthNextYear": null
   },
   {
@@ -2340,7 +2340,7 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "growthCurrentYear": 9.1,
     "growthNextYear": null
   },
   {
@@ -2348,7 +2348,7 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "growthCurrentYear": 9.3,
     "growthNextYear": null
   },
   {
@@ -2356,7 +2356,7 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "growthCurrentYear": 9.4,
     "growthNextYear": null
   },
   {
@@ -2364,7 +2364,7 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "growthCurrentYear": 9.5,
     "growthNextYear": null
   },
   {
@@ -2372,7 +2372,7 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "growthCurrentYear": 9.8,
     "growthNextYear": null
   },
   {
@@ -2385,34 +2385,34 @@
   },
   {
     "date": "2022-04-22",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "blendedToday": 6.6,
+    "blendedLastWeek": 5.1,
+    "blendedQuarterEnd": 4.7,
+    "growthCurrentYear": 10.9,
     "growthNextYear": null
   },
   {
     "date": "2022-04-29",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "blendedToday": 7.1,
+    "blendedLastWeek": 6.5,
+    "blendedQuarterEnd": 4.7,
+    "growthCurrentYear": 10.3,
     "growthNextYear": null
   },
   {
     "date": "2022-05-06",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "blendedToday": 9.1,
+    "blendedLastWeek": 7,
+    "blendedQuarterEnd": 4.6,
+    "growthCurrentYear": 10.1,
     "growthNextYear": null
   },
   {
     "date": "2022-05-13",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "blendedToday": 9.1,
+    "blendedLastWeek": 9,
+    "blendedQuarterEnd": 4.6,
+    "growthCurrentYear": 10.1,
     "growthNextYear": null
   },
   {
@@ -2420,7 +2420,7 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "growthCurrentYear": 10,
     "growthNextYear": null
   },
   {
@@ -2428,7 +2428,7 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "growthCurrentYear": 10.1,
     "growthNextYear": null
   },
   {
@@ -2436,7 +2436,7 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "growthCurrentYear": 10.2,
     "growthNextYear": null
   },
   {
@@ -2444,7 +2444,7 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "growthCurrentYear": 10.4,
     "growthNextYear": null
   },
   {
@@ -2452,7 +2452,7 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "growthCurrentYear": 10.4,
     "growthNextYear": null
   },
   {
@@ -2468,7 +2468,7 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "growthCurrentYear": 10.2,
     "growthNextYear": null
   },
   {
@@ -2476,31 +2476,31 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "growthCurrentYear": 10,
     "growthNextYear": null
   },
   {
     "date": "2022-07-15",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "blendedToday": 4.2,
+    "blendedLastWeek": 4.4,
+    "blendedQuarterEnd": 4,
+    "growthCurrentYear": 9.9,
     "growthNextYear": null
   },
   {
     "date": "2022-07-22",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "blendedToday": 4.8,
+    "blendedLastWeek": 4.1,
+    "blendedQuarterEnd": 4,
+    "growthCurrentYear": 9.8,
     "growthNextYear": null
   },
   {
     "date": "2022-07-29",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "blendedToday": 6,
+    "blendedLastWeek": 4.7,
+    "blendedQuarterEnd": 4,
+    "growthCurrentYear": 8.9,
     "growthNextYear": null
   },
   {
@@ -2548,8 +2548,8 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 7.9,
+    "growthNextYear": 8.2
   },
   {
     "date": "2022-09-16",
@@ -2580,40 +2580,40 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 7.3,
+    "growthNextYear": 7.9
   },
   {
     "date": "2022-10-14",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 1.6,
+    "blendedLastWeek": 2.2,
+    "blendedQuarterEnd": 2.8,
+    "growthCurrentYear": 7,
+    "growthNextYear": 7.6
   },
   {
     "date": "2022-10-21",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 1.5,
+    "blendedLastWeek": 1.3,
+    "blendedQuarterEnd": 2.8,
+    "growthCurrentYear": 6.7,
+    "growthNextYear": 7.3
   },
   {
     "date": "2022-10-28",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 2.2,
+    "blendedLastWeek": 1.3,
+    "blendedQuarterEnd": 2.8,
+    "growthCurrentYear": 6.1,
+    "growthNextYear": 6.4
   },
   {
     "date": "2022-11-04",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 2.2,
+    "blendedLastWeek": 2.1,
+    "blendedQuarterEnd": 2.7,
+    "growthCurrentYear": 5.6,
+    "growthNextYear": 5.9
   },
   {
     "date": "2022-11-11",
@@ -2644,8 +2644,8 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 5.2,
+    "growthNextYear": 5.6
   },
   {
     "date": "2022-12-09",
@@ -2692,15 +2692,15 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 4.8,
+    "growthNextYear": 4.6
   },
   {
     "date": "2023-01-20",
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "growthCurrentYear": 4.2,
     "growthNextYear": null
   },
   {
@@ -2716,7 +2716,7 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "growthCurrentYear": 3,
     "growthNextYear": null
   },
   {
@@ -2724,7 +2724,7 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "growthCurrentYear": 2.5,
     "growthNextYear": null
   },
   {
@@ -2732,7 +2732,7 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "growthCurrentYear": 2.3,
     "growthNextYear": null
   },
   {
@@ -2740,7 +2740,7 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "growthCurrentYear": 2.2,
     "growthNextYear": null
   },
   {
@@ -2756,7 +2756,7 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "growthCurrentYear": 1.9,
     "growthNextYear": null
   },
   {
@@ -2780,7 +2780,7 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "growthCurrentYear": 1.5,
     "growthNextYear": null
   },
   {
@@ -2796,7 +2796,7 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "growthCurrentYear": 0.9,
     "growthNextYear": null
   },
   {
@@ -2804,7 +2804,7 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "growthCurrentYear": 0.8,
     "growthNextYear": null
   },
   {
@@ -2812,7 +2812,7 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "growthCurrentYear": 1.2,
     "growthNextYear": null
   },
   {
@@ -2820,7 +2820,7 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "growthCurrentYear": 1.2,
     "growthNextYear": null
   },
   {
@@ -2828,7 +2828,7 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "growthCurrentYear": 1,
     "growthNextYear": null
   },
   {
@@ -2836,7 +2836,7 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "growthCurrentYear": 1,
     "growthNextYear": null
   },
   {
@@ -2844,7 +2844,7 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "growthCurrentYear": 1.3,
     "growthNextYear": null
   },
   {
@@ -2860,8 +2860,8 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 1.2,
+    "growthNextYear": 12.3
   },
   {
     "date": "2023-06-16",
@@ -2876,24 +2876,24 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 1.1,
+    "growthNextYear": 11.7
   },
   {
     "date": "2023-06-30",
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 0.9,
+    "growthNextYear": 11.7
   },
   {
     "date": "2023-07-07",
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 0.8,
+    "growthNextYear": 12.4
   },
   {
     "date": "2023-07-14",
@@ -2908,24 +2908,24 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 0.1,
+    "growthNextYear": 12.9
   },
   {
     "date": "2023-07-28",
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 0.4,
+    "growthNextYear": 12.6
   },
   {
     "date": "2023-08-04",
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 0.8,
+    "growthNextYear": 12.2
   },
   {
     "date": "2023-08-11",
@@ -2956,56 +2956,56 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 1.2,
+    "growthNextYear": 12
   },
   {
     "date": "2023-09-08",
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 1.2,
+    "growthNextYear": 12.2
   },
   {
     "date": "2023-09-15",
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 1.2,
+    "growthNextYear": 12.1
   },
   {
     "date": "2023-09-22",
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 1.1,
+    "growthNextYear": 12.2
   },
   {
     "date": "2023-09-29",
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 1.1,
+    "growthNextYear": 12.2
   },
   {
     "date": "2023-10-06",
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 0.9,
+    "growthNextYear": 12.2
   },
   {
     "date": "2023-10-13",
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 0.9,
+    "growthNextYear": 12.2
   },
   {
     "date": "2023-10-20",
@@ -3028,24 +3028,24 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 0.6,
+    "growthNextYear": 11.9
   },
   {
     "date": "2023-11-10",
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 0.6,
+    "growthNextYear": 11.6
   },
   {
     "date": "2023-11-17",
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 0.6,
+    "growthNextYear": 11.6
   },
   {
     "date": "2023-11-24",
@@ -3060,8 +3060,8 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 0.8,
+    "growthNextYear": 11.7
   },
   {
     "date": "2023-12-08",
@@ -3076,7 +3076,7 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "growthCurrentYear": 11.5,
     "growthNextYear": null
   },
   {
@@ -3100,7 +3100,7 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "growthCurrentYear": 11.8,
     "growthNextYear": null
   },
   {
@@ -3108,7 +3108,7 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "growthCurrentYear": 11.8,
     "growthNextYear": null
   },
   {
@@ -3116,7 +3116,7 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "growthCurrentYear": 12.2,
     "growthNextYear": null
   },
   {
@@ -3132,23 +3132,23 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "growthCurrentYear": 11.2,
     "growthNextYear": null
   },
   {
     "date": "2024-02-09",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "blendedToday": 2.9,
+    "blendedLastWeek": 1.6,
+    "blendedQuarterEnd": 1.5,
+    "growthCurrentYear": 10.9,
     "growthNextYear": null
   },
   {
     "date": "2024-02-16",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "blendedToday": 3.2,
+    "blendedLastWeek": 2.8,
+    "blendedQuarterEnd": 1.5,
+    "growthCurrentYear": 10.9,
     "growthNextYear": null
   },
   {
@@ -3161,10 +3161,10 @@
   },
   {
     "date": "2024-03-01",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "blendedToday": 4,
+    "blendedLastWeek": 3.9,
+    "blendedQuarterEnd": 1.5,
+    "growthCurrentYear": 11,
     "growthNextYear": null
   },
   {
@@ -3172,16 +3172,16 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 11,
+    "growthNextYear": 13.2
   },
   {
     "date": "2024-03-15",
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 11,
+    "growthNextYear": 13.2
   },
   {
     "date": "2024-03-22",
@@ -3209,19 +3209,19 @@
   },
   {
     "date": "2024-04-12",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 0.9,
+    "blendedLastWeek": 3.2,
+    "blendedQuarterEnd": 3.4,
+    "growthCurrentYear": 10.3,
+    "growthNextYear": 14
   },
   {
     "date": "2024-04-19",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 0.5,
+    "blendedLastWeek": 0.9,
+    "blendedQuarterEnd": 3.4,
+    "growthCurrentYear": 10.7,
+    "growthNextYear": 13.8
   },
   {
     "date": "2024-04-26",
@@ -3233,43 +3233,43 @@
   },
   {
     "date": "2024-05-03",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 5,
+    "blendedLastWeek": 3.5,
+    "blendedQuarterEnd": 3.4,
+    "growthCurrentYear": 11,
+    "growthNextYear": 9.5
   },
   {
     "date": "2024-05-10",
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 11.1,
+    "growthNextYear": 14
   },
   {
     "date": "2024-05-17",
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 11.1,
+    "growthNextYear": 14.1
   },
   {
     "date": "2024-05-24",
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 11.4,
+    "growthNextYear": 14.2
   },
   {
     "date": "2024-05-31",
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 11.3,
+    "growthNextYear": 14.2
   },
   {
     "date": "2024-06-07",
@@ -3284,16 +3284,16 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 11.3,
+    "growthNextYear": 14.3
   },
   {
     "date": "2024-06-21",
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 11.3,
+    "growthNextYear": 14.4
   },
   {
     "date": "2024-06-28",
@@ -3321,43 +3321,43 @@
   },
   {
     "date": "2024-07-19",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 9.7,
+    "blendedLastWeek": 9.1,
+    "blendedQuarterEnd": 8.9,
+    "growthCurrentYear": 11,
+    "growthNextYear": 14.7
   },
   {
     "date": "2024-07-26",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 9.8,
+    "blendedLastWeek": 9.6,
+    "blendedQuarterEnd": 8.9,
+    "growthCurrentYear": 10.9,
+    "growthNextYear": 14.8
   },
   {
     "date": "2024-08-02",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 11.5,
+    "blendedLastWeek": 9.8,
+    "blendedQuarterEnd": 8.9,
+    "growthCurrentYear": 10.8,
+    "growthNextYear": 14.8
   },
   {
     "date": "2024-08-09",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 10.8,
+    "blendedLastWeek": 11.4,
+    "blendedQuarterEnd": 8.9,
+    "growthCurrentYear": 10.2,
+    "growthNextYear": 15.2
   },
   {
     "date": "2024-08-16",
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 10.1,
+    "growthNextYear": 15.3
   },
   {
     "date": "2024-08-23",
@@ -3380,24 +3380,24 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 10.1,
+    "growthNextYear": 15.4
   },
   {
     "date": "2024-09-13",
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 10.2,
+    "growthNextYear": 15.4
   },
   {
     "date": "2024-09-20",
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 10,
+    "growthNextYear": 15.2
   },
   {
     "date": "2024-09-27",
@@ -3412,64 +3412,64 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 9.8,
+    "growthNextYear": 14.9
   },
   {
     "date": "2024-10-11",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 4.1,
+    "blendedLastWeek": 4,
+    "blendedQuarterEnd": 4.4,
+    "growthCurrentYear": 9.7,
+    "growthNextYear": 14.9
   },
   {
     "date": "2024-10-18",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 3.4,
+    "blendedLastWeek": 2.9,
+    "blendedQuarterEnd": 4.3,
+    "growthCurrentYear": 9.4,
+    "growthNextYear": 15.1
   },
   {
     "date": "2024-10-25",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 3.6,
+    "blendedLastWeek": 3,
+    "blendedQuarterEnd": 4.3,
+    "growthCurrentYear": 9.3,
+    "growthNextYear": 15.2
   },
   {
     "date": "2024-11-01",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 5.1,
+    "blendedLastWeek": 3.6,
+    "blendedQuarterEnd": 4.3,
+    "growthCurrentYear": 9.3,
+    "growthNextYear": 15.1
   },
   {
     "date": "2024-11-08",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 5.3,
+    "blendedLastWeek": 5,
+    "blendedQuarterEnd": 4.3,
+    "growthCurrentYear": 9.4,
+    "growthNextYear": 14.8
   },
   {
     "date": "2024-11-15",
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 9.3,
+    "growthNextYear": 15
   },
   {
     "date": "2024-11-22",
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 9.4,
+    "growthNextYear": 15
   },
   {
     "date": "2024-11-29",
@@ -3484,7 +3484,7 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "growthCurrentYear": 15,
     "growthNextYear": null
   },
   {
@@ -3516,7 +3516,7 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "growthCurrentYear": 14.8,
     "growthNextYear": null
   },
   {
@@ -3524,48 +3524,48 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 14.8,
+    "growthNextYear": 13.6
   },
   {
     "date": "2025-01-17",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 12.5,
+    "blendedLastWeek": 11.5,
+    "blendedQuarterEnd": 11.9,
+    "growthCurrentYear": 14.8,
+    "growthNextYear": 13.6
   },
   {
     "date": "2025-01-24",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 12.7,
+    "blendedLastWeek": 12.4,
+    "blendedQuarterEnd": 11.8,
+    "growthCurrentYear": 14.8,
+    "growthNextYear": 13.6
   },
   {
     "date": "2025-01-31",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 13.2,
+    "blendedLastWeek": 12.3,
+    "blendedQuarterEnd": 11.8,
+    "growthCurrentYear": 14.3,
+    "growthNextYear": 13.7
   },
   {
     "date": "2025-02-07",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 16.4,
+    "blendedLastWeek": 13.1,
+    "blendedQuarterEnd": 11.8,
+    "growthCurrentYear": 13,
+    "growthNextYear": 13.8
   },
   {
     "date": "2025-02-14",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 16.9,
+    "blendedLastWeek": 16.4,
+    "blendedQuarterEnd": 11.8,
+    "growthCurrentYear": 12.7,
+    "growthNextYear": 13.9
   },
   {
     "date": "2025-02-21",
@@ -3577,27 +3577,27 @@
   },
   {
     "date": "2025-02-28",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 18.2,
+    "blendedLastWeek": 17.2,
+    "blendedQuarterEnd": 11.7,
+    "growthCurrentYear": 12.1,
+    "growthNextYear": 14
   },
   {
     "date": "2025-03-07",
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 11.6,
+    "growthNextYear": 14.1
   },
   {
     "date": "2025-03-14",
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 11.5,
+    "growthNextYear": 14.2
   },
   {
     "date": "2025-03-21",
@@ -3625,11 +3625,11 @@
   },
   {
     "date": "2025-04-11",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 7.3,
+    "blendedLastWeek": 7,
+    "blendedQuarterEnd": 7.2,
+    "growthCurrentYear": 10.6,
+    "growthNextYear": 14.2
   },
   {
     "date": "2025-04-18",
@@ -3641,58 +3641,58 @@
   },
   {
     "date": "2025-04-25",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 10.1,
+    "blendedLastWeek": 7,
+    "blendedQuarterEnd": 7.2,
+    "growthCurrentYear": 9.7,
+    "growthNextYear": 13.8
   },
   {
     "date": "2025-05-02",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 12.8,
+    "blendedLastWeek": 10.1,
+    "blendedQuarterEnd": 7.2,
+    "growthCurrentYear": 9.5,
+    "growthNextYear": 11.1
   },
   {
     "date": "2025-05-09",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 13.4,
+    "blendedLastWeek": 12.8,
+    "blendedQuarterEnd": 7.1,
+    "growthCurrentYear": 9.3,
+    "growthNextYear": 13.5
   },
   {
     "date": "2025-05-16",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 13.6,
+    "blendedLastWeek": 13.4,
+    "blendedQuarterEnd": 7.1,
+    "growthCurrentYear": 9,
+    "growthNextYear": 13.4
   },
   {
     "date": "2025-05-23",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 12.9,
+    "blendedLastWeek": 13.6,
+    "blendedQuarterEnd": 7.1,
+    "growthCurrentYear": 9.1,
+    "growthNextYear": 13.4
   },
   {
     "date": "2025-05-30",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 13.3,
+    "blendedLastWeek": 12.9,
+    "blendedQuarterEnd": 7.2,
+    "growthCurrentYear": 9.1,
+    "growthNextYear": 13.5
   },
   {
     "date": "2025-06-06",
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "growthCurrentYear": 9.1,
     "growthNextYear": null
   },
   {
@@ -3700,8 +3700,8 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 9,
+    "growthNextYear": 13.7
   },
   {
     "date": "2025-06-20",
@@ -3716,8 +3716,8 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 9.1,
+    "growthNextYear": 13.8
   },
   {
     "date": "2025-07-04",
@@ -3729,43 +3729,43 @@
   },
   {
     "date": "2025-07-11",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 4.8,
+    "blendedLastWeek": 5,
+    "blendedQuarterEnd": 4.9,
+    "growthCurrentYear": 9,
+    "growthNextYear": 13.9
   },
   {
     "date": "2025-07-18",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 5.6,
+    "blendedLastWeek": 4.4,
+    "blendedQuarterEnd": 4.9,
+    "growthCurrentYear": 9.3,
+    "growthNextYear": 14
   },
   {
     "date": "2025-07-25",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 6.4,
+    "blendedLastWeek": 5.6,
+    "blendedQuarterEnd": 4.9,
+    "growthCurrentYear": 9.6,
+    "growthNextYear": 13.9
   },
   {
     "date": "2025-08-01",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 10.3,
+    "blendedLastWeek": 6.5,
+    "blendedQuarterEnd": 4.9,
+    "growthCurrentYear": 9.9,
+    "growthNextYear": 13.6
   },
   {
     "date": "2025-08-08",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 11.8,
+    "blendedLastWeek": 10.3,
+    "blendedQuarterEnd": 4.9,
+    "growthCurrentYear": 10.3,
+    "growthNextYear": 13.3
   },
   {
     "date": "2025-08-15",
@@ -3788,32 +3788,32 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 10.6,
+    "growthNextYear": 13.4
   },
   {
     "date": "2025-09-05",
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 10.6,
+    "growthNextYear": 13.6
   },
   {
     "date": "2025-09-12",
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 10.7,
+    "growthNextYear": 13.7
   },
   {
     "date": "2025-09-19",
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 10.7,
+    "growthNextYear": 13.7
   },
   {
     "date": "2025-09-26",
@@ -3828,32 +3828,32 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 10.9,
+    "growthNextYear": 13.8
   },
   {
     "date": "2025-10-10",
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 10.9,
+    "growthNextYear": 13.8
   },
   {
     "date": "2025-10-17",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 8.5,
+    "blendedLastWeek": 7.7,
+    "blendedQuarterEnd": 7.9,
+    "growthCurrentYear": 11,
+    "growthNextYear": 13.9
   },
   {
     "date": "2025-10-24",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 9.2,
+    "blendedLastWeek": 7.8,
+    "blendedQuarterEnd": 7.9,
+    "growthCurrentYear": 11,
+    "growthNextYear": 13.9
   },
   {
     "date": "2025-10-31",
@@ -3865,27 +3865,27 @@
   },
   {
     "date": "2025-11-07",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 13.1,
+    "blendedLastWeek": 10.7,
+    "blendedQuarterEnd": 7.9,
+    "growthCurrentYear": 11.6,
+    "growthNextYear": 13.7
   },
   {
     "date": "2025-11-14",
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 11.7,
+    "growthNextYear": 13.9
   },
   {
     "date": "2025-11-21",
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 11.8,
+    "growthNextYear": 14.2
   },
   {
     "date": "2025-11-28",
@@ -3900,7 +3900,7 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "growthCurrentYear": 14.5,
     "growthNextYear": null
   },
   {
@@ -3940,47 +3940,47 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "growthCurrentYear": 14.9,
     "growthNextYear": null
   },
   {
     "date": "2026-01-16",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "blendedToday": 8.2,
+    "blendedLastWeek": 8.2,
+    "blendedQuarterEnd": 8.3,
+    "growthCurrentYear": 14.9,
     "growthNextYear": null
   },
   {
     "date": "2026-01-23",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "blendedToday": 8.2,
+    "blendedLastWeek": 8,
+    "blendedQuarterEnd": 8.3,
+    "growthCurrentYear": 14.7,
     "growthNextYear": null
   },
   {
     "date": "2026-01-30",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "blendedToday": 11.9,
+    "blendedLastWeek": 8.2,
+    "blendedQuarterEnd": 8.3,
+    "growthCurrentYear": 14.3,
     "growthNextYear": null
   },
   {
     "date": "2026-02-06",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "blendedToday": 13,
+    "blendedLastWeek": 11.9,
+    "blendedQuarterEnd": 8.3,
+    "growthCurrentYear": 14.1,
     "growthNextYear": null
   },
   {
     "date": "2026-02-13",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "blendedToday": 13.2,
+    "blendedLastWeek": 13.2,
+    "blendedQuarterEnd": 8.3,
+    "growthCurrentYear": 14.4,
     "growthNextYear": null
   },
   {
@@ -3993,10 +3993,10 @@
   },
   {
     "date": "2026-02-27",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "blendedToday": 14.2,
+    "blendedLastWeek": 13.7,
+    "blendedQuarterEnd": 8.3,
+    "growthCurrentYear": 14.7,
     "growthNextYear": null
   },
   {
@@ -4004,7 +4004,7 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "growthCurrentYear": 15,
     "growthNextYear": null
   },
   {
@@ -4049,42 +4049,42 @@
   },
   {
     "date": "2026-04-17",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "blendedToday": 13.2,
+    "blendedLastWeek": 12.2,
+    "blendedQuarterEnd": 13.2,
+    "growthCurrentYear": 18,
     "growthNextYear": null
   },
   {
     "date": "2026-04-24",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "blendedToday": 15.1,
+    "blendedLastWeek": 13,
+    "blendedQuarterEnd": 13.1,
+    "growthCurrentYear": 18.6,
     "growthNextYear": null
   },
   {
     "date": "2026-05-01",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "blendedToday": 27.1,
+    "blendedLastWeek": 15,
+    "blendedQuarterEnd": 13.1,
+    "growthCurrentYear": 20.6,
     "growthNextYear": null
   },
   {
     "date": "2026-05-08",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "blendedToday": 27.7,
+    "blendedLastWeek": 27.1,
+    "blendedQuarterEnd": 13.1,
+    "growthCurrentYear": 21,
     "growthNextYear": null
   },
   {
     "date": "2026-05-15",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "blendedToday": 27.7,
+    "blendedLastWeek": 27.6,
+    "blendedQuarterEnd": 13,
+    "growthCurrentYear": 21.5,
     "growthNextYear": null
   },
   {
@@ -4108,7 +4108,7 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
+    "growthCurrentYear": 22.8,
     "growthNextYear": null
   },
   {
@@ -4116,8 +4116,8 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 23.2,
+    "growthNextYear": 16.2
   },
   {
     "date": "2026-06-19",
@@ -4148,40 +4148,40 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "growthCurrentYear": 24.2,
+    "growthNextYear": 17.4
   },
   {
     "date": "2026-07-17",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 24.7,
+    "blendedLastWeek": 22.5,
+    "blendedQuarterEnd": 23.2,
+    "growthCurrentYear": 24.5,
+    "growthNextYear": 17.5
   },
   {
     "date": "2026-07-24",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 37.9,
+    "blendedLastWeek": 24.8,
+    "blendedQuarterEnd": 23.2,
+    "growthCurrentYear": 27.3,
+    "growthNextYear": 15.3
   },
   {
     "date": "2026-07-31",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 47.4,
+    "blendedLastWeek": 38,
+    "blendedQuarterEnd": 23.2,
+    "growthCurrentYear": 29.1,
+    "growthNextYear": 14.1
   },
   {
     "date": "2026-08-07",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null
+    "blendedToday": 50.4,
+    "blendedLastWeek": 47.4,
+    "blendedQuarterEnd": 23.1,
+    "growthCurrentYear": 30,
+    "growthNextYear": 13.6
   },
   {
     "date": "2026-08-14",
