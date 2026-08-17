@@ -8,6 +8,15 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "macro-shiome",
   "compatibility_date": "2026-08-17",
+  // 既定値だが明示する。書かないとデプロイのたびに
+  // 「設定に無いので既定で有効にする」という警告が出て、意図か既定か区別できない。
+  //
+  // workers_dev: *.workers.dev の URL を公開する。
+  // カスタムドメインに移す場合はここを false にする。
+  "workers_dev": true,
+  // preview_urls: 非本番ブランチのプレビュー URL を発行する。
+  // PR 単位で見た目を確認できるようにするため有効のままにする。
+  "preview_urls": true,
   "assets": {
     // next.config.mjs の output: 'export' が生成するディレクトリ。
     "directory": "./out/",

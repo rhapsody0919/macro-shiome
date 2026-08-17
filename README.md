@@ -65,6 +65,8 @@ Cloudflare Workers (Static Assets) の **Git 連携**で配信する
 - pnpm のバージョンが合わない場合は環境変数 `PNPM_VERSION` に `11.22.0` を設定する
 - ローカルで設定を検証するには `npx wrangler deploy --dry-run` (認証不要)
 
+公開 URL: https://macro-shiome.o104085t.workers.dev
+
 ## ドキュメント
 
 | | |
