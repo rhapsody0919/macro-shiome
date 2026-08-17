@@ -1,0 +1,4194 @@
+[
+  {
+    "date": "2016-08-05",
+    "vix": 11.39,
+    "usdjpy": 101.74,
+    "nominalRate": 1.59,
+    "breakeven": 1.5,
+    "realRate": 0.09000000000000008
+  },
+  {
+    "date": "2016-08-12",
+    "vix": 11.55,
+    "usdjpy": 101.01,
+    "nominalRate": 1.51,
+    "breakeven": 1.44,
+    "realRate": 0.07000000000000006
+  },
+  {
+    "date": "2016-08-19",
+    "vix": 11.34,
+    "usdjpy": 100.24,
+    "nominalRate": 1.58,
+    "breakeven": 1.48,
+    "realRate": 0.10000000000000009
+  },
+  {
+    "date": "2016-08-26",
+    "vix": 13.65,
+    "usdjpy": 101.2,
+    "nominalRate": 1.62,
+    "breakeven": 1.47,
+    "realRate": 0.15000000000000013
+  },
+  {
+    "date": "2016-09-02",
+    "vix": 11.98,
+    "usdjpy": 104.18,
+    "nominalRate": 1.6,
+    "breakeven": 1.47,
+    "realRate": 0.13000000000000012
+  },
+  {
+    "date": "2016-09-09",
+    "vix": 17.5,
+    "usdjpy": 102.86,
+    "nominalRate": 1.67,
+    "breakeven": 1.5,
+    "realRate": 0.16999999999999993
+  },
+  {
+    "date": "2016-09-16",
+    "vix": 15.37,
+    "usdjpy": 102.36,
+    "nominalRate": 1.7,
+    "breakeven": 1.51,
+    "realRate": 0.18999999999999995
+  },
+  {
+    "date": "2016-09-23",
+    "vix": 12.29,
+    "usdjpy": 101.04,
+    "nominalRate": 1.62,
+    "breakeven": 1.57,
+    "realRate": 0.050000000000000044
+  },
+  {
+    "date": "2016-09-30",
+    "vix": 13.29,
+    "usdjpy": 101.21,
+    "nominalRate": 1.6,
+    "breakeven": 1.6,
+    "realRate": 0
+  },
+  {
+    "date": "2016-10-07",
+    "vix": 13.48,
+    "usdjpy": 103.42,
+    "nominalRate": 1.73,
+    "breakeven": 1.63,
+    "realRate": 0.10000000000000009
+  },
+  {
+    "date": "2016-10-14",
+    "vix": 16.12,
+    "usdjpy": 104.1,
+    "nominalRate": 1.8,
+    "breakeven": 1.67,
+    "realRate": 0.13000000000000012
+  },
+  {
+    "date": "2016-10-21",
+    "vix": 13.34,
+    "usdjpy": 103.96,
+    "nominalRate": 1.74,
+    "breakeven": 1.67,
+    "realRate": 0.07000000000000006
+  },
+  {
+    "date": "2016-10-28",
+    "vix": 16.19,
+    "usdjpy": 105.4,
+    "nominalRate": 1.86,
+    "breakeven": 1.73,
+    "realRate": 0.13000000000000012
+  },
+  {
+    "date": "2016-11-04",
+    "vix": 22.51,
+    "usdjpy": 103.02,
+    "nominalRate": 1.79,
+    "breakeven": 1.68,
+    "realRate": 0.1100000000000001
+  },
+  {
+    "date": "2016-11-11",
+    "vix": 14.17,
+    "usdjpy": 106.56,
+    "nominalRate": 2.15,
+    "breakeven": 1.88,
+    "realRate": 0.27
+  },
+  {
+    "date": "2016-11-18",
+    "vix": 12.85,
+    "usdjpy": 110.51,
+    "nominalRate": 2.34,
+    "breakeven": 1.9,
+    "realRate": 0.43999999999999995
+  },
+  {
+    "date": "2016-11-25",
+    "vix": 12.34,
+    "usdjpy": 113.17,
+    "nominalRate": 2.36,
+    "breakeven": 1.89,
+    "realRate": 0.47
+  },
+  {
+    "date": "2016-12-02",
+    "vix": 14.12,
+    "usdjpy": 113.76,
+    "nominalRate": 2.4,
+    "breakeven": 1.91,
+    "realRate": 0.49
+  },
+  {
+    "date": "2016-12-09",
+    "vix": 11.75,
+    "usdjpy": 115.17,
+    "nominalRate": 2.47,
+    "breakeven": 1.96,
+    "realRate": 0.5100000000000002
+  },
+  {
+    "date": "2016-12-16",
+    "vix": 12.2,
+    "usdjpy": 117.74,
+    "nominalRate": 2.6,
+    "breakeven": 1.86,
+    "realRate": 0.74
+  },
+  {
+    "date": "2016-12-23",
+    "vix": 11.44,
+    "usdjpy": 117.22,
+    "nominalRate": 2.55,
+    "breakeven": 1.97,
+    "realRate": 0.5799999999999998
+  },
+  {
+    "date": "2016-12-30",
+    "vix": 14.04,
+    "usdjpy": 116.78,
+    "nominalRate": 2.45,
+    "breakeven": 1.95,
+    "realRate": 0.5000000000000002
+  },
+  {
+    "date": "2017-01-06",
+    "vix": 11.32,
+    "usdjpy": 116.85,
+    "nominalRate": 2.42,
+    "breakeven": 1.96,
+    "realRate": 0.45999999999999996
+  },
+  {
+    "date": "2017-01-13",
+    "vix": 11.23,
+    "usdjpy": 115.03,
+    "nominalRate": 2.4,
+    "breakeven": 1.99,
+    "realRate": 0.4099999999999999
+  },
+  {
+    "date": "2017-01-20",
+    "vix": 11.54,
+    "usdjpy": 115.3,
+    "nominalRate": 2.48,
+    "breakeven": 2.04,
+    "realRate": 0.43999999999999995
+  },
+  {
+    "date": "2017-01-27",
+    "vix": 10.58,
+    "usdjpy": 115.16,
+    "nominalRate": 2.49,
+    "breakeven": 2.08,
+    "realRate": 0.41000000000000014
+  },
+  {
+    "date": "2017-02-03",
+    "vix": 10.97,
+    "usdjpy": 112.42,
+    "nominalRate": 2.49,
+    "breakeven": 2.05,
+    "realRate": 0.4400000000000004
+  },
+  {
+    "date": "2017-02-10",
+    "vix": 10.85,
+    "usdjpy": 113.22,
+    "nominalRate": 2.41,
+    "breakeven": 2.01,
+    "realRate": 0.40000000000000036
+  },
+  {
+    "date": "2017-02-17",
+    "vix": 11.49,
+    "usdjpy": 112.86,
+    "nominalRate": 2.42,
+    "breakeven": 2.01,
+    "realRate": 0.41000000000000014
+  },
+  {
+    "date": "2017-02-24",
+    "vix": 11.47,
+    "usdjpy": 112.26,
+    "nominalRate": 2.31,
+    "breakeven": 2,
+    "realRate": 0.31000000000000005
+  },
+  {
+    "date": "2017-03-03",
+    "vix": 10.96,
+    "usdjpy": 114.6,
+    "nominalRate": 2.49,
+    "breakeven": 2.04,
+    "realRate": 0.4500000000000002
+  },
+  {
+    "date": "2017-03-10",
+    "vix": 11.66,
+    "usdjpy": 115.02,
+    "nominalRate": 2.58,
+    "breakeven": 2.01,
+    "realRate": 0.5700000000000003
+  },
+  {
+    "date": "2017-03-17",
+    "vix": 11.28,
+    "usdjpy": 112.67,
+    "nominalRate": 2.5,
+    "breakeven": 2.01,
+    "realRate": 0.4900000000000002
+  },
+  {
+    "date": "2017-03-24",
+    "vix": 12.96,
+    "usdjpy": 111.03,
+    "nominalRate": 2.4,
+    "breakeven": 1.98,
+    "realRate": 0.41999999999999993
+  },
+  {
+    "date": "2017-03-31",
+    "vix": 12.37,
+    "usdjpy": 111.41,
+    "nominalRate": 2.4,
+    "breakeven": 1.97,
+    "realRate": 0.42999999999999994
+  },
+  {
+    "date": "2017-04-07",
+    "vix": 12.87,
+    "usdjpy": 110.76,
+    "nominalRate": 2.38,
+    "breakeven": 1.94,
+    "realRate": 0.43999999999999995
+  },
+  {
+    "date": "2017-04-14",
+    "vix": 15.96,
+    "usdjpy": 108.63,
+    "nominalRate": 2.24,
+    "breakeven": 1.92,
+    "realRate": 0.3200000000000003
+  },
+  {
+    "date": "2017-04-21",
+    "vix": 14.63,
+    "usdjpy": 109.08,
+    "nominalRate": 2.24,
+    "breakeven": 1.84,
+    "realRate": 0.40000000000000013
+  },
+  {
+    "date": "2017-04-28",
+    "vix": 10.82,
+    "usdjpy": 111.44,
+    "nominalRate": 2.29,
+    "breakeven": 1.92,
+    "realRate": 0.3700000000000001
+  },
+  {
+    "date": "2017-05-05",
+    "vix": 10.57,
+    "usdjpy": 112.63,
+    "nominalRate": 2.36,
+    "breakeven": 1.86,
+    "realRate": 0.4999999999999998
+  },
+  {
+    "date": "2017-05-12",
+    "vix": 10.4,
+    "usdjpy": 113.3,
+    "nominalRate": 2.33,
+    "breakeven": 1.84,
+    "realRate": 0.49
+  },
+  {
+    "date": "2017-05-19",
+    "vix": 12.04,
+    "usdjpy": 111.47,
+    "nominalRate": 2.23,
+    "breakeven": 1.82,
+    "realRate": 0.4099999999999999
+  },
+  {
+    "date": "2017-05-26",
+    "vix": 9.81,
+    "usdjpy": 111.3,
+    "nominalRate": 2.25,
+    "breakeven": 1.81,
+    "realRate": 0.43999999999999995
+  },
+  {
+    "date": "2017-06-02",
+    "vix": 9.75,
+    "usdjpy": 110.49,
+    "nominalRate": 2.15,
+    "breakeven": 1.79,
+    "realRate": 0.3599999999999999
+  },
+  {
+    "date": "2017-06-09",
+    "vix": 10.7,
+    "usdjpy": 110.61,
+    "nominalRate": 2.21,
+    "breakeven": 1.78,
+    "realRate": 0.42999999999999994
+  },
+  {
+    "date": "2017-06-16",
+    "vix": 10.38,
+    "usdjpy": 110.84,
+    "nominalRate": 2.16,
+    "breakeven": 1.67,
+    "realRate": 0.4900000000000002
+  },
+  {
+    "date": "2017-06-23",
+    "vix": 10.02,
+    "usdjpy": 111.26,
+    "nominalRate": 2.15,
+    "breakeven": 1.7,
+    "realRate": 0.44999999999999996
+  },
+  {
+    "date": "2017-06-30",
+    "vix": 11.18,
+    "usdjpy": 112.4,
+    "nominalRate": 2.31,
+    "breakeven": 1.73,
+    "realRate": 0.5800000000000001
+  },
+  {
+    "date": "2017-07-07",
+    "vix": 11.19,
+    "usdjpy": 114.1,
+    "nominalRate": 2.39,
+    "breakeven": 1.73,
+    "realRate": 0.6600000000000001
+  },
+  {
+    "date": "2017-07-14",
+    "vix": 9.51,
+    "usdjpy": 112.66,
+    "nominalRate": 2.33,
+    "breakeven": 1.76,
+    "realRate": 0.5700000000000001
+  },
+  {
+    "date": "2017-07-21",
+    "vix": 9.36,
+    "usdjpy": 111.18,
+    "nominalRate": 2.24,
+    "breakeven": 1.76,
+    "realRate": 0.4800000000000002
+  },
+  {
+    "date": "2017-07-28",
+    "vix": 10.29,
+    "usdjpy": 110.87,
+    "nominalRate": 2.3,
+    "breakeven": 1.83,
+    "realRate": 0.46999999999999975
+  },
+  {
+    "date": "2017-08-04",
+    "vix": 10.03,
+    "usdjpy": 110.76,
+    "nominalRate": 2.27,
+    "breakeven": 1.8,
+    "realRate": 0.47
+  },
+  {
+    "date": "2017-08-11",
+    "vix": 15.51,
+    "usdjpy": 109.06,
+    "nominalRate": 2.19,
+    "breakeven": 1.79,
+    "realRate": 0.3999999999999999
+  },
+  {
+    "date": "2017-08-18",
+    "vix": 14.26,
+    "usdjpy": 109.32,
+    "nominalRate": 2.19,
+    "breakeven": 1.76,
+    "realRate": 0.42999999999999994
+  },
+  {
+    "date": "2017-08-25",
+    "vix": 11.28,
+    "usdjpy": 109.24,
+    "nominalRate": 2.17,
+    "breakeven": 1.75,
+    "realRate": 0.41999999999999993
+  },
+  {
+    "date": "2017-09-01",
+    "vix": 10.13,
+    "usdjpy": 110.09,
+    "nominalRate": 2.16,
+    "breakeven": 1.79,
+    "realRate": 0.3700000000000001
+  },
+  {
+    "date": "2017-09-08",
+    "vix": 12.12,
+    "usdjpy": 107.72,
+    "nominalRate": 2.06,
+    "breakeven": 1.81,
+    "realRate": 0.25
+  },
+  {
+    "date": "2017-09-15",
+    "vix": 10.17,
+    "usdjpy": 110.84,
+    "nominalRate": 2.2,
+    "breakeven": 1.85,
+    "realRate": 0.3500000000000001
+  },
+  {
+    "date": "2017-09-22",
+    "vix": 9.59,
+    "usdjpy": 112.01,
+    "nominalRate": 2.26,
+    "breakeven": 1.84,
+    "realRate": 0.4199999999999997
+  },
+  {
+    "date": "2017-09-29",
+    "vix": 9.51,
+    "usdjpy": 112.64,
+    "nominalRate": 2.33,
+    "breakeven": 1.84,
+    "realRate": 0.49
+  },
+  {
+    "date": "2017-10-06",
+    "vix": 9.65,
+    "usdjpy": 112.68,
+    "nominalRate": 2.37,
+    "breakeven": 1.87,
+    "realRate": 0.5
+  },
+  {
+    "date": "2017-10-13",
+    "vix": 9.61,
+    "usdjpy": 111.94,
+    "nominalRate": 2.28,
+    "breakeven": 1.85,
+    "realRate": 0.4299999999999997
+  },
+  {
+    "date": "2017-10-20",
+    "vix": 9.97,
+    "usdjpy": 113.5,
+    "nominalRate": 2.39,
+    "breakeven": 1.87,
+    "realRate": 0.52
+  },
+  {
+    "date": "2017-10-27",
+    "vix": 9.8,
+    "usdjpy": 113.82,
+    "nominalRate": 2.42,
+    "breakeven": 1.88,
+    "realRate": 0.54
+  },
+  {
+    "date": "2017-11-03",
+    "vix": 9.14,
+    "usdjpy": 114.25,
+    "nominalRate": 2.34,
+    "breakeven": 1.86,
+    "realRate": 0.47999999999999976
+  },
+  {
+    "date": "2017-11-10",
+    "vix": 11.29,
+    "usdjpy": 113.4,
+    "nominalRate": 2.4,
+    "breakeven": 1.88,
+    "realRate": 0.52
+  },
+  {
+    "date": "2017-11-17",
+    "vix": 11.43,
+    "usdjpy": 111.98,
+    "nominalRate": 2.35,
+    "breakeven": 1.86,
+    "realRate": 0.49
+  },
+  {
+    "date": "2017-11-24",
+    "vix": 9.67,
+    "usdjpy": 111.54,
+    "nominalRate": 2.34,
+    "breakeven": 1.84,
+    "realRate": 0.4999999999999998
+  },
+  {
+    "date": "2017-12-01",
+    "vix": 11.43,
+    "usdjpy": 111.88,
+    "nominalRate": 2.37,
+    "breakeven": 1.86,
+    "realRate": 0.51
+  },
+  {
+    "date": "2017-12-08",
+    "vix": 9.58,
+    "usdjpy": 113.55,
+    "nominalRate": 2.38,
+    "breakeven": 1.88,
+    "realRate": 0.5
+  },
+  {
+    "date": "2017-12-15",
+    "vix": 9.42,
+    "usdjpy": 112.68,
+    "nominalRate": 2.35,
+    "breakeven": 1.88,
+    "realRate": 0.4700000000000002
+  },
+  {
+    "date": "2017-12-22",
+    "vix": 9.9,
+    "usdjpy": 113.3,
+    "nominalRate": 2.48,
+    "breakeven": 1.94,
+    "realRate": 0.54
+  },
+  {
+    "date": "2017-12-29",
+    "vix": 11.04,
+    "usdjpy": 112.69,
+    "nominalRate": 2.4,
+    "breakeven": 1.96,
+    "realRate": 0.43999999999999995
+  },
+  {
+    "date": "2018-01-05",
+    "vix": 9.22,
+    "usdjpy": 113.18,
+    "nominalRate": 2.47,
+    "breakeven": 2.01,
+    "realRate": 0.4600000000000004
+  },
+  {
+    "date": "2018-01-12",
+    "vix": 10.16,
+    "usdjpy": 111.23,
+    "nominalRate": 2.55,
+    "breakeven": 2.01,
+    "realRate": 0.54
+  },
+  {
+    "date": "2018-01-19",
+    "vix": 11.27,
+    "usdjpy": 110.56,
+    "nominalRate": 2.64,
+    "breakeven": 2.06,
+    "realRate": 0.5800000000000001
+  },
+  {
+    "date": "2018-01-26",
+    "vix": 11.08,
+    "usdjpy": 108.38,
+    "nominalRate": 2.66,
+    "breakeven": 2.09,
+    "realRate": 0.5700000000000003
+  },
+  {
+    "date": "2018-02-02",
+    "vix": 17.31,
+    "usdjpy": 110.4,
+    "nominalRate": 2.84,
+    "breakeven": 2.14,
+    "realRate": 0.6999999999999997
+  },
+  {
+    "date": "2018-02-09",
+    "vix": 29.06,
+    "usdjpy": 108.44,
+    "nominalRate": 2.83,
+    "breakeven": 2.05,
+    "realRate": 0.7800000000000002
+  },
+  {
+    "date": "2018-02-16",
+    "vix": 19.46,
+    "usdjpy": 106.1,
+    "nominalRate": 2.87,
+    "breakeven": 2.09,
+    "realRate": 0.7800000000000002
+  },
+  {
+    "date": "2018-02-23",
+    "vix": 16.49,
+    "usdjpy": 106.64,
+    "nominalRate": 2.88,
+    "breakeven": 2.12,
+    "realRate": 0.7599999999999998
+  },
+  {
+    "date": "2018-03-02",
+    "vix": 19.59,
+    "usdjpy": 105.65,
+    "nominalRate": 2.86,
+    "breakeven": 2.12,
+    "realRate": 0.7399999999999998
+  },
+  {
+    "date": "2018-03-09",
+    "vix": 14.64,
+    "usdjpy": 106.74,
+    "nominalRate": 2.9,
+    "breakeven": 2.12,
+    "realRate": 0.7799999999999998
+  },
+  {
+    "date": "2018-03-16",
+    "vix": 15.8,
+    "usdjpy": 106.1,
+    "nominalRate": 2.85,
+    "breakeven": 2.08,
+    "realRate": 0.77
+  },
+  {
+    "date": "2018-03-23",
+    "vix": 24.87,
+    "usdjpy": 104.83,
+    "nominalRate": 2.82,
+    "breakeven": 2.07,
+    "realRate": 0.75
+  },
+  {
+    "date": "2018-03-30",
+    "vix": 19.97,
+    "usdjpy": 106.2,
+    "nominalRate": 2.74,
+    "breakeven": 2.05,
+    "realRate": 0.6900000000000004
+  },
+  {
+    "date": "2018-04-06",
+    "vix": 21.49,
+    "usdjpy": 107.03,
+    "nominalRate": 2.77,
+    "breakeven": 2.07,
+    "realRate": 0.7000000000000002
+  },
+  {
+    "date": "2018-04-13",
+    "vix": 17.41,
+    "usdjpy": 107.52,
+    "nominalRate": 2.82,
+    "breakeven": 2.13,
+    "realRate": 0.69
+  },
+  {
+    "date": "2018-04-20",
+    "vix": 16.88,
+    "usdjpy": 107.6,
+    "nominalRate": 2.96,
+    "breakeven": 2.17,
+    "realRate": 0.79
+  },
+  {
+    "date": "2018-04-27",
+    "vix": 15.41,
+    "usdjpy": 109.12,
+    "nominalRate": 2.96,
+    "breakeven": 2.17,
+    "realRate": 0.79
+  },
+  {
+    "date": "2018-05-04",
+    "vix": 14.77,
+    "usdjpy": 109.16,
+    "nominalRate": 2.95,
+    "breakeven": 2.16,
+    "realRate": 0.79
+  },
+  {
+    "date": "2018-05-11",
+    "vix": 12.65,
+    "usdjpy": 109.26,
+    "nominalRate": 2.97,
+    "breakeven": 2.15,
+    "realRate": 0.8200000000000003
+  },
+  {
+    "date": "2018-05-18",
+    "vix": 13.42,
+    "usdjpy": 110.71,
+    "nominalRate": 3.06,
+    "breakeven": 2.15,
+    "realRate": 0.9100000000000001
+  },
+  {
+    "date": "2018-05-25",
+    "vix": 13.22,
+    "usdjpy": 109.35,
+    "nominalRate": 2.93,
+    "breakeven": 2.09,
+    "realRate": 0.8400000000000003
+  },
+  {
+    "date": "2018-06-01",
+    "vix": 13.46,
+    "usdjpy": 109.49,
+    "nominalRate": 2.89,
+    "breakeven": 2.09,
+    "realRate": 0.8000000000000003
+  },
+  {
+    "date": "2018-06-08",
+    "vix": 12.18,
+    "usdjpy": 109.45,
+    "nominalRate": 2.93,
+    "breakeven": 2.11,
+    "realRate": 0.8200000000000003
+  },
+  {
+    "date": "2018-06-15",
+    "vix": 11.98,
+    "usdjpy": 110.58,
+    "nominalRate": 2.93,
+    "breakeven": 2.12,
+    "realRate": 0.81
+  },
+  {
+    "date": "2018-06-22",
+    "vix": 13.77,
+    "usdjpy": 109.98,
+    "nominalRate": 2.9,
+    "breakeven": 2.12,
+    "realRate": 0.7799999999999998
+  },
+  {
+    "date": "2018-06-29",
+    "vix": 16.09,
+    "usdjpy": 110.71,
+    "nominalRate": 2.85,
+    "breakeven": 2.11,
+    "realRate": 0.7400000000000002
+  },
+  {
+    "date": "2018-07-06",
+    "vix": 13.37,
+    "usdjpy": 110.48,
+    "nominalRate": 2.82,
+    "breakeven": 2.12,
+    "realRate": 0.6999999999999997
+  },
+  {
+    "date": "2018-07-13",
+    "vix": 12.18,
+    "usdjpy": 112.38,
+    "nominalRate": 2.83,
+    "breakeven": 2.11,
+    "realRate": 0.7200000000000002
+  },
+  {
+    "date": "2018-07-20",
+    "vix": 12.86,
+    "usdjpy": 111.74,
+    "nominalRate": 2.89,
+    "breakeven": 2.11,
+    "realRate": 0.7800000000000002
+  },
+  {
+    "date": "2018-07-27",
+    "vix": 13.03,
+    "usdjpy": 110.94,
+    "nominalRate": 2.96,
+    "breakeven": 2.12,
+    "realRate": 0.8399999999999999
+  },
+  {
+    "date": "2018-08-03",
+    "vix": 11.64,
+    "usdjpy": 111.12,
+    "nominalRate": 2.95,
+    "breakeven": 2.12,
+    "realRate": 0.8300000000000001
+  },
+  {
+    "date": "2018-08-10",
+    "vix": 13.16,
+    "usdjpy": 110.66,
+    "nominalRate": 2.87,
+    "breakeven": 2.09,
+    "realRate": 0.7800000000000002
+  },
+  {
+    "date": "2018-08-17",
+    "vix": 12.64,
+    "usdjpy": 110.54,
+    "nominalRate": 2.87,
+    "breakeven": 2.08,
+    "realRate": 0.79
+  },
+  {
+    "date": "2018-08-24",
+    "vix": 11.99,
+    "usdjpy": 111.22,
+    "nominalRate": 2.82,
+    "breakeven": 2.09,
+    "realRate": 0.73
+  },
+  {
+    "date": "2018-08-31",
+    "vix": 12.86,
+    "usdjpy": 110.98,
+    "nominalRate": 2.86,
+    "breakeven": 2.08,
+    "realRate": 0.7799999999999998
+  },
+  {
+    "date": "2018-09-07",
+    "vix": 14.88,
+    "usdjpy": 111.18,
+    "nominalRate": 2.94,
+    "breakeven": 2.1,
+    "realRate": 0.8399999999999999
+  },
+  {
+    "date": "2018-09-14",
+    "vix": 12.07,
+    "usdjpy": 112.09,
+    "nominalRate": 2.99,
+    "breakeven": 2.1,
+    "realRate": 0.8900000000000001
+  },
+  {
+    "date": "2018-09-21",
+    "vix": 11.68,
+    "usdjpy": 112.62,
+    "nominalRate": 3.07,
+    "breakeven": 2.15,
+    "realRate": 0.9199999999999999
+  },
+  {
+    "date": "2018-09-28",
+    "vix": 12.12,
+    "usdjpy": 113.48,
+    "nominalRate": 3.05,
+    "breakeven": 2.14,
+    "realRate": 0.9099999999999997
+  },
+  {
+    "date": "2018-10-05",
+    "vix": 14.82,
+    "usdjpy": 113.56,
+    "nominalRate": 3.23,
+    "breakeven": 2.16,
+    "realRate": 1.0699999999999998
+  },
+  {
+    "date": "2018-10-12",
+    "vix": 21.31,
+    "usdjpy": 112.02,
+    "nominalRate": 3.15,
+    "breakeven": 2.12,
+    "realRate": 1.0299999999999998
+  },
+  {
+    "date": "2018-10-19",
+    "vix": 19.89,
+    "usdjpy": 112.52,
+    "nominalRate": 3.2,
+    "breakeven": 2.11,
+    "realRate": 1.0900000000000003
+  },
+  {
+    "date": "2018-10-26",
+    "vix": 24.16,
+    "usdjpy": 111.65,
+    "nominalRate": 3.08,
+    "breakeven": 2.06,
+    "realRate": 1.02
+  },
+  {
+    "date": "2018-11-02",
+    "vix": 19.51,
+    "usdjpy": 113.09,
+    "nominalRate": 3.22,
+    "breakeven": 2.06,
+    "realRate": 1.1600000000000001
+  },
+  {
+    "date": "2018-11-09",
+    "vix": 17.36,
+    "usdjpy": 113.77,
+    "nominalRate": 3.19,
+    "breakeven": 2.04,
+    "realRate": 1.15
+  },
+  {
+    "date": "2018-11-16",
+    "vix": 18.14,
+    "usdjpy": 112.76,
+    "nominalRate": 3.08,
+    "breakeven": 2.02,
+    "realRate": 1.06
+  },
+  {
+    "date": "2018-11-23",
+    "vix": 21.52,
+    "usdjpy": 112.83,
+    "nominalRate": 3.05,
+    "breakeven": 1.96,
+    "realRate": 1.0899999999999999
+  },
+  {
+    "date": "2018-11-30",
+    "vix": 18.07,
+    "usdjpy": 113.54,
+    "nominalRate": 3.01,
+    "breakeven": 1.97,
+    "realRate": 1.0399999999999998
+  },
+  {
+    "date": "2018-12-07",
+    "vix": 23.23,
+    "usdjpy": 112.6,
+    "nominalRate": 2.85,
+    "breakeven": 1.89,
+    "realRate": 0.9600000000000002
+  },
+  {
+    "date": "2018-12-14",
+    "vix": 21.63,
+    "usdjpy": 113.35,
+    "nominalRate": 2.89,
+    "breakeven": 1.82,
+    "realRate": 1.07
+  },
+  {
+    "date": "2018-12-21",
+    "vix": 30.11,
+    "usdjpy": 111.14,
+    "nominalRate": 2.79,
+    "breakeven": 1.77,
+    "realRate": 1.02
+  },
+  {
+    "date": "2018-12-28",
+    "vix": 28.34,
+    "usdjpy": 110.34,
+    "nominalRate": 2.72,
+    "breakeven": 1.73,
+    "realRate": 0.9900000000000002
+  },
+  {
+    "date": "2019-01-04",
+    "vix": 21.38,
+    "usdjpy": 108.29,
+    "nominalRate": 2.67,
+    "breakeven": 1.76,
+    "realRate": 0.9099999999999999
+  },
+  {
+    "date": "2019-01-11",
+    "vix": 18.19,
+    "usdjpy": 108.34,
+    "nominalRate": 2.71,
+    "breakeven": 1.83,
+    "realRate": 0.8799999999999999
+  },
+  {
+    "date": "2019-01-18",
+    "vix": 17.8,
+    "usdjpy": 109.79,
+    "nominalRate": 2.79,
+    "breakeven": 1.83,
+    "realRate": 0.96
+  },
+  {
+    "date": "2019-01-25",
+    "vix": 17.42,
+    "usdjpy": 109.6,
+    "nominalRate": 2.76,
+    "breakeven": 1.79,
+    "realRate": 0.9699999999999998
+  },
+  {
+    "date": "2019-02-01",
+    "vix": 16.14,
+    "usdjpy": 109.55,
+    "nominalRate": 2.7,
+    "breakeven": 1.88,
+    "realRate": 0.8200000000000003
+  },
+  {
+    "date": "2019-02-08",
+    "vix": 15.72,
+    "usdjpy": 109.76,
+    "nominalRate": 2.63,
+    "breakeven": 1.82,
+    "realRate": 0.8099999999999998
+  },
+  {
+    "date": "2019-02-15",
+    "vix": 14.91,
+    "usdjpy": 110.54,
+    "nominalRate": 2.66,
+    "breakeven": 1.86,
+    "realRate": 0.8
+  },
+  {
+    "date": "2019-02-22",
+    "vix": 13.51,
+    "usdjpy": 110.7,
+    "nominalRate": 2.65,
+    "breakeven": 1.91,
+    "realRate": 0.74
+  },
+  {
+    "date": "2019-03-01",
+    "vix": 13.57,
+    "usdjpy": 111.89,
+    "nominalRate": 2.76,
+    "breakeven": 1.96,
+    "realRate": 0.7999999999999998
+  },
+  {
+    "date": "2019-03-08",
+    "vix": 16.05,
+    "usdjpy": 111.11,
+    "nominalRate": 2.62,
+    "breakeven": 1.9,
+    "realRate": 0.7200000000000002
+  },
+  {
+    "date": "2019-03-15",
+    "vix": 12.88,
+    "usdjpy": 111.57,
+    "nominalRate": 2.59,
+    "breakeven": 1.94,
+    "realRate": 0.6499999999999999
+  },
+  {
+    "date": "2019-03-22",
+    "vix": 16.48,
+    "usdjpy": 109.76,
+    "nominalRate": 2.44,
+    "breakeven": 1.9,
+    "realRate": 0.54
+  },
+  {
+    "date": "2019-03-29",
+    "vix": 13.71,
+    "usdjpy": 110.68,
+    "nominalRate": 2.41,
+    "breakeven": 1.88,
+    "realRate": 0.5300000000000002
+  },
+  {
+    "date": "2019-04-05",
+    "vix": 12.82,
+    "usdjpy": 111.71,
+    "nominalRate": 2.5,
+    "breakeven": 1.9,
+    "realRate": 0.6000000000000001
+  },
+  {
+    "date": "2019-04-12",
+    "vix": 12.01,
+    "usdjpy": 112,
+    "nominalRate": 2.56,
+    "breakeven": 1.95,
+    "realRate": 0.6100000000000001
+  },
+  {
+    "date": "2019-04-19",
+    "vix": 12.09,
+    "usdjpy": 111.92,
+    "nominalRate": 2.57,
+    "breakeven": 1.95,
+    "realRate": 0.6199999999999999
+  },
+  {
+    "date": "2019-04-26",
+    "vix": 12.73,
+    "usdjpy": 111.6,
+    "nominalRate": 2.51,
+    "breakeven": 1.97,
+    "realRate": 0.5399999999999998
+  },
+  {
+    "date": "2019-05-03",
+    "vix": 12.87,
+    "usdjpy": 111.28,
+    "nominalRate": 2.54,
+    "breakeven": 1.91,
+    "realRate": 0.6300000000000001
+  },
+  {
+    "date": "2019-05-10",
+    "vix": 16.04,
+    "usdjpy": 109.56,
+    "nominalRate": 2.47,
+    "breakeven": 1.88,
+    "realRate": 0.5900000000000003
+  },
+  {
+    "date": "2019-05-17",
+    "vix": 15.96,
+    "usdjpy": 109.9,
+    "nominalRate": 2.39,
+    "breakeven": 1.81,
+    "realRate": 0.5800000000000001
+  },
+  {
+    "date": "2019-05-24",
+    "vix": 15.85,
+    "usdjpy": 109.38,
+    "nominalRate": 2.32,
+    "breakeven": 1.76,
+    "realRate": 0.5599999999999998
+  },
+  {
+    "date": "2019-05-31",
+    "vix": 18.71,
+    "usdjpy": 108.66,
+    "nominalRate": 2.14,
+    "breakeven": 1.74,
+    "realRate": 0.40000000000000013
+  },
+  {
+    "date": "2019-06-07",
+    "vix": 16.3,
+    "usdjpy": 108.15,
+    "nominalRate": 2.09,
+    "breakeven": 1.74,
+    "realRate": 0.34999999999999987
+  },
+  {
+    "date": "2019-06-14",
+    "vix": 15.28,
+    "usdjpy": 108.44,
+    "nominalRate": 2.09,
+    "breakeven": 1.63,
+    "realRate": 0.45999999999999996
+  },
+  {
+    "date": "2019-06-21",
+    "vix": 15.4,
+    "usdjpy": 107.55,
+    "nominalRate": 2.07,
+    "breakeven": 1.73,
+    "realRate": 0.33999999999999986
+  },
+  {
+    "date": "2019-06-28",
+    "vix": 15.08,
+    "usdjpy": 107.84,
+    "nominalRate": 2,
+    "breakeven": 1.69,
+    "realRate": 0.31000000000000005
+  },
+  {
+    "date": "2019-07-05",
+    "vix": 13.28,
+    "usdjpy": 108.55,
+    "nominalRate": 2.04,
+    "breakeven": 1.69,
+    "realRate": 0.3500000000000001
+  },
+  {
+    "date": "2019-07-12",
+    "vix": 12.39,
+    "usdjpy": 108,
+    "nominalRate": 2.12,
+    "breakeven": 1.77,
+    "realRate": 0.3500000000000001
+  },
+  {
+    "date": "2019-07-19",
+    "vix": 14.45,
+    "usdjpy": 107.78,
+    "nominalRate": 2.05,
+    "breakeven": 1.8,
+    "realRate": 0.24999999999999978
+  },
+  {
+    "date": "2019-07-26",
+    "vix": 12.16,
+    "usdjpy": 108.69,
+    "nominalRate": 2.08,
+    "breakeven": 1.78,
+    "realRate": 0.30000000000000004
+  },
+  {
+    "date": "2019-08-02",
+    "vix": 17.61,
+    "usdjpy": 106.64,
+    "nominalRate": 1.86,
+    "breakeven": 1.66,
+    "realRate": 0.20000000000000018
+  },
+  {
+    "date": "2019-08-09",
+    "vix": 17.97,
+    "usdjpy": 105.3,
+    "nominalRate": 1.74,
+    "breakeven": 1.66,
+    "realRate": 0.08000000000000007
+  },
+  {
+    "date": "2019-08-16",
+    "vix": 18.47,
+    "usdjpy": 106.34,
+    "nominalRate": 1.55,
+    "breakeven": 1.54,
+    "realRate": 0.010000000000000009
+  },
+  {
+    "date": "2019-08-23",
+    "vix": 19.87,
+    "usdjpy": 105.3,
+    "nominalRate": 1.52,
+    "breakeven": 1.54,
+    "realRate": -0.020000000000000018
+  },
+  {
+    "date": "2019-08-30",
+    "vix": 18.98,
+    "usdjpy": 106.3,
+    "nominalRate": 1.5,
+    "breakeven": 1.55,
+    "realRate": -0.050000000000000044
+  },
+  {
+    "date": "2019-09-06",
+    "vix": 15,
+    "usdjpy": 106.8,
+    "nominalRate": 1.55,
+    "breakeven": 1.54,
+    "realRate": 0.010000000000000009
+  },
+  {
+    "date": "2019-09-13",
+    "vix": 13.74,
+    "usdjpy": 108.12,
+    "nominalRate": 1.9,
+    "breakeven": 1.67,
+    "realRate": 0.22999999999999998
+  },
+  {
+    "date": "2019-09-20",
+    "vix": 15.32,
+    "usdjpy": 107.95,
+    "nominalRate": 1.74,
+    "breakeven": 1.61,
+    "realRate": 0.1299999999999999
+  },
+  {
+    "date": "2019-09-27",
+    "vix": 17.22,
+    "usdjpy": 108.05,
+    "nominalRate": 1.69,
+    "breakeven": 1.53,
+    "realRate": 0.15999999999999992
+  },
+  {
+    "date": "2019-10-04",
+    "vix": 17.04,
+    "usdjpy": 106.91,
+    "nominalRate": 1.52,
+    "breakeven": 1.5,
+    "realRate": 0.020000000000000018
+  },
+  {
+    "date": "2019-10-11",
+    "vix": 15.58,
+    "usdjpy": 108.52,
+    "nominalRate": 1.76,
+    "breakeven": 1.56,
+    "realRate": 0.19999999999999996
+  },
+  {
+    "date": "2019-10-18",
+    "vix": 14.25,
+    "usdjpy": 108.44,
+    "nominalRate": 1.76,
+    "breakeven": 1.6,
+    "realRate": 0.15999999999999992
+  },
+  {
+    "date": "2019-10-25",
+    "vix": 12.65,
+    "usdjpy": 108.75,
+    "nominalRate": 1.8,
+    "breakeven": 1.65,
+    "realRate": 0.15000000000000013
+  },
+  {
+    "date": "2019-11-01",
+    "vix": 12.3,
+    "usdjpy": 108.16,
+    "nominalRate": 1.73,
+    "breakeven": 1.59,
+    "realRate": 0.1399999999999999
+  },
+  {
+    "date": "2019-11-08",
+    "vix": 12.07,
+    "usdjpy": 109.14,
+    "nominalRate": 1.94,
+    "breakeven": 1.71,
+    "realRate": 0.22999999999999998
+  },
+  {
+    "date": "2019-11-15",
+    "vix": 12.05,
+    "usdjpy": 108.8,
+    "nominalRate": 1.84,
+    "breakeven": 1.63,
+    "realRate": 0.2100000000000002
+  },
+  {
+    "date": "2019-11-22",
+    "vix": 12.34,
+    "usdjpy": 108.67,
+    "nominalRate": 1.77,
+    "breakeven": 1.62,
+    "realRate": 0.1499999999999999
+  },
+  {
+    "date": "2019-11-29",
+    "vix": 12.62,
+    "usdjpy": 109.47,
+    "nominalRate": 1.78,
+    "breakeven": 1.61,
+    "realRate": 0.16999999999999993
+  },
+  {
+    "date": "2019-12-06",
+    "vix": 13.62,
+    "usdjpy": 108.66,
+    "nominalRate": 1.84,
+    "breakeven": 1.69,
+    "realRate": 0.15000000000000013
+  },
+  {
+    "date": "2019-12-13",
+    "vix": 12.63,
+    "usdjpy": 109.28,
+    "nominalRate": 1.82,
+    "breakeven": 1.7,
+    "realRate": 0.1200000000000001
+  },
+  {
+    "date": "2019-12-20",
+    "vix": 12.51,
+    "usdjpy": 109.45,
+    "nominalRate": 1.92,
+    "breakeven": 1.77,
+    "realRate": 0.1499999999999999
+  },
+  {
+    "date": "2019-12-27",
+    "vix": 13.43,
+    "usdjpy": 109.47,
+    "nominalRate": 1.88,
+    "breakeven": 1.73,
+    "realRate": 0.1499999999999999
+  },
+  {
+    "date": "2020-01-03",
+    "vix": 14.02,
+    "usdjpy": 107.94,
+    "nominalRate": 1.8,
+    "breakeven": 1.77,
+    "realRate": 0.030000000000000027
+  },
+  {
+    "date": "2020-01-10",
+    "vix": 12.56,
+    "usdjpy": 109.5,
+    "nominalRate": 1.83,
+    "breakeven": 1.76,
+    "realRate": 0.07000000000000006
+  },
+  {
+    "date": "2020-01-17",
+    "vix": 12.1,
+    "usdjpy": 110.16,
+    "nominalRate": 1.84,
+    "breakeven": 1.75,
+    "realRate": 0.09000000000000008
+  },
+  {
+    "date": "2020-01-24",
+    "vix": 14.56,
+    "usdjpy": 109.31,
+    "nominalRate": 1.7,
+    "breakeven": 1.68,
+    "realRate": 0.020000000000000018
+  },
+  {
+    "date": "2020-01-31",
+    "vix": 18.84,
+    "usdjpy": 108.5,
+    "nominalRate": 1.51,
+    "breakeven": 1.65,
+    "realRate": -0.1399999999999999
+  },
+  {
+    "date": "2020-02-07",
+    "vix": 15.47,
+    "usdjpy": 109.81,
+    "nominalRate": 1.59,
+    "breakeven": 1.66,
+    "realRate": -0.06999999999999984
+  },
+  {
+    "date": "2020-02-14",
+    "vix": 13.68,
+    "usdjpy": 109.77,
+    "nominalRate": 1.59,
+    "breakeven": 1.66,
+    "realRate": -0.06999999999999984
+  },
+  {
+    "date": "2020-02-21",
+    "vix": 17.08,
+    "usdjpy": 111.74,
+    "nominalRate": 1.46,
+    "breakeven": 1.61,
+    "realRate": -0.15000000000000013
+  },
+  {
+    "date": "2020-02-28",
+    "vix": 40.11,
+    "usdjpy": 108.12,
+    "nominalRate": 1.13,
+    "breakeven": 1.41,
+    "realRate": -0.28
+  },
+  {
+    "date": "2020-03-06",
+    "vix": 41.94,
+    "usdjpy": 105.31,
+    "nominalRate": 0.74,
+    "breakeven": 1.31,
+    "realRate": -0.5700000000000001
+  },
+  {
+    "date": "2020-03-13",
+    "vix": 57.83,
+    "usdjpy": 107.15,
+    "nominalRate": 0.94,
+    "breakeven": 0.9,
+    "realRate": 0.039999999999999925
+  },
+  {
+    "date": "2020-03-20",
+    "vix": 66.04,
+    "usdjpy": 111.3,
+    "nominalRate": 0.92,
+    "breakeven": 0.75,
+    "realRate": 0.17000000000000004
+  },
+  {
+    "date": "2020-03-27",
+    "vix": 65.54,
+    "usdjpy": 108.16,
+    "nominalRate": 0.72,
+    "breakeven": 0.94,
+    "realRate": -0.21999999999999997
+  },
+  {
+    "date": "2020-04-03",
+    "vix": 46.8,
+    "usdjpy": 108.53,
+    "nominalRate": 0.62,
+    "breakeven": 1.08,
+    "realRate": -0.4600000000000001
+  },
+  {
+    "date": "2020-04-10",
+    "vix": 41.67,
+    "usdjpy": 108.39,
+    "nominalRate": 0.73,
+    "breakeven": 1.23,
+    "realRate": -0.5
+  },
+  {
+    "date": "2020-04-17",
+    "vix": 38.15,
+    "usdjpy": 107.52,
+    "nominalRate": 0.65,
+    "breakeven": 1.01,
+    "realRate": -0.36
+  },
+  {
+    "date": "2020-04-24",
+    "vix": 35.93,
+    "usdjpy": 107.44,
+    "nominalRate": 0.6,
+    "breakeven": 1.11,
+    "realRate": -0.5100000000000001
+  },
+  {
+    "date": "2020-05-01",
+    "vix": 37.19,
+    "usdjpy": 106.76,
+    "nominalRate": 0.64,
+    "breakeven": 1.06,
+    "realRate": -0.42000000000000004
+  },
+  {
+    "date": "2020-05-08",
+    "vix": 27.98,
+    "usdjpy": 106.5,
+    "nominalRate": 0.69,
+    "breakeven": 1.12,
+    "realRate": -0.43000000000000016
+  },
+  {
+    "date": "2020-05-15",
+    "vix": 31.89,
+    "usdjpy": 107.27,
+    "nominalRate": 0.64,
+    "breakeven": 1.09,
+    "realRate": -0.45000000000000007
+  },
+  {
+    "date": "2020-05-22",
+    "vix": 28.16,
+    "usdjpy": 107.5,
+    "nominalRate": 0.66,
+    "breakeven": 1.12,
+    "realRate": -0.4600000000000001
+  },
+  {
+    "date": "2020-05-29",
+    "vix": 27.51,
+    "usdjpy": 107.77,
+    "nominalRate": 0.65,
+    "breakeven": 1.15,
+    "realRate": -0.4999999999999999
+  },
+  {
+    "date": "2020-06-05",
+    "vix": 24.52,
+    "usdjpy": 109.68,
+    "nominalRate": 0.91,
+    "breakeven": 1.27,
+    "realRate": -0.36
+  },
+  {
+    "date": "2020-06-12",
+    "vix": 36.09,
+    "usdjpy": 107.36,
+    "nominalRate": 0.71,
+    "breakeven": 1.21,
+    "realRate": -0.5
+  },
+  {
+    "date": "2020-06-19",
+    "vix": 35.12,
+    "usdjpy": 106.89,
+    "nominalRate": 0.7,
+    "breakeven": 1.3,
+    "realRate": -0.6000000000000001
+  },
+  {
+    "date": "2020-06-26",
+    "vix": 34.73,
+    "usdjpy": 107.19,
+    "nominalRate": 0.64,
+    "breakeven": 1.32,
+    "realRate": -0.68
+  },
+  {
+    "date": "2020-07-03",
+    "vix": 27.68,
+    "usdjpy": 107.55,
+    "nominalRate": 0.68,
+    "breakeven": 1.41,
+    "realRate": -0.7299999999999999
+  },
+  {
+    "date": "2020-07-10",
+    "vix": 27.29,
+    "usdjpy": 106.77,
+    "nominalRate": 0.65,
+    "breakeven": 1.41,
+    "realRate": -0.7599999999999999
+  },
+  {
+    "date": "2020-07-17",
+    "vix": 25.68,
+    "usdjpy": 107.06,
+    "nominalRate": 0.64,
+    "breakeven": 1.46,
+    "realRate": -0.82
+  },
+  {
+    "date": "2020-07-24",
+    "vix": 25.84,
+    "usdjpy": 105.79,
+    "nominalRate": 0.59,
+    "breakeven": 1.51,
+    "realRate": -0.92
+  },
+  {
+    "date": "2020-07-31",
+    "vix": 24.46,
+    "usdjpy": 105.78,
+    "nominalRate": 0.55,
+    "breakeven": 1.55,
+    "realRate": -1
+  },
+  {
+    "date": "2020-08-07",
+    "vix": 22.21,
+    "usdjpy": 105.92,
+    "nominalRate": 0.57,
+    "breakeven": 1.61,
+    "realRate": -1.04
+  },
+  {
+    "date": "2020-08-14",
+    "vix": 22.05,
+    "usdjpy": 106.49,
+    "nominalRate": 0.71,
+    "breakeven": 1.65,
+    "realRate": -0.94
+  },
+  {
+    "date": "2020-08-21",
+    "vix": 22.54,
+    "usdjpy": 105.88,
+    "nominalRate": 0.64,
+    "breakeven": 1.64,
+    "realRate": -0.9999999999999999
+  },
+  {
+    "date": "2020-08-28",
+    "vix": 22.96,
+    "usdjpy": 105.3,
+    "nominalRate": 0.74,
+    "breakeven": 1.77,
+    "realRate": -1.03
+  },
+  {
+    "date": "2020-09-04",
+    "vix": 30.75,
+    "usdjpy": 106.34,
+    "nominalRate": 0.72,
+    "breakeven": 1.7,
+    "realRate": -0.98
+  },
+  {
+    "date": "2020-09-11",
+    "vix": 26.87,
+    "usdjpy": 106.17,
+    "nominalRate": 0.67,
+    "breakeven": 1.65,
+    "realRate": -0.9799999999999999
+  },
+  {
+    "date": "2020-09-18",
+    "vix": 25.83,
+    "usdjpy": 104.44,
+    "nominalRate": 0.7,
+    "breakeven": 1.67,
+    "realRate": -0.97
+  },
+  {
+    "date": "2020-09-25",
+    "vix": 26.38,
+    "usdjpy": 105.59,
+    "nominalRate": 0.66,
+    "breakeven": 1.58,
+    "realRate": -0.92
+  },
+  {
+    "date": "2020-10-02",
+    "vix": 27.63,
+    "usdjpy": 105.36,
+    "nominalRate": 0.7,
+    "breakeven": 1.64,
+    "realRate": -0.94
+  },
+  {
+    "date": "2020-10-09",
+    "vix": 25,
+    "usdjpy": 105.72,
+    "nominalRate": 0.79,
+    "breakeven": 1.73,
+    "realRate": -0.94
+  },
+  {
+    "date": "2020-10-16",
+    "vix": 27.41,
+    "usdjpy": 105.41,
+    "nominalRate": 0.76,
+    "breakeven": 1.71,
+    "realRate": -0.95
+  },
+  {
+    "date": "2020-10-23",
+    "vix": 27.55,
+    "usdjpy": 104.78,
+    "nominalRate": 0.85,
+    "breakeven": 1.75,
+    "realRate": -0.9
+  },
+  {
+    "date": "2020-10-30",
+    "vix": 38.02,
+    "usdjpy": 104.54,
+    "nominalRate": 0.88,
+    "breakeven": 1.7,
+    "realRate": -0.82
+  },
+  {
+    "date": "2020-11-06",
+    "vix": 24.86,
+    "usdjpy": 103.32,
+    "nominalRate": 0.83,
+    "breakeven": 1.65,
+    "realRate": -0.82
+  },
+  {
+    "date": "2020-11-13",
+    "vix": 23.1,
+    "usdjpy": 104.61,
+    "nominalRate": 0.89,
+    "breakeven": 1.72,
+    "realRate": -0.83
+  },
+  {
+    "date": "2020-11-20",
+    "vix": 23.7,
+    "usdjpy": 103.81,
+    "nominalRate": 0.83,
+    "breakeven": 1.69,
+    "realRate": -0.86
+  },
+  {
+    "date": "2020-11-27",
+    "vix": 20.84,
+    "usdjpy": 104.39,
+    "nominalRate": 0.84,
+    "breakeven": 1.75,
+    "realRate": -0.91
+  },
+  {
+    "date": "2020-12-04",
+    "vix": 20.79,
+    "usdjpy": 104.16,
+    "nominalRate": 0.97,
+    "breakeven": 1.89,
+    "realRate": -0.9199999999999999
+  },
+  {
+    "date": "2020-12-11",
+    "vix": 23.31,
+    "usdjpy": 103.88,
+    "nominalRate": 0.9,
+    "breakeven": 1.87,
+    "realRate": -0.9700000000000001
+  },
+  {
+    "date": "2020-12-18",
+    "vix": 21.57,
+    "usdjpy": 103.35,
+    "nominalRate": 0.95,
+    "breakeven": 1.95,
+    "realRate": -1
+  },
+  {
+    "date": "2020-12-25",
+    "vix": 21.53,
+    "usdjpy": 103.52,
+    "nominalRate": 0.94,
+    "breakeven": 1.97,
+    "realRate": -1.03
+  },
+  {
+    "date": "2021-01-01",
+    "vix": 22.75,
+    "usdjpy": 103.19,
+    "nominalRate": 0.93,
+    "breakeven": 1.99,
+    "realRate": -1.06
+  },
+  {
+    "date": "2021-01-08",
+    "vix": 21.56,
+    "usdjpy": 103.89,
+    "nominalRate": 1.13,
+    "breakeven": 2.06,
+    "realRate": -0.9300000000000002
+  },
+  {
+    "date": "2021-01-15",
+    "vix": 24.34,
+    "usdjpy": 103.8,
+    "nominalRate": 1.11,
+    "breakeven": 2.1,
+    "realRate": -0.99
+  },
+  {
+    "date": "2021-01-22",
+    "vix": 21.91,
+    "usdjpy": 103.76,
+    "nominalRate": 1.1,
+    "breakeven": 2.09,
+    "realRate": -0.9899999999999998
+  },
+  {
+    "date": "2021-01-29",
+    "vix": 33.09,
+    "usdjpy": 104.64,
+    "nominalRate": 1.11,
+    "breakeven": 2.13,
+    "realRate": -1.0199999999999998
+  },
+  {
+    "date": "2021-02-05",
+    "vix": 20.87,
+    "usdjpy": 105.44,
+    "nominalRate": 1.19,
+    "breakeven": 2.21,
+    "realRate": -1.02
+  },
+  {
+    "date": "2021-02-12",
+    "vix": 19.97,
+    "usdjpy": 104.94,
+    "nominalRate": 1.2,
+    "breakeven": 2.21,
+    "realRate": -1.01
+  },
+  {
+    "date": "2021-02-19",
+    "vix": 22.05,
+    "usdjpy": 105.58,
+    "nominalRate": 1.34,
+    "breakeven": 2.14,
+    "realRate": -0.8
+  },
+  {
+    "date": "2021-02-26",
+    "vix": 27.95,
+    "usdjpy": 106.64,
+    "nominalRate": 1.44,
+    "breakeven": 2.15,
+    "realRate": -0.71
+  },
+  {
+    "date": "2021-03-05",
+    "vix": 24.66,
+    "usdjpy": 108.24,
+    "nominalRate": 1.56,
+    "breakeven": 2.22,
+    "realRate": -0.6600000000000001
+  },
+  {
+    "date": "2021-03-12",
+    "vix": 20.69,
+    "usdjpy": 108.87,
+    "nominalRate": 1.64,
+    "breakeven": 2.26,
+    "realRate": -0.6199999999999999
+  },
+  {
+    "date": "2021-03-19",
+    "vix": 20.95,
+    "usdjpy": 108.85,
+    "nominalRate": 1.74,
+    "breakeven": 2.31,
+    "realRate": -0.5700000000000001
+  },
+  {
+    "date": "2021-03-26",
+    "vix": 18.86,
+    "usdjpy": 109.55,
+    "nominalRate": 1.67,
+    "breakeven": 2.34,
+    "realRate": -0.6699999999999999
+  },
+  {
+    "date": "2021-04-02",
+    "vix": 17.33,
+    "usdjpy": 110.67,
+    "nominalRate": 1.72,
+    "breakeven": 2.36,
+    "realRate": -0.6399999999999999
+  },
+  {
+    "date": "2021-04-09",
+    "vix": 16.69,
+    "usdjpy": 109.64,
+    "nominalRate": 1.67,
+    "breakeven": 2.31,
+    "realRate": -0.6400000000000001
+  },
+  {
+    "date": "2021-04-16",
+    "vix": 16.25,
+    "usdjpy": 108.78,
+    "nominalRate": 1.59,
+    "breakeven": 2.36,
+    "realRate": -0.7699999999999998
+  },
+  {
+    "date": "2021-04-23",
+    "vix": 17.33,
+    "usdjpy": 107.94,
+    "nominalRate": 1.58,
+    "breakeven": 2.34,
+    "realRate": -0.7599999999999998
+  },
+  {
+    "date": "2021-04-30",
+    "vix": 18.61,
+    "usdjpy": 109.33,
+    "nominalRate": 1.65,
+    "breakeven": 2.41,
+    "realRate": -0.7600000000000002
+  },
+  {
+    "date": "2021-05-07",
+    "vix": 16.69,
+    "usdjpy": 108.52,
+    "nominalRate": 1.6,
+    "breakeven": 2.49,
+    "realRate": -0.8900000000000001
+  },
+  {
+    "date": "2021-05-14",
+    "vix": 18.81,
+    "usdjpy": 109.37,
+    "nominalRate": 1.63,
+    "breakeven": 2.51,
+    "realRate": -0.8799999999999999
+  },
+  {
+    "date": "2021-05-21",
+    "vix": 20.15,
+    "usdjpy": 108.94,
+    "nominalRate": 1.63,
+    "breakeven": 2.43,
+    "realRate": -0.8000000000000003
+  },
+  {
+    "date": "2021-05-28",
+    "vix": 16.76,
+    "usdjpy": 109.83,
+    "nominalRate": 1.58,
+    "breakeven": 2.42,
+    "realRate": -0.8399999999999999
+  },
+  {
+    "date": "2021-06-04",
+    "vix": 16.42,
+    "usdjpy": 109.42,
+    "nominalRate": 1.56,
+    "breakeven": 2.4,
+    "realRate": -0.8399999999999999
+  },
+  {
+    "date": "2021-06-11",
+    "vix": 15.65,
+    "usdjpy": 109.75,
+    "nominalRate": 1.47,
+    "breakeven": 2.32,
+    "realRate": -0.8499999999999999
+  },
+  {
+    "date": "2021-06-18",
+    "vix": 20.7,
+    "usdjpy": 110.21,
+    "nominalRate": 1.45,
+    "breakeven": 2.24,
+    "realRate": -0.7900000000000003
+  },
+  {
+    "date": "2021-06-25",
+    "vix": 15.62,
+    "usdjpy": 110.78,
+    "nominalRate": 1.54,
+    "breakeven": 2.34,
+    "realRate": -0.7999999999999998
+  },
+  {
+    "date": "2021-07-02",
+    "vix": 15.07,
+    "usdjpy": 111.28,
+    "nominalRate": 1.44,
+    "breakeven": 2.33,
+    "realRate": -0.8900000000000001
+  },
+  {
+    "date": "2021-07-09",
+    "vix": 16.18,
+    "usdjpy": 110.18,
+    "nominalRate": 1.37,
+    "breakeven": 2.28,
+    "realRate": -0.9099999999999997
+  },
+  {
+    "date": "2021-07-16",
+    "vix": 18.45,
+    "usdjpy": 110.13,
+    "nominalRate": 1.31,
+    "breakeven": 2.33,
+    "realRate": -1.02
+  },
+  {
+    "date": "2021-07-23",
+    "vix": 17.2,
+    "usdjpy": 110.52,
+    "nominalRate": 1.3,
+    "breakeven": 2.35,
+    "realRate": -1.05
+  },
+  {
+    "date": "2021-07-30",
+    "vix": 18.24,
+    "usdjpy": 109.7,
+    "nominalRate": 1.24,
+    "breakeven": 2.4,
+    "realRate": -1.16
+  },
+  {
+    "date": "2021-08-06",
+    "vix": 16.15,
+    "usdjpy": 110.22,
+    "nominalRate": 1.31,
+    "breakeven": 2.37,
+    "realRate": -1.06
+  },
+  {
+    "date": "2021-08-13",
+    "vix": 15.45,
+    "usdjpy": 109.75,
+    "nominalRate": 1.29,
+    "breakeven": 2.37,
+    "realRate": -1.08
+  },
+  {
+    "date": "2021-08-20",
+    "vix": 18.56,
+    "usdjpy": 109.77,
+    "nominalRate": 1.26,
+    "breakeven": 2.27,
+    "realRate": -1.01
+  },
+  {
+    "date": "2021-08-27",
+    "vix": 16.39,
+    "usdjpy": 109.84,
+    "nominalRate": 1.31,
+    "breakeven": 2.39,
+    "realRate": -1.08
+  },
+  {
+    "date": "2021-09-03",
+    "vix": 16.41,
+    "usdjpy": 109.64,
+    "nominalRate": 1.33,
+    "breakeven": 2.34,
+    "realRate": -1.0099999999999998
+  },
+  {
+    "date": "2021-09-10",
+    "vix": 20.95,
+    "usdjpy": 109.93,
+    "nominalRate": 1.35,
+    "breakeven": 2.4,
+    "realRate": -1.0499999999999998
+  },
+  {
+    "date": "2021-09-17",
+    "vix": 20.81,
+    "usdjpy": 109.94,
+    "nominalRate": 1.37,
+    "breakeven": 2.33,
+    "realRate": -0.96
+  },
+  {
+    "date": "2021-09-24",
+    "vix": 17.75,
+    "usdjpy": 110.72,
+    "nominalRate": 1.47,
+    "breakeven": 2.34,
+    "realRate": -0.8699999999999999
+  },
+  {
+    "date": "2021-10-01",
+    "vix": 21.15,
+    "usdjpy": 110.97,
+    "nominalRate": 1.48,
+    "breakeven": 2.38,
+    "realRate": -0.8999999999999999
+  },
+  {
+    "date": "2021-10-08",
+    "vix": 18.77,
+    "usdjpy": 112.15,
+    "nominalRate": 1.61,
+    "breakeven": 2.5,
+    "realRate": -0.8899999999999999
+  },
+  {
+    "date": "2021-10-15",
+    "vix": 16.3,
+    "usdjpy": 114.31,
+    "nominalRate": 1.59,
+    "breakeven": 2.56,
+    "realRate": -0.97
+  },
+  {
+    "date": "2021-10-22",
+    "vix": 15.43,
+    "usdjpy": 113.54,
+    "nominalRate": 1.66,
+    "breakeven": 2.64,
+    "realRate": -0.9800000000000002
+  },
+  {
+    "date": "2021-10-29",
+    "vix": 16.26,
+    "usdjpy": 114.03,
+    "nominalRate": 1.55,
+    "breakeven": 2.51,
+    "realRate": -0.9599999999999997
+  },
+  {
+    "date": "2021-11-05",
+    "vix": 16.48,
+    "usdjpy": 113.45,
+    "nominalRate": 1.45,
+    "breakeven": 2.54,
+    "realRate": -1.09
+  },
+  {
+    "date": "2021-11-12",
+    "vix": 16.29,
+    "usdjpy": 113.9,
+    "nominalRate": 1.58,
+    "breakeven": 2.73,
+    "realRate": -1.15
+  },
+  {
+    "date": "2021-11-19",
+    "vix": 17.91,
+    "usdjpy": 113.81,
+    "nominalRate": 1.54,
+    "breakeven": 2.65,
+    "realRate": -1.1099999999999999
+  },
+  {
+    "date": "2021-11-26",
+    "vix": 28.62,
+    "usdjpy": 113.46,
+    "nominalRate": 1.48,
+    "breakeven": 2.55,
+    "realRate": -1.0699999999999998
+  },
+  {
+    "date": "2021-12-03",
+    "vix": 30.67,
+    "usdjpy": 112.88,
+    "nominalRate": 1.35,
+    "breakeven": 2.43,
+    "realRate": -1.08
+  },
+  {
+    "date": "2021-12-10",
+    "vix": 18.69,
+    "usdjpy": 113.36,
+    "nominalRate": 1.48,
+    "breakeven": 2.44,
+    "realRate": -0.96
+  },
+  {
+    "date": "2021-12-17",
+    "vix": 21.57,
+    "usdjpy": 113.56,
+    "nominalRate": 1.41,
+    "breakeven": 2.38,
+    "realRate": -0.97
+  },
+  {
+    "date": "2021-12-24",
+    "vix": 17.96,
+    "usdjpy": 114.42,
+    "nominalRate": 1.5,
+    "breakeven": 2.47,
+    "realRate": -0.9700000000000002
+  },
+  {
+    "date": "2021-12-31",
+    "vix": 17.22,
+    "usdjpy": 115.17,
+    "nominalRate": 1.52,
+    "breakeven": 2.56,
+    "realRate": -1.04
+  },
+  {
+    "date": "2022-01-07",
+    "vix": 18.76,
+    "usdjpy": 115.61,
+    "nominalRate": 1.76,
+    "breakeven": 2.48,
+    "realRate": -0.72
+  },
+  {
+    "date": "2022-01-14",
+    "vix": 19.19,
+    "usdjpy": 113.89,
+    "nominalRate": 1.78,
+    "breakeven": 2.44,
+    "realRate": -0.6599999999999999
+  },
+  {
+    "date": "2022-01-21",
+    "vix": 28.85,
+    "usdjpy": 113.72,
+    "nominalRate": 1.75,
+    "breakeven": 2.34,
+    "realRate": -0.5899999999999999
+  },
+  {
+    "date": "2022-01-28",
+    "vix": 27.66,
+    "usdjpy": 115.21,
+    "nominalRate": 1.78,
+    "breakeven": 2.44,
+    "realRate": -0.6599999999999999
+  },
+  {
+    "date": "2022-02-04",
+    "vix": 23.22,
+    "usdjpy": 115.22,
+    "nominalRate": 1.93,
+    "breakeven": 2.41,
+    "realRate": -0.4800000000000002
+  },
+  {
+    "date": "2022-02-11",
+    "vix": 27.36,
+    "usdjpy": 115.91,
+    "nominalRate": 1.92,
+    "breakeven": 2.43,
+    "realRate": -0.5100000000000002
+  },
+  {
+    "date": "2022-02-18",
+    "vix": 27.75,
+    "usdjpy": 115.08,
+    "nominalRate": 1.92,
+    "breakeven": 2.41,
+    "realRate": -0.4900000000000002
+  },
+  {
+    "date": "2022-02-25",
+    "vix": 27.59,
+    "usdjpy": 115.62,
+    "nominalRate": 1.97,
+    "breakeven": 2.54,
+    "realRate": -0.5700000000000001
+  },
+  {
+    "date": "2022-03-04",
+    "vix": 31.98,
+    "usdjpy": 114.65,
+    "nominalRate": 1.74,
+    "breakeven": 2.67,
+    "realRate": -0.9299999999999999
+  },
+  {
+    "date": "2022-03-11",
+    "vix": 30.75,
+    "usdjpy": 117.08,
+    "nominalRate": 2,
+    "breakeven": 2.94,
+    "realRate": -0.94
+  },
+  {
+    "date": "2022-03-18",
+    "vix": 23.87,
+    "usdjpy": 119.17,
+    "nominalRate": 2.14,
+    "breakeven": 2.86,
+    "realRate": -0.7199999999999998
+  },
+  {
+    "date": "2022-03-25",
+    "vix": 20.81,
+    "usdjpy": 121.98,
+    "nominalRate": 2.48,
+    "breakeven": 2.95,
+    "realRate": -0.4700000000000002
+  },
+  {
+    "date": "2022-04-01",
+    "vix": 19.63,
+    "usdjpy": 122.6,
+    "nominalRate": 2.39,
+    "breakeven": 2.8,
+    "realRate": -0.4099999999999997
+  },
+  {
+    "date": "2022-04-08",
+    "vix": 21.16,
+    "usdjpy": 124.31,
+    "nominalRate": 2.72,
+    "breakeven": 2.87,
+    "realRate": -0.1499999999999999
+  },
+  {
+    "date": "2022-04-15",
+    "vix": 22.7,
+    "usdjpy": 126.31,
+    "nominalRate": 2.83,
+    "breakeven": 2.89,
+    "realRate": -0.06000000000000005
+  },
+  {
+    "date": "2022-04-22",
+    "vix": 28.21,
+    "usdjpy": 128.78,
+    "nominalRate": 2.9,
+    "breakeven": 2.98,
+    "realRate": -0.08000000000000007
+  },
+  {
+    "date": "2022-04-29",
+    "vix": 33.4,
+    "usdjpy": 129.84,
+    "nominalRate": 2.89,
+    "breakeven": 2.88,
+    "realRate": 0.010000000000000231
+  },
+  {
+    "date": "2022-05-06",
+    "vix": 30.19,
+    "usdjpy": 130.35,
+    "nominalRate": 3.12,
+    "breakeven": 2.86,
+    "realRate": 0.26000000000000023
+  },
+  {
+    "date": "2022-05-13",
+    "vix": 28.87,
+    "usdjpy": 129.23,
+    "nominalRate": 2.93,
+    "breakeven": 2.69,
+    "realRate": 0.2400000000000002
+  },
+  {
+    "date": "2022-05-20",
+    "vix": 29.43,
+    "usdjpy": 127.86,
+    "nominalRate": 2.78,
+    "breakeven": 2.55,
+    "realRate": 0.22999999999999998
+  },
+  {
+    "date": "2022-05-27",
+    "vix": 25.72,
+    "usdjpy": 127.14,
+    "nominalRate": 2.74,
+    "breakeven": 2.63,
+    "realRate": 0.11000000000000032
+  },
+  {
+    "date": "2022-06-03",
+    "vix": 24.79,
+    "usdjpy": 130.71,
+    "nominalRate": 2.96,
+    "breakeven": 2.74,
+    "realRate": 0.21999999999999975
+  },
+  {
+    "date": "2022-06-10",
+    "vix": 27.75,
+    "usdjpy": 134.19,
+    "nominalRate": 3.15,
+    "breakeven": 2.76,
+    "realRate": 0.3900000000000001
+  },
+  {
+    "date": "2022-06-17",
+    "vix": 31.13,
+    "usdjpy": 135.14,
+    "nominalRate": 3.25,
+    "breakeven": 2.58,
+    "realRate": 0.6699999999999999
+  },
+  {
+    "date": "2022-06-24",
+    "vix": 27.23,
+    "usdjpy": 135.22,
+    "nominalRate": 3.13,
+    "breakeven": 2.56,
+    "realRate": 0.5699999999999998
+  },
+  {
+    "date": "2022-07-01",
+    "vix": 26.7,
+    "usdjpy": 135.09,
+    "nominalRate": 2.88,
+    "breakeven": 2.34,
+    "realRate": 0.54
+  },
+  {
+    "date": "2022-07-08",
+    "vix": 24.64,
+    "usdjpy": 136.16,
+    "nominalRate": 3.09,
+    "breakeven": 2.37,
+    "realRate": 0.7199999999999998
+  },
+  {
+    "date": "2022-07-15",
+    "vix": 24.23,
+    "usdjpy": 138.57,
+    "nominalRate": 2.93,
+    "breakeven": 2.36,
+    "realRate": 0.5700000000000003
+  },
+  {
+    "date": "2022-07-22",
+    "vix": 23.03,
+    "usdjpy": 136.12,
+    "nominalRate": 2.77,
+    "breakeven": 2.34,
+    "realRate": 0.43000000000000016
+  },
+  {
+    "date": "2022-07-29",
+    "vix": 21.33,
+    "usdjpy": 133.25,
+    "nominalRate": 2.67,
+    "breakeven": 2.53,
+    "realRate": 0.14000000000000012
+  },
+  {
+    "date": "2022-08-05",
+    "vix": 21.15,
+    "usdjpy": 135.33,
+    "nominalRate": 2.83,
+    "breakeven": 2.46,
+    "realRate": 0.3700000000000001
+  },
+  {
+    "date": "2022-08-12",
+    "vix": 19.53,
+    "usdjpy": 133.57,
+    "nominalRate": 2.84,
+    "breakeven": 2.47,
+    "realRate": 0.36999999999999966
+  },
+  {
+    "date": "2022-08-19",
+    "vix": 20.6,
+    "usdjpy": 137.01,
+    "nominalRate": 2.98,
+    "breakeven": 2.55,
+    "realRate": 0.43000000000000016
+  },
+  {
+    "date": "2022-08-26",
+    "vix": 25.56,
+    "usdjpy": 137.07,
+    "nominalRate": 3.04,
+    "breakeven": 2.57,
+    "realRate": 0.4700000000000002
+  },
+  {
+    "date": "2022-09-02",
+    "vix": 25.47,
+    "usdjpy": 140.03,
+    "nominalRate": 3.2,
+    "breakeven": 2.47,
+    "realRate": 0.73
+  },
+  {
+    "date": "2022-09-09",
+    "vix": 22.79,
+    "usdjpy": 142.44,
+    "nominalRate": 3.33,
+    "breakeven": 2.42,
+    "realRate": 0.9100000000000001
+  },
+  {
+    "date": "2022-09-16",
+    "vix": 26.3,
+    "usdjpy": 143.04,
+    "nominalRate": 3.45,
+    "breakeven": 2.38,
+    "realRate": 1.0700000000000003
+  },
+  {
+    "date": "2022-09-23",
+    "vix": 29.92,
+    "usdjpy": 143.18,
+    "nominalRate": 3.69,
+    "breakeven": 2.37,
+    "realRate": 1.3199999999999998
+  },
+  {
+    "date": "2022-09-30",
+    "vix": 31.62,
+    "usdjpy": 144.71,
+    "nominalRate": 3.83,
+    "breakeven": 2.15,
+    "realRate": 1.6800000000000002
+  },
+  {
+    "date": "2022-10-07",
+    "vix": 31.36,
+    "usdjpy": 145.19,
+    "nominalRate": 3.89,
+    "breakeven": 2.27,
+    "realRate": 1.62
+  },
+  {
+    "date": "2022-10-14",
+    "vix": 32.02,
+    "usdjpy": 148.46,
+    "nominalRate": 4,
+    "breakeven": 2.41,
+    "realRate": 1.5899999999999999
+  },
+  {
+    "date": "2022-10-21",
+    "vix": 29.69,
+    "usdjpy": 146.35,
+    "nominalRate": 4.21,
+    "breakeven": 2.52,
+    "realRate": 1.69
+  },
+  {
+    "date": "2022-10-28",
+    "vix": 25.75,
+    "usdjpy": 147.68,
+    "nominalRate": 4.02,
+    "breakeven": 2.51,
+    "realRate": 1.5099999999999998
+  },
+  {
+    "date": "2022-11-04",
+    "vix": 24.55,
+    "usdjpy": 147.22,
+    "nominalRate": 4.17,
+    "breakeven": 2.48,
+    "realRate": 1.69
+  },
+  {
+    "date": "2022-11-11",
+    "vix": 22.52,
+    "usdjpy": 141.78,
+    "nominalRate": 3.82,
+    "breakeven": 2.39,
+    "realRate": 1.4299999999999997
+  },
+  {
+    "date": "2022-11-18",
+    "vix": 23.12,
+    "usdjpy": 140.03,
+    "nominalRate": 3.82,
+    "breakeven": 2.25,
+    "realRate": 1.5699999999999998
+  },
+  {
+    "date": "2022-11-25",
+    "vix": 20.5,
+    "usdjpy": 139.21,
+    "nominalRate": 3.68,
+    "breakeven": 2.32,
+    "realRate": 1.3600000000000003
+  },
+  {
+    "date": "2022-12-02",
+    "vix": 19.06,
+    "usdjpy": 134.89,
+    "nominalRate": 3.51,
+    "breakeven": 2.43,
+    "realRate": 1.0799999999999996
+  },
+  {
+    "date": "2022-12-09",
+    "vix": 22.83,
+    "usdjpy": 136.4,
+    "nominalRate": 3.57,
+    "breakeven": 2.26,
+    "realRate": 1.31
+  },
+  {
+    "date": "2022-12-16",
+    "vix": 22.62,
+    "usdjpy": 136.55,
+    "nominalRate": 3.48,
+    "breakeven": 2.13,
+    "realRate": 1.35
+  },
+  {
+    "date": "2022-12-23",
+    "vix": 20.87,
+    "usdjpy": 132.78,
+    "nominalRate": 3.75,
+    "breakeven": 2.2,
+    "realRate": 1.5499999999999998
+  },
+  {
+    "date": "2022-12-30",
+    "vix": 21.67,
+    "usdjpy": 131.81,
+    "nominalRate": 3.88,
+    "breakeven": 2.3,
+    "realRate": 1.58
+  },
+  {
+    "date": "2023-01-06",
+    "vix": 21.13,
+    "usdjpy": 132.21,
+    "nominalRate": 3.55,
+    "breakeven": 2.21,
+    "realRate": 1.3399999999999999
+  },
+  {
+    "date": "2023-01-13",
+    "vix": 18.35,
+    "usdjpy": 127.85,
+    "nominalRate": 3.49,
+    "breakeven": 2.18,
+    "realRate": 1.31
+  },
+  {
+    "date": "2023-01-20",
+    "vix": 19.85,
+    "usdjpy": 129.97,
+    "nominalRate": 3.48,
+    "breakeven": 2.23,
+    "realRate": 1.25
+  },
+  {
+    "date": "2023-01-27",
+    "vix": 18.51,
+    "usdjpy": 129.94,
+    "nominalRate": 3.52,
+    "breakeven": 2.33,
+    "realRate": 1.19
+  },
+  {
+    "date": "2023-02-03",
+    "vix": 18.33,
+    "usdjpy": 131.07,
+    "nominalRate": 3.53,
+    "breakeven": 2.22,
+    "realRate": 1.3099999999999996
+  },
+  {
+    "date": "2023-02-10",
+    "vix": 20.53,
+    "usdjpy": 131.5,
+    "nominalRate": 3.74,
+    "breakeven": 2.33,
+    "realRate": 1.4100000000000001
+  },
+  {
+    "date": "2023-02-17",
+    "vix": 20.02,
+    "usdjpy": 134.21,
+    "nominalRate": 3.82,
+    "breakeven": 2.36,
+    "realRate": 1.46
+  },
+  {
+    "date": "2023-02-24",
+    "vix": 21.67,
+    "usdjpy": 136.36,
+    "nominalRate": 3.95,
+    "breakeven": 2.38,
+    "realRate": 1.5700000000000003
+  },
+  {
+    "date": "2023-03-03",
+    "vix": 18.49,
+    "usdjpy": 136.09,
+    "nominalRate": 3.97,
+    "breakeven": 2.52,
+    "realRate": 1.4500000000000002
+  },
+  {
+    "date": "2023-03-10",
+    "vix": 24.8,
+    "usdjpy": 135.05,
+    "nominalRate": 3.7,
+    "breakeven": 2.26,
+    "realRate": 1.4400000000000004
+  },
+  {
+    "date": "2023-03-17",
+    "vix": 25.51,
+    "usdjpy": 132.01,
+    "nominalRate": 3.39,
+    "breakeven": 2.1,
+    "realRate": 1.29
+  },
+  {
+    "date": "2023-03-24",
+    "vix": 21.74,
+    "usdjpy": 130.64,
+    "nominalRate": 3.38,
+    "breakeven": 2.22,
+    "realRate": 1.1599999999999997
+  },
+  {
+    "date": "2023-03-31",
+    "vix": 18.7,
+    "usdjpy": 132.75,
+    "nominalRate": 3.48,
+    "breakeven": 2.32,
+    "realRate": 1.1600000000000001
+  },
+  {
+    "date": "2023-04-07",
+    "vix": 18.4,
+    "usdjpy": 132.11,
+    "nominalRate": 3.39,
+    "breakeven": 2.25,
+    "realRate": 1.1400000000000001
+  },
+  {
+    "date": "2023-04-14",
+    "vix": 17.07,
+    "usdjpy": 133.74,
+    "nominalRate": 3.52,
+    "breakeven": 2.3,
+    "realRate": 1.2200000000000002
+  },
+  {
+    "date": "2023-04-21",
+    "vix": 16.77,
+    "usdjpy": 134.28,
+    "nominalRate": 3.57,
+    "breakeven": 2.28,
+    "realRate": 1.29
+  },
+  {
+    "date": "2023-04-28",
+    "vix": 15.78,
+    "usdjpy": 135.99,
+    "nominalRate": 3.44,
+    "breakeven": 2.18,
+    "realRate": 1.2599999999999998
+  },
+  {
+    "date": "2023-05-05",
+    "vix": 17.19,
+    "usdjpy": 134.85,
+    "nominalRate": 3.44,
+    "breakeven": 2.21,
+    "realRate": 1.23
+  },
+  {
+    "date": "2023-05-12",
+    "vix": 17.03,
+    "usdjpy": 135.63,
+    "nominalRate": 3.46,
+    "breakeven": 2.18,
+    "realRate": 1.2799999999999998
+  },
+  {
+    "date": "2023-05-19",
+    "vix": 16.81,
+    "usdjpy": 137.67,
+    "nominalRate": 3.7,
+    "breakeven": 2.24,
+    "realRate": 1.46
+  },
+  {
+    "date": "2023-05-26",
+    "vix": 17.95,
+    "usdjpy": 140.53,
+    "nominalRate": 3.8,
+    "breakeven": 2.23,
+    "realRate": 1.5699999999999998
+  },
+  {
+    "date": "2023-06-02",
+    "vix": 14.6,
+    "usdjpy": 139.76,
+    "nominalRate": 3.69,
+    "breakeven": 2.18,
+    "realRate": 1.5099999999999998
+  },
+  {
+    "date": "2023-06-09",
+    "vix": 13.83,
+    "usdjpy": 139.35,
+    "nominalRate": 3.75,
+    "breakeven": 2.2,
+    "realRate": 1.5499999999999998
+  },
+  {
+    "date": "2023-06-16",
+    "vix": 13.54,
+    "usdjpy": 141.82,
+    "nominalRate": 3.77,
+    "breakeven": 2.22,
+    "realRate": 1.5499999999999998
+  },
+  {
+    "date": "2023-06-23",
+    "vix": 13.44,
+    "usdjpy": 143.78,
+    "nominalRate": 3.74,
+    "breakeven": 2.21,
+    "realRate": 1.5300000000000002
+  },
+  {
+    "date": "2023-06-30",
+    "vix": 13.59,
+    "usdjpy": 144.47,
+    "nominalRate": 3.81,
+    "breakeven": 2.22,
+    "realRate": 1.5899999999999999
+  },
+  {
+    "date": "2023-07-07",
+    "vix": 14.83,
+    "usdjpy": 142.21,
+    "nominalRate": 4.06,
+    "breakeven": 2.27,
+    "realRate": 1.7899999999999996
+  },
+  {
+    "date": "2023-07-14",
+    "vix": 13.34,
+    "usdjpy": 138.74,
+    "nominalRate": 3.83,
+    "breakeven": 2.24,
+    "realRate": 1.5899999999999999
+  },
+  {
+    "date": "2023-07-21",
+    "vix": 13.6,
+    "usdjpy": 141.75,
+    "nominalRate": 3.84,
+    "breakeven": 2.35,
+    "realRate": 1.4899999999999998
+  },
+  {
+    "date": "2023-07-28",
+    "vix": 13.33,
+    "usdjpy": 140.72,
+    "nominalRate": 3.96,
+    "breakeven": 2.38,
+    "realRate": 1.58
+  },
+  {
+    "date": "2023-08-04",
+    "vix": 17.1,
+    "usdjpy": 141.79,
+    "nominalRate": 4.05,
+    "breakeven": 2.38,
+    "realRate": 1.67
+  },
+  {
+    "date": "2023-08-11",
+    "vix": 14.84,
+    "usdjpy": 144.94,
+    "nominalRate": 4.16,
+    "breakeven": 2.36,
+    "realRate": 1.8000000000000003
+  },
+  {
+    "date": "2023-08-18",
+    "vix": 17.3,
+    "usdjpy": 145.15,
+    "nominalRate": 4.26,
+    "breakeven": 2.32,
+    "realRate": 1.94
+  },
+  {
+    "date": "2023-08-25",
+    "vix": 15.68,
+    "usdjpy": 146.38,
+    "nominalRate": 4.25,
+    "breakeven": 2.33,
+    "realRate": 1.92
+  },
+  {
+    "date": "2023-09-01",
+    "vix": 13.09,
+    "usdjpy": 146.2,
+    "nominalRate": 4.18,
+    "breakeven": 2.26,
+    "realRate": 1.92
+  },
+  {
+    "date": "2023-09-08",
+    "vix": 13.84,
+    "usdjpy": 147.7,
+    "nominalRate": 4.26,
+    "breakeven": 2.33,
+    "realRate": 1.9299999999999997
+  },
+  {
+    "date": "2023-09-15",
+    "vix": 13.79,
+    "usdjpy": 147.83,
+    "nominalRate": 4.33,
+    "breakeven": 2.35,
+    "realRate": 1.98
+  },
+  {
+    "date": "2023-09-22",
+    "vix": 17.2,
+    "usdjpy": 148.24,
+    "nominalRate": 4.44,
+    "breakeven": 2.37,
+    "realRate": 2.0700000000000003
+  },
+  {
+    "date": "2023-09-29",
+    "vix": 17.52,
+    "usdjpy": 149.43,
+    "nominalRate": 4.59,
+    "breakeven": 2.35,
+    "realRate": 2.2399999999999998
+  },
+  {
+    "date": "2023-10-06",
+    "vix": 17.45,
+    "usdjpy": 149.08,
+    "nominalRate": 4.78,
+    "breakeven": 2.31,
+    "realRate": 2.47
+  },
+  {
+    "date": "2023-10-13",
+    "vix": 19.32,
+    "usdjpy": 149.62,
+    "nominalRate": 4.63,
+    "breakeven": 2.34,
+    "realRate": 2.29
+  },
+  {
+    "date": "2023-10-20",
+    "vix": 21.71,
+    "usdjpy": 149.85,
+    "nominalRate": 4.93,
+    "breakeven": 2.47,
+    "realRate": 2.4599999999999995
+  },
+  {
+    "date": "2023-10-27",
+    "vix": 21.27,
+    "usdjpy": 149.6,
+    "nominalRate": 4.84,
+    "breakeven": 2.42,
+    "realRate": 2.42
+  },
+  {
+    "date": "2023-11-03",
+    "vix": 14.91,
+    "usdjpy": 149.36,
+    "nominalRate": 4.57,
+    "breakeven": 2.39,
+    "realRate": 2.18
+  },
+  {
+    "date": "2023-11-10",
+    "vix": 14.17,
+    "usdjpy": 151.04,
+    "nominalRate": 4.61,
+    "breakeven": 2.32,
+    "realRate": 2.2900000000000005
+  },
+  {
+    "date": "2023-11-17",
+    "vix": 13.8,
+    "usdjpy": 149.82,
+    "nominalRate": 4.44,
+    "breakeven": 2.28,
+    "realRate": 2.1600000000000006
+  },
+  {
+    "date": "2023-11-24",
+    "vix": 12.46,
+    "usdjpy": 149.57,
+    "nominalRate": 4.47,
+    "breakeven": 2.26,
+    "realRate": 2.21
+  },
+  {
+    "date": "2023-12-01",
+    "vix": 12.63,
+    "usdjpy": 147,
+    "nominalRate": 4.22,
+    "breakeven": 2.22,
+    "realRate": 1.9999999999999996
+  },
+  {
+    "date": "2023-12-08",
+    "vix": 12.35,
+    "usdjpy": 144.88,
+    "nominalRate": 4.23,
+    "breakeven": 2.21,
+    "realRate": 2.0200000000000005
+  },
+  {
+    "date": "2023-12-15",
+    "vix": 12.28,
+    "usdjpy": 141.8,
+    "nominalRate": 3.91,
+    "breakeven": 2.22,
+    "realRate": 1.69
+  },
+  {
+    "date": "2023-12-22",
+    "vix": 13.03,
+    "usdjpy": 142.6,
+    "nominalRate": 3.9,
+    "breakeven": 2.19,
+    "realRate": 1.71
+  },
+  {
+    "date": "2023-12-29",
+    "vix": 12.45,
+    "usdjpy": 140.92,
+    "nominalRate": 3.88,
+    "breakeven": 2.16,
+    "realRate": 1.7199999999999998
+  },
+  {
+    "date": "2024-01-05",
+    "vix": 13.35,
+    "usdjpy": 144.52,
+    "nominalRate": 4.05,
+    "breakeven": 2.22,
+    "realRate": 1.8299999999999996
+  },
+  {
+    "date": "2024-01-12",
+    "vix": 12.7,
+    "usdjpy": 144.86,
+    "nominalRate": 3.96,
+    "breakeven": 2.27,
+    "realRate": 1.69
+  },
+  {
+    "date": "2024-01-19",
+    "vix": 13.3,
+    "usdjpy": 148.21,
+    "nominalRate": 4.15,
+    "breakeven": 2.34,
+    "realRate": 1.8100000000000005
+  },
+  {
+    "date": "2024-01-26",
+    "vix": 13.26,
+    "usdjpy": 147.94,
+    "nominalRate": 4.15,
+    "breakeven": 2.3,
+    "realRate": 1.8500000000000005
+  },
+  {
+    "date": "2024-02-02",
+    "vix": 13.85,
+    "usdjpy": 148.54,
+    "nominalRate": 4.03,
+    "breakeven": 2.21,
+    "realRate": 1.8200000000000003
+  },
+  {
+    "date": "2024-02-09",
+    "vix": 12.93,
+    "usdjpy": 149.38,
+    "nominalRate": 4.17,
+    "breakeven": 2.25,
+    "realRate": 1.92
+  },
+  {
+    "date": "2024-02-16",
+    "vix": 14.24,
+    "usdjpy": 150.34,
+    "nominalRate": 4.3,
+    "breakeven": 2.33,
+    "realRate": 1.9699999999999998
+  },
+  {
+    "date": "2024-02-23",
+    "vix": 13.75,
+    "usdjpy": 150.36,
+    "nominalRate": 4.26,
+    "breakeven": 2.3,
+    "realRate": 1.96
+  },
+  {
+    "date": "2024-03-01",
+    "vix": 13.11,
+    "usdjpy": 150.2,
+    "nominalRate": 4.19,
+    "breakeven": 2.32,
+    "realRate": 1.8700000000000006
+  },
+  {
+    "date": "2024-03-08",
+    "vix": 14.74,
+    "usdjpy": 147.17,
+    "nominalRate": 4.09,
+    "breakeven": 2.28,
+    "realRate": 1.81
+  },
+  {
+    "date": "2024-03-15",
+    "vix": 14.41,
+    "usdjpy": 149.14,
+    "nominalRate": 4.31,
+    "breakeven": 2.32,
+    "realRate": 1.9899999999999998
+  },
+  {
+    "date": "2024-03-22",
+    "vix": 13.06,
+    "usdjpy": 151.35,
+    "nominalRate": 4.22,
+    "breakeven": 2.35,
+    "realRate": 1.8699999999999997
+  },
+  {
+    "date": "2024-03-29",
+    "vix": 13.01,
+    "usdjpy": 151.22,
+    "nominalRate": 4.2,
+    "breakeven": 2.32,
+    "realRate": 1.8800000000000003
+  },
+  {
+    "date": "2024-04-05",
+    "vix": 16.03,
+    "usdjpy": 151.59,
+    "nominalRate": 4.39,
+    "breakeven": 2.37,
+    "realRate": 2.0199999999999996
+  },
+  {
+    "date": "2024-04-12",
+    "vix": 17.31,
+    "usdjpy": 153.12,
+    "nominalRate": 4.5,
+    "breakeven": 2.39,
+    "realRate": 2.11
+  },
+  {
+    "date": "2024-04-19",
+    "vix": 18.71,
+    "usdjpy": 154.55,
+    "nominalRate": 4.62,
+    "breakeven": 2.41,
+    "realRate": 2.21
+  },
+  {
+    "date": "2024-04-26",
+    "vix": 15.03,
+    "usdjpy": 157.62,
+    "nominalRate": 4.67,
+    "breakeven": 2.43,
+    "realRate": 2.2399999999999998
+  },
+  {
+    "date": "2024-05-03",
+    "vix": 13.49,
+    "usdjpy": 152.85,
+    "nominalRate": 4.5,
+    "breakeven": 2.35,
+    "realRate": 2.15
+  },
+  {
+    "date": "2024-05-10",
+    "vix": 12.55,
+    "usdjpy": 155.85,
+    "nominalRate": 4.5,
+    "breakeven": 2.34,
+    "realRate": 2.16
+  },
+  {
+    "date": "2024-05-17",
+    "vix": 11.99,
+    "usdjpy": 155.57,
+    "nominalRate": 4.42,
+    "breakeven": 2.32,
+    "realRate": 2.1
+  },
+  {
+    "date": "2024-05-24",
+    "vix": 11.93,
+    "usdjpy": 156.9,
+    "nominalRate": 4.46,
+    "breakeven": 2.32,
+    "realRate": 2.14
+  },
+  {
+    "date": "2024-05-31",
+    "vix": 12.92,
+    "usdjpy": 157.19,
+    "nominalRate": 4.51,
+    "breakeven": 2.35,
+    "realRate": 2.1599999999999997
+  },
+  {
+    "date": "2024-06-07",
+    "vix": 12.22,
+    "usdjpy": 156.58,
+    "nominalRate": 4.43,
+    "breakeven": 2.3,
+    "realRate": 2.13
+  },
+  {
+    "date": "2024-06-14",
+    "vix": 12.66,
+    "usdjpy": 157.28,
+    "nominalRate": 4.2,
+    "breakeven": 2.17,
+    "realRate": 2.0300000000000002
+  },
+  {
+    "date": "2024-06-21",
+    "vix": 13.2,
+    "usdjpy": 159.45,
+    "nominalRate": 4.25,
+    "breakeven": 2.23,
+    "realRate": 2.02
+  },
+  {
+    "date": "2024-06-28",
+    "vix": 12.44,
+    "usdjpy": 160.88,
+    "nominalRate": 4.36,
+    "breakeven": 2.28,
+    "realRate": 2.0800000000000005
+  },
+  {
+    "date": "2024-07-05",
+    "vix": 12.48,
+    "usdjpy": 160.73,
+    "nominalRate": 4.28,
+    "breakeven": 2.28,
+    "realRate": 2.0000000000000004
+  },
+  {
+    "date": "2024-07-12",
+    "vix": 12.46,
+    "usdjpy": 157.88,
+    "nominalRate": 4.18,
+    "breakeven": 2.24,
+    "realRate": 1.9399999999999995
+  },
+  {
+    "date": "2024-07-19",
+    "vix": 16.52,
+    "usdjpy": 157.38,
+    "nominalRate": 4.25,
+    "breakeven": 2.32,
+    "realRate": 1.9300000000000002
+  },
+  {
+    "date": "2024-07-26",
+    "vix": 16.39,
+    "usdjpy": 153.86,
+    "nominalRate": 4.2,
+    "breakeven": 2.27,
+    "realRate": 1.9300000000000002
+  },
+  {
+    "date": "2024-08-02",
+    "vix": 23.39,
+    "usdjpy": 146.98,
+    "nominalRate": 3.8,
+    "breakeven": 2.04,
+    "realRate": 1.7599999999999998
+  },
+  {
+    "date": "2024-08-09",
+    "vix": 20.37,
+    "usdjpy": 146.49,
+    "nominalRate": 3.94,
+    "breakeven": 2.1,
+    "realRate": 1.8399999999999999
+  },
+  {
+    "date": "2024-08-16",
+    "vix": 14.8,
+    "usdjpy": 148.13,
+    "nominalRate": 3.89,
+    "breakeven": 2.08,
+    "realRate": 1.81
+  },
+  {
+    "date": "2024-08-23",
+    "vix": 15.86,
+    "usdjpy": 144.86,
+    "nominalRate": 3.81,
+    "breakeven": 2.13,
+    "realRate": 1.6800000000000002
+  },
+  {
+    "date": "2024-08-30",
+    "vix": 15,
+    "usdjpy": 145.95,
+    "nominalRate": 3.91,
+    "breakeven": 2.15,
+    "realRate": 1.7600000000000002
+  },
+  {
+    "date": "2024-09-06",
+    "vix": 22.38,
+    "usdjpy": 142.13,
+    "nominalRate": 3.72,
+    "breakeven": 2.03,
+    "realRate": 1.6900000000000004
+  },
+  {
+    "date": "2024-09-13",
+    "vix": 16.56,
+    "usdjpy": 140.66,
+    "nominalRate": 3.66,
+    "breakeven": 2.08,
+    "realRate": 1.58
+  },
+  {
+    "date": "2024-09-20",
+    "vix": 16.15,
+    "usdjpy": 143.9,
+    "nominalRate": 3.73,
+    "breakeven": 2.15,
+    "realRate": 1.58
+  },
+  {
+    "date": "2024-09-27",
+    "vix": 16.96,
+    "usdjpy": 142.6,
+    "nominalRate": 3.75,
+    "breakeven": 2.15,
+    "realRate": 1.6
+  },
+  {
+    "date": "2024-10-04",
+    "vix": 19.21,
+    "usdjpy": 148.69,
+    "nominalRate": 3.98,
+    "breakeven": 2.23,
+    "realRate": 1.75
+  },
+  {
+    "date": "2024-10-11",
+    "vix": 20.46,
+    "usdjpy": 149.12,
+    "nominalRate": 4.08,
+    "breakeven": 2.33,
+    "realRate": 1.75
+  },
+  {
+    "date": "2024-10-18",
+    "vix": 18.03,
+    "usdjpy": 149.58,
+    "nominalRate": 4.08,
+    "breakeven": 2.31,
+    "realRate": 1.77
+  },
+  {
+    "date": "2024-10-25",
+    "vix": 20.33,
+    "usdjpy": 152.08,
+    "nominalRate": 4.25,
+    "breakeven": 2.29,
+    "realRate": 1.96
+  },
+  {
+    "date": "2024-11-01",
+    "vix": 21.88,
+    "usdjpy": 152.94,
+    "nominalRate": 4.37,
+    "breakeven": 2.33,
+    "realRate": 2.04
+  },
+  {
+    "date": "2024-11-08",
+    "vix": 14.94,
+    "usdjpy": 152.58,
+    "nominalRate": 4.3,
+    "breakeven": 2.35,
+    "realRate": 1.9499999999999997
+  },
+  {
+    "date": "2024-11-15",
+    "vix": 16.14,
+    "usdjpy": 154.59,
+    "nominalRate": 4.43,
+    "breakeven": 2.33,
+    "realRate": 2.0999999999999996
+  },
+  {
+    "date": "2024-11-22",
+    "vix": 15.24,
+    "usdjpy": 154.73,
+    "nominalRate": 4.41,
+    "breakeven": 2.34,
+    "realRate": 2.0700000000000003
+  },
+  {
+    "date": "2024-11-29",
+    "vix": 13.51,
+    "usdjpy": 150.41,
+    "nominalRate": 4.18,
+    "breakeven": 2.26,
+    "realRate": 1.92
+  },
+  {
+    "date": "2024-12-06",
+    "vix": 12.77,
+    "usdjpy": 149.78,
+    "nominalRate": 4.15,
+    "breakeven": 2.24,
+    "realRate": 1.9100000000000001
+  },
+  {
+    "date": "2024-12-13",
+    "vix": 13.81,
+    "usdjpy": 153.74,
+    "nominalRate": 4.4,
+    "breakeven": 2.33,
+    "realRate": 2.0700000000000003
+  },
+  {
+    "date": "2024-12-20",
+    "vix": 18.36,
+    "usdjpy": 156.11,
+    "nominalRate": 4.52,
+    "breakeven": 2.29,
+    "realRate": 2.2299999999999995
+  },
+  {
+    "date": "2024-12-27",
+    "vix": 15.95,
+    "usdjpy": 157.73,
+    "nominalRate": 4.62,
+    "breakeven": 2.34,
+    "realRate": 2.2800000000000002
+  },
+  {
+    "date": "2025-01-03",
+    "vix": 16.13,
+    "usdjpy": 157.2,
+    "nominalRate": 4.6,
+    "breakeven": 2.34,
+    "realRate": 2.26
+  },
+  {
+    "date": "2025-01-10",
+    "vix": 19.54,
+    "usdjpy": 157.68,
+    "nominalRate": 4.77,
+    "breakeven": 2.43,
+    "realRate": 2.3399999999999994
+  },
+  {
+    "date": "2025-01-17",
+    "vix": 15.97,
+    "usdjpy": 156.3,
+    "nominalRate": 4.61,
+    "breakeven": 2.41,
+    "realRate": 2.2
+  },
+  {
+    "date": "2025-01-24",
+    "vix": 14.85,
+    "usdjpy": 155.58,
+    "nominalRate": 4.63,
+    "breakeven": 2.43,
+    "realRate": 2.1999999999999997
+  },
+  {
+    "date": "2025-01-31",
+    "vix": 16.43,
+    "usdjpy": 154.91,
+    "nominalRate": 4.58,
+    "breakeven": 2.42,
+    "realRate": 2.16
+  },
+  {
+    "date": "2025-02-07",
+    "vix": 16.54,
+    "usdjpy": 151.3,
+    "nominalRate": 4.49,
+    "breakeven": 2.42,
+    "realRate": 2.0700000000000003
+  },
+  {
+    "date": "2025-02-14",
+    "vix": 14.77,
+    "usdjpy": 152.25,
+    "nominalRate": 4.47,
+    "breakeven": 2.43,
+    "realRate": 2.0399999999999996
+  },
+  {
+    "date": "2025-02-21",
+    "vix": 18.21,
+    "usdjpy": 149.49,
+    "nominalRate": 4.42,
+    "breakeven": 2.42,
+    "realRate": 2
+  },
+  {
+    "date": "2025-02-28",
+    "vix": 19.63,
+    "usdjpy": 150.64,
+    "nominalRate": 4.24,
+    "breakeven": 2.38,
+    "realRate": 1.8600000000000003
+  },
+  {
+    "date": "2025-03-07",
+    "vix": 23.37,
+    "usdjpy": 147.13,
+    "nominalRate": 4.32,
+    "breakeven": 2.33,
+    "realRate": 1.9900000000000002
+  },
+  {
+    "date": "2025-03-14",
+    "vix": 21.77,
+    "usdjpy": 148.51,
+    "nominalRate": 4.31,
+    "breakeven": 2.3,
+    "realRate": 2.01
+  },
+  {
+    "date": "2025-03-21",
+    "vix": 19.28,
+    "usdjpy": 148.98,
+    "nominalRate": 4.25,
+    "breakeven": 2.33,
+    "realRate": 1.92
+  },
+  {
+    "date": "2025-03-28",
+    "vix": 21.65,
+    "usdjpy": 150.26,
+    "nominalRate": 4.27,
+    "breakeven": 2.37,
+    "realRate": 1.8999999999999995
+  },
+  {
+    "date": "2025-04-04",
+    "vix": 45.31,
+    "usdjpy": 145.93,
+    "nominalRate": 4.01,
+    "breakeven": 2.18,
+    "realRate": 1.8299999999999996
+  },
+  {
+    "date": "2025-04-11",
+    "vix": 37.56,
+    "usdjpy": 143.57,
+    "nominalRate": 4.48,
+    "breakeven": 2.2,
+    "realRate": 2.2800000000000002
+  },
+  {
+    "date": "2025-04-18",
+    "vix": 29.65,
+    "usdjpy": 142.22,
+    "nominalRate": 4.34,
+    "breakeven": 2.23,
+    "realRate": 2.11
+  },
+  {
+    "date": "2025-04-25",
+    "vix": 24.84,
+    "usdjpy": 143.75,
+    "nominalRate": 4.29,
+    "breakeven": 2.27,
+    "realRate": 2.02
+  },
+  {
+    "date": "2025-05-02",
+    "vix": 22.68,
+    "usdjpy": 144.52,
+    "nominalRate": 4.33,
+    "breakeven": 2.27,
+    "realRate": 2.06
+  },
+  {
+    "date": "2025-05-09",
+    "vix": 21.9,
+    "usdjpy": 145.15,
+    "nominalRate": 4.37,
+    "breakeven": 2.29,
+    "realRate": 2.08
+  },
+  {
+    "date": "2025-05-16",
+    "vix": 17.24,
+    "usdjpy": 146.02,
+    "nominalRate": 4.43,
+    "breakeven": 2.34,
+    "realRate": 2.09
+  },
+  {
+    "date": "2025-05-23",
+    "vix": 22.29,
+    "usdjpy": 142.61,
+    "nominalRate": 4.51,
+    "breakeven": 2.33,
+    "realRate": 2.1799999999999997
+  },
+  {
+    "date": "2025-05-30",
+    "vix": 18.57,
+    "usdjpy": 144.18,
+    "nominalRate": 4.41,
+    "breakeven": 2.34,
+    "realRate": 2.0700000000000003
+  },
+  {
+    "date": "2025-06-06",
+    "vix": 16.77,
+    "usdjpy": 144.87,
+    "nominalRate": 4.51,
+    "breakeven": 2.31,
+    "realRate": 2.1999999999999997
+  },
+  {
+    "date": "2025-06-13",
+    "vix": 20.82,
+    "usdjpy": 144.04,
+    "nominalRate": 4.41,
+    "breakeven": 2.28,
+    "realRate": 2.1300000000000003
+  },
+  {
+    "date": "2025-06-20",
+    "vix": 20.62,
+    "usdjpy": 145.92,
+    "nominalRate": 4.38,
+    "breakeven": 2.33,
+    "realRate": 2.05
+  },
+  {
+    "date": "2025-06-27",
+    "vix": 16.32,
+    "usdjpy": 144.74,
+    "nominalRate": 4.29,
+    "breakeven": 2.29,
+    "realRate": 2
+  },
+  {
+    "date": "2025-07-04",
+    "vix": 17.48,
+    "usdjpy": 144.96,
+    "nominalRate": 4.35,
+    "breakeven": 2.33,
+    "realRate": 2.0199999999999996
+  },
+  {
+    "date": "2025-07-11",
+    "vix": 16.4,
+    "usdjpy": 147.29,
+    "nominalRate": 4.43,
+    "breakeven": 2.37,
+    "realRate": 2.0599999999999996
+  },
+  {
+    "date": "2025-07-18",
+    "vix": 16.41,
+    "usdjpy": 148.55,
+    "nominalRate": 4.44,
+    "breakeven": 2.41,
+    "realRate": 2.0300000000000002
+  },
+  {
+    "date": "2025-07-25",
+    "vix": 14.93,
+    "usdjpy": 147.77,
+    "nominalRate": 4.4,
+    "breakeven": 2.44,
+    "realRate": 1.9600000000000004
+  },
+  {
+    "date": "2025-08-01",
+    "vix": 20.38,
+    "usdjpy": 148.06,
+    "nominalRate": 4.23,
+    "breakeven": 2.33,
+    "realRate": 1.9000000000000004
+  },
+  {
+    "date": "2025-08-08",
+    "vix": 15.15,
+    "usdjpy": 147.7,
+    "nominalRate": 4.27,
+    "breakeven": 2.39,
+    "realRate": 1.8799999999999994
+  },
+  {
+    "date": "2025-08-15",
+    "vix": 15.09,
+    "usdjpy": 147,
+    "nominalRate": 4.33,
+    "breakeven": 2.38,
+    "realRate": 1.9500000000000002
+  },
+  {
+    "date": "2025-08-22",
+    "vix": 14.22,
+    "usdjpy": 146.82,
+    "nominalRate": 4.26,
+    "breakeven": 2.41,
+    "realRate": 1.8499999999999996
+  },
+  {
+    "date": "2025-08-29",
+    "vix": 15.36,
+    "usdjpy": 146.9,
+    "nominalRate": 4.23,
+    "breakeven": 2.41,
+    "realRate": 1.8200000000000003
+  },
+  {
+    "date": "2025-09-05",
+    "vix": 15.18,
+    "usdjpy": 146.84,
+    "nominalRate": 4.1,
+    "breakeven": 2.37,
+    "realRate": 1.7299999999999995
+  },
+  {
+    "date": "2025-09-12",
+    "vix": 14.76,
+    "usdjpy": 147.85,
+    "nominalRate": 4.06,
+    "breakeven": 2.36,
+    "realRate": 1.6999999999999997
+  },
+  {
+    "date": "2025-09-19",
+    "vix": 15.45,
+    "usdjpy": 147.83,
+    "nominalRate": 4.14,
+    "breakeven": 2.39,
+    "realRate": 1.7499999999999996
+  },
+  {
+    "date": "2025-09-26",
+    "vix": 15.29,
+    "usdjpy": 149.52,
+    "nominalRate": 4.2,
+    "breakeven": 2.38,
+    "realRate": 1.8200000000000003
+  },
+  {
+    "date": "2025-10-03",
+    "vix": 16.65,
+    "usdjpy": 147.33,
+    "nominalRate": 4.13,
+    "breakeven": 2.33,
+    "realRate": 1.7999999999999998
+  },
+  {
+    "date": "2025-10-10",
+    "vix": 21.66,
+    "usdjpy": 151.94,
+    "nominalRate": 4.05,
+    "breakeven": 2.3,
+    "realRate": 1.75
+  },
+  {
+    "date": "2025-10-17",
+    "vix": 20.78,
+    "usdjpy": 150.33,
+    "nominalRate": 4.02,
+    "breakeven": 2.27,
+    "realRate": 1.7499999999999996
+  },
+  {
+    "date": "2025-10-24",
+    "vix": 16.37,
+    "usdjpy": 152.82,
+    "nominalRate": 4.02,
+    "breakeven": 2.29,
+    "realRate": 1.7299999999999995
+  },
+  {
+    "date": "2025-10-31",
+    "vix": 17.44,
+    "usdjpy": 154.05,
+    "nominalRate": 4.11,
+    "breakeven": 2.3,
+    "realRate": 1.8100000000000005
+  },
+  {
+    "date": "2025-11-07",
+    "vix": 19.08,
+    "usdjpy": 153.06,
+    "nominalRate": 4.11,
+    "breakeven": 2.28,
+    "realRate": 1.8300000000000005
+  },
+  {
+    "date": "2025-11-14",
+    "vix": 19.83,
+    "usdjpy": 154.64,
+    "nominalRate": 4.14,
+    "breakeven": 2.28,
+    "realRate": 1.8599999999999999
+  },
+  {
+    "date": "2025-11-21",
+    "vix": 23.43,
+    "usdjpy": 156.58,
+    "nominalRate": 4.06,
+    "breakeven": 2.24,
+    "realRate": 1.8199999999999994
+  },
+  {
+    "date": "2025-11-28",
+    "vix": 16.35,
+    "usdjpy": 156.17,
+    "nominalRate": 4.02,
+    "breakeven": 2.23,
+    "realRate": 1.7899999999999996
+  },
+  {
+    "date": "2025-12-05",
+    "vix": 15.41,
+    "usdjpy": 155.3,
+    "nominalRate": 4.14,
+    "breakeven": 2.26,
+    "realRate": 1.88
+  },
+  {
+    "date": "2025-12-12",
+    "vix": 15.74,
+    "usdjpy": 155.81,
+    "nominalRate": 4.19,
+    "breakeven": 2.26,
+    "realRate": 1.9300000000000006
+  },
+  {
+    "date": "2025-12-19",
+    "vix": 14.91,
+    "usdjpy": 157.43,
+    "nominalRate": 4.16,
+    "breakeven": 2.24,
+    "realRate": 1.92
+  },
+  {
+    "date": "2025-12-26",
+    "vix": 13.6,
+    "usdjpy": 156.63,
+    "nominalRate": 4.14,
+    "breakeven": 2.23,
+    "realRate": 1.9099999999999997
+  },
+  {
+    "date": "2026-01-02",
+    "vix": 14.51,
+    "usdjpy": 156.72,
+    "nominalRate": 4.19,
+    "breakeven": 2.25,
+    "realRate": 1.9400000000000004
+  },
+  {
+    "date": "2026-01-09",
+    "vix": 14.49,
+    "usdjpy": 158.07,
+    "nominalRate": 4.18,
+    "breakeven": 2.28,
+    "realRate": 1.9
+  },
+  {
+    "date": "2026-01-16",
+    "vix": 15.86,
+    "usdjpy": 158.02,
+    "nominalRate": 4.24,
+    "breakeven": 2.33,
+    "realRate": 1.9100000000000001
+  },
+  {
+    "date": "2026-01-23",
+    "vix": 16.09,
+    "usdjpy": 157.57,
+    "nominalRate": 4.24,
+    "breakeven": 2.32,
+    "realRate": 1.9200000000000004
+  },
+  {
+    "date": "2026-01-30",
+    "vix": 17.44,
+    "usdjpy": 154.34,
+    "nominalRate": 4.26,
+    "breakeven": 2.36,
+    "realRate": 1.9
+  },
+  {
+    "date": "2026-02-06",
+    "vix": 17.76,
+    "usdjpy": 157.1,
+    "nominalRate": 4.22,
+    "breakeven": 2.34,
+    "realRate": 1.88
+  },
+  {
+    "date": "2026-02-13",
+    "vix": 20.6,
+    "usdjpy": 152.77,
+    "nominalRate": 4.04,
+    "breakeven": 2.27,
+    "realRate": 1.77
+  },
+  {
+    "date": "2026-02-20",
+    "vix": 19.09,
+    "usdjpy": 154.99,
+    "nominalRate": 4.08,
+    "breakeven": 2.28,
+    "realRate": 1.8000000000000003
+  },
+  {
+    "date": "2026-02-27",
+    "vix": 19.86,
+    "usdjpy": 156.05,
+    "nominalRate": 3.97,
+    "breakeven": 2.25,
+    "realRate": 1.7200000000000002
+  },
+  {
+    "date": "2026-03-06",
+    "vix": 29.49,
+    "usdjpy": 157.64,
+    "nominalRate": 4.15,
+    "breakeven": 2.35,
+    "realRate": 1.8000000000000003
+  },
+  {
+    "date": "2026-03-13",
+    "vix": 27.19,
+    "usdjpy": 159.54,
+    "nominalRate": 4.28,
+    "breakeven": 2.36,
+    "realRate": 1.9200000000000004
+  },
+  {
+    "date": "2026-03-20",
+    "vix": 26.78,
+    "usdjpy": 159.26,
+    "nominalRate": 4.39,
+    "breakeven": 2.38,
+    "realRate": 2.01
+  },
+  {
+    "date": "2026-03-27",
+    "vix": 31.05,
+    "usdjpy": 160.16,
+    "nominalRate": 4.44,
+    "breakeven": 2.31,
+    "realRate": 2.1300000000000003
+  },
+  {
+    "date": "2026-04-03",
+    "vix": 23.87,
+    "usdjpy": 159.64,
+    "nominalRate": 4.35,
+    "breakeven": 2.36,
+    "realRate": 1.9899999999999998
+  },
+  {
+    "date": "2026-04-10",
+    "vix": 19.23,
+    "usdjpy": 159.22,
+    "nominalRate": 4.31,
+    "breakeven": 2.36,
+    "realRate": 1.9499999999999997
+  },
+  {
+    "date": "2026-04-17",
+    "vix": 17.48,
+    "usdjpy": 158.1,
+    "nominalRate": 4.26,
+    "breakeven": 2.36,
+    "realRate": 1.9
+  },
+  {
+    "date": "2026-04-24",
+    "vix": 18.71,
+    "usdjpy": 159.35,
+    "nominalRate": 4.31,
+    "breakeven": 2.42,
+    "realRate": 1.8899999999999997
+  },
+  {
+    "date": "2026-05-01",
+    "vix": 16.99,
+    "usdjpy": 156.76,
+    "nominalRate": 4.39,
+    "breakeven": 2.48,
+    "realRate": 1.9099999999999997
+  },
+  {
+    "date": "2026-05-08",
+    "vix": 17.19,
+    "usdjpy": 156.64,
+    "nominalRate": 4.38,
+    "breakeven": 2.45,
+    "realRate": 1.9299999999999997
+  },
+  {
+    "date": "2026-05-15",
+    "vix": 18.43,
+    "usdjpy": 158.69,
+    "nominalRate": 4.59,
+    "breakeven": 2.49,
+    "realRate": 2.0999999999999996
+  },
+  {
+    "date": "2026-05-22",
+    "vix": 16.7,
+    "usdjpy": 159.2,
+    "nominalRate": 4.56,
+    "breakeven": 2.4,
+    "realRate": 2.1599999999999997
+  },
+  {
+    "date": "2026-05-29",
+    "vix": 15.32,
+    "usdjpy": 159.23,
+    "nominalRate": 4.45,
+    "breakeven": 2.38,
+    "realRate": 2.0700000000000003
+  },
+  {
+    "date": "2026-06-05",
+    "vix": 21.51,
+    "usdjpy": 160.26,
+    "nominalRate": 4.55,
+    "breakeven": 2.36,
+    "realRate": 2.19
+  },
+  {
+    "date": "2026-06-12",
+    "vix": 17.68,
+    "usdjpy": 160.24,
+    "nominalRate": 4.48,
+    "breakeven": 2.31,
+    "realRate": 2.1700000000000004
+  },
+  {
+    "date": "2026-06-19",
+    "vix": 16.78,
+    "usdjpy": 161.37,
+    "nominalRate": 4.46,
+    "breakeven": 2.25,
+    "realRate": 2.21
+  },
+  {
+    "date": "2026-06-26",
+    "vix": 18.41,
+    "usdjpy": 161.67,
+    "nominalRate": 4.38,
+    "breakeven": 2.2,
+    "realRate": 2.1799999999999997
+  },
+  {
+    "date": "2026-07-03",
+    "vix": 15.81,
+    "usdjpy": 160.9,
+    "nominalRate": 4.49,
+    "breakeven": 2.23,
+    "realRate": 2.2600000000000002
+  },
+  {
+    "date": "2026-07-10",
+    "vix": 15.03,
+    "usdjpy": 161.31,
+    "nominalRate": 4.56,
+    "breakeven": 2.24,
+    "realRate": 2.3199999999999994
+  },
+  {
+    "date": "2026-07-17",
+    "vix": 18.77,
+    "usdjpy": 162.43,
+    "nominalRate": 4.55,
+    "breakeven": 2.24,
+    "realRate": 2.3099999999999996
+  },
+  {
+    "date": "2026-07-24",
+    "vix": 18.58,
+    "usdjpy": 163.71,
+    "nominalRate": 4.69,
+    "breakeven": 2.26,
+    "realRate": 2.4300000000000006
+  },
+  {
+    "date": "2026-07-31",
+    "vix": 15.99,
+    "usdjpy": 159.16,
+    "nominalRate": 4.75,
+    "breakeven": 2.28,
+    "realRate": 2.47
+  },
+  {
+    "date": "2026-08-07",
+    "vix": 14.9,
+    "usdjpy": 157.54,
+    "nominalRate": 4.65,
+    "breakeven": 2.25,
+    "realRate": 2.4000000000000004
+  },
+  {
+    "date": "2026-08-14",
+    "vix": 14.63,
+    "usdjpy": 157.54,
+    "nominalRate": 4.63,
+    "breakeven": 2.27,
+    "realRate": 2.36
+  }
+]

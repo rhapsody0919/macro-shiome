@@ -9,6 +9,7 @@ import { resolveTargetYield } from '../data/indicators';
 import type {
   AppConfig,
   CorrelationSummary,
+  MacroPoint,
   RevisionPoint,
   ValuationPoint,
   ValuationSeries,
@@ -254,4 +255,28 @@ export function buildRevisionSeries(options: BuildViewOptions): RevisionPoint[] 
     growthCurrentYear: valueOn(series(observations, 'sp500-growth-cy-current'), date),
     growthNextYear: valueOn(series(observations, 'sp500-growth-cy-next'), date),
   }));
+}
+
+/**
+ * マクロ指標のビュー (spec F-7)。
+ *
+ * 日次系列を週次 (金曜) に落とす。他のチャートと期間軸を揃えるため。
+ * 休場日は直近の営業日まで遡る。
+ */
+export function buildMacroView(options: BuildViewOptions): MacroPoint[] {
+  const { observations } = options;
+  const weeks = fridaysBetween(options.start, options.today.toISOString().slice(0, 10));
+
+  return weeks.map((date) => {
+    const nominalRate = valueAsOf(series(observations, 'dgs10'), date);
+    const breakeven = valueAsOf(series(observations, 't10yie'), date);
+    return {
+      date,
+      vix: valueAsOf(series(observations, 'vix'), date),
+      usdjpy: valueAsOf(series(observations, 'usdjpy'), date),
+      nominalRate,
+      breakeven,
+      realRate: realRate(nominalRate, breakeven),
+    };
+  });
 }
