@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+import { Suspense, type ReactNode } from 'react';
 import { MonthlyChart, type MonthlySeriesDef } from '@/components/charts/monthly-chart';
 import { groupByCycle } from '@/lib/cycle';
 import { indicators } from '@/lib/data/indicators';
@@ -255,17 +255,19 @@ export default function EconomyPage() {
             <p className="mt-0.5 text-xs text-slate-500">{group.meta.description}</p>
           </header>
 
+          {/* useSearchParams (期間フィルター) を使うため静的生成時は Suspense で包む。 */}
           {group.items.map((chart) => (
-            <MonthlyChart
-              key={chart.title}
-              view={economy}
-              title={chart.title}
-              subtitle={chart.subtitle}
-              kind={chart.kind}
-              zeroLine={chart.zeroLine}
-              series={chart.series}
-              notes={chart.notes}
-            />
+            <Suspense key={chart.title} fallback={<div className="h-96" />}>
+              <MonthlyChart
+                view={economy}
+                title={chart.title}
+                subtitle={chart.subtitle}
+                kind={chart.kind}
+                zeroLine={chart.zeroLine}
+                series={chart.series}
+                notes={chart.notes}
+              />
+            </Suspense>
           ))}
         </section>
       ))}
