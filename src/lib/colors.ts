@@ -56,6 +56,10 @@ export const COLORS = {
 
   /** 新規失業保険申請。増加が悪化を意味するため警戒色。 */
   initialClaims: '#ef4444',
+  /** 製造業の週平均労働時間。 */
+  manufacturingHours: '#8b5cf6',
+  /** 信用状況。引き締まり (正) が警戒側。 */
+  creditConditions: '#f43f5e',
   /** 鉱工業生産。 */
   industrialProduction: '#0ea5e9',
   newOrdersConsumerGoods: '#f97316',

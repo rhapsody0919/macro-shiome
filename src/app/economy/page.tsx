@@ -67,6 +67,33 @@ const CHARTS: MonthlyChartDef[] = [
     ],
   },
   {
+    // 週平均労働時間は The Conference Board の景気先行指数 (LEI) の構成要素。
+    primaryIndicator: 'manufacturing-hours',
+    title: '製造業の週平均労働時間',
+    subtitle: '残業の増減が雇用より先に動く (時間)',
+    kind: 'number',
+    zeroLine: false,
+    series: [
+      {
+        key: 'manufacturingHours',
+        label: '週平均労働時間',
+        color: COLORS.manufacturingHours,
+        indicatorId: 'manufacturing-hours',
+      },
+    ],
+    notes: [
+      <span key="why">
+        <strong>企業は解雇の前に残業を減らす。</strong>
+        需要が落ちるとまず労働時間が短くなり、雇用者数の減少はその後に来る。
+        The Conference Board の景気先行指数 (LEI) の構成要素。
+      </span>,
+      <span key="level">
+        水準そのものが意味を持つ (週 40 時間が目安) ため、前年同月比には変換していない。
+        変化幅は小さいが、<strong>0.1 時間の差でも景気局面では意味がある</strong>。
+      </span>,
+    ],
+  },
+  {
     // 新規受注 2 系列は The Conference Board の景気先行指数 (LEI) の構成要素。
     primaryIndicator: 'new-orders-consumer-goods',
     title: '製造業の新規受注',

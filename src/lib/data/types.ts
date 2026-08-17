@@ -309,6 +309,13 @@ export interface MacroPoint {
    * **増加が悪化を意味する**ため、他の指標と向きが逆になる。
    */
   initialClaims: number | null;
+  /**
+   * 信用状況指数 (Chicago Fed)。ゼロが平均で、正が引き締まり・負が緩み (#83)。
+   *
+   * The Conference Board の Leading Credit Index とは別物。あちらは独自の合成指標で
+   * 公開されていない。
+   */
+  creditConditions: number | null;
 }
 
 /**
@@ -353,6 +360,13 @@ export interface MonthlyPoint {
    * **コントロールグループではない** (建材と外食が含まれる)。#72 参照。
    */
   retailSales: number | null;
+
+  /**
+   * 製造業の週平均労働時間 (時間、水準)。景気先行指数の構成要素。
+   *
+   * 企業は解雇の前に残業を減らすため、雇用者数より早く動く。
+   */
+  manufacturingHours: number | null;
 
   // --- 生産・受注 (前年同月比 %) ---
   /** 鉱工業生産。景気一致指数の構成要素。 */
