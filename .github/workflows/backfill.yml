@@ -28,7 +28,9 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          # Cloudflare Pages のビルドも同じファイルを読む (ADR-0005)。
+          # ここを直書きすると本番ビルドと CI で Node が食い違う。
+          node-version-file: .node-version
           cache: pnpm
 
       - run: pnpm install --frozen-lockfile
