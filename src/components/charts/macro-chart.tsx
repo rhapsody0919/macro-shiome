@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo } from 'react';
+import { useMemo, type ReactNode } from 'react';
 import { useSearchParams } from 'next/navigation';
 import {
   CartesianGrid,
@@ -33,6 +33,7 @@ export function MacroChart({
   series,
   kind = 'number',
   headingLevel = 3,
+  badges,
   signed = false,
   baseline,
   notes,
@@ -44,6 +45,8 @@ export function MacroChart({
   kind?: ValueKind;
   /** セクション内に置くため既定は h3 (#77)。 */
   headingLevel?: 2 | 3;
+  /** 更新頻度・景気サイクルのバッジ (#89)。 */
+  badges?: ReactNode;
   /**
    * 符号が意味を持つ指標か (#63)。true ならゼロ線を引き、負の領域を薄く塗る。
    * イールドカーブのように「負になること自体が信号」の指標に使う。
@@ -69,6 +72,7 @@ export function MacroChart({
       title={title}
       subtitle={subtitle}
       headingLevel={headingLevel}
+      badges={badges}
       contentClassName="h-56 sm:h-64"
       summary={
         <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm">

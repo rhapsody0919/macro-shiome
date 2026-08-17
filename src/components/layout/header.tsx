@@ -31,11 +31,11 @@ export function Header() {
             <Suspense fallback={<span className="px-3 py-1.5 text-sm">バリュエーション</span>}>
               <NavLink href="/">バリュエーション</NavLink>
             </Suspense>
-            <Suspense fallback={<span className="px-3 py-1.5 text-sm">マクロ指標</span>}>
-              <NavLink href="/macro">マクロ指標</NavLink>
+            <Suspense fallback={<span className="px-3 py-1.5 text-sm">経済</span>}>
+              <NavLink href="/economy">経済</NavLink>
             </Suspense>
-            <Suspense fallback={<span className="px-3 py-1.5 text-sm">経済統計</span>}>
-              <NavLink href="/economy">経済統計</NavLink>
+            <Suspense fallback={<span className="px-3 py-1.5 text-sm">市場</span>}>
+              <NavLink href="/market">市場</NavLink>
             </Suspense>
           </nav>
         </div>

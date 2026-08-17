@@ -48,6 +48,7 @@ export function MonthlyChart({
   series,
   kind = 'percent',
   headingLevel = 3,
+  badges,
   zeroLine = true,
   notes,
   height = 'h-72 sm:h-96',
@@ -60,6 +61,8 @@ export function MonthlyChart({
   kind?: 'percent' | 'number';
   /** セクション内に置くため既定は h3 (#77)。 */
   headingLevel?: 2 | 3;
+  /** 更新頻度・景気サイクルのバッジ (#89)。 */
+  badges?: ReactNode;
   /** ゼロ線を引くか。水準の指標 (貯蓄率・信頼感) では不要。 */
   zeroLine?: boolean;
   notes: ReactNode[];
@@ -80,6 +83,7 @@ export function MonthlyChart({
       title={title}
       subtitle={subtitle}
       headingLevel={headingLevel}
+      badges={badges}
       contentClassName={height}
       summary={
         <div className="space-y-2">
