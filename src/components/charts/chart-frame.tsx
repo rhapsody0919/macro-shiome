@@ -1,6 +1,6 @@
 'use client';
 
-import type { ReactNode } from 'react';
+import { Children, type ReactNode } from 'react';
 import { formatDate, formatNumber, formatPercent } from '@/lib/format';
 
 /** チャート共通の外枠。見出し・補助操作・注記の並びを揃える。 */
@@ -39,7 +39,11 @@ export function ChartFrame({
       <div className={`w-full ${contentClassName}`}>{children}</div>
 
       <ul className="space-y-1 text-[11px] text-slate-500">
-        {notes.map((note, i) => (
+        {/*
+          呼び出し側は key を付けずに JSX の配列を渡す。Children.toArray が
+          安定した key を振るため、React の key 警告が出ない。
+        */}
+        {Children.toArray(notes).map((note, i) => (
           <li key={i}>{note}</li>
         ))}
       </ul>

@@ -19,7 +19,12 @@ import {
   previousFriday,
 } from '../src/lib/adapters/factset';
 import { fetchEtfField } from '../src/lib/adapters/stockanalysis';
-import { buildRevisionSeries, buildValuationView, type ObservationMap } from '../src/lib/calc/view';
+import {
+  buildMacroView,
+  buildRevisionSeries,
+  buildValuationView,
+  type ObservationMap,
+} from '../src/lib/calc/view';
 import { appConfig, indicators } from '../src/lib/data/indicators';
 import {
   readObservations,
@@ -156,6 +161,7 @@ async function main(): Promise<void> {
 
   writeView('valuation', buildValuationView({ observations, config: appConfig, start, today: now }));
   writeView('revisions', buildRevisionSeries({ observations, config: appConfig, start, today: now }));
+  writeView('macro', buildMacroView({ observations, config: appConfig, start, today: now }));
 
   const succeeded = failures.length === 0 && issues.length === 0;
   writeStatus({ now, succeeded, recentGaps: allGaps });

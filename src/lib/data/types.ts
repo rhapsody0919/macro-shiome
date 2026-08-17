@@ -176,6 +176,19 @@ export interface ValuationView {
   nasdaq100: ValuationSeries;
 }
 
+/** マクロ指標の 1 週分 (spec F-7)。週次 (金曜) に揃える。 */
+export interface MacroPoint {
+  date: string;
+  vix: number | null;
+  usdjpy: number | null;
+  /** 名目 10 年債利回り (%)。 */
+  nominalRate: number | null;
+  /** 期待インフレ率 (10 年 BEI、%)。 */
+  breakeven: number | null;
+  /** 実質金利 = 名目 − 期待インフレ率 (%)。 */
+  realRate: number | null;
+}
+
 /** 予想改定の 1 週分 (spec F-12)。 */
 export interface RevisionPoint {
   date: string;
