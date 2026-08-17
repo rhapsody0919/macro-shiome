@@ -378,6 +378,7 @@ export function buildMacroView(options: BuildViewOptions): MacroPoint[] {
       fedFundsRate: valueAsOf(series(observations, 'fed-funds-rate'), date),
       wti: valueAsOf(series(observations, 'wti'), date),
       dollarIndex: valueAsOf(series(observations, 'dollar-index'), date),
+      newJobPostings: valueAsOf(series(observations, 'new-job-postings'), date),
     };
   });
 }
@@ -426,6 +427,8 @@ export function buildEconomyView(options: BuildViewOptions): EconomyView {
     buildingPermits: level('building-permits', month),
     housingStarts: level('housing-starts', month),
     newHomeSales: level('new-home-sales', month),
+    jobOpenings: level('job-openings', month),
+    federalDeficit: level('federal-deficit', month),
     unemploymentRate: level('unemployment-rate', month),
     savingsRate: level('savings-rate', month),
     consumerSentiment: level('consumer-sentiment', month),
@@ -463,6 +466,8 @@ const MONTHLY_INDICATORS = [
   'building-permits',
   'housing-starts',
   'new-home-sales',
+  'job-openings',
+  'federal-deficit',
   'unemployment-rate',
   'savings-rate',
   'consumer-sentiment',

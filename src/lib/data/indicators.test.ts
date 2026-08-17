@@ -467,3 +467,38 @@ describe('投資判断の主要指標 (#84)', () => {
     }
   });
 });
+
+describe('泉さんの記事から追加した指標 (#87)', () => {
+  it('新規求人は総求人と別系列であることを記録する', () => {
+    // IHLIDXUS (総求人) と取り違えると別の指標になる。実測でも値が違う
+    // (新規 94.65 に対し総求人 101.69)。
+    expect(indicators['new-job-postings'].source).toEqual({
+      adapter: 'fred',
+      seriesId: 'IHLIDXNEWUS',
+    });
+    expect(indicators['new-job-postings'].note).toContain('総求人 (IHLIDXUS) とは別系列');
+  });
+
+  it('Indeed と ADP は著作権ありとして扱う', () => {
+    expect(indicators['new-job-postings'].copyright).toBe('restricted');
+    expect(indicators['adp-employment'].copyright).toBe('restricted');
+  });
+
+  it('ADP が民間部門のみであることを記録する', () => {
+    // 政府雇用を含む公式統計と対象が違う。同じ「雇用者数」として比べると誤る。
+    expect(indicators['adp-employment'].note).toContain('民間部門のみ');
+  });
+
+  it('求人件数 (JOLTS) は公式統計で Public Domain', () => {
+    expect(indicators['job-openings'].copyright).toBe('none');
+    expect(indicators['job-openings'].frequency).toBe('monthly');
+  });
+
+  it('記事に出てくる指標を分類しない', () => {
+    // Conference Board の構成要素ではないため。先行性は記事の見立てであって
+    // 公式の分類ではない。
+    expect(indicators['new-job-postings'].cyclePosition).toBeUndefined();
+    expect(indicators['job-openings'].cyclePosition).toBeUndefined();
+    expect(indicators['federal-deficit'].cyclePosition).toBeUndefined();
+  });
+});

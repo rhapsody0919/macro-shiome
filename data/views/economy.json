@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T12:17:28.794Z",
+  "generatedAt": "2026-08-17T12:26:45.475Z",
   "monthly": [
     {
       "month": "2016-08-01",
@@ -20,6 +20,8 @@
       "buildingPermits": 1201,
       "housingStarts": 1171,
       "newHomeSales": 575,
+      "jobOpenings": 5677,
+      "federalDeficit": -107111.57568004,
       "unemploymentRate": 4.9,
       "savingsRate": 5.1,
       "consumerSentiment": 89.8
@@ -43,6 +45,8 @@
       "buildingPermits": 1303,
       "housingStarts": 1068,
       "newHomeSales": 558,
+      "jobOpenings": 5868,
+      "federalDeficit": 33359.49405496,
       "unemploymentRate": 5,
       "savingsRate": 5.1,
       "consumerSentiment": 91.2
@@ -66,6 +70,8 @@
       "buildingPermits": 1254,
       "housingStarts": 1313,
       "newHomeSales": 575,
+      "jobOpenings": 5591,
+      "federalDeficit": -44192.20097674,
       "unemploymentRate": 4.9,
       "savingsRate": 5.3,
       "consumerSentiment": 87.2
@@ -89,6 +95,8 @@
       "buildingPermits": 1230,
       "housingStarts": 1140,
       "newHomeSales": 571,
+      "jobOpenings": 5971,
+      "federalDeficit": -136650.57490356,
       "unemploymentRate": 4.7,
       "savingsRate": 5.4,
       "consumerSentiment": 93.8
@@ -112,6 +120,8 @@
       "buildingPermits": 1248,
       "housingStarts": 1252,
       "newHomeSales": 561,
+      "jobOpenings": 5964,
+      "federalDeficit": -27515.79855866,
       "unemploymentRate": 4.7,
       "savingsRate": 5,
       "consumerSentiment": 98.2
@@ -135,6 +145,8 @@
       "buildingPermits": 1303,
       "housingStarts": 1190,
       "newHomeSales": 573,
+      "jobOpenings": 5617,
+      "federalDeficit": 51257.177643,
       "unemploymentRate": 4.7,
       "savingsRate": 5.3,
       "consumerSentiment": 98.5
@@ -158,6 +170,8 @@
       "buildingPermits": 1234,
       "housingStarts": 1271,
       "newHomeSales": 587,
+      "jobOpenings": 5923,
+      "federalDeficit": -192044.46533546,
       "unemploymentRate": 4.6,
       "savingsRate": 5.6,
       "consumerSentiment": 96.3
@@ -181,6 +195,8 @@
       "buildingPermits": 1272,
       "housingStarts": 1190,
       "newHomeSales": 632,
+      "jobOpenings": 5811,
+      "federalDeficit": -176232.32530805,
       "unemploymentRate": 4.4,
       "savingsRate": 5.6,
       "consumerSentiment": 96.9
@@ -204,6 +220,8 @@
       "buildingPermits": 1251,
       "housingStarts": 1146,
       "newHomeSales": 598,
+      "jobOpenings": 6091,
+      "federalDeficit": 182428.05764871,
       "unemploymentRate": 4.4,
       "savingsRate": 5.7,
       "consumerSentiment": 97
@@ -227,6 +245,8 @@
       "buildingPermits": 1208,
       "housingStarts": 1157,
       "newHomeSales": 635,
+      "jobOpenings": 5826,
+      "federalDeficit": -88425.99436618,
       "unemploymentRate": 4.4,
       "savingsRate": 6.3,
       "consumerSentiment": 97.1
@@ -250,6 +270,8 @@
       "buildingPermits": 1353,
       "housingStarts": 1249,
       "newHomeSales": 619,
+      "jobOpenings": 6305,
+      "federalDeficit": -90233.19107067,
       "unemploymentRate": 4.3,
       "savingsRate": 6,
       "consumerSentiment": 95
@@ -273,6 +295,8 @@
       "buildingPermits": 1256,
       "housingStarts": 1206,
       "newHomeSales": 572,
+      "jobOpenings": 6238,
+      "federalDeficit": -42939.37760097,
       "unemploymentRate": 4.3,
       "savingsRate": 6,
       "consumerSentiment": 93.4
@@ -296,6 +320,8 @@
       "buildingPermits": 1319,
       "housingStarts": 1159,
       "newHomeSales": 556,
+      "jobOpenings": 6276,
+      "federalDeficit": -107688.77677988,
       "unemploymentRate": 4.4,
       "savingsRate": 6.1,
       "consumerSentiment": 96.8
@@ -319,6 +345,8 @@
       "buildingPermits": 1273,
       "housingStarts": 1181,
       "newHomeSales": 637,
+      "jobOpenings": 6320,
+      "federalDeficit": 8000.08293523,
       "unemploymentRate": 4.3,
       "savingsRate": 5.9,
       "consumerSentiment": 95.1
@@ -342,6 +370,8 @@
       "buildingPermits": 1356,
       "housingStarts": 1257,
       "newHomeSales": 626,
+      "jobOpenings": 6408,
+      "federalDeficit": -63214.01796695,
       "unemploymentRate": 4.2,
       "savingsRate": 6,
       "consumerSentiment": 100.7
@@ -365,6 +395,8 @@
       "buildingPermits": 1299,
       "housingStarts": 1273,
       "newHomeSales": 711,
+      "jobOpenings": 6271,
+      "federalDeficit": -138547.43781759,
       "unemploymentRate": 4.2,
       "savingsRate": 5.6,
       "consumerSentiment": 98.5
@@ -388,6 +420,8 @@
       "buildingPermits": 1311,
       "housingStarts": 1177,
       "newHomeSales": 630,
+      "jobOpenings": 6336,
+      "federalDeficit": -23193.55948872,
       "unemploymentRate": 4.1,
       "savingsRate": 5,
       "consumerSentiment": 95.9
@@ -411,6 +445,8 @@
       "buildingPermits": 1317,
       "housingStarts": 1299,
       "newHomeSales": 590,
+      "jobOpenings": 6621,
+      "federalDeficit": 49235.72070792,
       "unemploymentRate": 4,
       "savingsRate": 5.7,
       "consumerSentiment": 95.7
@@ -434,6 +470,8 @@
       "buildingPermits": 1321,
       "housingStarts": 1277,
       "newHomeSales": 618,
+      "jobOpenings": 6552,
+      "federalDeficit": -215248.1724224,
       "unemploymentRate": 4.1,
       "savingsRate": 5.8,
       "consumerSentiment": 99.7
@@ -457,6 +495,8 @@
       "buildingPermits": 1385,
       "housingStarts": 1318,
       "newHomeSales": 679,
+      "jobOpenings": 6818,
+      "federalDeficit": -208743.24980988,
       "unemploymentRate": 4,
       "savingsRate": 5.9,
       "consumerSentiment": 101.4
@@ -480,6 +520,8 @@
       "buildingPermits": 1378,
       "housingStarts": 1276,
       "newHomeSales": 642,
+      "jobOpenings": 6877,
+      "federalDeficit": 214255.11366731,
       "unemploymentRate": 4,
       "savingsRate": 6,
       "consumerSentiment": 98.8
@@ -503,6 +545,8 @@
       "buildingPermits": 1338,
       "housingStarts": 1357,
       "newHomeSales": 662,
+      "jobOpenings": 7016,
+      "federalDeficit": -146796.44336556,
       "unemploymentRate": 3.8,
       "savingsRate": 6,
       "consumerSentiment": 98
@@ -526,6 +570,8 @@
       "buildingPermits": 1345,
       "housingStarts": 1192,
       "newHomeSales": 636,
+      "jobOpenings": 7230,
+      "federalDeficit": -74857.99046356,
       "unemploymentRate": 4,
       "savingsRate": 6.3,
       "consumerSentiment": 98.2
@@ -549,6 +595,8 @@
       "buildingPermits": 1334,
       "housingStarts": 1208,
       "newHomeSales": 628,
+      "jobOpenings": 7190,
+      "federalDeficit": -76865.22967062,
       "unemploymentRate": 3.8,
       "savingsRate": 6.5,
       "consumerSentiment": 97.9
@@ -572,6 +620,8 @@
       "buildingPermits": 1273,
       "housingStarts": 1288,
       "newHomeSales": 593,
+      "jobOpenings": 7208,
+      "federalDeficit": -214147.52548064,
       "unemploymentRate": 3.8,
       "savingsRate": 6.6,
       "consumerSentiment": 96.2
@@ -595,6 +645,8 @@
       "buildingPermits": 1314,
       "housingStarts": 1250,
       "newHomeSales": 595,
+      "jobOpenings": 7411,
+      "federalDeficit": 119116.00888032,
       "unemploymentRate": 3.7,
       "savingsRate": 6.8,
       "consumerSentiment": 100.1
@@ -618,6 +670,8 @@
       "buildingPermits": 1272,
       "housingStarts": 1221,
       "newHomeSales": 554,
+      "jobOpenings": 7304,
+      "federalDeficit": -100491.14254473,
       "unemploymentRate": 3.8,
       "savingsRate": 6.7,
       "consumerSentiment": 98.6
@@ -641,6 +695,8 @@
       "buildingPermits": 1340,
       "housingStarts": 1181,
       "newHomeSales": 625,
+      "jobOpenings": 7594,
+      "federalDeficit": -204902.55739878,
       "unemploymentRate": 3.8,
       "savingsRate": 6.5,
       "consumerSentiment": 97.5
@@ -664,6 +720,8 @@
       "buildingPermits": 1317,
       "housingStarts": 1095,
       "newHomeSales": 546,
+      "jobOpenings": 7489,
+      "federalDeficit": -13539.35862905,
       "unemploymentRate": 3.9,
       "savingsRate": 8.4,
       "consumerSentiment": 98.3
@@ -687,6 +745,8 @@
       "buildingPermits": 1254,
       "housingStarts": 1226,
       "newHomeSales": 595,
+      "jobOpenings": 7502,
+      "federalDeficit": 8682.86661098,
       "unemploymentRate": 4,
       "savingsRate": 8.4,
       "consumerSentiment": 91.2
@@ -710,6 +770,8 @@
       "buildingPermits": 1286,
       "housingStarts": 1121,
       "newHomeSales": 648,
+      "jobOpenings": 7066,
+      "federalDeficit": -233977.2488268,
       "unemploymentRate": 3.8,
       "savingsRate": 8.5,
       "consumerSentiment": 93.8
@@ -733,6 +795,8 @@
       "buildingPermits": 1295,
       "housingStarts": 1191,
       "newHomeSales": 718,
+      "jobOpenings": 7317,
+      "federalDeficit": -146944.76565389,
       "unemploymentRate": 3.8,
       "savingsRate": 7.9,
       "consumerSentiment": 98.4
@@ -756,6 +820,8 @@
       "buildingPermits": 1322,
       "housingStarts": 1272,
       "newHomeSales": 702,
+      "jobOpenings": 7272,
+      "federalDeficit": 160304.50890986,
       "unemploymentRate": 3.7,
       "savingsRate": 7.6,
       "consumerSentiment": 97.2
@@ -779,6 +845,8 @@
       "buildingPermits": 1347,
       "housingStarts": 1293,
       "newHomeSales": 618,
+      "jobOpenings": 7275,
+      "federalDeficit": -207768.39134666,
       "unemploymentRate": 3.6,
       "savingsRate": 7.3,
       "consumerSentiment": 100
@@ -802,6 +870,8 @@
       "buildingPermits": 1299,
       "housingStarts": 1243,
       "newHomeSales": 729,
+      "jobOpenings": 7194,
+      "federalDeficit": -8476.31845422,
       "unemploymentRate": 3.6,
       "savingsRate": 7.1,
       "consumerSentiment": 98.2
@@ -825,6 +895,8 @@
       "buildingPermits": 1379,
       "housingStarts": 1240,
       "newHomeSales": 648,
+      "jobOpenings": 7042,
+      "federalDeficit": -119695.80619346,
       "unemploymentRate": 3.7,
       "savingsRate": 6.8,
       "consumerSentiment": 98.4
@@ -848,6 +920,8 @@
       "buildingPermits": 1482,
       "housingStarts": 1375,
       "newHomeSales": 712,
+      "jobOpenings": 7178,
+      "federalDeficit": -200344.34892913,
       "unemploymentRate": 3.6,
       "savingsRate": 6.9,
       "consumerSentiment": 89.8
@@ -871,6 +945,8 @@
       "buildingPermits": 1469,
       "housingStarts": 1311,
       "newHomeSales": 712,
+      "jobOpenings": 7124,
+      "federalDeficit": 82767.65846478,
       "unemploymentRate": 3.5,
       "savingsRate": 7,
       "consumerSentiment": 93.2
@@ -894,6 +970,8 @@
       "buildingPermits": 1523,
       "housingStarts": 1325,
       "newHomeSales": 722,
+      "jobOpenings": 7289,
+      "federalDeficit": -134467.56493381,
       "unemploymentRate": 3.6,
       "savingsRate": 7.1,
       "consumerSentiment": 95.5
@@ -917,6 +995,8 @@
       "buildingPermits": 1535,
       "housingStarts": 1353,
       "newHomeSales": 713,
+      "jobOpenings": 6888,
+      "federalDeficit": -208838.29445674,
       "unemploymentRate": 3.6,
       "savingsRate": 6.9,
       "consumerSentiment": 96.8
@@ -940,6 +1020,8 @@
       "buildingPermits": 1443,
       "housingStarts": 1548,
       "newHomeSales": 700,
+      "jobOpenings": 6699,
+      "federalDeficit": -13272.55731642,
       "unemploymentRate": 3.6,
       "savingsRate": 6.2,
       "consumerSentiment": 99.3
@@ -963,6 +1045,8 @@
       "buildingPermits": 1490,
       "housingStarts": 1581,
       "newHomeSales": 689,
+      "jobOpenings": 7124,
+      "federalDeficit": -32593.28000764,
       "unemploymentRate": 3.6,
       "savingsRate": 6.8,
       "consumerSentiment": 99.8
@@ -986,6 +1070,8 @@
       "buildingPermits": 1461,
       "housingStarts": 1549,
       "newHomeSales": 707,
+      "jobOpenings": 6966,
+      "federalDeficit": -235335.21387457,
       "unemploymentRate": 3.5,
       "savingsRate": 7.5,
       "consumerSentiment": 101
@@ -1009,6 +1095,8 @@
       "buildingPermits": 1351,
       "housingStarts": 1266,
       "newHomeSales": 626,
+      "jobOpenings": 5894,
+      "federalDeficit": -119125.16471802,
       "unemploymentRate": 4.4,
       "savingsRate": 12.4,
       "consumerSentiment": 89.1
@@ -1032,6 +1120,8 @@
       "buildingPermits": 1079,
       "housingStarts": 936,
       "newHomeSales": 576,
+      "jobOpenings": 4606,
+      "federalDeficit": -737850.62107965,
       "unemploymentRate": 14.8,
       "savingsRate": 31.8,
       "consumerSentiment": 71.8
@@ -1055,6 +1145,8 @@
       "buildingPermits": 1251,
       "housingStarts": 1039,
       "newHomeSales": 707,
+      "jobOpenings": 5612,
+      "federalDeficit": -398821.41365968,
       "unemploymentRate": 13.2,
       "savingsRate": 22.6,
       "consumerSentiment": 72.3
@@ -1078,6 +1170,8 @@
       "buildingPermits": 1333,
       "housingStarts": 1266,
       "newHomeSales": 901,
+      "jobOpenings": 6129,
+      "federalDeficit": -864074.06849171,
       "unemploymentRate": 11,
       "savingsRate": 18.3,
       "consumerSentiment": 78.1
@@ -1101,6 +1195,8 @@
       "buildingPermits": 1539,
       "housingStarts": 1526,
       "newHomeSales": 981,
+      "jobOpenings": 6530,
+      "federalDeficit": -62991.72639454,
       "unemploymentRate": 10.2,
       "savingsRate": 17.9,
       "consumerSentiment": 72.5
@@ -1124,6 +1220,8 @@
       "buildingPermits": 1534,
       "housingStarts": 1396,
       "newHomeSales": 1016,
+      "jobOpenings": 6429,
+      "federalDeficit": -200095.01510766,
       "unemploymentRate": 8.4,
       "savingsRate": 13.9,
       "consumerSentiment": 74.1
@@ -1147,6 +1245,8 @@
       "buildingPermits": 1650,
       "housingStarts": 1473,
       "newHomeSales": 979,
+      "jobOpenings": 6511,
+      "federalDeficit": -124610.55841919,
       "unemploymentRate": 7.8,
       "savingsRate": 13.3,
       "consumerSentiment": 80.4
@@ -1170,6 +1270,8 @@
       "buildingPermits": 1612,
       "housingStarts": 1543,
       "newHomeSales": 1031,
+      "jobOpenings": 6798,
+      "federalDeficit": -284070.53717284,
       "unemploymentRate": 6.9,
       "savingsRate": 12.8,
       "consumerSentiment": 81.8
@@ -1193,6 +1295,8 @@
       "buildingPermits": 1692,
       "housingStarts": 1543,
       "newHomeSales": 877,
+      "jobOpenings": 6820,
+      "federalDeficit": -145266.26352985,
       "unemploymentRate": 6.7,
       "savingsRate": 12,
       "consumerSentiment": 76.9
@@ -1216,6 +1320,8 @@
       "buildingPermits": 1755,
       "housingStarts": 1614,
       "newHomeSales": 874,
+      "jobOpenings": 6773,
+      "federalDeficit": -143562.32743913,
       "unemploymentRate": 6.7,
       "savingsRate": 11.8,
       "consumerSentiment": 80.7
@@ -1239,6 +1345,8 @@
       "buildingPermits": 1856,
       "housingStarts": 1624,
       "newHomeSales": 899,
+      "jobOpenings": 7162,
+      "federalDeficit": -162832.48946754,
       "unemploymentRate": 6.4,
       "savingsRate": 19.5,
       "consumerSentiment": 79
@@ -1262,6 +1370,8 @@
       "buildingPermits": 1703,
       "housingStarts": 1398,
       "newHomeSales": 772,
+      "jobOpenings": 7827,
+      "federalDeficit": -310921.94250467,
       "unemploymentRate": 6.2,
       "savingsRate": 13,
       "consumerSentiment": 76.8
@@ -1285,6 +1395,8 @@
       "buildingPermits": 1756,
       "housingStarts": 1688,
       "newHomeSales": 852,
+      "jobOpenings": 8499,
+      "federalDeficit": -659591.61844058,
       "unemploymentRate": 6.1,
       "savingsRate": 26.2,
       "consumerSentiment": 84.9
@@ -1308,6 +1420,8 @@
       "buildingPermits": 1710,
       "housingStarts": 1489,
       "newHomeSales": 817,
+      "jobOpenings": 9346,
+      "federalDeficit": -225579.46032577,
       "unemploymentRate": 6.1,
       "savingsRate": 12.4,
       "consumerSentiment": 88.3
@@ -1331,6 +1445,8 @@
       "buildingPermits": 1705,
       "housingStarts": 1600,
       "newHomeSales": 717,
+      "jobOpenings": 9954,
+      "federalDeficit": -131953.06316821,
       "unemploymentRate": 5.8,
       "savingsRate": 10,
       "consumerSentiment": 82.9
@@ -1354,6 +1470,8 @@
       "buildingPermits": 1662,
       "housingStarts": 1664,
       "newHomeSales": 714,
+      "jobOpenings": 10319,
+      "federalDeficit": -174160.55026216,
       "unemploymentRate": 5.9,
       "savingsRate": 8.8,
       "consumerSentiment": 85.5
@@ -1377,6 +1495,8 @@
       "buildingPermits": 1666,
       "housingStarts": 1600,
       "newHomeSales": 745,
+      "jobOpenings": 10983,
+      "federalDeficit": -302050.4883435,
       "unemploymentRate": 5.4,
       "savingsRate": 9.5,
       "consumerSentiment": 81.2
@@ -1400,6 +1520,8 @@
       "buildingPermits": 1740,
       "housingStarts": 1596,
       "newHomeSales": 688,
+      "jobOpenings": 10872,
+      "federalDeficit": -170634.65366187,
       "unemploymentRate": 5.1,
       "savingsRate": 8.7,
       "consumerSentiment": 70.3
@@ -1423,6 +1545,8 @@
       "buildingPermits": 1649,
       "housingStarts": 1576,
       "newHomeSales": 733,
+      "jobOpenings": 10834,
+      "federalDeficit": -61544.25121268,
       "unemploymentRate": 4.7,
       "savingsRate": 7.6,
       "consumerSentiment": 72.8
@@ -1446,6 +1570,8 @@
       "buildingPermits": 1699,
       "housingStarts": 1587,
       "newHomeSales": 689,
+      "jobOpenings": 11238,
+      "federalDeficit": -165055.36693325,
       "unemploymentRate": 4.5,
       "savingsRate": 7,
       "consumerSentiment": 71.7
@@ -1469,6 +1595,8 @@
       "buildingPermits": 1770,
       "housingStarts": 1707,
       "newHomeSales": 782,
+      "jobOpenings": 11199,
+      "federalDeficit": -191335.04052197,
       "unemploymentRate": 4.1,
       "savingsRate": 6.6,
       "consumerSentiment": 67.4
@@ -1492,6 +1620,8 @@
       "buildingPermits": 1886,
       "housingStarts": 1711,
       "newHomeSales": 816,
+      "jobOpenings": 11520,
+      "federalDeficit": -21303.12942523,
       "unemploymentRate": 3.9,
       "savingsRate": 6.6,
       "consumerSentiment": 70.6
@@ -1515,6 +1645,8 @@
       "buildingPermits": 1923,
       "housingStarts": 1693,
       "newHomeSales": 809,
+      "jobOpenings": 11210,
+      "federalDeficit": 118698.85824166,
       "unemploymentRate": 4,
       "savingsRate": 4.2,
       "consumerSentiment": 67.2
@@ -1538,6 +1670,8 @@
       "buildingPermits": 1846,
       "housingStarts": 1730,
       "newHomeSales": 784,
+      "jobOpenings": 11698,
+      "federalDeficit": -216589.75205605,
       "unemploymentRate": 3.9,
       "savingsRate": 4.1,
       "consumerSentiment": 62.8
@@ -1561,6 +1695,8 @@
       "buildingPermits": 1899,
       "housingStarts": 1700,
       "newHomeSales": 710,
+      "jobOpenings": 12301,
+      "federalDeficit": -192682.38665693,
       "unemploymentRate": 3.7,
       "savingsRate": 3.2,
       "consumerSentiment": 59.4
@@ -1584,6 +1720,8 @@
       "buildingPermits": 1849,
       "housingStarts": 1807,
       "newHomeSales": 612,
+      "jobOpenings": 11861,
+      "federalDeficit": 308215.06052679,
       "unemploymentRate": 3.7,
       "savingsRate": 2.6,
       "consumerSentiment": 65.2
@@ -1607,6 +1745,8 @@
       "buildingPermits": 1711,
       "housingStarts": 1546,
       "newHomeSales": 639,
+      "jobOpenings": 11535,
+      "federalDeficit": -66222.56120958,
       "unemploymentRate": 3.6,
       "savingsRate": 2.6,
       "consumerSentiment": 58.4
@@ -1630,6 +1770,8 @@
       "buildingPermits": 1726,
       "housingStarts": 1556,
       "newHomeSales": 564,
+      "jobOpenings": 11283,
+      "federalDeficit": -88841.51292609,
       "unemploymentRate": 3.6,
       "savingsRate": 2.2,
       "consumerSentiment": 50
@@ -1653,6 +1795,8 @@
       "buildingPermits": 1707,
       "housingStarts": 1382,
       "newHomeSales": 535,
+      "jobOpenings": 11576,
+      "federalDeficit": -211051.76005026,
       "unemploymentRate": 3.5,
       "savingsRate": 3.3,
       "consumerSentiment": 51.5
@@ -1676,6 +1820,8 @@
       "buildingPermits": 1565,
       "housingStarts": 1532,
       "newHomeSales": 634,
+      "jobOpenings": 10092,
+      "federalDeficit": -219596.24094964,
       "unemploymentRate": 3.6,
       "savingsRate": 3.2,
       "consumerSentiment": 58.2
@@ -1699,6 +1845,8 @@
       "buildingPermits": 1586,
       "housingStarts": 1481,
       "newHomeSales": 552,
+      "jobOpenings": 10800,
+      "federalDeficit": -429673.47896184,
       "unemploymentRate": 3.5,
       "savingsRate": 3.4,
       "consumerSentiment": 58.6
@@ -1722,6 +1870,8 @@
       "buildingPermits": 1583,
       "housingStarts": 1446,
       "newHomeSales": 586,
+      "jobOpenings": 10447,
+      "federalDeficit": -87797.83631139,
       "unemploymentRate": 3.6,
       "savingsRate": 3.4,
       "consumerSentiment": 59.9
@@ -1745,6 +1895,8 @@
       "buildingPermits": 1424,
       "housingStarts": 1434,
       "newHomeSales": 592,
+      "jobOpenings": 10632,
+      "federalDeficit": -248534.88065258,
       "unemploymentRate": 3.6,
       "savingsRate": 3.8,
       "consumerSentiment": 56.7
@@ -1768,6 +1920,8 @@
       "buildingPermits": 1398,
       "housingStarts": 1296,
       "newHomeSales": 615,
+      "jobOpenings": 10902,
+      "federalDeficit": -85000.73657788,
       "unemploymentRate": 3.5,
       "savingsRate": 4.2,
       "consumerSentiment": 59.8
@@ -1791,6 +1945,8 @@
       "buildingPermits": 1418,
       "housingStarts": 1358,
       "newHomeSales": 653,
+      "jobOpenings": 10318,
+      "federalDeficit": -38783.77183922,
       "unemploymentRate": 3.5,
       "savingsRate": 4.9,
       "consumerSentiment": 64.9
@@ -1814,6 +1970,8 @@
       "buildingPermits": 1605,
       "housingStarts": 1395,
       "newHomeSales": 633,
+      "jobOpenings": 9857,
+      "federalDeficit": -262433.84319423,
       "unemploymentRate": 3.6,
       "savingsRate": 5.5,
       "consumerSentiment": 66.9
@@ -1837,6 +1995,8 @@
       "buildingPermits": 1472,
       "housingStarts": 1366,
       "newHomeSales": 639,
+      "jobOpenings": 9655,
+      "federalDeficit": -378076.31647174,
       "unemploymentRate": 3.5,
       "savingsRate": 6,
       "consumerSentiment": 62
@@ -1860,6 +2020,8 @@
       "buildingPermits": 1482,
       "housingStarts": 1343,
       "newHomeSales": 656,
+      "jobOpenings": 9966,
+      "federalDeficit": 176180.79034912,
       "unemploymentRate": 3.4,
       "savingsRate": 5.8,
       "consumerSentiment": 63.7
@@ -1883,6 +2045,8 @@
       "buildingPermits": 1579,
       "housingStarts": 1609,
       "newHomeSales": 736,
+      "jobOpenings": 9368,
+      "federalDeficit": -240348.23965837,
       "unemploymentRate": 3.6,
       "savingsRate": 6.1,
       "consumerSentiment": 59
@@ -1906,6 +2070,8 @@
       "buildingPermits": 1447,
       "housingStarts": 1420,
       "newHomeSales": 687,
+      "jobOpenings": 9180,
+      "federalDeficit": -227768.41253805,
       "unemploymentRate": 3.6,
       "savingsRate": 5.8,
       "consumerSentiment": 64.2
@@ -1929,6 +2095,8 @@
       "buildingPermits": 1530,
       "housingStarts": 1464,
       "newHomeSales": 727,
+      "jobOpenings": 8657,
+      "federalDeficit": -220782.0973536,
       "unemploymentRate": 3.5,
       "savingsRate": 5.5,
       "consumerSentiment": 71.5
@@ -1952,6 +2120,8 @@
       "buildingPermits": 1596,
       "housingStarts": 1321,
       "newHomeSales": 645,
+      "jobOpenings": 9254,
+      "federalDeficit": 89255.57269373,
       "unemploymentRate": 3.7,
       "savingsRate": 5.6,
       "consumerSentiment": 69.4
@@ -1975,6 +2145,8 @@
       "buildingPermits": 1530,
       "housingStarts": 1369,
       "newHomeSales": 682,
+      "jobOpenings": 9259,
+      "federalDeficit": -170982.20087478,
       "unemploymentRate": 3.7,
       "savingsRate": 5.3,
       "consumerSentiment": 67.8
@@ -1998,6 +2170,8 @@
       "buildingPermits": 1524,
       "housingStarts": 1380,
       "newHomeSales": 689,
+      "jobOpenings": 8580,
+      "federalDeficit": -66563.55112973,
       "unemploymentRate": 3.9,
       "savingsRate": 5.4,
       "consumerSentiment": 63.8
@@ -2021,6 +2195,8 @@
       "buildingPermits": 1513,
       "housingStarts": 1522,
       "newHomeSales": 607,
+      "jobOpenings": 8602,
+      "federalDeficit": -314012.00228709,
       "unemploymentRate": 3.7,
       "savingsRate": 5.6,
       "consumerSentiment": 61.3
@@ -2044,6 +2220,8 @@
       "buildingPermits": 1501,
       "housingStarts": 1504,
       "newHomeSales": 634,
+      "jobOpenings": 8520,
+      "federalDeficit": -129365.41491979,
       "unemploymentRate": 3.8,
       "savingsRate": 5.6,
       "consumerSentiment": 69.7
@@ -2067,6 +2245,8 @@
       "buildingPermits": 1548,
       "housingStarts": 1378,
       "newHomeSales": 683,
+      "jobOpenings": 8378,
+      "federalDeficit": -21930.35633102,
       "unemploymentRate": 3.7,
       "savingsRate": 6.4,
       "consumerSentiment": 79
@@ -2090,6 +2270,8 @@
       "buildingPermits": 1570,
       "housingStarts": 1555,
       "newHomeSales": 653,
+      "jobOpenings": 8440,
+      "federalDeficit": -296274.64807989,
       "unemploymentRate": 3.9,
       "savingsRate": 6.1,
       "consumerSentiment": 76.9
@@ -2113,6 +2295,8 @@
       "buildingPermits": 1477,
       "housingStarts": 1297,
       "newHomeSales": 681,
+      "jobOpenings": 8206,
+      "federalDeficit": -236456.8239502,
       "unemploymentRate": 3.9,
       "savingsRate": 5.9,
       "consumerSentiment": 79.4
@@ -2136,6 +2320,8 @@
       "buildingPermits": 1456,
       "housingStarts": 1379,
       "newHomeSales": 706,
+      "jobOpenings": 7529,
+      "federalDeficit": 209529.30662533,
       "unemploymentRate": 3.9,
       "savingsRate": 5.8,
       "consumerSentiment": 77.2
@@ -2159,6 +2345,8 @@
       "buildingPermits": 1405,
       "housingStarts": 1329,
       "newHomeSales": 670,
+      "jobOpenings": 7782,
+      "federalDeficit": -347130.89369165,
       "unemploymentRate": 3.9,
       "savingsRate": 5.8,
       "consumerSentiment": 69.1
@@ -2182,6 +2370,8 @@
       "buildingPermits": 1459,
       "housingStarts": 1318,
       "newHomeSales": 683,
+      "jobOpenings": 7416,
+      "federalDeficit": -65965.29247634,
       "unemploymentRate": 4.1,
       "savingsRate": 5.7,
       "consumerSentiment": 68.2
@@ -2205,6 +2395,8 @@
       "buildingPermits": 1448,
       "housingStarts": 1269,
       "newHomeSales": 732,
+      "jobOpenings": 7426,
+      "federalDeficit": -243741.08729743,
       "unemploymentRate": 4.2,
       "savingsRate": 5.3,
       "consumerSentiment": 66.4
@@ -2228,6 +2420,8 @@
       "buildingPermits": 1492,
       "housingStarts": 1394,
       "newHomeSales": 687,
+      "jobOpenings": 7520,
+      "federalDeficit": -380080.4054345,
       "unemploymentRate": 4.2,
       "savingsRate": 5.2,
       "consumerSentiment": 67.9
@@ -2251,6 +2445,8 @@
       "buildingPermits": 1421,
       "housingStarts": 1357,
       "newHomeSales": 715,
+      "jobOpenings": 6943,
+      "federalDeficit": 64263.00886774,
       "unemploymentRate": 4.1,
       "savingsRate": 4.8,
       "consumerSentiment": 70.1
@@ -2274,6 +2470,8 @@
       "buildingPermits": 1435,
       "housingStarts": 1370,
       "newHomeSales": 632,
+      "jobOpenings": 7379,
+      "federalDeficit": -257450.34319191,
       "unemploymentRate": 4.1,
       "savingsRate": 5,
       "consumerSentiment": 70.5
@@ -2297,6 +2495,8 @@
       "buildingPermits": 1512,
       "housingStarts": 1300,
       "newHomeSales": 669,
+      "jobOpenings": 7566,
+      "federalDeficit": -366763.06436807,
       "unemploymentRate": 4.2,
       "savingsRate": 4.9,
       "consumerSentiment": 71.8
@@ -2320,6 +2520,8 @@
       "buildingPermits": 1467,
       "housingStarts": 1494,
       "newHomeSales": 702,
+      "jobOpenings": 7295,
+      "federalDeficit": -86731.61901329,
       "unemploymentRate": 4.1,
       "savingsRate": 4.3,
       "consumerSentiment": 74
@@ -2343,6 +2545,8 @@
       "buildingPermits": 1463,
       "housingStarts": 1353,
       "newHomeSales": 665,
+      "jobOpenings": 7431,
+      "federalDeficit": -128640.20667349,
       "unemploymentRate": 4,
       "savingsRate": 5.1,
       "consumerSentiment": 71.7
@@ -2366,6 +2570,8 @@
       "buildingPermits": 1446,
       "housingStarts": 1491,
       "newHomeSales": 641,
+      "jobOpenings": 7242,
+      "federalDeficit": -307017.19469927,
       "unemploymentRate": 4.2,
       "savingsRate": 5.2,
       "consumerSentiment": 64.7
@@ -2389,6 +2595,8 @@
       "buildingPermits": 1492,
       "housingStarts": 1346,
       "newHomeSales": 656,
+      "jobOpenings": 6952,
+      "federalDeficit": -160530.32149936,
       "unemploymentRate": 4.2,
       "savingsRate": 5.1,
       "consumerSentiment": 57
@@ -2412,6 +2620,8 @@
       "buildingPermits": 1445,
       "housingStarts": 1400,
       "newHomeSales": 701,
+      "jobOpenings": 7098,
+      "federalDeficit": 258399.94911496,
       "unemploymentRate": 4.2,
       "savingsRate": 5.5,
       "consumerSentiment": 52.2
@@ -2435,6 +2645,8 @@
       "buildingPermits": 1416,
       "housingStarts": 1289,
       "newHomeSales": 622,
+      "jobOpenings": 7310,
+      "federalDeficit": -316003.76118944,
       "unemploymentRate": 4.3,
       "savingsRate": 4.9,
       "consumerSentiment": 52.2
@@ -2458,6 +2670,8 @@
       "buildingPermits": 1399,
       "housingStarts": 1379,
       "newHomeSales": 665,
+      "jobOpenings": 7204,
+      "federalDeficit": 27010.02207777,
       "unemploymentRate": 4.1,
       "savingsRate": 4.6,
       "consumerSentiment": 60.7
@@ -2481,6 +2695,8 @@
       "buildingPermits": 1400,
       "housingStarts": 1432,
       "newHomeSales": 648,
+      "jobOpenings": 7089,
+      "federalDeficit": -291142.66028767,
       "unemploymentRate": 4.3,
       "savingsRate": 4.5,
       "consumerSentiment": 61.7
@@ -2504,6 +2720,8 @@
       "buildingPermits": 1347,
       "housingStarts": 1291,
       "newHomeSales": 698,
+      "jobOpenings": 6919,
+      "federalDeficit": -344791.89185812,
       "unemploymentRate": 4.3,
       "savingsRate": 4.4,
       "consumerSentiment": 58.2
@@ -2527,6 +2745,8 @@
       "buildingPermits": 1444,
       "housingStarts": 1319,
       "newHomeSales": 714,
+      "jobOpenings": 7169,
+      "federalDeficit": 197949.63036216,
       "unemploymentRate": 4.4,
       "savingsRate": 4.3,
       "consumerSentiment": 55.1
@@ -2550,6 +2770,8 @@
       "buildingPermits": 1418,
       "housingStarts": 1273,
       "newHomeSales": 652,
+      "jobOpenings": 7170,
+      "federalDeficit": -284350.0507828,
       "unemploymentRate": null,
       "savingsRate": 3.9,
       "consumerSentiment": 53.6
@@ -2573,6 +2795,8 @@
       "buildingPermits": 1414,
       "housingStarts": 1319,
       "newHomeSales": 757,
+      "jobOpenings": 6846,
+      "federalDeficit": -173277.17507692,
       "unemploymentRate": 4.5,
       "savingsRate": 3.8,
       "consumerSentiment": 51
@@ -2596,6 +2820,8 @@
       "buildingPermits": 1482,
       "housingStarts": 1378,
       "newHomeSales": 723,
+      "jobOpenings": 6550,
+      "federalDeficit": -144749.23560928,
       "unemploymentRate": 4.4,
       "savingsRate": 3.6,
       "consumerSentiment": 52.9
@@ -2619,6 +2845,8 @@
       "buildingPermits": 1393,
       "housingStarts": 1385,
       "newHomeSales": 576,
+      "jobOpenings": 7240,
+      "federalDeficit": -94615.16236921,
       "unemploymentRate": 4.3,
       "savingsRate": 4.4,
       "consumerSentiment": 56.4
@@ -2642,6 +2870,8 @@
       "buildingPermits": 1540,
       "housingStarts": 1346,
       "newHomeSales": 630,
+      "jobOpenings": 6922,
+      "federalDeficit": -307501.43342617,
       "unemploymentRate": 4.4,
       "savingsRate": 3.8,
       "consumerSentiment": 56.6
@@ -2665,6 +2895,8 @@
       "buildingPermits": 1363,
       "housingStarts": 1522,
       "newHomeSales": 659,
+      "jobOpenings": 6887,
+      "federalDeficit": -164100.33881786,
       "unemploymentRate": 4.3,
       "savingsRate": 3.5,
       "consumerSentiment": 53.3
@@ -2688,6 +2920,8 @@
       "buildingPermits": 1423,
       "housingStarts": 1414,
       "newHomeSales": 646,
+      "jobOpenings": 7585,
+      "federalDeficit": 215024.14019777,
       "unemploymentRate": 4.3,
       "savingsRate": 3,
       "consumerSentiment": 49.8
@@ -2711,6 +2945,8 @@
       "buildingPermits": 1410,
       "housingStarts": 1199,
       "newHomeSales": 618,
+      "jobOpenings": 7537,
+      "federalDeficit": -292648.46208374,
       "unemploymentRate": 4.3,
       "savingsRate": 2.8,
       "consumerSentiment": 44.8
@@ -2734,6 +2970,8 @@
       "buildingPermits": 1374,
       "housingStarts": 1427,
       "newHomeSales": 628,
+      "jobOpenings": 7359,
+      "federalDeficit": -120305.27558637,
       "unemploymentRate": 4.2,
       "savingsRate": 2.7,
       "consumerSentiment": 49.5
@@ -2757,6 +2995,8 @@
       "buildingPermits": null,
       "housingStarts": null,
       "newHomeSales": null,
+      "jobOpenings": null,
+      "federalDeficit": -432307.87462148,
       "unemploymentRate": 4.1,
       "savingsRate": null,
       "consumerSentiment": null
@@ -2780,6 +3020,8 @@
       "buildingPermits": null,
       "housingStarts": null,
       "newHomeSales": null,
+      "jobOpenings": null,
+      "federalDeficit": null,
       "unemploymentRate": null,
       "savingsRate": null,
       "consumerSentiment": null
@@ -2853,6 +3095,14 @@
     {
       "indicatorId": "new-home-sales",
       "latestMonth": "2026-06-01"
+    },
+    {
+      "indicatorId": "job-openings",
+      "latestMonth": "2026-06-01"
+    },
+    {
+      "indicatorId": "federal-deficit",
+      "latestMonth": "2026-07-01"
     },
     {
       "indicatorId": "unemployment-rate",
