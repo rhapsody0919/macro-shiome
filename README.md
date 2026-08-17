@@ -40,6 +40,32 @@ S&P 500 / NASDAQ-100 の業績とバリュエーションを週次で蓄積・�
 
 設計の詳細は [docs/plan.md](docs/plan.md)。
 
+## デプロイ
+
+Cloudflare Pages の **Git 連携**で配信する ([ADR-0005](docs/adr/0005-cloudflare-git-integration.md))。
+`main` への push で自動ビルド・自動公開される。週次バッチの commit もそのままデプロイになる。
+
+**ビルド設定は Cloudflare のダッシュボードにあり、リポジトリには残らない。**
+再現できるようここに記録する。**設定を変えたらこの表も更新すること。**
+
+| 項目 | 値 |
+| --- | --- |
+| Production branch | `main` |
+| Build command | `pnpm install --frozen-lockfile && pnpm build` |
+| Build output directory | `out` |
+| Root directory | (空欄 = リポジトリルート) |
+| 環境変数 `PNPM_VERSION` | `11.22.0` |
+
+補足:
+
+- **Node.js のバージョンは指定しない**。`.node-version` をリポジトリに置いてあり、
+  Cloudflare と GitHub Actions が同じファイルを読む
+- `PNPM_VERSION` は必要。Cloudflare v3 ビルドシステムの既定は pnpm 10.11.1 で、
+  本プロジェクトの 11.22.0 と違う
+- **環境変数に秘密情報は設定しない**。ビルドは `data/` の JSON を読むだけで、
+  API キーを必要としない (取得は GitHub Actions 側で完結する)
+- 無料枠は月 500 ビルド。週次バッチ 4 回 + PR マージ数回で十分収まる
+
 ## ドキュメント
 
 | | |
