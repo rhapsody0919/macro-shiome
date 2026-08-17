@@ -12,6 +12,7 @@ import type {
   FactsetField,
   Frequency,
   Indicator,
+  CyclePosition,
   IndicatorGroup,
   IndicatorMaster,
   IndicatorSource,
@@ -48,6 +49,11 @@ const FACTSET_FIELDS = [
   'growthNextCalendarYear',
 ] as const satisfies readonly FactsetField[];
 const HISTORY_LIMITS = ['10y', '5y'] as const;
+const CYCLE_POSITIONS = [
+  'leading',
+  'coincident',
+  'lagging',
+] as const satisfies readonly CyclePosition[];
 const INDEX_KEYS = ['sp500', 'nasdaq100'] as const satisfies readonly IndexKey[];
 
 const DATE_PATTERN = /^\d{4}-\d{2}-\d{2}$/;
@@ -121,6 +127,13 @@ export function parseIndicator(id: string, raw: unknown): Indicator {
       raw.historyLimit,
       HISTORY_LIMITS,
       `${where}.historyLimit`,
+    );
+  }
+  if (raw.cyclePosition !== undefined) {
+    indicator.cyclePosition = requireEnum(
+      raw.cyclePosition,
+      CYCLE_POSITIONS,
+      `${where}.cyclePosition`,
     );
   }
   if (raw.optionalInReport !== undefined) {

@@ -17,7 +17,7 @@ import type { MacroPoint } from '@/lib/data/types';
 import { filterByPeriod, parsePeriod } from '@/lib/period';
 import { ChartFrame, SharedTooltip, type ValueKind } from './chart-frame';
 
-interface SeriesDef {
+export interface SeriesDef {
   key: keyof MacroPoint;
   label: string;
   color: string;

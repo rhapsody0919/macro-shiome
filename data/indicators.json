@@ -11,6 +11,7 @@
     "copyright": "restricted",
     "group": "equity",
     "historyLimit": "10y",
+    "cyclePosition": "leading",
     "note": "FRED は S&P/Dow Jones 系列を 10 年分しか提供しない。価格指数のため配当を含まない。"
   },
   "nasdaq100": {
