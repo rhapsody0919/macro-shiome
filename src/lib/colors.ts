@@ -65,6 +65,19 @@ export const COLORS = {
   newOrdersConsumerGoods: '#f97316',
   newOrdersCapitalGoods: '#a855f7',
 
+  /** ハイイールド債スプレッド。拡大が警戒側。 */
+  hySpread: '#f43f5e',
+  /** 投資適格債スプレッド。 */
+  igSpread: '#f59e0b',
+  /** FF 実効金利。政策金利。 */
+  fedFundsRate: '#22c55e',
+  /** 原油 WTI。 */
+  wti: '#78716c',
+  /** ドル指数。 */
+  dollarIndex: '#0891b2',
+  /** 失業率。 */
+  unemploymentRate: '#ef4444',
+
   // --- その他 ---
   vix: '#ef4444',
   usdjpy: '#10b981',

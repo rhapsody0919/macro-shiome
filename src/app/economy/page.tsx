@@ -196,6 +196,32 @@ const CHARTS: MonthlyChartDef[] = [
     ],
   },
   {
+    primaryIndicator: 'unemployment-rate',
+    title: '失業率',
+    subtitle: '労働力人口に占める失業者の割合 (水準)',
+    kind: 'number',
+    zeroLine: false,
+    series: [
+      {
+        key: 'unemploymentRate',
+        label: '失業率 (%)',
+        color: COLORS.unemploymentRate,
+        indicatorId: 'unemployment-rate',
+      },
+    ],
+    notes: [
+      <span key="lagging">
+        最も広く見られる労働市場の指標だが、<strong>景気の転換には遅れて動く</strong>。
+        企業は採用を止め、残業を減らし、それでも足りなければ解雇するという順序で動くため。
+        より早く動くのは<strong>週平均労働時間</strong>と<strong>新規失業保険申請</strong>。
+      </span>,
+      <span key="not-lag-component">
+        The Conference Board の景気遅行指数の構成要素は「平均失業期間」であり
+        失業率そのものではないため、分類していない。
+      </span>,
+    ],
+  },
+  {
     // 移転所得を除く実質個人所得は景気一致指数 (CEI) の構成要素。
     primaryIndicator: 'real-income-ex-transfer',
     title: '実質所得',
