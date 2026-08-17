@@ -116,6 +116,26 @@ const CHARTS: MacroChartDef[] = [
     ],
   },
   {
+    primaryIndicator: 'credit-conditions',
+    title: '信用状況',
+    subtitle: '企業や家計が資金を借りやすいか (ゼロが平均)',
+    signed: true,
+    series: [{ key: 'creditConditions', label: '信用状況指数', color: COLORS.creditConditions }],
+    notes: [
+      <span key="direction">
+        <strong>正が引き締まり、負が緩み。</strong>
+        ゼロが平均的な状態。上昇は資金を借りにくくなっていることを示し、
+        赤い領域 (負) は平均より緩い状態。
+      </span>,
+      <span key="lei">
+        The Conference Board の景気先行指数の構成要素に「Leading Credit Index」があるが、
+        <strong>あちらは独自の合成指標で公開されていない</strong>。ここでは同じく信用状況の
+        逼迫度を測る Chicago Fed の指数を使っており、<strong>同じものではない</strong>。
+      </span>,
+      <span key="copyright">著作権は Chicago Fed にある。週次。</span>,
+    ],
+  },
+  {
     primaryIndicator: 'vix',
     title: 'VIX',
     subtitle: 'S&P 500 のインプライド・ボラティリティ指数',

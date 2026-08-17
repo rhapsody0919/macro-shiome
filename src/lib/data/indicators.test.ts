@@ -413,3 +413,26 @@ describe('小売売上と景気指数の構成要素 (#72)', () => {
     }
   });
 });
+
+describe('景気先行指数の残り 2 要素 (#83)', () => {
+  it('週平均労働時間は先行指標', () => {
+    // LEI の構成要素。解雇の前に残業が減るため雇用者数より早く動く。
+    expect(indicators['manufacturing-hours'].cyclePosition).toBe('leading');
+    expect(indicators['manufacturing-hours'].copyright).toBe('none');
+  });
+
+  it('信用状況は分類しない', () => {
+    // LEI の Leading Credit Index は Conference Board 独自の合成指標で公開されていない。
+    // Chicago Fed の指数は別物なので、先行と分類する根拠が無い。
+    expect(indicators['credit-conditions'].cyclePosition).toBeUndefined();
+  });
+
+  it('信用状況が代替であることを記録する', () => {
+    expect(indicators['credit-conditions'].note).toContain('Leading Credit Index とは別物');
+  });
+
+  it('信用状況は著作権ありとして扱う', () => {
+    expect(indicators['credit-conditions'].copyright).toBe('restricted');
+    expect(indicators['credit-conditions'].attribution).toContain('Chicago');
+  });
+});

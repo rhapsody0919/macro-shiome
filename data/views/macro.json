@@ -8,7 +8,8 @@
     "realRate": 0.09000000000000008,
     "termSpread": 0.87,
     "mortgageRate": 3.43,
-    "initialClaims": 266000
+    "initialClaims": 266000,
+    "creditConditions": 0.142
   },
   {
     "date": "2016-08-12",
@@ -19,7 +20,8 @@
     "realRate": 0.07000000000000006,
     "termSpread": 0.8,
     "mortgageRate": 3.45,
-    "initialClaims": 265000
+    "initialClaims": 265000,
+    "creditConditions": 0.138
   },
   {
     "date": "2016-08-19",
@@ -30,7 +32,8 @@
     "realRate": 0.10000000000000009,
     "termSpread": 0.82,
     "mortgageRate": 3.43,
-    "initialClaims": 264000
+    "initialClaims": 264000,
+    "creditConditions": 0.137
   },
   {
     "date": "2016-08-26",
@@ -41,7 +44,8 @@
     "realRate": 0.15000000000000013,
     "termSpread": 0.78,
     "mortgageRate": 3.43,
-    "initialClaims": 264000
+    "initialClaims": 264000,
+    "creditConditions": 0.139
   },
   {
     "date": "2016-09-02",
@@ -52,7 +56,8 @@
     "realRate": 0.13000000000000012,
     "termSpread": 0.8,
     "mortgageRate": 3.46,
-    "initialClaims": 261000
+    "initialClaims": 261000,
+    "creditConditions": 0.145
   },
   {
     "date": "2016-09-09",
@@ -63,7 +68,8 @@
     "realRate": 0.16999999999999993,
     "termSpread": 0.88,
     "mortgageRate": 3.44,
-    "initialClaims": 257000
+    "initialClaims": 257000,
+    "creditConditions": 0.151
   },
   {
     "date": "2016-09-16",
@@ -74,7 +80,8 @@
     "realRate": 0.18999999999999995,
     "termSpread": 0.93,
     "mortgageRate": 3.5,
-    "initialClaims": 252000
+    "initialClaims": 252000,
+    "creditConditions": 0.157
   },
   {
     "date": "2016-09-23",
@@ -85,7 +92,8 @@
     "realRate": 0.050000000000000044,
     "termSpread": 0.85,
     "mortgageRate": 3.48,
-    "initialClaims": 250000
+    "initialClaims": 250000,
+    "creditConditions": 0.16
   },
   {
     "date": "2016-09-30",
@@ -96,7 +104,8 @@
     "realRate": 0,
     "termSpread": 0.83,
     "mortgageRate": 3.42,
-    "initialClaims": 247000
+    "initialClaims": 247000,
+    "creditConditions": 0.162
   },
   {
     "date": "2016-10-07",
@@ -107,7 +116,8 @@
     "realRate": 0.10000000000000009,
     "termSpread": 0.9,
     "mortgageRate": 3.42,
-    "initialClaims": 245000
+    "initialClaims": 245000,
+    "creditConditions": 0.16
   },
   {
     "date": "2016-10-14",
@@ -118,7 +128,8 @@
     "realRate": 0.13000000000000012,
     "termSpread": 0.96,
     "mortgageRate": 3.47,
-    "initialClaims": 250000
+    "initialClaims": 250000,
+    "creditConditions": 0.154
   },
   {
     "date": "2016-10-21",
@@ -129,7 +140,8 @@
     "realRate": 0.07000000000000006,
     "termSpread": 0.9,
     "mortgageRate": 3.52,
-    "initialClaims": 263000
+    "initialClaims": 263000,
+    "creditConditions": 0.147
   },
   {
     "date": "2016-10-28",
@@ -140,7 +152,8 @@
     "realRate": 0.13000000000000012,
     "termSpread": 1,
     "mortgageRate": 3.47,
-    "initialClaims": 256000
+    "initialClaims": 256000,
+    "creditConditions": 0.136
   },
   {
     "date": "2016-11-04",
@@ -151,7 +164,8 @@
     "realRate": 0.1100000000000001,
     "termSpread": 0.99,
     "mortgageRate": 3.54,
-    "initialClaims": 265000
+    "initialClaims": 265000,
+    "creditConditions": 0.124
   },
   {
     "date": "2016-11-11",
@@ -162,7 +176,8 @@
     "realRate": 0.27,
     "termSpread": 1.23,
     "mortgageRate": 3.57,
-    "initialClaims": 250000
+    "initialClaims": 250000,
+    "creditConditions": 0.111
   },
   {
     "date": "2016-11-18",
@@ -173,7 +188,8 @@
     "realRate": 0.43999999999999995,
     "termSpread": 1.27,
     "mortgageRate": 3.94,
-    "initialClaims": 232000
+    "initialClaims": 232000,
+    "creditConditions": 0.097
   },
   {
     "date": "2016-11-25",
@@ -184,7 +200,8 @@
     "realRate": 0.47,
     "termSpread": 1.24,
     "mortgageRate": 4.03,
-    "initialClaims": 246000
+    "initialClaims": 246000,
+    "creditConditions": 0.084
   },
   {
     "date": "2016-12-02",
@@ -195,7 +212,8 @@
     "realRate": 0.49,
     "termSpread": 1.29,
     "mortgageRate": 4.08,
-    "initialClaims": 255000
+    "initialClaims": 255000,
+    "creditConditions": 0.071
   },
   {
     "date": "2016-12-09",
@@ -206,7 +224,8 @@
     "realRate": 0.5100000000000002,
     "termSpread": 1.32,
     "mortgageRate": 4.13,
-    "initialClaims": 248000
+    "initialClaims": 248000,
+    "creditConditions": 0.059
   },
   {
     "date": "2016-12-16",
@@ -217,7 +236,8 @@
     "realRate": 0.74,
     "termSpread": 1.32,
     "mortgageRate": 4.16,
-    "initialClaims": 252000
+    "initialClaims": 252000,
+    "creditConditions": 0.048
   },
   {
     "date": "2016-12-23",
@@ -228,7 +248,8 @@
     "realRate": 0.5799999999999998,
     "termSpread": 1.33,
     "mortgageRate": 4.3,
-    "initialClaims": 260000
+    "initialClaims": 260000,
+    "creditConditions": 0.038
   },
   {
     "date": "2016-12-30",
@@ -239,7 +260,8 @@
     "realRate": 0.5000000000000002,
     "termSpread": 1.25,
     "mortgageRate": 4.32,
-    "initialClaims": 257000
+    "initialClaims": 257000,
+    "creditConditions": 0.027
   },
   {
     "date": "2017-01-06",
@@ -250,7 +272,8 @@
     "realRate": 0.45999999999999996,
     "termSpread": 1.2,
     "mortgageRate": 4.2,
-    "initialClaims": 244000
+    "initialClaims": 244000,
+    "creditConditions": 0.018
   },
   {
     "date": "2017-01-13",
@@ -261,7 +284,8 @@
     "realRate": 0.4099999999999999,
     "termSpread": 1.19,
     "mortgageRate": 4.12,
-    "initialClaims": 245000
+    "initialClaims": 245000,
+    "creditConditions": 0.009
   },
   {
     "date": "2017-01-20",
@@ -272,7 +296,8 @@
     "realRate": 0.43999999999999995,
     "termSpread": 1.28,
     "mortgageRate": 4.09,
-    "initialClaims": 240000
+    "initialClaims": 240000,
+    "creditConditions": 0
   },
   {
     "date": "2017-01-27",
@@ -283,7 +308,8 @@
     "realRate": 0.41000000000000014,
     "termSpread": 1.27,
     "mortgageRate": 4.19,
-    "initialClaims": 250000
+    "initialClaims": 250000,
+    "creditConditions": -0.007
   },
   {
     "date": "2017-02-03",
@@ -294,7 +320,8 @@
     "realRate": 0.4400000000000004,
     "termSpread": 1.28,
     "mortgageRate": 4.19,
-    "initialClaims": 241000
+    "initialClaims": 241000,
+    "creditConditions": -0.012
   },
   {
     "date": "2017-02-10",
@@ -305,7 +332,8 @@
     "realRate": 0.40000000000000036,
     "termSpread": 1.21,
     "mortgageRate": 4.17,
-    "initialClaims": 230000
+    "initialClaims": 230000,
+    "creditConditions": -0.015
   },
   {
     "date": "2017-02-17",
@@ -316,7 +344,8 @@
     "realRate": 0.41000000000000014,
     "termSpread": 1.21,
     "mortgageRate": 4.15,
-    "initialClaims": 233000
+    "initialClaims": 233000,
+    "creditConditions": -0.015
   },
   {
     "date": "2017-02-24",
@@ -327,7 +356,8 @@
     "realRate": 0.31000000000000005,
     "termSpread": 1.19,
     "mortgageRate": 4.16,
-    "initialClaims": 237000
+    "initialClaims": 237000,
+    "creditConditions": -0.014
   },
   {
     "date": "2017-03-03",
@@ -338,7 +368,8 @@
     "realRate": 0.4500000000000002,
     "termSpread": 1.17,
     "mortgageRate": 4.1,
-    "initialClaims": 221000
+    "initialClaims": 221000,
+    "creditConditions": -0.011
   },
   {
     "date": "2017-03-10",
@@ -349,7 +380,8 @@
     "realRate": 0.5700000000000003,
     "termSpread": 1.22,
     "mortgageRate": 4.21,
-    "initialClaims": 236000
+    "initialClaims": 236000,
+    "creditConditions": -0.007
   },
   {
     "date": "2017-03-17",
@@ -360,7 +392,8 @@
     "realRate": 0.4900000000000002,
     "termSpread": 1.17,
     "mortgageRate": 4.3,
-    "initialClaims": 228000
+    "initialClaims": 228000,
+    "creditConditions": -0.004
   },
   {
     "date": "2017-03-24",
@@ -371,7 +404,8 @@
     "realRate": 0.41999999999999993,
     "termSpread": 1.14,
     "mortgageRate": 4.23,
-    "initialClaims": 235000
+    "initialClaims": 235000,
+    "creditConditions": -0.001
   },
   {
     "date": "2017-03-31",
@@ -382,7 +416,8 @@
     "realRate": 0.42999999999999994,
     "termSpread": 1.13,
     "mortgageRate": 4.14,
-    "initialClaims": 236000
+    "initialClaims": 236000,
+    "creditConditions": -0.001
   },
   {
     "date": "2017-04-07",
@@ -393,7 +428,8 @@
     "realRate": 0.43999999999999995,
     "termSpread": 1.09,
     "mortgageRate": 4.1,
-    "initialClaims": 216000
+    "initialClaims": 216000,
+    "creditConditions": -0.003
   },
   {
     "date": "2017-04-14",
@@ -404,7 +440,8 @@
     "realRate": 0.3200000000000003,
     "termSpread": 1.03,
     "mortgageRate": 4.08,
-    "initialClaims": 222000
+    "initialClaims": 222000,
+    "creditConditions": -0.005
   },
   {
     "date": "2017-04-21",
@@ -415,7 +452,8 @@
     "realRate": 0.40000000000000013,
     "termSpread": 1.04,
     "mortgageRate": 3.97,
-    "initialClaims": 231000
+    "initialClaims": 231000,
+    "creditConditions": -0.008
   },
   {
     "date": "2017-04-28",
@@ -426,7 +464,8 @@
     "realRate": 0.3700000000000001,
     "termSpread": 1.01,
     "mortgageRate": 4.03,
-    "initialClaims": 238000
+    "initialClaims": 238000,
+    "creditConditions": -0.012
   },
   {
     "date": "2017-05-05",
@@ -437,7 +476,8 @@
     "realRate": 0.4999999999999998,
     "termSpread": 1.04,
     "mortgageRate": 4.02,
-    "initialClaims": 232000
+    "initialClaims": 232000,
+    "creditConditions": -0.015
   },
   {
     "date": "2017-05-12",
@@ -448,7 +488,8 @@
     "realRate": 0.49,
     "termSpread": 1.04,
     "mortgageRate": 4.05,
-    "initialClaims": 233000
+    "initialClaims": 233000,
+    "creditConditions": -0.019
   },
   {
     "date": "2017-05-19",
@@ -459,7 +500,8 @@
     "realRate": 0.4099999999999999,
     "termSpread": 0.95,
     "mortgageRate": 4.02,
-    "initialClaims": 234000
+    "initialClaims": 234000,
+    "creditConditions": -0.023
   },
   {
     "date": "2017-05-26",
@@ -470,7 +512,8 @@
     "realRate": 0.43999999999999995,
     "termSpread": 0.95,
     "mortgageRate": 3.95,
-    "initialClaims": 236000
+    "initialClaims": 236000,
+    "creditConditions": -0.028
   },
   {
     "date": "2017-06-02",
@@ -481,7 +524,8 @@
     "realRate": 0.3599999999999999,
     "termSpread": 0.87,
     "mortgageRate": 3.94,
-    "initialClaims": 253000
+    "initialClaims": 253000,
+    "creditConditions": -0.034
   },
   {
     "date": "2017-06-09",
@@ -492,7 +536,8 @@
     "realRate": 0.42999999999999994,
     "termSpread": 0.86,
     "mortgageRate": 3.89,
-    "initialClaims": 251000
+    "initialClaims": 251000,
+    "creditConditions": -0.04
   },
   {
     "date": "2017-06-16",
@@ -503,7 +548,8 @@
     "realRate": 0.4900000000000002,
     "termSpread": 0.84,
     "mortgageRate": 3.91,
-    "initialClaims": 245000
+    "initialClaims": 245000,
+    "creditConditions": -0.047
   },
   {
     "date": "2017-06-23",
@@ -514,7 +560,8 @@
     "realRate": 0.44999999999999996,
     "termSpread": 0.81,
     "mortgageRate": 3.9,
-    "initialClaims": 249000
+    "initialClaims": 249000,
+    "creditConditions": -0.054
   },
   {
     "date": "2017-06-30",
@@ -525,7 +572,8 @@
     "realRate": 0.5800000000000001,
     "termSpread": 0.93,
     "mortgageRate": 3.88,
-    "initialClaims": 247000
+    "initialClaims": 247000,
+    "creditConditions": -0.06
   },
   {
     "date": "2017-07-07",
@@ -536,7 +584,8 @@
     "realRate": 0.6600000000000001,
     "termSpread": 0.99,
     "mortgageRate": 3.96,
-    "initialClaims": 256000
+    "initialClaims": 256000,
+    "creditConditions": -0.066
   },
   {
     "date": "2017-07-14",
@@ -547,7 +596,8 @@
     "realRate": 0.5700000000000001,
     "termSpread": 0.98,
     "mortgageRate": 4.03,
-    "initialClaims": 259000
+    "initialClaims": 259000,
+    "creditConditions": -0.07
   },
   {
     "date": "2017-07-21",
@@ -558,7 +608,8 @@
     "realRate": 0.4800000000000002,
     "termSpread": 0.88,
     "mortgageRate": 3.96,
-    "initialClaims": 245000
+    "initialClaims": 245000,
+    "creditConditions": -0.072
   },
   {
     "date": "2017-07-28",
@@ -569,7 +620,8 @@
     "realRate": 0.46999999999999975,
     "termSpread": 0.96,
     "mortgageRate": 3.92,
-    "initialClaims": 249000
+    "initialClaims": 249000,
+    "creditConditions": -0.072
   },
   {
     "date": "2017-08-04",
@@ -580,7 +632,8 @@
     "realRate": 0.47,
     "termSpread": 0.91,
     "mortgageRate": 3.93,
-    "initialClaims": 245000
+    "initialClaims": 245000,
+    "creditConditions": -0.07
   },
   {
     "date": "2017-08-11",
@@ -591,7 +644,8 @@
     "realRate": 0.3999999999999999,
     "termSpread": 0.89,
     "mortgageRate": 3.9,
-    "initialClaims": 254000
+    "initialClaims": 254000,
+    "creditConditions": -0.066
   },
   {
     "date": "2017-08-18",
@@ -602,7 +656,8 @@
     "realRate": 0.42999999999999994,
     "termSpread": 0.86,
     "mortgageRate": 3.89,
-    "initialClaims": 245000
+    "initialClaims": 245000,
+    "creditConditions": -0.062
   },
   {
     "date": "2017-08-25",
@@ -613,7 +668,8 @@
     "realRate": 0.41999999999999993,
     "termSpread": 0.82,
     "mortgageRate": 3.86,
-    "initialClaims": 245000
+    "initialClaims": 245000,
+    "creditConditions": -0.06
   },
   {
     "date": "2017-09-01",
@@ -624,7 +680,8 @@
     "realRate": 0.3700000000000001,
     "termSpread": 0.81,
     "mortgageRate": 3.82,
-    "initialClaims": 247000
+    "initialClaims": 247000,
+    "creditConditions": -0.059
   },
   {
     "date": "2017-09-08",
@@ -635,7 +692,8 @@
     "realRate": 0.25,
     "termSpread": 0.79,
     "mortgageRate": 3.78,
-    "initialClaims": 297000
+    "initialClaims": 297000,
+    "creditConditions": -0.061
   },
   {
     "date": "2017-09-15",
@@ -646,7 +704,8 @@
     "realRate": 0.3500000000000001,
     "termSpread": 0.81,
     "mortgageRate": 3.78,
-    "initialClaims": 280000
+    "initialClaims": 280000,
+    "creditConditions": -0.065
   },
   {
     "date": "2017-09-22",
@@ -657,7 +716,8 @@
     "realRate": 0.4199999999999997,
     "termSpread": 0.8,
     "mortgageRate": 3.83,
-    "initialClaims": 261000
+    "initialClaims": 261000,
+    "creditConditions": -0.072
   },
   {
     "date": "2017-09-29",
@@ -668,7 +728,8 @@
     "realRate": 0.49,
     "termSpread": 0.86,
     "mortgageRate": 3.83,
-    "initialClaims": 264000
+    "initialClaims": 264000,
+    "creditConditions": -0.079
   },
   {
     "date": "2017-10-06",
@@ -679,7 +740,8 @@
     "realRate": 0.5,
     "termSpread": 0.83,
     "mortgageRate": 3.85,
-    "initialClaims": 260000
+    "initialClaims": 260000,
+    "creditConditions": -0.087
   },
   {
     "date": "2017-10-13",
@@ -690,7 +752,8 @@
     "realRate": 0.4299999999999997,
     "termSpread": 0.77,
     "mortgageRate": 3.91,
-    "initialClaims": 252000
+    "initialClaims": 252000,
+    "creditConditions": -0.094
   },
   {
     "date": "2017-10-20",
@@ -701,7 +764,8 @@
     "realRate": 0.52,
     "termSpread": 0.79,
     "mortgageRate": 3.88,
-    "initialClaims": 235000
+    "initialClaims": 235000,
+    "creditConditions": -0.099
   },
   {
     "date": "2017-10-27",
@@ -712,7 +776,8 @@
     "realRate": 0.54,
     "termSpread": 0.83,
     "mortgageRate": 3.94,
-    "initialClaims": 241000
+    "initialClaims": 241000,
+    "creditConditions": -0.102
   },
   {
     "date": "2017-11-03",
@@ -723,7 +788,8 @@
     "realRate": 0.47999999999999976,
     "termSpread": 0.71,
     "mortgageRate": 3.94,
-    "initialClaims": 241000
+    "initialClaims": 241000,
+    "creditConditions": -0.102
   },
   {
     "date": "2017-11-10",
@@ -734,7 +800,8 @@
     "realRate": 0.52,
     "termSpread": 0.73,
     "mortgageRate": 3.9,
-    "initialClaims": 248000
+    "initialClaims": 248000,
+    "creditConditions": -0.1
   },
   {
     "date": "2017-11-17",
@@ -745,7 +812,8 @@
     "realRate": 0.49,
     "termSpread": 0.62,
     "mortgageRate": 3.95,
-    "initialClaims": 254000
+    "initialClaims": 254000,
+    "creditConditions": -0.097
   },
   {
     "date": "2017-11-24",
@@ -756,7 +824,8 @@
     "realRate": 0.4999999999999998,
     "termSpread": 0.59,
     "mortgageRate": 3.92,
-    "initialClaims": 246000
+    "initialClaims": 246000,
+    "creditConditions": -0.094
   },
   {
     "date": "2017-12-01",
@@ -767,7 +836,8 @@
     "realRate": 0.51,
     "termSpread": 0.59,
     "mortgageRate": 3.9,
-    "initialClaims": 243000
+    "initialClaims": 243000,
+    "creditConditions": -0.091
   },
   {
     "date": "2017-12-08",
@@ -778,7 +848,8 @@
     "realRate": 0.5,
     "termSpread": 0.58,
     "mortgageRate": 3.94,
-    "initialClaims": 241000
+    "initialClaims": 241000,
+    "creditConditions": -0.09
   },
   {
     "date": "2017-12-15",
@@ -789,7 +860,8 @@
     "realRate": 0.4700000000000002,
     "termSpread": 0.51,
     "mortgageRate": 3.93,
-    "initialClaims": 229000
+    "initialClaims": 229000,
+    "creditConditions": -0.09
   },
   {
     "date": "2017-12-22",
@@ -800,7 +872,8 @@
     "realRate": 0.54,
     "termSpread": 0.57,
     "mortgageRate": 3.94,
-    "initialClaims": 244000
+    "initialClaims": 244000,
+    "creditConditions": -0.093
   },
   {
     "date": "2017-12-29",
@@ -811,7 +884,8 @@
     "realRate": 0.43999999999999995,
     "termSpread": 0.51,
     "mortgageRate": 3.99,
-    "initialClaims": 251000
+    "initialClaims": 251000,
+    "creditConditions": -0.096
   },
   {
     "date": "2018-01-05",
@@ -822,7 +896,8 @@
     "realRate": 0.4600000000000004,
     "termSpread": 0.51,
     "mortgageRate": 3.95,
-    "initialClaims": 248000
+    "initialClaims": 248000,
+    "creditConditions": -0.101
   },
   {
     "date": "2018-01-12",
@@ -833,7 +908,8 @@
     "realRate": 0.54,
     "termSpread": 0.56,
     "mortgageRate": 3.99,
-    "initialClaims": 252000
+    "initialClaims": 252000,
+    "creditConditions": -0.105
   },
   {
     "date": "2018-01-19",
@@ -844,7 +920,8 @@
     "realRate": 0.5800000000000001,
     "termSpread": 0.58,
     "mortgageRate": 4.04,
-    "initialClaims": 230000
+    "initialClaims": 230000,
+    "creditConditions": -0.107
   },
   {
     "date": "2018-01-26",
@@ -855,7 +932,8 @@
     "realRate": 0.5700000000000003,
     "termSpread": 0.53,
     "mortgageRate": 4.15,
-    "initialClaims": 231000
+    "initialClaims": 231000,
+    "creditConditions": -0.106
   },
   {
     "date": "2018-02-02",
@@ -866,7 +944,8 @@
     "realRate": 0.6999999999999997,
     "termSpread": 0.69,
     "mortgageRate": 4.22,
-    "initialClaims": 228000
+    "initialClaims": 228000,
+    "creditConditions": -0.101
   },
   {
     "date": "2018-02-09",
@@ -877,7 +956,8 @@
     "realRate": 0.7800000000000002,
     "termSpread": 0.78,
     "mortgageRate": 4.32,
-    "initialClaims": 224000
+    "initialClaims": 224000,
+    "creditConditions": -0.093
   },
   {
     "date": "2018-02-16",
@@ -888,7 +968,8 @@
     "realRate": 0.7800000000000002,
     "termSpread": 0.66,
     "mortgageRate": 4.38,
-    "initialClaims": 225000
+    "initialClaims": 225000,
+    "creditConditions": -0.082
   },
   {
     "date": "2018-02-23",
@@ -899,7 +980,8 @@
     "realRate": 0.7599999999999998,
     "termSpread": 0.63,
     "mortgageRate": 4.4,
-    "initialClaims": 219000
+    "initialClaims": 219000,
+    "creditConditions": -0.07
   },
   {
     "date": "2018-03-02",
@@ -910,7 +992,8 @@
     "realRate": 0.7399999999999998,
     "termSpread": 0.61,
     "mortgageRate": 4.43,
-    "initialClaims": 216000
+    "initialClaims": 216000,
+    "creditConditions": -0.058
   },
   {
     "date": "2018-03-09",
@@ -921,7 +1004,8 @@
     "realRate": 0.7799999999999998,
     "termSpread": 0.63,
     "mortgageRate": 4.46,
-    "initialClaims": 228000
+    "initialClaims": 228000,
+    "creditConditions": -0.046
   },
   {
     "date": "2018-03-16",
@@ -932,7 +1016,8 @@
     "realRate": 0.77,
     "termSpread": 0.54,
     "mortgageRate": 4.44,
-    "initialClaims": 223000
+    "initialClaims": 223000,
+    "creditConditions": -0.036
   },
   {
     "date": "2018-03-23",
@@ -943,7 +1028,8 @@
     "realRate": 0.75,
     "termSpread": 0.54,
     "mortgageRate": 4.45,
-    "initialClaims": 225000
+    "initialClaims": 225000,
+    "creditConditions": -0.03
   },
   {
     "date": "2018-03-30",
@@ -954,7 +1040,8 @@
     "realRate": 0.6900000000000004,
     "termSpread": 0.47,
     "mortgageRate": 4.44,
-    "initialClaims": 221000
+    "initialClaims": 221000,
+    "creditConditions": -0.026
   },
   {
     "date": "2018-04-06",
@@ -965,7 +1052,8 @@
     "realRate": 0.7000000000000002,
     "termSpread": 0.5,
     "mortgageRate": 4.4,
-    "initialClaims": 232000
+    "initialClaims": 232000,
+    "creditConditions": -0.027
   },
   {
     "date": "2018-04-13",
@@ -976,7 +1064,8 @@
     "realRate": 0.69,
     "termSpread": 0.45,
     "mortgageRate": 4.42,
-    "initialClaims": 234000
+    "initialClaims": 234000,
+    "creditConditions": -0.031
   },
   {
     "date": "2018-04-20",
@@ -987,7 +1076,8 @@
     "realRate": 0.79,
     "termSpread": 0.5,
     "mortgageRate": 4.47,
-    "initialClaims": 236000
+    "initialClaims": 236000,
+    "creditConditions": -0.037
   },
   {
     "date": "2018-04-27",
@@ -998,7 +1088,8 @@
     "realRate": 0.79,
     "termSpread": 0.47,
     "mortgageRate": 4.58,
-    "initialClaims": 207000
+    "initialClaims": 207000,
+    "creditConditions": -0.043
   },
   {
     "date": "2018-05-04",
@@ -1009,7 +1100,8 @@
     "realRate": 0.79,
     "termSpread": 0.44,
     "mortgageRate": 4.55,
-    "initialClaims": 209000
+    "initialClaims": 209000,
+    "creditConditions": -0.049
   },
   {
     "date": "2018-05-11",
@@ -1020,7 +1112,8 @@
     "realRate": 0.8200000000000003,
     "termSpread": 0.43,
     "mortgageRate": 4.55,
-    "initialClaims": 211000
+    "initialClaims": 211000,
+    "creditConditions": -0.055
   },
   {
     "date": "2018-05-18",
@@ -1031,7 +1124,8 @@
     "realRate": 0.9100000000000001,
     "termSpread": 0.51,
     "mortgageRate": 4.61,
-    "initialClaims": 222000
+    "initialClaims": 222000,
+    "creditConditions": -0.059
   },
   {
     "date": "2018-05-25",
@@ -1042,7 +1136,8 @@
     "realRate": 0.8400000000000003,
     "termSpread": 0.45,
     "mortgageRate": 4.66,
-    "initialClaims": 230000
+    "initialClaims": 230000,
+    "creditConditions": -0.062
   },
   {
     "date": "2018-06-01",
@@ -1053,7 +1148,8 @@
     "realRate": 0.8000000000000003,
     "termSpread": 0.42,
     "mortgageRate": 4.56,
-    "initialClaims": 222000
+    "initialClaims": 222000,
+    "creditConditions": -0.063
   },
   {
     "date": "2018-06-08",
@@ -1064,7 +1160,8 @@
     "realRate": 0.8200000000000003,
     "termSpread": 0.43,
     "mortgageRate": 4.54,
-    "initialClaims": 223000
+    "initialClaims": 223000,
+    "creditConditions": -0.064
   },
   {
     "date": "2018-06-15",
@@ -1075,7 +1172,8 @@
     "realRate": 0.81,
     "termSpread": 0.38,
     "mortgageRate": 4.62,
-    "initialClaims": 222000
+    "initialClaims": 222000,
+    "creditConditions": -0.063
   },
   {
     "date": "2018-06-22",
@@ -1086,7 +1184,8 @@
     "realRate": 0.7799999999999998,
     "termSpread": 0.34,
     "mortgageRate": 4.57,
-    "initialClaims": 218000
+    "initialClaims": 218000,
+    "creditConditions": -0.063
   },
   {
     "date": "2018-06-29",
@@ -1097,7 +1196,8 @@
     "realRate": 0.7400000000000002,
     "termSpread": 0.33,
     "mortgageRate": 4.55,
-    "initialClaims": 222000
+    "initialClaims": 222000,
+    "creditConditions": -0.062
   },
   {
     "date": "2018-07-06",
@@ -1108,7 +1208,8 @@
     "realRate": 0.6999999999999997,
     "termSpread": 0.29,
     "mortgageRate": 4.52,
-    "initialClaims": 228000
+    "initialClaims": 228000,
+    "creditConditions": -0.062
   },
   {
     "date": "2018-07-13",
@@ -1119,7 +1220,8 @@
     "realRate": 0.7200000000000002,
     "termSpread": 0.24,
     "mortgageRate": 4.53,
-    "initialClaims": 216000
+    "initialClaims": 216000,
+    "creditConditions": -0.064
   },
   {
     "date": "2018-07-20",
@@ -1130,7 +1232,8 @@
     "realRate": 0.7800000000000002,
     "termSpread": 0.29,
     "mortgageRate": 4.52,
-    "initialClaims": 205000
+    "initialClaims": 205000,
+    "creditConditions": -0.066
   },
   {
     "date": "2018-07-27",
@@ -1141,7 +1244,8 @@
     "realRate": 0.8399999999999999,
     "termSpread": 0.29,
     "mortgageRate": 4.54,
-    "initialClaims": 210000
+    "initialClaims": 210000,
+    "creditConditions": -0.069
   },
   {
     "date": "2018-08-03",
@@ -1152,7 +1256,8 @@
     "realRate": 0.8300000000000001,
     "termSpread": 0.32,
     "mortgageRate": 4.6,
-    "initialClaims": 207000
+    "initialClaims": 207000,
+    "creditConditions": -0.072
   },
   {
     "date": "2018-08-10",
@@ -1163,7 +1268,8 @@
     "realRate": 0.7800000000000002,
     "termSpread": 0.26,
     "mortgageRate": 4.59,
-    "initialClaims": 210000
+    "initialClaims": 210000,
+    "creditConditions": -0.075
   },
   {
     "date": "2018-08-17",
@@ -1174,7 +1280,8 @@
     "realRate": 0.79,
     "termSpread": 0.26,
     "mortgageRate": 4.53,
-    "initialClaims": 206000
+    "initialClaims": 206000,
+    "creditConditions": -0.078
   },
   {
     "date": "2018-08-24",
@@ -1185,7 +1292,8 @@
     "realRate": 0.73,
     "termSpread": 0.19,
     "mortgageRate": 4.51,
-    "initialClaims": 207000
+    "initialClaims": 207000,
+    "creditConditions": -0.081
   },
   {
     "date": "2018-08-31",
@@ -1196,7 +1304,8 @@
     "realRate": 0.7799999999999998,
     "termSpread": 0.24,
     "mortgageRate": 4.52,
-    "initialClaims": 211000
+    "initialClaims": 211000,
+    "creditConditions": -0.084
   },
   {
     "date": "2018-09-07",
@@ -1207,7 +1316,8 @@
     "realRate": 0.8399999999999999,
     "termSpread": 0.23,
     "mortgageRate": 4.54,
-    "initialClaims": 201000
+    "initialClaims": 201000,
+    "creditConditions": -0.087
   },
   {
     "date": "2018-09-14",
@@ -1218,7 +1328,8 @@
     "realRate": 0.8900000000000001,
     "termSpread": 0.21,
     "mortgageRate": 4.6,
-    "initialClaims": 204000
+    "initialClaims": 204000,
+    "creditConditions": -0.089
   },
   {
     "date": "2018-09-21",
@@ -1229,7 +1340,8 @@
     "realRate": 0.9199999999999999,
     "termSpread": 0.26,
     "mortgageRate": 4.65,
-    "initialClaims": 206000
+    "initialClaims": 206000,
+    "creditConditions": -0.09
   },
   {
     "date": "2018-09-28",
@@ -1240,7 +1352,8 @@
     "realRate": 0.9099999999999997,
     "termSpread": 0.24,
     "mortgageRate": 4.72,
-    "initialClaims": 205000
+    "initialClaims": 205000,
+    "creditConditions": -0.09
   },
   {
     "date": "2018-10-05",
@@ -1251,7 +1364,8 @@
     "realRate": 1.0699999999999998,
     "termSpread": 0.35,
     "mortgageRate": 4.71,
-    "initialClaims": 210000
+    "initialClaims": 210000,
+    "creditConditions": -0.088
   },
   {
     "date": "2018-10-12",
@@ -1262,7 +1376,8 @@
     "realRate": 1.0299999999999998,
     "termSpread": 0.3,
     "mortgageRate": 4.9,
-    "initialClaims": 211000
+    "initialClaims": 211000,
+    "creditConditions": -0.084
   },
   {
     "date": "2018-10-19",
@@ -1273,7 +1388,8 @@
     "realRate": 1.0900000000000003,
     "termSpread": 0.28,
     "mortgageRate": 4.85,
-    "initialClaims": 208000
+    "initialClaims": 208000,
+    "creditConditions": -0.078
   },
   {
     "date": "2018-10-26",
@@ -1284,7 +1400,8 @@
     "realRate": 1.02,
     "termSpread": 0.27,
     "mortgageRate": 4.86,
-    "initialClaims": 217000
+    "initialClaims": 217000,
+    "creditConditions": -0.068
   },
   {
     "date": "2018-11-02",
@@ -1295,7 +1412,8 @@
     "realRate": 1.1600000000000001,
     "termSpread": 0.31,
     "mortgageRate": 4.83,
-    "initialClaims": 216000
+    "initialClaims": 216000,
+    "creditConditions": -0.056
   },
   {
     "date": "2018-11-09",
@@ -1306,7 +1424,8 @@
     "realRate": 1.15,
     "termSpread": 0.25,
     "mortgageRate": 4.94,
-    "initialClaims": 218000
+    "initialClaims": 218000,
+    "creditConditions": -0.04
   },
   {
     "date": "2018-11-16",
@@ -1317,7 +1436,8 @@
     "realRate": 1.06,
     "termSpread": 0.27,
     "mortgageRate": 4.94,
-    "initialClaims": 221000
+    "initialClaims": 221000,
+    "creditConditions": -0.022
   },
   {
     "date": "2018-11-23",
@@ -1328,7 +1448,8 @@
     "realRate": 1.0899999999999999,
     "termSpread": 0.24,
     "mortgageRate": 4.81,
-    "initialClaims": 225000
+    "initialClaims": 225000,
+    "creditConditions": -0.002
   },
   {
     "date": "2018-11-30",
@@ -1339,7 +1460,8 @@
     "realRate": 1.0399999999999998,
     "termSpread": 0.21,
     "mortgageRate": 4.81,
-    "initialClaims": 237000
+    "initialClaims": 237000,
+    "creditConditions": 0.017
   },
   {
     "date": "2018-12-07",
@@ -1350,7 +1472,8 @@
     "realRate": 0.9600000000000002,
     "termSpread": 0.13,
     "mortgageRate": 4.75,
-    "initialClaims": 232000
+    "initialClaims": 232000,
+    "creditConditions": 0.034
   },
   {
     "date": "2018-12-14",
@@ -1361,7 +1484,8 @@
     "realRate": 1.07,
     "termSpread": 0.16,
     "mortgageRate": 4.63,
-    "initialClaims": 208000
+    "initialClaims": 208000,
+    "creditConditions": 0.047
   },
   {
     "date": "2018-12-21",
@@ -1372,7 +1496,8 @@
     "realRate": 1.02,
     "termSpread": 0.16,
     "mortgageRate": 4.62,
-    "initialClaims": 217000
+    "initialClaims": 217000,
+    "creditConditions": 0.055
   },
   {
     "date": "2018-12-28",
@@ -1383,7 +1508,8 @@
     "realRate": 0.9900000000000002,
     "termSpread": 0.2,
     "mortgageRate": 4.55,
-    "initialClaims": 228000
+    "initialClaims": 228000,
+    "creditConditions": 0.055
   },
   {
     "date": "2019-01-04",
@@ -1394,7 +1520,8 @@
     "realRate": 0.9099999999999999,
     "termSpread": 0.17,
     "mortgageRate": 4.51,
-    "initialClaims": 238000
+    "initialClaims": 238000,
+    "creditConditions": 0.05
   },
   {
     "date": "2019-01-11",
@@ -1405,7 +1532,8 @@
     "realRate": 0.8799999999999999,
     "termSpread": 0.16,
     "mortgageRate": 4.45,
-    "initialClaims": 225000
+    "initialClaims": 225000,
+    "creditConditions": 0.038
   },
   {
     "date": "2019-01-18",
@@ -1416,7 +1544,8 @@
     "realRate": 0.96,
     "termSpread": 0.17,
     "mortgageRate": 4.45,
-    "initialClaims": 218000
+    "initialClaims": 218000,
+    "creditConditions": 0.024
   },
   {
     "date": "2019-01-25",
@@ -1427,7 +1556,8 @@
     "realRate": 0.9699999999999998,
     "termSpread": 0.16,
     "mortgageRate": 4.45,
-    "initialClaims": 214000
+    "initialClaims": 214000,
+    "creditConditions": 0.008
   },
   {
     "date": "2019-02-01",
@@ -1438,7 +1568,8 @@
     "realRate": 0.8200000000000003,
     "termSpread": 0.18,
     "mortgageRate": 4.46,
-    "initialClaims": 234000
+    "initialClaims": 234000,
+    "creditConditions": -0.008
   },
   {
     "date": "2019-02-08",
@@ -1449,7 +1580,8 @@
     "realRate": 0.8099999999999998,
     "termSpread": 0.18,
     "mortgageRate": 4.41,
-    "initialClaims": 232000
+    "initialClaims": 232000,
+    "creditConditions": -0.022
   },
   {
     "date": "2019-02-15",
@@ -1460,7 +1592,8 @@
     "realRate": 0.8,
     "termSpread": 0.14,
     "mortgageRate": 4.37,
-    "initialClaims": 226000
+    "initialClaims": 226000,
+    "creditConditions": -0.033
   },
   {
     "date": "2019-02-22",
@@ -1471,7 +1604,8 @@
     "realRate": 0.74,
     "termSpread": 0.17,
     "mortgageRate": 4.35,
-    "initialClaims": 211000
+    "initialClaims": 211000,
+    "creditConditions": -0.041
   },
   {
     "date": "2019-03-01",
@@ -1482,7 +1616,8 @@
     "realRate": 0.7999999999999998,
     "termSpread": 0.21,
     "mortgageRate": 4.35,
-    "initialClaims": 221000
+    "initialClaims": 221000,
+    "creditConditions": -0.046
   },
   {
     "date": "2019-03-08",
@@ -1493,7 +1628,8 @@
     "realRate": 0.7200000000000002,
     "termSpread": 0.17,
     "mortgageRate": 4.41,
-    "initialClaims": 216000
+    "initialClaims": 216000,
+    "creditConditions": -0.049
   },
   {
     "date": "2019-03-15",
@@ -1504,7 +1640,8 @@
     "realRate": 0.6499999999999999,
     "termSpread": 0.16,
     "mortgageRate": 4.31,
-    "initialClaims": 218000
+    "initialClaims": 218000,
+    "creditConditions": -0.051
   },
   {
     "date": "2019-03-22",
@@ -1515,7 +1652,8 @@
     "realRate": 0.54,
     "termSpread": 0.13,
     "mortgageRate": 4.28,
-    "initialClaims": 212000
+    "initialClaims": 212000,
+    "creditConditions": -0.052
   },
   {
     "date": "2019-03-29",
@@ -1526,7 +1664,8 @@
     "realRate": 0.5300000000000002,
     "termSpread": 0.14,
     "mortgageRate": 4.06,
-    "initialClaims": 210000
+    "initialClaims": 210000,
+    "creditConditions": -0.053
   },
   {
     "date": "2019-04-05",
@@ -1537,7 +1676,8 @@
     "realRate": 0.6000000000000001,
     "termSpread": 0.15,
     "mortgageRate": 4.08,
-    "initialClaims": 203000
+    "initialClaims": 203000,
+    "creditConditions": -0.055
   },
   {
     "date": "2019-04-12",
@@ -1548,7 +1688,8 @@
     "realRate": 0.6100000000000001,
     "termSpread": 0.16,
     "mortgageRate": 4.12,
-    "initialClaims": 196000
+    "initialClaims": 196000,
+    "creditConditions": -0.056
   },
   {
     "date": "2019-04-19",
@@ -1559,7 +1700,8 @@
     "realRate": 0.6199999999999999,
     "termSpread": 0.19,
     "mortgageRate": 4.17,
-    "initialClaims": 197000
+    "initialClaims": 197000,
+    "creditConditions": -0.056
   },
   {
     "date": "2019-04-26",
@@ -1570,7 +1712,8 @@
     "realRate": 0.5399999999999998,
     "termSpread": 0.23,
     "mortgageRate": 4.2,
-    "initialClaims": 222000
+    "initialClaims": 222000,
+    "creditConditions": -0.055
   },
   {
     "date": "2019-05-03",
@@ -1581,7 +1724,8 @@
     "realRate": 0.6300000000000001,
     "termSpread": 0.21,
     "mortgageRate": 4.14,
-    "initialClaims": 224000
+    "initialClaims": 224000,
+    "creditConditions": -0.053
   },
   {
     "date": "2019-05-10",
@@ -1592,7 +1736,8 @@
     "realRate": 0.5900000000000003,
     "termSpread": 0.21,
     "mortgageRate": 4.1,
-    "initialClaims": 225000
+    "initialClaims": 225000,
+    "creditConditions": -0.049
   },
   {
     "date": "2019-05-17",
@@ -1603,7 +1748,8 @@
     "realRate": 0.5800000000000001,
     "termSpread": 0.19,
     "mortgageRate": 4.07,
-    "initialClaims": 212000
+    "initialClaims": 212000,
+    "creditConditions": -0.044
   },
   {
     "date": "2019-05-24",
@@ -1614,7 +1760,8 @@
     "realRate": 0.5599999999999998,
     "termSpread": 0.16,
     "mortgageRate": 4.06,
-    "initialClaims": 215000
+    "initialClaims": 215000,
+    "creditConditions": -0.04
   },
   {
     "date": "2019-05-31",
@@ -1625,7 +1772,8 @@
     "realRate": 0.40000000000000013,
     "termSpread": 0.19,
     "mortgageRate": 3.99,
-    "initialClaims": 222000
+    "initialClaims": 222000,
+    "creditConditions": -0.036
   },
   {
     "date": "2019-06-07",
@@ -1636,7 +1784,8 @@
     "realRate": 0.34999999999999987,
     "termSpread": 0.24,
     "mortgageRate": 3.82,
-    "initialClaims": 223000
+    "initialClaims": 223000,
+    "creditConditions": -0.034
   },
   {
     "date": "2019-06-14",
@@ -1647,7 +1796,8 @@
     "realRate": 0.45999999999999996,
     "termSpread": 0.25,
     "mortgageRate": 3.82,
-    "initialClaims": 226000
+    "initialClaims": 226000,
+    "creditConditions": -0.033
   },
   {
     "date": "2019-06-21",
@@ -1658,7 +1808,8 @@
     "realRate": 0.33999999999999986,
     "termSpread": 0.3,
     "mortgageRate": 3.84,
-    "initialClaims": 217000
+    "initialClaims": 217000,
+    "creditConditions": -0.032
   },
   {
     "date": "2019-06-28",
@@ -1669,7 +1820,8 @@
     "realRate": 0.31000000000000005,
     "termSpread": 0.25,
     "mortgageRate": 3.73,
-    "initialClaims": 234000
+    "initialClaims": 234000,
+    "creditConditions": -0.031
   },
   {
     "date": "2019-07-05",
@@ -1680,7 +1832,8 @@
     "realRate": 0.3500000000000001,
     "termSpread": 0.17,
     "mortgageRate": 3.75,
-    "initialClaims": 226000
+    "initialClaims": 226000,
+    "creditConditions": -0.029
   },
   {
     "date": "2019-07-12",
@@ -1691,7 +1844,8 @@
     "realRate": 0.3500000000000001,
     "termSpread": 0.28,
     "mortgageRate": 3.75,
-    "initialClaims": 215000
+    "initialClaims": 215000,
+    "creditConditions": -0.026
   },
   {
     "date": "2019-07-19",
@@ -1702,7 +1856,8 @@
     "realRate": 0.24999999999999978,
     "termSpread": 0.25,
     "mortgageRate": 3.81,
-    "initialClaims": 211000
+    "initialClaims": 211000,
+    "creditConditions": -0.022
   },
   {
     "date": "2019-07-26",
@@ -1713,7 +1868,8 @@
     "realRate": 0.30000000000000004,
     "termSpread": 0.22,
     "mortgageRate": 3.75,
-    "initialClaims": 202000
+    "initialClaims": 202000,
+    "creditConditions": -0.015
   },
   {
     "date": "2019-08-02",
@@ -1724,7 +1880,8 @@
     "realRate": 0.20000000000000018,
     "termSpread": 0.14,
     "mortgageRate": 3.75,
-    "initialClaims": 206000
+    "initialClaims": 206000,
+    "creditConditions": -0.007
   },
   {
     "date": "2019-08-09",
@@ -1735,7 +1892,8 @@
     "realRate": 0.08000000000000007,
     "termSpread": 0.11,
     "mortgageRate": 3.6,
-    "initialClaims": 208000
+    "initialClaims": 208000,
+    "creditConditions": 0.002
   },
   {
     "date": "2019-08-16",
@@ -1746,7 +1904,8 @@
     "realRate": 0.010000000000000009,
     "termSpread": 0.07,
     "mortgageRate": 3.6,
-    "initialClaims": 212000
+    "initialClaims": 212000,
+    "creditConditions": 0.011
   },
   {
     "date": "2019-08-23",
@@ -1757,7 +1916,8 @@
     "realRate": -0.020000000000000018,
     "termSpread": 0.01,
     "mortgageRate": 3.55,
-    "initialClaims": 207000
+    "initialClaims": 207000,
+    "creditConditions": 0.019
   },
   {
     "date": "2019-08-30",
@@ -1768,7 +1928,8 @@
     "realRate": -0.050000000000000044,
     "termSpread": 0,
     "mortgageRate": 3.58,
-    "initialClaims": 213000
+    "initialClaims": 213000,
+    "creditConditions": 0.025
   },
   {
     "date": "2019-09-06",
@@ -1779,7 +1940,8 @@
     "realRate": 0.010000000000000009,
     "termSpread": 0.02,
     "mortgageRate": 3.49,
-    "initialClaims": 215000
+    "initialClaims": 215000,
+    "creditConditions": 0.027
   },
   {
     "date": "2019-09-13",
@@ -1790,7 +1952,8 @@
     "realRate": 0.22999999999999998,
     "termSpread": 0.11,
     "mortgageRate": 3.56,
-    "initialClaims": 207000
+    "initialClaims": 207000,
+    "creditConditions": 0.027
   },
   {
     "date": "2019-09-20",
@@ -1801,7 +1964,8 @@
     "realRate": 0.1299999999999999,
     "termSpread": 0.05,
     "mortgageRate": 3.73,
-    "initialClaims": 205000
+    "initialClaims": 205000,
+    "creditConditions": 0.023
   },
   {
     "date": "2019-09-27",
@@ -1812,7 +1976,8 @@
     "realRate": 0.15999999999999992,
     "termSpread": 0.06,
     "mortgageRate": 3.64,
-    "initialClaims": 211000
+    "initialClaims": 211000,
+    "creditConditions": 0.018
   },
   {
     "date": "2019-10-04",
@@ -1823,7 +1988,8 @@
     "realRate": 0.020000000000000018,
     "termSpread": 0.12,
     "mortgageRate": 3.65,
-    "initialClaims": 215000
+    "initialClaims": 215000,
+    "creditConditions": 0.01
   },
   {
     "date": "2019-10-11",
@@ -1834,7 +2000,8 @@
     "realRate": 0.19999999999999996,
     "termSpread": 0.13,
     "mortgageRate": 3.57,
-    "initialClaims": 209000
+    "initialClaims": 209000,
+    "creditConditions": 0.001
   },
   {
     "date": "2019-10-18",
@@ -1845,7 +2012,8 @@
     "realRate": 0.15999999999999992,
     "termSpread": 0.18,
     "mortgageRate": 3.69,
-    "initialClaims": 215000
+    "initialClaims": 215000,
+    "creditConditions": -0.008
   },
   {
     "date": "2019-10-25",
@@ -1856,7 +2024,8 @@
     "realRate": 0.15000000000000013,
     "termSpread": 0.17,
     "mortgageRate": 3.75,
-    "initialClaims": 210000
+    "initialClaims": 210000,
+    "creditConditions": -0.015
   },
   {
     "date": "2019-11-01",
@@ -1867,7 +2036,8 @@
     "realRate": 0.1399999999999999,
     "termSpread": 0.17,
     "mortgageRate": 3.78,
-    "initialClaims": 215000
+    "initialClaims": 215000,
+    "creditConditions": -0.021
   },
   {
     "date": "2019-11-08",
@@ -1878,7 +2048,8 @@
     "realRate": 0.22999999999999998,
     "termSpread": 0.26,
     "mortgageRate": 3.69,
-    "initialClaims": 214000
+    "initialClaims": 214000,
+    "creditConditions": -0.024
   },
   {
     "date": "2019-11-15",
@@ -1889,7 +2060,8 @@
     "realRate": 0.2100000000000002,
     "termSpread": 0.23,
     "mortgageRate": 3.75,
-    "initialClaims": 227000
+    "initialClaims": 227000,
+    "creditConditions": -0.026
   },
   {
     "date": "2019-11-22",
@@ -1900,7 +2072,8 @@
     "realRate": 0.1499999999999999,
     "termSpread": 0.16,
     "mortgageRate": 3.66,
-    "initialClaims": 229000
+    "initialClaims": 229000,
+    "creditConditions": -0.026
   },
   {
     "date": "2019-11-29",
@@ -1911,7 +2084,8 @@
     "realRate": 0.16999999999999993,
     "termSpread": 0.17,
     "mortgageRate": 3.68,
-    "initialClaims": 221000
+    "initialClaims": 221000,
+    "creditConditions": -0.026
   },
   {
     "date": "2019-12-06",
@@ -1922,7 +2096,8 @@
     "realRate": 0.15000000000000013,
     "termSpread": 0.23,
     "mortgageRate": 3.68,
-    "initialClaims": 231000
+    "initialClaims": 231000,
+    "creditConditions": -0.027
   },
   {
     "date": "2019-12-13",
@@ -1933,7 +2108,8 @@
     "realRate": 0.1200000000000001,
     "termSpread": 0.21,
     "mortgageRate": 3.73,
-    "initialClaims": 247000
+    "initialClaims": 247000,
+    "creditConditions": -0.031
   },
   {
     "date": "2019-12-20",
@@ -1944,7 +2120,8 @@
     "realRate": 0.1499999999999999,
     "termSpread": 0.29,
     "mortgageRate": 3.73,
-    "initialClaims": 236000
+    "initialClaims": 236000,
+    "creditConditions": -0.039
   },
   {
     "date": "2019-12-27",
@@ -1955,7 +2132,8 @@
     "realRate": 0.1499999999999999,
     "termSpread": 0.29,
     "mortgageRate": 3.74,
-    "initialClaims": 230000
+    "initialClaims": 230000,
+    "creditConditions": -0.052
   },
   {
     "date": "2020-01-03",
@@ -1966,7 +2144,8 @@
     "realRate": 0.030000000000000027,
     "termSpread": 0.27,
     "mortgageRate": 3.72,
-    "initialClaims": 231000
+    "initialClaims": 231000,
+    "creditConditions": -0.067
   },
   {
     "date": "2020-01-10",
@@ -1977,7 +2156,8 @@
     "realRate": 0.07000000000000006,
     "termSpread": 0.27,
     "mortgageRate": 3.64,
-    "initialClaims": 224000
+    "initialClaims": 224000,
+    "creditConditions": -0.083
   },
   {
     "date": "2020-01-17",
@@ -1988,7 +2168,8 @@
     "realRate": 0.09000000000000008,
     "termSpread": 0.26,
     "mortgageRate": 3.65,
-    "initialClaims": 207000
+    "initialClaims": 207000,
+    "creditConditions": -0.096
   },
   {
     "date": "2020-01-24",
@@ -1999,7 +2180,8 @@
     "realRate": 0.020000000000000018,
     "termSpread": 0.21,
     "mortgageRate": 3.6,
-    "initialClaims": 221000
+    "initialClaims": 221000,
+    "creditConditions": -0.101
   },
   {
     "date": "2020-01-31",
@@ -2010,7 +2192,8 @@
     "realRate": -0.1399999999999999,
     "termSpread": 0.18,
     "mortgageRate": 3.51,
-    "initialClaims": 210000
+    "initialClaims": 210000,
+    "creditConditions": -0.092
   },
   {
     "date": "2020-02-07",
@@ -2021,7 +2204,8 @@
     "realRate": -0.06999999999999984,
     "termSpread": 0.18,
     "mortgageRate": 3.45,
-    "initialClaims": 207000
+    "initialClaims": 207000,
+    "creditConditions": -0.065
   },
   {
     "date": "2020-02-14",
@@ -2032,7 +2216,8 @@
     "realRate": -0.06999999999999984,
     "termSpread": 0.17,
     "mortgageRate": 3.47,
-    "initialClaims": 202000
+    "initialClaims": 202000,
+    "creditConditions": -0.016
   },
   {
     "date": "2020-02-21",
@@ -2043,7 +2228,8 @@
     "realRate": -0.15000000000000013,
     "termSpread": 0.12,
     "mortgageRate": 3.49,
-    "initialClaims": 209000
+    "initialClaims": 209000,
+    "creditConditions": 0.057
   },
   {
     "date": "2020-02-28",
@@ -2054,7 +2240,8 @@
     "realRate": -0.28,
     "termSpread": 0.27,
     "mortgageRate": 3.45,
-    "initialClaims": 218000
+    "initialClaims": 218000,
+    "creditConditions": 0.151
   },
   {
     "date": "2020-03-06",
@@ -2065,7 +2252,8 @@
     "realRate": -0.5700000000000001,
     "termSpread": 0.25,
     "mortgageRate": 3.29,
-    "initialClaims": 215000
+    "initialClaims": 215000,
+    "creditConditions": 0.258
   },
   {
     "date": "2020-03-13",
@@ -2076,7 +2264,8 @@
     "realRate": 0.039999999999999925,
     "termSpread": 0.45,
     "mortgageRate": 3.36,
-    "initialClaims": 208000
+    "initialClaims": 208000,
+    "creditConditions": 0.369
   },
   {
     "date": "2020-03-20",
@@ -2087,7 +2276,8 @@
     "realRate": 0.17000000000000004,
     "termSpread": 0.55,
     "mortgageRate": 3.65,
-    "initialClaims": 273000
+    "initialClaims": 273000,
+    "creditConditions": 0.472
   },
   {
     "date": "2020-03-27",
@@ -2098,7 +2288,8 @@
     "realRate": -0.21999999999999997,
     "termSpread": 0.47,
     "mortgageRate": 3.5,
-    "initialClaims": 2914000
+    "initialClaims": 2914000,
+    "creditConditions": 0.552
   },
   {
     "date": "2020-04-03",
@@ -2109,7 +2300,8 @@
     "realRate": -0.4600000000000001,
     "termSpread": 0.39,
     "mortgageRate": 3.33,
-    "initialClaims": 5946000
+    "initialClaims": 5946000,
+    "creditConditions": 0.604
   },
   {
     "date": "2020-04-10",
@@ -2120,7 +2312,8 @@
     "realRate": -0.5,
     "termSpread": 0.5,
     "mortgageRate": 3.33,
-    "initialClaims": 6137000
+    "initialClaims": 6137000,
+    "creditConditions": 0.627
   },
   {
     "date": "2020-04-17",
@@ -2131,7 +2324,8 @@
     "realRate": -0.36,
     "termSpread": 0.45,
     "mortgageRate": 3.31,
-    "initialClaims": 4869000
+    "initialClaims": 4869000,
+    "creditConditions": 0.621
   },
   {
     "date": "2020-04-24",
@@ -2142,7 +2336,8 @@
     "realRate": -0.5100000000000001,
     "termSpread": 0.38,
     "mortgageRate": 3.33,
-    "initialClaims": 4201000
+    "initialClaims": 4201000,
+    "creditConditions": 0.593
   },
   {
     "date": "2020-05-01",
@@ -2153,7 +2348,8 @@
     "realRate": -0.42000000000000004,
     "termSpread": 0.44,
     "mortgageRate": 3.23,
-    "initialClaims": 3446000
+    "initialClaims": 3446000,
+    "creditConditions": 0.547
   },
   {
     "date": "2020-05-08",
@@ -2164,7 +2360,8 @@
     "realRate": -0.43000000000000016,
     "termSpread": 0.53,
     "mortgageRate": 3.26,
-    "initialClaims": 2796000
+    "initialClaims": 2796000,
+    "creditConditions": 0.488
   },
   {
     "date": "2020-05-15",
@@ -2175,7 +2372,8 @@
     "realRate": -0.45000000000000007,
     "termSpread": 0.48,
     "mortgageRate": 3.28,
-    "initialClaims": 2335000
+    "initialClaims": 2335000,
+    "creditConditions": 0.424
   },
   {
     "date": "2020-05-22",
@@ -2186,7 +2384,8 @@
     "realRate": -0.4600000000000001,
     "termSpread": 0.49,
     "mortgageRate": 3.24,
-    "initialClaims": 2176000
+    "initialClaims": 2176000,
+    "creditConditions": 0.358
   },
   {
     "date": "2020-05-29",
@@ -2197,7 +2396,8 @@
     "realRate": -0.4999999999999999,
     "termSpread": 0.49,
     "mortgageRate": 3.15,
-    "initialClaims": 1921000
+    "initialClaims": 1921000,
+    "creditConditions": 0.297
   },
   {
     "date": "2020-06-05",
@@ -2208,7 +2408,8 @@
     "realRate": -0.36,
     "termSpread": 0.69,
     "mortgageRate": 3.18,
-    "initialClaims": 1639000
+    "initialClaims": 1639000,
+    "creditConditions": 0.244
   },
   {
     "date": "2020-06-12",
@@ -2219,7 +2420,8 @@
     "realRate": -0.5,
     "termSpread": 0.52,
     "mortgageRate": 3.21,
-    "initialClaims": 1575000
+    "initialClaims": 1575000,
+    "creditConditions": 0.202
   },
   {
     "date": "2020-06-19",
@@ -2230,7 +2432,8 @@
     "realRate": -0.6000000000000001,
     "termSpread": 0.51,
     "mortgageRate": 3.13,
-    "initialClaims": 1473000
+    "initialClaims": 1473000,
+    "creditConditions": 0.169
   },
   {
     "date": "2020-06-26",
@@ -2241,7 +2444,8 @@
     "realRate": -0.68,
     "termSpread": 0.47,
     "mortgageRate": 3.13,
-    "initialClaims": 1467000
+    "initialClaims": 1467000,
+    "creditConditions": 0.143
   },
   {
     "date": "2020-07-03",
@@ -2252,7 +2456,8 @@
     "realRate": -0.7299999999999999,
     "termSpread": 0.52,
     "mortgageRate": 3.07,
-    "initialClaims": 1446000
+    "initialClaims": 1446000,
+    "creditConditions": 0.123
   },
   {
     "date": "2020-07-10",
@@ -2263,7 +2468,8 @@
     "realRate": -0.7599999999999999,
     "termSpread": 0.49,
     "mortgageRate": 3.03,
-    "initialClaims": 1413000
+    "initialClaims": 1413000,
+    "creditConditions": 0.105
   },
   {
     "date": "2020-07-17",
@@ -2274,7 +2480,8 @@
     "realRate": -0.82,
     "termSpread": 0.5,
     "mortgageRate": 2.98,
-    "initialClaims": 1468000
+    "initialClaims": 1468000,
+    "creditConditions": 0.087
   },
   {
     "date": "2020-07-24",
@@ -2285,7 +2492,8 @@
     "realRate": -0.92,
     "termSpread": 0.45,
     "mortgageRate": 3.01,
-    "initialClaims": 1393000
+    "initialClaims": 1393000,
+    "creditConditions": 0.07
   },
   {
     "date": "2020-07-31",
@@ -2296,7 +2504,8 @@
     "realRate": -1,
     "termSpread": 0.44,
     "mortgageRate": 2.99,
-    "initialClaims": 1260000
+    "initialClaims": 1260000,
+    "creditConditions": 0.052
   },
   {
     "date": "2020-08-07",
@@ -2307,7 +2516,8 @@
     "realRate": -1.04,
     "termSpread": 0.44,
     "mortgageRate": 2.88,
-    "initialClaims": 1044000
+    "initialClaims": 1044000,
+    "creditConditions": 0.036
   },
   {
     "date": "2020-08-14",
@@ -2318,7 +2528,8 @@
     "realRate": -0.94,
     "termSpread": 0.57,
     "mortgageRate": 2.96,
-    "initialClaims": 884000
+    "initialClaims": 884000,
+    "creditConditions": 0.021
   },
   {
     "date": "2020-08-21",
@@ -2329,7 +2540,8 @@
     "realRate": -0.9999999999999999,
     "termSpread": 0.48,
     "mortgageRate": 2.99,
-    "initialClaims": 927000
+    "initialClaims": 927000,
+    "creditConditions": 0.009
   },
   {
     "date": "2020-08-28",
@@ -2340,7 +2552,8 @@
     "realRate": -1.03,
     "termSpread": 0.6,
     "mortgageRate": 2.91,
-    "initialClaims": 876000
+    "initialClaims": 876000,
+    "creditConditions": 0.001
   },
   {
     "date": "2020-09-04",
@@ -2351,7 +2564,8 @@
     "realRate": -0.98,
     "termSpread": 0.58,
     "mortgageRate": 2.93,
-    "initialClaims": 881000
+    "initialClaims": 881000,
+    "creditConditions": -0.004
   },
   {
     "date": "2020-09-11",
@@ -2362,7 +2576,8 @@
     "realRate": -0.9799999999999999,
     "termSpread": 0.54,
     "mortgageRate": 2.86,
-    "initialClaims": 892000
+    "initialClaims": 892000,
+    "creditConditions": -0.006
   },
   {
     "date": "2020-09-18",
@@ -2373,7 +2588,8 @@
     "realRate": -0.97,
     "termSpread": 0.56,
     "mortgageRate": 2.87,
-    "initialClaims": 861000
+    "initialClaims": 861000,
+    "creditConditions": -0.006
   },
   {
     "date": "2020-09-25",
@@ -2384,7 +2600,8 @@
     "realRate": -0.92,
     "termSpread": 0.54,
     "mortgageRate": 2.9,
-    "initialClaims": 859000
+    "initialClaims": 859000,
+    "creditConditions": -0.004
   },
   {
     "date": "2020-10-02",
@@ -2395,7 +2612,8 @@
     "realRate": -0.94,
     "termSpread": 0.57,
     "mortgageRate": 2.88,
-    "initialClaims": 795000
+    "initialClaims": 795000,
+    "creditConditions": -0.004
   },
   {
     "date": "2020-10-09",
@@ -2406,7 +2624,8 @@
     "realRate": -0.94,
     "termSpread": 0.63,
     "mortgageRate": 2.87,
-    "initialClaims": 785000
+    "initialClaims": 785000,
+    "creditConditions": -0.006
   },
   {
     "date": "2020-10-16",
@@ -2417,7 +2636,8 @@
     "realRate": -0.95,
     "termSpread": 0.62,
     "mortgageRate": 2.81,
-    "initialClaims": 839000
+    "initialClaims": 839000,
+    "creditConditions": -0.01
   },
   {
     "date": "2020-10-23",
@@ -2428,7 +2648,8 @@
     "realRate": -0.9,
     "termSpread": 0.67,
     "mortgageRate": 2.8,
-    "initialClaims": 804000
+    "initialClaims": 804000,
+    "creditConditions": -0.015
   },
   {
     "date": "2020-10-30",
@@ -2439,7 +2660,8 @@
     "realRate": -0.82,
     "termSpread": 0.74,
     "mortgageRate": 2.81,
-    "initialClaims": 776000
+    "initialClaims": 776000,
+    "creditConditions": -0.023
   },
   {
     "date": "2020-11-06",
@@ -2450,7 +2672,8 @@
     "realRate": -0.82,
     "termSpread": 0.67,
     "mortgageRate": 2.78,
-    "initialClaims": 773000
+    "initialClaims": 773000,
+    "creditConditions": -0.032
   },
   {
     "date": "2020-11-13",
@@ -2461,7 +2684,8 @@
     "realRate": -0.83,
     "termSpread": 0.72,
     "mortgageRate": 2.84,
-    "initialClaims": 737000
+    "initialClaims": 737000,
+    "creditConditions": -0.041
   },
   {
     "date": "2020-11-20",
@@ -2472,7 +2696,8 @@
     "realRate": -0.86,
     "termSpread": 0.67,
     "mortgageRate": 2.72,
-    "initialClaims": 738000
+    "initialClaims": 738000,
+    "creditConditions": -0.051
   },
   {
     "date": "2020-11-27",
@@ -2483,7 +2708,8 @@
     "realRate": -0.91,
     "termSpread": 0.68,
     "mortgageRate": 2.72,
-    "initialClaims": 793000
+    "initialClaims": 793000,
+    "creditConditions": -0.059
   },
   {
     "date": "2020-12-04",
@@ -2494,7 +2720,8 @@
     "realRate": -0.9199999999999999,
     "termSpread": 0.81,
     "mortgageRate": 2.71,
-    "initialClaims": 737000
+    "initialClaims": 737000,
+    "creditConditions": -0.067
   },
   {
     "date": "2020-12-11",
@@ -2505,7 +2732,8 @@
     "realRate": -0.9700000000000001,
     "termSpread": 0.79,
     "mortgageRate": 2.71,
-    "initialClaims": 873000
+    "initialClaims": 873000,
+    "creditConditions": -0.074
   },
   {
     "date": "2020-12-18",
@@ -2516,7 +2744,8 @@
     "realRate": -1,
     "termSpread": 0.82,
     "mortgageRate": 2.67,
-    "initialClaims": 886000
+    "initialClaims": 886000,
+    "creditConditions": -0.08
   },
   {
     "date": "2020-12-25",
@@ -2527,7 +2756,8 @@
     "realRate": -1.03,
     "termSpread": 0.81,
     "mortgageRate": 2.66,
-    "initialClaims": 815000
+    "initialClaims": 815000,
+    "creditConditions": -0.086
   },
   {
     "date": "2021-01-01",
@@ -2538,7 +2768,8 @@
     "realRate": -1.06,
     "termSpread": 0.8,
     "mortgageRate": 2.67,
-    "initialClaims": 773000
+    "initialClaims": 773000,
+    "creditConditions": -0.093
   },
   {
     "date": "2021-01-08",
@@ -2549,7 +2780,8 @@
     "realRate": -0.9300000000000002,
     "termSpread": 0.99,
     "mortgageRate": 2.65,
-    "initialClaims": 803000
+    "initialClaims": 803000,
+    "creditConditions": -0.099
   },
   {
     "date": "2021-01-15",
@@ -2560,7 +2792,8 @@
     "realRate": -0.99,
     "termSpread": 0.98,
     "mortgageRate": 2.79,
-    "initialClaims": 890000
+    "initialClaims": 890000,
+    "creditConditions": -0.105
   },
   {
     "date": "2021-01-22",
@@ -2571,7 +2804,8 @@
     "realRate": -0.9899999999999998,
     "termSpread": 0.97,
     "mortgageRate": 2.77,
-    "initialClaims": 844000
+    "initialClaims": 844000,
+    "creditConditions": -0.111
   },
   {
     "date": "2021-01-29",
@@ -2582,7 +2816,8 @@
     "realRate": -1.0199999999999998,
     "termSpread": 1,
     "mortgageRate": 2.73,
-    "initialClaims": 799000
+    "initialClaims": 799000,
+    "creditConditions": -0.115
   },
   {
     "date": "2021-02-05",
@@ -2593,7 +2828,8 @@
     "realRate": -1.02,
     "termSpread": 1.1,
     "mortgageRate": 2.73,
-    "initialClaims": 803000
+    "initialClaims": 803000,
+    "creditConditions": -0.12
   },
   {
     "date": "2021-02-12",
@@ -2604,7 +2840,8 @@
     "realRate": -1.01,
     "termSpread": 1.09,
     "mortgageRate": 2.73,
-    "initialClaims": 812000
+    "initialClaims": 812000,
+    "creditConditions": -0.123
   },
   {
     "date": "2021-02-19",
@@ -2615,7 +2852,8 @@
     "realRate": -0.8,
     "termSpread": 1.23,
     "mortgageRate": 2.81,
-    "initialClaims": 802000
+    "initialClaims": 802000,
+    "creditConditions": -0.127
   },
   {
     "date": "2021-02-26",
@@ -2626,7 +2864,8 @@
     "realRate": -0.71,
     "termSpread": 1.3,
     "mortgageRate": 2.97,
-    "initialClaims": 702000
+    "initialClaims": 702000,
+    "creditConditions": -0.13
   },
   {
     "date": "2021-03-05",
@@ -2637,7 +2876,8 @@
     "realRate": -0.6600000000000001,
     "termSpread": 1.42,
     "mortgageRate": 3.02,
-    "initialClaims": 704000
+    "initialClaims": 704000,
+    "creditConditions": -0.134
   },
   {
     "date": "2021-03-12",
@@ -2648,7 +2888,8 @@
     "realRate": -0.6199999999999999,
     "termSpread": 1.5,
     "mortgageRate": 3.05,
-    "initialClaims": 693000
+    "initialClaims": 693000,
+    "creditConditions": -0.139
   },
   {
     "date": "2021-03-19",
@@ -2659,7 +2900,8 @@
     "realRate": -0.5700000000000001,
     "termSpread": 1.58,
     "mortgageRate": 3.09,
-    "initialClaims": 699000
+    "initialClaims": 699000,
+    "creditConditions": -0.145
   },
   {
     "date": "2021-03-26",
@@ -2670,7 +2912,8 @@
     "realRate": -0.6699999999999999,
     "termSpread": 1.53,
     "mortgageRate": 3.17,
-    "initialClaims": 627000
+    "initialClaims": 627000,
+    "creditConditions": -0.151
   },
   {
     "date": "2021-04-02",
@@ -2681,7 +2924,8 @@
     "realRate": -0.6399999999999999,
     "termSpread": 1.53,
     "mortgageRate": 3.18,
-    "initialClaims": 658000
+    "initialClaims": 658000,
+    "creditConditions": -0.158
   },
   {
     "date": "2021-04-09",
@@ -2692,7 +2936,8 @@
     "realRate": -0.6400000000000001,
     "termSpread": 1.51,
     "mortgageRate": 3.13,
-    "initialClaims": 645000
+    "initialClaims": 645000,
+    "creditConditions": -0.166
   },
   {
     "date": "2021-04-16",
@@ -2703,7 +2948,8 @@
     "realRate": -0.7699999999999998,
     "termSpread": 1.43,
     "mortgageRate": 3.04,
-    "initialClaims": 571000
+    "initialClaims": 571000,
+    "creditConditions": -0.172
   },
   {
     "date": "2021-04-23",
@@ -2714,7 +2960,8 @@
     "realRate": -0.7599999999999998,
     "termSpread": 1.42,
     "mortgageRate": 2.97,
-    "initialClaims": 566000
+    "initialClaims": 566000,
+    "creditConditions": -0.177
   },
   {
     "date": "2021-04-30",
@@ -2725,7 +2972,8 @@
     "realRate": -0.7600000000000002,
     "termSpread": 1.49,
     "mortgageRate": 2.98,
-    "initialClaims": 574000
+    "initialClaims": 574000,
+    "creditConditions": -0.181
   },
   {
     "date": "2021-05-07",
@@ -2736,7 +2984,8 @@
     "realRate": -0.8900000000000001,
     "termSpread": 1.46,
     "mortgageRate": 2.96,
-    "initialClaims": 517000
+    "initialClaims": 517000,
+    "creditConditions": -0.182
   },
   {
     "date": "2021-05-14",
@@ -2747,7 +2996,8 @@
     "realRate": -0.8799999999999999,
     "termSpread": 1.47,
     "mortgageRate": 2.94,
-    "initialClaims": 494000
+    "initialClaims": 494000,
+    "creditConditions": -0.181
   },
   {
     "date": "2021-05-21",
@@ -2758,7 +3008,8 @@
     "realRate": -0.8000000000000003,
     "termSpread": 1.46,
     "mortgageRate": 3,
-    "initialClaims": 467000
+    "initialClaims": 467000,
+    "creditConditions": -0.178
   },
   {
     "date": "2021-05-28",
@@ -2769,7 +3020,8 @@
     "realRate": -0.8399999999999999,
     "termSpread": 1.44,
     "mortgageRate": 2.95,
-    "initialClaims": 441000
+    "initialClaims": 441000,
+    "creditConditions": -0.175
   },
   {
     "date": "2021-06-04",
@@ -2780,7 +3032,8 @@
     "realRate": -0.8399999999999999,
     "termSpread": 1.42,
     "mortgageRate": 2.99,
-    "initialClaims": 427000
+    "initialClaims": 427000,
+    "creditConditions": -0.171
   },
   {
     "date": "2021-06-11",
@@ -2791,7 +3044,8 @@
     "realRate": -0.8499999999999999,
     "termSpread": 1.31,
     "mortgageRate": 2.96,
-    "initialClaims": 420000
+    "initialClaims": 420000,
+    "creditConditions": -0.167
   },
   {
     "date": "2021-06-18",
@@ -2802,7 +3056,8 @@
     "realRate": -0.7900000000000003,
     "termSpread": 1.19,
     "mortgageRate": 2.93,
-    "initialClaims": 428000
+    "initialClaims": 428000,
+    "creditConditions": -0.164
   },
   {
     "date": "2021-06-25",
@@ -2813,7 +3068,8 @@
     "realRate": -0.7999999999999998,
     "termSpread": 1.26,
     "mortgageRate": 3.02,
-    "initialClaims": 422000
+    "initialClaims": 422000,
+    "creditConditions": -0.16
   },
   {
     "date": "2021-07-02",
@@ -2824,7 +3080,8 @@
     "realRate": -0.8900000000000001,
     "termSpread": 1.2,
     "mortgageRate": 2.98,
-    "initialClaims": 368000
+    "initialClaims": 368000,
+    "creditConditions": -0.156
   },
   {
     "date": "2021-07-09",
@@ -2835,7 +3092,8 @@
     "realRate": -0.9099999999999997,
     "termSpread": 1.14,
     "mortgageRate": 2.9,
-    "initialClaims": 371000
+    "initialClaims": 371000,
+    "creditConditions": -0.152
   },
   {
     "date": "2021-07-16",
@@ -2846,7 +3104,8 @@
     "realRate": -1.02,
     "termSpread": 1.06,
     "mortgageRate": 2.88,
-    "initialClaims": 333000
+    "initialClaims": 333000,
+    "creditConditions": -0.148
   },
   {
     "date": "2021-07-23",
@@ -2857,7 +3116,8 @@
     "realRate": -1.05,
     "termSpread": 1.08,
     "mortgageRate": 2.78,
-    "initialClaims": 387000
+    "initialClaims": 387000,
+    "creditConditions": -0.143
   },
   {
     "date": "2021-07-30",
@@ -2868,7 +3128,8 @@
     "realRate": -1.16,
     "termSpread": 1.05,
     "mortgageRate": 2.8,
-    "initialClaims": 380000
+    "initialClaims": 380000,
+    "creditConditions": -0.139
   },
   {
     "date": "2021-08-06",
@@ -2879,7 +3140,8 @@
     "realRate": -1.06,
     "termSpread": 1.1,
     "mortgageRate": 2.77,
-    "initialClaims": 379000
+    "initialClaims": 379000,
+    "creditConditions": -0.135
   },
   {
     "date": "2021-08-13",
@@ -2890,7 +3152,8 @@
     "realRate": -1.08,
     "termSpread": 1.06,
     "mortgageRate": 2.87,
-    "initialClaims": 361000
+    "initialClaims": 361000,
+    "creditConditions": -0.132
   },
   {
     "date": "2021-08-20",
@@ -2901,7 +3164,8 @@
     "realRate": -1.01,
     "termSpread": 1.03,
     "mortgageRate": 2.86,
-    "initialClaims": 367000
+    "initialClaims": 367000,
+    "creditConditions": -0.131
   },
   {
     "date": "2021-08-27",
@@ -2912,7 +3176,8 @@
     "realRate": -1.08,
     "termSpread": 1.09,
     "mortgageRate": 2.87,
-    "initialClaims": 358000
+    "initialClaims": 358000,
+    "creditConditions": -0.131
   },
   {
     "date": "2021-09-03",
@@ -2923,7 +3188,8 @@
     "realRate": -1.0099999999999998,
     "termSpread": 1.12,
     "mortgageRate": 2.87,
-    "initialClaims": 353000
+    "initialClaims": 353000,
+    "creditConditions": -0.131
   },
   {
     "date": "2021-09-10",
@@ -2934,7 +3200,8 @@
     "realRate": -1.0499999999999998,
     "termSpread": 1.12,
     "mortgageRate": 2.88,
-    "initialClaims": 335000
+    "initialClaims": 335000,
+    "creditConditions": -0.133
   },
   {
     "date": "2021-09-17",
@@ -2945,7 +3212,8 @@
     "realRate": -0.96,
     "termSpread": 1.14,
     "mortgageRate": 2.86,
-    "initialClaims": 342000
+    "initialClaims": 342000,
+    "creditConditions": -0.134
   },
   {
     "date": "2021-09-24",
@@ -2956,7 +3224,8 @@
     "realRate": -0.8699999999999999,
     "termSpread": 1.18,
     "mortgageRate": 2.88,
-    "initialClaims": 367000
+    "initialClaims": 367000,
+    "creditConditions": -0.135
   },
   {
     "date": "2021-10-01",
@@ -2967,7 +3236,8 @@
     "realRate": -0.8999999999999999,
     "termSpread": 1.21,
     "mortgageRate": 3.01,
-    "initialClaims": 375000
+    "initialClaims": 375000,
+    "creditConditions": -0.135
   },
   {
     "date": "2021-10-08",
@@ -2978,7 +3248,8 @@
     "realRate": -0.8899999999999999,
     "termSpread": 1.29,
     "mortgageRate": 2.99,
-    "initialClaims": 312000
+    "initialClaims": 312000,
+    "creditConditions": -0.135
   },
   {
     "date": "2021-10-15",
@@ -2989,7 +3260,8 @@
     "realRate": -0.97,
     "termSpread": 1.18,
     "mortgageRate": 3.05,
-    "initialClaims": 291000
+    "initialClaims": 291000,
+    "creditConditions": -0.133
   },
   {
     "date": "2021-10-22",
@@ -3000,7 +3272,8 @@
     "realRate": -0.9800000000000002,
     "termSpread": 1.18,
     "mortgageRate": 3.09,
-    "initialClaims": 289000
+    "initialClaims": 289000,
+    "creditConditions": -0.13
   },
   {
     "date": "2021-10-29",
@@ -3011,7 +3284,8 @@
     "realRate": -0.9599999999999997,
     "termSpread": 1.07,
     "mortgageRate": 3.14,
-    "initialClaims": 269000
+    "initialClaims": 269000,
+    "creditConditions": -0.126
   },
   {
     "date": "2021-11-05",
@@ -3022,7 +3296,8 @@
     "realRate": -1.09,
     "termSpread": 1.06,
     "mortgageRate": 3.09,
-    "initialClaims": 261000
+    "initialClaims": 261000,
+    "creditConditions": -0.12
   },
   {
     "date": "2021-11-12",
@@ -3033,7 +3308,8 @@
     "realRate": -1.15,
     "termSpread": 1.05,
     "mortgageRate": 2.98,
-    "initialClaims": 251000
+    "initialClaims": 251000,
+    "creditConditions": -0.115
   },
   {
     "date": "2021-11-19",
@@ -3044,7 +3320,8 @@
     "realRate": -1.1099999999999999,
     "termSpread": 1.02,
     "mortgageRate": 3.1,
-    "initialClaims": 250000
+    "initialClaims": 250000,
+    "creditConditions": -0.109
   },
   {
     "date": "2021-11-26",
@@ -3055,7 +3332,8 @@
     "realRate": -1.0699999999999998,
     "termSpread": 0.98,
     "mortgageRate": 3.1,
-    "initialClaims": 224000
+    "initialClaims": 224000,
+    "creditConditions": -0.104
   },
   {
     "date": "2021-12-03",
@@ -3066,7 +3344,8 @@
     "realRate": -1.08,
     "termSpread": 0.75,
     "mortgageRate": 3.11,
-    "initialClaims": 221000
+    "initialClaims": 221000,
+    "creditConditions": -0.1
   },
   {
     "date": "2021-12-10",
@@ -3077,7 +3356,8 @@
     "realRate": -0.96,
     "termSpread": 0.81,
     "mortgageRate": 3.1,
-    "initialClaims": 206000
+    "initialClaims": 206000,
+    "creditConditions": -0.097
   },
   {
     "date": "2021-12-17",
@@ -3088,7 +3368,8 @@
     "realRate": -0.97,
     "termSpread": 0.75,
     "mortgageRate": 3.12,
-    "initialClaims": 227000
+    "initialClaims": 227000,
+    "creditConditions": -0.095
   },
   {
     "date": "2021-12-24",
@@ -3099,7 +3380,8 @@
     "realRate": -0.9700000000000002,
     "termSpread": 0.79,
     "mortgageRate": 3.05,
-    "initialClaims": 215000
+    "initialClaims": 215000,
+    "creditConditions": -0.093
   },
   {
     "date": "2021-12-31",
@@ -3110,7 +3392,8 @@
     "realRate": -1.04,
     "termSpread": 0.79,
     "mortgageRate": 3.11,
-    "initialClaims": 217000
+    "initialClaims": 217000,
+    "creditConditions": -0.09
   },
   {
     "date": "2022-01-07",
@@ -3121,7 +3404,8 @@
     "realRate": -0.72,
     "termSpread": 0.89,
     "mortgageRate": 3.22,
-    "initialClaims": 229000
+    "initialClaims": 229000,
+    "creditConditions": -0.086
   },
   {
     "date": "2022-01-14",
@@ -3132,7 +3416,8 @@
     "realRate": -0.6599999999999999,
     "termSpread": 0.79,
     "mortgageRate": 3.45,
-    "initialClaims": 250000
+    "initialClaims": 250000,
+    "creditConditions": -0.079
   },
   {
     "date": "2022-01-21",
@@ -3143,7 +3428,8 @@
     "realRate": -0.5899999999999999,
     "termSpread": 0.74,
     "mortgageRate": 3.56,
-    "initialClaims": 246000
+    "initialClaims": 246000,
+    "creditConditions": -0.068
   },
   {
     "date": "2022-01-28",
@@ -3154,7 +3440,8 @@
     "realRate": -0.6599999999999999,
     "termSpread": 0.63,
     "mortgageRate": 3.55,
-    "initialClaims": 240000
+    "initialClaims": 240000,
+    "creditConditions": -0.055
   },
   {
     "date": "2022-02-04",
@@ -3165,7 +3452,8 @@
     "realRate": -0.4800000000000002,
     "termSpread": 0.62,
     "mortgageRate": 3.55,
-    "initialClaims": 231000
+    "initialClaims": 231000,
+    "creditConditions": -0.04
   },
   {
     "date": "2022-02-11",
@@ -3176,7 +3464,8 @@
     "realRate": -0.5100000000000002,
     "termSpread": 0.42,
     "mortgageRate": 3.69,
-    "initialClaims": 210000
+    "initialClaims": 210000,
+    "creditConditions": -0.022
   },
   {
     "date": "2022-02-18",
@@ -3187,7 +3476,8 @@
     "realRate": -0.4900000000000002,
     "termSpread": 0.45,
     "mortgageRate": 3.92,
-    "initialClaims": 234000
+    "initialClaims": 234000,
+    "creditConditions": -0.004
   },
   {
     "date": "2022-02-25",
@@ -3198,7 +3488,8 @@
     "realRate": -0.5700000000000001,
     "termSpread": 0.42,
     "mortgageRate": 3.89,
-    "initialClaims": 224000
+    "initialClaims": 224000,
+    "creditConditions": 0.013
   },
   {
     "date": "2022-03-04",
@@ -3209,7 +3500,8 @@
     "realRate": -0.9299999999999999,
     "termSpread": 0.24,
     "mortgageRate": 3.76,
-    "initialClaims": 208000
+    "initialClaims": 208000,
+    "creditConditions": 0.028
   },
   {
     "date": "2022-03-11",
@@ -3220,7 +3512,8 @@
     "realRate": -0.94,
     "termSpread": 0.25,
     "mortgageRate": 3.85,
-    "initialClaims": 222000
+    "initialClaims": 222000,
+    "creditConditions": 0.042
   },
   {
     "date": "2022-03-18",
@@ -3231,7 +3524,8 @@
     "realRate": -0.7199999999999998,
     "termSpread": 0.17,
     "mortgageRate": 4.16,
-    "initialClaims": 217000
+    "initialClaims": 217000,
+    "creditConditions": 0.052
   },
   {
     "date": "2022-03-25",
@@ -3242,7 +3536,8 @@
     "realRate": -0.4700000000000002,
     "termSpread": 0.18,
     "mortgageRate": 4.42,
-    "initialClaims": 207000
+    "initialClaims": 207000,
+    "creditConditions": 0.059
   },
   {
     "date": "2022-04-01",
@@ -3253,7 +3548,8 @@
     "realRate": -0.4099999999999997,
     "termSpread": -0.05,
     "mortgageRate": 4.67,
-    "initialClaims": 214000
+    "initialClaims": 214000,
+    "creditConditions": 0.065
   },
   {
     "date": "2022-04-08",
@@ -3264,7 +3560,8 @@
     "realRate": -0.1499999999999999,
     "termSpread": 0.19,
     "mortgageRate": 4.72,
-    "initialClaims": 214000
+    "initialClaims": 214000,
+    "creditConditions": 0.07
   },
   {
     "date": "2022-04-15",
@@ -3275,7 +3572,8 @@
     "realRate": -0.06000000000000005,
     "termSpread": 0.36,
     "mortgageRate": 5,
-    "initialClaims": 214000
+    "initialClaims": 214000,
+    "creditConditions": 0.075
   },
   {
     "date": "2022-04-22",
@@ -3286,7 +3584,8 @@
     "realRate": -0.08000000000000007,
     "termSpread": 0.18,
     "mortgageRate": 5.11,
-    "initialClaims": 210000
+    "initialClaims": 210000,
+    "creditConditions": 0.081
   },
   {
     "date": "2022-04-29",
@@ -3297,7 +3596,8 @@
     "realRate": 0.010000000000000231,
     "termSpread": 0.19,
     "mortgageRate": 5.1,
-    "initialClaims": 209000
+    "initialClaims": 209000,
+    "creditConditions": 0.09
   },
   {
     "date": "2022-05-06",
@@ -3308,7 +3608,8 @@
     "realRate": 0.26000000000000023,
     "termSpread": 0.4,
     "mortgageRate": 5.27,
-    "initialClaims": 218000
+    "initialClaims": 218000,
+    "creditConditions": 0.1
   },
   {
     "date": "2022-05-13",
@@ -3319,7 +3620,8 @@
     "realRate": 0.2400000000000002,
     "termSpread": 0.32,
     "mortgageRate": 5.3,
-    "initialClaims": 204000
+    "initialClaims": 204000,
+    "creditConditions": 0.113
   },
   {
     "date": "2022-05-20",
@@ -3330,7 +3632,8 @@
     "realRate": 0.22999999999999998,
     "termSpread": 0.18,
     "mortgageRate": 5.25,
-    "initialClaims": 225000
+    "initialClaims": 225000,
+    "creditConditions": 0.128
   },
   {
     "date": "2022-05-27",
@@ -3341,7 +3644,8 @@
     "realRate": 0.11000000000000032,
     "termSpread": 0.27,
     "mortgageRate": 5.1,
-    "initialClaims": 211000
+    "initialClaims": 211000,
+    "creditConditions": 0.144
   },
   {
     "date": "2022-06-03",
@@ -3352,7 +3656,8 @@
     "realRate": 0.21999999999999975,
     "termSpread": 0.3,
     "mortgageRate": 5.09,
-    "initialClaims": 199000
+    "initialClaims": 199000,
+    "creditConditions": 0.161
   },
   {
     "date": "2022-06-10",
@@ -3363,7 +3668,8 @@
     "realRate": 0.3900000000000001,
     "termSpread": 0.09,
     "mortgageRate": 5.23,
-    "initialClaims": 213000
+    "initialClaims": 213000,
+    "creditConditions": 0.178
   },
   {
     "date": "2022-06-17",
@@ -3374,7 +3680,8 @@
     "realRate": 0.6699999999999999,
     "termSpread": 0.08,
     "mortgageRate": 5.78,
-    "initialClaims": 211000
+    "initialClaims": 211000,
+    "creditConditions": 0.193
   },
   {
     "date": "2022-06-24",
@@ -3385,7 +3692,8 @@
     "realRate": 0.5699999999999998,
     "termSpread": 0.09,
     "mortgageRate": 5.81,
-    "initialClaims": 214000
+    "initialClaims": 214000,
+    "creditConditions": 0.203
   },
   {
     "date": "2022-07-01",
@@ -3396,7 +3704,8 @@
     "realRate": 0.54,
     "termSpread": 0.04,
     "mortgageRate": 5.7,
-    "initialClaims": 212000
+    "initialClaims": 212000,
+    "creditConditions": 0.209
   },
   {
     "date": "2022-07-08",
@@ -3407,7 +3716,8 @@
     "realRate": 0.7199999999999998,
     "termSpread": -0.03,
     "mortgageRate": 5.3,
-    "initialClaims": 214000
+    "initialClaims": 214000,
+    "creditConditions": 0.208
   },
   {
     "date": "2022-07-15",
@@ -3418,7 +3728,8 @@
     "realRate": 0.5700000000000003,
     "termSpread": -0.2,
     "mortgageRate": 5.51,
-    "initialClaims": 212000
+    "initialClaims": 212000,
+    "creditConditions": 0.202
   },
   {
     "date": "2022-07-22",
@@ -3429,7 +3740,8 @@
     "realRate": 0.43000000000000016,
     "termSpread": -0.21,
     "mortgageRate": 5.54,
-    "initialClaims": 216000
+    "initialClaims": 216000,
+    "creditConditions": 0.192
   },
   {
     "date": "2022-07-29",
@@ -3440,7 +3752,8 @@
     "realRate": 0.14000000000000012,
     "termSpread": -0.22,
     "mortgageRate": 5.3,
-    "initialClaims": 221000
+    "initialClaims": 221000,
+    "creditConditions": 0.181
   },
   {
     "date": "2022-08-05",
@@ -3451,7 +3764,8 @@
     "realRate": 0.3700000000000001,
     "termSpread": -0.41,
     "mortgageRate": 4.99,
-    "initialClaims": 228000
+    "initialClaims": 228000,
+    "creditConditions": 0.171
   },
   {
     "date": "2022-08-12",
@@ -3462,7 +3776,8 @@
     "realRate": 0.36999999999999966,
     "termSpread": -0.41,
     "mortgageRate": 5.22,
-    "initialClaims": 221000
+    "initialClaims": 221000,
+    "creditConditions": 0.165
   },
   {
     "date": "2022-08-19",
@@ -3473,7 +3788,8 @@
     "realRate": 0.43000000000000016,
     "termSpread": -0.27,
     "mortgageRate": 5.13,
-    "initialClaims": 220000
+    "initialClaims": 220000,
+    "creditConditions": 0.164
   },
   {
     "date": "2022-08-26",
@@ -3484,7 +3800,8 @@
     "realRate": 0.4700000000000002,
     "termSpread": -0.33,
     "mortgageRate": 5.55,
-    "initialClaims": 215000
+    "initialClaims": 215000,
+    "creditConditions": 0.169
   },
   {
     "date": "2022-09-02",
@@ -3495,7 +3812,8 @@
     "realRate": 0.73,
     "termSpread": -0.2,
     "mortgageRate": 5.66,
-    "initialClaims": 210000
+    "initialClaims": 210000,
+    "creditConditions": 0.18
   },
   {
     "date": "2022-09-09",
@@ -3506,7 +3824,8 @@
     "realRate": 0.9100000000000001,
     "termSpread": -0.23,
     "mortgageRate": 5.89,
-    "initialClaims": 203000
+    "initialClaims": 203000,
+    "creditConditions": 0.194
   },
   {
     "date": "2022-09-16",
@@ -3517,7 +3836,8 @@
     "realRate": 1.0700000000000003,
     "termSpread": -0.4,
     "mortgageRate": 6.02,
-    "initialClaims": 195000
+    "initialClaims": 195000,
+    "creditConditions": 0.211
   },
   {
     "date": "2022-09-23",
@@ -3528,7 +3848,8 @@
     "realRate": 1.3199999999999998,
     "termSpread": -0.51,
     "mortgageRate": 6.29,
-    "initialClaims": 202000
+    "initialClaims": 202000,
+    "creditConditions": 0.227
   },
   {
     "date": "2022-09-30",
@@ -3539,7 +3860,8 @@
     "realRate": 1.6800000000000002,
     "termSpread": -0.39,
     "mortgageRate": 6.7,
-    "initialClaims": 190000
+    "initialClaims": 190000,
+    "creditConditions": 0.24
   },
   {
     "date": "2022-10-07",
@@ -3550,7 +3872,8 @@
     "realRate": 1.62,
     "termSpread": -0.41,
     "mortgageRate": 6.66,
-    "initialClaims": 203000
+    "initialClaims": 203000,
+    "creditConditions": 0.247
   },
   {
     "date": "2022-10-14",
@@ -3561,7 +3884,8 @@
     "realRate": 1.5899999999999999,
     "termSpread": -0.48,
     "mortgageRate": 6.92,
-    "initialClaims": 207000
+    "initialClaims": 207000,
+    "creditConditions": 0.249
   },
   {
     "date": "2022-10-21",
@@ -3572,7 +3896,8 @@
     "realRate": 1.69,
     "termSpread": -0.28,
     "mortgageRate": 6.94,
-    "initialClaims": 199000
+    "initialClaims": 199000,
+    "creditConditions": 0.246
   },
   {
     "date": "2022-10-28",
@@ -3583,7 +3908,8 @@
     "realRate": 1.5099999999999998,
     "termSpread": -0.39,
     "mortgageRate": 7.08,
-    "initialClaims": 202000
+    "initialClaims": 202000,
+    "creditConditions": 0.238
   },
   {
     "date": "2022-11-04",
@@ -3594,7 +3920,8 @@
     "realRate": 1.69,
     "termSpread": -0.49,
     "mortgageRate": 6.95,
-    "initialClaims": 202000
+    "initialClaims": 202000,
+    "creditConditions": 0.227
   },
   {
     "date": "2022-11-11",
@@ -3605,7 +3932,8 @@
     "realRate": 1.4299999999999997,
     "termSpread": -0.52,
     "mortgageRate": 7.08,
-    "initialClaims": 204000
+    "initialClaims": 204000,
+    "creditConditions": 0.215
   },
   {
     "date": "2022-11-18",
@@ -3616,7 +3944,8 @@
     "realRate": 1.5699999999999998,
     "termSpread": -0.69,
     "mortgageRate": 6.61,
-    "initialClaims": 210000
+    "initialClaims": 210000,
+    "creditConditions": 0.205
   },
   {
     "date": "2022-11-25",
@@ -3627,7 +3956,8 @@
     "realRate": 1.3600000000000003,
     "termSpread": -0.74,
     "mortgageRate": 6.58,
-    "initialClaims": 220000
+    "initialClaims": 220000,
+    "creditConditions": 0.197
   },
   {
     "date": "2022-12-02",
@@ -3638,7 +3968,8 @@
     "realRate": 1.0799999999999996,
     "termSpread": -0.77,
     "mortgageRate": 6.49,
-    "initialClaims": 209000
+    "initialClaims": 209000,
+    "creditConditions": 0.192
   },
   {
     "date": "2022-12-09",
@@ -3649,7 +3980,8 @@
     "realRate": 1.31,
     "termSpread": -0.76,
     "mortgageRate": 6.33,
-    "initialClaims": 209000
+    "initialClaims": 209000,
+    "creditConditions": 0.19
   },
   {
     "date": "2022-12-16",
@@ -3660,7 +3992,8 @@
     "realRate": 1.35,
     "termSpread": -0.69,
     "mortgageRate": 6.31,
-    "initialClaims": 209000
+    "initialClaims": 209000,
+    "creditConditions": 0.188
   },
   {
     "date": "2022-12-23",
@@ -3671,7 +4004,8 @@
     "realRate": 1.5499999999999998,
     "termSpread": -0.56,
     "mortgageRate": 6.27,
-    "initialClaims": 213000
+    "initialClaims": 213000,
+    "creditConditions": 0.185
   },
   {
     "date": "2022-12-30",
@@ -3682,7 +4016,8 @@
     "realRate": 1.58,
     "termSpread": -0.53,
     "mortgageRate": 6.42,
-    "initialClaims": 205000
+    "initialClaims": 205000,
+    "creditConditions": 0.18
   },
   {
     "date": "2023-01-06",
@@ -3693,7 +4028,8 @@
     "realRate": 1.3399999999999999,
     "termSpread": -0.69,
     "mortgageRate": 6.48,
-    "initialClaims": 205000
+    "initialClaims": 205000,
+    "creditConditions": 0.173
   },
   {
     "date": "2023-01-13",
@@ -3704,7 +4040,8 @@
     "realRate": 1.31,
     "termSpread": -0.73,
     "mortgageRate": 6.33,
-    "initialClaims": 210000
+    "initialClaims": 210000,
+    "creditConditions": 0.165
   },
   {
     "date": "2023-01-20",
@@ -3715,7 +4052,8 @@
     "realRate": 1.25,
     "termSpread": -0.66,
     "mortgageRate": 6.15,
-    "initialClaims": 204000
+    "initialClaims": 204000,
+    "creditConditions": 0.156
   },
   {
     "date": "2023-01-27",
@@ -3726,7 +4064,8 @@
     "realRate": 1.19,
     "termSpread": -0.67,
     "mortgageRate": 6.13,
-    "initialClaims": 204000
+    "initialClaims": 204000,
+    "creditConditions": 0.148
   },
   {
     "date": "2023-02-03",
@@ -3737,7 +4076,8 @@
     "realRate": 1.3099999999999996,
     "termSpread": -0.77,
     "mortgageRate": 6.09,
-    "initialClaims": 200000
+    "initialClaims": 200000,
+    "creditConditions": 0.143
   },
   {
     "date": "2023-02-10",
@@ -3748,7 +4088,8 @@
     "realRate": 1.4100000000000001,
     "termSpread": -0.76,
     "mortgageRate": 6.12,
-    "initialClaims": 215000
+    "initialClaims": 215000,
+    "creditConditions": 0.141
   },
   {
     "date": "2023-02-17",
@@ -3759,7 +4100,8 @@
     "realRate": 1.46,
     "termSpread": -0.78,
     "mortgageRate": 6.32,
-    "initialClaims": 220000
+    "initialClaims": 220000,
+    "creditConditions": 0.145
   },
   {
     "date": "2023-02-24",
@@ -3770,7 +4112,8 @@
     "realRate": 1.5700000000000003,
     "termSpread": -0.83,
     "mortgageRate": 6.5,
-    "initialClaims": 217000
+    "initialClaims": 217000,
+    "creditConditions": 0.153
   },
   {
     "date": "2023-03-03",
@@ -3781,7 +4124,8 @@
     "realRate": 1.4500000000000002,
     "termSpread": -0.89,
     "mortgageRate": 6.65,
-    "initialClaims": 207000
+    "initialClaims": 207000,
+    "creditConditions": 0.166
   },
   {
     "date": "2023-03-10",
@@ -3792,7 +4136,8 @@
     "realRate": 1.4400000000000004,
     "termSpread": -0.9,
     "mortgageRate": 6.73,
-    "initialClaims": 230000
+    "initialClaims": 230000,
+    "creditConditions": 0.18
   },
   {
     "date": "2023-03-17",
@@ -3803,7 +4148,8 @@
     "realRate": 1.29,
     "termSpread": -0.42,
     "mortgageRate": 6.6,
-    "initialClaims": 222000
+    "initialClaims": 222000,
+    "creditConditions": 0.194
   },
   {
     "date": "2023-03-24",
@@ -3814,7 +4160,8 @@
     "realRate": 1.1599999999999997,
     "termSpread": -0.38,
     "mortgageRate": 6.42,
-    "initialClaims": 230000
+    "initialClaims": 230000,
+    "creditConditions": 0.207
   },
   {
     "date": "2023-03-31",
@@ -3825,7 +4172,8 @@
     "realRate": 1.1600000000000001,
     "termSpread": -0.58,
     "mortgageRate": 6.32,
-    "initialClaims": 234000
+    "initialClaims": 234000,
+    "creditConditions": 0.214
   },
   {
     "date": "2023-04-07",
@@ -3836,7 +4184,8 @@
     "realRate": 1.1400000000000001,
     "termSpread": -0.58,
     "mortgageRate": 6.28,
-    "initialClaims": 217000
+    "initialClaims": 217000,
+    "creditConditions": 0.217
   },
   {
     "date": "2023-04-14",
@@ -3847,7 +4196,8 @@
     "realRate": 1.2200000000000002,
     "termSpread": -0.56,
     "mortgageRate": 6.27,
-    "initialClaims": 220000
+    "initialClaims": 220000,
+    "creditConditions": 0.217
   },
   {
     "date": "2023-04-21",
@@ -3858,7 +4208,8 @@
     "realRate": 1.29,
     "termSpread": -0.6,
     "mortgageRate": 6.39,
-    "initialClaims": 223000
+    "initialClaims": 223000,
+    "creditConditions": 0.214
   },
   {
     "date": "2023-04-28",
@@ -3869,7 +4220,8 @@
     "realRate": 1.2599999999999998,
     "termSpread": -0.6,
     "mortgageRate": 6.43,
-    "initialClaims": 209000
+    "initialClaims": 209000,
+    "creditConditions": 0.208
   },
   {
     "date": "2023-05-05",
@@ -3880,7 +4232,8 @@
     "realRate": 1.23,
     "termSpread": -0.48,
     "mortgageRate": 6.39,
-    "initialClaims": 213000
+    "initialClaims": 213000,
+    "creditConditions": 0.202
   },
   {
     "date": "2023-05-12",
@@ -3891,7 +4244,8 @@
     "realRate": 1.2799999999999998,
     "termSpread": -0.52,
     "mortgageRate": 6.35,
-    "initialClaims": 223000
+    "initialClaims": 223000,
+    "creditConditions": 0.194
   },
   {
     "date": "2023-05-19",
@@ -3902,7 +4256,8 @@
     "realRate": 1.46,
     "termSpread": -0.58,
     "mortgageRate": 6.39,
-    "initialClaims": 225000
+    "initialClaims": 225000,
+    "creditConditions": 0.186
   },
   {
     "date": "2023-05-26",
@@ -3913,7 +4268,8 @@
     "realRate": 1.5699999999999998,
     "termSpread": -0.74,
     "mortgageRate": 6.57,
-    "initialClaims": 227000
+    "initialClaims": 227000,
+    "creditConditions": 0.179
   },
   {
     "date": "2023-06-02",
@@ -3924,7 +4280,8 @@
     "realRate": 1.5099999999999998,
     "termSpread": -0.81,
     "mortgageRate": 6.79,
-    "initialClaims": 229000
+    "initialClaims": 229000,
+    "creditConditions": 0.171
   },
   {
     "date": "2023-06-09",
@@ -3935,7 +4292,8 @@
     "realRate": 1.5499999999999998,
     "termSpread": -0.84,
     "mortgageRate": 6.71,
-    "initialClaims": 252000
+    "initialClaims": 252000,
+    "creditConditions": 0.165
   },
   {
     "date": "2023-06-16",
@@ -3946,7 +4304,8 @@
     "realRate": 1.5499999999999998,
     "termSpread": -0.93,
     "mortgageRate": 6.69,
-    "initialClaims": 256000
+    "initialClaims": 256000,
+    "creditConditions": 0.16
   },
   {
     "date": "2023-06-23",
@@ -3957,7 +4316,8 @@
     "realRate": 1.5300000000000002,
     "termSpread": -0.97,
     "mortgageRate": 6.67,
-    "initialClaims": 259000
+    "initialClaims": 259000,
+    "creditConditions": 0.156
   },
   {
     "date": "2023-06-30",
@@ -3968,7 +4328,8 @@
     "realRate": 1.5899999999999999,
     "termSpread": -1.06,
     "mortgageRate": 6.71,
-    "initialClaims": 236000
+    "initialClaims": 236000,
+    "creditConditions": 0.152
   },
   {
     "date": "2023-07-07",
@@ -3979,7 +4340,8 @@
     "realRate": 1.7899999999999996,
     "termSpread": -0.88,
     "mortgageRate": 6.81,
-    "initialClaims": 248000
+    "initialClaims": 248000,
+    "creditConditions": 0.148
   },
   {
     "date": "2023-07-14",
@@ -3990,7 +4352,8 @@
     "realRate": 1.5899999999999999,
     "termSpread": -0.91,
     "mortgageRate": 6.96,
-    "initialClaims": 230000
+    "initialClaims": 230000,
+    "creditConditions": 0.144
   },
   {
     "date": "2023-07-21",
@@ -4001,7 +4364,8 @@
     "realRate": 1.4899999999999998,
     "termSpread": -0.98,
     "mortgageRate": 6.78,
-    "initialClaims": 229000
+    "initialClaims": 229000,
+    "creditConditions": 0.14
   },
   {
     "date": "2023-07-28",
@@ -4012,7 +4376,8 @@
     "realRate": 1.58,
     "termSpread": -0.91,
     "mortgageRate": 6.81,
-    "initialClaims": 231000
+    "initialClaims": 231000,
+    "creditConditions": 0.136
   },
   {
     "date": "2023-08-04",
@@ -4023,7 +4388,8 @@
     "realRate": 1.67,
     "termSpread": -0.73,
     "mortgageRate": 6.9,
-    "initialClaims": 238000
+    "initialClaims": 238000,
+    "creditConditions": 0.133
   },
   {
     "date": "2023-08-11",
@@ -4034,7 +4400,8 @@
     "realRate": 1.8000000000000003,
     "termSpread": -0.73,
     "mortgageRate": 6.96,
-    "initialClaims": 258000
+    "initialClaims": 258000,
+    "creditConditions": 0.13
   },
   {
     "date": "2023-08-18",
@@ -4045,7 +4412,8 @@
     "realRate": 1.94,
     "termSpread": -0.66,
     "mortgageRate": 7.09,
-    "initialClaims": 248000
+    "initialClaims": 248000,
+    "creditConditions": 0.127
   },
   {
     "date": "2023-08-25",
@@ -4056,7 +4424,8 @@
     "realRate": 1.92,
     "termSpread": -0.78,
     "mortgageRate": 7.23,
-    "initialClaims": 240000
+    "initialClaims": 240000,
+    "creditConditions": 0.125
   },
   {
     "date": "2023-09-01",
@@ -4067,7 +4436,8 @@
     "realRate": 1.92,
     "termSpread": -0.69,
     "mortgageRate": 7.18,
-    "initialClaims": 234000
+    "initialClaims": 234000,
+    "creditConditions": 0.124
   },
   {
     "date": "2023-09-08",
@@ -4078,7 +4448,8 @@
     "realRate": 1.9299999999999997,
     "termSpread": -0.72,
     "mortgageRate": 7.12,
-    "initialClaims": 225000
+    "initialClaims": 225000,
+    "creditConditions": 0.125
   },
   {
     "date": "2023-09-15",
@@ -4089,7 +4460,8 @@
     "realRate": 1.98,
     "termSpread": -0.69,
     "mortgageRate": 7.18,
-    "initialClaims": 225000
+    "initialClaims": 225000,
+    "creditConditions": 0.126
   },
   {
     "date": "2023-09-22",
@@ -4100,7 +4472,8 @@
     "realRate": 2.0700000000000003,
     "termSpread": -0.66,
     "mortgageRate": 7.19,
-    "initialClaims": 211000
+    "initialClaims": 211000,
+    "creditConditions": 0.128
   },
   {
     "date": "2023-09-29",
@@ -4111,7 +4484,8 @@
     "realRate": 2.2399999999999998,
     "termSpread": -0.44,
     "mortgageRate": 7.31,
-    "initialClaims": 216000
+    "initialClaims": 216000,
+    "creditConditions": 0.13
   },
   {
     "date": "2023-10-06",
@@ -4122,7 +4496,8 @@
     "realRate": 2.47,
     "termSpread": -0.3,
     "mortgageRate": 7.49,
-    "initialClaims": 216000
+    "initialClaims": 216000,
+    "creditConditions": 0.132
   },
   {
     "date": "2023-10-13",
@@ -4133,7 +4508,8 @@
     "realRate": 2.29,
     "termSpread": -0.41,
     "mortgageRate": 7.57,
-    "initialClaims": 210000
+    "initialClaims": 210000,
+    "creditConditions": 0.132
   },
   {
     "date": "2023-10-20",
@@ -4144,7 +4520,8 @@
     "realRate": 2.4599999999999995,
     "termSpread": -0.14,
     "mortgageRate": 7.63,
-    "initialClaims": 200000
+    "initialClaims": 200000,
+    "creditConditions": 0.131
   },
   {
     "date": "2023-10-27",
@@ -4155,7 +4532,8 @@
     "realRate": 2.42,
     "termSpread": -0.15,
     "mortgageRate": 7.79,
-    "initialClaims": 214000
+    "initialClaims": 214000,
+    "creditConditions": 0.127
   },
   {
     "date": "2023-11-03",
@@ -4166,7 +4544,8 @@
     "realRate": 2.18,
     "termSpread": -0.26,
     "mortgageRate": 7.76,
-    "initialClaims": 217000
+    "initialClaims": 217000,
+    "creditConditions": 0.122
   },
   {
     "date": "2023-11-10",
@@ -4177,7 +4556,8 @@
     "realRate": 2.2900000000000005,
     "termSpread": -0.43,
     "mortgageRate": 7.5,
-    "initialClaims": 216000
+    "initialClaims": 216000,
+    "creditConditions": 0.114
   },
   {
     "date": "2023-11-17",
@@ -4188,7 +4568,8 @@
     "realRate": 2.1600000000000006,
     "termSpread": -0.44,
     "mortgageRate": 7.44,
-    "initialClaims": 230000
+    "initialClaims": 230000,
+    "creditConditions": 0.106
   },
   {
     "date": "2023-11-24",
@@ -4199,7 +4580,8 @@
     "realRate": 2.21,
     "termSpread": -0.45,
     "mortgageRate": 7.29,
-    "initialClaims": 213000
+    "initialClaims": 213000,
+    "creditConditions": 0.097
   },
   {
     "date": "2023-12-01",
@@ -4210,7 +4592,8 @@
     "realRate": 1.9999999999999996,
     "termSpread": -0.34,
     "mortgageRate": 7.22,
-    "initialClaims": 213000
+    "initialClaims": 213000,
+    "creditConditions": 0.088
   },
   {
     "date": "2023-12-08",
@@ -4221,7 +4604,8 @@
     "realRate": 2.0200000000000005,
     "termSpread": -0.48,
     "mortgageRate": 7.03,
-    "initialClaims": 215000
+    "initialClaims": 215000,
+    "creditConditions": 0.079
   },
   {
     "date": "2023-12-15",
@@ -4232,7 +4616,8 @@
     "realRate": 1.69,
     "termSpread": -0.53,
     "mortgageRate": 6.95,
-    "initialClaims": 203000
+    "initialClaims": 203000,
+    "creditConditions": 0.071
   },
   {
     "date": "2023-12-22",
@@ -4243,7 +4628,8 @@
     "realRate": 1.71,
     "termSpread": -0.41,
     "mortgageRate": 6.67,
-    "initialClaims": 209000
+    "initialClaims": 209000,
+    "creditConditions": 0.063
   },
   {
     "date": "2023-12-29",
@@ -4254,7 +4640,8 @@
     "realRate": 1.7199999999999998,
     "termSpread": -0.35,
     "mortgageRate": 6.61,
-    "initialClaims": 212000
+    "initialClaims": 212000,
+    "creditConditions": 0.055
   },
   {
     "date": "2024-01-05",
@@ -4265,7 +4652,8 @@
     "realRate": 1.8299999999999996,
     "termSpread": -0.35,
     "mortgageRate": 6.62,
-    "initialClaims": 200000
+    "initialClaims": 200000,
+    "creditConditions": 0.048
   },
   {
     "date": "2024-01-12",
@@ -4276,7 +4664,8 @@
     "realRate": 1.69,
     "termSpread": -0.18,
     "mortgageRate": 6.66,
-    "initialClaims": 201000
+    "initialClaims": 201000,
+    "creditConditions": 0.041
   },
   {
     "date": "2024-01-19",
@@ -4287,7 +4676,8 @@
     "realRate": 1.8100000000000005,
     "termSpread": -0.24,
     "mortgageRate": 6.6,
-    "initialClaims": 195000
+    "initialClaims": 195000,
+    "creditConditions": 0.035
   },
   {
     "date": "2024-01-26",
@@ -4298,7 +4688,8 @@
     "realRate": 1.8500000000000005,
     "termSpread": -0.19,
     "mortgageRate": 6.69,
-    "initialClaims": 224000
+    "initialClaims": 224000,
+    "creditConditions": 0.029
   },
   {
     "date": "2024-02-02",
@@ -4309,7 +4700,8 @@
     "realRate": 1.8200000000000003,
     "termSpread": -0.33,
     "mortgageRate": 6.63,
-    "initialClaims": 226000
+    "initialClaims": 226000,
+    "creditConditions": 0.023
   },
   {
     "date": "2024-02-09",
@@ -4320,7 +4712,8 @@
     "realRate": 1.92,
     "termSpread": -0.31,
     "mortgageRate": 6.64,
-    "initialClaims": 213000
+    "initialClaims": 213000,
+    "creditConditions": 0.018
   },
   {
     "date": "2024-02-16",
@@ -4331,7 +4724,8 @@
     "realRate": 1.9699999999999998,
     "termSpread": -0.34,
     "mortgageRate": 6.77,
-    "initialClaims": 213000
+    "initialClaims": 213000,
+    "creditConditions": 0.013
   },
   {
     "date": "2024-02-23",
@@ -4342,7 +4736,8 @@
     "realRate": 1.96,
     "termSpread": -0.41,
     "mortgageRate": 6.9,
-    "initialClaims": 202000
+    "initialClaims": 202000,
+    "creditConditions": 0.008
   },
   {
     "date": "2024-03-01",
@@ -4353,7 +4748,8 @@
     "realRate": 1.8700000000000006,
     "termSpread": -0.35,
     "mortgageRate": 6.94,
-    "initialClaims": 212000
+    "initialClaims": 212000,
+    "creditConditions": 0.005
   },
   {
     "date": "2024-03-08",
@@ -4364,7 +4760,8 @@
     "realRate": 1.81,
     "termSpread": -0.39,
     "mortgageRate": 6.88,
-    "initialClaims": 213000
+    "initialClaims": 213000,
+    "creditConditions": 0.002
   },
   {
     "date": "2024-03-15",
@@ -4375,7 +4772,8 @@
     "realRate": 1.9899999999999998,
     "termSpread": -0.41,
     "mortgageRate": 6.74,
-    "initialClaims": 213000
+    "initialClaims": 213000,
+    "creditConditions": 0
   },
   {
     "date": "2024-03-22",
@@ -4386,7 +4784,8 @@
     "realRate": 1.8699999999999997,
     "termSpread": -0.37,
     "mortgageRate": 6.87,
-    "initialClaims": 213000
+    "initialClaims": 213000,
+    "creditConditions": -0.002
   },
   {
     "date": "2024-03-29",
@@ -4397,7 +4796,8 @@
     "realRate": 1.8800000000000003,
     "termSpread": -0.39,
     "mortgageRate": 6.79,
-    "initialClaims": 214000
+    "initialClaims": 214000,
+    "creditConditions": -0.003
   },
   {
     "date": "2024-04-05",
@@ -4408,7 +4808,8 @@
     "realRate": 2.0199999999999996,
     "termSpread": -0.34,
     "mortgageRate": 6.82,
-    "initialClaims": 223000
+    "initialClaims": 223000,
+    "creditConditions": -0.003
   },
   {
     "date": "2024-04-12",
@@ -4419,7 +4820,8 @@
     "realRate": 2.11,
     "termSpread": -0.38,
     "mortgageRate": 6.88,
-    "initialClaims": 213000
+    "initialClaims": 213000,
+    "creditConditions": -0.004
   },
   {
     "date": "2024-04-19",
@@ -4430,7 +4832,8 @@
     "realRate": 2.21,
     "termSpread": -0.35,
     "mortgageRate": 7.1,
-    "initialClaims": 212000
+    "initialClaims": 212000,
+    "creditConditions": -0.005
   },
   {
     "date": "2024-04-26",
@@ -4441,7 +4844,8 @@
     "realRate": 2.2399999999999998,
     "termSpread": -0.29,
     "mortgageRate": 7.17,
-    "initialClaims": 209000
+    "initialClaims": 209000,
+    "creditConditions": -0.008
   },
   {
     "date": "2024-05-03",
@@ -4452,7 +4856,8 @@
     "realRate": 2.15,
     "termSpread": -0.31,
     "mortgageRate": 7.22,
-    "initialClaims": 207000
+    "initialClaims": 207000,
+    "creditConditions": -0.011
   },
   {
     "date": "2024-05-10",
@@ -4463,7 +4868,8 @@
     "realRate": 2.16,
     "termSpread": -0.37,
     "mortgageRate": 7.09,
-    "initialClaims": 230000
+    "initialClaims": 230000,
+    "creditConditions": -0.013
   },
   {
     "date": "2024-05-17",
@@ -4474,7 +4880,8 @@
     "realRate": 2.1,
     "termSpread": -0.41,
     "mortgageRate": 7.02,
-    "initialClaims": 222000
+    "initialClaims": 222000,
+    "creditConditions": -0.016
   },
   {
     "date": "2024-05-24",
@@ -4485,7 +4892,8 @@
     "realRate": 2.14,
     "termSpread": -0.47,
     "mortgageRate": 6.94,
-    "initialClaims": 216000
+    "initialClaims": 216000,
+    "creditConditions": -0.017
   },
   {
     "date": "2024-05-31",
@@ -4496,7 +4904,8 @@
     "realRate": 2.1599999999999997,
     "termSpread": -0.38,
     "mortgageRate": 7.03,
-    "initialClaims": 220000
+    "initialClaims": 220000,
+    "creditConditions": -0.017
   },
   {
     "date": "2024-06-07",
@@ -4507,7 +4916,8 @@
     "realRate": 2.13,
     "termSpread": -0.44,
     "mortgageRate": 6.99,
-    "initialClaims": 227000
+    "initialClaims": 227000,
+    "creditConditions": -0.016
   },
   {
     "date": "2024-06-14",
@@ -4518,7 +4928,8 @@
     "realRate": 2.0300000000000002,
     "termSpread": -0.47,
     "mortgageRate": 6.95,
-    "initialClaims": 240000
+    "initialClaims": 240000,
+    "creditConditions": -0.014
   },
   {
     "date": "2024-06-21",
@@ -4529,7 +4940,8 @@
     "realRate": 2.02,
     "termSpread": -0.45,
     "mortgageRate": 6.87,
-    "initialClaims": 236000
+    "initialClaims": 236000,
+    "creditConditions": -0.011
   },
   {
     "date": "2024-06-28",
@@ -4540,7 +4952,8 @@
     "realRate": 2.0800000000000005,
     "termSpread": -0.35,
     "mortgageRate": 6.86,
-    "initialClaims": 233000
+    "initialClaims": 233000,
+    "creditConditions": -0.008
   },
   {
     "date": "2024-07-05",
@@ -4551,7 +4964,8 @@
     "realRate": 2.0000000000000004,
     "termSpread": -0.32,
     "mortgageRate": 6.95,
-    "initialClaims": 238000
+    "initialClaims": 238000,
+    "creditConditions": -0.005
   },
   {
     "date": "2024-07-12",
@@ -4562,7 +4976,8 @@
     "realRate": 1.9399999999999995,
     "termSpread": -0.27,
     "mortgageRate": 6.89,
-    "initialClaims": 223000
+    "initialClaims": 223000,
+    "creditConditions": -0.002
   },
   {
     "date": "2024-07-19",
@@ -4573,7 +4988,8 @@
     "realRate": 1.9300000000000002,
     "termSpread": -0.24,
     "mortgageRate": 6.77,
-    "initialClaims": 241000
+    "initialClaims": 241000,
+    "creditConditions": 0.001
   },
   {
     "date": "2024-07-26",
@@ -4584,7 +5000,8 @@
     "realRate": 1.9300000000000002,
     "termSpread": -0.16,
     "mortgageRate": 6.78,
-    "initialClaims": 237000
+    "initialClaims": 237000,
+    "creditConditions": 0.003
   },
   {
     "date": "2024-08-02",
@@ -4595,7 +5012,8 @@
     "realRate": 1.7599999999999998,
     "termSpread": -0.08,
     "mortgageRate": 6.73,
-    "initialClaims": 248000
+    "initialClaims": 248000,
+    "creditConditions": 0.004
   },
   {
     "date": "2024-08-09",
@@ -4606,7 +5024,8 @@
     "realRate": 1.8399999999999999,
     "termSpread": -0.11,
     "mortgageRate": 6.47,
-    "initialClaims": 234000
+    "initialClaims": 234000,
+    "creditConditions": 0.004
   },
   {
     "date": "2024-08-16",
@@ -4617,7 +5036,8 @@
     "realRate": 1.81,
     "termSpread": -0.17,
     "mortgageRate": 6.49,
-    "initialClaims": 228000
+    "initialClaims": 228000,
+    "creditConditions": 0.003
   },
   {
     "date": "2024-08-23",
@@ -4628,7 +5048,8 @@
     "realRate": 1.6800000000000002,
     "termSpread": -0.09,
     "mortgageRate": 6.46,
-    "initialClaims": 232000
+    "initialClaims": 232000,
+    "creditConditions": -0.001
   },
   {
     "date": "2024-08-30",
@@ -4639,7 +5060,8 @@
     "realRate": 1.7600000000000002,
     "termSpread": 0,
     "mortgageRate": 6.35,
-    "initialClaims": 232000
+    "initialClaims": 232000,
+    "creditConditions": -0.005
   },
   {
     "date": "2024-09-06",
@@ -4650,7 +5072,8 @@
     "realRate": 1.6900000000000004,
     "termSpread": 0.06,
     "mortgageRate": 6.35,
-    "initialClaims": 227000
+    "initialClaims": 227000,
+    "creditConditions": -0.011
   },
   {
     "date": "2024-09-13",
@@ -4661,7 +5084,8 @@
     "realRate": 1.58,
     "termSpread": 0.09,
     "mortgageRate": 6.2,
-    "initialClaims": 227000
+    "initialClaims": 227000,
+    "creditConditions": -0.017
   },
   {
     "date": "2024-09-20",
@@ -4672,7 +5096,8 @@
     "realRate": 1.58,
     "termSpread": 0.18,
     "mortgageRate": 6.09,
-    "initialClaims": 223000
+    "initialClaims": 223000,
+    "creditConditions": -0.025
   },
   {
     "date": "2024-09-27",
@@ -4683,7 +5108,8 @@
     "realRate": 1.6,
     "termSpread": 0.2,
     "mortgageRate": 6.08,
-    "initialClaims": 221000
+    "initialClaims": 221000,
+    "creditConditions": -0.033
   },
   {
     "date": "2024-10-04",
@@ -4694,7 +5120,8 @@
     "realRate": 1.75,
     "termSpread": 0.05,
     "mortgageRate": 6.12,
-    "initialClaims": 227000
+    "initialClaims": 227000,
+    "creditConditions": -0.041
   },
   {
     "date": "2024-10-11",
@@ -4705,7 +5132,8 @@
     "realRate": 1.75,
     "termSpread": 0.13,
     "mortgageRate": 6.32,
-    "initialClaims": 258000
+    "initialClaims": 258000,
+    "creditConditions": -0.049
   },
   {
     "date": "2024-10-18",
@@ -4716,7 +5144,8 @@
     "realRate": 1.77,
     "termSpread": 0.13,
     "mortgageRate": 6.44,
-    "initialClaims": 241000
+    "initialClaims": 241000,
+    "creditConditions": -0.056
   },
   {
     "date": "2024-10-25",
@@ -4727,7 +5156,8 @@
     "realRate": 1.96,
     "termSpread": 0.14,
     "mortgageRate": 6.54,
-    "initialClaims": 227000
+    "initialClaims": 227000,
+    "creditConditions": -0.063
   },
   {
     "date": "2024-11-01",
@@ -4738,7 +5168,8 @@
     "realRate": 2.04,
     "termSpread": 0.16,
     "mortgageRate": 6.72,
-    "initialClaims": 219000
+    "initialClaims": 219000,
+    "creditConditions": -0.069
   },
   {
     "date": "2024-11-08",
@@ -4749,7 +5180,8 @@
     "realRate": 1.9499999999999997,
     "termSpread": 0.04,
     "mortgageRate": 6.79,
-    "initialClaims": 221000
+    "initialClaims": 221000,
+    "creditConditions": -0.074
   },
   {
     "date": "2024-11-15",
@@ -4760,7 +5192,8 @@
     "realRate": 2.0999999999999996,
     "termSpread": 0.12,
     "mortgageRate": 6.78,
-    "initialClaims": 218000
+    "initialClaims": 218000,
+    "creditConditions": -0.077
   },
   {
     "date": "2024-11-22",
@@ -4771,7 +5204,8 @@
     "realRate": 2.0700000000000003,
     "termSpread": 0.04,
     "mortgageRate": 6.84,
-    "initialClaims": 216000
+    "initialClaims": 216000,
+    "creditConditions": -0.079
   },
   {
     "date": "2024-11-29",
@@ -4782,7 +5216,8 @@
     "realRate": 1.92,
     "termSpread": 0.05,
     "mortgageRate": 6.81,
-    "initialClaims": 219000
+    "initialClaims": 219000,
+    "creditConditions": -0.079
   },
   {
     "date": "2024-12-06",
@@ -4793,7 +5228,8 @@
     "realRate": 1.9100000000000001,
     "termSpread": 0.05,
     "mortgageRate": 6.69,
-    "initialClaims": 222000
+    "initialClaims": 222000,
+    "creditConditions": -0.077
   },
   {
     "date": "2024-12-13",
@@ -4804,7 +5240,8 @@
     "realRate": 2.0700000000000003,
     "termSpread": 0.15,
     "mortgageRate": 6.6,
-    "initialClaims": 238000
+    "initialClaims": 238000,
+    "creditConditions": -0.075
   },
   {
     "date": "2024-12-20",
@@ -4815,7 +5252,8 @@
     "realRate": 2.2299999999999995,
     "termSpread": 0.22,
     "mortgageRate": 6.72,
-    "initialClaims": 222000
+    "initialClaims": 222000,
+    "creditConditions": -0.072
   },
   {
     "date": "2024-12-27",
@@ -4826,7 +5264,8 @@
     "realRate": 2.2800000000000002,
     "termSpread": 0.31,
     "mortgageRate": 6.85,
-    "initialClaims": 219000
+    "initialClaims": 219000,
+    "creditConditions": -0.07
   },
   {
     "date": "2025-01-03",
@@ -4837,7 +5276,8 @@
     "realRate": 2.26,
     "termSpread": 0.32,
     "mortgageRate": 6.91,
-    "initialClaims": 212000
+    "initialClaims": 212000,
+    "creditConditions": -0.068
   },
   {
     "date": "2025-01-10",
@@ -4848,7 +5288,8 @@
     "realRate": 2.3399999999999994,
     "termSpread": 0.37,
     "mortgageRate": 6.93,
-    "initialClaims": 206000
+    "initialClaims": 206000,
+    "creditConditions": -0.068
   },
   {
     "date": "2025-01-17",
@@ -4859,7 +5300,8 @@
     "realRate": 2.2,
     "termSpread": 0.34,
     "mortgageRate": 7.04,
-    "initialClaims": 219000
+    "initialClaims": 219000,
+    "creditConditions": -0.068
   },
   {
     "date": "2025-01-24",
@@ -4870,7 +5312,8 @@
     "realRate": 2.1999999999999997,
     "termSpread": 0.36,
     "mortgageRate": 6.96,
-    "initialClaims": 223000
+    "initialClaims": 223000,
+    "creditConditions": -0.067
   },
   {
     "date": "2025-01-31",
@@ -4881,7 +5324,8 @@
     "realRate": 2.16,
     "termSpread": 0.36,
     "mortgageRate": 6.95,
-    "initialClaims": 212000
+    "initialClaims": 212000,
+    "creditConditions": -0.065
   },
   {
     "date": "2025-02-07",
@@ -4892,7 +5336,8 @@
     "realRate": 2.0700000000000003,
     "termSpread": 0.2,
     "mortgageRate": 6.89,
-    "initialClaims": 220000
+    "initialClaims": 220000,
+    "creditConditions": -0.062
   },
   {
     "date": "2025-02-14",
@@ -4903,7 +5348,8 @@
     "realRate": 2.0399999999999996,
     "termSpread": 0.21,
     "mortgageRate": 6.87,
-    "initialClaims": 216000
+    "initialClaims": 216000,
+    "creditConditions": -0.056
   },
   {
     "date": "2025-02-21",
@@ -4914,7 +5360,8 @@
     "realRate": 2,
     "termSpread": 0.23,
     "mortgageRate": 6.85,
-    "initialClaims": 223000
+    "initialClaims": 223000,
+    "creditConditions": -0.048
   },
   {
     "date": "2025-02-28",
@@ -4925,7 +5372,8 @@
     "realRate": 1.8600000000000003,
     "termSpread": 0.25,
     "mortgageRate": 6.76,
-    "initialClaims": 241000
+    "initialClaims": 241000,
+    "creditConditions": -0.037
   },
   {
     "date": "2025-03-07",
@@ -4936,7 +5384,8 @@
     "realRate": 1.9900000000000002,
     "termSpread": 0.33,
     "mortgageRate": 6.63,
-    "initialClaims": 224000
+    "initialClaims": 224000,
+    "creditConditions": -0.025
   },
   {
     "date": "2025-03-14",
@@ -4947,7 +5396,8 @@
     "realRate": 2.01,
     "termSpread": 0.29,
     "mortgageRate": 6.65,
-    "initialClaims": 222000
+    "initialClaims": 222000,
+    "creditConditions": -0.012
   },
   {
     "date": "2025-03-21",
@@ -4958,7 +5408,8 @@
     "realRate": 1.92,
     "termSpread": 0.31,
     "mortgageRate": 6.67,
-    "initialClaims": 225000
+    "initialClaims": 225000,
+    "creditConditions": 0
   },
   {
     "date": "2025-03-28",
@@ -4969,7 +5420,8 @@
     "realRate": 1.8999999999999995,
     "termSpread": 0.38,
     "mortgageRate": 6.65,
-    "initialClaims": 224000
+    "initialClaims": 224000,
+    "creditConditions": 0.009
   },
   {
     "date": "2025-04-04",
@@ -4980,7 +5432,8 @@
     "realRate": 1.8299999999999996,
     "termSpread": 0.33,
     "mortgageRate": 6.64,
-    "initialClaims": 220000
+    "initialClaims": 220000,
+    "creditConditions": 0.016
   },
   {
     "date": "2025-04-11",
@@ -4991,7 +5444,8 @@
     "realRate": 2.2800000000000002,
     "termSpread": 0.52,
     "mortgageRate": 6.62,
-    "initialClaims": 223000
+    "initialClaims": 223000,
+    "creditConditions": 0.02
   },
   {
     "date": "2025-04-18",
@@ -5002,7 +5456,8 @@
     "realRate": 2.11,
     "termSpread": 0.53,
     "mortgageRate": 6.83,
-    "initialClaims": 217000
+    "initialClaims": 217000,
+    "creditConditions": 0.02
   },
   {
     "date": "2025-04-25",
@@ -5013,7 +5468,8 @@
     "realRate": 2.02,
     "termSpread": 0.55,
     "mortgageRate": 6.81,
-    "initialClaims": 224000
+    "initialClaims": 224000,
+    "creditConditions": 0.016
   },
   {
     "date": "2025-05-02",
@@ -5024,7 +5480,8 @@
     "realRate": 2.06,
     "termSpread": 0.5,
     "mortgageRate": 6.76,
-    "initialClaims": 239000
+    "initialClaims": 239000,
+    "creditConditions": 0.009
   },
   {
     "date": "2025-05-09",
@@ -5035,7 +5492,8 @@
     "realRate": 2.08,
     "termSpread": 0.49,
     "mortgageRate": 6.76,
-    "initialClaims": 228000
+    "initialClaims": 228000,
+    "creditConditions": 0
   },
   {
     "date": "2025-05-16",
@@ -5046,7 +5504,8 @@
     "realRate": 2.09,
     "termSpread": 0.45,
     "mortgageRate": 6.81,
-    "initialClaims": 226000
+    "initialClaims": 226000,
+    "creditConditions": -0.009
   },
   {
     "date": "2025-05-23",
@@ -5057,7 +5516,8 @@
     "realRate": 2.1799999999999997,
     "termSpread": 0.51,
     "mortgageRate": 6.86,
-    "initialClaims": 225000
+    "initialClaims": 225000,
+    "creditConditions": -0.018
   },
   {
     "date": "2025-05-30",
@@ -5068,7 +5528,8 @@
     "realRate": 2.0700000000000003,
     "termSpread": 0.52,
     "mortgageRate": 6.89,
-    "initialClaims": 236000
+    "initialClaims": 236000,
+    "creditConditions": -0.025
   },
   {
     "date": "2025-06-06",
@@ -5079,7 +5540,8 @@
     "realRate": 2.1999999999999997,
     "termSpread": 0.47,
     "mortgageRate": 6.85,
-    "initialClaims": 244000
+    "initialClaims": 244000,
+    "creditConditions": -0.031
   },
   {
     "date": "2025-06-13",
@@ -5090,7 +5552,8 @@
     "realRate": 2.1300000000000003,
     "termSpread": 0.45,
     "mortgageRate": 6.84,
-    "initialClaims": 246000
+    "initialClaims": 246000,
+    "creditConditions": -0.035
   },
   {
     "date": "2025-06-20",
@@ -5101,7 +5564,8 @@
     "realRate": 2.05,
     "termSpread": 0.48,
     "mortgageRate": 6.81,
-    "initialClaims": 243000
+    "initialClaims": 243000,
+    "creditConditions": -0.038
   },
   {
     "date": "2025-06-27",
@@ -5112,7 +5576,8 @@
     "realRate": 2,
     "termSpread": 0.56,
     "mortgageRate": 6.77,
-    "initialClaims": 236000
+    "initialClaims": 236000,
+    "creditConditions": -0.041
   },
   {
     "date": "2025-07-04",
@@ -5123,7 +5588,8 @@
     "realRate": 2.0199999999999996,
     "termSpread": 0.47,
     "mortgageRate": 6.67,
-    "initialClaims": 231000
+    "initialClaims": 231000,
+    "creditConditions": -0.044
   },
   {
     "date": "2025-07-11",
@@ -5134,7 +5600,8 @@
     "realRate": 2.0599999999999996,
     "termSpread": 0.53,
     "mortgageRate": 6.72,
-    "initialClaims": 228000
+    "initialClaims": 228000,
+    "creditConditions": -0.046
   },
   {
     "date": "2025-07-18",
@@ -5145,7 +5612,8 @@
     "realRate": 2.0300000000000002,
     "termSpread": 0.56,
     "mortgageRate": 6.75,
-    "initialClaims": 221000
+    "initialClaims": 221000,
+    "creditConditions": -0.048
   },
   {
     "date": "2025-07-25",
@@ -5156,7 +5624,8 @@
     "realRate": 1.9600000000000004,
     "termSpread": 0.49,
     "mortgageRate": 6.74,
-    "initialClaims": 218000
+    "initialClaims": 218000,
+    "creditConditions": -0.049
   },
   {
     "date": "2025-08-01",
@@ -5167,7 +5636,8 @@
     "realRate": 1.9000000000000004,
     "termSpread": 0.54,
     "mortgageRate": 6.72,
-    "initialClaims": 219000
+    "initialClaims": 219000,
+    "creditConditions": -0.05
   },
   {
     "date": "2025-08-08",
@@ -5178,7 +5648,8 @@
     "realRate": 1.8799999999999994,
     "termSpread": 0.51,
     "mortgageRate": 6.63,
-    "initialClaims": 226000
+    "initialClaims": 226000,
+    "creditConditions": -0.051
   },
   {
     "date": "2025-08-15",
@@ -5189,7 +5660,8 @@
     "realRate": 1.9500000000000002,
     "termSpread": 0.58,
     "mortgageRate": 6.58,
-    "initialClaims": 224000
+    "initialClaims": 224000,
+    "creditConditions": -0.052
   },
   {
     "date": "2025-08-22",
@@ -5200,7 +5672,8 @@
     "realRate": 1.8499999999999996,
     "termSpread": 0.58,
     "mortgageRate": 6.58,
-    "initialClaims": 233000
+    "initialClaims": 233000,
+    "creditConditions": -0.051
   },
   {
     "date": "2025-08-29",
@@ -5211,7 +5684,8 @@
     "realRate": 1.8200000000000003,
     "termSpread": 0.64,
     "mortgageRate": 6.56,
-    "initialClaims": 229000
+    "initialClaims": 229000,
+    "creditConditions": -0.05
   },
   {
     "date": "2025-09-05",
@@ -5222,7 +5696,8 @@
     "realRate": 1.7299999999999995,
     "termSpread": 0.59,
     "mortgageRate": 6.5,
-    "initialClaims": 236000
+    "initialClaims": 236000,
+    "creditConditions": -0.048
   },
   {
     "date": "2025-09-12",
@@ -5233,7 +5708,8 @@
     "realRate": 1.6999999999999997,
     "termSpread": 0.5,
     "mortgageRate": 6.35,
-    "initialClaims": 259000
+    "initialClaims": 259000,
+    "creditConditions": -0.046
   },
   {
     "date": "2025-09-19",
@@ -5244,7 +5720,8 @@
     "realRate": 1.7499999999999996,
     "termSpread": 0.57,
     "mortgageRate": 6.26,
-    "initialClaims": 233000
+    "initialClaims": 233000,
+    "creditConditions": -0.044
   },
   {
     "date": "2025-09-26",
@@ -5255,7 +5732,8 @@
     "realRate": 1.8200000000000003,
     "termSpread": 0.57,
     "mortgageRate": 6.3,
-    "initialClaims": 219000
+    "initialClaims": 219000,
+    "creditConditions": -0.042
   },
   {
     "date": "2025-10-03",
@@ -5266,7 +5744,8 @@
     "realRate": 1.7999999999999998,
     "termSpread": 0.55,
     "mortgageRate": 6.34,
-    "initialClaims": 225000
+    "initialClaims": 225000,
+    "creditConditions": -0.041
   },
   {
     "date": "2025-10-10",
@@ -5277,7 +5756,8 @@
     "realRate": 1.75,
     "termSpread": 0.53,
     "mortgageRate": 6.3,
-    "initialClaims": 233000
+    "initialClaims": 233000,
+    "creditConditions": -0.039
   },
   {
     "date": "2025-10-17",
@@ -5288,7 +5768,8 @@
     "realRate": 1.7499999999999996,
     "termSpread": 0.56,
     "mortgageRate": 6.27,
-    "initialClaims": 222000
+    "initialClaims": 222000,
+    "creditConditions": -0.036
   },
   {
     "date": "2025-10-24",
@@ -5299,7 +5780,8 @@
     "realRate": 1.7299999999999995,
     "termSpread": 0.54,
     "mortgageRate": 6.19,
-    "initialClaims": 231000
+    "initialClaims": 231000,
+    "creditConditions": -0.032
   },
   {
     "date": "2025-10-31",
@@ -5310,7 +5792,8 @@
     "realRate": 1.8100000000000005,
     "termSpread": 0.51,
     "mortgageRate": 6.17,
-    "initialClaims": 221000
+    "initialClaims": 221000,
+    "creditConditions": -0.028
   },
   {
     "date": "2025-11-07",
@@ -5321,7 +5804,8 @@
     "realRate": 1.8300000000000005,
     "termSpread": 0.56,
     "mortgageRate": 6.22,
-    "initialClaims": 228000
+    "initialClaims": 228000,
+    "creditConditions": -0.024
   },
   {
     "date": "2025-11-14",
@@ -5332,7 +5816,8 @@
     "realRate": 1.8599999999999999,
     "termSpread": 0.52,
     "mortgageRate": 6.24,
-    "initialClaims": 228000
+    "initialClaims": 228000,
+    "creditConditions": -0.019
   },
   {
     "date": "2025-11-21",
@@ -5343,7 +5828,8 @@
     "realRate": 1.8199999999999994,
     "termSpread": 0.55,
     "mortgageRate": 6.26,
-    "initialClaims": 222000
+    "initialClaims": 222000,
+    "creditConditions": -0.015
   },
   {
     "date": "2025-11-28",
@@ -5354,7 +5840,8 @@
     "realRate": 1.7899999999999996,
     "termSpread": 0.55,
     "mortgageRate": 6.23,
-    "initialClaims": 218000
+    "initialClaims": 218000,
+    "creditConditions": -0.012
   },
   {
     "date": "2025-12-05",
@@ -5365,7 +5852,8 @@
     "realRate": 1.88,
     "termSpread": 0.58,
     "mortgageRate": 6.19,
-    "initialClaims": 216000
+    "initialClaims": 216000,
+    "creditConditions": -0.01
   },
   {
     "date": "2025-12-12",
@@ -5376,7 +5864,8 @@
     "realRate": 1.9300000000000006,
     "termSpread": 0.67,
     "mortgageRate": 6.22,
-    "initialClaims": 235000
+    "initialClaims": 235000,
+    "creditConditions": -0.011
   },
   {
     "date": "2025-12-19",
@@ -5387,7 +5876,8 @@
     "realRate": 1.92,
     "termSpread": 0.68,
     "mortgageRate": 6.21,
-    "initialClaims": 224000
+    "initialClaims": 224000,
+    "creditConditions": -0.015
   },
   {
     "date": "2025-12-26",
@@ -5398,7 +5888,8 @@
     "realRate": 1.9099999999999997,
     "termSpread": 0.68,
     "mortgageRate": 6.18,
-    "initialClaims": 215000
+    "initialClaims": 215000,
+    "creditConditions": -0.02
   },
   {
     "date": "2026-01-02",
@@ -5409,7 +5900,8 @@
     "realRate": 1.9400000000000004,
     "termSpread": 0.72,
     "mortgageRate": 6.15,
-    "initialClaims": 203000
+    "initialClaims": 203000,
+    "creditConditions": -0.027
   },
   {
     "date": "2026-01-09",
@@ -5420,7 +5912,8 @@
     "realRate": 1.9,
     "termSpread": 0.64,
     "mortgageRate": 6.16,
-    "initialClaims": 207000
+    "initialClaims": 207000,
+    "creditConditions": -0.035
   },
   {
     "date": "2026-01-16",
@@ -5431,7 +5924,8 @@
     "realRate": 1.9100000000000001,
     "termSpread": 0.65,
     "mortgageRate": 6.06,
-    "initialClaims": 201000
+    "initialClaims": 201000,
+    "creditConditions": -0.04
   },
   {
     "date": "2026-01-23",
@@ -5442,7 +5936,8 @@
     "realRate": 1.9200000000000004,
     "termSpread": 0.64,
     "mortgageRate": 6.09,
-    "initialClaims": 210000
+    "initialClaims": 210000,
+    "creditConditions": -0.044
   },
   {
     "date": "2026-01-30",
@@ -5453,7 +5948,8 @@
     "realRate": 1.9,
     "termSpread": 0.74,
     "mortgageRate": 6.1,
-    "initialClaims": 211000
+    "initialClaims": 211000,
+    "creditConditions": -0.043
   },
   {
     "date": "2026-02-06",
@@ -5464,7 +5960,8 @@
     "realRate": 1.88,
     "termSpread": 0.72,
     "mortgageRate": 6.11,
-    "initialClaims": 230000
+    "initialClaims": 230000,
+    "creditConditions": -0.04
   },
   {
     "date": "2026-02-13",
@@ -5475,7 +5972,8 @@
     "realRate": 1.77,
     "termSpread": 0.64,
     "mortgageRate": 6.09,
-    "initialClaims": 230000
+    "initialClaims": 230000,
+    "creditConditions": -0.034
   },
   {
     "date": "2026-02-20",
@@ -5486,7 +5984,8 @@
     "realRate": 1.8000000000000003,
     "termSpread": 0.6,
     "mortgageRate": 6.01,
-    "initialClaims": 208000
+    "initialClaims": 208000,
+    "creditConditions": -0.025
   },
   {
     "date": "2026-02-27",
@@ -5497,7 +5996,8 @@
     "realRate": 1.7200000000000002,
     "termSpread": 0.59,
     "mortgageRate": 5.98,
-    "initialClaims": 211000
+    "initialClaims": 211000,
+    "creditConditions": -0.016
   },
   {
     "date": "2026-03-06",
@@ -5508,7 +6008,8 @@
     "realRate": 1.8000000000000003,
     "termSpread": 0.59,
     "mortgageRate": 6,
-    "initialClaims": 214000
+    "initialClaims": 214000,
+    "creditConditions": -0.008
   },
   {
     "date": "2026-03-13",
@@ -5519,7 +6020,8 @@
     "realRate": 1.9200000000000004,
     "termSpread": 0.55,
     "mortgageRate": 6.11,
-    "initialClaims": 213000
+    "initialClaims": 213000,
+    "creditConditions": -0.001
   },
   {
     "date": "2026-03-20",
@@ -5530,7 +6032,8 @@
     "realRate": 2.01,
     "termSpread": 0.51,
     "mortgageRate": 6.22,
-    "initialClaims": 205000
+    "initialClaims": 205000,
+    "creditConditions": 0.002
   },
   {
     "date": "2026-03-27",
@@ -5541,7 +6044,8 @@
     "realRate": 2.1300000000000003,
     "termSpread": 0.56,
     "mortgageRate": 6.38,
-    "initialClaims": 211000
+    "initialClaims": 211000,
+    "creditConditions": 0.003
   },
   {
     "date": "2026-04-03",
@@ -5552,7 +6056,8 @@
     "realRate": 1.9899999999999998,
     "termSpread": 0.51,
     "mortgageRate": 6.46,
-    "initialClaims": 203000
+    "initialClaims": 203000,
+    "creditConditions": 0
   },
   {
     "date": "2026-04-10",
@@ -5563,7 +6068,8 @@
     "realRate": 1.9499999999999997,
     "termSpread": 0.5,
     "mortgageRate": 6.37,
-    "initialClaims": 218000
+    "initialClaims": 218000,
+    "creditConditions": -0.005
   },
   {
     "date": "2026-04-17",
@@ -5574,7 +6080,8 @@
     "realRate": 1.9,
     "termSpread": 0.55,
     "mortgageRate": 6.3,
-    "initialClaims": 208000
+    "initialClaims": 208000,
+    "creditConditions": -0.011
   },
   {
     "date": "2026-04-24",
@@ -5585,7 +6092,8 @@
     "realRate": 1.8899999999999997,
     "termSpread": 0.53,
     "mortgageRate": 6.23,
-    "initialClaims": 215000
+    "initialClaims": 215000,
+    "creditConditions": -0.016
   },
   {
     "date": "2026-05-01",
@@ -5596,7 +6104,8 @@
     "realRate": 1.9099999999999997,
     "termSpread": 0.51,
     "mortgageRate": 6.3,
-    "initialClaims": 190000
+    "initialClaims": 190000,
+    "creditConditions": -0.021
   },
   {
     "date": "2026-05-08",
@@ -5607,7 +6116,8 @@
     "realRate": 1.9299999999999997,
     "termSpread": 0.48,
     "mortgageRate": 6.37,
-    "initialClaims": 199000
+    "initialClaims": 199000,
+    "creditConditions": -0.025
   },
   {
     "date": "2026-05-15",
@@ -5618,7 +6128,8 @@
     "realRate": 2.0999999999999996,
     "termSpread": 0.5,
     "mortgageRate": 6.36,
-    "initialClaims": 212000
+    "initialClaims": 212000,
+    "creditConditions": -0.027
   },
   {
     "date": "2026-05-22",
@@ -5629,7 +6140,8 @@
     "realRate": 2.1599999999999997,
     "termSpread": 0.43,
     "mortgageRate": 6.51,
-    "initialClaims": 210000
+    "initialClaims": 210000,
+    "creditConditions": -0.028
   },
   {
     "date": "2026-05-29",
@@ -5640,7 +6152,8 @@
     "realRate": 2.0700000000000003,
     "termSpread": 0.47,
     "mortgageRate": 6.53,
-    "initialClaims": 212000
+    "initialClaims": 212000,
+    "creditConditions": -0.028
   },
   {
     "date": "2026-06-05",
@@ -5651,7 +6164,8 @@
     "realRate": 2.19,
     "termSpread": 0.38,
     "mortgageRate": 6.48,
-    "initialClaims": 225000
+    "initialClaims": 225000,
+    "creditConditions": -0.028
   },
   {
     "date": "2026-06-12",
@@ -5662,7 +6176,8 @@
     "realRate": 2.1700000000000004,
     "termSpread": 0.39,
     "mortgageRate": 6.52,
-    "initialClaims": 230000
+    "initialClaims": 230000,
+    "creditConditions": -0.028
   },
   {
     "date": "2026-06-19",
@@ -5673,7 +6188,8 @@
     "realRate": 2.21,
     "termSpread": 0.27,
     "mortgageRate": 6.47,
-    "initialClaims": 227000
+    "initialClaims": 227000,
+    "creditConditions": -0.029
   },
   {
     "date": "2026-06-26",
@@ -5684,7 +6200,8 @@
     "realRate": 2.1799999999999997,
     "termSpread": 0.31,
     "mortgageRate": 6.49,
-    "initialClaims": 216000
+    "initialClaims": 216000,
+    "creditConditions": -0.031
   },
   {
     "date": "2026-07-03",
@@ -5695,7 +6212,8 @@
     "realRate": 2.2600000000000002,
     "termSpread": 0.35,
     "mortgageRate": 6.43,
-    "initialClaims": 217000
+    "initialClaims": 217000,
+    "creditConditions": -0.034
   },
   {
     "date": "2026-07-10",
@@ -5706,7 +6224,8 @@
     "realRate": 2.3199999999999994,
     "termSpread": 0.35,
     "mortgageRate": 6.49,
-    "initialClaims": 217000
+    "initialClaims": 217000,
+    "creditConditions": -0.039
   },
   {
     "date": "2026-07-17",
@@ -5717,7 +6236,8 @@
     "realRate": 2.3099999999999996,
     "termSpread": 0.37,
     "mortgageRate": 6.55,
-    "initialClaims": 209000
+    "initialClaims": 209000,
+    "creditConditions": -0.044
   },
   {
     "date": "2026-07-24",
@@ -5728,7 +6248,8 @@
     "realRate": 2.4300000000000006,
     "termSpread": 0.36,
     "mortgageRate": 6.58,
-    "initialClaims": 189000
+    "initialClaims": 189000,
+    "creditConditions": -0.05
   },
   {
     "date": "2026-07-31",
@@ -5739,7 +6260,8 @@
     "realRate": 2.47,
     "termSpread": 0.47,
     "mortgageRate": 6.66,
-    "initialClaims": 198000
+    "initialClaims": 198000,
+    "creditConditions": -0.055
   },
   {
     "date": "2026-08-07",
@@ -5750,7 +6272,8 @@
     "realRate": 2.4000000000000004,
     "termSpread": 0.46,
     "mortgageRate": 6.69,
-    "initialClaims": 200000
+    "initialClaims": 200000,
+    "creditConditions": -0.06
   },
   {
     "date": "2026-08-14",
@@ -5761,6 +6284,7 @@
     "realRate": 2.36,
     "termSpread": 0.51,
     "mortgageRate": 6.67,
-    "initialClaims": 209000
+    "initialClaims": 209000,
+    "creditConditions": -0.06
   }
 ]

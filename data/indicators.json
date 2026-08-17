@@ -559,5 +559,32 @@
     "group": "macro",
     "cyclePosition": "leading",
     "note": "Manufacturers' New Orders: Nondefense Capital Goods Excluding Aircraft。百万ドル、季節調整済み。The Conference Board の景気先行指数 (LEI) の構成要素。企業の設備投資意欲を示す。"
+  },
+  "manufacturing-hours": {
+    "name": "製造業の週平均労働時間",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "AWHMAN"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "U.S. Bureau of Labor Statistics via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "cyclePosition": "leading",
+    "note": "Average Weekly Hours of Production and Nonsupervisory Employees, Manufacturing。時間、季節調整済み。The Conference Board の景気先行指数 (LEI) の構成要素。企業は解雇の前に残業を減らすため、雇用者数より早く動く。"
+  },
+  "credit-conditions": {
+    "name": "信用状況指数",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "NFCICREDIT"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "Federal Reserve Bank of Chicago via FRED",
+    "copyright": "restricted",
+    "group": "rates",
+    "note": "Chicago Fed National Financial Conditions Credit Subindex。指数、季節調整なし、週次。**著作権は Chicago Fed にある**。ゼロが平均的な状態で、正が引き締まり (信用が取りにくい)、負が緩み。The Conference Board の Leading Credit Index とは別物 (あちらは独自の合成指標で公開されていない) だが、信用状況の逼迫度を測る点で近い。"
   }
 }

@@ -372,6 +372,7 @@ export function buildMacroView(options: BuildViewOptions): MacroPoint[] {
       // 週次系列。金曜が休みでも直近の値を採る。
       mortgageRate: valueAsOf(series(observations, 'mortgage-rate-30y'), date),
       initialClaims: valueAsOf(series(observations, 'initial-claims'), date),
+      creditConditions: valueAsOf(series(observations, 'credit-conditions'), date),
     };
   });
 }
@@ -412,6 +413,8 @@ export function buildEconomyView(options: BuildViewOptions): EconomyView {
     realIncomeExTransfer: yoy('real-income-ex-transfer', month),
     realDisposablePerCapita: yoy('real-disposable-income-per-capita', month),
     retailSales: yoy('retail-sales-core', month),
+    // 水準そのものが意味を持つ (40 時間が基準)。前年比にすると読めなくなる。
+    manufacturingHours: level('manufacturing-hours', month),
     industrialProduction: yoy('industrial-production', month),
     newOrdersConsumerGoods: yoy('new-orders-consumer-goods', month),
     newOrdersCapitalGoods: yoy('new-orders-capital-goods', month),
@@ -447,6 +450,7 @@ const MONTHLY_INDICATORS = [
   'real-income-ex-transfer',
   'real-disposable-income-per-capita',
   'retail-sales-core',
+  'manufacturing-hours',
   'industrial-production',
   'new-orders-consumer-goods',
   'new-orders-capital-goods',
