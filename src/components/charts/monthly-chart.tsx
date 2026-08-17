@@ -1,5 +1,7 @@
 'use client';
 
+import { useMemo, type ReactNode } from 'react';
+import { useSearchParams } from 'next/navigation';
 import {
   CartesianGrid,
   Legend,
@@ -11,9 +13,9 @@ import {
   XAxis,
   YAxis,
 } from 'recharts';
-import type { ReactNode } from 'react';
 import { formatNumber, formatPercent } from '@/lib/format';
 import type { EconomyView, MonthlyPoint } from '@/lib/data/types';
+import { filterByMonth, parsePeriod } from '@/lib/period';
 import { ChartFrame, SharedTooltip } from './chart-frame';
 
 /**
@@ -60,7 +62,13 @@ export function MonthlyChart({
   notes: ReactNode[];
   height?: string;
 }) {
-  const points = view.monthly;
+  const searchParams = useSearchParams();
+  const period = parsePeriod(searchParams.get('period'));
+
+  const points = useMemo(
+    () => filterByMonth(view.monthly, period, new Date()),
+    [view.monthly, period],
+  );
   const labels = Object.fromEntries(series.map((s) => [s.indicatorId, s.label]));
 
   return (

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { DEFAULT_PERIOD, filterByPeriod, parsePeriod, periodStartDate } from './period';
+import { DEFAULT_PERIOD, filterByMonth, filterByPeriod, parsePeriod, periodStartDate } from './period';
 
 describe('parsePeriod', () => {
   it('有効な値をそのまま返す', () => {
@@ -68,5 +68,37 @@ describe('filterByPeriod', () => {
 
   it('空配列を扱える', () => {
     expect(filterByPeriod([], '1y', today)).toEqual([]);
+  });
+});
+
+describe('filterByMonth (#74)', () => {
+  const months = [
+    { month: '2024-06-01' },
+    { month: '2025-06-01' },
+    { month: '2025-08-01' },
+    { month: '2026-01-01' },
+    { month: '2026-06-01' },
+  ];
+  const today = new Date(Date.UTC(2026, 7, 17)); // 2026-08-17
+
+  it('直近 1 年で 12 か月分を残す (開始月を落とさない)', () => {
+    // 日付のまま比較すると開始日 2025-08-17 より前の 2025-08-01 が落ち、
+    // 「直近 1 年」なのに 11 か月分になってしまう。
+    const result = filterByMonth(months, '1y', today).map((p) => p.month);
+    expect(result).toContain('2025-08-01');
+    expect(result).not.toContain('2025-06-01');
+  });
+
+  it('3 年で範囲が広がる', () => {
+    expect(filterByMonth(months, '3y', today)).toHaveLength(5);
+  });
+
+  it('全期間はすべて残す', () => {
+    expect(filterByMonth(months, 'all', today)).toHaveLength(months.length);
+  });
+
+  it('元の配列を変更しない', () => {
+    filterByMonth(months, '1y', today);
+    expect(months).toHaveLength(5);
   });
 });

@@ -54,3 +54,21 @@ export function filterByPeriod<T extends { date: string }>(
   if (start === null) return [...points];
   return points.filter((point) => point.date >= start);
 }
+
+/**
+ * 月次系列を期間で絞る (#74)。
+ *
+ * **開始日を月初に丸める。** 日付のまま比較すると期間の最初の月が落ちる
+ * (例: 基準日 2026-08-17 の「1 年」は開始 2025-08-17 になり、対象月 2025-08-01 が
+ * 範囲外になって 11 か月分しか残らない)。「直近 1 年 = 12 か月」を満たすため丸める。
+ */
+export function filterByMonth<T extends { month: string }>(
+  points: readonly T[],
+  period: Period,
+  today: Date,
+): T[] {
+  const start = periodStartDate(period, today);
+  if (start === null) return [...points];
+  const startMonth = `${start.slice(0, 7)}-01`;
+  return points.filter((point) => point.month >= startMonth);
+}
