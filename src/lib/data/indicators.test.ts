@@ -174,3 +174,36 @@ describe('基準益回りの設定', () => {
     ).toThrow(/value/);
   });
 });
+
+describe('基準益回りの設定時コンテキスト (#46)', () => {
+  it('設定時の実質金利を読める', () => {
+    const config = parseAppConfig({
+      targetYield: {
+        sp500: [{ value: 3.67, from: '2026-08-16', reason: '初期', realRateAtSetting: 2.4 }],
+        nasdaq100: [{ value: 3.27, from: '2026-08-16', reason: '初期' }],
+      },
+    });
+    expect(config.targetYield.sp500[0].realRateAtSetting).toBe(2.4);
+  });
+
+  it('設定時の実質金利は任意 (古い設定に無くても失敗させない)', () => {
+    const config = parseAppConfig({
+      targetYield: {
+        sp500: [{ value: 4.0, from: '2020-01-01', reason: '旧' }],
+        nasdaq100: [{ value: 3.2, from: '2020-01-01', reason: '旧' }],
+      },
+    });
+    expect(config.targetYield.sp500[0].realRateAtSetting).toBeUndefined();
+  });
+
+  it('数値でない実質金利は弾く', () => {
+    expect(() =>
+      parseAppConfig({
+        targetYield: {
+          sp500: [{ value: 3.67, from: '2026-08-16', reason: '初期', realRateAtSetting: '2.4' }],
+          nasdaq100: [{ value: 3.27, from: '2026-08-16', reason: '初期' }],
+        },
+      }),
+    ).toThrow(/realRateAtSetting/);
+  });
+});

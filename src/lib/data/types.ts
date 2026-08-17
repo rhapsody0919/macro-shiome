@@ -126,6 +126,14 @@ export interface TargetYieldEntry {
   from: string;
   /** 変更理由。成長率の前提が変われば見直す値のため必須にする。 */
   reason: string;
+  /**
+   * 設定した時点の実質金利 (%)。省略可。
+   *
+   * 基準益回りを実質金利に自動連動させるのは採用しなかった (実質金利がマイナスの局面で
+   * 理論値が発散するため。#46)。代わりにこの値を残し、現在の実質金利との乖離を見て
+   * 人が見直しを判断できるようにする。
+   */
+  realRateAtSetting?: number;
 }
 
 /** 指数の識別子。バリュエーション画面の切り替え対象。 */
@@ -163,6 +171,17 @@ export interface ValuationSeries {
   };
   /** この指数に適用した基準益回り (%)。設定依存の数値なので画面に必ず出す (spec F-13)。 */
   targetYield: number;
+  /** 基準益回りの妥当性を判断するための文脈 (#46)。 */
+  targetYieldContext: {
+    /** 設定した時点の実質金利 (%)。記録が無ければ null。 */
+    realRateAtSetting: number | null;
+    /** 直近の実質金利 (%)。 */
+    currentRealRate: number | null;
+    /** 現在 − 設定時 (pt)。大きく動いていれば見直しを促す。 */
+    drift: number | null;
+    /** 基準益回りのうち実質金利で説明されない部分 = リスクプレミアム (pt)。 */
+    riskPremium: number | null;
+  };
   /** 指数と Forward EPS の相関 (spec F-5)。 */
   correlation: CorrelationSummary;
   /** Forward EPS を持つか。NASDAQ-100 は取得経路が無いため false (screens C-2)。 */

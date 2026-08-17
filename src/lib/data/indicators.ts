@@ -174,7 +174,19 @@ function parseTargetYieldEntries(raw: unknown, where: string): TargetYieldEntry[
       throw new Error(`${at}.from: YYYY-MM-DD 形式が必要 (実際: ${from})`);
     }
     // 理由は必須。前提が変われば見直す値であり、記録が無いと後から判断できないため。
-    return { value: item.value, from, reason: requireString(item.reason, `${at}.reason`) };
+    const entry: TargetYieldEntry = {
+      value: item.value,
+      from,
+      reason: requireString(item.reason, `${at}.reason`),
+    };
+    // 設定時の実質金利は任意。古い設定には無いため、欠けていても失敗させない。
+    if (item.realRateAtSetting !== undefined) {
+      if (typeof item.realRateAtSetting !== 'number' || !Number.isFinite(item.realRateAtSetting)) {
+        throw new Error(`${at}.realRateAtSetting: 数値が必要`);
+      }
+      entry.realRateAtSetting = item.realRateAtSetting;
+    }
+    return entry;
   });
 
   for (let i = 1; i < entries.length; i++) {
@@ -207,12 +219,21 @@ export function parseAppConfig(raw: unknown): AppConfig {
  * 履歴は from の昇順なので、date 以下で最も新しいものを採る。
  */
 export function resolveTargetYield(config: AppConfig, index: IndexKey, date: string): number {
+  return resolveTargetYieldEntry(config, index, date).value;
+}
+
+/** 指定日時点で有効な設定エントリ本体を返す (設定時の実質金利を参照するため)。 */
+export function resolveTargetYieldEntry(
+  config: AppConfig,
+  index: IndexKey,
+  date: string,
+): TargetYieldEntry {
   const entries = config.targetYield[index];
   let current = entries[0];
   for (const entry of entries) {
     if (entry.from <= date) current = entry;
   }
-  return current.value;
+  return current;
 }
 
 export const indicators: IndicatorMaster = parseIndicatorMaster(rawIndicators);
