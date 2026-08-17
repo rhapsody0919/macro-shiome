@@ -34,6 +34,7 @@ export function MacroChart({
   kind = 'number',
   headingLevel = 3,
   signed = false,
+  baseline,
   notes,
 }: {
   points: MacroPoint[];
@@ -48,6 +49,11 @@ export function MacroChart({
    * イールドカーブのように「負になること自体が信号」の指標に使う。
    */
   signed?: boolean;
+  /**
+   * 基準線 (#87)。データの定義から決まる線だけを引く。
+   * 「危険水準」のような恣意的な閾値には使わない。
+   */
+  baseline?: { value: number; label: string };
   notes: React.ReactNode[];
 }) {
   const searchParams = useSearchParams();
@@ -108,6 +114,16 @@ export function MacroChart({
             }
           />
           <Tooltip content={<SharedTooltip kind={kind} />} />
+
+          {baseline !== undefined && (
+            <ReferenceLine
+              y={baseline.value}
+              stroke="currentColor"
+              strokeOpacity={0.45}
+              strokeDasharray="6 3"
+              label={{ value: baseline.label, position: 'insideTopLeft', fontSize: 10 }}
+            />
+          )}
 
           {signed && (
             <>

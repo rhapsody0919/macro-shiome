@@ -196,6 +196,54 @@ const CHARTS: MonthlyChartDef[] = [
     ],
   },
   {
+    primaryIndicator: 'job-openings',
+    title: '求人件数 (JOLTS)',
+    subtitle: '労働省の公式統計 (千件)',
+    kind: 'number',
+    zeroLine: false,
+    series: [
+      {
+        key: 'jobOpenings',
+        label: '求人件数',
+        color: COLORS.jobOpenings,
+        indicatorId: 'job-openings',
+      },
+    ],
+    notes: [
+      <span key="official">
+        調査に基づく公式統計。<strong>Indeed の新規求人より発表が 2 か月ほど遅い</strong>が、
+        水準の基準になる。速報性を求めるならマクロ指標のページの新規求人を見る。
+      </span>,
+      <span key="meaning">
+        求人が減ると採用が細り、やがて雇用者数の減少につながる。
+      </span>,
+    ],
+  },
+  {
+    primaryIndicator: 'federal-deficit',
+    title: '財政収支',
+    subtitle: '連邦政府の月次収支 (百万ドル、負が赤字)',
+    kind: 'number',
+    series: [
+      {
+        key: 'federalDeficit',
+        label: '財政収支',
+        color: COLORS.federalDeficit,
+        indicatorId: 'federal-deficit',
+      },
+    ],
+    notes: [
+      <span key="why">
+        <strong>財政赤字の拡大は国債発行を増やし、長期金利の上昇要因になる。</strong>
+        金利が上がると株式の理論値が下がるため、バリュエーションに効く。
+      </span>,
+      <span key="seasonal">
+        <strong>季節調整されていない</strong>ため月ごとの振れが大きい。
+        4 月は確定申告の納税で黒字になりやすいなど、月の性質を踏まえて読む。
+      </span>,
+    ],
+  },
+  {
     primaryIndicator: 'unemployment-rate',
     title: '失業率',
     subtitle: '労働力人口に占める失業者の割合 (水準)',

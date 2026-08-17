@@ -326,6 +326,12 @@ export interface MacroPoint {
   wti: number | null;
   /** ドル指数 (Jan 2006=100)。主要通貨に対する総合的な強さ。 */
   dollarIndex: number | null;
+  /**
+   * 新規求人 (Indeed、2020-02-01 = 100)。労働市場の先行指標 (#87)。
+   *
+   * **総求人とは別系列**で、新規に掲載された求人だけを数える。
+   */
+  newJobPostings: number | null;
 }
 
 /**
@@ -395,6 +401,10 @@ export interface MonthlyPoint {
   newHomeSales: number | null;
 
   // --- 水準 ---
+  /** 求人件数 (JOLTS、千件)。労働省の公式統計。 */
+  jobOpenings: number | null;
+  /** 財政収支 (百万ドル)。負が赤字。 */
+  federalDeficit: number | null;
   /** 失業率 (%)。水準そのものが意味を持つ。 */
   unemploymentRate: number | null;
   /** 貯蓄率 (%)。低下は貯蓄の取り崩しを示す。 */

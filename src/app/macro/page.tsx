@@ -23,6 +23,8 @@ interface MacroChartDef {
   kind?: ValueKind;
   /** 符号が意味を持つ指標か。ゼロ線を引き負の領域を塗る。 */
   signed?: boolean;
+  /** 定義から決まる基準線。恣意的な閾値には使わない。 */
+  baseline?: { value: number; label: string };
   series: SeriesDef[];
   notes: ReactNode[];
 }
@@ -52,6 +54,33 @@ const CHARTS: MacroChartDef[] = [
         本指標とは厳密には別系列。
       </span>,
       <span key="daily">週次 (金曜時点)。FRED が公表する日次値を金曜に揃えている。</span>,
+    ],
+  },
+  {
+    primaryIndicator: 'new-job-postings',
+    title: '新規求人 (Indeed)',
+    subtitle: '新規に掲載された求人。2020年2月1日 = 100',
+    baseline: { value: 100, label: '2020年2月 = 100' },
+    series: [{ key: 'newJobPostings', label: '新規求人', color: COLORS.newJobPostings }],
+    notes: [
+      <span key="leading">
+        参考記事が<strong>労働市場で最も先行性のあるデータ</strong>として使っている。
+        企業は採用を止めるとまず求人の掲載を減らすため、雇用者数の変化より早く動く。
+      </span>,
+      <span key="baseline">
+        <strong>破線はコロナ前 (2020年2月1日) の水準。</strong>
+        指数の定義上の基準であり、恣意的に置いた線ではない。
+        参考記事はこれを下回った状態が続くと雇用者数が減少に転じる目安としている
+        (ただし<strong>その目安自体は記事の見立て</strong>で、公式の基準ではない)。
+      </span>,
+      <span key="vs-total">
+        <strong>総求人とは別の系列。</strong>
+        こちらは新規に掲載された分だけを数えるため、募集が続いている求人は含まない。
+      </span>,
+      <span key="copyright">
+        著作権は Indeed にある。日次を金曜時点に揃えている。公式統計の求人件数 (JOLTS) は
+        発表が 2 か月ほど遅く、<strong>経済統計のページ</strong>に置いている。
+      </span>,
     ],
   },
   {
@@ -270,6 +299,7 @@ export default function MacroPage() {
                 subtitle={chart.subtitle}
                 kind={chart.kind}
                 signed={chart.signed}
+                baseline={chart.baseline}
                 series={chart.series}
                 notes={chart.notes}
               />

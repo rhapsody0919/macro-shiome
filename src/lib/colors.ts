@@ -75,6 +75,12 @@ export const COLORS = {
   wti: '#78716c',
   /** ドル指数。 */
   dollarIndex: '#0891b2',
+  /** 新規求人。労働市場の先行指標。 */
+  newJobPostings: '#06b6d4',
+  /** 求人件数 (JOLTS)。 */
+  jobOpenings: '#0ea5e9',
+  /** 財政収支。赤字が続く側。 */
+  federalDeficit: '#f97316',
   /** 失業率。 */
   unemploymentRate: '#ef4444',
 
