@@ -17,6 +17,7 @@ import {
 import { changeMark, formatDate, formatPercent, formatSigned } from '@/lib/format';
 import type { IndexKey, ValuationView } from '@/lib/data/types';
 import { filterByPeriod, parsePeriod } from '@/lib/period';
+import { seriesState, withValue } from '@/lib/series-state';
 import { ChartFrame, SharedTooltip } from './chart-frame';
 
 const SPREAD_COLOR = '#0ea5e9';
@@ -62,7 +63,12 @@ export function YieldSpreadChart({ view }: { view: ValuationView }) {
     spreadNegative: point.yieldSpread !== null && point.yieldSpread < 0 ? point.yieldSpread : null,
   }));
 
-  const withSpread = points.filter((point) => point.yieldSpread !== null);
+  // NASDAQ-100 は益回りが実績 PER 由来で、その PER が過去に遡れない (#54)。
+  // **期間フィルター前の系列**で判定する (フィルター後だと期間を絞っただけで蓄積中に見える)。
+  const state = seriesState(series.points, (point) => point.yieldSpread);
+  const isAccumulating = state.kind === 'accumulating';
+
+  const withSpread = withValue(points, (point) => point.yieldSpread);
   const latest = withSpread.at(-1) ?? null;
   const previous = withSpread.at(-2) ?? null;
   const diff =
@@ -74,22 +80,28 @@ export function YieldSpreadChart({ view }: { view: ValuationView }) {
     <ChartFrame
       title="イールドスプレッド"
       subtitle="株式益回り − 実質金利 (名目金利ではない)"
+      state={state}
+      stateLabel="スプレッド"
+      stateNote={series.accumulationNote}
       actions={
         <div className="flex items-center gap-2">
           <IndexSwitch value={indexKey} onChange={setIndexKey} />
-          <button
-            type="button"
-            aria-pressed={showBreakdown}
-            onClick={() => setShowBreakdown((v) => !v)}
-            className={[
-              'rounded-md border px-2 py-1 text-xs',
-              showBreakdown
-                ? 'border-slate-400 bg-slate-100 dark:border-slate-600 dark:bg-slate-800'
-                : 'border-slate-300 text-slate-600 dark:border-slate-700 dark:text-slate-300',
-            ].join(' ')}
-          >
-            内訳を表示
-          </button>
+          {/* 図が出ない間は押しても何も起きないため隠す。 */}
+          {!isAccumulating && (
+            <button
+              type="button"
+              aria-pressed={showBreakdown}
+              onClick={() => setShowBreakdown((v) => !v)}
+              className={[
+                'rounded-md border px-2 py-1 text-xs',
+                showBreakdown
+                  ? 'border-slate-400 bg-slate-100 dark:border-slate-600 dark:bg-slate-800'
+                  : 'border-slate-300 text-slate-600 dark:border-slate-700 dark:text-slate-300',
+              ].join(' ')}
+            >
+              内訳を表示
+            </button>
+          )}
         </div>
       }
       summary={

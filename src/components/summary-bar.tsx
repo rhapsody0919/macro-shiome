@@ -109,6 +109,16 @@ export function SummaryBar({ view }: { view: ValuationView }) {
       <p className="text-[11px] text-slate-500">
         評価語は使わず数値と差分のみを示す。割高率は基準益回りの設定に依存する試算値。
       </p>
+      {/*
+        履歴が 1 週分しか無いと前週比が常に「—」になる。理由が無いと壊れて見える (#54)。
+      */}
+      {series.accumulationNote !== null && (
+        <p className="text-[11px] text-slate-500">
+          {INDEX_LABELS[indexKey]} は PER 由来の指標 (スプレッド・割高率・理論値)
+          の履歴が蓄積中のため、前週比が出ないことがある。
+          {series.accumulationNote} 週を追うごとに増える。
+        </p>
+      )}
     </section>
   );
 }

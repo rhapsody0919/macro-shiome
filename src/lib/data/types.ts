@@ -186,6 +186,13 @@ export interface ValuationSeries {
   correlation: CorrelationSummary;
   /** Forward EPS を持つか。NASDAQ-100 は取得経路が無いため false (screens C-2)。 */
   hasForwardEps: boolean;
+  /**
+   * 履歴を過去に遡って取得できない理由。遡れるなら null (#54)。
+   *
+   * `hasForwardEps` が**恒久的な**制約を表すのに対し、こちらは**時間で解消する**制約。
+   * 画面はこの 2 つを区別して表示する必要があるため、取得層の事実をここまで持ち上げる。
+   */
+  accumulationNote: string | null;
 }
 
 /** 画面用ビュー全体。 */

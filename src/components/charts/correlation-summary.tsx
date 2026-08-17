@@ -86,6 +86,16 @@ export function CorrelationSummary({ view }: { view: ValuationView }) {
           相関が高いほど、株価の動きが業績で説明できていることを意味する。
           因果ではなく連動の強さを示す指標。
         </li>
+        {/*
+          「データ不足」だけだと壊れているように読める。時間で解消することを示す (#54)。
+          恒久的な制約 (取得経路が無い) と混同させないため、理由を添える。
+        */}
+        {series.accumulationNote !== null && (
+          <li className="text-slate-500">
+            {INDEX_LABELS[indexKey]} は EPS の履歴が蓄積中のため標本が揃っていない。
+            {series.accumulationNote} 週を追うごとに増える。
+          </li>
+        )}
       </ul>
     </section>
   );

@@ -2,6 +2,7 @@
 
 import { Children, type ReactNode } from 'react';
 import { formatDate, formatNumber, formatPercent } from '@/lib/format';
+import { describeAccumulation, type SeriesState } from '@/lib/series-state';
 
 /** チャート共通の外枠。見出し・補助操作・注記の並びを揃える。 */
 export function ChartFrame({
@@ -11,6 +12,9 @@ export function ChartFrame({
   summary,
   notes,
   contentClassName = 'h-80',
+  state,
+  stateLabel,
+  stateNote,
   children,
 }: {
   title: string;
@@ -20,6 +24,15 @@ export function ChartFrame({
   notes: ReactNode[];
   /** 図の高さ。2 段構成にする場合などに上書きする。 */
   contentClassName?: string;
+  /**
+   * 主系列の蓄積状況。`accumulating` なら図の代わりに状態表示を出す。
+   * 各チャートで同じ分岐を書かずに済むよう枠側で引き受ける (#54)。
+   */
+  state?: SeriesState;
+  /** 何の系列が足りないか (例: 「理論値」)。`state` を渡すなら必須。 */
+  stateLabel?: string;
+  /** 蓄積が要る理由。`ValuationSeries.accumulationNote` を渡す。 */
+  stateNote?: string | null;
   children: ReactNode;
 }) {
   return (
@@ -36,7 +49,17 @@ export function ChartFrame({
 
       {summary}
 
-      <div className={`w-full ${contentClassName}`}>{children}</div>
+      <div className={`w-full ${contentClassName}`}>
+        {state !== undefined && state.kind === 'accumulating' ? (
+          <AccumulatingNotice
+            state={state}
+            label={stateLabel ?? 'データ'}
+            note={stateNote ?? null}
+          />
+        ) : (
+          children
+        )}
+      </div>
 
       <ul className="space-y-1 text-[11px] text-slate-500">
         {/*
@@ -48,6 +71,34 @@ export function ChartFrame({
         ))}
       </ul>
     </section>
+  );
+}
+
+/**
+ * 図の代わりに出す蓄積中の表示 (screens C-2)。
+ *
+ * 空のチャートを描くと「壊れている」ように見えるため、図の代わりにこれを出す。
+ * 文面は `describeAccumulation` に集約し、注記に混ぜる場合と同じものを使う。
+ */
+function AccumulatingNotice({
+  state,
+  label,
+  note,
+}: {
+  state: Extract<SeriesState, { kind: 'accumulating' }>;
+  label: string;
+  note: string | null;
+}) {
+  return (
+    <div className="flex h-full flex-col items-center justify-center gap-1 rounded border border-dashed border-slate-300 px-6 text-center dark:border-slate-700">
+      <p className="text-sm text-slate-600 dark:text-slate-300">
+        {describeAccumulation(state, label, formatDate)}
+      </p>
+      {/* 恒久的な制約 (取得経路が無い) と区別できるよう、解消する見込みを添える。 */}
+      <p className="text-xs text-slate-500">
+        {note ?? ''} 週を追うごとに増える。
+      </p>
+    </div>
   );
 }
 
