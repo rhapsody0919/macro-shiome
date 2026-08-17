@@ -235,3 +235,55 @@ describe('号によって記載が無い項目 (#53)', () => {
     ).toThrow(/optionalInReport/);
   });
 });
+
+describe('景気サイクルの分類 (#62)', () => {
+  it('S&P 500 は先行指標 (LEI 構成要素)', () => {
+    // The Conference Board の LEI に "S&P 500 Index of Stock Prices" が含まれる
+    // (2026-08-17 に公式ページで確認)。
+    expect(indicators.sp500.cyclePosition).toBe('leading');
+  });
+
+  it('NASDAQ-100 は分類しない', () => {
+    // LEI の構成要素は S&P 500 のみ。同じ株価指数でも根拠が無いので分類しない。
+    expect(indicators.nasdaq100.cyclePosition).toBeUndefined();
+  });
+
+  it('為替やボラティリティは分類しない', () => {
+    // 景気サイクルの尺度として定義されていない。無理に分類すると
+    // 根拠の無い先行性を主張することになる。
+    expect(indicators.usdjpy.cyclePosition).toBeUndefined();
+    expect(indicators.vix.cyclePosition).toBeUndefined();
+  });
+
+  it('未知の分類を弾く', () => {
+    const valid = {
+      name: 'テスト指標',
+      source: { adapter: 'fred', seriesId: 'TESTCYCLE' },
+      frequency: 'daily',
+      unit: 'index',
+      attribution: 'Test Source',
+      copyright: 'none',
+      group: 'macro',
+    };
+    expect(() => parseIndicator('x', { ...valid, cyclePosition: 'unknown' })).toThrow(
+      /cyclePosition/,
+    );
+  });
+
+  it('3 つの分類を受け付ける', () => {
+    const valid = {
+      name: 'テスト指標',
+      source: { adapter: 'fred', seriesId: 'TESTCYCLE2' },
+      frequency: 'daily',
+      unit: 'index',
+      attribution: 'Test Source',
+      copyright: 'none',
+      group: 'macro',
+    };
+    for (const position of ['leading', 'coincident', 'lagging']) {
+      expect(parseIndicator('x', { ...valid, cyclePosition: position }).cyclePosition).toBe(
+        position,
+      );
+    }
+  });
+});

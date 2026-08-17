@@ -25,6 +25,26 @@ export type CopyrightClass = 'none' | 'restricted';
 export type IndicatorGroup = 'equity' | 'valuation' | 'rates' | 'fx' | 'volatility' | 'macro';
 
 /**
+ * 景気サイクルに対する位置 (#62)。
+ *
+ * **分類は The Conference Board の景気指数の構成要素を根拠にする**。独自判断で分類しない。
+ * 2026-08-17 に公式ページ (https://www.conference-board.org/topics/us-leading-indicators) で
+ * 確認した構成要素は次のとおり。
+ *
+ * **先行 (LEI、10 要素)**: 製造業の週平均労働時間 / 新規失業保険申請件数 (週平均) /
+ * 消費財・原材料の新規受注 / ISM 新規受注指数 / 航空機を除く非国防資本財の新規受注 /
+ * **新設住宅建設許可** / **S&P 500 株価指数** / Leading Credit Index /
+ * **金利スプレッド (10 年債 − FF 金利)** / 消費者の景況感期待
+ *
+ * **一致 (CEI、4 要素)**: 非農業部門雇用者数 / **移転所得を除く個人所得** /
+ * 製造業・商業売上高 / 鉱工業生産
+ *
+ * `undefined` は「この分類に当てはまらない」を表す。為替や VIX のように
+ * 景気サイクルの尺度として定義されていない指標がある。**無理に分類しない**。
+ */
+export type CyclePosition = 'leading' | 'coincident' | 'lagging';
+
+/**
  * FactSet 週次 PDF から抽出するフィールド。
  * すべて本文テキスト層から正規表現で取得する (OCR は使わない。spec 3 節)。
  */
@@ -78,6 +98,13 @@ export interface Indicator {
    * `not-in-report` (正常) として記録する。**正常な欠測を異常として扱わないため**。
    */
   optionalInReport?: boolean;
+  /**
+   * 景気サイクルに対する位置 (#62)。省略可。
+   *
+   * 省略は「まだ分類していない」ではなく「**この分類に当てはまらない**」を意味する。
+   * 当てはまらない指標を無理に分類すると、根拠の無い先行性を主張することになる。
+   */
+  cyclePosition?: CyclePosition;
   /** 補足 (定義の注意点など)。 */
   note?: string;
 }
