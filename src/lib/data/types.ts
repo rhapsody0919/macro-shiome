@@ -159,6 +159,28 @@ export type CorrelationValue =
   | { kind: 'ok'; r: number; n: number }
   | { kind: 'insufficient'; n: number };
 
+/**
+ * イールドスプレッドの水準を読むための分布 (#52)。
+ *
+ * **固定の「危険水準」は置かない**。「1% を切ったら危険」のような線には定説が無く、
+ * 恣意的な基準になる (VIX に補助線を引かなかったのと同じ判断。plan U-S1)。
+ * 客観的な基準はゼロ (株式益回り = 実質金利) と、実データから求めた分布の 2 つだけ。
+ */
+export interface SpreadDistribution {
+  /** 集計した窓の年数。 */
+  years: number;
+  mean: number;
+  /** 標本標準偏差。平均 ±1σ を補助線として出す。 */
+  sd: number;
+  n: number;
+  /** 直近値。 */
+  latest: number;
+  /** 直近値が分布の下から何 % の位置にあるか (0〜100)。 */
+  latestPercentile: number;
+  /** 直近値の観測日。 */
+  latestDate: string;
+}
+
 /** 指数ごとのビュー。 */
 export interface ValuationSeries {
   points: ValuationPoint[];
@@ -184,6 +206,13 @@ export interface ValuationSeries {
   };
   /** 指数と Forward EPS の相関 (spec F-5)。 */
   correlation: CorrelationSummary;
+  /**
+   * イールドスプレッドの過去分布 (#52)。標本不足なら null。
+   *
+   * **期間フィルターに追従しない固定窓**。フィルターで基準が動くと
+   * 「今が過去に比べてどこか」の比較にならないため。
+   */
+  spreadDistribution: SpreadDistribution | null;
   /** Forward EPS を持つか。NASDAQ-100 は取得経路が無いため false (screens C-2)。 */
   hasForwardEps: boolean;
   /**

@@ -187,3 +187,61 @@ describe('基準益回りの変更履歴', () => {
     expect(view.sp500.points[0].fairValue).toBeCloseTo(6075.6, 0);
   });
 });
+
+describe('イールドスプレッドの過去分布 (#52)', () => {
+  /** スプレッドが毎週 1 pt ずつ動く系列を作る。 */
+  function buildWithSpreads(count: number) {
+    const spSeries: Record<string, number> = {};
+    const close: Record<string, number> = {};
+    const forwardPe: Record<string, number> = {};
+    const dgs10: Record<string, number> = {};
+    const t10yie: Record<string, number> = {};
+
+    // 2026-08-14 から遡って週次の観測を作る。
+    for (let i = 0; i < count; i++) {
+      const date = new Date(Date.UTC(2026, 7, 14 - i * 7)).toISOString().slice(0, 10);
+      spSeries[date] = 7700;
+      close[date] = 7700;
+      // 益回りを 5.0% 固定にし、実質金利だけ動かしてスプレッドを変える。
+      forwardPe[date] = 20;
+      dgs10[date] = 4.0 + i * 0.1;
+      t10yie[date] = 2.0;
+    }
+
+    return buildValuationView({
+      observations: {
+        sp500: spSeries,
+        'sp500-close-factset': close,
+        'sp500-forward-pe': forwardPe,
+        dgs10,
+        t10yie,
+      },
+      config,
+      start: new Date(Date.UTC(2026, 7, 14 - (count - 1) * 7)).toISOString().slice(0, 10),
+      today: new Date(Date.UTC(2026, 7, 15)),
+    });
+  }
+
+  it('標本が揃えば平均・標準偏差・分位を出す', () => {
+    const view = buildWithSpreads(12);
+    const dist = view.sp500.spreadDistribution;
+    expect(dist).not.toBeNull();
+    expect(dist?.n).toBe(12);
+    expect(dist?.years).toBe(5);
+    // 直近 (i = 0) は実質金利 2.0% で最もスプレッドが大きい → 分位は上位側。
+    expect(dist?.latestPercentile).toBeGreaterThan(90);
+    expect(dist?.latestDate).toBe('2026-08-14');
+  });
+
+  it('標本が足りなければ null (誤解を招く数値を出さない)', () => {
+    expect(buildWithSpreads(5).sp500.spreadDistribution).toBeNull();
+  });
+
+  it('NASDAQ-100 は PER の履歴が無いため null になる', () => {
+    // 実データでも観測値が 1 点しか無く分布を出せない (#54)。
+    expect(
+      buildValuationView({ observations, config, start: '2026-08-01', today })
+        .nasdaq100.spreadDistribution,
+    ).toBeNull();
+  });
+});

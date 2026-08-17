@@ -120,6 +120,57 @@ export function markRecordHighs(series: readonly Maybe[]): boolean[] {
   });
 }
 
+/**
+ * 系列の分布 (spec F-4 の読み方支援)。
+ *
+ * **固定の閾値を「危険水準」として置かない**。「スプレッドが 1% を切ったら危険」のような
+ * 線には定説が無く、恣意的な基準を画面に出すことになる (VIX に補助線を引かなかったのと
+ * 同じ判断。plan U-S1)。代わりに実データの分布を出し、現在値がどこにあるかを示す。
+ */
+export interface Distribution {
+  mean: number;
+  /** 標本標準偏差 (n − 1)。Excel の STDEV と同じ定義。 */
+  sd: number;
+  n: number;
+}
+
+/**
+ * 平均と標準偏差を求める。
+ *
+ * 標本数が少ないと平均も標準偏差も偶然で大きく振れるため、
+ * `minSamples` 未満では値を出さない (相関と同じ基準に揃える)。
+ */
+export function distribution(
+  values: readonly Maybe[],
+  minSamples = 10,
+): Distribution | null {
+  const present = values.filter((value): value is number => !isMissing(value));
+  const n = present.length;
+  if (n < minSamples) return null;
+
+  const mean = present.reduce((sum, value) => sum + value, 0) / n;
+  const variance = present.reduce((sum, value) => sum + (value - mean) ** 2, 0) / (n - 1);
+
+  return { mean, sd: Math.sqrt(variance), n };
+}
+
+/**
+ * 標本の中で `target` が下から何 % の位置にあるかを返す (0〜100)。
+ *
+ * 同値は半分ずつ数える中間順位法。「過去 5 年で下位 12% の水準」のように、
+ * 恣意的な閾値を置かずに現在の位置を示すために使う。
+ */
+export function percentileRank(values: readonly Maybe[], target: Maybe): number | null {
+  if (isMissing(target)) return null;
+
+  const present = values.filter((value): value is number => !isMissing(value));
+  if (present.length === 0) return null;
+
+  const below = present.filter((value) => value < target).length;
+  const equal = present.filter((value) => value === target).length;
+  return ((below + equal / 2) / present.length) * 100;
+}
+
 /** 相関の計算結果。標本数が少ない場合は値を出さない。 */
 export type Correlation =
   | { kind: 'ok'; r: number; n: number }
