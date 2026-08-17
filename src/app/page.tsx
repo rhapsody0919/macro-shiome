@@ -1,12 +1,19 @@
+import { Suspense } from 'react';
+import { IndexVsEpsChart } from '@/components/charts/index-vs-eps';
+import { valuationView } from '@/lib/data/loader';
+
 export default function ValuationPage() {
   return (
-    <div className="space-y-4">
+    <div className="space-y-8">
       <h1 className="text-xl font-bold">バリュエーション</h1>
-      <p className="text-sm text-slate-600 dark:text-slate-400">
-        S&amp;P 500 / NASDAQ-100 の業績とバリュエーションを見る画面。
-      </p>
+
+      {/* useSearchParams (期間フィルター) を使うため静的生成時は Suspense で包む。 */}
+      <Suspense fallback={<div className="h-80" />}>
+        <IndexVsEpsChart view={valuationView} />
+      </Suspense>
+
       <p className="text-sm text-slate-500">
-        チャートは Issue #13〜#19 で実装する。データ取得は #3〜#10。
+        Forward P/E・イールドスプレッド・理論値・相関・予想改定は Issue #14〜#19 で実装する。
       </p>
     </div>
   );
