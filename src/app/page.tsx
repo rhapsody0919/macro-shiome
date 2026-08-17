@@ -1,5 +1,6 @@
 import { Suspense } from 'react';
 import { FairValueChart } from '@/components/charts/fair-value';
+import { CorrelationSummary } from '@/components/charts/correlation-summary';
 import { ForwardPeChart } from '@/components/charts/forward-pe';
 import { IndexVsEpsChart } from '@/components/charts/index-vs-eps';
 import { YieldSpreadChart } from '@/components/charts/yield-spread';
@@ -27,9 +28,10 @@ export default function ValuationPage() {
         <FairValueChart view={valuationView} />
       </Suspense>
 
-      <p className="text-sm text-slate-500">
-        相関・予想改定は Issue #17〜#19 で実装する。
-      </p>
+      {/* 相関は期間フィルターに追従しないため Suspense 不要。 */}
+      <CorrelationSummary view={valuationView} />
+
+      <p className="text-sm text-slate-500">予想改定・サマリーバーは Issue #18〜#19 で実装する。</p>
     </div>
   );
 }
