@@ -121,7 +121,9 @@ spec + screens → plan → tasks → 実装 (1 タスク = 1 PR)、各ゲート
 
 ### Next Action
 
-- **#22 (Cloudflare Pages デプロイ)** — 残る唯一の未着手 Issue。
-  ユーザーのアカウント連携操作が必要
+- **#22 (Cloudflare Pages デプロイ) — ユーザー操作待ち**。コード側は完了 (PR #59 マージ済み)。
+  Cloudflare アカウントでの Git 連携はアカウント作成・OAuth 承認を伴うため代行しない。
+  手順は Issue #22 のコメントに記載済み。URL 発行後に動作確認する
+- #58 (指数ラベルと切替 UI の重複解消) — 未着手
 - `not-in-report` の実データ検証は次に FactSet が発行される週に持ち越し
   (2026-08-14 は夏季休刊で PDF 自体が無かった)
