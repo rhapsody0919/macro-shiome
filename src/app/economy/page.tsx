@@ -238,13 +238,12 @@ export default function EconomyPage() {
     <div className="space-y-16">
       <div>
         <h1 className="text-xl font-bold">経済統計</h1>
+        {/*
+          説明は 1 行に絞る。詳細 (発表ラグ・分類の根拠) は各チャートの注記にあり、
+          冒頭で繰り返すとモバイルの 1 画面目が文字だけになる (#75)。
+        */}
         <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
-          月次で発表される経済指標。市場データ (マクロ指標) とは更新頻度が違うためページを分けている。
-        </p>
-        <p className="mt-2 text-xs text-slate-500">
-          <strong>横軸は「対象月」であり発表日ではない。</strong>
-          経済統計は対象月の翌月以降に発表されるため、直近 1〜2 か月分はまだ出ていない。
-          発表時期は指標ごとに違うので、各チャートに最新の対象月を出している。
+          月次で発表される経済指標。<strong>横軸は対象月</strong> (発表日ではない)。
         </p>
       </div>
 
@@ -257,7 +256,7 @@ export default function EconomyPage() {
 
           {/* useSearchParams (期間フィルター) を使うため静的生成時は Suspense で包む。 */}
           {group.items.map((chart) => (
-            <Suspense key={chart.title} fallback={<div className="h-96" />}>
+            <Suspense key={chart.title} fallback={<div className="h-72 sm:h-96" />}>
               <MonthlyChart
                 view={economy}
                 title={chart.title}

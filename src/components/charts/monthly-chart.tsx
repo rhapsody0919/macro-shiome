@@ -49,7 +49,7 @@ export function MonthlyChart({
   kind = 'percent',
   zeroLine = true,
   notes,
-  height = 'h-96',
+  height = 'h-72 sm:h-96',
 }: {
   view: EconomyView;
   title: string;
@@ -60,6 +60,7 @@ export function MonthlyChart({
   /** ゼロ線を引くか。水準の指標 (貯蓄率・信頼感) では不要。 */
   zeroLine?: boolean;
   notes: ReactNode[];
+  /** 図の高さ。モバイルは低くして縦の圧迫を避ける。 */
   height?: string;
 }) {
   const searchParams = useSearchParams();
@@ -95,7 +96,8 @@ export function MonthlyChart({
                       : formatNumber(last?.[s.key] ?? null, 1)}
                   </span>
                   {last !== undefined && (
-                    <span className="ml-1 text-[11px] text-slate-500">
+                    // 狭い画面では隠す。同じ情報が下の発表状況の行にある (#75)。
+                    <span className="ml-1 hidden text-[11px] text-slate-500 sm:inline">
                       {formatMonth(last.month)}
                     </span>
                   )}
