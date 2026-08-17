@@ -4,7 +4,8 @@ import { CorrelationSummary } from '@/components/charts/correlation-summary';
 import { ForwardPeChart } from '@/components/charts/forward-pe';
 import { IndexVsEpsChart } from '@/components/charts/index-vs-eps';
 import { YieldSpreadChart } from '@/components/charts/yield-spread';
-import { valuationView } from '@/lib/data/loader';
+import { RevisionsChart } from '@/components/charts/revisions';
+import { revisions, valuationView } from '@/lib/data/loader';
 
 export default function ValuationPage() {
   return (
@@ -28,10 +29,14 @@ export default function ValuationPage() {
         <FairValueChart view={valuationView} />
       </Suspense>
 
+      <Suspense fallback={<div className="h-80" />}>
+        <RevisionsChart revisions={revisions} />
+      </Suspense>
+
       {/* 相関は期間フィルターに追従しないため Suspense 不要。 */}
       <CorrelationSummary view={valuationView} />
 
-      <p className="text-sm text-slate-500">予想改定・サマリーバーは Issue #18〜#19 で実装する。</p>
+      <p className="text-sm text-slate-500">サマリーバーは Issue #19 で実装する。</p>
     </div>
   );
 }
