@@ -1,8 +1,42 @@
-# 0005. Cloudflare Pages のデプロイは Git 連携で行う
+# 0005. Cloudflare へのデプロイは Git 連携で行う
 
-- ステータス: 採用
+- ステータス: 採用 (2026-08-17 に配信先を Pages → Workers Static Assets へ修正)
 - 日付: 2026-08-17
 - 関連: [ADR-0002](0002-nextjs-static-export.md)、#22
+
+## 2026-08-17 の修正 — 配信先を Workers に変更した
+
+当初は **Cloudflare Pages** に配信する前提で書いていた。実際にダッシュボードで作成しようとした
+ところ、**Pages プロジェクトを Git 連携で新規作成する導線が存在しなかった**。
+
+- 公式ドキュメント ([Git integration](https://developers.cloudflare.com/pages/get-started/git-integration/)) は
+  今も「Workers & Pages → Create application → Pages → Connect to Git」と案内している
+- しかし実際の UI (2026-08-17 時点) では、Git 連携の作成フローが **「Create a Worker」**
+  に一本化されており、Deploy command の既定が `npx wrangler deploy` になっていた
+- Pages のドキュメントに非推奨・メンテナンスモードの記載は無いが、**新規作成の導線が
+  無い以上 Pages は選べない**
+
+**本 ADR の決定 (Git 連携を使う) は変えない。** 変わったのは配信先だけで、比較の論拠
+(秘密情報を増やさない / 不可逆でない) はそのまま成り立つ。Workers Builds も Git 連携であり、
+Cloudflare 側が GitHub を読むため API トークンを GitHub Secrets に置く必要が無い。
+
+### Workers Static Assets での設定
+
+Worker スクリプトは持たず、静的アセットのみを配信する。公式に
+"The `main` key is optional for assets-only Workers." と明記がある
+([Wrangler configuration](https://developers.cloudflare.com/workers/wrangler/configuration/))。
+
+設定は `wrangler.jsonc` に置き、**リポジトリで管理する**。Pages のダッシュボード設定と違い
+バージョン管理できるため、ADR-0005 で挙げた「設定がリポジトリに残らない」という
+案 A の不適合点はこれで解消した。
+
+| キー | 値 | 理由 |
+| --- | --- | --- |
+| `assets.directory` | `./out/` | `next.config.mjs` の `output: 'export'` の出力先 |
+| `assets.not_found_handling` | `404-page` | ビルドが生成する `out/404.html` を 404 で返す |
+| `assets.html_handling` | `auto-trailing-slash` | `trailingSlash: true` と整合。既定値だが意図を明示 |
+
+`name` は**ダッシュボードの Worker 名と一致させる**必要がある。食い違うとビルドが失敗する。
 
 ## 背景
 

@@ -42,29 +42,28 @@ S&P 500 / NASDAQ-100 の業績とバリュエーションを週次で蓄積・�
 
 ## デプロイ
 
-Cloudflare Pages の **Git 連携**で配信する ([ADR-0005](docs/adr/0005-cloudflare-git-integration.md))。
+Cloudflare Workers (Static Assets) の **Git 連携**で配信する
+([ADR-0005](docs/adr/0005-cloudflare-git-integration.md))。
 `main` への push で自動ビルド・自動公開される。週次バッチの commit もそのままデプロイになる。
 
-**ビルド設定は Cloudflare のダッシュボードにあり、リポジトリには残らない。**
-再現できるようここに記録する。**設定を変えたらこの表も更新すること。**
+配信の設定は [`wrangler.jsonc`](wrangler.jsonc) にあり、**リポジトリで管理している**
+(`out/` を静的アセットとして配信、404 は `out/404.html`)。Worker スクリプトは持たない。
+
+ダッシュボード側で指定するのは次の 3 つだけ。**変えたらこの表も更新すること。**
 
 | 項目 | 値 |
 | --- | --- |
-| Production branch | `main` |
+| Worker 名 | `macro-shiome` (**`wrangler.jsonc` の `name` と一致必須**。食い違うとビルドが失敗する) |
 | Build command | `pnpm install --frozen-lockfile && pnpm build` |
-| Build output directory | `out` |
-| Root directory | (空欄 = リポジトリルート) |
-| 環境変数 `PNPM_VERSION` | `11.22.0` |
+| Deploy command | `npx wrangler deploy` (既定のまま) |
 
 補足:
 
-- **Node.js のバージョンは指定しない**。`.node-version` をリポジトリに置いてあり、
-  Cloudflare と GitHub Actions が同じファイルを読む
-- `PNPM_VERSION` は必要。Cloudflare v3 ビルドシステムの既定は pnpm 10.11.1 で、
-  本プロジェクトの 11.22.0 と違う
-- **環境変数に秘密情報は設定しない**。ビルドは `data/` の JSON を読むだけで、
-  API キーを必要としない (取得は GitHub Actions 側で完結する)
-- 無料枠は月 500 ビルド。週次バッチ 4 回 + PR マージ数回で十分収まる
+- **環境変数に秘密情報は設定しない**。ビルドは `data/` の JSON を読むだけで API キーを
+  必要としない (取得は GitHub Actions 側で完結する)
+- `.node-version` を Cloudflare と GitHub Actions が共有する。片方だけ変わるのを防ぐため
+- pnpm のバージョンが合わない場合は環境変数 `PNPM_VERSION` に `11.22.0` を設定する
+- ローカルで設定を検証するには `npx wrangler deploy --dry-run` (認証不要)
 
 ## ドキュメント
 

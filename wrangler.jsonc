@@ -1,0 +1,21 @@
+{
+  // Cloudflare Workers の静的アセット配信 (ADR-0005)。
+  //
+  // Worker スクリプトは持たない (assets のみ)。公式に "The `main` key is optional for
+  // assets-only Workers." と明記があるため、main を書かない。
+  //
+  // **name はダッシュボードの Worker 名と一致させること**。食い違うとビルドが失敗する。
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "macro-shiome",
+  "compatibility_date": "2026-08-17",
+  "assets": {
+    // next.config.mjs の output: 'export' が生成するディレクトリ。
+    "directory": "./out/",
+    // アセットに一致しないリクエストは最も近い 404.html を 404 で返す。
+    // ビルド時に out/404.html が生成される。
+    "not_found_handling": "404-page",
+    // 既定値だが明示する。next.config.mjs で trailingSlash: true にしており、
+    // out/terms/index.html を /terms/ で配信する挙動と合わせる必要がある。
+    "html_handling": "auto-trailing-slash"
+  }
+}

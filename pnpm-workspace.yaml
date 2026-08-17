@@ -5,3 +5,5 @@ allowBuilds:
   # tsx が依存する esbuild もネイティブバイナリの取得にビルドスクリプトを使う。
   esbuild: true
   unrs-resolver: true
+  # wrangler が依存する Workers ランタイム。同じくバイナリ取得にビルドスクリプトを使う。
+  workerd: true
