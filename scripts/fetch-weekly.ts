@@ -94,8 +94,13 @@ async function main(): Promise<void> {
       if (indicator.source.adapter !== 'factset-pdf') continue;
       const value = extract[indicator.source.field];
       if (value === undefined) {
-        // 項目単位の欠落。号によって記載が無いことがある。
-        gaps.push(gap(id, fridayIso, 'fetch-failed', '本文から該当項目を抽出できなかった', now));
+        // 項目単位の欠落。**号によって記載が無い項目と、抽出に失敗した項目を区別する** (#53)。
+        // 前者を「取得失敗」として記録すると、正常な欠測が毎週の調査対象になってしまう。
+        if (indicator.optionalInReport === true) {
+          gaps.push(gap(id, fridayIso, 'not-in-report', 'この号に該当項目の記載が無い', now));
+        } else {
+          gaps.push(gap(id, fridayIso, 'fetch-failed', '本文から該当項目を抽出できなかった', now));
+        }
         continue;
       }
       observationMap[id] = upsertObservations(id, { [fridayIso]: value }, now);

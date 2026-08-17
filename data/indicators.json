@@ -1,7 +1,10 @@
 {
   "sp500": {
     "name": "S&P 500",
-    "source": { "adapter": "fred", "seriesId": "SP500" },
+    "source": {
+      "adapter": "fred",
+      "seriesId": "SP500"
+    },
     "frequency": "daily",
     "unit": "index",
     "attribution": "S&P Dow Jones Indices LLC via FRED",
@@ -12,7 +15,10 @@
   },
   "nasdaq100": {
     "name": "NASDAQ-100",
-    "source": { "adapter": "fred", "seriesId": "NASDAQ100" },
+    "source": {
+      "adapter": "fred",
+      "seriesId": "NASDAQ100"
+    },
     "frequency": "daily",
     "unit": "index",
     "attribution": "Nasdaq, Inc. via FRED",
@@ -22,7 +28,10 @@
   },
   "dgs10": {
     "name": "10年債利回り",
-    "source": { "adapter": "fred", "seriesId": "DGS10" },
+    "source": {
+      "adapter": "fred",
+      "seriesId": "DGS10"
+    },
     "frequency": "daily",
     "unit": "percent",
     "attribution": "Board of Governors of the Federal Reserve System (US) via FRED",
@@ -31,7 +40,10 @@
   },
   "t10yie": {
     "name": "期待インフレ率 (10年BEI)",
-    "source": { "adapter": "fred", "seriesId": "T10YIE" },
+    "source": {
+      "adapter": "fred",
+      "seriesId": "T10YIE"
+    },
     "frequency": "daily",
     "unit": "percent",
     "attribution": "Federal Reserve Bank of St. Louis via FRED",
@@ -41,7 +53,10 @@
   },
   "dfii10": {
     "name": "10年TIPS利回り (実質金利の参照値)",
-    "source": { "adapter": "fred", "seriesId": "DFII10" },
+    "source": {
+      "adapter": "fred",
+      "seriesId": "DFII10"
+    },
     "frequency": "daily",
     "unit": "percent",
     "attribution": "Board of Governors of the Federal Reserve System (US) via FRED",
@@ -51,7 +66,10 @@
   },
   "vix": {
     "name": "VIX",
-    "source": { "adapter": "fred", "seriesId": "VIXCLS" },
+    "source": {
+      "adapter": "fred",
+      "seriesId": "VIXCLS"
+    },
     "frequency": "daily",
     "unit": "index",
     "attribution": "Chicago Board Options Exchange via FRED",
@@ -60,17 +78,22 @@
   },
   "usdjpy": {
     "name": "USD/JPY",
-    "source": { "adapter": "fred", "seriesId": "DEXJPUS" },
+    "source": {
+      "adapter": "fred",
+      "seriesId": "DEXJPUS"
+    },
     "frequency": "daily",
     "unit": "jpy-per-usd",
     "attribution": "Board of Governors of the Federal Reserve System (US) via FRED",
     "copyright": "none",
     "group": "fx"
   },
-
   "sp500-close-factset": {
     "name": "S&P 500 終値 (FactSet 版)",
-    "source": { "adapter": "factset-pdf", "field": "closePrice" },
+    "source": {
+      "adapter": "factset-pdf",
+      "field": "closePrice"
+    },
     "frequency": "weekly",
     "unit": "index",
     "attribution": "FactSet Research Systems Inc.",
@@ -80,7 +103,10 @@
   },
   "sp500-forward-pe": {
     "name": "S&P 500 Forward 12M P/E",
-    "source": { "adapter": "factset-pdf", "field": "forwardPe" },
+    "source": {
+      "adapter": "factset-pdf",
+      "field": "forwardPe"
+    },
     "frequency": "weekly",
     "unit": "ratio",
     "attribution": "FactSet Research Systems Inc.",
@@ -89,7 +115,10 @@
   },
   "sp500-trailing-pe": {
     "name": "S&P 500 Trailing 12M P/E",
-    "source": { "adapter": "factset-pdf", "field": "trailingPe" },
+    "source": {
+      "adapter": "factset-pdf",
+      "field": "trailingPe"
+    },
     "frequency": "weekly",
     "unit": "ratio",
     "attribution": "FactSet Research Systems Inc.",
@@ -99,7 +128,10 @@
   },
   "sp500-forward-pe-5y-avg": {
     "name": "S&P 500 Forward P/E 5年平均",
-    "source": { "adapter": "factset-pdf", "field": "forwardPe5yAvg" },
+    "source": {
+      "adapter": "factset-pdf",
+      "field": "forwardPe5yAvg"
+    },
     "frequency": "weekly",
     "unit": "ratio",
     "attribution": "FactSet Research Systems Inc.",
@@ -109,7 +141,10 @@
   },
   "sp500-forward-pe-10y-avg": {
     "name": "S&P 500 Forward P/E 10年平均",
-    "source": { "adapter": "factset-pdf", "field": "forwardPe10yAvg" },
+    "source": {
+      "adapter": "factset-pdf",
+      "field": "forwardPe10yAvg"
+    },
     "frequency": "weekly",
     "unit": "ratio",
     "attribution": "FactSet Research Systems Inc.",
@@ -118,7 +153,10 @@
   },
   "sp500-trailing-pe-5y-avg": {
     "name": "S&P 500 Trailing P/E 5年平均",
-    "source": { "adapter": "factset-pdf", "field": "trailingPe5yAvg" },
+    "source": {
+      "adapter": "factset-pdf",
+      "field": "trailingPe5yAvg"
+    },
     "frequency": "weekly",
     "unit": "ratio",
     "attribution": "FactSet Research Systems Inc.",
@@ -127,7 +165,10 @@
   },
   "sp500-trailing-pe-10y-avg": {
     "name": "S&P 500 Trailing P/E 10年平均",
-    "source": { "adapter": "factset-pdf", "field": "trailingPe10yAvg" },
+    "source": {
+      "adapter": "factset-pdf",
+      "field": "trailingPe10yAvg"
+    },
     "frequency": "weekly",
     "unit": "ratio",
     "attribution": "FactSet Research Systems Inc.",
@@ -136,7 +177,10 @@
   },
   "sp500-blended-growth-today": {
     "name": "S&P 500 blended 増益率 (今週)",
-    "source": { "adapter": "factset-pdf", "field": "blendedGrowthToday" },
+    "source": {
+      "adapter": "factset-pdf",
+      "field": "blendedGrowthToday"
+    },
     "frequency": "weekly",
     "unit": "percent",
     "attribution": "FactSet Research Systems Inc.",
@@ -146,7 +190,10 @@
   },
   "sp500-blended-growth-last-week": {
     "name": "S&P 500 blended 増益率 (先週)",
-    "source": { "adapter": "factset-pdf", "field": "blendedGrowthLastWeek" },
+    "source": {
+      "adapter": "factset-pdf",
+      "field": "blendedGrowthLastWeek"
+    },
     "frequency": "weekly",
     "unit": "percent",
     "attribution": "FactSet Research Systems Inc.",
@@ -155,7 +202,10 @@
   },
   "sp500-blended-growth-quarter-end": {
     "name": "S&P 500 blended 増益率 (四半期末時点)",
-    "source": { "adapter": "factset-pdf", "field": "blendedGrowthQuarterEnd" },
+    "source": {
+      "adapter": "factset-pdf",
+      "field": "blendedGrowthQuarterEnd"
+    },
     "frequency": "weekly",
     "unit": "percent",
     "attribution": "FactSet Research Systems Inc.",
@@ -164,7 +214,10 @@
   },
   "sp500-growth-next-quarter": {
     "name": "S&P 500 予想増益率 (翌四半期)",
-    "source": { "adapter": "factset-pdf", "field": "growthNextQuarter" },
+    "source": {
+      "adapter": "factset-pdf",
+      "field": "growthNextQuarter"
+    },
     "frequency": "weekly",
     "unit": "percent",
     "attribution": "FactSet Research Systems Inc.",
@@ -174,7 +227,10 @@
   },
   "sp500-growth-quarter-after-next": {
     "name": "S&P 500 予想増益率 (翌々四半期)",
-    "source": { "adapter": "factset-pdf", "field": "growthQuarterAfterNext" },
+    "source": {
+      "adapter": "factset-pdf",
+      "field": "growthQuarterAfterNext"
+    },
     "frequency": "weekly",
     "unit": "percent",
     "attribution": "FactSet Research Systems Inc.",
@@ -183,7 +239,10 @@
   },
   "sp500-growth-cy-current": {
     "name": "S&P 500 予想増益率 (今暦年)",
-    "source": { "adapter": "factset-pdf", "field": "growthCurrentCalendarYear" },
+    "source": {
+      "adapter": "factset-pdf",
+      "field": "growthCurrentCalendarYear"
+    },
     "frequency": "weekly",
     "unit": "percent",
     "attribution": "FactSet Research Systems Inc.",
@@ -193,18 +252,25 @@
   },
   "sp500-growth-cy-next": {
     "name": "S&P 500 予想増益率 (翌暦年)",
-    "source": { "adapter": "factset-pdf", "field": "growthNextCalendarYear" },
+    "source": {
+      "adapter": "factset-pdf",
+      "field": "growthNextCalendarYear"
+    },
     "frequency": "weekly",
     "unit": "percent",
     "attribution": "FactSet Research Systems Inc.",
     "copyright": "restricted",
     "group": "valuation",
-    "note": "対象年は観測日の年 + 1。"
+    "optionalInReport": true,
+    "note": "対象年は観測日の年 + 1。FactSet は翌暦年の予想を年央 (6 月頃) から載せ始めるため、年前半の号には記載が無い (実 PDF で確認: 2026-05-01 / 2026-06-05 は CY 2026 のみ、2026-06-12 から CY 2027 が登場)。"
   },
-
   "qqq-trailing-pe": {
     "name": "QQQ Trailing P/E (NASDAQ-100 の代理)",
-    "source": { "adapter": "stockanalysis", "symbol": "qqq", "field": "peRatio" },
+    "source": {
+      "adapter": "stockanalysis",
+      "symbol": "qqq",
+      "field": "peRatio"
+    },
     "frequency": "daily",
     "unit": "ratio",
     "attribution": "stockanalysis.com",

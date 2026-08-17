@@ -71,6 +71,13 @@ export interface Indicator {
    * 制限が無い場合は省略する。
    */
   historyLimit?: '10y' | '5y';
+  /**
+   * 号によって記載が無いことがある項目 (#53)。
+   *
+   * true なら、抽出できなかったときに `fetch-failed` (要調査) ではなく
+   * `not-in-report` (正常) として記録する。**正常な欠測を異常として扱わないため**。
+   */
+  optionalInReport?: boolean;
   /** 補足 (定義の注意点など)。 */
   note?: string;
 }
@@ -93,10 +100,23 @@ export interface ObservationFile {
   observations: Record<string, number>;
 }
 
-/** 欠測の理由。画面で区別して表示する (screens 共通の状態)。 */
+/**
+ * 欠測の理由。画面で区別して表示する (screens 共通の状態)。
+ *
+ * **「異常なもの」と「正常なもの」を混ぜない**。取得失敗だけが調査対象で、
+ * 残り 2 つはデータ提供元の仕様どおりの状態。
+ */
 export type GapReason =
-  /** FactSet の休刊週。異常ではない。 */
+  /** レポート自体が発行されなかった週。異常ではない。 */
   | 'publication-break'
+  /**
+   * レポートは出ているが、その号にその項目の記載が無い。異常ではない (#53)。
+   *
+   * 例: FactSet の翌暦年 (CY N+1) 予想は年央 (6 月頃) から載り始めるため、
+   * 年前半の号には存在しない。実 PDF で確認済み
+   * (2026-05-01 / 2026-06-05 は CY 2026 のみ、2026-06-12 から CY 2027 が登場)。
+   */
+  | 'not-in-report'
   /** 取得に失敗した。要調査。 */
   | 'fetch-failed';
 

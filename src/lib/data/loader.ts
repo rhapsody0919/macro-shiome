@@ -54,14 +54,26 @@ export function toFreshness(batchStatus: BatchStatus, now: Date): Freshness {
   };
 }
 
-/** 欠測の理由を日本語にする。休刊と取得失敗を区別して見せる (screens 共通の状態)。 */
+/** 欠測の理由を日本語にする。正常な欠測と要調査を区別して見せる (screens 共通の状態)。 */
 export function describeGapReason(reason: GapReason): string {
   switch (reason) {
     case 'publication-break':
       return 'レポート休刊';
+    case 'not-in-report':
+      return 'この号に記載なし';
     case 'fetch-failed':
       return '取得失敗';
   }
+}
+
+/**
+ * 調査が要る欠測か (#53)。
+ *
+ * 休刊と掲載無しはデータ提供元の仕様どおりで異常ではない。
+ * これらを警告として出すと、本当に見るべき取得失敗が埋もれる。
+ */
+export function needsInvestigation(reason: GapReason): boolean {
+  return reason === 'fetch-failed';
 }
 
 /** 直近の欠測を「理由ごとの件数」に畳む。ヘッダーで一覧を出すと長くなるため。 */

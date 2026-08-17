@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { describeGapReason, summarizeGaps, toFreshness } from './loader';
+import { describeGapReason, needsInvestigation, summarizeGaps, toFreshness } from './loader';
 import type { BatchStatus, Gap } from './types';
 
 const now = new Date('2026-08-16T00:00:00Z');
@@ -66,8 +66,19 @@ describe('summarizeGaps', () => {
 });
 
 describe('describeGapReason', () => {
-  it('休刊と取得失敗を区別する', () => {
+  it('3 種類の理由を区別する', () => {
     expect(describeGapReason('publication-break')).toBe('レポート休刊');
+    expect(describeGapReason('not-in-report')).toBe('この号に記載なし');
     expect(describeGapReason('fetch-failed')).toBe('取得失敗');
+  });
+});
+
+describe('needsInvestigation', () => {
+  it('取得失敗だけが要調査', () => {
+    // 休刊と掲載無しは提供元の仕様どおりで異常ではない。同列に警告すると
+    // 本当に見るべき取得失敗が埋もれる (#53)。
+    expect(needsInvestigation('fetch-failed')).toBe(true);
+    expect(needsInvestigation('publication-break')).toBe(false);
+    expect(needsInvestigation('not-in-report')).toBe(false);
   });
 });
