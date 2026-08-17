@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T01:33:14.484Z",
+  "generatedAt": "2026-08-17T05:08:14.677Z",
   "sp500": {
     "points": [
       {
@@ -7892,7 +7892,8 @@
         "n": 167
       }
     },
-    "hasForwardEps": true
+    "hasForwardEps": true,
+    "accumulationNote": null
   },
   "nasdaq100": {
     "points": [
@@ -15783,6 +15784,7 @@
         "n": 1
       }
     },
-    "hasForwardEps": false
+    "hasForwardEps": false,
+    "accumulationNote": "実績 PER は連動 ETF (QQQ) 経由でしか取れず、提供元が現在値しか出さないため過去に遡れない。"
   }
 }

@@ -145,6 +145,8 @@ function buildSp500Series(options: BuildViewOptions, weeks: readonly string[]): 
       options.today,
     ),
     hasForwardEps: true,
+    // FactSet の過去号 (PDF) を遡って取得できるため蓄積待ちにならない。
+    accumulationNote: null,
   };
 }
 
@@ -206,6 +208,10 @@ function buildNasdaqSeries(options: BuildViewOptions, weeks: readonly string[]):
       options.today,
     ),
     hasForwardEps: false,
+    // 実績 PER は QQQ 経由でしか取れず、stockanalysis.com は現在値しか出さない
+    // (src/lib/adapters/stockanalysis.ts)。backfill.ts も FactSet 専用で遡れない。
+    accumulationNote:
+      '実績 PER は連動 ETF (QQQ) 経由でしか取れず、提供元が現在値しか出さないため過去に遡れない。',
   };
 }
 

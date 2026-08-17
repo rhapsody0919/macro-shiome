@@ -16,6 +16,7 @@ import { changeMark, formatDate, formatNumber, formatSigned } from '@/lib/format
 import { change } from '@/lib/calc/derived';
 import type { IndexKey, ValuationView } from '@/lib/data/types';
 import { filterByPeriod, parsePeriod } from '@/lib/period';
+import { describeAccumulation, type SeriesState, seriesState } from '@/lib/series-state';
 
 /** 系列の識別子。凡例トグルの対象。 */
 type SeriesKey = 'index' | 'forwardEps' | 'trailingEps';
@@ -122,7 +123,9 @@ export function IndexVsEpsChart({ view }: { view: ValuationView }) {
         indexKey={indexKey}
         hasForwardEps={series.hasForwardEps}
         pointCount={points.length}
-        trailingEpsPoints={points.filter((point) => point.trailingEps !== null)}
+        // 期間フィルター前の系列で判定する (絞っただけで蓄積中に見えないように)。
+        trailingEpsState={seriesState(series.points, (point) => point.trailingEps)}
+        accumulationNote={series.accumulationNote}
       />
     </section>
   );
@@ -291,16 +294,16 @@ function Notes({
   indexKey,
   hasForwardEps,
   pointCount,
-  trailingEpsPoints,
+  trailingEpsState,
+  accumulationNote,
 }: {
   indexKey: IndexKey;
   hasForwardEps: boolean;
   pointCount: number;
-  trailingEpsPoints: ValuationView['sp500']['points'];
+  /** 実績 EPS の蓄積状況。取得経路が無い場合と混同させない (前者は時間で解消する)。 */
+  trailingEpsState: SeriesState;
+  accumulationNote: string | null;
 }) {
-  // 蓄積が浅い系列は「まだ足りない」ことを示す。取得経路が無い場合と混同させない
-  // (前者は時間で解消し、後者は解消しない)。
-  const isAccumulating = trailingEpsPoints.length > 0 && trailingEpsPoints.length < 8;
   return (
     <ul className="space-y-1 text-[11px] text-slate-500">
       <li>
@@ -315,10 +318,10 @@ function Notes({
           (蓄積待ちではなく恒久的な制約)。実績 EPS は ETF (QQQ) の PER 由来。
         </li>
       )}
-      {isAccumulating && (
+      {trailingEpsState.kind === 'accumulating' && (
         <li className="text-slate-500">
-          実績 EPS は蓄積を開始したばかり ({formatDate(trailingEpsPoints[0].date)} 以降、
-          {trailingEpsPoints.length} 週分)。過去に遡って取得できないため、週を追うごとに増える。
+          {describeAccumulation(trailingEpsState, '実績 EPS', formatDate)}
+          {accumulationNote ?? ''} 週を追うごとに増える。
         </li>
       )}
       {pointCount === 0 && <li>選択した期間にデータが無い。</li>}

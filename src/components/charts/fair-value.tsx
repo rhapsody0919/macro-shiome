@@ -19,6 +19,7 @@ import { fairValue, overvaluation } from '@/lib/calc/derived';
 import { changeMark, formatDate, formatNumber, formatPercent, formatSigned } from '@/lib/format';
 import type { IndexKey, ValuationView } from '@/lib/data/types';
 import { filterByPeriod, parsePeriod } from '@/lib/period';
+import { seriesState, withValue } from '@/lib/series-state';
 import { ChartFrame, SharedTooltip } from './chart-frame';
 
 const INDEX_COLOR = '#64748b';
@@ -70,7 +71,11 @@ export function FairValueChart({ view }: { view: ValuationView }) {
     };
   });
 
-  const withFair = data.filter((point) => point.fairValue !== null);
+  // 線を引けるだけの蓄積があるか (#54)。**期間フィルター前の系列**で判定する。
+  // フィルター後で判定すると、期間を絞っただけで「蓄積中」と出てしまう。
+  const state = seriesState(series.points, (point) => point.fairValue);
+
+  const withFair = withValue(data, (point) => point.fairValue);
   const latest = withFair.at(-1) ?? null;
   const previous = withFair.at(-2) ?? null;
   const overDiff =
@@ -83,6 +88,9 @@ export function FairValueChart({ view }: { view: ValuationView }) {
       title="理論値と割高率"
       subtitle="理論値 = 実績EPS ÷ 基準益回り / 割高率 = 1 − 理論値 ÷ 指数"
       contentClassName="h-[28rem]"
+      state={state}
+      stateLabel="理論値"
+      stateNote={series.accumulationNote}
       actions={<IndexSwitch value={indexKey} onChange={setIndexKey} />}
       summary={
         <div className="space-y-3">
