@@ -59,7 +59,7 @@ export function EconomySummary({
         deltaUnit="pt"
         deltaLabel={stepLabel(employment.stepsBack, '月')}
         asOf={formatMonth(employment.at)}
-        note="雇用と所得は保つか。前年同月比"
+        note="雇用と所得は保つか。家計調査 (自営業含む) の前年同月比"
       />
       <SummaryCard
         label="小売売上"

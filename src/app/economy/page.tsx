@@ -523,6 +523,7 @@ export default function EconomyPage() {
         {/* 説明は 1 行に絞る。問いの一覧が直下にあるので繰り返さない (#75)。 */}
         <p className="text-sm text-slate-600 dark:text-slate-400">
           <strong>問いごとに指標を並べている</strong>。頻度は各チャートのバッジで示す。
+          月次の<strong>横軸は対象月</strong> (発表日ではない)。
         </p>
         <QuestionIndex charts={CHARTS} questions={ECONOMY_QUESTIONS} />
       </div>
