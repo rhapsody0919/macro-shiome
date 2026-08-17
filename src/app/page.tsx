@@ -4,6 +4,7 @@ import { CorrelationSummary } from '@/components/charts/correlation-summary';
 import { ForwardPeChart } from '@/components/charts/forward-pe';
 import { IndexVsEpsChart } from '@/components/charts/index-vs-eps';
 import { YieldSpreadChart } from '@/components/charts/yield-spread';
+import { SummaryBar } from '@/components/summary-bar';
 import { RevisionsChart } from '@/components/charts/revisions';
 import { revisions, valuationView } from '@/lib/data/loader';
 
@@ -11,6 +12,9 @@ export default function ValuationPage() {
   return (
     <div className="space-y-12">
       <h1 className="text-xl font-bold">バリュエーション</h1>
+
+      {/* 期間フィルターに依存せず常に直近の値を見せる。 */}
+      <SummaryBar view={valuationView} />
 
       {/* useSearchParams (期間フィルター) を使うため静的生成時は Suspense で包む。 */}
       <Suspense fallback={<div className="h-80" />}>
@@ -36,7 +40,6 @@ export default function ValuationPage() {
       {/* 相関は期間フィルターに追従しないため Suspense 不要。 */}
       <CorrelationSummary view={valuationView} />
 
-      <p className="text-sm text-slate-500">サマリーバーは Issue #19 で実装する。</p>
     </div>
   );
 }
