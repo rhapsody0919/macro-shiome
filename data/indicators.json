@@ -437,5 +437,58 @@
     "copyright": "restricted",
     "group": "macro",
     "note": "University of Michigan: Consumer Sentiment。Index 1966:Q1=100、季節調整なし。**著作権は University of Michigan にある**。個人消費の先行きと連動性がある意識調査。"
+  },
+  "mortgage-rate-30y": {
+    "name": "住宅ローン金利 (30年固定)",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "MORTGAGE30US"
+    },
+    "frequency": "weekly",
+    "unit": "percent",
+    "attribution": "Freddie Mac via FRED",
+    "copyright": "restricted",
+    "group": "rates",
+    "note": "30-Year Fixed Rate Mortgage Average。%、季節調整なし、週次。**著作権は Freddie Mac にある**。住宅ローン申請者数 (MBA) は FRED に無いため、その代替として住宅需要の背景要因を見る。申請そのものより先行性は落ちる。"
+  },
+  "building-permits": {
+    "name": "建設許可件数",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "PERMIT"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "U.S. Census Bureau and U.S. Department of Housing and Urban Development via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "cyclePosition": "leading",
+    "note": "New Privately-Owned Housing Units Authorized in Permit-Issuing Places: Total Units。千戸、季節調整済み年率。The Conference Board の景気先行指数 (LEI) の構成要素。着工より前の段階を捉える。"
+  },
+  "housing-starts": {
+    "name": "住宅着工件数",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "HOUST"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "U.S. Census Bureau and U.S. Department of Housing and Urban Development via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "note": "New Privately-Owned Housing Units Started: Total Units。千戸、季節調整済み年率。建設許可の次の段階。"
+  },
+  "new-home-sales": {
+    "name": "新築住宅販売件数",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "HSN1F"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "U.S. Census Bureau and U.S. Department of Housing and Urban Development via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "note": "New One Family Houses Sold: United States。千戸、季節調整済み年率。住宅の連鎖の下流。中古住宅販売 (NAR) は FRED の提供が 13 点のみで履歴を追えないため採用しない。"
   }
 }
