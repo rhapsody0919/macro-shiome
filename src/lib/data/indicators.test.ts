@@ -304,3 +304,39 @@ describe('イールドカーブの指標 (#63)', () => {
     expect(indicators.t10y2y.frequency).toBe('daily');
   });
 });
+
+describe('労働市場・所得の指標 (#66)', () => {
+  it('景気一致指数の構成要素だけを coincident にする', () => {
+    // The Conference Board の CEI に「非農業部門雇用者数」と
+    // 「移転所得を除く個人所得」が含まれる (2026-08-17 に公式ページで確認)。
+    expect(indicators.payrolls.cyclePosition).toBe('coincident');
+    expect(indicators['real-income-ex-transfer'].cyclePosition).toBe('coincident');
+  });
+
+  it('構成要素でない指標は分類しない', () => {
+    // 就業者数 (家計調査) は CEI の構成要素ではない。同じ雇用でも根拠が違う。
+    expect(indicators['employment-level'].cyclePosition).toBeUndefined();
+    expect(indicators['full-time-employment'].cyclePosition).toBeUndefined();
+    expect(indicators['savings-rate'].cyclePosition).toBeUndefined();
+  });
+
+  it('ミシガン大学の指数は著作権ありとして扱う', () => {
+    // FRED 上で Copyrighted と明記されている。出所表示が必須 (spec F-11)。
+    expect(indicators['consumer-sentiment'].copyright).toBe('restricted');
+    expect(indicators['consumer-sentiment'].attribution).toContain('University of Michigan');
+  });
+
+  it('すべて月次', () => {
+    for (const id of [
+      'payrolls',
+      'employment-level',
+      'full-time-employment',
+      'real-income-ex-transfer',
+      'real-disposable-income-per-capita',
+      'savings-rate',
+      'consumer-sentiment',
+    ]) {
+      expect(indicators[id].frequency, id).toBe('monthly');
+    }
+  });
+});

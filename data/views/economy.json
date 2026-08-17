@@ -1,852 +1,1699 @@
 {
-  "generatedAt": "2026-08-17T08:00:09.602Z",
-  "priceChain": [
+  "generatedAt": "2026-08-17T08:22:28.756Z",
+  "monthly": [
     {
       "month": "2016-08-01",
       "importPrice": -2.191558441558439,
       "producerPrice": 0,
       "cpi": 1.0553158595656864,
-      "pce": 0.8882104659263312
+      "pce": 0.8882104659263312,
+      "payrolls": 1.7843447669305235,
+      "employmentLevel": 1.741508637158895,
+      "fullTimeEmployment": 2.070174576257311,
+      "realIncomeExTransfer": 1.3626523869203488,
+      "realDisposablePerCapita": 0.9462773587524786,
+      "savingsRate": 5.1,
+      "consumerSentiment": 89.8
     },
     {
       "month": "2016-09-01",
       "importPrice": -1.066447908121415,
       "producerPrice": 0.6369426751592355,
       "cpi": 1.5486446201652182,
-      "pce": 1.2197749212634612
+      "pce": 1.2197749212634612,
+      "payrolls": 1.8921103496749359,
+      "employmentLevel": 1.9721016489054222,
+      "fullTimeEmployment": 2.0343298291721323,
+      "realIncomeExTransfer": 1.397642567117141,
+      "realDisposablePerCapita": 0.9191261373608706,
+      "savingsRate": 5.1,
+      "consumerSentiment": 91.2
     },
     {
       "month": "2016-10-01",
       "importPrice": -0.24691358024691024,
       "producerPrice": 1.1861313868613221,
       "cpi": 1.685924966243646,
-      "pce": 1.4270032930845167
+      "pce": 1.4270032930845167,
+      "payrolls": 1.743594779034785,
+      "employmentLevel": 1.7065784007611606,
+      "fullTimeEmployment": 1.6503677494389635,
+      "realIncomeExTransfer": 1.2579519182822407,
+      "realDisposablePerCapita": 0.9343207142362697,
+      "savingsRate": 5.3,
+      "consumerSentiment": 87.2
     },
     {
       "month": "2016-11-01",
       "importPrice": 0.2483443708609201,
       "producerPrice": 1.2762078395624377,
       "cpi": 1.6843334719788938,
-      "pce": 1.3974040886628902
+      "pce": 1.3974040886628902,
+      "payrolls": 1.663072096801299,
+      "employmentLevel": 1.6666332135712558,
+      "fullTimeEmployment": 1.5501465027581762,
+      "realIncomeExTransfer": 1.6866121850359406,
+      "realDisposablePerCapita": 1.2353375819710077,
+      "savingsRate": 5.4,
+      "consumerSentiment": 93.8
     },
     {
       "month": "2016-12-01",
       "importPrice": 1.9279128248113953,
       "producerPrice": 1.642335766423364,
       "cpi": 2.0507989115119862,
-      "pce": 1.6571581021178838
+      "pce": 1.6571581021178838,
+      "payrolls": 1.6291926724770533,
+      "employmentLevel": 1.3515133752531217,
+      "fullTimeEmployment": 1.1152113525094265,
+      "realIncomeExTransfer": 1.6651353346085918,
+      "realDisposablePerCapita": 1.046289695771141,
+      "savingsRate": 5,
+      "consumerSentiment": 98.2
     },
     {
       "month": "2017-01-01",
       "importPrice": 3.8200339558573937,
       "producerPrice": 1.7272727272727328,
       "cpi": 2.5103933482571117,
-      "pce": 2.0052104701731244
+      "pce": 2.0052104701731244,
+      "payrolls": 1.6884295789400205,
+      "employmentLevel": 0.9950017590091065,
+      "fullTimeEmployment": 1.232972463344062,
+      "realIncomeExTransfer": 1.853342259061752,
+      "realDisposablePerCapita": 1.0423825887743376,
+      "savingsRate": 5.3,
+      "consumerSentiment": 98.5
     },
     {
       "month": "2017-02-01",
       "importPrice": 4.692832764505117,
       "producerPrice": 2.0054694621695512,
       "cpi": 2.8103616813294208,
-      "pce": 2.1971368464261953
+      "pce": 2.1971368464261953,
+      "payrolls": 1.701462979233792,
+      "employmentLevel": 1.0209422349426012,
+      "fullTimeEmployment": 1.5284055803063357,
+      "realIncomeExTransfer": 2.265937191923606,
+      "realDisposablePerCapita": 1.250286237691789,
+      "savingsRate": 5.6,
+      "consumerSentiment": 96.3
     },
     {
       "month": "2017-03-01",
       "importPrice": 4.078164825828368,
       "producerPrice": 2.1877848678213185,
       "cpi": 2.44119623655914,
-      "pce": 1.9063610209576698
+      "pce": 1.9063610209576698,
+      "payrolls": 1.6065487045982874,
+      "employmentLevel": 1.22141543996086,
+      "fullTimeEmployment": 1.6473824743102217,
+      "realIncomeExTransfer": 2.682442196531798,
+      "realDisposablePerCapita": 1.6794592736854241,
+      "savingsRate": 5.6,
+      "consumerSentiment": 96.9
     },
     {
       "month": "2017-04-01",
       "importPrice": 3.6286919831223674,
       "producerPrice": 2.456778889899902,
       "cpi": 2.176223471915395,
-      "pce": 1.76747318686028
+      "pce": 1.76747318686028,
+      "payrolls": 1.613441405869831,
+      "employmentLevel": 1.4436633702688662,
+      "fullTimeEmployment": 2.335773532228491,
+      "realIncomeExTransfer": 3.1636884566086154,
+      "realDisposablePerCapita": 2.131912058627572,
+      "savingsRate": 5.7,
+      "consumerSentiment": 97
     },
     {
       "month": "2017-05-01",
       "importPrice": 2.335279399499579,
       "producerPrice": 2.1798365122615904,
       "cpi": 1.8563431667619756,
-      "pce": 1.557772049759043
+      "pce": 1.557772049759043,
+      "payrolls": 1.7234190410006844,
+      "employmentLevel": 1.2816610644999171,
+      "fullTimeEmployment": 1.956793227046405,
+      "realIncomeExTransfer": 3.980955399114161,
+      "realDisposablePerCapita": 2.9284564067172836,
+      "savingsRate": 6.3,
+      "consumerSentiment": 97.1
     },
     {
       "month": "2017-06-01",
       "importPrice": 1.4084507042253502,
       "producerPrice": 1.8083182640144635,
       "cpi": 1.640565809959127,
-      "pce": 1.4655479277905004
+      "pce": 1.4655479277905004,
+      "payrolls": 1.6899415180336774,
+      "employmentLevel": 1.3853712728883805,
+      "fullTimeEmployment": 1.935629806760164,
+      "realIncomeExTransfer": 3.9034717617985715,
+      "realDisposablePerCapita": 2.9238555325511895,
+      "savingsRate": 6,
+      "consumerSentiment": 95
     },
     {
       "month": "2017-07-01",
       "importPrice": 1.1589403973510048,
       "producerPrice": 1.9909502262443368,
       "cpi": 1.7251073506566073,
-      "pce": 1.4856317748266346
+      "pce": 1.4856317748266346,
+      "payrolls": 1.5582618322723452,
+      "employmentLevel": 1.3295591010464847,
+      "fullTimeEmployment": 1.6417357103710728,
+      "realIncomeExTransfer": 3.772891575300341,
+      "realDisposablePerCapita": 2.8227470763586338,
+      "savingsRate": 6,
+      "consumerSentiment": 93.4
     },
     {
       "month": "2017-08-01",
       "importPrice": 1.9917012448132931,
       "producerPrice": 2.5385312783318126,
       "cpi": 1.92812155729698,
-      "pce": 1.5719087318108338
+      "pce": 1.5719087318108338,
+      "payrolls": 1.5608906339649176,
+      "employmentLevel": 1.1358620098959715,
+      "fullTimeEmployment": 1.1340835032184637,
+      "realIncomeExTransfer": 3.862898935173731,
+      "realDisposablePerCapita": 2.835140152643767,
+      "savingsRate": 6.1,
+      "consumerSentiment": 96.8
     },
     {
       "month": "2017-09-01",
       "importPrice": 2.736318407960203,
       "producerPrice": 2.622061482820981,
       "cpi": 2.1805652303711787,
-      "pce": 1.757444307056133
+      "pce": 1.757444307056133,
+      "payrolls": 1.407906627025457,
+      "employmentLevel": 1.6638003176046468,
+      "fullTimeEmployment": 2.0468942424559433,
+      "realIncomeExTransfer": 3.8743995278402554,
+      "realDisposablePerCapita": 2.803203661327225,
+      "savingsRate": 5.9,
+      "consumerSentiment": 95.1
     },
     {
       "month": "2017-10-01",
       "importPrice": 2.39273927392738,
       "producerPrice": 2.705139765554554,
       "cpi": 2.020757753132485,
-      "pce": 1.6820407007323013
+      "pce": 1.6820407007323013,
+      "payrolls": 1.436597387378069,
+      "employmentLevel": 1.1963661038387752,
+      "fullTimeEmployment": 2.0522282832026617,
+      "realIncomeExTransfer": 4.185102557023801,
+      "realDisposablePerCapita": 2.921009325287982,
+      "savingsRate": 6,
+      "consumerSentiment": 100.7
     },
     {
       "month": "2017-11-01",
       "importPrice": 3.4682080924855585,
       "producerPrice": 2.880288028802891,
       "cpi": 2.172493864295566,
-      "pce": 1.7937129048240186
+      "pce": 1.7937129048240186,
+      "payrolls": 1.507752285047137,
+      "employmentLevel": 1.2181318030456634,
+      "fullTimeEmployment": 2.024565588832661,
+      "realIncomeExTransfer": 4.292681476194726,
+      "realDisposablePerCapita": 2.8100266861300627,
+      "savingsRate": 5.6,
+      "consumerSentiment": 98.5
     },
     {
       "month": "2017-12-01",
       "importPrice": 3.2072368421052655,
       "producerPrice": 2.6929982046678624,
       "cpi": 2.129930719552253,
-      "pce": 1.7664099484208329
+      "pce": 1.7664099484208329,
+      "payrolls": 1.4545279489436513,
+      "employmentLevel": 1.1481561807869411,
+      "fullTimeEmployment": 1.8795417559576588,
+      "realIncomeExTransfer": 4.170586623010086,
+      "realDisposablePerCapita": 2.7172181511993188,
+      "savingsRate": 5,
+      "consumerSentiment": 95.9
     },
     {
       "month": "2018-01-01",
       "importPrice": 3.4341782502044227,
       "producerPrice": 2.5915996425379673,
       "cpi": 2.151318868063945,
-      "pce": 1.7576494957315614
+      "pce": 1.7576494957315614,
+      "payrolls": 1.3953360617463773,
+      "employmentLevel": 1.4939008360060901,
+      "fullTimeEmployment": 1.9357221423811577,
+      "realIncomeExTransfer": 3.7034848943602094,
+      "realDisposablePerCapita": 2.913501870536228,
+      "savingsRate": 5.7,
+      "consumerSentiment": 95.7
     },
     {
       "month": "2018-02-01",
       "importPrice": 3.3414832925835247,
       "producerPrice": 2.8596961572832758,
       "cpi": 2.263468931091861,
-      "pce": 1.8376076958608545
+      "pce": 1.8376076958608545,
+      "payrolls": 1.5139256476008889,
+      "employmentLevel": 1.7818730325288579,
+      "fullTimeEmployment": 2.1299766183017876,
+      "realIncomeExTransfer": 3.52780148941807,
+      "realDisposablePerCapita": 2.8564320607924687,
+      "savingsRate": 5.8,
+      "consumerSentiment": 99.7
     },
     {
       "month": "2018-03-01",
       "importPrice": 3.2653061224489743,
       "producerPrice": 2.8545941123996554,
       "cpi": 2.3309497646499366,
-      "pce": 1.998292058070028
+      "pce": 1.998292058070028,
+      "payrolls": 1.5825169555388152,
+      "employmentLevel": 1.403978701858688,
+      "fullTimeEmployment": 1.449540700173535,
+      "realIncomeExTransfer": 3.373207845896742,
+      "realDisposablePerCapita": 2.8076975077741206,
+      "savingsRate": 5.9,
+      "consumerSentiment": 101.4
     },
     {
       "month": "2018-04-01",
       "importPrice": 3.5016286644951045,
       "producerPrice": 2.5754884547069423,
       "cpi": 2.4709963021052994,
-      "pce": 2.0466282276259795
+      "pce": 2.0466282276259795,
+      "payrolls": 1.5358303403454787,
+      "employmentLevel": 1.342207432057685,
+      "fullTimeEmployment": 1.4616311899248169,
+      "realIncomeExTransfer": 3.2099162439886975,
+      "realDisposablePerCapita": 2.8027082349236343,
+      "savingsRate": 6,
+      "consumerSentiment": 98.8
     },
     {
       "month": "2018-05-01",
       "importPrice": 4.482477587612044,
       "producerPrice": 3.0222222222222372,
       "cpi": 2.781921607842497,
-      "pce": 2.2662065367869744
+      "pce": 2.2662065367869744,
+      "payrolls": 1.6136084164503295,
+      "employmentLevel": 1.6874742763067552,
+      "fullTimeEmployment": 2.4481614927581274,
+      "realIncomeExTransfer": 2.7785235873359015,
+      "realDisposablePerCapita": 2.4406052343383333,
+      "savingsRate": 6,
+      "consumerSentiment": 98
     },
     {
       "month": "2018-06-01",
       "importPrice": 4.738562091503251,
       "producerPrice": 3.285968028419184,
       "cpi": 2.8075506935940187,
-      "pce": 2.268307840346395
+      "pce": 2.268307840346395,
+      "payrolls": 1.621606871192438,
+      "employmentLevel": 1.5940724507233384,
+      "fullTimeEmployment": 2.1231573941987714,
+      "realIncomeExTransfer": 3.154979007896519,
+      "realDisposablePerCapita": 2.8095035873136442,
+      "savingsRate": 6.3,
+      "consumerSentiment": 98.2
     },
     {
       "month": "2018-07-01",
       "importPrice": 4.828150572831413,
       "producerPrice": 3.2830523513753374,
       "cpi": 2.854124785561929,
-      "pce": 2.3386070559001215
+      "pce": 2.3386070559001215,
+      "payrolls": 1.531627285858339,
+      "employmentLevel": 1.6780730485970397,
+      "fullTimeEmployment": 2.4581129621846998,
+      "realIncomeExTransfer": 3.3300331702522667,
+      "realDisposablePerCapita": 2.970495751655844,
+      "savingsRate": 6.5,
+      "consumerSentiment": 97.9
     },
     {
       "month": "2018-08-01",
       "importPrice": 3.824247355573629,
       "producerPrice": 3.006189213085775,
       "cpi": 2.6429238568742575,
-      "pce": 2.180411288951989
+      "pce": 2.180411288951989,
+      "payrolls": 1.6049660016743905,
+      "employmentLevel": 1.303557585193782,
+      "fullTimeEmployment": 2.1403572817383143,
+      "realIncomeExTransfer": 3.58070474156591,
+      "realDisposablePerCapita": 3.218329321565472,
+      "savingsRate": 6.6,
+      "consumerSentiment": 96.2
     },
     {
       "month": "2018-09-01",
       "importPrice": 3.0669895076674614,
       "producerPrice": 2.8193832599118895,
       "cpi": 2.332055105808828,
-      "pce": 2.009960159362545
+      "pce": 2.009960159362545,
+      "payrolls": 1.5985524597300849,
+      "employmentLevel": 1.1206460728776513,
+      "fullTimeEmployment": 1.773939107114697,
+      "realIncomeExTransfer": 3.2372212113148224,
+      "realDisposablePerCapita": 3.025041736227041,
+      "savingsRate": 6.8,
+      "consumerSentiment": 100.1
     },
     {
       "month": "2018-10-01",
       "importPrice": 3.384367445608394,
       "producerPrice": 3.160667251975413,
       "cpi": 2.492032470218053,
-      "pce": 2.053098049357893
+      "pce": 2.053098049357893,
+      "payrolls": 1.6160490387294502,
+      "employmentLevel": 1.8110917980066255,
+      "fullTimeEmployment": 2.040171803941382,
+      "realIncomeExTransfer": 2.9148046293113294,
+      "realDisposablePerCapita": 2.9824561403508865,
+      "savingsRate": 6.7,
+      "consumerSentiment": 98.6
     },
     {
       "month": "2018-11-01",
       "importPrice": 0.7182761372705571,
       "producerPrice": 2.7121609798775204,
       "cpi": 2.147328577667773,
-      "pce": 1.9418922274646144
+      "pce": 1.9418922274646144,
+      "payrolls": 1.5233558613576559,
+      "employmentLevel": 1.8959071551640116,
+      "fullTimeEmployment": 2.404651309760797,
+      "realIncomeExTransfer": 2.7295020031080197,
+      "realDisposablePerCapita": 3.108153078203002,
+      "savingsRate": 6.5,
+      "consumerSentiment": 97.5
     },
     {
       "month": "2018-12-01",
       "importPrice": -0.8764940239043728,
       "producerPrice": 2.622377622377625,
       "cpi": 2.0023809043401064,
-      "pce": 1.8646908878110713
+      "pce": 1.8646908878110713,
+      "payrolls": 1.5495888776665412,
+      "employmentLevel": 1.8927383303877665,
+      "fullTimeEmployment": 2.4980428439256963,
+      "realIncomeExTransfer": 3.81872097736502,
+      "realDisposablePerCapita": 4.213931230060264,
+      "savingsRate": 8.4,
+      "consumerSentiment": 98.3
     },
     {
       "month": "2019-01-01",
       "importPrice": -1.5019762845849827,
       "producerPrice": 1.9163763066202044,
       "cpi": 1.4875893578291333,
-      "pce": 1.4318323303589953
+      "pce": 1.4318323303589953,
+      "payrolls": 1.6253555465258085,
+      "employmentLevel": 1.3352760239598416,
+      "fullTimeEmployment": 2.151791058882835,
+      "realIncomeExTransfer": 3.9564759164838925,
+      "realDisposablePerCapita": 3.7959903062348532,
+      "savingsRate": 8.4,
+      "consumerSentiment": 91.2
     },
     {
       "month": "2019-02-01",
       "importPrice": -0.7097791798107211,
       "producerPrice": 1.8245004344048743,
       "cpi": 1.5188615351321877,
-      "pce": 1.4001735426362627
+      "pce": 1.4001735426362627,
+      "payrolls": 1.3596390506166678,
+      "employmentLevel": 1.0734743583961093,
+      "fullTimeEmployment": 1.8903280436555203,
+      "realIncomeExTransfer": 4.016746513512359,
+      "realDisposablePerCapita": 3.7225972426834453,
+      "savingsRate": 8.5,
+      "consumerSentiment": 93.8
     },
     {
       "month": "2019-03-01",
       "importPrice": 0.07905138339920903,
       "producerPrice": 1.994796183868175,
       "cpi": 1.8831863513063984,
-      "pce": 1.5218076513927814
+      "pce": 1.5218076513927814,
+      "payrolls": 1.358915565147023,
+      "employmentLevel": 0.9580321362763655,
+      "fullTimeEmployment": 1.802317826233657,
+      "realIncomeExTransfer": 3.9332057009147103,
+      "realDisposablePerCapita": 3.3973347361037964,
+      "savingsRate": 7.9,
+      "consumerSentiment": 98.4
     },
     {
       "month": "2019-04-01",
       "importPrice": -0.2360346184106965,
       "producerPrice": 2.3376623376623495,
       "cpi": 2.000583470209061,
-      "pce": 1.5663384627478738
+      "pce": 1.5663384627478738,
+      "payrolls": 1.4627408705026212,
+      "employmentLevel": 0.8453950757185469,
+      "fullTimeEmployment": 1.4421385860007074,
+      "realIncomeExTransfer": 3.6928720134826953,
+      "realDisposablePerCapita": 2.9669824737982298,
+      "savingsRate": 7.6,
+      "consumerSentiment": 97.2
     },
     {
       "month": "2019-05-01",
       "importPrice": -0.9360374414976502,
       "producerPrice": 2.070750647109576,
       "cpi": 1.7959105553606136,
-      "pce": 1.4655536045359518
+      "pce": 1.4655536045359518,
+      "payrolls": 1.2612443022145703,
+      "employmentLevel": 0.7510343586976109,
+      "fullTimeEmployment": 0.8361476650751154,
+      "realIncomeExTransfer": 3.376966308000795,
+      "realDisposablePerCapita": 2.6159048761863257,
+      "savingsRate": 7.3,
+      "consumerSentiment": 100
     },
     {
       "month": "2019-06-01",
       "importPrice": -2.028081123244929,
       "producerPrice": 1.6337059329320835,
       "cpi": 1.671194894390049,
-      "pce": 1.4260651383430245
+      "pce": 1.4260651383430245,
+      "payrolls": 1.2607411385606948,
+      "employmentLevel": 0.9437475122301864,
+      "fullTimeEmployment": 1.237010996515564,
+      "realIncomeExTransfer": 3.052158020525808,
+      "realDisposablePerCapita": 2.4001043523631527,
+      "savingsRate": 7.1,
+      "consumerSentiment": 98.2
     },
     {
       "month": "2019-07-01",
       "importPrice": -1.9516003122560521,
       "producerPrice": 1.8041237113401998,
       "cpi": 1.826331335037068,
-      "pce": 1.4539295260287632
+      "pce": 1.4539295260287632,
+      "payrolls": 1.2864045094618248,
+      "employmentLevel": 0.8857095282620131,
+      "fullTimeEmployment": 1.1453955871313148,
+      "realIncomeExTransfer": 2.470888554743489,
+      "realDisposablePerCapita": 2.0878002295714015,
+      "savingsRate": 6.8,
+      "consumerSentiment": 98.4
     },
     {
       "month": "2019-08-01",
       "importPrice": -2.1159874608150386,
       "producerPrice": 1.8025751072961338,
       "cpi": 1.7376412106666406,
-      "pce": 1.4304164057608038
+      "pce": 1.4304164057608038,
+      "payrolls": 1.267442405728958,
+      "employmentLevel": 1.4951383887231273,
+      "fullTimeEmployment": 1.7225571854798671,
+      "realIncomeExTransfer": 2.5758008455982084,
+      "realDisposablePerCapita": 2.2693902228364093,
+      "savingsRate": 6.9,
+      "consumerSentiment": 89.8
     },
     {
       "month": "2019-09-01",
       "importPrice": -2.114330462020364,
       "producerPrice": 1.371036846615259,
       "cpi": 1.6844977040391562,
-      "pce": 1.2839539924622612
+      "pce": 1.2839539924622612,
+      "payrolls": 1.3437512553730047,
+      "employmentLevel": 1.4896003589398354,
+      "fullTimeEmployment": 1.7445690503685274,
+      "realIncomeExTransfer": 2.7978263898564837,
+      "realDisposablePerCapita": 2.493302221069915,
+      "savingsRate": 7,
+      "consumerSentiment": 93.2
     },
     {
       "month": "2019-10-01",
       "importPrice": -2.961808261886212,
       "producerPrice": 1.106382978723408,
       "cpi": 1.7339736996186295,
-      "pce": 1.2885618207514993
+      "pce": 1.2885618207514993,
+      "payrolls": 1.2927431166277703,
+      "employmentLevel": 1.3773171090408098,
+      "fullTimeEmployment": 1.8183225007737613,
+      "realIncomeExTransfer": 2.8969673351797454,
+      "realDisposablePerCapita": 2.3806956634248477,
+      "savingsRate": 7.1,
+      "consumerSentiment": 95.5
     },
     {
       "month": "2019-11-01",
       "importPrice": -1.188589540412044,
       "producerPrice": 1.0221465076660996,
       "cpi": 2.092290394862917,
-      "pce": 1.3582773068303577
+      "pce": 1.3582773068303577,
+      "payrolls": 1.3701651550291682,
+      "employmentLevel": 1.2174501183632058,
+      "fullTimeEmployment": 1.4332880770180134,
+      "realIncomeExTransfer": 3.082346246990153,
+      "realDisposablePerCapita": 2.4249074791290237,
+      "savingsRate": 6.9,
+      "consumerSentiment": 96.8
     },
     {
       "month": "2019-12-01",
       "importPrice": 0.4823151125401992,
       "producerPrice": 1.3628620102214661,
       "cpi": 2.3195274699624457,
-      "pce": 1.5637627676458932
+      "pce": 1.5637627676458932,
+      "payrolls": 1.325020526136611,
+      "employmentLevel": 1.2932271373639281,
+      "fullTimeEmployment": 1.5869709453933956,
+      "realIncomeExTransfer": 1.350749693478459,
+      "realDisposablePerCapita": 0.6292784557166531,
+      "savingsRate": 6.2,
+      "consumerSentiment": 99.3
     },
     {
       "month": "2020-01-01",
       "importPrice": 0.48154093097914075,
       "producerPrice": 1.8803418803418737,
       "cpi": 2.599767976845202,
-      "pce": 1.7944821136310463
+      "pce": 1.7944821136310463,
+      "payrolls": 1.3134746101559402,
+      "employmentLevel": 1.2914810814955935,
+      "fullTimeEmployment": 0.9267826301505133,
+      "realIncomeExTransfer": 2.3797128452433203,
+      "realDisposablePerCapita": 1.4581962515653801,
+      "savingsRate": 6.8,
+      "consumerSentiment": 99.8
     },
     {
       "month": "2020-02-01",
       "importPrice": -1.2708498808578272,
       "producerPrice": 1.1945392491467421,
       "cpi": 2.3413166797595197,
-      "pce": 1.689097203314005
+      "pce": 1.689097203314005,
+      "payrolls": 1.4833374426089785,
+      "employmentLevel": 1.1800105824828044,
+      "fullTimeEmployment": 0.7056288715324488,
+      "realIncomeExTransfer": 2.6712314725599207,
+      "realDisposablePerCapita": 1.672602391249045,
+      "savingsRate": 7.5,
+      "consumerSentiment": 101
     },
     {
       "month": "2020-03-01",
       "importPrice": -4.18641390205371,
       "producerPrice": 0.3401360544217802,
       "cpi": 1.4940399642909163,
-      "pce": 1.1662090444265472
+      "pce": 1.1662090444265472,
+      "payrolls": 0.39921487740777195,
+      "employmentLevel": -0.8602370118888869,
+      "fullTimeEmployment": -0.6397212973239585,
+      "realIncomeExTransfer": 0.21558634710765467,
+      "realDisposablePerCapita": 0.36036799932166463,
+      "savingsRate": 12.4,
+      "consumerSentiment": 89.1
     },
     {
       "month": "2020-04-01",
       "importPrice": -6.782334384858036,
       "producerPrice": -1.3536379018612599,
       "cpi": 0.3130472940411133,
-      "pce": 0.4624613003096023
+      "pce": 0.4624613003096023,
+      "payrolls": -13.390574469921845,
+      "employmentLevel": -14.965682362330412,
+      "fullTimeEmployment": -12.077361689012179,
+      "realIncomeExTransfer": -5.851823018035551,
+      "realDisposablePerCapita": 15.395567266622745,
+      "savingsRate": 31.8,
+      "consumerSentiment": 71.8
     },
     {
       "month": "2020-05-01",
       "importPrice": -6.299212598425196,
       "producerPrice": -0.9298393913778513,
       "cpi": 0.1982013035848551,
-      "pce": 0.49016290423937736
+      "pce": 0.49016290423937736,
+      "payrolls": -11.67058386115869,
+      "employmentLevel": -12.528934262630642,
+      "fullTimeEmployment": -10.324756317272598,
+      "realIncomeExTransfer": -3.5712578285605034,
+      "realDisposablePerCapita": 9.65471786367309,
+      "savingsRate": 22.6,
+      "consumerSentiment": 72.3
     },
     {
       "month": "2020-06-01",
       "importPrice": -3.9808917197452276,
       "producerPrice": -0.5922165820642977,
       "cpi": 0.7166562831830481,
-      "pce": 0.7595377063120967
+      "pce": 0.7595377063120967,
+      "payrolls": -8.72923268672351,
+      "employmentLevel": -9.470082425969274,
+      "fullTimeEmployment": -8.59236659946494,
+      "realIncomeExTransfer": -1.4679199465218784,
+      "realDisposablePerCapita": 9.099401299307885,
+      "savingsRate": 18.3,
+      "consumerSentiment": 78.1
     },
     {
       "month": "2020-07-01",
       "importPrice": -2.7866242038216527,
       "producerPrice": -0.25316455696202667,
       "cpi": 0.9968647625897997,
-      "pce": 0.9225840072571545
+      "pce": 0.9225840072571545,
+      "payrolls": -7.739652967794508,
+      "employmentLevel": -8.728551568282661,
+      "fullTimeEmployment": -8.221557390219825,
+      "realIncomeExTransfer": -0.608798918904152,
+      "realDisposablePerCapita": 9.973057258629092,
+      "savingsRate": 17.9,
+      "consumerSentiment": 72.5
     },
     {
       "month": "2020-08-01",
       "importPrice": -1.3610888710968827,
       "producerPrice": -0.1686340640809303,
       "cpi": 1.2810698495523853,
-      "pce": 1.157519050834388
+      "pce": 1.157519050834388,
+      "payrolls": -6.845318815365586,
+      "employmentLevel": -6.7059919279726765,
+      "fullTimeEmployment": -6.390113121653518,
+      "realIncomeExTransfer": 0.011543815570580485,
+      "realDisposablePerCapita": 5.219263982433553,
+      "savingsRate": 13.9,
+      "consumerSentiment": 74.1
     },
     {
       "month": "2020-09-01",
       "importPrice": -1.2799999999999923,
       "producerPrice": 0.4226542688081203,
       "cpi": 1.3910228912373812,
-      "pce": 1.27635371578958
+      "pce": 1.27635371578958,
+      "payrolls": -6.338981931093713,
+      "employmentLevel": -6.769652454543729,
+      "fullTimeEmployment": -6.638482632541132,
+      "realIncomeExTransfer": 1.0152077855187125,
+      "realDisposablePerCapita": 5.609427041612203,
+      "savingsRate": 13.3,
+      "consumerSentiment": 80.4
     },
     {
       "month": "2020-10-01",
       "importPrice": -0.9638554216867545,
       "producerPrice": 0.5050505050505194,
       "cpi": 1.2303863428671624,
-      "pce": 1.1874861668446979
+      "pce": 1.1874861668446979,
+      "payrolls": -5.9421629473128235,
+      "employmentLevel": -5.433157778548681,
+      "fullTimeEmployment": -5.935101451478076,
+      "realIncomeExTransfer": 2.308186521489186,
+      "realDisposablePerCapita": 5.118267792826003,
+      "savingsRate": 12.8,
+      "consumerSentiment": 81.8
     },
     {
       "month": "2020-11-01",
       "importPrice": -1.0425020048115408,
       "producerPrice": 0.7588532883642474,
       "cpi": 1.1757452138405844,
-      "pce": 1.186264708144269
+      "pce": 1.186264708144269,
+      "payrolls": -5.89053650431538,
+      "employmentLevel": -5.481343260059635,
+      "fullTimeEmployment": -5.366948056886455,
+      "realIncomeExTransfer": 1.7037690251964,
+      "realDisposablePerCapita": 3.613217654349521,
+      "savingsRate": 12,
+      "consumerSentiment": 76.9
     },
     {
       "month": "2020-12-01",
       "importPrice": -0.32000000000000917,
       "producerPrice": 0.8403361344537785,
       "cpi": 1.3204191315779434,
-      "pce": 1.334522131784066
+      "pce": 1.334522131784066,
+      "payrolls": -6.091149847820077,
+      "employmentLevel": -5.584059932638741,
+      "fullTimeEmployment": -5.149041199924054,
+      "realIncomeExTransfer": 1.9829013618085423,
+      "realDisposablePerCapita": 4.309798453542912,
+      "savingsRate": 11.8,
+      "consumerSentiment": 80.7
     },
     {
       "month": "2021-01-01",
       "importPrice": 1.0383386581469534,
       "producerPrice": 1.6778523489932917,
       "cpi": 1.3738437137002402,
-      "pce": 1.5857976839888988
+      "pce": 1.5857976839888988,
+      "payrolls": -6.030349073544217,
+      "employmentLevel": -5.480480480480477,
+      "fullTimeEmployment": -4.316337911961988,
+      "realIncomeExTransfer": 0.9440779349382478,
+      "realDisposablePerCapita": 14.62552301255231,
+      "savingsRate": 19.5,
+      "consumerSentiment": 79
     },
     {
       "month": "2021-02-01",
       "importPrice": 2.976669348350769,
       "producerPrice": 2.866779089376048,
       "cpi": 1.6698167791706853,
-      "pce": 1.8427318715156016
+      "pce": 1.8427318715156016,
+      "payrolls": -5.85253425961797,
+      "employmentLevel": -5.342943911690212,
+      "fullTimeEmployment": -4.398954703832758,
+      "realIncomeExTransfer": 0.4945223167338808,
+      "realDisposablePerCapita": 4.851858801943254,
+      "savingsRate": 13,
+      "consumerSentiment": 76.8
     },
     {
       "month": "2021-03-01",
       "importPrice": 7.089859851607594,
       "producerPrice": 4.067796610169494,
       "cpi": 2.6678187820641908,
-      "pce": 2.669006722866385
+      "pce": 2.669006722866385,
+      "payrolls": -4.415653268829322,
+      "employmentLevel": -3.016999993563052,
+      "fullTimeEmployment": -2.4496951456009386,
+      "realIncomeExTransfer": 3.755795034480891,
+      "realDisposablePerCapita": 30.51917877661372,
+      "savingsRate": 26.2,
+      "consumerSentiment": 84.9
     },
     {
       "month": "2021-04-01",
       "importPrice": 10.913705583756329,
       "producerPrice": 6.346483704974282,
       "cpi": 4.133077115360573,
-      "pce": 3.6402858298503427
+      "pce": 3.6402858298503427,
+      "payrolls": 10.857497738181031,
+      "employmentLevel": 13.409918534369481,
+      "fullTimeEmployment": 10.506897095682955,
+      "realIncomeExTransfer": 11.541083966807864,
+      "realDisposablePerCapita": -3.414113140836772,
+      "savingsRate": 12.4,
+      "consumerSentiment": 88.3
     },
     {
       "month": "2021-05-01",
       "importPrice": 11.596638655462188,
       "producerPrice": 6.91126279863481,
       "cpi": 4.918257089467626,
-      "pce": 4.07246348925363
+      "pce": 4.07246348925363,
+      "payrolls": 9.038634996993377,
+      "employmentLevel": 10.478009520824072,
+      "fullTimeEmployment": 8.561714403461785,
+      "realIncomeExTransfer": 9.475883561158716,
+      "realDisposablePerCapita": -1.2331555986427545,
+      "savingsRate": 10,
+      "consumerSentiment": 82.9
     },
     {
       "month": "2021-06-01",
       "importPrice": 11.27694859038142,
       "producerPrice": 7.404255319148945,
       "cpi": 5.295632620349999,
-      "pce": 4.306128320705871
+      "pce": 4.306128320705871,
+      "payrolls": 5.919184141903533,
+      "employmentLevel": 6.589060150904169,
+      "fullTimeEmployment": 5.728590117741783,
+      "realIncomeExTransfer": 7.362409138110082,
+      "realDisposablePerCapita": -1.3952673775978863,
+      "savingsRate": 8.8,
+      "consumerSentiment": 85.5
     },
     {
       "month": "2021-07-01",
       "importPrice": 10.237510237510229,
       "producerPrice": 7.8561759729272485,
       "cpi": 5.245169381309234,
-      "pce": 4.473216164011551
+      "pce": 4.473216164011551,
+      "payrolls": 5.390829772719119,
+      "employmentLevel": 6.2825586490377505,
+      "fullTimeEmployment": 6.25020842365025,
+      "realIncomeExTransfer": 6.917720736681643,
+      "realDisposablePerCapita": -1.651298275396429,
+      "savingsRate": 9.5,
+      "consumerSentiment": 81.2
     },
     {
       "month": "2021-08-01",
       "importPrice": 9.009740259740262,
       "producerPrice": 8.617398648648656,
       "cpi": 5.152015301793966,
-      "pce": 4.580909697720981
+      "pce": 4.580909697720981,
+      "payrolls": 4.61081798879428,
+      "employmentLevel": 4.083670073686707,
+      "fullTimeEmployment": 4.076537064991226,
+      "realIncomeExTransfer": 5.713529148164742,
+      "realDisposablePerCapita": 2.050767532858422,
+      "savingsRate": 8.7,
+      "consumerSentiment": 70.3
     },
     {
       "month": "2021-09-01",
       "importPrice": 9.319286871961108,
       "producerPrice": 8.77609427609427,
       "cpi": 5.351215590949132,
-      "pce": 4.737428253233955
+      "pce": 4.737428253233955,
+      "payrolls": 4.232912463849892,
+      "employmentLevel": 4.216230863026693,
+      "fullTimeEmployment": 4.453963203198308,
+      "realIncomeExTransfer": 4.713727910690091,
+      "realDisposablePerCapita": 0.3333399868260756,
+      "savingsRate": 7.6,
+      "consumerSentiment": 72.8
     },
     {
       "month": "2021-10-01",
       "importPrice": 11.030008110300082,
       "producerPrice": 8.915410385259626,
       "cpi": 6.235042390298062,
-      "pce": 5.336135652537788
+      "pce": 5.336135652537788,
+      "payrolls": 4.290327109364034,
+      "employmentLevel": 3.0260586536473344,
+      "fullTimeEmployment": 3.80836968815641,
+      "realIncomeExTransfer": 3.542484697047832,
+      "realDisposablePerCapita": 0.7033081531648833,
+      "savingsRate": 7,
+      "consumerSentiment": 71.7
     },
     {
       "month": "2021-11-01",
       "importPrice": 11.750405186385727,
       "producerPrice": 10.020920502092046,
       "cpi": 6.901970403700863,
-      "pce": 5.93019057933839
+      "pce": 5.93019057933839,
+      "payrolls": 4.551855562483809,
+      "employmentLevel": 3.7209705603798993,
+      "fullTimeEmployment": 4.074481849670097,
+      "realIncomeExTransfer": 3.632416404119576,
+      "realDisposablePerCapita": 1.5611378058917769,
+      "savingsRate": 6.6,
+      "consumerSentiment": 67.4
     },
     {
       "month": "2021-12-01",
       "importPrice": 10.272873194221521,
       "producerPrice": 10.21666666666665,
       "cpi": 7.174340285065539,
-      "pce": 6.141969176624196
+      "pce": 6.141969176624196,
+      "payrolls": 5.098633442770151,
+      "employmentLevel": 4.052675445907661,
+      "fullTimeEmployment": 4.346851355138326,
+      "realIncomeExTransfer": 3.4519778129742384,
+      "realDisposablePerCapita": 0.9539433710049838,
+      "savingsRate": 6.6,
+      "consumerSentiment": 70.6
     },
     {
       "month": "2022-01-01",
       "importPrice": 10.750988142292496,
       "producerPrice": 10.172442244224422,
       "cpi": 7.558805726967832,
-      "pce": 6.272433512016362
+      "pce": 6.272433512016362,
+      "payrolls": 4.999895004304822,
+      "employmentLevel": 4.845782633943174,
+      "fullTimeEmployment": 4.845586356668363,
+      "realIncomeExTransfer": 2.7156009518191304,
+      "realDisposablePerCapita": -11.270099103867427,
+      "savingsRate": 4.2,
+      "consumerSentiment": 67.2
     },
     {
       "month": "2022-02-01",
       "importPrice": 11.406249999999996,
       "producerPrice": 10.468032786885239,
       "cpi": 7.937278766517819,
-      "pce": 6.545539906103293
+      "pce": 6.545539906103293,
+      "payrolls": 5.192495466592262,
+      "employmentLevel": 4.9389618861243045,
+      "fullTimeEmployment": 5.391040242976453,
+      "realIncomeExTransfer": 2.5478677254634485,
+      "realDisposablePerCapita": -3.3427457842825303,
+      "savingsRate": 4.1,
+      "consumerSentiment": 62.8
     },
     {
       "month": "2022-03-01",
       "importPrice": 13.010007698229419,
       "producerPrice": 11.593648208469066,
       "cpi": 8.572204966013853,
-      "pce": 6.926410970164576
+      "pce": 6.926410970164576,
+      "payrolls": 4.910838094181602,
+      "employmentLevel": 5.025685954362635,
+      "fullTimeEmployment": 5.4168389579821286,
+      "realIncomeExTransfer": 1.1784003674299548,
+      "realDisposablePerCapita": -21.76460116841713,
+      "savingsRate": 3.2,
+      "consumerSentiment": 59.4
     },
     {
       "month": "2022-04-01",
       "importPrice": 12.50953470633105,
       "producerPrice": 11.107258064516135,
       "cpi": 8.231750770777225,
-      "pce": 6.684755338326309
+      "pce": 6.684755338326309,
+      "payrolls": 4.8662742846867335,
+      "employmentLevel": 4.506603992187763,
+      "fullTimeEmployment": 4.5267457076014095,
+      "realIncomeExTransfer": 0.2601203056413537,
+      "realDisposablePerCapita": -7.889418493803624,
+      "savingsRate": 2.6,
+      "consumerSentiment": 65.2
     },
     {
       "month": "2022-05-01",
       "importPrice": 11.596385542168663,
       "producerPrice": 10.944134078212286,
       "cpi": 8.538171195642065,
-      "pce": 6.794545874740021
+      "pce": 6.794545874740021,
+      "payrolls": 4.728225278323506,
+      "employmentLevel": 4.518100114816614,
+      "fullTimeEmployment": 4.922337161114809,
+      "realIncomeExTransfer": -0.35841598250618834,
+      "realDisposablePerCapita": -5.3397200573234604,
+      "savingsRate": 2.6,
+      "consumerSentiment": 58.4
     },
     {
       "month": "2022-06-01",
       "importPrice": 10.655737704918034,
       "producerPrice": 11.1513470681458,
       "cpi": 8.979361103105798,
-      "pce": 7.243471864656126
+      "pce": 7.243471864656126,
+      "payrolls": 4.483609930050747,
+      "employmentLevel": 4.194541296194987,
+      "fullTimeEmployment": 5.066825302399369,
+      "realIncomeExTransfer": -1.0716703743108624,
+      "realDisposablePerCapita": -5.131140099859877,
+      "savingsRate": 2.2,
+      "consumerSentiment": 50
     },
     {
       "month": "2022-07-01",
       "importPrice": 8.766716196136715,
       "producerPrice": 9.688122617385432,
       "cpi": 8.462576727730099,
-      "pce": 6.7502013619389345
+      "pce": 6.7502013619389345,
+      "payrolls": 4.299478066529483,
+      "employmentLevel": 3.595921786247147,
+      "fullTimeEmployment": 3.9311075365844106,
+      "realIncomeExTransfer": -0.3474630700064263,
+      "realDisposablePerCapita": -4.554548664234437,
+      "savingsRate": 3.3,
+      "consumerSentiment": 51.5
     },
     {
       "month": "2022-08-01",
       "importPrice": 7.6693968726730954,
       "producerPrice": 8.671648406335763,
       "cpi": 8.222579178218826,
-      "pce": 6.6396775899483895
+      "pce": 6.6396775899483895,
+      "payrolls": 4.105516108448626,
+      "employmentLevel": 3.5795847525088353,
+      "fullTimeEmployment": 3.8815846210535465,
+      "realIncomeExTransfer": 0.10083688189239659,
+      "realDisposablePerCapita": -3.8244489450813046,
+      "savingsRate": 3.2,
+      "consumerSentiment": 58.2
     },
     {
       "month": "2022-09-01",
       "importPrice": 6.078576723498874,
       "producerPrice": 8.492099113181538,
       "cpi": 8.192106896425821,
-      "pce": 6.667939000672507
+      "pce": 6.667939000672507,
+      "payrolls": 3.932435998944306,
+      "employmentLevel": 3.230545227633197,
+      "fullTimeEmployment": 3.5282447041179887,
+      "realIncomeExTransfer": 0.19220912352639896,
+      "realDisposablePerCapita": -2.433056141328138,
+      "savingsRate": 3.4,
+      "consumerSentiment": 58.6
     },
     {
       "month": "2022-10-01",
       "importPrice": 4.236669101533952,
       "producerPrice": 8.178707370525618,
       "cpi": 7.758813957693,
-      "pce": 6.461602354598139
+      "pce": 6.461602354598139,
+      "payrolls": 3.61238995234634,
+      "employmentLevel": 2.7209519123702064,
+      "fullTimeEmployment": 2.8779553909132005,
+      "realIncomeExTransfer": -0.31537886961574557,
+      "realDisposablePerCapita": -2.174778144772971,
+      "savingsRate": 3.4,
+      "consumerSentiment": 59.9
     },
     {
       "month": "2022-11-01",
       "importPrice": 2.683103698332112,
       "producerPrice": 7.3664194713823905,
       "cpi": 7.122856456533988,
-      "pce": 6.030493273542614
+      "pce": 6.030493273542614,
+      "payrolls": 3.358574013268112,
+      "employmentLevel": 1.9104512162970266,
+      "fullTimeEmployment": 2.1875941097889706,
+      "realIncomeExTransfer": -0.24717063076412638,
+      "realDisposablePerCapita": -1.7627213383107465,
+      "savingsRate": 3.8,
+      "consumerSentiment": 56.7
     },
     {
       "month": "2022-12-01",
       "importPrice": 3.2023289665211063,
       "producerPrice": 6.37683350975351,
       "cpi": 6.404600402357152,
-      "pce": 5.520050627946982
+      "pce": 5.520050627946982,
+      "payrolls": 3.0210391413467264,
+      "employmentLevel": 2.0179041735820524,
+      "fullTimeEmployment": 1.5300328412264808,
+      "realIncomeExTransfer": 0.3318215594332097,
+      "realDisposablePerCapita": -0.8867489216571323,
+      "savingsRate": 4.2,
+      "consumerSentiment": 59.8
     },
     {
       "month": "2023-01-01",
       "importPrice": 0.8565310492505418,
       "producerPrice": 5.7470661803803,
       "cpi": 6.327178517960097,
-      "pce": 5.507734586232882
+      "pce": 5.507734586232882,
+      "payrolls": 3.1798728050878022,
+      "employmentLevel": 1.9684112018639954,
+      "fullTimeEmployment": 1.1232361385045353,
+      "realIncomeExTransfer": 1.7126337390137136,
+      "realDisposablePerCapita": 3.572897811420117,
+      "savingsRate": 4.9,
+      "consumerSentiment": 64.9
     },
     {
       "month": "2023-02-01",
       "importPrice": -1.1220196353436185,
       "producerPrice": 4.722084127891013,
       "cpi": 5.957820738137087,
-      "pce": 5.197803844154003
+      "pce": 5.197803844154003,
+      "payrolls": 2.811868059008793,
+      "employmentLevel": 1.7779441054460943,
+      "fullTimeEmployment": 1.1413620506598,
+      "realIncomeExTransfer": 2.085432328399084,
+      "realDisposablePerCapita": 4.087888575719556,
+      "savingsRate": 5.5,
+      "consumerSentiment": 66.9
     },
     {
       "month": "2023-03-01",
       "importPrice": -4.700272479564038,
       "producerPrice": 2.6992709998029607,
       "cpi": 4.917719362889961,
-      "pce": 4.428273156924578
+      "pce": 4.428273156924578,
+      "payrolls": 2.5238740376036795,
+      "employmentLevel": 1.6494141735866164,
+      "fullTimeEmployment": 1.3517590972180304,
+      "realIncomeExTransfer": 2.996640857035393,
+      "realDisposablePerCapita": 5.206437200066194,
+      "savingsRate": 6,
+      "consumerSentiment": 62
     },
     {
       "month": "2023-04-01",
       "importPrice": -4.8813559322033795,
       "producerPrice": 2.2943537558157256,
       "cpi": 4.950079879124369,
-      "pce": 4.476012960317743
+      "pce": 4.476012960317743,
+      "payrolls": 2.474558609181976,
+      "employmentLevel": 1.9480272660466813,
+      "fullTimeEmployment": 1.8937353474503649,
+      "realIncomeExTransfer": 3.2962542565266872,
+      "realDisposablePerCapita": 5.431362808411988,
+      "savingsRate": 5.8,
+      "consumerSentiment": 63.7
     },
     {
       "month": "2023-05-01",
       "importPrice": -5.735492577597845,
       "producerPrice": 1.1516908490572852,
       "cpi": 4.131851231385042,
-      "pce": 4.003462454014284
+      "pce": 4.003462454014284,
+      "payrolls": 2.4558331797477795,
+      "employmentLevel": 1.5272139551621544,
+      "fullTimeEmployment": 1.3266198329665135,
+      "realIncomeExTransfer": 3.7269097165860465,
+      "realDisposablePerCapita": 5.9437151330388405,
+      "savingsRate": 6.1,
+      "consumerSentiment": 59
     },
     {
       "month": "2023-06-01",
       "importPrice": -6.127946127946126,
       "producerPrice": 0.3029806163695081,
       "cpi": 3.070617072997095,
-      "pce": 3.284521339529123
+      "pce": 3.284521339529123,
+      "payrolls": 2.311660693892015,
+      "employmentLevel": 1.826865293987412,
+      "fullTimeEmployment": 1.696322746729284,
+      "realIncomeExTransfer": 4.3298592779439815,
+      "realDisposablePerCapita": 6.313577832789008,
+      "savingsRate": 5.8,
+      "consumerSentiment": 64.2
     },
     {
       "month": "2023-07-01",
       "importPrice": -4.781420765027322,
       "producerPrice": 1.1785149853043464,
       "cpi": 3.287749268428297,
-      "pce": 3.40904219289897
+      "pce": 3.40904219289897,
+      "payrolls": 1.940916692798167,
+      "employmentLevel": 1.8565192947879838,
+      "fullTimeEmployment": 1.286474651768521,
+      "realIncomeExTransfer": 3.5808428773065115,
+      "realDisposablePerCapita": 5.15002055076037,
+      "savingsRate": 5.5,
+      "consumerSentiment": 71.5
     },
     {
       "month": "2023-08-01",
       "importPrice": -2.97372060857537,
       "producerPrice": 1.8990376015169286,
       "cpi": 3.722504803505289,
-      "pce": 3.43205991996991
+      "pce": 3.43205991996991,
+      "payrolls": 1.8902987702299034,
+      "employmentLevel": 1.726679433553402,
+      "fullTimeEmployment": 1.3841300508671495,
+      "realIncomeExTransfer": 3.348005184339198,
+      "realDisposablePerCapita": 4.667566241413157,
+      "savingsRate": 5.6,
+      "consumerSentiment": 69.4
     },
     {
       "month": "2023-09-01",
       "importPrice": -1.467505241090139,
       "producerPrice": 1.8145506419400936,
       "cpi": 3.687206638119256,
-      "pce": 3.4488928270185903
+      "pce": 3.4488928270185903,
+      "payrolls": 1.8459194436847959,
+      "employmentLevel": 1.6604329593108869,
+      "fullTimeEmployment": 1.1324797609796322,
+      "realIncomeExTransfer": 3.125079933495334,
+      "realDisposablePerCapita": 4.339049405623641,
+      "savingsRate": 5.3,
+      "consumerSentiment": 67.8
     },
     {
       "month": "2023-10-01",
       "importPrice": -1.8220042046250828,
       "producerPrice": 1.1145783723459424,
       "cpi": 3.2512659098611785,
-      "pce": 3.0232617305099296
+      "pce": 3.0232617305099296,
+      "payrolls": 1.71301619472648,
+      "employmentLevel": 1.5926035633480495,
+      "fullTimeEmployment": 1.7209816025175462,
+      "realIncomeExTransfer": 3.667151265186397,
+      "realDisposablePerCapita": 4.346588019932884,
+      "savingsRate": 5.4,
+      "consumerSentiment": 63.8
     },
     {
       "month": "2023-11-01",
       "importPrice": -1.5536723163841692,
       "producerPrice": 0.8316803627089975,
       "cpi": 3.1333462745911866,
-      "pce": 2.7650899986466193
+      "pce": 2.7650899986466193,
+      "payrolls": 1.5955446635806059,
+      "employmentLevel": 2.132076424118523,
+      "fullTimeEmployment": 1.87628460887439,
+      "realIncomeExTransfer": 4.237282709607193,
+      "realDisposablePerCapita": 4.684007315586269,
+      "savingsRate": 5.6,
+      "consumerSentiment": 61.3
     },
     {
       "month": "2023-12-01",
       "importPrice": -2.3977433004231385,
       "producerPrice": 1.0455314370193536,
       "cpi": 3.3159099427102934,
-      "pce": 2.7672658467360334
+      "pce": 2.7672658467360334,
+      "payrolls": 1.6294981275349452,
+      "employmentLevel": 1.1658144998178521,
+      "fullTimeEmployment": 0.5690835713961784,
+      "realIncomeExTransfer": 4.245782947914134,
+      "realDisposablePerCapita": 4.521992591543023,
+      "savingsRate": 5.6,
+      "consumerSentiment": 69.7
     },
     {
       "month": "2024-01-01",
       "importPrice": -1.3446567586695046,
       "producerPrice": 0.9723589442150571,
       "cpi": 3.0883429864855705,
-      "pce": 2.6987514493606035
+      "pce": 2.6987514493606035,
+      "payrolls": 1.4575903240812593,
+      "employmentLevel": 0.5993519507033085,
+      "fullTimeEmployment": 0.3095065967829491,
+      "realIncomeExTransfer": 3.5782261134373883,
+      "realDisposablePerCapita": 3.0286179572220018,
+      "savingsRate": 6.4,
+      "consumerSentiment": 79
     },
     {
       "month": "2024-02-01",
       "importPrice": -0.9219858156028438,
       "producerPrice": 1.573670599071808,
       "cpi": 3.157074141648697,
-      "pce": 2.705057426970159
+      "pce": 2.705057426970159,
+      "payrolls": 1.400693898082106,
+      "employmentLevel": 0.39013567497834245,
+      "fullTimeEmployment": -0.2526899861282961,
+      "realIncomeExTransfer": 3.344193844304555,
+      "realDisposablePerCapita": 2.5852867929003542,
+      "savingsRate": 6.1,
+      "consumerSentiment": 76.9
     },
     {
       "month": "2024-03-01",
       "importPrice": 0.42887776983560055,
       "producerPrice": 1.97888244656661,
       "cpi": 3.4868349120836584,
-      "pce": 2.9279392327126175
+      "pce": 2.9279392327126175,
+      "payrolls": 1.5032165740585635,
+      "employmentLevel": 0.38172684770714227,
+      "fullTimeEmployment": -1.0293242036320316,
+      "realIncomeExTransfer": 2.9384172716225843,
+      "realDisposablePerCapita": 2.090010027329381,
+      "savingsRate": 5.9,
+      "consumerSentiment": 79.4
     },
     {
       "month": "2024-04-01",
       "importPrice": 0.9978617248752597,
       "producerPrice": 2.3152681396966024,
       "cpi": 3.3607951262196734,
-      "pce": 2.826154012888593
+      "pce": 2.826154012888593,
+      "payrolls": 1.3869670152856006,
+      "employmentLevel": 0.3175352799716702,
+      "fullTimeEmployment": -0.4154908078243369,
+      "realIncomeExTransfer": 2.766597386614089,
+      "realDisposablePerCapita": 1.9828804774619124,
+      "savingsRate": 5.8,
+      "consumerSentiment": 77.2
     },
     {
       "month": "2024-05-01",
       "importPrice": 1.2884753042233354,
       "producerPrice": 2.5673119319555626,
       "cpi": 3.244278584003113,
-      "pce": 2.6616729088639213
+      "pce": 2.6616729088639213,
+      "payrolls": 1.2546978895634497,
+      "employmentLevel": 0.2288386438823009,
+      "fullTimeEmployment": -0.8673788198887089,
+      "realIncomeExTransfer": 2.9639134925354416,
+      "realDisposablePerCapita": 2.0338651267495456,
+      "savingsRate": 5.8,
+      "consumerSentiment": 69.1
     },
     {
       "month": "2024-06-01",
       "importPrice": 1.5781922525107461,
       "producerPrice": 2.9645055366813944,
       "cpi": 2.9702579486470926,
-      "pce": 2.548373440470164
+      "pce": 2.548373440470164,
+      "payrolls": 1.16435719784449,
+      "employmentLevel": 0.1111987724649488,
+      "fullTimeEmployment": -1.167693563952199,
+      "realIncomeExTransfer": 2.810090837529522,
+      "realDisposablePerCapita": 2.1249951082064733,
+      "savingsRate": 5.7,
+      "consumerSentiment": 68.2
     },
     {
       "month": "2024-07-01",
       "importPrice": 1.7216642754662947,
       "producerPrice": 2.4292327808601577,
       "cpi": 2.9414757935583014,
-      "pce": 2.594376777467322
+      "pce": 2.594376777467322,
+      "payrolls": 1.0926475394602786,
+      "employmentLevel": 0.03162869156443371,
+      "fullTimeEmployment": -0.3607659568124366,
+      "realIncomeExTransfer": 2.5019444358024945,
+      "realDisposablePerCapita": 1.8938357503029302,
+      "savingsRate": 5.3,
+      "consumerSentiment": 66.4
     },
     {
       "month": "2024-08-01",
       "importPrice": 0.784034212401985,
       "producerPrice": 2.106608430646939,
       "cpi": 2.607144490692037,
-      "pce": 2.412994957427461
+      "pce": 2.412994957427461,
+      "payrolls": 0.9573726009688865,
+      "employmentLevel": -0.034678143480815216,
+      "fullTimeEmployment": -0.7503573130061891,
+      "realIncomeExTransfer": 2.404514751167186,
+      "realDisposablePerCapita": 1.8380701240355402,
+      "savingsRate": 5.2,
+      "consumerSentiment": 67.9
     },
     {
       "month": "2024-09-01",
       "importPrice": -0.07092198581559739,
       "producerPrice": 2.1429972538250297,
       "cpi": 2.4264830315416708,
-      "pce": 2.260766436883843
+      "pce": 2.260766436883843,
+      "payrolls": 0.9557784639776967,
+      "employmentLevel": 0.22421663538783054,
+      "fullTimeEmployment": -0.3222870443592263,
+      "realIncomeExTransfer": 2.3197554366361395,
+      "realDisposablePerCapita": 1.9307811064861014,
+      "savingsRate": 4.8,
+      "consumerSentiment": 70.1
     },
     {
       "month": "2024-10-01",
       "importPrice": 0.7137758743754441,
       "producerPrice": 2.843605227453283,
       "cpi": 2.578844053871343,
-      "pce": 2.4776925356425616
+      "pce": 2.4776925356425616,
+      "payrolls": 0.8743357858164824,
+      "employmentLevel": 0.15260735244853052,
+      "fullTimeEmployment": -0.7005436278045951,
+      "realIncomeExTransfer": 2.128881997170562,
+      "realDisposablePerCapita": 1.8517796577131485,
+      "savingsRate": 5,
+      "consumerSentiment": 70.5
     },
     {
       "month": "2024-11-01",
       "importPrice": 1.3629842180774787,
       "producerPrice": 2.8896820155409175,
       "cpi": 2.719472461284833,
-      "pce": 2.5878034125423
+      "pce": 2.5878034125423,
+      "payrolls": 0.8780942292106797,
+      "employmentLevel": -0.43493571724235736,
+      "fullTimeEmployment": -0.9353281065725194,
+      "realIncomeExTransfer": 1.9029133369778073,
+      "realDisposablePerCapita": 1.6170047558963452,
+      "savingsRate": 4.9,
+      "consumerSentiment": 71.8
     },
     {
       "month": "2024-12-01",
       "importPrice": 2.1676300578034713,
       "producerPrice": 3.437554953750932,
       "cpi": 2.870690967509981,
-      "pce": 2.7280946901200087
+      "pce": 2.7280946901200087,
+      "payrolls": 0.9301465666180064,
+      "employmentLevel": 0.32783220951457803,
+      "fullTimeEmployment": 0.323887248160748,
+      "realIncomeExTransfer": 1.7087630760185046,
+      "realDisposablePerCapita": 1.431144334488832,
+      "savingsRate": 4.3,
+      "consumerSentiment": 74
     },
     {
       "month": "2025-01-01",
       "importPrice": 1.7216642754662947,
       "producerPrice": 3.7867523285826543,
       "cpi": 2.9909783078999608,
-      "pce": 2.6073795303935166
+      "pce": 2.6073795303935166,
+      "payrolls": 0.787100718324929,
+      "employmentLevel": 1.6743932031303421,
+      "fullTimeEmployment": 2.0232277050817205,
+      "realIncomeExTransfer": 1.8951365919392504,
+      "realDisposablePerCapita": 1.0486140560545865,
+      "savingsRate": 5.1,
+      "consumerSentiment": 71.7
     },
     {
       "month": "2025-02-01",
       "importPrice": 1.717967072297788,
       "producerPrice": 3.4020201456513854,
       "cpi": 2.8015834477613355,
-      "pce": 2.7104846734857135
+      "pce": 2.7104846734857135,
+      "payrolls": 0.681769038018798,
+      "employmentLevel": 1.3998994307282686,
+      "fullTimeEmployment": 1.1952370929428469,
+      "realIncomeExTransfer": 1.6253344026054162,
+      "realDisposablePerCapita": 1.0847366190127605,
+      "savingsRate": 5.2,
+      "consumerSentiment": 64.7
     },
     {
       "month": "2025-03-01",
       "importPrice": 0.782918149466183,
       "producerPrice": 3.1591195713519316,
       "cpi": 2.381981462805549,
-      "pce": 2.3594336708984365
+      "pce": 2.3594336708984365,
+      "payrolls": 0.578537589066852,
+      "employmentLevel": 1.2677905637239695,
+      "fullTimeEmployment": 1.5626762522842341,
+      "realIncomeExTransfer": 2.116285612927693,
+      "realDisposablePerCapita": 1.6755257684307745,
+      "savingsRate": 5.1,
+      "consumerSentiment": 57
     },
     {
       "month": "2025-04-01",
       "importPrice": 0,
       "producerPrice": 2.398108143720057,
       "cpi": 2.32538823025783,
-      "pce": 2.2774259978433964
+      "pce": 2.2774259978433964,
+      "payrolls": 0.6062337332571666,
+      "employmentLevel": 1.5238048043211716,
+      "fullTimeEmployment": 1.2038193224217064,
+      "realIncomeExTransfer": 2.0389458826979956,
+      "realDisposablePerCapita": 2.1772610018095717,
+      "savingsRate": 5.5,
+      "consumerSentiment": 52.2
     },
     {
       "month": "2025-05-01",
       "importPrice": -0.35335689045936647,
       "producerPrice": 2.7242345240736654,
       "cpi": 2.3772651073680873,
-      "pce": 2.4580860654408676
+      "pce": 2.4580860654408676,
+      "payrolls": 0.5646921476067268,
+      "employmentLevel": 1.2805559002357692,
+      "fullTimeEmployment": 1.133856613288109,
+      "realIncomeExTransfer": 1.137455164447676,
+      "realDisposablePerCapita": 0.930473486301886,
+      "savingsRate": 4.9,
+      "consumerSentiment": 52.2
     },
     {
       "month": "2025-06-01",
       "importPrice": -0.5649717514124131,
       "producerPrice": 2.4325425039173343,
       "cpi": 2.680453865910226,
-      "pce": 2.5935129797068024
+      "pce": 2.5935129797068024,
+      "payrolls": 0.496528108056693,
+      "employmentLevel": 1.3496574662430483,
+      "fullTimeEmployment": 1.5405184133636673,
+      "realIncomeExTransfer": 0.7723438905228308,
+      "realDisposablePerCapita": 0.64569282648681,
+      "savingsRate": 4.6,
+      "consumerSentiment": 60.7
     },
     {
       "month": "2025-07-01",
       "importPrice": -0.42313117066292705,
       "producerPrice": 3.2258732283573233,
       "cpi": 2.742618052167134,
-      "pce": 2.605547294239341
+      "pce": 2.605547294239341,
+      "payrolls": 0.503334432132263,
+      "employmentLevel": 1.1426126958343996,
+      "fullTimeEmployment": 0.8707686553207417,
+      "realIncomeExTransfer": 1.2401660839161055,
+      "realDisposablePerCapita": 1.1604488347559228,
+      "savingsRate": 4.5,
+      "consumerSentiment": 61.7
     },
     {
       "month": "2025-08-01",
       "importPrice": -0.28288543140028155,
       "producerPrice": 2.6944687055134198,
       "cpi": 2.9385917430316155,
-      "pce": 2.7476208541517
+      "pce": 2.7476208541517,
+      "payrolls": 0.45322869983581704,
+      "employmentLevel": 1.2023861883552422,
+      "fullTimeEmployment": 0.8550342013680545,
+      "realIncomeExTransfer": 1.244051047318817,
+      "realDisposablePerCapita": 1.329215896885061,
+      "savingsRate": 4.4,
+      "consumerSentiment": 58.2
     },
     {
       "month": "2025-09-01",
       "importPrice": -0.07097232079488203,
       "producerPrice": 3.046576545064239,
       "cpi": 3.0225715847133294,
-      "pce": 2.7874424148706556
+      "pce": 2.7874424148706556,
+      "payrolls": 0.4027559653477786,
+      "employmentLevel": 1.138969056874295,
+      "fullTimeEmployment": 1.1578474665070004,
+      "realIncomeExTransfer": 1.3326626587801815,
+      "realDisposablePerCapita": 1.3535535573918178,
+      "savingsRate": 4.3,
+      "consumerSentiment": 55.1
     },
     {
       "month": "2025-10-01",
       "importPrice": null,
       "producerPrice": 2.8333356118501074,
       "cpi": null,
-      "pce": 2.7125805259691216
+      "pce": 2.7125805259691216,
+      "payrolls": 0.29314001709455084,
+      "employmentLevel": null,
+      "fullTimeEmployment": null,
+      "realIncomeExTransfer": 0.8801379185191971,
+      "realDisposablePerCapita": 0.8267626119574434,
+      "savingsRate": 3.9,
+      "consumerSentiment": 53.6
     },
     {
       "month": "2025-11-01",
       "importPrice": -0.07077140835104467,
       "producerPrice": 3.1458479859607813,
       "cpi": 2.6964439164939513,
-      "pce": 2.8201898312699925
+      "pce": 2.8201898312699925,
+      "payrolls": 0.23406018509732895,
+      "employmentLevel": 1.6139340651158074,
+      "fullTimeEmployment": 0.5742823342667513,
+      "realIncomeExTransfer": 0.5750417417616616,
+      "realDisposablePerCapita": 0.6093833575303798,
+      "savingsRate": 3.8,
+      "consumerSentiment": 51
     },
     {
       "month": "2025-12-01",
       "importPrice": 0,
       "producerPrice": 3.0873432527269484,
       "cpi": 2.653304114557753,
-      "pce": 2.878083518031027
+      "pce": 2.878083518031027,
+      "payrolls": 0.07327117916067216,
+      "employmentLevel": 1.488990382830191,
+      "fullTimeEmployment": 1.28312684454166,
+      "realIncomeExTransfer": 0.2727831103296552,
+      "realDisposablePerCapita": 0.4467695127539306,
+      "savingsRate": 3.6,
+      "consumerSentiment": 52.9
     },
     {
       "month": "2026-01-01",
       "importPrice": 0.21156558533144132,
       "producerPrice": 3.0363237033282697,
       "cpi": 2.391201432150014,
-      "pce": 2.8752083050942012
+      "pce": 2.8752083050942012,
+      "payrolls": 0.2047160512548274,
+      "employmentLevel": -0.4480226574946178,
+      "fullTimeEmployment": -1.0721276251306144,
+      "realIncomeExTransfer": 0.18995635812784073,
+      "realDisposablePerCapita": 0.9900423486322474,
+      "savingsRate": 4.4,
+      "consumerSentiment": 56.4
     },
     {
       "month": "2026-02-01",
       "importPrice": 0.9852216748768461,
       "producerPrice": 3.3535042804233806,
       "cpi": 2.4340041103732224,
-      "pce": 2.873230041057484
+      "pce": 2.873230041057484,
+      "payrolls": 0.07959067652074658,
+      "employmentLevel": -0.2608088748484727,
+      "fullTimeEmployment": -0.20576743080420457,
+      "realIncomeExTransfer": 0.0060238786549815515,
+      "realDisposablePerCapita": 0.4364814638330383,
+      "savingsRate": 3.8,
+      "consumerSentiment": 56.6
     },
     {
       "month": "2026-03-01",
       "importPrice": 2.259887005649719,
       "producerPrice": 4.28084157914288,
       "cpi": 3.2859577528651984,
-      "pce": 3.5429288317545327
+      "pce": 3.5429288317545327,
+      "payrolls": 0.1723735138309257,
+      "employmentLevel": -0.40425909277165273,
+      "fullTimeEmployment": -0.28062641146199274,
+      "realIncomeExTransfer": -0.5827952609701037,
+      "realDisposablePerCapita": -0.32200628859340164,
+      "savingsRate": 3.5,
+      "consumerSentiment": 53.3
     },
     {
       "month": "2026-04-01",
       "importPrice": 4.304869442484138,
       "producerPrice": 5.70315939182553,
       "cpi": 3.7792458367415627,
-      "pce": 3.790725326991673
+      "pce": 3.790725326991673,
+      "payrolls": 0.1974950310754897,
+      "employmentLevel": -0.7785329900303894,
+      "fullTimeEmployment": -0.8119629703511655,
+      "realIncomeExTransfer": -1.0389221556886263,
+      "realDisposablePerCapita": -1.2773894530587637,
+      "savingsRate": 3,
+      "consumerSentiment": 49.8
     },
     {
       "month": "2026-05-01",
       "importPrice": 6.595744680851068,
       "producerPrice": 5.825059229310248,
       "cpi": 4.166614684049641,
-      "pce": 4.078968191169485
+      "pce": 4.078968191169485,
+      "payrolls": 0.22902497192394122,
+      "employmentLevel": -0.28975031241577076,
+      "fullTimeEmployment": -0.4451930282771799,
+      "realIncomeExTransfer": -0.41536177349257297,
+      "realDisposablePerCapita": -0.17677583683399778,
+      "savingsRate": 2.8,
+      "consumerSentiment": 44.8
     },
     {
       "month": "2026-06-01",
       "importPrice": 7.102272727272729,
       "producerPrice": 5.535301530395631,
       "cpi": 3.463530729385411,
-      "pce": 3.668052673520439
+      "pce": 3.668052673520439,
+      "payrolls": 0.2542939714029746,
+      "employmentLevel": -0.6508415632442865,
+      "fullTimeEmployment": -1.1310175459360305,
+      "realIncomeExTransfer": 0.13628003738654915,
+      "realDisposablePerCapita": 0.26651944640103675,
+      "savingsRate": 2.7,
+      "consumerSentiment": 49.5
     },
     {
       "month": "2026-07-01",
       "importPrice": null,
       "producerPrice": 4.656510491520538,
       "cpi": 3.303856050706311,
-      "pce": null
+      "pce": null,
+      "payrolls": 0.199316269505867,
+      "employmentLevel": -0.5902905479955867,
+      "fullTimeEmployment": -0.9537300039306085,
+      "realIncomeExTransfer": null,
+      "realDisposablePerCapita": null,
+      "savingsRate": null,
+      "consumerSentiment": null
     },
     {
       "month": "2026-08-01",
       "importPrice": null,
       "producerPrice": null,
       "cpi": null,
-      "pce": null
+      "pce": null,
+      "payrolls": null,
+      "employmentLevel": null,
+      "fullTimeEmployment": null,
+      "realIncomeExTransfer": null,
+      "realDisposablePerCapita": null,
+      "savingsRate": null,
+      "consumerSentiment": null
     }
   ],
   "coverage": [
@@ -864,6 +1711,34 @@
     },
     {
       "indicatorId": "pce-price",
+      "latestMonth": "2026-06-01"
+    },
+    {
+      "indicatorId": "payrolls",
+      "latestMonth": "2026-07-01"
+    },
+    {
+      "indicatorId": "employment-level",
+      "latestMonth": "2026-07-01"
+    },
+    {
+      "indicatorId": "full-time-employment",
+      "latestMonth": "2026-07-01"
+    },
+    {
+      "indicatorId": "real-income-ex-transfer",
+      "latestMonth": "2026-06-01"
+    },
+    {
+      "indicatorId": "real-disposable-income-per-capita",
+      "latestMonth": "2026-06-01"
+    },
+    {
+      "indicatorId": "savings-rate",
+      "latestMonth": "2026-06-01"
+    },
+    {
+      "indicatorId": "consumer-sentiment",
       "latestMonth": "2026-06-01"
     }
   ]

@@ -299,14 +299,19 @@ export interface MacroPoint {
 }
 
 /**
- * 物価の連鎖の 1 か月分 (#64)。
+ * 月次指標の 1 か月分 (#64 / #66)。
  *
- * **すべて前年同月比 (%)**。指標ごとに基準年が違う (2000=100 / Nov 2009=100 /
- * 1982-84=100 / 2017=100) ため、水準を並べても比較にならない。
+ * 横軸が同じ (対象月) なので 1 つの配列にまとめる。
+ *
+ * **物価・労働・所得は前年同月比 (%)**。指標ごとに基準年や単位が違い
+ * (物価は 4 種類の基準年、雇用は千人、所得は 10 億ドル)、水準を並べても比較にならない。
+ * **貯蓄率と消費者信頼感は水準そのもの**が意味を持つため変換しない。
  */
-export interface PriceChainPoint {
+export interface MonthlyPoint {
   /** 対象月 "YYYY-MM-01"。**発表日ではない**。 */
   month: string;
+
+  // --- 物価 (前年同月比 %) ---
   /** 輸入物価。連鎖の起点。 */
   importPrice: number | null;
   /** 生産者物価 (Final Demand)。 */
@@ -314,6 +319,26 @@ export interface PriceChainPoint {
   cpi: number | null;
   /** FRB が最も重視するインフレ指標。 */
   pce: number | null;
+
+  // --- 労働市場 (前年同月比 %) ---
+  /** 非農業部門雇用者数。事業所調査で自営業・農業を含まない。 */
+  payrolls: number | null;
+  /** 就業者数。家計調査で自営業・農業を含む。 */
+  employmentLevel: number | null;
+  /** フルタイム就業者数。 */
+  fullTimeEmployment: number | null;
+
+  // --- 所得 (前年同月比 %) ---
+  /** 移転所得を除く実質個人所得。景気一致指数の構成要素。 */
+  realIncomeExTransfer: number | null;
+  /** 1 人当たり実質可処分所得。 */
+  realDisposablePerCapita: number | null;
+
+  // --- 水準 ---
+  /** 貯蓄率 (%)。低下は貯蓄の取り崩しを示す。 */
+  savingsRate: number | null;
+  /** ミシガン大学消費者信頼感指数 (1966:Q1=100)。 */
+  consumerSentiment: number | null;
 }
 
 /**
@@ -333,7 +358,8 @@ export interface MonthlyCoverage {
 /** 月次画面のビュー全体 (#64)。 */
 export interface EconomyView {
   generatedAt: string;
-  priceChain: PriceChainPoint[];
+  /** 月次指標の系列。すべて同じ月グリッドに並ぶ。 */
+  monthly: MonthlyPoint[];
   /** 指標ごとの発表状況。画面に「どこまで出ているか」を出す。 */
   coverage: MonthlyCoverage[];
 }

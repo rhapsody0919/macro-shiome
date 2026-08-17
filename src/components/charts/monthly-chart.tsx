@@ -1,0 +1,182 @@
+'use client';
+
+import {
+  CartesianGrid,
+  Legend,
+  Line,
+  LineChart,
+  ReferenceLine,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from 'recharts';
+import type { ReactNode } from 'react';
+import { formatNumber, formatPercent } from '@/lib/format';
+import type { EconomyView, MonthlyPoint } from '@/lib/data/types';
+import { ChartFrame, SharedTooltip } from './chart-frame';
+
+/**
+ * 月次指標のチャート (#64 / #66)。
+ *
+ * 横軸は**対象月**で、週次グリッドには載せない。系列と文言は呼び出し側が渡す。
+ */
+/**
+ * 数値を持つフィールドだけを許す。`month` (string) を系列に指定すると
+ * 表示時に型が合わず、実行時まで気付けない。
+ */
+type NumericKey = {
+  [K in keyof MonthlyPoint]: MonthlyPoint[K] extends number | null ? K : never;
+}[keyof MonthlyPoint];
+
+export interface MonthlySeriesDef {
+  key: NumericKey;
+  label: string;
+  color: string;
+  /** 主系列は太くする。連鎖の起点や比較の基準を目立たせるため。 */
+  width?: number;
+  /** この系列に対応する指標マスタの ID。発表状況の表示に使う。 */
+  indicatorId: string;
+}
+
+export function MonthlyChart({
+  view,
+  title,
+  subtitle,
+  series,
+  kind = 'percent',
+  zeroLine = true,
+  notes,
+  height = 'h-96',
+}: {
+  view: EconomyView;
+  title: string;
+  subtitle: string;
+  series: MonthlySeriesDef[];
+  /** 前年同月比なら percent、水準なら number。 */
+  kind?: 'percent' | 'number';
+  /** ゼロ線を引くか。水準の指標 (貯蓄率・信頼感) では不要。 */
+  zeroLine?: boolean;
+  notes: ReactNode[];
+  height?: string;
+}) {
+  const points = view.monthly;
+  const labels = Object.fromEntries(series.map((s) => [s.indicatorId, s.label]));
+
+  return (
+    <ChartFrame
+      title={title}
+      subtitle={subtitle}
+      contentClassName={height}
+      summary={
+        <div className="space-y-2">
+          <div className="flex flex-wrap items-baseline gap-x-6 gap-y-1 text-sm">
+            {series.map((s) => {
+              // 系列ごとに最後に値がある月を探す。発表タイミングが指標ごとに違う。
+              const withValue = points.filter((point) => point[s.key] !== null);
+              const last = withValue.at(-1);
+              return (
+                <div key={s.key}>
+                  <span className="text-xs" style={{ color: s.color }}>
+                    ●
+                  </span>{' '}
+                  <span className="text-xs text-slate-500">{s.label}</span>{' '}
+                  <span className="font-semibold tabular-nums">
+                    {kind === 'percent'
+                      ? formatPercent(last?.[s.key] ?? null)
+                      : formatNumber(last?.[s.key] ?? null, 1)}
+                  </span>
+                  {last !== undefined && (
+                    <span className="ml-1 text-[11px] text-slate-500">
+                      {formatMonth(last.month)}
+                    </span>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+          <Coverage coverage={view.coverage} labels={labels} />
+        </div>
+      }
+      notes={notes}
+    >
+      <ResponsiveContainer>
+        <LineChart data={points} margin={{ top: 8, right: 8, bottom: 0, left: 0 }}>
+          <CartesianGrid strokeDasharray="3 3" stroke="currentColor" opacity={0.12} />
+          <XAxis dataKey="month" tickFormatter={formatMonth} minTickGap={48} fontSize={11} />
+          <YAxis
+            domain={['auto', 'auto']}
+            width={52}
+            fontSize={11}
+            tickFormatter={(value: number) =>
+              kind === 'percent' ? `${value.toFixed(0)}%` : value.toLocaleString('ja-JP')
+            }
+          />
+          <Tooltip content={<SharedTooltip kind={kind} labelFormatter={formatMonth} />} />
+          <Legend />
+          {/* ゼロ線。前年同月比では増減の境目になる。 */}
+          {zeroLine && <ReferenceLine y={0} stroke="currentColor" strokeOpacity={0.4} />}
+          {series.map((s) => (
+            <Line
+              key={s.key}
+              type="monotone"
+              dataKey={s.key}
+              name={s.label}
+              stroke={s.color}
+              strokeWidth={s.width ?? 2}
+              connectNulls={false}
+              dot={false}
+              activeDot={{ r: 3 }}
+              isAnimationActive={false}
+            />
+          ))}
+        </LineChart>
+      </ResponsiveContainer>
+    </ChartFrame>
+  );
+}
+
+/** どの月まで発表されているかを指標ごとに出す。 */
+function Coverage({
+  coverage,
+  labels,
+}: {
+  coverage: EconomyView['coverage'];
+  labels: Record<string, string>;
+}) {
+  // このチャートが使う指標だけに絞る。関係ない指標の発表状況を出しても意味が無い。
+  const known = coverage.filter(
+    (item) => item.latestMonth !== null && labels[item.indicatorId] !== undefined,
+  );
+  if (known.length === 0) return null;
+
+  // 全部同じ月なら 1 行で済ませる。ずれているときだけ指標ごとに出す。
+  const months = new Set(known.map((item) => item.latestMonth));
+  if (months.size === 1) {
+    return (
+      <p className="text-[11px] text-slate-500">
+        最新は全指標とも {formatMonth(known[0].latestMonth as string)} 分。
+      </p>
+    );
+  }
+
+  return (
+    <p className="text-[11px] text-slate-500">
+      発表済みの最新月:{' '}
+      {known.map((item, i) => (
+        <span key={item.indicatorId}>
+          {i > 0 && ' / '}
+          {labels[item.indicatorId]}{' '}
+          {formatMonth(item.latestMonth as string)}
+        </span>
+      ))}
+    </p>
+  );
+}
+
+/** "2026-06-01" → "2026年6月"。日付まで出すと発表日と誤解されるため月までにする。 */
+function formatMonth(month: string | undefined): string {
+  if (month === undefined) return '—';
+  const [year, m] = month.split('-');
+  return `${year}年${Number.parseInt(m, 10)}月`;
+}
