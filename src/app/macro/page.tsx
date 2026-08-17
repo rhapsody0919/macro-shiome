@@ -1,5 +1,6 @@
 import { Suspense, type ReactNode } from 'react';
 import { MacroChart, type SeriesDef } from '@/components/charts/macro-chart';
+import { MacroSummary } from '@/components/macro-summary';
 import type { ValueKind } from '@/components/charts/chart-frame';
 import { groupByCycle } from '@/lib/cycle';
 import { indicators } from '@/lib/data/indicators';
@@ -148,6 +149,9 @@ export default function MacroPage() {
           相場環境の週次指標。景気サイクルに対する位置で並べている。
         </p>
       </div>
+
+      {/* 期間フィルターに依存せず常に直近の値を見せる。 */}
+      <MacroSummary points={macro} />
 
       {groups.map((group) => (
         <section key={group.section} className="space-y-8">
