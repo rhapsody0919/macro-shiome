@@ -1,0 +1,7 @@
+# 旧 URL の受け皿 (#89)。/macro を「市場」と「経済」に再編したため、
+# ブックマークが 404 にならないよう /market へ 301 で送る。
+# Cloudflare Workers Static Assets が out/_redirects を読む
+# (public/ 配下は next build の静的エクスポートで out/ にコピーされる)。
+/macro /market 301
+/macro/ /market 301
+/macro/* /market 301

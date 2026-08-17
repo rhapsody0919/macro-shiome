@@ -9,6 +9,7 @@ export function ChartFrame({
   title,
   subtitle,
   actions,
+  badges,
   summary,
   notes,
   contentClassName = 'h-64 sm:h-80',
@@ -21,6 +22,8 @@ export function ChartFrame({
   title: string;
   subtitle?: ReactNode;
   actions?: ReactNode;
+  /** 更新頻度・景気サイクルのバッジ (#89)。見出しの右に並べる。 */
+  badges?: ReactNode;
   summary?: ReactNode;
   notes: ReactNode[];
   /** 図の高さ。2 段構成にする場合などに上書きする。 */
@@ -56,7 +59,10 @@ export function ChartFrame({
             <p className="text-[11px] text-slate-500">{subtitle}</p>
           )}
         </div>
-        {actions}
+        <div className="flex flex-wrap items-center gap-2">
+          {badges}
+          {actions}
+        </div>
       </header>
 
       {summary}

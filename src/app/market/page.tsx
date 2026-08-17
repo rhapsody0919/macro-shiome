@@ -1,0 +1,224 @@
+import { MarketSummary } from '@/components/market-summary';
+import {
+  QuestionIndex,
+  QuestionSections,
+  type QuestionChartDef,
+} from '@/components/charts/question-sections';
+import { COLORS } from '@/lib/colors';
+import { macro } from '@/lib/data/loader';
+import { MARKET_QUESTIONS, type MarketQuestionId } from '@/lib/questions';
+
+export const metadata = {
+  title: '市場 | macro-shiome',
+};
+
+/** 市場ページのチャート定義 (#89)。 */
+const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
+  {
+    question: 'financial',
+    frequency: 'weekly',
+    primaryIndicator: 'dgs10',
+    title: '金利の内訳',
+    subtitle: '名目 10 年債利回り・期待インフレ率・実質金利',
+    kind: 'percent',
+    series: [
+      { key: 'nominalRate', label: '名目10年債', color: COLORS.nominalRate },
+      { key: 'breakeven', label: '期待インフレ率', color: COLORS.breakeven },
+      { key: 'realRate', label: '実質金利', color: COLORS.realRate },
+      { key: 'fedFundsRate', label: 'FF金利 (政策金利)', color: COLORS.fedFundsRate },
+    ],
+    notes: [
+      <span key="def">
+        実質金利 = 名目 10 年債利回り − 期待インフレ率。イールドスプレッドの計算に使う値。
+      </span>,
+      <span key="ff">
+        <strong>FF 金利は FRB が誘導する短期の政策金利</strong>で、10 年債は市場が決める長期金利。
+        政策金利が長期金利を上回ると逆イールドになる。
+      </span>,
+      <span key="why">
+        名目が同じでも期待インフレ率が動けば実質金利は変わる。株式の相対的な魅力は実質金利で
+        測るため、4 つを並べて構造を見る。
+      </span>,
+    ],
+  },
+  {
+    question: 'financial',
+    frequency: 'weekly',
+    primaryIndicator: 't10y2y',
+    title: 'イールドカーブ (10年債 − 2年債)',
+    subtitle: '長短金利差。負なら逆イールド',
+    kind: 'percent',
+    signed: true,
+    series: [{ key: 'termSpread', label: '10年 − 2年', color: COLORS.termSpread }],
+    notes: [
+      <span key="vs-spread">
+        <strong>イールドスプレッド (バリュエーション画面) とは別物。</strong>
+        あちらは株式益回り − 実質金利で株式と債券の相対的な魅力を見る。こちらは長短金利の傾き。
+      </span>,
+      <span key="meaning">
+        通常は長期金利が短期金利を上回る (順イールド)。
+        <strong>負になると逆イールド</strong>で、市場が将来の利下げ = 景気減速を織り込んでいる状態。
+        赤い領域が逆イールドの範囲。
+      </span>,
+      <span key="caution">
+        <strong>「逆イールド = 景気後退」と断定はできない。</strong>
+        過去に先行指標として機能した例が多いものの、実際の景気後退までの時間差は数か月〜2 年と幅があり、
+        外れた事例もある。The Conference Board の景気先行指数の構成要素は「10 年債 − FF 金利」で、
+        本指標とは厳密には別系列。
+      </span>,
+      <span key="daily">週次 (金曜時点)。FRED が公表する日次値を金曜に揃えている。</span>,
+    ],
+  },
+  {
+    question: 'financial',
+    frequency: 'weekly',
+    primaryIndicator: 'hy-spread',
+    title: '信用スプレッド',
+    subtitle: '社債と国債の利回り差 (拡大がリスク回避)',
+    kind: 'percent',
+    series: [
+      { key: 'hySpread', label: 'ハイイールド債', color: COLORS.hySpread },
+      { key: 'igSpread', label: '投資適格債', color: COLORS.igSpread },
+    ],
+    notes: [
+      <span key="meaning">
+        <strong>拡大がリスク回避、縮小がリスク選好。</strong>
+        投資家が低格付け債を敬遠すると利回り差が広がる。
+        <strong>株式より早く動くことがある</strong>ため、相場の転換を捉える手がかりになる。
+      </span>,
+      <span key="two">
+        ハイイールド債 (低格付け) の方が振れが大きい。
+        <strong>投資適格債まで広がったら信用不安が優良企業に及んでいる</strong>合図。
+      </span>,
+      <span key="no-threshold">
+        水準の目安となる補助線は引いていない。閾値に定説が無く恣意的になるため
+        (VIX・イールドスプレッドと同じ判断)。過去の水準と比べて読むこと。
+      </span>,
+      <span key="copyright">著作権は Ice Data Indices にある。</span>,
+    ],
+  },
+  {
+    question: 'financial',
+    frequency: 'weekly',
+    primaryIndicator: 'credit-conditions',
+    title: '信用状況',
+    subtitle: '企業や家計が資金を借りやすいか (ゼロが平均)',
+    signed: true,
+    series: [{ key: 'creditConditions', label: '信用状況指数', color: COLORS.creditConditions }],
+    notes: [
+      <span key="direction">
+        <strong>正が引き締まり、負が緩み。</strong>
+        ゼロが平均的な状態。上昇は資金を借りにくくなっていることを示し、
+        赤い領域 (負) は平均より緩い状態。
+      </span>,
+      <span key="lei">
+        The Conference Board の景気先行指数の構成要素に「Leading Credit Index」があるが、
+        <strong>あちらは独自の合成指標で公開されていない</strong>。ここでは同じく信用状況の
+        逼迫度を測る Chicago Fed の指数を使っており、<strong>同じものではない</strong>。
+      </span>,
+      <span key="copyright">著作権は Chicago Fed にある。週次。</span>,
+    ],
+  },
+  {
+    question: 'financial',
+    frequency: 'monthly',
+    primaryIndicator: 'federal-deficit',
+    title: '財政収支',
+    subtitle: '連邦政府の月次収支 (百万ドル、負が赤字)',
+    kind: 'number',
+    series: [
+      {
+        key: 'federalDeficit',
+        label: '財政収支',
+        color: COLORS.federalDeficit,
+        indicatorId: 'federal-deficit',
+      },
+    ],
+    notes: [
+      <span key="why">
+        <strong>財政赤字の拡大は国債発行を増やし、長期金利の上昇要因になる。</strong>
+        金利が上がると株式の理論値が下がるため、バリュエーションに効く。
+      </span>,
+      <span key="seasonal">
+        <strong>季節調整されていない</strong>ため月ごとの振れが大きい。
+        4 月は確定申告の納税で黒字になりやすいなど、月の性質を踏まえて読む。
+      </span>,
+      <span key="monthly">
+        <strong>この問いで唯一の月次指標</strong>。他の 4 つは週次なので、動きの速さが違う。
+      </span>,
+    ],
+  },
+  {
+    question: 'risk',
+    frequency: 'weekly',
+    primaryIndicator: 'vix',
+    title: 'VIX',
+    subtitle: 'S&P 500 のインプライド・ボラティリティ指数',
+    series: [{ key: 'vix', label: 'VIX', color: COLORS.vix }],
+    notes: [
+      <span key="weekly">
+        週次 (金曜終値) のため、週の途中の急騰は平滑化される。日中の変動を追う用途には向かない。
+      </span>,
+      <span key="no-guide">
+        水準の目安となる補助線は引いていない。閾値の置き方に定説が無く、恣意的な基準を
+        示すことになるため。
+      </span>,
+    ],
+  },
+  {
+    question: 'risk',
+    frequency: 'weekly',
+    primaryIndicator: 'dollar-index',
+    title: 'ドル指数 (実効為替)',
+    subtitle: '主要通貨に対するドルの総合的な強さ (Jan 2006 = 100)',
+    series: [{ key: 'dollarIndex', label: 'ドル指数', color: COLORS.dollarIndex }],
+    notes: [
+      <span key="vs-usdjpy">
+        <strong>USD/JPY とは別物。</strong>
+        あちらは円との 2 国間レート、こちらは貿易額で加重した総合指標。
+        円だけ動いてもドル指数はあまり動かない。
+      </span>,
+      <span key="impact">
+        ドル高は米企業の海外売上をドル換算で目減りさせるため、S&P 500 の業績に効く。
+        リスク回避局面ではドルが買われやすい。
+      </span>,
+    ],
+  },
+  {
+    question: 'risk',
+    frequency: 'weekly',
+    primaryIndicator: 'usdjpy',
+    title: 'USD/JPY',
+    subtitle: '円/ドル (FRB 公表値)',
+    series: [{ key: 'usdjpy', label: 'USD/JPY', color: COLORS.usdjpy }],
+    notes: [
+      <span key="weekly">週次 (金曜時点)。FRB が公表する日次値を金曜に揃えている。</span>,
+    ],
+  },
+];
+
+/**
+ * 市場ページ (#89)。旧 `/macro`。
+ *
+ * 景気そのものを見る指標は経済ページに移し、ここには
+ * **金融環境 (借りやすさ・金利) と市場心理**だけを残している。
+ */
+export default function MarketPage() {
+  return (
+    // モバイルは間隔を詰める。1 画面目に「最新の状況」まで入れるため (#75)。
+    <div className="space-y-10 sm:space-y-16">
+      <div className="space-y-3">
+        <h1 className="text-xl font-bold">市場</h1>
+        <p className="text-sm text-slate-600 dark:text-slate-400">
+          金融環境と市場心理。景気そのものを見る指標は「経済」に置いている。
+        </p>
+        <QuestionIndex charts={CHARTS} questions={MARKET_QUESTIONS} />
+      </div>
+
+      {/* 期間フィルターに依存せず常に直近の値を見せる。 */}
+      <MarketSummary points={macro} />
+
+      <QuestionSections charts={CHARTS} questions={MARKET_QUESTIONS} />
+    </div>
+  );
+}
