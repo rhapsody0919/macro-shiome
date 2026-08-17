@@ -10,6 +10,7 @@ export function ChartFrame({
   actions,
   summary,
   notes,
+  contentClassName = 'h-80',
   children,
 }: {
   title: string;
@@ -17,6 +18,8 @@ export function ChartFrame({
   actions?: ReactNode;
   summary?: ReactNode;
   notes: ReactNode[];
+  /** 図の高さ。2 段構成にする場合などに上書きする。 */
+  contentClassName?: string;
   children: ReactNode;
 }) {
   return (
@@ -33,7 +36,7 @@ export function ChartFrame({
 
       {summary}
 
-      <div className="h-80 w-full">{children}</div>
+      <div className={`w-full ${contentClassName}`}>{children}</div>
 
       <ul className="space-y-1 text-[11px] text-slate-500">
         {notes.map((note, i) => (

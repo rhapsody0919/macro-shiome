@@ -1,4 +1,5 @@
 import { Suspense } from 'react';
+import { FairValueChart } from '@/components/charts/fair-value';
 import { ForwardPeChart } from '@/components/charts/forward-pe';
 import { IndexVsEpsChart } from '@/components/charts/index-vs-eps';
 import { YieldSpreadChart } from '@/components/charts/yield-spread';
@@ -22,8 +23,12 @@ export default function ValuationPage() {
         <YieldSpreadChart view={valuationView} />
       </Suspense>
 
+      <Suspense fallback={<div className="h-[28rem]" />}>
+        <FairValueChart view={valuationView} />
+      </Suspense>
+
       <p className="text-sm text-slate-500">
-        理論値・相関・予想改定は Issue #16〜#19 で実装する。
+        相関・予想改定は Issue #17〜#19 で実装する。
       </p>
     </div>
   );
