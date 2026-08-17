@@ -289,6 +289,13 @@ export interface MacroPoint {
   breakeven: number | null;
   /** 実質金利 = 名目 − 期待インフレ率 (%)。 */
   realRate: number | null;
+  /**
+   * イールドカーブ (10 年債 − 2 年債、%)。負なら逆イールド (#63)。
+   *
+   * **イールドスプレッド (株式益回り − 実質金利) とは別物**。あちらは株式と債券の
+   * 相対的な魅力、こちらは長短金利の傾きで景気の先行指標。
+   */
+  termSpread: number | null;
 }
 
 /**

@@ -287,3 +287,20 @@ describe('景気サイクルの分類 (#62)', () => {
     }
   });
 });
+
+describe('イールドカーブの指標 (#63)', () => {
+  it('先行指標として分類されている', () => {
+    // FRED が Interest Rate Spreads カテゴリ + Yield Curve タグで扱う
+    // (2026-08-17 に公式ページで確認)。
+    expect(indicators.t10y2y.cyclePosition).toBe('leading');
+  });
+
+  it('金利グループに入る', () => {
+    expect(indicators.t10y2y.group).toBe('rates');
+    expect(indicators.t10y2y.unit).toBe('percent');
+  });
+
+  it('日次で取得する', () => {
+    expect(indicators.t10y2y.frequency).toBe('daily');
+  });
+});
