@@ -344,5 +344,98 @@
     "group": "rates",
     "cyclePosition": "leading",
     "note": "長短金利差。FRED は Interest Rate Spreads カテゴリに置き Yield Curve タグを付けている。The Conference Board の LEI 構成要素は「10 年債 − FF 金利」で厳密には別系列だが、同じイールドカーブの傾きを表す先行指標。負 = 逆イールド。"
+  },
+  "payrolls": {
+    "name": "非農業部門雇用者数",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "PAYEMS"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "U.S. Bureau of Labor Statistics via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "cyclePosition": "coincident",
+    "note": "All Employees, Total Nonfarm。千人、季節調整済み。事業所調査ベースで自営業者と農業従事者を含まない。The Conference Board の景気一致指数 (CEI) の構成要素。"
+  },
+  "employment-level": {
+    "name": "就業者数 (自営業・農業を含む)",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "CE16OV"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "U.S. Bureau of Labor Statistics via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "note": "Employment Level。千人、季節調整済み。家計調査ベースで自営業者と農業従事者を含む。非農業部門雇用者数では見えない部分を捉える。"
+  },
+  "full-time-employment": {
+    "name": "フルタイム就業者数",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "LNS12500000"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "U.S. Bureau of Labor Statistics via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "note": "Employed, Usually Work Full Time。千人、季節調整済み。パートを含む全体では見えない雇用の質を捉える。"
+  },
+  "real-income-ex-transfer": {
+    "name": "実質個人所得 (移転所得を除く)",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "W875RX1"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "U.S. Bureau of Economic Analysis via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "cyclePosition": "coincident",
+    "note": "Real personal income excluding current transfer receipts。2017 年連鎖 10 億ドル、季節調整済み年率。年金など政府からの移転所得を除いた民間の経済活動による所得。The Conference Board の景気一致指数 (CEI) の構成要素。"
+  },
+  "real-disposable-income-per-capita": {
+    "name": "1人当たり実質可処分所得",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "A229RX0"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "U.S. Bureau of Economic Analysis via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "note": "Real Disposable Personal Income: Per Capita。2017 年連鎖ドル、季節調整済み年率。人口が増え続けるため、全体の所得では実態が見えにくい。"
+  },
+  "savings-rate": {
+    "name": "貯蓄率",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "PSAVERT"
+    },
+    "frequency": "monthly",
+    "unit": "percent",
+    "attribution": "U.S. Bureau of Economic Analysis via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "note": "Personal Saving Rate。%、季節調整済み年率。可処分所得のうち貯蓄に回る割合。低下は貯蓄を取り崩して消費していることを示す。"
+  },
+  "consumer-sentiment": {
+    "name": "ミシガン大学消費者信頼感指数",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "UMCSENT"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "University of Michigan via FRED",
+    "copyright": "restricted",
+    "group": "macro",
+    "note": "University of Michigan: Consumer Sentiment。Index 1966:Q1=100、季節調整なし。**著作権は University of Michigan にある**。個人消費の先行きと連動性がある意識調査。"
   }
 }

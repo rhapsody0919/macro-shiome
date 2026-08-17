@@ -1,23 +1,201 @@
-import { PriceChainChart } from '@/components/charts/price-chain';
-import { CYCLE_SECTIONS } from '@/lib/cycle';
+import type { ReactNode } from 'react';
+import { MonthlyChart, type MonthlySeriesDef } from '@/components/charts/monthly-chart';
+import { groupByCycle } from '@/lib/cycle';
+import { indicators } from '@/lib/data/indicators';
 import { economy } from '@/lib/data/loader';
+import type { CyclePosition } from '@/lib/data/types';
 
 export const metadata = {
   title: '経済統計 | macro-shiome',
 };
 
 /**
- * 経済統計 (月次) の画面 (#64)。
+ * 経済統計 (月次) のチャート定義 (#64 / #66)。
+ *
+ * セクション分けの根拠は指標マスタが持つ (`cyclePosition`)。ここでは
+ * 「このチャートを代表する指標」だけを指す。
+ */
+interface MonthlyChartDef {
+  primaryIndicator: string;
+  title: string;
+  subtitle: string;
+  kind?: 'percent' | 'number';
+  zeroLine?: boolean;
+  series: MonthlySeriesDef[];
+  notes: ReactNode[];
+}
+
+const CHARTS: MonthlyChartDef[] = [
+  {
+    // 非農業部門雇用者数は景気一致指数 (CEI) の構成要素。
+    primaryIndicator: 'payrolls',
+    title: '労働市場',
+    subtitle: '雇用者数の前年同月比 (3 つの捉え方)',
+    series: [
+      {
+        key: 'payrolls',
+        label: '非農業部門雇用者数',
+        color: '#0ea5e9',
+        width: 2.4,
+        indicatorId: 'payrolls',
+      },
+      {
+        key: 'employmentLevel',
+        label: '就業者数 (自営業含む)',
+        color: '#f97316',
+        indicatorId: 'employment-level',
+      },
+      {
+        key: 'fullTimeEmployment',
+        label: 'フルタイム',
+        color: '#a855f7',
+        indicatorId: 'full-time-employment',
+      },
+    ],
+    notes: [
+      <span key="diff">
+        <strong>3 つは調査方法が違う。</strong>
+        ニュースで報じられる「雇用統計」は<strong>非農業部門雇用者数</strong> (事業所調査) で、
+        <strong>自営業者と農業従事者を含まない</strong>。就業者数 (家計調査) はそれらを含むため、
+        働いている人の総数に近い。フルタイムは雇用の質を見る。
+      </span>,
+      <span key="coincident">
+        <strong>雇用は「先行」ではなく「一致」指標。</strong>
+        The Conference Board は非農業部門雇用者数を景気一致指数の構成要素としている。
+        悪化が見えた時点で、既に景気が転換している可能性がある。
+      </span>,
+      <span key="yoy">
+        前年同月比で揃えている。水準 (千人) は 3 系列で桁が違い、変化の大きさが比べられないため。
+      </span>,
+    ],
+  },
+  {
+    // 移転所得を除く実質個人所得は景気一致指数 (CEI) の構成要素。
+    primaryIndicator: 'real-income-ex-transfer',
+    title: '実質所得',
+    subtitle: '個人消費の源泉となる所得の前年同月比',
+    series: [
+      {
+        key: 'realIncomeExTransfer',
+        label: '実質個人所得 (移転所得を除く)',
+        color: '#10b981',
+        width: 2.4,
+        indicatorId: 'real-income-ex-transfer',
+      },
+      {
+        key: 'realDisposablePerCapita',
+        label: '1人当たり実質可処分所得',
+        color: '#6366f1',
+        indicatorId: 'real-disposable-income-per-capita',
+      },
+    ],
+    notes: [
+      <span key="ex-transfer">
+        <strong>移転所得を除く</strong>とは、年金など政府からの給付を差し引いた
+        <strong>民間の経済活動による所得</strong>のこと。景気一致指数の構成要素。
+      </span>,
+      <span key="per-capita">
+        <strong>1 人当たりで見る理由:</strong> 米国は人口が増え続けるため、全体の所得が
+        横ばいでも 1 人当たりでは減っていることがある。
+      </span>,
+      <span key="real">
+        いずれも実質値 (物価変動を除いた値)。名目では物価上昇分だけ増えて見える。
+      </span>,
+    ],
+  },
+  {
+    primaryIndicator: 'savings-rate',
+    title: '貯蓄率',
+    subtitle: '可処分所得のうち貯蓄に回る割合 (水準)',
+    kind: 'number',
+    zeroLine: false,
+    series: [
+      { key: 'savingsRate', label: '貯蓄率 (%)', color: '#ef4444', indicatorId: 'savings-rate' },
+    ],
+    notes: [
+      <span key="meaning">
+        低下は<strong>貯蓄を取り崩して消費している</strong>ことを示す。所得が伸びなくても
+        消費を維持できるが、取り崩しには限界がある。
+      </span>,
+      <span key="no-threshold">
+        <strong>危険水準の線は引いていない。</strong>
+        「◯% を下回ったら危険」という基準には定説が無く、恣意的になるため
+        (イールドスプレッドと同じ判断)。過去の水準と比べて読むこと。
+      </span>,
+      <span key="level">水準そのものが意味を持つため、前年同月比には変換していない。</span>,
+    ],
+  },
+  {
+    primaryIndicator: 'consumer-sentiment',
+    title: '消費者信頼感',
+    subtitle: 'ミシガン大学消費者信頼感指数 (1966年Q1 = 100)',
+    kind: 'number',
+    zeroLine: false,
+    series: [
+      {
+        key: 'consumerSentiment',
+        label: '消費者信頼感指数',
+        color: '#eab308',
+        indicatorId: 'consumer-sentiment',
+      },
+    ],
+    notes: [
+      <span key="survey">
+        意識調査であり実際の消費データではない。個人消費の先行きと連動性があるとされる。
+      </span>,
+      <span key="copyright">
+        <strong>著作権は University of Michigan にある。</strong>
+      </span>,
+    ],
+  },
+  {
+    primaryIndicator: 'import-price',
+    title: '物価の連鎖',
+    subtitle: '輸入物価 → 生産者物価 → CPI / PCE (すべて前年同月比)',
+    series: [
+      { key: 'importPrice', label: '輸入物価', color: '#f97316', width: 2.4, indicatorId: 'import-price' },
+      { key: 'producerPrice', label: '生産者物価', color: '#a855f7', indicatorId: 'producer-price' },
+      { key: 'cpi', label: 'CPI', color: '#0ea5e9', indicatorId: 'cpi' },
+      { key: 'pce', label: 'PCE', color: '#10b981', indicatorId: 'pce-price' },
+    ],
+    notes: [
+      <span key="reading">
+        <strong>読み方:</strong> 輸入物価は企業の仕入れ価格にあたり、物価の起点になる。
+        上流 (輸入物価) の変化が生産者物価に転嫁され、さらに CPI / PCE に及ぶまでには
+        <strong>時間差がある</strong>。上流が上を向いた時点で、下流の上昇余地が残っていると読める。
+      </span>,
+      <span key="yoy">
+        <strong>前年同月比で揃えている。</strong>
+        指標ごとに基準年が違う (輸入物価 2000=100 / 生産者物価 Nov 2009=100 / CPI 1982-84=100 /
+        PCE 2017=100) ため、水準を並べても比較にならない。
+      </span>,
+      <span key="sa">
+        季節調整は輸入物価のみ無し、他は調整済み。前年同月比では季節性がおおむね相殺されるが、
+        厳密には同一条件ではない。PCE は FRB が最も重視するインフレ指標。
+      </span>,
+    ],
+  },
+];
+
+/** 分類を指標マスタから引く。未知の ID はビルド時にエラーにする。 */
+function positionOf(chart: MonthlyChartDef): CyclePosition | undefined {
+  const indicator = indicators[chart.primaryIndicator];
+  if (indicator === undefined) {
+    throw new Error(`経済統計画面: 指標マスタに無い ID を参照している (${chart.primaryIndicator})`);
+  }
+  return indicator.cyclePosition;
+}
+
+/**
+ * 経済統計 (月次) の画面 (#64 / #66)。
  *
  * **市場データ (`/macro`) と分けている。** 更新頻度が違うため。
  * 週次の市場データは毎週動くが、経済統計は月 1 回しか動かない。同じページに置くと
  * 「先週から動いていない」のか「月次だから動かない」のか読み手が判別できない。
- *
- * セクションは `/macro` と同じく景気サイクルに対する位置で分ける。
- * 現時点では物価のみで、分類に当てはまらないため「その他」に入る。
- * 先行・一致のセクションは #65 (住宅) / #66 (労働・所得・消費) で埋まる。
  */
 export default function EconomyPage() {
+  const groups = groupByCycle(CHARTS, positionOf);
+
   return (
     <div className="space-y-16">
       <div>
@@ -28,19 +206,31 @@ export default function EconomyPage() {
         <p className="mt-2 text-xs text-slate-500">
           <strong>横軸は「対象月」であり発表日ではない。</strong>
           経済統計は対象月の翌月以降に発表されるため、直近 1〜2 か月分はまだ出ていない。
+          発表時期は指標ごとに違うので、各チャートに最新の対象月を出している。
         </p>
       </div>
 
-      <section className="space-y-8">
-        <header className="border-b border-slate-200 pb-2 dark:border-slate-800">
-          <h2 className="text-lg font-bold">{CYCLE_SECTIONS.unclassified.label}</h2>
-          <p className="mt-0.5 text-xs text-slate-500">
-            {CYCLE_SECTIONS.unclassified.description}
-          </p>
-        </header>
+      {groups.map((group) => (
+        <section key={group.section} className="space-y-10">
+          <header className="border-b border-slate-200 pb-2 dark:border-slate-800">
+            <h2 className="text-lg font-bold">{group.meta.label}</h2>
+            <p className="mt-0.5 text-xs text-slate-500">{group.meta.description}</p>
+          </header>
 
-        <PriceChainChart view={economy} />
-      </section>
+          {group.items.map((chart) => (
+            <MonthlyChart
+              key={chart.title}
+              view={economy}
+              title={chart.title}
+              subtitle={chart.subtitle}
+              kind={chart.kind}
+              zeroLine={chart.zeroLine}
+              series={chart.series}
+              notes={chart.notes}
+            />
+          ))}
+        </section>
+      ))}
     </div>
   );
 }

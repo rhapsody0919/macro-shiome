@@ -252,6 +252,53 @@ describe('イールドスプレッドの過去分布 (#52)', () => {
   });
 });
 
+describe('労働市場・所得・消費 (#66)', () => {
+  const monthly: ObservationMap = {
+    // 2026-07 の実データを模した値。報道される雇用統計はプラスだが、
+    // 自営業を含む就業者数はマイナスという実際に起きている状況。
+    payrolls: { '2025-07-01': 158500, '2026-07-01': 158858 },
+    'employment-level': { '2025-07-01': 163150, '2026-07-01': 162177 },
+    'full-time-employment': { '2025-07-01': 134900, '2026-07-01': 133553 },
+    'real-income-ex-transfer': { '2025-06-01': 16590, '2026-06-01': 16606.1 },
+    'savings-rate': { '2026-06-01': 2.7 },
+    'consumer-sentiment': { '2026-06-01': 49.5 },
+  };
+
+  const view = buildEconomyView({
+    observations: monthly,
+    config,
+    start: '2025-06-01',
+    today: new Date(Date.UTC(2026, 6, 20)),
+  });
+
+  const july = view.monthly.find((p) => p.month === '2026-07-01');
+
+  it('雇用の 3 系列を前年同月比で持つ', () => {
+    expect(july?.payrolls).toBeCloseTo(0.2, 1);
+    expect(july?.employmentLevel).toBeCloseTo(-0.6, 1);
+    expect(july?.fullTimeEmployment).toBeCloseTo(-1.0, 1);
+  });
+
+  it('報道される雇用統計と就業者数の符号が逆になる状況を表現できる', () => {
+    // これが記事の主張そのもの。片方だけ見ると実態を見誤る。
+    expect((july?.payrolls ?? 0) > 0).toBe(true);
+    expect((july?.employmentLevel ?? 0) < 0).toBe(true);
+  });
+
+  it('貯蓄率と消費者信頼感は水準のまま持つ', () => {
+    // 前年同月比にすると「2.7%」という水準の意味が失われる。
+    const june = view.monthly.find((p) => p.month === '2026-06-01');
+    expect(june?.savingsRate).toBe(2.7);
+    expect(june?.consumerSentiment).toBe(49.5);
+  });
+
+  it('発表ラグを指標ごとに持つ', () => {
+    const byId = Object.fromEntries(view.coverage.map((c) => [c.indicatorId, c.latestMonth]));
+    expect(byId['payrolls']).toBe('2026-07-01');
+    expect(byId['savings-rate']).toBe('2026-06-01');
+  });
+});
+
 describe('物価の連鎖 (#64)', () => {
   /** 月次の観測値。前年同月比を出すには 13 か月分が要る。 */
   const monthly: ObservationMap = {
@@ -270,19 +317,19 @@ describe('物価の連鎖 (#64)', () => {
   });
 
   it('月初の系列を作る', () => {
-    expect(view.priceChain[0].month).toBe('2025-06-01');
-    expect(view.priceChain.at(-1)?.month).toBe('2026-06-01');
+    expect(view.monthly[0].month).toBe('2025-06-01');
+    expect(view.monthly.at(-1)?.month).toBe('2026-06-01');
   });
 
   it('前年同月比を計算する', () => {
-    const june = view.priceChain.find((p) => p.month === '2026-06-01');
+    const june = view.monthly.find((p) => p.month === '2026-06-01');
     expect(june?.importPrice).toBeCloseTo(7.1, 1);
     expect(june?.cpi).toBeCloseTo(3.5, 1);
   });
 
   it('前年の値が無い月は null', () => {
     // 系列の最初の 12 か月は前年同月が存在しない。
-    expect(view.priceChain[0].importPrice).toBeNull();
+    expect(view.monthly[0].importPrice).toBeNull();
   });
 
   it('発表ラグを指標ごとに持つ', () => {
@@ -295,7 +342,7 @@ describe('物価の連鎖 (#64)', () => {
   it('週次グリッドに載せない (月初のみ)', () => {
     // 月次を週次に落とすと同じ値が 4〜5 週続き、月次だから動かないのか
     // 先週から動いていないのか判別できなくなる。
-    for (const point of view.priceChain) {
+    for (const point of view.monthly) {
       expect(point.month.endsWith('-01')).toBe(true);
     }
   });

@@ -13,7 +13,7 @@ import type {
   EconomyView,
   MacroPoint,
   MonthlyCoverage,
-  PriceChainPoint,
+  MonthlyPoint,
   RevisionPoint,
   SpreadDistribution,
   ValuationPoint,
@@ -374,43 +374,68 @@ export function buildMacroView(options: BuildViewOptions): MacroPoint[] {
 }
 
 /**
- * 物価の連鎖のビュー (#64)。
+ * 月次指標のビュー (#64 / #66)。
  *
  * **週次グリッドに載せない**。月次データを週次に落とすと同じ値が 4〜5 週続き、
  * 「先週から動いていない」のか「月次だから動かない」のか読み手が判別できなくなる。
  *
- * すべて前年同月比。指標ごとに基準年が違うため水準では比較できない。
+ * 物価・労働・所得は前年同月比。単位や基準年が指標ごとに違い、水準では比較できないため。
+ * 貯蓄率と消費者信頼感は水準そのものが意味を持つので変換しない。
  */
 export function buildEconomyView(options: BuildViewOptions): EconomyView {
   const { observations } = options;
   const months = monthsBetween(options.start, options.today.toISOString().slice(0, 10));
 
-  const priceOf = (id: string, month: string): number | null =>
+  /** 前年同月比。単位が違う指標を同じ軸で比べるために使う。 */
+  const yoy = (id: string, month: string): number | null =>
     yearOverYear(
       valueForMonth(series(observations, id), month),
       valueForMonth(series(observations, id), yearAgo(month)),
     );
 
-  const priceChain: PriceChainPoint[] = months.map((month) => ({
+  /** 水準そのまま。貯蓄率のように水準が意味を持つ指標に使う。 */
+  const level = (id: string, month: string): number | null =>
+    valueForMonth(series(observations, id), month);
+
+  const monthly: MonthlyPoint[] = months.map((month) => ({
     month,
-    importPrice: priceOf('import-price', month),
-    producerPrice: priceOf('producer-price', month),
-    cpi: priceOf('cpi', month),
-    pce: priceOf('pce-price', month),
+    importPrice: yoy('import-price', month),
+    producerPrice: yoy('producer-price', month),
+    cpi: yoy('cpi', month),
+    pce: yoy('pce-price', month),
+    payrolls: yoy('payrolls', month),
+    employmentLevel: yoy('employment-level', month),
+    fullTimeEmployment: yoy('full-time-employment', month),
+    realIncomeExTransfer: yoy('real-income-ex-transfer', month),
+    realDisposablePerCapita: yoy('real-disposable-income-per-capita', month),
+    savingsRate: level('savings-rate', month),
+    consumerSentiment: level('consumer-sentiment', month),
   }));
 
   // 発表ラグは指標ごとに違うため、系列単位で「どこまで出ているか」を持つ。
-  const coverage: MonthlyCoverage[] = PRICE_INDICATORS.map((indicatorId) => ({
+  const coverage: MonthlyCoverage[] = MONTHLY_INDICATORS.map((indicatorId) => ({
     indicatorId,
     latestMonth: latestMonthWithValue(months, series(observations, indicatorId)),
   }));
 
   return {
     generatedAt: options.today.toISOString(),
-    priceChain,
+    monthly,
     coverage,
   };
 }
 
-/** 物価の連鎖に使う指標。順序は連鎖の順 (上流 → 下流)。 */
-const PRICE_INDICATORS = ['import-price', 'producer-price', 'cpi', 'pce-price'] as const;
+/** 月次画面が使う指標。発表状況の表示に使う。 */
+const MONTHLY_INDICATORS = [
+  'import-price',
+  'producer-price',
+  'cpi',
+  'pce-price',
+  'payrolls',
+  'employment-level',
+  'full-time-employment',
+  'real-income-ex-transfer',
+  'real-disposable-income-per-capita',
+  'savings-rate',
+  'consumer-sentiment',
+] as const;
