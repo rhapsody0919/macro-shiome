@@ -83,10 +83,15 @@ const CHARTS: MacroChartDef[] = [
       { key: 'nominalRate', label: '名目10年債', color: COLORS.nominalRate },
       { key: 'breakeven', label: '期待インフレ率', color: COLORS.breakeven },
       { key: 'realRate', label: '実質金利', color: COLORS.realRate },
+      { key: 'fedFundsRate', label: 'FF金利 (政策金利)', color: COLORS.fedFundsRate },
     ],
     notes: [
       <span key="def">
         実質金利 = 名目 10 年債利回り − 期待インフレ率。イールドスプレッドの計算に使う値。
+      </span>,
+      <span key="ff">
+        <strong>FF 金利は FRB が誘導する短期の政策金利</strong>で、10 年債は市場が決める長期金利。
+        政策金利が長期金利を上回ると逆イールドになる。
       </span>,
       <span key="why">
         名目が同じでも期待インフレ率が動けば実質金利は変わる。株式の相対的な魅力は実質金利で
@@ -113,6 +118,32 @@ const CHARTS: MacroChartDef[] = [
       <span key="copyright">
         著作権は Freddie Mac にある。週次 (木曜発表) の値を金曜時点に揃えている。
       </span>,
+    ],
+  },
+  {
+    primaryIndicator: 'hy-spread',
+    title: '信用スプレッド',
+    subtitle: '社債と国債の利回り差 (拡大がリスク回避)',
+    kind: 'percent',
+    series: [
+      { key: 'hySpread', label: 'ハイイールド債', color: COLORS.hySpread },
+      { key: 'igSpread', label: '投資適格債', color: COLORS.igSpread },
+    ],
+    notes: [
+      <span key="meaning">
+        <strong>拡大がリスク回避、縮小がリスク選好。</strong>
+        投資家が低格付け債を敬遠すると利回り差が広がる。
+        <strong>株式より早く動くことがある</strong>ため、相場の転換を捉える手がかりになる。
+      </span>,
+      <span key="two">
+        ハイイールド債 (低格付け) の方が振れが大きい。
+        <strong>投資適格債まで広がったら信用不安が優良企業に及んでいる</strong>合図。
+      </span>,
+      <span key="no-threshold">
+        水準の目安となる補助線は引いていない。閾値に定説が無く恣意的になるため
+        (VIX・イールドスプレッドと同じ判断)。過去の水準と比べて読むこと。
+      </span>,
+      <span key="copyright">著作権は Ice Data Indices にある。</span>,
     ],
   },
   {
@@ -147,6 +178,36 @@ const CHARTS: MacroChartDef[] = [
       <span key="no-guide">
         水準の目安となる補助線は引いていない。閾値の置き方に定説が無く、恣意的な基準を
         示すことになるため。
+      </span>,
+    ],
+  },
+  {
+    primaryIndicator: 'wti',
+    title: '原油価格 (WTI)',
+    subtitle: 'ドル/バレル',
+    series: [{ key: 'wti', label: 'WTI', color: COLORS.wti }],
+    notes: [
+      <span key="chain">
+        <strong>物価の起点。</strong>
+        エネルギーコストは輸入物価・生産者物価を通じて CPI に波及する。
+        物価の連鎖は<strong>経済統計のページ</strong>で見られる。
+      </span>,
+      <span key="weekly">週次 (金曜時点)。日次値を金曜に揃えている。</span>,
+    ],
+  },
+  {
+    primaryIndicator: 'dollar-index',
+    title: 'ドル指数 (実効為替)',
+    subtitle: '主要通貨に対するドルの総合的な強さ (Jan 2006 = 100)',
+    series: [{ key: 'dollarIndex', label: 'ドル指数', color: COLORS.dollarIndex }],
+    notes: [
+      <span key="vs-usdjpy">
+        <strong>USD/JPY とは別物。</strong>
+        あちらは円との 2 国間レート、こちらは貿易額で加重した総合指標。
+        円だけ動いてもドル指数はあまり動かない。
+      </span>,
+      <span key="impact">
+        ドル高は米企業の海外売上をドル換算で目減りさせるため、S&P 500 の業績に効く。
       </span>,
     ],
   },

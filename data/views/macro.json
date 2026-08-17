@@ -9,7 +9,12 @@
     "termSpread": 0.87,
     "mortgageRate": 3.43,
     "initialClaims": 266000,
-    "creditConditions": 0.142
+    "creditConditions": 0.142,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.4,
+    "wti": 41.83,
+    "dollarIndex": 112.3589
   },
   {
     "date": "2016-08-12",
@@ -21,7 +26,12 @@
     "termSpread": 0.8,
     "mortgageRate": 3.45,
     "initialClaims": 265000,
-    "creditConditions": 0.138
+    "creditConditions": 0.138,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.4,
+    "wti": 44.47,
+    "dollarIndex": 111.1787
   },
   {
     "date": "2016-08-19",
@@ -33,7 +43,12 @@
     "termSpread": 0.82,
     "mortgageRate": 3.43,
     "initialClaims": 264000,
-    "creditConditions": 0.137
+    "creditConditions": 0.137,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.4,
+    "wti": 48.48,
+    "dollarIndex": 110.8163
   },
   {
     "date": "2016-08-26",
@@ -45,7 +60,12 @@
     "termSpread": 0.78,
     "mortgageRate": 3.43,
     "initialClaims": 264000,
-    "creditConditions": 0.139
+    "creditConditions": 0.139,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.4,
+    "wti": 47.64,
+    "dollarIndex": 111.2035
   },
   {
     "date": "2016-09-02",
@@ -57,7 +77,12 @@
     "termSpread": 0.8,
     "mortgageRate": 3.46,
     "initialClaims": 261000,
-    "creditConditions": 0.145
+    "creditConditions": 0.145,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.4,
+    "wti": 44.39,
+    "dollarIndex": 112.0009
   },
   {
     "date": "2016-09-09",
@@ -69,7 +94,12 @@
     "termSpread": 0.88,
     "mortgageRate": 3.44,
     "initialClaims": 257000,
-    "creditConditions": 0.151
+    "creditConditions": 0.151,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.4,
+    "wti": 45.88,
+    "dollarIndex": 111.9879
   },
   {
     "date": "2016-09-16",
@@ -81,7 +111,12 @@
     "termSpread": 0.93,
     "mortgageRate": 3.5,
     "initialClaims": 252000,
-    "creditConditions": 0.157
+    "creditConditions": 0.157,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.4,
+    "wti": 43.04,
+    "dollarIndex": 113.1765
   },
   {
     "date": "2016-09-23",
@@ -93,7 +128,12 @@
     "termSpread": 0.85,
     "mortgageRate": 3.48,
     "initialClaims": 250000,
-    "creditConditions": 0.16
+    "creditConditions": 0.16,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.4,
+    "wti": 44.36,
+    "dollarIndex": 112.7166
   },
   {
     "date": "2016-09-30",
@@ -105,7 +145,12 @@
     "termSpread": 0.83,
     "mortgageRate": 3.42,
     "initialClaims": 247000,
-    "creditConditions": 0.162
+    "creditConditions": 0.162,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.29,
+    "wti": 47.72,
+    "dollarIndex": 112.2795
   },
   {
     "date": "2016-10-07",
@@ -117,7 +162,12 @@
     "termSpread": 0.9,
     "mortgageRate": 3.42,
     "initialClaims": 245000,
-    "creditConditions": 0.16
+    "creditConditions": 0.16,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.4,
+    "wti": 49.76,
+    "dollarIndex": 113.2915
   },
   {
     "date": "2016-10-14",
@@ -129,7 +179,12 @@
     "termSpread": 0.96,
     "mortgageRate": 3.47,
     "initialClaims": 250000,
-    "creditConditions": 0.154
+    "creditConditions": 0.154,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.41,
+    "wti": 50.35,
+    "dollarIndex": 113.7119
   },
   {
     "date": "2016-10-21",
@@ -141,7 +196,12 @@
     "termSpread": 0.9,
     "mortgageRate": 3.52,
     "initialClaims": 263000,
-    "creditConditions": 0.147
+    "creditConditions": 0.147,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.41,
+    "wti": 50.61,
+    "dollarIndex": 113.9015
   },
   {
     "date": "2016-10-28",
@@ -153,7 +213,12 @@
     "termSpread": 1,
     "mortgageRate": 3.47,
     "initialClaims": 256000,
-    "creditConditions": 0.136
+    "creditConditions": 0.136,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.41,
+    "wti": 48.72,
+    "dollarIndex": 114.0931
   },
   {
     "date": "2016-11-04",
@@ -165,7 +230,12 @@
     "termSpread": 0.99,
     "mortgageRate": 3.54,
     "initialClaims": 265000,
-    "creditConditions": 0.124
+    "creditConditions": 0.124,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.41,
+    "wti": 44.07,
+    "dollarIndex": 113.5828
   },
   {
     "date": "2016-11-11",
@@ -177,7 +247,12 @@
     "termSpread": 1.23,
     "mortgageRate": 3.57,
     "initialClaims": 250000,
-    "creditConditions": 0.111
+    "creditConditions": 0.111,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.41,
+    "wti": 43.39,
+    "dollarIndex": 115.9375
   },
   {
     "date": "2016-11-18",
@@ -189,7 +264,12 @@
     "termSpread": 1.27,
     "mortgageRate": 3.94,
     "initialClaims": 232000,
-    "creditConditions": 0.097
+    "creditConditions": 0.097,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.41,
+    "wti": 45.69,
+    "dollarIndex": 117.5936
   },
   {
     "date": "2016-11-25",
@@ -201,7 +281,12 @@
     "termSpread": 1.24,
     "mortgageRate": 4.03,
     "initialClaims": 246000,
-    "creditConditions": 0.084
+    "creditConditions": 0.084,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.41,
+    "wti": 46.72,
+    "dollarIndex": 118.02
   },
   {
     "date": "2016-12-02",
@@ -213,7 +298,12 @@
     "termSpread": 1.29,
     "mortgageRate": 4.08,
     "initialClaims": 255000,
-    "creditConditions": 0.071
+    "creditConditions": 0.071,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.41,
+    "wti": 51.7,
+    "dollarIndex": 117.3116
   },
   {
     "date": "2016-12-09",
@@ -225,7 +315,12 @@
     "termSpread": 1.32,
     "mortgageRate": 4.13,
     "initialClaims": 248000,
-    "creditConditions": 0.059
+    "creditConditions": 0.059,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.41,
+    "wti": 51.51,
+    "dollarIndex": 117.2834
   },
   {
     "date": "2016-12-16",
@@ -237,7 +332,12 @@
     "termSpread": 1.32,
     "mortgageRate": 4.16,
     "initialClaims": 252000,
-    "creditConditions": 0.048
+    "creditConditions": 0.048,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.66,
+    "wti": 51.93,
+    "dollarIndex": 118.3584
   },
   {
     "date": "2016-12-23",
@@ -249,7 +349,12 @@
     "termSpread": 1.33,
     "mortgageRate": 4.3,
     "initialClaims": 260000,
-    "creditConditions": 0.038
+    "creditConditions": 0.038,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.66,
+    "wti": 52.01,
+    "dollarIndex": 118.7856
   },
   {
     "date": "2016-12-30",
@@ -261,7 +366,12 @@
     "termSpread": 1.25,
     "mortgageRate": 4.32,
     "initialClaims": 257000,
-    "creditConditions": 0.027
+    "creditConditions": 0.027,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.55,
+    "wti": 53.75,
+    "dollarIndex": 118.3466
   },
   {
     "date": "2017-01-06",
@@ -273,7 +383,12 @@
     "termSpread": 1.2,
     "mortgageRate": 4.2,
     "initialClaims": 244000,
-    "creditConditions": 0.018
+    "creditConditions": 0.018,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.66,
+    "wti": 53.98,
+    "dollarIndex": 118.3495
   },
   {
     "date": "2017-01-13",
@@ -285,7 +400,12 @@
     "termSpread": 1.19,
     "mortgageRate": 4.12,
     "initialClaims": 245000,
-    "creditConditions": 0.009
+    "creditConditions": 0.009,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.66,
+    "wti": 52.36,
+    "dollarIndex": 117.9884
   },
   {
     "date": "2017-01-20",
@@ -297,7 +417,12 @@
     "termSpread": 1.28,
     "mortgageRate": 4.09,
     "initialClaims": 240000,
-    "creditConditions": 0
+    "creditConditions": 0,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.66,
+    "wti": 52.33,
+    "dollarIndex": 118.3182
   },
   {
     "date": "2017-01-27",
@@ -309,7 +434,12 @@
     "termSpread": 1.27,
     "mortgageRate": 4.19,
     "initialClaims": 250000,
-    "creditConditions": -0.007
+    "creditConditions": -0.007,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.66,
+    "wti": 53.18,
+    "dollarIndex": 117.0735
   },
   {
     "date": "2017-02-03",
@@ -321,7 +451,12 @@
     "termSpread": 1.28,
     "mortgageRate": 4.19,
     "initialClaims": 241000,
-    "creditConditions": -0.012
+    "creditConditions": -0.012,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.66,
+    "wti": 53.81,
+    "dollarIndex": 115.6259
   },
   {
     "date": "2017-02-10",
@@ -333,7 +468,12 @@
     "termSpread": 1.21,
     "mortgageRate": 4.17,
     "initialClaims": 230000,
-    "creditConditions": -0.015
+    "creditConditions": -0.015,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.66,
+    "wti": 53.84,
+    "dollarIndex": 116.148
   },
   {
     "date": "2017-02-17",
@@ -345,7 +485,12 @@
     "termSpread": 1.21,
     "mortgageRate": 4.15,
     "initialClaims": 233000,
-    "creditConditions": -0.015
+    "creditConditions": -0.015,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.66,
+    "wti": 53.41,
+    "dollarIndex": 116.4035
   },
   {
     "date": "2017-02-24",
@@ -357,7 +502,12 @@
     "termSpread": 1.19,
     "mortgageRate": 4.16,
     "initialClaims": 237000,
-    "creditConditions": -0.014
+    "creditConditions": -0.014,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.66,
+    "wti": 53.99,
+    "dollarIndex": 115.8143
   },
   {
     "date": "2017-03-03",
@@ -369,7 +519,12 @@
     "termSpread": 1.17,
     "mortgageRate": 4.1,
     "initialClaims": 221000,
-    "creditConditions": -0.011
+    "creditConditions": -0.011,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.66,
+    "wti": 53.33,
+    "dollarIndex": 116.6438
   },
   {
     "date": "2017-03-10",
@@ -381,7 +536,12 @@
     "termSpread": 1.22,
     "mortgageRate": 4.21,
     "initialClaims": 236000,
-    "creditConditions": -0.007
+    "creditConditions": -0.007,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.66,
+    "wti": 48.05,
+    "dollarIndex": 116.616
   },
   {
     "date": "2017-03-17",
@@ -393,7 +553,12 @@
     "termSpread": 1.17,
     "mortgageRate": 4.3,
     "initialClaims": 228000,
-    "creditConditions": -0.004
+    "creditConditions": -0.004,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.91,
+    "wti": 48.34,
+    "dollarIndex": 115.2783
   },
   {
     "date": "2017-03-24",
@@ -405,7 +570,12 @@
     "termSpread": 1.14,
     "mortgageRate": 4.23,
     "initialClaims": 235000,
-    "creditConditions": -0.001
+    "creditConditions": -0.001,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.91,
+    "wti": 47.3,
+    "dollarIndex": 114.6372
   },
   {
     "date": "2017-03-31",
@@ -417,7 +587,12 @@
     "termSpread": 1.13,
     "mortgageRate": 4.14,
     "initialClaims": 236000,
-    "creditConditions": -0.001
+    "creditConditions": -0.001,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.82,
+    "wti": 50.54,
+    "dollarIndex": 114.7938
   },
   {
     "date": "2017-04-07",
@@ -429,7 +604,12 @@
     "termSpread": 1.09,
     "mortgageRate": 4.1,
     "initialClaims": 216000,
-    "creditConditions": -0.003
+    "creditConditions": -0.003,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.91,
+    "wti": 52.25,
+    "dollarIndex": 115.0547
   },
   {
     "date": "2017-04-14",
@@ -441,7 +621,12 @@
     "termSpread": 1.03,
     "mortgageRate": 4.08,
     "initialClaims": 222000,
-    "creditConditions": -0.005
+    "creditConditions": -0.005,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.91,
+    "wti": 53.19,
+    "dollarIndex": 114.5368
   },
   {
     "date": "2017-04-21",
@@ -453,7 +638,12 @@
     "termSpread": 1.04,
     "mortgageRate": 3.97,
     "initialClaims": 231000,
-    "creditConditions": -0.008
+    "creditConditions": -0.008,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.91,
+    "wti": 49.64,
+    "dollarIndex": 114.8128
   },
   {
     "date": "2017-04-28",
@@ -465,7 +655,12 @@
     "termSpread": 1.01,
     "mortgageRate": 4.03,
     "initialClaims": 238000,
-    "creditConditions": -0.012
+    "creditConditions": -0.012,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.83,
+    "wti": 49.31,
+    "dollarIndex": 114.7877
   },
   {
     "date": "2017-05-05",
@@ -477,7 +672,12 @@
     "termSpread": 1.04,
     "mortgageRate": 4.02,
     "initialClaims": 232000,
-    "creditConditions": -0.015
+    "creditConditions": -0.015,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.91,
+    "wti": 46.23,
+    "dollarIndex": 114.7725
   },
   {
     "date": "2017-05-12",
@@ -489,7 +689,12 @@
     "termSpread": 1.04,
     "mortgageRate": 4.05,
     "initialClaims": 233000,
-    "creditConditions": -0.019
+    "creditConditions": -0.019,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.91,
+    "wti": 47.83,
+    "dollarIndex": 114.7479
   },
   {
     "date": "2017-05-19",
@@ -501,7 +706,12 @@
     "termSpread": 0.95,
     "mortgageRate": 4.02,
     "initialClaims": 234000,
-    "creditConditions": -0.023
+    "creditConditions": -0.023,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.91,
+    "wti": 50.32,
+    "dollarIndex": 113.7001
   },
   {
     "date": "2017-05-26",
@@ -513,7 +723,12 @@
     "termSpread": 0.95,
     "mortgageRate": 3.95,
     "initialClaims": 236000,
-    "creditConditions": -0.028
+    "creditConditions": -0.028,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.91,
+    "wti": 49.58,
+    "dollarIndex": 113.4839
   },
   {
     "date": "2017-06-02",
@@ -525,7 +740,12 @@
     "termSpread": 0.87,
     "mortgageRate": 3.94,
     "initialClaims": 253000,
-    "creditConditions": -0.034
+    "creditConditions": -0.034,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.91,
+    "wti": 47.68,
+    "dollarIndex": 113.1908
   },
   {
     "date": "2017-06-09",
@@ -537,7 +757,12 @@
     "termSpread": 0.86,
     "mortgageRate": 3.89,
     "initialClaims": 251000,
-    "creditConditions": -0.04
+    "creditConditions": -0.04,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.91,
+    "wti": 45.82,
+    "dollarIndex": 112.9562
   },
   {
     "date": "2017-06-16",
@@ -549,7 +774,12 @@
     "termSpread": 0.84,
     "mortgageRate": 3.91,
     "initialClaims": 245000,
-    "creditConditions": -0.047
+    "creditConditions": -0.047,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.16,
+    "wti": 44.73,
+    "dollarIndex": 112.6155
   },
   {
     "date": "2017-06-23",
@@ -561,7 +791,12 @@
     "termSpread": 0.81,
     "mortgageRate": 3.9,
     "initialClaims": 249000,
-    "creditConditions": -0.054
+    "creditConditions": -0.054,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.16,
+    "wti": 42.86,
+    "dollarIndex": 112.8665
   },
   {
     "date": "2017-06-30",
@@ -573,7 +808,12 @@
     "termSpread": 0.93,
     "mortgageRate": 3.88,
     "initialClaims": 247000,
-    "creditConditions": -0.06
+    "creditConditions": -0.06,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.06,
+    "wti": 46.02,
+    "dollarIndex": 111.9896
   },
   {
     "date": "2017-07-07",
@@ -585,7 +825,12 @@
     "termSpread": 0.99,
     "mortgageRate": 3.96,
     "initialClaims": 256000,
-    "creditConditions": -0.066
+    "creditConditions": -0.066,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.16,
+    "wti": 44.25,
+    "dollarIndex": 112.3137
   },
   {
     "date": "2017-07-14",
@@ -597,7 +842,12 @@
     "termSpread": 0.98,
     "mortgageRate": 4.03,
     "initialClaims": 259000,
-    "creditConditions": -0.07
+    "creditConditions": -0.07,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.16,
+    "wti": 46.53,
+    "dollarIndex": 110.9075
   },
   {
     "date": "2017-07-21",
@@ -609,7 +859,12 @@
     "termSpread": 0.88,
     "mortgageRate": 3.96,
     "initialClaims": 245000,
-    "creditConditions": -0.072
+    "creditConditions": -0.072,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.16,
+    "wti": 45.78,
+    "dollarIndex": 110.191
   },
   {
     "date": "2017-07-28",
@@ -621,7 +876,12 @@
     "termSpread": 0.96,
     "mortgageRate": 3.92,
     "initialClaims": 249000,
-    "creditConditions": -0.072
+    "creditConditions": -0.072,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.16,
+    "wti": 49.72,
+    "dollarIndex": 109.92
   },
   {
     "date": "2017-08-04",
@@ -633,7 +893,12 @@
     "termSpread": 0.91,
     "mortgageRate": 3.93,
     "initialClaims": 245000,
-    "creditConditions": -0.07
+    "creditConditions": -0.07,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.16,
+    "wti": 49.57,
+    "dollarIndex": 110.2808
   },
   {
     "date": "2017-08-11",
@@ -645,7 +910,12 @@
     "termSpread": 0.89,
     "mortgageRate": 3.9,
     "initialClaims": 254000,
-    "creditConditions": -0.066
+    "creditConditions": -0.066,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.16,
+    "wti": 48.81,
+    "dollarIndex": 110.0422
   },
   {
     "date": "2017-08-18",
@@ -657,7 +927,12 @@
     "termSpread": 0.86,
     "mortgageRate": 3.89,
     "initialClaims": 245000,
-    "creditConditions": -0.062
+    "creditConditions": -0.062,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.16,
+    "wti": 48.59,
+    "dollarIndex": 110.041
   },
   {
     "date": "2017-08-25",
@@ -669,7 +944,12 @@
     "termSpread": 0.82,
     "mortgageRate": 3.86,
     "initialClaims": 245000,
-    "creditConditions": -0.06
+    "creditConditions": -0.06,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.16,
+    "wti": 47.65,
+    "dollarIndex": 109.3415
   },
   {
     "date": "2017-09-01",
@@ -681,7 +961,12 @@
     "termSpread": 0.81,
     "mortgageRate": 3.82,
     "initialClaims": 247000,
-    "creditConditions": -0.059
+    "creditConditions": -0.059,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.16,
+    "wti": 47.32,
+    "dollarIndex": 109.0504
   },
   {
     "date": "2017-09-08",
@@ -693,7 +978,12 @@
     "termSpread": 0.79,
     "mortgageRate": 3.78,
     "initialClaims": 297000,
-    "creditConditions": -0.061
+    "creditConditions": -0.061,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.16,
+    "wti": 47.44,
+    "dollarIndex": 107.808
   },
   {
     "date": "2017-09-15",
@@ -705,7 +995,12 @@
     "termSpread": 0.81,
     "mortgageRate": 3.78,
     "initialClaims": 280000,
-    "creditConditions": -0.065
+    "creditConditions": -0.065,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.16,
+    "wti": 49.9,
+    "dollarIndex": 108.3147
   },
   {
     "date": "2017-09-22",
@@ -717,7 +1012,12 @@
     "termSpread": 0.8,
     "mortgageRate": 3.83,
     "initialClaims": 261000,
-    "creditConditions": -0.072
+    "creditConditions": -0.072,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.16,
+    "wti": 50.33,
+    "dollarIndex": 108.7542
   },
   {
     "date": "2017-09-29",
@@ -729,7 +1029,12 @@
     "termSpread": 0.86,
     "mortgageRate": 3.83,
     "initialClaims": 264000,
-    "creditConditions": -0.079
+    "creditConditions": -0.079,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.06,
+    "wti": 51.67,
+    "dollarIndex": 110.0867
   },
   {
     "date": "2017-10-06",
@@ -741,7 +1046,12 @@
     "termSpread": 0.83,
     "mortgageRate": 3.85,
     "initialClaims": 260000,
-    "creditConditions": -0.087
+    "creditConditions": -0.087,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.16,
+    "wti": 49.34,
+    "dollarIndex": 110.7841
   },
   {
     "date": "2017-10-13",
@@ -753,7 +1063,12 @@
     "termSpread": 0.77,
     "mortgageRate": 3.91,
     "initialClaims": 252000,
-    "creditConditions": -0.094
+    "creditConditions": -0.094,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.16,
+    "wti": 51.43,
+    "dollarIndex": 110.2669
   },
   {
     "date": "2017-10-20",
@@ -765,7 +1080,12 @@
     "termSpread": 0.79,
     "mortgageRate": 3.88,
     "initialClaims": 235000,
-    "creditConditions": -0.099
+    "creditConditions": -0.099,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.16,
+    "wti": 51.63,
+    "dollarIndex": 111.0375
   },
   {
     "date": "2017-10-27",
@@ -777,7 +1097,12 @@
     "termSpread": 0.83,
     "mortgageRate": 3.94,
     "initialClaims": 241000,
-    "creditConditions": -0.102
+    "creditConditions": -0.102,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.16,
+    "wti": 53.92,
+    "dollarIndex": 112.1495
   },
   {
     "date": "2017-11-03",
@@ -789,7 +1114,12 @@
     "termSpread": 0.71,
     "mortgageRate": 3.94,
     "initialClaims": 241000,
-    "creditConditions": -0.102
+    "creditConditions": -0.102,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.16,
+    "wti": 55.63,
+    "dollarIndex": 111.9383
   },
   {
     "date": "2017-11-10",
@@ -801,7 +1131,12 @@
     "termSpread": 0.73,
     "mortgageRate": 3.9,
     "initialClaims": 248000,
-    "creditConditions": -0.1
+    "creditConditions": -0.1,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.16,
+    "wti": 56.75,
+    "dollarIndex": 111.5626
   },
   {
     "date": "2017-11-17",
@@ -813,7 +1148,12 @@
     "termSpread": 0.62,
     "mortgageRate": 3.95,
     "initialClaims": 254000,
-    "creditConditions": -0.097
+    "creditConditions": -0.097,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.16,
+    "wti": 56.21,
+    "dollarIndex": 111.0016
   },
   {
     "date": "2017-11-24",
@@ -825,7 +1165,12 @@
     "termSpread": 0.59,
     "mortgageRate": 3.92,
     "initialClaims": 246000,
-    "creditConditions": -0.094
+    "creditConditions": -0.094,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.16,
+    "wti": 58.94,
+    "dollarIndex": 110.0253
   },
   {
     "date": "2017-12-01",
@@ -837,7 +1182,12 @@
     "termSpread": 0.59,
     "mortgageRate": 3.9,
     "initialClaims": 243000,
-    "creditConditions": -0.091
+    "creditConditions": -0.091,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.16,
+    "wti": 58.35,
+    "dollarIndex": 110.1413
   },
   {
     "date": "2017-12-08",
@@ -849,7 +1199,12 @@
     "termSpread": 0.58,
     "mortgageRate": 3.94,
     "initialClaims": 241000,
-    "creditConditions": -0.09
+    "creditConditions": -0.09,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.16,
+    "wti": 57.15,
+    "dollarIndex": 111.2273
   },
   {
     "date": "2017-12-15",
@@ -861,7 +1216,12 @@
     "termSpread": 0.51,
     "mortgageRate": 3.93,
     "initialClaims": 229000,
-    "creditConditions": -0.09
+    "creditConditions": -0.09,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.41,
+    "wti": 57.29,
+    "dollarIndex": 111.1286
   },
   {
     "date": "2017-12-22",
@@ -873,7 +1233,12 @@
     "termSpread": 0.57,
     "mortgageRate": 3.94,
     "initialClaims": 244000,
-    "creditConditions": -0.093
+    "creditConditions": -0.093,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.42,
+    "wti": 58.25,
+    "dollarIndex": 111.0997
   },
   {
     "date": "2017-12-29",
@@ -885,7 +1250,12 @@
     "termSpread": 0.51,
     "mortgageRate": 3.99,
     "initialClaims": 251000,
-    "creditConditions": -0.096
+    "creditConditions": -0.096,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.33,
+    "wti": 60.46,
+    "dollarIndex": 110.0783
   },
   {
     "date": "2018-01-05",
@@ -897,7 +1267,12 @@
     "termSpread": 0.51,
     "mortgageRate": 3.95,
     "initialClaims": 248000,
-    "creditConditions": -0.101
+    "creditConditions": -0.101,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.42,
+    "wti": 61.49,
+    "dollarIndex": 109.3496
   },
   {
     "date": "2018-01-12",
@@ -909,7 +1284,12 @@
     "termSpread": 0.56,
     "mortgageRate": 3.99,
     "initialClaims": 252000,
-    "creditConditions": -0.105
+    "creditConditions": -0.105,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.42,
+    "wti": 64.22,
+    "dollarIndex": 108.901
   },
   {
     "date": "2018-01-19",
@@ -921,7 +1301,12 @@
     "termSpread": 0.58,
     "mortgageRate": 4.04,
     "initialClaims": 230000,
-    "creditConditions": -0.107
+    "creditConditions": -0.107,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.42,
+    "wti": 63.38,
+    "dollarIndex": 107.9455
   },
   {
     "date": "2018-01-26",
@@ -933,7 +1318,12 @@
     "termSpread": 0.53,
     "mortgageRate": 4.15,
     "initialClaims": 231000,
-    "creditConditions": -0.106
+    "creditConditions": -0.106,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.42,
+    "wti": 66.27,
+    "dollarIndex": 106.6911
   },
   {
     "date": "2018-02-02",
@@ -945,7 +1335,12 @@
     "termSpread": 0.69,
     "mortgageRate": 4.22,
     "initialClaims": 228000,
-    "creditConditions": -0.101
+    "creditConditions": -0.101,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.42,
+    "wti": 65.5,
+    "dollarIndex": 107.1151
   },
   {
     "date": "2018-02-09",
@@ -957,7 +1352,12 @@
     "termSpread": 0.78,
     "mortgageRate": 4.32,
     "initialClaims": 224000,
-    "creditConditions": -0.093
+    "creditConditions": -0.093,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.42,
+    "wti": 59.2,
+    "dollarIndex": 108.2582
   },
   {
     "date": "2018-02-16",
@@ -969,7 +1369,12 @@
     "termSpread": 0.66,
     "mortgageRate": 4.38,
     "initialClaims": 225000,
-    "creditConditions": -0.082
+    "creditConditions": -0.082,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.42,
+    "wti": 61.89,
+    "dollarIndex": 107.0359
   },
   {
     "date": "2018-02-23",
@@ -981,7 +1386,12 @@
     "termSpread": 0.63,
     "mortgageRate": 4.4,
     "initialClaims": 219000,
-    "creditConditions": -0.07
+    "creditConditions": -0.07,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.42,
+    "wti": 63.52,
+    "dollarIndex": 107.6804
   },
   {
     "date": "2018-03-02",
@@ -993,7 +1403,12 @@
     "termSpread": 0.61,
     "mortgageRate": 4.43,
     "initialClaims": 216000,
-    "creditConditions": -0.058
+    "creditConditions": -0.058,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.42,
+    "wti": 61.19,
+    "dollarIndex": 108.5358
   },
   {
     "date": "2018-03-09",
@@ -1005,7 +1420,12 @@
     "termSpread": 0.63,
     "mortgageRate": 4.46,
     "initialClaims": 228000,
-    "creditConditions": -0.046
+    "creditConditions": -0.046,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.42,
+    "wti": 62.02,
+    "dollarIndex": 107.923
   },
   {
     "date": "2018-03-16",
@@ -1017,7 +1437,12 @@
     "termSpread": 0.54,
     "mortgageRate": 4.44,
     "initialClaims": 223000,
-    "creditConditions": -0.036
+    "creditConditions": -0.036,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.43,
+    "wti": 62.29,
+    "dollarIndex": 108.4332
   },
   {
     "date": "2018-03-23",
@@ -1029,7 +1454,12 @@
     "termSpread": 0.54,
     "mortgageRate": 4.45,
     "initialClaims": 225000,
-    "creditConditions": -0.03
+    "creditConditions": -0.03,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.68,
+    "wti": 65.8,
+    "dollarIndex": 107.7495
   },
   {
     "date": "2018-03-30",
@@ -1041,7 +1471,12 @@
     "termSpread": 0.47,
     "mortgageRate": 4.44,
     "initialClaims": 221000,
-    "creditConditions": -0.026
+    "creditConditions": -0.026,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.67,
+    "wti": 64.87,
+    "dollarIndex": 107.4784
   },
   {
     "date": "2018-04-06",
@@ -1053,7 +1488,12 @@
     "termSpread": 0.5,
     "mortgageRate": 4.4,
     "initialClaims": 232000,
-    "creditConditions": -0.027
+    "creditConditions": -0.027,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.69,
+    "wti": 62.03,
+    "dollarIndex": 107.7886
   },
   {
     "date": "2018-04-13",
@@ -1065,7 +1505,12 @@
     "termSpread": 0.45,
     "mortgageRate": 4.42,
     "initialClaims": 234000,
-    "creditConditions": -0.031
+    "creditConditions": -0.031,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.69,
+    "wti": 67.35,
+    "dollarIndex": 107.2368
   },
   {
     "date": "2018-04-20",
@@ -1077,7 +1522,12 @@
     "termSpread": 0.5,
     "mortgageRate": 4.47,
     "initialClaims": 236000,
-    "creditConditions": -0.037
+    "creditConditions": -0.037,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.7,
+    "wti": 68.26,
+    "dollarIndex": 108.1787
   },
   {
     "date": "2018-04-27",
@@ -1089,7 +1539,12 @@
     "termSpread": 0.47,
     "mortgageRate": 4.58,
     "initialClaims": 207000,
-    "creditConditions": -0.043
+    "creditConditions": -0.043,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.7,
+    "wti": 68.11,
+    "dollarIndex": 109.1735
   },
   {
     "date": "2018-05-04",
@@ -1101,7 +1556,12 @@
     "termSpread": 0.44,
     "mortgageRate": 4.55,
     "initialClaims": 209000,
-    "creditConditions": -0.049
+    "creditConditions": -0.049,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.7,
+    "wti": 69.71,
+    "dollarIndex": 110.25
   },
   {
     "date": "2018-05-11",
@@ -1113,7 +1573,12 @@
     "termSpread": 0.43,
     "mortgageRate": 4.55,
     "initialClaims": 211000,
-    "creditConditions": -0.055
+    "creditConditions": -0.055,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.7,
+    "wti": 70.69,
+    "dollarIndex": 110.2847
   },
   {
     "date": "2018-05-18",
@@ -1125,7 +1590,12 @@
     "termSpread": 0.51,
     "mortgageRate": 4.61,
     "initialClaims": 222000,
-    "creditConditions": -0.059
+    "creditConditions": -0.059,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.7,
+    "wti": 71.23,
+    "dollarIndex": 111.7171
   },
   {
     "date": "2018-05-25",
@@ -1137,7 +1607,12 @@
     "termSpread": 0.45,
     "mortgageRate": 4.66,
     "initialClaims": 230000,
-    "creditConditions": -0.062
+    "creditConditions": -0.062,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.7,
+    "wti": 67.92,
+    "dollarIndex": 111.5843
   },
   {
     "date": "2018-06-01",
@@ -1149,7 +1624,12 @@
     "termSpread": 0.42,
     "mortgageRate": 4.56,
     "initialClaims": 222000,
-    "creditConditions": -0.063
+    "creditConditions": -0.063,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.7,
+    "wti": 65.81,
+    "dollarIndex": 111.8265
   },
   {
     "date": "2018-06-08",
@@ -1161,7 +1641,12 @@
     "termSpread": 0.43,
     "mortgageRate": 4.54,
     "initialClaims": 223000,
-    "creditConditions": -0.064
+    "creditConditions": -0.064,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.7,
+    "wti": 65.77,
+    "dollarIndex": 112.1066
   },
   {
     "date": "2018-06-15",
@@ -1173,7 +1658,12 @@
     "termSpread": 0.38,
     "mortgageRate": 4.62,
     "initialClaims": 222000,
-    "creditConditions": -0.063
+    "creditConditions": -0.063,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.9,
+    "wti": 65.01,
+    "dollarIndex": 113.3379
   },
   {
     "date": "2018-06-22",
@@ -1185,7 +1675,12 @@
     "termSpread": 0.34,
     "mortgageRate": 4.57,
     "initialClaims": 218000,
-    "creditConditions": -0.063
+    "creditConditions": -0.063,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.92,
+    "wti": 69.02,
+    "dollarIndex": 113.3047
   },
   {
     "date": "2018-06-29",
@@ -1197,7 +1692,12 @@
     "termSpread": 0.33,
     "mortgageRate": 4.55,
     "initialClaims": 222000,
-    "creditConditions": -0.062
+    "creditConditions": -0.062,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.91,
+    "wti": 74.13,
+    "dollarIndex": 113.2586
   },
   {
     "date": "2018-07-06",
@@ -1209,7 +1709,12 @@
     "termSpread": 0.29,
     "mortgageRate": 4.52,
     "initialClaims": 228000,
-    "creditConditions": -0.062
+    "creditConditions": -0.062,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.91,
+    "wti": 73.78,
+    "dollarIndex": 112.6428
   },
   {
     "date": "2018-07-13",
@@ -1221,7 +1726,12 @@
     "termSpread": 0.24,
     "mortgageRate": 4.53,
     "initialClaims": 216000,
-    "creditConditions": -0.064
+    "creditConditions": -0.064,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.91,
+    "wti": 71.03,
+    "dollarIndex": 113.0705
   },
   {
     "date": "2018-07-20",
@@ -1233,7 +1743,12 @@
     "termSpread": 0.29,
     "mortgageRate": 4.52,
     "initialClaims": 205000,
-    "creditConditions": -0.066
+    "creditConditions": -0.066,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.91,
+    "wti": 70.31,
+    "dollarIndex": 113.3213
   },
   {
     "date": "2018-07-27",
@@ -1245,7 +1760,12 @@
     "termSpread": 0.29,
     "mortgageRate": 4.54,
     "initialClaims": 210000,
-    "creditConditions": -0.069
+    "creditConditions": -0.069,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.91,
+    "wti": 68.66,
+    "dollarIndex": 112.8125
   },
   {
     "date": "2018-08-03",
@@ -1257,7 +1777,12 @@
     "termSpread": 0.32,
     "mortgageRate": 4.6,
     "initialClaims": 207000,
-    "creditConditions": -0.072
+    "creditConditions": -0.072,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.91,
+    "wti": 68.49,
+    "dollarIndex": 113.012
   },
   {
     "date": "2018-08-10",
@@ -1269,7 +1794,12 @@
     "termSpread": 0.26,
     "mortgageRate": 4.59,
     "initialClaims": 210000,
-    "creditConditions": -0.075
+    "creditConditions": -0.075,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.91,
+    "wti": 67.61,
+    "dollarIndex": 114.3005
   },
   {
     "date": "2018-08-17",
@@ -1281,7 +1811,12 @@
     "termSpread": 0.26,
     "mortgageRate": 4.53,
     "initialClaims": 206000,
-    "creditConditions": -0.078
+    "creditConditions": -0.078,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.92,
+    "wti": 65.93,
+    "dollarIndex": 114.5339
   },
   {
     "date": "2018-08-24",
@@ -1293,7 +1828,12 @@
     "termSpread": 0.19,
     "mortgageRate": 4.51,
     "initialClaims": 207000,
-    "creditConditions": -0.081
+    "creditConditions": -0.081,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.92,
+    "wti": 69.71,
+    "dollarIndex": 113.5985
   },
   {
     "date": "2018-08-31",
@@ -1305,7 +1845,12 @@
     "termSpread": 0.24,
     "mortgageRate": 4.52,
     "initialClaims": 211000,
-    "creditConditions": -0.084
+    "creditConditions": -0.084,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.91,
+    "wti": 69.84,
+    "dollarIndex": 114.2755
   },
   {
     "date": "2018-09-07",
@@ -1317,7 +1862,12 @@
     "termSpread": 0.23,
     "mortgageRate": 4.54,
     "initialClaims": 201000,
-    "creditConditions": -0.087
+    "creditConditions": -0.087,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.92,
+    "wti": 67.73,
+    "dollarIndex": 114.5816
   },
   {
     "date": "2018-09-14",
@@ -1329,7 +1879,12 @@
     "termSpread": 0.21,
     "mortgageRate": 4.6,
     "initialClaims": 204000,
-    "creditConditions": -0.089
+    "creditConditions": -0.089,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.92,
+    "wti": 68.98,
+    "dollarIndex": 114.0657
   },
   {
     "date": "2018-09-21",
@@ -1341,7 +1896,12 @@
     "termSpread": 0.26,
     "mortgageRate": 4.65,
     "initialClaims": 206000,
-    "creditConditions": -0.09
+    "creditConditions": -0.09,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.92,
+    "wti": 70.8,
+    "dollarIndex": 113.5099
   },
   {
     "date": "2018-09-28",
@@ -1353,7 +1913,12 @@
     "termSpread": 0.24,
     "mortgageRate": 4.72,
     "initialClaims": 205000,
-    "creditConditions": -0.09
+    "creditConditions": -0.09,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.18,
+    "wti": 73.16,
+    "dollarIndex": 113.8077
   },
   {
     "date": "2018-10-05",
@@ -1365,7 +1930,12 @@
     "termSpread": 0.35,
     "mortgageRate": 4.71,
     "initialClaims": 210000,
-    "creditConditions": -0.088
+    "creditConditions": -0.088,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.18,
+    "wti": 74.26,
+    "dollarIndex": 114.561
   },
   {
     "date": "2018-10-12",
@@ -1377,7 +1947,12 @@
     "termSpread": 0.3,
     "mortgageRate": 4.9,
     "initialClaims": 211000,
-    "creditConditions": -0.084
+    "creditConditions": -0.084,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.18,
+    "wti": 71.41,
+    "dollarIndex": 114.3691
   },
   {
     "date": "2018-10-19",
@@ -1389,7 +1964,12 @@
     "termSpread": 0.28,
     "mortgageRate": 4.85,
     "initialClaims": 208000,
-    "creditConditions": -0.078
+    "creditConditions": -0.078,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.19,
+    "wti": 69.16,
+    "dollarIndex": 114.8567
   },
   {
     "date": "2018-10-26",
@@ -1401,7 +1981,12 @@
     "termSpread": 0.27,
     "mortgageRate": 4.86,
     "initialClaims": 217000,
-    "creditConditions": -0.068
+    "creditConditions": -0.068,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.2,
+    "wti": 67.58,
+    "dollarIndex": 115.473
   },
   {
     "date": "2018-11-02",
@@ -1413,7 +1998,12 @@
     "termSpread": 0.31,
     "mortgageRate": 4.83,
     "initialClaims": 216000,
-    "creditConditions": -0.056
+    "creditConditions": -0.056,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.19,
+    "wti": 63.12,
+    "dollarIndex": 115.643
   },
   {
     "date": "2018-11-09",
@@ -1425,7 +2015,12 @@
     "termSpread": 0.25,
     "mortgageRate": 4.94,
     "initialClaims": 218000,
-    "creditConditions": -0.04
+    "creditConditions": -0.04,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.19,
+    "wti": 60.19,
+    "dollarIndex": 116.4778
   },
   {
     "date": "2018-11-16",
@@ -1437,7 +2032,12 @@
     "termSpread": 0.27,
     "mortgageRate": 4.94,
     "initialClaims": 221000,
-    "creditConditions": -0.022
+    "creditConditions": -0.022,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.2,
+    "wti": 56.49,
+    "dollarIndex": 115.9258
   },
   {
     "date": "2018-11-23",
@@ -1449,7 +2049,12 @@
     "termSpread": 0.24,
     "mortgageRate": 4.81,
     "initialClaims": 225000,
-    "creditConditions": -0.002
+    "creditConditions": -0.002,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.2,
+    "wti": 54.41,
+    "dollarIndex": 116.4713
   },
   {
     "date": "2018-11-30",
@@ -1461,7 +2066,12 @@
     "termSpread": 0.21,
     "mortgageRate": 4.81,
     "initialClaims": 237000,
-    "creditConditions": 0.017
+    "creditConditions": 0.017,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.2,
+    "wti": 50.78,
+    "dollarIndex": 116.413
   },
   {
     "date": "2018-12-07",
@@ -1473,7 +2083,12 @@
     "termSpread": 0.13,
     "mortgageRate": 4.75,
     "initialClaims": 232000,
-    "creditConditions": 0.034
+    "creditConditions": 0.034,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.19,
+    "wti": 52.76,
+    "dollarIndex": 116.0847
   },
   {
     "date": "2018-12-14",
@@ -1485,7 +2100,12 @@
     "termSpread": 0.16,
     "mortgageRate": 4.63,
     "initialClaims": 208000,
-    "creditConditions": 0.047
+    "creditConditions": 0.047,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.19,
+    "wti": 51.26,
+    "dollarIndex": 116.79
   },
   {
     "date": "2018-12-21",
@@ -1497,7 +2117,12 @@
     "termSpread": 0.16,
     "mortgageRate": 4.62,
     "initialClaims": 217000,
-    "creditConditions": 0.055
+    "creditConditions": 0.055,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.4,
+    "wti": 45.38,
+    "dollarIndex": 116.2227
   },
   {
     "date": "2018-12-28",
@@ -1509,7 +2134,12 @@
     "termSpread": 0.2,
     "mortgageRate": 4.55,
     "initialClaims": 228000,
-    "creditConditions": 0.055
+    "creditConditions": 0.055,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.4,
+    "wti": 45.15,
+    "dollarIndex": 115.7232
   },
   {
     "date": "2019-01-04",
@@ -1521,7 +2151,12 @@
     "termSpread": 0.17,
     "mortgageRate": 4.51,
     "initialClaims": 238000,
-    "creditConditions": 0.05
+    "creditConditions": 0.05,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.4,
+    "wti": 47.76,
+    "dollarIndex": 114.9821
   },
   {
     "date": "2019-01-11",
@@ -1533,7 +2168,12 @@
     "termSpread": 0.16,
     "mortgageRate": 4.45,
     "initialClaims": 225000,
-    "creditConditions": 0.038
+    "creditConditions": 0.038,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.4,
+    "wti": 51.44,
+    "dollarIndex": 114.0404
   },
   {
     "date": "2019-01-18",
@@ -1545,7 +2185,12 @@
     "termSpread": 0.17,
     "mortgageRate": 4.45,
     "initialClaims": 218000,
-    "creditConditions": 0.024
+    "creditConditions": 0.024,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.4,
+    "wti": 53.6,
+    "dollarIndex": 114.558
   },
   {
     "date": "2019-01-25",
@@ -1557,7 +2202,12 @@
     "termSpread": 0.16,
     "mortgageRate": 4.45,
     "initialClaims": 214000,
-    "creditConditions": 0.008
+    "creditConditions": 0.008,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.4,
+    "wti": 53.53,
+    "dollarIndex": 114.0197
   },
   {
     "date": "2019-02-01",
@@ -1569,7 +2219,12 @@
     "termSpread": 0.18,
     "mortgageRate": 4.46,
     "initialClaims": 234000,
-    "creditConditions": -0.008
+    "creditConditions": -0.008,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.4,
+    "wti": 55.29,
+    "dollarIndex": 113.7548
   },
   {
     "date": "2019-02-08",
@@ -1581,7 +2236,12 @@
     "termSpread": 0.18,
     "mortgageRate": 4.41,
     "initialClaims": 232000,
-    "creditConditions": -0.022
+    "creditConditions": -0.022,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.4,
+    "wti": 52.75,
+    "dollarIndex": 114.5003
   },
   {
     "date": "2019-02-15",
@@ -1593,7 +2253,12 @@
     "termSpread": 0.14,
     "mortgageRate": 4.37,
     "initialClaims": 226000,
-    "creditConditions": -0.033
+    "creditConditions": -0.033,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.4,
+    "wti": 55.58,
+    "dollarIndex": 114.9923
   },
   {
     "date": "2019-02-22",
@@ -1605,7 +2270,12 @@
     "termSpread": 0.17,
     "mortgageRate": 4.35,
     "initialClaims": 211000,
-    "creditConditions": -0.041
+    "creditConditions": -0.041,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.4,
+    "wti": 57.01,
+    "dollarIndex": 114.2716
   },
   {
     "date": "2019-03-01",
@@ -1617,7 +2287,12 @@
     "termSpread": 0.21,
     "mortgageRate": 4.35,
     "initialClaims": 221000,
-    "creditConditions": -0.046
+    "creditConditions": -0.046,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.4,
+    "wti": 55.76,
+    "dollarIndex": 114.537
   },
   {
     "date": "2019-03-08",
@@ -1629,7 +2304,12 @@
     "termSpread": 0.17,
     "mortgageRate": 4.41,
     "initialClaims": 216000,
-    "creditConditions": -0.049
+    "creditConditions": -0.049,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.4,
+    "wti": 55.77,
+    "dollarIndex": 115.3599
   },
   {
     "date": "2019-03-15",
@@ -1641,7 +2321,12 @@
     "termSpread": 0.16,
     "mortgageRate": 4.31,
     "initialClaims": 218000,
-    "creditConditions": -0.051
+    "creditConditions": -0.051,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.4,
+    "wti": 58.51,
+    "dollarIndex": 114.5815
   },
   {
     "date": "2019-03-22",
@@ -1653,7 +2338,12 @@
     "termSpread": 0.13,
     "mortgageRate": 4.28,
     "initialClaims": 212000,
-    "creditConditions": -0.052
+    "creditConditions": -0.052,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.41,
+    "wti": 58.87,
+    "dollarIndex": 114.6856
   },
   {
     "date": "2019-03-29",
@@ -1665,7 +2355,12 @@
     "termSpread": 0.14,
     "mortgageRate": 4.06,
     "initialClaims": 210000,
-    "creditConditions": -0.053
+    "creditConditions": -0.053,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.43,
+    "wti": 60.19,
+    "dollarIndex": 115.1371
   },
   {
     "date": "2019-04-05",
@@ -1677,7 +2372,12 @@
     "termSpread": 0.15,
     "mortgageRate": 4.08,
     "initialClaims": 203000,
-    "creditConditions": -0.055
+    "creditConditions": -0.055,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.41,
+    "wti": 63.1,
+    "dollarIndex": 114.9726
   },
   {
     "date": "2019-04-12",
@@ -1689,7 +2389,12 @@
     "termSpread": 0.16,
     "mortgageRate": 4.12,
     "initialClaims": 196000,
-    "creditConditions": -0.056
+    "creditConditions": -0.056,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.41,
+    "wti": 63.86,
+    "dollarIndex": 114.3531
   },
   {
     "date": "2019-04-19",
@@ -1701,7 +2406,12 @@
     "termSpread": 0.19,
     "mortgageRate": 4.17,
     "initialClaims": 197000,
-    "creditConditions": -0.056
+    "creditConditions": -0.056,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.44,
+    "wti": 64.02,
+    "dollarIndex": 114.6977
   },
   {
     "date": "2019-04-26",
@@ -1713,7 +2423,12 @@
     "termSpread": 0.23,
     "mortgageRate": 4.2,
     "initialClaims": 222000,
-    "creditConditions": -0.055
+    "creditConditions": -0.055,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.44,
+    "wti": 63.29,
+    "dollarIndex": 115.4767
   },
   {
     "date": "2019-05-03",
@@ -1725,7 +2440,12 @@
     "termSpread": 0.21,
     "mortgageRate": 4.14,
     "initialClaims": 224000,
-    "creditConditions": -0.053
+    "creditConditions": -0.053,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.4,
+    "wti": 61.98,
+    "dollarIndex": 115.2646
   },
   {
     "date": "2019-05-10",
@@ -1737,7 +2457,12 @@
     "termSpread": 0.21,
     "mortgageRate": 4.1,
     "initialClaims": 225000,
-    "creditConditions": -0.049
+    "creditConditions": -0.049,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.38,
+    "wti": 61.65,
+    "dollarIndex": 115.5334
   },
   {
     "date": "2019-05-17",
@@ -1749,7 +2474,12 @@
     "termSpread": 0.19,
     "mortgageRate": 4.07,
     "initialClaims": 212000,
-    "creditConditions": -0.044
+    "creditConditions": -0.044,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.39,
+    "wti": 62.77,
+    "dollarIndex": 116.448
   },
   {
     "date": "2019-05-24",
@@ -1761,7 +2491,12 @@
     "termSpread": 0.16,
     "mortgageRate": 4.06,
     "initialClaims": 215000,
-    "creditConditions": -0.04
+    "creditConditions": -0.04,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.38,
+    "wti": 58.4,
+    "dollarIndex": 116.0806
   },
   {
     "date": "2019-05-31",
@@ -1773,7 +2508,12 @@
     "termSpread": 0.19,
     "mortgageRate": 3.99,
     "initialClaims": 222000,
-    "creditConditions": -0.036
+    "creditConditions": -0.036,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.4,
+    "wti": 53.49,
+    "dollarIndex": 116.7273
   },
   {
     "date": "2019-06-07",
@@ -1785,7 +2525,12 @@
     "termSpread": 0.24,
     "mortgageRate": 3.82,
     "initialClaims": 223000,
-    "creditConditions": -0.034
+    "creditConditions": -0.034,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.37,
+    "wti": 53.95,
+    "dollarIndex": 115.7368
   },
   {
     "date": "2019-06-14",
@@ -1797,7 +2542,12 @@
     "termSpread": 0.25,
     "mortgageRate": 3.82,
     "initialClaims": 226000,
-    "creditConditions": -0.033
+    "creditConditions": -0.033,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.36,
+    "wti": 52.47,
+    "dollarIndex": 115.9057
   },
   {
     "date": "2019-06-21",
@@ -1809,7 +2559,12 @@
     "termSpread": 0.3,
     "mortgageRate": 3.84,
     "initialClaims": 217000,
-    "creditConditions": -0.032
+    "creditConditions": -0.032,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.38,
+    "wti": 57.35,
+    "dollarIndex": 114.8377
   },
   {
     "date": "2019-06-28",
@@ -1821,7 +2576,12 @@
     "termSpread": 0.25,
     "mortgageRate": 3.73,
     "initialClaims": 234000,
-    "creditConditions": -0.031
+    "creditConditions": -0.031,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.4,
+    "wti": 58.2,
+    "dollarIndex": 114.5821
   },
   {
     "date": "2019-07-05",
@@ -1833,7 +2593,12 @@
     "termSpread": 0.17,
     "mortgageRate": 3.75,
     "initialClaims": 226000,
-    "creditConditions": -0.029
+    "creditConditions": -0.029,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.42,
+    "wti": 57.06,
+    "dollarIndex": 115.1132
   },
   {
     "date": "2019-07-12",
@@ -1845,7 +2610,12 @@
     "termSpread": 0.28,
     "mortgageRate": 3.75,
     "initialClaims": 215000,
-    "creditConditions": -0.026
+    "creditConditions": -0.026,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.38,
+    "wti": 59.99,
+    "dollarIndex": 114.7685
   },
   {
     "date": "2019-07-19",
@@ -1857,7 +2627,12 @@
     "termSpread": 0.25,
     "mortgageRate": 3.81,
     "initialClaims": 211000,
-    "creditConditions": -0.022
+    "creditConditions": -0.022,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.41,
+    "wti": 55.42,
+    "dollarIndex": 114.8695
   },
   {
     "date": "2019-07-26",
@@ -1869,7 +2644,12 @@
     "termSpread": 0.22,
     "mortgageRate": 3.75,
     "initialClaims": 202000,
-    "creditConditions": -0.015
+    "creditConditions": -0.015,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.4,
+    "wti": 56.04,
+    "dollarIndex": 115.5449
   },
   {
     "date": "2019-08-02",
@@ -1881,7 +2661,12 @@
     "termSpread": 0.14,
     "mortgageRate": 3.75,
     "initialClaims": 206000,
-    "creditConditions": -0.007
+    "creditConditions": -0.007,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.14,
+    "wti": 55.67,
+    "dollarIndex": 116.1864
   },
   {
     "date": "2019-08-09",
@@ -1893,7 +2678,12 @@
     "termSpread": 0.11,
     "mortgageRate": 3.6,
     "initialClaims": 208000,
-    "creditConditions": 0.002
+    "creditConditions": 0.002,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.12,
+    "wti": 54.41,
+    "dollarIndex": 116.4419
   },
   {
     "date": "2019-08-16",
@@ -1905,7 +2695,12 @@
     "termSpread": 0.07,
     "mortgageRate": 3.6,
     "initialClaims": 212000,
-    "creditConditions": 0.011
+    "creditConditions": 0.011,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.13,
+    "wti": 54.83,
+    "dollarIndex": 117.0786
   },
   {
     "date": "2019-08-23",
@@ -1917,7 +2712,12 @@
     "termSpread": 0.01,
     "mortgageRate": 3.55,
     "initialClaims": 207000,
-    "creditConditions": 0.019
+    "creditConditions": 0.019,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.12,
+    "wti": 54.08,
+    "dollarIndex": 117.3009
   },
   {
     "date": "2019-08-30",
@@ -1929,7 +2729,12 @@
     "termSpread": 0,
     "mortgageRate": 3.58,
     "initialClaims": 213000,
-    "creditConditions": 0.025
+    "creditConditions": 0.025,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.13,
+    "wti": 55.07,
+    "dollarIndex": 118.1575
   },
   {
     "date": "2019-09-06",
@@ -1941,7 +2746,12 @@
     "termSpread": 0.02,
     "mortgageRate": 3.49,
     "initialClaims": 215000,
-    "creditConditions": 0.027
+    "creditConditions": 0.027,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.12,
+    "wti": 56.45,
+    "dollarIndex": 117.1292
   },
   {
     "date": "2019-09-13",
@@ -1953,7 +2763,12 @@
     "termSpread": 0.11,
     "mortgageRate": 3.56,
     "initialClaims": 207000,
-    "creditConditions": 0.027
+    "creditConditions": 0.027,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.14,
+    "wti": 54.76,
+    "dollarIndex": 116.7677
   },
   {
     "date": "2019-09-20",
@@ -1965,7 +2780,12 @@
     "termSpread": 0.05,
     "mortgageRate": 3.73,
     "initialClaims": 205000,
-    "creditConditions": 0.023
+    "creditConditions": 0.023,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.9,
+    "wti": 57.92,
+    "dollarIndex": 117.1819
   },
   {
     "date": "2019-09-27",
@@ -1977,7 +2797,12 @@
     "termSpread": 0.06,
     "mortgageRate": 3.64,
     "initialClaims": 211000,
-    "creditConditions": 0.018
+    "creditConditions": 0.018,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.83,
+    "wti": 55.95,
+    "dollarIndex": 117.7218
   },
   {
     "date": "2019-10-04",
@@ -1989,7 +2814,12 @@
     "termSpread": 0.12,
     "mortgageRate": 3.65,
     "initialClaims": 215000,
-    "creditConditions": 0.01
+    "creditConditions": 0.01,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.82,
+    "wti": 52.84,
+    "dollarIndex": 117.5288
   },
   {
     "date": "2019-10-11",
@@ -2001,7 +2831,12 @@
     "termSpread": 0.13,
     "mortgageRate": 3.57,
     "initialClaims": 209000,
-    "creditConditions": 0.001
+    "creditConditions": 0.001,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.82,
+    "wti": 54.76,
+    "dollarIndex": 116.8239
   },
   {
     "date": "2019-10-18",
@@ -2013,7 +2848,12 @@
     "termSpread": 0.18,
     "mortgageRate": 3.69,
     "initialClaims": 215000,
-    "creditConditions": -0.008
+    "creditConditions": -0.008,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.85,
+    "wti": 53.75,
+    "dollarIndex": 116.1344
   },
   {
     "date": "2019-10-25",
@@ -2025,7 +2865,12 @@
     "termSpread": 0.17,
     "mortgageRate": 3.75,
     "initialClaims": 210000,
-    "creditConditions": -0.015
+    "creditConditions": -0.015,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.83,
+    "wti": 56.52,
+    "dollarIndex": 116.0774
   },
   {
     "date": "2019-11-01",
@@ -2037,7 +2882,12 @@
     "termSpread": 0.17,
     "mortgageRate": 3.78,
     "initialClaims": 215000,
-    "creditConditions": -0.021
+    "creditConditions": -0.021,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.57,
+    "wti": 56.04,
+    "dollarIndex": 115.7312
   },
   {
     "date": "2019-11-08",
@@ -2049,7 +2899,12 @@
     "termSpread": 0.26,
     "mortgageRate": 3.69,
     "initialClaims": 214000,
-    "creditConditions": -0.024
+    "creditConditions": -0.024,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.55,
+    "wti": 57.02,
+    "dollarIndex": 116.3436
   },
   {
     "date": "2019-11-15",
@@ -2061,7 +2916,12 @@
     "termSpread": 0.23,
     "mortgageRate": 3.75,
     "initialClaims": 227000,
-    "creditConditions": -0.026
+    "creditConditions": -0.026,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.55,
+    "wti": 57.54,
+    "dollarIndex": 116.4401
   },
   {
     "date": "2019-11-22",
@@ -2073,7 +2933,12 @@
     "termSpread": 0.16,
     "mortgageRate": 3.66,
     "initialClaims": 229000,
-    "creditConditions": -0.026
+    "creditConditions": -0.026,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.55,
+    "wti": 57.68,
+    "dollarIndex": 116.9137
   },
   {
     "date": "2019-11-29",
@@ -2085,7 +2950,12 @@
     "termSpread": 0.17,
     "mortgageRate": 3.68,
     "initialClaims": 221000,
-    "creditConditions": -0.026
+    "creditConditions": -0.026,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.56,
+    "wti": 58.12,
+    "dollarIndex": 117.1204
   },
   {
     "date": "2019-12-06",
@@ -2097,7 +2967,12 @@
     "termSpread": 0.23,
     "mortgageRate": 3.68,
     "initialClaims": 231000,
-    "creditConditions": -0.027
+    "creditConditions": -0.027,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.55,
+    "wti": 59.2,
+    "dollarIndex": 116.5381
   },
   {
     "date": "2019-12-13",
@@ -2109,7 +2984,12 @@
     "termSpread": 0.21,
     "mortgageRate": 3.73,
     "initialClaims": 247000,
-    "creditConditions": -0.031
+    "creditConditions": -0.031,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.55,
+    "wti": 60.11,
+    "dollarIndex": 115.6967
   },
   {
     "date": "2019-12-20",
@@ -2121,7 +3001,12 @@
     "termSpread": 0.29,
     "mortgageRate": 3.73,
     "initialClaims": 236000,
-    "creditConditions": -0.039
+    "creditConditions": -0.039,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.55,
+    "wti": 60.43,
+    "dollarIndex": 115.7598
   },
   {
     "date": "2019-12-27",
@@ -2133,7 +3018,12 @@
     "termSpread": 0.29,
     "mortgageRate": 3.74,
     "initialClaims": 230000,
-    "creditConditions": -0.052
+    "creditConditions": -0.052,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.55,
+    "wti": 61.76,
+    "dollarIndex": 115.22
   },
   {
     "date": "2020-01-03",
@@ -2145,7 +3035,12 @@
     "termSpread": 0.27,
     "mortgageRate": 3.72,
     "initialClaims": 231000,
-    "creditConditions": -0.067
+    "creditConditions": -0.067,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.55,
+    "wti": 63,
+    "dollarIndex": 114.9867
   },
   {
     "date": "2020-01-10",
@@ -2157,7 +3052,12 @@
     "termSpread": 0.27,
     "mortgageRate": 3.64,
     "initialClaims": 224000,
-    "creditConditions": -0.083
+    "creditConditions": -0.083,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.54,
+    "wti": 59.02,
+    "dollarIndex": 115.0677
   },
   {
     "date": "2020-01-17",
@@ -2169,7 +3069,12 @@
     "termSpread": 0.26,
     "mortgageRate": 3.65,
     "initialClaims": 207000,
-    "creditConditions": -0.096
+    "creditConditions": -0.096,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.55,
+    "wti": 58.55,
+    "dollarIndex": 115.0656
   },
   {
     "date": "2020-01-24",
@@ -2181,7 +3086,12 @@
     "termSpread": 0.21,
     "mortgageRate": 3.6,
     "initialClaims": 221000,
-    "creditConditions": -0.101
+    "creditConditions": -0.101,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.55,
+    "wti": 54.09,
+    "dollarIndex": 115.5556
   },
   {
     "date": "2020-01-31",
@@ -2193,7 +3103,12 @@
     "termSpread": 0.18,
     "mortgageRate": 3.51,
     "initialClaims": 210000,
-    "creditConditions": -0.092
+    "creditConditions": -0.092,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.59,
+    "wti": 51.58,
+    "dollarIndex": 115.7345
   },
   {
     "date": "2020-02-07",
@@ -2205,7 +3120,12 @@
     "termSpread": 0.18,
     "mortgageRate": 3.45,
     "initialClaims": 207000,
-    "creditConditions": -0.065
+    "creditConditions": -0.065,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.58,
+    "wti": 50.34,
+    "dollarIndex": 116.5086
   },
   {
     "date": "2020-02-14",
@@ -2217,7 +3137,12 @@
     "termSpread": 0.17,
     "mortgageRate": 3.47,
     "initialClaims": 202000,
-    "creditConditions": -0.016
+    "creditConditions": -0.016,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.58,
+    "wti": 52.03,
+    "dollarIndex": 116.4223
   },
   {
     "date": "2020-02-21",
@@ -2229,7 +3154,12 @@
     "termSpread": 0.12,
     "mortgageRate": 3.49,
     "initialClaims": 209000,
-    "creditConditions": 0.057
+    "creditConditions": 0.057,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.58,
+    "wti": 53.36,
+    "dollarIndex": 117.0473
   },
   {
     "date": "2020-02-28",
@@ -2241,7 +3171,12 @@
     "termSpread": 0.27,
     "mortgageRate": 3.45,
     "initialClaims": 218000,
-    "creditConditions": 0.151
+    "creditConditions": 0.151,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.58,
+    "wti": 44.83,
+    "dollarIndex": 117.6568
   },
   {
     "date": "2020-03-06",
@@ -2253,7 +3188,12 @@
     "termSpread": 0.25,
     "mortgageRate": 3.29,
     "initialClaims": 215000,
-    "creditConditions": 0.258
+    "creditConditions": 0.258,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.09,
+    "wti": 41.14,
+    "dollarIndex": 116.7106
   },
   {
     "date": "2020-03-13",
@@ -2265,7 +3205,12 @@
     "termSpread": 0.45,
     "mortgageRate": 3.36,
     "initialClaims": 208000,
-    "creditConditions": 0.369
+    "creditConditions": 0.369,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.1,
+    "wti": 31.72,
+    "dollarIndex": 120.4388
   },
   {
     "date": "2020-03-20",
@@ -2277,7 +3222,12 @@
     "termSpread": 0.55,
     "mortgageRate": 3.65,
     "initialClaims": 273000,
-    "creditConditions": 0.472
+    "creditConditions": 0.472,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.15,
+    "wti": 19.48,
+    "dollarIndex": 124.9362
   },
   {
     "date": "2020-03-27",
@@ -2289,7 +3239,12 @@
     "termSpread": 0.47,
     "mortgageRate": 3.5,
     "initialClaims": 2914000,
-    "creditConditions": 0.552
+    "creditConditions": 0.552,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.1,
+    "wti": 15.48,
+    "dollarIndex": 122.4007
   },
   {
     "date": "2020-04-03",
@@ -2301,7 +3256,12 @@
     "termSpread": 0.39,
     "mortgageRate": 3.33,
     "initialClaims": 5946000,
-    "creditConditions": 0.604
+    "creditConditions": 0.604,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.05,
+    "wti": 28.36,
+    "dollarIndex": 124.4152
   },
   {
     "date": "2020-04-10",
@@ -2313,7 +3273,12 @@
     "termSpread": 0.5,
     "mortgageRate": 3.33,
     "initialClaims": 6137000,
-    "creditConditions": 0.627
+    "creditConditions": 0.627,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.05,
+    "wti": 22.9,
+    "dollarIndex": 122.1592
   },
   {
     "date": "2020-04-17",
@@ -2325,7 +3290,12 @@
     "termSpread": 0.45,
     "mortgageRate": 3.31,
     "initialClaims": 4869000,
-    "creditConditions": 0.621
+    "creditConditions": 0.621,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.05,
+    "wti": 18.31,
+    "dollarIndex": 122.871
   },
   {
     "date": "2020-04-24",
@@ -2337,7 +3307,12 @@
     "termSpread": 0.38,
     "mortgageRate": 3.33,
     "initialClaims": 4201000,
-    "creditConditions": 0.593
+    "creditConditions": 0.593,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.05,
+    "wti": 15.99,
+    "dollarIndex": 124.1615
   },
   {
     "date": "2020-05-01",
@@ -2349,7 +3324,12 @@
     "termSpread": 0.44,
     "mortgageRate": 3.23,
     "initialClaims": 3446000,
-    "creditConditions": 0.547
+    "creditConditions": 0.547,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.05,
+    "wti": 19.72,
+    "dollarIndex": 123.1492
   },
   {
     "date": "2020-05-08",
@@ -2361,7 +3341,12 @@
     "termSpread": 0.53,
     "mortgageRate": 3.26,
     "initialClaims": 2796000,
-    "creditConditions": 0.488
+    "creditConditions": 0.488,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.05,
+    "wti": 24.73,
+    "dollarIndex": 122.5379
   },
   {
     "date": "2020-05-15",
@@ -2373,7 +3358,12 @@
     "termSpread": 0.48,
     "mortgageRate": 3.28,
     "initialClaims": 2335000,
-    "creditConditions": 0.424
+    "creditConditions": 0.424,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.05,
+    "wti": 29.44,
+    "dollarIndex": 123.5991
   },
   {
     "date": "2020-05-22",
@@ -2385,7 +3375,12 @@
     "termSpread": 0.49,
     "mortgageRate": 3.24,
     "initialClaims": 2176000,
-    "creditConditions": 0.358
+    "creditConditions": 0.358,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.05,
+    "wti": 33.49,
+    "dollarIndex": 122.3211
   },
   {
     "date": "2020-05-29",
@@ -2397,7 +3392,12 @@
     "termSpread": 0.49,
     "mortgageRate": 3.15,
     "initialClaims": 1921000,
-    "creditConditions": 0.297
+    "creditConditions": 0.297,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.05,
+    "wti": 35.57,
+    "dollarIndex": 120.9458
   },
   {
     "date": "2020-06-05",
@@ -2409,7 +3409,12 @@
     "termSpread": 0.69,
     "mortgageRate": 3.18,
     "initialClaims": 1639000,
-    "creditConditions": 0.244
+    "creditConditions": 0.244,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.07,
+    "wti": 39.49,
+    "dollarIndex": 118.8138
   },
   {
     "date": "2020-06-12",
@@ -2421,7 +3426,12 @@
     "termSpread": 0.52,
     "mortgageRate": 3.21,
     "initialClaims": 1575000,
-    "creditConditions": 0.202
+    "creditConditions": 0.202,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.08,
+    "wti": 36.24,
+    "dollarIndex": 119.6645
   },
   {
     "date": "2020-06-19",
@@ -2433,7 +3443,12 @@
     "termSpread": 0.51,
     "mortgageRate": 3.13,
     "initialClaims": 1473000,
-    "creditConditions": 0.169
+    "creditConditions": 0.169,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.09,
+    "wti": 39.72,
+    "dollarIndex": 120.2186
   },
   {
     "date": "2020-06-26",
@@ -2445,7 +3460,12 @@
     "termSpread": 0.47,
     "mortgageRate": 3.13,
     "initialClaims": 1467000,
-    "creditConditions": 0.143
+    "creditConditions": 0.143,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.08,
+    "wti": 38.53,
+    "dollarIndex": 120.533
   },
   {
     "date": "2020-07-03",
@@ -2457,7 +3477,12 @@
     "termSpread": 0.52,
     "mortgageRate": 3.07,
     "initialClaims": 1446000,
-    "creditConditions": 0.123
+    "creditConditions": 0.123,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.09,
+    "wti": 40.57,
+    "dollarIndex": 119.8555
   },
   {
     "date": "2020-07-10",
@@ -2469,7 +3494,12 @@
     "termSpread": 0.49,
     "mortgageRate": 3.03,
     "initialClaims": 1413000,
-    "creditConditions": 0.105
+    "creditConditions": 0.105,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.09,
+    "wti": 40.56,
+    "dollarIndex": 119.3509
   },
   {
     "date": "2020-07-17",
@@ -2481,7 +3511,12 @@
     "termSpread": 0.5,
     "mortgageRate": 2.98,
     "initialClaims": 1468000,
-    "creditConditions": 0.087
+    "creditConditions": 0.087,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.09,
+    "wti": 40.55,
+    "dollarIndex": 119.124
   },
   {
     "date": "2020-07-24",
@@ -2493,7 +3528,12 @@
     "termSpread": 0.45,
     "mortgageRate": 3.01,
     "initialClaims": 1393000,
-    "creditConditions": 0.07
+    "creditConditions": 0.07,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.09,
+    "wti": 41.23,
+    "dollarIndex": 118.1329
   },
   {
     "date": "2020-07-31",
@@ -2505,7 +3545,12 @@
     "termSpread": 0.44,
     "mortgageRate": 2.99,
     "initialClaims": 1260000,
-    "creditConditions": 0.052
+    "creditConditions": 0.052,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.1,
+    "wti": 40.1,
+    "dollarIndex": 117.2082
   },
   {
     "date": "2020-08-07",
@@ -2517,7 +3562,12 @@
     "termSpread": 0.44,
     "mortgageRate": 2.88,
     "initialClaims": 1044000,
-    "creditConditions": 0.036
+    "creditConditions": 0.036,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.1,
+    "wti": 41.16,
+    "dollarIndex": 117.6239
   },
   {
     "date": "2020-08-14",
@@ -2529,7 +3579,12 @@
     "termSpread": 0.57,
     "mortgageRate": 2.96,
     "initialClaims": 884000,
-    "creditConditions": 0.021
+    "creditConditions": 0.021,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.1,
+    "wti": 42.05,
+    "dollarIndex": 116.9395
   },
   {
     "date": "2020-08-21",
@@ -2541,7 +3596,12 @@
     "termSpread": 0.48,
     "mortgageRate": 2.99,
     "initialClaims": 927000,
-    "creditConditions": 0.009
+    "creditConditions": 0.009,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.09,
+    "wti": 42.32,
+    "dollarIndex": 117.0572
   },
   {
     "date": "2020-08-28",
@@ -2553,7 +3613,12 @@
     "termSpread": 0.6,
     "mortgageRate": 2.91,
     "initialClaims": 876000,
-    "creditConditions": 0.001
+    "creditConditions": 0.001,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.09,
+    "wti": 42.96,
+    "dollarIndex": 115.9374
   },
   {
     "date": "2020-09-04",
@@ -2565,7 +3630,12 @@
     "termSpread": 0.58,
     "mortgageRate": 2.93,
     "initialClaims": 881000,
-    "creditConditions": -0.004
+    "creditConditions": -0.004,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.09,
+    "wti": 39.69,
+    "dollarIndex": 116.0347
   },
   {
     "date": "2020-09-11",
@@ -2577,7 +3647,12 @@
     "termSpread": 0.54,
     "mortgageRate": 2.86,
     "initialClaims": 892000,
-    "creditConditions": -0.006
+    "creditConditions": -0.006,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.09,
+    "wti": 37.33,
+    "dollarIndex": 116.0866
   },
   {
     "date": "2020-09-18",
@@ -2589,7 +3664,12 @@
     "termSpread": 0.56,
     "mortgageRate": 2.87,
     "initialClaims": 861000,
-    "creditConditions": -0.006
+    "creditConditions": -0.006,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.09,
+    "wti": 41.09,
+    "dollarIndex": 115.2395
   },
   {
     "date": "2020-09-25",
@@ -2601,7 +3681,12 @@
     "termSpread": 0.54,
     "mortgageRate": 2.9,
     "initialClaims": 859000,
-    "creditConditions": -0.004
+    "creditConditions": -0.004,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.09,
+    "wti": 40.06,
+    "dollarIndex": 117.8679
   },
   {
     "date": "2020-10-02",
@@ -2613,7 +3698,12 @@
     "termSpread": 0.57,
     "mortgageRate": 2.88,
     "initialClaims": 795000,
-    "creditConditions": -0.004
+    "creditConditions": -0.004,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.09,
+    "wti": 36.9,
+    "dollarIndex": 116.7321
   },
   {
     "date": "2020-10-09",
@@ -2625,7 +3715,12 @@
     "termSpread": 0.63,
     "mortgageRate": 2.87,
     "initialClaims": 785000,
-    "creditConditions": -0.006
+    "creditConditions": -0.006,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.09,
+    "wti": 40.44,
+    "dollarIndex": 115.2757
   },
   {
     "date": "2020-10-16",
@@ -2637,7 +3732,12 @@
     "termSpread": 0.62,
     "mortgageRate": 2.81,
     "initialClaims": 839000,
-    "creditConditions": -0.01
+    "creditConditions": -0.01,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.09,
+    "wti": 40.7,
+    "dollarIndex": 115.7679
   },
   {
     "date": "2020-10-23",
@@ -2649,7 +3749,12 @@
     "termSpread": 0.67,
     "mortgageRate": 2.8,
     "initialClaims": 804000,
-    "creditConditions": -0.015
+    "creditConditions": -0.015,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.09,
+    "wti": 39.73,
+    "dollarIndex": 115.0126
   },
   {
     "date": "2020-10-30",
@@ -2661,7 +3766,12 @@
     "termSpread": 0.74,
     "mortgageRate": 2.81,
     "initialClaims": 776000,
-    "creditConditions": -0.023
+    "creditConditions": -0.023,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.09,
+    "wti": 35.64,
+    "dollarIndex": 116.1354
   },
   {
     "date": "2020-11-06",
@@ -2673,7 +3783,12 @@
     "termSpread": 0.67,
     "mortgageRate": 2.78,
     "initialClaims": 773000,
-    "creditConditions": -0.032
+    "creditConditions": -0.032,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.09,
+    "wti": 36.97,
+    "dollarIndex": 113.9919
   },
   {
     "date": "2020-11-13",
@@ -2685,7 +3800,12 @@
     "termSpread": 0.72,
     "mortgageRate": 2.84,
     "initialClaims": 737000,
-    "creditConditions": -0.041
+    "creditConditions": -0.041,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.09,
+    "wti": 39.93,
+    "dollarIndex": 114.2397
   },
   {
     "date": "2020-11-20",
@@ -2697,7 +3817,12 @@
     "termSpread": 0.67,
     "mortgageRate": 2.72,
     "initialClaims": 738000,
-    "creditConditions": -0.051
+    "creditConditions": -0.051,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.08,
+    "wti": 41.99,
+    "dollarIndex": 113.489
   },
   {
     "date": "2020-11-27",
@@ -2709,7 +3834,12 @@
     "termSpread": 0.68,
     "mortgageRate": 2.72,
     "initialClaims": 793000,
-    "creditConditions": -0.059
+    "creditConditions": -0.059,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.08,
+    "wti": 45.58,
+    "dollarIndex": 113.1823
   },
   {
     "date": "2020-12-04",
@@ -2721,7 +3851,12 @@
     "termSpread": 0.81,
     "mortgageRate": 2.71,
     "initialClaims": 737000,
-    "creditConditions": -0.067
+    "creditConditions": -0.067,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.09,
+    "wti": 46.23,
+    "dollarIndex": 111.7778
   },
   {
     "date": "2020-12-11",
@@ -2733,7 +3868,12 @@
     "termSpread": 0.79,
     "mortgageRate": 2.71,
     "initialClaims": 873000,
-    "creditConditions": -0.074
+    "creditConditions": -0.074,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.09,
+    "wti": 46.59,
+    "dollarIndex": 112.1417
   },
   {
     "date": "2020-12-18",
@@ -2745,7 +3885,12 @@
     "termSpread": 0.82,
     "mortgageRate": 2.67,
     "initialClaims": 886000,
-    "creditConditions": -0.08
+    "creditConditions": -0.08,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.09,
+    "wti": 49.04,
+    "dollarIndex": 111.6071
   },
   {
     "date": "2020-12-25",
@@ -2757,7 +3902,12 @@
     "termSpread": 0.81,
     "mortgageRate": 2.66,
     "initialClaims": 815000,
-    "creditConditions": -0.086
+    "creditConditions": -0.086,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.09,
+    "wti": 48.18,
+    "dollarIndex": 111.9807
   },
   {
     "date": "2021-01-01",
@@ -2769,7 +3919,12 @@
     "termSpread": 0.8,
     "mortgageRate": 2.67,
     "initialClaims": 773000,
-    "creditConditions": -0.093
+    "creditConditions": -0.093,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.09,
+    "wti": 48.35,
+    "dollarIndex": 111.3169
   },
   {
     "date": "2021-01-08",
@@ -2781,7 +3936,12 @@
     "termSpread": 0.99,
     "mortgageRate": 2.65,
     "initialClaims": 803000,
-    "creditConditions": -0.099
+    "creditConditions": -0.099,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.09,
+    "wti": 52.14,
+    "dollarIndex": 111.2847
   },
   {
     "date": "2021-01-15",
@@ -2793,7 +3953,12 @@
     "termSpread": 0.98,
     "mortgageRate": 2.79,
     "initialClaims": 890000,
-    "creditConditions": -0.105
+    "creditConditions": -0.105,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.09,
+    "wti": 52.25,
+    "dollarIndex": 111.5106
   },
   {
     "date": "2021-01-22",
@@ -2805,7 +3970,12 @@
     "termSpread": 0.97,
     "mortgageRate": 2.77,
     "initialClaims": 844000,
-    "creditConditions": -0.111
+    "creditConditions": -0.111,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.08,
+    "wti": 52.28,
+    "dollarIndex": 111.5516
   },
   {
     "date": "2021-01-29",
@@ -2817,7 +3987,12 @@
     "termSpread": 1,
     "mortgageRate": 2.73,
     "initialClaims": 799000,
-    "creditConditions": -0.115
+    "creditConditions": -0.115,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.07,
+    "wti": 52.16,
+    "dollarIndex": 111.9511
   },
   {
     "date": "2021-02-05",
@@ -2829,7 +4004,12 @@
     "termSpread": 1.1,
     "mortgageRate": 2.73,
     "initialClaims": 803000,
-    "creditConditions": -0.12
+    "creditConditions": -0.12,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.08,
+    "wti": 56.8,
+    "dollarIndex": 112.2379
   },
   {
     "date": "2021-02-12",
@@ -2841,7 +4021,12 @@
     "termSpread": 1.09,
     "mortgageRate": 2.73,
     "initialClaims": 812000,
-    "creditConditions": -0.123
+    "creditConditions": -0.123,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.08,
+    "wti": 59.5,
+    "dollarIndex": 111.4889
   },
   {
     "date": "2021-02-19",
@@ -2853,7 +4038,12 @@
     "termSpread": 1.23,
     "mortgageRate": 2.81,
     "initialClaims": 802000,
-    "creditConditions": -0.127
+    "creditConditions": -0.127,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.07,
+    "wti": 59.12,
+    "dollarIndex": 111.7058
   },
   {
     "date": "2021-02-26",
@@ -2865,7 +4055,12 @@
     "termSpread": 1.3,
     "mortgageRate": 2.97,
     "initialClaims": 702000,
-    "creditConditions": -0.13
+    "creditConditions": -0.13,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.07,
+    "wti": 61.55,
+    "dollarIndex": 112.8306
   },
   {
     "date": "2021-03-05",
@@ -2877,7 +4072,12 @@
     "termSpread": 1.42,
     "mortgageRate": 3.02,
     "initialClaims": 704000,
-    "creditConditions": -0.134
+    "creditConditions": -0.134,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.07,
+    "wti": 66.08,
+    "dollarIndex": 113.7487
   },
   {
     "date": "2021-03-12",
@@ -2889,7 +4089,12 @@
     "termSpread": 1.5,
     "mortgageRate": 3.05,
     "initialClaims": 693000,
-    "creditConditions": -0.139
+    "creditConditions": -0.139,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.07,
+    "wti": 65.59,
+    "dollarIndex": 113.0269
   },
   {
     "date": "2021-03-19",
@@ -2901,7 +4106,12 @@
     "termSpread": 1.58,
     "mortgageRate": 3.09,
     "initialClaims": 699000,
-    "creditConditions": -0.145
+    "creditConditions": -0.145,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.07,
+    "wti": 61.43,
+    "dollarIndex": 112.9756
   },
   {
     "date": "2021-03-26",
@@ -2913,7 +4123,12 @@
     "termSpread": 1.53,
     "mortgageRate": 3.17,
     "initialClaims": 627000,
-    "creditConditions": -0.151
+    "creditConditions": -0.151,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.07,
+    "wti": 60.93,
+    "dollarIndex": 113.7406
   },
   {
     "date": "2021-04-02",
@@ -2925,7 +4140,12 @@
     "termSpread": 1.53,
     "mortgageRate": 3.18,
     "initialClaims": 658000,
-    "creditConditions": -0.158
+    "creditConditions": -0.158,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.07,
+    "wti": 61.41,
+    "dollarIndex": 113.7315
   },
   {
     "date": "2021-04-09",
@@ -2937,7 +4157,12 @@
     "termSpread": 1.51,
     "mortgageRate": 3.13,
     "initialClaims": 645000,
-    "creditConditions": -0.166
+    "creditConditions": -0.166,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.07,
+    "wti": 59.29,
+    "dollarIndex": 113.2028
   },
   {
     "date": "2021-04-16",
@@ -2949,7 +4174,12 @@
     "termSpread": 1.43,
     "mortgageRate": 3.04,
     "initialClaims": 571000,
-    "creditConditions": -0.172
+    "creditConditions": -0.172,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.07,
+    "wti": 63.16,
+    "dollarIndex": 112.4814
   },
   {
     "date": "2021-04-23",
@@ -2961,7 +4191,12 @@
     "termSpread": 1.42,
     "mortgageRate": 2.97,
     "initialClaims": 566000,
-    "creditConditions": -0.177
+    "creditConditions": -0.177,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.07,
+    "wti": 62.18,
+    "dollarIndex": 112.0889
   },
   {
     "date": "2021-04-30",
@@ -2973,7 +4208,12 @@
     "termSpread": 1.49,
     "mortgageRate": 2.98,
     "initialClaims": 574000,
-    "creditConditions": -0.181
+    "creditConditions": -0.181,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.05,
+    "wti": 63.5,
+    "dollarIndex": 112.0839
   },
   {
     "date": "2021-05-07",
@@ -2985,7 +4225,12 @@
     "termSpread": 1.46,
     "mortgageRate": 2.96,
     "initialClaims": 517000,
-    "creditConditions": -0.182
+    "creditConditions": -0.182,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.06,
+    "wti": 64.96,
+    "dollarIndex": 111.0249
   },
   {
     "date": "2021-05-14",
@@ -2997,7 +4242,12 @@
     "termSpread": 1.47,
     "mortgageRate": 2.94,
     "initialClaims": 494000,
-    "creditConditions": -0.181
+    "creditConditions": -0.181,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.06,
+    "wti": 65.32,
+    "dollarIndex": 111.1353
   },
   {
     "date": "2021-05-21",
@@ -3009,7 +4259,12 @@
     "termSpread": 1.46,
     "mortgageRate": 3,
     "initialClaims": 467000,
-    "creditConditions": -0.178
+    "creditConditions": -0.178,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.06,
+    "wti": 63.61,
+    "dollarIndex": 111.0576
   },
   {
     "date": "2021-05-28",
@@ -3021,7 +4276,12 @@
     "termSpread": 1.44,
     "mortgageRate": 2.95,
     "initialClaims": 441000,
-    "creditConditions": -0.175
+    "creditConditions": -0.175,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.05,
+    "wti": 66.31,
+    "dollarIndex": 110.7576
   },
   {
     "date": "2021-06-04",
@@ -3033,7 +4293,12 @@
     "termSpread": 1.42,
     "mortgageRate": 2.99,
     "initialClaims": 427000,
-    "creditConditions": -0.171
+    "creditConditions": -0.171,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.06,
+    "wti": 69.57,
+    "dollarIndex": 110.7521
   },
   {
     "date": "2021-06-11",
@@ -3045,7 +4310,12 @@
     "termSpread": 1.31,
     "mortgageRate": 2.96,
     "initialClaims": 420000,
-    "creditConditions": -0.167
+    "creditConditions": -0.167,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.06,
+    "wti": 71,
+    "dollarIndex": 111.0933
   },
   {
     "date": "2021-06-18",
@@ -3057,7 +4327,12 @@
     "termSpread": 1.19,
     "mortgageRate": 2.93,
     "initialClaims": 428000,
-    "creditConditions": -0.164
+    "creditConditions": -0.164,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.1,
+    "wti": 71.64,
+    "dollarIndex": 113.0408
   },
   {
     "date": "2021-06-25",
@@ -3069,7 +4344,12 @@
     "termSpread": 1.26,
     "mortgageRate": 3.02,
     "initialClaims": 422000,
-    "creditConditions": -0.16
+    "creditConditions": -0.16,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.1,
+    "wti": 74.21,
+    "dollarIndex": 111.9655
   },
   {
     "date": "2021-07-02",
@@ -3081,7 +4361,12 @@
     "termSpread": 1.2,
     "mortgageRate": 2.98,
     "initialClaims": 368000,
-    "creditConditions": -0.156
+    "creditConditions": -0.156,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.1,
+    "wti": 75.37,
+    "dollarIndex": 112.5425
   },
   {
     "date": "2021-07-09",
@@ -3093,7 +4378,12 @@
     "termSpread": 1.14,
     "mortgageRate": 2.9,
     "initialClaims": 371000,
-    "creditConditions": -0.152
+    "creditConditions": -0.152,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.1,
+    "wti": 74.56,
+    "dollarIndex": 112.8375
   },
   {
     "date": "2021-07-16",
@@ -3105,7 +4395,12 @@
     "termSpread": 1.06,
     "mortgageRate": 2.88,
     "initialClaims": 333000,
-    "creditConditions": -0.148
+    "creditConditions": -0.148,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.1,
+    "wti": 71.76,
+    "dollarIndex": 113.0428
   },
   {
     "date": "2021-07-23",
@@ -3117,7 +4412,12 @@
     "termSpread": 1.08,
     "mortgageRate": 2.78,
     "initialClaims": 387000,
-    "creditConditions": -0.143
+    "creditConditions": -0.143,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.1,
+    "wti": 72.24,
+    "dollarIndex": 113.4398
   },
   {
     "date": "2021-07-30",
@@ -3129,7 +4429,12 @@
     "termSpread": 1.05,
     "mortgageRate": 2.8,
     "initialClaims": 380000,
-    "creditConditions": -0.139
+    "creditConditions": -0.139,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.07,
+    "wti": 73.93,
+    "dollarIndex": 112.6714
   },
   {
     "date": "2021-08-06",
@@ -3141,7 +4446,12 @@
     "termSpread": 1.1,
     "mortgageRate": 2.77,
     "initialClaims": 379000,
-    "creditConditions": -0.135
+    "creditConditions": -0.135,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.1,
+    "wti": 68.26,
+    "dollarIndex": 113.3088
   },
   {
     "date": "2021-08-13",
@@ -3153,7 +4463,12 @@
     "termSpread": 1.06,
     "mortgageRate": 2.87,
     "initialClaims": 361000,
-    "creditConditions": -0.132
+    "creditConditions": -0.132,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.1,
+    "wti": 68.36,
+    "dollarIndex": 113.0615
   },
   {
     "date": "2021-08-20",
@@ -3165,7 +4480,12 @@
     "termSpread": 1.03,
     "mortgageRate": 2.86,
     "initialClaims": 367000,
-    "creditConditions": -0.131
+    "creditConditions": -0.131,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.09,
+    "wti": 62.25,
+    "dollarIndex": 114.5009
   },
   {
     "date": "2021-08-27",
@@ -3177,7 +4497,12 @@
     "termSpread": 1.09,
     "mortgageRate": 2.87,
     "initialClaims": 358000,
-    "creditConditions": -0.131
+    "creditConditions": -0.131,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.08,
+    "wti": 68.84,
+    "dollarIndex": 113.3404
   },
   {
     "date": "2021-09-03",
@@ -3189,7 +4514,12 @@
     "termSpread": 1.12,
     "mortgageRate": 2.87,
     "initialClaims": 353000,
-    "creditConditions": -0.131
+    "creditConditions": -0.131,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.08,
+    "wti": 69.34,
+    "dollarIndex": 112.5476
   },
   {
     "date": "2021-09-10",
@@ -3201,7 +4531,12 @@
     "termSpread": 1.12,
     "mortgageRate": 2.88,
     "initialClaims": 335000,
-    "creditConditions": -0.133
+    "creditConditions": -0.133,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.08,
+    "wti": 69.82,
+    "dollarIndex": 112.9425
   },
   {
     "date": "2021-09-17",
@@ -3213,7 +4548,12 @@
     "termSpread": 1.14,
     "mortgageRate": 2.86,
     "initialClaims": 342000,
-    "creditConditions": -0.134
+    "creditConditions": -0.134,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.08,
+    "wti": 72.09,
+    "dollarIndex": 113.5989
   },
   {
     "date": "2021-09-24",
@@ -3225,7 +4565,12 @@
     "termSpread": 1.18,
     "mortgageRate": 2.88,
     "initialClaims": 367000,
-    "creditConditions": -0.135
+    "creditConditions": -0.135,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.08,
+    "wti": 74.18,
+    "dollarIndex": 113.7597
   },
   {
     "date": "2021-10-01",
@@ -3237,7 +4582,12 @@
     "termSpread": 1.21,
     "mortgageRate": 3.01,
     "initialClaims": 375000,
-    "creditConditions": -0.135
+    "creditConditions": -0.135,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.08,
+    "wti": 76.01,
+    "dollarIndex": 114.3798
   },
   {
     "date": "2021-10-08",
@@ -3249,7 +4599,12 @@
     "termSpread": 1.29,
     "mortgageRate": 2.99,
     "initialClaims": 312000,
-    "creditConditions": -0.135
+    "creditConditions": -0.135,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.08,
+    "wti": 79.55,
+    "dollarIndex": 114.5986
   },
   {
     "date": "2021-10-15",
@@ -3261,7 +4616,12 @@
     "termSpread": 1.18,
     "mortgageRate": 3.05,
     "initialClaims": 291000,
-    "creditConditions": -0.133
+    "creditConditions": -0.133,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.08,
+    "wti": 82.39,
+    "dollarIndex": 114.0905
   },
   {
     "date": "2021-10-22",
@@ -3273,7 +4633,12 @@
     "termSpread": 1.18,
     "mortgageRate": 3.09,
     "initialClaims": 289000,
-    "creditConditions": -0.13
+    "creditConditions": -0.13,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.08,
+    "wti": 84.53,
+    "dollarIndex": 113.67
   },
   {
     "date": "2021-10-29",
@@ -3285,7 +4650,12 @@
     "termSpread": 1.07,
     "mortgageRate": 3.14,
     "initialClaims": 269000,
-    "creditConditions": -0.126
+    "creditConditions": -0.126,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.07,
+    "wti": 83.5,
+    "dollarIndex": 114.1349
   },
   {
     "date": "2021-11-05",
@@ -3297,7 +4667,12 @@
     "termSpread": 1.06,
     "mortgageRate": 3.09,
     "initialClaims": 261000,
-    "creditConditions": -0.12
+    "creditConditions": -0.12,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.08,
+    "wti": 81.25,
+    "dollarIndex": 114.0732
   },
   {
     "date": "2021-11-12",
@@ -3309,7 +4684,12 @@
     "termSpread": 1.05,
     "mortgageRate": 2.98,
     "initialClaims": 251000,
-    "creditConditions": -0.115
+    "creditConditions": -0.115,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.08,
+    "wti": 80.87,
+    "dollarIndex": 114.5144
   },
   {
     "date": "2021-11-19",
@@ -3321,7 +4701,12 @@
     "termSpread": 1.02,
     "mortgageRate": 3.1,
     "initialClaims": 250000,
-    "creditConditions": -0.109
+    "creditConditions": -0.109,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.08,
+    "wti": 76.11,
+    "dollarIndex": 115.2187
   },
   {
     "date": "2021-11-26",
@@ -3333,7 +4718,12 @@
     "termSpread": 0.98,
     "mortgageRate": 3.1,
     "initialClaims": 224000,
-    "creditConditions": -0.104
+    "creditConditions": -0.104,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.08,
+    "wti": 78.32,
+    "dollarIndex": 116.5103
   },
   {
     "date": "2021-12-03",
@@ -3345,7 +4735,12 @@
     "termSpread": 0.75,
     "mortgageRate": 3.11,
     "initialClaims": 221000,
-    "creditConditions": -0.1
+    "creditConditions": -0.1,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.08,
+    "wti": 66.39,
+    "dollarIndex": 116.2377
   },
   {
     "date": "2021-12-10",
@@ -3357,7 +4752,12 @@
     "termSpread": 0.81,
     "mortgageRate": 3.1,
     "initialClaims": 206000,
-    "creditConditions": -0.097
+    "creditConditions": -0.097,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.08,
+    "wti": 71.71,
+    "dollarIndex": 115.5732
   },
   {
     "date": "2021-12-17",
@@ -3369,7 +4769,12 @@
     "termSpread": 0.75,
     "mortgageRate": 3.12,
     "initialClaims": 227000,
-    "creditConditions": -0.095
+    "creditConditions": -0.095,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.08,
+    "wti": 70.93,
+    "dollarIndex": 115.791
   },
   {
     "date": "2021-12-24",
@@ -3381,7 +4786,12 @@
     "termSpread": 0.79,
     "mortgageRate": 3.05,
     "initialClaims": 215000,
-    "creditConditions": -0.093
+    "creditConditions": -0.093,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.08,
+    "wti": 73.89,
+    "dollarIndex": 115.5337
   },
   {
     "date": "2021-12-31",
@@ -3393,7 +4803,12 @@
     "termSpread": 0.79,
     "mortgageRate": 3.11,
     "initialClaims": 217000,
-    "creditConditions": -0.09
+    "creditConditions": -0.09,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.07,
+    "wti": 75.33,
+    "dollarIndex": 115.283
   },
   {
     "date": "2022-01-07",
@@ -3405,7 +4820,12 @@
     "termSpread": 0.89,
     "mortgageRate": 3.22,
     "initialClaims": 229000,
-    "creditConditions": -0.086
+    "creditConditions": -0.086,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.08,
+    "wti": 79,
+    "dollarIndex": 115.0451
   },
   {
     "date": "2022-01-14",
@@ -3417,7 +4837,12 @@
     "termSpread": 0.79,
     "mortgageRate": 3.45,
     "initialClaims": 250000,
-    "creditConditions": -0.079
+    "creditConditions": -0.079,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.08,
+    "wti": 83.82,
+    "dollarIndex": 114.3825
   },
   {
     "date": "2022-01-21",
@@ -3429,7 +4854,12 @@
     "termSpread": 0.74,
     "mortgageRate": 3.56,
     "initialClaims": 246000,
-    "creditConditions": -0.068
+    "creditConditions": -0.068,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.08,
+    "wti": 85.16,
+    "dollarIndex": 114.6125
   },
   {
     "date": "2022-01-28",
@@ -3441,7 +4871,12 @@
     "termSpread": 0.63,
     "mortgageRate": 3.55,
     "initialClaims": 240000,
-    "creditConditions": -0.055
+    "creditConditions": -0.055,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.08,
+    "wti": 87.67,
+    "dollarIndex": 116.0393
   },
   {
     "date": "2022-02-04",
@@ -3453,7 +4888,12 @@
     "termSpread": 0.62,
     "mortgageRate": 3.55,
     "initialClaims": 231000,
-    "creditConditions": -0.04
+    "creditConditions": -0.04,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.08,
+    "wti": 92.27,
+    "dollarIndex": 115.1362
   },
   {
     "date": "2022-02-11",
@@ -3465,7 +4905,12 @@
     "termSpread": 0.42,
     "mortgageRate": 3.69,
     "initialClaims": 210000,
-    "creditConditions": -0.022
+    "creditConditions": -0.022,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.08,
+    "wti": 93.1,
+    "dollarIndex": 114.8413
   },
   {
     "date": "2022-02-18",
@@ -3477,7 +4922,12 @@
     "termSpread": 0.45,
     "mortgageRate": 3.92,
     "initialClaims": 234000,
-    "creditConditions": -0.004
+    "creditConditions": -0.004,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.08,
+    "wti": 91.26,
+    "dollarIndex": 114.7982
   },
   {
     "date": "2022-02-25",
@@ -3489,7 +4939,12 @@
     "termSpread": 0.42,
     "mortgageRate": 3.89,
     "initialClaims": 224000,
-    "creditConditions": 0.013
+    "creditConditions": 0.013,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.08,
+    "wti": 91.68,
+    "dollarIndex": 115.2577
   },
   {
     "date": "2022-03-04",
@@ -3501,7 +4956,12 @@
     "termSpread": 0.24,
     "mortgageRate": 3.76,
     "initialClaims": 208000,
-    "creditConditions": 0.028
+    "creditConditions": 0.028,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.08,
+    "wti": 115.77,
+    "dollarIndex": 116.6503
   },
   {
     "date": "2022-03-11",
@@ -3513,7 +4973,12 @@
     "termSpread": 0.25,
     "mortgageRate": 3.85,
     "initialClaims": 222000,
-    "creditConditions": 0.042
+    "creditConditions": 0.042,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.08,
+    "wti": 109.31,
+    "dollarIndex": 117.0192
   },
   {
     "date": "2022-03-18",
@@ -3525,7 +4990,12 @@
     "termSpread": 0.17,
     "mortgageRate": 4.16,
     "initialClaims": 217000,
-    "creditConditions": 0.052
+    "creditConditions": 0.052,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.33,
+    "wti": 104.69,
+    "dollarIndex": 116.1378
   },
   {
     "date": "2022-03-25",
@@ -3537,7 +5007,12 @@
     "termSpread": 0.18,
     "mortgageRate": 4.42,
     "initialClaims": 207000,
-    "creditConditions": 0.059
+    "creditConditions": 0.059,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.33,
+    "wti": 116.2,
+    "dollarIndex": 115.7921
   },
   {
     "date": "2022-04-01",
@@ -3549,7 +5024,12 @@
     "termSpread": -0.05,
     "mortgageRate": 4.67,
     "initialClaims": 214000,
-    "creditConditions": 0.065
+    "creditConditions": 0.065,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.33,
+    "wti": 99.32,
+    "dollarIndex": 115.4814
   },
   {
     "date": "2022-04-08",
@@ -3561,7 +5041,12 @@
     "termSpread": 0.19,
     "mortgageRate": 4.72,
     "initialClaims": 214000,
-    "creditConditions": 0.07
+    "creditConditions": 0.07,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.33,
+    "wti": 98.35,
+    "dollarIndex": 116.4176
   },
   {
     "date": "2022-04-15",
@@ -3573,7 +5058,12 @@
     "termSpread": 0.36,
     "mortgageRate": 5,
     "initialClaims": 214000,
-    "creditConditions": 0.075
+    "creditConditions": 0.075,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.33,
+    "wti": 106.84,
+    "dollarIndex": 116.7017
   },
   {
     "date": "2022-04-22",
@@ -3585,7 +5075,12 @@
     "termSpread": 0.18,
     "mortgageRate": 5.11,
     "initialClaims": 210000,
-    "creditConditions": 0.081
+    "creditConditions": 0.081,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.33,
+    "wti": 102.86,
+    "dollarIndex": 118.0186
   },
   {
     "date": "2022-04-29",
@@ -3597,7 +5092,12 @@
     "termSpread": 0.19,
     "mortgageRate": 5.1,
     "initialClaims": 209000,
-    "creditConditions": 0.09
+    "creditConditions": 0.09,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.33,
+    "wti": 104.59,
+    "dollarIndex": 119.4933
   },
   {
     "date": "2022-05-06",
@@ -3609,7 +5109,12 @@
     "termSpread": 0.4,
     "mortgageRate": 5.27,
     "initialClaims": 218000,
-    "creditConditions": 0.1
+    "creditConditions": 0.1,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.83,
+    "wti": 109.72,
+    "dollarIndex": 119.8577
   },
   {
     "date": "2022-05-13",
@@ -3621,7 +5126,12 @@
     "termSpread": 0.32,
     "mortgageRate": 5.3,
     "initialClaims": 204000,
-    "creditConditions": 0.113
+    "creditConditions": 0.113,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.83,
+    "wti": 110.52,
+    "dollarIndex": 120.8442
   },
   {
     "date": "2022-05-20",
@@ -3633,7 +5143,12 @@
     "termSpread": 0.18,
     "mortgageRate": 5.25,
     "initialClaims": 225000,
-    "creditConditions": 0.128
+    "creditConditions": 0.128,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.83,
+    "wti": 112.63,
+    "dollarIndex": 119.3677
   },
   {
     "date": "2022-05-27",
@@ -3645,7 +5160,12 @@
     "termSpread": 0.27,
     "mortgageRate": 5.1,
     "initialClaims": 211000,
-    "creditConditions": 0.144
+    "creditConditions": 0.144,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.83,
+    "wti": 114.96,
+    "dollarIndex": 118.2834
   },
   {
     "date": "2022-06-03",
@@ -3657,7 +5177,12 @@
     "termSpread": 0.3,
     "mortgageRate": 5.09,
     "initialClaims": 199000,
-    "creditConditions": 0.161
+    "creditConditions": 0.161,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.83,
+    "wti": 118.97,
+    "dollarIndex": 118.2153
   },
   {
     "date": "2022-06-10",
@@ -3669,7 +5194,12 @@
     "termSpread": 0.09,
     "mortgageRate": 5.23,
     "initialClaims": 213000,
-    "creditConditions": 0.178
+    "creditConditions": 0.178,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 0.83,
+    "wti": 120.73,
+    "dollarIndex": 119.9981
   },
   {
     "date": "2022-06-17",
@@ -3681,7 +5211,12 @@
     "termSpread": 0.08,
     "mortgageRate": 5.78,
     "initialClaims": 211000,
-    "creditConditions": 0.193
+    "creditConditions": 0.193,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.58,
+    "wti": 109.56,
+    "dollarIndex": 121.2369
   },
   {
     "date": "2022-06-24",
@@ -3693,7 +5228,12 @@
     "termSpread": 0.09,
     "mortgageRate": 5.81,
     "initialClaims": 214000,
-    "creditConditions": 0.203
+    "creditConditions": 0.203,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.58,
+    "wti": 109.07,
+    "dollarIndex": 120.4853
   },
   {
     "date": "2022-07-01",
@@ -3705,7 +5245,12 @@
     "termSpread": 0.04,
     "mortgageRate": 5.7,
     "initialClaims": 212000,
-    "creditConditions": 0.209
+    "creditConditions": 0.209,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.58,
+    "wti": 110.3,
+    "dollarIndex": 121.5058
   },
   {
     "date": "2022-07-08",
@@ -3717,7 +5262,12 @@
     "termSpread": -0.03,
     "mortgageRate": 5.3,
     "initialClaims": 214000,
-    "creditConditions": 0.208
+    "creditConditions": 0.208,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.58,
+    "wti": 106.78,
+    "dollarIndex": 122.4662
   },
   {
     "date": "2022-07-15",
@@ -3729,7 +5279,12 @@
     "termSpread": -0.2,
     "mortgageRate": 5.51,
     "initialClaims": 212000,
-    "creditConditions": 0.202
+    "creditConditions": 0.202,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.58,
+    "wti": 99.59,
+    "dollarIndex": 123.4765
   },
   {
     "date": "2022-07-22",
@@ -3741,7 +5296,12 @@
     "termSpread": -0.21,
     "mortgageRate": 5.54,
     "initialClaims": 216000,
-    "creditConditions": 0.192
+    "creditConditions": 0.192,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 1.58,
+    "wti": 97.71,
+    "dollarIndex": 122.451
   },
   {
     "date": "2022-07-29",
@@ -3753,7 +5313,12 @@
     "termSpread": -0.22,
     "mortgageRate": 5.3,
     "initialClaims": 221000,
-    "creditConditions": 0.181
+    "creditConditions": 0.181,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.32,
+    "wti": 101.31,
+    "dollarIndex": 121.7678
   },
   {
     "date": "2022-08-05",
@@ -3765,7 +5330,12 @@
     "termSpread": -0.41,
     "mortgageRate": 4.99,
     "initialClaims": 228000,
-    "creditConditions": 0.171
+    "creditConditions": 0.171,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.33,
+    "wti": 91.77,
+    "dollarIndex": 122.321
   },
   {
     "date": "2022-08-12",
@@ -3777,7 +5347,12 @@
     "termSpread": -0.41,
     "mortgageRate": 5.22,
     "initialClaims": 221000,
-    "creditConditions": 0.165
+    "creditConditions": 0.165,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.33,
+    "wti": 94.86,
+    "dollarIndex": 121.018
   },
   {
     "date": "2022-08-19",
@@ -3789,7 +5364,12 @@
     "termSpread": -0.27,
     "mortgageRate": 5.13,
     "initialClaims": 220000,
-    "creditConditions": 0.164
+    "creditConditions": 0.164,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.33,
+    "wti": 93.55,
+    "dollarIndex": 123.0501
   },
   {
     "date": "2022-08-26",
@@ -3801,7 +5381,12 @@
     "termSpread": -0.33,
     "mortgageRate": 5.55,
     "initialClaims": 215000,
-    "creditConditions": 0.169
+    "creditConditions": 0.169,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.33,
+    "wti": 93.63,
+    "dollarIndex": 123.0656
   },
   {
     "date": "2022-09-02",
@@ -3813,7 +5398,12 @@
     "termSpread": -0.2,
     "mortgageRate": 5.66,
     "initialClaims": 210000,
-    "creditConditions": 0.18
+    "creditConditions": 0.18,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.33,
+    "wti": 87.29,
+    "dollarIndex": 123.7743
   },
   {
     "date": "2022-09-09",
@@ -3825,7 +5415,12 @@
     "termSpread": -0.23,
     "mortgageRate": 5.89,
     "initialClaims": 203000,
-    "creditConditions": 0.194
+    "creditConditions": 0.194,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.33,
+    "wti": 87.27,
+    "dollarIndex": 123.7874
   },
   {
     "date": "2022-09-16",
@@ -3837,7 +5432,12 @@
     "termSpread": -0.4,
     "mortgageRate": 6.02,
     "initialClaims": 195000,
-    "creditConditions": 0.211
+    "creditConditions": 0.211,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 2.33,
+    "wti": 85.57,
+    "dollarIndex": 124.8794
   },
   {
     "date": "2022-09-23",
@@ -3849,7 +5449,12 @@
     "termSpread": -0.51,
     "mortgageRate": 6.29,
     "initialClaims": 202000,
-    "creditConditions": 0.227
+    "creditConditions": 0.227,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 3.08,
+    "wti": 79.07,
+    "dollarIndex": 127.2853
   },
   {
     "date": "2022-09-30",
@@ -3861,7 +5466,12 @@
     "termSpread": -0.39,
     "mortgageRate": 6.7,
     "initialClaims": 190000,
-    "creditConditions": 0.24
+    "creditConditions": 0.24,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 3.08,
+    "wti": 79.91,
+    "dollarIndex": 127.5148
   },
   {
     "date": "2022-10-07",
@@ -3873,7 +5483,12 @@
     "termSpread": -0.41,
     "mortgageRate": 6.66,
     "initialClaims": 203000,
-    "creditConditions": 0.247
+    "creditConditions": 0.247,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 3.08,
+    "wti": 93.07,
+    "dollarIndex": 127.3111
   },
   {
     "date": "2022-10-14",
@@ -3885,7 +5500,12 @@
     "termSpread": -0.48,
     "mortgageRate": 6.92,
     "initialClaims": 207000,
-    "creditConditions": 0.249
+    "creditConditions": 0.249,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 3.08,
+    "wti": 86.1,
+    "dollarIndex": 128.3325
   },
   {
     "date": "2022-10-21",
@@ -3897,7 +5517,12 @@
     "termSpread": -0.28,
     "mortgageRate": 6.94,
     "initialClaims": 199000,
-    "creditConditions": 0.246
+    "creditConditions": 0.246,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 3.08,
+    "wti": 85.47,
+    "dollarIndex": 127.6735
   },
   {
     "date": "2022-10-28",
@@ -3909,7 +5534,12 @@
     "termSpread": -0.39,
     "mortgageRate": 7.08,
     "initialClaims": 202000,
-    "creditConditions": 0.238
+    "creditConditions": 0.238,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 3.08,
+    "wti": 87.85,
+    "dollarIndex": 127.2135
   },
   {
     "date": "2022-11-04",
@@ -3921,7 +5551,12 @@
     "termSpread": -0.49,
     "mortgageRate": 6.95,
     "initialClaims": 202000,
-    "creditConditions": 0.227
+    "creditConditions": 0.227,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 3.83,
+    "wti": 92.58,
+    "dollarIndex": 127.1468
   },
   {
     "date": "2022-11-11",
@@ -3933,7 +5568,12 @@
     "termSpread": -0.52,
     "mortgageRate": 7.08,
     "initialClaims": 204000,
-    "creditConditions": 0.215
+    "creditConditions": 0.215,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 3.83,
+    "wti": 89.14,
+    "dollarIndex": 124.7044
   },
   {
     "date": "2022-11-18",
@@ -3945,7 +5585,12 @@
     "termSpread": -0.69,
     "mortgageRate": 6.61,
     "initialClaims": 210000,
-    "creditConditions": 0.205
+    "creditConditions": 0.205,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 3.83,
+    "wti": 80.07,
+    "dollarIndex": 123.8524
   },
   {
     "date": "2022-11-25",
@@ -3957,7 +5602,12 @@
     "termSpread": -0.74,
     "mortgageRate": 6.58,
     "initialClaims": 220000,
-    "creditConditions": 0.197
+    "creditConditions": 0.197,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 3.83,
+    "wti": 76.45,
+    "dollarIndex": 123.3386
   },
   {
     "date": "2022-12-02",
@@ -3969,7 +5619,12 @@
     "termSpread": -0.77,
     "mortgageRate": 6.49,
     "initialClaims": 209000,
-    "creditConditions": 0.192
+    "creditConditions": 0.192,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 3.83,
+    "wti": 79.86,
+    "dollarIndex": 122.0102
   },
   {
     "date": "2022-12-09",
@@ -3981,7 +5636,12 @@
     "termSpread": -0.76,
     "mortgageRate": 6.33,
     "initialClaims": 209000,
-    "creditConditions": 0.19
+    "creditConditions": 0.19,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 3.83,
+    "wti": 71.05,
+    "dollarIndex": 122.4201
   },
   {
     "date": "2022-12-16",
@@ -3993,7 +5653,12 @@
     "termSpread": -0.69,
     "mortgageRate": 6.31,
     "initialClaims": 209000,
-    "creditConditions": 0.188
+    "creditConditions": 0.188,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 4.33,
+    "wti": 74.19,
+    "dollarIndex": 122.6505
   },
   {
     "date": "2022-12-23",
@@ -4005,7 +5670,12 @@
     "termSpread": -0.56,
     "mortgageRate": 6.27,
     "initialClaims": 213000,
-    "creditConditions": 0.185
+    "creditConditions": 0.185,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 4.33,
+    "wti": 79.57,
+    "dollarIndex": 121.9743
   },
   {
     "date": "2022-12-30",
@@ -4017,7 +5687,12 @@
     "termSpread": -0.53,
     "mortgageRate": 6.42,
     "initialClaims": 205000,
-    "creditConditions": 0.18
+    "creditConditions": 0.18,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 4.33,
+    "wti": 80.16,
+    "dollarIndex": 121.4256
   },
   {
     "date": "2023-01-06",
@@ -4029,7 +5704,12 @@
     "termSpread": -0.69,
     "mortgageRate": 6.48,
     "initialClaims": 205000,
-    "creditConditions": 0.173
+    "creditConditions": 0.173,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 4.33,
+    "wti": 73.77,
+    "dollarIndex": 121.0852
   },
   {
     "date": "2023-01-13",
@@ -4041,7 +5721,12 @@
     "termSpread": -0.73,
     "mortgageRate": 6.33,
     "initialClaims": 210000,
-    "creditConditions": 0.165
+    "creditConditions": 0.165,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 4.33,
+    "wti": 79.9,
+    "dollarIndex": 119.1673
   },
   {
     "date": "2023-01-20",
@@ -4053,7 +5738,12 @@
     "termSpread": -0.66,
     "mortgageRate": 6.15,
     "initialClaims": 204000,
-    "creditConditions": 0.156
+    "creditConditions": 0.156,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 4.33,
+    "wti": 81.27,
+    "dollarIndex": 119.3486
   },
   {
     "date": "2023-01-27",
@@ -4065,7 +5755,12 @@
     "termSpread": -0.67,
     "mortgageRate": 6.13,
     "initialClaims": 204000,
-    "creditConditions": 0.148
+    "creditConditions": 0.148,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 4.33,
+    "wti": 79.73,
+    "dollarIndex": 118.9223
   },
   {
     "date": "2023-02-03",
@@ -4077,7 +5772,12 @@
     "termSpread": -0.77,
     "mortgageRate": 6.09,
     "initialClaims": 200000,
-    "creditConditions": 0.143
+    "creditConditions": 0.143,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 4.58,
+    "wti": 73.4,
+    "dollarIndex": 119.5095
   },
   {
     "date": "2023-02-10",
@@ -4089,7 +5789,12 @@
     "termSpread": -0.76,
     "mortgageRate": 6.12,
     "initialClaims": 215000,
-    "creditConditions": 0.141
+    "creditConditions": 0.141,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 4.58,
+    "wti": 79.74,
+    "dollarIndex": 120.1419
   },
   {
     "date": "2023-02-17",
@@ -4101,7 +5806,12 @@
     "termSpread": -0.78,
     "mortgageRate": 6.32,
     "initialClaims": 220000,
-    "creditConditions": 0.145
+    "creditConditions": 0.145,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 4.58,
+    "wti": 76.31,
+    "dollarIndex": 120.5526
   },
   {
     "date": "2023-02-24",
@@ -4113,7 +5823,12 @@
     "termSpread": -0.83,
     "mortgageRate": 6.5,
     "initialClaims": 217000,
-    "creditConditions": 0.153
+    "creditConditions": 0.153,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 4.58,
+    "wti": 76.19,
+    "dollarIndex": 121.5681
   },
   {
     "date": "2023-03-03",
@@ -4125,7 +5840,12 @@
     "termSpread": -0.89,
     "mortgageRate": 6.65,
     "initialClaims": 207000,
-    "creditConditions": 0.166
+    "creditConditions": 0.166,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 4.57,
+    "wti": 79.62,
+    "dollarIndex": 120.7742
   },
   {
     "date": "2023-03-10",
@@ -4137,7 +5857,12 @@
     "termSpread": -0.9,
     "mortgageRate": 6.73,
     "initialClaims": 230000,
-    "creditConditions": 0.18
+    "creditConditions": 0.18,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 4.57,
+    "wti": 76.55,
+    "dollarIndex": 121.2421
   },
   {
     "date": "2023-03-17",
@@ -4149,7 +5874,12 @@
     "termSpread": -0.42,
     "mortgageRate": 6.6,
     "initialClaims": 222000,
-    "creditConditions": 0.194
+    "creditConditions": 0.194,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 4.58,
+    "wti": 66.61,
+    "dollarIndex": 121.5643
   },
   {
     "date": "2023-03-24",
@@ -4161,7 +5891,12 @@
     "termSpread": -0.38,
     "mortgageRate": 6.42,
     "initialClaims": 230000,
-    "creditConditions": 0.207
+    "creditConditions": 0.207,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 4.83,
+    "wti": 69.22,
+    "dollarIndex": 120.4598
   },
   {
     "date": "2023-03-31",
@@ -4173,7 +5908,12 @@
     "termSpread": -0.58,
     "mortgageRate": 6.32,
     "initialClaims": 234000,
-    "creditConditions": 0.214
+    "creditConditions": 0.214,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 4.83,
+    "wti": 75.68,
+    "dollarIndex": 119.3602
   },
   {
     "date": "2023-04-07",
@@ -4185,7 +5925,12 @@
     "termSpread": -0.58,
     "mortgageRate": 6.28,
     "initialClaims": 217000,
-    "creditConditions": 0.217
+    "creditConditions": 0.217,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 4.83,
+    "wti": 80.7,
+    "dollarIndex": 119.3547
   },
   {
     "date": "2023-04-14",
@@ -4197,7 +5942,12 @@
     "termSpread": -0.56,
     "mortgageRate": 6.27,
     "initialClaims": 220000,
-    "creditConditions": 0.217
+    "creditConditions": 0.217,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 4.83,
+    "wti": 82.58,
+    "dollarIndex": 118.8567
   },
   {
     "date": "2023-04-21",
@@ -4209,7 +5959,12 @@
     "termSpread": -0.6,
     "mortgageRate": 6.39,
     "initialClaims": 223000,
-    "creditConditions": 0.214
+    "creditConditions": 0.214,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 4.83,
+    "wti": 77.86,
+    "dollarIndex": 119.3117
   },
   {
     "date": "2023-04-28",
@@ -4221,7 +5976,12 @@
     "termSpread": -0.6,
     "mortgageRate": 6.43,
     "initialClaims": 209000,
-    "creditConditions": 0.208
+    "creditConditions": 0.208,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 4.83,
+    "wti": 76.78,
+    "dollarIndex": 119.2248
   },
   {
     "date": "2023-05-05",
@@ -4233,7 +5993,12 @@
     "termSpread": -0.48,
     "mortgageRate": 6.39,
     "initialClaims": 213000,
-    "creditConditions": 0.202
+    "creditConditions": 0.202,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 5.08,
+    "wti": 71.32,
+    "dollarIndex": 118.5548
   },
   {
     "date": "2023-05-12",
@@ -4245,7 +6010,12 @@
     "termSpread": -0.52,
     "mortgageRate": 6.35,
     "initialClaims": 223000,
-    "creditConditions": 0.194
+    "creditConditions": 0.194,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 5.08,
+    "wti": 70.02,
+    "dollarIndex": 119.3671
   },
   {
     "date": "2023-05-19",
@@ -4257,7 +6027,12 @@
     "termSpread": -0.58,
     "mortgageRate": 6.39,
     "initialClaims": 225000,
-    "creditConditions": 0.186
+    "creditConditions": 0.186,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 5.08,
+    "wti": 71.57,
+    "dollarIndex": 119.7751
   },
   {
     "date": "2023-05-26",
@@ -4269,7 +6044,12 @@
     "termSpread": -0.74,
     "mortgageRate": 6.57,
     "initialClaims": 227000,
-    "creditConditions": 0.179
+    "creditConditions": 0.179,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 5.08,
+    "wti": 72.35,
+    "dollarIndex": 120.6304
   },
   {
     "date": "2023-06-02",
@@ -4281,7 +6061,12 @@
     "termSpread": -0.81,
     "mortgageRate": 6.79,
     "initialClaims": 229000,
-    "creditConditions": 0.171
+    "creditConditions": 0.171,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 5.08,
+    "wti": 71.76,
+    "dollarIndex": 120.0049
   },
   {
     "date": "2023-06-09",
@@ -4293,7 +6078,12 @@
     "termSpread": -0.84,
     "mortgageRate": 6.71,
     "initialClaims": 252000,
-    "creditConditions": 0.165
+    "creditConditions": 0.165,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 5.08,
+    "wti": 70.16,
+    "dollarIndex": 119.4322
   },
   {
     "date": "2023-06-16",
@@ -4305,7 +6095,12 @@
     "termSpread": -0.93,
     "mortgageRate": 6.69,
     "initialClaims": 256000,
-    "creditConditions": 0.16
+    "creditConditions": 0.16,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 5.08,
+    "wti": 71.81,
+    "dollarIndex": 118.4184
   },
   {
     "date": "2023-06-23",
@@ -4317,7 +6112,12 @@
     "termSpread": -0.97,
     "mortgageRate": 6.67,
     "initialClaims": 259000,
-    "creditConditions": 0.156
+    "creditConditions": 0.156,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 5.07,
+    "wti": 68.91,
+    "dollarIndex": 119.152
   },
   {
     "date": "2023-06-30",
@@ -4329,7 +6129,12 @@
     "termSpread": -1.06,
     "mortgageRate": 6.71,
     "initialClaims": 236000,
-    "creditConditions": 0.152
+    "creditConditions": 0.152,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 5.08,
+    "wti": 70.66,
+    "dollarIndex": 119.3606
   },
   {
     "date": "2023-07-07",
@@ -4341,7 +6146,12 @@
     "termSpread": -0.88,
     "mortgageRate": 6.81,
     "initialClaims": 248000,
-    "creditConditions": 0.148
+    "creditConditions": 0.148,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 5.08,
+    "wti": 73.91,
+    "dollarIndex": 119.0761
   },
   {
     "date": "2023-07-14",
@@ -4353,7 +6163,12 @@
     "termSpread": -0.91,
     "mortgageRate": 6.96,
     "initialClaims": 230000,
-    "creditConditions": 0.144
+    "creditConditions": 0.144,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 5.08,
+    "wti": 75.44,
+    "dollarIndex": 117.0463
   },
   {
     "date": "2023-07-21",
@@ -4365,7 +6180,12 @@
     "termSpread": -0.98,
     "mortgageRate": 6.78,
     "initialClaims": 229000,
-    "creditConditions": 0.14
+    "creditConditions": 0.14,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 5.08,
+    "wti": 77.06,
+    "dollarIndex": 117.9418
   },
   {
     "date": "2023-07-28",
@@ -4377,7 +6197,12 @@
     "termSpread": -0.91,
     "mortgageRate": 6.81,
     "initialClaims": 231000,
-    "creditConditions": 0.136
+    "creditConditions": 0.136,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 5.33,
+    "wti": 80.55,
+    "dollarIndex": 117.788
   },
   {
     "date": "2023-08-04",
@@ -4389,7 +6214,12 @@
     "termSpread": -0.73,
     "mortgageRate": 6.9,
     "initialClaims": 238000,
-    "creditConditions": 0.133
+    "creditConditions": 0.133,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 5.33,
+    "wti": 82.76,
+    "dollarIndex": 118.821
   },
   {
     "date": "2023-08-11",
@@ -4401,7 +6231,12 @@
     "termSpread": -0.73,
     "mortgageRate": 6.96,
     "initialClaims": 258000,
-    "creditConditions": 0.13
+    "creditConditions": 0.13,
+    "hySpread": null,
+    "igSpread": null,
+    "fedFundsRate": 5.33,
+    "wti": 83.17,
+    "dollarIndex": 119.6268
   },
   {
     "date": "2023-08-18",
@@ -4413,7 +6248,12 @@
     "termSpread": -0.66,
     "mortgageRate": 7.09,
     "initialClaims": 248000,
-    "creditConditions": 0.127
+    "creditConditions": 0.127,
+    "hySpread": 4.02,
+    "igSpread": 1.27,
+    "fedFundsRate": 5.33,
+    "wti": 81.25,
+    "dollarIndex": 120.4321
   },
   {
     "date": "2023-08-25",
@@ -4425,7 +6265,12 @@
     "termSpread": -0.78,
     "mortgageRate": 7.23,
     "initialClaims": 240000,
-    "creditConditions": 0.125
+    "creditConditions": 0.125,
+    "hySpread": 3.9,
+    "igSpread": 1.23,
+    "fedFundsRate": 5.33,
+    "wti": 80.47,
+    "dollarIndex": 120.5137
   },
   {
     "date": "2023-09-01",
@@ -4437,7 +6282,12 @@
     "termSpread": -0.69,
     "mortgageRate": 7.18,
     "initialClaims": 234000,
-    "creditConditions": 0.124
+    "creditConditions": 0.124,
+    "hySpread": 3.81,
+    "igSpread": 1.22,
+    "fedFundsRate": 5.33,
+    "wti": 85.52,
+    "dollarIndex": 120.759
   },
   {
     "date": "2023-09-08",
@@ -4449,7 +6299,12 @@
     "termSpread": -0.72,
     "mortgageRate": 7.12,
     "initialClaims": 225000,
-    "creditConditions": 0.125
+    "creditConditions": 0.125,
+    "hySpread": 3.85,
+    "igSpread": 1.23,
+    "fedFundsRate": 5.33,
+    "wti": 87.51,
+    "dollarIndex": 121.9475
   },
   {
     "date": "2023-09-15",
@@ -4461,7 +6316,12 @@
     "termSpread": -0.69,
     "mortgageRate": 7.18,
     "initialClaims": 225000,
-    "creditConditions": 0.126
+    "creditConditions": 0.126,
+    "hySpread": 3.79,
+    "igSpread": 1.22,
+    "fedFundsRate": 5.33,
+    "wti": 90.83,
+    "dollarIndex": 121.199
   },
   {
     "date": "2023-09-22",
@@ -4473,7 +6333,12 @@
     "termSpread": -0.66,
     "mortgageRate": 7.19,
     "initialClaims": 211000,
-    "creditConditions": 0.128
+    "creditConditions": 0.128,
+    "hySpread": 3.93,
+    "igSpread": 1.2,
+    "fedFundsRate": 5.33,
+    "wti": 90,
+    "dollarIndex": 121.5306
   },
   {
     "date": "2023-09-29",
@@ -4485,7 +6350,12 @@
     "termSpread": -0.44,
     "mortgageRate": 7.31,
     "initialClaims": 216000,
-    "creditConditions": 0.13
+    "creditConditions": 0.13,
+    "hySpread": 4.03,
+    "igSpread": 1.24,
+    "fedFundsRate": 5.33,
+    "wti": 90.77,
+    "dollarIndex": 122.3077
   },
   {
     "date": "2023-10-06",
@@ -4497,7 +6367,12 @@
     "termSpread": -0.3,
     "mortgageRate": 7.49,
     "initialClaims": 216000,
-    "creditConditions": 0.132
+    "creditConditions": 0.132,
+    "hySpread": 4.33,
+    "igSpread": 1.29,
+    "fedFundsRate": 5.33,
+    "wti": 82.83,
+    "dollarIndex": 123.3563
   },
   {
     "date": "2023-10-13",
@@ -4509,7 +6384,12 @@
     "termSpread": -0.41,
     "mortgageRate": 7.57,
     "initialClaims": 210000,
-    "creditConditions": 0.132
+    "creditConditions": 0.132,
+    "hySpread": 4.3,
+    "igSpread": 1.27,
+    "fedFundsRate": 5.33,
+    "wti": 87.67,
+    "dollarIndex": 123.5954
   },
   {
     "date": "2023-10-20",
@@ -4521,7 +6401,12 @@
     "termSpread": -0.14,
     "mortgageRate": 7.63,
     "initialClaims": 200000,
-    "creditConditions": 0.131
+    "creditConditions": 0.131,
+    "hySpread": 4.52,
+    "igSpread": 1.33,
+    "fedFundsRate": 5.33,
+    "wti": 89.12,
+    "dollarIndex": 123.612
   },
   {
     "date": "2023-10-27",
@@ -4533,7 +6418,12 @@
     "termSpread": -0.15,
     "mortgageRate": 7.79,
     "initialClaims": 214000,
-    "creditConditions": 0.127
+    "creditConditions": 0.127,
+    "hySpread": 4.53,
+    "igSpread": 1.31,
+    "fedFundsRate": 5.33,
+    "wti": 86.04,
+    "dollarIndex": 123.62
   },
   {
     "date": "2023-11-03",
@@ -4545,7 +6435,12 @@
     "termSpread": -0.26,
     "mortgageRate": 7.76,
     "initialClaims": 217000,
-    "creditConditions": 0.122
+    "creditConditions": 0.122,
+    "hySpread": 4.04,
+    "igSpread": 1.29,
+    "fedFundsRate": 5.33,
+    "wti": 81.19,
+    "dollarIndex": 121.7564
   },
   {
     "date": "2023-11-10",
@@ -4557,7 +6452,12 @@
     "termSpread": -0.43,
     "mortgageRate": 7.5,
     "initialClaims": 216000,
-    "creditConditions": 0.114
+    "creditConditions": 0.114,
+    "hySpread": 4.03,
+    "igSpread": 1.26,
+    "fedFundsRate": 5.33,
+    "wti": 76.34,
+    "dollarIndex": 122.1281
   },
   {
     "date": "2023-11-17",
@@ -4569,7 +6469,12 @@
     "termSpread": -0.44,
     "mortgageRate": 7.44,
     "initialClaims": 230000,
-    "creditConditions": 0.106
+    "creditConditions": 0.106,
+    "hySpread": 3.99,
+    "igSpread": 1.2,
+    "fedFundsRate": 5.33,
+    "wti": 76.47,
+    "dollarIndex": 120.8477
   },
   {
     "date": "2023-11-24",
@@ -4581,7 +6486,12 @@
     "termSpread": -0.45,
     "mortgageRate": 7.29,
     "initialClaims": 213000,
-    "creditConditions": 0.097
+    "creditConditions": 0.097,
+    "hySpread": 3.85,
+    "igSpread": 1.14,
+    "fedFundsRate": 5.33,
+    "wti": 74.83,
+    "dollarIndex": 120.2105
   },
   {
     "date": "2023-12-01",
@@ -4593,7 +6503,12 @@
     "termSpread": -0.34,
     "mortgageRate": 7.22,
     "initialClaims": 213000,
-    "creditConditions": 0.088
+    "creditConditions": 0.088,
+    "hySpread": 3.87,
+    "igSpread": 1.11,
+    "fedFundsRate": 5.33,
+    "wti": 73.7,
+    "dollarIndex": 119.9424
   },
   {
     "date": "2023-12-08",
@@ -4605,7 +6520,12 @@
     "termSpread": -0.48,
     "mortgageRate": 7.03,
     "initialClaims": 215000,
-    "creditConditions": 0.079
+    "creditConditions": 0.079,
+    "hySpread": 3.75,
+    "igSpread": 1.1,
+    "fedFundsRate": 5.33,
+    "wti": 70.87,
+    "dollarIndex": 120.7607
   },
   {
     "date": "2023-12-15",
@@ -4617,7 +6537,12 @@
     "termSpread": -0.53,
     "mortgageRate": 6.95,
     "initialClaims": 203000,
-    "creditConditions": 0.071
+    "creditConditions": 0.071,
+    "hySpread": 3.51,
+    "igSpread": 1.04,
+    "fedFundsRate": 5.33,
+    "wti": 71.05,
+    "dollarIndex": 119.7382
   },
   {
     "date": "2023-12-22",
@@ -4629,7 +6554,12 @@
     "termSpread": -0.41,
     "mortgageRate": 6.67,
     "initialClaims": 209000,
-    "creditConditions": 0.063
+    "creditConditions": 0.063,
+    "hySpread": 3.39,
+    "igSpread": 1.07,
+    "fedFundsRate": 5.33,
+    "wti": 73.29,
+    "dollarIndex": 119.0625
   },
   {
     "date": "2023-12-29",
@@ -4641,7 +6571,12 @@
     "termSpread": -0.35,
     "mortgageRate": 6.61,
     "initialClaims": 212000,
-    "creditConditions": 0.055
+    "creditConditions": 0.055,
+    "hySpread": 3.34,
+    "igSpread": 1.04,
+    "fedFundsRate": 5.33,
+    "wti": 71.89,
+    "dollarIndex": 118.4208
   },
   {
     "date": "2024-01-05",
@@ -4653,7 +6588,12 @@
     "termSpread": -0.35,
     "mortgageRate": 6.62,
     "initialClaims": 200000,
-    "creditConditions": 0.048
+    "creditConditions": 0.048,
+    "hySpread": 3.68,
+    "igSpread": 1.09,
+    "fedFundsRate": 5.33,
+    "wti": 74,
+    "dollarIndex": 119.388
   },
   {
     "date": "2024-01-12",
@@ -4665,7 +6605,12 @@
     "termSpread": -0.18,
     "mortgageRate": 6.66,
     "initialClaims": 201000,
-    "creditConditions": 0.041
+    "creditConditions": 0.041,
+    "hySpread": 3.56,
+    "igSpread": 1.02,
+    "fedFundsRate": 5.33,
+    "wti": 72.94,
+    "dollarIndex": 119.534
   },
   {
     "date": "2024-01-19",
@@ -4677,7 +6622,12 @@
     "termSpread": -0.24,
     "mortgageRate": 6.6,
     "initialClaims": 195000,
-    "creditConditions": 0.035
+    "creditConditions": 0.035,
+    "hySpread": 3.54,
+    "igSpread": 1.01,
+    "fedFundsRate": 5.33,
+    "wti": 73.69,
+    "dollarIndex": 120.6442
   },
   {
     "date": "2024-01-26",
@@ -4689,7 +6639,12 @@
     "termSpread": -0.19,
     "mortgageRate": 6.69,
     "initialClaims": 224000,
-    "creditConditions": 0.029
+    "creditConditions": 0.029,
+    "hySpread": 3.39,
+    "igSpread": 0.97,
+    "fedFundsRate": 5.33,
+    "wti": 78.45,
+    "dollarIndex": 120.6173
   },
   {
     "date": "2024-02-02",
@@ -4701,7 +6656,12 @@
     "termSpread": -0.33,
     "mortgageRate": 6.63,
     "initialClaims": 226000,
-    "creditConditions": 0.023
+    "creditConditions": 0.023,
+    "hySpread": 3.47,
+    "igSpread": 1.02,
+    "fedFundsRate": 5.33,
+    "wti": 72.72,
+    "dollarIndex": 120.902
   },
   {
     "date": "2024-02-09",
@@ -4713,7 +6673,12 @@
     "termSpread": -0.31,
     "mortgageRate": 6.64,
     "initialClaims": 213000,
-    "creditConditions": 0.018
+    "creditConditions": 0.018,
+    "hySpread": 3.33,
+    "igSpread": 1,
+    "fedFundsRate": 5.33,
+    "wti": 77.26,
+    "dollarIndex": 121.039
   },
   {
     "date": "2024-02-16",
@@ -4725,7 +6690,12 @@
     "termSpread": -0.34,
     "mortgageRate": 6.77,
     "initialClaims": 213000,
-    "creditConditions": 0.013
+    "creditConditions": 0.013,
+    "hySpread": 3.34,
+    "igSpread": 0.96,
+    "fedFundsRate": 5.33,
+    "wti": 79.65,
+    "dollarIndex": 121.1505
   },
   {
     "date": "2024-02-23",
@@ -4737,7 +6707,12 @@
     "termSpread": -0.41,
     "mortgageRate": 6.9,
     "initialClaims": 202000,
-    "creditConditions": 0.008
+    "creditConditions": 0.008,
+    "hySpread": 3.23,
+    "igSpread": 0.95,
+    "fedFundsRate": 5.33,
+    "wti": 77.6,
+    "dollarIndex": 121.0369
   },
   {
     "date": "2024-03-01",
@@ -4749,7 +6724,12 @@
     "termSpread": -0.35,
     "mortgageRate": 6.94,
     "initialClaims": 212000,
-    "creditConditions": 0.005
+    "creditConditions": 0.005,
+    "hySpread": 3.32,
+    "igSpread": 1.01,
+    "fedFundsRate": 5.33,
+    "wti": 80.9,
+    "dollarIndex": 121.0111
   },
   {
     "date": "2024-03-08",
@@ -4761,7 +6741,12 @@
     "termSpread": -0.39,
     "mortgageRate": 6.88,
     "initialClaims": 213000,
-    "creditConditions": 0.002
+    "creditConditions": 0.002,
+    "hySpread": 3.26,
+    "igSpread": 0.99,
+    "fedFundsRate": 5.33,
+    "wti": 78.96,
+    "dollarIndex": 119.975
   },
   {
     "date": "2024-03-15",
@@ -4773,7 +6758,12 @@
     "termSpread": -0.41,
     "mortgageRate": 6.74,
     "initialClaims": 213000,
-    "creditConditions": 0
+    "creditConditions": 0,
+    "hySpread": 3.16,
+    "igSpread": 0.93,
+    "fedFundsRate": 5.33,
+    "wti": 81.94,
+    "dollarIndex": 120.4003
   },
   {
     "date": "2024-03-22",
@@ -4785,7 +6775,12 @@
     "termSpread": -0.37,
     "mortgageRate": 6.87,
     "initialClaims": 213000,
-    "creditConditions": -0.002
+    "creditConditions": -0.002,
+    "hySpread": 3.08,
+    "igSpread": 0.92,
+    "fedFundsRate": 5.33,
+    "wti": 81.1,
+    "dollarIndex": 121.1842
   },
   {
     "date": "2024-03-29",
@@ -4797,7 +6792,12 @@
     "termSpread": -0.39,
     "mortgageRate": 6.79,
     "initialClaims": 214000,
-    "creditConditions": -0.003
+    "creditConditions": -0.003,
+    "hySpread": 3.12,
+    "igSpread": 0.93,
+    "fedFundsRate": 5.33,
+    "wti": 83.96,
+    "dollarIndex": 121.0191
   },
   {
     "date": "2024-04-05",
@@ -4809,7 +6809,12 @@
     "termSpread": -0.34,
     "mortgageRate": 6.82,
     "initialClaims": 223000,
-    "creditConditions": -0.003
+    "creditConditions": -0.003,
+    "hySpread": 3.18,
+    "igSpread": 0.92,
+    "fedFundsRate": 5.33,
+    "wti": 87.69,
+    "dollarIndex": 120.9646
   },
   {
     "date": "2024-04-12",
@@ -4821,7 +6826,12 @@
     "termSpread": -0.38,
     "mortgageRate": 6.88,
     "initialClaims": 213000,
-    "creditConditions": -0.004
+    "creditConditions": -0.004,
+    "hySpread": 3.25,
+    "igSpread": 0.92,
+    "fedFundsRate": 5.33,
+    "wti": 86.46,
+    "dollarIndex": 122.2885
   },
   {
     "date": "2024-04-19",
@@ -4833,7 +6843,12 @@
     "termSpread": -0.35,
     "mortgageRate": 7.1,
     "initialClaims": 212000,
-    "creditConditions": -0.005
+    "creditConditions": -0.005,
+    "hySpread": 3.37,
+    "igSpread": 0.94,
+    "fedFundsRate": 5.33,
+    "wti": 83.79,
+    "dollarIndex": 123.1075
   },
   {
     "date": "2024-04-26",
@@ -4845,7 +6860,12 @@
     "termSpread": -0.29,
     "mortgageRate": 7.17,
     "initialClaims": 209000,
-    "creditConditions": -0.008
+    "creditConditions": -0.008,
+    "hySpread": 3.16,
+    "igSpread": 0.9,
+    "fedFundsRate": 5.33,
+    "wti": 85.38,
+    "dollarIndex": 122.9471
   },
   {
     "date": "2024-05-03",
@@ -4857,7 +6877,12 @@
     "termSpread": -0.31,
     "mortgageRate": 7.22,
     "initialClaims": 207000,
-    "creditConditions": -0.011
+    "creditConditions": -0.011,
+    "hySpread": 3.08,
+    "igSpread": 0.89,
+    "fedFundsRate": 5.33,
+    "wti": 79.65,
+    "dollarIndex": 122.1375
   },
   {
     "date": "2024-05-10",
@@ -4869,7 +6894,12 @@
     "termSpread": -0.37,
     "mortgageRate": 7.09,
     "initialClaims": 230000,
-    "creditConditions": -0.013
+    "creditConditions": -0.013,
+    "hySpread": 3.12,
+    "igSpread": 0.89,
+    "fedFundsRate": 5.33,
+    "wti": 79.81,
+    "dollarIndex": 122.014
   },
   {
     "date": "2024-05-17",
@@ -4881,7 +6911,12 @@
     "termSpread": -0.41,
     "mortgageRate": 7.02,
     "initialClaims": 222000,
-    "creditConditions": -0.016
+    "creditConditions": -0.016,
+    "hySpread": 3.09,
+    "igSpread": 0.89,
+    "fedFundsRate": 5.33,
+    "wti": 81.66,
+    "dollarIndex": 121.2354
   },
   {
     "date": "2024-05-24",
@@ -4893,7 +6928,12 @@
     "termSpread": -0.47,
     "mortgageRate": 6.94,
     "initialClaims": 216000,
-    "creditConditions": -0.017
+    "creditConditions": -0.017,
+    "hySpread": 3.11,
+    "igSpread": 0.89,
+    "fedFundsRate": 5.33,
+    "wti": 78.48,
+    "dollarIndex": 121.6172
   },
   {
     "date": "2024-05-31",
@@ -4905,7 +6945,12 @@
     "termSpread": -0.38,
     "mortgageRate": 7.03,
     "initialClaims": 220000,
-    "creditConditions": -0.017
+    "creditConditions": -0.017,
+    "hySpread": 3.2,
+    "igSpread": 0.88,
+    "fedFundsRate": 5.33,
+    "wti": 77.97,
+    "dollarIndex": 122.098
   },
   {
     "date": "2024-06-07",
@@ -4917,7 +6962,12 @@
     "termSpread": -0.44,
     "mortgageRate": 6.99,
     "initialClaims": 227000,
-    "creditConditions": -0.016
+    "creditConditions": -0.016,
+    "hySpread": 3.15,
+    "igSpread": 0.9,
+    "fedFundsRate": 5.33,
+    "wti": 76.53,
+    "dollarIndex": 123.549
   },
   {
     "date": "2024-06-14",
@@ -4929,7 +6979,12 @@
     "termSpread": -0.47,
     "mortgageRate": 6.95,
     "initialClaims": 240000,
-    "creditConditions": -0.014
+    "creditConditions": -0.014,
+    "hySpread": 3.29,
+    "igSpread": 0.95,
+    "fedFundsRate": 5.33,
+    "wti": 79.41,
+    "dollarIndex": 124.1694
   },
   {
     "date": "2024-06-21",
@@ -4941,7 +6996,12 @@
     "termSpread": -0.45,
     "mortgageRate": 6.87,
     "initialClaims": 236000,
-    "creditConditions": -0.011
+    "creditConditions": -0.011,
+    "hySpread": 3.21,
+    "igSpread": 0.96,
+    "fedFundsRate": 5.33,
+    "wti": 81.71,
+    "dollarIndex": 124.1086
   },
   {
     "date": "2024-06-28",
@@ -4953,7 +7013,12 @@
     "termSpread": -0.35,
     "mortgageRate": 6.86,
     "initialClaims": 233000,
-    "creditConditions": -0.008
+    "creditConditions": -0.008,
+    "hySpread": 3.18,
+    "igSpread": 0.96,
+    "fedFundsRate": 5.33,
+    "wti": 82.83,
+    "dollarIndex": 124.2103
   },
   {
     "date": "2024-07-05",
@@ -4965,7 +7030,12 @@
     "termSpread": -0.32,
     "mortgageRate": 6.95,
     "initialClaims": 238000,
-    "creditConditions": -0.005
+    "creditConditions": -0.005,
+    "hySpread": 3.27,
+    "igSpread": 0.92,
+    "fedFundsRate": 5.33,
+    "wti": 84.44,
+    "dollarIndex": 123.4762
   },
   {
     "date": "2024-07-12",
@@ -4977,7 +7047,12 @@
     "termSpread": -0.27,
     "mortgageRate": 6.89,
     "initialClaims": 223000,
-    "creditConditions": -0.002
+    "creditConditions": -0.002,
+    "hySpread": 3.19,
+    "igSpread": 0.92,
+    "fedFundsRate": 5.33,
+    "wti": 83.49,
+    "dollarIndex": 122.4404
   },
   {
     "date": "2024-07-19",
@@ -4989,7 +7064,12 @@
     "termSpread": -0.24,
     "mortgageRate": 6.77,
     "initialClaims": 241000,
-    "creditConditions": 0.001
+    "creditConditions": 0.001,
+    "hySpread": 3.09,
+    "igSpread": 0.93,
+    "fedFundsRate": 5.33,
+    "wti": 81.43,
+    "dollarIndex": 123.147
   },
   {
     "date": "2024-07-26",
@@ -5001,7 +7081,12 @@
     "termSpread": -0.16,
     "mortgageRate": 6.78,
     "initialClaims": 237000,
-    "creditConditions": 0.003
+    "creditConditions": 0.003,
+    "hySpread": 3.1,
+    "igSpread": 0.95,
+    "fedFundsRate": 5.33,
+    "wti": 78.58,
+    "dollarIndex": 123.672
   },
   {
     "date": "2024-08-02",
@@ -5013,7 +7098,12 @@
     "termSpread": -0.08,
     "mortgageRate": 6.73,
     "initialClaims": 248000,
-    "creditConditions": 0.004
+    "creditConditions": 0.004,
+    "hySpread": 3.72,
+    "igSpread": 1.06,
+    "fedFundsRate": 5.33,
+    "wti": 74.99,
+    "dollarIndex": 123.4681
   },
   {
     "date": "2024-08-09",
@@ -5025,7 +7115,12 @@
     "termSpread": -0.11,
     "mortgageRate": 6.47,
     "initialClaims": 234000,
-    "creditConditions": 0.004
+    "creditConditions": 0.004,
+    "hySpread": 3.49,
+    "igSpread": 1.05,
+    "fedFundsRate": 5.33,
+    "wti": 78.28,
+    "dollarIndex": 122.9276
   },
   {
     "date": "2024-08-16",
@@ -5037,7 +7132,12 @@
     "termSpread": -0.17,
     "mortgageRate": 6.49,
     "initialClaims": 228000,
-    "creditConditions": 0.003
+    "creditConditions": 0.003,
+    "hySpread": 3.29,
+    "igSpread": 0.98,
+    "fedFundsRate": 5.33,
+    "wti": 78.05,
+    "dollarIndex": 122.3972
   },
   {
     "date": "2024-08-23",
@@ -5049,7 +7149,12 @@
     "termSpread": -0.09,
     "mortgageRate": 6.46,
     "initialClaims": 232000,
-    "creditConditions": -0.001
+    "creditConditions": -0.001,
+    "hySpread": 3.19,
+    "igSpread": 0.96,
+    "fedFundsRate": 5.33,
+    "wti": 75.82,
+    "dollarIndex": 121.4597
   },
   {
     "date": "2024-08-30",
@@ -5061,7 +7166,12 @@
     "termSpread": 0,
     "mortgageRate": 6.35,
     "initialClaims": 232000,
-    "creditConditions": -0.005
+    "creditConditions": -0.005,
+    "hySpread": 3.13,
+    "igSpread": 0.95,
+    "fedFundsRate": 5.33,
+    "wti": 74.52,
+    "dollarIndex": 122.3262
   },
   {
     "date": "2024-09-06",
@@ -5073,7 +7183,12 @@
     "termSpread": 0.06,
     "mortgageRate": 6.35,
     "initialClaims": 227000,
-    "creditConditions": -0.011
+    "creditConditions": -0.011,
+    "hySpread": 3.39,
+    "igSpread": 0.99,
+    "fedFundsRate": 5.33,
+    "wti": 68.58,
+    "dollarIndex": 122.4991
   },
   {
     "date": "2024-09-13",
@@ -5085,7 +7200,12 @@
     "termSpread": 0.09,
     "mortgageRate": 6.2,
     "initialClaims": 227000,
-    "creditConditions": -0.017
+    "creditConditions": -0.017,
+    "hySpread": 3.37,
+    "igSpread": 0.99,
+    "fedFundsRate": 5.33,
+    "wti": 69.59,
+    "dollarIndex": 121.6551
   },
   {
     "date": "2024-09-20",
@@ -5097,7 +7217,12 @@
     "termSpread": 0.18,
     "mortgageRate": 6.09,
     "initialClaims": 223000,
-    "creditConditions": -0.025
+    "creditConditions": -0.025,
+    "hySpread": 3.15,
+    "igSpread": 0.93,
+    "fedFundsRate": 4.83,
+    "wti": 72.72,
+    "dollarIndex": 121.4052
   },
   {
     "date": "2024-09-27",
@@ -5109,7 +7234,12 @@
     "termSpread": 0.2,
     "mortgageRate": 6.08,
     "initialClaims": 221000,
-    "creditConditions": -0.033
+    "creditConditions": -0.033,
+    "hySpread": 3.14,
+    "igSpread": 0.92,
+    "fedFundsRate": 4.83,
+    "wti": 68.72,
+    "dollarIndex": 121.1111
   },
   {
     "date": "2024-10-04",
@@ -5121,7 +7251,12 @@
     "termSpread": 0.05,
     "mortgageRate": 6.12,
     "initialClaims": 227000,
-    "creditConditions": -0.041
+    "creditConditions": -0.041,
+    "hySpread": 2.89,
+    "igSpread": 0.87,
+    "fedFundsRate": 4.83,
+    "wti": 74.93,
+    "dollarIndex": 122.2197
   },
   {
     "date": "2024-10-11",
@@ -5133,7 +7268,12 @@
     "termSpread": 0.13,
     "mortgageRate": 6.32,
     "initialClaims": 258000,
-    "creditConditions": -0.049
+    "creditConditions": -0.049,
+    "hySpread": 2.98,
+    "igSpread": 0.84,
+    "fedFundsRate": 4.83,
+    "wti": 76.11,
+    "dollarIndex": 122.9805
   },
   {
     "date": "2024-10-18",
@@ -5145,7 +7285,12 @@
     "termSpread": 0.13,
     "mortgageRate": 6.44,
     "initialClaims": 241000,
-    "creditConditions": -0.056
+    "creditConditions": -0.056,
+    "hySpread": 2.88,
+    "igSpread": 0.83,
+    "fedFundsRate": 4.83,
+    "wti": 69.78,
+    "dollarIndex": 123.9185
   },
   {
     "date": "2024-10-25",
@@ -5157,7 +7302,12 @@
     "termSpread": 0.14,
     "mortgageRate": 6.54,
     "initialClaims": 227000,
-    "creditConditions": -0.063
+    "creditConditions": -0.063,
+    "hySpread": 2.89,
+    "igSpread": 0.85,
+    "fedFundsRate": 4.83,
+    "wti": 72.02,
+    "dollarIndex": 124.6105
   },
   {
     "date": "2024-11-01",
@@ -5169,7 +7319,12 @@
     "termSpread": 0.16,
     "mortgageRate": 6.72,
     "initialClaims": 219000,
-    "creditConditions": -0.069
+    "creditConditions": -0.069,
+    "hySpread": 2.83,
+    "igSpread": 0.86,
+    "fedFundsRate": 4.83,
+    "wti": 69.81,
+    "dollarIndex": 124.8076
   },
   {
     "date": "2024-11-08",
@@ -5181,7 +7336,12 @@
     "termSpread": 0.04,
     "mortgageRate": 6.79,
     "initialClaims": 221000,
-    "creditConditions": -0.074
+    "creditConditions": -0.074,
+    "hySpread": 2.63,
+    "igSpread": 0.77,
+    "fedFundsRate": 4.58,
+    "wti": 70.69,
+    "dollarIndex": 125.5811
   },
   {
     "date": "2024-11-15",
@@ -5193,7 +7353,12 @@
     "termSpread": 0.12,
     "mortgageRate": 6.78,
     "initialClaims": 218000,
-    "creditConditions": -0.077
+    "creditConditions": -0.077,
+    "hySpread": 2.72,
+    "igSpread": 0.8,
+    "fedFundsRate": 4.58,
+    "wti": 67.33,
+    "dollarIndex": 126.8848
   },
   {
     "date": "2024-11-22",
@@ -5205,7 +7370,12 @@
     "termSpread": 0.04,
     "mortgageRate": 6.84,
     "initialClaims": 216000,
-    "creditConditions": -0.079
+    "creditConditions": -0.079,
+    "hySpread": 2.61,
+    "igSpread": 0.8,
+    "fedFundsRate": 4.58,
+    "wti": 71.68,
+    "dollarIndex": 127.4712
   },
   {
     "date": "2024-11-29",
@@ -5217,7 +7387,12 @@
     "termSpread": 0.05,
     "mortgageRate": 6.81,
     "initialClaims": 219000,
-    "creditConditions": -0.079
+    "creditConditions": -0.079,
+    "hySpread": 2.72,
+    "igSpread": 0.82,
+    "fedFundsRate": 4.58,
+    "wti": 68.26,
+    "dollarIndex": 126.5798
   },
   {
     "date": "2024-12-06",
@@ -5229,7 +7404,12 @@
     "termSpread": 0.05,
     "mortgageRate": 6.69,
     "initialClaims": 222000,
-    "creditConditions": -0.077
+    "creditConditions": -0.077,
+    "hySpread": 2.67,
+    "igSpread": 0.81,
+    "fedFundsRate": 4.58,
+    "wti": 68.58,
+    "dollarIndex": 126.688
   },
   {
     "date": "2024-12-13",
@@ -5241,7 +7421,12 @@
     "termSpread": 0.15,
     "mortgageRate": 6.6,
     "initialClaims": 238000,
-    "creditConditions": -0.075
+    "creditConditions": -0.075,
+    "hySpread": 2.68,
+    "igSpread": 0.78,
+    "fedFundsRate": 4.58,
+    "wti": 71.54,
+    "dollarIndex": 127.3096
   },
   {
     "date": "2024-12-20",
@@ -5253,7 +7438,12 @@
     "termSpread": 0.22,
     "mortgageRate": 6.72,
     "initialClaims": 222000,
-    "creditConditions": -0.072
+    "creditConditions": -0.072,
+    "hySpread": 2.86,
+    "igSpread": 0.82,
+    "fedFundsRate": 4.33,
+    "wti": 69.71,
+    "dollarIndex": 127.893
   },
   {
     "date": "2024-12-27",
@@ -5265,7 +7455,12 @@
     "termSpread": 0.31,
     "mortgageRate": 6.85,
     "initialClaims": 219000,
-    "creditConditions": -0.07
+    "creditConditions": -0.07,
+    "hySpread": 2.84,
+    "igSpread": 0.81,
+    "fedFundsRate": 4.33,
+    "wti": 71.28,
+    "dollarIndex": 128.45
   },
   {
     "date": "2025-01-03",
@@ -5277,7 +7472,12 @@
     "termSpread": 0.32,
     "mortgageRate": 6.91,
     "initialClaims": 212000,
-    "creditConditions": -0.068
+    "creditConditions": -0.068,
+    "hySpread": 2.81,
+    "igSpread": 0.83,
+    "fedFundsRate": 4.33,
+    "wti": 74.64,
+    "dollarIndex": 129.4535
   },
   {
     "date": "2025-01-10",
@@ -5289,7 +7489,12 @@
     "termSpread": 0.37,
     "mortgageRate": 6.93,
     "initialClaims": 206000,
-    "creditConditions": -0.068
+    "creditConditions": -0.068,
+    "hySpread": 2.81,
+    "igSpread": 0.83,
+    "fedFundsRate": 4.33,
+    "wti": 77.27,
+    "dollarIndex": 129.8664
   },
   {
     "date": "2025-01-17",
@@ -5301,7 +7506,12 @@
     "termSpread": 0.34,
     "mortgageRate": 7.04,
     "initialClaims": 219000,
-    "creditConditions": -0.068
+    "creditConditions": -0.068,
+    "hySpread": 2.64,
+    "igSpread": 0.82,
+    "fedFundsRate": 4.33,
+    "wti": 78.56,
+    "dollarIndex": 129.4859
   },
   {
     "date": "2025-01-24",
@@ -5313,7 +7523,12 @@
     "termSpread": 0.36,
     "mortgageRate": 6.96,
     "initialClaims": 223000,
-    "creditConditions": -0.067
+    "creditConditions": -0.067,
+    "hySpread": 2.6,
+    "igSpread": 0.8,
+    "fedFundsRate": 4.33,
+    "wti": 74.97,
+    "dollarIndex": 127.4611
   },
   {
     "date": "2025-01-31",
@@ -5325,7 +7540,12 @@
     "termSpread": 0.36,
     "mortgageRate": 6.95,
     "initialClaims": 212000,
-    "creditConditions": -0.065
+    "creditConditions": -0.065,
+    "hySpread": 2.68,
+    "igSpread": 0.82,
+    "fedFundsRate": 4.33,
+    "wti": 72.84,
+    "dollarIndex": 128.4828
   },
   {
     "date": "2025-02-07",
@@ -5337,7 +7557,12 @@
     "termSpread": 0.2,
     "mortgageRate": 6.89,
     "initialClaims": 220000,
-    "creditConditions": -0.062
+    "creditConditions": -0.062,
+    "hySpread": 2.67,
+    "igSpread": 0.84,
+    "fedFundsRate": 4.33,
+    "wti": 71.32,
+    "dollarIndex": 128.4292
   },
   {
     "date": "2025-02-14",
@@ -5349,7 +7574,12 @@
     "termSpread": 0.21,
     "mortgageRate": 6.87,
     "initialClaims": 216000,
-    "creditConditions": -0.056
+    "creditConditions": -0.056,
+    "hySpread": 2.62,
+    "igSpread": 0.8,
+    "fedFundsRate": 4.33,
+    "wti": 71.05,
+    "dollarIndex": 127.1491
   },
   {
     "date": "2025-02-21",
@@ -5361,7 +7591,12 @@
     "termSpread": 0.23,
     "mortgageRate": 6.85,
     "initialClaims": 223000,
-    "creditConditions": -0.048
+    "creditConditions": -0.048,
+    "hySpread": 2.78,
+    "igSpread": 0.81,
+    "fedFundsRate": 4.33,
+    "wti": 70.72,
+    "dollarIndex": 127.1408
   },
   {
     "date": "2025-02-28",
@@ -5373,7 +7608,12 @@
     "termSpread": 0.25,
     "mortgageRate": 6.76,
     "initialClaims": 241000,
-    "creditConditions": -0.037
+    "creditConditions": -0.037,
+    "hySpread": 2.87,
+    "igSpread": 0.88,
+    "fedFundsRate": 4.33,
+    "wti": 69.97,
+    "dollarIndex": 128.2805
   },
   {
     "date": "2025-03-07",
@@ -5385,7 +7625,12 @@
     "termSpread": 0.33,
     "mortgageRate": 6.63,
     "initialClaims": 224000,
-    "creditConditions": -0.025
+    "creditConditions": -0.025,
+    "hySpread": 2.97,
+    "igSpread": 0.89,
+    "fedFundsRate": 4.33,
+    "wti": 67.29,
+    "dollarIndex": 125.9814
   },
   {
     "date": "2025-03-14",
@@ -5397,7 +7642,12 @@
     "termSpread": 0.29,
     "mortgageRate": 6.65,
     "initialClaims": 222000,
-    "creditConditions": -0.012
+    "creditConditions": -0.012,
+    "hySpread": 3.25,
+    "igSpread": 0.94,
+    "fedFundsRate": 4.33,
+    "wti": 67.43,
+    "dollarIndex": 125.6942
   },
   {
     "date": "2025-03-21",
@@ -5409,7 +7659,12 @@
     "termSpread": 0.31,
     "mortgageRate": 6.67,
     "initialClaims": 225000,
-    "creditConditions": 0
+    "creditConditions": 0,
+    "hySpread": 3.21,
+    "igSpread": 0.92,
+    "fedFundsRate": 4.33,
+    "wti": 68.52,
+    "dollarIndex": 126.2679
   },
   {
     "date": "2025-03-28",
@@ -5421,7 +7676,12 @@
     "termSpread": 0.38,
     "mortgageRate": 6.65,
     "initialClaims": 224000,
-    "creditConditions": 0.009
+    "creditConditions": 0.009,
+    "hySpread": 3.47,
+    "igSpread": 0.94,
+    "fedFundsRate": 4.33,
+    "wti": 69.74,
+    "dollarIndex": 126.4187
   },
   {
     "date": "2025-04-04",
@@ -5433,7 +7693,12 @@
     "termSpread": 0.33,
     "mortgageRate": 6.64,
     "initialClaims": 220000,
-    "creditConditions": 0.016
+    "creditConditions": 0.016,
+    "hySpread": 4.45,
+    "igSpread": 1.14,
+    "fedFundsRate": 4.33,
+    "wti": 62.42,
+    "dollarIndex": 125.8129
   },
   {
     "date": "2025-04-11",
@@ -5445,7 +7710,12 @@
     "termSpread": 0.52,
     "mortgageRate": 6.62,
     "initialClaims": 223000,
-    "creditConditions": 0.02
+    "creditConditions": 0.02,
+    "hySpread": 4.26,
+    "igSpread": 1.18,
+    "fedFundsRate": 4.33,
+    "wti": 61.91,
+    "dollarIndex": 124.0163
   },
   {
     "date": "2025-04-18",
@@ -5457,7 +7727,12 @@
     "termSpread": 0.53,
     "mortgageRate": 6.83,
     "initialClaims": 217000,
-    "creditConditions": 0.02
+    "creditConditions": 0.02,
+    "hySpread": 4.02,
+    "igSpread": 1.11,
+    "fedFundsRate": 4.33,
+    "wti": 65.07,
+    "dollarIndex": 122.9865
   },
   {
     "date": "2025-04-25",
@@ -5469,7 +7744,12 @@
     "termSpread": 0.55,
     "mortgageRate": 6.81,
     "initialClaims": 224000,
-    "creditConditions": 0.016
+    "creditConditions": 0.016,
+    "hySpread": 3.67,
+    "igSpread": 1.04,
+    "fedFundsRate": 4.33,
+    "wti": 63.85,
+    "dollarIndex": 122.8858
   },
   {
     "date": "2025-05-02",
@@ -5481,7 +7761,12 @@
     "termSpread": 0.5,
     "mortgageRate": 6.76,
     "initialClaims": 239000,
-    "creditConditions": 0.009
+    "creditConditions": 0.009,
+    "hySpread": 3.6,
+    "igSpread": 1.06,
+    "fedFundsRate": 4.33,
+    "wti": 59.67,
+    "dollarIndex": 122.4962
   },
   {
     "date": "2025-05-09",
@@ -5493,7 +7778,12 @@
     "termSpread": 0.49,
     "mortgageRate": 6.76,
     "initialClaims": 228000,
-    "creditConditions": 0
+    "creditConditions": 0,
+    "hySpread": 3.53,
+    "igSpread": 1.02,
+    "fedFundsRate": 4.33,
+    "wti": 62.37,
+    "dollarIndex": 122.5191
   },
   {
     "date": "2025-05-16",
@@ -5505,7 +7795,12 @@
     "termSpread": 0.45,
     "mortgageRate": 6.81,
     "initialClaims": 226000,
-    "creditConditions": -0.009
+    "creditConditions": -0.009,
+    "hySpread": 3.16,
+    "igSpread": 0.93,
+    "fedFundsRate": 4.33,
+    "wti": 63.84,
+    "dollarIndex": 123.0737
   },
   {
     "date": "2025-05-23",
@@ -5517,7 +7812,12 @@
     "termSpread": 0.51,
     "mortgageRate": 6.86,
     "initialClaims": 225000,
-    "creditConditions": -0.018
+    "creditConditions": -0.018,
+    "hySpread": 3.4,
+    "igSpread": 0.93,
+    "fedFundsRate": 4.33,
+    "wti": 62.89,
+    "dollarIndex": 121.3837
   },
   {
     "date": "2025-05-30",
@@ -5529,7 +7829,12 @@
     "termSpread": 0.52,
     "mortgageRate": 6.89,
     "initialClaims": 236000,
-    "creditConditions": -0.025
+    "creditConditions": -0.025,
+    "hySpread": 3.31,
+    "igSpread": 0.91,
+    "fedFundsRate": 4.33,
+    "wti": 61.46,
+    "dollarIndex": 121.7674
   },
   {
     "date": "2025-06-06",
@@ -5541,7 +7846,12 @@
     "termSpread": 0.47,
     "mortgageRate": 6.85,
     "initialClaims": 244000,
-    "creditConditions": -0.031
+    "creditConditions": -0.031,
+    "hySpread": 3.09,
+    "igSpread": 0.87,
+    "fedFundsRate": 4.33,
+    "wti": 65.3,
+    "dollarIndex": 121.161
   },
   {
     "date": "2025-06-13",
@@ -5553,7 +7863,12 @@
     "termSpread": 0.45,
     "mortgageRate": 6.84,
     "initialClaims": 246000,
-    "creditConditions": -0.035
+    "creditConditions": -0.035,
+    "hySpread": 3.18,
+    "igSpread": 0.88,
+    "fedFundsRate": 4.33,
+    "wti": 73.84,
+    "dollarIndex": 120.3245
   },
   {
     "date": "2025-06-20",
@@ -5565,7 +7880,12 @@
     "termSpread": 0.48,
     "mortgageRate": 6.81,
     "initialClaims": 243000,
-    "creditConditions": -0.038
+    "creditConditions": -0.038,
+    "hySpread": 3.13,
+    "igSpread": 0.88,
+    "fedFundsRate": 4.33,
+    "wti": 75.72,
+    "dollarIndex": 121.0408
   },
   {
     "date": "2025-06-27",
@@ -5577,7 +7897,12 @@
     "termSpread": 0.56,
     "mortgageRate": 6.77,
     "initialClaims": 236000,
-    "creditConditions": -0.041
+    "creditConditions": -0.041,
+    "hySpread": 3.02,
+    "igSpread": 0.88,
+    "fedFundsRate": 4.33,
+    "wti": 66.66,
+    "dollarIndex": 119.659
   },
   {
     "date": "2025-07-04",
@@ -5589,7 +7914,12 @@
     "termSpread": 0.47,
     "mortgageRate": 6.67,
     "initialClaims": 231000,
-    "creditConditions": -0.044
+    "creditConditions": -0.044,
+    "hySpread": 2.8,
+    "igSpread": 0.8,
+    "fedFundsRate": 4.33,
+    "wti": 68.13,
+    "dollarIndex": 119.2382
   },
   {
     "date": "2025-07-11",
@@ -5601,7 +7931,12 @@
     "termSpread": 0.53,
     "mortgageRate": 6.72,
     "initialClaims": 228000,
-    "creditConditions": -0.046
+    "creditConditions": -0.046,
+    "hySpread": 2.97,
+    "igSpread": 0.83,
+    "fedFundsRate": 4.33,
+    "wti": 69.63,
+    "dollarIndex": 119.9214
   },
   {
     "date": "2025-07-18",
@@ -5613,7 +7948,12 @@
     "termSpread": 0.56,
     "mortgageRate": 6.75,
     "initialClaims": 221000,
-    "creditConditions": -0.048
+    "creditConditions": -0.048,
+    "hySpread": 2.93,
+    "igSpread": 0.8,
+    "fedFundsRate": 4.33,
+    "wti": 68.53,
+    "dollarIndex": 120.356
   },
   {
     "date": "2025-07-25",
@@ -5625,7 +7965,12 @@
     "termSpread": 0.49,
     "mortgageRate": 6.74,
     "initialClaims": 218000,
-    "creditConditions": -0.049
+    "creditConditions": -0.049,
+    "hySpread": 2.84,
+    "igSpread": 0.78,
+    "fedFundsRate": 4.33,
+    "wti": 66.38,
+    "dollarIndex": 119.9857
   },
   {
     "date": "2025-08-01",
@@ -5637,7 +7982,12 @@
     "termSpread": 0.54,
     "mortgageRate": 6.72,
     "initialClaims": 219000,
-    "creditConditions": -0.05
+    "creditConditions": -0.05,
+    "hySpread": 3.13,
+    "igSpread": 0.82,
+    "fedFundsRate": 4.33,
+    "wti": 68.39,
+    "dollarIndex": 121.2122
   },
   {
     "date": "2025-08-08",
@@ -5649,7 +7999,12 @@
     "termSpread": 0.51,
     "mortgageRate": 6.63,
     "initialClaims": 226000,
-    "creditConditions": -0.051
+    "creditConditions": -0.051,
+    "hySpread": 2.94,
+    "igSpread": 0.8,
+    "fedFundsRate": 4.33,
+    "wti": 64.94,
+    "dollarIndex": 120.3329
   },
   {
     "date": "2025-08-15",
@@ -5661,7 +8016,12 @@
     "termSpread": 0.58,
     "mortgageRate": 6.58,
     "initialClaims": 224000,
-    "creditConditions": -0.052
+    "creditConditions": -0.052,
+    "hySpread": 2.88,
+    "igSpread": 0.75,
+    "fedFundsRate": 4.33,
+    "wti": 63.78,
+    "dollarIndex": 120.3377
   },
   {
     "date": "2025-08-22",
@@ -5673,7 +8033,12 @@
     "termSpread": 0.58,
     "mortgageRate": 6.58,
     "initialClaims": 233000,
-    "creditConditions": -0.051
+    "creditConditions": -0.051,
+    "hySpread": 2.88,
+    "igSpread": 0.77,
+    "fedFundsRate": 4.33,
+    "wti": 64.08,
+    "dollarIndex": 120.2774
   },
   {
     "date": "2025-08-29",
@@ -5685,7 +8050,12 @@
     "termSpread": 0.64,
     "mortgageRate": 6.56,
     "initialClaims": 229000,
-    "creditConditions": -0.05
+    "creditConditions": -0.05,
+    "hySpread": 2.82,
+    "igSpread": 0.8,
+    "fedFundsRate": 4.33,
+    "wti": 64.36,
+    "dollarIndex": 120.2082
   },
   {
     "date": "2025-09-05",
@@ -5697,7 +8067,12 @@
     "termSpread": 0.59,
     "mortgageRate": 6.5,
     "initialClaims": 236000,
-    "creditConditions": -0.048
+    "creditConditions": -0.048,
+    "hySpread": 2.83,
+    "igSpread": 0.79,
+    "fedFundsRate": 4.33,
+    "wti": 62.22,
+    "dollarIndex": 120.1282
   },
   {
     "date": "2025-09-12",
@@ -5709,7 +8084,12 @@
     "termSpread": 0.5,
     "mortgageRate": 6.35,
     "initialClaims": 259000,
-    "creditConditions": -0.046
+    "creditConditions": -0.046,
+    "hySpread": 2.79,
+    "igSpread": 0.77,
+    "fedFundsRate": 4.33,
+    "wti": 63.02,
+    "dollarIndex": 120.0611
   },
   {
     "date": "2025-09-19",
@@ -5721,7 +8101,12 @@
     "termSpread": 0.57,
     "mortgageRate": 6.26,
     "initialClaims": 233000,
-    "creditConditions": -0.044
+    "creditConditions": -0.044,
+    "hySpread": 2.72,
+    "igSpread": 0.74,
+    "fedFundsRate": 4.08,
+    "wti": 63.02,
+    "dollarIndex": 119.7858
   },
   {
     "date": "2025-09-26",
@@ -5733,7 +8118,12 @@
     "termSpread": 0.57,
     "mortgageRate": 6.3,
     "initialClaims": 219000,
-    "creditConditions": -0.042
+    "creditConditions": -0.042,
+    "hySpread": 2.75,
+    "igSpread": 0.75,
+    "fedFundsRate": 4.09,
+    "wti": 66.5,
+    "dollarIndex": 120.4349
   },
   {
     "date": "2025-10-03",
@@ -5745,7 +8135,12 @@
     "termSpread": 0.55,
     "mortgageRate": 6.34,
     "initialClaims": 225000,
-    "creditConditions": -0.041
+    "creditConditions": -0.041,
+    "hySpread": 2.8,
+    "igSpread": 0.75,
+    "fedFundsRate": 4.09,
+    "wti": 61.65,
+    "dollarIndex": 120.0881
   },
   {
     "date": "2025-10-10",
@@ -5757,7 +8152,12 @@
     "termSpread": 0.53,
     "mortgageRate": 6.3,
     "initialClaims": 233000,
-    "creditConditions": -0.039
+    "creditConditions": -0.039,
+    "hySpread": 3.18,
+    "igSpread": 0.81,
+    "fedFundsRate": 4.1,
+    "wti": 59.75,
+    "dollarIndex": 121.1163
   },
   {
     "date": "2025-10-17",
@@ -5769,7 +8169,12 @@
     "termSpread": 0.56,
     "mortgageRate": 6.27,
     "initialClaims": 222000,
-    "creditConditions": -0.036
+    "creditConditions": -0.036,
+    "hySpread": 3.04,
+    "igSpread": 0.8,
+    "fedFundsRate": 4.11,
+    "wti": 58.3,
+    "dollarIndex": 120.7028
   },
   {
     "date": "2025-10-24",
@@ -5781,7 +8186,12 @@
     "termSpread": 0.54,
     "mortgageRate": 6.19,
     "initialClaims": 231000,
-    "creditConditions": -0.032
+    "creditConditions": -0.032,
+    "hySpread": 2.88,
+    "igSpread": 0.77,
+    "fedFundsRate": 4.11,
+    "wti": 62.27,
+    "dollarIndex": 120.9345
   },
   {
     "date": "2025-10-31",
@@ -5793,7 +8203,12 @@
     "termSpread": 0.51,
     "mortgageRate": 6.17,
     "initialClaims": 221000,
-    "creditConditions": -0.028
+    "creditConditions": -0.028,
+    "hySpread": 2.94,
+    "igSpread": 0.8,
+    "fedFundsRate": 3.86,
+    "wti": 61.75,
+    "dollarIndex": 121.3859
   },
   {
     "date": "2025-11-07",
@@ -5805,7 +8220,12 @@
     "termSpread": 0.56,
     "mortgageRate": 6.22,
     "initialClaims": 228000,
-    "creditConditions": -0.024
+    "creditConditions": -0.024,
+    "hySpread": 3.15,
+    "igSpread": 0.84,
+    "fedFundsRate": 3.87,
+    "wti": 60.54,
+    "dollarIndex": 121.388
   },
   {
     "date": "2025-11-14",
@@ -5817,7 +8237,12 @@
     "termSpread": 0.52,
     "mortgageRate": 6.24,
     "initialClaims": 228000,
-    "creditConditions": -0.019
+    "creditConditions": -0.019,
+    "hySpread": 3.07,
+    "igSpread": 0.83,
+    "fedFundsRate": 3.88,
+    "wti": 60.87,
+    "dollarIndex": 120.9666
   },
   {
     "date": "2025-11-21",
@@ -5829,7 +8254,12 @@
     "termSpread": 0.55,
     "mortgageRate": 6.26,
     "initialClaims": 222000,
-    "creditConditions": -0.015
+    "creditConditions": -0.015,
+    "hySpread": 3.19,
+    "igSpread": 0.86,
+    "fedFundsRate": 3.88,
+    "wti": 58.86,
+    "dollarIndex": 121.8653
   },
   {
     "date": "2025-11-28",
@@ -5841,7 +8271,12 @@
     "termSpread": 0.55,
     "mortgageRate": 6.23,
     "initialClaims": 218000,
-    "creditConditions": -0.012
+    "creditConditions": -0.012,
+    "hySpread": 2.95,
+    "igSpread": 0.82,
+    "fedFundsRate": 3.89,
+    "wti": 58.58,
+    "dollarIndex": 121.0527
   },
   {
     "date": "2025-12-05",
@@ -5853,7 +8288,12 @@
     "termSpread": 0.58,
     "mortgageRate": 6.19,
     "initialClaims": 216000,
-    "creditConditions": -0.01
+    "creditConditions": -0.01,
+    "hySpread": 2.85,
+    "igSpread": 0.79,
+    "fedFundsRate": 3.89,
+    "wti": 60.23,
+    "dollarIndex": 120.6863
   },
   {
     "date": "2025-12-12",
@@ -5865,7 +8305,12 @@
     "termSpread": 0.67,
     "mortgageRate": 6.22,
     "initialClaims": 235000,
-    "creditConditions": -0.011
+    "creditConditions": -0.011,
+    "hySpread": 2.91,
+    "igSpread": 0.8,
+    "fedFundsRate": 3.64,
+    "wti": 57.61,
+    "dollarIndex": 120.1442
   },
   {
     "date": "2025-12-19",
@@ -5877,7 +8322,12 @@
     "termSpread": 0.68,
     "mortgageRate": 6.21,
     "initialClaims": 224000,
-    "creditConditions": -0.015
+    "creditConditions": -0.015,
+    "hySpread": 2.9,
+    "igSpread": 0.8,
+    "fedFundsRate": 3.64,
+    "wti": 56.8,
+    "dollarIndex": 120.1652
   },
   {
     "date": "2025-12-26",
@@ -5889,7 +8339,12 @@
     "termSpread": 0.68,
     "mortgageRate": 6.18,
     "initialClaims": 215000,
-    "creditConditions": -0.02
+    "creditConditions": -0.02,
+    "hySpread": 2.86,
+    "igSpread": 0.79,
+    "fedFundsRate": 3.64,
+    "wti": 56.6,
+    "dollarIndex": 119.4723
   },
   {
     "date": "2026-01-02",
@@ -5901,7 +8356,12 @@
     "termSpread": 0.72,
     "mortgageRate": 6.15,
     "initialClaims": 203000,
-    "creditConditions": -0.027
+    "creditConditions": -0.027,
+    "hySpread": 2.83,
+    "igSpread": 0.79,
+    "fedFundsRate": 3.64,
+    "wti": 57.21,
+    "dollarIndex": 119.6059
   },
   {
     "date": "2026-01-09",
@@ -5913,7 +8373,12 @@
     "termSpread": 0.64,
     "mortgageRate": 6.16,
     "initialClaims": 207000,
-    "creditConditions": -0.035
+    "creditConditions": -0.035,
+    "hySpread": 2.74,
+    "igSpread": 0.78,
+    "fedFundsRate": 3.64,
+    "wti": 58.96,
+    "dollarIndex": 120.2215
   },
   {
     "date": "2026-01-16",
@@ -5925,7 +8390,12 @@
     "termSpread": 0.65,
     "mortgageRate": 6.06,
     "initialClaims": 201000,
-    "creditConditions": -0.04
+    "creditConditions": -0.04,
+    "hySpread": 2.65,
+    "igSpread": 0.75,
+    "fedFundsRate": 3.64,
+    "wti": 59.4,
+    "dollarIndex": 120.0838
   },
   {
     "date": "2026-01-23",
@@ -5937,7 +8407,12 @@
     "termSpread": 0.64,
     "mortgageRate": 6.09,
     "initialClaims": 210000,
-    "creditConditions": -0.044
+    "creditConditions": -0.044,
+    "hySpread": 2.68,
+    "igSpread": 0.73,
+    "fedFundsRate": 3.64,
+    "wti": 60.7,
+    "dollarIndex": 118.8976
   },
   {
     "date": "2026-01-30",
@@ -5949,7 +8424,12 @@
     "termSpread": 0.74,
     "mortgageRate": 6.1,
     "initialClaims": 211000,
-    "creditConditions": -0.043
+    "creditConditions": -0.043,
+    "hySpread": 2.8,
+    "igSpread": 0.74,
+    "fedFundsRate": 3.64,
+    "wti": 64.5,
+    "dollarIndex": 117.8996
   },
   {
     "date": "2026-02-06",
@@ -5961,7 +8441,12 @@
     "termSpread": 0.72,
     "mortgageRate": 6.11,
     "initialClaims": 230000,
-    "creditConditions": -0.04
+    "creditConditions": -0.04,
+    "hySpread": 2.87,
+    "igSpread": 0.76,
+    "fedFundsRate": 3.64,
+    "wti": 63.77,
+    "dollarIndex": 118.2407
   },
   {
     "date": "2026-02-13",
@@ -5973,7 +8458,12 @@
     "termSpread": 0.64,
     "mortgageRate": 6.09,
     "initialClaims": 230000,
-    "creditConditions": -0.034
+    "creditConditions": -0.034,
+    "hySpread": 2.95,
+    "igSpread": 0.79,
+    "fedFundsRate": 3.64,
+    "wti": 63.05,
+    "dollarIndex": 117.5258
   },
   {
     "date": "2026-02-20",
@@ -5985,7 +8475,12 @@
     "termSpread": 0.6,
     "mortgageRate": 6.01,
     "initialClaims": 208000,
-    "creditConditions": -0.025
+    "creditConditions": -0.025,
+    "hySpread": 2.86,
+    "igSpread": 0.78,
+    "fedFundsRate": 3.64,
+    "wti": 66.69,
+    "dollarIndex": 117.9917
   },
   {
     "date": "2026-02-27",
@@ -5997,7 +8492,12 @@
     "termSpread": 0.59,
     "mortgageRate": 5.98,
     "initialClaims": 211000,
-    "creditConditions": -0.016
+    "creditConditions": -0.016,
+    "hySpread": 3.1,
+    "igSpread": 0.85,
+    "fedFundsRate": 3.64,
+    "wti": 66.96,
+    "dollarIndex": 117.8223
   },
   {
     "date": "2026-03-06",
@@ -6009,7 +8509,12 @@
     "termSpread": 0.59,
     "mortgageRate": 6,
     "initialClaims": 214000,
-    "creditConditions": -0.008
+    "creditConditions": -0.008,
+    "hySpread": 3.13,
+    "igSpread": 0.84,
+    "fedFundsRate": 3.64,
+    "wti": 90.77,
+    "dollarIndex": 119.491
   },
   {
     "date": "2026-03-13",
@@ -6021,7 +8526,12 @@
     "termSpread": 0.55,
     "mortgageRate": 6.11,
     "initialClaims": 213000,
-    "creditConditions": -0.001
+    "creditConditions": -0.001,
+    "hySpread": 3.28,
+    "igSpread": 0.93,
+    "fedFundsRate": 3.64,
+    "wti": 98.48,
+    "dollarIndex": 120.5518
   },
   {
     "date": "2026-03-20",
@@ -6033,7 +8543,12 @@
     "termSpread": 0.51,
     "mortgageRate": 6.22,
     "initialClaims": 205000,
-    "creditConditions": 0.002
+    "creditConditions": 0.002,
+    "hySpread": 3.24,
+    "igSpread": 0.88,
+    "fedFundsRate": 3.64,
+    "wti": 98.71,
+    "dollarIndex": 120.2757
   },
   {
     "date": "2026-03-27",
@@ -6045,7 +8560,12 @@
     "termSpread": 0.56,
     "mortgageRate": 6.38,
     "initialClaims": 211000,
-    "creditConditions": 0.003
+    "creditConditions": 0.003,
+    "hySpread": 3.42,
+    "igSpread": 0.91,
+    "fedFundsRate": 3.64,
+    "wti": 101.26,
+    "dollarIndex": 120.8851
   },
   {
     "date": "2026-04-03",
@@ -6057,7 +8577,12 @@
     "termSpread": 0.51,
     "mortgageRate": 6.46,
     "initialClaims": 203000,
-    "creditConditions": 0
+    "creditConditions": 0,
+    "hySpread": 3.13,
+    "igSpread": 0.86,
+    "fedFundsRate": 3.64,
+    "wti": 113.23,
+    "dollarIndex": 120.6565
   },
   {
     "date": "2026-04-10",
@@ -6069,7 +8594,12 @@
     "termSpread": 0.5,
     "mortgageRate": 6.37,
     "initialClaims": 218000,
-    "creditConditions": -0.005
+    "creditConditions": -0.005,
+    "hySpread": 2.94,
+    "igSpread": 0.82,
+    "fedFundsRate": 3.64,
+    "wti": 98.34,
+    "dollarIndex": 118.8552
   },
   {
     "date": "2026-04-17",
@@ -6081,7 +8611,12 @@
     "termSpread": 0.55,
     "mortgageRate": 6.3,
     "initialClaims": 208000,
-    "creditConditions": -0.011
+    "creditConditions": -0.011,
+    "hySpread": 2.83,
+    "igSpread": 0.8,
+    "fedFundsRate": 3.64,
+    "wti": 85.91,
+    "dollarIndex": 118.0795
   },
   {
     "date": "2026-04-24",
@@ -6093,7 +8628,12 @@
     "termSpread": 0.53,
     "mortgageRate": 6.23,
     "initialClaims": 215000,
-    "creditConditions": -0.016
+    "creditConditions": -0.016,
+    "hySpread": 2.86,
+    "igSpread": 0.8,
+    "fedFundsRate": 3.64,
+    "wti": 98.42,
+    "dollarIndex": 118.7294
   },
   {
     "date": "2026-05-01",
@@ -6105,7 +8645,12 @@
     "termSpread": 0.51,
     "mortgageRate": 6.3,
     "initialClaims": 190000,
-    "creditConditions": -0.021
+    "creditConditions": -0.021,
+    "hySpread": 2.77,
+    "igSpread": 0.81,
+    "fedFundsRate": 3.64,
+    "wti": 105.38,
+    "dollarIndex": 118.3926
   },
   {
     "date": "2026-05-08",
@@ -6117,7 +8662,12 @@
     "termSpread": 0.48,
     "mortgageRate": 6.37,
     "initialClaims": 199000,
-    "creditConditions": -0.025
+    "creditConditions": -0.025,
+    "hySpread": 2.81,
+    "igSpread": 0.79,
+    "fedFundsRate": 3.63,
+    "wti": 98.87,
+    "dollarIndex": 118.0392
   },
   {
     "date": "2026-05-15",
@@ -6129,7 +8679,12 @@
     "termSpread": 0.5,
     "mortgageRate": 6.36,
     "initialClaims": 212000,
-    "creditConditions": -0.027
+    "creditConditions": -0.027,
+    "hySpread": 2.8,
+    "igSpread": 0.75,
+    "fedFundsRate": 3.63,
+    "wti": 108.99,
+    "dollarIndex": 119.2825
   },
   {
     "date": "2026-05-22",
@@ -6141,7 +8696,12 @@
     "termSpread": 0.43,
     "mortgageRate": 6.51,
     "initialClaims": 210000,
-    "creditConditions": -0.028
+    "creditConditions": -0.028,
+    "hySpread": 2.74,
+    "igSpread": 0.74,
+    "fedFundsRate": 3.62,
+    "wti": 100.35,
+    "dollarIndex": 119.2868
   },
   {
     "date": "2026-05-29",
@@ -6153,7 +8713,12 @@
     "termSpread": 0.47,
     "mortgageRate": 6.53,
     "initialClaims": 212000,
-    "creditConditions": -0.028
+    "creditConditions": -0.028,
+    "hySpread": 2.72,
+    "igSpread": 0.73,
+    "fedFundsRate": 3.62,
+    "wti": 91.16,
+    "dollarIndex": 118.8783
   },
   {
     "date": "2026-06-05",
@@ -6165,7 +8730,12 @@
     "termSpread": 0.38,
     "mortgageRate": 6.48,
     "initialClaims": 225000,
-    "creditConditions": -0.028
+    "creditConditions": -0.028,
+    "hySpread": 2.76,
+    "igSpread": 0.74,
+    "fedFundsRate": 3.62,
+    "wti": 94.32,
+    "dollarIndex": 120.0831
   },
   {
     "date": "2026-06-12",
@@ -6177,7 +8747,12 @@
     "termSpread": 0.39,
     "mortgageRate": 6.52,
     "initialClaims": 230000,
-    "creditConditions": -0.028
+    "creditConditions": -0.028,
+    "hySpread": 2.71,
+    "igSpread": 0.74,
+    "fedFundsRate": 3.62,
+    "wti": 88.62,
+    "dollarIndex": 119.5073
   },
   {
     "date": "2026-06-19",
@@ -6189,7 +8764,12 @@
     "termSpread": 0.27,
     "mortgageRate": 6.47,
     "initialClaims": 227000,
-    "creditConditions": -0.029
+    "creditConditions": -0.029,
+    "hySpread": 2.66,
+    "igSpread": 0.74,
+    "fedFundsRate": 3.63,
+    "wti": 80.35,
+    "dollarIndex": 120.3958
   },
   {
     "date": "2026-06-26",
@@ -6201,7 +8781,12 @@
     "termSpread": 0.31,
     "mortgageRate": 6.49,
     "initialClaims": 216000,
-    "creditConditions": -0.031
+    "creditConditions": -0.031,
+    "hySpread": 2.83,
+    "igSpread": 0.77,
+    "fedFundsRate": 3.63,
+    "wti": 70.3,
+    "dollarIndex": 120.8866
   },
   {
     "date": "2026-07-03",
@@ -6213,7 +8798,12 @@
     "termSpread": 0.35,
     "mortgageRate": 6.43,
     "initialClaims": 217000,
-    "creditConditions": -0.034
+    "creditConditions": -0.034,
+    "hySpread": 2.74,
+    "igSpread": 0.75,
+    "fedFundsRate": 3.63,
+    "wti": 69.73,
+    "dollarIndex": 120.6902
   },
   {
     "date": "2026-07-10",
@@ -6225,7 +8815,12 @@
     "termSpread": 0.35,
     "mortgageRate": 6.49,
     "initialClaims": 217000,
-    "creditConditions": -0.039
+    "creditConditions": -0.039,
+    "hySpread": 2.69,
+    "igSpread": 0.77,
+    "fedFundsRate": 3.62,
+    "wti": 72.45,
+    "dollarIndex": 120.5046
   },
   {
     "date": "2026-07-17",
@@ -6237,7 +8832,12 @@
     "termSpread": 0.37,
     "mortgageRate": 6.55,
     "initialClaims": 209000,
-    "creditConditions": -0.044
+    "creditConditions": -0.044,
+    "hySpread": 2.73,
+    "igSpread": 0.79,
+    "fedFundsRate": 3.63,
+    "wti": 83.43,
+    "dollarIndex": 120.5315
   },
   {
     "date": "2026-07-24",
@@ -6249,7 +8849,12 @@
     "termSpread": 0.36,
     "mortgageRate": 6.58,
     "initialClaims": 189000,
-    "creditConditions": -0.05
+    "creditConditions": -0.05,
+    "hySpread": 2.79,
+    "igSpread": 0.8,
+    "fedFundsRate": 3.63,
+    "wti": 91.74,
+    "dollarIndex": 120.7105
   },
   {
     "date": "2026-07-31",
@@ -6261,7 +8866,12 @@
     "termSpread": 0.47,
     "mortgageRate": 6.66,
     "initialClaims": 198000,
-    "creditConditions": -0.055
+    "creditConditions": -0.055,
+    "hySpread": 2.85,
+    "igSpread": 0.79,
+    "fedFundsRate": 3.63,
+    "wti": 86.16,
+    "dollarIndex": 119.7034
   },
   {
     "date": "2026-08-07",
@@ -6273,7 +8883,12 @@
     "termSpread": 0.46,
     "mortgageRate": 6.69,
     "initialClaims": 200000,
-    "creditConditions": -0.06
+    "creditConditions": -0.06,
+    "hySpread": 2.7,
+    "igSpread": 0.78,
+    "fedFundsRate": 3.63,
+    "wti": 79.77,
+    "dollarIndex": 119.0649
   },
   {
     "date": "2026-08-14",
@@ -6285,6 +8900,11 @@
     "termSpread": 0.51,
     "mortgageRate": 6.67,
     "initialClaims": 209000,
-    "creditConditions": -0.06
+    "creditConditions": -0.06,
+    "hySpread": 2.71,
+    "igSpread": 0.79,
+    "fedFundsRate": 3.63,
+    "wti": 84.77,
+    "dollarIndex": 119.0649
   }
 ]

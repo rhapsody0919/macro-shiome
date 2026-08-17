@@ -436,3 +436,34 @@ describe('景気先行指数の残り 2 要素 (#83)', () => {
     expect(indicators['credit-conditions'].attribution).toContain('Chicago');
   });
 });
+
+describe('投資判断の主要指標 (#84)', () => {
+  it('信用スプレッドは著作権ありとして扱う', () => {
+    // ICE Data Indices に著作権がある。出所表示が必須 (spec F-11)。
+    expect(indicators['hy-spread'].copyright).toBe('restricted');
+    expect(indicators['ig-spread'].copyright).toBe('restricted');
+  });
+
+  it('政策金利・商品・為替・失業率は Public Domain', () => {
+    for (const id of ['fed-funds-rate', 'wti', 'dollar-index', 'unemployment-rate']) {
+      expect(indicators[id].copyright, id).toBe('none');
+    }
+  });
+
+  it('失業率は分類しない', () => {
+    // 景気遅行指数の構成要素は「平均失業期間」で失業率そのものではない。
+    expect(indicators['unemployment-rate'].cyclePosition).toBeUndefined();
+    expect(indicators['unemployment-rate'].note).toContain('平均失業期間');
+  });
+
+  it('ドル指数が USD/JPY と別物であることを記録する', () => {
+    // 2 国間レートと加重平均を混同すると、円だけ動いた局面を読み違える。
+    expect(indicators['dollar-index'].note).toContain('2 国間');
+  });
+
+  it('日次系列として取得する', () => {
+    for (const id of ['hy-spread', 'ig-spread', 'fed-funds-rate', 'wti', 'dollar-index']) {
+      expect(indicators[id].frequency, id).toBe('daily');
+    }
+  });
+});

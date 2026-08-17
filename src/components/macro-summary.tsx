@@ -1,4 +1,4 @@
-import { formatNumber, formatPercent } from '@/lib/format';
+import { formatPercent } from '@/lib/format';
 import { pickLatest, stepLabel } from '@/lib/pick';
 import type { MacroPoint } from '@/lib/data/types';
 import { SummaryCard, SummaryGrid } from './summary-card';
@@ -15,7 +15,7 @@ export function MacroSummary({ points }: { points: MacroPoint[] }) {
   const curve = pickLatest(points, (p) => p.termSpread, at);
   const real = pickLatest(points, (p) => p.realRate, at);
   const mortgage = pickLatest(points, (p) => p.mortgageRate, at);
-  const vix = pickLatest(points, (p) => p.vix, at);
+  const hy = pickLatest(points, (p) => p.hySpread, at);
 
   const formatDate = (value: string | null) =>
     value === null ? null : value.replace(/-/g, '/');
@@ -62,11 +62,13 @@ export function MacroSummary({ points }: { points: MacroPoint[] }) {
         note="30年固定"
       />
       <SummaryCard
-        label="VIX"
-        value={formatNumber(vix.value, 2)}
-        delta={vix.delta}
-        deltaLabel={stepLabel(vix.stepsBack, '週')}
-        asOf={formatDate(vix.at)}
+        label="ハイイールド債スプレッド"
+        value={formatPercent(hy.value)}
+        delta={hy.delta}
+        deltaUnit="pt"
+        deltaLabel={stepLabel(hy.stepsBack, '週')}
+        asOf={formatDate(hy.at)}
+        note="拡大がリスク回避"
       />
     </SummaryGrid>
   );

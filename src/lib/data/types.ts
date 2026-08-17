@@ -316,6 +316,16 @@ export interface MacroPoint {
    * 公開されていない。
    */
   creditConditions: number | null;
+  /** ハイイールド債スプレッド (%)。拡大がリスク回避を示す (#84)。 */
+  hySpread: number | null;
+  /** 投資適格債スプレッド (%)。 */
+  igSpread: number | null;
+  /** FF 実効金利 (%)。政策金利の実際の水準。 */
+  fedFundsRate: number | null;
+  /** 原油 WTI (ドル/バレル)。 */
+  wti: number | null;
+  /** ドル指数 (Jan 2006=100)。主要通貨に対する総合的な強さ。 */
+  dollarIndex: number | null;
 }
 
 /**
@@ -385,6 +395,8 @@ export interface MonthlyPoint {
   newHomeSales: number | null;
 
   // --- 水準 ---
+  /** 失業率 (%)。水準そのものが意味を持つ。 */
+  unemploymentRate: number | null;
   /** 貯蓄率 (%)。低下は貯蓄の取り崩しを示す。 */
   savingsRate: number | null;
   /** ミシガン大学消費者信頼感指数 (1966:Q1=100)。 */

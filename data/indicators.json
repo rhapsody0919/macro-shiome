@@ -586,5 +586,83 @@
     "copyright": "restricted",
     "group": "rates",
     "note": "Chicago Fed National Financial Conditions Credit Subindex。指数、季節調整なし、週次。**著作権は Chicago Fed にある**。ゼロが平均的な状態で、正が引き締まり (信用が取りにくい)、負が緩み。The Conference Board の Leading Credit Index とは別物 (あちらは独自の合成指標で公開されていない) だが、信用状況の逼迫度を測る点で近い。"
+  },
+  "hy-spread": {
+    "name": "ハイイールド債スプレッド",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "BAMLH0A0HYM2"
+    },
+    "frequency": "daily",
+    "unit": "percent",
+    "attribution": "Ice Data Indices, LLC via FRED",
+    "copyright": "restricted",
+    "group": "rates",
+    "note": "ICE BofA US High Yield Index Option-Adjusted Spread。%、季節調整なし。**著作権は Ice Data Indices にある**。低格付け社債と国債の利回り差。拡大はリスク回避、縮小はリスク選好を示し、株式より早く動くことがある。"
+  },
+  "ig-spread": {
+    "name": "投資適格債スプレッド",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "BAMLC0A0CM"
+    },
+    "frequency": "daily",
+    "unit": "percent",
+    "attribution": "Ice Data Indices, LLC via FRED",
+    "copyright": "restricted",
+    "group": "rates",
+    "note": "ICE BofA US Corporate Index Option-Adjusted Spread。%、季節調整なし。**著作権は Ice Data Indices にある**。高格付け社債と国債の利回り差。ハイイールドより動きが小さく、広がると信用不安が優良企業まで及んでいることを示す。"
+  },
+  "fed-funds-rate": {
+    "name": "FF 金利 (実効)",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "DFF"
+    },
+    "frequency": "daily",
+    "unit": "percent",
+    "attribution": "Board of Governors of the Federal Reserve System (US) via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "note": "Federal Funds Effective Rate。%、季節調整なし。FRB が誘導する政策金利の実際の水準。長期金利と並べると金融政策の方向が読める。"
+  },
+  "wti": {
+    "name": "原油価格 (WTI)",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "DCOILWTICO"
+    },
+    "frequency": "daily",
+    "unit": "index",
+    "attribution": "U.S. Energy Information Administration via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "note": "Crude Oil Prices: West Texas Intermediate (WTI) - Cushing, Oklahoma。ドル/バレル。物価とコストの起点で、輸入物価・生産者物価に先行して効く。"
+  },
+  "dollar-index": {
+    "name": "ドル指数 (実効為替)",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "DTWEXBGS"
+    },
+    "frequency": "daily",
+    "unit": "index",
+    "attribution": "Board of Governors of the Federal Reserve System (US) via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "note": "Nominal Broad U.S. Dollar Index。Index Jan 2006=100、季節調整なし。主要通貨に対するドルの総合的な強さ。ドル高は米企業の海外売上を目減りさせる。USD/JPY は 2 国間、こちらは加重平均。"
+  },
+  "unemployment-rate": {
+    "name": "失業率",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "UNRATE"
+    },
+    "frequency": "monthly",
+    "unit": "percent",
+    "attribution": "U.S. Bureau of Labor Statistics via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "note": "Unemployment Rate。%、季節調整済み。最も広く見られる労働市場の指標。The Conference Board の景気遅行指数の構成要素は「平均失業期間」で失業率そのものではないため分類しない。"
   }
 }
