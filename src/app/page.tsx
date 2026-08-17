@@ -1,6 +1,7 @@
 import { Suspense } from 'react';
 import { ForwardPeChart } from '@/components/charts/forward-pe';
 import { IndexVsEpsChart } from '@/components/charts/index-vs-eps';
+import { YieldSpreadChart } from '@/components/charts/yield-spread';
 import { valuationView } from '@/lib/data/loader';
 
 export default function ValuationPage() {
@@ -17,8 +18,12 @@ export default function ValuationPage() {
         <ForwardPeChart view={valuationView} />
       </Suspense>
 
+      <Suspense fallback={<div className="h-80" />}>
+        <YieldSpreadChart view={valuationView} />
+      </Suspense>
+
       <p className="text-sm text-slate-500">
-        イールドスプレッド・理論値・相関・予想改定は Issue #15〜#19 で実装する。
+        理論値・相関・予想改定は Issue #16〜#19 で実装する。
       </p>
     </div>
   );
