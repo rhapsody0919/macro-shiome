@@ -12,6 +12,7 @@ export function ChartFrame({
   summary,
   notes,
   contentClassName = 'h-64 sm:h-80',
+  headingLevel = 2,
   state,
   stateLabel,
   stateNote,
@@ -24,6 +25,13 @@ export function ChartFrame({
   notes: ReactNode[];
   /** 図の高さ。2 段構成にする場合などに上書きする。 */
   contentClassName?: string;
+  /**
+   * 見出しのレベル (#77)。
+   *
+   * セクション (先行指標など) の中に置くチャートは h3 にする。同じ h2 だと
+   * セクションとチャートが同格に見え、構造が伝わらない。
+   */
+  headingLevel?: 2 | 3;
   /**
    * 主系列の蓄積状況。`accumulating` なら図の代わりに状態表示を出す。
    * 各チャートで同じ分岐を書かずに済むよう枠側で引き受ける (#54)。
@@ -39,7 +47,11 @@ export function ChartFrame({
     <section className="space-y-3">
       <header className="flex flex-wrap items-baseline justify-between gap-2">
         <div>
-          <h2 className="text-base font-bold">{title}</h2>
+          {headingLevel === 3 ? (
+            <h3 className="text-base font-bold">{title}</h3>
+          ) : (
+            <h2 className="text-base font-bold">{title}</h2>
+          )}
           {subtitle !== undefined && (
             <p className="text-[11px] text-slate-500">{subtitle}</p>
           )}
