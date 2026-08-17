@@ -11,11 +11,11 @@ import { SummaryCard, SummaryGrid } from './summary-card';
  */
 export function MacroSummary({ points }: { points: MacroPoint[] }) {
   const at = (point: MacroPoint) => point.date;
+  const claims = pickLatest(points, (p) => p.initialClaims, at);
   const curve = pickLatest(points, (p) => p.termSpread, at);
   const real = pickLatest(points, (p) => p.realRate, at);
   const mortgage = pickLatest(points, (p) => p.mortgageRate, at);
   const vix = pickLatest(points, (p) => p.vix, at);
-  const usdjpy = pickLatest(points, (p) => p.usdjpy, at);
 
   const formatDate = (value: string | null) =>
     value === null ? null : value.replace(/-/g, '/');
@@ -25,6 +25,15 @@ export function MacroSummary({ points }: { points: MacroPoint[] }) {
       title="最新の状況"
       note="評価語は使わず数値と差分のみを示す。すべて週次 (金曜時点)。"
     >
+      <SummaryCard
+        label="新規失業保険申請"
+        value={claims.value === null ? '—' : `${Math.round(claims.value / 1000)}千件`}
+        delta={claims.delta === null ? null : Math.round(claims.delta / 1000)}
+        deltaUnit="千件"
+        deltaLabel={stepLabel(claims.stepsBack, '週')}
+        asOf={formatDate(claims.at)}
+        note="増加が悪化"
+      />
       <SummaryCard
         label="イールドカーブ"
         value={formatPercent(curve.value)}
@@ -58,13 +67,6 @@ export function MacroSummary({ points }: { points: MacroPoint[] }) {
         delta={vix.delta}
         deltaLabel={stepLabel(vix.stepsBack, '週')}
         asOf={formatDate(vix.at)}
-      />
-      <SummaryCard
-        label="USD/JPY"
-        value={formatNumber(usdjpy.value, 2)}
-        delta={usdjpy.delta}
-        deltaLabel={stepLabel(usdjpy.stepsBack, '週')}
-        asOf={formatDate(usdjpy.at)}
       />
     </SummaryGrid>
   );

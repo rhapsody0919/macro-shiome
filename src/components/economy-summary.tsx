@@ -24,7 +24,7 @@ export function EconomySummary({ points }: { points: MonthlyPoint[] }) {
   const employment = pickLatest(points, (p) => p.employmentLevel, at);
   const savings = pickLatest(points, (p) => p.savingsRate, at);
   const permits = pickLatest(points, (p) => p.buildingPermits, at);
-  const sentiment = pickLatest(points, (p) => p.consumerSentiment, at);
+  const retail = pickLatest(points, (p) => p.retailSales, at);
 
   return (
     <SummaryGrid
@@ -57,6 +57,15 @@ export function EconomySummary({ points }: { points: MonthlyPoint[] }) {
         asOf={formatMonth(savings.at)}
       />
       <SummaryCard
+        label="小売売上"
+        value={formatPercent(retail.value)}
+        delta={retail.delta}
+        deltaUnit="pt"
+        deltaLabel={stepLabel(retail.stepsBack, '月')}
+        asOf={formatMonth(retail.at)}
+        note="前年同月比。自動車・ガソリン除く"
+      />
+      <SummaryCard
         label="CPI"
         value={formatPercent(cpi.value)}
         delta={cpi.delta}
@@ -64,14 +73,6 @@ export function EconomySummary({ points }: { points: MonthlyPoint[] }) {
         deltaLabel={stepLabel(cpi.stepsBack, '月')}
         asOf={formatMonth(cpi.at)}
         note="前年同月比"
-      />
-      <SummaryCard
-        label="消費者信頼感"
-        value={formatNumber(sentiment.value, 1)}
-        delta={sentiment.delta}
-        deltaLabel={stepLabel(sentiment.stepsBack, '月')}
-        asOf={formatMonth(sentiment.at)}
-        note="1966年Q1 = 100"
       />
     </SummaryGrid>
   );

@@ -67,6 +67,65 @@ const CHARTS: MonthlyChartDef[] = [
     ],
   },
   {
+    // 新規受注 2 系列は The Conference Board の景気先行指数 (LEI) の構成要素。
+    primaryIndicator: 'new-orders-consumer-goods',
+    title: '製造業の新規受注',
+    subtitle: '消費財と設備投資の受注の前年同月比',
+    series: [
+      {
+        key: 'newOrdersConsumerGoods',
+        label: '消費財',
+        color: COLORS.newOrdersConsumerGoods,
+        width: 2.4,
+        indicatorId: 'new-orders-consumer-goods',
+      },
+      {
+        key: 'newOrdersCapitalGoods',
+        label: '非国防資本財 (航空機を除く)',
+        color: COLORS.newOrdersCapitalGoods,
+        indicatorId: 'new-orders-capital-goods',
+      },
+    ],
+    notes: [
+      <span key="leading">
+        どちらも The Conference Board の景気先行指数 (LEI) の構成要素。
+        <strong>受注は生産・出荷より前の段階</strong>なので、需要の変化が先に現れる。
+      </span>,
+      <span key="ism">
+        <strong>ISM 新規受注指数は表示していない。</strong>
+        LEI の構成要素だが ISM に著作権があり、FRED に収録されていない。
+        同じ「新規受注」を捉えるこの 2 系列で代替している。
+      </span>,
+      <span key="capital">
+        非国防資本財 (航空機を除く) は<strong>企業の設備投資意欲</strong>の代表指標。
+        航空機は 1 件が巨額で振れが大きいため除く。
+      </span>,
+    ],
+  },
+  {
+    // 鉱工業生産は景気一致指数 (CEI) の構成要素。
+    primaryIndicator: 'industrial-production',
+    title: '鉱工業生産',
+    subtitle: '生産量の前年同月比',
+    series: [
+      {
+        key: 'industrialProduction',
+        label: '鉱工業生産指数',
+        color: COLORS.industrialProduction,
+        indicatorId: 'industrial-production',
+      },
+    ],
+    notes: [
+      <span key="coincident">
+        The Conference Board の景気一致指数 (CEI) の構成要素。
+        <strong>先行指標ではない</strong>ので、悪化が見えた時点で既に転換している可能性がある。
+      </span>,
+      <span key="scope">
+        製造業・鉱業・電気ガスの生産量を指数化したもの。サービス業は含まない。
+      </span>,
+    ],
+  },
+  {
     // 非農業部門雇用者数は景気一致指数 (CEI) の構成要素。
     primaryIndicator: 'payrolls',
     title: '労働市場',
@@ -140,6 +199,36 @@ const CHARTS: MonthlyChartDef[] = [
       </span>,
       <span key="real">
         いずれも実質値 (物価変動を除いた値)。名目では物価上昇分だけ増えて見える。
+      </span>,
+    ],
+  },
+  {
+    primaryIndicator: 'retail-sales-core',
+    title: '小売売上',
+    subtitle: '自動車・ガソリンを除く小売売上の前年同月比',
+    series: [
+      {
+        key: 'retailSales',
+        label: '小売売上 (自動車・ガソリン除く)',
+        color: COLORS.retailSales,
+        width: 2.4,
+        indicatorId: 'retail-sales-core',
+      },
+    ],
+    notes: [
+      <span key="not-control">
+        <strong>「コントロールグループ」ではない。</strong>
+        参考記事が使うコントロールグループは自動車・ガソリンに加えて
+        <strong>建材と外食も除く</strong>が、FRED にその系列は存在しない
+        (Advance Retail Sales の Excluding 系列は 3 種類のみ)。ここでは最も近い公式系列を使っている。
+      </span>,
+      <span key="no-derive">
+        <strong>引き算で導出はしない。</strong>
+        季節調整は系列ごとに行われるため、季節調整済みの値を差し引いても
+        公式のコントロールグループとは一致しない。
+      </span>,
+      <span key="why-exclude">
+        自動車とガソリンを除くのは、価格や販売台数の変動が大きく消費の基調が見えにくいため。
       </span>,
     ],
   },

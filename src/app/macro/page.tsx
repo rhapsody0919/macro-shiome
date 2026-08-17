@@ -55,6 +55,26 @@ const CHARTS: MacroChartDef[] = [
     ],
   },
   {
+    primaryIndicator: 'initial-claims',
+    title: '新規失業保険申請件数',
+    subtitle: '労働市場の悪化を最も早く捉える (週次)',
+    series: [{ key: 'initialClaims', label: '申請件数', color: COLORS.initialClaims }],
+    notes: [
+      <span key="direction">
+        <strong>増加が悪化を意味する。</strong>
+        他の指標と向きが逆なので読み違えないこと。解雇が増えると申請が先に増える。
+      </span>,
+      <span key="leading">
+        The Conference Board の景気先行指数 (LEI) の構成要素。
+        <strong>雇用統計 (一致指標) より早く動く</strong>ため、労働市場の転換を先に捉えられる。
+      </span>,
+      <span key="weekly">
+        週次で発表される数少ない指標。月次の雇用統計を待たずに傾向が分かる。
+        ここでは金曜時点の値に揃えている。
+      </span>,
+    ],
+  },
+  {
     primaryIndicator: 'dgs10',
     title: '金利の内訳',
     subtitle: '名目 10 年債利回り・期待インフレ率・実質金利',
