@@ -368,6 +368,7 @@ export function buildMacroView(options: BuildViewOptions): MacroPoint[] {
       nominalRate,
       breakeven,
       realRate: realRate(nominalRate, breakeven),
+      termSpread: valueAsOf(series(observations, 't10y2y'), date),
     };
   });
 }

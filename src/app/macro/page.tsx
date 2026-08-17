@@ -19,11 +19,39 @@ interface MacroChartDef {
   title: string;
   subtitle: string;
   kind?: ValueKind;
+  /** 符号が意味を持つ指標か。ゼロ線を引き負の領域を塗る。 */
+  signed?: boolean;
   series: SeriesDef[];
   notes: ReactNode[];
 }
 
 const CHARTS: MacroChartDef[] = [
+  {
+    primaryIndicator: 't10y2y',
+    title: 'イールドカーブ (10年債 − 2年債)',
+    subtitle: '長短金利差。負なら逆イールド',
+    kind: 'percent',
+    signed: true,
+    series: [{ key: 'termSpread', label: '10年 − 2年', color: '#6366f1' }],
+    notes: [
+      <span key="vs-spread">
+        <strong>イールドスプレッド (バリュエーション画面) とは別物。</strong>
+        あちらは株式益回り − 実質金利で株式と債券の相対的な魅力を見る。こちらは長短金利の傾き。
+      </span>,
+      <span key="meaning">
+        通常は長期金利が短期金利を上回る (順イールド)。
+        <strong>負になると逆イールド</strong>で、市場が将来の利下げ = 景気減速を織り込んでいる状態。
+        赤い領域が逆イールドの範囲。
+      </span>,
+      <span key="caution">
+        <strong>「逆イールド = 景気後退」と断定はできない。</strong>
+        過去に先行指標として機能した例が多いものの、実際の景気後退までの時間差は数か月〜2 年と幅があり、
+        外れた事例もある。The Conference Board の景気先行指数の構成要素は「10 年債 − FF 金利」で、
+        本指標とは厳密には別系列。
+      </span>,
+      <span key="daily">週次 (金曜時点)。FRED が公表する日次値を金曜に揃えている。</span>,
+    ],
+  },
   {
     primaryIndicator: 'dgs10',
     title: '金利の内訳',
@@ -118,6 +146,7 @@ export default function MacroPage() {
                 title={chart.title}
                 subtitle={chart.subtitle}
                 kind={chart.kind}
+                signed={chart.signed}
                 series={chart.series}
                 notes={chart.notes}
               />

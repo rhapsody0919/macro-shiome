@@ -7,6 +7,8 @@ import {
   Legend,
   Line,
   LineChart,
+  ReferenceArea,
+  ReferenceLine,
   ResponsiveContainer,
   Tooltip,
   XAxis,
@@ -30,6 +32,7 @@ export function MacroChart({
   subtitle,
   series,
   kind = 'number',
+  signed = false,
   notes,
 }: {
   points: MacroPoint[];
@@ -37,6 +40,11 @@ export function MacroChart({
   subtitle?: string;
   series: SeriesDef[];
   kind?: ValueKind;
+  /**
+   * 符号が意味を持つ指標か (#63)。true ならゼロ線を引き、負の領域を薄く塗る。
+   * イールドカーブのように「負になること自体が信号」の指標に使う。
+   */
+  signed?: boolean;
   notes: React.ReactNode[];
 }) {
   const searchParams = useSearchParams();
@@ -96,6 +104,17 @@ export function MacroChart({
             }
           />
           <Tooltip content={<SharedTooltip kind={kind} />} />
+
+          {signed && (
+            <>
+              {/*
+                負の領域を薄く塗る。データに依存しない固定領域なので、
+                y1 は十分に下まで取る (自動スケールで表示範囲は調整される)。
+              */}
+              <ReferenceArea y1={-100} y2={0} fill="#ef4444" fillOpacity={0.07} />
+              <ReferenceLine y={0} stroke="currentColor" strokeOpacity={0.4} />
+            </>
+          )}
           {series.length > 1 && <Legend />}
           {series.map((s) => (
             <Line

@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 import type { AppConfig } from '../data/types';
 import {
   buildEconomyView,
+  buildMacroView,
   buildRevisionSeries,
   buildValuationView,
   type ObservationMap,
@@ -297,5 +298,43 @@ describe('物価の連鎖 (#64)', () => {
     for (const point of view.priceChain) {
       expect(point.month.endsWith('-01')).toBe(true);
     }
+  });
+});
+
+describe('イールドカーブ (#63)', () => {
+  const withCurve: ObservationMap = {
+    ...observations,
+    t10y2y: { '2026-08-07': 0.46, '2026-08-14': 0.51 },
+  };
+
+  it('週次グリッドに載せる', () => {
+    const macro = buildMacroView({ observations: withCurve, config, start: '2026-08-01', today });
+    expect(macro.find((p) => p.date === '2026-08-14')?.termSpread).toBe(0.51);
+  });
+
+  it('負の値をそのまま持つ (逆イールド)', () => {
+    // 符号自体が信号なので、絶対値にしたり 0 で切ったりしない。
+    const inverted = buildMacroView({
+      observations: { ...observations, t10y2y: { '2026-08-14': -0.42 } },
+      config,
+      start: '2026-08-01',
+      today,
+    });
+    expect(inverted.find((p) => p.date === '2026-08-14')?.termSpread).toBe(-0.42);
+  });
+
+  it('取得できていなければ null', () => {
+    const macro = buildMacroView({ observations, config, start: '2026-08-01', today });
+    expect(macro.at(-1)?.termSpread).toBeNull();
+  });
+
+  it('イールドスプレッドとは別の値', () => {
+    // 同じ「スプレッド」だが、株式益回り − 実質金利 とは無関係。
+    const macro = buildMacroView({ observations: withCurve, config, start: '2026-08-01', today });
+    const valuation = buildValuationView({ observations: withCurve, config, start: '2026-08-01', today });
+    const point = macro.find((p) => p.date === '2026-08-07');
+    const spread = valuation.sp500.points.find((p) => p.date === '2026-08-07')?.yieldSpread;
+    expect(point?.termSpread).toBe(0.46);
+    expect(spread).toBeCloseTo(2.64, 1);
   });
 });
