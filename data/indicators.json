@@ -490,5 +490,74 @@
     "copyright": "none",
     "group": "macro",
     "note": "New One Family Houses Sold: United States。千戸、季節調整済み年率。住宅の連鎖の下流。中古住宅販売 (NAR) は FRED の提供が 13 点のみで履歴を追えないため採用しない。"
+  },
+  "retail-sales-core": {
+    "name": "小売売上 (自動車・ガソリンを除く)",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "MARTSSM44W72USS"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "U.S. Census Bureau via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "note": "Advance Retail Sales: Retail Trade and Food Services, Excluding Motor Vehicle and Parts Dealers and Gasoline Stations。百万ドル、季節調整済み。**コントロールグループではない** (建材と外食が含まれる)。FRED の Advance Retail Sales に建材・外食まで除いた系列は存在せず、これが最も近い公式系列。季節調整済み系列を引き算して導出すると公式の季節調整値と一致しないため、導出はしない。"
+  },
+  "initial-claims": {
+    "name": "新規失業保険申請件数",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "ICSA"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "U.S. Employment and Training Administration via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "cyclePosition": "leading",
+    "note": "Initial Claims。人数、季節調整済み、週次。The Conference Board の景気先行指数 (LEI) の構成要素。労働市場の悪化を最も早く捉える。"
+  },
+  "industrial-production": {
+    "name": "鉱工業生産指数",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "INDPRO"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "Board of Governors of the Federal Reserve System (US) via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "cyclePosition": "coincident",
+    "note": "Industrial Production: Total Index。Index 2017=100、季節調整済み。The Conference Board の景気一致指数 (CEI) の構成要素。"
+  },
+  "new-orders-consumer-goods": {
+    "name": "新規受注 (消費財)",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "ACOGNO"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "U.S. Census Bureau via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "cyclePosition": "leading",
+    "note": "Manufacturers' New Orders: Consumer Goods。百万ドル、季節調整済み。The Conference Board の景気先行指数 (LEI) の構成要素。**ISM 新規受注指数は FRED に無い** (ISM の著作権) ため、LEI の新規受注系列で代替する。"
+  },
+  "new-orders-capital-goods": {
+    "name": "新規受注 (非国防資本財・航空機を除く)",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "NEWORDER"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "U.S. Census Bureau via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "cyclePosition": "leading",
+    "note": "Manufacturers' New Orders: Nondefense Capital Goods Excluding Aircraft。百万ドル、季節調整済み。The Conference Board の景気先行指数 (LEI) の構成要素。企業の設備投資意欲を示す。"
   }
 }

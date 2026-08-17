@@ -303,6 +303,12 @@ export interface MacroPoint {
    * **申請そのものより先行性は落ちる** (#65)。
    */
   mortgageRate: number | null;
+  /**
+   * 新規失業保険申請件数 (人)。週次で取れる数少ない先行指標 (#82)。
+   *
+   * **増加が悪化を意味する**ため、他の指標と向きが逆になる。
+   */
+  initialClaims: number | null;
 }
 
 /**
@@ -340,6 +346,21 @@ export interface MonthlyPoint {
   realIncomeExTransfer: number | null;
   /** 1 人当たり実質可処分所得。 */
   realDisposablePerCapita: number | null;
+
+  /**
+   * 小売売上 (自動車・ガソリンを除く) の前年同月比。
+   *
+   * **コントロールグループではない** (建材と外食が含まれる)。#72 参照。
+   */
+  retailSales: number | null;
+
+  // --- 生産・受注 (前年同月比 %) ---
+  /** 鉱工業生産。景気一致指数の構成要素。 */
+  industrialProduction: number | null;
+  /** 消費財の新規受注。景気先行指数の構成要素。 */
+  newOrdersConsumerGoods: number | null;
+  /** 非国防資本財 (航空機を除く) の新規受注。設備投資意欲を示す。 */
+  newOrdersCapitalGoods: number | null;
 
   // --- 住宅市場 (水準、千戸・季節調整済み年率) ---
   /** 建設許可件数。景気先行指数の構成要素で、着工より前の段階。 */

@@ -365,3 +365,51 @@ describe('住宅市場の指標 (#65)', () => {
     expect(indicators['mortgage-rate-30y'].note).toContain('先行性は落ちる');
   });
 });
+
+describe('小売売上と景気指数の構成要素 (#72)', () => {
+  it('小売売上はコントロールグループではないと記録する', () => {
+    // FRED の Advance Retail Sales に建材・外食まで除いた系列は存在しない。
+    // 同等と誤解されると別の指標を見ていることになる。
+    const note = indicators['retail-sales-core'].note ?? '';
+    expect(note).toContain('コントロールグループではない');
+    expect(note).toContain('建材と外食が含まれる');
+  });
+
+  it('小売売上は分類しない', () => {
+    // 景気一致指数の構成要素は「製造業・商業売上高」で、小売売上そのものではない。
+    expect(indicators['retail-sales-core'].cyclePosition).toBeUndefined();
+  });
+
+  it('新規失業保険申請は週次の先行指標', () => {
+    // LEI の構成要素。月次の雇用統計より早く動く。
+    expect(indicators['initial-claims'].cyclePosition).toBe('leading');
+    expect(indicators['initial-claims'].frequency).toBe('weekly');
+  });
+
+  it('鉱工業生産は一致指標', () => {
+    // CEI の構成要素。先行指標ではない。
+    expect(indicators['industrial-production'].cyclePosition).toBe('coincident');
+  });
+
+  it('新規受注 2 系列は先行指標', () => {
+    expect(indicators['new-orders-consumer-goods'].cyclePosition).toBe('leading');
+    expect(indicators['new-orders-capital-goods'].cyclePosition).toBe('leading');
+  });
+
+  it('ISM が取れないことを記録する', () => {
+    // LEI の構成要素だが ISM に著作権があり FRED に無い。代替であることを残す。
+    expect(indicators['new-orders-consumer-goods'].note).toContain('ISM 新規受注指数は FRED に無い');
+  });
+
+  it('追加した 4 指標はすべて Public Domain', () => {
+    for (const id of [
+      'retail-sales-core',
+      'initial-claims',
+      'industrial-production',
+      'new-orders-consumer-goods',
+      'new-orders-capital-goods',
+    ]) {
+      expect(indicators[id].copyright, id).toBe('none');
+    }
+  });
+});

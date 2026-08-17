@@ -46,10 +46,20 @@ export const COLORS = {
   realIncomeExTransfer: '#10b981',
   realDisposablePerCapita: '#6366f1',
 
+  /** 小売売上。個人消費の実データ。 */
+  retailSales: '#14b8a6',
+
   // --- 住宅 (連鎖の上流 → 下流) ---
   buildingPermits: '#6366f1',
   housingStarts: '#0ea5e9',
   newHomeSales: '#10b981',
+
+  /** 新規失業保険申請。増加が悪化を意味するため警戒色。 */
+  initialClaims: '#ef4444',
+  /** 鉱工業生産。 */
+  industrialProduction: '#0ea5e9',
+  newOrdersConsumerGoods: '#f97316',
+  newOrdersCapitalGoods: '#a855f7',
 
   // --- その他 ---
   vix: '#ef4444',
