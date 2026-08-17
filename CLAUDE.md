@@ -77,7 +77,7 @@ SDD Step 2 で確定 (詳細 → `docs/plan.md`、判断の記録 → `docs/adr/
 
 spec + screens → plan → tasks → 実装 (1 タスク = 1 PR)、各ゲートでレビュー。起動は `.claude/commands/` の `/step1-spec` `/step1-screens` `/step2` `/step3` `/step4`。
 
-## STATE (2026-08-17 — 実装フェーズ、17/26 Issue 完了)
+## STATE (2026-08-17 — **公開済み**。https://macro-shiome.o104085t.workers.dev)
 
 設計フェーズ (SDD Step 1〜3) の経緯は `docs/state-archive.md` に退避済み。
 
@@ -94,6 +94,7 @@ spec + screens → plan → tasks → 実装 (1 タスク = 1 PR)、各ゲート
 | 規約 | #21 | 利用規約・出所ページ。出所一覧は指標マスタから自動生成 |
 | 改善 | #46 #52 #53 #54 | 基準益回りの内訳 / スプレッドの分布 / 欠測理由の区別 / 蓄積中表示 |
 | CI | #23 | typecheck / lint / test / build |
+| デプロイ | #22 | **Cloudflare Workers Static Assets** に Git 連携で公開。push で自動デプロイ |
 
 テスト 238 件。CI は全 PR で稼働中。
 
@@ -119,11 +120,19 @@ spec + screens → plan → tasks → 実装 (1 タスク = 1 PR)、各ゲート
 - **イールドスプレッドの水準** (2026-08-07、S&P 500): 平均 3.70% / σ 1.23 / n 168。
   現在 2.60% は下位 16%。**固定の危険水準は置かない** (恣意的になるため)
 
+### デプロイ (#22 完了)
+
+- 公開 URL: **https://macro-shiome.o104085t.workers.dev**
+- **Pages ではなく Workers Static Assets**。実 UI に Pages を Git 連携で新規作成する導線が
+  無く、作成フローが「Create a Worker」に一本化されていたため (ADR-0005)。
+  公式ドキュメントは今も Pages の手順を案内しており、**ドキュメントと実 UI が食い違う**
+- 配信設定は `wrangler.jsonc` (リポジトリ管理)。ダッシュボード側は Worker 名と
+  build command の 2 つだけ
+- ローカル検証は `npx wrangler deploy --dry-run` (認証不要)
+
 ### Next Action
 
-- **#22 (Cloudflare Pages デプロイ) — ユーザー操作待ち**。コード側は完了 (PR #59 マージ済み)。
-  Cloudflare アカウントでの Git 連携はアカウント作成・OAuth 承認を伴うため代行しない。
-  手順は Issue #22 のコメントに記載済み。URL 発行後に動作確認する
-- #58 (指数ラベルと切替 UI の重複解消) — 未着手
+- #58 (指数ラベルと切替 UI の重複解消) — 唯一の未着手 Issue
+- v2 (市場サマリー: 日経平均・ゴールド・ドル指数など) は未着手。取得経路は spec 7 節に調査済み
 - `not-in-report` の実データ検証は次に FactSet が発行される週に持ち越し
   (2026-08-14 は夏季休刊で PDF 自体が無かった)
