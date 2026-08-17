@@ -207,3 +207,31 @@ describe('基準益回りの設定時コンテキスト (#46)', () => {
     ).toThrow(/realRateAtSetting/);
   });
 });
+
+describe('号によって記載が無い項目 (#53)', () => {
+  it('翌暦年の予想は optionalInReport が立っている', () => {
+    // FactSet は翌暦年の予想を年央 (6 月頃) から載せ始めるため、年前半の号には無い。
+    // これを「取得失敗」として記録すると、正常な欠測が毎週の調査対象になる。
+    expect(indicators['sp500-growth-cy-next'].optionalInReport).toBe(true);
+  });
+
+  it('今暦年の予想は毎号載るため立てない', () => {
+    // 実測: PDF が取れた 168 週のうち今暦年の欠落は 1 週だけ。
+    expect(indicators['sp500-growth-cy-current'].optionalInReport).toBeUndefined();
+  });
+
+  it('真偽値でない値を弾く', () => {
+    const valid = {
+      name: 'テスト指標',
+      source: { adapter: 'factset-pdf', field: 'forwardPe' },
+      frequency: 'weekly',
+      unit: 'ratio',
+      attribution: 'Test Source',
+      copyright: 'none',
+      group: 'valuation',
+    };
+    expect(() =>
+      parseIndicator('x', { ...valid, optionalInReport: 'yes' }),
+    ).toThrow(/optionalInReport/);
+  });
+});

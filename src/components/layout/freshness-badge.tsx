@@ -1,4 +1,9 @@
-import { describeGapReason, summarizeGaps, type Freshness } from '@/lib/data/loader';
+import {
+  describeGapReason,
+  needsInvestigation,
+  summarizeGaps,
+  type Freshness,
+} from '@/lib/data/loader';
 
 /**
  * データの鮮度表示 (screens N-1)。
@@ -36,10 +41,18 @@ export function FreshnessBadge({ freshness }: { freshness: Freshness }) {
         <span className="text-slate-500">
           直近の欠測:{' '}
           {gaps.map((gap, i) => (
-            <span key={`${gap.date}-${gap.reason}`}>
+            <span
+              key={`${gap.date}-${gap.reason}`}
+              // 要調査の欠測だけを目立たせる。休刊・掲載無しは仕様どおりの状態で、
+              // 同じ見た目にすると本当に見るべき取得失敗が埋もれる (#53)。
+              className={
+                needsInvestigation(gap.reason) ? 'text-amber-600 dark:text-amber-400' : undefined
+              }
+            >
               {i > 0 && ' / '}
               {formatDate(gap.date)} {describeGapReason(gap.reason)}
               {gap.count > 1 && ` ×${gap.count}`}
+              {needsInvestigation(gap.reason) && ' ⚠'}
             </span>
           ))}
         </span>

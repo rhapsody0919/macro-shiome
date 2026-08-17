@@ -47,6 +47,10 @@ export function RevisionsChart({ revisions }: { revisions: RevisionPoint[] }) {
   const latestYear = withCurrentYear.at(-1) ?? null;
   const previousYear = withCurrentYear.at(-2) ?? null;
 
+  // 提供元にデータが存在しない期間を注記で示すため、**期間フィルター前**の最初の観測日を使う。
+  // フィルター後だと「絞った範囲の最初の日」になり、提供元の下限と混同される (#53)。
+  const earliest = revisions.find((point) => point.growthCurrentYear !== null)?.date ?? null;
+
   return (
     <ChartFrame
       title="予想改定"
@@ -81,6 +85,23 @@ export function RevisionsChart({ revisions }: { revisions: RevisionPoint[] }) {
         <>
           予想 EPS の推移 (上のチャート) とは別物。予想 EPS は対象期間が毎週ロールするため、
           改定が無くても増益トレンド下では上昇する。純粋な改定はこちらで見る。
+        </>,
+        <>
+          <strong>線が途切れる理由は 3 つある</strong> (いずれも補完しない)。
+          <span className="mt-1 block">
+            (1) <strong>提供元にその期間が無い</strong> —{' '}
+            {earliest === null
+              ? 'FactSet のレポートには取得できる期間の下限がある。'
+              : `FactSet のレポートは ${formatDate(earliest)} 以降しか取得できない。`}
+          </span>
+          <span className="block">
+            (2) <strong>休刊週</strong> — 年末年始・祝日週はレポート自体が出ない。
+          </span>
+          <span className="block">
+            (3) <strong>その号に記載が無い</strong> —{' '}
+            <strong>翌暦年 (紫) は年前半の号に載らない</strong>
+            。FactSet は翌年の予想を年央 (6 月頃) から載せ始めるため、年前半で線が無いのは正常。
+          </span>
         </>,
       ]}
     >

@@ -123,6 +123,12 @@ export function parseIndicator(id: string, raw: unknown): Indicator {
       `${where}.historyLimit`,
     );
   }
+  if (raw.optionalInReport !== undefined) {
+    if (typeof raw.optionalInReport !== 'boolean') {
+      throw new Error(`${where}.optionalInReport: 真偽値でない (${typeof raw.optionalInReport})`);
+    }
+    indicator.optionalInReport = raw.optionalInReport;
+  }
   if (raw.note !== undefined) {
     indicator.note = requireString(raw.note, `${where}.note`);
   }
