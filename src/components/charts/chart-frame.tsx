@@ -11,7 +11,7 @@ export function ChartFrame({
   actions,
   summary,
   notes,
-  contentClassName = 'h-80',
+  contentClassName = 'h-64 sm:h-80',
   state,
   stateLabel,
   stateNote,

@@ -17,23 +17,23 @@ export default function ValuationPage() {
       <SummaryBar view={valuationView} />
 
       {/* useSearchParams (期間フィルター) を使うため静的生成時は Suspense で包む。 */}
-      <Suspense fallback={<div className="h-80" />}>
+      <Suspense fallback={<div className="h-64 sm:h-80" />}>
         <IndexVsEpsChart view={valuationView} />
       </Suspense>
 
-      <Suspense fallback={<div className="h-80" />}>
+      <Suspense fallback={<div className="h-64 sm:h-80" />}>
         <ForwardPeChart view={valuationView} />
       </Suspense>
 
-      <Suspense fallback={<div className="h-80" />}>
+      <Suspense fallback={<div className="h-64 sm:h-80" />}>
         <YieldSpreadChart view={valuationView} />
       </Suspense>
 
-      <Suspense fallback={<div className="h-[28rem]" />}>
+      <Suspense fallback={<div className="h-96 sm:h-[28rem]" />}>
         <FairValueChart view={valuationView} />
       </Suspense>
 
-      <Suspense fallback={<div className="h-80" />}>
+      <Suspense fallback={<div className="h-64 sm:h-80" />}>
         <RevisionsChart revisions={revisions} />
       </Suspense>
 

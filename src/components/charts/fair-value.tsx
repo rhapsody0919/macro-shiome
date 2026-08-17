@@ -87,7 +87,7 @@ export function FairValueChart({ view }: { view: ValuationView }) {
     <ChartFrame
       title="理論値と割高率"
       subtitle="理論値 = 実績EPS ÷ 基準益回り / 割高率 = 1 − 理論値 ÷ 指数"
-      contentClassName="h-[28rem]"
+      contentClassName="h-96 sm:h-[28rem]"
       state={state}
       stateLabel="理論値"
       stateNote={series.accumulationNote}

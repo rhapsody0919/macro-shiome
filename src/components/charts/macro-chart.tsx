@@ -59,7 +59,7 @@ export function MacroChart({
     <ChartFrame
       title={title}
       subtitle={subtitle}
-      contentClassName="h-64"
+      contentClassName="h-56 sm:h-64"
       summary={
         <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm">
           {series.map((s) => {

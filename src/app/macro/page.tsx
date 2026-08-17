@@ -143,13 +143,9 @@ export default function MacroPage() {
     <div className="space-y-16">
       <div>
         <h1 className="text-xl font-bold">マクロ指標</h1>
+        {/* 説明は 1 行に絞る。分類の根拠は各セクションの見出し下にある (#75)。 */}
         <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
-          相場環境の周辺指標。すべて週次 (金曜時点) に揃えている。
-        </p>
-        <p className="mt-2 text-xs text-slate-500">
-          景気サイクルに対する位置で並べている。分類は
-          <strong> The Conference Board の景気指数の構成要素</strong>
-          に従い、当てはまらない指標は分類しない (根拠の無い先行性を示さないため)。
+          相場環境の週次指標。景気サイクルに対する位置で並べている。
         </p>
       </div>
 
@@ -161,7 +157,7 @@ export default function MacroPage() {
           </header>
 
           {group.items.map((chart) => (
-            <Suspense key={chart.title} fallback={<div className="h-64" />}>
+            <Suspense key={chart.title} fallback={<div className="h-56 sm:h-64" />}>
               <MacroChart
                 points={macro}
                 title={chart.title}
