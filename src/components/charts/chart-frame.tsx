@@ -116,6 +116,7 @@ export function SharedTooltip({
   label,
   kind = 'number',
   extra,
+  labelFormatter = formatDate,
 }: {
   active?: boolean;
   payload?: Array<{ name?: string; value?: number; color?: string; payload?: unknown }>;
@@ -123,12 +124,14 @@ export function SharedTooltip({
   kind?: ValueKind;
   /** 系列以外に出したい情報 (最高値の注記など)。 */
   extra?: (point: unknown) => ReactNode;
+  /** 見出しの整形。月次系列は日付でなく月として出す (#64)。 */
+  labelFormatter?: (label: string | undefined) => string;
 }) {
   if (active !== true || payload === undefined || payload.length === 0) return null;
 
   return (
     <div className="rounded border border-slate-300 bg-white/95 px-3 py-2 text-xs shadow dark:border-slate-700 dark:bg-slate-900/95">
-      <div className="mb-1 font-semibold">{formatDate(label)}</div>
+      <div className="mb-1 font-semibold">{labelFormatter(label)}</div>
       {payload.map((entry) => (
         <div key={entry.name} className="flex items-center gap-2 tabular-nums">
           <span className="inline-block h-2 w-2 rounded-full" style={{ background: entry.color }} />

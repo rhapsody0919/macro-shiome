@@ -10,7 +10,15 @@ import statusJson from '../../../data/status.json';
 import valuationJson from '../../../data/views/valuation.json';
 import revisionsJson from '../../../data/views/revisions.json';
 import macroJson from '../../../data/views/macro.json';
-import type { BatchStatus, GapReason, MacroPoint, RevisionPoint, ValuationView } from './types';
+import economyJson from '../../../data/views/economy.json';
+import type {
+  BatchStatus,
+  EconomyView,
+  GapReason,
+  MacroPoint,
+  RevisionPoint,
+  ValuationView,
+} from './types';
 
 // JSON の型推論は実際の型より広いため、生成側の型で読み替える。
 // 生成と読み込みは同じ型定義 (types.ts) を使うので、ずれたらビルドか実行時に気付ける。
@@ -18,6 +26,7 @@ export const status = statusJson as BatchStatus;
 export const valuationView = valuationJson as unknown as ValuationView;
 export const revisions = revisionsJson as unknown as RevisionPoint[];
 export const macro = macroJson as unknown as MacroPoint[];
+export const economy = economyJson as unknown as EconomyView;
 
 /** データの鮮度。画面ヘッダーの表示に使う (screens N-1)。 */
 export interface Freshness {

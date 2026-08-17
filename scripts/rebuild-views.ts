@@ -6,7 +6,13 @@
  *
  * 実行: pnpm rebuild:views
  */
-import { buildMacroView, buildRevisionSeries, buildValuationView, type ObservationMap } from '../src/lib/calc/view';
+import {
+  buildEconomyView,
+  buildMacroView,
+  buildRevisionSeries,
+  buildValuationView,
+  type ObservationMap,
+} from '../src/lib/calc/view';
 import { appConfig, indicators } from '../src/lib/data/indicators';
 import { readObservations, writeView } from '../src/lib/data/store';
 
@@ -26,6 +32,7 @@ function main(): void {
   writeView('valuation', buildValuationView(options));
   writeView('revisions', buildRevisionSeries(options));
   writeView('macro', buildMacroView(options));
+  writeView('economy', buildEconomyView(options));
 
   console.log(`ビューを再生成した (起点 ${start})`);
 }

@@ -278,5 +278,57 @@
     "copyright": "restricted",
     "group": "valuation",
     "note": "ETF の PER であり指数そのものの PER とは厳密には一致しない。画面に明記する。Forward PER は無料経路が無い。"
+  },
+  "import-price": {
+    "name": "輸入物価指数",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "IR"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "U.S. Bureau of Labor Statistics via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "note": "Import Price Index (End Use): All Commodities。Index 2000=100、季節調整なし。物価の連鎖の起点 (輸入物価 → 生産者物価 → CPI/PCE)。"
+  },
+  "producer-price": {
+    "name": "生産者物価指数",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "PPIFIS"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "U.S. Bureau of Labor Statistics via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "note": "Producer Price Index by Commodity: Final Demand。Index Nov 2009=100、季節調整済み。2009-11 以降しか無く、他の物価指標より履歴が短い。"
+  },
+  "cpi": {
+    "name": "消費者物価指数 (CPI)",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "CPIAUCSL"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "U.S. Bureau of Labor Statistics via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "note": "CPI for All Urban Consumers: All Items。Index 1982-1984=100、季節調整済み。総合 (コアではない)。"
+  },
+  "pce-price": {
+    "name": "PCE 価格指数",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "PCEPI"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "U.S. Bureau of Economic Analysis via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "note": "Personal Consumption Expenditures: Chain-type Price Index。Index 2017=100、季節調整済み。FRB が最も重視するインフレ指標 (FRED の公式説明に \"the Federal Reserve’s preferred measure of inflation\" と明記)。"
   }
 }

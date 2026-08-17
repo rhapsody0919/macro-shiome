@@ -291,6 +291,46 @@ export interface MacroPoint {
   realRate: number | null;
 }
 
+/**
+ * 物価の連鎖の 1 か月分 (#64)。
+ *
+ * **すべて前年同月比 (%)**。指標ごとに基準年が違う (2000=100 / Nov 2009=100 /
+ * 1982-84=100 / 2017=100) ため、水準を並べても比較にならない。
+ */
+export interface PriceChainPoint {
+  /** 対象月 "YYYY-MM-01"。**発表日ではない**。 */
+  month: string;
+  /** 輸入物価。連鎖の起点。 */
+  importPrice: number | null;
+  /** 生産者物価 (Final Demand)。 */
+  producerPrice: number | null;
+  cpi: number | null;
+  /** FRB が最も重視するインフレ指標。 */
+  pce: number | null;
+}
+
+/**
+ * 月次指標の発表状況 (#64)。
+ *
+ * **発表ラグは指標ごとに違う**。2026-08-17 時点で CPI と PPI は 7 月分まで出ているのに、
+ * 輸入物価と PCE は 6 月分止まり。「最新」がどの月かを指標ごとに示さないと、
+ * 同じ時点のデータを比べていると誤解される。
+ */
+export interface MonthlyCoverage {
+  /** 指標マスタの ID。 */
+  indicatorId: string;
+  /** 値を持つ最も新しい対象月。1 件も無ければ null。 */
+  latestMonth: string | null;
+}
+
+/** 月次画面のビュー全体 (#64)。 */
+export interface EconomyView {
+  generatedAt: string;
+  priceChain: PriceChainPoint[];
+  /** 指標ごとの発表状況。画面に「どこまで出ているか」を出す。 */
+  coverage: MonthlyCoverage[];
+}
+
 /** 予想改定の 1 週分 (spec F-12)。 */
 export interface RevisionPoint {
   date: string;

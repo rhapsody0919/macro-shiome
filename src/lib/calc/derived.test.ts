@@ -10,6 +10,7 @@ import {
   overvaluation,
   percentileRank,
   realRate,
+  yearOverYear,
   yieldSpread,
 } from './derived';
 
@@ -242,5 +243,26 @@ describe('percentileRank', () => {
 
   it('標本が空なら null', () => {
     expect(percentileRank([null, undefined], 1)).toBeNull();
+  });
+});
+
+describe('yearOverYear', () => {
+  it('前年同月比 (%) を返す', () => {
+    // 実測: 輸入物価 2026-06 = 150.8、2025-06 = 140.8 → +7.1%
+    expect(yearOverYear(150.8, 140.8)).toBeCloseTo(7.1, 1);
+  });
+
+  it('低下は負になる', () => {
+    expect(yearOverYear(95, 100)).toBeCloseTo(-5, 6);
+  });
+
+  it('欠測は null', () => {
+    expect(yearOverYear(null, 100)).toBeNull();
+    expect(yearOverYear(100, null)).toBeNull();
+  });
+
+  it('前年が 0 ならエラー', () => {
+    // 静かに Infinity を返すと、もっともらしい値が蓄積してしまう。
+    expect(() => yearOverYear(100, 0)).toThrow(/0/);
   });
 });
