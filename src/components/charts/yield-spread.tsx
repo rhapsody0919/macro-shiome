@@ -15,7 +15,7 @@ import {
   YAxis,
 } from 'recharts';
 import { changeMark, formatDate, formatPercent, formatSigned } from '@/lib/format';
-import type { IndexKey, ValuationView } from '@/lib/data/types';
+import type { IndexKey, SpreadDistribution, ValuationView } from '@/lib/data/types';
 import { filterByPeriod, parsePeriod } from '@/lib/period';
 import { seriesState, withValue } from '@/lib/series-state';
 import { ChartFrame, SharedTooltip } from './chart-frame';
@@ -23,6 +23,8 @@ import { ChartFrame, SharedTooltip } from './chart-frame';
 const SPREAD_COLOR = '#0ea5e9';
 const POSITIVE_FILL = '#0ea5e9';
 const NEGATIVE_FILL = '#ef4444';
+const MEAN_COLOR = '#94a3b8';
+const SIGMA_COLOR = '#cbd5e1';
 
 /** 内訳の系列。既定では隠し、必要なときだけ出す。 */
 const BREAKDOWN = [
@@ -121,15 +123,30 @@ export function YieldSpreadChart({ view }: { view: ValuationView }) {
               株式益回り {formatPercent(latest.earningsYield)} − 実質金利{' '}
               {formatPercent(latest.realRate)}
             </div>
+            {/* 蓄積中は別途その旨を出すので、ここで「標本不足」を重ねない。 */}
+            {!isAccumulating && <DistributionPosition distribution={series.spreadDistribution} />}
           </div>
         )
       }
       notes={[
         <>
+          <strong>読み方:</strong> スプレッドが大きいほど、株式の益回りが実質金利を上回っている
+          = 債券に対して株式の相対的な利回り優位が大きい。縮小はその優位が薄れることを意味し、
+          <strong>ゼロを下回ると債券の実質利回りが株式の益回りを上回る</strong>。
+          株式益回りの低下 (株高 or 業績悪化) と実質金利の上昇のどちらでも縮小する。
+        </>,
+        <>
           株式益回り = 1 ÷ Forward P/E × 100、<strong>実質金利 = 10年債利回り − 期待インフレ率</strong>。
         </>,
         <>
           正 (青) は株式の益回りが実質金利を上回る局面、負 (赤) は下回る局面。ゼロ線を境に塗り分けている。
+        </>,
+        <>
+          <strong>固定の「危険水準」は置いていない。</strong>
+          「◯% を切ったら危険」という線には定説が無く、恣意的な基準になるため。
+          客観的に言えるのは<strong>ゼロ (益回り = 実質金利) の境目</strong>と、
+          <strong>過去の分布における現在の位置</strong>の 2 つだけ。破線が過去{' '}
+          {series.spreadDistribution?.years ?? 5} 年の平均、点線が ±1σ (標本の約 7 割が入る範囲)。
         </>,
         <>
           「内訳を表示」で株式益回りと実質金利を個別に出せる。スプレッドの動きが株式側と金利側の
@@ -160,6 +177,36 @@ export function YieldSpreadChart({ view }: { view: ValuationView }) {
 
           {/* ゼロ線。符号の境目が読み取れるようにする。 */}
           <ReferenceLine y={0} stroke="currentColor" strokeOpacity={0.4} />
+
+          {/*
+            過去分布の基準線。固定の閾値ではなく実データから求めた位置なので恣意性が無い。
+            期間フィルターに追従しない固定窓の値を使う。
+          */}
+          {series.spreadDistribution !== null && (
+            <>
+              <ReferenceLine
+                y={series.spreadDistribution.mean}
+                stroke={MEAN_COLOR}
+                strokeDasharray="6 3"
+                label={{
+                  value: `${series.spreadDistribution.years}年平均 ${series.spreadDistribution.mean.toFixed(2)}%`,
+                  position: 'insideTopLeft',
+                  fontSize: 10,
+                }}
+              />
+              <ReferenceLine
+                y={series.spreadDistribution.mean + series.spreadDistribution.sd}
+                stroke={SIGMA_COLOR}
+                strokeDasharray="2 4"
+              />
+              <ReferenceLine
+                y={series.spreadDistribution.mean - series.spreadDistribution.sd}
+                stroke={SIGMA_COLOR}
+                strokeDasharray="2 4"
+                label={{ value: '±1σ', position: 'insideBottomLeft', fontSize: 10 }}
+              />
+            </>
+          )}
 
           <Area
             type="monotone"
@@ -213,6 +260,32 @@ export function YieldSpreadChart({ view }: { view: ValuationView }) {
         </ComposedChart>
       </ResponsiveContainer>
     </ChartFrame>
+  );
+}
+
+/**
+ * 過去分布における現在値の位置 (#52)。
+ *
+ * **「危険」「割安」といった評価語は使わない** (screens UI/UX 方針 2)。
+ * 分位と平均との差という事実だけを出し、判断は読み手に委ねる。
+ */
+function DistributionPosition({ distribution }: { distribution: SpreadDistribution | null }) {
+  if (distribution === null) {
+    return <div className="text-xs text-slate-500">過去分布は標本不足で出せない</div>;
+  }
+
+  const gap = distribution.latest - distribution.mean;
+
+  return (
+    <div className="text-xs text-slate-500">
+      過去 {distribution.years} 年で下位{' '}
+      <span className="font-semibold tabular-nums text-slate-700 dark:text-slate-300">
+        {distribution.latestPercentile.toFixed(0)}%
+      </span>{' '}
+      の水準 (平均 {formatPercent(distribution.mean)} を{' '}
+      <span className="tabular-nums">{formatPercent(Math.abs(gap))}</span>{' '}
+      {gap >= 0 ? '上回る' : '下回る'} / n = {distribution.n})
+    </div>
   );
 }
 

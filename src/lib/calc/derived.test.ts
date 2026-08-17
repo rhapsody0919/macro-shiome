@@ -2,11 +2,13 @@ import { describe, expect, it } from 'vitest';
 import {
   change,
   correlation,
+  distribution,
   earningsYield,
   epsFromPe,
   fairValue,
   markRecordHighs,
   overvaluation,
+  percentileRank,
   realRate,
   yieldSpread,
 } from './derived';
@@ -178,5 +180,67 @@ describe('correlation', () => {
 
   it('系列の長さが違えばエラー', () => {
     expect(() => correlation([1, 2], [1])).toThrow(/長さ/);
+  });
+});
+
+describe('distribution', () => {
+  it('平均と標準偏差を返す', () => {
+    // 標本標準偏差 (n − 1)。1..10 の分散 = 55/6 ≒ 9.1667
+    const values = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    const result = distribution(values);
+    expect(result?.mean).toBe(5.5);
+    expect(result?.sd).toBeCloseTo(3.0277, 3);
+    expect(result?.n).toBe(10);
+  });
+
+  it('欠測は除いて数える', () => {
+    const values = [1, null, 2, undefined, 3, 4, 5, 6, 7, 8, 9, 10];
+    expect(distribution(values)?.n).toBe(10);
+  });
+
+  it('標本が少なければ値を出さない', () => {
+    // 少数の標本では平均も標準偏差も偶然で大きく振れる。相関と同じ基準に揃える。
+    expect(distribution([1, 2, 3])).toBeNull();
+    expect(distribution(Array.from({ length: 9 }, () => 1))).toBeNull();
+    expect(distribution(Array.from({ length: 10 }, () => 1))).not.toBeNull();
+  });
+
+  it('全部同じ値なら標準偏差 0', () => {
+    const result = distribution(Array.from({ length: 10 }, () => 2.5));
+    expect(result?.sd).toBe(0);
+    expect(result?.mean).toBe(2.5);
+  });
+});
+
+describe('percentileRank', () => {
+  it('最小値は下位 0% 付近、最大値は 100% 付近', () => {
+    const values = [1, 2, 3, 4, 5];
+    expect(percentileRank(values, 1)).toBe(10); // (0 + 1/2) / 5
+    expect(percentileRank(values, 5)).toBe(90); // (4 + 1/2) / 5
+  });
+
+  it('中央値は 50%', () => {
+    expect(percentileRank([1, 2, 3, 4, 5], 3)).toBe(50);
+  });
+
+  it('同値は半分ずつ数える (中間順位法)', () => {
+    // 2 が 2 つ。下に 1 つ、同値 2 つ → (1 + 1) / 4 = 50%
+    expect(percentileRank([1, 2, 2, 3], 2)).toBe(50);
+  });
+
+  it('標本に無い値でも位置を返す', () => {
+    expect(percentileRank([1, 2, 3, 4], 2.5)).toBe(50);
+  });
+
+  it('欠測は除く', () => {
+    expect(percentileRank([1, null, 2, undefined, 3], 2)).toBe(50);
+  });
+
+  it('対象が欠測なら null', () => {
+    expect(percentileRank([1, 2, 3], null)).toBeNull();
+  });
+
+  it('標本が空なら null', () => {
+    expect(percentileRank([null, undefined], 1)).toBeNull();
   });
 });

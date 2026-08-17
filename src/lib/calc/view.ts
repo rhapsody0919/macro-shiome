@@ -12,17 +12,20 @@ import type {
   CorrelationSummary,
   MacroPoint,
   RevisionPoint,
+  SpreadDistribution,
   ValuationPoint,
   ValuationSeries,
   ValuationView,
 } from '../data/types';
 import {
   correlation,
+  distribution,
   earningsYield,
   epsFromPe,
   fairValue,
   markRecordHighs,
   overvaluation,
+  percentileRank,
   realRate,
   yieldSpread,
 } from './derived';
@@ -144,6 +147,7 @@ function buildSp500Series(options: BuildViewOptions, weeks: readonly string[]): 
       points.map((p) => p.forwardEps),
       options.today,
     ),
+    spreadDistribution: buildSpreadDistribution(points, options.today),
     hasForwardEps: true,
     // FactSet の過去号 (PDF) を遡って取得できるため蓄積待ちにならない。
     accumulationNote: null,
@@ -207,6 +211,7 @@ function buildNasdaqSeries(options: BuildViewOptions, weeks: readonly string[]):
       points.map((p) => p.trailingEps),
       options.today,
     ),
+    spreadDistribution: buildSpreadDistribution(points, options.today),
     hasForwardEps: false,
     // 実績 PER は QQQ 経由でしか取れず、stockanalysis.com は現在値しか出さない
     // (src/lib/adapters/stockanalysis.ts)。backfill.ts も FactSet 専用で遡れない。
@@ -240,6 +245,50 @@ function buildTargetYieldContext(
     drift: current === null || atSetting === null ? null : current - atSetting,
     // 実質金利で説明されない部分。裁量で置いているリスクプレミアムに相当する。
     riskPremium: atSetting === null ? null : entry.value - atSetting,
+  };
+}
+
+/**
+ * イールドスプレッドの過去分布 (#52)。
+ *
+ * 窓は 5 年に固定する。期間フィルターに追従させると基準が動いてしまい、
+ * 「今が過去に比べてどこか」の比較にならない。
+ */
+const SPREAD_WINDOW_YEARS = 5;
+
+function buildSpreadDistribution(
+  points: readonly ValuationPoint[],
+  today: Date,
+): SpreadDistribution | null {
+  const from = new Date(
+    Date.UTC(today.getUTCFullYear() - SPREAD_WINDOW_YEARS, today.getUTCMonth(), today.getUTCDate()),
+  )
+    .toISOString()
+    .slice(0, 10);
+
+  const within = points.filter((point) => point.date >= from);
+  const stats = distribution(within.map((point) => point.yieldSpread));
+  if (stats === null) return null;
+
+  // 直近値は窓の中の最後の観測。窓外の古い値を「直近」として出さない。
+  const latest = within.filter((point) => point.yieldSpread !== null).at(-1);
+  if (latest === undefined) return null;
+
+  const latestValue = latest.yieldSpread as number;
+  const percentile = percentileRank(
+    within.map((point) => point.yieldSpread),
+    latestValue,
+  );
+  if (percentile === null) return null;
+
+  return {
+    years: SPREAD_WINDOW_YEARS,
+    mean: stats.mean,
+    sd: stats.sd,
+    n: stats.n,
+    latest: latestValue,
+    latestPercentile: percentile,
+    latestDate: latest.date,
   };
 }
 

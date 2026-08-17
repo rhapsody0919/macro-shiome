@@ -49,6 +49,7 @@ export function valuationSeries(
       oneYear: { kind: 'insufficient', n: 0 },
       all: { kind: 'insufficient', n: 0 },
     },
+    spreadDistribution: null,
     hasForwardEps: true,
     accumulationNote: null,
     ...overrides,
