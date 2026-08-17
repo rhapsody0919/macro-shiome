@@ -48,7 +48,10 @@ export function IndexVsEpsChart({ view }: { view: ValuationView }) {
 
   // 系列ごとに「値を持つ最後の週」を探す。
   // 指数を基準にすると、FactSet 休刊週が最新のとき EPS が欠測表示になってしまう。
-  const summary = useMemo(() => buildSummary(points), [points]);
+  //
+  // useMemo は使わない。React Compiler が手動メモ化を変換する際に関数参照が壊れ、
+  // 実行時に "buildSummary is not defined" になる (#44)。要素数が数百で計算は軽い。
+  const summary = buildSummary(points);
 
   function toggle(key: SeriesKey) {
     setHidden((current) => {
