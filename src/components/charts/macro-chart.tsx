@@ -32,6 +32,7 @@ export function MacroChart({
   subtitle,
   series,
   kind = 'number',
+  headingLevel = 3,
   signed = false,
   notes,
 }: {
@@ -40,6 +41,8 @@ export function MacroChart({
   subtitle?: string;
   series: SeriesDef[];
   kind?: ValueKind;
+  /** セクション内に置くため既定は h3 (#77)。 */
+  headingLevel?: 2 | 3;
   /**
    * 符号が意味を持つ指標か (#63)。true ならゼロ線を引き、負の領域を薄く塗る。
    * イールドカーブのように「負になること自体が信号」の指標に使う。
@@ -59,6 +62,7 @@ export function MacroChart({
     <ChartFrame
       title={title}
       subtitle={subtitle}
+      headingLevel={headingLevel}
       contentClassName="h-56 sm:h-64"
       summary={
         <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm">

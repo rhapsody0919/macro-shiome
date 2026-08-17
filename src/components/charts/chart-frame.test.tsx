@@ -59,3 +59,26 @@ describe('チャート外枠の蓄積中表示', () => {
     expect(screen.getByTestId('chart')).toBeInTheDocument();
   });
 });
+
+describe('見出しレベル (#77)', () => {
+  it('既定は h2', () => {
+    // セクションを持たない画面 (バリュエーション) ではチャートが h1 直下に来る。
+    render(
+      <ChartFrame title="指数と EPS" notes={[]}>
+        {CHART}
+      </ChartFrame>,
+    );
+    expect(screen.getByRole('heading', { level: 2, name: '指数と EPS' })).toBeInTheDocument();
+  });
+
+  it('セクション内では h3 にできる', () => {
+    // 「先行指標」などのセクション見出しと同じ h2 だと、構造が伝わらない。
+    render(
+      <ChartFrame title="住宅市場" notes={[]} headingLevel={3}>
+        {CHART}
+      </ChartFrame>,
+    );
+    expect(screen.getByRole('heading', { level: 3, name: '住宅市場' })).toBeInTheDocument();
+    expect(screen.queryByRole('heading', { level: 2 })).not.toBeInTheDocument();
+  });
+});

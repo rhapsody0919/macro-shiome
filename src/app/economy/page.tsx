@@ -1,6 +1,7 @@
 import { Suspense, type ReactNode } from 'react';
 import { MonthlyChart, type MonthlySeriesDef } from '@/components/charts/monthly-chart';
 import { EconomySummary } from '@/components/economy-summary';
+import { COLORS } from '@/lib/colors';
 import { groupByCycle } from '@/lib/cycle';
 import { indicators } from '@/lib/data/indicators';
 import { economy } from '@/lib/data/loader';
@@ -38,12 +39,12 @@ const CHARTS: MonthlyChartDef[] = [
       {
         key: 'buildingPermits',
         label: '建設許可',
-        color: '#6366f1',
+        color: COLORS.buildingPermits,
         width: 2.4,
         indicatorId: 'building-permits',
       },
-      { key: 'housingStarts', label: '着工', color: '#0ea5e9', indicatorId: 'housing-starts' },
-      { key: 'newHomeSales', label: '新築販売', color: '#10b981', indicatorId: 'new-home-sales' },
+      { key: 'housingStarts', label: '着工', color: COLORS.housingStarts, indicatorId: 'housing-starts' },
+      { key: 'newHomeSales', label: '新築販売', color: COLORS.newHomeSales, indicatorId: 'new-home-sales' },
     ],
     notes: [
       <span key="chain">
@@ -74,20 +75,20 @@ const CHARTS: MonthlyChartDef[] = [
       {
         key: 'payrolls',
         label: '非農業部門雇用者数',
-        color: '#0ea5e9',
+        color: COLORS.payrolls,
         width: 2.4,
         indicatorId: 'payrolls',
       },
       {
         key: 'employmentLevel',
         label: '就業者数 (自営業含む)',
-        color: '#f97316',
+        color: COLORS.employmentLevel,
         indicatorId: 'employment-level',
       },
       {
         key: 'fullTimeEmployment',
         label: 'フルタイム',
-        color: '#a855f7',
+        color: COLORS.fullTimeEmployment,
         indicatorId: 'full-time-employment',
       },
     ],
@@ -117,14 +118,14 @@ const CHARTS: MonthlyChartDef[] = [
       {
         key: 'realIncomeExTransfer',
         label: '実質個人所得 (移転所得を除く)',
-        color: '#10b981',
+        color: COLORS.realIncomeExTransfer,
         width: 2.4,
         indicatorId: 'real-income-ex-transfer',
       },
       {
         key: 'realDisposablePerCapita',
         label: '1人当たり実質可処分所得',
-        color: '#6366f1',
+        color: COLORS.realDisposablePerCapita,
         indicatorId: 'real-disposable-income-per-capita',
       },
     ],
@@ -149,7 +150,7 @@ const CHARTS: MonthlyChartDef[] = [
     kind: 'number',
     zeroLine: false,
     series: [
-      { key: 'savingsRate', label: '貯蓄率 (%)', color: '#ef4444', indicatorId: 'savings-rate' },
+      { key: 'savingsRate', label: '貯蓄率 (%)', color: COLORS.savingsRate, indicatorId: 'savings-rate' },
     ],
     notes: [
       <span key="meaning">
@@ -174,7 +175,7 @@ const CHARTS: MonthlyChartDef[] = [
       {
         key: 'consumerSentiment',
         label: '消費者信頼感指数',
-        color: '#eab308',
+        color: COLORS.consumerSentiment,
         indicatorId: 'consumer-sentiment',
       },
     ],
@@ -192,10 +193,10 @@ const CHARTS: MonthlyChartDef[] = [
     title: '物価の連鎖',
     subtitle: '輸入物価 → 生産者物価 → CPI / PCE (すべて前年同月比)',
     series: [
-      { key: 'importPrice', label: '輸入物価', color: '#f97316', width: 2.4, indicatorId: 'import-price' },
-      { key: 'producerPrice', label: '生産者物価', color: '#a855f7', indicatorId: 'producer-price' },
-      { key: 'cpi', label: 'CPI', color: '#0ea5e9', indicatorId: 'cpi' },
-      { key: 'pce', label: 'PCE', color: '#10b981', indicatorId: 'pce-price' },
+      { key: 'importPrice', label: '輸入物価', color: COLORS.importPrice, width: 2.4, indicatorId: 'import-price' },
+      { key: 'producerPrice', label: '生産者物価', color: COLORS.producerPrice, indicatorId: 'producer-price' },
+      { key: 'cpi', label: 'CPI', color: COLORS.cpi, indicatorId: 'cpi' },
+      { key: 'pce', label: 'PCE', color: COLORS.pce, indicatorId: 'pce-price' },
     ],
     notes: [
       <span key="reading">

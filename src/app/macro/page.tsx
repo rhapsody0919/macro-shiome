@@ -2,6 +2,7 @@ import { Suspense, type ReactNode } from 'react';
 import { MacroChart, type SeriesDef } from '@/components/charts/macro-chart';
 import { MacroSummary } from '@/components/macro-summary';
 import type { ValueKind } from '@/components/charts/chart-frame';
+import { COLORS } from '@/lib/colors';
 import { groupByCycle } from '@/lib/cycle';
 import { indicators } from '@/lib/data/indicators';
 import { macro } from '@/lib/data/loader';
@@ -33,7 +34,7 @@ const CHARTS: MacroChartDef[] = [
     subtitle: '長短金利差。負なら逆イールド',
     kind: 'percent',
     signed: true,
-    series: [{ key: 'termSpread', label: '10年 − 2年', color: '#6366f1' }],
+    series: [{ key: 'termSpread', label: '10年 − 2年', color: COLORS.termSpread }],
     notes: [
       <span key="vs-spread">
         <strong>イールドスプレッド (バリュエーション画面) とは別物。</strong>
@@ -59,9 +60,9 @@ const CHARTS: MacroChartDef[] = [
     subtitle: '名目 10 年債利回り・期待インフレ率・実質金利',
     kind: 'percent',
     series: [
-      { key: 'nominalRate', label: '名目10年債', color: '#f97316' },
-      { key: 'breakeven', label: '期待インフレ率', color: '#a855f7' },
-      { key: 'realRate', label: '実質金利', color: '#0ea5e9' },
+      { key: 'nominalRate', label: '名目10年債', color: COLORS.nominalRate },
+      { key: 'breakeven', label: '期待インフレ率', color: COLORS.breakeven },
+      { key: 'realRate', label: '実質金利', color: COLORS.realRate },
     ],
     notes: [
       <span key="def">
@@ -78,7 +79,7 @@ const CHARTS: MacroChartDef[] = [
     title: '住宅ローン金利 (30年固定)',
     subtitle: '住宅需要の背景要因',
     kind: 'percent',
-    series: [{ key: 'mortgageRate', label: '30年固定金利', color: '#ec4899' }],
+    series: [{ key: 'mortgageRate', label: '30年固定金利', color: COLORS.mortgageRate }],
     notes: [
       <span key="why">
         住宅市場の連鎖 (金利 → 申請 → 建設許可 → 着工 → 販売) の起点にあたる。
@@ -98,7 +99,7 @@ const CHARTS: MacroChartDef[] = [
     primaryIndicator: 'vix',
     title: 'VIX',
     subtitle: 'S&P 500 のインプライド・ボラティリティ指数',
-    series: [{ key: 'vix', label: 'VIX', color: '#ef4444' }],
+    series: [{ key: 'vix', label: 'VIX', color: COLORS.vix }],
     notes: [
       <span key="weekly">
         週次 (金曜終値) のため、週の途中の急騰は平滑化される。日中の変動を追う用途には向かない。
@@ -113,7 +114,7 @@ const CHARTS: MacroChartDef[] = [
     primaryIndicator: 'usdjpy',
     title: 'USD/JPY',
     subtitle: '円/ドル (FRB 公表値)',
-    series: [{ key: 'usdjpy', label: 'USD/JPY', color: '#10b981' }],
+    series: [{ key: 'usdjpy', label: 'USD/JPY', color: COLORS.usdjpy }],
     notes: [
       <span key="weekly">週次 (金曜時点)。FRB が公表する日次値を金曜に揃えている。</span>,
     ],

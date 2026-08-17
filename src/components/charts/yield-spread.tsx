@@ -16,20 +16,26 @@ import {
 } from 'recharts';
 import { changeMark, formatDate, formatPercent, formatSigned } from '@/lib/format';
 import type { IndexKey, SpreadDistribution, ValuationView } from '@/lib/data/types';
+import { COLORS } from '@/lib/colors';
 import { filterByPeriod, parsePeriod } from '@/lib/period';
 import { seriesState, withValue } from '@/lib/series-state';
 import { ChartFrame, SharedTooltip } from './chart-frame';
 
-const SPREAD_COLOR = '#0ea5e9';
-const POSITIVE_FILL = '#0ea5e9';
-const NEGATIVE_FILL = '#ef4444';
+const SPREAD_COLOR = COLORS.yieldSpread;
+const POSITIVE_FILL = COLORS.yieldSpread;
+const NEGATIVE_FILL = COLORS.negative;
 const MEAN_COLOR = '#94a3b8';
 const SIGMA_COLOR = '#cbd5e1';
 
-/** 内訳の系列。既定では隠し、必要なときだけ出す。 */
+/**
+ * 内訳の系列。既定では隠し、必要なときだけ出す。
+ *
+ * **色は COLORS から引く。** 直書きしていたため「実質金利」がマクロ画面の金利チャートと
+ * 別の色になっていた (#77)。
+ */
 const BREAKDOWN = [
-  { key: 'earningsYield', label: '株式益回り', color: '#8b5cf6' },
-  { key: 'realRate', label: '実質金利', color: '#f97316' },
+  { key: 'earningsYield', label: '株式益回り', color: COLORS.earningsYield },
+  { key: 'realRate', label: '実質金利', color: COLORS.realRate },
 ] as const;
 
 const INDEX_LABELS: Record<IndexKey, string> = {

@@ -47,6 +47,7 @@ export function MonthlyChart({
   subtitle,
   series,
   kind = 'percent',
+  headingLevel = 3,
   zeroLine = true,
   notes,
   height = 'h-72 sm:h-96',
@@ -57,6 +58,8 @@ export function MonthlyChart({
   series: MonthlySeriesDef[];
   /** 前年同月比なら percent、水準なら number。 */
   kind?: 'percent' | 'number';
+  /** セクション内に置くため既定は h3 (#77)。 */
+  headingLevel?: 2 | 3;
   /** ゼロ線を引くか。水準の指標 (貯蓄率・信頼感) では不要。 */
   zeroLine?: boolean;
   notes: ReactNode[];
@@ -76,6 +79,7 @@ export function MonthlyChart({
     <ChartFrame
       title={title}
       subtitle={subtitle}
+      headingLevel={headingLevel}
       contentClassName={height}
       summary={
         <div className="space-y-2">

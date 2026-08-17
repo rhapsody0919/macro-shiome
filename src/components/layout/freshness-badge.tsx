@@ -1,9 +1,4 @@
-import {
-  describeGapReason,
-  needsInvestigation,
-  summarizeGaps,
-  type Freshness,
-} from '@/lib/data/loader';
+import { needsInvestigation, summarizeGaps, type Freshness } from '@/lib/data/loader';
 
 /**
  * データの鮮度表示 (screens N-1)。
@@ -12,7 +7,12 @@ import {
  * 古いデータを最新と誤認させないことが目的。
  */
 export function FreshnessBadge({ freshness }: { freshness: Freshness }) {
-  const gaps = summarizeGaps(freshness.recentGaps).slice(0, 3);
+  const gaps = summarizeGaps(freshness.recentGaps);
+  const needsAttention = gaps.filter((gap) => needsInvestigation(gap.reason)).slice(0, 3);
+  // 正常な欠測は件数だけ。日付を並べても行動につながらない。
+  const normalGaps = gaps
+    .filter((gap) => !needsInvestigation(gap.reason))
+    .reduce((sum, gap) => sum + gap.count, 0);
 
   return (
     <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs">
@@ -37,24 +37,26 @@ export function FreshnessBadge({ freshness }: { freshness: Freshness }) {
         </span>
       )}
 
-      {gaps.length > 0 && (
-        <span className="text-slate-500">
-          直近の欠測:{' '}
-          {gaps.map((gap, i) => (
-            <span
-              key={`${gap.date}-${gap.reason}`}
-              // 要調査の欠測だけを目立たせる。休刊・掲載無しは仕様どおりの状態で、
-              // 同じ見た目にすると本当に見るべき取得失敗が埋もれる (#53)。
-              className={
-                needsInvestigation(gap.reason) ? 'text-amber-600 dark:text-amber-400' : undefined
-              }
-            >
+      {/*
+        要調査の欠測だけを詳細表示する (#77)。休刊・掲載無しは仕様どおりの正常な状態で、
+        毎回ヘッダーに並べると本当に見るべき取得失敗が埋もれる。正常な分は件数だけ出す。
+      */}
+      {needsAttention.length > 0 && (
+        <span className="text-amber-600 dark:text-amber-400">
+          ⚠ 取得失敗:{' '}
+          {needsAttention.map((gap, i) => (
+            <span key={`${gap.date}-${gap.reason}`}>
               {i > 0 && ' / '}
-              {formatDate(gap.date)} {describeGapReason(gap.reason)}
+              {formatDate(gap.date)}
               {gap.count > 1 && ` ×${gap.count}`}
-              {needsInvestigation(gap.reason) && ' ⚠'}
             </span>
           ))}
+        </span>
+      )}
+
+      {normalGaps > 0 && (
+        <span className="text-slate-500">
+          直近の欠測 {normalGaps} 件 (休刊・掲載なし。異常ではない)
         </span>
       )}
     </div>
