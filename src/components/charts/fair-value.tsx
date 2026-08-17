@@ -112,6 +112,7 @@ export function FairValueChart({ view }: { view: ValuationView }) {
             defaultValue={defaultYield}
             onChange={setTargetYield}
             isModified={isModified}
+            context={series.targetYieldContext}
           />
         </div>
       }
@@ -225,14 +226,21 @@ function TargetYieldControl({
   defaultValue,
   onChange,
   isModified,
+  context,
 }: {
   value: number;
   defaultValue: number;
   onChange: (value: number) => void;
   isModified: boolean;
+  context: ValuationView['sp500']['targetYieldContext'];
 }) {
+  // 実質金利が設定時から大きく動いていたら見直しを促す。
+  // 0.5pt は「四半期に一度は見直す」程度の頻度になる目安。
+  const needsReview = context.drift !== null && Math.abs(context.drift) >= 0.5;
+
   return (
-    <div className="flex flex-wrap items-center gap-2 rounded border border-slate-200 px-3 py-2 text-xs dark:border-slate-800">
+    <div className="space-y-1 rounded border border-slate-200 px-3 py-2 text-xs dark:border-slate-800">
+    <div className="flex flex-wrap items-center gap-2">
       <label htmlFor="target-yield" className="text-slate-600 dark:text-slate-300">
         基準益回り
       </label>
@@ -267,6 +275,25 @@ function TargetYieldControl({
       ) : (
         <span className="text-slate-500">data/config.json の設定値</span>
       )}
+    </div>
+
+    {/* 裁量で置いている部分 (リスクプレミアム) がいくつなのかを可視化する (#46)。 */}
+    {context.realRateAtSetting !== null && context.riskPremium !== null && (
+      <div className="text-[11px] text-slate-500">
+        参考: 設定時の実質金利 {formatPercent(context.realRateAtSetting)} + プレミアム{' '}
+        {formatPercent(context.riskPremium)}
+        {context.currentRealRate !== null && (
+          <> ／ 現在の実質金利 {formatPercent(context.currentRealRate)}</>
+        )}
+      </div>
+    )}
+
+    {needsReview && (
+      <div className="text-[11px] text-amber-600 dark:text-amber-400">
+        実質金利が設定時から {formatSigned(context.drift, 2, 'pt')} 変化している。
+        基準益回りの見直しを検討する (自動では変更しない)。
+      </div>
+    )}
     </div>
   );
 }

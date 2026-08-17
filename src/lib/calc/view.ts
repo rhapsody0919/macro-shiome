@@ -5,9 +5,10 @@
  * 計算ロジックを 1 か所に集約し、定義のずれが各所に散らばるのを防ぐ。
  */
 import type { Observations } from '../adapters/fred';
-import { resolveTargetYield } from '../data/indicators';
+import { resolveTargetYield, resolveTargetYieldEntry } from '../data/indicators';
 import type {
   AppConfig,
+  IndexKey,
   CorrelationSummary,
   MacroPoint,
   RevisionPoint,
@@ -136,6 +137,7 @@ function buildSp500Series(options: BuildViewOptions, weeks: readonly string[]): 
       asOf: latestBaselineDate,
     },
     targetYield: resolveTargetYield(config, 'sp500', weeks.at(-1) ?? options.start),
+    targetYieldContext: buildTargetYieldContext(options, 'sp500', weeks.at(-1) ?? options.start),
     correlation: toCorrelationSummary(
       weeks,
       points.map((p) => p.index),
@@ -195,6 +197,7 @@ function buildNasdaqSeries(options: BuildViewOptions, weeks: readonly string[]):
     points,
     baselines: { pe5y: null, pe10y: null, asOf: null },
     targetYield: resolveTargetYield(config, 'nasdaq100', weeks.at(-1) ?? options.start),
+    targetYieldContext: buildTargetYieldContext(options, 'nasdaq100', weeks.at(-1) ?? options.start),
     correlation: toCorrelationSummary(
       weeks,
       points.map((p) => p.index),
@@ -203,6 +206,34 @@ function buildNasdaqSeries(options: BuildViewOptions, weeks: readonly string[]):
       options.today,
     ),
     hasForwardEps: false,
+  };
+}
+
+/**
+ * 基準益回りの妥当性を判断するための文脈を作る (#46)。
+ *
+ * 基準益回りを実質金利に自動連動させる案は採用しなかった。実質金利がマイナスの局面で
+ * 理論値が発散するため (2022-02 で割高率 −431% になる)。代わりに設定時からの乖離を示し、
+ * 見直しの判断を人に委ねる。
+ */
+function buildTargetYieldContext(
+  options: BuildViewOptions,
+  index: IndexKey,
+  latestDate: string,
+): ValuationSeries['targetYieldContext'] {
+  const entry = resolveTargetYieldEntry(options.config, index, latestDate);
+  const current = realRate(
+    valueAsOf(series(options.observations, 'dgs10'), latestDate),
+    valueAsOf(series(options.observations, 't10yie'), latestDate),
+  );
+  const atSetting = entry.realRateAtSetting ?? null;
+
+  return {
+    realRateAtSetting: atSetting,
+    currentRealRate: current,
+    drift: current === null || atSetting === null ? null : current - atSetting,
+    // 実質金利で説明されない部分。裁量で置いているリスクプレミアムに相当する。
+    riskPremium: atSetting === null ? null : entry.value - atSetting,
   };
 }
 

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T01:25:55.170Z",
+  "generatedAt": "2026-08-17T01:33:14.484Z",
   "sp500": {
     "points": [
       {
@@ -7869,6 +7869,12 @@
       "asOf": "2026-08-07"
     },
     "targetYield": 3.67,
+    "targetYieldContext": {
+      "realRateAtSetting": 2.4,
+      "currentRealRate": 2.36,
+      "drift": -0.040000000000000036,
+      "riskPremium": 1.27
+    },
     "correlation": {
       "halfYear": {
         "kind": "ok",
@@ -15757,6 +15763,12 @@
       "asOf": null
     },
     "targetYield": 3.27,
+    "targetYieldContext": {
+      "realRateAtSetting": 2.4,
+      "currentRealRate": 2.36,
+      "drift": -0.040000000000000036,
+      "riskPremium": 0.8700000000000001
+    },
     "correlation": {
       "halfYear": {
         "kind": "insufficient",
