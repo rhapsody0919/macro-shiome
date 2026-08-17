@@ -1,5 +1,6 @@
 import { Suspense, type ReactNode } from 'react';
 import { MonthlyChart, type MonthlySeriesDef } from '@/components/charts/monthly-chart';
+import { EconomySummary } from '@/components/economy-summary';
 import { groupByCycle } from '@/lib/cycle';
 import { indicators } from '@/lib/data/indicators';
 import { economy } from '@/lib/data/loader';
@@ -246,6 +247,9 @@ export default function EconomyPage() {
           月次で発表される経済指標。<strong>横軸は対象月</strong> (発表日ではない)。
         </p>
       </div>
+
+      {/* 期間フィルターに依存せず常に直近の値を見せる。 */}
+      <EconomySummary points={economy.monthly} />
 
       {groups.map((group) => (
         <section key={group.section} className="space-y-10">
