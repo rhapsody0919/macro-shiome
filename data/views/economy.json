@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T08:22:28.756Z",
+  "generatedAt": "2026-08-17T08:38:13.903Z",
   "monthly": [
     {
       "month": "2016-08-01",
@@ -12,6 +12,9 @@
       "fullTimeEmployment": 2.070174576257311,
       "realIncomeExTransfer": 1.3626523869203488,
       "realDisposablePerCapita": 0.9462773587524786,
+      "buildingPermits": 1201,
+      "housingStarts": 1171,
+      "newHomeSales": 575,
       "savingsRate": 5.1,
       "consumerSentiment": 89.8
     },
@@ -26,6 +29,9 @@
       "fullTimeEmployment": 2.0343298291721323,
       "realIncomeExTransfer": 1.397642567117141,
       "realDisposablePerCapita": 0.9191261373608706,
+      "buildingPermits": 1303,
+      "housingStarts": 1068,
+      "newHomeSales": 558,
       "savingsRate": 5.1,
       "consumerSentiment": 91.2
     },
@@ -40,6 +46,9 @@
       "fullTimeEmployment": 1.6503677494389635,
       "realIncomeExTransfer": 1.2579519182822407,
       "realDisposablePerCapita": 0.9343207142362697,
+      "buildingPermits": 1254,
+      "housingStarts": 1313,
+      "newHomeSales": 575,
       "savingsRate": 5.3,
       "consumerSentiment": 87.2
     },
@@ -54,6 +63,9 @@
       "fullTimeEmployment": 1.5501465027581762,
       "realIncomeExTransfer": 1.6866121850359406,
       "realDisposablePerCapita": 1.2353375819710077,
+      "buildingPermits": 1230,
+      "housingStarts": 1140,
+      "newHomeSales": 571,
       "savingsRate": 5.4,
       "consumerSentiment": 93.8
     },
@@ -68,6 +80,9 @@
       "fullTimeEmployment": 1.1152113525094265,
       "realIncomeExTransfer": 1.6651353346085918,
       "realDisposablePerCapita": 1.046289695771141,
+      "buildingPermits": 1248,
+      "housingStarts": 1252,
+      "newHomeSales": 561,
       "savingsRate": 5,
       "consumerSentiment": 98.2
     },
@@ -82,6 +97,9 @@
       "fullTimeEmployment": 1.232972463344062,
       "realIncomeExTransfer": 1.853342259061752,
       "realDisposablePerCapita": 1.0423825887743376,
+      "buildingPermits": 1303,
+      "housingStarts": 1190,
+      "newHomeSales": 573,
       "savingsRate": 5.3,
       "consumerSentiment": 98.5
     },
@@ -96,6 +114,9 @@
       "fullTimeEmployment": 1.5284055803063357,
       "realIncomeExTransfer": 2.265937191923606,
       "realDisposablePerCapita": 1.250286237691789,
+      "buildingPermits": 1234,
+      "housingStarts": 1271,
+      "newHomeSales": 587,
       "savingsRate": 5.6,
       "consumerSentiment": 96.3
     },
@@ -110,6 +131,9 @@
       "fullTimeEmployment": 1.6473824743102217,
       "realIncomeExTransfer": 2.682442196531798,
       "realDisposablePerCapita": 1.6794592736854241,
+      "buildingPermits": 1272,
+      "housingStarts": 1190,
+      "newHomeSales": 632,
       "savingsRate": 5.6,
       "consumerSentiment": 96.9
     },
@@ -124,6 +148,9 @@
       "fullTimeEmployment": 2.335773532228491,
       "realIncomeExTransfer": 3.1636884566086154,
       "realDisposablePerCapita": 2.131912058627572,
+      "buildingPermits": 1251,
+      "housingStarts": 1146,
+      "newHomeSales": 598,
       "savingsRate": 5.7,
       "consumerSentiment": 97
     },
@@ -138,6 +165,9 @@
       "fullTimeEmployment": 1.956793227046405,
       "realIncomeExTransfer": 3.980955399114161,
       "realDisposablePerCapita": 2.9284564067172836,
+      "buildingPermits": 1208,
+      "housingStarts": 1157,
+      "newHomeSales": 635,
       "savingsRate": 6.3,
       "consumerSentiment": 97.1
     },
@@ -152,6 +182,9 @@
       "fullTimeEmployment": 1.935629806760164,
       "realIncomeExTransfer": 3.9034717617985715,
       "realDisposablePerCapita": 2.9238555325511895,
+      "buildingPermits": 1353,
+      "housingStarts": 1249,
+      "newHomeSales": 619,
       "savingsRate": 6,
       "consumerSentiment": 95
     },
@@ -166,6 +199,9 @@
       "fullTimeEmployment": 1.6417357103710728,
       "realIncomeExTransfer": 3.772891575300341,
       "realDisposablePerCapita": 2.8227470763586338,
+      "buildingPermits": 1256,
+      "housingStarts": 1206,
+      "newHomeSales": 572,
       "savingsRate": 6,
       "consumerSentiment": 93.4
     },
@@ -180,6 +216,9 @@
       "fullTimeEmployment": 1.1340835032184637,
       "realIncomeExTransfer": 3.862898935173731,
       "realDisposablePerCapita": 2.835140152643767,
+      "buildingPermits": 1319,
+      "housingStarts": 1159,
+      "newHomeSales": 556,
       "savingsRate": 6.1,
       "consumerSentiment": 96.8
     },
@@ -194,6 +233,9 @@
       "fullTimeEmployment": 2.0468942424559433,
       "realIncomeExTransfer": 3.8743995278402554,
       "realDisposablePerCapita": 2.803203661327225,
+      "buildingPermits": 1273,
+      "housingStarts": 1181,
+      "newHomeSales": 637,
       "savingsRate": 5.9,
       "consumerSentiment": 95.1
     },
@@ -208,6 +250,9 @@
       "fullTimeEmployment": 2.0522282832026617,
       "realIncomeExTransfer": 4.185102557023801,
       "realDisposablePerCapita": 2.921009325287982,
+      "buildingPermits": 1356,
+      "housingStarts": 1257,
+      "newHomeSales": 626,
       "savingsRate": 6,
       "consumerSentiment": 100.7
     },
@@ -222,6 +267,9 @@
       "fullTimeEmployment": 2.024565588832661,
       "realIncomeExTransfer": 4.292681476194726,
       "realDisposablePerCapita": 2.8100266861300627,
+      "buildingPermits": 1299,
+      "housingStarts": 1273,
+      "newHomeSales": 711,
       "savingsRate": 5.6,
       "consumerSentiment": 98.5
     },
@@ -236,6 +284,9 @@
       "fullTimeEmployment": 1.8795417559576588,
       "realIncomeExTransfer": 4.170586623010086,
       "realDisposablePerCapita": 2.7172181511993188,
+      "buildingPermits": 1311,
+      "housingStarts": 1177,
+      "newHomeSales": 630,
       "savingsRate": 5,
       "consumerSentiment": 95.9
     },
@@ -250,6 +301,9 @@
       "fullTimeEmployment": 1.9357221423811577,
       "realIncomeExTransfer": 3.7034848943602094,
       "realDisposablePerCapita": 2.913501870536228,
+      "buildingPermits": 1317,
+      "housingStarts": 1299,
+      "newHomeSales": 590,
       "savingsRate": 5.7,
       "consumerSentiment": 95.7
     },
@@ -264,6 +318,9 @@
       "fullTimeEmployment": 2.1299766183017876,
       "realIncomeExTransfer": 3.52780148941807,
       "realDisposablePerCapita": 2.8564320607924687,
+      "buildingPermits": 1321,
+      "housingStarts": 1277,
+      "newHomeSales": 618,
       "savingsRate": 5.8,
       "consumerSentiment": 99.7
     },
@@ -278,6 +335,9 @@
       "fullTimeEmployment": 1.449540700173535,
       "realIncomeExTransfer": 3.373207845896742,
       "realDisposablePerCapita": 2.8076975077741206,
+      "buildingPermits": 1385,
+      "housingStarts": 1318,
+      "newHomeSales": 679,
       "savingsRate": 5.9,
       "consumerSentiment": 101.4
     },
@@ -292,6 +352,9 @@
       "fullTimeEmployment": 1.4616311899248169,
       "realIncomeExTransfer": 3.2099162439886975,
       "realDisposablePerCapita": 2.8027082349236343,
+      "buildingPermits": 1378,
+      "housingStarts": 1276,
+      "newHomeSales": 642,
       "savingsRate": 6,
       "consumerSentiment": 98.8
     },
@@ -306,6 +369,9 @@
       "fullTimeEmployment": 2.4481614927581274,
       "realIncomeExTransfer": 2.7785235873359015,
       "realDisposablePerCapita": 2.4406052343383333,
+      "buildingPermits": 1338,
+      "housingStarts": 1357,
+      "newHomeSales": 662,
       "savingsRate": 6,
       "consumerSentiment": 98
     },
@@ -320,6 +386,9 @@
       "fullTimeEmployment": 2.1231573941987714,
       "realIncomeExTransfer": 3.154979007896519,
       "realDisposablePerCapita": 2.8095035873136442,
+      "buildingPermits": 1345,
+      "housingStarts": 1192,
+      "newHomeSales": 636,
       "savingsRate": 6.3,
       "consumerSentiment": 98.2
     },
@@ -334,6 +403,9 @@
       "fullTimeEmployment": 2.4581129621846998,
       "realIncomeExTransfer": 3.3300331702522667,
       "realDisposablePerCapita": 2.970495751655844,
+      "buildingPermits": 1334,
+      "housingStarts": 1208,
+      "newHomeSales": 628,
       "savingsRate": 6.5,
       "consumerSentiment": 97.9
     },
@@ -348,6 +420,9 @@
       "fullTimeEmployment": 2.1403572817383143,
       "realIncomeExTransfer": 3.58070474156591,
       "realDisposablePerCapita": 3.218329321565472,
+      "buildingPermits": 1273,
+      "housingStarts": 1288,
+      "newHomeSales": 593,
       "savingsRate": 6.6,
       "consumerSentiment": 96.2
     },
@@ -362,6 +437,9 @@
       "fullTimeEmployment": 1.773939107114697,
       "realIncomeExTransfer": 3.2372212113148224,
       "realDisposablePerCapita": 3.025041736227041,
+      "buildingPermits": 1314,
+      "housingStarts": 1250,
+      "newHomeSales": 595,
       "savingsRate": 6.8,
       "consumerSentiment": 100.1
     },
@@ -376,6 +454,9 @@
       "fullTimeEmployment": 2.040171803941382,
       "realIncomeExTransfer": 2.9148046293113294,
       "realDisposablePerCapita": 2.9824561403508865,
+      "buildingPermits": 1272,
+      "housingStarts": 1221,
+      "newHomeSales": 554,
       "savingsRate": 6.7,
       "consumerSentiment": 98.6
     },
@@ -390,6 +471,9 @@
       "fullTimeEmployment": 2.404651309760797,
       "realIncomeExTransfer": 2.7295020031080197,
       "realDisposablePerCapita": 3.108153078203002,
+      "buildingPermits": 1340,
+      "housingStarts": 1181,
+      "newHomeSales": 625,
       "savingsRate": 6.5,
       "consumerSentiment": 97.5
     },
@@ -404,6 +488,9 @@
       "fullTimeEmployment": 2.4980428439256963,
       "realIncomeExTransfer": 3.81872097736502,
       "realDisposablePerCapita": 4.213931230060264,
+      "buildingPermits": 1317,
+      "housingStarts": 1095,
+      "newHomeSales": 546,
       "savingsRate": 8.4,
       "consumerSentiment": 98.3
     },
@@ -418,6 +505,9 @@
       "fullTimeEmployment": 2.151791058882835,
       "realIncomeExTransfer": 3.9564759164838925,
       "realDisposablePerCapita": 3.7959903062348532,
+      "buildingPermits": 1254,
+      "housingStarts": 1226,
+      "newHomeSales": 595,
       "savingsRate": 8.4,
       "consumerSentiment": 91.2
     },
@@ -432,6 +522,9 @@
       "fullTimeEmployment": 1.8903280436555203,
       "realIncomeExTransfer": 4.016746513512359,
       "realDisposablePerCapita": 3.7225972426834453,
+      "buildingPermits": 1286,
+      "housingStarts": 1121,
+      "newHomeSales": 648,
       "savingsRate": 8.5,
       "consumerSentiment": 93.8
     },
@@ -446,6 +539,9 @@
       "fullTimeEmployment": 1.802317826233657,
       "realIncomeExTransfer": 3.9332057009147103,
       "realDisposablePerCapita": 3.3973347361037964,
+      "buildingPermits": 1295,
+      "housingStarts": 1191,
+      "newHomeSales": 718,
       "savingsRate": 7.9,
       "consumerSentiment": 98.4
     },
@@ -460,6 +556,9 @@
       "fullTimeEmployment": 1.4421385860007074,
       "realIncomeExTransfer": 3.6928720134826953,
       "realDisposablePerCapita": 2.9669824737982298,
+      "buildingPermits": 1322,
+      "housingStarts": 1272,
+      "newHomeSales": 702,
       "savingsRate": 7.6,
       "consumerSentiment": 97.2
     },
@@ -474,6 +573,9 @@
       "fullTimeEmployment": 0.8361476650751154,
       "realIncomeExTransfer": 3.376966308000795,
       "realDisposablePerCapita": 2.6159048761863257,
+      "buildingPermits": 1347,
+      "housingStarts": 1293,
+      "newHomeSales": 618,
       "savingsRate": 7.3,
       "consumerSentiment": 100
     },
@@ -488,6 +590,9 @@
       "fullTimeEmployment": 1.237010996515564,
       "realIncomeExTransfer": 3.052158020525808,
       "realDisposablePerCapita": 2.4001043523631527,
+      "buildingPermits": 1299,
+      "housingStarts": 1243,
+      "newHomeSales": 729,
       "savingsRate": 7.1,
       "consumerSentiment": 98.2
     },
@@ -502,6 +607,9 @@
       "fullTimeEmployment": 1.1453955871313148,
       "realIncomeExTransfer": 2.470888554743489,
       "realDisposablePerCapita": 2.0878002295714015,
+      "buildingPermits": 1379,
+      "housingStarts": 1240,
+      "newHomeSales": 648,
       "savingsRate": 6.8,
       "consumerSentiment": 98.4
     },
@@ -516,6 +624,9 @@
       "fullTimeEmployment": 1.7225571854798671,
       "realIncomeExTransfer": 2.5758008455982084,
       "realDisposablePerCapita": 2.2693902228364093,
+      "buildingPermits": 1482,
+      "housingStarts": 1375,
+      "newHomeSales": 712,
       "savingsRate": 6.9,
       "consumerSentiment": 89.8
     },
@@ -530,6 +641,9 @@
       "fullTimeEmployment": 1.7445690503685274,
       "realIncomeExTransfer": 2.7978263898564837,
       "realDisposablePerCapita": 2.493302221069915,
+      "buildingPermits": 1469,
+      "housingStarts": 1311,
+      "newHomeSales": 712,
       "savingsRate": 7,
       "consumerSentiment": 93.2
     },
@@ -544,6 +658,9 @@
       "fullTimeEmployment": 1.8183225007737613,
       "realIncomeExTransfer": 2.8969673351797454,
       "realDisposablePerCapita": 2.3806956634248477,
+      "buildingPermits": 1523,
+      "housingStarts": 1325,
+      "newHomeSales": 722,
       "savingsRate": 7.1,
       "consumerSentiment": 95.5
     },
@@ -558,6 +675,9 @@
       "fullTimeEmployment": 1.4332880770180134,
       "realIncomeExTransfer": 3.082346246990153,
       "realDisposablePerCapita": 2.4249074791290237,
+      "buildingPermits": 1535,
+      "housingStarts": 1353,
+      "newHomeSales": 713,
       "savingsRate": 6.9,
       "consumerSentiment": 96.8
     },
@@ -572,6 +692,9 @@
       "fullTimeEmployment": 1.5869709453933956,
       "realIncomeExTransfer": 1.350749693478459,
       "realDisposablePerCapita": 0.6292784557166531,
+      "buildingPermits": 1443,
+      "housingStarts": 1548,
+      "newHomeSales": 700,
       "savingsRate": 6.2,
       "consumerSentiment": 99.3
     },
@@ -586,6 +709,9 @@
       "fullTimeEmployment": 0.9267826301505133,
       "realIncomeExTransfer": 2.3797128452433203,
       "realDisposablePerCapita": 1.4581962515653801,
+      "buildingPermits": 1490,
+      "housingStarts": 1581,
+      "newHomeSales": 689,
       "savingsRate": 6.8,
       "consumerSentiment": 99.8
     },
@@ -600,6 +726,9 @@
       "fullTimeEmployment": 0.7056288715324488,
       "realIncomeExTransfer": 2.6712314725599207,
       "realDisposablePerCapita": 1.672602391249045,
+      "buildingPermits": 1461,
+      "housingStarts": 1549,
+      "newHomeSales": 707,
       "savingsRate": 7.5,
       "consumerSentiment": 101
     },
@@ -614,6 +743,9 @@
       "fullTimeEmployment": -0.6397212973239585,
       "realIncomeExTransfer": 0.21558634710765467,
       "realDisposablePerCapita": 0.36036799932166463,
+      "buildingPermits": 1351,
+      "housingStarts": 1266,
+      "newHomeSales": 626,
       "savingsRate": 12.4,
       "consumerSentiment": 89.1
     },
@@ -628,6 +760,9 @@
       "fullTimeEmployment": -12.077361689012179,
       "realIncomeExTransfer": -5.851823018035551,
       "realDisposablePerCapita": 15.395567266622745,
+      "buildingPermits": 1079,
+      "housingStarts": 936,
+      "newHomeSales": 576,
       "savingsRate": 31.8,
       "consumerSentiment": 71.8
     },
@@ -642,6 +777,9 @@
       "fullTimeEmployment": -10.324756317272598,
       "realIncomeExTransfer": -3.5712578285605034,
       "realDisposablePerCapita": 9.65471786367309,
+      "buildingPermits": 1251,
+      "housingStarts": 1039,
+      "newHomeSales": 707,
       "savingsRate": 22.6,
       "consumerSentiment": 72.3
     },
@@ -656,6 +794,9 @@
       "fullTimeEmployment": -8.59236659946494,
       "realIncomeExTransfer": -1.4679199465218784,
       "realDisposablePerCapita": 9.099401299307885,
+      "buildingPermits": 1333,
+      "housingStarts": 1266,
+      "newHomeSales": 901,
       "savingsRate": 18.3,
       "consumerSentiment": 78.1
     },
@@ -670,6 +811,9 @@
       "fullTimeEmployment": -8.221557390219825,
       "realIncomeExTransfer": -0.608798918904152,
       "realDisposablePerCapita": 9.973057258629092,
+      "buildingPermits": 1539,
+      "housingStarts": 1526,
+      "newHomeSales": 981,
       "savingsRate": 17.9,
       "consumerSentiment": 72.5
     },
@@ -684,6 +828,9 @@
       "fullTimeEmployment": -6.390113121653518,
       "realIncomeExTransfer": 0.011543815570580485,
       "realDisposablePerCapita": 5.219263982433553,
+      "buildingPermits": 1534,
+      "housingStarts": 1396,
+      "newHomeSales": 1016,
       "savingsRate": 13.9,
       "consumerSentiment": 74.1
     },
@@ -698,6 +845,9 @@
       "fullTimeEmployment": -6.638482632541132,
       "realIncomeExTransfer": 1.0152077855187125,
       "realDisposablePerCapita": 5.609427041612203,
+      "buildingPermits": 1650,
+      "housingStarts": 1473,
+      "newHomeSales": 979,
       "savingsRate": 13.3,
       "consumerSentiment": 80.4
     },
@@ -712,6 +862,9 @@
       "fullTimeEmployment": -5.935101451478076,
       "realIncomeExTransfer": 2.308186521489186,
       "realDisposablePerCapita": 5.118267792826003,
+      "buildingPermits": 1612,
+      "housingStarts": 1543,
+      "newHomeSales": 1031,
       "savingsRate": 12.8,
       "consumerSentiment": 81.8
     },
@@ -726,6 +879,9 @@
       "fullTimeEmployment": -5.366948056886455,
       "realIncomeExTransfer": 1.7037690251964,
       "realDisposablePerCapita": 3.613217654349521,
+      "buildingPermits": 1692,
+      "housingStarts": 1543,
+      "newHomeSales": 877,
       "savingsRate": 12,
       "consumerSentiment": 76.9
     },
@@ -740,6 +896,9 @@
       "fullTimeEmployment": -5.149041199924054,
       "realIncomeExTransfer": 1.9829013618085423,
       "realDisposablePerCapita": 4.309798453542912,
+      "buildingPermits": 1755,
+      "housingStarts": 1614,
+      "newHomeSales": 874,
       "savingsRate": 11.8,
       "consumerSentiment": 80.7
     },
@@ -754,6 +913,9 @@
       "fullTimeEmployment": -4.316337911961988,
       "realIncomeExTransfer": 0.9440779349382478,
       "realDisposablePerCapita": 14.62552301255231,
+      "buildingPermits": 1856,
+      "housingStarts": 1624,
+      "newHomeSales": 899,
       "savingsRate": 19.5,
       "consumerSentiment": 79
     },
@@ -768,6 +930,9 @@
       "fullTimeEmployment": -4.398954703832758,
       "realIncomeExTransfer": 0.4945223167338808,
       "realDisposablePerCapita": 4.851858801943254,
+      "buildingPermits": 1703,
+      "housingStarts": 1398,
+      "newHomeSales": 772,
       "savingsRate": 13,
       "consumerSentiment": 76.8
     },
@@ -782,6 +947,9 @@
       "fullTimeEmployment": -2.4496951456009386,
       "realIncomeExTransfer": 3.755795034480891,
       "realDisposablePerCapita": 30.51917877661372,
+      "buildingPermits": 1756,
+      "housingStarts": 1688,
+      "newHomeSales": 852,
       "savingsRate": 26.2,
       "consumerSentiment": 84.9
     },
@@ -796,6 +964,9 @@
       "fullTimeEmployment": 10.506897095682955,
       "realIncomeExTransfer": 11.541083966807864,
       "realDisposablePerCapita": -3.414113140836772,
+      "buildingPermits": 1710,
+      "housingStarts": 1489,
+      "newHomeSales": 817,
       "savingsRate": 12.4,
       "consumerSentiment": 88.3
     },
@@ -810,6 +981,9 @@
       "fullTimeEmployment": 8.561714403461785,
       "realIncomeExTransfer": 9.475883561158716,
       "realDisposablePerCapita": -1.2331555986427545,
+      "buildingPermits": 1705,
+      "housingStarts": 1600,
+      "newHomeSales": 717,
       "savingsRate": 10,
       "consumerSentiment": 82.9
     },
@@ -824,6 +998,9 @@
       "fullTimeEmployment": 5.728590117741783,
       "realIncomeExTransfer": 7.362409138110082,
       "realDisposablePerCapita": -1.3952673775978863,
+      "buildingPermits": 1662,
+      "housingStarts": 1664,
+      "newHomeSales": 714,
       "savingsRate": 8.8,
       "consumerSentiment": 85.5
     },
@@ -838,6 +1015,9 @@
       "fullTimeEmployment": 6.25020842365025,
       "realIncomeExTransfer": 6.917720736681643,
       "realDisposablePerCapita": -1.651298275396429,
+      "buildingPermits": 1666,
+      "housingStarts": 1600,
+      "newHomeSales": 745,
       "savingsRate": 9.5,
       "consumerSentiment": 81.2
     },
@@ -852,6 +1032,9 @@
       "fullTimeEmployment": 4.076537064991226,
       "realIncomeExTransfer": 5.713529148164742,
       "realDisposablePerCapita": 2.050767532858422,
+      "buildingPermits": 1740,
+      "housingStarts": 1596,
+      "newHomeSales": 688,
       "savingsRate": 8.7,
       "consumerSentiment": 70.3
     },
@@ -866,6 +1049,9 @@
       "fullTimeEmployment": 4.453963203198308,
       "realIncomeExTransfer": 4.713727910690091,
       "realDisposablePerCapita": 0.3333399868260756,
+      "buildingPermits": 1649,
+      "housingStarts": 1576,
+      "newHomeSales": 733,
       "savingsRate": 7.6,
       "consumerSentiment": 72.8
     },
@@ -880,6 +1066,9 @@
       "fullTimeEmployment": 3.80836968815641,
       "realIncomeExTransfer": 3.542484697047832,
       "realDisposablePerCapita": 0.7033081531648833,
+      "buildingPermits": 1699,
+      "housingStarts": 1587,
+      "newHomeSales": 689,
       "savingsRate": 7,
       "consumerSentiment": 71.7
     },
@@ -894,6 +1083,9 @@
       "fullTimeEmployment": 4.074481849670097,
       "realIncomeExTransfer": 3.632416404119576,
       "realDisposablePerCapita": 1.5611378058917769,
+      "buildingPermits": 1770,
+      "housingStarts": 1707,
+      "newHomeSales": 782,
       "savingsRate": 6.6,
       "consumerSentiment": 67.4
     },
@@ -908,6 +1100,9 @@
       "fullTimeEmployment": 4.346851355138326,
       "realIncomeExTransfer": 3.4519778129742384,
       "realDisposablePerCapita": 0.9539433710049838,
+      "buildingPermits": 1886,
+      "housingStarts": 1711,
+      "newHomeSales": 816,
       "savingsRate": 6.6,
       "consumerSentiment": 70.6
     },
@@ -922,6 +1117,9 @@
       "fullTimeEmployment": 4.845586356668363,
       "realIncomeExTransfer": 2.7156009518191304,
       "realDisposablePerCapita": -11.270099103867427,
+      "buildingPermits": 1923,
+      "housingStarts": 1693,
+      "newHomeSales": 809,
       "savingsRate": 4.2,
       "consumerSentiment": 67.2
     },
@@ -936,6 +1134,9 @@
       "fullTimeEmployment": 5.391040242976453,
       "realIncomeExTransfer": 2.5478677254634485,
       "realDisposablePerCapita": -3.3427457842825303,
+      "buildingPermits": 1846,
+      "housingStarts": 1730,
+      "newHomeSales": 784,
       "savingsRate": 4.1,
       "consumerSentiment": 62.8
     },
@@ -950,6 +1151,9 @@
       "fullTimeEmployment": 5.4168389579821286,
       "realIncomeExTransfer": 1.1784003674299548,
       "realDisposablePerCapita": -21.76460116841713,
+      "buildingPermits": 1899,
+      "housingStarts": 1700,
+      "newHomeSales": 710,
       "savingsRate": 3.2,
       "consumerSentiment": 59.4
     },
@@ -964,6 +1168,9 @@
       "fullTimeEmployment": 4.5267457076014095,
       "realIncomeExTransfer": 0.2601203056413537,
       "realDisposablePerCapita": -7.889418493803624,
+      "buildingPermits": 1849,
+      "housingStarts": 1807,
+      "newHomeSales": 612,
       "savingsRate": 2.6,
       "consumerSentiment": 65.2
     },
@@ -978,6 +1185,9 @@
       "fullTimeEmployment": 4.922337161114809,
       "realIncomeExTransfer": -0.35841598250618834,
       "realDisposablePerCapita": -5.3397200573234604,
+      "buildingPermits": 1711,
+      "housingStarts": 1546,
+      "newHomeSales": 639,
       "savingsRate": 2.6,
       "consumerSentiment": 58.4
     },
@@ -992,6 +1202,9 @@
       "fullTimeEmployment": 5.066825302399369,
       "realIncomeExTransfer": -1.0716703743108624,
       "realDisposablePerCapita": -5.131140099859877,
+      "buildingPermits": 1726,
+      "housingStarts": 1556,
+      "newHomeSales": 564,
       "savingsRate": 2.2,
       "consumerSentiment": 50
     },
@@ -1006,6 +1219,9 @@
       "fullTimeEmployment": 3.9311075365844106,
       "realIncomeExTransfer": -0.3474630700064263,
       "realDisposablePerCapita": -4.554548664234437,
+      "buildingPermits": 1707,
+      "housingStarts": 1382,
+      "newHomeSales": 535,
       "savingsRate": 3.3,
       "consumerSentiment": 51.5
     },
@@ -1020,6 +1236,9 @@
       "fullTimeEmployment": 3.8815846210535465,
       "realIncomeExTransfer": 0.10083688189239659,
       "realDisposablePerCapita": -3.8244489450813046,
+      "buildingPermits": 1565,
+      "housingStarts": 1532,
+      "newHomeSales": 634,
       "savingsRate": 3.2,
       "consumerSentiment": 58.2
     },
@@ -1034,6 +1253,9 @@
       "fullTimeEmployment": 3.5282447041179887,
       "realIncomeExTransfer": 0.19220912352639896,
       "realDisposablePerCapita": -2.433056141328138,
+      "buildingPermits": 1586,
+      "housingStarts": 1481,
+      "newHomeSales": 552,
       "savingsRate": 3.4,
       "consumerSentiment": 58.6
     },
@@ -1048,6 +1270,9 @@
       "fullTimeEmployment": 2.8779553909132005,
       "realIncomeExTransfer": -0.31537886961574557,
       "realDisposablePerCapita": -2.174778144772971,
+      "buildingPermits": 1583,
+      "housingStarts": 1446,
+      "newHomeSales": 586,
       "savingsRate": 3.4,
       "consumerSentiment": 59.9
     },
@@ -1062,6 +1287,9 @@
       "fullTimeEmployment": 2.1875941097889706,
       "realIncomeExTransfer": -0.24717063076412638,
       "realDisposablePerCapita": -1.7627213383107465,
+      "buildingPermits": 1424,
+      "housingStarts": 1434,
+      "newHomeSales": 592,
       "savingsRate": 3.8,
       "consumerSentiment": 56.7
     },
@@ -1076,6 +1304,9 @@
       "fullTimeEmployment": 1.5300328412264808,
       "realIncomeExTransfer": 0.3318215594332097,
       "realDisposablePerCapita": -0.8867489216571323,
+      "buildingPermits": 1398,
+      "housingStarts": 1296,
+      "newHomeSales": 615,
       "savingsRate": 4.2,
       "consumerSentiment": 59.8
     },
@@ -1090,6 +1321,9 @@
       "fullTimeEmployment": 1.1232361385045353,
       "realIncomeExTransfer": 1.7126337390137136,
       "realDisposablePerCapita": 3.572897811420117,
+      "buildingPermits": 1418,
+      "housingStarts": 1358,
+      "newHomeSales": 653,
       "savingsRate": 4.9,
       "consumerSentiment": 64.9
     },
@@ -1104,6 +1338,9 @@
       "fullTimeEmployment": 1.1413620506598,
       "realIncomeExTransfer": 2.085432328399084,
       "realDisposablePerCapita": 4.087888575719556,
+      "buildingPermits": 1605,
+      "housingStarts": 1395,
+      "newHomeSales": 633,
       "savingsRate": 5.5,
       "consumerSentiment": 66.9
     },
@@ -1118,6 +1355,9 @@
       "fullTimeEmployment": 1.3517590972180304,
       "realIncomeExTransfer": 2.996640857035393,
       "realDisposablePerCapita": 5.206437200066194,
+      "buildingPermits": 1472,
+      "housingStarts": 1366,
+      "newHomeSales": 639,
       "savingsRate": 6,
       "consumerSentiment": 62
     },
@@ -1132,6 +1372,9 @@
       "fullTimeEmployment": 1.8937353474503649,
       "realIncomeExTransfer": 3.2962542565266872,
       "realDisposablePerCapita": 5.431362808411988,
+      "buildingPermits": 1482,
+      "housingStarts": 1343,
+      "newHomeSales": 656,
       "savingsRate": 5.8,
       "consumerSentiment": 63.7
     },
@@ -1146,6 +1389,9 @@
       "fullTimeEmployment": 1.3266198329665135,
       "realIncomeExTransfer": 3.7269097165860465,
       "realDisposablePerCapita": 5.9437151330388405,
+      "buildingPermits": 1579,
+      "housingStarts": 1609,
+      "newHomeSales": 736,
       "savingsRate": 6.1,
       "consumerSentiment": 59
     },
@@ -1160,6 +1406,9 @@
       "fullTimeEmployment": 1.696322746729284,
       "realIncomeExTransfer": 4.3298592779439815,
       "realDisposablePerCapita": 6.313577832789008,
+      "buildingPermits": 1447,
+      "housingStarts": 1420,
+      "newHomeSales": 687,
       "savingsRate": 5.8,
       "consumerSentiment": 64.2
     },
@@ -1174,6 +1423,9 @@
       "fullTimeEmployment": 1.286474651768521,
       "realIncomeExTransfer": 3.5808428773065115,
       "realDisposablePerCapita": 5.15002055076037,
+      "buildingPermits": 1530,
+      "housingStarts": 1464,
+      "newHomeSales": 727,
       "savingsRate": 5.5,
       "consumerSentiment": 71.5
     },
@@ -1188,6 +1440,9 @@
       "fullTimeEmployment": 1.3841300508671495,
       "realIncomeExTransfer": 3.348005184339198,
       "realDisposablePerCapita": 4.667566241413157,
+      "buildingPermits": 1596,
+      "housingStarts": 1321,
+      "newHomeSales": 645,
       "savingsRate": 5.6,
       "consumerSentiment": 69.4
     },
@@ -1202,6 +1457,9 @@
       "fullTimeEmployment": 1.1324797609796322,
       "realIncomeExTransfer": 3.125079933495334,
       "realDisposablePerCapita": 4.339049405623641,
+      "buildingPermits": 1530,
+      "housingStarts": 1369,
+      "newHomeSales": 682,
       "savingsRate": 5.3,
       "consumerSentiment": 67.8
     },
@@ -1216,6 +1474,9 @@
       "fullTimeEmployment": 1.7209816025175462,
       "realIncomeExTransfer": 3.667151265186397,
       "realDisposablePerCapita": 4.346588019932884,
+      "buildingPermits": 1524,
+      "housingStarts": 1380,
+      "newHomeSales": 689,
       "savingsRate": 5.4,
       "consumerSentiment": 63.8
     },
@@ -1230,6 +1491,9 @@
       "fullTimeEmployment": 1.87628460887439,
       "realIncomeExTransfer": 4.237282709607193,
       "realDisposablePerCapita": 4.684007315586269,
+      "buildingPermits": 1513,
+      "housingStarts": 1522,
+      "newHomeSales": 607,
       "savingsRate": 5.6,
       "consumerSentiment": 61.3
     },
@@ -1244,6 +1508,9 @@
       "fullTimeEmployment": 0.5690835713961784,
       "realIncomeExTransfer": 4.245782947914134,
       "realDisposablePerCapita": 4.521992591543023,
+      "buildingPermits": 1501,
+      "housingStarts": 1504,
+      "newHomeSales": 634,
       "savingsRate": 5.6,
       "consumerSentiment": 69.7
     },
@@ -1258,6 +1525,9 @@
       "fullTimeEmployment": 0.3095065967829491,
       "realIncomeExTransfer": 3.5782261134373883,
       "realDisposablePerCapita": 3.0286179572220018,
+      "buildingPermits": 1548,
+      "housingStarts": 1378,
+      "newHomeSales": 683,
       "savingsRate": 6.4,
       "consumerSentiment": 79
     },
@@ -1272,6 +1542,9 @@
       "fullTimeEmployment": -0.2526899861282961,
       "realIncomeExTransfer": 3.344193844304555,
       "realDisposablePerCapita": 2.5852867929003542,
+      "buildingPermits": 1570,
+      "housingStarts": 1555,
+      "newHomeSales": 653,
       "savingsRate": 6.1,
       "consumerSentiment": 76.9
     },
@@ -1286,6 +1559,9 @@
       "fullTimeEmployment": -1.0293242036320316,
       "realIncomeExTransfer": 2.9384172716225843,
       "realDisposablePerCapita": 2.090010027329381,
+      "buildingPermits": 1477,
+      "housingStarts": 1297,
+      "newHomeSales": 681,
       "savingsRate": 5.9,
       "consumerSentiment": 79.4
     },
@@ -1300,6 +1576,9 @@
       "fullTimeEmployment": -0.4154908078243369,
       "realIncomeExTransfer": 2.766597386614089,
       "realDisposablePerCapita": 1.9828804774619124,
+      "buildingPermits": 1456,
+      "housingStarts": 1379,
+      "newHomeSales": 706,
       "savingsRate": 5.8,
       "consumerSentiment": 77.2
     },
@@ -1314,6 +1593,9 @@
       "fullTimeEmployment": -0.8673788198887089,
       "realIncomeExTransfer": 2.9639134925354416,
       "realDisposablePerCapita": 2.0338651267495456,
+      "buildingPermits": 1405,
+      "housingStarts": 1329,
+      "newHomeSales": 670,
       "savingsRate": 5.8,
       "consumerSentiment": 69.1
     },
@@ -1328,6 +1610,9 @@
       "fullTimeEmployment": -1.167693563952199,
       "realIncomeExTransfer": 2.810090837529522,
       "realDisposablePerCapita": 2.1249951082064733,
+      "buildingPermits": 1459,
+      "housingStarts": 1318,
+      "newHomeSales": 683,
       "savingsRate": 5.7,
       "consumerSentiment": 68.2
     },
@@ -1342,6 +1627,9 @@
       "fullTimeEmployment": -0.3607659568124366,
       "realIncomeExTransfer": 2.5019444358024945,
       "realDisposablePerCapita": 1.8938357503029302,
+      "buildingPermits": 1448,
+      "housingStarts": 1269,
+      "newHomeSales": 732,
       "savingsRate": 5.3,
       "consumerSentiment": 66.4
     },
@@ -1356,6 +1644,9 @@
       "fullTimeEmployment": -0.7503573130061891,
       "realIncomeExTransfer": 2.404514751167186,
       "realDisposablePerCapita": 1.8380701240355402,
+      "buildingPermits": 1492,
+      "housingStarts": 1394,
+      "newHomeSales": 687,
       "savingsRate": 5.2,
       "consumerSentiment": 67.9
     },
@@ -1370,6 +1661,9 @@
       "fullTimeEmployment": -0.3222870443592263,
       "realIncomeExTransfer": 2.3197554366361395,
       "realDisposablePerCapita": 1.9307811064861014,
+      "buildingPermits": 1421,
+      "housingStarts": 1357,
+      "newHomeSales": 715,
       "savingsRate": 4.8,
       "consumerSentiment": 70.1
     },
@@ -1384,6 +1678,9 @@
       "fullTimeEmployment": -0.7005436278045951,
       "realIncomeExTransfer": 2.128881997170562,
       "realDisposablePerCapita": 1.8517796577131485,
+      "buildingPermits": 1435,
+      "housingStarts": 1370,
+      "newHomeSales": 632,
       "savingsRate": 5,
       "consumerSentiment": 70.5
     },
@@ -1398,6 +1695,9 @@
       "fullTimeEmployment": -0.9353281065725194,
       "realIncomeExTransfer": 1.9029133369778073,
       "realDisposablePerCapita": 1.6170047558963452,
+      "buildingPermits": 1512,
+      "housingStarts": 1300,
+      "newHomeSales": 669,
       "savingsRate": 4.9,
       "consumerSentiment": 71.8
     },
@@ -1412,6 +1712,9 @@
       "fullTimeEmployment": 0.323887248160748,
       "realIncomeExTransfer": 1.7087630760185046,
       "realDisposablePerCapita": 1.431144334488832,
+      "buildingPermits": 1467,
+      "housingStarts": 1494,
+      "newHomeSales": 702,
       "savingsRate": 4.3,
       "consumerSentiment": 74
     },
@@ -1426,6 +1729,9 @@
       "fullTimeEmployment": 2.0232277050817205,
       "realIncomeExTransfer": 1.8951365919392504,
       "realDisposablePerCapita": 1.0486140560545865,
+      "buildingPermits": 1463,
+      "housingStarts": 1353,
+      "newHomeSales": 665,
       "savingsRate": 5.1,
       "consumerSentiment": 71.7
     },
@@ -1440,6 +1746,9 @@
       "fullTimeEmployment": 1.1952370929428469,
       "realIncomeExTransfer": 1.6253344026054162,
       "realDisposablePerCapita": 1.0847366190127605,
+      "buildingPermits": 1446,
+      "housingStarts": 1491,
+      "newHomeSales": 641,
       "savingsRate": 5.2,
       "consumerSentiment": 64.7
     },
@@ -1454,6 +1763,9 @@
       "fullTimeEmployment": 1.5626762522842341,
       "realIncomeExTransfer": 2.116285612927693,
       "realDisposablePerCapita": 1.6755257684307745,
+      "buildingPermits": 1492,
+      "housingStarts": 1346,
+      "newHomeSales": 656,
       "savingsRate": 5.1,
       "consumerSentiment": 57
     },
@@ -1468,6 +1780,9 @@
       "fullTimeEmployment": 1.2038193224217064,
       "realIncomeExTransfer": 2.0389458826979956,
       "realDisposablePerCapita": 2.1772610018095717,
+      "buildingPermits": 1445,
+      "housingStarts": 1400,
+      "newHomeSales": 701,
       "savingsRate": 5.5,
       "consumerSentiment": 52.2
     },
@@ -1482,6 +1797,9 @@
       "fullTimeEmployment": 1.133856613288109,
       "realIncomeExTransfer": 1.137455164447676,
       "realDisposablePerCapita": 0.930473486301886,
+      "buildingPermits": 1416,
+      "housingStarts": 1289,
+      "newHomeSales": 622,
       "savingsRate": 4.9,
       "consumerSentiment": 52.2
     },
@@ -1496,6 +1814,9 @@
       "fullTimeEmployment": 1.5405184133636673,
       "realIncomeExTransfer": 0.7723438905228308,
       "realDisposablePerCapita": 0.64569282648681,
+      "buildingPermits": 1399,
+      "housingStarts": 1379,
+      "newHomeSales": 665,
       "savingsRate": 4.6,
       "consumerSentiment": 60.7
     },
@@ -1510,6 +1831,9 @@
       "fullTimeEmployment": 0.8707686553207417,
       "realIncomeExTransfer": 1.2401660839161055,
       "realDisposablePerCapita": 1.1604488347559228,
+      "buildingPermits": 1400,
+      "housingStarts": 1432,
+      "newHomeSales": 648,
       "savingsRate": 4.5,
       "consumerSentiment": 61.7
     },
@@ -1524,6 +1848,9 @@
       "fullTimeEmployment": 0.8550342013680545,
       "realIncomeExTransfer": 1.244051047318817,
       "realDisposablePerCapita": 1.329215896885061,
+      "buildingPermits": 1347,
+      "housingStarts": 1291,
+      "newHomeSales": 698,
       "savingsRate": 4.4,
       "consumerSentiment": 58.2
     },
@@ -1538,6 +1865,9 @@
       "fullTimeEmployment": 1.1578474665070004,
       "realIncomeExTransfer": 1.3326626587801815,
       "realDisposablePerCapita": 1.3535535573918178,
+      "buildingPermits": 1444,
+      "housingStarts": 1319,
+      "newHomeSales": 714,
       "savingsRate": 4.3,
       "consumerSentiment": 55.1
     },
@@ -1552,6 +1882,9 @@
       "fullTimeEmployment": null,
       "realIncomeExTransfer": 0.8801379185191971,
       "realDisposablePerCapita": 0.8267626119574434,
+      "buildingPermits": 1418,
+      "housingStarts": 1273,
+      "newHomeSales": 652,
       "savingsRate": 3.9,
       "consumerSentiment": 53.6
     },
@@ -1566,6 +1899,9 @@
       "fullTimeEmployment": 0.5742823342667513,
       "realIncomeExTransfer": 0.5750417417616616,
       "realDisposablePerCapita": 0.6093833575303798,
+      "buildingPermits": 1414,
+      "housingStarts": 1319,
+      "newHomeSales": 757,
       "savingsRate": 3.8,
       "consumerSentiment": 51
     },
@@ -1580,6 +1916,9 @@
       "fullTimeEmployment": 1.28312684454166,
       "realIncomeExTransfer": 0.2727831103296552,
       "realDisposablePerCapita": 0.4467695127539306,
+      "buildingPermits": 1482,
+      "housingStarts": 1378,
+      "newHomeSales": 723,
       "savingsRate": 3.6,
       "consumerSentiment": 52.9
     },
@@ -1594,6 +1933,9 @@
       "fullTimeEmployment": -1.0721276251306144,
       "realIncomeExTransfer": 0.18995635812784073,
       "realDisposablePerCapita": 0.9900423486322474,
+      "buildingPermits": 1393,
+      "housingStarts": 1385,
+      "newHomeSales": 576,
       "savingsRate": 4.4,
       "consumerSentiment": 56.4
     },
@@ -1608,6 +1950,9 @@
       "fullTimeEmployment": -0.20576743080420457,
       "realIncomeExTransfer": 0.0060238786549815515,
       "realDisposablePerCapita": 0.4364814638330383,
+      "buildingPermits": 1540,
+      "housingStarts": 1346,
+      "newHomeSales": 630,
       "savingsRate": 3.8,
       "consumerSentiment": 56.6
     },
@@ -1622,6 +1967,9 @@
       "fullTimeEmployment": -0.28062641146199274,
       "realIncomeExTransfer": -0.5827952609701037,
       "realDisposablePerCapita": -0.32200628859340164,
+      "buildingPermits": 1363,
+      "housingStarts": 1522,
+      "newHomeSales": 659,
       "savingsRate": 3.5,
       "consumerSentiment": 53.3
     },
@@ -1636,6 +1984,9 @@
       "fullTimeEmployment": -0.8119629703511655,
       "realIncomeExTransfer": -1.0389221556886263,
       "realDisposablePerCapita": -1.2773894530587637,
+      "buildingPermits": 1423,
+      "housingStarts": 1414,
+      "newHomeSales": 646,
       "savingsRate": 3,
       "consumerSentiment": 49.8
     },
@@ -1650,6 +2001,9 @@
       "fullTimeEmployment": -0.4451930282771799,
       "realIncomeExTransfer": -0.41536177349257297,
       "realDisposablePerCapita": -0.17677583683399778,
+      "buildingPermits": 1410,
+      "housingStarts": 1199,
+      "newHomeSales": 618,
       "savingsRate": 2.8,
       "consumerSentiment": 44.8
     },
@@ -1664,6 +2018,9 @@
       "fullTimeEmployment": -1.1310175459360305,
       "realIncomeExTransfer": 0.13628003738654915,
       "realDisposablePerCapita": 0.26651944640103675,
+      "buildingPermits": 1374,
+      "housingStarts": 1427,
+      "newHomeSales": 628,
       "savingsRate": 2.7,
       "consumerSentiment": 49.5
     },
@@ -1678,6 +2035,9 @@
       "fullTimeEmployment": -0.9537300039306085,
       "realIncomeExTransfer": null,
       "realDisposablePerCapita": null,
+      "buildingPermits": null,
+      "housingStarts": null,
+      "newHomeSales": null,
       "savingsRate": null,
       "consumerSentiment": null
     },
@@ -1692,6 +2052,9 @@
       "fullTimeEmployment": null,
       "realIncomeExTransfer": null,
       "realDisposablePerCapita": null,
+      "buildingPermits": null,
+      "housingStarts": null,
+      "newHomeSales": null,
       "savingsRate": null,
       "consumerSentiment": null
     }
@@ -1731,6 +2094,18 @@
     },
     {
       "indicatorId": "real-disposable-income-per-capita",
+      "latestMonth": "2026-06-01"
+    },
+    {
+      "indicatorId": "building-permits",
+      "latestMonth": "2026-06-01"
+    },
+    {
+      "indicatorId": "housing-starts",
+      "latestMonth": "2026-06-01"
+    },
+    {
+      "indicatorId": "new-home-sales",
       "latestMonth": "2026-06-01"
     },
     {

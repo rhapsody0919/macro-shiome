@@ -296,6 +296,13 @@ export interface MacroPoint {
    * 相対的な魅力、こちらは長短金利の傾きで景気の先行指標。
    */
   termSpread: number | null;
+  /**
+   * 住宅ローン金利 (30 年固定、%)。
+   *
+   * 住宅ローン申請者数 (MBA) は FRED に無いため、その代替として住宅需要の背景要因を見る。
+   * **申請そのものより先行性は落ちる** (#65)。
+   */
+  mortgageRate: number | null;
 }
 
 /**
@@ -333,6 +340,14 @@ export interface MonthlyPoint {
   realIncomeExTransfer: number | null;
   /** 1 人当たり実質可処分所得。 */
   realDisposablePerCapita: number | null;
+
+  // --- 住宅市場 (水準、千戸・季節調整済み年率) ---
+  /** 建設許可件数。景気先行指数の構成要素で、着工より前の段階。 */
+  buildingPermits: number | null;
+  /** 住宅着工件数。 */
+  housingStarts: number | null;
+  /** 新築住宅販売件数。連鎖の下流。 */
+  newHomeSales: number | null;
 
   // --- 水準 ---
   /** 貯蓄率 (%)。低下は貯蓄の取り崩しを示す。 */

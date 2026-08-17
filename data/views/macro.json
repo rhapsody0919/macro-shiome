@@ -6,7 +6,8 @@
     "nominalRate": 1.59,
     "breakeven": 1.5,
     "realRate": 0.09000000000000008,
-    "termSpread": 0.87
+    "termSpread": 0.87,
+    "mortgageRate": 3.43
   },
   {
     "date": "2016-08-12",
@@ -15,7 +16,8 @@
     "nominalRate": 1.51,
     "breakeven": 1.44,
     "realRate": 0.07000000000000006,
-    "termSpread": 0.8
+    "termSpread": 0.8,
+    "mortgageRate": 3.45
   },
   {
     "date": "2016-08-19",
@@ -24,7 +26,8 @@
     "nominalRate": 1.58,
     "breakeven": 1.48,
     "realRate": 0.10000000000000009,
-    "termSpread": 0.82
+    "termSpread": 0.82,
+    "mortgageRate": 3.43
   },
   {
     "date": "2016-08-26",
@@ -33,7 +36,8 @@
     "nominalRate": 1.62,
     "breakeven": 1.47,
     "realRate": 0.15000000000000013,
-    "termSpread": 0.78
+    "termSpread": 0.78,
+    "mortgageRate": 3.43
   },
   {
     "date": "2016-09-02",
@@ -42,7 +46,8 @@
     "nominalRate": 1.6,
     "breakeven": 1.47,
     "realRate": 0.13000000000000012,
-    "termSpread": 0.8
+    "termSpread": 0.8,
+    "mortgageRate": 3.46
   },
   {
     "date": "2016-09-09",
@@ -51,7 +56,8 @@
     "nominalRate": 1.67,
     "breakeven": 1.5,
     "realRate": 0.16999999999999993,
-    "termSpread": 0.88
+    "termSpread": 0.88,
+    "mortgageRate": 3.44
   },
   {
     "date": "2016-09-16",
@@ -60,7 +66,8 @@
     "nominalRate": 1.7,
     "breakeven": 1.51,
     "realRate": 0.18999999999999995,
-    "termSpread": 0.93
+    "termSpread": 0.93,
+    "mortgageRate": 3.5
   },
   {
     "date": "2016-09-23",
@@ -69,7 +76,8 @@
     "nominalRate": 1.62,
     "breakeven": 1.57,
     "realRate": 0.050000000000000044,
-    "termSpread": 0.85
+    "termSpread": 0.85,
+    "mortgageRate": 3.48
   },
   {
     "date": "2016-09-30",
@@ -78,7 +86,8 @@
     "nominalRate": 1.6,
     "breakeven": 1.6,
     "realRate": 0,
-    "termSpread": 0.83
+    "termSpread": 0.83,
+    "mortgageRate": 3.42
   },
   {
     "date": "2016-10-07",
@@ -87,7 +96,8 @@
     "nominalRate": 1.73,
     "breakeven": 1.63,
     "realRate": 0.10000000000000009,
-    "termSpread": 0.9
+    "termSpread": 0.9,
+    "mortgageRate": 3.42
   },
   {
     "date": "2016-10-14",
@@ -96,7 +106,8 @@
     "nominalRate": 1.8,
     "breakeven": 1.67,
     "realRate": 0.13000000000000012,
-    "termSpread": 0.96
+    "termSpread": 0.96,
+    "mortgageRate": 3.47
   },
   {
     "date": "2016-10-21",
@@ -105,7 +116,8 @@
     "nominalRate": 1.74,
     "breakeven": 1.67,
     "realRate": 0.07000000000000006,
-    "termSpread": 0.9
+    "termSpread": 0.9,
+    "mortgageRate": 3.52
   },
   {
     "date": "2016-10-28",
@@ -114,7 +126,8 @@
     "nominalRate": 1.86,
     "breakeven": 1.73,
     "realRate": 0.13000000000000012,
-    "termSpread": 1
+    "termSpread": 1,
+    "mortgageRate": 3.47
   },
   {
     "date": "2016-11-04",
@@ -123,7 +136,8 @@
     "nominalRate": 1.79,
     "breakeven": 1.68,
     "realRate": 0.1100000000000001,
-    "termSpread": 0.99
+    "termSpread": 0.99,
+    "mortgageRate": 3.54
   },
   {
     "date": "2016-11-11",
@@ -132,7 +146,8 @@
     "nominalRate": 2.15,
     "breakeven": 1.88,
     "realRate": 0.27,
-    "termSpread": 1.23
+    "termSpread": 1.23,
+    "mortgageRate": 3.57
   },
   {
     "date": "2016-11-18",
@@ -141,7 +156,8 @@
     "nominalRate": 2.34,
     "breakeven": 1.9,
     "realRate": 0.43999999999999995,
-    "termSpread": 1.27
+    "termSpread": 1.27,
+    "mortgageRate": 3.94
   },
   {
     "date": "2016-11-25",
@@ -150,7 +166,8 @@
     "nominalRate": 2.36,
     "breakeven": 1.89,
     "realRate": 0.47,
-    "termSpread": 1.24
+    "termSpread": 1.24,
+    "mortgageRate": 4.03
   },
   {
     "date": "2016-12-02",
@@ -159,7 +176,8 @@
     "nominalRate": 2.4,
     "breakeven": 1.91,
     "realRate": 0.49,
-    "termSpread": 1.29
+    "termSpread": 1.29,
+    "mortgageRate": 4.08
   },
   {
     "date": "2016-12-09",
@@ -168,7 +186,8 @@
     "nominalRate": 2.47,
     "breakeven": 1.96,
     "realRate": 0.5100000000000002,
-    "termSpread": 1.32
+    "termSpread": 1.32,
+    "mortgageRate": 4.13
   },
   {
     "date": "2016-12-16",
@@ -177,7 +196,8 @@
     "nominalRate": 2.6,
     "breakeven": 1.86,
     "realRate": 0.74,
-    "termSpread": 1.32
+    "termSpread": 1.32,
+    "mortgageRate": 4.16
   },
   {
     "date": "2016-12-23",
@@ -186,7 +206,8 @@
     "nominalRate": 2.55,
     "breakeven": 1.97,
     "realRate": 0.5799999999999998,
-    "termSpread": 1.33
+    "termSpread": 1.33,
+    "mortgageRate": 4.3
   },
   {
     "date": "2016-12-30",
@@ -195,7 +216,8 @@
     "nominalRate": 2.45,
     "breakeven": 1.95,
     "realRate": 0.5000000000000002,
-    "termSpread": 1.25
+    "termSpread": 1.25,
+    "mortgageRate": 4.32
   },
   {
     "date": "2017-01-06",
@@ -204,7 +226,8 @@
     "nominalRate": 2.42,
     "breakeven": 1.96,
     "realRate": 0.45999999999999996,
-    "termSpread": 1.2
+    "termSpread": 1.2,
+    "mortgageRate": 4.2
   },
   {
     "date": "2017-01-13",
@@ -213,7 +236,8 @@
     "nominalRate": 2.4,
     "breakeven": 1.99,
     "realRate": 0.4099999999999999,
-    "termSpread": 1.19
+    "termSpread": 1.19,
+    "mortgageRate": 4.12
   },
   {
     "date": "2017-01-20",
@@ -222,7 +246,8 @@
     "nominalRate": 2.48,
     "breakeven": 2.04,
     "realRate": 0.43999999999999995,
-    "termSpread": 1.28
+    "termSpread": 1.28,
+    "mortgageRate": 4.09
   },
   {
     "date": "2017-01-27",
@@ -231,7 +256,8 @@
     "nominalRate": 2.49,
     "breakeven": 2.08,
     "realRate": 0.41000000000000014,
-    "termSpread": 1.27
+    "termSpread": 1.27,
+    "mortgageRate": 4.19
   },
   {
     "date": "2017-02-03",
@@ -240,7 +266,8 @@
     "nominalRate": 2.49,
     "breakeven": 2.05,
     "realRate": 0.4400000000000004,
-    "termSpread": 1.28
+    "termSpread": 1.28,
+    "mortgageRate": 4.19
   },
   {
     "date": "2017-02-10",
@@ -249,7 +276,8 @@
     "nominalRate": 2.41,
     "breakeven": 2.01,
     "realRate": 0.40000000000000036,
-    "termSpread": 1.21
+    "termSpread": 1.21,
+    "mortgageRate": 4.17
   },
   {
     "date": "2017-02-17",
@@ -258,7 +286,8 @@
     "nominalRate": 2.42,
     "breakeven": 2.01,
     "realRate": 0.41000000000000014,
-    "termSpread": 1.21
+    "termSpread": 1.21,
+    "mortgageRate": 4.15
   },
   {
     "date": "2017-02-24",
@@ -267,7 +296,8 @@
     "nominalRate": 2.31,
     "breakeven": 2,
     "realRate": 0.31000000000000005,
-    "termSpread": 1.19
+    "termSpread": 1.19,
+    "mortgageRate": 4.16
   },
   {
     "date": "2017-03-03",
@@ -276,7 +306,8 @@
     "nominalRate": 2.49,
     "breakeven": 2.04,
     "realRate": 0.4500000000000002,
-    "termSpread": 1.17
+    "termSpread": 1.17,
+    "mortgageRate": 4.1
   },
   {
     "date": "2017-03-10",
@@ -285,7 +316,8 @@
     "nominalRate": 2.58,
     "breakeven": 2.01,
     "realRate": 0.5700000000000003,
-    "termSpread": 1.22
+    "termSpread": 1.22,
+    "mortgageRate": 4.21
   },
   {
     "date": "2017-03-17",
@@ -294,7 +326,8 @@
     "nominalRate": 2.5,
     "breakeven": 2.01,
     "realRate": 0.4900000000000002,
-    "termSpread": 1.17
+    "termSpread": 1.17,
+    "mortgageRate": 4.3
   },
   {
     "date": "2017-03-24",
@@ -303,7 +336,8 @@
     "nominalRate": 2.4,
     "breakeven": 1.98,
     "realRate": 0.41999999999999993,
-    "termSpread": 1.14
+    "termSpread": 1.14,
+    "mortgageRate": 4.23
   },
   {
     "date": "2017-03-31",
@@ -312,7 +346,8 @@
     "nominalRate": 2.4,
     "breakeven": 1.97,
     "realRate": 0.42999999999999994,
-    "termSpread": 1.13
+    "termSpread": 1.13,
+    "mortgageRate": 4.14
   },
   {
     "date": "2017-04-07",
@@ -321,7 +356,8 @@
     "nominalRate": 2.38,
     "breakeven": 1.94,
     "realRate": 0.43999999999999995,
-    "termSpread": 1.09
+    "termSpread": 1.09,
+    "mortgageRate": 4.1
   },
   {
     "date": "2017-04-14",
@@ -330,7 +366,8 @@
     "nominalRate": 2.24,
     "breakeven": 1.92,
     "realRate": 0.3200000000000003,
-    "termSpread": 1.03
+    "termSpread": 1.03,
+    "mortgageRate": 4.08
   },
   {
     "date": "2017-04-21",
@@ -339,7 +376,8 @@
     "nominalRate": 2.24,
     "breakeven": 1.84,
     "realRate": 0.40000000000000013,
-    "termSpread": 1.04
+    "termSpread": 1.04,
+    "mortgageRate": 3.97
   },
   {
     "date": "2017-04-28",
@@ -348,7 +386,8 @@
     "nominalRate": 2.29,
     "breakeven": 1.92,
     "realRate": 0.3700000000000001,
-    "termSpread": 1.01
+    "termSpread": 1.01,
+    "mortgageRate": 4.03
   },
   {
     "date": "2017-05-05",
@@ -357,7 +396,8 @@
     "nominalRate": 2.36,
     "breakeven": 1.86,
     "realRate": 0.4999999999999998,
-    "termSpread": 1.04
+    "termSpread": 1.04,
+    "mortgageRate": 4.02
   },
   {
     "date": "2017-05-12",
@@ -366,7 +406,8 @@
     "nominalRate": 2.33,
     "breakeven": 1.84,
     "realRate": 0.49,
-    "termSpread": 1.04
+    "termSpread": 1.04,
+    "mortgageRate": 4.05
   },
   {
     "date": "2017-05-19",
@@ -375,7 +416,8 @@
     "nominalRate": 2.23,
     "breakeven": 1.82,
     "realRate": 0.4099999999999999,
-    "termSpread": 0.95
+    "termSpread": 0.95,
+    "mortgageRate": 4.02
   },
   {
     "date": "2017-05-26",
@@ -384,7 +426,8 @@
     "nominalRate": 2.25,
     "breakeven": 1.81,
     "realRate": 0.43999999999999995,
-    "termSpread": 0.95
+    "termSpread": 0.95,
+    "mortgageRate": 3.95
   },
   {
     "date": "2017-06-02",
@@ -393,7 +436,8 @@
     "nominalRate": 2.15,
     "breakeven": 1.79,
     "realRate": 0.3599999999999999,
-    "termSpread": 0.87
+    "termSpread": 0.87,
+    "mortgageRate": 3.94
   },
   {
     "date": "2017-06-09",
@@ -402,7 +446,8 @@
     "nominalRate": 2.21,
     "breakeven": 1.78,
     "realRate": 0.42999999999999994,
-    "termSpread": 0.86
+    "termSpread": 0.86,
+    "mortgageRate": 3.89
   },
   {
     "date": "2017-06-16",
@@ -411,7 +456,8 @@
     "nominalRate": 2.16,
     "breakeven": 1.67,
     "realRate": 0.4900000000000002,
-    "termSpread": 0.84
+    "termSpread": 0.84,
+    "mortgageRate": 3.91
   },
   {
     "date": "2017-06-23",
@@ -420,7 +466,8 @@
     "nominalRate": 2.15,
     "breakeven": 1.7,
     "realRate": 0.44999999999999996,
-    "termSpread": 0.81
+    "termSpread": 0.81,
+    "mortgageRate": 3.9
   },
   {
     "date": "2017-06-30",
@@ -429,7 +476,8 @@
     "nominalRate": 2.31,
     "breakeven": 1.73,
     "realRate": 0.5800000000000001,
-    "termSpread": 0.93
+    "termSpread": 0.93,
+    "mortgageRate": 3.88
   },
   {
     "date": "2017-07-07",
@@ -438,7 +486,8 @@
     "nominalRate": 2.39,
     "breakeven": 1.73,
     "realRate": 0.6600000000000001,
-    "termSpread": 0.99
+    "termSpread": 0.99,
+    "mortgageRate": 3.96
   },
   {
     "date": "2017-07-14",
@@ -447,7 +496,8 @@
     "nominalRate": 2.33,
     "breakeven": 1.76,
     "realRate": 0.5700000000000001,
-    "termSpread": 0.98
+    "termSpread": 0.98,
+    "mortgageRate": 4.03
   },
   {
     "date": "2017-07-21",
@@ -456,7 +506,8 @@
     "nominalRate": 2.24,
     "breakeven": 1.76,
     "realRate": 0.4800000000000002,
-    "termSpread": 0.88
+    "termSpread": 0.88,
+    "mortgageRate": 3.96
   },
   {
     "date": "2017-07-28",
@@ -465,7 +516,8 @@
     "nominalRate": 2.3,
     "breakeven": 1.83,
     "realRate": 0.46999999999999975,
-    "termSpread": 0.96
+    "termSpread": 0.96,
+    "mortgageRate": 3.92
   },
   {
     "date": "2017-08-04",
@@ -474,7 +526,8 @@
     "nominalRate": 2.27,
     "breakeven": 1.8,
     "realRate": 0.47,
-    "termSpread": 0.91
+    "termSpread": 0.91,
+    "mortgageRate": 3.93
   },
   {
     "date": "2017-08-11",
@@ -483,7 +536,8 @@
     "nominalRate": 2.19,
     "breakeven": 1.79,
     "realRate": 0.3999999999999999,
-    "termSpread": 0.89
+    "termSpread": 0.89,
+    "mortgageRate": 3.9
   },
   {
     "date": "2017-08-18",
@@ -492,7 +546,8 @@
     "nominalRate": 2.19,
     "breakeven": 1.76,
     "realRate": 0.42999999999999994,
-    "termSpread": 0.86
+    "termSpread": 0.86,
+    "mortgageRate": 3.89
   },
   {
     "date": "2017-08-25",
@@ -501,7 +556,8 @@
     "nominalRate": 2.17,
     "breakeven": 1.75,
     "realRate": 0.41999999999999993,
-    "termSpread": 0.82
+    "termSpread": 0.82,
+    "mortgageRate": 3.86
   },
   {
     "date": "2017-09-01",
@@ -510,7 +566,8 @@
     "nominalRate": 2.16,
     "breakeven": 1.79,
     "realRate": 0.3700000000000001,
-    "termSpread": 0.81
+    "termSpread": 0.81,
+    "mortgageRate": 3.82
   },
   {
     "date": "2017-09-08",
@@ -519,7 +576,8 @@
     "nominalRate": 2.06,
     "breakeven": 1.81,
     "realRate": 0.25,
-    "termSpread": 0.79
+    "termSpread": 0.79,
+    "mortgageRate": 3.78
   },
   {
     "date": "2017-09-15",
@@ -528,7 +586,8 @@
     "nominalRate": 2.2,
     "breakeven": 1.85,
     "realRate": 0.3500000000000001,
-    "termSpread": 0.81
+    "termSpread": 0.81,
+    "mortgageRate": 3.78
   },
   {
     "date": "2017-09-22",
@@ -537,7 +596,8 @@
     "nominalRate": 2.26,
     "breakeven": 1.84,
     "realRate": 0.4199999999999997,
-    "termSpread": 0.8
+    "termSpread": 0.8,
+    "mortgageRate": 3.83
   },
   {
     "date": "2017-09-29",
@@ -546,7 +606,8 @@
     "nominalRate": 2.33,
     "breakeven": 1.84,
     "realRate": 0.49,
-    "termSpread": 0.86
+    "termSpread": 0.86,
+    "mortgageRate": 3.83
   },
   {
     "date": "2017-10-06",
@@ -555,7 +616,8 @@
     "nominalRate": 2.37,
     "breakeven": 1.87,
     "realRate": 0.5,
-    "termSpread": 0.83
+    "termSpread": 0.83,
+    "mortgageRate": 3.85
   },
   {
     "date": "2017-10-13",
@@ -564,7 +626,8 @@
     "nominalRate": 2.28,
     "breakeven": 1.85,
     "realRate": 0.4299999999999997,
-    "termSpread": 0.77
+    "termSpread": 0.77,
+    "mortgageRate": 3.91
   },
   {
     "date": "2017-10-20",
@@ -573,7 +636,8 @@
     "nominalRate": 2.39,
     "breakeven": 1.87,
     "realRate": 0.52,
-    "termSpread": 0.79
+    "termSpread": 0.79,
+    "mortgageRate": 3.88
   },
   {
     "date": "2017-10-27",
@@ -582,7 +646,8 @@
     "nominalRate": 2.42,
     "breakeven": 1.88,
     "realRate": 0.54,
-    "termSpread": 0.83
+    "termSpread": 0.83,
+    "mortgageRate": 3.94
   },
   {
     "date": "2017-11-03",
@@ -591,7 +656,8 @@
     "nominalRate": 2.34,
     "breakeven": 1.86,
     "realRate": 0.47999999999999976,
-    "termSpread": 0.71
+    "termSpread": 0.71,
+    "mortgageRate": 3.94
   },
   {
     "date": "2017-11-10",
@@ -600,7 +666,8 @@
     "nominalRate": 2.4,
     "breakeven": 1.88,
     "realRate": 0.52,
-    "termSpread": 0.73
+    "termSpread": 0.73,
+    "mortgageRate": 3.9
   },
   {
     "date": "2017-11-17",
@@ -609,7 +676,8 @@
     "nominalRate": 2.35,
     "breakeven": 1.86,
     "realRate": 0.49,
-    "termSpread": 0.62
+    "termSpread": 0.62,
+    "mortgageRate": 3.95
   },
   {
     "date": "2017-11-24",
@@ -618,7 +686,8 @@
     "nominalRate": 2.34,
     "breakeven": 1.84,
     "realRate": 0.4999999999999998,
-    "termSpread": 0.59
+    "termSpread": 0.59,
+    "mortgageRate": 3.92
   },
   {
     "date": "2017-12-01",
@@ -627,7 +696,8 @@
     "nominalRate": 2.37,
     "breakeven": 1.86,
     "realRate": 0.51,
-    "termSpread": 0.59
+    "termSpread": 0.59,
+    "mortgageRate": 3.9
   },
   {
     "date": "2017-12-08",
@@ -636,7 +706,8 @@
     "nominalRate": 2.38,
     "breakeven": 1.88,
     "realRate": 0.5,
-    "termSpread": 0.58
+    "termSpread": 0.58,
+    "mortgageRate": 3.94
   },
   {
     "date": "2017-12-15",
@@ -645,7 +716,8 @@
     "nominalRate": 2.35,
     "breakeven": 1.88,
     "realRate": 0.4700000000000002,
-    "termSpread": 0.51
+    "termSpread": 0.51,
+    "mortgageRate": 3.93
   },
   {
     "date": "2017-12-22",
@@ -654,7 +726,8 @@
     "nominalRate": 2.48,
     "breakeven": 1.94,
     "realRate": 0.54,
-    "termSpread": 0.57
+    "termSpread": 0.57,
+    "mortgageRate": 3.94
   },
   {
     "date": "2017-12-29",
@@ -663,7 +736,8 @@
     "nominalRate": 2.4,
     "breakeven": 1.96,
     "realRate": 0.43999999999999995,
-    "termSpread": 0.51
+    "termSpread": 0.51,
+    "mortgageRate": 3.99
   },
   {
     "date": "2018-01-05",
@@ -672,7 +746,8 @@
     "nominalRate": 2.47,
     "breakeven": 2.01,
     "realRate": 0.4600000000000004,
-    "termSpread": 0.51
+    "termSpread": 0.51,
+    "mortgageRate": 3.95
   },
   {
     "date": "2018-01-12",
@@ -681,7 +756,8 @@
     "nominalRate": 2.55,
     "breakeven": 2.01,
     "realRate": 0.54,
-    "termSpread": 0.56
+    "termSpread": 0.56,
+    "mortgageRate": 3.99
   },
   {
     "date": "2018-01-19",
@@ -690,7 +766,8 @@
     "nominalRate": 2.64,
     "breakeven": 2.06,
     "realRate": 0.5800000000000001,
-    "termSpread": 0.58
+    "termSpread": 0.58,
+    "mortgageRate": 4.04
   },
   {
     "date": "2018-01-26",
@@ -699,7 +776,8 @@
     "nominalRate": 2.66,
     "breakeven": 2.09,
     "realRate": 0.5700000000000003,
-    "termSpread": 0.53
+    "termSpread": 0.53,
+    "mortgageRate": 4.15
   },
   {
     "date": "2018-02-02",
@@ -708,7 +786,8 @@
     "nominalRate": 2.84,
     "breakeven": 2.14,
     "realRate": 0.6999999999999997,
-    "termSpread": 0.69
+    "termSpread": 0.69,
+    "mortgageRate": 4.22
   },
   {
     "date": "2018-02-09",
@@ -717,7 +796,8 @@
     "nominalRate": 2.83,
     "breakeven": 2.05,
     "realRate": 0.7800000000000002,
-    "termSpread": 0.78
+    "termSpread": 0.78,
+    "mortgageRate": 4.32
   },
   {
     "date": "2018-02-16",
@@ -726,7 +806,8 @@
     "nominalRate": 2.87,
     "breakeven": 2.09,
     "realRate": 0.7800000000000002,
-    "termSpread": 0.66
+    "termSpread": 0.66,
+    "mortgageRate": 4.38
   },
   {
     "date": "2018-02-23",
@@ -735,7 +816,8 @@
     "nominalRate": 2.88,
     "breakeven": 2.12,
     "realRate": 0.7599999999999998,
-    "termSpread": 0.63
+    "termSpread": 0.63,
+    "mortgageRate": 4.4
   },
   {
     "date": "2018-03-02",
@@ -744,7 +826,8 @@
     "nominalRate": 2.86,
     "breakeven": 2.12,
     "realRate": 0.7399999999999998,
-    "termSpread": 0.61
+    "termSpread": 0.61,
+    "mortgageRate": 4.43
   },
   {
     "date": "2018-03-09",
@@ -753,7 +836,8 @@
     "nominalRate": 2.9,
     "breakeven": 2.12,
     "realRate": 0.7799999999999998,
-    "termSpread": 0.63
+    "termSpread": 0.63,
+    "mortgageRate": 4.46
   },
   {
     "date": "2018-03-16",
@@ -762,7 +846,8 @@
     "nominalRate": 2.85,
     "breakeven": 2.08,
     "realRate": 0.77,
-    "termSpread": 0.54
+    "termSpread": 0.54,
+    "mortgageRate": 4.44
   },
   {
     "date": "2018-03-23",
@@ -771,7 +856,8 @@
     "nominalRate": 2.82,
     "breakeven": 2.07,
     "realRate": 0.75,
-    "termSpread": 0.54
+    "termSpread": 0.54,
+    "mortgageRate": 4.45
   },
   {
     "date": "2018-03-30",
@@ -780,7 +866,8 @@
     "nominalRate": 2.74,
     "breakeven": 2.05,
     "realRate": 0.6900000000000004,
-    "termSpread": 0.47
+    "termSpread": 0.47,
+    "mortgageRate": 4.44
   },
   {
     "date": "2018-04-06",
@@ -789,7 +876,8 @@
     "nominalRate": 2.77,
     "breakeven": 2.07,
     "realRate": 0.7000000000000002,
-    "termSpread": 0.5
+    "termSpread": 0.5,
+    "mortgageRate": 4.4
   },
   {
     "date": "2018-04-13",
@@ -798,7 +886,8 @@
     "nominalRate": 2.82,
     "breakeven": 2.13,
     "realRate": 0.69,
-    "termSpread": 0.45
+    "termSpread": 0.45,
+    "mortgageRate": 4.42
   },
   {
     "date": "2018-04-20",
@@ -807,7 +896,8 @@
     "nominalRate": 2.96,
     "breakeven": 2.17,
     "realRate": 0.79,
-    "termSpread": 0.5
+    "termSpread": 0.5,
+    "mortgageRate": 4.47
   },
   {
     "date": "2018-04-27",
@@ -816,7 +906,8 @@
     "nominalRate": 2.96,
     "breakeven": 2.17,
     "realRate": 0.79,
-    "termSpread": 0.47
+    "termSpread": 0.47,
+    "mortgageRate": 4.58
   },
   {
     "date": "2018-05-04",
@@ -825,7 +916,8 @@
     "nominalRate": 2.95,
     "breakeven": 2.16,
     "realRate": 0.79,
-    "termSpread": 0.44
+    "termSpread": 0.44,
+    "mortgageRate": 4.55
   },
   {
     "date": "2018-05-11",
@@ -834,7 +926,8 @@
     "nominalRate": 2.97,
     "breakeven": 2.15,
     "realRate": 0.8200000000000003,
-    "termSpread": 0.43
+    "termSpread": 0.43,
+    "mortgageRate": 4.55
   },
   {
     "date": "2018-05-18",
@@ -843,7 +936,8 @@
     "nominalRate": 3.06,
     "breakeven": 2.15,
     "realRate": 0.9100000000000001,
-    "termSpread": 0.51
+    "termSpread": 0.51,
+    "mortgageRate": 4.61
   },
   {
     "date": "2018-05-25",
@@ -852,7 +946,8 @@
     "nominalRate": 2.93,
     "breakeven": 2.09,
     "realRate": 0.8400000000000003,
-    "termSpread": 0.45
+    "termSpread": 0.45,
+    "mortgageRate": 4.66
   },
   {
     "date": "2018-06-01",
@@ -861,7 +956,8 @@
     "nominalRate": 2.89,
     "breakeven": 2.09,
     "realRate": 0.8000000000000003,
-    "termSpread": 0.42
+    "termSpread": 0.42,
+    "mortgageRate": 4.56
   },
   {
     "date": "2018-06-08",
@@ -870,7 +966,8 @@
     "nominalRate": 2.93,
     "breakeven": 2.11,
     "realRate": 0.8200000000000003,
-    "termSpread": 0.43
+    "termSpread": 0.43,
+    "mortgageRate": 4.54
   },
   {
     "date": "2018-06-15",
@@ -879,7 +976,8 @@
     "nominalRate": 2.93,
     "breakeven": 2.12,
     "realRate": 0.81,
-    "termSpread": 0.38
+    "termSpread": 0.38,
+    "mortgageRate": 4.62
   },
   {
     "date": "2018-06-22",
@@ -888,7 +986,8 @@
     "nominalRate": 2.9,
     "breakeven": 2.12,
     "realRate": 0.7799999999999998,
-    "termSpread": 0.34
+    "termSpread": 0.34,
+    "mortgageRate": 4.57
   },
   {
     "date": "2018-06-29",
@@ -897,7 +996,8 @@
     "nominalRate": 2.85,
     "breakeven": 2.11,
     "realRate": 0.7400000000000002,
-    "termSpread": 0.33
+    "termSpread": 0.33,
+    "mortgageRate": 4.55
   },
   {
     "date": "2018-07-06",
@@ -906,7 +1006,8 @@
     "nominalRate": 2.82,
     "breakeven": 2.12,
     "realRate": 0.6999999999999997,
-    "termSpread": 0.29
+    "termSpread": 0.29,
+    "mortgageRate": 4.52
   },
   {
     "date": "2018-07-13",
@@ -915,7 +1016,8 @@
     "nominalRate": 2.83,
     "breakeven": 2.11,
     "realRate": 0.7200000000000002,
-    "termSpread": 0.24
+    "termSpread": 0.24,
+    "mortgageRate": 4.53
   },
   {
     "date": "2018-07-20",
@@ -924,7 +1026,8 @@
     "nominalRate": 2.89,
     "breakeven": 2.11,
     "realRate": 0.7800000000000002,
-    "termSpread": 0.29
+    "termSpread": 0.29,
+    "mortgageRate": 4.52
   },
   {
     "date": "2018-07-27",
@@ -933,7 +1036,8 @@
     "nominalRate": 2.96,
     "breakeven": 2.12,
     "realRate": 0.8399999999999999,
-    "termSpread": 0.29
+    "termSpread": 0.29,
+    "mortgageRate": 4.54
   },
   {
     "date": "2018-08-03",
@@ -942,7 +1046,8 @@
     "nominalRate": 2.95,
     "breakeven": 2.12,
     "realRate": 0.8300000000000001,
-    "termSpread": 0.32
+    "termSpread": 0.32,
+    "mortgageRate": 4.6
   },
   {
     "date": "2018-08-10",
@@ -951,7 +1056,8 @@
     "nominalRate": 2.87,
     "breakeven": 2.09,
     "realRate": 0.7800000000000002,
-    "termSpread": 0.26
+    "termSpread": 0.26,
+    "mortgageRate": 4.59
   },
   {
     "date": "2018-08-17",
@@ -960,7 +1066,8 @@
     "nominalRate": 2.87,
     "breakeven": 2.08,
     "realRate": 0.79,
-    "termSpread": 0.26
+    "termSpread": 0.26,
+    "mortgageRate": 4.53
   },
   {
     "date": "2018-08-24",
@@ -969,7 +1076,8 @@
     "nominalRate": 2.82,
     "breakeven": 2.09,
     "realRate": 0.73,
-    "termSpread": 0.19
+    "termSpread": 0.19,
+    "mortgageRate": 4.51
   },
   {
     "date": "2018-08-31",
@@ -978,7 +1086,8 @@
     "nominalRate": 2.86,
     "breakeven": 2.08,
     "realRate": 0.7799999999999998,
-    "termSpread": 0.24
+    "termSpread": 0.24,
+    "mortgageRate": 4.52
   },
   {
     "date": "2018-09-07",
@@ -987,7 +1096,8 @@
     "nominalRate": 2.94,
     "breakeven": 2.1,
     "realRate": 0.8399999999999999,
-    "termSpread": 0.23
+    "termSpread": 0.23,
+    "mortgageRate": 4.54
   },
   {
     "date": "2018-09-14",
@@ -996,7 +1106,8 @@
     "nominalRate": 2.99,
     "breakeven": 2.1,
     "realRate": 0.8900000000000001,
-    "termSpread": 0.21
+    "termSpread": 0.21,
+    "mortgageRate": 4.6
   },
   {
     "date": "2018-09-21",
@@ -1005,7 +1116,8 @@
     "nominalRate": 3.07,
     "breakeven": 2.15,
     "realRate": 0.9199999999999999,
-    "termSpread": 0.26
+    "termSpread": 0.26,
+    "mortgageRate": 4.65
   },
   {
     "date": "2018-09-28",
@@ -1014,7 +1126,8 @@
     "nominalRate": 3.05,
     "breakeven": 2.14,
     "realRate": 0.9099999999999997,
-    "termSpread": 0.24
+    "termSpread": 0.24,
+    "mortgageRate": 4.72
   },
   {
     "date": "2018-10-05",
@@ -1023,7 +1136,8 @@
     "nominalRate": 3.23,
     "breakeven": 2.16,
     "realRate": 1.0699999999999998,
-    "termSpread": 0.35
+    "termSpread": 0.35,
+    "mortgageRate": 4.71
   },
   {
     "date": "2018-10-12",
@@ -1032,7 +1146,8 @@
     "nominalRate": 3.15,
     "breakeven": 2.12,
     "realRate": 1.0299999999999998,
-    "termSpread": 0.3
+    "termSpread": 0.3,
+    "mortgageRate": 4.9
   },
   {
     "date": "2018-10-19",
@@ -1041,7 +1156,8 @@
     "nominalRate": 3.2,
     "breakeven": 2.11,
     "realRate": 1.0900000000000003,
-    "termSpread": 0.28
+    "termSpread": 0.28,
+    "mortgageRate": 4.85
   },
   {
     "date": "2018-10-26",
@@ -1050,7 +1166,8 @@
     "nominalRate": 3.08,
     "breakeven": 2.06,
     "realRate": 1.02,
-    "termSpread": 0.27
+    "termSpread": 0.27,
+    "mortgageRate": 4.86
   },
   {
     "date": "2018-11-02",
@@ -1059,7 +1176,8 @@
     "nominalRate": 3.22,
     "breakeven": 2.06,
     "realRate": 1.1600000000000001,
-    "termSpread": 0.31
+    "termSpread": 0.31,
+    "mortgageRate": 4.83
   },
   {
     "date": "2018-11-09",
@@ -1068,7 +1186,8 @@
     "nominalRate": 3.19,
     "breakeven": 2.04,
     "realRate": 1.15,
-    "termSpread": 0.25
+    "termSpread": 0.25,
+    "mortgageRate": 4.94
   },
   {
     "date": "2018-11-16",
@@ -1077,7 +1196,8 @@
     "nominalRate": 3.08,
     "breakeven": 2.02,
     "realRate": 1.06,
-    "termSpread": 0.27
+    "termSpread": 0.27,
+    "mortgageRate": 4.94
   },
   {
     "date": "2018-11-23",
@@ -1086,7 +1206,8 @@
     "nominalRate": 3.05,
     "breakeven": 1.96,
     "realRate": 1.0899999999999999,
-    "termSpread": 0.24
+    "termSpread": 0.24,
+    "mortgageRate": 4.81
   },
   {
     "date": "2018-11-30",
@@ -1095,7 +1216,8 @@
     "nominalRate": 3.01,
     "breakeven": 1.97,
     "realRate": 1.0399999999999998,
-    "termSpread": 0.21
+    "termSpread": 0.21,
+    "mortgageRate": 4.81
   },
   {
     "date": "2018-12-07",
@@ -1104,7 +1226,8 @@
     "nominalRate": 2.85,
     "breakeven": 1.89,
     "realRate": 0.9600000000000002,
-    "termSpread": 0.13
+    "termSpread": 0.13,
+    "mortgageRate": 4.75
   },
   {
     "date": "2018-12-14",
@@ -1113,7 +1236,8 @@
     "nominalRate": 2.89,
     "breakeven": 1.82,
     "realRate": 1.07,
-    "termSpread": 0.16
+    "termSpread": 0.16,
+    "mortgageRate": 4.63
   },
   {
     "date": "2018-12-21",
@@ -1122,7 +1246,8 @@
     "nominalRate": 2.79,
     "breakeven": 1.77,
     "realRate": 1.02,
-    "termSpread": 0.16
+    "termSpread": 0.16,
+    "mortgageRate": 4.62
   },
   {
     "date": "2018-12-28",
@@ -1131,7 +1256,8 @@
     "nominalRate": 2.72,
     "breakeven": 1.73,
     "realRate": 0.9900000000000002,
-    "termSpread": 0.2
+    "termSpread": 0.2,
+    "mortgageRate": 4.55
   },
   {
     "date": "2019-01-04",
@@ -1140,7 +1266,8 @@
     "nominalRate": 2.67,
     "breakeven": 1.76,
     "realRate": 0.9099999999999999,
-    "termSpread": 0.17
+    "termSpread": 0.17,
+    "mortgageRate": 4.51
   },
   {
     "date": "2019-01-11",
@@ -1149,7 +1276,8 @@
     "nominalRate": 2.71,
     "breakeven": 1.83,
     "realRate": 0.8799999999999999,
-    "termSpread": 0.16
+    "termSpread": 0.16,
+    "mortgageRate": 4.45
   },
   {
     "date": "2019-01-18",
@@ -1158,7 +1286,8 @@
     "nominalRate": 2.79,
     "breakeven": 1.83,
     "realRate": 0.96,
-    "termSpread": 0.17
+    "termSpread": 0.17,
+    "mortgageRate": 4.45
   },
   {
     "date": "2019-01-25",
@@ -1167,7 +1296,8 @@
     "nominalRate": 2.76,
     "breakeven": 1.79,
     "realRate": 0.9699999999999998,
-    "termSpread": 0.16
+    "termSpread": 0.16,
+    "mortgageRate": 4.45
   },
   {
     "date": "2019-02-01",
@@ -1176,7 +1306,8 @@
     "nominalRate": 2.7,
     "breakeven": 1.88,
     "realRate": 0.8200000000000003,
-    "termSpread": 0.18
+    "termSpread": 0.18,
+    "mortgageRate": 4.46
   },
   {
     "date": "2019-02-08",
@@ -1185,7 +1316,8 @@
     "nominalRate": 2.63,
     "breakeven": 1.82,
     "realRate": 0.8099999999999998,
-    "termSpread": 0.18
+    "termSpread": 0.18,
+    "mortgageRate": 4.41
   },
   {
     "date": "2019-02-15",
@@ -1194,7 +1326,8 @@
     "nominalRate": 2.66,
     "breakeven": 1.86,
     "realRate": 0.8,
-    "termSpread": 0.14
+    "termSpread": 0.14,
+    "mortgageRate": 4.37
   },
   {
     "date": "2019-02-22",
@@ -1203,7 +1336,8 @@
     "nominalRate": 2.65,
     "breakeven": 1.91,
     "realRate": 0.74,
-    "termSpread": 0.17
+    "termSpread": 0.17,
+    "mortgageRate": 4.35
   },
   {
     "date": "2019-03-01",
@@ -1212,7 +1346,8 @@
     "nominalRate": 2.76,
     "breakeven": 1.96,
     "realRate": 0.7999999999999998,
-    "termSpread": 0.21
+    "termSpread": 0.21,
+    "mortgageRate": 4.35
   },
   {
     "date": "2019-03-08",
@@ -1221,7 +1356,8 @@
     "nominalRate": 2.62,
     "breakeven": 1.9,
     "realRate": 0.7200000000000002,
-    "termSpread": 0.17
+    "termSpread": 0.17,
+    "mortgageRate": 4.41
   },
   {
     "date": "2019-03-15",
@@ -1230,7 +1366,8 @@
     "nominalRate": 2.59,
     "breakeven": 1.94,
     "realRate": 0.6499999999999999,
-    "termSpread": 0.16
+    "termSpread": 0.16,
+    "mortgageRate": 4.31
   },
   {
     "date": "2019-03-22",
@@ -1239,7 +1376,8 @@
     "nominalRate": 2.44,
     "breakeven": 1.9,
     "realRate": 0.54,
-    "termSpread": 0.13
+    "termSpread": 0.13,
+    "mortgageRate": 4.28
   },
   {
     "date": "2019-03-29",
@@ -1248,7 +1386,8 @@
     "nominalRate": 2.41,
     "breakeven": 1.88,
     "realRate": 0.5300000000000002,
-    "termSpread": 0.14
+    "termSpread": 0.14,
+    "mortgageRate": 4.06
   },
   {
     "date": "2019-04-05",
@@ -1257,7 +1396,8 @@
     "nominalRate": 2.5,
     "breakeven": 1.9,
     "realRate": 0.6000000000000001,
-    "termSpread": 0.15
+    "termSpread": 0.15,
+    "mortgageRate": 4.08
   },
   {
     "date": "2019-04-12",
@@ -1266,7 +1406,8 @@
     "nominalRate": 2.56,
     "breakeven": 1.95,
     "realRate": 0.6100000000000001,
-    "termSpread": 0.16
+    "termSpread": 0.16,
+    "mortgageRate": 4.12
   },
   {
     "date": "2019-04-19",
@@ -1275,7 +1416,8 @@
     "nominalRate": 2.57,
     "breakeven": 1.95,
     "realRate": 0.6199999999999999,
-    "termSpread": 0.19
+    "termSpread": 0.19,
+    "mortgageRate": 4.17
   },
   {
     "date": "2019-04-26",
@@ -1284,7 +1426,8 @@
     "nominalRate": 2.51,
     "breakeven": 1.97,
     "realRate": 0.5399999999999998,
-    "termSpread": 0.23
+    "termSpread": 0.23,
+    "mortgageRate": 4.2
   },
   {
     "date": "2019-05-03",
@@ -1293,7 +1436,8 @@
     "nominalRate": 2.54,
     "breakeven": 1.91,
     "realRate": 0.6300000000000001,
-    "termSpread": 0.21
+    "termSpread": 0.21,
+    "mortgageRate": 4.14
   },
   {
     "date": "2019-05-10",
@@ -1302,7 +1446,8 @@
     "nominalRate": 2.47,
     "breakeven": 1.88,
     "realRate": 0.5900000000000003,
-    "termSpread": 0.21
+    "termSpread": 0.21,
+    "mortgageRate": 4.1
   },
   {
     "date": "2019-05-17",
@@ -1311,7 +1456,8 @@
     "nominalRate": 2.39,
     "breakeven": 1.81,
     "realRate": 0.5800000000000001,
-    "termSpread": 0.19
+    "termSpread": 0.19,
+    "mortgageRate": 4.07
   },
   {
     "date": "2019-05-24",
@@ -1320,7 +1466,8 @@
     "nominalRate": 2.32,
     "breakeven": 1.76,
     "realRate": 0.5599999999999998,
-    "termSpread": 0.16
+    "termSpread": 0.16,
+    "mortgageRate": 4.06
   },
   {
     "date": "2019-05-31",
@@ -1329,7 +1476,8 @@
     "nominalRate": 2.14,
     "breakeven": 1.74,
     "realRate": 0.40000000000000013,
-    "termSpread": 0.19
+    "termSpread": 0.19,
+    "mortgageRate": 3.99
   },
   {
     "date": "2019-06-07",
@@ -1338,7 +1486,8 @@
     "nominalRate": 2.09,
     "breakeven": 1.74,
     "realRate": 0.34999999999999987,
-    "termSpread": 0.24
+    "termSpread": 0.24,
+    "mortgageRate": 3.82
   },
   {
     "date": "2019-06-14",
@@ -1347,7 +1496,8 @@
     "nominalRate": 2.09,
     "breakeven": 1.63,
     "realRate": 0.45999999999999996,
-    "termSpread": 0.25
+    "termSpread": 0.25,
+    "mortgageRate": 3.82
   },
   {
     "date": "2019-06-21",
@@ -1356,7 +1506,8 @@
     "nominalRate": 2.07,
     "breakeven": 1.73,
     "realRate": 0.33999999999999986,
-    "termSpread": 0.3
+    "termSpread": 0.3,
+    "mortgageRate": 3.84
   },
   {
     "date": "2019-06-28",
@@ -1365,7 +1516,8 @@
     "nominalRate": 2,
     "breakeven": 1.69,
     "realRate": 0.31000000000000005,
-    "termSpread": 0.25
+    "termSpread": 0.25,
+    "mortgageRate": 3.73
   },
   {
     "date": "2019-07-05",
@@ -1374,7 +1526,8 @@
     "nominalRate": 2.04,
     "breakeven": 1.69,
     "realRate": 0.3500000000000001,
-    "termSpread": 0.17
+    "termSpread": 0.17,
+    "mortgageRate": 3.75
   },
   {
     "date": "2019-07-12",
@@ -1383,7 +1536,8 @@
     "nominalRate": 2.12,
     "breakeven": 1.77,
     "realRate": 0.3500000000000001,
-    "termSpread": 0.28
+    "termSpread": 0.28,
+    "mortgageRate": 3.75
   },
   {
     "date": "2019-07-19",
@@ -1392,7 +1546,8 @@
     "nominalRate": 2.05,
     "breakeven": 1.8,
     "realRate": 0.24999999999999978,
-    "termSpread": 0.25
+    "termSpread": 0.25,
+    "mortgageRate": 3.81
   },
   {
     "date": "2019-07-26",
@@ -1401,7 +1556,8 @@
     "nominalRate": 2.08,
     "breakeven": 1.78,
     "realRate": 0.30000000000000004,
-    "termSpread": 0.22
+    "termSpread": 0.22,
+    "mortgageRate": 3.75
   },
   {
     "date": "2019-08-02",
@@ -1410,7 +1566,8 @@
     "nominalRate": 1.86,
     "breakeven": 1.66,
     "realRate": 0.20000000000000018,
-    "termSpread": 0.14
+    "termSpread": 0.14,
+    "mortgageRate": 3.75
   },
   {
     "date": "2019-08-09",
@@ -1419,7 +1576,8 @@
     "nominalRate": 1.74,
     "breakeven": 1.66,
     "realRate": 0.08000000000000007,
-    "termSpread": 0.11
+    "termSpread": 0.11,
+    "mortgageRate": 3.6
   },
   {
     "date": "2019-08-16",
@@ -1428,7 +1586,8 @@
     "nominalRate": 1.55,
     "breakeven": 1.54,
     "realRate": 0.010000000000000009,
-    "termSpread": 0.07
+    "termSpread": 0.07,
+    "mortgageRate": 3.6
   },
   {
     "date": "2019-08-23",
@@ -1437,7 +1596,8 @@
     "nominalRate": 1.52,
     "breakeven": 1.54,
     "realRate": -0.020000000000000018,
-    "termSpread": 0.01
+    "termSpread": 0.01,
+    "mortgageRate": 3.55
   },
   {
     "date": "2019-08-30",
@@ -1446,7 +1606,8 @@
     "nominalRate": 1.5,
     "breakeven": 1.55,
     "realRate": -0.050000000000000044,
-    "termSpread": 0
+    "termSpread": 0,
+    "mortgageRate": 3.58
   },
   {
     "date": "2019-09-06",
@@ -1455,7 +1616,8 @@
     "nominalRate": 1.55,
     "breakeven": 1.54,
     "realRate": 0.010000000000000009,
-    "termSpread": 0.02
+    "termSpread": 0.02,
+    "mortgageRate": 3.49
   },
   {
     "date": "2019-09-13",
@@ -1464,7 +1626,8 @@
     "nominalRate": 1.9,
     "breakeven": 1.67,
     "realRate": 0.22999999999999998,
-    "termSpread": 0.11
+    "termSpread": 0.11,
+    "mortgageRate": 3.56
   },
   {
     "date": "2019-09-20",
@@ -1473,7 +1636,8 @@
     "nominalRate": 1.74,
     "breakeven": 1.61,
     "realRate": 0.1299999999999999,
-    "termSpread": 0.05
+    "termSpread": 0.05,
+    "mortgageRate": 3.73
   },
   {
     "date": "2019-09-27",
@@ -1482,7 +1646,8 @@
     "nominalRate": 1.69,
     "breakeven": 1.53,
     "realRate": 0.15999999999999992,
-    "termSpread": 0.06
+    "termSpread": 0.06,
+    "mortgageRate": 3.64
   },
   {
     "date": "2019-10-04",
@@ -1491,7 +1656,8 @@
     "nominalRate": 1.52,
     "breakeven": 1.5,
     "realRate": 0.020000000000000018,
-    "termSpread": 0.12
+    "termSpread": 0.12,
+    "mortgageRate": 3.65
   },
   {
     "date": "2019-10-11",
@@ -1500,7 +1666,8 @@
     "nominalRate": 1.76,
     "breakeven": 1.56,
     "realRate": 0.19999999999999996,
-    "termSpread": 0.13
+    "termSpread": 0.13,
+    "mortgageRate": 3.57
   },
   {
     "date": "2019-10-18",
@@ -1509,7 +1676,8 @@
     "nominalRate": 1.76,
     "breakeven": 1.6,
     "realRate": 0.15999999999999992,
-    "termSpread": 0.18
+    "termSpread": 0.18,
+    "mortgageRate": 3.69
   },
   {
     "date": "2019-10-25",
@@ -1518,7 +1686,8 @@
     "nominalRate": 1.8,
     "breakeven": 1.65,
     "realRate": 0.15000000000000013,
-    "termSpread": 0.17
+    "termSpread": 0.17,
+    "mortgageRate": 3.75
   },
   {
     "date": "2019-11-01",
@@ -1527,7 +1696,8 @@
     "nominalRate": 1.73,
     "breakeven": 1.59,
     "realRate": 0.1399999999999999,
-    "termSpread": 0.17
+    "termSpread": 0.17,
+    "mortgageRate": 3.78
   },
   {
     "date": "2019-11-08",
@@ -1536,7 +1706,8 @@
     "nominalRate": 1.94,
     "breakeven": 1.71,
     "realRate": 0.22999999999999998,
-    "termSpread": 0.26
+    "termSpread": 0.26,
+    "mortgageRate": 3.69
   },
   {
     "date": "2019-11-15",
@@ -1545,7 +1716,8 @@
     "nominalRate": 1.84,
     "breakeven": 1.63,
     "realRate": 0.2100000000000002,
-    "termSpread": 0.23
+    "termSpread": 0.23,
+    "mortgageRate": 3.75
   },
   {
     "date": "2019-11-22",
@@ -1554,7 +1726,8 @@
     "nominalRate": 1.77,
     "breakeven": 1.62,
     "realRate": 0.1499999999999999,
-    "termSpread": 0.16
+    "termSpread": 0.16,
+    "mortgageRate": 3.66
   },
   {
     "date": "2019-11-29",
@@ -1563,7 +1736,8 @@
     "nominalRate": 1.78,
     "breakeven": 1.61,
     "realRate": 0.16999999999999993,
-    "termSpread": 0.17
+    "termSpread": 0.17,
+    "mortgageRate": 3.68
   },
   {
     "date": "2019-12-06",
@@ -1572,7 +1746,8 @@
     "nominalRate": 1.84,
     "breakeven": 1.69,
     "realRate": 0.15000000000000013,
-    "termSpread": 0.23
+    "termSpread": 0.23,
+    "mortgageRate": 3.68
   },
   {
     "date": "2019-12-13",
@@ -1581,7 +1756,8 @@
     "nominalRate": 1.82,
     "breakeven": 1.7,
     "realRate": 0.1200000000000001,
-    "termSpread": 0.21
+    "termSpread": 0.21,
+    "mortgageRate": 3.73
   },
   {
     "date": "2019-12-20",
@@ -1590,7 +1766,8 @@
     "nominalRate": 1.92,
     "breakeven": 1.77,
     "realRate": 0.1499999999999999,
-    "termSpread": 0.29
+    "termSpread": 0.29,
+    "mortgageRate": 3.73
   },
   {
     "date": "2019-12-27",
@@ -1599,7 +1776,8 @@
     "nominalRate": 1.88,
     "breakeven": 1.73,
     "realRate": 0.1499999999999999,
-    "termSpread": 0.29
+    "termSpread": 0.29,
+    "mortgageRate": 3.74
   },
   {
     "date": "2020-01-03",
@@ -1608,7 +1786,8 @@
     "nominalRate": 1.8,
     "breakeven": 1.77,
     "realRate": 0.030000000000000027,
-    "termSpread": 0.27
+    "termSpread": 0.27,
+    "mortgageRate": 3.72
   },
   {
     "date": "2020-01-10",
@@ -1617,7 +1796,8 @@
     "nominalRate": 1.83,
     "breakeven": 1.76,
     "realRate": 0.07000000000000006,
-    "termSpread": 0.27
+    "termSpread": 0.27,
+    "mortgageRate": 3.64
   },
   {
     "date": "2020-01-17",
@@ -1626,7 +1806,8 @@
     "nominalRate": 1.84,
     "breakeven": 1.75,
     "realRate": 0.09000000000000008,
-    "termSpread": 0.26
+    "termSpread": 0.26,
+    "mortgageRate": 3.65
   },
   {
     "date": "2020-01-24",
@@ -1635,7 +1816,8 @@
     "nominalRate": 1.7,
     "breakeven": 1.68,
     "realRate": 0.020000000000000018,
-    "termSpread": 0.21
+    "termSpread": 0.21,
+    "mortgageRate": 3.6
   },
   {
     "date": "2020-01-31",
@@ -1644,7 +1826,8 @@
     "nominalRate": 1.51,
     "breakeven": 1.65,
     "realRate": -0.1399999999999999,
-    "termSpread": 0.18
+    "termSpread": 0.18,
+    "mortgageRate": 3.51
   },
   {
     "date": "2020-02-07",
@@ -1653,7 +1836,8 @@
     "nominalRate": 1.59,
     "breakeven": 1.66,
     "realRate": -0.06999999999999984,
-    "termSpread": 0.18
+    "termSpread": 0.18,
+    "mortgageRate": 3.45
   },
   {
     "date": "2020-02-14",
@@ -1662,7 +1846,8 @@
     "nominalRate": 1.59,
     "breakeven": 1.66,
     "realRate": -0.06999999999999984,
-    "termSpread": 0.17
+    "termSpread": 0.17,
+    "mortgageRate": 3.47
   },
   {
     "date": "2020-02-21",
@@ -1671,7 +1856,8 @@
     "nominalRate": 1.46,
     "breakeven": 1.61,
     "realRate": -0.15000000000000013,
-    "termSpread": 0.12
+    "termSpread": 0.12,
+    "mortgageRate": 3.49
   },
   {
     "date": "2020-02-28",
@@ -1680,7 +1866,8 @@
     "nominalRate": 1.13,
     "breakeven": 1.41,
     "realRate": -0.28,
-    "termSpread": 0.27
+    "termSpread": 0.27,
+    "mortgageRate": 3.45
   },
   {
     "date": "2020-03-06",
@@ -1689,7 +1876,8 @@
     "nominalRate": 0.74,
     "breakeven": 1.31,
     "realRate": -0.5700000000000001,
-    "termSpread": 0.25
+    "termSpread": 0.25,
+    "mortgageRate": 3.29
   },
   {
     "date": "2020-03-13",
@@ -1698,7 +1886,8 @@
     "nominalRate": 0.94,
     "breakeven": 0.9,
     "realRate": 0.039999999999999925,
-    "termSpread": 0.45
+    "termSpread": 0.45,
+    "mortgageRate": 3.36
   },
   {
     "date": "2020-03-20",
@@ -1707,7 +1896,8 @@
     "nominalRate": 0.92,
     "breakeven": 0.75,
     "realRate": 0.17000000000000004,
-    "termSpread": 0.55
+    "termSpread": 0.55,
+    "mortgageRate": 3.65
   },
   {
     "date": "2020-03-27",
@@ -1716,7 +1906,8 @@
     "nominalRate": 0.72,
     "breakeven": 0.94,
     "realRate": -0.21999999999999997,
-    "termSpread": 0.47
+    "termSpread": 0.47,
+    "mortgageRate": 3.5
   },
   {
     "date": "2020-04-03",
@@ -1725,7 +1916,8 @@
     "nominalRate": 0.62,
     "breakeven": 1.08,
     "realRate": -0.4600000000000001,
-    "termSpread": 0.39
+    "termSpread": 0.39,
+    "mortgageRate": 3.33
   },
   {
     "date": "2020-04-10",
@@ -1734,7 +1926,8 @@
     "nominalRate": 0.73,
     "breakeven": 1.23,
     "realRate": -0.5,
-    "termSpread": 0.5
+    "termSpread": 0.5,
+    "mortgageRate": 3.33
   },
   {
     "date": "2020-04-17",
@@ -1743,7 +1936,8 @@
     "nominalRate": 0.65,
     "breakeven": 1.01,
     "realRate": -0.36,
-    "termSpread": 0.45
+    "termSpread": 0.45,
+    "mortgageRate": 3.31
   },
   {
     "date": "2020-04-24",
@@ -1752,7 +1946,8 @@
     "nominalRate": 0.6,
     "breakeven": 1.11,
     "realRate": -0.5100000000000001,
-    "termSpread": 0.38
+    "termSpread": 0.38,
+    "mortgageRate": 3.33
   },
   {
     "date": "2020-05-01",
@@ -1761,7 +1956,8 @@
     "nominalRate": 0.64,
     "breakeven": 1.06,
     "realRate": -0.42000000000000004,
-    "termSpread": 0.44
+    "termSpread": 0.44,
+    "mortgageRate": 3.23
   },
   {
     "date": "2020-05-08",
@@ -1770,7 +1966,8 @@
     "nominalRate": 0.69,
     "breakeven": 1.12,
     "realRate": -0.43000000000000016,
-    "termSpread": 0.53
+    "termSpread": 0.53,
+    "mortgageRate": 3.26
   },
   {
     "date": "2020-05-15",
@@ -1779,7 +1976,8 @@
     "nominalRate": 0.64,
     "breakeven": 1.09,
     "realRate": -0.45000000000000007,
-    "termSpread": 0.48
+    "termSpread": 0.48,
+    "mortgageRate": 3.28
   },
   {
     "date": "2020-05-22",
@@ -1788,7 +1986,8 @@
     "nominalRate": 0.66,
     "breakeven": 1.12,
     "realRate": -0.4600000000000001,
-    "termSpread": 0.49
+    "termSpread": 0.49,
+    "mortgageRate": 3.24
   },
   {
     "date": "2020-05-29",
@@ -1797,7 +1996,8 @@
     "nominalRate": 0.65,
     "breakeven": 1.15,
     "realRate": -0.4999999999999999,
-    "termSpread": 0.49
+    "termSpread": 0.49,
+    "mortgageRate": 3.15
   },
   {
     "date": "2020-06-05",
@@ -1806,7 +2006,8 @@
     "nominalRate": 0.91,
     "breakeven": 1.27,
     "realRate": -0.36,
-    "termSpread": 0.69
+    "termSpread": 0.69,
+    "mortgageRate": 3.18
   },
   {
     "date": "2020-06-12",
@@ -1815,7 +2016,8 @@
     "nominalRate": 0.71,
     "breakeven": 1.21,
     "realRate": -0.5,
-    "termSpread": 0.52
+    "termSpread": 0.52,
+    "mortgageRate": 3.21
   },
   {
     "date": "2020-06-19",
@@ -1824,7 +2026,8 @@
     "nominalRate": 0.7,
     "breakeven": 1.3,
     "realRate": -0.6000000000000001,
-    "termSpread": 0.51
+    "termSpread": 0.51,
+    "mortgageRate": 3.13
   },
   {
     "date": "2020-06-26",
@@ -1833,7 +2036,8 @@
     "nominalRate": 0.64,
     "breakeven": 1.32,
     "realRate": -0.68,
-    "termSpread": 0.47
+    "termSpread": 0.47,
+    "mortgageRate": 3.13
   },
   {
     "date": "2020-07-03",
@@ -1842,7 +2046,8 @@
     "nominalRate": 0.68,
     "breakeven": 1.41,
     "realRate": -0.7299999999999999,
-    "termSpread": 0.52
+    "termSpread": 0.52,
+    "mortgageRate": 3.07
   },
   {
     "date": "2020-07-10",
@@ -1851,7 +2056,8 @@
     "nominalRate": 0.65,
     "breakeven": 1.41,
     "realRate": -0.7599999999999999,
-    "termSpread": 0.49
+    "termSpread": 0.49,
+    "mortgageRate": 3.03
   },
   {
     "date": "2020-07-17",
@@ -1860,7 +2066,8 @@
     "nominalRate": 0.64,
     "breakeven": 1.46,
     "realRate": -0.82,
-    "termSpread": 0.5
+    "termSpread": 0.5,
+    "mortgageRate": 2.98
   },
   {
     "date": "2020-07-24",
@@ -1869,7 +2076,8 @@
     "nominalRate": 0.59,
     "breakeven": 1.51,
     "realRate": -0.92,
-    "termSpread": 0.45
+    "termSpread": 0.45,
+    "mortgageRate": 3.01
   },
   {
     "date": "2020-07-31",
@@ -1878,7 +2086,8 @@
     "nominalRate": 0.55,
     "breakeven": 1.55,
     "realRate": -1,
-    "termSpread": 0.44
+    "termSpread": 0.44,
+    "mortgageRate": 2.99
   },
   {
     "date": "2020-08-07",
@@ -1887,7 +2096,8 @@
     "nominalRate": 0.57,
     "breakeven": 1.61,
     "realRate": -1.04,
-    "termSpread": 0.44
+    "termSpread": 0.44,
+    "mortgageRate": 2.88
   },
   {
     "date": "2020-08-14",
@@ -1896,7 +2106,8 @@
     "nominalRate": 0.71,
     "breakeven": 1.65,
     "realRate": -0.94,
-    "termSpread": 0.57
+    "termSpread": 0.57,
+    "mortgageRate": 2.96
   },
   {
     "date": "2020-08-21",
@@ -1905,7 +2116,8 @@
     "nominalRate": 0.64,
     "breakeven": 1.64,
     "realRate": -0.9999999999999999,
-    "termSpread": 0.48
+    "termSpread": 0.48,
+    "mortgageRate": 2.99
   },
   {
     "date": "2020-08-28",
@@ -1914,7 +2126,8 @@
     "nominalRate": 0.74,
     "breakeven": 1.77,
     "realRate": -1.03,
-    "termSpread": 0.6
+    "termSpread": 0.6,
+    "mortgageRate": 2.91
   },
   {
     "date": "2020-09-04",
@@ -1923,7 +2136,8 @@
     "nominalRate": 0.72,
     "breakeven": 1.7,
     "realRate": -0.98,
-    "termSpread": 0.58
+    "termSpread": 0.58,
+    "mortgageRate": 2.93
   },
   {
     "date": "2020-09-11",
@@ -1932,7 +2146,8 @@
     "nominalRate": 0.67,
     "breakeven": 1.65,
     "realRate": -0.9799999999999999,
-    "termSpread": 0.54
+    "termSpread": 0.54,
+    "mortgageRate": 2.86
   },
   {
     "date": "2020-09-18",
@@ -1941,7 +2156,8 @@
     "nominalRate": 0.7,
     "breakeven": 1.67,
     "realRate": -0.97,
-    "termSpread": 0.56
+    "termSpread": 0.56,
+    "mortgageRate": 2.87
   },
   {
     "date": "2020-09-25",
@@ -1950,7 +2166,8 @@
     "nominalRate": 0.66,
     "breakeven": 1.58,
     "realRate": -0.92,
-    "termSpread": 0.54
+    "termSpread": 0.54,
+    "mortgageRate": 2.9
   },
   {
     "date": "2020-10-02",
@@ -1959,7 +2176,8 @@
     "nominalRate": 0.7,
     "breakeven": 1.64,
     "realRate": -0.94,
-    "termSpread": 0.57
+    "termSpread": 0.57,
+    "mortgageRate": 2.88
   },
   {
     "date": "2020-10-09",
@@ -1968,7 +2186,8 @@
     "nominalRate": 0.79,
     "breakeven": 1.73,
     "realRate": -0.94,
-    "termSpread": 0.63
+    "termSpread": 0.63,
+    "mortgageRate": 2.87
   },
   {
     "date": "2020-10-16",
@@ -1977,7 +2196,8 @@
     "nominalRate": 0.76,
     "breakeven": 1.71,
     "realRate": -0.95,
-    "termSpread": 0.62
+    "termSpread": 0.62,
+    "mortgageRate": 2.81
   },
   {
     "date": "2020-10-23",
@@ -1986,7 +2206,8 @@
     "nominalRate": 0.85,
     "breakeven": 1.75,
     "realRate": -0.9,
-    "termSpread": 0.67
+    "termSpread": 0.67,
+    "mortgageRate": 2.8
   },
   {
     "date": "2020-10-30",
@@ -1995,7 +2216,8 @@
     "nominalRate": 0.88,
     "breakeven": 1.7,
     "realRate": -0.82,
-    "termSpread": 0.74
+    "termSpread": 0.74,
+    "mortgageRate": 2.81
   },
   {
     "date": "2020-11-06",
@@ -2004,7 +2226,8 @@
     "nominalRate": 0.83,
     "breakeven": 1.65,
     "realRate": -0.82,
-    "termSpread": 0.67
+    "termSpread": 0.67,
+    "mortgageRate": 2.78
   },
   {
     "date": "2020-11-13",
@@ -2013,7 +2236,8 @@
     "nominalRate": 0.89,
     "breakeven": 1.72,
     "realRate": -0.83,
-    "termSpread": 0.72
+    "termSpread": 0.72,
+    "mortgageRate": 2.84
   },
   {
     "date": "2020-11-20",
@@ -2022,7 +2246,8 @@
     "nominalRate": 0.83,
     "breakeven": 1.69,
     "realRate": -0.86,
-    "termSpread": 0.67
+    "termSpread": 0.67,
+    "mortgageRate": 2.72
   },
   {
     "date": "2020-11-27",
@@ -2031,7 +2256,8 @@
     "nominalRate": 0.84,
     "breakeven": 1.75,
     "realRate": -0.91,
-    "termSpread": 0.68
+    "termSpread": 0.68,
+    "mortgageRate": 2.72
   },
   {
     "date": "2020-12-04",
@@ -2040,7 +2266,8 @@
     "nominalRate": 0.97,
     "breakeven": 1.89,
     "realRate": -0.9199999999999999,
-    "termSpread": 0.81
+    "termSpread": 0.81,
+    "mortgageRate": 2.71
   },
   {
     "date": "2020-12-11",
@@ -2049,7 +2276,8 @@
     "nominalRate": 0.9,
     "breakeven": 1.87,
     "realRate": -0.9700000000000001,
-    "termSpread": 0.79
+    "termSpread": 0.79,
+    "mortgageRate": 2.71
   },
   {
     "date": "2020-12-18",
@@ -2058,7 +2286,8 @@
     "nominalRate": 0.95,
     "breakeven": 1.95,
     "realRate": -1,
-    "termSpread": 0.82
+    "termSpread": 0.82,
+    "mortgageRate": 2.67
   },
   {
     "date": "2020-12-25",
@@ -2067,7 +2296,8 @@
     "nominalRate": 0.94,
     "breakeven": 1.97,
     "realRate": -1.03,
-    "termSpread": 0.81
+    "termSpread": 0.81,
+    "mortgageRate": 2.66
   },
   {
     "date": "2021-01-01",
@@ -2076,7 +2306,8 @@
     "nominalRate": 0.93,
     "breakeven": 1.99,
     "realRate": -1.06,
-    "termSpread": 0.8
+    "termSpread": 0.8,
+    "mortgageRate": 2.67
   },
   {
     "date": "2021-01-08",
@@ -2085,7 +2316,8 @@
     "nominalRate": 1.13,
     "breakeven": 2.06,
     "realRate": -0.9300000000000002,
-    "termSpread": 0.99
+    "termSpread": 0.99,
+    "mortgageRate": 2.65
   },
   {
     "date": "2021-01-15",
@@ -2094,7 +2326,8 @@
     "nominalRate": 1.11,
     "breakeven": 2.1,
     "realRate": -0.99,
-    "termSpread": 0.98
+    "termSpread": 0.98,
+    "mortgageRate": 2.79
   },
   {
     "date": "2021-01-22",
@@ -2103,7 +2336,8 @@
     "nominalRate": 1.1,
     "breakeven": 2.09,
     "realRate": -0.9899999999999998,
-    "termSpread": 0.97
+    "termSpread": 0.97,
+    "mortgageRate": 2.77
   },
   {
     "date": "2021-01-29",
@@ -2112,7 +2346,8 @@
     "nominalRate": 1.11,
     "breakeven": 2.13,
     "realRate": -1.0199999999999998,
-    "termSpread": 1
+    "termSpread": 1,
+    "mortgageRate": 2.73
   },
   {
     "date": "2021-02-05",
@@ -2121,7 +2356,8 @@
     "nominalRate": 1.19,
     "breakeven": 2.21,
     "realRate": -1.02,
-    "termSpread": 1.1
+    "termSpread": 1.1,
+    "mortgageRate": 2.73
   },
   {
     "date": "2021-02-12",
@@ -2130,7 +2366,8 @@
     "nominalRate": 1.2,
     "breakeven": 2.21,
     "realRate": -1.01,
-    "termSpread": 1.09
+    "termSpread": 1.09,
+    "mortgageRate": 2.73
   },
   {
     "date": "2021-02-19",
@@ -2139,7 +2376,8 @@
     "nominalRate": 1.34,
     "breakeven": 2.14,
     "realRate": -0.8,
-    "termSpread": 1.23
+    "termSpread": 1.23,
+    "mortgageRate": 2.81
   },
   {
     "date": "2021-02-26",
@@ -2148,7 +2386,8 @@
     "nominalRate": 1.44,
     "breakeven": 2.15,
     "realRate": -0.71,
-    "termSpread": 1.3
+    "termSpread": 1.3,
+    "mortgageRate": 2.97
   },
   {
     "date": "2021-03-05",
@@ -2157,7 +2396,8 @@
     "nominalRate": 1.56,
     "breakeven": 2.22,
     "realRate": -0.6600000000000001,
-    "termSpread": 1.42
+    "termSpread": 1.42,
+    "mortgageRate": 3.02
   },
   {
     "date": "2021-03-12",
@@ -2166,7 +2406,8 @@
     "nominalRate": 1.64,
     "breakeven": 2.26,
     "realRate": -0.6199999999999999,
-    "termSpread": 1.5
+    "termSpread": 1.5,
+    "mortgageRate": 3.05
   },
   {
     "date": "2021-03-19",
@@ -2175,7 +2416,8 @@
     "nominalRate": 1.74,
     "breakeven": 2.31,
     "realRate": -0.5700000000000001,
-    "termSpread": 1.58
+    "termSpread": 1.58,
+    "mortgageRate": 3.09
   },
   {
     "date": "2021-03-26",
@@ -2184,7 +2426,8 @@
     "nominalRate": 1.67,
     "breakeven": 2.34,
     "realRate": -0.6699999999999999,
-    "termSpread": 1.53
+    "termSpread": 1.53,
+    "mortgageRate": 3.17
   },
   {
     "date": "2021-04-02",
@@ -2193,7 +2436,8 @@
     "nominalRate": 1.72,
     "breakeven": 2.36,
     "realRate": -0.6399999999999999,
-    "termSpread": 1.53
+    "termSpread": 1.53,
+    "mortgageRate": 3.18
   },
   {
     "date": "2021-04-09",
@@ -2202,7 +2446,8 @@
     "nominalRate": 1.67,
     "breakeven": 2.31,
     "realRate": -0.6400000000000001,
-    "termSpread": 1.51
+    "termSpread": 1.51,
+    "mortgageRate": 3.13
   },
   {
     "date": "2021-04-16",
@@ -2211,7 +2456,8 @@
     "nominalRate": 1.59,
     "breakeven": 2.36,
     "realRate": -0.7699999999999998,
-    "termSpread": 1.43
+    "termSpread": 1.43,
+    "mortgageRate": 3.04
   },
   {
     "date": "2021-04-23",
@@ -2220,7 +2466,8 @@
     "nominalRate": 1.58,
     "breakeven": 2.34,
     "realRate": -0.7599999999999998,
-    "termSpread": 1.42
+    "termSpread": 1.42,
+    "mortgageRate": 2.97
   },
   {
     "date": "2021-04-30",
@@ -2229,7 +2476,8 @@
     "nominalRate": 1.65,
     "breakeven": 2.41,
     "realRate": -0.7600000000000002,
-    "termSpread": 1.49
+    "termSpread": 1.49,
+    "mortgageRate": 2.98
   },
   {
     "date": "2021-05-07",
@@ -2238,7 +2486,8 @@
     "nominalRate": 1.6,
     "breakeven": 2.49,
     "realRate": -0.8900000000000001,
-    "termSpread": 1.46
+    "termSpread": 1.46,
+    "mortgageRate": 2.96
   },
   {
     "date": "2021-05-14",
@@ -2247,7 +2496,8 @@
     "nominalRate": 1.63,
     "breakeven": 2.51,
     "realRate": -0.8799999999999999,
-    "termSpread": 1.47
+    "termSpread": 1.47,
+    "mortgageRate": 2.94
   },
   {
     "date": "2021-05-21",
@@ -2256,7 +2506,8 @@
     "nominalRate": 1.63,
     "breakeven": 2.43,
     "realRate": -0.8000000000000003,
-    "termSpread": 1.46
+    "termSpread": 1.46,
+    "mortgageRate": 3
   },
   {
     "date": "2021-05-28",
@@ -2265,7 +2516,8 @@
     "nominalRate": 1.58,
     "breakeven": 2.42,
     "realRate": -0.8399999999999999,
-    "termSpread": 1.44
+    "termSpread": 1.44,
+    "mortgageRate": 2.95
   },
   {
     "date": "2021-06-04",
@@ -2274,7 +2526,8 @@
     "nominalRate": 1.56,
     "breakeven": 2.4,
     "realRate": -0.8399999999999999,
-    "termSpread": 1.42
+    "termSpread": 1.42,
+    "mortgageRate": 2.99
   },
   {
     "date": "2021-06-11",
@@ -2283,7 +2536,8 @@
     "nominalRate": 1.47,
     "breakeven": 2.32,
     "realRate": -0.8499999999999999,
-    "termSpread": 1.31
+    "termSpread": 1.31,
+    "mortgageRate": 2.96
   },
   {
     "date": "2021-06-18",
@@ -2292,7 +2546,8 @@
     "nominalRate": 1.45,
     "breakeven": 2.24,
     "realRate": -0.7900000000000003,
-    "termSpread": 1.19
+    "termSpread": 1.19,
+    "mortgageRate": 2.93
   },
   {
     "date": "2021-06-25",
@@ -2301,7 +2556,8 @@
     "nominalRate": 1.54,
     "breakeven": 2.34,
     "realRate": -0.7999999999999998,
-    "termSpread": 1.26
+    "termSpread": 1.26,
+    "mortgageRate": 3.02
   },
   {
     "date": "2021-07-02",
@@ -2310,7 +2566,8 @@
     "nominalRate": 1.44,
     "breakeven": 2.33,
     "realRate": -0.8900000000000001,
-    "termSpread": 1.2
+    "termSpread": 1.2,
+    "mortgageRate": 2.98
   },
   {
     "date": "2021-07-09",
@@ -2319,7 +2576,8 @@
     "nominalRate": 1.37,
     "breakeven": 2.28,
     "realRate": -0.9099999999999997,
-    "termSpread": 1.14
+    "termSpread": 1.14,
+    "mortgageRate": 2.9
   },
   {
     "date": "2021-07-16",
@@ -2328,7 +2586,8 @@
     "nominalRate": 1.31,
     "breakeven": 2.33,
     "realRate": -1.02,
-    "termSpread": 1.06
+    "termSpread": 1.06,
+    "mortgageRate": 2.88
   },
   {
     "date": "2021-07-23",
@@ -2337,7 +2596,8 @@
     "nominalRate": 1.3,
     "breakeven": 2.35,
     "realRate": -1.05,
-    "termSpread": 1.08
+    "termSpread": 1.08,
+    "mortgageRate": 2.78
   },
   {
     "date": "2021-07-30",
@@ -2346,7 +2606,8 @@
     "nominalRate": 1.24,
     "breakeven": 2.4,
     "realRate": -1.16,
-    "termSpread": 1.05
+    "termSpread": 1.05,
+    "mortgageRate": 2.8
   },
   {
     "date": "2021-08-06",
@@ -2355,7 +2616,8 @@
     "nominalRate": 1.31,
     "breakeven": 2.37,
     "realRate": -1.06,
-    "termSpread": 1.1
+    "termSpread": 1.1,
+    "mortgageRate": 2.77
   },
   {
     "date": "2021-08-13",
@@ -2364,7 +2626,8 @@
     "nominalRate": 1.29,
     "breakeven": 2.37,
     "realRate": -1.08,
-    "termSpread": 1.06
+    "termSpread": 1.06,
+    "mortgageRate": 2.87
   },
   {
     "date": "2021-08-20",
@@ -2373,7 +2636,8 @@
     "nominalRate": 1.26,
     "breakeven": 2.27,
     "realRate": -1.01,
-    "termSpread": 1.03
+    "termSpread": 1.03,
+    "mortgageRate": 2.86
   },
   {
     "date": "2021-08-27",
@@ -2382,7 +2646,8 @@
     "nominalRate": 1.31,
     "breakeven": 2.39,
     "realRate": -1.08,
-    "termSpread": 1.09
+    "termSpread": 1.09,
+    "mortgageRate": 2.87
   },
   {
     "date": "2021-09-03",
@@ -2391,7 +2656,8 @@
     "nominalRate": 1.33,
     "breakeven": 2.34,
     "realRate": -1.0099999999999998,
-    "termSpread": 1.12
+    "termSpread": 1.12,
+    "mortgageRate": 2.87
   },
   {
     "date": "2021-09-10",
@@ -2400,7 +2666,8 @@
     "nominalRate": 1.35,
     "breakeven": 2.4,
     "realRate": -1.0499999999999998,
-    "termSpread": 1.12
+    "termSpread": 1.12,
+    "mortgageRate": 2.88
   },
   {
     "date": "2021-09-17",
@@ -2409,7 +2676,8 @@
     "nominalRate": 1.37,
     "breakeven": 2.33,
     "realRate": -0.96,
-    "termSpread": 1.14
+    "termSpread": 1.14,
+    "mortgageRate": 2.86
   },
   {
     "date": "2021-09-24",
@@ -2418,7 +2686,8 @@
     "nominalRate": 1.47,
     "breakeven": 2.34,
     "realRate": -0.8699999999999999,
-    "termSpread": 1.18
+    "termSpread": 1.18,
+    "mortgageRate": 2.88
   },
   {
     "date": "2021-10-01",
@@ -2427,7 +2696,8 @@
     "nominalRate": 1.48,
     "breakeven": 2.38,
     "realRate": -0.8999999999999999,
-    "termSpread": 1.21
+    "termSpread": 1.21,
+    "mortgageRate": 3.01
   },
   {
     "date": "2021-10-08",
@@ -2436,7 +2706,8 @@
     "nominalRate": 1.61,
     "breakeven": 2.5,
     "realRate": -0.8899999999999999,
-    "termSpread": 1.29
+    "termSpread": 1.29,
+    "mortgageRate": 2.99
   },
   {
     "date": "2021-10-15",
@@ -2445,7 +2716,8 @@
     "nominalRate": 1.59,
     "breakeven": 2.56,
     "realRate": -0.97,
-    "termSpread": 1.18
+    "termSpread": 1.18,
+    "mortgageRate": 3.05
   },
   {
     "date": "2021-10-22",
@@ -2454,7 +2726,8 @@
     "nominalRate": 1.66,
     "breakeven": 2.64,
     "realRate": -0.9800000000000002,
-    "termSpread": 1.18
+    "termSpread": 1.18,
+    "mortgageRate": 3.09
   },
   {
     "date": "2021-10-29",
@@ -2463,7 +2736,8 @@
     "nominalRate": 1.55,
     "breakeven": 2.51,
     "realRate": -0.9599999999999997,
-    "termSpread": 1.07
+    "termSpread": 1.07,
+    "mortgageRate": 3.14
   },
   {
     "date": "2021-11-05",
@@ -2472,7 +2746,8 @@
     "nominalRate": 1.45,
     "breakeven": 2.54,
     "realRate": -1.09,
-    "termSpread": 1.06
+    "termSpread": 1.06,
+    "mortgageRate": 3.09
   },
   {
     "date": "2021-11-12",
@@ -2481,7 +2756,8 @@
     "nominalRate": 1.58,
     "breakeven": 2.73,
     "realRate": -1.15,
-    "termSpread": 1.05
+    "termSpread": 1.05,
+    "mortgageRate": 2.98
   },
   {
     "date": "2021-11-19",
@@ -2490,7 +2766,8 @@
     "nominalRate": 1.54,
     "breakeven": 2.65,
     "realRate": -1.1099999999999999,
-    "termSpread": 1.02
+    "termSpread": 1.02,
+    "mortgageRate": 3.1
   },
   {
     "date": "2021-11-26",
@@ -2499,7 +2776,8 @@
     "nominalRate": 1.48,
     "breakeven": 2.55,
     "realRate": -1.0699999999999998,
-    "termSpread": 0.98
+    "termSpread": 0.98,
+    "mortgageRate": 3.1
   },
   {
     "date": "2021-12-03",
@@ -2508,7 +2786,8 @@
     "nominalRate": 1.35,
     "breakeven": 2.43,
     "realRate": -1.08,
-    "termSpread": 0.75
+    "termSpread": 0.75,
+    "mortgageRate": 3.11
   },
   {
     "date": "2021-12-10",
@@ -2517,7 +2796,8 @@
     "nominalRate": 1.48,
     "breakeven": 2.44,
     "realRate": -0.96,
-    "termSpread": 0.81
+    "termSpread": 0.81,
+    "mortgageRate": 3.1
   },
   {
     "date": "2021-12-17",
@@ -2526,7 +2806,8 @@
     "nominalRate": 1.41,
     "breakeven": 2.38,
     "realRate": -0.97,
-    "termSpread": 0.75
+    "termSpread": 0.75,
+    "mortgageRate": 3.12
   },
   {
     "date": "2021-12-24",
@@ -2535,7 +2816,8 @@
     "nominalRate": 1.5,
     "breakeven": 2.47,
     "realRate": -0.9700000000000002,
-    "termSpread": 0.79
+    "termSpread": 0.79,
+    "mortgageRate": 3.05
   },
   {
     "date": "2021-12-31",
@@ -2544,7 +2826,8 @@
     "nominalRate": 1.52,
     "breakeven": 2.56,
     "realRate": -1.04,
-    "termSpread": 0.79
+    "termSpread": 0.79,
+    "mortgageRate": 3.11
   },
   {
     "date": "2022-01-07",
@@ -2553,7 +2836,8 @@
     "nominalRate": 1.76,
     "breakeven": 2.48,
     "realRate": -0.72,
-    "termSpread": 0.89
+    "termSpread": 0.89,
+    "mortgageRate": 3.22
   },
   {
     "date": "2022-01-14",
@@ -2562,7 +2846,8 @@
     "nominalRate": 1.78,
     "breakeven": 2.44,
     "realRate": -0.6599999999999999,
-    "termSpread": 0.79
+    "termSpread": 0.79,
+    "mortgageRate": 3.45
   },
   {
     "date": "2022-01-21",
@@ -2571,7 +2856,8 @@
     "nominalRate": 1.75,
     "breakeven": 2.34,
     "realRate": -0.5899999999999999,
-    "termSpread": 0.74
+    "termSpread": 0.74,
+    "mortgageRate": 3.56
   },
   {
     "date": "2022-01-28",
@@ -2580,7 +2866,8 @@
     "nominalRate": 1.78,
     "breakeven": 2.44,
     "realRate": -0.6599999999999999,
-    "termSpread": 0.63
+    "termSpread": 0.63,
+    "mortgageRate": 3.55
   },
   {
     "date": "2022-02-04",
@@ -2589,7 +2876,8 @@
     "nominalRate": 1.93,
     "breakeven": 2.41,
     "realRate": -0.4800000000000002,
-    "termSpread": 0.62
+    "termSpread": 0.62,
+    "mortgageRate": 3.55
   },
   {
     "date": "2022-02-11",
@@ -2598,7 +2886,8 @@
     "nominalRate": 1.92,
     "breakeven": 2.43,
     "realRate": -0.5100000000000002,
-    "termSpread": 0.42
+    "termSpread": 0.42,
+    "mortgageRate": 3.69
   },
   {
     "date": "2022-02-18",
@@ -2607,7 +2896,8 @@
     "nominalRate": 1.92,
     "breakeven": 2.41,
     "realRate": -0.4900000000000002,
-    "termSpread": 0.45
+    "termSpread": 0.45,
+    "mortgageRate": 3.92
   },
   {
     "date": "2022-02-25",
@@ -2616,7 +2906,8 @@
     "nominalRate": 1.97,
     "breakeven": 2.54,
     "realRate": -0.5700000000000001,
-    "termSpread": 0.42
+    "termSpread": 0.42,
+    "mortgageRate": 3.89
   },
   {
     "date": "2022-03-04",
@@ -2625,7 +2916,8 @@
     "nominalRate": 1.74,
     "breakeven": 2.67,
     "realRate": -0.9299999999999999,
-    "termSpread": 0.24
+    "termSpread": 0.24,
+    "mortgageRate": 3.76
   },
   {
     "date": "2022-03-11",
@@ -2634,7 +2926,8 @@
     "nominalRate": 2,
     "breakeven": 2.94,
     "realRate": -0.94,
-    "termSpread": 0.25
+    "termSpread": 0.25,
+    "mortgageRate": 3.85
   },
   {
     "date": "2022-03-18",
@@ -2643,7 +2936,8 @@
     "nominalRate": 2.14,
     "breakeven": 2.86,
     "realRate": -0.7199999999999998,
-    "termSpread": 0.17
+    "termSpread": 0.17,
+    "mortgageRate": 4.16
   },
   {
     "date": "2022-03-25",
@@ -2652,7 +2946,8 @@
     "nominalRate": 2.48,
     "breakeven": 2.95,
     "realRate": -0.4700000000000002,
-    "termSpread": 0.18
+    "termSpread": 0.18,
+    "mortgageRate": 4.42
   },
   {
     "date": "2022-04-01",
@@ -2661,7 +2956,8 @@
     "nominalRate": 2.39,
     "breakeven": 2.8,
     "realRate": -0.4099999999999997,
-    "termSpread": -0.05
+    "termSpread": -0.05,
+    "mortgageRate": 4.67
   },
   {
     "date": "2022-04-08",
@@ -2670,7 +2966,8 @@
     "nominalRate": 2.72,
     "breakeven": 2.87,
     "realRate": -0.1499999999999999,
-    "termSpread": 0.19
+    "termSpread": 0.19,
+    "mortgageRate": 4.72
   },
   {
     "date": "2022-04-15",
@@ -2679,7 +2976,8 @@
     "nominalRate": 2.83,
     "breakeven": 2.89,
     "realRate": -0.06000000000000005,
-    "termSpread": 0.36
+    "termSpread": 0.36,
+    "mortgageRate": 5
   },
   {
     "date": "2022-04-22",
@@ -2688,7 +2986,8 @@
     "nominalRate": 2.9,
     "breakeven": 2.98,
     "realRate": -0.08000000000000007,
-    "termSpread": 0.18
+    "termSpread": 0.18,
+    "mortgageRate": 5.11
   },
   {
     "date": "2022-04-29",
@@ -2697,7 +2996,8 @@
     "nominalRate": 2.89,
     "breakeven": 2.88,
     "realRate": 0.010000000000000231,
-    "termSpread": 0.19
+    "termSpread": 0.19,
+    "mortgageRate": 5.1
   },
   {
     "date": "2022-05-06",
@@ -2706,7 +3006,8 @@
     "nominalRate": 3.12,
     "breakeven": 2.86,
     "realRate": 0.26000000000000023,
-    "termSpread": 0.4
+    "termSpread": 0.4,
+    "mortgageRate": 5.27
   },
   {
     "date": "2022-05-13",
@@ -2715,7 +3016,8 @@
     "nominalRate": 2.93,
     "breakeven": 2.69,
     "realRate": 0.2400000000000002,
-    "termSpread": 0.32
+    "termSpread": 0.32,
+    "mortgageRate": 5.3
   },
   {
     "date": "2022-05-20",
@@ -2724,7 +3026,8 @@
     "nominalRate": 2.78,
     "breakeven": 2.55,
     "realRate": 0.22999999999999998,
-    "termSpread": 0.18
+    "termSpread": 0.18,
+    "mortgageRate": 5.25
   },
   {
     "date": "2022-05-27",
@@ -2733,7 +3036,8 @@
     "nominalRate": 2.74,
     "breakeven": 2.63,
     "realRate": 0.11000000000000032,
-    "termSpread": 0.27
+    "termSpread": 0.27,
+    "mortgageRate": 5.1
   },
   {
     "date": "2022-06-03",
@@ -2742,7 +3046,8 @@
     "nominalRate": 2.96,
     "breakeven": 2.74,
     "realRate": 0.21999999999999975,
-    "termSpread": 0.3
+    "termSpread": 0.3,
+    "mortgageRate": 5.09
   },
   {
     "date": "2022-06-10",
@@ -2751,7 +3056,8 @@
     "nominalRate": 3.15,
     "breakeven": 2.76,
     "realRate": 0.3900000000000001,
-    "termSpread": 0.09
+    "termSpread": 0.09,
+    "mortgageRate": 5.23
   },
   {
     "date": "2022-06-17",
@@ -2760,7 +3066,8 @@
     "nominalRate": 3.25,
     "breakeven": 2.58,
     "realRate": 0.6699999999999999,
-    "termSpread": 0.08
+    "termSpread": 0.08,
+    "mortgageRate": 5.78
   },
   {
     "date": "2022-06-24",
@@ -2769,7 +3076,8 @@
     "nominalRate": 3.13,
     "breakeven": 2.56,
     "realRate": 0.5699999999999998,
-    "termSpread": 0.09
+    "termSpread": 0.09,
+    "mortgageRate": 5.81
   },
   {
     "date": "2022-07-01",
@@ -2778,7 +3086,8 @@
     "nominalRate": 2.88,
     "breakeven": 2.34,
     "realRate": 0.54,
-    "termSpread": 0.04
+    "termSpread": 0.04,
+    "mortgageRate": 5.7
   },
   {
     "date": "2022-07-08",
@@ -2787,7 +3096,8 @@
     "nominalRate": 3.09,
     "breakeven": 2.37,
     "realRate": 0.7199999999999998,
-    "termSpread": -0.03
+    "termSpread": -0.03,
+    "mortgageRate": 5.3
   },
   {
     "date": "2022-07-15",
@@ -2796,7 +3106,8 @@
     "nominalRate": 2.93,
     "breakeven": 2.36,
     "realRate": 0.5700000000000003,
-    "termSpread": -0.2
+    "termSpread": -0.2,
+    "mortgageRate": 5.51
   },
   {
     "date": "2022-07-22",
@@ -2805,7 +3116,8 @@
     "nominalRate": 2.77,
     "breakeven": 2.34,
     "realRate": 0.43000000000000016,
-    "termSpread": -0.21
+    "termSpread": -0.21,
+    "mortgageRate": 5.54
   },
   {
     "date": "2022-07-29",
@@ -2814,7 +3126,8 @@
     "nominalRate": 2.67,
     "breakeven": 2.53,
     "realRate": 0.14000000000000012,
-    "termSpread": -0.22
+    "termSpread": -0.22,
+    "mortgageRate": 5.3
   },
   {
     "date": "2022-08-05",
@@ -2823,7 +3136,8 @@
     "nominalRate": 2.83,
     "breakeven": 2.46,
     "realRate": 0.3700000000000001,
-    "termSpread": -0.41
+    "termSpread": -0.41,
+    "mortgageRate": 4.99
   },
   {
     "date": "2022-08-12",
@@ -2832,7 +3146,8 @@
     "nominalRate": 2.84,
     "breakeven": 2.47,
     "realRate": 0.36999999999999966,
-    "termSpread": -0.41
+    "termSpread": -0.41,
+    "mortgageRate": 5.22
   },
   {
     "date": "2022-08-19",
@@ -2841,7 +3156,8 @@
     "nominalRate": 2.98,
     "breakeven": 2.55,
     "realRate": 0.43000000000000016,
-    "termSpread": -0.27
+    "termSpread": -0.27,
+    "mortgageRate": 5.13
   },
   {
     "date": "2022-08-26",
@@ -2850,7 +3166,8 @@
     "nominalRate": 3.04,
     "breakeven": 2.57,
     "realRate": 0.4700000000000002,
-    "termSpread": -0.33
+    "termSpread": -0.33,
+    "mortgageRate": 5.55
   },
   {
     "date": "2022-09-02",
@@ -2859,7 +3176,8 @@
     "nominalRate": 3.2,
     "breakeven": 2.47,
     "realRate": 0.73,
-    "termSpread": -0.2
+    "termSpread": -0.2,
+    "mortgageRate": 5.66
   },
   {
     "date": "2022-09-09",
@@ -2868,7 +3186,8 @@
     "nominalRate": 3.33,
     "breakeven": 2.42,
     "realRate": 0.9100000000000001,
-    "termSpread": -0.23
+    "termSpread": -0.23,
+    "mortgageRate": 5.89
   },
   {
     "date": "2022-09-16",
@@ -2877,7 +3196,8 @@
     "nominalRate": 3.45,
     "breakeven": 2.38,
     "realRate": 1.0700000000000003,
-    "termSpread": -0.4
+    "termSpread": -0.4,
+    "mortgageRate": 6.02
   },
   {
     "date": "2022-09-23",
@@ -2886,7 +3206,8 @@
     "nominalRate": 3.69,
     "breakeven": 2.37,
     "realRate": 1.3199999999999998,
-    "termSpread": -0.51
+    "termSpread": -0.51,
+    "mortgageRate": 6.29
   },
   {
     "date": "2022-09-30",
@@ -2895,7 +3216,8 @@
     "nominalRate": 3.83,
     "breakeven": 2.15,
     "realRate": 1.6800000000000002,
-    "termSpread": -0.39
+    "termSpread": -0.39,
+    "mortgageRate": 6.7
   },
   {
     "date": "2022-10-07",
@@ -2904,7 +3226,8 @@
     "nominalRate": 3.89,
     "breakeven": 2.27,
     "realRate": 1.62,
-    "termSpread": -0.41
+    "termSpread": -0.41,
+    "mortgageRate": 6.66
   },
   {
     "date": "2022-10-14",
@@ -2913,7 +3236,8 @@
     "nominalRate": 4,
     "breakeven": 2.41,
     "realRate": 1.5899999999999999,
-    "termSpread": -0.48
+    "termSpread": -0.48,
+    "mortgageRate": 6.92
   },
   {
     "date": "2022-10-21",
@@ -2922,7 +3246,8 @@
     "nominalRate": 4.21,
     "breakeven": 2.52,
     "realRate": 1.69,
-    "termSpread": -0.28
+    "termSpread": -0.28,
+    "mortgageRate": 6.94
   },
   {
     "date": "2022-10-28",
@@ -2931,7 +3256,8 @@
     "nominalRate": 4.02,
     "breakeven": 2.51,
     "realRate": 1.5099999999999998,
-    "termSpread": -0.39
+    "termSpread": -0.39,
+    "mortgageRate": 7.08
   },
   {
     "date": "2022-11-04",
@@ -2940,7 +3266,8 @@
     "nominalRate": 4.17,
     "breakeven": 2.48,
     "realRate": 1.69,
-    "termSpread": -0.49
+    "termSpread": -0.49,
+    "mortgageRate": 6.95
   },
   {
     "date": "2022-11-11",
@@ -2949,7 +3276,8 @@
     "nominalRate": 3.82,
     "breakeven": 2.39,
     "realRate": 1.4299999999999997,
-    "termSpread": -0.52
+    "termSpread": -0.52,
+    "mortgageRate": 7.08
   },
   {
     "date": "2022-11-18",
@@ -2958,7 +3286,8 @@
     "nominalRate": 3.82,
     "breakeven": 2.25,
     "realRate": 1.5699999999999998,
-    "termSpread": -0.69
+    "termSpread": -0.69,
+    "mortgageRate": 6.61
   },
   {
     "date": "2022-11-25",
@@ -2967,7 +3296,8 @@
     "nominalRate": 3.68,
     "breakeven": 2.32,
     "realRate": 1.3600000000000003,
-    "termSpread": -0.74
+    "termSpread": -0.74,
+    "mortgageRate": 6.58
   },
   {
     "date": "2022-12-02",
@@ -2976,7 +3306,8 @@
     "nominalRate": 3.51,
     "breakeven": 2.43,
     "realRate": 1.0799999999999996,
-    "termSpread": -0.77
+    "termSpread": -0.77,
+    "mortgageRate": 6.49
   },
   {
     "date": "2022-12-09",
@@ -2985,7 +3316,8 @@
     "nominalRate": 3.57,
     "breakeven": 2.26,
     "realRate": 1.31,
-    "termSpread": -0.76
+    "termSpread": -0.76,
+    "mortgageRate": 6.33
   },
   {
     "date": "2022-12-16",
@@ -2994,7 +3326,8 @@
     "nominalRate": 3.48,
     "breakeven": 2.13,
     "realRate": 1.35,
-    "termSpread": -0.69
+    "termSpread": -0.69,
+    "mortgageRate": 6.31
   },
   {
     "date": "2022-12-23",
@@ -3003,7 +3336,8 @@
     "nominalRate": 3.75,
     "breakeven": 2.2,
     "realRate": 1.5499999999999998,
-    "termSpread": -0.56
+    "termSpread": -0.56,
+    "mortgageRate": 6.27
   },
   {
     "date": "2022-12-30",
@@ -3012,7 +3346,8 @@
     "nominalRate": 3.88,
     "breakeven": 2.3,
     "realRate": 1.58,
-    "termSpread": -0.53
+    "termSpread": -0.53,
+    "mortgageRate": 6.42
   },
   {
     "date": "2023-01-06",
@@ -3021,7 +3356,8 @@
     "nominalRate": 3.55,
     "breakeven": 2.21,
     "realRate": 1.3399999999999999,
-    "termSpread": -0.69
+    "termSpread": -0.69,
+    "mortgageRate": 6.48
   },
   {
     "date": "2023-01-13",
@@ -3030,7 +3366,8 @@
     "nominalRate": 3.49,
     "breakeven": 2.18,
     "realRate": 1.31,
-    "termSpread": -0.73
+    "termSpread": -0.73,
+    "mortgageRate": 6.33
   },
   {
     "date": "2023-01-20",
@@ -3039,7 +3376,8 @@
     "nominalRate": 3.48,
     "breakeven": 2.23,
     "realRate": 1.25,
-    "termSpread": -0.66
+    "termSpread": -0.66,
+    "mortgageRate": 6.15
   },
   {
     "date": "2023-01-27",
@@ -3048,7 +3386,8 @@
     "nominalRate": 3.52,
     "breakeven": 2.33,
     "realRate": 1.19,
-    "termSpread": -0.67
+    "termSpread": -0.67,
+    "mortgageRate": 6.13
   },
   {
     "date": "2023-02-03",
@@ -3057,7 +3396,8 @@
     "nominalRate": 3.53,
     "breakeven": 2.22,
     "realRate": 1.3099999999999996,
-    "termSpread": -0.77
+    "termSpread": -0.77,
+    "mortgageRate": 6.09
   },
   {
     "date": "2023-02-10",
@@ -3066,7 +3406,8 @@
     "nominalRate": 3.74,
     "breakeven": 2.33,
     "realRate": 1.4100000000000001,
-    "termSpread": -0.76
+    "termSpread": -0.76,
+    "mortgageRate": 6.12
   },
   {
     "date": "2023-02-17",
@@ -3075,7 +3416,8 @@
     "nominalRate": 3.82,
     "breakeven": 2.36,
     "realRate": 1.46,
-    "termSpread": -0.78
+    "termSpread": -0.78,
+    "mortgageRate": 6.32
   },
   {
     "date": "2023-02-24",
@@ -3084,7 +3426,8 @@
     "nominalRate": 3.95,
     "breakeven": 2.38,
     "realRate": 1.5700000000000003,
-    "termSpread": -0.83
+    "termSpread": -0.83,
+    "mortgageRate": 6.5
   },
   {
     "date": "2023-03-03",
@@ -3093,7 +3436,8 @@
     "nominalRate": 3.97,
     "breakeven": 2.52,
     "realRate": 1.4500000000000002,
-    "termSpread": -0.89
+    "termSpread": -0.89,
+    "mortgageRate": 6.65
   },
   {
     "date": "2023-03-10",
@@ -3102,7 +3446,8 @@
     "nominalRate": 3.7,
     "breakeven": 2.26,
     "realRate": 1.4400000000000004,
-    "termSpread": -0.9
+    "termSpread": -0.9,
+    "mortgageRate": 6.73
   },
   {
     "date": "2023-03-17",
@@ -3111,7 +3456,8 @@
     "nominalRate": 3.39,
     "breakeven": 2.1,
     "realRate": 1.29,
-    "termSpread": -0.42
+    "termSpread": -0.42,
+    "mortgageRate": 6.6
   },
   {
     "date": "2023-03-24",
@@ -3120,7 +3466,8 @@
     "nominalRate": 3.38,
     "breakeven": 2.22,
     "realRate": 1.1599999999999997,
-    "termSpread": -0.38
+    "termSpread": -0.38,
+    "mortgageRate": 6.42
   },
   {
     "date": "2023-03-31",
@@ -3129,7 +3476,8 @@
     "nominalRate": 3.48,
     "breakeven": 2.32,
     "realRate": 1.1600000000000001,
-    "termSpread": -0.58
+    "termSpread": -0.58,
+    "mortgageRate": 6.32
   },
   {
     "date": "2023-04-07",
@@ -3138,7 +3486,8 @@
     "nominalRate": 3.39,
     "breakeven": 2.25,
     "realRate": 1.1400000000000001,
-    "termSpread": -0.58
+    "termSpread": -0.58,
+    "mortgageRate": 6.28
   },
   {
     "date": "2023-04-14",
@@ -3147,7 +3496,8 @@
     "nominalRate": 3.52,
     "breakeven": 2.3,
     "realRate": 1.2200000000000002,
-    "termSpread": -0.56
+    "termSpread": -0.56,
+    "mortgageRate": 6.27
   },
   {
     "date": "2023-04-21",
@@ -3156,7 +3506,8 @@
     "nominalRate": 3.57,
     "breakeven": 2.28,
     "realRate": 1.29,
-    "termSpread": -0.6
+    "termSpread": -0.6,
+    "mortgageRate": 6.39
   },
   {
     "date": "2023-04-28",
@@ -3165,7 +3516,8 @@
     "nominalRate": 3.44,
     "breakeven": 2.18,
     "realRate": 1.2599999999999998,
-    "termSpread": -0.6
+    "termSpread": -0.6,
+    "mortgageRate": 6.43
   },
   {
     "date": "2023-05-05",
@@ -3174,7 +3526,8 @@
     "nominalRate": 3.44,
     "breakeven": 2.21,
     "realRate": 1.23,
-    "termSpread": -0.48
+    "termSpread": -0.48,
+    "mortgageRate": 6.39
   },
   {
     "date": "2023-05-12",
@@ -3183,7 +3536,8 @@
     "nominalRate": 3.46,
     "breakeven": 2.18,
     "realRate": 1.2799999999999998,
-    "termSpread": -0.52
+    "termSpread": -0.52,
+    "mortgageRate": 6.35
   },
   {
     "date": "2023-05-19",
@@ -3192,7 +3546,8 @@
     "nominalRate": 3.7,
     "breakeven": 2.24,
     "realRate": 1.46,
-    "termSpread": -0.58
+    "termSpread": -0.58,
+    "mortgageRate": 6.39
   },
   {
     "date": "2023-05-26",
@@ -3201,7 +3556,8 @@
     "nominalRate": 3.8,
     "breakeven": 2.23,
     "realRate": 1.5699999999999998,
-    "termSpread": -0.74
+    "termSpread": -0.74,
+    "mortgageRate": 6.57
   },
   {
     "date": "2023-06-02",
@@ -3210,7 +3566,8 @@
     "nominalRate": 3.69,
     "breakeven": 2.18,
     "realRate": 1.5099999999999998,
-    "termSpread": -0.81
+    "termSpread": -0.81,
+    "mortgageRate": 6.79
   },
   {
     "date": "2023-06-09",
@@ -3219,7 +3576,8 @@
     "nominalRate": 3.75,
     "breakeven": 2.2,
     "realRate": 1.5499999999999998,
-    "termSpread": -0.84
+    "termSpread": -0.84,
+    "mortgageRate": 6.71
   },
   {
     "date": "2023-06-16",
@@ -3228,7 +3586,8 @@
     "nominalRate": 3.77,
     "breakeven": 2.22,
     "realRate": 1.5499999999999998,
-    "termSpread": -0.93
+    "termSpread": -0.93,
+    "mortgageRate": 6.69
   },
   {
     "date": "2023-06-23",
@@ -3237,7 +3596,8 @@
     "nominalRate": 3.74,
     "breakeven": 2.21,
     "realRate": 1.5300000000000002,
-    "termSpread": -0.97
+    "termSpread": -0.97,
+    "mortgageRate": 6.67
   },
   {
     "date": "2023-06-30",
@@ -3246,7 +3606,8 @@
     "nominalRate": 3.81,
     "breakeven": 2.22,
     "realRate": 1.5899999999999999,
-    "termSpread": -1.06
+    "termSpread": -1.06,
+    "mortgageRate": 6.71
   },
   {
     "date": "2023-07-07",
@@ -3255,7 +3616,8 @@
     "nominalRate": 4.06,
     "breakeven": 2.27,
     "realRate": 1.7899999999999996,
-    "termSpread": -0.88
+    "termSpread": -0.88,
+    "mortgageRate": 6.81
   },
   {
     "date": "2023-07-14",
@@ -3264,7 +3626,8 @@
     "nominalRate": 3.83,
     "breakeven": 2.24,
     "realRate": 1.5899999999999999,
-    "termSpread": -0.91
+    "termSpread": -0.91,
+    "mortgageRate": 6.96
   },
   {
     "date": "2023-07-21",
@@ -3273,7 +3636,8 @@
     "nominalRate": 3.84,
     "breakeven": 2.35,
     "realRate": 1.4899999999999998,
-    "termSpread": -0.98
+    "termSpread": -0.98,
+    "mortgageRate": 6.78
   },
   {
     "date": "2023-07-28",
@@ -3282,7 +3646,8 @@
     "nominalRate": 3.96,
     "breakeven": 2.38,
     "realRate": 1.58,
-    "termSpread": -0.91
+    "termSpread": -0.91,
+    "mortgageRate": 6.81
   },
   {
     "date": "2023-08-04",
@@ -3291,7 +3656,8 @@
     "nominalRate": 4.05,
     "breakeven": 2.38,
     "realRate": 1.67,
-    "termSpread": -0.73
+    "termSpread": -0.73,
+    "mortgageRate": 6.9
   },
   {
     "date": "2023-08-11",
@@ -3300,7 +3666,8 @@
     "nominalRate": 4.16,
     "breakeven": 2.36,
     "realRate": 1.8000000000000003,
-    "termSpread": -0.73
+    "termSpread": -0.73,
+    "mortgageRate": 6.96
   },
   {
     "date": "2023-08-18",
@@ -3309,7 +3676,8 @@
     "nominalRate": 4.26,
     "breakeven": 2.32,
     "realRate": 1.94,
-    "termSpread": -0.66
+    "termSpread": -0.66,
+    "mortgageRate": 7.09
   },
   {
     "date": "2023-08-25",
@@ -3318,7 +3686,8 @@
     "nominalRate": 4.25,
     "breakeven": 2.33,
     "realRate": 1.92,
-    "termSpread": -0.78
+    "termSpread": -0.78,
+    "mortgageRate": 7.23
   },
   {
     "date": "2023-09-01",
@@ -3327,7 +3696,8 @@
     "nominalRate": 4.18,
     "breakeven": 2.26,
     "realRate": 1.92,
-    "termSpread": -0.69
+    "termSpread": -0.69,
+    "mortgageRate": 7.18
   },
   {
     "date": "2023-09-08",
@@ -3336,7 +3706,8 @@
     "nominalRate": 4.26,
     "breakeven": 2.33,
     "realRate": 1.9299999999999997,
-    "termSpread": -0.72
+    "termSpread": -0.72,
+    "mortgageRate": 7.12
   },
   {
     "date": "2023-09-15",
@@ -3345,7 +3716,8 @@
     "nominalRate": 4.33,
     "breakeven": 2.35,
     "realRate": 1.98,
-    "termSpread": -0.69
+    "termSpread": -0.69,
+    "mortgageRate": 7.18
   },
   {
     "date": "2023-09-22",
@@ -3354,7 +3726,8 @@
     "nominalRate": 4.44,
     "breakeven": 2.37,
     "realRate": 2.0700000000000003,
-    "termSpread": -0.66
+    "termSpread": -0.66,
+    "mortgageRate": 7.19
   },
   {
     "date": "2023-09-29",
@@ -3363,7 +3736,8 @@
     "nominalRate": 4.59,
     "breakeven": 2.35,
     "realRate": 2.2399999999999998,
-    "termSpread": -0.44
+    "termSpread": -0.44,
+    "mortgageRate": 7.31
   },
   {
     "date": "2023-10-06",
@@ -3372,7 +3746,8 @@
     "nominalRate": 4.78,
     "breakeven": 2.31,
     "realRate": 2.47,
-    "termSpread": -0.3
+    "termSpread": -0.3,
+    "mortgageRate": 7.49
   },
   {
     "date": "2023-10-13",
@@ -3381,7 +3756,8 @@
     "nominalRate": 4.63,
     "breakeven": 2.34,
     "realRate": 2.29,
-    "termSpread": -0.41
+    "termSpread": -0.41,
+    "mortgageRate": 7.57
   },
   {
     "date": "2023-10-20",
@@ -3390,7 +3766,8 @@
     "nominalRate": 4.93,
     "breakeven": 2.47,
     "realRate": 2.4599999999999995,
-    "termSpread": -0.14
+    "termSpread": -0.14,
+    "mortgageRate": 7.63
   },
   {
     "date": "2023-10-27",
@@ -3399,7 +3776,8 @@
     "nominalRate": 4.84,
     "breakeven": 2.42,
     "realRate": 2.42,
-    "termSpread": -0.15
+    "termSpread": -0.15,
+    "mortgageRate": 7.79
   },
   {
     "date": "2023-11-03",
@@ -3408,7 +3786,8 @@
     "nominalRate": 4.57,
     "breakeven": 2.39,
     "realRate": 2.18,
-    "termSpread": -0.26
+    "termSpread": -0.26,
+    "mortgageRate": 7.76
   },
   {
     "date": "2023-11-10",
@@ -3417,7 +3796,8 @@
     "nominalRate": 4.61,
     "breakeven": 2.32,
     "realRate": 2.2900000000000005,
-    "termSpread": -0.43
+    "termSpread": -0.43,
+    "mortgageRate": 7.5
   },
   {
     "date": "2023-11-17",
@@ -3426,7 +3806,8 @@
     "nominalRate": 4.44,
     "breakeven": 2.28,
     "realRate": 2.1600000000000006,
-    "termSpread": -0.44
+    "termSpread": -0.44,
+    "mortgageRate": 7.44
   },
   {
     "date": "2023-11-24",
@@ -3435,7 +3816,8 @@
     "nominalRate": 4.47,
     "breakeven": 2.26,
     "realRate": 2.21,
-    "termSpread": -0.45
+    "termSpread": -0.45,
+    "mortgageRate": 7.29
   },
   {
     "date": "2023-12-01",
@@ -3444,7 +3826,8 @@
     "nominalRate": 4.22,
     "breakeven": 2.22,
     "realRate": 1.9999999999999996,
-    "termSpread": -0.34
+    "termSpread": -0.34,
+    "mortgageRate": 7.22
   },
   {
     "date": "2023-12-08",
@@ -3453,7 +3836,8 @@
     "nominalRate": 4.23,
     "breakeven": 2.21,
     "realRate": 2.0200000000000005,
-    "termSpread": -0.48
+    "termSpread": -0.48,
+    "mortgageRate": 7.03
   },
   {
     "date": "2023-12-15",
@@ -3462,7 +3846,8 @@
     "nominalRate": 3.91,
     "breakeven": 2.22,
     "realRate": 1.69,
-    "termSpread": -0.53
+    "termSpread": -0.53,
+    "mortgageRate": 6.95
   },
   {
     "date": "2023-12-22",
@@ -3471,7 +3856,8 @@
     "nominalRate": 3.9,
     "breakeven": 2.19,
     "realRate": 1.71,
-    "termSpread": -0.41
+    "termSpread": -0.41,
+    "mortgageRate": 6.67
   },
   {
     "date": "2023-12-29",
@@ -3480,7 +3866,8 @@
     "nominalRate": 3.88,
     "breakeven": 2.16,
     "realRate": 1.7199999999999998,
-    "termSpread": -0.35
+    "termSpread": -0.35,
+    "mortgageRate": 6.61
   },
   {
     "date": "2024-01-05",
@@ -3489,7 +3876,8 @@
     "nominalRate": 4.05,
     "breakeven": 2.22,
     "realRate": 1.8299999999999996,
-    "termSpread": -0.35
+    "termSpread": -0.35,
+    "mortgageRate": 6.62
   },
   {
     "date": "2024-01-12",
@@ -3498,7 +3886,8 @@
     "nominalRate": 3.96,
     "breakeven": 2.27,
     "realRate": 1.69,
-    "termSpread": -0.18
+    "termSpread": -0.18,
+    "mortgageRate": 6.66
   },
   {
     "date": "2024-01-19",
@@ -3507,7 +3896,8 @@
     "nominalRate": 4.15,
     "breakeven": 2.34,
     "realRate": 1.8100000000000005,
-    "termSpread": -0.24
+    "termSpread": -0.24,
+    "mortgageRate": 6.6
   },
   {
     "date": "2024-01-26",
@@ -3516,7 +3906,8 @@
     "nominalRate": 4.15,
     "breakeven": 2.3,
     "realRate": 1.8500000000000005,
-    "termSpread": -0.19
+    "termSpread": -0.19,
+    "mortgageRate": 6.69
   },
   {
     "date": "2024-02-02",
@@ -3525,7 +3916,8 @@
     "nominalRate": 4.03,
     "breakeven": 2.21,
     "realRate": 1.8200000000000003,
-    "termSpread": -0.33
+    "termSpread": -0.33,
+    "mortgageRate": 6.63
   },
   {
     "date": "2024-02-09",
@@ -3534,7 +3926,8 @@
     "nominalRate": 4.17,
     "breakeven": 2.25,
     "realRate": 1.92,
-    "termSpread": -0.31
+    "termSpread": -0.31,
+    "mortgageRate": 6.64
   },
   {
     "date": "2024-02-16",
@@ -3543,7 +3936,8 @@
     "nominalRate": 4.3,
     "breakeven": 2.33,
     "realRate": 1.9699999999999998,
-    "termSpread": -0.34
+    "termSpread": -0.34,
+    "mortgageRate": 6.77
   },
   {
     "date": "2024-02-23",
@@ -3552,7 +3946,8 @@
     "nominalRate": 4.26,
     "breakeven": 2.3,
     "realRate": 1.96,
-    "termSpread": -0.41
+    "termSpread": -0.41,
+    "mortgageRate": 6.9
   },
   {
     "date": "2024-03-01",
@@ -3561,7 +3956,8 @@
     "nominalRate": 4.19,
     "breakeven": 2.32,
     "realRate": 1.8700000000000006,
-    "termSpread": -0.35
+    "termSpread": -0.35,
+    "mortgageRate": 6.94
   },
   {
     "date": "2024-03-08",
@@ -3570,7 +3966,8 @@
     "nominalRate": 4.09,
     "breakeven": 2.28,
     "realRate": 1.81,
-    "termSpread": -0.39
+    "termSpread": -0.39,
+    "mortgageRate": 6.88
   },
   {
     "date": "2024-03-15",
@@ -3579,7 +3976,8 @@
     "nominalRate": 4.31,
     "breakeven": 2.32,
     "realRate": 1.9899999999999998,
-    "termSpread": -0.41
+    "termSpread": -0.41,
+    "mortgageRate": 6.74
   },
   {
     "date": "2024-03-22",
@@ -3588,7 +3986,8 @@
     "nominalRate": 4.22,
     "breakeven": 2.35,
     "realRate": 1.8699999999999997,
-    "termSpread": -0.37
+    "termSpread": -0.37,
+    "mortgageRate": 6.87
   },
   {
     "date": "2024-03-29",
@@ -3597,7 +3996,8 @@
     "nominalRate": 4.2,
     "breakeven": 2.32,
     "realRate": 1.8800000000000003,
-    "termSpread": -0.39
+    "termSpread": -0.39,
+    "mortgageRate": 6.79
   },
   {
     "date": "2024-04-05",
@@ -3606,7 +4006,8 @@
     "nominalRate": 4.39,
     "breakeven": 2.37,
     "realRate": 2.0199999999999996,
-    "termSpread": -0.34
+    "termSpread": -0.34,
+    "mortgageRate": 6.82
   },
   {
     "date": "2024-04-12",
@@ -3615,7 +4016,8 @@
     "nominalRate": 4.5,
     "breakeven": 2.39,
     "realRate": 2.11,
-    "termSpread": -0.38
+    "termSpread": -0.38,
+    "mortgageRate": 6.88
   },
   {
     "date": "2024-04-19",
@@ -3624,7 +4026,8 @@
     "nominalRate": 4.62,
     "breakeven": 2.41,
     "realRate": 2.21,
-    "termSpread": -0.35
+    "termSpread": -0.35,
+    "mortgageRate": 7.1
   },
   {
     "date": "2024-04-26",
@@ -3633,7 +4036,8 @@
     "nominalRate": 4.67,
     "breakeven": 2.43,
     "realRate": 2.2399999999999998,
-    "termSpread": -0.29
+    "termSpread": -0.29,
+    "mortgageRate": 7.17
   },
   {
     "date": "2024-05-03",
@@ -3642,7 +4046,8 @@
     "nominalRate": 4.5,
     "breakeven": 2.35,
     "realRate": 2.15,
-    "termSpread": -0.31
+    "termSpread": -0.31,
+    "mortgageRate": 7.22
   },
   {
     "date": "2024-05-10",
@@ -3651,7 +4056,8 @@
     "nominalRate": 4.5,
     "breakeven": 2.34,
     "realRate": 2.16,
-    "termSpread": -0.37
+    "termSpread": -0.37,
+    "mortgageRate": 7.09
   },
   {
     "date": "2024-05-17",
@@ -3660,7 +4066,8 @@
     "nominalRate": 4.42,
     "breakeven": 2.32,
     "realRate": 2.1,
-    "termSpread": -0.41
+    "termSpread": -0.41,
+    "mortgageRate": 7.02
   },
   {
     "date": "2024-05-24",
@@ -3669,7 +4076,8 @@
     "nominalRate": 4.46,
     "breakeven": 2.32,
     "realRate": 2.14,
-    "termSpread": -0.47
+    "termSpread": -0.47,
+    "mortgageRate": 6.94
   },
   {
     "date": "2024-05-31",
@@ -3678,7 +4086,8 @@
     "nominalRate": 4.51,
     "breakeven": 2.35,
     "realRate": 2.1599999999999997,
-    "termSpread": -0.38
+    "termSpread": -0.38,
+    "mortgageRate": 7.03
   },
   {
     "date": "2024-06-07",
@@ -3687,7 +4096,8 @@
     "nominalRate": 4.43,
     "breakeven": 2.3,
     "realRate": 2.13,
-    "termSpread": -0.44
+    "termSpread": -0.44,
+    "mortgageRate": 6.99
   },
   {
     "date": "2024-06-14",
@@ -3696,7 +4106,8 @@
     "nominalRate": 4.2,
     "breakeven": 2.17,
     "realRate": 2.0300000000000002,
-    "termSpread": -0.47
+    "termSpread": -0.47,
+    "mortgageRate": 6.95
   },
   {
     "date": "2024-06-21",
@@ -3705,7 +4116,8 @@
     "nominalRate": 4.25,
     "breakeven": 2.23,
     "realRate": 2.02,
-    "termSpread": -0.45
+    "termSpread": -0.45,
+    "mortgageRate": 6.87
   },
   {
     "date": "2024-06-28",
@@ -3714,7 +4126,8 @@
     "nominalRate": 4.36,
     "breakeven": 2.28,
     "realRate": 2.0800000000000005,
-    "termSpread": -0.35
+    "termSpread": -0.35,
+    "mortgageRate": 6.86
   },
   {
     "date": "2024-07-05",
@@ -3723,7 +4136,8 @@
     "nominalRate": 4.28,
     "breakeven": 2.28,
     "realRate": 2.0000000000000004,
-    "termSpread": -0.32
+    "termSpread": -0.32,
+    "mortgageRate": 6.95
   },
   {
     "date": "2024-07-12",
@@ -3732,7 +4146,8 @@
     "nominalRate": 4.18,
     "breakeven": 2.24,
     "realRate": 1.9399999999999995,
-    "termSpread": -0.27
+    "termSpread": -0.27,
+    "mortgageRate": 6.89
   },
   {
     "date": "2024-07-19",
@@ -3741,7 +4156,8 @@
     "nominalRate": 4.25,
     "breakeven": 2.32,
     "realRate": 1.9300000000000002,
-    "termSpread": -0.24
+    "termSpread": -0.24,
+    "mortgageRate": 6.77
   },
   {
     "date": "2024-07-26",
@@ -3750,7 +4166,8 @@
     "nominalRate": 4.2,
     "breakeven": 2.27,
     "realRate": 1.9300000000000002,
-    "termSpread": -0.16
+    "termSpread": -0.16,
+    "mortgageRate": 6.78
   },
   {
     "date": "2024-08-02",
@@ -3759,7 +4176,8 @@
     "nominalRate": 3.8,
     "breakeven": 2.04,
     "realRate": 1.7599999999999998,
-    "termSpread": -0.08
+    "termSpread": -0.08,
+    "mortgageRate": 6.73
   },
   {
     "date": "2024-08-09",
@@ -3768,7 +4186,8 @@
     "nominalRate": 3.94,
     "breakeven": 2.1,
     "realRate": 1.8399999999999999,
-    "termSpread": -0.11
+    "termSpread": -0.11,
+    "mortgageRate": 6.47
   },
   {
     "date": "2024-08-16",
@@ -3777,7 +4196,8 @@
     "nominalRate": 3.89,
     "breakeven": 2.08,
     "realRate": 1.81,
-    "termSpread": -0.17
+    "termSpread": -0.17,
+    "mortgageRate": 6.49
   },
   {
     "date": "2024-08-23",
@@ -3786,7 +4206,8 @@
     "nominalRate": 3.81,
     "breakeven": 2.13,
     "realRate": 1.6800000000000002,
-    "termSpread": -0.09
+    "termSpread": -0.09,
+    "mortgageRate": 6.46
   },
   {
     "date": "2024-08-30",
@@ -3795,7 +4216,8 @@
     "nominalRate": 3.91,
     "breakeven": 2.15,
     "realRate": 1.7600000000000002,
-    "termSpread": 0
+    "termSpread": 0,
+    "mortgageRate": 6.35
   },
   {
     "date": "2024-09-06",
@@ -3804,7 +4226,8 @@
     "nominalRate": 3.72,
     "breakeven": 2.03,
     "realRate": 1.6900000000000004,
-    "termSpread": 0.06
+    "termSpread": 0.06,
+    "mortgageRate": 6.35
   },
   {
     "date": "2024-09-13",
@@ -3813,7 +4236,8 @@
     "nominalRate": 3.66,
     "breakeven": 2.08,
     "realRate": 1.58,
-    "termSpread": 0.09
+    "termSpread": 0.09,
+    "mortgageRate": 6.2
   },
   {
     "date": "2024-09-20",
@@ -3822,7 +4246,8 @@
     "nominalRate": 3.73,
     "breakeven": 2.15,
     "realRate": 1.58,
-    "termSpread": 0.18
+    "termSpread": 0.18,
+    "mortgageRate": 6.09
   },
   {
     "date": "2024-09-27",
@@ -3831,7 +4256,8 @@
     "nominalRate": 3.75,
     "breakeven": 2.15,
     "realRate": 1.6,
-    "termSpread": 0.2
+    "termSpread": 0.2,
+    "mortgageRate": 6.08
   },
   {
     "date": "2024-10-04",
@@ -3840,7 +4266,8 @@
     "nominalRate": 3.98,
     "breakeven": 2.23,
     "realRate": 1.75,
-    "termSpread": 0.05
+    "termSpread": 0.05,
+    "mortgageRate": 6.12
   },
   {
     "date": "2024-10-11",
@@ -3849,7 +4276,8 @@
     "nominalRate": 4.08,
     "breakeven": 2.33,
     "realRate": 1.75,
-    "termSpread": 0.13
+    "termSpread": 0.13,
+    "mortgageRate": 6.32
   },
   {
     "date": "2024-10-18",
@@ -3858,7 +4286,8 @@
     "nominalRate": 4.08,
     "breakeven": 2.31,
     "realRate": 1.77,
-    "termSpread": 0.13
+    "termSpread": 0.13,
+    "mortgageRate": 6.44
   },
   {
     "date": "2024-10-25",
@@ -3867,7 +4296,8 @@
     "nominalRate": 4.25,
     "breakeven": 2.29,
     "realRate": 1.96,
-    "termSpread": 0.14
+    "termSpread": 0.14,
+    "mortgageRate": 6.54
   },
   {
     "date": "2024-11-01",
@@ -3876,7 +4306,8 @@
     "nominalRate": 4.37,
     "breakeven": 2.33,
     "realRate": 2.04,
-    "termSpread": 0.16
+    "termSpread": 0.16,
+    "mortgageRate": 6.72
   },
   {
     "date": "2024-11-08",
@@ -3885,7 +4316,8 @@
     "nominalRate": 4.3,
     "breakeven": 2.35,
     "realRate": 1.9499999999999997,
-    "termSpread": 0.04
+    "termSpread": 0.04,
+    "mortgageRate": 6.79
   },
   {
     "date": "2024-11-15",
@@ -3894,7 +4326,8 @@
     "nominalRate": 4.43,
     "breakeven": 2.33,
     "realRate": 2.0999999999999996,
-    "termSpread": 0.12
+    "termSpread": 0.12,
+    "mortgageRate": 6.78
   },
   {
     "date": "2024-11-22",
@@ -3903,7 +4336,8 @@
     "nominalRate": 4.41,
     "breakeven": 2.34,
     "realRate": 2.0700000000000003,
-    "termSpread": 0.04
+    "termSpread": 0.04,
+    "mortgageRate": 6.84
   },
   {
     "date": "2024-11-29",
@@ -3912,7 +4346,8 @@
     "nominalRate": 4.18,
     "breakeven": 2.26,
     "realRate": 1.92,
-    "termSpread": 0.05
+    "termSpread": 0.05,
+    "mortgageRate": 6.81
   },
   {
     "date": "2024-12-06",
@@ -3921,7 +4356,8 @@
     "nominalRate": 4.15,
     "breakeven": 2.24,
     "realRate": 1.9100000000000001,
-    "termSpread": 0.05
+    "termSpread": 0.05,
+    "mortgageRate": 6.69
   },
   {
     "date": "2024-12-13",
@@ -3930,7 +4366,8 @@
     "nominalRate": 4.4,
     "breakeven": 2.33,
     "realRate": 2.0700000000000003,
-    "termSpread": 0.15
+    "termSpread": 0.15,
+    "mortgageRate": 6.6
   },
   {
     "date": "2024-12-20",
@@ -3939,7 +4376,8 @@
     "nominalRate": 4.52,
     "breakeven": 2.29,
     "realRate": 2.2299999999999995,
-    "termSpread": 0.22
+    "termSpread": 0.22,
+    "mortgageRate": 6.72
   },
   {
     "date": "2024-12-27",
@@ -3948,7 +4386,8 @@
     "nominalRate": 4.62,
     "breakeven": 2.34,
     "realRate": 2.2800000000000002,
-    "termSpread": 0.31
+    "termSpread": 0.31,
+    "mortgageRate": 6.85
   },
   {
     "date": "2025-01-03",
@@ -3957,7 +4396,8 @@
     "nominalRate": 4.6,
     "breakeven": 2.34,
     "realRate": 2.26,
-    "termSpread": 0.32
+    "termSpread": 0.32,
+    "mortgageRate": 6.91
   },
   {
     "date": "2025-01-10",
@@ -3966,7 +4406,8 @@
     "nominalRate": 4.77,
     "breakeven": 2.43,
     "realRate": 2.3399999999999994,
-    "termSpread": 0.37
+    "termSpread": 0.37,
+    "mortgageRate": 6.93
   },
   {
     "date": "2025-01-17",
@@ -3975,7 +4416,8 @@
     "nominalRate": 4.61,
     "breakeven": 2.41,
     "realRate": 2.2,
-    "termSpread": 0.34
+    "termSpread": 0.34,
+    "mortgageRate": 7.04
   },
   {
     "date": "2025-01-24",
@@ -3984,7 +4426,8 @@
     "nominalRate": 4.63,
     "breakeven": 2.43,
     "realRate": 2.1999999999999997,
-    "termSpread": 0.36
+    "termSpread": 0.36,
+    "mortgageRate": 6.96
   },
   {
     "date": "2025-01-31",
@@ -3993,7 +4436,8 @@
     "nominalRate": 4.58,
     "breakeven": 2.42,
     "realRate": 2.16,
-    "termSpread": 0.36
+    "termSpread": 0.36,
+    "mortgageRate": 6.95
   },
   {
     "date": "2025-02-07",
@@ -4002,7 +4446,8 @@
     "nominalRate": 4.49,
     "breakeven": 2.42,
     "realRate": 2.0700000000000003,
-    "termSpread": 0.2
+    "termSpread": 0.2,
+    "mortgageRate": 6.89
   },
   {
     "date": "2025-02-14",
@@ -4011,7 +4456,8 @@
     "nominalRate": 4.47,
     "breakeven": 2.43,
     "realRate": 2.0399999999999996,
-    "termSpread": 0.21
+    "termSpread": 0.21,
+    "mortgageRate": 6.87
   },
   {
     "date": "2025-02-21",
@@ -4020,7 +4466,8 @@
     "nominalRate": 4.42,
     "breakeven": 2.42,
     "realRate": 2,
-    "termSpread": 0.23
+    "termSpread": 0.23,
+    "mortgageRate": 6.85
   },
   {
     "date": "2025-02-28",
@@ -4029,7 +4476,8 @@
     "nominalRate": 4.24,
     "breakeven": 2.38,
     "realRate": 1.8600000000000003,
-    "termSpread": 0.25
+    "termSpread": 0.25,
+    "mortgageRate": 6.76
   },
   {
     "date": "2025-03-07",
@@ -4038,7 +4486,8 @@
     "nominalRate": 4.32,
     "breakeven": 2.33,
     "realRate": 1.9900000000000002,
-    "termSpread": 0.33
+    "termSpread": 0.33,
+    "mortgageRate": 6.63
   },
   {
     "date": "2025-03-14",
@@ -4047,7 +4496,8 @@
     "nominalRate": 4.31,
     "breakeven": 2.3,
     "realRate": 2.01,
-    "termSpread": 0.29
+    "termSpread": 0.29,
+    "mortgageRate": 6.65
   },
   {
     "date": "2025-03-21",
@@ -4056,7 +4506,8 @@
     "nominalRate": 4.25,
     "breakeven": 2.33,
     "realRate": 1.92,
-    "termSpread": 0.31
+    "termSpread": 0.31,
+    "mortgageRate": 6.67
   },
   {
     "date": "2025-03-28",
@@ -4065,7 +4516,8 @@
     "nominalRate": 4.27,
     "breakeven": 2.37,
     "realRate": 1.8999999999999995,
-    "termSpread": 0.38
+    "termSpread": 0.38,
+    "mortgageRate": 6.65
   },
   {
     "date": "2025-04-04",
@@ -4074,7 +4526,8 @@
     "nominalRate": 4.01,
     "breakeven": 2.18,
     "realRate": 1.8299999999999996,
-    "termSpread": 0.33
+    "termSpread": 0.33,
+    "mortgageRate": 6.64
   },
   {
     "date": "2025-04-11",
@@ -4083,7 +4536,8 @@
     "nominalRate": 4.48,
     "breakeven": 2.2,
     "realRate": 2.2800000000000002,
-    "termSpread": 0.52
+    "termSpread": 0.52,
+    "mortgageRate": 6.62
   },
   {
     "date": "2025-04-18",
@@ -4092,7 +4546,8 @@
     "nominalRate": 4.34,
     "breakeven": 2.23,
     "realRate": 2.11,
-    "termSpread": 0.53
+    "termSpread": 0.53,
+    "mortgageRate": 6.83
   },
   {
     "date": "2025-04-25",
@@ -4101,7 +4556,8 @@
     "nominalRate": 4.29,
     "breakeven": 2.27,
     "realRate": 2.02,
-    "termSpread": 0.55
+    "termSpread": 0.55,
+    "mortgageRate": 6.81
   },
   {
     "date": "2025-05-02",
@@ -4110,7 +4566,8 @@
     "nominalRate": 4.33,
     "breakeven": 2.27,
     "realRate": 2.06,
-    "termSpread": 0.5
+    "termSpread": 0.5,
+    "mortgageRate": 6.76
   },
   {
     "date": "2025-05-09",
@@ -4119,7 +4576,8 @@
     "nominalRate": 4.37,
     "breakeven": 2.29,
     "realRate": 2.08,
-    "termSpread": 0.49
+    "termSpread": 0.49,
+    "mortgageRate": 6.76
   },
   {
     "date": "2025-05-16",
@@ -4128,7 +4586,8 @@
     "nominalRate": 4.43,
     "breakeven": 2.34,
     "realRate": 2.09,
-    "termSpread": 0.45
+    "termSpread": 0.45,
+    "mortgageRate": 6.81
   },
   {
     "date": "2025-05-23",
@@ -4137,7 +4596,8 @@
     "nominalRate": 4.51,
     "breakeven": 2.33,
     "realRate": 2.1799999999999997,
-    "termSpread": 0.51
+    "termSpread": 0.51,
+    "mortgageRate": 6.86
   },
   {
     "date": "2025-05-30",
@@ -4146,7 +4606,8 @@
     "nominalRate": 4.41,
     "breakeven": 2.34,
     "realRate": 2.0700000000000003,
-    "termSpread": 0.52
+    "termSpread": 0.52,
+    "mortgageRate": 6.89
   },
   {
     "date": "2025-06-06",
@@ -4155,7 +4616,8 @@
     "nominalRate": 4.51,
     "breakeven": 2.31,
     "realRate": 2.1999999999999997,
-    "termSpread": 0.47
+    "termSpread": 0.47,
+    "mortgageRate": 6.85
   },
   {
     "date": "2025-06-13",
@@ -4164,7 +4626,8 @@
     "nominalRate": 4.41,
     "breakeven": 2.28,
     "realRate": 2.1300000000000003,
-    "termSpread": 0.45
+    "termSpread": 0.45,
+    "mortgageRate": 6.84
   },
   {
     "date": "2025-06-20",
@@ -4173,7 +4636,8 @@
     "nominalRate": 4.38,
     "breakeven": 2.33,
     "realRate": 2.05,
-    "termSpread": 0.48
+    "termSpread": 0.48,
+    "mortgageRate": 6.81
   },
   {
     "date": "2025-06-27",
@@ -4182,7 +4646,8 @@
     "nominalRate": 4.29,
     "breakeven": 2.29,
     "realRate": 2,
-    "termSpread": 0.56
+    "termSpread": 0.56,
+    "mortgageRate": 6.77
   },
   {
     "date": "2025-07-04",
@@ -4191,7 +4656,8 @@
     "nominalRate": 4.35,
     "breakeven": 2.33,
     "realRate": 2.0199999999999996,
-    "termSpread": 0.47
+    "termSpread": 0.47,
+    "mortgageRate": 6.67
   },
   {
     "date": "2025-07-11",
@@ -4200,7 +4666,8 @@
     "nominalRate": 4.43,
     "breakeven": 2.37,
     "realRate": 2.0599999999999996,
-    "termSpread": 0.53
+    "termSpread": 0.53,
+    "mortgageRate": 6.72
   },
   {
     "date": "2025-07-18",
@@ -4209,7 +4676,8 @@
     "nominalRate": 4.44,
     "breakeven": 2.41,
     "realRate": 2.0300000000000002,
-    "termSpread": 0.56
+    "termSpread": 0.56,
+    "mortgageRate": 6.75
   },
   {
     "date": "2025-07-25",
@@ -4218,7 +4686,8 @@
     "nominalRate": 4.4,
     "breakeven": 2.44,
     "realRate": 1.9600000000000004,
-    "termSpread": 0.49
+    "termSpread": 0.49,
+    "mortgageRate": 6.74
   },
   {
     "date": "2025-08-01",
@@ -4227,7 +4696,8 @@
     "nominalRate": 4.23,
     "breakeven": 2.33,
     "realRate": 1.9000000000000004,
-    "termSpread": 0.54
+    "termSpread": 0.54,
+    "mortgageRate": 6.72
   },
   {
     "date": "2025-08-08",
@@ -4236,7 +4706,8 @@
     "nominalRate": 4.27,
     "breakeven": 2.39,
     "realRate": 1.8799999999999994,
-    "termSpread": 0.51
+    "termSpread": 0.51,
+    "mortgageRate": 6.63
   },
   {
     "date": "2025-08-15",
@@ -4245,7 +4716,8 @@
     "nominalRate": 4.33,
     "breakeven": 2.38,
     "realRate": 1.9500000000000002,
-    "termSpread": 0.58
+    "termSpread": 0.58,
+    "mortgageRate": 6.58
   },
   {
     "date": "2025-08-22",
@@ -4254,7 +4726,8 @@
     "nominalRate": 4.26,
     "breakeven": 2.41,
     "realRate": 1.8499999999999996,
-    "termSpread": 0.58
+    "termSpread": 0.58,
+    "mortgageRate": 6.58
   },
   {
     "date": "2025-08-29",
@@ -4263,7 +4736,8 @@
     "nominalRate": 4.23,
     "breakeven": 2.41,
     "realRate": 1.8200000000000003,
-    "termSpread": 0.64
+    "termSpread": 0.64,
+    "mortgageRate": 6.56
   },
   {
     "date": "2025-09-05",
@@ -4272,7 +4746,8 @@
     "nominalRate": 4.1,
     "breakeven": 2.37,
     "realRate": 1.7299999999999995,
-    "termSpread": 0.59
+    "termSpread": 0.59,
+    "mortgageRate": 6.5
   },
   {
     "date": "2025-09-12",
@@ -4281,7 +4756,8 @@
     "nominalRate": 4.06,
     "breakeven": 2.36,
     "realRate": 1.6999999999999997,
-    "termSpread": 0.5
+    "termSpread": 0.5,
+    "mortgageRate": 6.35
   },
   {
     "date": "2025-09-19",
@@ -4290,7 +4766,8 @@
     "nominalRate": 4.14,
     "breakeven": 2.39,
     "realRate": 1.7499999999999996,
-    "termSpread": 0.57
+    "termSpread": 0.57,
+    "mortgageRate": 6.26
   },
   {
     "date": "2025-09-26",
@@ -4299,7 +4776,8 @@
     "nominalRate": 4.2,
     "breakeven": 2.38,
     "realRate": 1.8200000000000003,
-    "termSpread": 0.57
+    "termSpread": 0.57,
+    "mortgageRate": 6.3
   },
   {
     "date": "2025-10-03",
@@ -4308,7 +4786,8 @@
     "nominalRate": 4.13,
     "breakeven": 2.33,
     "realRate": 1.7999999999999998,
-    "termSpread": 0.55
+    "termSpread": 0.55,
+    "mortgageRate": 6.34
   },
   {
     "date": "2025-10-10",
@@ -4317,7 +4796,8 @@
     "nominalRate": 4.05,
     "breakeven": 2.3,
     "realRate": 1.75,
-    "termSpread": 0.53
+    "termSpread": 0.53,
+    "mortgageRate": 6.3
   },
   {
     "date": "2025-10-17",
@@ -4326,7 +4806,8 @@
     "nominalRate": 4.02,
     "breakeven": 2.27,
     "realRate": 1.7499999999999996,
-    "termSpread": 0.56
+    "termSpread": 0.56,
+    "mortgageRate": 6.27
   },
   {
     "date": "2025-10-24",
@@ -4335,7 +4816,8 @@
     "nominalRate": 4.02,
     "breakeven": 2.29,
     "realRate": 1.7299999999999995,
-    "termSpread": 0.54
+    "termSpread": 0.54,
+    "mortgageRate": 6.19
   },
   {
     "date": "2025-10-31",
@@ -4344,7 +4826,8 @@
     "nominalRate": 4.11,
     "breakeven": 2.3,
     "realRate": 1.8100000000000005,
-    "termSpread": 0.51
+    "termSpread": 0.51,
+    "mortgageRate": 6.17
   },
   {
     "date": "2025-11-07",
@@ -4353,7 +4836,8 @@
     "nominalRate": 4.11,
     "breakeven": 2.28,
     "realRate": 1.8300000000000005,
-    "termSpread": 0.56
+    "termSpread": 0.56,
+    "mortgageRate": 6.22
   },
   {
     "date": "2025-11-14",
@@ -4362,7 +4846,8 @@
     "nominalRate": 4.14,
     "breakeven": 2.28,
     "realRate": 1.8599999999999999,
-    "termSpread": 0.52
+    "termSpread": 0.52,
+    "mortgageRate": 6.24
   },
   {
     "date": "2025-11-21",
@@ -4371,7 +4856,8 @@
     "nominalRate": 4.06,
     "breakeven": 2.24,
     "realRate": 1.8199999999999994,
-    "termSpread": 0.55
+    "termSpread": 0.55,
+    "mortgageRate": 6.26
   },
   {
     "date": "2025-11-28",
@@ -4380,7 +4866,8 @@
     "nominalRate": 4.02,
     "breakeven": 2.23,
     "realRate": 1.7899999999999996,
-    "termSpread": 0.55
+    "termSpread": 0.55,
+    "mortgageRate": 6.23
   },
   {
     "date": "2025-12-05",
@@ -4389,7 +4876,8 @@
     "nominalRate": 4.14,
     "breakeven": 2.26,
     "realRate": 1.88,
-    "termSpread": 0.58
+    "termSpread": 0.58,
+    "mortgageRate": 6.19
   },
   {
     "date": "2025-12-12",
@@ -4398,7 +4886,8 @@
     "nominalRate": 4.19,
     "breakeven": 2.26,
     "realRate": 1.9300000000000006,
-    "termSpread": 0.67
+    "termSpread": 0.67,
+    "mortgageRate": 6.22
   },
   {
     "date": "2025-12-19",
@@ -4407,7 +4896,8 @@
     "nominalRate": 4.16,
     "breakeven": 2.24,
     "realRate": 1.92,
-    "termSpread": 0.68
+    "termSpread": 0.68,
+    "mortgageRate": 6.21
   },
   {
     "date": "2025-12-26",
@@ -4416,7 +4906,8 @@
     "nominalRate": 4.14,
     "breakeven": 2.23,
     "realRate": 1.9099999999999997,
-    "termSpread": 0.68
+    "termSpread": 0.68,
+    "mortgageRate": 6.18
   },
   {
     "date": "2026-01-02",
@@ -4425,7 +4916,8 @@
     "nominalRate": 4.19,
     "breakeven": 2.25,
     "realRate": 1.9400000000000004,
-    "termSpread": 0.72
+    "termSpread": 0.72,
+    "mortgageRate": 6.15
   },
   {
     "date": "2026-01-09",
@@ -4434,7 +4926,8 @@
     "nominalRate": 4.18,
     "breakeven": 2.28,
     "realRate": 1.9,
-    "termSpread": 0.64
+    "termSpread": 0.64,
+    "mortgageRate": 6.16
   },
   {
     "date": "2026-01-16",
@@ -4443,7 +4936,8 @@
     "nominalRate": 4.24,
     "breakeven": 2.33,
     "realRate": 1.9100000000000001,
-    "termSpread": 0.65
+    "termSpread": 0.65,
+    "mortgageRate": 6.06
   },
   {
     "date": "2026-01-23",
@@ -4452,7 +4946,8 @@
     "nominalRate": 4.24,
     "breakeven": 2.32,
     "realRate": 1.9200000000000004,
-    "termSpread": 0.64
+    "termSpread": 0.64,
+    "mortgageRate": 6.09
   },
   {
     "date": "2026-01-30",
@@ -4461,7 +4956,8 @@
     "nominalRate": 4.26,
     "breakeven": 2.36,
     "realRate": 1.9,
-    "termSpread": 0.74
+    "termSpread": 0.74,
+    "mortgageRate": 6.1
   },
   {
     "date": "2026-02-06",
@@ -4470,7 +4966,8 @@
     "nominalRate": 4.22,
     "breakeven": 2.34,
     "realRate": 1.88,
-    "termSpread": 0.72
+    "termSpread": 0.72,
+    "mortgageRate": 6.11
   },
   {
     "date": "2026-02-13",
@@ -4479,7 +4976,8 @@
     "nominalRate": 4.04,
     "breakeven": 2.27,
     "realRate": 1.77,
-    "termSpread": 0.64
+    "termSpread": 0.64,
+    "mortgageRate": 6.09
   },
   {
     "date": "2026-02-20",
@@ -4488,7 +4986,8 @@
     "nominalRate": 4.08,
     "breakeven": 2.28,
     "realRate": 1.8000000000000003,
-    "termSpread": 0.6
+    "termSpread": 0.6,
+    "mortgageRate": 6.01
   },
   {
     "date": "2026-02-27",
@@ -4497,7 +4996,8 @@
     "nominalRate": 3.97,
     "breakeven": 2.25,
     "realRate": 1.7200000000000002,
-    "termSpread": 0.59
+    "termSpread": 0.59,
+    "mortgageRate": 5.98
   },
   {
     "date": "2026-03-06",
@@ -4506,7 +5006,8 @@
     "nominalRate": 4.15,
     "breakeven": 2.35,
     "realRate": 1.8000000000000003,
-    "termSpread": 0.59
+    "termSpread": 0.59,
+    "mortgageRate": 6
   },
   {
     "date": "2026-03-13",
@@ -4515,7 +5016,8 @@
     "nominalRate": 4.28,
     "breakeven": 2.36,
     "realRate": 1.9200000000000004,
-    "termSpread": 0.55
+    "termSpread": 0.55,
+    "mortgageRate": 6.11
   },
   {
     "date": "2026-03-20",
@@ -4524,7 +5026,8 @@
     "nominalRate": 4.39,
     "breakeven": 2.38,
     "realRate": 2.01,
-    "termSpread": 0.51
+    "termSpread": 0.51,
+    "mortgageRate": 6.22
   },
   {
     "date": "2026-03-27",
@@ -4533,7 +5036,8 @@
     "nominalRate": 4.44,
     "breakeven": 2.31,
     "realRate": 2.1300000000000003,
-    "termSpread": 0.56
+    "termSpread": 0.56,
+    "mortgageRate": 6.38
   },
   {
     "date": "2026-04-03",
@@ -4542,7 +5046,8 @@
     "nominalRate": 4.35,
     "breakeven": 2.36,
     "realRate": 1.9899999999999998,
-    "termSpread": 0.51
+    "termSpread": 0.51,
+    "mortgageRate": 6.46
   },
   {
     "date": "2026-04-10",
@@ -4551,7 +5056,8 @@
     "nominalRate": 4.31,
     "breakeven": 2.36,
     "realRate": 1.9499999999999997,
-    "termSpread": 0.5
+    "termSpread": 0.5,
+    "mortgageRate": 6.37
   },
   {
     "date": "2026-04-17",
@@ -4560,7 +5066,8 @@
     "nominalRate": 4.26,
     "breakeven": 2.36,
     "realRate": 1.9,
-    "termSpread": 0.55
+    "termSpread": 0.55,
+    "mortgageRate": 6.3
   },
   {
     "date": "2026-04-24",
@@ -4569,7 +5076,8 @@
     "nominalRate": 4.31,
     "breakeven": 2.42,
     "realRate": 1.8899999999999997,
-    "termSpread": 0.53
+    "termSpread": 0.53,
+    "mortgageRate": 6.23
   },
   {
     "date": "2026-05-01",
@@ -4578,7 +5086,8 @@
     "nominalRate": 4.39,
     "breakeven": 2.48,
     "realRate": 1.9099999999999997,
-    "termSpread": 0.51
+    "termSpread": 0.51,
+    "mortgageRate": 6.3
   },
   {
     "date": "2026-05-08",
@@ -4587,7 +5096,8 @@
     "nominalRate": 4.38,
     "breakeven": 2.45,
     "realRate": 1.9299999999999997,
-    "termSpread": 0.48
+    "termSpread": 0.48,
+    "mortgageRate": 6.37
   },
   {
     "date": "2026-05-15",
@@ -4596,7 +5106,8 @@
     "nominalRate": 4.59,
     "breakeven": 2.49,
     "realRate": 2.0999999999999996,
-    "termSpread": 0.5
+    "termSpread": 0.5,
+    "mortgageRate": 6.36
   },
   {
     "date": "2026-05-22",
@@ -4605,7 +5116,8 @@
     "nominalRate": 4.56,
     "breakeven": 2.4,
     "realRate": 2.1599999999999997,
-    "termSpread": 0.43
+    "termSpread": 0.43,
+    "mortgageRate": 6.51
   },
   {
     "date": "2026-05-29",
@@ -4614,7 +5126,8 @@
     "nominalRate": 4.45,
     "breakeven": 2.38,
     "realRate": 2.0700000000000003,
-    "termSpread": 0.47
+    "termSpread": 0.47,
+    "mortgageRate": 6.53
   },
   {
     "date": "2026-06-05",
@@ -4623,7 +5136,8 @@
     "nominalRate": 4.55,
     "breakeven": 2.36,
     "realRate": 2.19,
-    "termSpread": 0.38
+    "termSpread": 0.38,
+    "mortgageRate": 6.48
   },
   {
     "date": "2026-06-12",
@@ -4632,7 +5146,8 @@
     "nominalRate": 4.48,
     "breakeven": 2.31,
     "realRate": 2.1700000000000004,
-    "termSpread": 0.39
+    "termSpread": 0.39,
+    "mortgageRate": 6.52
   },
   {
     "date": "2026-06-19",
@@ -4641,7 +5156,8 @@
     "nominalRate": 4.46,
     "breakeven": 2.25,
     "realRate": 2.21,
-    "termSpread": 0.27
+    "termSpread": 0.27,
+    "mortgageRate": 6.47
   },
   {
     "date": "2026-06-26",
@@ -4650,7 +5166,8 @@
     "nominalRate": 4.38,
     "breakeven": 2.2,
     "realRate": 2.1799999999999997,
-    "termSpread": 0.31
+    "termSpread": 0.31,
+    "mortgageRate": 6.49
   },
   {
     "date": "2026-07-03",
@@ -4659,7 +5176,8 @@
     "nominalRate": 4.49,
     "breakeven": 2.23,
     "realRate": 2.2600000000000002,
-    "termSpread": 0.35
+    "termSpread": 0.35,
+    "mortgageRate": 6.43
   },
   {
     "date": "2026-07-10",
@@ -4668,7 +5186,8 @@
     "nominalRate": 4.56,
     "breakeven": 2.24,
     "realRate": 2.3199999999999994,
-    "termSpread": 0.35
+    "termSpread": 0.35,
+    "mortgageRate": 6.49
   },
   {
     "date": "2026-07-17",
@@ -4677,7 +5196,8 @@
     "nominalRate": 4.55,
     "breakeven": 2.24,
     "realRate": 2.3099999999999996,
-    "termSpread": 0.37
+    "termSpread": 0.37,
+    "mortgageRate": 6.55
   },
   {
     "date": "2026-07-24",
@@ -4686,7 +5206,8 @@
     "nominalRate": 4.69,
     "breakeven": 2.26,
     "realRate": 2.4300000000000006,
-    "termSpread": 0.36
+    "termSpread": 0.36,
+    "mortgageRate": 6.58
   },
   {
     "date": "2026-07-31",
@@ -4695,7 +5216,8 @@
     "nominalRate": 4.75,
     "breakeven": 2.28,
     "realRate": 2.47,
-    "termSpread": 0.47
+    "termSpread": 0.47,
+    "mortgageRate": 6.66
   },
   {
     "date": "2026-08-07",
@@ -4704,7 +5226,8 @@
     "nominalRate": 4.65,
     "breakeven": 2.25,
     "realRate": 2.4000000000000004,
-    "termSpread": 0.46
+    "termSpread": 0.46,
+    "mortgageRate": 6.69
   },
   {
     "date": "2026-08-14",
@@ -4713,6 +5236,7 @@
     "nominalRate": 4.63,
     "breakeven": 2.27,
     "realRate": 2.36,
-    "termSpread": 0.51
+    "termSpread": 0.51,
+    "mortgageRate": 6.67
   }
 ]

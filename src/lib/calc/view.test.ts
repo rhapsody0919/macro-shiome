@@ -299,6 +299,40 @@ describe('労働市場・所得・消費 (#66)', () => {
   });
 });
 
+describe('住宅市場 (#65)', () => {
+  const housing: ObservationMap = {
+    'building-permits': { '2026-06-01': 1374 },
+    'housing-starts': { '2026-06-01': 1427 },
+    'new-home-sales': { '2026-06-01': 628 },
+    'mortgage-rate-30y': { '2026-08-13': 6.67 },
+  };
+
+  it('住宅 3 指標を水準のまま持つ', () => {
+    // 単位が揃っている (千戸) ため水準で比較できる。前年比にすると規模感が失われる。
+    const view = buildEconomyView({
+      observations: housing,
+      config,
+      start: '2026-06-01',
+      today: new Date(Date.UTC(2026, 5, 20)),
+    });
+    const june = view.monthly.find((p) => p.month === '2026-06-01');
+    expect(june?.buildingPermits).toBe(1374);
+    expect(june?.housingStarts).toBe(1427);
+    expect(june?.newHomeSales).toBe(628);
+  });
+
+  it('住宅ローン金利は週次グリッドに載せる', () => {
+    // 週次なのでマクロ画面 (週次) 側に置く。月次の住宅指標とはページが分かれる。
+    const macro = buildMacroView({
+      observations: housing,
+      config,
+      start: '2026-08-01',
+      today: new Date(Date.UTC(2026, 7, 15)),
+    });
+    expect(macro.find((p) => p.date === '2026-08-14')?.mortgageRate).toBe(6.67);
+  });
+});
+
 describe('物価の連鎖 (#64)', () => {
   /** 月次の観測値。前年同月比を出すには 13 か月分が要る。 */
   const monthly: ObservationMap = {

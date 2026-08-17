@@ -340,3 +340,28 @@ describe('労働市場・所得の指標 (#66)', () => {
     }
   });
 });
+
+describe('住宅市場の指標 (#65)', () => {
+  it('建設許可は先行指標 (LEI 構成要素)', () => {
+    // The Conference Board の LEI に「新設住宅建設許可」が含まれる
+    // (2026-08-17 に公式ページで確認)。
+    expect(indicators['building-permits'].cyclePosition).toBe('leading');
+  });
+
+  it('着工と販売は構成要素でないため分類しない', () => {
+    expect(indicators['housing-starts'].cyclePosition).toBeUndefined();
+    expect(indicators['new-home-sales'].cyclePosition).toBeUndefined();
+  });
+
+  it('住宅ローン金利は週次で、著作権ありとして扱う', () => {
+    // MBA の申請指数が取れないための代替。Freddie Mac に著作権がある。
+    expect(indicators['mortgage-rate-30y'].frequency).toBe('weekly');
+    expect(indicators['mortgage-rate-30y'].copyright).toBe('restricted');
+  });
+
+  it('代替であることが note に記録されている', () => {
+    // 申請そのものより先行性が落ちる点を残しておかないと、同等と誤解される。
+    expect(indicators['mortgage-rate-30y'].note).toContain('代替');
+    expect(indicators['mortgage-rate-30y'].note).toContain('先行性は落ちる');
+  });
+});

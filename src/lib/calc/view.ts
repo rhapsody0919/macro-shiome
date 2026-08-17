@@ -369,6 +369,8 @@ export function buildMacroView(options: BuildViewOptions): MacroPoint[] {
       breakeven,
       realRate: realRate(nominalRate, breakeven),
       termSpread: valueAsOf(series(observations, 't10y2y'), date),
+      // 週次系列。金曜が休みでも直近の値を採る。
+      mortgageRate: valueAsOf(series(observations, 'mortgage-rate-30y'), date),
     };
   });
 }
@@ -408,6 +410,9 @@ export function buildEconomyView(options: BuildViewOptions): EconomyView {
     fullTimeEmployment: yoy('full-time-employment', month),
     realIncomeExTransfer: yoy('real-income-ex-transfer', month),
     realDisposablePerCapita: yoy('real-disposable-income-per-capita', month),
+    buildingPermits: level('building-permits', month),
+    housingStarts: level('housing-starts', month),
+    newHomeSales: level('new-home-sales', month),
     savingsRate: level('savings-rate', month),
     consumerSentiment: level('consumer-sentiment', month),
   }));
@@ -436,6 +441,9 @@ const MONTHLY_INDICATORS = [
   'full-time-employment',
   'real-income-ex-transfer',
   'real-disposable-income-per-capita',
+  'building-permits',
+  'housing-starts',
+  'new-home-sales',
   'savings-rate',
   'consumer-sentiment',
 ] as const;

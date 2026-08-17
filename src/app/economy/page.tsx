@@ -27,6 +27,44 @@ interface MonthlyChartDef {
 
 const CHARTS: MonthlyChartDef[] = [
   {
+    // 建設許可は The Conference Board の景気先行指数 (LEI) の構成要素。
+    primaryIndicator: 'building-permits',
+    title: '住宅市場',
+    subtitle: '建設許可 → 着工 → 新築販売 (千戸・季節調整済み年率)',
+    kind: 'number',
+    zeroLine: false,
+    series: [
+      {
+        key: 'buildingPermits',
+        label: '建設許可',
+        color: '#6366f1',
+        width: 2.4,
+        indicatorId: 'building-permits',
+      },
+      { key: 'housingStarts', label: '着工', color: '#0ea5e9', indicatorId: 'housing-starts' },
+      { key: 'newHomeSales', label: '新築販売', color: '#10b981', indicatorId: 'new-home-sales' },
+    ],
+    notes: [
+      <span key="chain">
+        <strong>住宅は連鎖で動く。</strong>
+        建設許可 → 着工 → 販売の順に進むため、上流の建設許可が最も早く変化を示す。
+        The Conference Board の景気先行指数の構成要素でもある。
+      </span>,
+      <span key="mortgage">
+        さらに上流にあるのが<strong>住宅ローン金利</strong>で、これは週次のため
+        マクロ指標のページに置いている。金利上昇 → 申請減少 → 許可・着工減少、と伝わる。
+      </span>,
+      <span key="mba">
+        <strong>住宅ローン申請者数 (MBA) は無料で取得できない</strong>ため表示していない。
+        本来はこれが最も先行性の高いデータだが、ライセンス制で FRED に収録されていない。
+        住宅ローン金利で代替しており、<strong>申請そのものより先行性は落ちる</strong>。
+      </span>,
+      <span key="unit">
+        いずれも千戸・季節調整済み年率。単位が揃っているため水準のまま並べている。
+      </span>,
+    ],
+  },
+  {
     // 非農業部門雇用者数は景気一致指数 (CEI) の構成要素。
     primaryIndicator: 'payrolls',
     title: '労働市場',

@@ -73,6 +73,27 @@ const CHARTS: MacroChartDef[] = [
     ],
   },
   {
+    primaryIndicator: 'mortgage-rate-30y',
+    title: '住宅ローン金利 (30年固定)',
+    subtitle: '住宅需要の背景要因',
+    kind: 'percent',
+    series: [{ key: 'mortgageRate', label: '30年固定金利', color: '#ec4899' }],
+    notes: [
+      <span key="why">
+        住宅市場の連鎖 (金利 → 申請 → 建設許可 → 着工 → 販売) の起点にあたる。
+        許可・着工・販売は月次のため<strong>経済統計のページ</strong>に置いている。
+      </span>,
+      <span key="mba">
+        <strong>住宅ローン申請者数 (MBA) の代替。</strong>
+        本来はこれが最も先行性の高いデータだが、ライセンス制で無料取得できない。
+        金利は申請の背景要因であり、<strong>申請そのものより先行性は落ちる</strong>。
+      </span>,
+      <span key="copyright">
+        著作権は Freddie Mac にある。週次 (木曜発表) の値を金曜時点に揃えている。
+      </span>,
+    ],
+  },
+  {
     primaryIndicator: 'vix',
     title: 'VIX',
     subtitle: 'S&P 500 のインプライド・ボラティリティ指数',
