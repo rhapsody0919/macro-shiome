@@ -10,7 +10,10 @@ import type {
   AppConfig,
   IndexKey,
   CorrelationSummary,
+  EconomyView,
   MacroPoint,
+  MonthlyCoverage,
+  PriceChainPoint,
   RevisionPoint,
   SpreadDistribution,
   ValuationPoint,
@@ -27,9 +30,11 @@ import {
   overvaluation,
   percentileRank,
   realRate,
+  yearOverYear,
   yieldSpread,
 } from './derived';
 import { fridaysBetween, valueAsOf, valueOn } from './weeks';
+import { latestMonthWithValue, monthsBetween, valueForMonth, yearAgo } from './months';
 
 /** 指標 ID → 観測値。存在しない指標は空として扱う。 */
 export type ObservationMap = Readonly<Record<string, Observations>>;
@@ -366,3 +371,45 @@ export function buildMacroView(options: BuildViewOptions): MacroPoint[] {
     };
   });
 }
+
+/**
+ * 物価の連鎖のビュー (#64)。
+ *
+ * **週次グリッドに載せない**。月次データを週次に落とすと同じ値が 4〜5 週続き、
+ * 「先週から動いていない」のか「月次だから動かない」のか読み手が判別できなくなる。
+ *
+ * すべて前年同月比。指標ごとに基準年が違うため水準では比較できない。
+ */
+export function buildEconomyView(options: BuildViewOptions): EconomyView {
+  const { observations } = options;
+  const months = monthsBetween(options.start, options.today.toISOString().slice(0, 10));
+
+  const priceOf = (id: string, month: string): number | null =>
+    yearOverYear(
+      valueForMonth(series(observations, id), month),
+      valueForMonth(series(observations, id), yearAgo(month)),
+    );
+
+  const priceChain: PriceChainPoint[] = months.map((month) => ({
+    month,
+    importPrice: priceOf('import-price', month),
+    producerPrice: priceOf('producer-price', month),
+    cpi: priceOf('cpi', month),
+    pce: priceOf('pce-price', month),
+  }));
+
+  // 発表ラグは指標ごとに違うため、系列単位で「どこまで出ているか」を持つ。
+  const coverage: MonthlyCoverage[] = PRICE_INDICATORS.map((indicatorId) => ({
+    indicatorId,
+    latestMonth: latestMonthWithValue(months, series(observations, indicatorId)),
+  }));
+
+  return {
+    generatedAt: options.today.toISOString(),
+    priceChain,
+    coverage,
+  };
+}
+
+/** 物価の連鎖に使う指標。順序は連鎖の順 (上流 → 下流)。 */
+const PRICE_INDICATORS = ['import-price', 'producer-price', 'cpi', 'pce-price'] as const;

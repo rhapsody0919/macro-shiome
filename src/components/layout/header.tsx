@@ -28,6 +28,9 @@ export function Header() {
             <Suspense fallback={<span className="px-3 py-1.5 text-sm">マクロ指標</span>}>
               <NavLink href="/macro">マクロ指標</NavLink>
             </Suspense>
+            <Suspense fallback={<span className="px-3 py-1.5 text-sm">経済統計</span>}>
+              <NavLink href="/economy">経済統計</NavLink>
+            </Suspense>
           </nav>
         </div>
 

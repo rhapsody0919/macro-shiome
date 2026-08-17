@@ -20,6 +20,7 @@ import {
 } from '../src/lib/adapters/factset';
 import { fetchEtfField } from '../src/lib/adapters/stockanalysis';
 import {
+  buildEconomyView,
   buildMacroView,
   buildRevisionSeries,
   buildValuationView,
@@ -167,6 +168,8 @@ async function main(): Promise<void> {
   writeView('valuation', buildValuationView({ observations, config: appConfig, start, today: now }));
   writeView('revisions', buildRevisionSeries({ observations, config: appConfig, start, today: now }));
   writeView('macro', buildMacroView({ observations, config: appConfig, start, today: now }));
+  // 月次指標は週次グリッドに載せない (#64)。別ビューとして持つ。
+  writeView('economy', buildEconomyView({ observations, config: appConfig, start, today: now }));
 
   const succeeded = failures.length === 0 && issues.length === 0;
   writeStatus({ now, succeeded, recentGaps: allGaps });

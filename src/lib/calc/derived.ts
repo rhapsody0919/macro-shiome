@@ -121,6 +121,23 @@ export function markRecordHighs(series: readonly Maybe[]): boolean[] {
 }
 
 /**
+ * 前年同月比 (%) (#64)。
+ *
+ * 物価指標は**基準年がそれぞれ違う** (輸入物価 2000=100 / 生産者物価 Nov 2009=100 /
+ * CPI 1982-84=100 / PCE 2017=100)。水準を並べても比較にならないため、
+ * 前年同月比に揃えて同じ軸で読む。
+ *
+ * 季節調整の有無が指標間で違っても、12 か月差を取ることで季節性はおおむね相殺される。
+ */
+export function yearOverYear(current: Maybe, oneYearAgo: Maybe): number | null {
+  if (isMissing(current) || isMissing(oneYearAgo)) return null;
+  if (oneYearAgo === 0) {
+    throw new Error('前年同月比: 前年の値が 0 のため変化率を計算できない');
+  }
+  return (current / oneYearAgo - 1) * 100;
+}
+
+/**
  * 系列の分布 (spec F-4 の読み方支援)。
  *
  * **固定の閾値を「危険水準」として置かない**。「スプレッドが 1% を切ったら危険」のような

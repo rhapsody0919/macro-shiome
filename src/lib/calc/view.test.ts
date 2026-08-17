@@ -1,6 +1,11 @@
 import { describe, expect, it } from 'vitest';
 import type { AppConfig } from '../data/types';
-import { buildRevisionSeries, buildValuationView, type ObservationMap } from './view';
+import {
+  buildEconomyView,
+  buildRevisionSeries,
+  buildValuationView,
+  type ObservationMap,
+} from './view';
 
 const config: AppConfig = {
   targetYield: {
@@ -243,5 +248,54 @@ describe('イールドスプレッドの過去分布 (#52)', () => {
       buildValuationView({ observations, config, start: '2026-08-01', today })
         .nasdaq100.spreadDistribution,
     ).toBeNull();
+  });
+});
+
+describe('物価の連鎖 (#64)', () => {
+  /** 月次の観測値。前年同月比を出すには 13 か月分が要る。 */
+  const monthly: ObservationMap = {
+    'import-price': { '2025-06-01': 140.8, '2026-06-01': 150.8 },
+    'producer-price': { '2025-06-01': 148.4, '2026-06-01': 156.0 },
+    cpi: { '2025-06-01': 321.5, '2026-06-01': 332.8 },
+    // PCE は 6 月分が未発表という想定 (発表ラグが指標ごとに違う)。
+    'pce-price': { '2025-06-01': 126.7 },
+  };
+
+  const view = buildEconomyView({
+    observations: monthly,
+    config,
+    start: '2025-06-01',
+    today: new Date(Date.UTC(2026, 5, 20)),
+  });
+
+  it('月初の系列を作る', () => {
+    expect(view.priceChain[0].month).toBe('2025-06-01');
+    expect(view.priceChain.at(-1)?.month).toBe('2026-06-01');
+  });
+
+  it('前年同月比を計算する', () => {
+    const june = view.priceChain.find((p) => p.month === '2026-06-01');
+    expect(june?.importPrice).toBeCloseTo(7.1, 1);
+    expect(june?.cpi).toBeCloseTo(3.5, 1);
+  });
+
+  it('前年の値が無い月は null', () => {
+    // 系列の最初の 12 か月は前年同月が存在しない。
+    expect(view.priceChain[0].importPrice).toBeNull();
+  });
+
+  it('発表ラグを指標ごとに持つ', () => {
+    // 「最新」がどの月かは指標で違う。揃っていると誤解させないため個別に持つ。
+    const byId = Object.fromEntries(view.coverage.map((c) => [c.indicatorId, c.latestMonth]));
+    expect(byId['import-price']).toBe('2026-06-01');
+    expect(byId['pce-price']).toBe('2025-06-01');
+  });
+
+  it('週次グリッドに載せない (月初のみ)', () => {
+    // 月次を週次に落とすと同じ値が 4〜5 週続き、月次だから動かないのか
+    // 先週から動いていないのか判別できなくなる。
+    for (const point of view.priceChain) {
+      expect(point.month.endsWith('-01')).toBe(true);
+    }
   });
 });
