@@ -69,6 +69,54 @@ const CHARTS: QuestionChartDef<EconomyQuestionId>[] = [
     ],
   },
   {
+    question: 'slowdown',
+    frequency: 'monthly',
+    primaryIndicator: 'ny-fed-survey',
+    title: '地区連銀サーベイ',
+    subtitle: '製造業の景況感 (拡散指数、0 が改善と悪化が同数)',
+    kind: 'number',
+    series: [
+      {
+        key: 'nyFedSurvey',
+        label: 'NY連銀',
+        color: COLORS.nyFedSurvey,
+        width: 2.4,
+        indicatorId: 'ny-fed-survey',
+      },
+      {
+        key: 'phillyFedSurvey',
+        label: 'フィラデルフィア連銀',
+        color: COLORS.phillyFedSurvey,
+        indicatorId: 'philly-fed-survey',
+      },
+    ],
+    notes: [
+      <span key="fastest">
+        <strong>月次で最も発表が早い。</strong>
+        当月分が当月中旬に出るため、他の月次指標より 2〜6 週間先に今月の状況が分かる。
+        週次の新規求人・失業保険申請に次ぐ速報性。
+      </span>,
+      <span key="zero">
+        <strong>ゼロ線は定義から決まる基準。</strong>
+        「前月より改善した」と答えた企業と「悪化した」と答えた企業が同数ならゼロになる。
+        恣意的に置いた閾値ではない。
+      </span>,
+      <span key="ism">
+        <strong>ISM 新規受注指数の代替だが同等ではない。</strong>
+        ISM は著作権で FRED に収録されていない。こちらは
+        <strong>2 地区の製造業だけ</strong>が対象で、全米の製造業を代表しない。
+        NY 連銀は第2地区、フィラデルフィア連銀は第3地区
+        (ペンシルベニア・ニュージャージー・デラウェア)。
+      </span>,
+      <span key="volatile">
+        <strong>振れが大きい。</strong>
+        回答企業数が少なく単月では上下しやすいので、水準そのものより
+        <strong>数か月の方向</strong>を見る。The Conference Board の景気指数の構成要素では
+        ないため、景気サイクルのバッジは付けていない。
+      </span>,
+    ],
+  },
+  {
     // 週平均労働時間は The Conference Board の景気先行指数 (LEI) の構成要素。
     question: 'slowdown',
     frequency: 'monthly',

@@ -171,3 +171,26 @@ describe('assertNoIssues', () => {
     }
   });
 });
+
+describe('拡散指数の範囲 (#94)', () => {
+  const survey: Indicator = {
+    name: 'NY連銀景気指数',
+    source: { adapter: 'fred', seriesId: 'GACDISA066MSFRBNY' },
+    frequency: 'monthly',
+    unit: 'diffusion',
+    attribution: 'Federal Reserve Bank of New York via FRED',
+    copyright: 'none',
+    group: 'macro',
+  };
+
+  it('負の値を通す', () => {
+    // 拡散指数は 0 を挟んで振れる。index の範囲 (min 0) では弾かれてしまう。
+    expect(checkRange('ny-fed-survey', survey, '2026-08-01', -12.5)).toEqual([]);
+  });
+
+  it('±100 を超える値は弾く', () => {
+    // 定義上 −100〜+100 に収まるので、超えたら取り違えを疑う。
+    expect(checkRange('ny-fed-survey', survey, '2026-08-01', 150)).not.toEqual([]);
+    expect(checkRange('ny-fed-survey', survey, '2026-08-01', -150)).not.toEqual([]);
+  });
+})

@@ -27,7 +27,13 @@ const FREQUENCIES = [
   'monthly',
   'quarterly',
 ] as const satisfies readonly Frequency[];
-const UNITS = ['index', 'percent', 'ratio', 'jpy-per-usd'] as const satisfies readonly Unit[];
+const UNITS = [
+  'index',
+  'diffusion',
+  'percent',
+  'ratio',
+  'jpy-per-usd',
+] as const satisfies readonly Unit[];
 const COPYRIGHTS = ['none', 'restricted'] as const satisfies readonly CopyrightClass[];
 const GROUPS = [
   'equity',

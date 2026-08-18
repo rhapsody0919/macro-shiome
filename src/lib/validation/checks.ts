@@ -35,6 +35,10 @@ function rangeFor(unit: Unit, group: IndicatorGroup): Range | null {
     case 'index':
       // 指数と VIX。負にはならない。
       return { min: 0, max: Number.POSITIVE_INFINITY };
+    case 'diffusion':
+      // 拡散指数 (#94)。定義上 −100〜+100 に収まり、0 が「改善と悪化が同数」。
+      // index より狭いので、取り違えがあれば index より早く気付ける。
+      return { min: -100, max: 100 };
     case 'jpy-per-usd':
       return { min: 50, max: 300 };
     case 'percent':

@@ -85,6 +85,10 @@ export const COLORS = {
   dollarIndex: '#0891b2',
   /** 新規求人。労働市場の先行指標。 */
   newJobPostings: '#06b6d4',
+  /** NY連銀景気指数 (拡散指数)。 */
+  nyFedSurvey: '#8b5cf6',
+  /** フィラデルフィア連銀景気指数 (拡散指数)。 */
+  phillyFedSurvey: '#d946ef',
   /** 求人件数 (JOLTS)。 */
   jobOpenings: '#0ea5e9',
   /** 財政収支。赤字が続く側。 */
