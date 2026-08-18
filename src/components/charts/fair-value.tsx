@@ -58,7 +58,8 @@ export function FairValueChart({ view }: { view: ValuationView }) {
   // 計算式はビュー生成と同じ純関数を使い、定義がずれないようにする。
   const data = points.map((point) => {
     const fair = isModified ? fairValue(point.trailingEps, targetYield) : point.fairValue;
-    const over = isModified ? overvaluation(fair, point.index) : point.overvaluation;
+    // 再計算もビューと同じ比較基準を使う (#110)。ここだけ指数にすると値がずれる。
+    const over = isModified ? overvaluation(fair, point.fairValueBasis) : point.overvaluation;
     return {
       ...point,
       fairValue: fair,
@@ -106,7 +107,7 @@ export function FairValueChart({ view }: { view: ValuationView }) {
               </div>
               <div className="text-xs text-slate-500">
                 理論値 <span className="tabular-nums">{formatNumber(latest.fairValue, 0)}</span> ／
-                指数 <span className="tabular-nums">{formatNumber(latest.index, 0)}</span>
+                指数 <span className="tabular-nums">{formatNumber(latest.fairValueBasis, 0)}</span>
                 <span className="ml-1">({formatDate(latest.date)})</span>
               </div>
             </div>
@@ -131,6 +132,16 @@ export function FairValueChart({ view }: { view: ValuationView }) {
           実績 EPS が週次更新のため、週内は理論値が横ばいで割高率だけが指数の変動で動く
           (実績 EPS の更新日: {formatDate(latest?.date)})。
         </>,
+        ...(indexKey === 'sp500'
+          ? [
+              <>
+                <strong>比べている指数は FactSet レポート掲載の終値</strong> (#110)。
+                実績 EPS がその終値から作られているため、
+                <strong>同じ時点どうしで比べる</strong>。レポートの終値は発行日の前営業日の
+                値なので、画面上部のサマリーが出す指数 (金曜終値) とは 1 営業日ずれる。
+              </>,
+            ]
+          : []),
         <>
           画面での基準益回りの変更は一時的な試算。恒久的に変えるには
           <code className="mx-1">data/config.json</code>
@@ -150,7 +161,7 @@ export function FairValueChart({ view }: { view: ValuationView }) {
               <Legend />
               <Line
                 type="monotone"
-                dataKey="index"
+                dataKey="fairValueBasis"
                 name={INDEX_LABELS[indexKey]}
                 stroke={INDEX_COLOR}
                 strokeWidth={2}
