@@ -529,6 +529,43 @@ const CHARTS: QuestionChartDef<EconomyQuestionId>[] = [
     ],
   },
   {
+    question: 'prices',
+    frequency: 'monthly',
+    primaryIndicator: 'export-price',
+    title: '交易条件 (輸入物価 vs 輸出物価)',
+    subtitle: '仕入れ価格と販売価格の前年同月比',
+    series: [
+      {
+        key: 'importPrice',
+        label: '輸入物価 (仕入れ)',
+        color: COLORS.importPrice,
+        width: 2.4,
+        indicatorId: 'import-price',
+      },
+      {
+        key: 'exportPrice',
+        label: '輸出物価 (販売)',
+        color: COLORS.exportPrice,
+        indicatorId: 'export-price',
+      },
+    ],
+    notes: [
+      <span key="why">
+        <strong>輸入物価は米国企業の仕入れ価格、輸出物価は海外に売るときの販売価格。</strong>
+        輸入だけ上がって輸出が上がらない状態は、
+        <strong>コスト上昇を転嫁できていない</strong>ことを意味し、企業業績の圧迫要因になる。
+      </span>,
+      <span key="not-chain">
+        <strong>物価の連鎖 (前の図) の上流ではない。</strong>
+        あちらは輸入物価 → 生産者物価 → CPI と国内に伝わる流れ。
+        こちらは対外的な売り買いの価格差で、別の話として読む。
+      </span>,
+      <span key="sa">
+        どちらも季節調整なし。前年同月比では季節性がおおむね相殺される。
+      </span>,
+    ],
+  },
+  {
     question: 'housing',
     frequency: 'weekly',
     primaryIndicator: 'mortgage-rate-30y',

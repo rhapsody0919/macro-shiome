@@ -365,6 +365,13 @@ export interface MonthlyPoint {
   // --- 物価 (前年同月比 %) ---
   /** 輸入物価。連鎖の起点。 */
   importPrice: number | null;
+  /**
+   * 輸出物価指数の前年同月比 (#98)。米国企業が海外に売るときの価格。
+   *
+   * **物価の連鎖の上流ではない**。輸入物価と対で見ると交易条件の変化が読める。
+   * 輸入だけ上がって輸出が上がらないのは、コスト上昇を転嫁できていない状態。
+   */
+  exportPrice: number | null;
   /** 生産者物価 (Final Demand)。 */
   producerPrice: number | null;
   cpi: number | null;
