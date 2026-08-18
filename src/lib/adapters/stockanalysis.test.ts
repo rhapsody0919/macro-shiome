@@ -82,3 +82,26 @@ describe('fetchEtfField', () => {
     await expect(fetchEtfField('qqq', 'peRatio')).rejects.toThrow(/HTTP 503/);
   });
 });
+
+describe('終値の抽出 (#119)', () => {
+  it('Previous Close のセルを拾う', () => {
+    const html = '<table><tr><td>Previous Close</td><td>401.48</td></tr></table>';
+    expect(parseStockAnalysisField(html, 'previousClose')).toBe(401.48);
+  });
+
+  it('PE Ratio と取り違えない', () => {
+    // 同じ表に両方あるので、ラベルが混ざると別の指標を保存することになる。
+    const html =
+      '<table><tr><td>PE Ratio</td><td>33.62</td></tr>' +
+      '<tr><td>Previous Close</td><td>401.48</td></tr></table>';
+    expect(parseStockAnalysisField(html, 'previousClose')).toBe(401.48);
+    expect(parseStockAnalysisField(html, 'peRatio')).toBe(33.62);
+  });
+
+  it('ラベルが無ければ落とす', () => {
+    // 構造変更で取れなくなったときに黙って欠測にしない。
+    expect(() => parseStockAnalysisField('<table></table>', 'previousClose')).toThrow(
+      /Previous Close/,
+    );
+  });
+});

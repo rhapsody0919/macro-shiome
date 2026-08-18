@@ -12,11 +12,13 @@
 const BASE_URL = 'https://stockanalysis.com/etf';
 
 /** 取得できるフィールド。増える場合はここに足す。 */
-export type StockAnalysisField = 'peRatio';
+export type StockAnalysisField = 'peRatio' | 'previousClose';
 
 /** 表内のラベル。HTML の構造ではなくラベル名に依存させる方が構造変更に強い。 */
 const FIELD_LABELS: Record<StockAnalysisField, string> = {
   peRatio: 'PE Ratio',
+  // 週次バッチは土曜 (UTC) に走るので、直前の終値 = 金曜終値になる (#119)。
+  previousClose: 'Previous Close',
 };
 
 export function stockAnalysisEtfUrl(symbol: string): string {
