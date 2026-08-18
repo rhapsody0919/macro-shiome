@@ -585,7 +585,11 @@
     "attribution": "Federal Reserve Bank of Chicago via FRED",
     "copyright": "restricted",
     "group": "rates",
-    "note": "Chicago Fed National Financial Conditions Credit Subindex。指数、季節調整なし、週次。**著作権は Chicago Fed にある**。ゼロが平均的な状態で、正が引き締まり (信用が取りにくい)、負が緩み。The Conference Board の Leading Credit Index とは別物 (あちらは独自の合成指標で公開されていない) だが、信用状況の逼迫度を測る点で近い。"
+    "note": "Chicago Fed National Financial Conditions Credit Subindex。指数、季節調整なし、週次。**著作権は Chicago Fed にある**。ゼロが平均的な状態で、正が引き締まり (信用が取りにくい)、負が緩み。The Conference Board の Leading Credit Index とは別物 (あちらは独自の合成指標で公開されていない) だが、信用状況の逼迫度を測る点で近い。 範囲の根拠: ゼロが平均で負が緩み。実測は -0.06 (2026年8月)。過去の最大でも ±5 に収まる。",
+    "range": {
+      "min": -5,
+      "max": 5
+    }
   },
   "hy-spread": {
     "name": "ハイイールド債スプレッド",
@@ -702,7 +706,11 @@
     "attribution": "U.S. Department of the Treasury, Fiscal Service via FRED",
     "copyright": "none",
     "group": "macro",
-    "note": "Federal Surplus or Deficit。百万ドル、季節調整なし。負が赤字。財政赤字の拡大は国債発行を増やし、長期金利の上昇要因になる。"
+    "note": "Federal Surplus or Deficit。百万ドル、季節調整なし。負が赤字。財政赤字の拡大は国債発行を増やし、長期金利の上昇要因になる。 範囲の根拠: 赤字が負で、実測は -432,308 (2026年7月)。百万ドル単位なので ±1 兆ドル/月を外れ値とみなす。",
+    "range": {
+      "min": -1000000,
+      "max": 1000000
+    }
   },
   "job-openings": {
     "name": "求人件数 (JOLTS)",
@@ -845,6 +853,10 @@
     "attribution": "U.S. Department of the Treasury, Fiscal Data",
     "copyright": "none",
     "group": "rates",
-    "note": "応札額 ÷ 落札額。低いほど買い手が弱い。10 年債 (通常債) の入札は月 1 回。リオープン (追加発行) は残存期間で記録されるため original_security_term で絞り、10 年 TIPS を除くため inflation_index_security で絞っている。どちらか一方でも欠けると別物が混ざる。"
+    "note": "応札額 ÷ 落札額。低いほど買い手が弱い。10 年債 (通常債) の入札は月 1 回。リオープン (追加発行) は残存期間で記録されるため original_security_term で絞り、10 年 TIPS を除くため inflation_index_security で絞っている。どちらか一方でも欠けると別物が混ざる。 範囲の根拠: 応札倍率は 1 を割ると札割れ。実測は 2.3〜2.7。PER 用の既定 (5〜60) では正常値が全部弾かれる。",
+    "range": {
+      "min": 1,
+      "max": 5
+    }
   }
 }

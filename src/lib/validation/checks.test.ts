@@ -194,3 +194,21 @@ describe('拡散指数の範囲 (#94)', () => {
     expect(checkRange('ny-fed-survey', survey, '2026-08-01', -150)).not.toEqual([]);
   });
 })
+
+describe('指標ごとの範囲上書き (#102)', () => {
+  const deficit = indicator({ unit: 'index', group: 'macro', range: { min: -1_000_000, max: 1_000_000 } });
+
+  it('上書きがあれば単位から決まる既定より優先する', () => {
+    // index の既定は min 0。財政収支は赤字が負なので、そのままでは正常値で落ちる。
+    expect(checkRange('federal-deficit', deficit, '2026-07-01', -432_307)).toEqual([]);
+  });
+
+  it('上書きの外は従来どおり弾く', () => {
+    expect(checkRange('federal-deficit', deficit, '2026-07-01', -9_999_999)).not.toEqual([]);
+  });
+
+  it('上書きが無ければ単位から決まる範囲を使う', () => {
+    const index = indicator({ unit: 'index', group: 'macro' });
+    expect(checkRange('sp500', index, '2026-08-14', -1)).not.toEqual([]);
+  });
+});

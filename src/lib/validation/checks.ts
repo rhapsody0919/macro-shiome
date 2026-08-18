@@ -85,7 +85,8 @@ export function checkRange(
     ];
   }
 
-  const range = rangeFor(indicator.unit, indicator.group);
+  // 指標ごとの上書きが最優先 (#102)。単位だけでは自然な範囲が決まらない指標がある。
+  const range = indicator.range ?? rangeFor(indicator.unit, indicator.group);
   if (range === null) return [];
 
   if (value < range.min || value > range.max) {
