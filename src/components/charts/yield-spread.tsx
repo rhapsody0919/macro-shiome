@@ -290,4 +290,3 @@ function DistributionPosition({ distribution }: { distribution: SpreadDistributi
     </div>
   );
 }
-

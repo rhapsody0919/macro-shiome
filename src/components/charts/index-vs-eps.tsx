@@ -294,4 +294,3 @@ function Notes({
     </ul>
   );
 }
-

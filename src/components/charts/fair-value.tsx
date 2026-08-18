@@ -302,4 +302,3 @@ function TargetYieldControl({
     </div>
   );
 }
-
