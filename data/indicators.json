@@ -833,5 +833,18 @@
     "copyright": "none",
     "group": "macro",
     "note": "Export Price Index (End Use): All Commodities。2000=100、季節調整なし。輸入物価 (IR) と対になる系列で、米国企業が海外に売るときの価格。輸入物価が仕入れ価格、輸出物価が販売価格にあたるので、両方を並べると交易条件の変化が読める。**物価の連鎖 (輸入物価 → 生産者物価 → CPI) の上流ではない**。"
+  },
+  "ten-year-bid-to-cover": {
+    "name": "10年債入札の応札倍率",
+    "source": {
+      "adapter": "treasury",
+      "auction": "ten-year-bid-to-cover"
+    },
+    "frequency": "monthly",
+    "unit": "ratio",
+    "attribution": "U.S. Department of the Treasury, Fiscal Data",
+    "copyright": "none",
+    "group": "rates",
+    "note": "応札額 ÷ 落札額。低いほど買い手が弱い。10 年債 (通常債) の入札は月 1 回。リオープン (追加発行) は残存期間で記録されるため original_security_term で絞り、10 年 TIPS を除くため inflation_index_security で絞っている。どちらか一方でも欠けると別物が混ざる。"
   }
 }

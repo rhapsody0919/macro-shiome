@@ -632,3 +632,39 @@ describe('交易条件 (#98)', () => {
     expect(ids).toContain('export-price');
   });
 });
+
+describe('10年債入札の応札倍率 (#96)', () => {
+  const build = (observations: ObservationMap) =>
+    buildEconomyView({
+      observations,
+      config,
+      start: '2026-06-01',
+      today: new Date(Date.UTC(2026, 7, 20)),
+    });
+
+  it('月内のどの日付でもその月に載せる', () => {
+    // 入札日は月ごとに動く。月初ちょうどを見る通常の判定では拾えない。
+    const view = build({ 'ten-year-bid-to-cover': { '2026-08-12': 2.53 } });
+    expect(view.monthly.find((p) => p.month === '2026-08-01')?.bidToCover).toBe(2.53);
+  });
+
+  it('入札が無い月は欠測にする', () => {
+    const view = build({ 'ten-year-bid-to-cover': { '2026-08-12': 2.53 } });
+    expect(view.monthly.find((p) => p.month === '2026-07-01')?.bidToCover).toBeNull();
+  });
+
+  it('同じ月に複数あれば後の入札を使う', () => {
+    const view = build({
+      'ten-year-bid-to-cover': { '2026-08-05': 2.3, '2026-08-12': 2.53 },
+    });
+    expect(view.monthly.find((p) => p.month === '2026-08-01')?.bidToCover).toBe(2.53);
+  });
+
+  it('発表状況は入札があった月を指す', () => {
+    // 月初ちょうどの値を見る判定だと null になってしまう (#96)。
+    const view = build({ 'ten-year-bid-to-cover': { '2026-07-08': 2.59 } });
+    expect(view.coverage.find((c) => c.indicatorId === 'ten-year-bid-to-cover')?.latestMonth).toBe(
+      '2026-07-01',
+    );
+  });
+});

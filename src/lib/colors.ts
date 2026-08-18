@@ -17,6 +17,8 @@ export const COLORS = {
   realRate: '#0ea5e9',
   /** イールドカーブ (長短金利差)。 */
   termSpread: '#6366f1',
+  /** 10年債入札の応札倍率。 */
+  bidToCover: '#0369a1',
   /** 輸出物価。輸入物価と対で交易条件を見る。 */
   exportPrice: '#f472b6',
   /** 日本の 10 年債利回り。 */

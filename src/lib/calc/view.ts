@@ -350,6 +350,21 @@ export function buildRevisionSeries(options: BuildViewOptions): RevisionPoint[] 
 }
 
 /**
+ * その月の観測値を返す (#96)。月内の日付が不定な系列に使う。
+ *
+ * `valueForMonth` は「月初 (YYYY-MM-01) ちょうど」を見るので、
+ * **入札のように日付が月ごとに動く系列には使えない**。同じ月に複数あれば最後の 1 件。
+ */
+export function latestInMonth(observations: Observations, month: string): number | null {
+  const prefix = month.slice(0, 7);
+  const dates = Object.keys(observations)
+    .filter((date) => date.startsWith(prefix))
+    .sort();
+  const last = dates.at(-1);
+  return last === undefined ? null : observations[last];
+}
+
+/**
  * 四半期の水準系列から前年同期比 (%) の系列を作る (#93)。
  *
  * 観測日は四半期の初日 (1/1・4/1・7/1・10/1) に揃っているため、
@@ -463,6 +478,8 @@ export function buildEconomyView(options: BuildViewOptions): EconomyView {
     housingStarts: level('housing-starts', month),
     newHomeSales: level('new-home-sales', month),
     jobOpenings: level('job-openings', month),
+    // 入札日は月内で不定なので、その月に 1 件でもあればその値を載せる。
+    bidToCover: latestInMonth(series(observations, 'ten-year-bid-to-cover'), month),
     // 拡散指数。水準そのものが意味を持つ (0 が中立) ため前年同月比にしない。
     nyFedSurvey: level('ny-fed-survey', month),
     phillyFedSurvey: level('philly-fed-survey', month),
@@ -481,7 +498,13 @@ export function buildEconomyView(options: BuildViewOptions): EconomyView {
   // 発表ラグは指標ごとに違うため、系列単位で「どこまで出ているか」を持つ。
   const coverage: MonthlyCoverage[] = MONTHLY_INDICATORS.map((indicatorId) => ({
     indicatorId,
-    latestMonth: latestMonthWithValue(months, series(observations, indicatorId)),
+    latestMonth:
+      // 入札は月内の日付が不定なので、月初ちょうどを見る通常の判定では拾えない (#96)。
+      indicatorId === 'ten-year-bid-to-cover'
+        ? (months.findLast(
+            (month) => latestInMonth(series(observations, indicatorId), month) !== null,
+          ) ?? null)
+        : latestMonthWithValue(months, series(observations, indicatorId)),
   }));
 
   return {
@@ -513,6 +536,7 @@ const MONTHLY_INDICATORS = [
   'housing-starts',
   'new-home-sales',
   'job-openings',
+  'ten-year-bid-to-cover',
   'ny-fed-survey',
   'philly-fed-survey',
   'us-10y-monthly',
