@@ -18,6 +18,7 @@
     "wti": 41.83,
     "dollarIndex": 112.3589,
     "nikkei225": 16254.45,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -39,6 +40,7 @@
     "wti": 44.47,
     "dollarIndex": 111.1787,
     "nikkei225": 16919.92,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -60,6 +62,7 @@
     "wti": 48.48,
     "dollarIndex": 110.8163,
     "nikkei225": 16545.82,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -81,6 +84,7 @@
     "wti": 47.64,
     "dollarIndex": 111.2035,
     "nikkei225": 16360.71,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -102,6 +106,7 @@
     "wti": 44.39,
     "dollarIndex": 112.0009,
     "nikkei225": 16925.68,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -123,6 +128,7 @@
     "wti": 45.88,
     "dollarIndex": 111.9879,
     "nikkei225": 16965.76,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -144,6 +150,7 @@
     "wti": 43.04,
     "dollarIndex": 113.1765,
     "nikkei225": 16519.29,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -165,6 +172,7 @@
     "wti": 44.36,
     "dollarIndex": 112.7166,
     "nikkei225": 16754.02,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -186,6 +194,7 @@
     "wti": 47.72,
     "dollarIndex": 112.2795,
     "nikkei225": 16449.84,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -207,6 +216,7 @@
     "wti": 49.76,
     "dollarIndex": 113.2915,
     "nikkei225": 16860.09,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -228,6 +238,7 @@
     "wti": 50.35,
     "dollarIndex": 113.7119,
     "nikkei225": 16856.37,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -249,6 +260,7 @@
     "wti": 50.61,
     "dollarIndex": 113.9015,
     "nikkei225": 17184.59,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -270,6 +282,7 @@
     "wti": 48.72,
     "dollarIndex": 114.0931,
     "nikkei225": 17446.41,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -291,6 +304,7 @@
     "wti": 44.07,
     "dollarIndex": 113.5828,
     "nikkei225": 16905.36,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -312,6 +326,7 @@
     "wti": 43.39,
     "dollarIndex": 115.9375,
     "nikkei225": 17374.79,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -333,6 +348,7 @@
     "wti": 45.69,
     "dollarIndex": 117.5936,
     "nikkei225": 17967.41,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -354,6 +370,7 @@
     "wti": 46.72,
     "dollarIndex": 118.02,
     "nikkei225": 18381.22,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -375,6 +392,7 @@
     "wti": 51.7,
     "dollarIndex": 117.3116,
     "nikkei225": 18426.08,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -396,6 +414,7 @@
     "wti": 51.51,
     "dollarIndex": 117.2834,
     "nikkei225": 18996.37,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -417,6 +436,7 @@
     "wti": 51.93,
     "dollarIndex": 118.3584,
     "nikkei225": 19401.15,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -438,6 +458,7 @@
     "wti": 52.01,
     "dollarIndex": 118.7856,
     "nikkei225": 19427.67,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -459,6 +480,7 @@
     "wti": 53.75,
     "dollarIndex": 118.3466,
     "nikkei225": 19114.37,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -480,6 +502,7 @@
     "wti": 53.98,
     "dollarIndex": 118.3495,
     "nikkei225": 19454.33,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -501,6 +524,7 @@
     "wti": 52.36,
     "dollarIndex": 117.9884,
     "nikkei225": 19287.28,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -522,6 +546,7 @@
     "wti": 52.33,
     "dollarIndex": 118.3182,
     "nikkei225": 19137.91,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -543,6 +568,7 @@
     "wti": 53.18,
     "dollarIndex": 117.0735,
     "nikkei225": 19467.4,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -564,6 +590,7 @@
     "wti": 53.81,
     "dollarIndex": 115.6259,
     "nikkei225": 18918.2,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -585,6 +612,7 @@
     "wti": 53.84,
     "dollarIndex": 116.148,
     "nikkei225": 19378.93,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -606,6 +634,7 @@
     "wti": 53.41,
     "dollarIndex": 116.4035,
     "nikkei225": 19234.62,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -627,6 +656,7 @@
     "wti": 53.99,
     "dollarIndex": 115.8143,
     "nikkei225": 19283.54,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -648,6 +678,7 @@
     "wti": 53.33,
     "dollarIndex": 116.6438,
     "nikkei225": 19469.17,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -669,6 +700,7 @@
     "wti": 48.05,
     "dollarIndex": 116.616,
     "nikkei225": 19604.61,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -690,6 +722,7 @@
     "wti": 48.34,
     "dollarIndex": 115.2783,
     "nikkei225": 19521.59,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -711,6 +744,7 @@
     "wti": 47.3,
     "dollarIndex": 114.6372,
     "nikkei225": 19262.53,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -732,6 +766,7 @@
     "wti": 50.54,
     "dollarIndex": 114.7938,
     "nikkei225": 18909.26,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -753,6 +788,7 @@
     "wti": 52.25,
     "dollarIndex": 115.0547,
     "nikkei225": 18664.63,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -774,6 +810,7 @@
     "wti": 53.19,
     "dollarIndex": 114.5368,
     "nikkei225": 18335.63,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -795,6 +832,7 @@
     "wti": 49.64,
     "dollarIndex": 114.8128,
     "nikkei225": 18620.75,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -816,6 +854,7 @@
     "wti": 49.31,
     "dollarIndex": 114.7877,
     "nikkei225": 19196.74,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -837,6 +876,7 @@
     "wti": 46.23,
     "dollarIndex": 114.7725,
     "nikkei225": 19445.7,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -858,6 +898,7 @@
     "wti": 47.83,
     "dollarIndex": 114.7479,
     "nikkei225": 19883.9,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -879,6 +920,7 @@
     "wti": 50.32,
     "dollarIndex": 113.7001,
     "nikkei225": 19590.76,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -900,6 +942,7 @@
     "wti": 49.58,
     "dollarIndex": 113.4839,
     "nikkei225": 19686.84,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -921,6 +964,7 @@
     "wti": 47.68,
     "dollarIndex": 113.1908,
     "nikkei225": 20177.28,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -942,6 +986,7 @@
     "wti": 45.82,
     "dollarIndex": 112.9562,
     "nikkei225": 20013.26,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -963,6 +1008,7 @@
     "wti": 44.73,
     "dollarIndex": 112.6155,
     "nikkei225": 19943.26,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -984,6 +1030,7 @@
     "wti": 42.86,
     "dollarIndex": 112.8665,
     "nikkei225": 20132.67,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1005,6 +1052,7 @@
     "wti": 46.02,
     "dollarIndex": 111.9896,
     "nikkei225": 20033.43,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1026,6 +1074,7 @@
     "wti": 44.25,
     "dollarIndex": 112.3137,
     "nikkei225": 19929.09,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1047,6 +1096,7 @@
     "wti": 46.53,
     "dollarIndex": 110.9075,
     "nikkei225": 20118.86,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1068,6 +1118,7 @@
     "wti": 45.78,
     "dollarIndex": 110.191,
     "nikkei225": 20099.75,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1089,6 +1140,7 @@
     "wti": 49.72,
     "dollarIndex": 109.92,
     "nikkei225": 19959.84,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1110,6 +1162,7 @@
     "wti": 49.57,
     "dollarIndex": 110.2808,
     "nikkei225": 19952.33,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1131,6 +1184,7 @@
     "wti": 48.81,
     "dollarIndex": 110.0422,
     "nikkei225": 19729.74,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1152,6 +1206,7 @@
     "wti": 48.59,
     "dollarIndex": 110.041,
     "nikkei225": 19470.41,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1173,6 +1228,7 @@
     "wti": 47.65,
     "dollarIndex": 109.3415,
     "nikkei225": 19452.61,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1194,6 +1250,7 @@
     "wti": 47.32,
     "dollarIndex": 109.0504,
     "nikkei225": 19691.47,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1215,6 +1272,7 @@
     "wti": 47.44,
     "dollarIndex": 107.808,
     "nikkei225": 19274.82,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1236,6 +1294,7 @@
     "wti": 49.9,
     "dollarIndex": 108.3147,
     "nikkei225": 19909.5,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1257,6 +1316,7 @@
     "wti": 50.33,
     "dollarIndex": 108.7542,
     "nikkei225": 20296.45,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1278,6 +1338,7 @@
     "wti": 51.67,
     "dollarIndex": 110.0867,
     "nikkei225": 20356.28,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1299,6 +1360,7 @@
     "wti": 49.34,
     "dollarIndex": 110.7841,
     "nikkei225": 20690.71,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1320,6 +1382,7 @@
     "wti": 51.43,
     "dollarIndex": 110.2669,
     "nikkei225": 21155.18,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1341,6 +1404,7 @@
     "wti": 51.63,
     "dollarIndex": 111.0375,
     "nikkei225": 21457.64,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1362,6 +1426,7 @@
     "wti": 53.92,
     "dollarIndex": 112.1495,
     "nikkei225": 22008.45,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1383,6 +1448,7 @@
     "wti": 55.63,
     "dollarIndex": 111.9383,
     "nikkei225": 22539.12,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1404,6 +1470,7 @@
     "wti": 56.75,
     "dollarIndex": 111.5626,
     "nikkei225": 22681.42,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1425,6 +1492,7 @@
     "wti": 56.21,
     "dollarIndex": 111.0016,
     "nikkei225": 22396.8,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1446,6 +1514,7 @@
     "wti": 58.94,
     "dollarIndex": 110.0253,
     "nikkei225": 22550.85,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1467,6 +1536,7 @@
     "wti": 58.35,
     "dollarIndex": 110.1413,
     "nikkei225": 22819.03,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1488,6 +1558,7 @@
     "wti": 57.15,
     "dollarIndex": 111.2273,
     "nikkei225": 22811.08,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1509,6 +1580,7 @@
     "wti": 57.29,
     "dollarIndex": 111.1286,
     "nikkei225": 22553.22,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1530,6 +1602,7 @@
     "wti": 58.25,
     "dollarIndex": 111.0997,
     "nikkei225": 22902.76,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1551,6 +1624,7 @@
     "wti": 60.46,
     "dollarIndex": 110.0783,
     "nikkei225": 22764.94,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1572,6 +1646,7 @@
     "wti": 61.49,
     "dollarIndex": 109.3496,
     "nikkei225": 23714.53,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1593,6 +1668,7 @@
     "wti": 64.22,
     "dollarIndex": 108.901,
     "nikkei225": 23653.82,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1614,6 +1690,7 @@
     "wti": 63.38,
     "dollarIndex": 107.9455,
     "nikkei225": 23808.06,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1635,6 +1712,7 @@
     "wti": 66.27,
     "dollarIndex": 106.6911,
     "nikkei225": 23631.88,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1656,6 +1734,7 @@
     "wti": 65.5,
     "dollarIndex": 107.1151,
     "nikkei225": 23274.53,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1677,6 +1756,7 @@
     "wti": 59.2,
     "dollarIndex": 108.2582,
     "nikkei225": 21382.62,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1698,6 +1778,7 @@
     "wti": 61.89,
     "dollarIndex": 107.0359,
     "nikkei225": 21720.25,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1719,6 +1800,7 @@
     "wti": 63.52,
     "dollarIndex": 107.6804,
     "nikkei225": 21892.78,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1740,6 +1822,7 @@
     "wti": 61.19,
     "dollarIndex": 108.5358,
     "nikkei225": 21181.64,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1761,6 +1844,7 @@
     "wti": 62.02,
     "dollarIndex": 107.923,
     "nikkei225": 21469.2,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1782,6 +1866,7 @@
     "wti": 62.29,
     "dollarIndex": 108.4332,
     "nikkei225": 21676.51,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1803,6 +1888,7 @@
     "wti": 65.8,
     "dollarIndex": 107.7495,
     "nikkei225": 20617.86,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1824,6 +1910,7 @@
     "wti": 64.87,
     "dollarIndex": 107.4784,
     "nikkei225": 21454.3,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1845,6 +1932,7 @@
     "wti": 62.03,
     "dollarIndex": 107.7886,
     "nikkei225": 21567.52,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1866,6 +1954,7 @@
     "wti": 67.35,
     "dollarIndex": 107.2368,
     "nikkei225": 21778.74,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1887,6 +1976,7 @@
     "wti": 68.26,
     "dollarIndex": 108.1787,
     "nikkei225": 22162.24,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1908,6 +1998,7 @@
     "wti": 68.11,
     "dollarIndex": 109.1735,
     "nikkei225": 22467.87,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1929,6 +2020,7 @@
     "wti": 69.71,
     "dollarIndex": 110.25,
     "nikkei225": 22472.78,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1950,6 +2042,7 @@
     "wti": 70.69,
     "dollarIndex": 110.2847,
     "nikkei225": 22758.48,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1971,6 +2064,7 @@
     "wti": 71.23,
     "dollarIndex": 111.7171,
     "nikkei225": 22930.36,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -1992,6 +2086,7 @@
     "wti": 67.92,
     "dollarIndex": 111.5843,
     "nikkei225": 22450.79,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2013,6 +2108,7 @@
     "wti": 65.81,
     "dollarIndex": 111.8265,
     "nikkei225": 22171.35,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2034,6 +2130,7 @@
     "wti": 65.77,
     "dollarIndex": 112.1066,
     "nikkei225": 22694.5,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2055,6 +2152,7 @@
     "wti": 65.01,
     "dollarIndex": 113.3379,
     "nikkei225": 22851.75,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2076,6 +2174,7 @@
     "wti": 69.02,
     "dollarIndex": 113.3047,
     "nikkei225": 22516.83,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2097,6 +2196,7 @@
     "wti": 74.13,
     "dollarIndex": 113.2586,
     "nikkei225": 22304.51,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2118,6 +2218,7 @@
     "wti": 73.78,
     "dollarIndex": 112.6428,
     "nikkei225": 21788.14,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2139,6 +2240,7 @@
     "wti": 71.03,
     "dollarIndex": 113.0705,
     "nikkei225": 22597.35,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2160,6 +2262,7 @@
     "wti": 70.31,
     "dollarIndex": 113.3213,
     "nikkei225": 22697.88,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2181,6 +2284,7 @@
     "wti": 68.66,
     "dollarIndex": 112.8125,
     "nikkei225": 22712.75,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2202,6 +2306,7 @@
     "wti": 68.49,
     "dollarIndex": 113.012,
     "nikkei225": 22525.18,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2223,6 +2328,7 @@
     "wti": 67.61,
     "dollarIndex": 114.3005,
     "nikkei225": 22298.08,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2244,6 +2350,7 @@
     "wti": 65.93,
     "dollarIndex": 114.5339,
     "nikkei225": 22270.38,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2265,6 +2372,7 @@
     "wti": 69.71,
     "dollarIndex": 113.5985,
     "nikkei225": 22601.77,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2286,6 +2394,7 @@
     "wti": 69.84,
     "dollarIndex": 114.2755,
     "nikkei225": 22865.15,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2307,6 +2416,7 @@
     "wti": 67.73,
     "dollarIndex": 114.5816,
     "nikkei225": 22307.06,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2328,6 +2438,7 @@
     "wti": 68.98,
     "dollarIndex": 114.0657,
     "nikkei225": 23094.67,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2349,6 +2460,7 @@
     "wti": 70.8,
     "dollarIndex": 113.5099,
     "nikkei225": 23869.93,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2370,6 +2482,7 @@
     "wti": 73.16,
     "dollarIndex": 113.8077,
     "nikkei225": 24120.04,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2391,6 +2504,7 @@
     "wti": 74.26,
     "dollarIndex": 114.561,
     "nikkei225": 23783.72,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2412,6 +2526,7 @@
     "wti": 71.41,
     "dollarIndex": 114.3691,
     "nikkei225": 22694.66,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2433,6 +2548,7 @@
     "wti": 69.16,
     "dollarIndex": 114.8567,
     "nikkei225": 22532.08,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2454,6 +2570,7 @@
     "wti": 67.58,
     "dollarIndex": 115.473,
     "nikkei225": 21184.6,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2475,6 +2592,7 @@
     "wti": 63.12,
     "dollarIndex": 115.643,
     "nikkei225": 22243.66,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2496,6 +2614,7 @@
     "wti": 60.19,
     "dollarIndex": 116.4778,
     "nikkei225": 22250.25,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2517,6 +2636,7 @@
     "wti": 56.49,
     "dollarIndex": 115.9258,
     "nikkei225": 21680.34,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2538,6 +2658,7 @@
     "wti": 54.41,
     "dollarIndex": 116.4713,
     "nikkei225": 21646.55,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2559,6 +2680,7 @@
     "wti": 50.78,
     "dollarIndex": 116.413,
     "nikkei225": 22351.06,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2580,6 +2702,7 @@
     "wti": 52.76,
     "dollarIndex": 116.0847,
     "nikkei225": 21678.68,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2601,6 +2724,7 @@
     "wti": 51.26,
     "dollarIndex": 116.79,
     "nikkei225": 21374.83,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2622,6 +2746,7 @@
     "wti": 45.38,
     "dollarIndex": 116.2227,
     "nikkei225": 20166.19,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2643,6 +2768,7 @@
     "wti": 45.15,
     "dollarIndex": 115.7232,
     "nikkei225": 20014.77,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2664,6 +2790,7 @@
     "wti": 47.76,
     "dollarIndex": 114.9821,
     "nikkei225": 19561.96,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2685,6 +2812,7 @@
     "wti": 51.44,
     "dollarIndex": 114.0404,
     "nikkei225": 20359.7,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2706,6 +2834,7 @@
     "wti": 53.6,
     "dollarIndex": 114.558,
     "nikkei225": 20666.07,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2727,6 +2856,7 @@
     "wti": 53.53,
     "dollarIndex": 114.0197,
     "nikkei225": 20773.56,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2748,6 +2878,7 @@
     "wti": 55.29,
     "dollarIndex": 113.7548,
     "nikkei225": 20788.39,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2769,6 +2900,7 @@
     "wti": 52.75,
     "dollarIndex": 114.5003,
     "nikkei225": 20333.17,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2790,6 +2922,7 @@
     "wti": 55.58,
     "dollarIndex": 114.9923,
     "nikkei225": 20900.63,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2811,6 +2944,7 @@
     "wti": 57.01,
     "dollarIndex": 114.2716,
     "nikkei225": 21425.51,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2832,6 +2966,7 @@
     "wti": 55.76,
     "dollarIndex": 114.537,
     "nikkei225": 21602.69,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2853,6 +2988,7 @@
     "wti": 55.77,
     "dollarIndex": 115.3599,
     "nikkei225": 21025.56,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2874,6 +3010,7 @@
     "wti": 58.51,
     "dollarIndex": 114.5815,
     "nikkei225": 21450.85,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2895,6 +3032,7 @@
     "wti": 58.87,
     "dollarIndex": 114.6856,
     "nikkei225": 21627.34,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2916,6 +3054,7 @@
     "wti": 60.19,
     "dollarIndex": 115.1371,
     "nikkei225": 21205.81,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2937,6 +3076,7 @@
     "wti": 63.1,
     "dollarIndex": 114.9726,
     "nikkei225": 21807.5,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2958,6 +3098,7 @@
     "wti": 63.86,
     "dollarIndex": 114.3531,
     "nikkei225": 21870.56,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -2979,6 +3120,7 @@
     "wti": 64.02,
     "dollarIndex": 114.6977,
     "nikkei225": 22200.56,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -3000,6 +3142,7 @@
     "wti": 63.29,
     "dollarIndex": 115.4767,
     "nikkei225": 22258.73,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -3021,6 +3164,7 @@
     "wti": 61.98,
     "dollarIndex": 115.2646,
     "nikkei225": 22258.73,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -3042,6 +3186,7 @@
     "wti": 61.65,
     "dollarIndex": 115.5334,
     "nikkei225": 21344.92,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -3063,6 +3208,7 @@
     "wti": 62.77,
     "dollarIndex": 116.448,
     "nikkei225": 21250.09,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -3084,6 +3230,7 @@
     "wti": 58.4,
     "dollarIndex": 116.0806,
     "nikkei225": 21117.22,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -3105,6 +3252,7 @@
     "wti": 53.49,
     "dollarIndex": 116.7273,
     "nikkei225": 20601.19,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -3126,6 +3274,7 @@
     "wti": 53.95,
     "dollarIndex": 115.7368,
     "nikkei225": 20884.71,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -3147,6 +3296,7 @@
     "wti": 52.47,
     "dollarIndex": 115.9057,
     "nikkei225": 21116.89,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -3168,6 +3318,7 @@
     "wti": 57.35,
     "dollarIndex": 114.8377,
     "nikkei225": 21258.64,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -3189,6 +3340,7 @@
     "wti": 58.2,
     "dollarIndex": 114.5821,
     "nikkei225": 21275.92,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -3210,6 +3362,7 @@
     "wti": 57.06,
     "dollarIndex": 115.1132,
     "nikkei225": 21746.38,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -3231,6 +3384,7 @@
     "wti": 59.99,
     "dollarIndex": 114.7685,
     "nikkei225": 21685.9,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -3252,6 +3406,7 @@
     "wti": 55.42,
     "dollarIndex": 114.8695,
     "nikkei225": 21466.99,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -3273,6 +3428,7 @@
     "wti": 56.04,
     "dollarIndex": 115.5449,
     "nikkei225": 21658.15,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -3294,6 +3450,7 @@
     "wti": 55.67,
     "dollarIndex": 116.1864,
     "nikkei225": 21087.16,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -3315,6 +3472,7 @@
     "wti": 54.41,
     "dollarIndex": 116.4419,
     "nikkei225": 20684.82,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -3336,6 +3494,7 @@
     "wti": 54.83,
     "dollarIndex": 117.0786,
     "nikkei225": 20418.81,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -3357,6 +3516,7 @@
     "wti": 54.08,
     "dollarIndex": 117.3009,
     "nikkei225": 20710.91,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -3378,6 +3538,7 @@
     "wti": 55.07,
     "dollarIndex": 118.1575,
     "nikkei225": 20704.37,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -3399,6 +3560,7 @@
     "wti": 56.45,
     "dollarIndex": 117.1292,
     "nikkei225": 21199.57,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -3420,6 +3582,7 @@
     "wti": 54.76,
     "dollarIndex": 116.7677,
     "nikkei225": 21988.29,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -3441,6 +3604,7 @@
     "wti": 57.92,
     "dollarIndex": 117.1819,
     "nikkei225": 22079.09,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -3462,6 +3626,7 @@
     "wti": 55.95,
     "dollarIndex": 117.7218,
     "nikkei225": 21878.9,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -3483,6 +3648,7 @@
     "wti": 52.84,
     "dollarIndex": 117.5288,
     "nikkei225": 21410.2,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -3504,6 +3670,7 @@
     "wti": 54.76,
     "dollarIndex": 116.8239,
     "nikkei225": 21798.87,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -3525,6 +3692,7 @@
     "wti": 53.75,
     "dollarIndex": 116.1344,
     "nikkei225": 22492.68,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -3546,6 +3714,7 @@
     "wti": 56.52,
     "dollarIndex": 116.0774,
     "nikkei225": 22799.81,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -3567,6 +3736,7 @@
     "wti": 56.04,
     "dollarIndex": 115.7312,
     "nikkei225": 22850.77,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -3588,6 +3758,7 @@
     "wti": 57.02,
     "dollarIndex": 116.3436,
     "nikkei225": 23391.87,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -3609,6 +3780,7 @@
     "wti": 57.54,
     "dollarIndex": 116.4401,
     "nikkei225": 23303.32,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -3630,6 +3802,7 @@
     "wti": 57.68,
     "dollarIndex": 116.9137,
     "nikkei225": 23112.88,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -3651,6 +3824,7 @@
     "wti": 58.12,
     "dollarIndex": 117.1204,
     "nikkei225": 23293.91,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -3672,6 +3846,7 @@
     "wti": 59.2,
     "dollarIndex": 116.5381,
     "nikkei225": 23354.4,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -3693,6 +3868,7 @@
     "wti": 60.11,
     "dollarIndex": 115.6967,
     "nikkei225": 24023.1,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -3714,6 +3890,7 @@
     "wti": 60.43,
     "dollarIndex": 115.7598,
     "nikkei225": 23816.63,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -3735,6 +3912,7 @@
     "wti": 61.76,
     "dollarIndex": 115.22,
     "nikkei225": 23837.72,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -3756,6 +3934,7 @@
     "wti": 63,
     "dollarIndex": 114.9867,
     "nikkei225": 23656.62,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -3777,6 +3956,7 @@
     "wti": 59.02,
     "dollarIndex": 115.0677,
     "nikkei225": 23850.57,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -3798,6 +3978,7 @@
     "wti": 58.55,
     "dollarIndex": 115.0656,
     "nikkei225": 24041.26,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -3819,6 +4000,7 @@
     "wti": 54.09,
     "dollarIndex": 115.5556,
     "nikkei225": 23827.18,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -3840,6 +4022,7 @@
     "wti": 51.58,
     "dollarIndex": 115.7345,
     "nikkei225": 23205.18,
+    "gold": null,
     "newJobPostings": null
   },
   {
@@ -3861,6 +4044,7 @@
     "wti": 50.34,
     "dollarIndex": 116.5086,
     "nikkei225": 23827.98,
+    "gold": null,
     "newJobPostings": 99.86
   },
   {
@@ -3882,6 +4066,7 @@
     "wti": 52.03,
     "dollarIndex": 116.4223,
     "nikkei225": 23687.59,
+    "gold": null,
     "newJobPostings": 104.63
   },
   {
@@ -3903,6 +4088,7 @@
     "wti": 53.36,
     "dollarIndex": 117.0473,
     "nikkei225": 23386.74,
+    "gold": null,
     "newJobPostings": 102.63
   },
   {
@@ -3924,6 +4110,7 @@
     "wti": 44.83,
     "dollarIndex": 117.6568,
     "nikkei225": 21142.96,
+    "gold": null,
     "newJobPostings": 103.03
   },
   {
@@ -3945,6 +4132,7 @@
     "wti": 41.14,
     "dollarIndex": 116.7106,
     "nikkei225": 20749.75,
+    "gold": null,
     "newJobPostings": 102.5
   },
   {
@@ -3966,6 +4154,7 @@
     "wti": 31.72,
     "dollarIndex": 120.4388,
     "nikkei225": 17431.05,
+    "gold": null,
     "newJobPostings": 97.29
   },
   {
@@ -3987,6 +4176,7 @@
     "wti": 19.48,
     "dollarIndex": 124.9362,
     "nikkei225": 16552.83,
+    "gold": null,
     "newJobPostings": 78.45
   },
   {
@@ -4008,6 +4198,7 @@
     "wti": 15.48,
     "dollarIndex": 122.4007,
     "nikkei225": 19389.43,
+    "gold": null,
     "newJobPostings": 57.64
   },
   {
@@ -4029,6 +4220,7 @@
     "wti": 28.36,
     "dollarIndex": 124.4152,
     "nikkei225": 17820.19,
+    "gold": null,
     "newJobPostings": 44.58
   },
   {
@@ -4050,6 +4242,7 @@
     "wti": 22.9,
     "dollarIndex": 122.1592,
     "nikkei225": 19498.5,
+    "gold": null,
     "newJobPostings": 36.88
   },
   {
@@ -4071,6 +4264,7 @@
     "wti": 18.31,
     "dollarIndex": 122.871,
     "nikkei225": 19897.26,
+    "gold": null,
     "newJobPostings": 45.92
   },
   {
@@ -4092,6 +4286,7 @@
     "wti": 15.99,
     "dollarIndex": 124.1615,
     "nikkei225": 19262,
+    "gold": null,
     "newJobPostings": 45.83
   },
   {
@@ -4113,6 +4308,7 @@
     "wti": 19.72,
     "dollarIndex": 123.1492,
     "nikkei225": 19619.35,
+    "gold": null,
     "newJobPostings": 50.34
   },
   {
@@ -4134,6 +4330,7 @@
     "wti": 24.73,
     "dollarIndex": 122.5379,
     "nikkei225": 20179.09,
+    "gold": null,
     "newJobPostings": 54.11
   },
   {
@@ -4155,6 +4352,7 @@
     "wti": 29.44,
     "dollarIndex": 123.5991,
     "nikkei225": 20037.47,
+    "gold": null,
     "newJobPostings": 61.46
   },
   {
@@ -4176,6 +4374,7 @@
     "wti": 33.49,
     "dollarIndex": 122.3211,
     "nikkei225": 20388.16,
+    "gold": null,
     "newJobPostings": 64.33
   },
   {
@@ -4197,6 +4396,7 @@
     "wti": 35.57,
     "dollarIndex": 120.9458,
     "nikkei225": 21877.89,
+    "gold": null,
     "newJobPostings": 63.72
   },
   {
@@ -4218,6 +4418,7 @@
     "wti": 39.49,
     "dollarIndex": 118.8138,
     "nikkei225": 22863.73,
+    "gold": null,
     "newJobPostings": 79.79
   },
   {
@@ -4239,6 +4440,7 @@
     "wti": 36.24,
     "dollarIndex": 119.6645,
     "nikkei225": 22305.48,
+    "gold": null,
     "newJobPostings": 76.76
   },
   {
@@ -4260,6 +4462,7 @@
     "wti": 39.72,
     "dollarIndex": 120.2186,
     "nikkei225": 22478.79,
+    "gold": null,
     "newJobPostings": 83.66
   },
   {
@@ -4281,6 +4484,7 @@
     "wti": 38.53,
     "dollarIndex": 120.533,
     "nikkei225": 22512.08,
+    "gold": null,
     "newJobPostings": 86.47
   },
   {
@@ -4302,6 +4506,7 @@
     "wti": 40.57,
     "dollarIndex": 119.8555,
     "nikkei225": 22306.48,
+    "gold": null,
     "newJobPostings": 88.18
   },
   {
@@ -4323,6 +4528,7 @@
     "wti": 40.56,
     "dollarIndex": 119.3509,
     "nikkei225": 22290.81,
+    "gold": null,
     "newJobPostings": 94.21
   },
   {
@@ -4344,6 +4550,7 @@
     "wti": 40.55,
     "dollarIndex": 119.124,
     "nikkei225": 22696.42,
+    "gold": null,
     "newJobPostings": 94.47
   },
   {
@@ -4365,6 +4572,7 @@
     "wti": 41.23,
     "dollarIndex": 118.1329,
     "nikkei225": 22751.61,
+    "gold": null,
     "newJobPostings": 92.52
   },
   {
@@ -4386,6 +4594,7 @@
     "wti": 40.1,
     "dollarIndex": 117.2082,
     "nikkei225": 21710,
+    "gold": null,
     "newJobPostings": 97.1
   },
   {
@@ -4407,6 +4616,7 @@
     "wti": 41.16,
     "dollarIndex": 117.6239,
     "nikkei225": 22329.94,
+    "gold": null,
     "newJobPostings": 88.26
   },
   {
@@ -4428,6 +4638,7 @@
     "wti": 42.05,
     "dollarIndex": 116.9395,
     "nikkei225": 23289.36,
+    "gold": null,
     "newJobPostings": 90.62
   },
   {
@@ -4449,6 +4660,7 @@
     "wti": 42.32,
     "dollarIndex": 117.0572,
     "nikkei225": 22920.3,
+    "gold": null,
     "newJobPostings": 92.49
   },
   {
@@ -4470,6 +4682,7 @@
     "wti": 42.96,
     "dollarIndex": 115.9374,
     "nikkei225": 22882.65,
+    "gold": null,
     "newJobPostings": 94.33
   },
   {
@@ -4491,6 +4704,7 @@
     "wti": 39.69,
     "dollarIndex": 116.0347,
     "nikkei225": 23205.43,
+    "gold": null,
     "newJobPostings": 98.93
   },
   {
@@ -4512,6 +4726,7 @@
     "wti": 37.33,
     "dollarIndex": 116.0866,
     "nikkei225": 23406.49,
+    "gold": null,
     "newJobPostings": 103.1
   },
   {
@@ -4533,6 +4748,7 @@
     "wti": 41.09,
     "dollarIndex": 115.2395,
     "nikkei225": 23360.3,
+    "gold": null,
     "newJobPostings": 96.77
   },
   {
@@ -4554,6 +4770,7 @@
     "wti": 40.06,
     "dollarIndex": 117.8679,
     "nikkei225": 23204.62,
+    "gold": null,
     "newJobPostings": 100.51
   },
   {
@@ -4575,6 +4792,7 @@
     "wti": 36.9,
     "dollarIndex": 116.7321,
     "nikkei225": 23029.9,
+    "gold": null,
     "newJobPostings": 104.65
   },
   {
@@ -4596,6 +4814,7 @@
     "wti": 40.44,
     "dollarIndex": 115.2757,
     "nikkei225": 23619.69,
+    "gold": null,
     "newJobPostings": 104.34
   },
   {
@@ -4617,6 +4836,7 @@
     "wti": 40.7,
     "dollarIndex": 115.7679,
     "nikkei225": 23410.63,
+    "gold": null,
     "newJobPostings": 108.73
   },
   {
@@ -4638,6 +4858,7 @@
     "wti": 39.73,
     "dollarIndex": 115.0126,
     "nikkei225": 23516.59,
+    "gold": null,
     "newJobPostings": 107.46
   },
   {
@@ -4659,6 +4880,7 @@
     "wti": 35.64,
     "dollarIndex": 116.1354,
     "nikkei225": 22977.13,
+    "gold": null,
     "newJobPostings": 109.82
   },
   {
@@ -4680,6 +4902,7 @@
     "wti": 36.97,
     "dollarIndex": 113.9919,
     "nikkei225": 24325.23,
+    "gold": null,
     "newJobPostings": 107.45
   },
   {
@@ -4701,6 +4924,7 @@
     "wti": 39.93,
     "dollarIndex": 114.2397,
     "nikkei225": 25385.87,
+    "gold": null,
     "newJobPostings": 108.32
   },
   {
@@ -4722,6 +4946,7 @@
     "wti": 41.99,
     "dollarIndex": 113.489,
     "nikkei225": 25527.37,
+    "gold": null,
     "newJobPostings": 110.68
   },
   {
@@ -4743,6 +4968,7 @@
     "wti": 45.58,
     "dollarIndex": 113.1823,
     "nikkei225": 26644.71,
+    "gold": null,
     "newJobPostings": 114.95
   },
   {
@@ -4764,6 +4990,7 @@
     "wti": 46.23,
     "dollarIndex": 111.7778,
     "nikkei225": 26751.24,
+    "gold": null,
     "newJobPostings": 105.2
   },
   {
@@ -4785,6 +5012,7 @@
     "wti": 46.59,
     "dollarIndex": 112.1417,
     "nikkei225": 26652.52,
+    "gold": null,
     "newJobPostings": 105.66
   },
   {
@@ -4806,6 +5034,7 @@
     "wti": 49.04,
     "dollarIndex": 111.6071,
     "nikkei225": 26763.39,
+    "gold": null,
     "newJobPostings": 109.93
   },
   {
@@ -4827,6 +5056,7 @@
     "wti": 48.18,
     "dollarIndex": 111.9807,
     "nikkei225": 26656.61,
+    "gold": null,
     "newJobPostings": 112.64
   },
   {
@@ -4848,6 +5078,7 @@
     "wti": 48.35,
     "dollarIndex": 111.3169,
     "nikkei225": 27444.17,
+    "gold": null,
     "newJobPostings": 116.82
   },
   {
@@ -4869,6 +5100,7 @@
     "wti": 52.14,
     "dollarIndex": 111.2847,
     "nikkei225": 28139.03,
+    "gold": null,
     "newJobPostings": 107.12
   },
   {
@@ -4890,6 +5122,7 @@
     "wti": 52.25,
     "dollarIndex": 111.5106,
     "nikkei225": 28519.18,
+    "gold": null,
     "newJobPostings": 121.55
   },
   {
@@ -4911,6 +5144,7 @@
     "wti": 52.28,
     "dollarIndex": 111.5516,
     "nikkei225": 28631.45,
+    "gold": null,
     "newJobPostings": 120.68
   },
   {
@@ -4932,6 +5166,7 @@
     "wti": 52.16,
     "dollarIndex": 111.9511,
     "nikkei225": 27663.39,
+    "gold": null,
     "newJobPostings": 121.15
   },
   {
@@ -4953,6 +5188,7 @@
     "wti": 56.8,
     "dollarIndex": 112.2379,
     "nikkei225": 28779.19,
+    "gold": null,
     "newJobPostings": 125.32
   },
   {
@@ -4974,6 +5210,7 @@
     "wti": 59.5,
     "dollarIndex": 111.4889,
     "nikkei225": 29520.07,
+    "gold": null,
     "newJobPostings": 126.01
   },
   {
@@ -4995,6 +5232,7 @@
     "wti": 59.12,
     "dollarIndex": 111.7058,
     "nikkei225": 30017.92,
+    "gold": null,
     "newJobPostings": 127.09
   },
   {
@@ -5016,6 +5254,7 @@
     "wti": 61.55,
     "dollarIndex": 112.8306,
     "nikkei225": 28966.01,
+    "gold": null,
     "newJobPostings": 126.14
   },
   {
@@ -5037,6 +5276,7 @@
     "wti": 66.08,
     "dollarIndex": 113.7487,
     "nikkei225": 28864.32,
+    "gold": null,
     "newJobPostings": 131.58
   },
   {
@@ -5058,6 +5298,7 @@
     "wti": 65.59,
     "dollarIndex": 113.0269,
     "nikkei225": 29717.83,
+    "gold": null,
     "newJobPostings": 133.34
   },
   {
@@ -5079,6 +5320,7 @@
     "wti": 61.43,
     "dollarIndex": 112.9756,
     "nikkei225": 29792.05,
+    "gold": null,
     "newJobPostings": 138.78
   },
   {
@@ -5100,6 +5342,7 @@
     "wti": 60.93,
     "dollarIndex": 113.7406,
     "nikkei225": 29176.7,
+    "gold": null,
     "newJobPostings": 149.9
   },
   {
@@ -5121,6 +5364,7 @@
     "wti": 61.41,
     "dollarIndex": 113.7315,
     "nikkei225": 29854,
+    "gold": null,
     "newJobPostings": 149.64
   },
   {
@@ -5142,6 +5386,7 @@
     "wti": 59.29,
     "dollarIndex": 113.2028,
     "nikkei225": 29768.06,
+    "gold": null,
     "newJobPostings": 146.24
   },
   {
@@ -5163,6 +5408,7 @@
     "wti": 63.16,
     "dollarIndex": 112.4814,
     "nikkei225": 29683.37,
+    "gold": null,
     "newJobPostings": 163.59
   },
   {
@@ -5184,6 +5430,7 @@
     "wti": 62.18,
     "dollarIndex": 112.0889,
     "nikkei225": 29020.63,
+    "gold": null,
     "newJobPostings": 164.69
   },
   {
@@ -5205,6 +5452,7 @@
     "wti": 63.5,
     "dollarIndex": 112.0839,
     "nikkei225": 28812.63,
+    "gold": null,
     "newJobPostings": 159.86
   },
   {
@@ -5226,6 +5474,7 @@
     "wti": 64.96,
     "dollarIndex": 111.0249,
     "nikkei225": 29357.82,
+    "gold": null,
     "newJobPostings": 159.39
   },
   {
@@ -5247,6 +5496,7 @@
     "wti": 65.32,
     "dollarIndex": 111.1353,
     "nikkei225": 28084.47,
+    "gold": null,
     "newJobPostings": 164.46
   },
   {
@@ -5268,6 +5518,7 @@
     "wti": 63.61,
     "dollarIndex": 111.0576,
     "nikkei225": 28317.83,
+    "gold": null,
     "newJobPostings": 163.12
   },
   {
@@ -5289,6 +5540,7 @@
     "wti": 66.31,
     "dollarIndex": 110.7576,
     "nikkei225": 29149.41,
+    "gold": null,
     "newJobPostings": 160.56
   },
   {
@@ -5310,6 +5562,7 @@
     "wti": 69.57,
     "dollarIndex": 110.7521,
     "nikkei225": 28941.52,
+    "gold": null,
     "newJobPostings": 162.53
   },
   {
@@ -5331,6 +5584,7 @@
     "wti": 71,
     "dollarIndex": 111.0933,
     "nikkei225": 28948.73,
+    "gold": null,
     "newJobPostings": 158.35
   },
   {
@@ -5352,6 +5606,7 @@
     "wti": 71.64,
     "dollarIndex": 113.0408,
     "nikkei225": 28964.08,
+    "gold": null,
     "newJobPostings": 166.09
   },
   {
@@ -5373,6 +5628,7 @@
     "wti": 74.21,
     "dollarIndex": 111.9655,
     "nikkei225": 29066.18,
+    "gold": null,
     "newJobPostings": 170.45
   },
   {
@@ -5394,6 +5650,7 @@
     "wti": 75.37,
     "dollarIndex": 112.5425,
     "nikkei225": 28783.28,
+    "gold": null,
     "newJobPostings": 164.57
   },
   {
@@ -5415,6 +5672,7 @@
     "wti": 74.56,
     "dollarIndex": 112.8375,
     "nikkei225": 27940.42,
+    "gold": null,
     "newJobPostings": 164.54
   },
   {
@@ -5436,6 +5694,7 @@
     "wti": 71.76,
     "dollarIndex": 113.0428,
     "nikkei225": 28003.08,
+    "gold": null,
     "newJobPostings": 168.78
   },
   {
@@ -5457,6 +5716,7 @@
     "wti": 72.24,
     "dollarIndex": 113.4398,
     "nikkei225": 27548,
+    "gold": null,
     "newJobPostings": 169.93
   },
   {
@@ -5478,6 +5738,7 @@
     "wti": 73.93,
     "dollarIndex": 112.6714,
     "nikkei225": 27283.59,
+    "gold": null,
     "newJobPostings": 164.6
   },
   {
@@ -5499,6 +5760,7 @@
     "wti": 68.26,
     "dollarIndex": 113.3088,
     "nikkei225": 27820.04,
+    "gold": null,
     "newJobPostings": 162.41
   },
   {
@@ -5520,6 +5782,7 @@
     "wti": 68.36,
     "dollarIndex": 113.0615,
     "nikkei225": 27977.15,
+    "gold": null,
     "newJobPostings": 163.7
   },
   {
@@ -5541,6 +5804,7 @@
     "wti": 62.25,
     "dollarIndex": 114.5009,
     "nikkei225": 27013.25,
+    "gold": null,
     "newJobPostings": 166.72
   },
   {
@@ -5562,6 +5826,7 @@
     "wti": 68.84,
     "dollarIndex": 113.3404,
     "nikkei225": 27641.14,
+    "gold": null,
     "newJobPostings": 172.74
   },
   {
@@ -5583,6 +5848,7 @@
     "wti": 69.34,
     "dollarIndex": 112.5476,
     "nikkei225": 29128.11,
+    "gold": null,
     "newJobPostings": 164.57
   },
   {
@@ -5604,6 +5870,7 @@
     "wti": 69.82,
     "dollarIndex": 112.9425,
     "nikkei225": 30381.84,
+    "gold": null,
     "newJobPostings": 164.04
   },
   {
@@ -5625,6 +5892,7 @@
     "wti": 72.09,
     "dollarIndex": 113.5989,
     "nikkei225": 30500.05,
+    "gold": null,
     "newJobPostings": 161.33
   },
   {
@@ -5646,6 +5914,7 @@
     "wti": 74.18,
     "dollarIndex": 113.7597,
     "nikkei225": 30248.81,
+    "gold": null,
     "newJobPostings": 171.06
   },
   {
@@ -5667,6 +5936,7 @@
     "wti": 76.01,
     "dollarIndex": 114.3798,
     "nikkei225": 28771.07,
+    "gold": null,
     "newJobPostings": 168.88
   },
   {
@@ -5688,6 +5958,7 @@
     "wti": 79.55,
     "dollarIndex": 114.5986,
     "nikkei225": 28048.94,
+    "gold": null,
     "newJobPostings": 167.63
   },
   {
@@ -5709,6 +5980,7 @@
     "wti": 82.39,
     "dollarIndex": 114.0905,
     "nikkei225": 29068.63,
+    "gold": null,
     "newJobPostings": 167.02
   },
   {
@@ -5730,6 +6002,7 @@
     "wti": 84.53,
     "dollarIndex": 113.67,
     "nikkei225": 28804.85,
+    "gold": null,
     "newJobPostings": 169.71
   },
   {
@@ -5751,6 +6024,7 @@
     "wti": 83.5,
     "dollarIndex": 114.1349,
     "nikkei225": 28892.69,
+    "gold": null,
     "newJobPostings": 169.11
   },
   {
@@ -5772,6 +6046,7 @@
     "wti": 81.25,
     "dollarIndex": 114.0732,
     "nikkei225": 29611.57,
+    "gold": null,
     "newJobPostings": 174.46
   },
   {
@@ -5793,6 +6068,7 @@
     "wti": 80.87,
     "dollarIndex": 114.5144,
     "nikkei225": 29609.97,
+    "gold": null,
     "newJobPostings": 175.38
   },
   {
@@ -5814,6 +6090,7 @@
     "wti": 76.11,
     "dollarIndex": 115.2187,
     "nikkei225": 29745.87,
+    "gold": null,
     "newJobPostings": 171.76
   },
   {
@@ -5835,6 +6112,7 @@
     "wti": 78.32,
     "dollarIndex": 116.5103,
     "nikkei225": 28751.62,
+    "gold": null,
     "newJobPostings": 171.07
   },
   {
@@ -5856,6 +6134,7 @@
     "wti": 66.39,
     "dollarIndex": 116.2377,
     "nikkei225": 28029.57,
+    "gold": null,
     "newJobPostings": 162.73
   },
   {
@@ -5877,6 +6156,7 @@
     "wti": 71.71,
     "dollarIndex": 115.5732,
     "nikkei225": 28437.77,
+    "gold": null,
     "newJobPostings": 175.41
   },
   {
@@ -5898,6 +6178,7 @@
     "wti": 70.93,
     "dollarIndex": 115.791,
     "nikkei225": 28545.68,
+    "gold": null,
     "newJobPostings": 174.53
   },
   {
@@ -5919,6 +6200,7 @@
     "wti": 73.89,
     "dollarIndex": 115.5337,
     "nikkei225": 28782.59,
+    "gold": null,
     "newJobPostings": 172.91
   },
   {
@@ -5940,6 +6222,7 @@
     "wti": 75.33,
     "dollarIndex": 115.283,
     "nikkei225": 28791.71,
+    "gold": null,
     "newJobPostings": 166.59
   },
   {
@@ -5961,6 +6244,7 @@
     "wti": 79,
     "dollarIndex": 115.0451,
     "nikkei225": 28478.56,
+    "gold": null,
     "newJobPostings": 157.81
   },
   {
@@ -5982,6 +6266,7 @@
     "wti": 83.82,
     "dollarIndex": 114.3825,
     "nikkei225": 28124.28,
+    "gold": null,
     "newJobPostings": 171.4
   },
   {
@@ -6003,6 +6288,7 @@
     "wti": 85.16,
     "dollarIndex": 114.6125,
     "nikkei225": 27522.26,
+    "gold": null,
     "newJobPostings": 173.54
   },
   {
@@ -6024,6 +6310,7 @@
     "wti": 87.67,
     "dollarIndex": 116.0393,
     "nikkei225": 26717.34,
+    "gold": null,
     "newJobPostings": 176.25
   },
   {
@@ -6045,6 +6332,7 @@
     "wti": 92.27,
     "dollarIndex": 115.1362,
     "nikkei225": 27439.99,
+    "gold": null,
     "newJobPostings": 178.31
   },
   {
@@ -6066,6 +6354,7 @@
     "wti": 93.1,
     "dollarIndex": 114.8413,
     "nikkei225": 27696.08,
+    "gold": null,
     "newJobPostings": 179.07
   },
   {
@@ -6087,6 +6376,7 @@
     "wti": 91.26,
     "dollarIndex": 114.7982,
     "nikkei225": 27122.07,
+    "gold": null,
     "newJobPostings": 181.75
   },
   {
@@ -6108,6 +6398,7 @@
     "wti": 91.68,
     "dollarIndex": 115.2577,
     "nikkei225": 26476.5,
+    "gold": null,
     "newJobPostings": 183.9
   },
   {
@@ -6129,6 +6420,7 @@
     "wti": 115.77,
     "dollarIndex": 116.6503,
     "nikkei225": 25985.47,
+    "gold": null,
     "newJobPostings": 179.05
   },
   {
@@ -6150,6 +6442,7 @@
     "wti": 109.31,
     "dollarIndex": 117.0192,
     "nikkei225": 25162.78,
+    "gold": null,
     "newJobPostings": 179.36
   },
   {
@@ -6171,6 +6464,7 @@
     "wti": 104.69,
     "dollarIndex": 116.1378,
     "nikkei225": 26827.43,
+    "gold": null,
     "newJobPostings": 179.55
   },
   {
@@ -6192,6 +6486,7 @@
     "wti": 116.2,
     "dollarIndex": 115.7921,
     "nikkei225": 28149.84,
+    "gold": null,
     "newJobPostings": 178.4
   },
   {
@@ -6213,6 +6508,7 @@
     "wti": 99.32,
     "dollarIndex": 115.4814,
     "nikkei225": 27665.98,
+    "gold": null,
     "newJobPostings": 179.66
   },
   {
@@ -6234,6 +6530,7 @@
     "wti": 98.35,
     "dollarIndex": 116.4176,
     "nikkei225": 26985.8,
+    "gold": null,
     "newJobPostings": 175.18
   },
   {
@@ -6255,6 +6552,7 @@
     "wti": 106.84,
     "dollarIndex": 116.7017,
     "nikkei225": 27093.19,
+    "gold": null,
     "newJobPostings": 175.76
   },
   {
@@ -6276,6 +6574,7 @@
     "wti": 102.86,
     "dollarIndex": 118.0186,
     "nikkei225": 27105.26,
+    "gold": null,
     "newJobPostings": 177.54
   },
   {
@@ -6297,6 +6596,7 @@
     "wti": 104.59,
     "dollarIndex": 119.4933,
     "nikkei225": 26847.9,
+    "gold": null,
     "newJobPostings": 178.98
   },
   {
@@ -6318,6 +6618,7 @@
     "wti": 109.72,
     "dollarIndex": 119.8577,
     "nikkei225": 27003.56,
+    "gold": null,
     "newJobPostings": 182.35
   },
   {
@@ -6339,6 +6640,7 @@
     "wti": 110.52,
     "dollarIndex": 120.8442,
     "nikkei225": 26427.65,
+    "gold": null,
     "newJobPostings": 180.06
   },
   {
@@ -6360,6 +6662,7 @@
     "wti": 112.63,
     "dollarIndex": 119.3677,
     "nikkei225": 26739.03,
+    "gold": null,
     "newJobPostings": 182.01
   },
   {
@@ -6381,6 +6684,7 @@
     "wti": 114.96,
     "dollarIndex": 118.2834,
     "nikkei225": 26781.68,
+    "gold": null,
     "newJobPostings": 181.68
   },
   {
@@ -6402,6 +6706,7 @@
     "wti": 118.97,
     "dollarIndex": 118.2153,
     "nikkei225": 27761.57,
+    "gold": null,
     "newJobPostings": 179.51
   },
   {
@@ -6423,6 +6728,7 @@
     "wti": 120.73,
     "dollarIndex": 119.9981,
     "nikkei225": 27824.29,
+    "gold": null,
     "newJobPostings": 172.92
   },
   {
@@ -6444,6 +6750,7 @@
     "wti": 109.56,
     "dollarIndex": 121.2369,
     "nikkei225": 25963,
+    "gold": null,
     "newJobPostings": 178.22
   },
   {
@@ -6465,6 +6772,7 @@
     "wti": 109.07,
     "dollarIndex": 120.4853,
     "nikkei225": 26491.97,
+    "gold": null,
     "newJobPostings": 178.13
   },
   {
@@ -6486,6 +6794,7 @@
     "wti": 110.3,
     "dollarIndex": 121.5058,
     "nikkei225": 25935.62,
+    "gold": null,
     "newJobPostings": 169.89
   },
   {
@@ -6507,6 +6816,7 @@
     "wti": 106.78,
     "dollarIndex": 122.4662,
     "nikkei225": 26517.19,
+    "gold": null,
     "newJobPostings": 168.75
   },
   {
@@ -6528,6 +6838,7 @@
     "wti": 99.59,
     "dollarIndex": 123.4765,
     "nikkei225": 26788.47,
+    "gold": null,
     "newJobPostings": 173.2
   },
   {
@@ -6549,6 +6860,7 @@
     "wti": 97.71,
     "dollarIndex": 122.451,
     "nikkei225": 27914.66,
+    "gold": null,
     "newJobPostings": 174.4
   },
   {
@@ -6570,6 +6882,7 @@
     "wti": 101.31,
     "dollarIndex": 121.7678,
     "nikkei225": 27801.64,
+    "gold": null,
     "newJobPostings": 172.85
   },
   {
@@ -6591,6 +6904,7 @@
     "wti": 91.77,
     "dollarIndex": 122.321,
     "nikkei225": 28175.87,
+    "gold": null,
     "newJobPostings": 172.84
   },
   {
@@ -6612,6 +6926,7 @@
     "wti": 94.86,
     "dollarIndex": 121.018,
     "nikkei225": 28546.98,
+    "gold": null,
     "newJobPostings": 170.2
   },
   {
@@ -6633,6 +6948,7 @@
     "wti": 93.55,
     "dollarIndex": 123.0501,
     "nikkei225": 28930.33,
+    "gold": null,
     "newJobPostings": 172.24
   },
   {
@@ -6654,6 +6970,7 @@
     "wti": 93.63,
     "dollarIndex": 123.0656,
     "nikkei225": 28641.38,
+    "gold": null,
     "newJobPostings": 173.86
   },
   {
@@ -6675,6 +6992,7 @@
     "wti": 87.29,
     "dollarIndex": 123.7743,
     "nikkei225": 27650.84,
+    "gold": null,
     "newJobPostings": 172.1
   },
   {
@@ -6696,6 +7014,7 @@
     "wti": 87.27,
     "dollarIndex": 123.7874,
     "nikkei225": 28214.75,
+    "gold": null,
     "newJobPostings": 165.8
   },
   {
@@ -6717,6 +7036,7 @@
     "wti": 85.57,
     "dollarIndex": 124.8794,
     "nikkei225": 27567.65,
+    "gold": null,
     "newJobPostings": 169.66
   },
   {
@@ -6738,6 +7058,7 @@
     "wti": 79.07,
     "dollarIndex": 127.2853,
     "nikkei225": 27153.83,
+    "gold": null,
     "newJobPostings": 171.05
   },
   {
@@ -6759,6 +7080,7 @@
     "wti": 79.91,
     "dollarIndex": 127.5148,
     "nikkei225": 25937.21,
+    "gold": null,
     "newJobPostings": 170.52
   },
   {
@@ -6780,6 +7102,7 @@
     "wti": 93.07,
     "dollarIndex": 127.3111,
     "nikkei225": 27116.11,
+    "gold": null,
     "newJobPostings": 160.41
   },
   {
@@ -6801,6 +7124,7 @@
     "wti": 86.1,
     "dollarIndex": 128.3325,
     "nikkei225": 27090.76,
+    "gold": null,
     "newJobPostings": 170.12
   },
   {
@@ -6822,6 +7146,7 @@
     "wti": 85.47,
     "dollarIndex": 127.6735,
     "nikkei225": 26890.58,
+    "gold": null,
     "newJobPostings": 168.99
   },
   {
@@ -6843,6 +7168,7 @@
     "wti": 87.85,
     "dollarIndex": 127.2135,
     "nikkei225": 27105.2,
+    "gold": null,
     "newJobPostings": 166.4
   },
   {
@@ -6864,6 +7190,7 @@
     "wti": 92.58,
     "dollarIndex": 127.1468,
     "nikkei225": 27199.74,
+    "gold": null,
     "newJobPostings": 164.7
   },
   {
@@ -6885,6 +7212,7 @@
     "wti": 89.14,
     "dollarIndex": 124.7044,
     "nikkei225": 28263.57,
+    "gold": null,
     "newJobPostings": 164.47
   },
   {
@@ -6906,6 +7234,7 @@
     "wti": 80.07,
     "dollarIndex": 123.8524,
     "nikkei225": 27899.77,
+    "gold": null,
     "newJobPostings": 165.05
   },
   {
@@ -6927,6 +7256,7 @@
     "wti": 76.45,
     "dollarIndex": 123.3386,
     "nikkei225": 28283.03,
+    "gold": null,
     "newJobPostings": 159.54
   },
   {
@@ -6948,6 +7278,7 @@
     "wti": 79.86,
     "dollarIndex": 122.0102,
     "nikkei225": 27777.9,
+    "gold": null,
     "newJobPostings": 154.76
   },
   {
@@ -6969,6 +7300,7 @@
     "wti": 71.05,
     "dollarIndex": 122.4201,
     "nikkei225": 27901.01,
+    "gold": null,
     "newJobPostings": 156.24
   },
   {
@@ -6990,6 +7322,7 @@
     "wti": 74.19,
     "dollarIndex": 122.6505,
     "nikkei225": 27527.12,
+    "gold": null,
     "newJobPostings": 160.89
   },
   {
@@ -7011,6 +7344,7 @@
     "wti": 79.57,
     "dollarIndex": 121.9743,
     "nikkei225": 26235.25,
+    "gold": null,
     "newJobPostings": 158.64
   },
   {
@@ -7032,6 +7366,7 @@
     "wti": 80.16,
     "dollarIndex": 121.4256,
     "nikkei225": 26094.5,
+    "gold": null,
     "newJobPostings": 157.82
   },
   {
@@ -7053,6 +7388,7 @@
     "wti": 73.77,
     "dollarIndex": 121.0852,
     "nikkei225": 25973.85,
+    "gold": null,
     "newJobPostings": 150.78
   },
   {
@@ -7074,6 +7410,7 @@
     "wti": 79.9,
     "dollarIndex": 119.1673,
     "nikkei225": 26119.52,
+    "gold": null,
     "newJobPostings": 158.66
   },
   {
@@ -7095,6 +7432,7 @@
     "wti": 81.27,
     "dollarIndex": 119.3486,
     "nikkei225": 26553.53,
+    "gold": null,
     "newJobPostings": 158.7
   },
   {
@@ -7116,6 +7454,7 @@
     "wti": 79.73,
     "dollarIndex": 118.9223,
     "nikkei225": 27382.56,
+    "gold": null,
     "newJobPostings": 157.22
   },
   {
@@ -7137,6 +7476,7 @@
     "wti": 73.4,
     "dollarIndex": 119.5095,
     "nikkei225": 27509.46,
+    "gold": null,
     "newJobPostings": 153.84
   },
   {
@@ -7158,6 +7498,7 @@
     "wti": 79.74,
     "dollarIndex": 120.1419,
     "nikkei225": 27670.98,
+    "gold": null,
     "newJobPostings": 149.42
   },
   {
@@ -7179,6 +7520,7 @@
     "wti": 76.31,
     "dollarIndex": 120.5526,
     "nikkei225": 27513.13,
+    "gold": null,
     "newJobPostings": 153.76
   },
   {
@@ -7200,6 +7542,7 @@
     "wti": 76.19,
     "dollarIndex": 121.5681,
     "nikkei225": 27453.48,
+    "gold": null,
     "newJobPostings": 154.53
   },
   {
@@ -7221,6 +7564,7 @@
     "wti": 79.62,
     "dollarIndex": 120.7742,
     "nikkei225": 27927.47,
+    "gold": null,
     "newJobPostings": 148.72
   },
   {
@@ -7242,6 +7586,7 @@
     "wti": 76.55,
     "dollarIndex": 121.2421,
     "nikkei225": 28143.97,
+    "gold": null,
     "newJobPostings": 147.02
   },
   {
@@ -7263,6 +7608,7 @@
     "wti": 66.61,
     "dollarIndex": 121.5643,
     "nikkei225": 27333.79,
+    "gold": null,
     "newJobPostings": 155.68
   },
   {
@@ -7284,6 +7630,7 @@
     "wti": 69.22,
     "dollarIndex": 120.4598,
     "nikkei225": 27385.25,
+    "gold": null,
     "newJobPostings": 151.8
   },
   {
@@ -7305,6 +7652,7 @@
     "wti": 75.68,
     "dollarIndex": 119.3602,
     "nikkei225": 28041.48,
+    "gold": null,
     "newJobPostings": 153.71
   },
   {
@@ -7326,6 +7674,7 @@
     "wti": 80.7,
     "dollarIndex": 119.3547,
     "nikkei225": 27518.31,
+    "gold": null,
     "newJobPostings": 146.23
   },
   {
@@ -7347,6 +7696,7 @@
     "wti": 82.58,
     "dollarIndex": 118.8567,
     "nikkei225": 28493.47,
+    "gold": null,
     "newJobPostings": 153.18
   },
   {
@@ -7368,6 +7718,7 @@
     "wti": 77.86,
     "dollarIndex": 119.3117,
     "nikkei225": 28564.37,
+    "gold": null,
     "newJobPostings": 155.03
   },
   {
@@ -7389,6 +7740,7 @@
     "wti": 76.78,
     "dollarIndex": 119.2248,
     "nikkei225": 28856.44,
+    "gold": null,
     "newJobPostings": 156.51
   },
   {
@@ -7410,6 +7762,7 @@
     "wti": 71.32,
     "dollarIndex": 118.5548,
     "nikkei225": 29157.95,
+    "gold": null,
     "newJobPostings": 153.32
   },
   {
@@ -7431,6 +7784,7 @@
     "wti": 70.02,
     "dollarIndex": 119.3671,
     "nikkei225": 29388.3,
+    "gold": null,
     "newJobPostings": 155.01
   },
   {
@@ -7452,6 +7806,7 @@
     "wti": 71.57,
     "dollarIndex": 119.7751,
     "nikkei225": 30808.35,
+    "gold": null,
     "newJobPostings": 155.24
   },
   {
@@ -7473,6 +7828,7 @@
     "wti": 72.35,
     "dollarIndex": 120.6304,
     "nikkei225": 30916.31,
+    "gold": null,
     "newJobPostings": 155.61
   },
   {
@@ -7494,6 +7850,7 @@
     "wti": 71.76,
     "dollarIndex": 120.0049,
     "nikkei225": 31524.22,
+    "gold": null,
     "newJobPostings": 150.87
   },
   {
@@ -7515,6 +7872,7 @@
     "wti": 70.16,
     "dollarIndex": 119.4322,
     "nikkei225": 32265.17,
+    "gold": null,
     "newJobPostings": 146.05
   },
   {
@@ -7536,6 +7894,7 @@
     "wti": 71.81,
     "dollarIndex": 118.4184,
     "nikkei225": 33706.08,
+    "gold": null,
     "newJobPostings": 154.14
   },
   {
@@ -7557,6 +7916,7 @@
     "wti": 68.91,
     "dollarIndex": 119.152,
     "nikkei225": 32781.54,
+    "gold": null,
     "newJobPostings": 148.66
   },
   {
@@ -7578,6 +7938,7 @@
     "wti": 70.66,
     "dollarIndex": 119.3606,
     "nikkei225": 33189.04,
+    "gold": null,
     "newJobPostings": 149.47
   },
   {
@@ -7599,6 +7960,7 @@
     "wti": 73.91,
     "dollarIndex": 119.0761,
     "nikkei225": 32388.42,
+    "gold": null,
     "newJobPostings": 134.84
   },
   {
@@ -7620,6 +7982,7 @@
     "wti": 75.44,
     "dollarIndex": 117.0463,
     "nikkei225": 32391.26,
+    "gold": null,
     "newJobPostings": 152.93
   },
   {
@@ -7641,6 +8004,7 @@
     "wti": 77.06,
     "dollarIndex": 117.9418,
     "nikkei225": 32304.25,
+    "gold": null,
     "newJobPostings": 151.82
   },
   {
@@ -7662,6 +8026,7 @@
     "wti": 80.55,
     "dollarIndex": 117.788,
     "nikkei225": 32759.23,
+    "gold": null,
     "newJobPostings": 149.25
   },
   {
@@ -7683,6 +8048,7 @@
     "wti": 82.76,
     "dollarIndex": 118.821,
     "nikkei225": 32192.75,
+    "gold": null,
     "newJobPostings": 146.34
   },
   {
@@ -7704,6 +8070,7 @@
     "wti": 83.17,
     "dollarIndex": 119.6268,
     "nikkei225": 32473.65,
+    "gold": null,
     "newJobPostings": 147.77
   },
   {
@@ -7725,6 +8092,7 @@
     "wti": 81.25,
     "dollarIndex": 120.4321,
     "nikkei225": 31450.76,
+    "gold": null,
     "newJobPostings": 150.64
   },
   {
@@ -7746,6 +8114,7 @@
     "wti": 80.47,
     "dollarIndex": 120.5137,
     "nikkei225": 31624.28,
+    "gold": null,
     "newJobPostings": 146.67
   },
   {
@@ -7767,6 +8136,7 @@
     "wti": 85.52,
     "dollarIndex": 120.759,
     "nikkei225": 32710.62,
+    "gold": null,
     "newJobPostings": 148.29
   },
   {
@@ -7788,6 +8158,7 @@
     "wti": 87.51,
     "dollarIndex": 121.9475,
     "nikkei225": 32606.84,
+    "gold": null,
     "newJobPostings": 140.77
   },
   {
@@ -7809,6 +8180,7 @@
     "wti": 90.83,
     "dollarIndex": 121.199,
     "nikkei225": 33533.09,
+    "gold": null,
     "newJobPostings": 157.13
   },
   {
@@ -7830,6 +8202,7 @@
     "wti": 90,
     "dollarIndex": 121.5306,
     "nikkei225": 32402.41,
+    "gold": null,
     "newJobPostings": 145.66
   },
   {
@@ -7851,6 +8224,7 @@
     "wti": 90.77,
     "dollarIndex": 122.3077,
     "nikkei225": 31857.62,
+    "gold": null,
     "newJobPostings": 147.31
   },
   {
@@ -7872,6 +8246,7 @@
     "wti": 82.83,
     "dollarIndex": 123.3563,
     "nikkei225": 30994.67,
+    "gold": null,
     "newJobPostings": 142.96
   },
   {
@@ -7893,6 +8268,7 @@
     "wti": 87.67,
     "dollarIndex": 123.5954,
     "nikkei225": 32315.99,
+    "gold": null,
     "newJobPostings": 151.67
   },
   {
@@ -7914,6 +8290,7 @@
     "wti": 89.12,
     "dollarIndex": 123.612,
     "nikkei225": 31259.36,
+    "gold": null,
     "newJobPostings": 147.06
   },
   {
@@ -7935,6 +8312,7 @@
     "wti": 86.04,
     "dollarIndex": 123.62,
     "nikkei225": 30991.69,
+    "gold": null,
     "newJobPostings": 144.59
   },
   {
@@ -7956,6 +8334,7 @@
     "wti": 81.19,
     "dollarIndex": 121.7564,
     "nikkei225": 31949.89,
+    "gold": null,
     "newJobPostings": 153.41
   },
   {
@@ -7977,6 +8356,7 @@
     "wti": 76.34,
     "dollarIndex": 122.1281,
     "nikkei225": 32568.11,
+    "gold": null,
     "newJobPostings": 143.36
   },
   {
@@ -7998,6 +8378,7 @@
     "wti": 76.47,
     "dollarIndex": 120.8477,
     "nikkei225": 33585.2,
+    "gold": null,
     "newJobPostings": 142.35
   },
   {
@@ -8019,6 +8400,7 @@
     "wti": 74.83,
     "dollarIndex": 120.2105,
     "nikkei225": 33625.53,
+    "gold": null,
     "newJobPostings": 135.54
   },
   {
@@ -8040,6 +8422,7 @@
     "wti": 73.7,
     "dollarIndex": 119.9424,
     "nikkei225": 33431.51,
+    "gold": null,
     "newJobPostings": 131.75
   },
   {
@@ -8061,6 +8444,7 @@
     "wti": 70.87,
     "dollarIndex": 120.7607,
     "nikkei225": 32307.86,
+    "gold": null,
     "newJobPostings": 141.76
   },
   {
@@ -8082,6 +8466,7 @@
     "wti": 71.05,
     "dollarIndex": 119.7382,
     "nikkei225": 32970.55,
+    "gold": null,
     "newJobPostings": 141.7
   },
   {
@@ -8103,6 +8488,7 @@
     "wti": 73.29,
     "dollarIndex": 119.0625,
     "nikkei225": 33169.05,
+    "gold": null,
     "newJobPostings": 137.18
   },
   {
@@ -8124,6 +8510,7 @@
     "wti": 71.89,
     "dollarIndex": 118.4208,
     "nikkei225": 33464.17,
+    "gold": null,
     "newJobPostings": 139.42
   },
   {
@@ -8145,6 +8532,7 @@
     "wti": 74,
     "dollarIndex": 119.388,
     "nikkei225": 33377.42,
+    "gold": null,
     "newJobPostings": 131.67
   },
   {
@@ -8166,6 +8554,7 @@
     "wti": 72.94,
     "dollarIndex": 119.534,
     "nikkei225": 35577.11,
+    "gold": null,
     "newJobPostings": 149.94
   },
   {
@@ -8187,6 +8576,7 @@
     "wti": 73.69,
     "dollarIndex": 120.6442,
     "nikkei225": 35963.27,
+    "gold": null,
     "newJobPostings": 139.81
   },
   {
@@ -8208,6 +8598,7 @@
     "wti": 78.45,
     "dollarIndex": 120.6173,
     "nikkei225": 35751.07,
+    "gold": null,
     "newJobPostings": 136.25
   },
   {
@@ -8229,6 +8620,7 @@
     "wti": 72.72,
     "dollarIndex": 120.902,
     "nikkei225": 36158.02,
+    "gold": null,
     "newJobPostings": 135.55
   },
   {
@@ -8250,6 +8642,7 @@
     "wti": 77.26,
     "dollarIndex": 121.039,
     "nikkei225": 36897.42,
+    "gold": null,
     "newJobPostings": 136.34
   },
   {
@@ -8271,6 +8664,7 @@
     "wti": 79.65,
     "dollarIndex": 121.1505,
     "nikkei225": 38487.24,
+    "gold": null,
     "newJobPostings": 139.44
   },
   {
@@ -8292,6 +8686,7 @@
     "wti": 77.6,
     "dollarIndex": 121.0369,
     "nikkei225": 39098.68,
+    "gold": null,
     "newJobPostings": 137.92
   },
   {
@@ -8313,6 +8708,7 @@
     "wti": 80.9,
     "dollarIndex": 121.0111,
     "nikkei225": 39910.82,
+    "gold": null,
     "newJobPostings": 137.21
   },
   {
@@ -8334,6 +8730,7 @@
     "wti": 78.96,
     "dollarIndex": 119.975,
     "nikkei225": 39688.94,
+    "gold": null,
     "newJobPostings": 135.54
   },
   {
@@ -8355,6 +8752,7 @@
     "wti": 81.94,
     "dollarIndex": 120.4003,
     "nikkei225": 38707.64,
+    "gold": null,
     "newJobPostings": 138.32
   },
   {
@@ -8376,6 +8774,7 @@
     "wti": 81.1,
     "dollarIndex": 121.1842,
     "nikkei225": 40888.43,
+    "gold": null,
     "newJobPostings": 134.68
   },
   {
@@ -8397,6 +8796,7 @@
     "wti": 83.96,
     "dollarIndex": 121.0191,
     "nikkei225": 40369.44,
+    "gold": null,
     "newJobPostings": 134
   },
   {
@@ -8418,6 +8818,7 @@
     "wti": 87.69,
     "dollarIndex": 120.9646,
     "nikkei225": 38992.08,
+    "gold": null,
     "newJobPostings": 124.84
   },
   {
@@ -8439,6 +8840,7 @@
     "wti": 86.46,
     "dollarIndex": 122.2885,
     "nikkei225": 39523.55,
+    "gold": null,
     "newJobPostings": 128.24
   },
   {
@@ -8460,6 +8862,7 @@
     "wti": 83.79,
     "dollarIndex": 123.1075,
     "nikkei225": 37068.35,
+    "gold": null,
     "newJobPostings": 130.96
   },
   {
@@ -8481,6 +8884,7 @@
     "wti": 85.38,
     "dollarIndex": 122.9471,
     "nikkei225": 37934.76,
+    "gold": null,
     "newJobPostings": 136.1
   },
   {
@@ -8502,6 +8906,7 @@
     "wti": 79.65,
     "dollarIndex": 122.1375,
     "nikkei225": 38236.07,
+    "gold": null,
     "newJobPostings": 127.94
   },
   {
@@ -8523,6 +8928,7 @@
     "wti": 79.81,
     "dollarIndex": 122.014,
     "nikkei225": 38229.11,
+    "gold": null,
     "newJobPostings": 123.64
   },
   {
@@ -8544,6 +8950,7 @@
     "wti": 81.66,
     "dollarIndex": 121.2354,
     "nikkei225": 38787.38,
+    "gold": null,
     "newJobPostings": 127.38
   },
   {
@@ -8565,6 +8972,7 @@
     "wti": 78.48,
     "dollarIndex": 121.6172,
     "nikkei225": 38646.11,
+    "gold": null,
     "newJobPostings": 127.17
   },
   {
@@ -8586,6 +8994,7 @@
     "wti": 77.97,
     "dollarIndex": 122.098,
     "nikkei225": 38487.9,
+    "gold": null,
     "newJobPostings": 126.57
   },
   {
@@ -8607,6 +9016,7 @@
     "wti": 76.53,
     "dollarIndex": 123.549,
     "nikkei225": 38683.93,
+    "gold": null,
     "newJobPostings": 125.04
   },
   {
@@ -8628,6 +9038,7 @@
     "wti": 79.41,
     "dollarIndex": 124.1694,
     "nikkei225": 38814.56,
+    "gold": null,
     "newJobPostings": 119.45
   },
   {
@@ -8649,6 +9060,7 @@
     "wti": 81.71,
     "dollarIndex": 124.1086,
     "nikkei225": 38596.47,
+    "gold": null,
     "newJobPostings": 125.96
   },
   {
@@ -8670,6 +9082,7 @@
     "wti": 82.83,
     "dollarIndex": 124.2103,
     "nikkei225": 39583.08,
+    "gold": null,
     "newJobPostings": 129.45
   },
   {
@@ -8691,6 +9104,7 @@
     "wti": 84.44,
     "dollarIndex": 123.4762,
     "nikkei225": 40912.37,
+    "gold": null,
     "newJobPostings": 126.53
   },
   {
@@ -8712,6 +9126,7 @@
     "wti": 83.49,
     "dollarIndex": 122.4404,
     "nikkei225": 41190.68,
+    "gold": null,
     "newJobPostings": 113.84
   },
   {
@@ -8733,6 +9148,7 @@
     "wti": 81.43,
     "dollarIndex": 123.147,
     "nikkei225": 40063.79,
+    "gold": null,
     "newJobPostings": 119.38
   },
   {
@@ -8754,6 +9170,7 @@
     "wti": 78.58,
     "dollarIndex": 123.672,
     "nikkei225": 37667.41,
+    "gold": null,
     "newJobPostings": 122.4
   },
   {
@@ -8775,6 +9192,7 @@
     "wti": 74.99,
     "dollarIndex": 123.4681,
     "nikkei225": 35909.7,
+    "gold": null,
     "newJobPostings": 121.36
   },
   {
@@ -8796,6 +9214,7 @@
     "wti": 78.28,
     "dollarIndex": 122.9276,
     "nikkei225": 35025,
+    "gold": null,
     "newJobPostings": 114.42
   },
   {
@@ -8817,6 +9236,7 @@
     "wti": 78.05,
     "dollarIndex": 122.3972,
     "nikkei225": 38062.67,
+    "gold": null,
     "newJobPostings": 114.7
   },
   {
@@ -8838,6 +9258,7 @@
     "wti": 75.82,
     "dollarIndex": 121.4597,
     "nikkei225": 38364.27,
+    "gold": null,
     "newJobPostings": 120.39
   },
   {
@@ -8859,6 +9280,7 @@
     "wti": 74.52,
     "dollarIndex": 122.3262,
     "nikkei225": 38647.75,
+    "gold": null,
     "newJobPostings": 121.2
   },
   {
@@ -8880,6 +9302,7 @@
     "wti": 68.58,
     "dollarIndex": 122.4991,
     "nikkei225": 36391.47,
+    "gold": null,
     "newJobPostings": 113.22
   },
   {
@@ -8901,6 +9324,7 @@
     "wti": 69.59,
     "dollarIndex": 121.6551,
     "nikkei225": 36581.76,
+    "gold": null,
     "newJobPostings": 125.41
   },
   {
@@ -8922,6 +9346,7 @@
     "wti": 72.72,
     "dollarIndex": 121.4052,
     "nikkei225": 37723.91,
+    "gold": null,
     "newJobPostings": 120.24
   },
   {
@@ -8943,6 +9368,7 @@
     "wti": 68.72,
     "dollarIndex": 121.1111,
     "nikkei225": 39829.56,
+    "gold": null,
     "newJobPostings": 121.37
   },
   {
@@ -8964,6 +9390,7 @@
     "wti": 74.93,
     "dollarIndex": 122.2197,
     "nikkei225": 38635.62,
+    "gold": null,
     "newJobPostings": 114.35
   },
   {
@@ -8985,6 +9412,7 @@
     "wti": 76.11,
     "dollarIndex": 122.9805,
     "nikkei225": 39605.8,
+    "gold": null,
     "newJobPostings": 111.62
   },
   {
@@ -9006,6 +9434,7 @@
     "wti": 69.78,
     "dollarIndex": 123.9185,
     "nikkei225": 38981.75,
+    "gold": null,
     "newJobPostings": 114
   },
   {
@@ -9027,6 +9456,7 @@
     "wti": 72.02,
     "dollarIndex": 124.6105,
     "nikkei225": 37913.92,
+    "gold": null,
     "newJobPostings": 117.79
   },
   {
@@ -9048,6 +9478,7 @@
     "wti": 69.81,
     "dollarIndex": 124.8076,
     "nikkei225": 38053.67,
+    "gold": null,
     "newJobPostings": 117.35
   },
   {
@@ -9069,6 +9500,7 @@
     "wti": 70.69,
     "dollarIndex": 125.5811,
     "nikkei225": 39500.37,
+    "gold": null,
     "newJobPostings": 107.25
   },
   {
@@ -9090,6 +9522,7 @@
     "wti": 67.33,
     "dollarIndex": 126.8848,
     "nikkei225": 38642.91,
+    "gold": null,
     "newJobPostings": 108.52
   },
   {
@@ -9111,6 +9544,7 @@
     "wti": 71.68,
     "dollarIndex": 127.4712,
     "nikkei225": 38283.85,
+    "gold": null,
     "newJobPostings": 113.53
   },
   {
@@ -9132,6 +9566,7 @@
     "wti": 68.26,
     "dollarIndex": 126.5798,
     "nikkei225": 38208.03,
+    "gold": null,
     "newJobPostings": 126.62
   },
   {
@@ -9153,6 +9588,7 @@
     "wti": 68.58,
     "dollarIndex": 126.688,
     "nikkei225": 39091.17,
+    "gold": null,
     "newJobPostings": 94.46
   },
   {
@@ -9174,6 +9610,7 @@
     "wti": 71.54,
     "dollarIndex": 127.3096,
     "nikkei225": 39470.44,
+    "gold": null,
     "newJobPostings": 111.11
   },
   {
@@ -9195,6 +9632,7 @@
     "wti": 69.71,
     "dollarIndex": 127.893,
     "nikkei225": 38701.9,
+    "gold": null,
     "newJobPostings": 117.95
   },
   {
@@ -9216,6 +9654,7 @@
     "wti": 71.28,
     "dollarIndex": 128.45,
     "nikkei225": 40281.16,
+    "gold": null,
     "newJobPostings": 118.77
   },
   {
@@ -9237,6 +9676,7 @@
     "wti": 74.64,
     "dollarIndex": 129.4535,
     "nikkei225": 39894.54,
+    "gold": null,
     "newJobPostings": 110.82
   },
   {
@@ -9258,6 +9698,7 @@
     "wti": 77.27,
     "dollarIndex": 129.8664,
     "nikkei225": 39190.4,
+    "gold": null,
     "newJobPostings": 108.42
   },
   {
@@ -9279,6 +9720,7 @@
     "wti": 78.56,
     "dollarIndex": 129.4859,
     "nikkei225": 38451.46,
+    "gold": null,
     "newJobPostings": 114.47
   },
   {
@@ -9300,6 +9742,7 @@
     "wti": 74.97,
     "dollarIndex": 127.4611,
     "nikkei225": 39931.98,
+    "gold": null,
     "newJobPostings": 118.75
   },
   {
@@ -9321,6 +9764,7 @@
     "wti": 72.84,
     "dollarIndex": 128.4828,
     "nikkei225": 39572.49,
+    "gold": null,
     "newJobPostings": 113.03
   },
   {
@@ -9342,6 +9786,7 @@
     "wti": 71.32,
     "dollarIndex": 128.4292,
     "nikkei225": 38787.02,
+    "gold": null,
     "newJobPostings": 110.42
   },
   {
@@ -9363,6 +9808,7 @@
     "wti": 71.05,
     "dollarIndex": 127.1491,
     "nikkei225": 39149.43,
+    "gold": null,
     "newJobPostings": 111.5
   },
   {
@@ -9384,6 +9830,7 @@
     "wti": 70.72,
     "dollarIndex": 127.1408,
     "nikkei225": 38776.94,
+    "gold": null,
     "newJobPostings": 112.75
   },
   {
@@ -9405,6 +9852,7 @@
     "wti": 69.97,
     "dollarIndex": 128.2805,
     "nikkei225": 37155.5,
+    "gold": null,
     "newJobPostings": 112.15
   },
   {
@@ -9426,6 +9874,7 @@
     "wti": 67.29,
     "dollarIndex": 125.9814,
     "nikkei225": 36887.17,
+    "gold": null,
     "newJobPostings": 104.42
   },
   {
@@ -9447,6 +9896,7 @@
     "wti": 67.43,
     "dollarIndex": 125.6942,
     "nikkei225": 37053.1,
+    "gold": null,
     "newJobPostings": 105.69
   },
   {
@@ -9468,6 +9918,7 @@
     "wti": 68.52,
     "dollarIndex": 126.2679,
     "nikkei225": 37677.06,
+    "gold": null,
     "newJobPostings": 109.62
   },
   {
@@ -9489,6 +9940,7 @@
     "wti": 69.74,
     "dollarIndex": 126.4187,
     "nikkei225": 37120.33,
+    "gold": null,
     "newJobPostings": 109.93
   },
   {
@@ -9510,6 +9962,7 @@
     "wti": 62.42,
     "dollarIndex": 125.8129,
     "nikkei225": 33780.58,
+    "gold": null,
     "newJobPostings": 109.23
   },
   {
@@ -9531,6 +9984,7 @@
     "wti": 61.91,
     "dollarIndex": 124.0163,
     "nikkei225": 33585.58,
+    "gold": null,
     "newJobPostings": 106.97
   },
   {
@@ -9552,6 +10006,7 @@
     "wti": 65.07,
     "dollarIndex": 122.9865,
     "nikkei225": 34730.28,
+    "gold": null,
     "newJobPostings": 112.11
   },
   {
@@ -9573,6 +10028,7 @@
     "wti": 63.85,
     "dollarIndex": 122.8858,
     "nikkei225": 35705.74,
+    "gold": null,
     "newJobPostings": 107.15
   },
   {
@@ -9594,6 +10050,7 @@
     "wti": 59.67,
     "dollarIndex": 122.4962,
     "nikkei225": 36830.69,
+    "gold": null,
     "newJobPostings": 107.6
   },
   {
@@ -9615,6 +10072,7 @@
     "wti": 62.37,
     "dollarIndex": 122.5191,
     "nikkei225": 37503.33,
+    "gold": null,
     "newJobPostings": 102.2
   },
   {
@@ -9636,6 +10094,7 @@
     "wti": 63.84,
     "dollarIndex": 123.0737,
     "nikkei225": 37753.72,
+    "gold": null,
     "newJobPostings": 107.79
   },
   {
@@ -9657,6 +10116,7 @@
     "wti": 62.89,
     "dollarIndex": 121.3837,
     "nikkei225": 37160.47,
+    "gold": null,
     "newJobPostings": 108.12
   },
   {
@@ -9678,6 +10138,7 @@
     "wti": 61.46,
     "dollarIndex": 121.7674,
     "nikkei225": 37965.1,
+    "gold": null,
     "newJobPostings": 104.4
   },
   {
@@ -9699,6 +10160,7 @@
     "wti": 65.3,
     "dollarIndex": 121.161,
     "nikkei225": 37741.61,
+    "gold": null,
     "newJobPostings": 111.65
   },
   {
@@ -9720,6 +10182,7 @@
     "wti": 73.84,
     "dollarIndex": 120.3245,
     "nikkei225": 37834.25,
+    "gold": null,
     "newJobPostings": 107.08
   },
   {
@@ -9741,6 +10204,7 @@
     "wti": 75.72,
     "dollarIndex": 121.0408,
     "nikkei225": 38403.23,
+    "gold": null,
     "newJobPostings": 111.02
   },
   {
@@ -9762,6 +10226,7 @@
     "wti": 66.66,
     "dollarIndex": 119.659,
     "nikkei225": 40150.79,
+    "gold": null,
     "newJobPostings": 107.08
   },
   {
@@ -9783,6 +10248,7 @@
     "wti": 68.13,
     "dollarIndex": 119.2382,
     "nikkei225": 39810.88,
+    "gold": null,
     "newJobPostings": 106.39
   },
   {
@@ -9804,6 +10270,7 @@
     "wti": 69.63,
     "dollarIndex": 119.9214,
     "nikkei225": 39569.68,
+    "gold": null,
     "newJobPostings": 109.95
   },
   {
@@ -9825,6 +10292,7 @@
     "wti": 68.53,
     "dollarIndex": 120.356,
     "nikkei225": 39819.11,
+    "gold": null,
     "newJobPostings": 121.01
   },
   {
@@ -9846,6 +10314,7 @@
     "wti": 66.38,
     "dollarIndex": 119.9857,
     "nikkei225": 41456.23,
+    "gold": null,
     "newJobPostings": 109.13
   },
   {
@@ -9867,6 +10336,7 @@
     "wti": 68.39,
     "dollarIndex": 121.2122,
     "nikkei225": 40799.6,
+    "gold": null,
     "newJobPostings": 108.94
   },
   {
@@ -9888,6 +10358,7 @@
     "wti": 64.94,
     "dollarIndex": 120.3329,
     "nikkei225": 41820.48,
+    "gold": null,
     "newJobPostings": 101.86
   },
   {
@@ -9909,6 +10380,7 @@
     "wti": 63.78,
     "dollarIndex": 120.3377,
     "nikkei225": 43378.31,
+    "gold": null,
     "newJobPostings": 107.32
   },
   {
@@ -9930,6 +10402,7 @@
     "wti": 64.08,
     "dollarIndex": 120.2774,
     "nikkei225": 42633.29,
+    "gold": null,
     "newJobPostings": 110.48
   },
   {
@@ -9951,6 +10424,7 @@
     "wti": 64.36,
     "dollarIndex": 120.2082,
     "nikkei225": 42718.47,
+    "gold": null,
     "newJobPostings": 106.67
   },
   {
@@ -9972,6 +10446,7 @@
     "wti": 62.22,
     "dollarIndex": 120.1282,
     "nikkei225": 43018.75,
+    "gold": null,
     "newJobPostings": 99.65
   },
   {
@@ -9993,6 +10468,7 @@
     "wti": 63.02,
     "dollarIndex": 120.0611,
     "nikkei225": 44768.12,
+    "gold": null,
     "newJobPostings": 112.07
   },
   {
@@ -10014,6 +10490,7 @@
     "wti": 63.02,
     "dollarIndex": 119.7858,
     "nikkei225": 45045.81,
+    "gold": null,
     "newJobPostings": 106.13
   },
   {
@@ -10035,6 +10512,7 @@
     "wti": 66.5,
     "dollarIndex": 120.4349,
     "nikkei225": 45354.99,
+    "gold": null,
     "newJobPostings": 103.35
   },
   {
@@ -10056,6 +10534,7 @@
     "wti": 61.65,
     "dollarIndex": 120.0881,
     "nikkei225": 45769.5,
+    "gold": null,
     "newJobPostings": 105.01
   },
   {
@@ -10077,6 +10556,7 @@
     "wti": 59.75,
     "dollarIndex": 121.1163,
     "nikkei225": 48088.8,
+    "gold": null,
     "newJobPostings": 100.3
   },
   {
@@ -10098,6 +10578,7 @@
     "wti": 58.3,
     "dollarIndex": 120.7028,
     "nikkei225": 47582.15,
+    "gold": null,
     "newJobPostings": 104.84
   },
   {
@@ -10119,6 +10600,7 @@
     "wti": 62.27,
     "dollarIndex": 120.9345,
     "nikkei225": 49299.65,
+    "gold": null,
     "newJobPostings": 103.22
   },
   {
@@ -10140,6 +10622,7 @@
     "wti": 61.75,
     "dollarIndex": 121.3859,
     "nikkei225": 52411.34,
+    "gold": null,
     "newJobPostings": 105.45
   },
   {
@@ -10161,6 +10644,7 @@
     "wti": 60.54,
     "dollarIndex": 121.388,
     "nikkei225": 50276.37,
+    "gold": null,
     "newJobPostings": 95.31
   },
   {
@@ -10182,6 +10666,7 @@
     "wti": 60.87,
     "dollarIndex": 120.9666,
     "nikkei225": 50376.53,
+    "gold": null,
     "newJobPostings": 99.09
   },
   {
@@ -10203,6 +10688,7 @@
     "wti": 58.86,
     "dollarIndex": 121.8653,
     "nikkei225": 48625.88,
+    "gold": null,
     "newJobPostings": 101.08
   },
   {
@@ -10224,6 +10710,7 @@
     "wti": 58.58,
     "dollarIndex": 121.0527,
     "nikkei225": 50253.91,
+    "gold": null,
     "newJobPostings": 109.64
   },
   {
@@ -10245,6 +10732,7 @@
     "wti": 60.23,
     "dollarIndex": 120.6863,
     "nikkei225": 50491.87,
+    "gold": null,
     "newJobPostings": 89.72
   },
   {
@@ -10266,6 +10754,7 @@
     "wti": 57.61,
     "dollarIndex": 120.1442,
     "nikkei225": 50836.55,
+    "gold": null,
     "newJobPostings": 100.62
   },
   {
@@ -10287,6 +10776,7 @@
     "wti": 56.8,
     "dollarIndex": 120.1652,
     "nikkei225": 49507.21,
+    "gold": null,
     "newJobPostings": 102.66
   },
   {
@@ -10308,6 +10798,7 @@
     "wti": 56.6,
     "dollarIndex": 119.4723,
     "nikkei225": 50750.39,
+    "gold": null,
     "newJobPostings": 107.74
   },
   {
@@ -10329,6 +10820,7 @@
     "wti": 57.21,
     "dollarIndex": 119.6059,
     "nikkei225": 50339.48,
+    "gold": null,
     "newJobPostings": 97.77
   },
   {
@@ -10350,6 +10842,7 @@
     "wti": 58.96,
     "dollarIndex": 120.2215,
     "nikkei225": 51939.89,
+    "gold": null,
     "newJobPostings": 89.02
   },
   {
@@ -10371,6 +10864,7 @@
     "wti": 59.4,
     "dollarIndex": 120.0838,
     "nikkei225": 53936.17,
+    "gold": null,
     "newJobPostings": 104.32
   },
   {
@@ -10392,6 +10886,7 @@
     "wti": 60.7,
     "dollarIndex": 118.8976,
     "nikkei225": 53846.87,
+    "gold": null,
     "newJobPostings": 103.16
   },
   {
@@ -10413,6 +10908,7 @@
     "wti": 64.5,
     "dollarIndex": 117.8996,
     "nikkei225": 53322.85,
+    "gold": null,
     "newJobPostings": 98.28
   },
   {
@@ -10434,6 +10930,7 @@
     "wti": 63.77,
     "dollarIndex": 118.2407,
     "nikkei225": 54253.68,
+    "gold": null,
     "newJobPostings": 97.02
   },
   {
@@ -10455,6 +10952,7 @@
     "wti": 63.05,
     "dollarIndex": 117.5258,
     "nikkei225": 56941.97,
+    "gold": null,
     "newJobPostings": 101.59
   },
   {
@@ -10476,6 +10974,7 @@
     "wti": 66.69,
     "dollarIndex": 117.9917,
     "nikkei225": 56825.7,
+    "gold": null,
     "newJobPostings": 103.45
   },
   {
@@ -10497,6 +10996,7 @@
     "wti": 66.96,
     "dollarIndex": 117.8223,
     "nikkei225": 58850.27,
+    "gold": null,
     "newJobPostings": 104.78
   },
   {
@@ -10518,6 +11018,7 @@
     "wti": 90.77,
     "dollarIndex": 119.491,
     "nikkei225": 55620.84,
+    "gold": null,
     "newJobPostings": 99.91
   },
   {
@@ -10539,6 +11040,7 @@
     "wti": 98.48,
     "dollarIndex": 120.5518,
     "nikkei225": 53819.61,
+    "gold": null,
     "newJobPostings": 101.15
   },
   {
@@ -10560,6 +11062,7 @@
     "wti": 98.71,
     "dollarIndex": 120.2757,
     "nikkei225": 53372.53,
+    "gold": null,
     "newJobPostings": 100.96
   },
   {
@@ -10581,6 +11084,7 @@
     "wti": 101.26,
     "dollarIndex": 120.8851,
     "nikkei225": 53373.07,
+    "gold": null,
     "newJobPostings": 98.88
   },
   {
@@ -10602,6 +11106,7 @@
     "wti": 113.23,
     "dollarIndex": 120.6565,
     "nikkei225": 53123.49,
+    "gold": null,
     "newJobPostings": 100.52
   },
   {
@@ -10623,6 +11128,7 @@
     "wti": 98.34,
     "dollarIndex": 118.8552,
     "nikkei225": 56924.11,
+    "gold": null,
     "newJobPostings": 96.9
   },
   {
@@ -10644,6 +11150,7 @@
     "wti": 85.91,
     "dollarIndex": 118.0795,
     "nikkei225": 58475.9,
+    "gold": null,
     "newJobPostings": 103.33
   },
   {
@@ -10665,6 +11172,7 @@
     "wti": 98.42,
     "dollarIndex": 118.7294,
     "nikkei225": 59716.18,
+    "gold": null,
     "newJobPostings": 102.79
   },
   {
@@ -10686,6 +11194,7 @@
     "wti": 105.38,
     "dollarIndex": 118.3926,
     "nikkei225": 59513.12,
+    "gold": null,
     "newJobPostings": 100.35
   },
   {
@@ -10707,6 +11216,7 @@
     "wti": 98.87,
     "dollarIndex": 118.0392,
     "nikkei225": 62713.65,
+    "gold": null,
     "newJobPostings": 98.86
   },
   {
@@ -10728,6 +11238,7 @@
     "wti": 108.99,
     "dollarIndex": 119.2825,
     "nikkei225": 61409.29,
+    "gold": null,
     "newJobPostings": 102.35
   },
   {
@@ -10749,6 +11260,7 @@
     "wti": 100.35,
     "dollarIndex": 119.2868,
     "nikkei225": 63339.07,
+    "gold": null,
     "newJobPostings": 102.33
   },
   {
@@ -10770,6 +11282,7 @@
     "wti": 91.16,
     "dollarIndex": 118.8783,
     "nikkei225": 66329.5,
+    "gold": null,
     "newJobPostings": 95.1
   },
   {
@@ -10791,6 +11304,7 @@
     "wti": 94.32,
     "dollarIndex": 120.0831,
     "nikkei225": 66588.12,
+    "gold": null,
     "newJobPostings": 102.59
   },
   {
@@ -10812,6 +11326,7 @@
     "wti": 88.62,
     "dollarIndex": 119.5073,
     "nikkei225": 66020.04,
+    "gold": null,
     "newJobPostings": 98.43
   },
   {
@@ -10833,6 +11348,7 @@
     "wti": 80.35,
     "dollarIndex": 120.3958,
     "nikkei225": 71250.06,
+    "gold": null,
     "newJobPostings": 99.11
   },
   {
@@ -10854,6 +11370,7 @@
     "wti": 70.3,
     "dollarIndex": 120.8866,
     "nikkei225": 69360.88,
+    "gold": null,
     "newJobPostings": 98.25
   },
   {
@@ -10875,6 +11392,7 @@
     "wti": 69.73,
     "dollarIndex": 120.6902,
     "nikkei225": 69744.07,
+    "gold": null,
     "newJobPostings": 97.79
   },
   {
@@ -10896,6 +11414,7 @@
     "wti": 72.45,
     "dollarIndex": 120.5046,
     "nikkei225": 68557.73,
+    "gold": null,
     "newJobPostings": 96.44
   },
   {
@@ -10917,6 +11436,7 @@
     "wti": 83.43,
     "dollarIndex": 120.5315,
     "nikkei225": 64141.12,
+    "gold": null,
     "newJobPostings": 101.58
   },
   {
@@ -10938,6 +11458,7 @@
     "wti": 91.74,
     "dollarIndex": 120.7105,
     "nikkei225": 64611.15,
+    "gold": null,
     "newJobPostings": 97.05
   },
   {
@@ -10959,6 +11480,7 @@
     "wti": 86.16,
     "dollarIndex": 119.7034,
     "nikkei225": 64362.02,
+    "gold": null,
     "newJobPostings": 99.99
   },
   {
@@ -10980,6 +11502,7 @@
     "wti": 79.77,
     "dollarIndex": 119.0649,
     "nikkei225": 65606.71,
+    "gold": null,
     "newJobPostings": 94.65
   },
   {
@@ -11001,6 +11524,7 @@
     "wti": 84.77,
     "dollarIndex": 118.9028,
     "nikkei225": 68713.8,
+    "gold": 401.48,
     "newJobPostings": 94.65
   }
 ]
