@@ -534,3 +534,41 @@ describe('地区連銀サーベイ (#94)', () => {
     );
   });
 });
+
+describe('家計の余力 (#95)', () => {
+  const build = (observations: ObservationMap) =>
+    buildEconomyView({
+      observations,
+      config,
+      start: '2026-06-01',
+      today: new Date(Date.UTC(2026, 7, 20)),
+    });
+
+  it('貯蓄額は前年同月比、貯蓄率は水準で出す', () => {
+    // 率と金額は桁が違う。率は 0 を基準に読むので水準のまま、金額は変化率にする。
+    const view = build({
+      'savings-rate': { '2026-06-01': 2.7 },
+      'personal-saving': { '2025-06-01': 1000, '2026-06-01': 900 },
+    });
+    const june = view.monthly.find((p) => p.month === '2026-06-01');
+    expect(june?.savingsRate).toBe(2.7);
+    expect(june?.personalSaving).toBeCloseTo(-10, 10);
+  });
+
+  it('実質可処分所得を総額と1人当たりの両方で出す', () => {
+    // 人口が増えるため、総額が横ばいでも 1 人当たりでは減っていることがある。
+    const view = build({
+      'real-disposable-income': { '2025-06-01': 100, '2026-06-01': 100 },
+      'real-disposable-income-per-capita': { '2025-06-01': 100, '2026-06-01': 99 },
+    });
+    const june = view.monthly.find((p) => p.month === '2026-06-01');
+    expect(june?.realDisposableTotal).toBeCloseTo(0, 10);
+    expect(june?.realDisposablePerCapita).toBeCloseTo(-1, 10);
+  });
+
+  it('発表状況に 2 系列が入る', () => {
+    const ids = build({}).coverage.map((c) => c.indicatorId);
+    expect(ids).toContain('personal-saving');
+    expect(ids).toContain('real-disposable-income');
+  });
+});

@@ -755,5 +755,31 @@
     "copyright": "none",
     "group": "macro",
     "note": "Current General Activity; Diffusion Index for Federal Reserve District 3: Philadelphia。拡散指数で 0 が「改善と悪化が同数」。季節調整済み。第3地区 (ペンシルベニア・ニュージャージー・デラウェア) の製造業のみが対象。"
+  },
+  "personal-saving": {
+    "name": "個人貯蓄額",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "PMSAVE"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "U.S. Bureau of Economic Analysis via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "note": "Personal Saving。10億ドル、季節調整済み年率。貯蓄率 (PSAVERT) と対で見る。率は所得が減っても上がるため、率だけでは「取り崩している」のか「所得が減った」のか判別できない。"
+  },
+  "real-disposable-income": {
+    "name": "実質可処分所得 (総額)",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "DSPIC96"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "U.S. Bureau of Economic Analysis via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "note": "Real Disposable Personal Income。10億ドル (連鎖2017年ドル)、季節調整済み年率。1人当たり (A229RX0) と対で見る。米国は人口が増え続けるため、総額が横ばいでも 1 人当たりでは減っていることがある。"
   }
 }

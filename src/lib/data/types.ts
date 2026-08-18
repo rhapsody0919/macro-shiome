@@ -384,6 +384,13 @@ export interface MonthlyPoint {
   realIncomeExTransfer: number | null;
   /** 1 人当たり実質可処分所得。 */
   realDisposablePerCapita: number | null;
+  /**
+   * 実質可処分所得の総額の前年同月比 (#95)。
+   *
+   * 1 人当たりと並べると人口増の影響を切り分けられる。
+   * 総額が横ばいでも 1 人当たりでは減っていることがある。
+   */
+  realDisposableTotal: number | null;
 
   /**
    * 小売売上 (自動車・ガソリンを除く) の前年同月比。
@@ -433,6 +440,13 @@ export interface MonthlyPoint {
   unemploymentRate: number | null;
   /** 貯蓄率 (%)。低下は貯蓄の取り崩しを示す。 */
   savingsRate: number | null;
+  /**
+   * 個人貯蓄額 (10億ドル、季節調整済み年率) の前年同月比 (#95)。
+   *
+   * **貯蓄率だけでは足りない**。率は所得が減っても上がるため、
+   * 「取り崩している」のか「所得が減っただけ」なのかが判別できない。
+   */
+  personalSaving: number | null;
   /** ミシガン大学消費者信頼感指数 (1966:Q1=100)。 */
   consumerSentiment: number | null;
 }
