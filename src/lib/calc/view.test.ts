@@ -572,3 +572,35 @@ describe('家計の余力 (#95)', () => {
     expect(ids).toContain('real-disposable-income');
   });
 });
+
+describe('10年債利回りの国際比較 (#97)', () => {
+  it('3 か国とも水準のまま載せる', () => {
+    // 金利は水準そのものが意味を持つ。前年同月比にすると比較にならない。
+    const view = buildEconomyView({
+      observations: {
+        'us-10y-monthly': { '2026-06-01': 4.47 },
+        'jp-10y': { '2026-06-01': 2.67 },
+        'de-10y': { '2026-06-01': 2.97 },
+      },
+      config,
+      start: '2026-06-01',
+      today: new Date(Date.UTC(2026, 7, 20)),
+    });
+    const june = view.monthly.find((p) => p.month === '2026-06-01');
+    expect(june?.usTenYearMonthly).toBe(4.47);
+    expect(june?.jpTenYear).toBe(2.67);
+    expect(june?.deTenYear).toBe(2.97);
+  });
+
+  it('発表状況に 3 系列が入る', () => {
+    const ids = buildEconomyView({
+      observations: {},
+      config,
+      start: '2026-06-01',
+      today: new Date(Date.UTC(2026, 7, 20)),
+    }).coverage.map((c) => c.indicatorId);
+    for (const id of ['us-10y-monthly', 'jp-10y', 'de-10y']) {
+      expect(ids).toContain(id);
+    }
+  });
+});

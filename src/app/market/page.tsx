@@ -110,6 +110,47 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
   },
   {
     question: 'financial',
+    frequency: 'monthly',
+    primaryIndicator: 'us-10y-monthly',
+    title: '10年債利回りの国際比較',
+    subtitle: '日米独。金利上昇が世界的な現象か固有要因かを見る',
+    kind: 'percent',
+    zeroLine: false,
+    series: [
+      {
+        key: 'usTenYearMonthly',
+        label: '米国',
+        color: COLORS.nominalRate,
+        width: 2.4,
+        indicatorId: 'us-10y-monthly',
+      },
+      { key: 'jpTenYear', label: '日本', color: COLORS.jpTenYear, indicatorId: 'jp-10y' },
+      { key: 'deTenYear', label: 'ドイツ', color: COLORS.deTenYear, indicatorId: 'de-10y' },
+    ],
+    notes: [
+      <span key="why">
+        <strong>米国だけを見ていると、金利上昇が米国固有の要因なのか世界的な現象なのかが
+        分からない。</strong>
+        3 か国が揃って上がっていれば、物価と中央銀行の姿勢が世界的に変わったと読める。
+      </span>,
+      <span key="same-def">
+        <strong>3 か国とも同じ定義の系列</strong>を使っている (OECD 経由の長期国債利回り、
+        月中平均)。国ごとに違う定義で並べると、差が「定義の違い」なのか
+        「金利の差」なのか分からなくなるため。
+      </span>,
+      <span key="lag">
+        <strong>月次なので、上の週次チャートより 2 か月ほど遅れる。</strong>
+        日次で取れるのは米国だけで、日本とドイツは無料の日次系列が無い。
+        足元の動きは「金利の内訳」を見ること。
+      </span>,
+      <span key="us-diff">
+        米国の線は<strong>週次チャートの名目 10 年債とは別系列</strong>
+        (日次の DGS10 ではなく月次)。月中平均なので値も一致しない。
+      </span>,
+    ],
+  },
+  {
+    question: 'financial',
     frequency: 'weekly',
     primaryIndicator: 'hy-spread',
     title: '信用スプレッド',
@@ -183,7 +224,8 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
         4 月は確定申告の納税で黒字になりやすいなど、月の性質を踏まえて読む。
       </span>,
       <span key="monthly">
-        <strong>この問いで唯一の月次指標</strong>。他の 4 つは週次なので、動きの速さが違う。
+        月次なので、週次の金利・スプレッドとは動きの速さが違う。
+        <strong>先月からの変化として読む</strong>こと。
       </span>,
     ],
   },

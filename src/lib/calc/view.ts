@@ -465,6 +465,10 @@ export function buildEconomyView(options: BuildViewOptions): EconomyView {
     // 拡散指数。水準そのものが意味を持つ (0 が中立) ため前年同月比にしない。
     nyFedSurvey: level('ny-fed-survey', month),
     phillyFedSurvey: level('philly-fed-survey', month),
+    // 金利は水準そのものが意味を持つ。前年同月比にすると読めなくなる。
+    usTenYearMonthly: level('us-10y-monthly', month),
+    jpTenYear: level('jp-10y', month),
+    deTenYear: level('de-10y', month),
     federalDeficit: level('federal-deficit', month),
     unemploymentRate: level('unemployment-rate', month),
     savingsRate: level('savings-rate', month),
@@ -509,6 +513,9 @@ const MONTHLY_INDICATORS = [
   'job-openings',
   'ny-fed-survey',
   'philly-fed-survey',
+  'us-10y-monthly',
+  'jp-10y',
+  'de-10y',
   'federal-deficit',
   'unemployment-rate',
   'savings-rate',

@@ -434,6 +434,17 @@ export interface MonthlyPoint {
   nyFedSurvey: number | null;
   /** フィラデルフィア連銀景気指数 (拡散指数)。対象は第3地区の製造業のみ。 */
   phillyFedSurvey: number | null;
+  /**
+   * 10 年債利回り (%) の国際比較 (#97)。3 か国とも OECD 由来の同じ定義の月次系列。
+   *
+   * **日次では取れない**ため、日次の `nominalRate` より 2 か月ほど遅れる。
+   * 米国の金利上昇が世界的な現象か固有要因かを判別するために並べる。
+   */
+  usTenYearMonthly: number | null;
+  /** 日本の 10 年債利回り (%)。 */
+  jpTenYear: number | null;
+  /** ドイツの 10 年債利回り (%)。 */
+  deTenYear: number | null;
   /** 財政収支 (百万ドル)。負が赤字。 */
   federalDeficit: number | null;
   /** 失業率 (%)。水準そのものが意味を持つ。 */

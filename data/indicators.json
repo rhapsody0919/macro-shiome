@@ -781,5 +781,44 @@
     "copyright": "none",
     "group": "macro",
     "note": "Real Disposable Personal Income。10億ドル (連鎖2017年ドル)、季節調整済み年率。1人当たり (A229RX0) と対で見る。米国は人口が増え続けるため、総額が横ばいでも 1 人当たりでは減っていることがある。"
+  },
+  "jp-10y": {
+    "name": "日本 10年債利回り",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "IRLTLT01JPM156N"
+    },
+    "frequency": "monthly",
+    "unit": "percent",
+    "attribution": "Organization for Economic Co-operation and Development via FRED",
+    "copyright": "none",
+    "group": "rates",
+    "note": "Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark)。月次・月中平均。3 か国とも同じ定義の系列を使い、比較が定義の違いにならないようにしている。**日次では取れない**ため、日次の DGS10 より 2 か月ほど遅れる。"
+  },
+  "de-10y": {
+    "name": "ドイツ 10年債利回り",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "IRLTLT01DEM156N"
+    },
+    "frequency": "monthly",
+    "unit": "percent",
+    "attribution": "Organization for Economic Co-operation and Development via FRED",
+    "copyright": "none",
+    "group": "rates",
+    "note": "Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark)。月次・月中平均。3 か国とも同じ定義の系列を使い、比較が定義の違いにならないようにしている。**日次では取れない**ため、日次の DGS10 より 2 か月ほど遅れる。"
+  },
+  "us-10y-monthly": {
+    "name": "米国 10年債利回り (月次)",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "IRLTLT01USM156N"
+    },
+    "frequency": "monthly",
+    "unit": "percent",
+    "attribution": "Organization for Economic Co-operation and Development via FRED",
+    "copyright": "none",
+    "group": "rates",
+    "note": "Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark)。月次・月中平均。3 か国とも同じ定義の系列を使い、比較が定義の違いにならないようにしている。**日次では取れない**ため、日次の DGS10 より 2 か月ほど遅れる。 日次の DGS10 とは別系列で、国際比較のために同じ定義に揃えるために使う。"
   }
 }
