@@ -1,23 +1,12 @@
-import { render, screen } from '@testing-library/react';
+import { act, render, screen } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest';
 import type { RevisionPoint } from '@/lib/data/types';
+import { revisionPoint as point } from '@/test/fixtures';
 import { RevisionsChart } from './revisions';
 
 vi.mock('next/navigation', () => ({
   useSearchParams: () => new URLSearchParams(),
 }));
-
-function point(date: string, overrides: Partial<RevisionPoint> = {}): RevisionPoint {
-  return {
-    date,
-    blendedToday: null,
-    blendedLastWeek: null,
-    blendedQuarterEnd: null,
-    growthCurrentYear: null,
-    growthNextYear: null,
-    ...overrides,
-  };
-}
 
 describe('予想改定の欠測説明 (#53)', () => {
   /**
@@ -64,5 +53,45 @@ describe('予想改定の欠測説明 (#53)', () => {
   it('データが 1 件も無くても落ちない', () => {
     const { container } = render(<RevisionsChart revisions={[point('2026-01-09')]} />);
     expect(container.textContent).toContain('取得できる期間の下限がある');
+  });
+});
+
+describe('暦年と四半期の切替 (#117)', () => {
+  const revisions: RevisionPoint[] = [
+    point('2026-08-07', {
+      growthCurrentYear: 30.0,
+      growthNextYear: 13.6,
+      growthNextQuarter: 12.4,
+      growthQuarterAfterNext: 15.1,
+    }),
+  ];
+
+  it('既定は暦年', () => {
+    render(<RevisionsChart revisions={revisions} />);
+    expect(screen.getByRole('button', { name: '暦年' })).toHaveAttribute('aria-pressed', 'true');
+  });
+
+  it('四半期に切り替えると対象が入れ替わる旨の注記が出る', () => {
+    // 暦年は年内固定、四半期は進むと別の四半期を指す。読み方が違う。
+    render(<RevisionsChart revisions={revisions} />);
+    expect(document.body.textContent).not.toContain('四半期は対象が入れ替わる');
+
+    act(() => {
+      screen.getByRole('button', { name: '四半期' }).click();
+    });
+    expect(document.body.textContent).toContain('四半期は対象が入れ替わる');
+    expect(screen.getByRole('button', { name: '四半期' })).toHaveAttribute(
+      'aria-pressed',
+      'true',
+    );
+  });
+
+  it('blended との違いを四半期表示のときに明示する', () => {
+    // 3 時点の blended は実績と予想の混合。純粋な予想と混同されやすい。
+    render(<RevisionsChart revisions={revisions} />);
+    act(() => {
+      screen.getByRole('button', { name: '四半期' }).click();
+    });
+    expect(document.body.textContent).toContain('進行中四半期の blended 増益率');
   });
 });

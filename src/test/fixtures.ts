@@ -4,7 +4,7 @@
  * `ValuationPoint` は 14 フィールドあり、テストごとに全部書き下すとフィールドが
  * 増えるたび全テストを直すことになる。既定値をここに集約する。
  */
-import type { ValuationPoint, ValuationSeries } from '@/lib/data/types';
+import type { RevisionPoint, ValuationPoint, ValuationSeries } from '@/lib/data/types';
 
 /** 全項目が欠測の 1 週。必要な項目だけ overrides で埋める。 */
 export function valuationPoint(
@@ -53,6 +53,29 @@ export function valuationSeries(
     spreadDistribution: null,
     hasForwardEps: true,
     accumulationNote: null,
+    ...overrides,
+  };
+}
+
+/**
+ * 全項目が欠測の予想改定 1 週。
+ *
+ * `ValuationPoint` と同じ理由でここに集約する。テストごとに書き下すと、
+ * フィールドが増えるたび全テストを直すことになる。
+ */
+export function revisionPoint(
+  date: string,
+  overrides: Partial<RevisionPoint> = {},
+): RevisionPoint {
+  return {
+    date,
+    blendedToday: null,
+    blendedLastWeek: null,
+    blendedQuarterEnd: null,
+    growthCurrentYear: null,
+    growthNextYear: null,
+    growthNextQuarter: null,
+    growthQuarterAfterNext: null,
     ...overrides,
   };
 }

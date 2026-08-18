@@ -525,6 +525,14 @@ export interface RevisionPoint {
   /** 暦年の予想増益率。対象年は date の年 / 年 + 1。 */
   growthCurrentYear: number | null;
   growthNextYear: number | null;
+  /**
+   * 四半期の予想増益率 (#117)。
+   *
+   * **暦年と違って対象が動く**。「翌四半期」は四半期が進むと別の四半期を指すため、
+   * 同じ線が同じ対象を追い続けない。暦年 (年内は固定) とは別の軸で読む。
+   */
+  growthNextQuarter: number | null;
+  growthQuarterAfterNext: number | null;
 }
 
 /** 画面用ビューの 1 週分 (#8 で生成する)。導出値はビルド時に計算済みにする。 */
