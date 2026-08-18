@@ -74,7 +74,8 @@ export type FactsetField =
 export type IndicatorSource =
   | { adapter: 'fred'; seriesId: string }
   | { adapter: 'factset-pdf'; field: FactsetField }
-  | { adapter: 'stockanalysis'; symbol: string; field: 'peRatio' };
+  | { adapter: 'stockanalysis'; symbol: string; field: 'peRatio' }
+  | { adapter: 'treasury'; auction: 'ten-year-bid-to-cover' };
 
 /** 指標マスタの 1 エントリ。 */
 export interface Indicator {
@@ -432,6 +433,13 @@ export interface MonthlyPoint {
   // --- 水準 ---
   /** 求人件数 (JOLTS、千件)。労働省の公式統計。 */
   jobOpenings: number | null;
+  /**
+   * 10 年債入札の応札倍率 (#96)。応札額 ÷ 落札額で、**低いほど買い手が弱い**。
+   *
+   * 入札は月 1 回で日付も不定のため、その月の入札結果としてこの月に載せる。
+   * 財政収支 (発行額) の下流にあたる。
+   */
+  bidToCover: number | null;
   /**
    * NY連銀景気指数 (拡散指数)。0 が「改善と悪化が同数」(#94)。
    *

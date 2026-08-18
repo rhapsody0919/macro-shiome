@@ -99,7 +99,7 @@ function parseSource(raw: unknown, where: string): IndicatorSource {
   }
   const adapter = requireEnum(
     raw.adapter,
-    ['fred', 'factset-pdf', 'stockanalysis'] as const,
+    ['fred', 'factset-pdf', 'stockanalysis', 'treasury'] as const,
     `${where}.adapter`,
   );
 
@@ -113,6 +113,11 @@ function parseSource(raw: unknown, where: string): IndicatorSource {
         adapter,
         symbol: requireString(raw.symbol, `${where}.symbol`),
         field: requireEnum(raw.field, ['peRatio'] as const, `${where}.field`),
+      };
+    case 'treasury':
+      return {
+        adapter,
+        auction: requireEnum(raw.auction, ['ten-year-bid-to-cover'] as const, `${where}.auction`),
       };
   }
 }

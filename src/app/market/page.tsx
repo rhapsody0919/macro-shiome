@@ -230,6 +230,45 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
     ],
   },
   {
+    question: 'financial',
+    frequency: 'monthly',
+    primaryIndicator: 'ten-year-bid-to-cover',
+    title: '10年債入札の応札倍率',
+    subtitle: '応札額 ÷ 落札額。低いほど買い手が弱い',
+    kind: 'number',
+    zeroLine: false,
+    series: [
+      {
+        key: 'bidToCover',
+        label: '応札倍率',
+        color: COLORS.bidToCover,
+        indicatorId: 'ten-year-bid-to-cover',
+      },
+    ],
+    notes: [
+      <span key="why">
+        <strong>財政収支 (上の図) の下流にあたる。</strong>
+        赤字が増えると国債の発行が増え、その国債を買う需要が弱ければ利回りが上がる。
+        <strong>応札倍率が下がるのは需要が弱い合図</strong>で、金利上昇圧力になる。
+      </span>,
+      <span key="no-threshold">
+        <strong>「低調」の線は引いていない。</strong>
+        どこから低調かに定説が無く恣意的になるため (VIX・イールドスプレッドと同じ判断)。
+        過去の水準と比べて読むこと。
+      </span>,
+      <span key="series">
+        <strong>10 年債の通常債のみ。</strong>
+        リオープン (追加発行) は残存期間で記録されるため発行時の年限で絞り、
+        <strong>10 年 TIPS は除いている</strong>。どちらか一方でも欠けると別物が混ざる
+        (判断の記録は ADR-0006)。
+      </span>,
+      <span key="irregular">
+        入札は月 1 回だが日付は月ごとに動くため、<strong>その月の入札結果</strong>として
+        載せている。出所は米財務省 Fiscal Data (FRED ではない)。
+      </span>,
+    ],
+  },
+  {
     question: 'risk',
     frequency: 'weekly',
     primaryIndicator: 'vix',

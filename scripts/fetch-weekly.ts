@@ -19,6 +19,7 @@ import {
   previousFriday,
 } from '../src/lib/adapters/factset';
 import { fetchEtfField } from '../src/lib/adapters/stockanalysis';
+import { TreasuryClient } from '../src/lib/adapters/treasury';
 import {
   buildEconomyView,
   buildMacroView,
@@ -134,6 +135,19 @@ async function main(): Promise<void> {
       console.log(`  stockanalysis ${id}: ${value}`);
     } catch (error) {
       failures.push(`stockanalysis ${id}: ${message(error)}`);
+    }
+  }
+
+  // --- 3b. 米財務省 (国債入札) ---
+  // 全期間を毎回取り直す。件数が 400 弱と小さく、差分取得の複雑さに見合わない。
+  for (const [id, indicator] of Object.entries(indicators)) {
+    if (indicator.source.adapter !== 'treasury') continue;
+    try {
+      const observations = await new TreasuryClient().fetchTenYearBidToCover();
+      observationMap[id] = upsertObservations(id, observations, now);
+      console.log(`  treasury ${id}: ${Object.keys(observations).length} 件`);
+    } catch (error) {
+      failures.push(`treasury ${id}: ${message(error)}`);
     }
   }
 
