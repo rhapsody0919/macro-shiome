@@ -158,6 +158,20 @@ export function parseIndicator(id: string, raw: unknown): Indicator {
     }
     indicator.optionalInReport = raw.optionalInReport;
   }
+  if (raw.range !== undefined) {
+    if (!isRecord(raw.range)) {
+      throw new Error(`${where}.range: オブジェクトでない`);
+    }
+    const min = raw.range.min;
+    const max = raw.range.max;
+    if (typeof min !== 'number' || typeof max !== 'number') {
+      throw new Error(`${where}.range: min と max は数値で指定する`);
+    }
+    if (!(min < max)) {
+      throw new Error(`${where}.range: min (${min}) が max (${max}) 以上になっている`);
+    }
+    indicator.range = { min, max };
+  }
   if (raw.note !== undefined) {
     indicator.note = requireString(raw.note, `${where}.note`);
   }

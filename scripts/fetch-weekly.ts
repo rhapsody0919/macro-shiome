@@ -154,11 +154,18 @@ async function main(): Promise<void> {
   // --- 4. 検証 ---
   for (const [id, indicator] of Object.entries(indicators)) {
     const observations = observationMap[id] ?? readObservations(id);
+
+    // **範囲は「各系列の最新値」で見る** (#102)。以前は基準日 (金曜) の値だけを
+    // 見ていたため、月次・四半期・入札のように金曜に値が立たない系列と、
+    // 発表が 1 週遅れる系列 (信用状況など) が丸ごと検証されていなかった。
+    const latestDate = Object.keys(observations).sort().at(-1);
+    if (latestDate !== undefined) {
+      issues.push(...checkRange(id, indicator, latestDate, observations[latestDate]));
+    }
+
+    // 前週比は週次グリッドが前提なので、従来どおり基準日の値だけを見る。
     const value = observations[fridayIso];
     if (value === undefined) continue;
-
-    issues.push(...checkRange(id, indicator, fridayIso, value));
-
     const previousValue = previousWeekValue(observations, fridayIso);
     issues.push(...checkWeekOverWeek(id, indicator, fridayIso, value, previousValue));
   }

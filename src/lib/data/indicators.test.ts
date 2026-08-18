@@ -502,3 +502,31 @@ describe('泉さんの記事から追加した指標 (#87)', () => {
     expect(indicators['federal-deficit'].cyclePosition).toBeUndefined();
   });
 });
+
+describe('範囲の上書き (#102)', () => {
+  const base = {
+    name: 'テスト',
+    source: { adapter: 'fred', seriesId: 'TEST' },
+    frequency: 'weekly',
+    unit: 'index',
+    attribution: 'テスト',
+    copyright: 'none',
+    group: 'macro',
+  };
+
+  it('min と max を読む', () => {
+    expect(parseIndicator('t', { ...base, range: { min: -5, max: 5 } }).range).toEqual({
+      min: -5,
+      max: 5,
+    });
+  });
+
+  it('min が max 以上なら落とす', () => {
+    // 逆に書くと「全部が範囲外」になり、検証が意味を失ったまま気付けない。
+    expect(() => parseIndicator('t', { ...base, range: { min: 5, max: 5 } })).toThrow(/min/);
+  });
+
+  it('数値以外は落とす', () => {
+    expect(() => parseIndicator('t', { ...base, range: { min: '0', max: 5 } })).toThrow(/数値/);
+  });
+});
