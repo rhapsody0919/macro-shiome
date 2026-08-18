@@ -20,6 +20,7 @@ import { COLORS } from '@/lib/colors';
 import { filterByPeriod, parsePeriod } from '@/lib/period';
 import { seriesState, withValue } from '@/lib/series-state';
 import { ChartFrame, SharedTooltip } from './chart-frame';
+import { IndexSwitch } from '../index-switch';
 
 const SPREAD_COLOR = COLORS.yieldSpread;
 const POSITIVE_FILL = COLORS.yieldSpread;
@@ -37,11 +38,6 @@ const BREAKDOWN = [
   { key: 'earningsYield', label: '株式益回り', color: COLORS.earningsYield },
   { key: 'realRate', label: '実質金利', color: COLORS.realRate },
 ] as const;
-
-const INDEX_LABELS: Record<IndexKey, string> = {
-  sp500: 'S&P 500',
-  nasdaq100: 'NASDAQ-100',
-};
 
 /**
  * イールドスプレッド (spec F-4)。
@@ -291,40 +287,6 @@ function DistributionPosition({ distribution }: { distribution: SpreadDistributi
       の水準 (平均 {formatPercent(distribution.mean)} を{' '}
       <span className="tabular-nums">{formatPercent(Math.abs(gap))}</span>{' '}
       {gap >= 0 ? '上回る' : '下回る'} / n = {distribution.n})
-    </div>
-  );
-}
-
-function IndexSwitch({
-  value,
-  onChange,
-}: {
-  value: IndexKey;
-  onChange: (key: IndexKey) => void;
-}) {
-  return (
-    <div
-      role="group"
-      aria-label="指数"
-      className="inline-flex rounded-md border border-slate-300 dark:border-slate-700"
-    >
-      {(Object.keys(INDEX_LABELS) as IndexKey[]).map((key) => (
-        <button
-          key={key}
-          type="button"
-          aria-pressed={key === value}
-          onClick={() => onChange(key)}
-          className={[
-            'px-3 py-1 text-xs first:rounded-l-md last:rounded-r-md',
-            'border-r border-slate-300 last:border-r-0 dark:border-slate-700',
-            key === value
-              ? 'bg-slate-900 font-semibold text-white dark:bg-slate-100 dark:text-slate-900'
-              : 'text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800',
-          ].join(' ')}
-        >
-          {INDEX_LABELS[key]}
-        </button>
-      ))}
     </div>
   );
 }

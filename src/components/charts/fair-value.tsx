@@ -18,6 +18,8 @@ import {
 import { fairValue, overvaluation } from '@/lib/calc/derived';
 import { changeMark, formatDate, formatNumber, formatPercent, formatSigned } from '@/lib/format';
 import type { IndexKey, ValuationView } from '@/lib/data/types';
+import { INDEX_LABELS } from '@/lib/data/indices';
+import { IndexSwitch } from '../index-switch';
 import { filterByPeriod, parsePeriod } from '@/lib/period';
 import { seriesState, withValue } from '@/lib/series-state';
 import { ChartFrame, SharedTooltip } from './chart-frame';
@@ -26,11 +28,6 @@ const INDEX_COLOR = '#64748b';
 const FAIR_COLOR = '#10b981';
 const OVER_FILL = '#ef4444';
 const UNDER_FILL = '#10b981';
-
-const INDEX_LABELS: Record<IndexKey, string> = {
-  sp500: 'S&P 500',
-  nasdaq100: 'NASDAQ-100',
-};
 
 /**
  * 理論値と割高率 (spec F-13)。
@@ -302,40 +299,6 @@ function TargetYieldControl({
         基準益回りの見直しを検討する (自動では変更しない)。
       </div>
     )}
-    </div>
-  );
-}
-
-function IndexSwitch({
-  value,
-  onChange,
-}: {
-  value: IndexKey;
-  onChange: (key: IndexKey) => void;
-}) {
-  return (
-    <div
-      role="group"
-      aria-label="指数"
-      className="inline-flex rounded-md border border-slate-300 dark:border-slate-700"
-    >
-      {(Object.keys(INDEX_LABELS) as IndexKey[]).map((key) => (
-        <button
-          key={key}
-          type="button"
-          aria-pressed={key === value}
-          onClick={() => onChange(key)}
-          className={[
-            'px-3 py-1 text-xs first:rounded-l-md last:rounded-r-md',
-            'border-r border-slate-300 last:border-r-0 dark:border-slate-700',
-            key === value
-              ? 'bg-slate-900 font-semibold text-white dark:bg-slate-100 dark:text-slate-900'
-              : 'text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800',
-          ].join(' ')}
-        >
-          {INDEX_LABELS[key]}
-        </button>
-      ))}
     </div>
   );
 }

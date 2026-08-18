@@ -3,11 +3,8 @@
 import { useState } from 'react';
 import { changeMark, formatDate, formatNumber, formatPercent, formatSigned } from '@/lib/format';
 import type { IndexKey, ValuationPoint, ValuationView } from '@/lib/data/types';
-
-const INDEX_LABELS: Record<IndexKey, string> = {
-  sp500: 'S&P 500',
-  nasdaq100: 'NASDAQ-100',
-};
+import { INDEX_LABELS } from '@/lib/data/indices';
+import { IndexSwitch } from './index-switch';
 
 /** 前週比。前週が欠測なら 2 週前と比べ、その旨をラベルで示す。 */
 interface Delta {
@@ -38,29 +35,7 @@ export function SummaryBar({ view }: { view: ValuationView }) {
     <section className="space-y-2">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
         <h2 className="text-base font-bold">最新の状況</h2>
-        <div
-          role="group"
-          aria-label="指数"
-          className="inline-flex rounded-md border border-slate-300 dark:border-slate-700"
-        >
-          {(Object.keys(INDEX_LABELS) as IndexKey[]).map((key) => (
-            <button
-              key={key}
-              type="button"
-              aria-pressed={key === indexKey}
-              onClick={() => setIndexKey(key)}
-              className={[
-                'px-3 py-1 text-xs first:rounded-l-md last:rounded-r-md',
-                'border-r border-slate-300 last:border-r-0 dark:border-slate-700',
-                key === indexKey
-                  ? 'bg-slate-900 font-semibold text-white dark:bg-slate-100 dark:text-slate-900'
-                  : 'text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800',
-              ].join(' ')}
-            >
-              {INDEX_LABELS[key]}
-            </button>
-          ))}
-        </div>
+        <IndexSwitch value={indexKey} onChange={setIndexKey} />
       </div>
 
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
