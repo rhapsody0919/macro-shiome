@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import { fetchEtfField, parseStockAnalysisField, stockAnalysisEtfUrl } from './stockanalysis';
+import { fetchEtfField, parseStockAnalysisField, previousTradingDay, stockAnalysisEtfUrl } from './stockanalysis';
 
 /** 2026-08 時点の QQQ ページの表構造を再現したもの。 */
 const QQQ_HTML = `
@@ -105,3 +105,34 @@ describe('終値の抽出 (#119)', () => {
     );
   });
 });
+
+describe('値が指す日 (#125)', () => {
+  const on = (iso: string) => previousTradingDay(new Date(`${iso}T02:00:00Z`));
+
+  it('定時実行 (UTC 土曜) は金曜を指す', () => {
+    // 週次バッチは UTC 土曜 02:00 = 米東部の金曜 22 時。市場は閉場後なので金曜終値。
+    expect(on('2026-08-15')).toBe('2026-08-14');
+  });
+
+  it('手動実行した日の直前の取引日を指す', () => {
+    // 火曜に手動実行しても、金曜の値として保存されない。これが #125 の中身。
+    expect(on('2026-08-18')).toBe('2026-08-17');
+  });
+
+  it('週末を飛ばす', () => {
+    // 日曜・月曜の実行はどちらも金曜を指す。土日に取引は無い。
+    expect(on('2026-08-16')).toBe('2026-08-14');
+    expect(on('2026-08-17')).toBe('2026-08-14');
+  });
+
+  it('実行日そのものは返さない', () => {
+    // 実行日で保存すると、週次グリッド (金曜から過去に遡る) から見えなくなる。
+    for (const day of ['2026-08-14', '2026-08-15', '2026-08-18']) {
+      expect(on(day)).not.toBe(day);
+    }
+  });
+
+  it('月をまたぐ', () => {
+    expect(on('2026-09-01')).toBe('2026-08-31');
+  });
+})
