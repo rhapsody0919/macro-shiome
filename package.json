@@ -13,7 +13,8 @@
     "test:watch": "vitest",
     "fetch:weekly": "tsx scripts/fetch-weekly.ts",
     "backfill": "tsx scripts/backfill.ts",
-    "rebuild:views": "tsx scripts/rebuild-views.ts"
+    "rebuild:views": "tsx scripts/rebuild-views.ts",
+    "verify": "tsx scripts/verify-values.ts"
   },
   "dependencies": {
     "next": "^16.3.1",

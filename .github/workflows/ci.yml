@@ -31,3 +31,8 @@ jobs:
       - run: pnpm test
 
       - run: pnpm build
+
+      # ネットワーク照合は毎 push には重いので --offline。一次情報との突き合わせは
+      # 週次バッチの後に `pnpm verify` を手で回す (#113)。
+      - name: 値の検証 (オフライン)
+        run: pnpm verify --offline
