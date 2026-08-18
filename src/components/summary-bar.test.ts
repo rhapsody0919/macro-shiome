@@ -1,25 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import type { ValuationPoint } from '@/lib/data/types';
+import { valuationPoint as point } from '@/test/fixtures';
 import { pick } from './summary-bar';
-
-function point(date: string, overrides: Partial<ValuationPoint> = {}): ValuationPoint {
-  return {
-    date,
-    index: null,
-    forwardPe: null,
-    trailingPe: null,
-    forwardEps: null,
-    trailingEps: null,
-    earningsYield: null,
-    realRate: null,
-    yieldSpread: null,
-    fairValue: null,
-    overvaluation: null,
-    isForwardEpsHigh: false,
-    isTrailingEpsHigh: false,
-    ...overrides,
-  };
-}
 
 describe('pick', () => {
   it('最新値と前週比を返す', () => {

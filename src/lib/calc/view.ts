@@ -128,7 +128,10 @@ function buildSp500Series(options: BuildViewOptions, weeks: readonly string[]): 
       realRate: real,
       yieldSpread: yieldSpread(eYield, real),
       fairValue: fair,
-      overvaluation: overvaluation(fair, indexValue),
+      // **EPS の元になった FactSet 終値と比べる** (#110)。指数 (金曜) と比べると
+      // 1 営業日ずれた 2 つの終値を突き合わせることになる。
+      fairValueBasis: close,
+      overvaluation: overvaluation(fair, close),
       isForwardEpsHigh: false,
       isTrailingEpsHigh: false,
     };
@@ -197,6 +200,8 @@ function buildNasdaqSeries(options: BuildViewOptions, weeks: readonly string[]):
       realRate: real,
       yieldSpread: yieldSpread(eYield, real),
       fairValue: fair,
+      // NASDAQ-100 は指数そのものから EPS を作るので、比較基準も指数で揃う (#110)。
+      fairValueBasis: indexValue,
       overvaluation: overvaluation(fair, indexValue),
       isForwardEpsHigh: false,
       isTrailingEpsHigh: false,

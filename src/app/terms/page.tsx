@@ -104,6 +104,15 @@ export default function TermsPage() {
           が小数第 1 位までのため 0.2〜0.5% 程度の誤差を含みます。
         </Definition>
 
+        <Definition term="理論値と割高率は FactSet 掲載の終値と比べています">
+          S&amp;P 500 の実績 EPS は FactSet レポートの終値 ÷ 同レポートの PER で作るため、
+          <strong>割高率もその終値と比べます</strong>。レポート掲載の終値は発行日の
+          <strong>前営業日</strong>の値なので、他の画面が出す指数 (金曜終値) とは
+          1 営業日ずれます。指数と比べると、EPS の基準日と指数の日付が食い違い、
+          実測で最大 2.7% の差が割高率に乗っていました。NASDAQ-100 は指数そのものから
+          EPS を作るため、このずれは生じません。
+        </Definition>
+
         <Definition term="PER は as-reported (GAAP) ベースです">
           一般的な投資レポートで使われる operating (継続事業) ベースとは
           <strong>約 9% ずれます</strong>

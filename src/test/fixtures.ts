@@ -1,7 +1,7 @@
 /**
  * テスト用のフィクスチャ。
  *
- * `ValuationPoint` は 13 フィールドあり、テストごとに全部書き下すとフィールドが
+ * `ValuationPoint` は 14 フィールドあり、テストごとに全部書き下すとフィールドが
  * 増えるたび全テストを直すことになる。既定値をここに集約する。
  */
 import type { ValuationPoint, ValuationSeries } from '@/lib/data/types';
@@ -22,6 +22,7 @@ export function valuationPoint(
     realRate: null,
     yieldSpread: null,
     fairValue: null,
+    fairValueBasis: null,
     overvaluation: null,
     isForwardEpsHigh: false,
     isTrailingEpsHigh: false,

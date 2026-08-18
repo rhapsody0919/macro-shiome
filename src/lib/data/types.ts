@@ -539,7 +539,16 @@ export interface ValuationPoint {
   yieldSpread: number | null;
   /** 実績 EPS ÷ 基準益回り (spec D-24)。 */
   fairValue: number | null;
-  /** 1 − 理論値 ÷ 指数値。正なら割高 (spec D-25)。 */
+  /**
+   * 理論値と比べる指数値 (#110)。**EPS の元になった終値と同一時点**にする。
+   *
+   * S&P 500 の実績 EPS は FactSet 終値 ÷ FactSet 実績 PER で作る。その終値は
+   * レポート日の**前営業日**の値なので、レポート日の指数と比べると 1 営業日ずれる。
+   * 実測で最大 2.7% の差があり、割高率の水準 (4% 前後) の半分以上になっていた。
+   * NASDAQ-100 は指数そのものから EPS を作るので `index` と同じ値になる。
+   */
+  fairValueBasis: number | null;
+  /** 1 − 理論値 ÷ 比較基準。正なら割高 (spec D-25)。 */
   overvaluation: number | null;
   /** その時点までの最高値を更新したか (spec F-2)。 */
   isForwardEpsHigh: boolean;

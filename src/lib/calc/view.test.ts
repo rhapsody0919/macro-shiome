@@ -55,10 +55,13 @@ describe('buildValuationView', () => {
   });
 
   it('理論値と割高率を計算する', () => {
-    // 273.4 ÷ 4.0% = 6835。指数 7700 に対し 11.2% の割高。
+    // 273.4 ÷ 4.0% = 6835。FactSet 終値 7709.96 に対し 11.3% の割高。
     const point = view.sp500.points[0];
     expect(point.fairValue).toBeCloseTo(6835, 0);
-    expect(point.overvaluation).toBeCloseTo(11.23, 1);
+    // **比較基準は FactSet 終値 7709.96** (#110)。指数 7700.0 と比べていた頃は
+    // 11.23% だったが、EPS の元になった終値と揃えたことで 11.35% になる。
+    expect(point.fairValueBasis).toBe(7709.96);
+    expect(point.overvaluation).toBeCloseTo(11.35, 1);
   });
 
   it('FactSet が欠測の週は PER 系を null にする', () => {
@@ -666,5 +669,45 @@ describe('10年債入札の応札倍率 (#96)', () => {
     expect(view.coverage.find((c) => c.indicatorId === 'ten-year-bid-to-cover')?.latestMonth).toBe(
       '2026-07-01',
     );
+  });
+});
+
+describe('割高率の比較基準 (#110)', () => {
+  /**
+   * FactSet の終値はレポート日の**前営業日**の値。実データで確認済み
+   * (2026-08-07 号の 7709.96 は FRED の 2026-08-06 と完全一致)。
+   */
+  const observations: ObservationMap = {
+    sp500: { '2026-08-06': 7709.96, '2026-08-07': 7757.64 },
+    'sp500-close-factset': { '2026-08-07': 7709.96 },
+    'sp500-trailing-pe': { '2026-08-07': 28.2 },
+    nasdaq100: { '2026-08-07': 30046.14 },
+    'qqq-trailing-pe': { '2026-08-07': 33.62 },
+  };
+  const view = buildValuationView({
+    observations,
+    config,
+    start: '2026-08-01',
+    today: new Date(Date.UTC(2026, 7, 8)),
+  });
+  const sp = view.sp500.points.find((p) => p.date === '2026-08-07');
+
+  it('比較基準は FactSet の終値で、指数とは別の値になる', () => {
+    // 指数は金曜終値、EPS の元は前営業日の終値。ここが揃っていないと割高率がずれる。
+    expect(sp?.index).toBe(7757.64);
+    expect(sp?.fairValueBasis).toBe(7709.96);
+  });
+
+  it('割高率は比較基準に対して計算する', () => {
+    const fair = sp?.fairValue as number;
+    expect(sp?.overvaluation).toBeCloseTo((1 - fair / 7709.96) * 100, 10);
+    // 指数と比べた場合とは 0.6pt ほど違う。これが #110 で直したずれ。
+    expect(Math.abs((sp?.overvaluation as number) - (1 - fair / 7757.64) * 100)).toBeGreaterThan(0.5);
+  });
+
+  it('NASDAQ-100 は指数そのものが比較基準になる', () => {
+    // FactSet の終値が無く、EPS も指数から作るので時点のずれが生じない。
+    const ndx = view.nasdaq100.points.find((p) => p.date === '2026-08-07');
+    expect(ndx?.fairValueBasis).toBe(ndx?.index);
   });
 });
