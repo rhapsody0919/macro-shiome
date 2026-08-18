@@ -85,6 +85,10 @@ export const COLORS = {
   dollarIndex: '#0891b2',
   /** 新規求人。労働市場の先行指標。 */
   newJobPostings: '#06b6d4',
+  /** 個人貯蓄額。貯蓄率と対で見る。 */
+  personalSaving: '#0d9488',
+  /** 実質可処分所得 (総額)。1 人当たりと対で見る。 */
+  realDisposableTotal: '#7c3aed',
   /** NY連銀景気指数 (拡散指数)。 */
   nyFedSurvey: '#8b5cf6',
   /** フィラデルフィア連銀景気指数 (拡散指数)。 */

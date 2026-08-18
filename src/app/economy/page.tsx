@@ -323,6 +323,12 @@ const CHARTS: QuestionChartDef<EconomyQuestionId>[] = [
         indicatorId: 'real-income-ex-transfer',
       },
       {
+        key: 'realDisposableTotal',
+        label: '実質可処分所得 (総額)',
+        color: COLORS.realDisposableTotal,
+        indicatorId: 'real-disposable-income',
+      },
+      {
         key: 'realDisposablePerCapita',
         label: '1人当たり実質可処分所得',
         color: COLORS.realDisposablePerCapita,
@@ -335,8 +341,9 @@ const CHARTS: QuestionChartDef<EconomyQuestionId>[] = [
         <strong>民間の経済活動による所得</strong>のこと。景気一致指数の構成要素。
       </span>,
       <span key="per-capita">
-        <strong>1 人当たりで見る理由:</strong> 米国は人口が増え続けるため、全体の所得が
-        横ばいでも 1 人当たりでは減っていることがある。
+        <strong>総額と 1 人当たりを並べる理由:</strong> 米国は人口が増え続けるため、
+        総額が横ばいでも 1 人当たりでは減っていることがある。
+        <strong>2 本の差が人口増の寄与</strong>にあたる。
       </span>,
       <span key="real">
         いずれも実質値 (物価変動を除いた値)。名目では物価上昇分だけ増えて見える。
@@ -388,6 +395,7 @@ const CHARTS: QuestionChartDef<EconomyQuestionId>[] = [
         key: 'savingsRate',
         label: '貯蓄率 (%)',
         color: COLORS.savingsRate,
+        width: 2.4,
         indicatorId: 'savings-rate',
       },
     ],
@@ -401,7 +409,41 @@ const CHARTS: QuestionChartDef<EconomyQuestionId>[] = [
         「◯% を下回ったら危険」という基準には定説が無く、恣意的になるため
         (イールドスプレッドと同じ判断)。過去の水準と比べて読むこと。
       </span>,
-      <span key="level">水準そのものが意味を持つため、前年同月比には変換していない。</span>,
+      <span key="level">
+        水準そのものが意味を持つため、前年同月比には変換していない。
+        <strong>金額そのものは次の図</strong>で見る。
+      </span>,
+    ],
+  },
+  {
+    question: 'consumption',
+    frequency: 'monthly',
+    primaryIndicator: 'personal-saving',
+    title: '個人貯蓄額',
+    subtitle: '貯蓄に回った金額の前年同月比',
+    series: [
+      {
+        key: 'personalSaving',
+        label: '個人貯蓄額',
+        color: COLORS.personalSaving,
+        indicatorId: 'personal-saving',
+      },
+    ],
+    notes: [
+      <span key="why">
+        <strong>貯蓄率だけでは足りない。</strong>
+        率は<strong>所得が減っても上がる</strong>ため、「取り崩している」のか
+        「所得が減っただけ」なのかが判別できない。金額が減っていれば取り崩しが起きている。
+      </span>,
+      <span key="yoy">
+        <strong>前年同月比で見る。</strong>
+        貯蓄率 (%) と金額 (10億ドル) は桁が違い、同じ軸に並べられないため図を分けている。
+        金額の水準は季節や一時的な給付で振れるので、変化率の方が読みやすい。
+      </span>,
+      <span key="chain">
+        所得 (前の問い) → 貯蓄率 → 貯蓄額 → 小売売上、という順で家計の余力が減っていく。
+        <strong>貯蓄の取り崩しには限界がある</strong>ため、この図が下を向き続けると消費は続かない。
+      </span>,
     ],
   },
   {

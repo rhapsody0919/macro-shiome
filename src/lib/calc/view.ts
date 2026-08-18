@@ -451,6 +451,7 @@ export function buildEconomyView(options: BuildViewOptions): EconomyView {
     fullTimeEmployment: yoy('full-time-employment', month),
     realIncomeExTransfer: yoy('real-income-ex-transfer', month),
     realDisposablePerCapita: yoy('real-disposable-income-per-capita', month),
+    realDisposableTotal: yoy('real-disposable-income', month),
     retailSales: yoy('retail-sales-core', month),
     // 水準そのものが意味を持つ (40 時間が基準)。前年比にすると読めなくなる。
     manufacturingHours: level('manufacturing-hours', month),
@@ -467,6 +468,8 @@ export function buildEconomyView(options: BuildViewOptions): EconomyView {
     federalDeficit: level('federal-deficit', month),
     unemploymentRate: level('unemployment-rate', month),
     savingsRate: level('savings-rate', month),
+    // 貯蓄率と対で見る。金額は前年同月比に揃える (水準は桁が違って並べられない)。
+    personalSaving: yoy('personal-saving', month),
     consumerSentiment: level('consumer-sentiment', month),
   }));
 
@@ -494,6 +497,7 @@ const MONTHLY_INDICATORS = [
   'full-time-employment',
   'real-income-ex-transfer',
   'real-disposable-income-per-capita',
+  'real-disposable-income',
   'retail-sales-core',
   'manufacturing-hours',
   'industrial-production',
@@ -508,5 +512,6 @@ const MONTHLY_INDICATORS = [
   'federal-deficit',
   'unemployment-rate',
   'savings-rate',
+  'personal-saving',
   'consumer-sentiment',
 ] as const;
