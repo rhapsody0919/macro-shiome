@@ -216,6 +216,42 @@ function verifyDerived(): void {
   }
 }
 
+/**
+ * 6. 実質金利が市場の実測値と一致するか (#115)。
+ *
+ * FRED は期待インフレ率を `T10YIE = DGS10 − DFII10` と定義しているので、
+ * 導出した実質金利 (`DGS10 − T10YIE`) は恒等的に **10 年 TIPS 利回り**になる。
+ * 実データ 5,909 点で最大差 0.000000 を確認済み。
+ *
+ * **取得実装と関係なく成り立つ恒等式**なので、系列の取り違えや式の誤りが
+ * 市場の実測値との食い違いとして出る。実質金利はイールドスプレッドと理論値に
+ * 効くため、ここが狂うと画面の中核が狂う。
+ */
+function verifyRealRate(): void {
+  console.log('6. 実質金利と TIPS 利回りの一致');
+  const nominal = readObservations('dgs10');
+  const breakeven = readObservations('t10yie');
+  const tips = readObservations('dfii10');
+
+  // どれも小数第 2 位までの公表なので、丸めの重なりで 0.01 までは開く。
+  const tolerance = 0.011;
+  let compared = 0;
+  for (const date of Object.keys(tips).sort()) {
+    if (nominal[date] === undefined || breakeven[date] === undefined) continue;
+    compared += 1;
+    const derived = nominal[date] - breakeven[date];
+    if (Math.abs(derived - tips[date]) > tolerance) {
+      fail(
+        '実質金利と TIPS 利回りの一致',
+        `@${date}: 導出 ${derived.toFixed(4)} / TIPS ${tips[date]}`,
+      );
+    }
+  }
+  if (compared === 0) {
+    fail('実質金利と TIPS 利回りの一致', '比較できる日が 1 日も無い');
+  }
+}
+
 async function main(): Promise<void> {
   const offline = process.argv.includes('--offline');
   const today = new Date().toISOString().slice(0, 10);
@@ -229,6 +265,7 @@ async function main(): Promise<void> {
   verifyRanges();
   verifySeriesOrder();
   verifyDerived();
+  verifyRealRate();
 
   console.log('');
   if (failures.length === 0) {
