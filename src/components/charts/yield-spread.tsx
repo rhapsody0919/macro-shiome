@@ -138,7 +138,13 @@ export function YieldSpreadChart({ view }: { view: ValuationView }) {
           株式益回りの低下 (株高 or 業績悪化) と実質金利の上昇のどちらでも縮小する。
         </>,
         <>
-          株式益回り = 1 ÷ Forward P/E × 100、<strong>実質金利 = 10年債利回り − 期待インフレ率</strong>。
+          {/*
+            **指数によって益回りの定義が違う** (#109)。S&P 500 は予想 PER、
+            NASDAQ-100 は予想 PER が無いため実績 PER から出す。無条件に
+            「Forward P/E」と書くと、NASDAQ-100 表示中に嘘になる。
+          */}
+          株式益回り = 1 ÷ {indexKey === 'sp500' ? 'Forward P/E' : '実績 P/E'} × 100、
+          <strong>実質金利 = 10年債利回り − 期待インフレ率</strong>。
         </>,
         <>
           正 (青) は株式の益回りが実質金利を上回る局面、負 (赤) は下回る局面。ゼロ線を境に塗り分けている。
@@ -157,6 +163,7 @@ export function YieldSpreadChart({ view }: { view: ValuationView }) {
         ...(indexKey === 'nasdaq100'
           ? [
               <>
+                <strong>S&P 500 とは益回りの定義が違う。</strong>
                 NASDAQ-100 は予想 PER が無いため、益回りは実績 PER から算出している
                 (S&P 500 は予想ベース)。同じ指標として比較しない。
               </>,
