@@ -270,13 +270,13 @@ describe('yearOverYear', () => {
 
 describe('10年債の理論値 (#93)', () => {
   it('期待インフレ率と潜在成長率を足す', () => {
-    expect(treasuryFairValue(2.27, 1.78)).toBeCloseTo(4.05, 10);
+    expect(treasuryFairValue(2.27, 2.197)).toBeCloseTo(4.467, 10);
   });
 
   it('どちらかが欠測なら null', () => {
     // 片方だけで出すと「理論値が下がった」と誤読される。
     expect(treasuryFairValue(2.27, null)).toBeNull();
-    expect(treasuryFairValue(null, 1.78)).toBeNull();
+    expect(treasuryFairValue(null, 2.197)).toBeNull();
   });
 
   it('潜在成長率が負でも計算する', () => {

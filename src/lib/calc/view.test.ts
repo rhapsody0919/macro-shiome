@@ -423,16 +423,16 @@ describe('イールドカーブ (#63)', () => {
 
 describe('10年債の理論値 (#93)', () => {
   /**
-   * 実データに基づく観測値。
-   * GDPPOT は 2025Q3 = 28,283.7 / 2026Q3 = 28,787.1 相当 (前年同期比 1.78%)。
+   * 実データ (data/observations/potential-gdp.json)。
+   * GDPPOT 2025Q3 = 23,680.2 / 2026Q3 = 24,200.4 → 前年同期比 2.197%。
    */
   const rates: ObservationMap = {
     dgs10: { '2026-08-14': 4.68 },
     t10yie: { '2026-08-14': 2.27 },
     'potential-gdp': {
-      '2025-07-01': 28283.7,
-      '2025-10-01': 28409.6,
-      '2026-07-01': 28787.1,
+      '2025-07-01': 23680.2,
+      '2025-10-01': 23811.2,
+      '2026-07-01': 24200.4,
     },
   };
 
@@ -445,14 +445,15 @@ describe('10年債の理論値 (#93)', () => {
     });
 
   it('潜在成長率を前年同期比で出す', () => {
-    // 28787.1 / 28283.7 - 1 = 1.78%。四半期の水準そのままではない。
+    // 24200.4 / 23680.2 - 1 = 2.197%。四半期の水準そのままではない。
     const point = build(rates).find((p) => p.date === '2026-08-14');
-    expect(point?.potentialGrowth).toBeCloseTo(1.78, 2);
+    expect(point?.potentialGrowth).toBeCloseTo(2.197, 2);
   });
 
   it('理論値は期待インフレ率 + 潜在成長率', () => {
     const point = build(rates).find((p) => p.date === '2026-08-14');
-    expect(point?.treasuryFairValue).toBeCloseTo(4.05, 2);
+    // 2.27 + 2.197 = 4.467。実際の 4.68% との乖離は +0.21pt。
+    expect(point?.treasuryFairValue).toBeCloseTo(4.467, 2);
     // 実際の名目 (4.68%) は理論値を上回っている。
     expect(point?.nominalRate).toBe(4.68);
   });
@@ -460,7 +461,7 @@ describe('10年債の理論値 (#93)', () => {
   it('四半期の値を週次グリッドに前方補完する', () => {
     // 8/14 時点で最新の四半期は 7/1。90 日近く遡る必要がある。
     const point = build(rates).find((p) => p.date === '2026-08-07');
-    expect(point?.potentialGrowth).toBeCloseTo(1.78, 2);
+    expect(point?.potentialGrowth).toBeCloseTo(2.197, 2);
   });
 
   it('1 年前の四半期が無い期は潜在成長率を出さない', () => {

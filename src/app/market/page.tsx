@@ -69,8 +69,9 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
       </span>,
       <span key="cbo">
         <strong>潜在成長率は CBO (議会予算局) の推計値で、観測値ではない。</strong>
-        潜在 GDP (四半期) の前年同期比として計算している。参考記事は潜在成長率を 2% と
-        置いているが、CBO の系列からは 1.8% 前後になる。<strong>記事の見立てとは別物</strong>。
+        潜在 GDP (四半期) の前年同期比として計算しており、直近は 2.2% 前後。
+        参考記事が置いている 2% は近い値だが、
+        <strong>CBO の推計は四半期ごとに動く</strong>ので固定値ではない。
       </span>,
       <span key="quarterly">
         潜在成長率は四半期なので、四半期の間は同じ値が続く。
