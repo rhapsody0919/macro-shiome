@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T03:57:09.049Z",
+  "generatedAt": "2026-08-18T04:02:36.488Z",
   "monthly": [
     {
       "month": "2016-08-01",
@@ -12,6 +12,7 @@
       "fullTimeEmployment": 2.070174576257311,
       "realIncomeExTransfer": 1.3626523869203488,
       "realDisposablePerCapita": 0.9462773587524786,
+      "realDisposableTotal": 1.7286413410066315,
       "retailSales": 2.615234682817169,
       "manufacturingHours": 41.8,
       "industrialProduction": -2.164263084601936,
@@ -26,6 +27,7 @@
       "federalDeficit": -107111.57568004,
       "unemploymentRate": 4.9,
       "savingsRate": 5.1,
+      "personalSaving": -5.5651024454725695,
       "consumerSentiment": 89.8
     },
     {
@@ -39,6 +41,7 @@
       "fullTimeEmployment": 2.0343298291721323,
       "realIncomeExTransfer": 1.397642567117141,
       "realDisposablePerCapita": 0.9191261373608706,
+      "realDisposableTotal": 1.6955096548861182,
       "retailSales": 3.10059811267942,
       "manufacturingHours": 41.9,
       "industrialProduction": -1.9939516469206886,
@@ -53,6 +56,7 @@
       "federalDeficit": 33359.49405496,
       "unemploymentRate": 5,
       "savingsRate": 5.1,
+      "personalSaving": -8.708402397041947,
       "consumerSentiment": 91.2
     },
     {
@@ -66,6 +70,7 @@
       "fullTimeEmployment": 1.6503677494389635,
       "realIncomeExTransfer": 1.2579519182822407,
       "realDisposablePerCapita": 0.9343207142362697,
+      "realDisposableTotal": 1.703948731504834,
       "retailSales": 3.1347639595460386,
       "manufacturingHours": 42,
       "industrialProduction": -1.5023811304759715,
@@ -80,6 +85,7 @@
       "federalDeficit": -44192.20097674,
       "unemploymentRate": 4.9,
       "savingsRate": 5.3,
+      "personalSaving": -6.500188229388881,
       "consumerSentiment": 87.2
     },
     {
@@ -93,6 +99,7 @@
       "fullTimeEmployment": 1.5501465027581762,
       "realIncomeExTransfer": 1.6866121850359406,
       "realDisposablePerCapita": 1.2353375819710077,
+      "realDisposableTotal": 2.002372547057907,
       "retailSales": 3.0545834790111748,
       "manufacturingHours": 41.9,
       "industrialProduction": -1.1862778785850958,
@@ -107,6 +114,7 @@
       "federalDeficit": -136650.57490356,
       "unemploymentRate": 4.7,
       "savingsRate": 5.4,
+      "personalSaving": -1.4925373134328401,
       "consumerSentiment": 93.8
     },
     {
@@ -120,6 +128,7 @@
       "fullTimeEmployment": 1.1152113525094265,
       "realIncomeExTransfer": 1.6651353346085918,
       "realDisposablePerCapita": 1.046289695771141,
+      "realDisposableTotal": 1.8029615510448016,
       "retailSales": 2.538620454755258,
       "manufacturingHours": 41.9,
       "industrialProduction": -0.02049641716570516,
@@ -134,6 +143,7 @@
       "federalDeficit": -27515.79855866,
       "unemploymentRate": 4.7,
       "savingsRate": 5,
+      "personalSaving": -10.829231351760694,
       "consumerSentiment": 98.2
     },
     {
@@ -147,6 +157,7 @@
       "fullTimeEmployment": 1.232972463344062,
       "realIncomeExTransfer": 1.853342259061752,
       "realDisposablePerCapita": 1.0423825887743376,
+      "realDisposableTotal": 1.7888124862794008,
       "retailSales": 4.3322509889562655,
       "manufacturingHours": 41.9,
       "industrialProduction": -0.8031281419274894,
@@ -161,6 +172,7 @@
       "federalDeficit": 51257.177643,
       "unemploymentRate": 4.7,
       "savingsRate": 5.3,
+      "personalSaving": -8.648778150455193,
       "consumerSentiment": 98.5
     },
     {
@@ -174,6 +186,7 @@
       "fullTimeEmployment": 1.5284055803063357,
       "realIncomeExTransfer": 2.265937191923606,
       "realDisposablePerCapita": 1.250286237691789,
+      "realDisposableTotal": 1.9914681683445012,
       "retailSales": 3.2652506823006133,
       "manufacturingHours": 41.9,
       "industrialProduction": -0.6864591168616152,
@@ -188,6 +201,7 @@
       "federalDeficit": -192044.46533546,
       "unemploymentRate": 4.6,
       "savingsRate": 5.6,
+      "personalSaving": 4.204086945203711,
       "consumerSentiment": 96.3
     },
     {
@@ -201,6 +215,7 @@
       "fullTimeEmployment": 1.6473824743102217,
       "realIncomeExTransfer": 2.682442196531798,
       "realDisposablePerCapita": 1.6794592736854241,
+      "realDisposableTotal": 2.41167565120195,
       "retailSales": 4.0188129473617495,
       "manufacturingHours": 41.8,
       "industrialProduction": 0.7162067590550603,
@@ -215,6 +230,7 @@
       "federalDeficit": -176232.32530805,
       "unemploymentRate": 4.4,
       "savingsRate": 5.6,
+      "personalSaving": -2.142944112991585,
       "consumerSentiment": 96.9
     },
     {
@@ -228,6 +244,7 @@
       "fullTimeEmployment": 2.335773532228491,
       "realIncomeExTransfer": 3.1636884566086154,
       "realDisposablePerCapita": 2.131912058627572,
+      "realDisposableTotal": 2.85760871106322,
       "retailSales": 4.119036491556027,
       "manufacturingHours": 42,
       "industrialProduction": 1.3993011097695573,
@@ -242,6 +259,7 @@
       "federalDeficit": 182428.05764871,
       "unemploymentRate": 4.4,
       "savingsRate": 5.7,
+      "personalSaving": 8.115525352848918,
       "consumerSentiment": 97
     },
     {
@@ -255,6 +273,7 @@
       "fullTimeEmployment": 1.956793227046405,
       "realIncomeExTransfer": 3.980955399114161,
       "realDisposablePerCapita": 2.9284564067172836,
+      "realDisposableTotal": 3.655067220034769,
       "retailSales": 3.6655063700599344,
       "manufacturingHours": 41.9,
       "industrialProduction": 1.7500792534729248,
@@ -269,6 +288,7 @@
       "federalDeficit": -88425.99436618,
       "unemploymentRate": 4.4,
       "savingsRate": 6.3,
+      "personalSaving": 24.959016393442624,
       "consumerSentiment": 97.1
     },
     {
@@ -282,6 +302,7 @@
       "fullTimeEmployment": 1.935629806760164,
       "realIncomeExTransfer": 3.9034717617985715,
       "realDisposablePerCapita": 2.9238555325511895,
+      "realDisposableTotal": 3.642705726378792,
       "retailSales": 3.3648899272227917,
       "manufacturingHours": 42,
       "industrialProduction": 1.4803308546539107,
@@ -296,6 +317,7 @@
       "federalDeficit": -90233.19107067,
       "unemploymentRate": 4.3,
       "savingsRate": 6,
+      "personalSaving": 28.12545800967319,
       "consumerSentiment": 95
     },
     {
@@ -309,6 +331,7 @@
       "fullTimeEmployment": 1.6417357103710728,
       "realIncomeExTransfer": 3.772891575300341,
       "realDisposablePerCapita": 2.8227470763586338,
+      "realDisposableTotal": 3.5317547192463383,
       "retailSales": 3.763984597312686,
       "manufacturingHours": 41.9,
       "industrialProduction": 1.1187969195710634,
@@ -323,6 +346,7 @@
       "federalDeficit": -42939.37760097,
       "unemploymentRate": 4.3,
       "savingsRate": 6,
+      "personalSaving": 24.326990838618755,
       "consumerSentiment": 93.4
     },
     {
@@ -336,6 +360,7 @@
       "fullTimeEmployment": 1.1340835032184637,
       "realIncomeExTransfer": 3.862898935173731,
       "realDisposablePerCapita": 2.835140152643767,
+      "realDisposableTotal": 3.5382000042322836,
       "retailSales": 4.044007021063201,
       "manufacturingHours": 42,
       "industrialProduction": 0.8523014668689877,
@@ -350,6 +375,7 @@
       "federalDeficit": -107688.77677988,
       "unemploymentRate": 4.4,
       "savingsRate": 6.1,
+      "personalSaving": 26.315789473684205,
       "consumerSentiment": 96.8
     },
     {
@@ -363,6 +389,7 @@
       "fullTimeEmployment": 2.0468942424559433,
       "realIncomeExTransfer": 3.8743995278402554,
       "realDisposablePerCapita": 2.803203661327225,
+      "realDisposableTotal": 3.4970547043795763,
       "retailSales": 4.739302476532847,
       "manufacturingHours": 41.9,
       "industrialProduction": 1.0630336308315114,
@@ -377,6 +404,7 @@
       "federalDeficit": 8000.08293523,
       "unemploymentRate": 4.3,
       "savingsRate": 5.9,
+      "personalSaving": 20.754189944134072,
       "consumerSentiment": 95.1
     },
     {
@@ -390,6 +418,7 @@
       "fullTimeEmployment": 2.0522282832026617,
       "realIncomeExTransfer": 4.185102557023801,
       "realDisposablePerCapita": 2.921009325287982,
+      "realDisposableTotal": 3.605097152169945,
       "retailSales": 4.6178805984119276,
       "manufacturingHours": 42,
       "industrialProduction": 2.2919955326540453,
@@ -404,6 +433,7 @@
       "federalDeficit": -63214.01796695,
       "unemploymentRate": 4.2,
       "savingsRate": 6,
+      "personalSaving": 19.138370688498195,
       "consumerSentiment": 100.7
     },
     {
@@ -417,6 +447,7 @@
       "fullTimeEmployment": 2.024565588832661,
       "realIncomeExTransfer": 4.292681476194726,
       "realDisposablePerCapita": 2.8100266861300627,
+      "realDisposableTotal": 3.4854556664051017,
       "retailSales": 5.816349398040366,
       "manufacturingHours": 42.1,
       "industrialProduction": 2.9662701539719283,
@@ -431,6 +462,7 @@
       "federalDeficit": -138547.43781759,
       "unemploymentRate": 4.2,
       "savingsRate": 5.6,
+      "personalSaving": 9.604743083003942,
       "consumerSentiment": 98.5
     },
     {
@@ -444,6 +476,7 @@
       "fullTimeEmployment": 1.8795417559576588,
       "realIncomeExTransfer": 4.170586623010086,
       "realDisposablePerCapita": 2.7172181511993188,
+      "realDisposableTotal": 3.3827731474042277,
       "retailSales": 6.133700895933836,
       "manufacturingHours": 41.8,
       "industrialProduction": 2.467143465957866,
@@ -458,6 +491,7 @@
       "federalDeficit": -23193.55948872,
       "unemploymentRate": 4.1,
       "savingsRate": 5,
+      "personalSaving": 5.874026893135165,
       "consumerSentiment": 95.9
     },
     {
@@ -471,6 +505,7 @@
       "fullTimeEmployment": 1.9357221423811577,
       "realIncomeExTransfer": 3.7034848943602094,
       "realDisposablePerCapita": 2.913501870536228,
+      "realDisposableTotal": 3.5683227004877027,
       "retailSales": 4.113802030736458,
       "manufacturingHours": 41.9,
       "industrialProduction": 2.7352874765469437,
@@ -485,6 +520,7 @@
       "federalDeficit": 49235.72070792,
       "unemploymentRate": 4,
       "savingsRate": 5.7,
+      "personalSaving": 12.07710464201417,
       "consumerSentiment": 95.7
     },
     {
@@ -498,6 +534,7 @@
       "fullTimeEmployment": 2.1299766183017876,
       "realIncomeExTransfer": 3.52780148941807,
       "realDisposablePerCapita": 2.8564320607924687,
+      "realDisposableTotal": 3.4980023306142805,
       "retailSales": 4.850831872700079,
       "manufacturingHours": 42.3,
       "industrialProduction": 3.3994953469032696,
@@ -512,6 +549,7 @@
       "federalDeficit": -215248.1724224,
       "unemploymentRate": 4.1,
       "savingsRate": 5.8,
+      "personalSaving": 10.567074693979528,
       "consumerSentiment": 99.7
     },
     {
@@ -525,6 +563,7 @@
       "fullTimeEmployment": 1.449540700173535,
       "realIncomeExTransfer": 3.373207845896742,
       "realDisposablePerCapita": 2.8076975077741206,
+      "realDisposableTotal": 3.4435594730697794,
       "retailSales": 4.420742382676313,
       "manufacturingHours": 42.2,
       "industrialProduction": 3.224806264183644,
@@ -539,6 +578,7 @@
       "federalDeficit": -208743.24980988,
       "unemploymentRate": 4,
       "savingsRate": 5.9,
+      "personalSaving": 12.08162249595619,
       "consumerSentiment": 101.4
     },
     {
@@ -552,6 +592,7 @@
       "fullTimeEmployment": 1.4616311899248169,
       "realIncomeExTransfer": 3.2099162439886975,
       "realDisposablePerCapita": 2.8027082349236343,
+      "realDisposableTotal": 3.4315921512409364,
       "retailSales": 3.9676088802620413,
       "manufacturingHours": 42.4,
       "industrialProduction": 3.309758614070435,
@@ -566,6 +607,7 @@
       "federalDeficit": 214255.11366731,
       "unemploymentRate": 4,
       "savingsRate": 6,
+      "personalSaving": 11.193037592167299,
       "consumerSentiment": 98.8
     },
     {
@@ -579,6 +621,7 @@
       "fullTimeEmployment": 2.4481614927581274,
       "realIncomeExTransfer": 2.7785235873359015,
       "realDisposablePerCapita": 2.4406052343383333,
+      "realDisposableTotal": 3.0600861012819225,
       "retailSales": 6.15730254986484,
       "manufacturingHours": 42.1,
       "industrialProduction": 2.2584201444366236,
@@ -593,6 +636,7 @@
       "federalDeficit": -146796.44336556,
       "unemploymentRate": 3.8,
       "savingsRate": 6,
+      "personalSaving": 1.3775008199409466,
       "consumerSentiment": 98
     },
     {
@@ -606,6 +650,7 @@
       "fullTimeEmployment": 2.1231573941987714,
       "realIncomeExTransfer": 3.154979007896519,
       "realDisposablePerCapita": 2.8095035873136442,
+      "realDisposableTotal": 3.424381100918672,
       "retailSales": 5.1933119920605675,
       "manufacturingHours": 42.2,
       "industrialProduction": 2.8410387544831828,
@@ -620,6 +665,7 @@
       "federalDeficit": -74857.99046356,
       "unemploymentRate": 4,
       "savingsRate": 6.3,
+      "personalSaving": 11.256005490734378,
       "consumerSentiment": 98.2
     },
     {
@@ -633,6 +679,7 @@
       "fullTimeEmployment": 2.4581129621846998,
       "realIncomeExTransfer": 3.3300331702522667,
       "realDisposablePerCapita": 2.970495751655844,
+      "realDisposableTotal": 3.57771381017995,
       "retailSales": 5.917002149105555,
       "manufacturingHours": 42.2,
       "industrialProduction": 3.2543243815604805,
@@ -647,6 +694,7 @@
       "federalDeficit": -76865.22967062,
       "unemploymentRate": 3.8,
       "savingsRate": 6.5,
+      "personalSaving": 13.853304613989327,
       "consumerSentiment": 97.9
     },
     {
@@ -660,6 +708,7 @@
       "fullTimeEmployment": 2.1403572817383143,
       "realIncomeExTransfer": 3.58070474156591,
       "realDisposablePerCapita": 3.218329321565472,
+      "realDisposableTotal": 3.8171995394562064,
       "retailSales": 5.486801911177253,
       "manufacturingHours": 42.1,
       "industrialProduction": 4.353587280888749,
@@ -674,6 +723,7 @@
       "federalDeficit": -214147.52548064,
       "unemploymentRate": 3.8,
       "savingsRate": 6.6,
+      "personalSaving": 13.86303191489362,
       "consumerSentiment": 96.2
     },
     {
@@ -687,6 +737,7 @@
       "fullTimeEmployment": 1.773939107114697,
       "realIncomeExTransfer": 3.2372212113148224,
       "realDisposablePerCapita": 3.025041736227041,
+      "realDisposableTotal": 3.6141710866313126,
       "retailSales": 4.079431525317689,
       "manufacturingHours": 42,
       "industrialProduction": 4.313826088176409,
@@ -701,6 +752,7 @@
       "federalDeficit": 119116.00888032,
       "unemploymentRate": 3.7,
       "savingsRate": 6.8,
+      "personalSaving": 21.87138561184363,
       "consumerSentiment": 100.1
     },
     {
@@ -714,6 +766,7 @@
       "fullTimeEmployment": 2.040171803941382,
       "realIncomeExTransfer": 2.9148046293113294,
       "realDisposablePerCapita": 2.9824561403508865,
+      "realDisposableTotal": 3.5630500522083386,
       "retailSales": 4.976499779312649,
       "manufacturingHours": 42.1,
       "industrialProduction": 2.930867401734427,
@@ -728,6 +781,7 @@
       "federalDeficit": -100491.14254473,
       "unemploymentRate": 3.8,
       "savingsRate": 6.7,
+      "personalSaving": 18.70001126506702,
       "consumerSentiment": 98.6
     },
     {
@@ -741,6 +795,7 @@
       "fullTimeEmployment": 2.404651309760797,
       "realIncomeExTransfer": 2.7295020031080197,
       "realDisposablePerCapita": 3.108153078203002,
+      "realDisposableTotal": 3.6835442181015754,
       "retailSales": 4.625394518944259,
       "manufacturingHours": 41.9,
       "industrialProduction": 2.7666629800210174,
@@ -755,6 +810,7 @@
       "federalDeficit": -204902.55739878,
       "unemploymentRate": 3.8,
       "savingsRate": 6.5,
+      "personalSaving": 22.7671595143647,
       "consumerSentiment": 97.5
     },
     {
@@ -768,6 +824,7 @@
       "fullTimeEmployment": 2.4980428439256963,
       "realIncomeExTransfer": 3.81872097736502,
       "realDisposablePerCapita": 4.213931230060264,
+      "realDisposableTotal": 4.788517289615424,
       "retailSales": 1.6546741546741517,
       "manufacturingHours": 42.1,
       "industrialProduction": 2.5912536810940523,
@@ -782,6 +839,7 @@
       "federalDeficit": -13539.35862905,
       "unemploymentRate": 3.9,
       "savingsRate": 8.4,
+      "personalSaving": 78.99732620320856,
       "consumerSentiment": 98.3
     },
     {
@@ -795,6 +853,7 @@
       "fullTimeEmployment": 2.151791058882835,
       "realIncomeExTransfer": 3.9564759164838925,
       "realDisposablePerCapita": 3.7959903062348532,
+      "realDisposableTotal": 4.3643276503701145,
       "retailSales": 3.714350378136566,
       "manufacturingHours": 42,
       "industrialProduction": 1.9116422323518512,
@@ -809,6 +868,7 @@
       "federalDeficit": 8682.86661098,
       "unemploymentRate": 4,
       "savingsRate": 8.4,
+      "personalSaving": 55.90265590265589,
       "consumerSentiment": 91.2
     },
     {
@@ -822,6 +882,7 @@
       "fullTimeEmployment": 1.8903280436555203,
       "realIncomeExTransfer": 4.016746513512359,
       "realDisposablePerCapita": 3.7225972426834453,
+      "realDisposableTotal": 4.284536662846561,
       "retailSales": 2.5066297907349266,
       "manufacturingHours": 41.7,
       "industrialProduction": 1.1096417703535089,
@@ -836,6 +897,7 @@
       "federalDeficit": -233977.2488268,
       "unemploymentRate": 3.8,
       "savingsRate": 8.5,
+      "personalSaving": 52.92589245368278,
       "consumerSentiment": 93.8
     },
     {
@@ -849,6 +911,7 @@
       "fullTimeEmployment": 1.802317826233657,
       "realIncomeExTransfer": 3.9332057009147103,
       "realDisposablePerCapita": 3.3973347361037964,
+      "realDisposableTotal": 3.9513048588295074,
       "retailSales": 3.3433640085377414,
       "manufacturingHours": 41.7,
       "industrialProduction": 0.6545559146318158,
@@ -863,6 +926,7 @@
       "federalDeficit": -146944.76565389,
       "unemploymentRate": 3.8,
       "savingsRate": 7.9,
+      "personalSaving": 40.28641207815276,
       "consumerSentiment": 98.4
     },
     {
@@ -876,6 +940,7 @@
       "fullTimeEmployment": 1.4421385860007074,
       "realIncomeExTransfer": 3.6928720134826953,
       "realDisposablePerCapita": 2.9669824737982298,
+      "realDisposableTotal": 3.511647742416968,
       "retailSales": 3.6618806191329067,
       "manufacturingHours": 41.6,
       "industrialProduction": -1.0247462328067725,
@@ -890,6 +955,7 @@
       "federalDeficit": 160304.50890986,
       "unemploymentRate": 3.7,
       "savingsRate": 7.6,
+      "personalSaving": 33.210131536036535,
       "consumerSentiment": 97.2
     },
     {
@@ -903,6 +969,7 @@
       "fullTimeEmployment": 0.8361476650751154,
       "realIncomeExTransfer": 3.376966308000795,
       "realDisposablePerCapita": 2.6159048761863257,
+      "realDisposableTotal": 3.151854852634517,
       "retailSales": 3.1114322912185965,
       "manufacturingHours": 41.6,
       "industrialProduction": -0.010156011968476264,
@@ -917,6 +984,7 @@
       "federalDeficit": -207768.39134666,
       "unemploymentRate": 3.6,
       "savingsRate": 7.3,
+      "personalSaving": 25.816887738595938,
       "consumerSentiment": 100
     },
     {
@@ -930,6 +998,7 @@
       "fullTimeEmployment": 1.237010996515564,
       "realIncomeExTransfer": 3.052158020525808,
       "realDisposablePerCapita": 2.4001043523631527,
+      "realDisposableTotal": 2.9287070168592555,
       "retailSales": 4.0317431097662615,
       "manufacturingHours": 41.7,
       "industrialProduction": -0.7369328862962377,
@@ -944,6 +1013,7 @@
       "federalDeficit": -8476.31845422,
       "unemploymentRate": 3.6,
       "savingsRate": 7.1,
+      "personalSaving": 17.448077318527645,
       "consumerSentiment": 98.2
     },
     {
@@ -957,6 +1027,7 @@
       "fullTimeEmployment": 1.1453955871313148,
       "realIncomeExTransfer": 2.470888554743489,
       "realDisposablePerCapita": 2.0878002295714015,
+      "realDisposableTotal": 2.61249810664681,
       "retailSales": 4.153544544721899,
       "manufacturingHours": 41.5,
       "industrialProduction": -1.3774541767684445,
@@ -971,6 +1042,7 @@
       "federalDeficit": -119695.80619346,
       "unemploymentRate": 3.7,
       "savingsRate": 6.8,
+      "personalSaving": 8.881808224634069,
       "consumerSentiment": 98.4
     },
     {
@@ -984,6 +1056,7 @@
       "fullTimeEmployment": 1.7225571854798671,
       "realIncomeExTransfer": 2.5758008455982084,
       "realDisposablePerCapita": 2.2693902228364093,
+      "realDisposableTotal": 2.7935637132019853,
       "retailSales": 4.393482886150424,
       "manufacturingHours": 41.5,
       "industrialProduction": -1.3396749291328724,
@@ -998,6 +1071,7 @@
       "federalDeficit": -200344.34892913,
       "unemploymentRate": 3.6,
       "savingsRate": 6.9,
+      "personalSaving": 9.255474452554747,
       "consumerSentiment": 89.8
     },
     {
@@ -1011,6 +1085,7 @@
       "fullTimeEmployment": 1.7445690503685274,
       "realIncomeExTransfer": 2.7978263898564837,
       "realDisposablePerCapita": 2.493302221069915,
+      "realDisposableTotal": 3.018867924528301,
       "retailSales": 4.502371703303787,
       "manufacturingHours": 41.5,
       "industrialProduction": -1.7374573008364869,
@@ -1025,6 +1100,7 @@
       "federalDeficit": 82767.65846478,
       "unemploymentRate": 3.5,
       "savingsRate": 7,
+      "personalSaving": 7.78210116731517,
       "consumerSentiment": 93.2
     },
     {
@@ -1038,6 +1114,7 @@
       "fullTimeEmployment": 1.8183225007737613,
       "realIncomeExTransfer": 2.8969673351797454,
       "realDisposablePerCapita": 2.3806956634248477,
+      "realDisposableTotal": 2.9068815838576345,
       "retailSales": 3.9391709729746704,
       "manufacturingHours": 41.4,
       "industrialProduction": -2.4594751580988228,
@@ -1052,6 +1129,7 @@
       "federalDeficit": -134467.56493381,
       "unemploymentRate": 3.6,
       "savingsRate": 7.1,
+      "personalSaving": 9.5378191135997,
       "consumerSentiment": 95.5
     },
     {
@@ -1065,6 +1143,7 @@
       "fullTimeEmployment": 1.4332880770180134,
       "realIncomeExTransfer": 3.082346246990153,
       "realDisposablePerCapita": 2.4249074791290237,
+      "realDisposableTotal": 2.9493575010447026,
       "retailSales": 3.1622509108901964,
       "manufacturingHours": 41.4,
       "industrialProduction": -2.047601522464615,
@@ -1079,6 +1158,7 @@
       "federalDeficit": -208838.29445674,
       "unemploymentRate": 3.6,
       "savingsRate": 6.9,
+      "personalSaving": 10.408303143052965,
       "consumerSentiment": 96.8
     },
     {
@@ -1092,6 +1172,7 @@
       "fullTimeEmployment": 1.5869709453933956,
       "realIncomeExTransfer": 1.350749693478459,
       "realDisposablePerCapita": 0.6292784557166531,
+      "realDisposableTotal": 1.1433914809918289,
       "retailSales": 6.34090758681809,
       "manufacturingHours": 41.4,
       "industrialProduction": -2.2991807373363926,
@@ -1106,6 +1187,7 @@
       "federalDeficit": -13272.55731642,
       "unemploymentRate": 3.6,
       "savingsRate": 6.2,
+      "personalSaving": -23.81059078347898,
       "consumerSentiment": 99.3
     },
     {
@@ -1119,6 +1201,7 @@
       "fullTimeEmployment": 0.9267826301505133,
       "realIncomeExTransfer": 2.3797128452433203,
       "realDisposablePerCapita": 1.4581962515653801,
+      "realDisposableTotal": 1.972799186421481,
       "retailSales": 5.162983409756894,
       "manufacturingHours": 41.3,
       "industrialProduction": -2.290379015513233,
@@ -1133,6 +1216,7 @@
       "federalDeficit": -32593.28000764,
       "unemploymentRate": 3.6,
       "savingsRate": 6.8,
+      "personalSaving": -14.986866791744847,
       "consumerSentiment": 99.8
     },
     {
@@ -1146,6 +1230,7 @@
       "fullTimeEmployment": 0.7056288715324488,
       "realIncomeExTransfer": 2.6712314725599207,
       "realDisposablePerCapita": 1.672602391249045,
+      "realDisposableTotal": 2.1843911467571475,
       "retailSales": 6.017138970238767,
       "manufacturingHours": 41.5,
       "industrialProduction": -1.4232217750208775,
@@ -1160,6 +1245,7 @@
       "federalDeficit": -235335.21387457,
       "unemploymentRate": 3.5,
       "savingsRate": 7.5,
+      "personalSaving": -7.859939425278872,
       "consumerSentiment": 101
     },
     {
@@ -1173,6 +1259,7 @@
       "fullTimeEmployment": -0.6397212973239585,
       "realIncomeExTransfer": 0.21558634710765467,
       "realDisposablePerCapita": 0.36036799932166463,
+      "realDisposableTotal": 0.8723862139851546,
       "retailSales": 1.2414859458147909,
       "manufacturingHours": 41.2,
       "industrialProduction": -5.315054964389065,
@@ -1187,6 +1274,7 @@
       "federalDeficit": -119125.16471802,
       "unemploymentRate": 4.4,
       "savingsRate": 12.4,
+      "personalSaving": 60.663132072485546,
       "consumerSentiment": 89.1
     },
     {
@@ -1200,6 +1288,7 @@
       "fullTimeEmployment": -12.077361689012179,
       "realIncomeExTransfer": -5.851823018035551,
       "realDisposablePerCapita": 15.395567266622745,
+      "realDisposableTotal": 15.97185564753898,
       "retailSales": -12.822670287459015,
       "manufacturingHours": 38.4,
       "industrialProduction": -17.318282261376304,
@@ -1214,6 +1303,7 @@
       "federalDeficit": -737850.62107965,
       "unemploymentRate": 14.8,
       "savingsRate": 31.8,
+      "personalSaving": 385.9800881344866,
       "consumerSentiment": 71.8
     },
     {
@@ -1227,6 +1317,7 @@
       "fullTimeEmployment": -10.324756317272598,
       "realIncomeExTransfer": -3.5712578285605034,
       "realDisposablePerCapita": 9.65471786367309,
+      "realDisposableTotal": 10.156833457804337,
       "retailSales": -2.2007208730573713,
       "manufacturingHours": 39.4,
       "industrialProduction": -16.047738104539413,
@@ -1241,6 +1332,7 @@
       "federalDeficit": -398821.41365968,
       "unemploymentRate": 13.2,
       "savingsRate": 22.6,
+      "personalSaving": 244.33873317905204,
       "consumerSentiment": 72.3
     },
     {
@@ -1254,6 +1346,7 @@
       "fullTimeEmployment": -8.59236659946494,
       "realIncomeExTransfer": -1.4679199465218784,
       "realDisposablePerCapita": 9.099401299307885,
+      "realDisposableTotal": 9.562334132282913,
       "retailSales": 4.8205196263025885,
       "manufacturingHours": 39.9,
       "industrialProduction": -10.586064673581452,
@@ -1268,6 +1361,7 @@
       "federalDeficit": -864074.06849171,
       "unemploymentRate": 11,
       "savingsRate": 18.3,
+      "personalSaving": 185.4766698765648,
       "consumerSentiment": 78.1
     },
     {
@@ -1281,6 +1375,7 @@
       "fullTimeEmployment": -8.221557390219825,
       "realIncomeExTransfer": -0.608798918904152,
       "realDisposablePerCapita": 9.973057258629092,
+      "realDisposableTotal": 10.40663868458549,
       "retailSales": 5.911066477890103,
       "manufacturingHours": 40.7,
       "industrialProduction": -6.783544959427434,
@@ -1295,6 +1390,7 @@
       "federalDeficit": -62991.72639454,
       "unemploymentRate": 10.2,
       "savingsRate": 17.9,
+      "personalSaving": 193.82716049382717,
       "consumerSentiment": 72.5
     },
     {
@@ -1308,6 +1404,7 @@
       "fullTimeEmployment": -6.390113121653518,
       "realIncomeExTransfer": 0.011543815570580485,
       "realDisposablePerCapita": 5.219263982433553,
+      "realDisposableTotal": 5.603186864398668,
       "retailSales": 6.388647996520214,
       "manufacturingHours": 41,
       "industrialProduction": -6.512241935326724,
@@ -1322,6 +1419,7 @@
       "federalDeficit": -200095.01510766,
       "unemploymentRate": 8.4,
       "savingsRate": 13.9,
+      "personalSaving": 115.03652235880995,
       "consumerSentiment": 74.1
     },
     {
@@ -1335,6 +1433,7 @@
       "fullTimeEmployment": -6.638482632541132,
       "realIncomeExTransfer": 1.0152077855187125,
       "realDisposablePerCapita": 5.609427041612203,
+      "realDisposableTotal": 5.9640070074852725,
       "retailSales": 8.274917478188225,
       "manufacturingHours": 41.2,
       "industrialProduction": -6.183101854793705,
@@ -1349,6 +1448,7 @@
       "federalDeficit": -124610.55841919,
       "unemploymentRate": 7.8,
       "savingsRate": 13.3,
+      "personalSaving": 104.39376595932023,
       "consumerSentiment": 80.4
     },
     {
@@ -1362,6 +1462,7 @@
       "fullTimeEmployment": -5.935101451478076,
       "realIncomeExTransfer": 2.308186521489186,
       "realDisposablePerCapita": 5.118267792826003,
+      "realDisposableTotal": 5.442769800421154,
       "retailSales": 7.6803446042162715,
       "manufacturingHours": 41.4,
       "industrialProduction": -4.622683457542831,
@@ -1376,6 +1477,7 @@
       "federalDeficit": -284070.53717284,
       "unemploymentRate": 6.9,
       "savingsRate": 12.8,
+      "personalSaving": 92.60093571304799,
       "consumerSentiment": 81.8
     },
     {
@@ -1389,6 +1491,7 @@
       "fullTimeEmployment": -5.366948056886455,
       "realIncomeExTransfer": 1.7037690251964,
       "realDisposablePerCapita": 3.613217654349521,
+      "realDisposableTotal": 3.899942284152247,
       "retailSales": 6.5522259527339255,
       "manufacturingHours": 41.3,
       "industrialProduction": -4.763324870606622,
@@ -1403,6 +1506,7 @@
       "federalDeficit": -145266.26352985,
       "unemploymentRate": 6.7,
       "savingsRate": 12,
+      "personalSaving": 83.94820858460447,
       "consumerSentiment": 76.9
     },
     {
@@ -1416,6 +1520,7 @@
       "fullTimeEmployment": -5.149041199924054,
       "realIncomeExTransfer": 1.9829013618085423,
       "realDisposablePerCapita": 4.309798453542912,
+      "realDisposableTotal": 4.551830551269465,
       "retailSales": 5.592114163875173,
       "manufacturingHours": 41.5,
       "industrialProduction": -3.28150457766595,
@@ -1430,6 +1535,7 @@
       "federalDeficit": -143562.32743913,
       "unemploymentRate": 6.7,
       "savingsRate": 11.8,
+      "personalSaving": 101.13714341731206,
       "consumerSentiment": 80.7
     },
     {
@@ -1443,6 +1549,7 @@
       "fullTimeEmployment": -4.316337911961988,
       "realIncomeExTransfer": 0.9440779349382478,
       "realDisposablePerCapita": 14.62552301255231,
+      "realDisposableTotal": 14.840810967758223,
       "retailSales": 9.329355711498444,
       "manufacturingHours": 41.6,
       "industrialProduction": -2.1295843569181794,
@@ -1457,6 +1564,7 @@
       "federalDeficit": -162832.48946754,
       "unemploymentRate": 6.4,
       "savingsRate": 19.5,
+      "personalSaving": 232.30932203389833,
       "consumerSentiment": 79
     },
     {
@@ -1470,6 +1578,7 @@
       "fullTimeEmployment": -4.398954703832758,
       "realIncomeExTransfer": 0.4945223167338808,
       "realDisposablePerCapita": 4.851858801943254,
+      "realDisposableTotal": 5.01248404118162,
       "retailSales": 5.886632394196045,
       "manufacturingHours": 41.4,
       "industrialProduction": -5.680577271180343,
@@ -1484,6 +1593,7 @@
       "federalDeficit": -310921.94250467,
       "unemploymentRate": 6.2,
       "savingsRate": 13,
+      "personalSaving": 85.4646035436543,
       "consumerSentiment": 76.8
     },
     {
@@ -1497,6 +1607,7 @@
       "fullTimeEmployment": -2.4496951456009386,
       "realIncomeExTransfer": 3.755795034480891,
       "realDisposablePerCapita": 30.51917877661372,
+      "realDisposableTotal": 30.681492520204046,
       "retailSales": 19.702687186118716,
       "manufacturingHours": 41.6,
       "industrialProduction": 1.0038210492383515,
@@ -1511,6 +1622,7 @@
       "federalDeficit": -659591.61844058,
       "unemploymentRate": 6.1,
       "savingsRate": 26.2,
+      "personalSaving": 183.68221445106636,
       "consumerSentiment": 84.9
     },
     {
@@ -1524,6 +1636,7 @@
       "fullTimeEmployment": 10.506897095682955,
       "realIncomeExTransfer": 11.541083966807864,
       "realDisposablePerCapita": -3.414113140836772,
+      "realDisposableTotal": -3.300527884631388,
       "retailSales": 39.818069718421256,
       "manufacturingHours": 41.6,
       "industrialProduction": 16.55213518144698,
@@ -1538,6 +1651,7 @@
       "federalDeficit": -225579.46032577,
       "unemploymentRate": 6.1,
       "savingsRate": 12.4,
+      "personalSaving": -60.970244492208494,
       "consumerSentiment": 88.3
     },
     {
@@ -1551,6 +1665,7 @@
       "fullTimeEmployment": 8.561714403461785,
       "realIncomeExTransfer": 9.475883561158716,
       "realDisposablePerCapita": -1.2331555986427545,
+      "realDisposableTotal": -1.0964348334307372,
       "retailSales": 22.75779110538574,
       "manufacturingHours": 41.5,
       "industrialProduction": 15.673379835366053,
@@ -1565,6 +1680,7 @@
       "federalDeficit": -131953.06316821,
       "unemploymentRate": 5.8,
       "savingsRate": 10,
+      "personalSaving": -54.67217603425101,
       "consumerSentiment": 82.9
     },
     {
@@ -1578,6 +1694,7 @@
       "fullTimeEmployment": 5.728590117741783,
       "realIncomeExTransfer": 7.362409138110082,
       "realDisposablePerCapita": -1.3952673775978863,
+      "realDisposableTotal": -1.2439736777281385,
       "retailSales": 16.124531148613364,
       "manufacturingHours": 41.4,
       "industrialProduction": 8.958396565691418,
@@ -1592,6 +1709,7 @@
       "federalDeficit": -174160.55026216,
       "unemploymentRate": 5.9,
       "savingsRate": 8.8,
+      "personalSaving": -50.751303281202084,
       "consumerSentiment": 85.5
     },
     {
@@ -1605,6 +1723,7 @@
       "fullTimeEmployment": 6.25020842365025,
       "realIncomeExTransfer": 6.917720736681643,
       "realDisposablePerCapita": -1.651298275396429,
+      "realDisposableTotal": -1.4741700527236778,
       "retailSales": 12.484099534968074,
       "manufacturingHours": 41.4,
       "industrialProduction": 5.4998863464161385,
@@ -1619,6 +1738,7 @@
       "federalDeficit": -302050.4883435,
       "unemploymentRate": 5.4,
       "savingsRate": 9.5,
+      "personalSaving": -45.26610644257703,
       "consumerSentiment": 81.2
     },
     {
@@ -1632,6 +1752,7 @@
       "fullTimeEmployment": 4.076537064991226,
       "realIncomeExTransfer": 5.713529148164742,
       "realDisposablePerCapita": 2.050767532858422,
+      "realDisposableTotal": 2.2675613589650423,
       "retailSales": 13.138866317640897,
       "manufacturingHours": 41.4,
       "industrialProduction": 4.261168528131454,
@@ -1646,6 +1767,7 @@
       "federalDeficit": -170634.65366187,
       "unemploymentRate": 5.1,
       "savingsRate": 8.7,
+      "personalSaving": -32.86246893123447,
       "consumerSentiment": 70.3
     },
     {
@@ -1659,6 +1781,7 @@
       "fullTimeEmployment": 4.453963203198308,
       "realIncomeExTransfer": 4.713727910690091,
       "realDisposablePerCapita": 0.3333399868260756,
+      "realDisposableTotal": 0.569927316231511,
       "retailSales": 11.553067198295807,
       "manufacturingHours": 41.3,
       "industrialProduction": 3.0124970172007215,
@@ -1673,6 +1796,7 @@
       "federalDeficit": -61544.25121268,
       "unemploymentRate": 4.7,
       "savingsRate": 7.6,
+      "personalSaving": -39.81389738508595,
       "consumerSentiment": 72.8
     },
     {
@@ -1686,6 +1810,7 @@
       "fullTimeEmployment": 3.80836968815641,
       "realIncomeExTransfer": 3.542484697047832,
       "realDisposablePerCapita": 0.7033081531648833,
+      "realDisposableTotal": 0.9647873726891021,
       "retailSales": 13.409684518325049,
       "manufacturingHours": 41.3,
       "industrialProduction": 3.5628709708763973,
@@ -1700,6 +1825,7 @@
       "federalDeficit": -165055.36693325,
       "unemploymentRate": 4.5,
       "savingsRate": 7,
+      "personalSaving": -41.30904183535762,
       "consumerSentiment": 71.7
     },
     {
@@ -1713,6 +1839,7 @@
       "fullTimeEmployment": 4.074481849670097,
       "realIncomeExTransfer": 3.632416404119576,
       "realDisposablePerCapita": 1.5611378058917769,
+      "realDisposableTotal": 1.859380532053878,
       "retailSales": 15.11022105594304,
       "manufacturingHours": 41.5,
       "industrialProduction": 3.897545981936834,
@@ -1727,6 +1854,7 @@
       "federalDeficit": -191335.04052197,
       "unemploymentRate": 4.1,
       "savingsRate": 6.6,
+      "personalSaving": -40.60360620962298,
       "consumerSentiment": 67.4
     },
     {
@@ -1740,6 +1868,7 @@
       "fullTimeEmployment": 4.346851355138326,
       "realIncomeExTransfer": 3.4519778129742384,
       "realDisposablePerCapita": 0.9539433710049838,
+      "realDisposableTotal": 1.2995725010214842,
       "retailSales": 14.549214459782544,
       "manufacturingHours": 41.5,
       "industrialProduction": 2.2463731281071153,
@@ -1754,6 +1883,7 @@
       "federalDeficit": -21303.12942523,
       "unemploymentRate": 3.9,
       "savingsRate": 6.6,
+      "personalSaving": -40.31094648601229,
       "consumerSentiment": 70.6
     },
     {
@@ -1767,6 +1897,7 @@
       "fullTimeEmployment": 4.845586356668363,
       "realIncomeExTransfer": 2.7156009518191304,
       "realDisposablePerCapita": -11.270099103867427,
+      "realDisposableTotal": -10.926129493239522,
       "retailSales": 11.173664945340711,
       "manufacturingHours": 41.2,
       "industrialProduction": 1.3181341030033655,
@@ -1781,6 +1912,7 @@
       "federalDeficit": 118698.85824166,
       "unemploymentRate": 4,
       "savingsRate": 4.2,
+      "personalSaving": -79.75241738391244,
       "consumerSentiment": 67.2
     },
     {
@@ -1794,6 +1926,7 @@
       "fullTimeEmployment": 5.391040242976453,
       "realIncomeExTransfer": 2.5478677254634485,
       "realDisposablePerCapita": -3.3427457842825303,
+      "realDisposableTotal": -2.9328094961460716,
       "retailSales": 15.40413707778001,
       "manufacturingHours": 41.5,
       "industrialProduction": 5.429593086433182,
@@ -1808,6 +1941,7 @@
       "federalDeficit": -216589.75205605,
       "unemploymentRate": 3.9,
       "savingsRate": 4.1,
+      "personalSaving": -67.25457139151861,
       "consumerSentiment": 62.8
     },
     {
@@ -1821,6 +1955,7 @@
       "fullTimeEmployment": 5.4168389579821286,
       "realIncomeExTransfer": 1.1784003674299548,
       "realDisposablePerCapita": -21.76460116841713,
+      "realDisposableTotal": -21.40740740740741,
       "retailSales": 7.659658680822323,
       "manufacturingHours": 41.5,
       "industrialProduction": 3.0544104015221674,
@@ -1835,6 +1970,7 @@
       "federalDeficit": -192682.38665693,
       "unemploymentRate": 3.7,
       "savingsRate": 3.2,
+      "personalSaving": -89.88471421626501,
       "consumerSentiment": 59.4
     },
     {
@@ -1848,6 +1984,7 @@
       "fullTimeEmployment": 4.5267457076014095,
       "realIncomeExTransfer": 0.2601203056413537,
       "realDisposablePerCapita": -7.889418493803624,
+      "realDisposableTotal": -7.434833273060216,
       "retailSales": 8.234039262041692,
       "manufacturingHours": 41.3,
       "industrialProduction": 2.923435475508507,
@@ -1862,6 +1999,7 @@
       "federalDeficit": 308215.06052679,
       "unemploymentRate": 3.7,
       "savingsRate": 2.6,
+      "personalSaving": -79.35292346082691,
       "consumerSentiment": 65.2
     },
     {
@@ -1875,6 +2013,7 @@
       "fullTimeEmployment": 4.922337161114809,
       "realIncomeExTransfer": -0.35841598250618834,
       "realDisposablePerCapita": -5.3397200573234604,
+      "realDisposableTotal": -4.842102775020097,
       "retailSales": 8.923297172204347,
       "manufacturingHours": 41.1,
       "industrialProduction": 1.9110298059100916,
@@ -1889,6 +2028,7 @@
       "federalDeficit": -66222.56120958,
       "unemploymentRate": 3.6,
       "savingsRate": 2.6,
+      "personalSaving": -73.83855024711696,
       "consumerSentiment": 58.4
     },
     {
@@ -1902,6 +2042,7 @@
       "fullTimeEmployment": 5.066825302399369,
       "realIncomeExTransfer": -1.0716703743108624,
       "realDisposablePerCapita": -5.131140099859877,
+      "realDisposableTotal": -4.603844851853822,
       "retailSales": 7.565037058573676,
       "manufacturingHours": 40.9,
       "industrialProduction": 1.2217594016755706,
@@ -1916,6 +2057,7 @@
       "federalDeficit": -88841.51292609,
       "unemploymentRate": 3.6,
       "savingsRate": 2.2,
+      "personalSaving": -73.92278953922789,
       "consumerSentiment": 50
     },
     {
@@ -1929,6 +2071,7 @@
       "fullTimeEmployment": 3.9311075365844106,
       "realIncomeExTransfer": -0.3474630700064263,
       "realDisposablePerCapita": -4.554548664234437,
+      "realDisposableTotal": -4.0054751523661665,
       "retailSales": 8.734565839749608,
       "manufacturingHours": 41,
       "industrialProduction": 0.968659945597028,
@@ -1943,6 +2086,7 @@
       "federalDeficit": -211051.76005026,
       "unemploymentRate": 3.5,
       "savingsRate": 3.3,
+      "personalSaving": -64.71056522233594,
       "consumerSentiment": 51.5
     },
     {
@@ -1956,6 +2100,7 @@
       "fullTimeEmployment": 3.8815846210535465,
       "realIncomeExTransfer": 0.10083688189239659,
       "realDisposablePerCapita": -3.8244489450813046,
+      "realDisposableTotal": -3.249966010722871,
       "retailSales": 8.510004818313233,
       "manufacturingHours": 40.9,
       "industrialProduction": 1.0521402147261716,
@@ -1970,6 +2115,7 @@
       "federalDeficit": -219596.24094964,
       "unemploymentRate": 3.6,
       "savingsRate": 3.2,
+      "personalSaving": -61.868328500030856,
       "consumerSentiment": 58.2
     },
     {
@@ -1983,6 +2129,7 @@
       "fullTimeEmployment": 3.5282447041179887,
       "realIncomeExTransfer": 0.19220912352639896,
       "realDisposablePerCapita": -2.433056141328138,
+      "realDisposableTotal": -1.8214424485160086,
       "retailSales": 8.483471224326866,
       "manufacturingHours": 41,
       "industrialProduction": 2.462018715752601,
@@ -1997,6 +2144,7 @@
       "federalDeficit": -429673.47896184,
       "unemploymentRate": 3.5,
       "savingsRate": 3.4,
+      "personalSaving": -53.231694223749194,
       "consumerSentiment": 58.6
     },
     {
@@ -2010,6 +2158,7 @@
       "fullTimeEmployment": 2.8779553909132005,
       "realIncomeExTransfer": -0.31537886961574557,
       "realDisposablePerCapita": -2.174778144772971,
+      "realDisposableTotal": -1.5370364837003714,
       "retailSales": 7.766579602908696,
       "manufacturingHours": 41,
       "industrialProduction": 1.0648183730078253,
@@ -2024,6 +2173,7 @@
       "federalDeficit": -87797.83631139,
       "unemploymentRate": 3.6,
       "savingsRate": 3.4,
+      "personalSaving": -48.94611788150532,
       "consumerSentiment": 59.9
     },
     {
@@ -2037,6 +2187,7 @@
       "fullTimeEmployment": 2.1875941097889706,
       "realIncomeExTransfer": -0.24717063076412638,
       "realDisposablePerCapita": -1.7627213383107465,
+      "realDisposableTotal": -1.1008965384984193,
       "retailSales": 5.914021499069033,
       "manufacturingHours": 40.9,
       "industrialProduction": 0.08902953837490735,
@@ -2051,6 +2202,7 @@
       "federalDeficit": -248534.88065258,
       "unemploymentRate": 3.6,
       "savingsRate": 3.8,
+      "personalSaving": -40.48701298701298,
       "consumerSentiment": 56.7
     },
     {
@@ -2064,6 +2216,7 @@
       "fullTimeEmployment": 1.5300328412264808,
       "realIncomeExTransfer": 0.3318215594332097,
       "realDisposablePerCapita": -0.8867489216571323,
+      "realDisposableTotal": -0.19625785633442527,
       "retailSales": 6.482513008424706,
       "manufacturingHours": 40.6,
       "industrialProduction": -0.8016099812473643,
@@ -2078,6 +2231,7 @@
       "federalDeficit": -85000.73657788,
       "unemploymentRate": 3.5,
       "savingsRate": 4.2,
+      "personalSaving": -32.53041561198662,
       "consumerSentiment": 59.8
     },
     {
@@ -2091,6 +2245,7 @@
       "fullTimeEmployment": 1.1232361385045353,
       "realIncomeExTransfer": 1.7126337390137136,
       "realDisposablePerCapita": 3.572897811420117,
+      "realDisposableTotal": 4.324297641011721,
       "retailSales": 9.04005534049035,
       "manufacturingHours": 41.1,
       "industrialProduction": 0.3188082918103907,
@@ -2105,6 +2260,7 @@
       "federalDeficit": -38783.77183922,
       "unemploymentRate": 3.5,
       "savingsRate": 4.9,
+      "personalSaving": 29.44109157701391,
       "consumerSentiment": 64.9
     },
     {
@@ -2118,6 +2274,7 @@
       "fullTimeEmployment": 1.1413620506598,
       "realIncomeExTransfer": 2.085432328399084,
       "realDisposablePerCapita": 4.087888575719556,
+      "realDisposableTotal": 4.877958488610279,
       "retailSales": 7.445868995940175,
       "manufacturingHours": 40.7,
       "industrialProduction": -0.1634816837026265,
@@ -2132,6 +2289,7 @@
       "federalDeficit": -262433.84319423,
       "unemploymentRate": 3.6,
       "savingsRate": 5.5,
+      "personalSaving": 46.442244224422446,
       "consumerSentiment": 66.9
     },
     {
@@ -2145,6 +2303,7 @@
       "fullTimeEmployment": 1.3517590972180304,
       "realIncomeExTransfer": 2.996640857035393,
       "realDisposablePerCapita": 5.206437200066194,
+      "realDisposableTotal": 6.024604395059274,
       "retailSales": 4.683732366800819,
       "manufacturingHours": 40.6,
       "industrialProduction": -0.36512224493961964,
@@ -2159,6 +2318,7 @@
       "federalDeficit": -378076.31647174,
       "unemploymentRate": 3.5,
       "savingsRate": 6,
+      "personalSaving": 110.5732921386886,
       "consumerSentiment": 62
     },
     {
@@ -2172,6 +2332,7 @@
       "fullTimeEmployment": 1.8937353474503649,
       "realIncomeExTransfer": 3.2962542565266872,
       "realDisposablePerCapita": 5.431362808411988,
+      "realDisposableTotal": 6.262131406778071,
       "retailSales": 4.212616732720997,
       "manufacturingHours": 40.7,
       "industrialProduction": -0.1843454258675048,
@@ -2186,6 +2347,7 @@
       "federalDeficit": 176180.79034912,
       "unemploymentRate": 3.4,
       "savingsRate": 5.8,
+      "personalSaving": 149.19774953115237,
       "consumerSentiment": 63.7
     },
     {
@@ -2199,6 +2361,7 @@
       "fullTimeEmployment": 1.3266198329665135,
       "realIncomeExTransfer": 3.7269097165860465,
       "realDisposablePerCapita": 5.9437151330388405,
+      "realDisposableTotal": 6.791902130037886,
       "retailSales": 4.455772981227102,
       "manufacturingHours": 40.7,
       "industrialProduction": -0.39957171123073953,
@@ -2213,6 +2376,7 @@
       "federalDeficit": -240348.23965837,
       "unemploymentRate": 3.6,
       "savingsRate": 6.1,
+      "personalSaving": 164.04282115869023,
       "consumerSentiment": 59
     },
     {
@@ -2226,6 +2390,7 @@
       "fullTimeEmployment": 1.696322746729284,
       "realIncomeExTransfer": 4.3298592779439815,
       "realDisposablePerCapita": 6.313577832789008,
+      "realDisposableTotal": 7.180521574560017,
       "retailSales": 4.053603179362852,
       "manufacturingHours": 40.7,
       "industrialProduction": -0.8893464531073647,
@@ -2240,6 +2405,7 @@
       "federalDeficit": -227768.41253805,
       "unemploymentRate": 3.6,
       "savingsRate": 5.8,
+      "personalSaving": 187.67908309455586,
       "consumerSentiment": 64.2
     },
     {
@@ -2253,6 +2419,7 @@
       "fullTimeEmployment": 1.286474651768521,
       "realIncomeExTransfer": 3.5808428773065115,
       "realDisposablePerCapita": 5.15002055076037,
+      "realDisposableTotal": 6.024437014455697,
       "retailSales": 5.035722834018563,
       "manufacturingHours": 40.7,
       "industrialProduction": -0.31247838929887584,
@@ -2267,6 +2434,7 @@
       "federalDeficit": -220782.0973536,
       "unemploymentRate": 3.5,
       "savingsRate": 5.5,
+      "personalSaving": 84.83725427006121,
       "consumerSentiment": 71.5
     },
     {
@@ -2280,6 +2448,7 @@
       "fullTimeEmployment": 1.3841300508671495,
       "realIncomeExTransfer": 3.348005184339198,
       "realDisposablePerCapita": 4.667566241413157,
+      "realDisposableTotal": 5.54764683240363,
       "retailSales": 4.230977879526043,
       "manufacturingHours": 40.8,
       "industrialProduction": -0.25421306219911566,
@@ -2294,6 +2463,7 @@
       "federalDeficit": 89255.57269373,
       "unemploymentRate": 3.7,
       "savingsRate": 5.6,
+      "personalSaving": 87.84789644012947,
       "consumerSentiment": 69.4
     },
     {
@@ -2307,6 +2477,7 @@
       "fullTimeEmployment": 1.1324797609796322,
       "realIncomeExTransfer": 3.125079933495334,
       "realDisposablePerCapita": 4.339049405623641,
+      "realDisposableTotal": 5.226561453500422,
       "retailSales": 4.32752010101729,
       "manufacturingHours": 40.7,
       "industrialProduction": -0.2672476942852109,
@@ -2321,6 +2492,7 @@
       "federalDeficit": -170982.20087478,
       "unemploymentRate": 3.7,
       "savingsRate": 5.3,
+      "personalSaving": 69.20722375267829,
       "consumerSentiment": 67.8
     },
     {
@@ -2334,6 +2506,7 @@
       "fullTimeEmployment": 1.7209816025175462,
       "realIncomeExTransfer": 3.667151265186397,
       "realDisposablePerCapita": 4.346588019932884,
+      "realDisposableTotal": 5.2499651013880655,
       "retailSales": 3.854413291796477,
       "manufacturingHours": 40.8,
       "industrialProduction": -0.7742988102069082,
@@ -2348,6 +2521,7 @@
       "federalDeficit": -66563.55112973,
       "unemploymentRate": 3.9,
       "savingsRate": 5.4,
+      "personalSaving": 70.49992493619577,
       "consumerSentiment": 63.8
     },
     {
@@ -2361,6 +2535,7 @@
       "fullTimeEmployment": 1.87628460887439,
       "realIncomeExTransfer": 4.237282709607193,
       "realDisposablePerCapita": 4.684007315586269,
+      "realDisposableTotal": 5.601507632084424,
       "retailSales": 5.223597233381505,
       "manufacturingHours": 40.5,
       "industrialProduction": -0.09043615385835313,
@@ -2375,6 +2550,7 @@
       "federalDeficit": -314012.00228709,
       "unemploymentRate": 3.7,
       "savingsRate": 5.6,
+      "personalSaving": 61.743044189852704,
       "consumerSentiment": 61.3
     },
     {
@@ -2388,6 +2564,7 @@
       "fullTimeEmployment": 0.5690835713961784,
       "realIncomeExTransfer": 4.245782947914134,
       "realDisposablePerCapita": 4.521992591543023,
+      "realDisposableTotal": 5.449928218986377,
       "retailSales": 5.692904982394809,
       "manufacturingHours": 40.3,
       "industrialProduction": 0.8386591076755323,
@@ -2402,6 +2579,7 @@
       "federalDeficit": -129365.41491979,
       "unemploymentRate": 3.8,
       "savingsRate": 5.6,
+      "personalSaving": 44.547984993343846,
       "consumerSentiment": 69.7
     },
     {
@@ -2415,6 +2593,7 @@
       "fullTimeEmployment": 0.3095065967829491,
       "realIncomeExTransfer": 3.5782261134373883,
       "realDisposablePerCapita": 3.0286179572220018,
+      "realDisposableTotal": 3.954006943910482,
       "retailSales": 1.5012230606406218,
       "manufacturingHours": 40.3,
       "industrialProduction": -1.2762549126908995,
@@ -2429,6 +2608,7 @@
       "federalDeficit": -21930.35633102,
       "unemploymentRate": 3.7,
       "savingsRate": 6.4,
+      "personalSaving": 40.24934117170078,
       "consumerSentiment": 79
     },
     {
@@ -2442,6 +2622,7 @@
       "fullTimeEmployment": -0.2526899861282961,
       "realIncomeExTransfer": 3.344193844304555,
       "realDisposablePerCapita": 2.5852867929003542,
+      "realDisposableTotal": 3.5180195550116977,
       "retailSales": 2.447222875369315,
       "manufacturingHours": 40.6,
       "industrialProduction": -0.3543266402759926,
@@ -2456,6 +2637,7 @@
       "federalDeficit": -296274.64807989,
       "unemploymentRate": 3.9,
       "savingsRate": 6.1,
+      "personalSaving": 19.408636076805188,
       "consumerSentiment": 76.9
     },
     {
@@ -2469,6 +2651,7 @@
       "fullTimeEmployment": -1.0293242036320316,
       "realIncomeExTransfer": 2.9384172716225843,
       "realDisposablePerCapita": 2.090010027329381,
+      "realDisposableTotal": 3.0306220319554544,
       "retailSales": 4.048819688183669,
       "manufacturingHours": 40.6,
       "industrialProduction": -0.557312624665296,
@@ -2483,6 +2666,7 @@
       "federalDeficit": -236456.8239502,
       "unemploymentRate": 3.9,
       "savingsRate": 5.9,
+      "personalSaving": 4.646234104988589,
       "consumerSentiment": 79.4
     },
     {
@@ -2496,6 +2680,7 @@
       "fullTimeEmployment": -0.4154908078243369,
       "realIncomeExTransfer": 2.766597386614089,
       "realDisposablePerCapita": 1.9828804774619124,
+      "realDisposableTotal": 2.937211487397362,
       "retailSales": 3.1241108984658927,
       "manufacturingHours": 40.6,
       "industrialProduction": -0.9971062585799939,
@@ -2510,6 +2695,7 @@
       "federalDeficit": 209529.30662533,
       "unemploymentRate": 3.9,
       "savingsRate": 5.8,
+      "personalSaving": 6.28815118320929,
       "consumerSentiment": 77.2
     },
     {
@@ -2523,6 +2709,7 @@
       "fullTimeEmployment": -0.8673788198887089,
       "realIncomeExTransfer": 2.9639134925354416,
       "realDisposablePerCapita": 2.0338651267495456,
+      "realDisposableTotal": 3.004064733349998,
       "retailSales": 3.1715361905731543,
       "manufacturingHours": 40.8,
       "industrialProduction": -0.06499644303002983,
@@ -2537,6 +2724,7 @@
       "federalDeficit": -347130.89369165,
       "unemploymentRate": 3.9,
       "savingsRate": 5.8,
+      "personalSaving": 0.5485332697352518,
       "consumerSentiment": 69.1
     },
     {
@@ -2550,6 +2738,7 @@
       "fullTimeEmployment": -1.167693563952199,
       "realIncomeExTransfer": 2.810090837529522,
       "realDisposablePerCapita": 2.1249951082064733,
+      "realDisposableTotal": 3.1063585090873147,
       "retailSales": 3.766412988330803,
       "manufacturingHours": 40.8,
       "industrialProduction": 0.7734749239909133,
@@ -2564,6 +2753,7 @@
       "federalDeficit": -65965.29247634,
       "unemploymentRate": 4.1,
       "savingsRate": 5.7,
+      "personalSaving": 3.9010624169986796,
       "consumerSentiment": 68.2
     },
     {
@@ -2577,6 +2767,7 @@
       "fullTimeEmployment": -0.3607659568124366,
       "realIncomeExTransfer": 2.5019444358024945,
       "realDisposablePerCapita": 1.8938357503029302,
+      "realDisposableTotal": 2.855552850335652,
       "retailSales": 3.5157628543944996,
       "manufacturingHours": 40.7,
       "industrialProduction": -0.9226344732312097,
@@ -2591,6 +2782,7 @@
       "federalDeficit": -243741.08729743,
       "unemploymentRate": 4.2,
       "savingsRate": 5.3,
+      "personalSaving": 1.595327347223452,
       "consumerSentiment": 66.4
     },
     {
@@ -2604,6 +2796,7 @@
       "fullTimeEmployment": -0.7503573130061891,
       "realIncomeExTransfer": 2.404514751167186,
       "realDisposablePerCapita": 1.8380701240355402,
+      "realDisposableTotal": 2.7646408456003746,
       "retailSales": 3.03176450020195,
       "manufacturingHours": 40.7,
       "industrialProduction": -0.4050008280501727,
@@ -2618,6 +2811,7 @@
       "federalDeficit": -380080.4054345,
       "unemploymentRate": 4.2,
       "savingsRate": 5.2,
+      "personalSaving": -1.0853648031699636,
       "consumerSentiment": 67.9
     },
     {
@@ -2631,6 +2825,7 @@
       "fullTimeEmployment": -0.3222870443592263,
       "realIncomeExTransfer": 2.3197554366361395,
       "realDisposablePerCapita": 1.9307811064861014,
+      "realDisposableTotal": 2.8219786832694993,
       "retailSales": 4.118557052224903,
       "manufacturingHours": 40.8,
       "industrialProduction": -1.2004422838397089,
@@ -2645,6 +2840,7 @@
       "federalDeficit": 64263.00886774,
       "unemploymentRate": 4.1,
       "savingsRate": 4.8,
+      "personalSaving": -3.391823444283648,
       "consumerSentiment": 70.1
     },
     {
@@ -2658,6 +2854,7 @@
       "fullTimeEmployment": -0.7005436278045951,
       "realIncomeExTransfer": 2.128881997170562,
       "realDisposablePerCapita": 1.8517796577131485,
+      "realDisposableTotal": 2.7056795049967386,
       "retailSales": 4.259897332114804,
       "manufacturingHours": 40.6,
       "industrialProduction": -0.9947356843759692,
@@ -2672,6 +2869,7 @@
       "federalDeficit": -257450.34319191,
       "unemploymentRate": 4.1,
       "savingsRate": 5,
+      "personalSaving": -3.2755128995333282,
       "consumerSentiment": 70.5
     },
     {
@@ -2685,6 +2883,7 @@
       "fullTimeEmployment": -0.9353281065725194,
       "realIncomeExTransfer": 1.9029133369778073,
       "realDisposablePerCapita": 1.6170047558963452,
+      "realDisposableTotal": 2.434713750423212,
       "retailSales": 3.894071370042451,
       "manufacturingHours": 40.8,
       "industrialProduction": -1.5579409481489392,
@@ -2699,6 +2898,7 @@
       "federalDeficit": -366763.06436807,
       "unemploymentRate": 4.2,
       "savingsRate": 4.9,
+      "personalSaving": -8.238468673581245,
       "consumerSentiment": 71.8
     },
     {
@@ -2712,6 +2912,7 @@
       "fullTimeEmployment": 0.323887248160748,
       "realIncomeExTransfer": 1.7087630760185046,
       "realDisposablePerCapita": 1.431144334488832,
+      "realDisposableTotal": 2.209167300662984,
       "retailSales": 4.377313186005005,
       "manufacturingHours": 40.9,
       "industrialProduction": -0.2741466217243804,
@@ -2726,6 +2927,7 @@
       "federalDeficit": -86731.61901329,
       "unemploymentRate": 4.1,
       "savingsRate": 4.3,
+      "personalSaving": -18.74581379772271,
       "consumerSentiment": 74
     },
     {
@@ -2739,6 +2941,7 @@
       "fullTimeEmployment": 2.0232277050817205,
       "realIncomeExTransfer": 1.8951365919392504,
       "realDisposablePerCapita": 1.0486140560545865,
+      "realDisposableTotal": 1.7888639803361306,
       "retailSales": 4.341102042942246,
       "manufacturingHours": 40.7,
       "industrialProduction": 0.849002693950851,
@@ -2753,6 +2956,7 @@
       "federalDeficit": -128640.20667349,
       "unemploymentRate": 4,
       "savingsRate": 5.1,
+      "personalSaving": -16.947315169473153,
       "consumerSentiment": 71.7
     },
     {
@@ -2766,6 +2970,7 @@
       "fullTimeEmployment": 1.1952370929428469,
       "realIncomeExTransfer": 1.6253344026054162,
       "realDisposablePerCapita": 1.0847366190127605,
+      "realDisposableTotal": 1.7861811072845235,
       "retailSales": 4.785112981834283,
       "manufacturingHours": 41,
       "industrialProduction": 0.8119858403550007,
@@ -2780,6 +2985,7 @@
       "federalDeficit": -307017.19469927,
       "unemploymentRate": 4.2,
       "savingsRate": 5.2,
+      "personalSaving": -11.112788766420035,
       "consumerSentiment": 64.7
     },
     {
@@ -2793,6 +2999,7 @@
       "fullTimeEmployment": 1.5626762522842341,
       "realIncomeExTransfer": 2.116285612927693,
       "realDisposablePerCapita": 1.6755257684307745,
+      "realDisposableTotal": 2.3392178009876696,
       "retailSales": 5.163938006536073,
       "manufacturingHours": 41.1,
       "industrialProduction": 0.5802453773984029,
@@ -2807,6 +3014,7 @@
       "federalDeficit": -160530.32149936,
       "unemploymentRate": 4.2,
       "savingsRate": 5.1,
+      "personalSaving": -9.393986602274495,
       "consumerSentiment": 57
     },
     {
@@ -2820,6 +3028,7 @@
       "fullTimeEmployment": 1.2038193224217064,
       "realIncomeExTransfer": 2.0389458826979956,
       "realDisposablePerCapita": 2.1772610018095717,
+      "realDisposableTotal": 2.8023766058530963,
       "retailSales": 5.267179814933165,
       "manufacturingHours": 40.9,
       "industrialProduction": 0.8823523543694645,
@@ -2834,6 +3043,7 @@
       "federalDeficit": 258399.94911496,
       "unemploymentRate": 4.2,
       "savingsRate": 5.5,
+      "personalSaving": -0.1730784360002957,
       "consumerSentiment": 52.2
     },
     {
@@ -2847,6 +3057,7 @@
       "fullTimeEmployment": 1.133856613288109,
       "realIncomeExTransfer": 1.137455164447676,
       "realDisposablePerCapita": 0.930473486301886,
+      "realDisposableTotal": 1.510729226061791,
       "retailSales": 4.548405749052242,
       "manufacturingHours": 41,
       "industrialProduction": 0.10162299356553106,
@@ -2861,6 +3072,7 @@
       "federalDeficit": -316003.76118944,
       "unemploymentRate": 4.3,
       "savingsRate": 4.9,
+      "personalSaving": -12.144212523719155,
       "consumerSentiment": 52.2
     },
     {
@@ -2874,6 +3086,7 @@
       "fullTimeEmployment": 1.5405184133636673,
       "realIncomeExTransfer": 0.7723438905228308,
       "realDisposablePerCapita": 0.64569282648681,
+      "realDisposableTotal": 1.1886587310082186,
       "retailSales": 4.291142929226743,
       "manufacturingHours": 41,
       "industrialProduction": 0.5793208714095943,
@@ -2888,6 +3101,7 @@
       "federalDeficit": 27010.02207777,
       "unemploymentRate": 4.1,
       "savingsRate": 4.6,
+      "personalSaving": -16.847739255472106,
       "consumerSentiment": 60.7
     },
     {
@@ -2901,6 +3115,7 @@
       "fullTimeEmployment": 0.8707686553207417,
       "realIncomeExTransfer": 1.2401660839161055,
       "realDisposablePerCapita": 1.1604488347559228,
+      "realDisposableTotal": 1.677825871319727,
       "retailSales": 4.573215277168985,
       "manufacturingHours": 41.1,
       "industrialProduction": 1.9187662602012212,
@@ -2915,6 +3130,7 @@
       "federalDeficit": -291142.66028767,
       "unemploymentRate": 4.3,
       "savingsRate": 4.5,
+      "personalSaving": -11.601166981293975,
       "consumerSentiment": 61.7
     },
     {
@@ -2928,6 +3144,7 @@
       "fullTimeEmployment": 0.8550342013680545,
       "realIncomeExTransfer": 1.244051047318817,
       "realDisposablePerCapita": 1.329215896885061,
+      "realDisposableTotal": 1.825053934850085,
       "retailSales": 5.397118884064933,
       "manufacturingHours": 41,
       "industrialProduction": 1.1886779865559305,
@@ -2942,6 +3159,7 @@
       "federalDeficit": -344791.89185812,
       "unemploymentRate": 4.3,
       "savingsRate": 4.4,
+      "personalSaving": -12.29643821301053,
       "consumerSentiment": 58.2
     },
     {
@@ -2955,6 +3173,7 @@
       "fullTimeEmployment": 1.1578474665070004,
       "realIncomeExTransfer": 1.3326626587801815,
       "realDisposablePerCapita": 1.3535535573918178,
+      "realDisposableTotal": 1.8272471989150052,
       "retailSales": 3.9040622648372603,
       "manufacturingHours": 41,
       "industrialProduction": 1.8631698334008018,
@@ -2969,6 +3188,7 @@
       "federalDeficit": 197949.63036216,
       "unemploymentRate": 4.4,
       "savingsRate": 4.3,
+      "personalSaving": -6.1791967044284135,
       "consumerSentiment": 55.1
     },
     {
@@ -2982,6 +3202,7 @@
       "fullTimeEmployment": null,
       "realIncomeExTransfer": 0.8801379185191971,
       "realDisposablePerCapita": 0.8267626119574434,
+      "realDisposableTotal": 1.2734061368294025,
       "retailSales": 3.871213995676692,
       "manufacturingHours": 41.1,
       "industrialProduction": 1.7593332629600056,
@@ -2996,6 +3217,7 @@
       "federalDeficit": -284350.0507828,
       "unemploymentRate": null,
       "savingsRate": 3.9,
+      "personalSaving": -18.761948111060544,
       "consumerSentiment": 53.6
     },
     {
@@ -3009,6 +3231,7 @@
       "fullTimeEmployment": 0.5742823342667513,
       "realIncomeExTransfer": 0.5750417417616616,
       "realDisposablePerCapita": 0.6093833575303798,
+      "realDisposableTotal": 1.0290509427831829,
       "retailSales": 4.251268913771433,
       "manufacturingHours": 41.3,
       "industrialProduction": 1.7543117556713783,
@@ -3023,6 +3246,7 @@
       "federalDeficit": -173277.17507692,
       "unemploymentRate": 4.5,
       "savingsRate": 3.8,
+      "personalSaving": -19.555228818231953,
       "consumerSentiment": 51
     },
     {
@@ -3036,6 +3260,7 @@
       "fullTimeEmployment": 1.28312684454166,
       "realIncomeExTransfer": 0.2727831103296552,
       "realDisposablePerCapita": 0.4467695127539306,
+      "realDisposableTotal": 0.8428522657950799,
       "retailSales": 3.4314322930552477,
       "manufacturingHours": 41.1,
       "industrialProduction": 1.1629935222018384,
@@ -3050,6 +3275,7 @@
       "federalDeficit": -144749.23560928,
       "unemploymentRate": 4.4,
       "savingsRate": 3.6,
+      "personalSaving": -13.096342091705305,
       "consumerSentiment": 52.9
     },
     {
@@ -3063,6 +3289,7 @@
       "fullTimeEmployment": -1.0721276251306144,
       "realIncomeExTransfer": 0.18995635812784073,
       "realDisposablePerCapita": 0.9900423486322474,
+      "realDisposableTotal": 1.368377511207508,
       "retailSales": 4.653337224393872,
       "manufacturingHours": 41.4,
       "industrialProduction": 0.9734701648033584,
@@ -3077,6 +3304,7 @@
       "federalDeficit": -94615.16236921,
       "unemploymentRate": 4.3,
       "savingsRate": 4.4,
+      "personalSaving": -9.571876087713193,
       "consumerSentiment": 56.4
     },
     {
@@ -3090,6 +3318,7 @@
       "fullTimeEmployment": -0.20576743080420457,
       "realIncomeExTransfer": 0.0060238786549815515,
       "realDisposablePerCapita": 0.4364814638330383,
+      "realDisposableTotal": 0.7894810306803279,
       "retailSales": 4.6793516560958315,
       "manufacturingHours": 41.6,
       "industrialProduction": 0.8180076419915805,
@@ -3104,6 +3333,7 @@
       "federalDeficit": -307501.43342617,
       "unemploymentRate": 4.4,
       "savingsRate": 3.8,
+      "personalSaving": -24.248343808391382,
       "consumerSentiment": 56.6
     },
     {
@@ -3117,6 +3347,7 @@
       "fullTimeEmployment": -0.28062641146199274,
       "realIncomeExTransfer": -0.5827952609701037,
       "realDisposablePerCapita": -0.32200628859340164,
+      "realDisposableTotal": 0.007765223998990045,
       "retailSales": 4.599046585170141,
       "manufacturingHours": 41.5,
       "industrialProduction": 0.5708607646050412,
@@ -3131,6 +3362,7 @@
       "federalDeficit": -164100.33881786,
       "unemploymentRate": 4.3,
       "savingsRate": 3.5,
+      "personalSaving": -29.88308115543329,
       "consumerSentiment": 53.3
     },
     {
@@ -3144,6 +3376,7 @@
       "fullTimeEmployment": -0.8119629703511655,
       "realIncomeExTransfer": -1.0389221556886263,
       "realDisposablePerCapita": -1.2773894530587637,
+      "realDisposableTotal": -0.9744718164220845,
       "retailSales": 5.097529013585245,
       "manufacturingHours": 41.6,
       "industrialProduction": 1.2772934076550557,
@@ -3158,6 +3391,7 @@
       "federalDeficit": 215024.14019777,
       "unemploymentRate": 4.3,
       "savingsRate": 3,
+      "personalSaving": -45.27543541650248,
       "consumerSentiment": 49.8
     },
     {
@@ -3171,6 +3405,7 @@
       "fullTimeEmployment": -0.4451930282771799,
       "realIncomeExTransfer": -0.41536177349257297,
       "realDisposablePerCapita": -0.17677583683399778,
+      "realDisposableTotal": 0.10511153501771009,
       "retailSales": 5.965551413335857,
       "manufacturingHours": 41.6,
       "industrialProduction": 1.5798465812579376,
@@ -3185,6 +3420,7 @@
       "federalDeficit": -292648.46208374,
       "unemploymentRate": 4.3,
       "savingsRate": 2.8,
+      "personalSaving": -39.90280777537798,
       "consumerSentiment": 44.8
     },
     {
@@ -3198,6 +3434,7 @@
       "fullTimeEmployment": -1.1310175459360305,
       "realIncomeExTransfer": 0.13628003738654915,
       "realDisposablePerCapita": 0.26651944640103675,
+      "realDisposableTotal": 0.5233241102098329,
       "retailSales": 5.702015939990623,
       "manufacturingHours": 41.7,
       "industrialProduction": 1.1440847075981697,
@@ -3212,6 +3449,7 @@
       "federalDeficit": -120305.27558637,
       "unemploymentRate": 4.2,
       "savingsRate": 2.7,
+      "personalSaving": -37.9287155346335,
       "consumerSentiment": 49.5
     },
     {
@@ -3225,6 +3463,7 @@
       "fullTimeEmployment": -0.9537300039306085,
       "realIncomeExTransfer": null,
       "realDisposablePerCapita": null,
+      "realDisposableTotal": null,
       "retailSales": 4.751765122301088,
       "manufacturingHours": 41.7,
       "industrialProduction": null,
@@ -3239,6 +3478,7 @@
       "federalDeficit": -432307.87462148,
       "unemploymentRate": 4.1,
       "savingsRate": null,
+      "personalSaving": null,
       "consumerSentiment": null
     },
     {
@@ -3252,6 +3492,7 @@
       "fullTimeEmployment": null,
       "realIncomeExTransfer": null,
       "realDisposablePerCapita": null,
+      "realDisposableTotal": null,
       "retailSales": null,
       "manufacturingHours": null,
       "industrialProduction": null,
@@ -3266,6 +3507,7 @@
       "federalDeficit": null,
       "unemploymentRate": null,
       "savingsRate": null,
+      "personalSaving": null,
       "consumerSentiment": null
     }
   ],
@@ -3304,6 +3546,10 @@
     },
     {
       "indicatorId": "real-disposable-income-per-capita",
+      "latestMonth": "2026-06-01"
+    },
+    {
+      "indicatorId": "real-disposable-income",
       "latestMonth": "2026-06-01"
     },
     {
@@ -3360,6 +3606,10 @@
     },
     {
       "indicatorId": "savings-rate",
+      "latestMonth": "2026-06-01"
+    },
+    {
+      "indicatorId": "personal-saving",
       "latestMonth": "2026-06-01"
     },
     {
