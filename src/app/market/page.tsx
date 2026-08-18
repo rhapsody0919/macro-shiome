@@ -333,6 +333,33 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
     ],
   },
   {
+    question: 'risk',
+    frequency: 'weekly',
+    primaryIndicator: 'gold-etf',
+    title: 'ゴールド (GLD)',
+    subtitle: '金 ETF の終値 (ドル/株)。現物価格ではない',
+    series: [{ key: 'gold', label: 'GLD', color: COLORS.gold }],
+    notes: [
+      <span key="why">
+        <strong>リスク回避で買われやすい。</strong>
+        株式と逆に動く局面があるため、VIX や信用スプレッドと合わせて市場心理を読む。
+        実質金利が上がると金の相対的な魅力は下がる (金利を生まないため)。
+      </span>,
+      <span key="not-spot">
+        <strong>金の現物価格ではない。</strong>
+        FRED は 2022 年 1 月に現物価格 (LBMA) の提供を終了しており、無料で取れる経路が無い。
+        金を裏付けとする ETF の価格で代替している。
+        <strong>GLD 1 株はおよそ金 1/10 オンス</strong>だが、
+        <strong>信託報酬 (年約 0.4%) の分だけ長期では現物から目減りする</strong>ので、
+        水準そのものを金価格として読まないこと。
+      </span>,
+      <span key="source">
+        出所は stockanalysis.com。<strong>週 1 回の現在値のみ</strong>で、
+        過去に遡って取り直せない (NASDAQ-100 の実績 PER と同じ制約)。
+      </span>,
+    ],
+  },
+  {
     question: 'overseas',
     frequency: 'weekly',
     primaryIndicator: 'usdjpy',

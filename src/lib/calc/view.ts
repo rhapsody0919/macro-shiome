@@ -444,6 +444,8 @@ export function buildMacroView(options: BuildViewOptions): MacroPoint[] {
       dollarIndex: valueAsOf(series(observations, 'dollar-index'), date),
       // 日本の休場日は欠測になるため、直近の営業日まで遡る。
       nikkei225: valueAsOf(series(observations, 'nikkei225'), date),
+      // 週次で 1 点しか取れない (現在値のスクレイピング)。遡り幅は他と揃える。
+      gold: valueAsOf(series(observations, 'gold-etf'), date),
       newJobPostings: valueAsOf(series(observations, 'new-job-postings'), date),
     };
   });

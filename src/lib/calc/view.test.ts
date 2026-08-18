@@ -817,3 +817,15 @@ describe('日経平均 (#118)', () => {
     expect(view.find((p) => p.date === '2026-08-14')?.nikkei225).toBe(68308.59);
   });
 });
+
+describe('ゴールド (#119)', () => {
+  it('週次グリッドに載せる', () => {
+    const view = buildMacroView({
+      observations: { 'gold-etf': { '2026-08-14': 401.48 } },
+      config,
+      start: '2026-08-01',
+      today: new Date(Date.UTC(2026, 7, 15)),
+    });
+    expect(view.find((p) => p.date === '2026-08-14')?.gold).toBe(401.48);
+  });
+});

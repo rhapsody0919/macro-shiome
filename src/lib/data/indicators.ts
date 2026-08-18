@@ -112,7 +112,7 @@ function parseSource(raw: unknown, where: string): IndicatorSource {
       return {
         adapter,
         symbol: requireString(raw.symbol, `${where}.symbol`),
-        field: requireEnum(raw.field, ['peRatio'] as const, `${where}.field`),
+        field: requireEnum(raw.field, ['peRatio', 'previousClose'] as const, `${where}.field`),
       };
     case 'treasury':
       return {

@@ -74,7 +74,7 @@ export type FactsetField =
 export type IndicatorSource =
   | { adapter: 'fred'; seriesId: string }
   | { adapter: 'factset-pdf'; field: FactsetField }
-  | { adapter: 'stockanalysis'; symbol: string; field: 'peRatio' }
+  | { adapter: 'stockanalysis'; symbol: string; field: 'peRatio' | 'previousClose' }
   | { adapter: 'treasury'; auction: 'ten-year-bid-to-cover' };
 
 /** 指標マスタの 1 エントリ。 */
@@ -357,6 +357,14 @@ export interface MacroPoint {
   wti: number | null;
   /** ドル指数 (Jan 2006=100)。主要通貨に対する総合的な強さ。 */
   dollarIndex: number | null;
+  /**
+   * ゴールド (GLD の終値、ドル、#119)。
+   *
+   * **金の現物価格ではない**。FRED は 2022 年に現物価格の提供を終了したため、
+   * 金を裏付けとする ETF の価格で代替している。GLD 1 株はおよそ金 1/10 オンスだが、
+   * 信託報酬 (年約 0.4%) の分だけ長期では現物から目減りする。
+   */
+  gold: number | null;
   /**
    * 日経平均株価 (円、#118)。
    *
