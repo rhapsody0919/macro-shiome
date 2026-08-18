@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T12:26:45.475Z",
+  "generatedAt": "2026-08-18T03:40:24.041Z",
   "sp500": {
     "points": [
       {
@@ -7855,7 +7855,7 @@
         "forwardEps": null,
         "trailingEps": null,
         "earningsYield": null,
-        "realRate": 2.36,
+        "realRate": 2.4099999999999997,
         "yieldSpread": null,
         "fairValue": null,
         "overvaluation": null,
@@ -7871,8 +7871,8 @@
     "targetYield": 3.67,
     "targetYieldContext": {
       "realRateAtSetting": 2.4,
-      "currentRealRate": 2.36,
-      "drift": -0.040000000000000036,
+      "currentRealRate": 2.4099999999999997,
+      "drift": 0.009999999999999787,
       "riskPremium": 1.27
     },
     "correlation": {
@@ -15759,8 +15759,8 @@
         "forwardEps": null,
         "trailingEps": 893.6983938132065,
         "earningsYield": 2.97441998810232,
-        "realRate": 2.36,
-        "yieldSpread": 0.6144199881023202,
+        "realRate": 2.4099999999999997,
+        "yieldSpread": 0.5644199881023204,
         "fairValue": 27330.226110495612,
         "overvaluation": 9.039144094730267,
         "isForwardEpsHigh": false,
@@ -15775,8 +15775,8 @@
     "targetYield": 3.27,
     "targetYieldContext": {
       "realRateAtSetting": 2.4,
-      "currentRealRate": 2.36,
-      "drift": -0.040000000000000036,
+      "currentRealRate": 2.4099999999999997,
+      "drift": 0.009999999999999787,
       "riskPremium": 0.8700000000000001
     },
     "correlation": {
