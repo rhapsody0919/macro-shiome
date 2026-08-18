@@ -245,6 +245,13 @@ export interface ValuationSeries {
   baselines: {
     pe5y: number | null;
     pe10y: number | null;
+    /**
+     * 実績 P/E の 5 年 / 10 年平均 (#116)。
+     *
+     * **Forward とは水準が違う** (実績の方が高い)。NASDAQ-100 には存在しない。
+     */
+    trailingPe5y: number | null;
+    trailingPe10y: number | null;
     /** 基準線を取得した観測日。画面に表示する。 */
     asOf: string | null;
   };
