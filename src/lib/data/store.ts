@@ -118,5 +118,29 @@ export function writeStatus(options: {
 }
 
 export function writeView(name: string, value: unknown): void {
+  assertFinite(value, name);
   writeJson(join(dataDir(), 'views', `${name}.json`), value);
+}
+
+/**
+ * 非有限数が混ざっていないか確かめる (#113)。
+ *
+ * **`JSON.stringify` は NaN と Infinity を黙って `null` にする**。書いたあとでは
+ * 欠測と区別できないため、書き込み前に落とすしかない。0 除算やパース失敗が
+ * 「欠測」として静かに蓄積するのを防ぐ。
+ */
+function assertFinite(value: unknown, path: string): void {
+  if (typeof value === 'number') {
+    if (!Number.isFinite(value)) {
+      throw new Error(`ビューに有限でない値が入っている (${path} = ${value})`);
+    }
+    return;
+  }
+  if (Array.isArray(value)) {
+    value.forEach((item, i) => assertFinite(item, `${path}[${i}]`));
+    return;
+  }
+  if (typeof value === 'object' && value !== null) {
+    for (const [key, item] of Object.entries(value)) assertFinite(item, `${path}.${key}`);
+  }
 }

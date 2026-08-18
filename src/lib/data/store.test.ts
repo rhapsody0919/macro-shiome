@@ -133,3 +133,24 @@ describe('writeView', () => {
     expect(raw.generatedAt).toBe(now.toISOString());
   });
 });
+
+describe('ビューの非有限数 (#113)', () => {
+  it('NaN が入っていたら書き込みを拒否する', () => {
+    // JSON.stringify は NaN を null にするため、書いたあとでは欠測と区別できない。
+    expect(() => writeView('test-nan', [{ date: '2026-08-14', value: Number.NaN }])).toThrow(
+      /有限でない値/,
+    );
+  });
+
+  it('Infinity が入っていたら書き込みを拒否する', () => {
+    // 0 除算の結果が「欠測」として静かに蓄積するのを防ぐ。
+    expect(() =>
+      writeView('test-inf', { points: [{ v: Number.POSITIVE_INFINITY }] }),
+    ).toThrow(/有限でない値/);
+  });
+
+  it('null は欠測として通す', () => {
+    // 欠測は正常な状態。非有限数とは区別する。
+    expect(() => writeView('test-null', [{ date: '2026-08-14', value: null }])).not.toThrow();
+  });
+});

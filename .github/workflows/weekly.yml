@@ -36,6 +36,15 @@ jobs:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
         run: pnpm fetch:weekly
 
+      # **取得の直後に一次情報と突き合わせる** (#113)。取得実装と違う経路
+      # (API キーを使わない CSV) で照合するので、実装の取り違えも検出できる。
+      # 失敗しても後段でコミットは行う。「緑だが歯抜け」と同じで、
+      # 「値が違うが記録されていない」状態を作らないため。
+      - name: Verify values
+        id: verify
+        if: always()
+        run: pnpm verify
+
       # 取得が一部失敗しても、取れた分はコミットする (次回の差分を小さくするため)。
       # job 自体は後段で失敗させる。
       - name: Commit data
@@ -56,6 +65,12 @@ jobs:
 
       # 取得ステップが失敗していたら job を赤にする。
       # 「緑だが歯抜け」を作らないため、部分的な成功を成功として扱わない。
+      - name: Fail if verify failed
+        if: always() && steps.verify.outcome == 'failure'
+        run: |
+          echo "値の検証に失敗した。取得できた値が一次情報と食い違っている" >&2
+          exit 1
+
       - name: Fail if fetch failed
         if: always() && steps.fetch.outcome == 'failure'
         run: |
