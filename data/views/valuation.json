@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T06:36:26.738Z",
+  "generatedAt": "2026-08-18T08:18:02.175Z",
   "sp500": {
     "points": [
       {
@@ -8390,6 +8390,8 @@
     "baselines": {
       "pe5y": 19.9,
       "pe10y": 19,
+      "trailingPe5y": 24.4,
+      "trailingPe10y": 23.5,
       "asOf": "2026-08-07"
     },
     "targetYield": 3.67,
@@ -16818,6 +16820,8 @@
     "baselines": {
       "pe5y": null,
       "pe10y": null,
+      "trailingPe5y": null,
+      "trailingPe10y": null,
       "asOf": null
     },
     "targetYield": 3.27,
