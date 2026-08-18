@@ -76,7 +76,12 @@ async function main(): Promise<void> {
     for (const [id, indicator] of Object.entries(indicators)) {
       if (indicator.source.adapter !== 'fred') continue;
       try {
-        const observations = await fred.fetchSeries(indicator.source.seriesId);
+        // **当日より後の観測は取らない** (#93)。GDPPOT のように将来の四半期まで
+        // 推計値を返す系列があり、そのまま保存すると未来まで線が伸びる。
+        // 観測値が未来日付になる系列は本来存在しないので、全系列に掛けてよい。
+        const observations = await fred.fetchSeries(indicator.source.seriesId, {
+          end: now.toISOString().slice(0, 10),
+        });
         observationMap[id] = upsertObservations(id, observations, now);
         console.log(`  FRED ${id}: ${Object.keys(observations).length} 件`);
       } catch (error) {

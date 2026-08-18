@@ -12,6 +12,7 @@ import {
   realRate,
   yearOverYear,
   yieldSpread,
+  treasuryFairValue,
 } from './derived';
 
 /**
@@ -264,5 +265,22 @@ describe('yearOverYear', () => {
   it('前年が 0 ならエラー', () => {
     // 静かに Infinity を返すと、もっともらしい値が蓄積してしまう。
     expect(() => yearOverYear(100, 0)).toThrow(/0/);
+  });
+});
+
+describe('10年債の理論値 (#93)', () => {
+  it('期待インフレ率と潜在成長率を足す', () => {
+    expect(treasuryFairValue(2.27, 1.78)).toBeCloseTo(4.05, 10);
+  });
+
+  it('どちらかが欠測なら null', () => {
+    // 片方だけで出すと「理論値が下がった」と誤読される。
+    expect(treasuryFairValue(2.27, null)).toBeNull();
+    expect(treasuryFairValue(null, 1.78)).toBeNull();
+  });
+
+  it('潜在成長率が負でも計算する', () => {
+    // 潜在成長率がマイナスになる局面は理論上ありうる。切り捨てない。
+    expect(treasuryFairValue(2.0, -0.5)).toBeCloseTo(1.5, 10);
   });
 });

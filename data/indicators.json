@@ -716,5 +716,18 @@
     "copyright": "none",
     "group": "macro",
     "note": "Job Openings: Total Nonfarm。千件、季節調整済み。労働省の公式統計。Indeed の新規求人より発表が 2 か月ほど遅いが、調査に基づく公式値。"
+  },
+  "potential-gdp": {
+    "name": "潜在GDP (CBO 推計)",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "GDPPOT"
+    },
+    "frequency": "quarterly",
+    "unit": "index",
+    "attribution": "U.S. Congressional Budget Office via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "note": "Real Potential Gross Domestic Product。10億ドル (連鎖2017年ドル)、四半期。前年同期比を潜在成長率として使い、期待インフレ率と足して 10 年債の理論値を出す。**観測値ではなく CBO の推計値**で、FRED は将来の四半期まで含む推計を返すため、取得時に当日より後の観測は捨てている。"
   }
 }

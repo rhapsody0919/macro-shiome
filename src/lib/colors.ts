@@ -17,6 +17,14 @@ export const COLORS = {
   realRate: '#0ea5e9',
   /** イールドカーブ (長短金利差)。 */
   termSpread: '#6366f1',
+  /** 潜在成長率 (CBO 推計)。 */
+  potentialGrowth: '#14b8a6',
+  /**
+   * 10 年債の理論値 (期待インフレ率 + 潜在成長率)。
+   *
+   * 名目 10 年債と比べる相手なので、名目 (橙) と明確に区別できる色にする。
+   */
+  treasuryFairValue: '#84cc16',
   /** 住宅ローン金利。 */
   mortgageRate: '#ec4899',
 

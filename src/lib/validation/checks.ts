@@ -54,9 +54,9 @@ function rangeFor(unit: Unit, group: IndicatorGroup): Range | null {
  * 相対変化で見ると必ず閾値を超えてしまう。
  */
 function isLevelIndicator(indicator: Indicator): boolean {
-  // 月次指標は週次グリッドに乗らない。月初がたまたま金曜の週だけ検証対象になり、
+  // 月次・四半期の指標は週次グリッドに乗らない。期初がたまたま金曜の週だけ検証対象になり、
   // 比較相手 (7 日前) が存在しないため意味のあるチェックにならない (#64)。
-  if (indicator.frequency === 'monthly') return false;
+  if (indicator.frequency === 'monthly' || indicator.frequency === 'quarterly') return false;
   if (indicator.unit === 'index' || indicator.unit === 'ratio') return true;
   if (indicator.unit === 'jpy-per-usd') return true;
   // percent のうち金利系は水準として扱う。valuation (成長率) は対象外。

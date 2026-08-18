@@ -44,6 +44,44 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
   {
     question: 'financial',
     frequency: 'weekly',
+    primaryIndicator: 'potential-gdp',
+    title: '10年債の理論値',
+    subtitle: '期待インフレ率 + 潜在成長率。名目がこれを超えると経済を抑制する目安',
+    kind: 'percent',
+    series: [
+      { key: 'nominalRate', label: '名目10年債 (実際)', color: COLORS.nominalRate, width: 2.4 },
+      { key: 'treasuryFairValue', label: '理論値', color: COLORS.treasuryFairValue, width: 2.4 },
+      { key: 'breakeven', label: '内訳: 期待インフレ率', color: COLORS.breakeven },
+      { key: 'potentialGrowth', label: '内訳: 潜在成長率', color: COLORS.potentialGrowth },
+    ],
+    notes: [
+      <span key="def">
+        <strong>理論値 = 期待インフレ率 + 潜在成長率</strong>。名目金利は長期的に「物価の
+        見通し」と「経済の実力」に収束するという考え方で、
+        <strong>実際がこれを上回ると金利が経済成長を上回る</strong>ため、企業の設備投資と
+        個人消費を抑制する目安になる。下の細い 2 本を足したものが太い緑の線。
+      </span>,
+      <span key="not-threshold">
+        <strong>恣意的な閾値ではない。</strong>
+        定義から決まる値なので、危険水準の線を引かない方針 (VIX・イールドスプレッド) と
+        矛盾しない。ただし<strong>「超えたら必ず下落する」という意味ではない</strong>。
+        乖離が続いた期間も過去にある。
+      </span>,
+      <span key="cbo">
+        <strong>潜在成長率は CBO (議会予算局) の推計値で、観測値ではない。</strong>
+        潜在 GDP (四半期) の前年同期比として計算している。参考記事は潜在成長率を 2% と
+        置いているが、CBO の系列からは 1.8% 前後になる。<strong>記事の見立てとは別物</strong>。
+      </span>,
+      <span key="quarterly">
+        潜在成長率は四半期なので、四半期の間は同じ値が続く。
+        期待インフレ率は市場が決める 10 年 BEI (観測値) を使っており、
+        <strong>参考記事が使う「FRB の物価目標 2%」とは定義が違う</strong>。
+      </span>,
+    ],
+  },
+  {
+    question: 'financial',
+    frequency: 'weekly',
     primaryIndicator: 't10y2y',
     title: 'イールドカーブ (10年債 − 2年債)',
     subtitle: '長短金利差。負なら逆イールド',

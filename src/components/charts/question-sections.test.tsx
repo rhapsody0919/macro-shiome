@@ -32,6 +32,14 @@ describe('問いによる画面構成 (#89)', () => {
     }
   });
 
+  it('10年債の理論値は金利の内訳の直後に置く (#93)', () => {
+    // ブラウザ pane はハイドレーション途中の DOM しか取れず順序を確認できないため、
+    // ここで担保する。理論値は「金利の内訳」で構造を見た直後に読むもの。
+    render(<MarketPage />);
+    const titles = screen.getAllByRole('heading', { level: 3 }).map((h) => h.textContent);
+    expect(titles.indexOf('10年債の理論値')).toBe(titles.indexOf('金利の内訳') + 1);
+  });
+
   it('目次から各問いへ飛べる', () => {
     // 問いが 5 つ並ぶとモバイルでは全体像が見えないため、先頭に目次を置いている。
     render(<EconomyPage />);

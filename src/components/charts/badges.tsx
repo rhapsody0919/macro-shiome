@@ -15,6 +15,7 @@ const FREQUENCY_LABELS: Record<Frequency, string> = {
   daily: '日次',
   weekly: '週次',
   monthly: '月次',
+  quarterly: '四半期',
 };
 
 const BADGE = 'rounded border px-1.5 py-0.5 text-[10px] whitespace-nowrap';

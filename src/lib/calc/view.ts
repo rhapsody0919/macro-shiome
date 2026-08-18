@@ -30,6 +30,7 @@ import {
   overvaluation,
   percentileRank,
   realRate,
+  treasuryFairValue,
   yearOverYear,
   yieldSpread,
 } from './derived';
@@ -349,6 +350,33 @@ export function buildRevisionSeries(options: BuildViewOptions): RevisionPoint[] 
 }
 
 /**
+ * 四半期の水準系列から前年同期比 (%) の系列を作る (#93)。
+ *
+ * 観測日は四半期の初日 (1/1・4/1・7/1・10/1) に揃っているため、
+ * **年だけ 1 つ戻した日付**が 1 年前の同じ四半期になる。
+ * 1 年前が無い期は結果に含めない (欠測として扱う)。
+ */
+export function quarterlyGrowth(observations: Observations): Observations {
+  const growth: Record<string, number> = {};
+  for (const [date, value] of Object.entries(observations)) {
+    const previous = observations[`${Number.parseInt(date.slice(0, 4), 10) - 1}${date.slice(4)}`];
+    if (previous === undefined) continue;
+    const rate = yearOverYear(value, previous);
+    if (rate !== null) growth[date] = rate;
+  }
+  return growth;
+}
+
+/**
+ * 四半期系列を週次グリッドで引くときの遡り幅 (日)。
+ *
+ * 四半期の初日に値が立つので、期末の週では 90 日ほど遡る必要がある。
+ * 発表ラグを足して 120 日にしている。これ以上広げると、系列が止まっても
+ * 古い値を使い続けて欠測に気付けなくなる。
+ */
+const QUARTERLY_LOOKBACK_DAYS = 120;
+
+/**
  * マクロ指標のビュー (spec F-7)。
  *
  * 日次系列を週次 (金曜) に落とす。他のチャートと期間軸を揃えるため。
@@ -357,10 +385,13 @@ export function buildRevisionSeries(options: BuildViewOptions): RevisionPoint[] 
 export function buildMacroView(options: BuildViewOptions): MacroPoint[] {
   const { observations } = options;
   const weeks = fridaysBetween(options.start, options.today.toISOString().slice(0, 10));
+  // 四半期系列なので週ごとに作り直さず 1 度だけ計算する。
+  const potentialGrowthSeries = quarterlyGrowth(series(observations, 'potential-gdp'));
 
   return weeks.map((date) => {
     const nominalRate = valueAsOf(series(observations, 'dgs10'), date);
     const breakeven = valueAsOf(series(observations, 't10yie'), date);
+    const potentialGrowth = valueAsOf(potentialGrowthSeries, date, QUARTERLY_LOOKBACK_DAYS);
     return {
       date,
       vix: valueAsOf(series(observations, 'vix'), date),
@@ -368,6 +399,8 @@ export function buildMacroView(options: BuildViewOptions): MacroPoint[] {
       nominalRate,
       breakeven,
       realRate: realRate(nominalRate, breakeven),
+      potentialGrowth,
+      treasuryFairValue: treasuryFairValue(breakeven, potentialGrowth),
       termSpread: valueAsOf(series(observations, 't10y2y'), date),
       // 週次系列。金曜が休みでも直近の値を採る。
       mortgageRate: valueAsOf(series(observations, 'mortgage-rate-30y'), date),

@@ -55,6 +55,22 @@ export function realRate(nominalRate: Maybe, breakevenInflation: Maybe): number 
 }
 
 /**
+ * 10 年債の理論値 (%) = 期待インフレ率 + 潜在成長率 (#93)。
+ *
+ * 名目金利は長期的に「物価の見通し」と「経済の実力」に収束するという考え方で、
+ * **この水準を超えると金利が経済成長を上回り、設備投資と個人消費を抑制する**
+ * 目安になる。参考記事が繰り返し使っているフレーム。
+ *
+ * **恣意的な閾値ではない**。定義から決まる値なので、危険水準の線を引かない方針 (#52) と
+ * 矛盾しない。ただし潜在成長率は CBO の推計値であって観測値ではないため、
+ * 画面ではその旨を注記する。
+ */
+export function treasuryFairValue(breakevenInflation: Maybe, potentialGrowth: Maybe): number | null {
+  if (isMissing(breakevenInflation) || isMissing(potentialGrowth)) return null;
+  return breakevenInflation + potentialGrowth;
+}
+
+/**
  * イールドスプレッド (%) = 株式益回り − 実質金利 (spec D-14)。
  * 正なら株式の相対的な魅力が高い。
  */
