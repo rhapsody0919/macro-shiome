@@ -5,6 +5,7 @@ import {
   buildMacroView,
   buildRevisionSeries,
   buildValuationView,
+  quarterlyGrowth,
   type ObservationMap,
 } from './view';
 
@@ -417,5 +418,84 @@ describe('イールドカーブ (#63)', () => {
     const spread = valuation.sp500.points.find((p) => p.date === '2026-08-07')?.yieldSpread;
     expect(point?.termSpread).toBe(0.46);
     expect(spread).toBeCloseTo(2.64, 1);
+  });
+});
+
+describe('10年債の理論値 (#93)', () => {
+  /**
+   * 実データに基づく観測値。
+   * GDPPOT は 2025Q3 = 28,283.7 / 2026Q3 = 28,787.1 相当 (前年同期比 1.78%)。
+   */
+  const rates: ObservationMap = {
+    dgs10: { '2026-08-14': 4.68 },
+    t10yie: { '2026-08-14': 2.27 },
+    'potential-gdp': {
+      '2025-07-01': 28283.7,
+      '2025-10-01': 28409.6,
+      '2026-07-01': 28787.1,
+    },
+  };
+
+  const build = (observations: ObservationMap) =>
+    buildMacroView({
+      observations,
+      config,
+      start: '2026-08-01',
+      today: new Date(Date.UTC(2026, 7, 15)),
+    });
+
+  it('潜在成長率を前年同期比で出す', () => {
+    // 28787.1 / 28283.7 - 1 = 1.78%。四半期の水準そのままではない。
+    const point = build(rates).find((p) => p.date === '2026-08-14');
+    expect(point?.potentialGrowth).toBeCloseTo(1.78, 2);
+  });
+
+  it('理論値は期待インフレ率 + 潜在成長率', () => {
+    const point = build(rates).find((p) => p.date === '2026-08-14');
+    expect(point?.treasuryFairValue).toBeCloseTo(4.05, 2);
+    // 実際の名目 (4.68%) は理論値を上回っている。
+    expect(point?.nominalRate).toBe(4.68);
+  });
+
+  it('四半期の値を週次グリッドに前方補完する', () => {
+    // 8/14 時点で最新の四半期は 7/1。90 日近く遡る必要がある。
+    const point = build(rates).find((p) => p.date === '2026-08-07');
+    expect(point?.potentialGrowth).toBeCloseTo(1.78, 2);
+  });
+
+  it('1 年前の四半期が無い期は潜在成長率を出さない', () => {
+    // 片側だけで比率を出すと別物になる。欠測として扱う。
+    const point = build({
+      ...rates,
+      'potential-gdp': { '2026-07-01': 28787.1 },
+    }).find((p) => p.date === '2026-08-14');
+    expect(point?.potentialGrowth).toBeNull();
+    expect(point?.treasuryFairValue).toBeNull();
+  });
+
+  it('潜在GDP が無くても他の系列は壊れない', () => {
+    const point = build({ dgs10: rates.dgs10, t10yie: rates.t10yie }).find(
+      (p) => p.date === '2026-08-14',
+    );
+    expect(point?.potentialGrowth).toBeNull();
+    expect(point?.realRate).toBeCloseTo(2.41, 2);
+  });
+});
+
+describe('四半期系列の前年同期比 (#93)', () => {
+  it('年だけ戻した日付を 1 年前とみなす', () => {
+    // 観測日は四半期の初日に揃っているので、年を戻せば同じ四半期になる。
+    expect(quarterlyGrowth({ '2025-04-01': 100, '2026-04-01': 102 })).toEqual({
+      '2026-04-01': expect.closeTo(2, 10),
+    });
+  });
+
+  it('1 年前が無い期は含めない', () => {
+    expect(quarterlyGrowth({ '2026-04-01': 102 })).toEqual({});
+  });
+
+  it('四半期がずれている場合は比較しない', () => {
+    // 4-1 の 1 年前は 4-1。1-1 とは比べない。
+    expect(quarterlyGrowth({ '2025-01-01': 100, '2026-04-01': 102 })).toEqual({});
   });
 });

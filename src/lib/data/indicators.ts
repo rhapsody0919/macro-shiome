@@ -21,7 +21,12 @@ import type {
   Unit,
 } from './types';
 
-const FREQUENCIES = ['daily', 'weekly', 'monthly'] as const satisfies readonly Frequency[];
+const FREQUENCIES = [
+  'daily',
+  'weekly',
+  'monthly',
+  'quarterly',
+] as const satisfies readonly Frequency[];
 const UNITS = ['index', 'percent', 'ratio', 'jpy-per-usd'] as const satisfies readonly Unit[];
 const COPYRIGHTS = ['none', 'restricted'] as const satisfies readonly CopyrightClass[];
 const GROUPS = [

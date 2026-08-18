@@ -23,6 +23,13 @@ export interface SeriesDef {
   key: keyof MacroPoint;
   label: string;
   color: string;
+  /**
+   * 線の太さ。主従を付けたいときだけ指定する (#93)。
+   *
+   * 理論値チャートのように「比べる 2 本」と「その内訳」が同居する場合、
+   * 太さが揃っていると何と何を見比べるのか分からない。既定は 2。
+   */
+  width?: number;
 }
 
 /** 単一指標のチャート。VIX・為替のように 1 系列で完結するものに使う。 */
@@ -147,7 +154,7 @@ export function MacroChart({
               dataKey={s.key}
               name={s.label}
               stroke={s.color}
-              strokeWidth={2}
+              strokeWidth={s.width ?? 2}
               connectNulls={false}
               dot={false}
               activeDot={{ r: 3 }}

@@ -6,7 +6,7 @@
  */
 
 /** 更新頻度。日次・週次・月次が混在するため、画面側で粒度を明示する必要がある。 */
-export type Frequency = 'daily' | 'weekly' | 'monthly';
+export type Frequency = 'daily' | 'weekly' | 'monthly' | 'quarterly';
 
 /** 値の単位。同じ number でも意味が違うため取り違えを防ぐ。 */
 export type Unit =
@@ -289,6 +289,20 @@ export interface MacroPoint {
   breakeven: number | null;
   /** 実質金利 = 名目 − 期待インフレ率 (%)。 */
   realRate: number | null;
+  /**
+   * 潜在成長率 (%、前年同期比)。CBO の潜在 GDP 推計から導出 (#93)。
+   *
+   * **観測値ではなく推計値**。四半期系列を週次グリッドに前方補完しているため、
+   * 四半期の間は同じ値が続く。
+   */
+  potentialGrowth: number | null;
+  /**
+   * 10 年債の理論値 (%) = 期待インフレ率 + 潜在成長率 (#93)。
+   *
+   * 名目 10 年債がこれを超えると、金利が経済の実力を上回り設備投資と個人消費を
+   * 抑制する目安になる。**恣意的な閾値ではなく定義から決まる値**。
+   */
+  treasuryFairValue: number | null;
   /**
    * イールドカーブ (10 年債 − 2 年債、%)。負なら逆イールド (#63)。
    *
