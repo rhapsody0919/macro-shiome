@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import {
   CartesianGrid,
@@ -30,9 +30,38 @@ const NEXT_YEAR_COLOR = '#a855f7';
  * ロールするため、改定が無くても増益トレンド下では上昇する (週あたり約 0.3% のバイアス)。
  * 改定を純粋に見るには暦年固定の成長率を追う必要がある。
  */
+/**
+ * 予想の対象 (#117)。
+ *
+ * **暦年と四半期は性質が違う**。暦年は年内は同じ対象を追い続けるが、
+ * 四半期は進むと「翌四半期」が別の四半期を指す。同じ図に重ねると
+ * 「改定が入った」のか「対象が入れ替わった」のか判別できない。
+ */
+type Horizon = 'year' | 'quarter';
+
+const HORIZONS: Array<{ key: Horizon; label: string }> = [
+  { key: 'year', label: '暦年' },
+  { key: 'quarter', label: '四半期' },
+];
+
+const HORIZON_SERIES: Record<
+  Horizon,
+  Array<{ key: keyof RevisionPoint; label: string; color: string }>
+> = {
+  year: [
+    { key: 'growthCurrentYear', label: '今暦年', color: CURRENT_YEAR_COLOR },
+    { key: 'growthNextYear', label: '翌暦年', color: NEXT_YEAR_COLOR },
+  ],
+  quarter: [
+    { key: 'growthNextQuarter', label: '翌四半期', color: CURRENT_YEAR_COLOR },
+    { key: 'growthQuarterAfterNext', label: '翌々四半期', color: NEXT_YEAR_COLOR },
+  ],
+};
+
 export function RevisionsChart({ revisions }: { revisions: RevisionPoint[] }) {
   const searchParams = useSearchParams();
   const period = parsePeriod(searchParams.get('period'));
+  const [horizon, setHorizon] = useState<Horizon>('year');
 
   const points = useMemo(
     () => filterByPeriod(revisions, period, new Date()),
@@ -55,6 +84,31 @@ export function RevisionsChart({ revisions }: { revisions: RevisionPoint[] }) {
     <ChartFrame
       title="予想改定"
       subtitle="アナリストの増益率予想が先週・四半期末と比べてどう変わったか"
+      actions={
+        <div
+          role="group"
+          aria-label="予想の対象"
+          className="inline-flex rounded-md border border-slate-300 dark:border-slate-700"
+        >
+          {HORIZONS.map((item) => (
+            <button
+              key={item.key}
+              type="button"
+              aria-pressed={item.key === horizon}
+              onClick={() => setHorizon(item.key)}
+              className={[
+                'px-3 py-1 text-xs first:rounded-l-md last:rounded-r-md',
+                'border-r border-slate-300 last:border-r-0 dark:border-slate-700',
+                item.key === horizon
+                  ? 'bg-slate-900 font-semibold text-white dark:bg-slate-100 dark:text-slate-900'
+                  : 'text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800',
+              ].join(' ')}
+            >
+              {item.label}
+            </button>
+          ))}
+        </div>
+      }
       summary={
         <div className="space-y-3">
           <BlendedComparison point={latestWithBlended} />
@@ -103,6 +157,21 @@ export function RevisionsChart({ revisions }: { revisions: RevisionPoint[] }) {
             。FactSet は翌年の予想を年央 (6 月頃) から載せ始めるため、年前半で線が無いのは正常。
           </span>
         </>,
+        ...(horizon === 'quarter'
+          ? [
+              <>
+                <strong>四半期は対象が入れ替わる。</strong>
+                「翌四半期」は四半期が進むと別の四半期を指すため、
+                <strong>同じ線が同じ対象を追い続けない</strong>。線の上下は改定だけでなく
+                対象の入れ替わりでも起きる。暦年 (年内は固定) と読み方が違う。
+              </>,
+              <>
+                上のサマリーにある 3 時点 (今週 / 先週 / 四半期末) は
+                <strong>進行中四半期の blended 増益率</strong>で、実績と予想の混合。
+                こちらは純粋な予想なので別物。
+              </>,
+            ]
+          : []),
       ]}
     >
       <ResponsiveContainer>
@@ -117,28 +186,20 @@ export function RevisionsChart({ revisions }: { revisions: RevisionPoint[] }) {
           />
           <Tooltip content={<SharedTooltip kind="percent" />} />
           <Legend />
-          <Line
-            type="monotone"
-            dataKey="growthCurrentYear"
-            name="今暦年"
-            stroke={CURRENT_YEAR_COLOR}
-            strokeWidth={2.2}
-            connectNulls={false}
-            dot={false}
-            activeDot={{ r: 3 }}
-            isAnimationActive={false}
-          />
-          <Line
-            type="monotone"
-            dataKey="growthNextYear"
-            name="翌暦年"
-            stroke={NEXT_YEAR_COLOR}
-            strokeWidth={2.2}
-            connectNulls={false}
-            dot={false}
-            activeDot={{ r: 3 }}
-            isAnimationActive={false}
-          />
+          {HORIZON_SERIES[horizon].map((s) => (
+            <Line
+              key={String(s.key)}
+              type="monotone"
+              dataKey={s.key}
+              name={s.label}
+              stroke={s.color}
+              strokeWidth={2.2}
+              connectNulls={false}
+              dot={false}
+              activeDot={{ r: 3 }}
+              isAnimationActive={false}
+            />
+          ))}
         </LineChart>
       </ResponsiveContainer>
     </ChartFrame>

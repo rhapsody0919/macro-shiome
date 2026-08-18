@@ -357,6 +357,11 @@ export function buildRevisionSeries(options: BuildViewOptions): RevisionPoint[] 
     blendedQuarterEnd: valueOn(series(observations, 'sp500-blended-growth-quarter-end'), date),
     growthCurrentYear: valueOn(series(observations, 'sp500-growth-cy-current'), date),
     growthNextYear: valueOn(series(observations, 'sp500-growth-cy-next'), date),
+    growthNextQuarter: valueOn(series(observations, 'sp500-growth-next-quarter'), date),
+    growthQuarterAfterNext: valueOn(
+      series(observations, 'sp500-growth-quarter-after-next'),
+      date,
+    ),
   }));
 }
 
