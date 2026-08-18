@@ -59,6 +59,11 @@ export const MARKET_QUESTIONS = {
     title: '市場は不安か',
     guide: '投資家心理の振れ。実体経済より先に動くことも、過剰反応で終わることもある。',
   },
+  overseas: {
+    title: '海外市場も同じ方向か',
+    guide:
+      '米国だけが動いているのか、世界的な流れなのかを見る。日本市場は為替と株が連動しやすい。',
+  },
 } as const satisfies Record<string, Question>;
 
 export type EconomyQuestionId = keyof typeof ECONOMY_QUESTIONS;

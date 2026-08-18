@@ -794,3 +794,26 @@ describe('四半期の予想増益率 (#117)', () => {
     expect(points[0].growthNextQuarter).toBeNull();
   });
 });
+
+describe('日経平均 (#118)', () => {
+  it('日本の休場日は直近の営業日まで遡る', () => {
+    // 2026-08-11 は山の日で東証が休場。FRED は空値を返す。
+    const view = buildMacroView({
+      observations: { nikkei225: { '2026-08-07': 67000, '2026-08-14': 68713.8 } },
+      config,
+      start: '2026-08-01',
+      today: new Date(Date.UTC(2026, 7, 15)),
+    });
+    expect(view.find((p) => p.date === '2026-08-14')?.nikkei225).toBe(68713.8);
+  });
+
+  it('金曜が休場なら前営業日の値を使う', () => {
+    const view = buildMacroView({
+      observations: { nikkei225: { '2026-08-13': 68308.59 } },
+      config,
+      start: '2026-08-01',
+      today: new Date(Date.UTC(2026, 7, 15)),
+    });
+    expect(view.find((p) => p.date === '2026-08-14')?.nikkei225).toBe(68308.59);
+  });
+});

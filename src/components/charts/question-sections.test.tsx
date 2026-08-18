@@ -75,3 +75,22 @@ describe('チャートのバッジ', () => {
     expect(screen.getByText('先行')).toHaveAttribute('title', expect.stringContaining('先立って'));
   });
 });
+
+describe('海外市場の問い (#118)', () => {
+  it('日経平均と USD/JPY が同じ問いに入る', () => {
+    // 円安は日経平均の押し上げ要因。2 つを並べて業績と為替を切り分ける。
+    render(<MarketPage />);
+    const section = document.getElementById('q-overseas');
+    expect(section).not.toBeNull();
+    const titles = Array.from(section?.querySelectorAll('h3') ?? []).map((h) => h.textContent);
+    expect(titles).toEqual(['日経平均株価', 'USD/JPY']);
+  });
+
+  it('USD/JPY は「市場は不安か」から外れている', () => {
+    // 本アプリでの USD/JPY の役割は円相場であって恐怖指数ではない。
+    render(<MarketPage />);
+    const risk = document.getElementById('q-risk');
+    const titles = Array.from(risk?.querySelectorAll('h3') ?? []).map((h) => h.textContent);
+    expect(titles).not.toContain('USD/JPY');
+  });
+});
