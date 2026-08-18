@@ -18,7 +18,7 @@ import {
   fetchFactsetReport,
   previousFriday,
 } from '../src/lib/adapters/factset';
-import { fetchEtfField } from '../src/lib/adapters/stockanalysis';
+import { fetchEtfField, previousTradingDay } from '../src/lib/adapters/stockanalysis';
 import { TreasuryClient } from '../src/lib/adapters/treasury';
 import {
   buildEconomyView,
@@ -131,8 +131,12 @@ async function main(): Promise<void> {
     if (indicator.source.adapter !== 'stockanalysis') continue;
     try {
       const value = await fetchEtfField(indicator.source.symbol, indicator.source.field);
-      observationMap[id] = upsertObservations(id, { [fridayIso]: value }, now);
-      console.log(`  stockanalysis ${id}: ${value}`);
+      // **基準日 (金曜) ではなく「値が指す日」で保存する** (#125)。
+      // 取れるのは現在値だけなので、基準日で保存すると手動実行のたびに
+      // 実行日の値が金曜の値として上書きされる (実測で確認済み)。
+      const observedOn = previousTradingDay(now);
+      observationMap[id] = upsertObservations(id, { [observedOn]: value }, now);
+      console.log(`  stockanalysis ${id}: ${value} (${observedOn} 時点)`);
     } catch (error) {
       failures.push(`stockanalysis ${id}: ${message(error)}`);
     }

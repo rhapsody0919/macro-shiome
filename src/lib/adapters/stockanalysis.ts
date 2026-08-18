@@ -21,6 +21,30 @@ const FIELD_LABELS: Record<StockAnalysisField, string> = {
   previousClose: 'Previous Close',
 };
 
+/**
+ * 値が指す日 = **直近の取引日** を返す ("YYYY-MM-DD"、#125)。
+ *
+ * スクレイピングで取れるのは現在値だけなので、保存するキーは「いつの値か」で決める。
+ * `Previous Close` はその名のとおり直前の取引セッションの終値で、PER も同じセッションの
+ * 終値を元に出る。週次バッチは **UTC 土曜 02:00** (= 米国東部の金曜 22 時、市場は閉場後) に
+ * 走るため、直近の取引日は金曜になる。
+ *
+ * **実行日そのものをキーにしてはいけない。** 週次グリッドは金曜から過去に遡って値を引くので、
+ * 土曜の日付で保存すると金曜の点から見えなくなる。
+ *
+ * 祝日は考慮しない。取引所が休みだった日をキーにしても、週次グリッドは直近の
+ * 営業日まで遡るため表示は壊れない。
+ */
+export function previousTradingDay(now: Date): string {
+  const cursor = new Date(
+    Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()),
+  );
+  do {
+    cursor.setUTCDate(cursor.getUTCDate() - 1);
+  } while (cursor.getUTCDay() === 0 || cursor.getUTCDay() === 6);
+  return cursor.toISOString().slice(0, 10);
+}
+
 export function stockAnalysisEtfUrl(symbol: string): string {
   return `${BASE_URL}/${symbol.toLowerCase()}/`;
 }

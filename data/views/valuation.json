@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T08:49:30.122Z",
+  "generatedAt": "2026-08-18T08:56:16.652Z",
   "sp500": {
     "points": [
       {
@@ -16804,17 +16804,17 @@
         "date": "2026-08-14",
         "index": 30046.14,
         "forwardPe": null,
-        "trailingPe": 33.62,
+        "trailingPe": null,
         "forwardEps": null,
-        "trailingEps": 893.6983938132065,
-        "earningsYield": 2.97441998810232,
+        "trailingEps": null,
+        "earningsYield": null,
         "realRate": 2.4099999999999997,
-        "yieldSpread": 0.5644199881023204,
-        "fairValue": 27330.226110495612,
+        "yieldSpread": null,
+        "fairValue": null,
         "fairValueBasis": 30046.14,
-        "overvaluation": 9.039144094730267,
+        "overvaluation": null,
         "isForwardEpsHigh": false,
-        "isTrailingEpsHigh": true
+        "isTrailingEpsHigh": false
       }
     ],
     "baselines": {
@@ -16834,15 +16834,15 @@
     "correlation": {
       "halfYear": {
         "kind": "insufficient",
-        "n": 1
+        "n": 0
       },
       "oneYear": {
         "kind": "insufficient",
-        "n": 1
+        "n": 0
       },
       "all": {
         "kind": "insufficient",
-        "n": 1
+        "n": 0
       }
     },
     "spreadDistribution": null,
