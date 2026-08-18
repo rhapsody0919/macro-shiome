@@ -17,6 +17,10 @@ export const COLORS = {
   realRate: '#0ea5e9',
   /** イールドカーブ (長短金利差)。 */
   termSpread: '#6366f1',
+  /** 日本の 10 年債利回り。 */
+  jpTenYear: '#dc2626',
+  /** ドイツの 10 年債利回り。 */
+  deTenYear: '#ca8a04',
   /** 潜在成長率 (CBO 推計)。 */
   potentialGrowth: '#14b8a6',
   /**
