@@ -90,7 +90,14 @@ describe('buildValuationView', () => {
 
   it('基準線に取得日を添える', () => {
     // 固定値ではなく毎週更新される値であることを画面に示すため (spec F-3)。
-    expect(view.sp500.baselines).toEqual({ pe5y: 19.9, pe10y: 19.0, asOf: '2026-08-07' });
+    // 実績側の平均はこのフィクスチャに無いため null (#116)。
+    expect(view.sp500.baselines).toEqual({
+      pe5y: 19.9,
+      pe10y: 19.0,
+      trailingPe5y: null,
+      trailingPe10y: null,
+      asOf: '2026-08-07',
+    });
   });
 
   it('適用した基準益回りを含める', () => {
@@ -709,5 +716,46 @@ describe('割高率の比較基準 (#110)', () => {
     // FactSet の終値が無く、EPS も指数から作るので時点のずれが生じない。
     const ndx = view.nasdaq100.points.find((p) => p.date === '2026-08-07');
     expect(ndx?.fairValueBasis).toBe(ndx?.index);
+  });
+});
+
+describe('実績 P/E の基準線 (#116)', () => {
+  /** 実測値。Forward と実績で平均の水準が違う (19.9 vs 24.4)。 */
+  const observations: ObservationMap = {
+    sp500: { '2026-08-07': 7757.64 },
+    'sp500-forward-pe': { '2026-08-07': 20.0 },
+    'sp500-trailing-pe': { '2026-08-07': 28.2 },
+    'sp500-forward-pe-5y-avg': { '2026-08-07': 19.9 },
+    'sp500-forward-pe-10y-avg': { '2026-08-07': 19.0 },
+    'sp500-trailing-pe-5y-avg': { '2026-08-07': 24.4 },
+    'sp500-trailing-pe-10y-avg': { '2026-08-07': 23.5 },
+  };
+  const view = buildValuationView({
+    observations,
+    config,
+    start: '2026-08-01',
+    today: new Date(Date.UTC(2026, 7, 8)),
+  });
+
+  it('Forward と実績の平均を別々に持つ', () => {
+    // 取り違えると、違う種類の PER と平均を比べることになる。
+    expect(view.sp500.baselines).toMatchObject({
+      pe5y: 19.9,
+      pe10y: 19.0,
+      trailingPe5y: 24.4,
+      trailingPe10y: 23.5,
+      asOf: '2026-08-07',
+    });
+  });
+
+  it('NASDAQ-100 には基準線が無い', () => {
+    // QQQ 経由では現在値しか取れず、FactSet の平均も存在しない。
+    expect(view.nasdaq100.baselines).toEqual({
+      pe5y: null,
+      pe10y: null,
+      trailingPe5y: null,
+      trailingPe10y: null,
+      asOf: null,
+    });
   });
 });

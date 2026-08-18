@@ -37,7 +37,7 @@ export function valuationSeries(
 ): ValuationSeries {
   return {
     points,
-    baselines: { pe5y: null, pe10y: null, asOf: null },
+    baselines: { pe5y: null, pe10y: null, trailingPe5y: null, trailingPe10y: null, asOf: null },
     targetYield: 3.67,
     targetYieldContext: {
       realRateAtSetting: null,

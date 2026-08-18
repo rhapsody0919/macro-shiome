@@ -100,6 +100,8 @@ function buildSp500Series(options: BuildViewOptions, weeks: readonly string[]): 
   const trailingPe = series(observations, 'sp500-trailing-pe');
   const pe5y = series(observations, 'sp500-forward-pe-5y-avg');
   const pe10y = series(observations, 'sp500-forward-pe-10y-avg');
+  const trailingPe5y = series(observations, 'sp500-trailing-pe-5y-avg');
+  const trailingPe10y = series(observations, 'sp500-trailing-pe-10y-avg');
   const dgs10 = series(observations, 'dgs10');
   const t10yie = series(observations, 't10yie');
 
@@ -146,6 +148,9 @@ function buildSp500Series(options: BuildViewOptions, weeks: readonly string[]): 
     baselines: {
       pe5y: latestBaselineDate === null ? null : (pe5y[latestBaselineDate] ?? null),
       pe10y: latestBaselineDate === null ? null : (pe10y[latestBaselineDate] ?? null),
+      trailingPe5y: latestBaselineDate === null ? null : (trailingPe5y[latestBaselineDate] ?? null),
+      trailingPe10y:
+        latestBaselineDate === null ? null : (trailingPe10y[latestBaselineDate] ?? null),
       asOf: latestBaselineDate,
     },
     targetYield: resolveTargetYield(config, 'sp500', weeks.at(-1) ?? options.start),
@@ -212,7 +217,8 @@ function buildNasdaqSeries(options: BuildViewOptions, weeks: readonly string[]):
 
   return {
     points,
-    baselines: { pe5y: null, pe10y: null, asOf: null },
+    // NASDAQ-100 は FactSet の平均が存在しない。QQQ 経由では現在値しか取れない。
+    baselines: { pe5y: null, pe10y: null, trailingPe5y: null, trailingPe10y: null, asOf: null },
     targetYield: resolveTargetYield(config, 'nasdaq100', weeks.at(-1) ?? options.start),
     targetYieldContext: buildTargetYieldContext(options, 'nasdaq100', weeks.at(-1) ?? options.start),
     correlation: toCorrelationSummary(
