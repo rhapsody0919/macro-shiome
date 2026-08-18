@@ -858,5 +858,18 @@
       "min": 1,
       "max": 5
     }
+  },
+  "nikkei225": {
+    "name": "日経平均株価",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "NIKKEI225"
+    },
+    "frequency": "daily",
+    "unit": "index",
+    "attribution": "Nikkei Inc. via FRED",
+    "copyright": "restricted",
+    "group": "equity",
+    "note": "Nikkei Stock Average, Nikkei 225。円建て、日次。FRED の系列ページに 'Copyright, Nikkei Inc. Reprinted with permission.' の表示があるため copyright は restricted。**S&P 500 と水準を直接比べられない** (通貨も構成銘柄も違う)。日本の休場日は欠測になるので、週次グリッドでは直近の営業日まで遡る。"
   }
 }

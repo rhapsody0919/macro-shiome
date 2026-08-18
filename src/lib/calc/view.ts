@@ -442,6 +442,8 @@ export function buildMacroView(options: BuildViewOptions): MacroPoint[] {
       fedFundsRate: valueAsOf(series(observations, 'fed-funds-rate'), date),
       wti: valueAsOf(series(observations, 'wti'), date),
       dollarIndex: valueAsOf(series(observations, 'dollar-index'), date),
+      // 日本の休場日は欠測になるため、直近の営業日まで遡る。
+      nikkei225: valueAsOf(series(observations, 'nikkei225'), date),
       newJobPostings: valueAsOf(series(observations, 'new-job-postings'), date),
     };
   });
