@@ -11,6 +11,7 @@ export type Frequency = 'daily' | 'weekly' | 'monthly' | 'quarterly';
 /** 値の単位。同じ number でも意味が違うため取り違えを防ぐ。 */
 export type Unit =
   | 'index' // 指数のポイント
+  | 'diffusion' // 拡散指数。0 が中立で −100〜+100 に収まる (#94)
   | 'percent' // %。小数表記 (0.042) との混在は不可
   | 'ratio' // 倍率 (PER など)
   | 'jpy-per-usd';
@@ -417,6 +418,15 @@ export interface MonthlyPoint {
   // --- 水準 ---
   /** 求人件数 (JOLTS、千件)。労働省の公式統計。 */
   jobOpenings: number | null;
+  /**
+   * NY連銀景気指数 (拡散指数)。0 が「改善と悪化が同数」(#94)。
+   *
+   * **当月分が当月中旬に出る**ため、月次では最も発表が早い。ただし対象は
+   * ニューヨーク連銀管内の製造業のみで、全米を代表しない。
+   */
+  nyFedSurvey: number | null;
+  /** フィラデルフィア連銀景気指数 (拡散指数)。対象は第3地区の製造業のみ。 */
+  phillyFedSurvey: number | null;
   /** 財政収支 (百万ドル)。負が赤字。 */
   federalDeficit: number | null;
   /** 失業率 (%)。水準そのものが意味を持つ。 */

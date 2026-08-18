@@ -729,5 +729,31 @@
     "copyright": "none",
     "group": "macro",
     "note": "Real Potential Gross Domestic Product。10億ドル (連鎖2017年ドル)、四半期。前年同期比を潜在成長率として使い、期待インフレ率と足して 10 年債の理論値を出す。**観測値ではなく CBO の推計値**で、FRED は将来の四半期まで含む推計を返すため、取得時に当日より後の観測は捨てている。"
+  },
+  "ny-fed-survey": {
+    "name": "NY連銀景気指数",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "GACDISA066MSFRBNY"
+    },
+    "frequency": "monthly",
+    "unit": "diffusion",
+    "attribution": "Federal Reserve Bank of New York via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "note": "Current General Business Conditions; Diffusion Index for New York。拡散指数で 0 が「改善と悪化が同数」。季節調整済み。当月分が当月中旬に出るため月次では最も発表が早い。ニューヨーク連銀管内の製造業のみが対象で、全米の製造業を代表しない。ISM 新規受注指数 (著作権で FRED に無い) の代替だが同等ではない。"
+  },
+  "philly-fed-survey": {
+    "name": "フィラデルフィア連銀景気指数",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "GACDFSA066MSFRBPHI"
+    },
+    "frequency": "monthly",
+    "unit": "diffusion",
+    "attribution": "Federal Reserve Bank of Philadelphia via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "note": "Current General Activity; Diffusion Index for Federal Reserve District 3: Philadelphia。拡散指数で 0 が「改善と悪化が同数」。季節調整済み。第3地区 (ペンシルベニア・ニュージャージー・デラウェア) の製造業のみが対象。"
   }
 }

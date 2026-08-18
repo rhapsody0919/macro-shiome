@@ -461,6 +461,9 @@ export function buildEconomyView(options: BuildViewOptions): EconomyView {
     housingStarts: level('housing-starts', month),
     newHomeSales: level('new-home-sales', month),
     jobOpenings: level('job-openings', month),
+    // 拡散指数。水準そのものが意味を持つ (0 が中立) ため前年同月比にしない。
+    nyFedSurvey: level('ny-fed-survey', month),
+    phillyFedSurvey: level('philly-fed-survey', month),
     federalDeficit: level('federal-deficit', month),
     unemploymentRate: level('unemployment-rate', month),
     savingsRate: level('savings-rate', month),
@@ -500,6 +503,8 @@ const MONTHLY_INDICATORS = [
   'housing-starts',
   'new-home-sales',
   'job-openings',
+  'ny-fed-survey',
+  'philly-fed-survey',
   'federal-deficit',
   'unemployment-rate',
   'savings-rate',

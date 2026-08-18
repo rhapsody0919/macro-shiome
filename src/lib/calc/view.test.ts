@@ -500,3 +500,37 @@ describe('四半期系列の前年同期比 (#93)', () => {
     expect(quarterlyGrowth({ '2025-01-01': 100, '2026-04-01': 102 })).toEqual({});
   });
 });
+
+describe('地区連銀サーベイ (#94)', () => {
+  it('拡散指数は水準のまま載せる', () => {
+    // 0 が「改善と悪化が同数」という定義上の基準なので、前年同月比にすると意味を失う。
+    const view = buildEconomyView({
+      observations: {
+        'ny-fed-survey': { '2025-08-01': 5.4, '2026-08-01': -12.5 },
+        'philly-fed-survey': { '2026-08-01': 3.1 },
+      },
+      config,
+      start: '2026-08-01',
+      today: new Date(Date.UTC(2026, 7, 20)),
+    });
+    const august = view.monthly.find((p) => p.month === '2026-08-01');
+    expect(august?.nyFedSurvey).toBe(-12.5);
+    expect(august?.phillyFedSurvey).toBe(3.1);
+  });
+
+  it('発表状況に 2 系列が入る', () => {
+    // 発表ラグが指標ごとに違うため、系列単位で対象月を出す (#64)。
+    const view = buildEconomyView({
+      observations: { 'ny-fed-survey': { '2026-08-01': -12.5 } },
+      config,
+      start: '2026-08-01',
+      today: new Date(Date.UTC(2026, 7, 20)),
+    });
+    const ids = view.coverage.map((c) => c.indicatorId);
+    expect(ids).toContain('ny-fed-survey');
+    expect(ids).toContain('philly-fed-survey');
+    expect(view.coverage.find((c) => c.indicatorId === 'ny-fed-survey')?.latestMonth).toBe(
+      '2026-08-01',
+    );
+  });
+});
