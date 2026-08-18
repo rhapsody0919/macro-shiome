@@ -820,5 +820,18 @@
     "copyright": "none",
     "group": "rates",
     "note": "Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark)。月次・月中平均。3 か国とも同じ定義の系列を使い、比較が定義の違いにならないようにしている。**日次では取れない**ため、日次の DGS10 より 2 か月ほど遅れる。 日次の DGS10 とは別系列で、国際比較のために同じ定義に揃えるために使う。"
+  },
+  "export-price": {
+    "name": "輸出物価指数",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "IQ"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "U.S. Bureau of Labor Statistics via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "note": "Export Price Index (End Use): All Commodities。2000=100、季節調整なし。輸入物価 (IR) と対になる系列で、米国企業が海外に売るときの価格。輸入物価が仕入れ価格、輸出物価が販売価格にあたるので、両方を並べると交易条件の変化が読める。**物価の連鎖 (輸入物価 → 生産者物価 → CPI) の上流ではない**。"
   }
 }

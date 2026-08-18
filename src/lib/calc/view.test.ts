@@ -604,3 +604,31 @@ describe('10年債利回りの国際比較 (#97)', () => {
     }
   });
 });
+
+describe('交易条件 (#98)', () => {
+  it('輸出物価も前年同月比で出す', () => {
+    // 輸入物価と同じ軸で比べるため、基準年の違いを消して前年同月比に揃える。
+    const view = buildEconomyView({
+      observations: {
+        'import-price': { '2025-06-01': 140.8, '2026-06-01': 150.8 },
+        'export-price': { '2025-06-01': 150.0, '2026-06-01': 153.0 },
+      },
+      config,
+      start: '2026-06-01',
+      today: new Date(Date.UTC(2026, 7, 20)),
+    });
+    const june = view.monthly.find((p) => p.month === '2026-06-01');
+    expect(june?.importPrice).toBeCloseTo(7.10, 2);
+    expect(june?.exportPrice).toBeCloseTo(2.0, 2);
+  });
+
+  it('発表状況に輸出物価が入る', () => {
+    const ids = buildEconomyView({
+      observations: {},
+      config,
+      start: '2026-06-01',
+      today: new Date(Date.UTC(2026, 7, 20)),
+    }).coverage.map((c) => c.indicatorId);
+    expect(ids).toContain('export-price');
+  });
+});

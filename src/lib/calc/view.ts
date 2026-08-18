@@ -443,6 +443,7 @@ export function buildEconomyView(options: BuildViewOptions): EconomyView {
   const monthly: MonthlyPoint[] = months.map((month) => ({
     month,
     importPrice: yoy('import-price', month),
+    exportPrice: yoy('export-price', month),
     producerPrice: yoy('producer-price', month),
     cpi: yoy('cpi', month),
     pce: yoy('pce-price', month),
@@ -493,6 +494,7 @@ export function buildEconomyView(options: BuildViewOptions): EconomyView {
 /** 月次画面が使う指標。発表状況の表示に使う。 */
 const MONTHLY_INDICATORS = [
   'import-price',
+  'export-price',
   'producer-price',
   'cpi',
   'pce-price',
