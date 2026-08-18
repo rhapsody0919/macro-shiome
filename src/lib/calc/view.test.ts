@@ -167,6 +167,9 @@ describe('buildRevisionSeries', () => {
       blendedQuarterEnd: 23.1,
       growthCurrentYear: 30.0,
       growthNextYear: 13.6,
+      // 四半期はこのフィクスチャに無いため null (#117)。
+      growthNextQuarter: null,
+      growthQuarterAfterNext: null,
     });
   });
 
@@ -757,5 +760,37 @@ describe('実績 P/E の基準線 (#116)', () => {
       trailingPe10y: null,
       asOf: null,
     });
+  });
+});
+
+describe('四半期の予想増益率 (#117)', () => {
+  it('翌四半期・翌々四半期をビューに載せる', () => {
+    // 暦年と違い、対象四半期は時間とともに入れ替わる。値はそのまま載せて
+    // 「対象が動く」ことは画面の注記で伝える。
+    const points = buildRevisionSeries({
+      observations: {
+        'sp500-growth-next-quarter': { '2026-08-07': 12.4 },
+        'sp500-growth-quarter-after-next': { '2026-08-07': 15.1 },
+      },
+      config,
+      start: '2026-08-01',
+      today: new Date(Date.UTC(2026, 7, 8)),
+    });
+    expect(points[0]).toMatchObject({
+      date: '2026-08-07',
+      growthNextQuarter: 12.4,
+      growthQuarterAfterNext: 15.1,
+    });
+  });
+
+  it('発行日ちょうどで引く (遡らない)', () => {
+    // 遡ると休刊週が前週の値で埋まり、欠測が見えなくなる (既存の暦年と同じ扱い)。
+    const points = buildRevisionSeries({
+      observations: { 'sp500-growth-next-quarter': { '2026-07-31': 12.4 } },
+      config,
+      start: '2026-08-01',
+      today: new Date(Date.UTC(2026, 7, 8)),
+    });
+    expect(points[0].growthNextQuarter).toBeNull();
   });
 });
