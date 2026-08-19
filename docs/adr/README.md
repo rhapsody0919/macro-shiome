@@ -35,3 +35,6 @@
 | [0002](0002-nextjs-static-export.md) | フロントは Next.js 静的エクスポート、ホスティングは Cloudflare Pages | 2026-08-16 |
 | [0003](0003-recharts.md) | チャートライブラリに Recharts を採用 | 2026-08-16 |
 | [0004](0004-indicator-master-schema.md) | 指標マスタ + 観測値の縦持ちスキーマ | 2026-08-16 |
+| [0005](0005-cloudflare-git-integration.md) | Cloudflare Workers Static Assets に Git 連携で公開 | 2026-08-17 |
+| [0006](0006-treasury-auctions.md) | 国債入札は米財務省 Fiscal Data から取る | 2026-08-18 |
+| [0007](0007-estat-dashboard.md) | 日本の経済指標は統計ダッシュボード API から取る (登録不要) | 2026-08-19 |

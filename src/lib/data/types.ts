@@ -75,6 +75,11 @@ export type IndicatorSource =
   | { adapter: 'fred'; seriesId: string }
   | { adapter: 'factset-pdf'; field: FactsetField }
   | { adapter: 'stockanalysis'; symbol: string; field: 'peRatio' }
+  /**
+   * 統計ダッシュボード (#129)。**`cycle` と `isSeasonal` の両方が必須。**
+   * 片方だけだと同じ月に複数の値が返る (月次/四半期/年度、原数値/季調値が同じ配列に混ざる)。
+   */
+  | { adapter: 'estat'; indicatorCode: string; cycle: '1'; isSeasonal: '1' | '2' }
   | { adapter: 'treasury'; auction: 'ten-year-bid-to-cover' }
   | { adapter: 'finnhub'; symbol: string };
 
@@ -483,6 +488,12 @@ export interface MonthlyPoint {
   housingStarts: number | null;
   /** 新築住宅販売件数。連鎖の下流。 */
   newHomeSales: number | null;
+  /** 日本の新設住宅着工戸数 (総戸数)。**戸・季節調整済み年率換算** (#129)。 */
+  jpHousingStarts: number | null;
+  /** 日本の新設住宅着工戸数 (持家)。**戸・季調値、年率換算ではない** (#129)。 */
+  jpHousingStartsOwned: number | null;
+  /** 日本の新設住宅着工戸数 (貸家)。**戸・季調値、年率換算ではない** (#129)。 */
+  jpHousingStartsRented: number | null;
 
   // --- 水準 ---
   /** 求人件数 (JOLTS、千件)。労働省の公式統計。 */

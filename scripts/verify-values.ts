@@ -20,6 +20,7 @@ import { readObservations } from '../src/lib/data/store';
 import { checkRange } from '../src/lib/validation/checks';
 import { TreasuryClient } from '../src/lib/adapters/treasury';
 import { fetchEtfHistory } from '../src/lib/adapters/stockanalysis';
+import { fetchEstatIndicator } from '../src/lib/adapters/estat-dashboard';
 import type { Observations } from '../src/lib/adapters/fred';
 
 interface Failure {
@@ -100,7 +101,44 @@ async function verifySources(): Promise<void> {
       }
     }
   }
-  console.log(`   FRED / 財務省の系列を照合した`);
+  // 統計ダッシュボード (#129)。取り直して全点を突き合わせる。
+  // **同じ経路だが、混入の検出が主目的**。cycle / isSeasonal の絞り込みが外れると
+  // 同じ月に複数の値が来て件数が変わるため、点数と値の両方を見る。
+  for (const [id, indicator] of Object.entries(indicators)) {
+    if (indicator.source.adapter !== 'estat') continue;
+    const stored = readObservations(id);
+    let live: Observations;
+    try {
+      live = await fetchEstatIndicator(indicator.source);
+    } catch (error) {
+      fail('一次情報との照合', `${id}: 取得に失敗 (${String(error)})`);
+      continue;
+    }
+    const storedDates = Object.keys(stored);
+    if (storedDates.length !== Object.keys(live).length) {
+      fail(
+        '一次情報との照合',
+        `${id}: 点数が違う (保存 ${storedDates.length} / 取り直し ${Object.keys(live).length})`,
+      );
+    }
+    for (const date of storedDates) {
+      const expected = live[date];
+      if (expected === undefined) {
+        fail('一次情報との照合', `${id}: 取り直しに無い月を保存している (${date})`);
+      } else if (differs(stored[date], expected)) {
+        fail('一次情報との照合', `${id} @${date}: 保存 ${stored[date]} / 取り直し ${expected}`);
+      }
+    }
+    // 月次のはずなので、日付は必ず月初になる。年度 (2025FY00) が混ざると崩れる。
+    for (const date of storedDates) {
+      if (!date.endsWith('-01')) {
+        fail('一次情報との照合', `${id}: 月初でない日付を保存している (${date})`);
+      }
+    }
+    await sleep(250);
+  }
+
+  console.log(`   FRED / 財務省 / 統計ダッシュボードの系列を照合した`);
 }
 
 /** 2. 観測に当日より後の日付が無いか (#100 の型)。 */

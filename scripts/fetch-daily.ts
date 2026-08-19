@@ -25,6 +25,7 @@ import {
 import { fetchEtfField, previousTradingDay } from '../src/lib/adapters/stockanalysis';
 import { TreasuryClient } from '../src/lib/adapters/treasury';
 import { FinnhubClient, readFinnhubApiKeyFromEnv } from '../src/lib/adapters/finnhub';
+import { fetchEstatIndicator } from '../src/lib/adapters/estat-dashboard';
 import {
   buildDrawdownView,
   buildEconomyView,
@@ -188,6 +189,20 @@ async function main(): Promise<void> {
       console.log(`  treasury ${id}: ${Object.keys(observations).length} 件`);
     } catch (error) {
       failures.push(`treasury ${id}: ${message(error)}`);
+    }
+  }
+
+  // --- 3d. 統計ダッシュボード (日本の指標) ---
+  // 全期間を毎回取り直す。1983 年からでも 522 点と小さく、差分取得に見合わない。
+  // 月次なので日次バッチでも値はほとんど動かず、#140 により差分が出なければ書かない。
+  for (const [id, indicator] of Object.entries(indicators)) {
+    if (indicator.source.adapter !== 'estat') continue;
+    try {
+      const observations = await fetchEstatIndicator(indicator.source);
+      observationMap[id] = upsertObservations(id, observations, now);
+      console.log(`  estat ${id}: ${Object.keys(observations).length} 件`);
+    } catch (error) {
+      failures.push(`estat ${id}: ${message(error)}`);
     }
   }
 

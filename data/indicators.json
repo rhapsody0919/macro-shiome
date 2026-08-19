@@ -1483,5 +1483,62 @@
       "max": 100000
     },
     "note": "SMIN の終値 (ドル/株)。各国株式 ETF。ドル建てなので**現地通貨ベースの騰落と一致しない**。為替の影響を含む。 最高値からの下落率を出すために取得する (#128)。"
+  },
+  "jp-housing-starts": {
+    "name": "新設住宅着工戸数 (日本)",
+    "source": {
+      "adapter": "estat",
+      "indicatorCode": "0802010103000010001",
+      "cycle": "1",
+      "isSeasonal": "2"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "国土交通省 建築着工統計調査 (統計ダッシュボード)",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": 0,
+      "max": 3000000
+    },
+    "note": "新設住宅着工戸数の総戸数。**季節調整済み年率換算値、単位は戸**。米国の `HOUST` と同じ定義だが、米国は千戸なので**同じ図には載せない** (#129)。出所は国土交通省 建築着工統計調査。"
+  },
+  "jp-housing-starts-owned": {
+    "name": "新設住宅着工戸数 持家 (日本)",
+    "source": {
+      "adapter": "estat",
+      "indicatorCode": "0802010103010010010",
+      "cycle": "1",
+      "isSeasonal": "2"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "国土交通省 建築着工統計調査 (統計ダッシュボード)",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": 0,
+      "max": 3000000
+    },
+    "note": "新設住宅着工戸数のうち持家。**季調値、単位は戸** (年率換算ではない)。総戸数は年率換算なので水準が桁違いになる。同じ図に載せるときは内訳側だけを比べる (#129)。"
+  },
+  "jp-housing-starts-rented": {
+    "name": "新設住宅着工戸数 貸家 (日本)",
+    "source": {
+      "adapter": "estat",
+      "indicatorCode": "0802010103010010020",
+      "cycle": "1",
+      "isSeasonal": "2"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "国土交通省 建築着工統計調査 (統計ダッシュボード)",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": 0,
+      "max": 3000000
+    },
+    "note": "新設住宅着工戸数のうち貸家。**季調値、単位は戸** (年率換算ではない)。持家と貸家では動く理由が違う (持家=家計の余力、貸家=相続税・利回り)。"
   }
 }

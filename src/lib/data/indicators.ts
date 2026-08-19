@@ -99,7 +99,7 @@ function parseSource(raw: unknown, where: string): IndicatorSource {
   }
   const adapter = requireEnum(
     raw.adapter,
-    ['fred', 'factset-pdf', 'stockanalysis', 'treasury', 'finnhub'] as const,
+    ['fred', 'factset-pdf', 'stockanalysis', 'treasury', 'finnhub', 'estat'] as const,
     `${where}.adapter`,
   );
 
@@ -121,6 +121,14 @@ function parseSource(raw: unknown, where: string): IndicatorSource {
       };
     case 'finnhub':
       return { adapter, symbol: requireString(raw.symbol, `${where}.symbol`) };
+    case 'estat':
+      // cycle / isSeasonal は必須。片方でも欠けると同じ月に複数の値が返る (#129)。
+      return {
+        adapter,
+        indicatorCode: requireString(raw.indicatorCode, `${where}.indicatorCode`),
+        cycle: requireEnum(raw.cycle, ['1'] as const, `${where}.cycle`),
+        isSeasonal: requireEnum(raw.isSeasonal, ['1', '2'] as const, `${where}.isSeasonal`),
+      };
   }
 }
 
