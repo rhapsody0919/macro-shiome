@@ -313,6 +313,7 @@ export type MarketDailyPoint = Pick<
   | 'usdjpy'
   | 'wti'
   | 'dollarIndex'
+  | 'gold'
   | 'nominalRate'
   | 'breakeven'
   | 'realRate'
