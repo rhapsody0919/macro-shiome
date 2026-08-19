@@ -14,7 +14,6 @@ import type {
   CorrelationSummary,
   EconomyView,
   MacroPoint,
-  MarketDailyPoint,
   MonthlyCoverage,
   MonthlyPoint,
   RevisionPoint,
@@ -39,6 +38,7 @@ import {
   yieldSpread,
 } from './derived';
 import { fridaysBetween, valueAsOf, valueOn, weekdaysBetween } from './weeks';
+import { DAILY_SERIES, type DailyKey, type DailyPoint, type DailyViewName } from '../data/daily-series';
 import { latestMonthWithValue, monthsBetween, valueForMonth, yearAgo } from './months';
 
 /** 指標 ID → 観測値。存在しない指標は空として扱う。 */
@@ -768,33 +768,50 @@ const MONTHLY_INDICATORS = [
  * **週内の動きがそもそも図に出ていなかった**。価格系列は FRED から日次で
  * 取得済み (日経平均 19,181 点など) なので、取得を変えずに密度を上げられる。
  *
- * **マクロビューと分ける理由**は `MarketDailyPoint` の注記のとおり。
+ * **マクロビューと分ける理由**: あちらは月次・週次の系列も抱えており、日次グリッドに
+ * 載せると値が動かない日の点が増えるだけで情報が増えない。さらに経済ページの
+ * サマリーも読むため、そちらまで巨大になる (実測で 425 KB → 1,348 KB)。
+ *
+ * **さらにページ別に分けてある** (#168)。系列の割り当ては `daily-series.ts`。
  */
-export function buildMarketDailyView(options: BuildViewOptions): MarketDailyPoint[] {
+export function buildDailyView(
+  options: BuildViewOptions,
+  view: DailyViewName,
+): DailyPoint[] {
   const { observations } = options;
   const days = weekdaysBetween(options.start, options.today.toISOString().slice(0, 10));
+  const wanted = new Set<string>(DAILY_SERIES[view]);
 
   return days.map((date) => {
-    const nominalRate = valueAsOf(series(observations, 'dgs10'), date);
-    const breakeven = valueAsOf(series(observations, 't10yie'), date);
-    return {
-      date,
-      nikkei225: valueAsOf(series(observations, 'nikkei225'), date),
-      vix: valueAsOf(series(observations, 'vix'), date),
-      usdjpy: valueAsOf(series(observations, 'usdjpy'), date),
-      wti: valueAsOf(series(observations, 'wti'), date),
-      dollarIndex: valueAsOf(series(observations, 'dollar-index'), date),
+    const at = (id: string) => valueAsOf(series(observations, id), date);
+    const nominalRate = at('dgs10');
+    const breakeven = at('t10yie');
+
+    // 系列ごとの取り出し方。**ページ別のビューでも同じ定義を使う**ため 1 か所に置く。
+    const all: Record<DailyKey, number | null> = {
+      nikkei225: at('nikkei225'),
+      vix: at('vix'),
+      usdjpy: at('usdjpy'),
+      wti: at('wti'),
+      dollarIndex: at('dollar-index'),
       // 履歴ページから 50 営業日ぶんを遡って取り込んである (#135)。
-      gold: valueAsOf(series(observations, 'etf-gld'), date),
+      gold: at('etf-gld'),
       nominalRate,
       breakeven,
       realRate: realRate(nominalRate, breakeven),
-      fedFundsRate: valueAsOf(series(observations, 'fed-funds-rate'), date),
+      fedFundsRate: at('fed-funds-rate'),
       // 日次で取れているのに週次グリッドに載せていた 4 系列 (#166)。
-      termSpread: valueAsOf(series(observations, 't10y2y'), date),
-      hySpread: valueAsOf(series(observations, 'hy-spread'), date),
-      igSpread: valueAsOf(series(observations, 'ig-spread'), date),
-      newJobPostings: valueAsOf(series(observations, 'new-job-postings'), date),
+      termSpread: at('t10y2y'),
+      hySpread: at('hy-spread'),
+      igSpread: at('ig-spread'),
+      newJobPostings: at('new-job-postings'),
     };
+
+    const point: DailyPoint = { date };
+    for (const key of Object.keys(all) as DailyKey[]) {
+      if (wanted.has(key)) point[key] = all[key];
+    }
+    return point;
   });
 }
+

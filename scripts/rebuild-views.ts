@@ -10,7 +10,7 @@ import {
   buildDrawdownView,
   buildEconomyView,
   buildMacroView,
-  buildMarketDailyView,
+  buildDailyView,
   buildRevisionSeries,
   buildValuationView,
   type ObservationMap,
@@ -19,6 +19,7 @@ import { appConfig, indicators } from '../src/lib/data/indicators';
 import { DRAWDOWN_ASSETS } from '../src/lib/data/drawdown-assets';
 import drawdownSeed from '../data/seed/stock-bot-drawdown.json';
 import { readObservations, writeView } from '../src/lib/data/store';
+import { DAILY_VIEWS } from '../src/lib/data/daily-series';
 
 const VIEW_START_YEARS = 10;
 
@@ -36,7 +37,7 @@ function main(): void {
   writeView('valuation', buildValuationView(options));
   writeView('revisions', buildRevisionSeries(options));
   writeView('macro', buildMacroView(options));
-  writeView('market-daily', buildMarketDailyView(options));
+  for (const view of DAILY_VIEWS) writeView(`${view}-daily`, buildDailyView(options, view));
   writeView('economy', buildEconomyView(options));
   writeView(
     'drawdown',

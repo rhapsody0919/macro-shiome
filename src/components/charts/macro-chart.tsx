@@ -47,7 +47,7 @@ export function MacroChart({
   notes,
 }: {
   /**
-   * 週次グリッド (`MacroPoint[]`) と日次グリッド (`MarketDailyPoint[]`) の
+   * 週次グリッド (`MacroPoint[]`) と日次グリッド (`DailyPoint[]`) の
    * どちらも受ける (#137)。日次ビューは `MacroPoint` の一部だけを持つ。
    */
   points: ReadonlyArray<Partial<MacroPoint> & { date: string }>;

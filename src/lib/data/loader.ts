@@ -11,15 +11,17 @@ import valuationJson from '../../../data/views/valuation.json';
 import revisionsJson from '../../../data/views/revisions.json';
 import macroJson from '../../../data/views/macro.json';
 import marketDailyJson from '../../../data/views/market-daily.json';
+import economyDailyJson from '../../../data/views/economy-daily.json';
+import japanDailyJson from '../../../data/views/japan-daily.json';
 import economyJson from '../../../data/views/economy.json';
 import drawdownJson from '../../../data/views/drawdown.json';
+import type { DailyPoint } from './daily-series';
 import type {
   BatchStatus,
   DrawdownView,
   EconomyView,
   GapReason,
   MacroPoint,
-  MarketDailyPoint,
   RevisionPoint,
   ValuationView,
 } from './types';
@@ -30,8 +32,15 @@ export const status = statusJson as BatchStatus;
 export const valuationView = valuationJson as unknown as ValuationView;
 export const revisions = revisionsJson as unknown as RevisionPoint[];
 export const macro = macroJson as unknown as MacroPoint[];
-/** 価格系列の日次グリッド (#137)。マクロビューと分ける理由は `MarketDailyPoint` の注記。 */
-export const marketDaily = marketDailyJson as unknown as MarketDailyPoint[];
+/**
+ * 日次グリッドの系列 (#137)。**ページ別に分けてある** (#168)。
+ *
+ * ビュー JSON は import するとページに丸ごとインライン展開されるため、1 本にまとめると
+ * 使わない系列まで運ぶ。どの系列がどのビューに属するかは `daily-series.ts` が唯一の定義。
+ */
+export const marketDaily = marketDailyJson as unknown as DailyPoint[];
+export const economyDaily = economyDailyJson as unknown as DailyPoint[];
+export const japanDaily = japanDailyJson as unknown as DailyPoint[];
 export const economy = economyJson as unknown as EconomyView;
 export const drawdown = drawdownJson as unknown as DrawdownView;
 

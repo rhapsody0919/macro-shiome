@@ -27,11 +27,12 @@ import { TreasuryClient } from '../src/lib/adapters/treasury';
 import { FinnhubClient, readFinnhubApiKeyFromEnv } from '../src/lib/adapters/finnhub';
 import { fetchEstatIndicator } from '../src/lib/adapters/estat-dashboard';
 import { EstatClient, readEstatAppIdFromEnv } from '../src/lib/adapters/estat-api';
+import { DAILY_VIEWS } from '../src/lib/data/daily-series';
 import {
   buildDrawdownView,
   buildEconomyView,
   buildMacroView,
-  buildMarketDailyView,
+  buildDailyView,
   buildRevisionSeries,
   buildValuationView,
   type ObservationMap,
@@ -277,10 +278,9 @@ async function main(): Promise<void> {
   writeView('revisions', buildRevisionSeries({ observations, config: appConfig, start, today: now }));
   writeView('macro', buildMacroView({ observations, config: appConfig, start, today: now }));
   // 価格系列は日次グリッド (#137)。週次グリッドは金曜の値だけを拾うため週内の動きが消える。
-  writeView(
-    'market-daily',
-    buildMarketDailyView({ observations, config: appConfig, start, today: now }),
-  );
+  for (const view of DAILY_VIEWS) {
+    writeView(`${view}-daily`, buildDailyView({ observations, config: appConfig, start, today: now }, view));
+  }
   // 月次指標は週次グリッドに載せない (#64)。別ビューとして持つ。
   writeView('economy', buildEconomyView({ observations, config: appConfig, start, today: now }));
   writeView(
