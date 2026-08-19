@@ -647,6 +647,10 @@ export function buildEconomyView(options: BuildViewOptions): EconomyView {
     buildingPermits: level('building-permits', month),
     housingStarts: level('housing-starts', month),
     newHomeSales: level('new-home-sales', month),
+    // 実質で出す。名目だと消費が増えたのか値上がりしただけかを判別できない (#170)。
+    jpConsumption: level('jp-consumption', month),
+    jpDisposableIncome: level('jp-disposable-income', month),
+    jpPropensityToConsume: level('jp-propensity-to-consume', month),
     // 前年同月比にせず水準で出す (#164)。公表の前年同月比系列が無く、
     // 指数が小数 1 桁なので導出すると丸め誤差が出る。
     jpIndustrialProduction: level('jp-industrial-production', month),
@@ -731,6 +735,9 @@ const MONTHLY_INDICATORS = [
   'building-permits',
   'housing-starts',
   'new-home-sales',
+  'jp-consumption',
+  'jp-disposable-income',
+  'jp-propensity-to-consume',
   'jp-industrial-production',
   'jp-cpi-core',
   'jp-cpi',

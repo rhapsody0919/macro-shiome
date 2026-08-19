@@ -216,6 +216,71 @@ const CHARTS: QuestionChartDef<JapanQuestionId>[] = [
   {
     question: 'jp-labor',
     frequency: 'monthly',
+    primaryIndicator: 'jp-disposable-income',
+    title: '家計の余力 (日本)',
+    subtitle: '実質可処分所得と実質消費支出の前年同月比',
+    series: [
+      {
+        key: 'jpDisposableIncome',
+        label: '実質可処分所得',
+        color: COLORS.jpDisposableIncome,
+        width: 2.4,
+        indicatorId: 'jp-disposable-income',
+      },
+      {
+        key: 'jpConsumption',
+        label: '実質消費支出',
+        color: COLORS.jpConsumption,
+        indicatorId: 'jp-consumption',
+      },
+    ],
+    notes: [
+      <span key="gap">
+        <strong>2 本の差が「所得を使っているか」を示す。</strong>
+        所得が増えているのに消費が減っていれば買い控え、所得が減って消費も減っていれば
+        余力そのものが失われている。片方だけでは区別できない。
+      </span>,
+      <span key="real">
+        <strong>実質で出している。</strong>
+        名目だと、消費が増えたのか値上がりしただけなのか判別できない。
+        上の消費者物価と合わせて読む。
+      </span>,
+      <span key="household">
+        可処分所得は<strong>勤労者世帯</strong>、消費支出は<strong>二人以上の世帯</strong>で
+        対象が違う。可処分所得は給与所得者にしか定義できないため。水準ではなく方向で読む。
+      </span>,
+    ],
+  },
+  {
+    question: 'jp-labor',
+    frequency: 'monthly',
+    kind: 'number',
+    zeroLine: false,
+    primaryIndicator: 'jp-propensity-to-consume',
+    title: '平均消費性向 (日本)',
+    subtitle: '可処分所得のうち消費に回した割合 (季節調整済み)',
+    series: [
+      {
+        key: 'jpPropensityToConsume',
+        label: '平均消費性向',
+        color: COLORS.jpPropensityToConsume,
+        indicatorId: 'jp-propensity-to-consume',
+      },
+    ],
+    notes: [
+      <span key="meaning">
+        <strong>下がれば貯蓄に回している。</strong>
+        所得が増えても消費性向が下がっていれば、将来不安から溜め込んでいる可能性がある。
+      </span>,
+      <span key="seasonal">
+        <strong>季節調整済み。</strong>
+        原数値は賞与の影響で桁が変わる (2026年6月は原数値 38.3 に対し季調値 59.9)。
+      </span>,
+    ],
+  },
+  {
+    question: 'jp-labor',
+    frequency: 'monthly',
     primaryIndicator: 'jp-real-wage',
     title: '実質賃金指数',
     subtitle: '現金給与総額 (季節調整済み)',
@@ -234,9 +299,9 @@ const CHARTS: QuestionChartDef<JapanQuestionId>[] = [
         (2026-02 が 82.1 に対し 2026-06 は 144.1)。季調値なら 97.0 と 98.5 で連続して読める。
       </span>,
       <span key="substitute">
-        <strong>家計調査の月次消費支出は代わりに使えない。</strong>
-        家計消費指数は 2017-12 で提供が止まっている。家計の余力はこの実質賃金で見ているが、
-        <strong>消費そのものではない</strong>点に注意する。
+        <strong>賃金であって消費ではない。</strong>
+        消費と所得は上の「家計の余力」で見る。こちらは<strong>働いて得た賃金</strong>の
+        購買力で、賞与や残業の増減が先に出る。
       </span>,
     ],
   },

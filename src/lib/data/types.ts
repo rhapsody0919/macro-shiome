@@ -469,6 +469,12 @@ export interface MonthlyPoint {
   housingStarts: number | null;
   /** 新築住宅販売件数。連鎖の下流。 */
   newHomeSales: number | null;
+  /** 日本の実質消費支出の前年同月比 (%)。二人以上の世帯 (#170)。 */
+  jpConsumption: number | null;
+  /** 日本の実質可処分所得の前年同月比 (%)。勤労者世帯 (#170)。 */
+  jpDisposableIncome: number | null;
+  /** 日本の平均消費性向 (%)。**季節調整済み** (#170)。 */
+  jpPropensityToConsume: number | null;
   /** 日本の鉱工業生産指数。**2020年基準・季節調整済みの水準** (#164)。 */
   jpIndustrialProduction: number | null;
   /** 日本の CPI コア (生鮮食品を除く総合) の前年同月比 (%)。**2025年基準** (#162)。 */

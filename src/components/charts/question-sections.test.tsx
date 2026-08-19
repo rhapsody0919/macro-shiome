@@ -107,7 +107,13 @@ describe('日本の雇用と所得 (#156)', () => {
     const section = document.getElementById('q-jp-labor');
     expect(section).not.toBeNull();
     const titles = Array.from(section?.querySelectorAll('h3') ?? []).map((h) => h.textContent);
-    expect(titles).toEqual(['求人倍率', '実質賃金指数']);
+    // #170 で家計の余力と平均消費性向が加わった。求人 (雇用) → 所得 → 消費の順。
+    expect(titles).toEqual([
+      '求人倍率',
+      '家計の余力 (日本)',
+      '平均消費性向 (日本)',
+      '実質賃金指数',
+    ]);
   });
 
   it('先行する新規求人倍率を先に置く', () => {
@@ -116,6 +122,30 @@ describe('日本の雇用と所得 (#156)', () => {
     const section = document.getElementById('q-jp-labor');
     const labels = section?.textContent ?? '';
     expect(labels.indexOf('新規求人倍率')).toBeLessThan(labels.indexOf('有効求人倍率'));
+  });
+});
+
+describe('日本の家計の余力 (#170)', () => {
+  it('可処分所得と消費支出を 1 枚に重ねる', () => {
+    // 同じ単位 (前年同月比 %)。2 本の差が「所得を使っているか」を示すので、
+    // 分けると片方だけ見て買い控えと所得減を取り違える。
+    render(<JapanPage />);
+    expect(screen.getByRole('heading', { name: '家計の余力 (日本)' })).toBeInTheDocument();
+    expect(screen.getByText('実質可処分所得')).toBeInTheDocument();
+    expect(screen.getByText('実質消費支出')).toBeInTheDocument();
+  });
+
+  it('平均消費性向は単位が違うので別チャートにする', () => {
+    render(<JapanPage />);
+    expect(screen.getByRole('heading', { name: '平均消費性向 (日本)' })).toBeInTheDocument();
+  });
+
+  it('実質賃金の注記を実態に合わせる', () => {
+    // #156 では「家計調査は使えない」と書いていたが、本来の指標が入ったので
+    // 実質賃金は「賃金であって消費ではない」という説明に変えた。
+    render(<JapanPage />);
+    expect(screen.queryByText(/家計調査の月次消費支出は代わりに使えない/)).toBeNull();
+    expect(screen.getByText(/賃金であって消費ではない/)).toBeInTheDocument();
   });
 });
 
