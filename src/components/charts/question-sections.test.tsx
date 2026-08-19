@@ -119,6 +119,24 @@ describe('日本の雇用と所得 (#156)', () => {
   });
 });
 
+describe('街角景気 (#160)', () => {
+  it('景気動向指数と同じ図に載せない', () => {
+    // 一方は 2020年平均 = 100 の合成指数、もう一方は 50 が中立の DI。
+    // 同じ図に載せると水準の違いが動きの違いに見える (#116〜#118 と同じ型)。
+    render(<JapanPage />);
+    const section = document.getElementById('q-jp-cycle');
+    const titles = Array.from(section?.querySelectorAll('h3') ?? []).map((h) => h.textContent);
+    expect(titles).toHaveLength(2);
+  });
+
+  it('現状判断と先行き判断を 1 枚に重ねる', () => {
+    // 同じ DI で単位が揃っており、2 本の差が「先を見ているか」を示す。
+    render(<JapanPage />);
+    expect(screen.getByText('現状判断')).toBeInTheDocument();
+    expect(screen.getByText('先行き判断')).toBeInTheDocument();
+  });
+});
+
 describe('日本の交易条件 (#155)', () => {
   it('輸出物価と輸入物価を 1 枚に重ねる', () => {
     // 同じ基準・同じ円ベースなので重ねられる。2 本の差が交易条件そのもの。
@@ -146,7 +164,8 @@ describe('日本の景気動向指数 (#154)', () => {
     const section = document.getElementById('q-jp-cycle');
     expect(section).not.toBeNull();
     const titles = Array.from(section?.querySelectorAll('h3') ?? []).map((h) => h.textContent);
-    expect(titles).toEqual(['景気動向指数']);
+    // 街角景気は基準が違う (DI は 50 が中立) ので別チャートにする (#160)。
+    expect(titles).toEqual(['景気動向指数', '街角景気 (景気ウォッチャー調査)']);
   });
 
   it('米国の景気指標と同じ図に載せない', () => {

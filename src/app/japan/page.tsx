@@ -63,6 +63,50 @@ const CHARTS: QuestionChartDef<JapanQuestionId>[] = [
     ],
   },
   {
+    question: 'jp-cycle',
+    frequency: 'monthly',
+    kind: 'number',
+    zeroLine: false,
+    baseline: { value: 50, label: '50 = 横ばい' },
+    primaryIndicator: 'jp-watcher-current',
+    title: '街角景気 (景気ウォッチャー調査)',
+    subtitle: '現状判断DIと先行き判断DI (季節調整済み)',
+    series: [
+      {
+        key: 'jpWatcherCurrent',
+        label: '現状判断',
+        color: COLORS.jpWatcherCurrent,
+        indicatorId: 'jp-watcher-current',
+      },
+      {
+        key: 'jpWatcherOutlook',
+        label: '先行き判断',
+        color: COLORS.jpWatcherOutlook,
+        indicatorId: 'jp-watcher-outlook',
+      },
+    ],
+    notes: [
+      <span key="who">
+        <strong>取引の現場にいる人の実感。</strong>
+        小売・飲食・タクシーなど、景気の動きを直接見る立場の人が答える。
+        上の景気動向指数は生産・販売・雇用といった<strong>統計の合成</strong>なので、
+        情報源が別で重複しない。
+      </span>,
+      <span key="outlook">
+        <strong>先行き判断はこのページで唯一の「先を見る」系列。</strong>
+        景気動向指数の先行指数もハードデータの合成なので、性質が違う。
+      </span>,
+      <span key="line">
+        <strong>50 が横ばい</strong>。DI の定義から決まる線なので引いている。
+        「危険水準」のような恣意的な閾値は引いていない。
+      </span>,
+      <span key="scale">
+        上の景気動向指数とは<strong>基準が違う</strong> (あちらは 2020年平均 = 100)。
+        同じ図に載せると水準の違いが動きの違いに見えるため分けている。
+      </span>,
+    ],
+  },
+  {
     question: 'jp-labor',
     frequency: 'monthly',
     primaryIndicator: 'jp-new-job-ratio',

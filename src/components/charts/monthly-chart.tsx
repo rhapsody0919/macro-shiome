@@ -50,6 +50,7 @@ export function MonthlyChart({
   headingLevel = 3,
   badges,
   zeroLine = true,
+  baseline,
   notes,
   height = 'h-72 sm:h-96',
 }: {
@@ -65,6 +66,12 @@ export function MonthlyChart({
   badges?: ReactNode;
   /** ゼロ線を引くか。水準の指標 (貯蓄率・信頼感) では不要。 */
   zeroLine?: boolean;
+  /**
+   * 基準線 (#160)。**データの定義から決まる線だけ**を引く。
+   * DI の 50 のように中立点が定義で決まっているものに使い、
+   * 「危険水準」のような恣意的な閾値には使わない (#87 と同じ扱い)。
+   */
+  baseline?: { value: number; label: string };
   notes: ReactNode[];
   /** 図の高さ。モバイルは低くして縦の圧迫を避ける。 */
   height?: string;
@@ -134,6 +141,15 @@ export function MonthlyChart({
           <Legend />
           {/* ゼロ線。前年同月比では増減の境目になる。 */}
           {zeroLine && <ReferenceLine y={0} stroke="currentColor" strokeOpacity={0.4} />}
+          {baseline !== undefined && (
+            <ReferenceLine
+              y={baseline.value}
+              stroke="currentColor"
+              strokeOpacity={0.45}
+              strokeDasharray="6 3"
+              label={{ value: baseline.label, position: 'insideTopLeft', fontSize: 10 }}
+            />
+          )}
           {series.map((s) => (
             <Line
               key={s.key}

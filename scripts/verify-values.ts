@@ -21,6 +21,7 @@ import { checkRange } from '../src/lib/validation/checks';
 import { TreasuryClient } from '../src/lib/adapters/treasury';
 import { fetchEtfHistory } from '../src/lib/adapters/stockanalysis';
 import { fetchEstatIndicator } from '../src/lib/adapters/estat-dashboard';
+import { EstatClient, readEstatAppIdFromEnv } from '../src/lib/adapters/estat-api';
 import type { Observations } from '../src/lib/adapters/fred';
 
 interface Failure {
@@ -138,7 +139,52 @@ async function verifySources(): Promise<void> {
     await sleep(250);
   }
 
-  console.log(`   FRED / 財務省 / 統計ダッシュボードの系列を照合した`);
+  // e-Stat 統計 API (#160)。**キーを使わない経路が無い**ため同じ実装を通す。
+  // 狙いは値の再現ではなく**絞り込みの崩れの検出**で、軸が増えれば
+  // `parseStatsData` が落ちる。点数も比べる (#129 と同じ理由)。
+  {
+    const ids = Object.entries(indicators).filter(
+      ([, indicator]) => indicator.source.adapter === 'estat-api',
+    );
+    if (ids.length > 0) {
+      let client: EstatClient | null = null;
+      try {
+        client = new EstatClient({ appId: readEstatAppIdFromEnv() });
+      } catch (error) {
+        // 飛ばして緑にしない。照合していないことを失敗として残す (#102 の教訓)。
+        fail('一次情報との照合', `e-Stat 統計 API を照合できない (${String(error)})`);
+      }
+      for (const [id, indicator] of ids) {
+        if (client === null) break;
+        if (indicator.source.adapter !== 'estat-api') continue;
+        const stored = readObservations(id);
+        let live: Observations;
+        try {
+          live = await client.fetchTable(indicator.source);
+        } catch (error) {
+          fail('一次情報との照合', `${id}: 取得に失敗 (${String(error)})`);
+          continue;
+        }
+        if (Object.keys(stored).length !== Object.keys(live).length) {
+          fail(
+            '一次情報との照合',
+            `${id}: 点数が違う (保存 ${Object.keys(stored).length} / 取り直し ${Object.keys(live).length})`,
+          );
+        }
+        for (const [date, value] of Object.entries(stored)) {
+          const expected = live[date];
+          if (expected === undefined) {
+            fail('一次情報との照合', `${id}: 取り直しに無い月を保存している (${date})`);
+          } else if (differs(value, expected)) {
+            fail('一次情報との照合', `${id} @${date}: 保存 ${value} / 取り直し ${expected}`);
+          }
+        }
+        await sleep(250);
+      }
+    }
+  }
+
+  console.log(`   FRED / 財務省 / 統計ダッシュボード / e-Stat の系列を照合した`);
 }
 
 /** 2. 観測に当日より後の日付が無いか (#100 の型)。 */

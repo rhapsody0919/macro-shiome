@@ -80,6 +80,11 @@ export type IndicatorSource =
    * 片方だけだと同じ月に複数の値が返る (月次/四半期/年度、原数値/季調値が同じ配列に混ざる)。
    */
   | { adapter: 'estat'; indicatorCode: string; cycle: '1'; isSeasonal: '1' | '2' }
+  /**
+   * e-Stat 統計 API (#160)。**appId が必要**で、統計ダッシュボードとは別経路。
+   * 1 つの表に多数の系列が入るため、`tab` / `cat01` / `cat02` をすべて固定する。
+   */
+  | { adapter: 'estat-api'; statsDataId: string; tab: string; cat01: string; cat02: string }
   | { adapter: 'treasury'; auction: 'ten-year-bid-to-cover' }
   | { adapter: 'finnhub'; symbol: string };
 
@@ -488,6 +493,10 @@ export interface MonthlyPoint {
   housingStarts: number | null;
   /** 新築住宅販売件数。連鎖の下流。 */
   newHomeSales: number | null;
+  /** 街角景気の現状判断DI。**季節調整済み、50 が中立** (#160)。 */
+  jpWatcherCurrent: number | null;
+  /** 街角景気の先行き判断DI。**季節調整済み、50 が中立** (#160)。 */
+  jpWatcherOutlook: number | null;
   /** 日本の実質賃金指数 (現金給与総額)。**季節調整済み** (#156)。 */
   jpRealWage: number | null;
   /** 日本の新規求人倍率 (倍)。**季節調整済み**。有効求人倍率に先行する (#156)。 */

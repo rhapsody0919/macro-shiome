@@ -642,6 +642,9 @@ export function buildEconomyView(options: BuildViewOptions): EconomyView {
     buildingPermits: level('building-permits', month),
     housingStarts: level('housing-starts', month),
     newHomeSales: level('new-home-sales', month),
+    // 街角景気は DI (50 が中立)。景気動向指数とは基準が違うので同じ図に載せない (#160)。
+    jpWatcherCurrent: level('jp-watcher-current', month),
+    jpWatcherOutlook: level('jp-watcher-outlook', month),
     // 賞与月の跳ねを避けるため季調値を採っている (#156)。
     jpRealWage: level('jp-real-wage', month),
     // 求人倍率は同じ単位 (倍) で、新規が先行・有効が一致という関係が読める。
@@ -715,6 +718,8 @@ const MONTHLY_INDICATORS = [
   'building-permits',
   'housing-starts',
   'new-home-sales',
+  'jp-watcher-current',
+  'jp-watcher-outlook',
   'jp-real-wage',
   'jp-new-job-ratio',
   'jp-job-ratio',
