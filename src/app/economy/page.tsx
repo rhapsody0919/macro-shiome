@@ -21,7 +21,7 @@ export const metadata = {
 const CHARTS: QuestionChartDef<EconomyQuestionId>[] = [
   {
     question: 'slowdown',
-    frequency: 'weekly',
+    frequency: 'daily',
     primaryIndicator: 'new-job-postings',
     title: '新規求人 (Indeed)',
     subtitle: '新規に掲載された求人。2020年2月1日 = 100',
@@ -43,7 +43,7 @@ const CHARTS: QuestionChartDef<EconomyQuestionId>[] = [
         こちらは新規に掲載された分だけを数えるため、募集が続いている求人は含まない。
         公式統計の求人件数 (JOLTS) は<strong>次の問い</strong>に置いている。
       </span>,
-      <span key="copyright">著作権は Indeed にある。日次を金曜時点に揃えている。</span>,
+      <span key="copyright">著作権は Indeed にある。日次値をそのまま並べている。</span>,
     ],
   },
   {

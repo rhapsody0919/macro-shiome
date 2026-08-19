@@ -127,7 +127,7 @@ export function QuestionSections<K extends string>({
                     drawdown.assets.filter((asset) => asset.group === chart.drawdownGroup),
                   )}
                   notes={chart.notes}
-                  badges={<Badges frequency="weekly" cyclePosition={cycleOf(chart)} />}
+                  badges={<Badges frequency="daily" cyclePosition={cycleOf(chart)} />}
                 />
               ) : chart.frequency === 'daily' ? (
                 <MacroChart

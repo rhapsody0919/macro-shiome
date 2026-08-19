@@ -328,6 +328,10 @@ export type MarketDailyPoint = Pick<
   | 'breakeven'
   | 'realRate'
   | 'fedFundsRate'
+  | 'termSpread'
+  | 'hySpread'
+  | 'igSpread'
+  | 'newJobPostings'
 >;
 
 export interface MacroPoint {

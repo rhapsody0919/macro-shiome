@@ -523,7 +523,17 @@ export function buildDrawdownView(
   },
 ): DrawdownView {
   const { observations, seed, assets: definitions, names } = options;
-  const weeks = fridaysBetween(options.start, options.today.toISOString().slice(0, 10));
+
+  // **日次グリッドで、起点は引き継いだ履歴の開始日** (#166)。
+  //
+  // 週次グリッド (2016 起点) では 524 点のうち非 null が 89 点しかなく、
+  // データが存在しない 2016〜2024 の 435 点を運んでいた。日次にして起点を
+  // seed に合わせると **450 点・約 1,276 KB** で、週次の 1,486 KB より小さく
+  // 解像度は 5 倍になる。観測は毎日入る (#136) ので週次では週内の動きが消えていた。
+  const seedDates = Object.values(seed.assets).flatMap((a) => Object.keys(a.drawdown));
+  const seedStart = seedDates.length === 0 ? null : seedDates.sort()[0];
+  const start = seedStart !== null && seedStart > options.start ? seedStart : options.start;
+  const weeks = weekdaysBetween(start, options.today.toISOString().slice(0, 10));
 
   const excluded: Array<{ id: string; reason: string }> = [];
   const assets: DrawdownAsset[] = [];
@@ -588,12 +598,7 @@ export function buildDrawdownView(
     });
   }
 
-  const seedDates = Object.values(seed.assets).flatMap((a) => Object.keys(a.drawdown));
-  return {
-    seedStart: seedDates.length === 0 ? null : seedDates.sort()[0],
-    excluded,
-    assets,
-  };
+  return { seedStart, excluded, assets };
 }
 
 /**
@@ -785,6 +790,11 @@ export function buildMarketDailyView(options: BuildViewOptions): MarketDailyPoin
       breakeven,
       realRate: realRate(nominalRate, breakeven),
       fedFundsRate: valueAsOf(series(observations, 'fed-funds-rate'), date),
+      // 日次で取れているのに週次グリッドに載せていた 4 系列 (#166)。
+      termSpread: valueAsOf(series(observations, 't10y2y'), date),
+      hySpread: valueAsOf(series(observations, 'hy-spread'), date),
+      igSpread: valueAsOf(series(observations, 'ig-spread'), date),
+      newJobPostings: valueAsOf(series(observations, 'new-job-postings'), date),
     };
   });
 }
