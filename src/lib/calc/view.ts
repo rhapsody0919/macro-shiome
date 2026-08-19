@@ -447,8 +447,10 @@ export function buildMacroView(options: BuildViewOptions): MacroPoint[] {
       dollarIndex: valueAsOf(series(observations, 'dollar-index'), date),
       // 日本の休場日は欠測になるため、直近の営業日まで遡る。
       nikkei225: valueAsOf(series(observations, 'nikkei225'), date),
-      // 週次で 1 点しか取れない (現在値のスクレイピング)。遡り幅は他と揃える。
-      gold: valueAsOf(series(observations, 'gold-etf'), date),
+      // Finnhub の当日終値 (#133)。週次で 1 点しか取れないので遡り幅は他と揃える。
+      // stockanalysis の `Previous Close` は当日ではなく 1 つ前の取引日を指しており、
+      // 保存キーが 1 取引日ずれていたため切り替えた。
+      gold: valueAsOf(series(observations, 'etf-gld'), date),
       newJobPostings: valueAsOf(series(observations, 'new-job-postings'), date),
     };
   });

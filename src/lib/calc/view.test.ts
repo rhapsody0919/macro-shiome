@@ -822,7 +822,7 @@ describe('日経平均 (#118)', () => {
 describe('ゴールド (#119)', () => {
   it('週次グリッドに載せる', () => {
     const view = buildMacroView({
-      observations: { 'gold-etf': { '2026-08-14': 401.48 } },
+      observations: { 'etf-gld': { '2026-08-14': 401.48 } },
       config,
       start: '2026-08-01',
       today: new Date(Date.UTC(2026, 7, 15)),

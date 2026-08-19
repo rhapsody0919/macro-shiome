@@ -74,7 +74,7 @@ export type FactsetField =
 export type IndicatorSource =
   | { adapter: 'fred'; seriesId: string }
   | { adapter: 'factset-pdf'; field: FactsetField }
-  | { adapter: 'stockanalysis'; symbol: string; field: 'peRatio' | 'previousClose' }
+  | { adapter: 'stockanalysis'; symbol: string; field: 'peRatio' }
   | { adapter: 'treasury'; auction: 'ten-year-bid-to-cover' }
   | { adapter: 'finnhub'; symbol: string };
 

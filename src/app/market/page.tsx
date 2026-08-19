@@ -413,7 +413,7 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
   {
     question: 'risk',
     frequency: 'weekly',
-    primaryIndicator: 'gold-etf',
+    primaryIndicator: 'etf-gld',
     title: 'ゴールド (GLD)',
     subtitle: '金 ETF の終値 (ドル/株)。現物価格ではない',
     series: [{ key: 'gold', label: 'GLD', color: COLORS.gold }],
@@ -432,7 +432,7 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
         水準そのものを金価格として読まないこと。
       </span>,
       <span key="source">
-        出所は stockanalysis.com。<strong>週 1 回の現在値のみ</strong>で、
+        出所は Finnhub。<strong>週 1 回の終値のみ</strong>で、
         過去に遡って取り直せない (NASDAQ-100 の実績 PER と同じ制約)。
       </span>,
     ],

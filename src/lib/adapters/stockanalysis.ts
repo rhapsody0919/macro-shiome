@@ -12,22 +12,30 @@
 const BASE_URL = 'https://stockanalysis.com/etf';
 
 /** 取得できるフィールド。増える場合はここに足す。 */
-export type StockAnalysisField = 'peRatio' | 'previousClose';
+export type StockAnalysisField = 'peRatio';
 
-/** 表内のラベル。HTML の構造ではなくラベル名に依存させる方が構造変更に強い。 */
+/**
+ * 表内のラベル。HTML の構造ではなくラベル名に依存させる方が構造変更に強い。
+ *
+ * **`Previous Close` は使わない** (#133)。ページは当日の終値を「価格」として表示し、
+ * `Previous Close` は**その 1 つ前の取引日**を指す。金 22:00 ET に走る週次バッチで
+ * 取ると木曜の終値になるため、金曜のキーで保存すると 1 取引日ずれる。
+ * ゴールドは Finnhub の当日終値に切り替えた。
+ */
 const FIELD_LABELS: Record<StockAnalysisField, string> = {
   peRatio: 'PE Ratio',
-  // 週次バッチは土曜 (UTC) に走るので、直前の終値 = 金曜終値になる (#119)。
-  previousClose: 'Previous Close',
 };
 
 /**
  * 値が指す日 = **直近の取引日** を返す ("YYYY-MM-DD"、#125)。
  *
  * スクレイピングで取れるのは現在値だけなので、保存するキーは「いつの値か」で決める。
- * `Previous Close` はその名のとおり直前の取引セッションの終値で、PER も同じセッションの
- * 終値を元に出る。週次バッチは **UTC 土曜 02:00** (= 米国東部の金曜 22 時、市場は閉場後) に
- * 走るため、直近の取引日は金曜になる。
+ * PER はページが「価格」として出す**当日の終値**から算出されるため、週次バッチが走る
+ * **UTC 土曜 02:00** (= 米国東部の金曜 22 時、市場は閉場後) の時点では金曜の値になる。
+ *
+ * **`Previous Close` はこの前提が成り立たない** (#133)。同じページでも当日終値ではなく
+ * 1 つ前の取引日を指すため、同じキーで保存すると 1 日ずれる。フィールドごとに
+ * 「値が指す日」が違いうるので、フィールドを増やすときは実ページで確かめること。
  *
  * **実行日そのものをキーにしてはいけない。** 週次グリッドは金曜から過去に遡って値を引くので、
  * 土曜の日付で保存すると金曜の点から見えなくなる。
@@ -55,18 +63,25 @@ export function stockAnalysisEtfUrl(symbol: string): string {
  * `<td>PE Ratio</td><td>33.62</td>` という表構造を、タグを区切りに置き換えてから拾う。
  * クラス名や属性の変更に影響されないようにするため、生の HTML には正規表現を当てない。
  */
-export function parseStockAnalysisField(html: string, field: StockAnalysisField): number {
-  const label = FIELD_LABELS[field];
-
-  // タグを区切り文字に潰す。属性やクラス名の変更で壊れないようにする。
-  // 整形済み HTML では改行やインデントがタグ間に入るため、区切りの前後の空白も除去して
-  // 一行の HTML と同じ形に揃える。
-  const flat = html
+/**
+ * タグを区切り文字に潰す。属性やクラス名の変更で壊れないようにする。
+ *
+ * 整形済み HTML では改行やインデントがタグ間に入るため、区切りの前後の空白も除去して
+ * 一行の HTML と同じ形に揃える。
+ */
+function flatten(html: string): string {
+  return html
     .replace(/<script[\s\S]*?<\/script>/gi, ' ')
     .replace(/<style[\s\S]*?<\/style>/gi, ' ')
     .replace(/<[^>]+>/g, '|')
     .replace(/\s*\|\s*/g, '|')
     .replace(/\|+/g, '|');
+}
+
+export function parseStockAnalysisField(html: string, field: StockAnalysisField): number {
+  const label = FIELD_LABELS[field];
+
+  const flat = flatten(html);
 
   // ラベルのセルの直後のセルが値。
   // 終端の区切りは先読みにする。消費すると、隣り合う 2 件目の検出に必要な区切りが失われる。
@@ -117,4 +132,63 @@ export async function fetchEtfField(
   }
 
   return parseStockAnalysisField(await response.text(), field);
+}
+
+/** 履歴ページの 1 日分。日付をキーに終値を照合するために使う (#133)。 */
+export interface DailyClose {
+  date: string;
+  close: number;
+}
+
+export function stockAnalysisHistoryUrl(symbol: string): string {
+  return `${BASE_URL}/${symbol.toLowerCase()}/history/`;
+}
+
+const MONTHS = [
+  'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+  'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec',
+] as const;
+
+/**
+ * 履歴ページから日付付きの終値を取り出す (#133)。
+ *
+ * **現在値のスクレイピングでは「値が指す日」を取り違えうる**ため、日付が明示されている
+ * この経路を検証に使う。実際、`Previous Close` を当日終値と誤認して 1 取引日ずれていた。
+ *
+ * 表は `Date | Open | High | Low | Close | Adj. Close | Change | Volume` の並び。
+ * 列の位置ではなく「日付の直後に 4 つの価格が並ぶ」形で拾う。
+ */
+export function parseStockAnalysisHistory(html: string): DailyClose[] {
+  const flat = flatten(html);
+  const pattern =
+    /\|([A-Z][a-z]{2}) (\d{1,2}), (\d{4})\|([\d,]+\.\d+)\|([\d,]+\.\d+)\|([\d,]+\.\d+)\|([\d,]+\.\d+)\|/g;
+
+  const rows: DailyClose[] = [];
+  for (const m of flat.matchAll(pattern)) {
+    const month = MONTHS.indexOf(m[1] as (typeof MONTHS)[number]);
+    if (month < 0) continue;
+    const date = `${m[3]}-${String(month + 1).padStart(2, '0')}-${m[2].padStart(2, '0')}`;
+    const close = Number.parseFloat(m[7].replace(/,/g, ''));
+    if (!Number.isFinite(close)) {
+      throw new Error(`stockanalysis: 履歴の終値が数値として解釈できない (${date}: ${m[7]})`);
+    }
+    rows.push({ date, close });
+  }
+
+  if (rows.length === 0) {
+    throw new Error('stockanalysis: 履歴の行を抽出できなかった。HTML 構造が変わった可能性がある');
+  }
+  return rows;
+}
+
+/** 履歴ページを取得して日付付きの終値を返す。 */
+export async function fetchEtfHistory(symbol: string): Promise<DailyClose[]> {
+  const url = stockAnalysisHistoryUrl(symbol);
+  const response = await fetch(url, {
+    headers: { 'User-Agent': 'Mozilla/5.0 (compatible; macro-shiome/1.0)' },
+  });
+  if (!response.ok) {
+    throw new Error(`stockanalysis の取得に失敗 (HTTP ${response.status}): ${url}`);
+  }
+  return parseStockAnalysisHistory(await response.text());
 }
