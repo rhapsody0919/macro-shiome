@@ -59,13 +59,25 @@ export function upsertObservations(
   incoming: Observations,
   now: Date,
 ): Observations {
-  const merged = { ...readObservations(indicatorId), ...incoming };
+  const existing = readObservations(indicatorId);
+  const merged = { ...existing, ...incoming };
 
   // 日付順に並べ替えてから書く。Git の差分が読みやすくなる。
   const sorted: Observations = {};
   for (const date of Object.keys(merged).sort()) {
     sorted[date] = merged[date];
   }
+
+  // **値が変わっていなければ書かない** (#140)。
+  //
+  // 日次バッチ (#136) では、値が動かない日でも全指標を取り直す。`updatedAt` を
+  // 無条件に現在時刻で書き直していたため、値が 1 つも変わらなくても 89 ファイルが
+  // 差分になり、毎日 commit と Cloudflare のビルドが走っていた (実測 90 files changed)。
+  //
+  // ファイル自体を触らないので、既存ファイルが無く観測も空なら作らない。
+  // 空のファイルは情報を持たず、「取得できていない」と「取得したが空」の区別は
+  // `gaps.json` が担う。
+  if (isSameObservations(existing, sorted)) return sorted;
 
   const file: ObservationFile = {
     indicatorId,
@@ -74,6 +86,13 @@ export function upsertObservations(
   };
   writeJson(observationPath(indicatorId), file);
   return sorted;
+}
+
+/** 観測が同一か。キーの順序には依存させない (並べ替えだけの差分で書き直さないため)。 */
+function isSameObservations(a: Observations, b: Observations): boolean {
+  const keys = Object.keys(a);
+  if (keys.length !== Object.keys(b).length) return false;
+  return keys.every((date) => Object.is(a[date], b[date]));
 }
 
 export function readGaps(): Gap[] {

@@ -1,4 +1,4 @@
-import { mkdtempSync, readFileSync, rmSync, writeFileSync, mkdirSync } from 'node:fs';
+import { existsSync, mkdtempSync, readFileSync, rmSync, statSync, writeFileSync, mkdirSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
@@ -24,6 +24,53 @@ beforeEach(() => {
 afterEach(() => {
   delete process.env.MACRO_SHIOME_DATA_DIR;
   rmSync(dir, { recursive: true, force: true });
+});
+
+describe('値が変わらなければ書かない (#140)', () => {
+  const pathOf = (id: string) => join(dir, 'observations', `${id}.json`);
+  const mtimeOf = (id: string) => statSync(pathOf(id)).mtimeMs;
+
+  it('同じ値で再実行してもファイルを触らない', () => {
+    // 日次バッチ (#136) は値が動かない日も全指標を取り直す。ここで書き直すと
+    // 89 ファイルが毎日差分になり、無意味な commit とビルドが走る。
+    upsertObservations('dgs10', { '2026-08-14': 4.69 }, now);
+    const before = readFileSync(pathOf('dgs10'), 'utf8');
+    const mtime = mtimeOf('dgs10');
+
+    const later = new Date('2026-08-17T02:00:00Z');
+    upsertObservations('dgs10', { '2026-08-14': 4.69 }, later);
+
+    expect(readFileSync(pathOf('dgs10'), 'utf8')).toBe(before);
+    expect(mtimeOf('dgs10')).toBe(mtime);
+    // updatedAt が進んでいないこと。無条件に現在時刻を書いていたのが原因だった。
+    expect(JSON.parse(before).updatedAt).toBe(now.toISOString());
+  });
+
+  it('値が 1 つでも変われば書く', () => {
+    upsertObservations('dgs10', { '2026-08-14': 4.69 }, now);
+    const later = new Date('2026-08-17T02:00:00Z');
+    upsertObservations('dgs10', { '2026-08-14': 4.69, '2026-08-15': 4.7 }, later);
+
+    const file = JSON.parse(readFileSync(pathOf('dgs10'), 'utf8'));
+    expect(file.updatedAt).toBe(later.toISOString());
+    expect(file.observations).toEqual({ '2026-08-14': 4.69, '2026-08-15': 4.7 });
+  });
+
+  it('既存の値が別の値に変わっても書く', () => {
+    // FRED の改定で過去の値が変わることがある。見落とすと古い値が残り続ける。
+    upsertObservations('dgs10', { '2026-08-14': 4.69 }, now);
+    const later = new Date('2026-08-17T02:00:00Z');
+    upsertObservations('dgs10', { '2026-08-14': 4.7 }, later);
+
+    expect(readObservations('dgs10')).toEqual({ '2026-08-14': 4.7 });
+    expect(JSON.parse(readFileSync(pathOf('dgs10'), 'utf8')).updatedAt).toBe(later.toISOString());
+  });
+
+  it('観測が空で既存ファイルも無ければ作らない', () => {
+    // 空のファイルは情報を持たない。取得できなかったことは gaps.json が持つ。
+    expect(upsertObservations('never-fetched', {}, now)).toEqual({});
+    expect(existsSync(pathOf('never-fetched'))).toBe(false);
+  });
 });
 
 describe('upsertObservations', () => {
