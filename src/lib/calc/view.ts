@@ -491,14 +491,25 @@ export function buildDrawdownView(
       continue;
     }
 
+    // **最高値は観測から積み上げる**。過去を消せば直せる形にする。
+    //
+    // グリッド点の値だけを見てはいけない (#138)。日次バッチ (#136) では観測が
+    // 毎営業日入るため、週次グリッドの金曜だけを見ると**その週の途中で付けた高値を
+    // 取りこぼす**。最高値が低く出ると下落率も小さく出る。
+    const observedDates = Object.keys(prices).sort();
+    let cursor = 0;
     let high = seeded?.seedHigh ?? 0;
     const points: Array<{ date: string; drawdown: number | null }> = [];
 
     for (const date of weeks) {
+      // このグリッド日までに観測されたものをすべて最高値に反映する。
+      while (cursor < observedDates.length && observedDates[cursor] <= date) {
+        high = Math.max(high, prices[observedDates[cursor]]);
+        cursor += 1;
+      }
+
       const price = valueAsOf(prices, date);
       if (price !== null) {
-        // **最高値は観測から積み上げる**。過去を消せば直せる形にする。
-        high = Math.max(high, price);
         points.push({ date, drawdown: drawdown(high, price) });
         continue;
       }
@@ -507,13 +518,22 @@ export function buildDrawdownView(
       points.push({ date, drawdown: inherited ?? null });
     }
 
+    // 表示する最高値はグリッドの外の観測も含める。
+    // グリッド最終点より後に取れた観測 (#125 の状況) が最高値を更新していても、
+    // 「最高値」として嘘をつかないため。各点の下落率はその時点までの最高値で出す。
+    let observedHigh = high;
+    while (cursor < observedDates.length) {
+      observedHigh = Math.max(observedHigh, prices[observedDates[cursor]]);
+      cursor += 1;
+    }
+
     const withValue = points.filter((point) => point.drawdown !== null);
     const last = withValue.at(-1);
     assets.push({
       id,
       name: names[id] ?? id,
       group,
-      high: high > 0 ? high : null,
+      high: observedHigh > 0 ? observedHigh : null,
       latest: last === undefined ? null : { date: last.date, drawdown: last.drawdown as number },
       points,
     });

@@ -1,5 +1,5 @@
 {
-  "seedStart": "2024-11-29",
+  "seedStart": "2024-11-28",
   "excluded": [],
   "assets": [
     {
@@ -18978,7 +18978,7 @@
       "id": "etf-vgt",
       "name": "情報技術",
       "group": "sector",
-      "high": null,
+      "high": 119.79,
       "latest": null,
       "points": [
         {
