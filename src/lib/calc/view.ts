@@ -471,6 +471,50 @@ export interface DrawdownSeed {
  * 引き継いだ履歴の範囲は下落率をそのまま使い、それ以降は観測値から計算する。
  * 履歴には価格が無いため、繋ぎ目は `seedHigh` (引き継いだ最高値) で揃える。
  */
+/**
+ * 観測開始時点の最高値を求める (#149)。
+ *
+ * `seedHigh` は**引き継いだ時点 (現在) の最大**なので、観測期間の先頭から当てると
+ * 「後から付いた高値で過去の点を割る」ことになる。ただし**いつも遡及になるわけではない**。
+ * 最高値が観測開始より前に付いていれば、その時点で既に最高値だったのだから正しい。
+ *
+ * Stock Bot が下落率 0 を記録した最後の日 = 最高値を更新した日。実測では
+ * **35 資産中 23 が観測開始 (2026-06-08) より前**で、遡及になるのは 12 資産だけだった。
+ *
+ * - 最高値が観測開始より前 → `seedHigh` をそのまま起点にする (正しい)
+ * - 観測期間の中で更新 → その日の終値と記録された下落率から逆算する
+ *
+ * ```
+ * 最高値 = 終値 ÷ (1 − 下落率 / 100)
+ * ```
+ *
+ * **逆算は最小限にとどめる。** Stock Bot の下落率は我々の終値と同じ価格から出ていない
+ * (逆算した最高値が単調非減少にならず、SPY で 49 日中 27 日が違反、幅 3.94%)。
+ * 全期間に当てると誤差が最高値に乗るため、遡及が実際に起きる資産の起点にだけ使う。
+ */
+function startingHigh(
+  prices: Observations,
+  firstObserved: string | undefined,
+  seeded: { seedHigh: number; drawdown: Record<string, number> } | undefined,
+): number {
+  if (seeded === undefined) return 0;
+  if (firstObserved === undefined) return seeded.seedHigh;
+
+  // 下落率 0 = その日の価格が最高値。最後に 0 だった日が最高値を付けた日。
+  const peakDates = Object.entries(seeded.drawdown)
+    .filter(([, value]) => value <= 0.001)
+    .map(([date]) => date)
+    .sort();
+  const peak = peakDates.at(-1);
+
+  // 記録が無い場合も含め、最高値が観測開始より前なら遡及にならない。
+  if (peak === undefined || peak < firstObserved) return seeded.seedHigh;
+
+  const recorded = seeded.drawdown[firstObserved];
+  if (recorded === undefined || recorded >= 100) return 0;
+  return prices[firstObserved] / (1 - recorded / 100);
+}
+
 export function buildDrawdownView(
   options: BuildViewOptions & {
     seed: DrawdownSeed;
@@ -499,7 +543,11 @@ export function buildDrawdownView(
     // 取りこぼす**。最高値が低く出ると下落率も小さく出る。
     const observedDates = Object.keys(prices).sort();
     let cursor = 0;
-    let high = seeded?.seedHigh ?? 0;
+    // 起点は**観測開始時点の最高値**であって、全期間の最高値ではない (#149)。
+    // `seedHigh` は引き継いだ時点 (= 現在) の最大なので、それを観測期間の先頭から
+    // 当てると**後から付いた高値で過去の点を割る**ことになる。実測で 22/105 件が
+    // 1pt 超ずれ、最大 6.64pt だった。
+    let high = startingHigh(prices, observedDates[0], seeded);
     const points: Array<{ date: string; drawdown: number | null }> = [];
 
     for (const date of weeks) {
