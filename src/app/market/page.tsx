@@ -414,7 +414,7 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
   },
   {
     question: 'risk',
-    frequency: 'weekly',
+    frequency: 'daily',
     primaryIndicator: 'etf-gld',
     title: 'ゴールド (GLD)',
     subtitle: '金 ETF の終値 (ドル/株)。現物価格ではない',
@@ -434,8 +434,10 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
         水準そのものを金価格として読まないこと。
       </span>,
       <span key="source">
-        出所は Finnhub。<strong>週 1 回の終値のみ</strong>で、
-        過去に遡って取り直せない (NASDAQ-100 の実績 PER と同じ制約)。
+        出所は Finnhub の日次終値。<strong>2026-06-08 より前は取れない。</strong>
+        stockanalysis.com の履歴ページから遡って取り込んだが、
+        サーバー側で返るのは直近 50 営業日ぶんだけだったため。
+        それ以前は無料で取得できる経路が無い。
       </span>,
     ],
   },

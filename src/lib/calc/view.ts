@@ -688,6 +688,8 @@ export function buildMarketDailyView(options: BuildViewOptions): MarketDailyPoin
       usdjpy: valueAsOf(series(observations, 'usdjpy'), date),
       wti: valueAsOf(series(observations, 'wti'), date),
       dollarIndex: valueAsOf(series(observations, 'dollar-index'), date),
+      // 履歴ページから 50 営業日ぶんを遡って取り込んである (#135)。
+      gold: valueAsOf(series(observations, 'etf-gld'), date),
       nominalRate,
       breakeven,
       realRate: realRate(nominalRate, breakeven),
