@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { COLORS } from './colors';
+import { COLORS, DRAWDOWN_PALETTE } from './colors';
 
 describe('系列色 (#77)', () => {
   it('同じ意味の系列は 1 か所で定義する', () => {
@@ -31,5 +31,17 @@ describe('系列色 (#77)', () => {
     for (const [name, value] of Object.entries(COLORS)) {
       expect(value, name).toMatch(/^#[0-9a-f]{6}$/);
     }
+  });
+});
+
+describe('下落率のパレット (#128)', () => {
+  it('1 枚に並ぶ最大本数 (13) 以上ある', () => {
+    // 足りないと色が一周して同じ色の線が並ぶ。各国が 13 本で最多。
+    expect(DRAWDOWN_PALETTE.length).toBeGreaterThanOrEqual(13);
+  });
+
+  it('すべて 6 桁の 16 進数で、重複が無い', () => {
+    for (const value of DRAWDOWN_PALETTE) expect(value).toMatch(/^#[0-9a-f]{6}$/);
+    expect(new Set(DRAWDOWN_PALETTE).size).toBe(DRAWDOWN_PALETTE.length);
   });
 });

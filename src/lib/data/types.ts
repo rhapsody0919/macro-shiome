@@ -75,7 +75,8 @@ export type IndicatorSource =
   | { adapter: 'fred'; seriesId: string }
   | { adapter: 'factset-pdf'; field: FactsetField }
   | { adapter: 'stockanalysis'; symbol: string; field: 'peRatio' | 'previousClose' }
-  | { adapter: 'treasury'; auction: 'ten-year-bid-to-cover' };
+  | { adapter: 'treasury'; auction: 'ten-year-bid-to-cover' }
+  | { adapter: 'finnhub'; symbol: string };
 
 /** 指標マスタの 1 エントリ。 */
 export interface Indicator {
@@ -548,6 +549,35 @@ export interface RevisionPoint {
    */
   growthNextQuarter: number | null;
   growthQuarterAfterNext: number | null;
+}
+
+/** 下落率チャートの 1 資産 (#128)。 */
+export interface DrawdownAsset {
+  /** 指標マスタの ID。 */
+  id: string;
+  name: string;
+  /** 表示グループ (主要資産 / セクター / コモディティ / 各国)。 */
+  group: string;
+  /**
+   * 最高値 (ドル/株)。**観測開始以降の最大値**であって史上最高値ではない。
+   *
+   * Stock Bot から引き継いだ起点 (2024-11-28) の最高値と、その後の観測の最大値。
+   */
+  high: number | null;
+  /** 直近の下落率 (%) とその時点。 */
+  latest: { date: string; drawdown: number } | null;
+  /** 週次の下落率。引き継いだ履歴と、取得値から計算した分が繋がっている。 */
+  points: Array<{ date: string; drawdown: number | null }>;
+}
+
+/** 下落率のビュー (#128)。 */
+export interface DrawdownView {
+  generatedAt: string;
+  /** 最高値の起点。史上最高値ではないことを画面に出すために持つ。 */
+  seedStart: string | null;
+  /** 引き継げなかった資産と理由。画面に出して欠落を隠さない。 */
+  excluded: Array<{ id: string; reason: string }>;
+  assets: DrawdownAsset[];
 }
 
 /** 画面用ビューの 1 週分 (#8 で生成する)。導出値はビルド時に計算済みにする。 */

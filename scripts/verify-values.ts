@@ -252,6 +252,44 @@ function verifyRealRate(): void {
   }
 }
 
+/**
+ * 7. 下落率が最高値と整合するか (#128)。
+ *
+ * 最高値は導出値なので、**観測の最大値を超えてはいけない**し、
+ * 下落率は 0〜100 の外に出てはいけない。GAS 版は誤った高値を掴むと
+ * 復旧できなかった (VGT の実例)。ここで気付けるようにする。
+ */
+function verifyDrawdown(): void {
+  console.log('7. 下落率と最高値の整合');
+  const view = readView('drawdown') as {
+    assets: Array<{
+      id: string;
+      high: number | null;
+      points: Array<{ date: string; drawdown: number | null }>;
+    }>;
+  } | null;
+  if (view === null) return;
+
+  for (const asset of view.assets) {
+    for (const point of asset.points) {
+      if (point.drawdown === null) continue;
+      if (point.drawdown < 0 || point.drawdown > 100) {
+        fail('下落率と最高値の整合', `${asset.id} @${point.date}: ${point.drawdown}`);
+      }
+    }
+    const observed = Object.values(readObservations(asset.id));
+    if (observed.length > 0 && asset.high !== null) {
+      const maxObserved = Math.max(...observed);
+      if (asset.high < maxObserved - 1e-9) {
+        fail(
+          '下落率と最高値の整合',
+          `${asset.id}: 最高値 ${asset.high} が観測の最大 ${maxObserved} を下回る`,
+        );
+      }
+    }
+  }
+}
+
 async function main(): Promise<void> {
   const offline = process.argv.includes('--offline');
   const today = new Date().toISOString().slice(0, 10);
@@ -266,6 +304,7 @@ async function main(): Promise<void> {
   verifySeriesOrder();
   verifyDerived();
   verifyRealRate();
+  verifyDrawdown();
 
   console.log('');
   if (failures.length === 0) {

@@ -92,6 +92,22 @@ export function fairValue(trailingEps: Maybe, targetYieldPercent: Maybe): number
 }
 
 /**
+ * 最高値からの下落率 (%) = (最高値 − 現在値) ÷ 最高値 × 100 (#128)。
+ *
+ * **水準が違う資産を同じ軸に載せるための正規化。** 金 (400 ドル) と S&P 500 ETF
+ * (770 ドル) と原油 ETF (130 ドル) は水準では比べられないが、下落率なら並べられる。
+ *
+ * 最高値を更新した週は 0 になる。**負にはしない** (現在値が最高値を超えるなら
+ * それが新しい最高値になるため)。
+ */
+export function drawdown(high: Maybe, price: Maybe): number | null {
+  if (isMissing(high) || isMissing(price)) return null;
+  requirePositive(high, '最高値');
+  if (price >= high) return 0;
+  return ((high - price) / high) * 100;
+}
+
+/**
  * 割高率 (%) = (1 − 理論値 ÷ 指数値) × 100 (spec D-25)。
  * 正なら割高、負なら割安。
  */

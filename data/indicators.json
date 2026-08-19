@@ -889,5 +889,634 @@
       "max": 10000
     },
     "note": "SPDR Gold Shares (GLD) の終値。**金の現物価格ではない** (#119)。FRED は 2022年1月に ICE Benchmark Administration の金価格を削除しており、現物価格の無料経路が無い。GLD 1 株はおよそ金 1/10 オンスに相当するが、信託報酬 (年約 0.4%) の分だけ長期では現物から目減りする。単位はドル/株。"
+  },
+  "etf-spy": {
+    "name": "S&P 500 (SPY)",
+    "source": {
+      "adapter": "finnhub",
+      "symbol": "SPY"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "Finnhub",
+    "copyright": "none",
+    "group": "equity",
+    "range": {
+      "min": 0.01,
+      "max": 100000
+    },
+    "note": "SPY の終値 (ドル/株)。主要資産。指数・金・長期国債・REIT を横断して「いま何が売られているか」を見る。 最高値からの下落率を出すために取得する (#128)。"
+  },
+  "etf-qqq": {
+    "name": "NASDAQ-100 (QQQ)",
+    "source": {
+      "adapter": "finnhub",
+      "symbol": "QQQ"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "Finnhub",
+    "copyright": "none",
+    "group": "equity",
+    "range": {
+      "min": 0.01,
+      "max": 100000
+    },
+    "note": "QQQ の終値 (ドル/株)。主要資産。指数・金・長期国債・REIT を横断して「いま何が売られているか」を見る。 最高値からの下落率を出すために取得する (#128)。"
+  },
+  "etf-vti": {
+    "name": "米国株式全体 (VTI)",
+    "source": {
+      "adapter": "finnhub",
+      "symbol": "VTI"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "Finnhub",
+    "copyright": "none",
+    "group": "equity",
+    "range": {
+      "min": 0.01,
+      "max": 100000
+    },
+    "note": "VTI の終値 (ドル/株)。主要資産。指数・金・長期国債・REIT を横断して「いま何が売られているか」を見る。 最高値からの下落率を出すために取得する (#128)。"
+  },
+  "etf-vig": {
+    "name": "米国増配株 (VIG)",
+    "source": {
+      "adapter": "finnhub",
+      "symbol": "VIG"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "Finnhub",
+    "copyright": "none",
+    "group": "equity",
+    "range": {
+      "min": 0.01,
+      "max": 100000
+    },
+    "note": "VIG の終値 (ドル/株)。主要資産。指数・金・長期国債・REIT を横断して「いま何が売られているか」を見る。 最高値からの下落率を出すために取得する (#128)。"
+  },
+  "etf-gld": {
+    "name": "ゴールド (GLD)",
+    "source": {
+      "adapter": "finnhub",
+      "symbol": "GLD"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "Finnhub",
+    "copyright": "none",
+    "group": "equity",
+    "range": {
+      "min": 0.01,
+      "max": 100000
+    },
+    "note": "GLD の終値 (ドル/株)。主要資産。指数・金・長期国債・REIT を横断して「いま何が売られているか」を見る。 最高値からの下落率を出すために取得する (#128)。"
+  },
+  "etf-gdx": {
+    "name": "金鉱株 (GDX)",
+    "source": {
+      "adapter": "finnhub",
+      "symbol": "GDX"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "Finnhub",
+    "copyright": "none",
+    "group": "equity",
+    "range": {
+      "min": 0.01,
+      "max": 100000
+    },
+    "note": "GDX の終値 (ドル/株)。主要資産。指数・金・長期国債・REIT を横断して「いま何が売られているか」を見る。 最高値からの下落率を出すために取得する (#128)。"
+  },
+  "etf-vglt": {
+    "name": "米国長期国債 (VGLT)",
+    "source": {
+      "adapter": "finnhub",
+      "symbol": "VGLT"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "Finnhub",
+    "copyright": "none",
+    "group": "equity",
+    "range": {
+      "min": 0.01,
+      "max": 100000
+    },
+    "note": "VGLT の終値 (ドル/株)。主要資産。指数・金・長期国債・REIT を横断して「いま何が売られているか」を見る。 最高値からの下落率を出すために取得する (#128)。"
+  },
+  "etf-vnq": {
+    "name": "米国REIT (VNQ)",
+    "source": {
+      "adapter": "finnhub",
+      "symbol": "VNQ"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "Finnhub",
+    "copyright": "none",
+    "group": "equity",
+    "range": {
+      "min": 0.01,
+      "max": 100000
+    },
+    "note": "VNQ の終値 (ドル/株)。主要資産。指数・金・長期国債・REIT を横断して「いま何が売られているか」を見る。 最高値からの下落率を出すために取得する (#128)。"
+  },
+  "etf-iwm": {
+    "name": "ラッセル2000 (IWM)",
+    "source": {
+      "adapter": "finnhub",
+      "symbol": "IWM"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "Finnhub",
+    "copyright": "none",
+    "group": "equity",
+    "range": {
+      "min": 0.01,
+      "max": 100000
+    },
+    "note": "IWM の終値 (ドル/株)。主要資産。指数・金・長期国債・REIT を横断して「いま何が売られているか」を見る。 最高値からの下落率を出すために取得する (#128)。"
+  },
+  "etf-vaw": {
+    "name": "素材",
+    "source": {
+      "adapter": "finnhub",
+      "symbol": "VAW"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "Finnhub",
+    "copyright": "none",
+    "group": "equity",
+    "range": {
+      "min": 0.01,
+      "max": 100000
+    },
+    "note": "VAW の終値 (ドル/株)。Vanguard の米国セクター ETF。S&P 500 のセクター指数は S&P DJI の著作権で FRED に無いため ETF で代替する。 最高値からの下落率を出すために取得する (#128)。"
+  },
+  "etf-vcr": {
+    "name": "一般消費財・サービス",
+    "source": {
+      "adapter": "finnhub",
+      "symbol": "VCR"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "Finnhub",
+    "copyright": "none",
+    "group": "equity",
+    "range": {
+      "min": 0.01,
+      "max": 100000
+    },
+    "note": "VCR の終値 (ドル/株)。Vanguard の米国セクター ETF。S&P 500 のセクター指数は S&P DJI の著作権で FRED に無いため ETF で代替する。 最高値からの下落率を出すために取得する (#128)。"
+  },
+  "etf-vdc": {
+    "name": "生活必需品",
+    "source": {
+      "adapter": "finnhub",
+      "symbol": "VDC"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "Finnhub",
+    "copyright": "none",
+    "group": "equity",
+    "range": {
+      "min": 0.01,
+      "max": 100000
+    },
+    "note": "VDC の終値 (ドル/株)。Vanguard の米国セクター ETF。S&P 500 のセクター指数は S&P DJI の著作権で FRED に無いため ETF で代替する。 最高値からの下落率を出すために取得する (#128)。"
+  },
+  "etf-vde": {
+    "name": "エネルギー",
+    "source": {
+      "adapter": "finnhub",
+      "symbol": "VDE"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "Finnhub",
+    "copyright": "none",
+    "group": "equity",
+    "range": {
+      "min": 0.01,
+      "max": 100000
+    },
+    "note": "VDE の終値 (ドル/株)。Vanguard の米国セクター ETF。S&P 500 のセクター指数は S&P DJI の著作権で FRED に無いため ETF で代替する。 最高値からの下落率を出すために取得する (#128)。"
+  },
+  "etf-vfh": {
+    "name": "金融",
+    "source": {
+      "adapter": "finnhub",
+      "symbol": "VFH"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "Finnhub",
+    "copyright": "none",
+    "group": "equity",
+    "range": {
+      "min": 0.01,
+      "max": 100000
+    },
+    "note": "VFH の終値 (ドル/株)。Vanguard の米国セクター ETF。S&P 500 のセクター指数は S&P DJI の著作権で FRED に無いため ETF で代替する。 最高値からの下落率を出すために取得する (#128)。"
+  },
+  "etf-vgt": {
+    "name": "情報技術",
+    "source": {
+      "adapter": "finnhub",
+      "symbol": "VGT"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "Finnhub",
+    "copyright": "none",
+    "group": "equity",
+    "range": {
+      "min": 0.01,
+      "max": 100000
+    },
+    "note": "VGT の終値 (ドル/株)。Vanguard の米国セクター ETF。S&P 500 のセクター指数は S&P DJI の著作権で FRED に無いため ETF で代替する。 最高値からの下落率を出すために取得する (#128)。"
+  },
+  "etf-vht": {
+    "name": "ヘルスケア",
+    "source": {
+      "adapter": "finnhub",
+      "symbol": "VHT"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "Finnhub",
+    "copyright": "none",
+    "group": "equity",
+    "range": {
+      "min": 0.01,
+      "max": 100000
+    },
+    "note": "VHT の終値 (ドル/株)。Vanguard の米国セクター ETF。S&P 500 のセクター指数は S&P DJI の著作権で FRED に無いため ETF で代替する。 最高値からの下落率を出すために取得する (#128)。"
+  },
+  "etf-vpu": {
+    "name": "公益事業",
+    "source": {
+      "adapter": "finnhub",
+      "symbol": "VPU"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "Finnhub",
+    "copyright": "none",
+    "group": "equity",
+    "range": {
+      "min": 0.01,
+      "max": 100000
+    },
+    "note": "VPU の終値 (ドル/株)。Vanguard の米国セクター ETF。S&P 500 のセクター指数は S&P DJI の著作権で FRED に無いため ETF で代替する。 最高値からの下落率を出すために取得する (#128)。"
+  },
+  "etf-uso": {
+    "name": "原油 (USO)",
+    "source": {
+      "adapter": "finnhub",
+      "symbol": "USO"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "Finnhub",
+    "copyright": "none",
+    "group": "equity",
+    "range": {
+      "min": 0.01,
+      "max": 100000
+    },
+    "note": "USO の終値 (ドル/株)。コモディティ ETF。**現物価格ではない**。ロールコストや信託報酬で長期では現物から乖離する (特に USO と UNG は減価が大きい)。 最高値からの下落率を出すために取得する (#128)。"
+  },
+  "etf-copx": {
+    "name": "銅鉱山 (COPX)",
+    "source": {
+      "adapter": "finnhub",
+      "symbol": "COPX"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "Finnhub",
+    "copyright": "none",
+    "group": "equity",
+    "range": {
+      "min": 0.01,
+      "max": 100000
+    },
+    "note": "COPX の終値 (ドル/株)。コモディティ ETF。**現物価格ではない**。ロールコストや信託報酬で長期では現物から乖離する (特に USO と UNG は減価が大きい)。 最高値からの下落率を出すために取得する (#128)。"
+  },
+  "etf-ung": {
+    "name": "天然ガス (UNG)",
+    "source": {
+      "adapter": "finnhub",
+      "symbol": "UNG"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "Finnhub",
+    "copyright": "none",
+    "group": "equity",
+    "range": {
+      "min": 0.01,
+      "max": 100000
+    },
+    "note": "UNG の終値 (ドル/株)。コモディティ ETF。**現物価格ではない**。ロールコストや信託報酬で長期では現物から乖離する (特に USO と UNG は減価が大きい)。 最高値からの下落率を出すために取得する (#128)。"
+  },
+  "etf-slx": {
+    "name": "鉄鋼・鉄鉱石 (SLX)",
+    "source": {
+      "adapter": "finnhub",
+      "symbol": "SLX"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "Finnhub",
+    "copyright": "none",
+    "group": "equity",
+    "range": {
+      "min": 0.01,
+      "max": 100000
+    },
+    "note": "SLX の終値 (ドル/株)。コモディティ ETF。**現物価格ではない**。ロールコストや信託報酬で長期では現物から乖離する (特に USO と UNG は減価が大きい)。 最高値からの下落率を出すために取得する (#128)。"
+  },
+  "etf-remx": {
+    "name": "レアアース (REMX)",
+    "source": {
+      "adapter": "finnhub",
+      "symbol": "REMX"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "Finnhub",
+    "copyright": "none",
+    "group": "equity",
+    "range": {
+      "min": 0.01,
+      "max": 100000
+    },
+    "note": "REMX の終値 (ドル/株)。コモディティ ETF。**現物価格ではない**。ロールコストや信託報酬で長期では現物から乖離する (特に USO と UNG は減価が大きい)。 最高値からの下落率を出すために取得する (#128)。"
+  },
+  "etf-corn": {
+    "name": "コーン (CORN)",
+    "source": {
+      "adapter": "finnhub",
+      "symbol": "CORN"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "Finnhub",
+    "copyright": "none",
+    "group": "equity",
+    "range": {
+      "min": 0.01,
+      "max": 100000
+    },
+    "note": "CORN の終値 (ドル/株)。コモディティ ETF。**現物価格ではない**。ロールコストや信託報酬で長期では現物から乖離する (特に USO と UNG は減価が大きい)。 最高値からの下落率を出すために取得する (#128)。"
+  },
+  "etf-weat": {
+    "name": "小麦 (WEAT)",
+    "source": {
+      "adapter": "finnhub",
+      "symbol": "WEAT"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "Finnhub",
+    "copyright": "none",
+    "group": "equity",
+    "range": {
+      "min": 0.01,
+      "max": 100000
+    },
+    "note": "WEAT の終値 (ドル/株)。コモディティ ETF。**現物価格ではない**。ロールコストや信託報酬で長期では現物から乖離する (特に USO と UNG は減価が大きい)。 最高値からの下落率を出すために取得する (#128)。"
+  },
+  "etf-eem": {
+    "name": "新興国 (EEM)",
+    "source": {
+      "adapter": "finnhub",
+      "symbol": "EEM"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "Finnhub",
+    "copyright": "none",
+    "group": "equity",
+    "range": {
+      "min": 0.01,
+      "max": 100000
+    },
+    "note": "EEM の終値 (ドル/株)。各国株式 ETF。ドル建てなので**現地通貨ベースの騰落と一致しない**。為替の影響を含む。 最高値からの下落率を出すために取得する (#128)。"
+  },
+  "etf-ewj": {
+    "name": "日本 (EWJ)",
+    "source": {
+      "adapter": "finnhub",
+      "symbol": "EWJ"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "Finnhub",
+    "copyright": "none",
+    "group": "equity",
+    "range": {
+      "min": 0.01,
+      "max": 100000
+    },
+    "note": "EWJ の終値 (ドル/株)。各国株式 ETF。ドル建てなので**現地通貨ベースの騰落と一致しない**。為替の影響を含む。 最高値からの下落率を出すために取得する (#128)。"
+  },
+  "etf-epi": {
+    "name": "インド (EPI)",
+    "source": {
+      "adapter": "finnhub",
+      "symbol": "EPI"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "Finnhub",
+    "copyright": "none",
+    "group": "equity",
+    "range": {
+      "min": 0.01,
+      "max": 100000
+    },
+    "note": "EPI の終値 (ドル/株)。各国株式 ETF。ドル建てなので**現地通貨ベースの騰落と一致しない**。為替の影響を含む。 最高値からの下落率を出すために取得する (#128)。"
+  },
+  "etf-ewu": {
+    "name": "イギリス (EWU)",
+    "source": {
+      "adapter": "finnhub",
+      "symbol": "EWU"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "Finnhub",
+    "copyright": "none",
+    "group": "equity",
+    "range": {
+      "min": 0.01,
+      "max": 100000
+    },
+    "note": "EWU の終値 (ドル/株)。各国株式 ETF。ドル建てなので**現地通貨ベースの騰落と一致しない**。為替の影響を含む。 最高値からの下落率を出すために取得する (#128)。"
+  },
+  "etf-ewg": {
+    "name": "ドイツ (EWG)",
+    "source": {
+      "adapter": "finnhub",
+      "symbol": "EWG"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "Finnhub",
+    "copyright": "none",
+    "group": "equity",
+    "range": {
+      "min": 0.01,
+      "max": 100000
+    },
+    "note": "EWG の終値 (ドル/株)。各国株式 ETF。ドル建てなので**現地通貨ベースの騰落と一致しない**。為替の影響を含む。 最高値からの下落率を出すために取得する (#128)。"
+  },
+  "etf-ewz": {
+    "name": "ブラジル (EWZ)",
+    "source": {
+      "adapter": "finnhub",
+      "symbol": "EWZ"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "Finnhub",
+    "copyright": "none",
+    "group": "equity",
+    "range": {
+      "min": 0.01,
+      "max": 100000
+    },
+    "note": "EWZ の終値 (ドル/株)。各国株式 ETF。ドル建てなので**現地通貨ベースの騰落と一致しない**。為替の影響を含む。 最高値からの下落率を出すために取得する (#128)。"
+  },
+  "etf-vnm": {
+    "name": "ベトナム (VNM)",
+    "source": {
+      "adapter": "finnhub",
+      "symbol": "VNM"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "Finnhub",
+    "copyright": "none",
+    "group": "equity",
+    "range": {
+      "min": 0.01,
+      "max": 100000
+    },
+    "note": "VNM の終値 (ドル/株)。各国株式 ETF。ドル建てなので**現地通貨ベースの騰落と一致しない**。為替の影響を含む。 最高値からの下落率を出すために取得する (#128)。"
+  },
+  "etf-eww": {
+    "name": "メキシコ (EWW)",
+    "source": {
+      "adapter": "finnhub",
+      "symbol": "EWW"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "Finnhub",
+    "copyright": "none",
+    "group": "equity",
+    "range": {
+      "min": 0.01,
+      "max": 100000
+    },
+    "note": "EWW の終値 (ドル/株)。各国株式 ETF。ドル建てなので**現地通貨ベースの騰落と一致しない**。為替の影響を含む。 最高値からの下落率を出すために取得する (#128)。"
+  },
+  "etf-mchi": {
+    "name": "中国 (MCHI)",
+    "source": {
+      "adapter": "finnhub",
+      "symbol": "MCHI"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "Finnhub",
+    "copyright": "none",
+    "group": "equity",
+    "range": {
+      "min": 0.01,
+      "max": 100000
+    },
+    "note": "MCHI の終値 (ドル/株)。各国株式 ETF。ドル建てなので**現地通貨ベースの騰落と一致しない**。為替の影響を含む。 最高値からの下落率を出すために取得する (#128)。"
+  },
+  "etf-eido": {
+    "name": "インドネシア (EIDO)",
+    "source": {
+      "adapter": "finnhub",
+      "symbol": "EIDO"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "Finnhub",
+    "copyright": "none",
+    "group": "equity",
+    "range": {
+      "min": 0.01,
+      "max": 100000
+    },
+    "note": "EIDO の終値 (ドル/株)。各国株式 ETF。ドル建てなので**現地通貨ベースの騰落と一致しない**。為替の影響を含む。 最高値からの下落率を出すために取得する (#128)。"
+  },
+  "etf-thd": {
+    "name": "タイ (THD)",
+    "source": {
+      "adapter": "finnhub",
+      "symbol": "THD"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "Finnhub",
+    "copyright": "none",
+    "group": "equity",
+    "range": {
+      "min": 0.01,
+      "max": 100000
+    },
+    "note": "THD の終値 (ドル/株)。各国株式 ETF。ドル建てなので**現地通貨ベースの騰落と一致しない**。為替の影響を含む。 最高値からの下落率を出すために取得する (#128)。"
+  },
+  "etf-gxg": {
+    "name": "コロンビア (GXG)",
+    "source": {
+      "adapter": "finnhub",
+      "symbol": "GXG"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "Finnhub",
+    "copyright": "none",
+    "group": "equity",
+    "range": {
+      "min": 0.01,
+      "max": 100000
+    },
+    "note": "GXG の終値 (ドル/株)。各国株式 ETF。ドル建てなので**現地通貨ベースの騰落と一致しない**。為替の影響を含む。 最高値からの下落率を出すために取得する (#128)。"
+  },
+  "etf-smin": {
+    "name": "インド小型株 (SMIN)",
+    "source": {
+      "adapter": "finnhub",
+      "symbol": "SMIN"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "Finnhub",
+    "copyright": "none",
+    "group": "equity",
+    "range": {
+      "min": 0.01,
+      "max": 100000
+    },
+    "note": "SMIN の終値 (ドル/株)。各国株式 ETF。ドル建てなので**現地通貨ベースの騰落と一致しない**。為替の影響を含む。 最高値からの下落率を出すために取得する (#128)。"
   }
 }

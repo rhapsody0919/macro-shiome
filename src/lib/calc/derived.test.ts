@@ -13,6 +13,7 @@ import {
   yearOverYear,
   yieldSpread,
   treasuryFairValue,
+  drawdown,
 } from './derived';
 
 /**
@@ -284,3 +285,29 @@ describe('10年債の理論値 (#93)', () => {
     expect(treasuryFairValue(2.0, -0.5)).toBeCloseTo(1.5, 10);
   });
 });
+
+describe('最高値からの下落率 (#128)', () => {
+  it('最高値との差を % で返す', () => {
+    // 実測: GLD は最高値 495.9 に対し 398.55 で 19.63%。
+    expect(drawdown(495.9, 398.55)).toBeCloseTo(19.63, 2);
+  });
+
+  it('最高値と同じなら 0', () => {
+    expect(drawdown(100, 100)).toBe(0);
+  });
+
+  it('最高値を超えていても負にしない', () => {
+    // 超えたならそれが新しい最高値になる。負の下落率は定義上ありえない。
+    expect(drawdown(100, 120)).toBe(0);
+  });
+
+  it('欠測なら null', () => {
+    expect(drawdown(null, 100)).toBeNull();
+    expect(drawdown(100, null)).toBeNull();
+  });
+
+  it('最高値が 0 以下なら落とす', () => {
+    // 0 除算を黙って通すと Infinity が観測として溜まる。
+    expect(() => drawdown(0, 10)).toThrow();
+  });
+})

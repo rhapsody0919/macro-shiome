@@ -8,6 +8,8 @@ import type { Observations } from '../adapters/fred';
 import { resolveTargetYield, resolveTargetYieldEntry } from '../data/indicators';
 import type {
   AppConfig,
+  DrawdownAsset,
+  DrawdownView,
   IndexKey,
   CorrelationSummary,
   EconomyView,
@@ -23,6 +25,7 @@ import type {
 import {
   correlation,
   distribution,
+  drawdown,
   earningsYield,
   epsFromPe,
   fairValue,
@@ -449,6 +452,79 @@ export function buildMacroView(options: BuildViewOptions): MacroPoint[] {
       newJobPostings: valueAsOf(series(observations, 'new-job-postings'), date),
     };
   });
+}
+
+/** 引き継いだ下落率の履歴。ETF の過去価格は無料で取れないため再生成できない (#128)。 */
+export interface DrawdownSeed {
+  assets: Record<string, { seedHigh: number; drawdown: Record<string, number> }>;
+}
+
+/**
+ * 下落率のビュー (#128)。
+ *
+ * **最高値は導出値**。観測を全部残し、そこから累積最大を計算する。
+ * Stock Bot はセルに上書きしていたため異常値を掴むと復旧できなかった (VGT の実例)。
+ * ここでは観測を 1 点消せば直る。
+ *
+ * 引き継いだ履歴の範囲は下落率をそのまま使い、それ以降は観測値から計算する。
+ * 履歴には価格が無いため、繋ぎ目は `seedHigh` (引き継いだ最高値) で揃える。
+ */
+export function buildDrawdownView(
+  options: BuildViewOptions & {
+    seed: DrawdownSeed;
+    assets: ReadonlyArray<{ id: string; group: string }>;
+    names: Readonly<Record<string, string>>;
+  },
+): DrawdownView {
+  const { observations, seed, assets: definitions, names } = options;
+  const weeks = fridaysBetween(options.start, options.today.toISOString().slice(0, 10));
+
+  const excluded: Array<{ id: string; reason: string }> = [];
+  const assets: DrawdownAsset[] = [];
+
+  for (const { id, group } of definitions) {
+    const prices = series(observations, id);
+    const seeded = seed.assets[id];
+    if (seeded === undefined && Object.keys(prices).length === 0) {
+      excluded.push({ id, reason: '履歴も観測も無い' });
+      continue;
+    }
+
+    let high = seeded?.seedHigh ?? 0;
+    const points: Array<{ date: string; drawdown: number | null }> = [];
+
+    for (const date of weeks) {
+      const price = valueAsOf(prices, date);
+      if (price !== null) {
+        // **最高値は観測から積み上げる**。過去を消せば直せる形にする。
+        high = Math.max(high, price);
+        points.push({ date, drawdown: drawdown(high, price) });
+        continue;
+      }
+      // 観測がまだ無い週は引き継いだ履歴を使う。
+      const inherited = seeded?.drawdown[date];
+      points.push({ date, drawdown: inherited ?? null });
+    }
+
+    const withValue = points.filter((point) => point.drawdown !== null);
+    const last = withValue.at(-1);
+    assets.push({
+      id,
+      name: names[id] ?? id,
+      group,
+      high: high > 0 ? high : null,
+      latest: last === undefined ? null : { date: last.date, drawdown: last.drawdown as number },
+      points,
+    });
+  }
+
+  const seedDates = Object.values(seed.assets).flatMap((a) => Object.keys(a.drawdown));
+  return {
+    generatedAt: options.today.toISOString(),
+    seedStart: seedDates.length === 0 ? null : seedDates.sort()[0],
+    excluded,
+    assets,
+  };
 }
 
 /**
