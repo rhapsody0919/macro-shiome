@@ -119,6 +119,33 @@ describe('日本の雇用と所得 (#156)', () => {
   });
 });
 
+describe('日本の消費者物価 (#162)', () => {
+  it('コアと総合を 1 枚に重ねる', () => {
+    // 同じ基準・同じ単位。2 本の差が生鮮食品の影響を示す。
+    render(<JapanPage />);
+    const section = document.getElementById('q-jp-price');
+    expect(section).not.toBeNull();
+    const titles = Array.from(section?.querySelectorAll('h3') ?? []).map((h) => h.textContent);
+    expect(titles).toEqual(['消費者物価指数 (日本)']);
+  });
+
+  it('日銀が見るコアを先に置く', () => {
+    // 政策判断に効くのはコア。総合は天候で振れる。
+    // 文字列の出現位置では測れない (「総合」はサブタイトルに先に出る) ため、
+    // 凡例の 2 つを DOM の前後関係で比べる。
+    render(<JapanPage />);
+    const core = screen.getByText('コア (生鮮食品を除く)');
+    const total = screen.getByText('総合', { exact: true });
+    expect(core.compareDocumentPosition(total) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+  });
+
+  it('公表値をそのまま出していることを画面に書く', () => {
+    // 指数から導出すると丸めで公表値とずれる。日米で経路が違うことを明記する。
+    render(<JapanPage />);
+    expect(screen.getByText(/公表されている前年同月比をそのまま出している/)).toBeInTheDocument();
+  });
+});
+
 describe('街角景気 (#160)', () => {
   it('景気動向指数と同じ図に載せない', () => {
     // 一方は 2020年平均 = 100 の合成指数、もう一方は 50 が中立の DI。

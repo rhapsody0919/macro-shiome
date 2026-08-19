@@ -493,6 +493,10 @@ export interface MonthlyPoint {
   housingStarts: number | null;
   /** 新築住宅販売件数。連鎖の下流。 */
   newHomeSales: number | null;
+  /** 日本の CPI コア (生鮮食品を除く総合) の前年同月比 (%)。**2025年基準** (#162)。 */
+  jpCpiCore: number | null;
+  /** 日本の CPI 総合の前年同月比 (%)。**2025年基準** (#162)。 */
+  jpCpi: number | null;
   /** 街角景気の現状判断DI。**季節調整済み、50 が中立** (#160)。 */
   jpWatcherCurrent: number | null;
   /** 街角景気の先行き判断DI。**季節調整済み、50 が中立** (#160)。 */

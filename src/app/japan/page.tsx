@@ -107,6 +107,47 @@ const CHARTS: QuestionChartDef<JapanQuestionId>[] = [
     ],
   },
   {
+    question: 'jp-price',
+    frequency: 'monthly',
+    primaryIndicator: 'jp-cpi-core',
+    title: '消費者物価指数 (日本)',
+    subtitle: 'コアと総合の前年同月比',
+    series: [
+      {
+        key: 'jpCpiCore',
+        label: 'コア (生鮮食品を除く)',
+        color: COLORS.jpCpiCore,
+        width: 2.4,
+        indicatorId: 'jp-cpi-core',
+      },
+      { key: 'jpCpi', label: '総合', color: COLORS.jpCpi, indicatorId: 'jp-cpi' },
+    ],
+    notes: [
+      <span key="core">
+        <strong>日銀が見るのはコア</strong> (生鮮食品を除く総合)。総合は天候で振れるため、
+        政策判断には向かない。2 本の差が生鮮食品の影響を示す。
+      </span>,
+      <span key="path">
+        <strong>物価 → 金利 → 円 → 株の順に効く。</strong>
+        物価が上がれば利上げ観測が強まり、円高要因になる一方で輸出企業の円換算の売上を押し下げる。
+        下の日経平均と USD/JPY を合わせて読む。
+      </span>,
+      <span key="base">
+        <strong>2025年基準。</strong>このページの他の系列 (景気動向指数・輸出入物価) は
+        2020年基準なので混同しない。
+      </span>,
+      <span key="published">
+        <strong>公表されている前年同月比をそのまま出している。</strong>
+        日本の CPI 指数は小数 1 桁しか公表されず、そこから計算すると丸めで公表値とずれる
+        (2026年6月は計算値 1.50% に対し公表値 1.6%)。米国の CPI は指数の桁数が足りるため
+        指数から導出しており、日米で経路が違う。
+      </span>,
+      <span key="not-us">
+        米国の CPI とは基準年も対象品目も違うため、同じ図には載せていない。
+      </span>,
+    ],
+  },
+  {
     question: 'jp-labor',
     frequency: 'monthly',
     primaryIndicator: 'jp-new-job-ratio',
