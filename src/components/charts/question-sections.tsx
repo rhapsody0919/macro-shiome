@@ -1,5 +1,8 @@
 import { Suspense, type ReactNode } from 'react';
 import { MacroChart, type SeriesDef } from './macro-chart';
+import { DrawdownChart } from './drawdown-chart';
+import { DRAWDOWN_PALETTE } from '@/lib/colors';
+import { drawdown } from '@/lib/data/loader';
 import { MonthlyChart, type MonthlySeriesDef } from './monthly-chart';
 import { Badges } from './badges';
 import type { ValueKind } from './chart-frame';
@@ -47,7 +50,12 @@ export type QuestionChartDef<K extends string> =
       kind?: ValueKind;
       zeroLine?: boolean;
       series: MonthlySeriesDef[];
-    });
+    })
+  /**
+   * 最高値からの下落率 (#128)。系列は指標マスタではなくグループで決まるため、
+   * `series` の代わりに `drawdownGroup` を持つ。
+   */
+  | (ChartBase<K> & { frequency: 'weekly'; drawdownGroup: string });
 
 /**
  * 景気サイクルの分類を指標マスタから引く。
@@ -61,6 +69,13 @@ function cycleOf<K extends string>(chart: QuestionChartDef<K>) {
     throw new Error(`問いセクション: 指標マスタに無い ID を参照している (${chart.primaryIndicator})`);
   }
   return indicator.cyclePosition;
+}
+
+/** グループ内の順序で色を割り当てる。系列が 13 本を超えたら一周する。 */
+function paletteFor(assets: ReadonlyArray<{ id: string }>): Record<string, string> {
+  return Object.fromEntries(
+    assets.map((asset, i) => [asset.id, DRAWDOWN_PALETTE[i % DRAWDOWN_PALETTE.length]]),
+  );
 }
 
 /** 見出しへのアンカー。問いの ID をそのまま使う。 */
@@ -90,7 +105,18 @@ export function QuestionSections<K extends string>({
           {/* useSearchParams (期間フィルター) を使うため静的生成時は Suspense で包む。 */}
           {group.items.map((chart) => (
             <Suspense key={chart.title} fallback={<div className="h-72 sm:h-96" />}>
-              {chart.frequency === 'weekly' ? (
+              {'drawdownGroup' in chart ? (
+                <DrawdownChart
+                  title={chart.title}
+                  subtitle={chart.subtitle}
+                  assets={drawdown.assets.filter((asset) => asset.group === chart.drawdownGroup)}
+                  colors={paletteFor(
+                    drawdown.assets.filter((asset) => asset.group === chart.drawdownGroup),
+                  )}
+                  notes={chart.notes}
+                  badges={<Badges frequency="weekly" cyclePosition={cycleOf(chart)} />}
+                />
+              ) : chart.frequency === 'weekly' ? (
                 <MacroChart
                   points={macro}
                   title={chart.title}

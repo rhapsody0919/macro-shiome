@@ -11,8 +11,10 @@ import valuationJson from '../../../data/views/valuation.json';
 import revisionsJson from '../../../data/views/revisions.json';
 import macroJson from '../../../data/views/macro.json';
 import economyJson from '../../../data/views/economy.json';
+import drawdownJson from '../../../data/views/drawdown.json';
 import type {
   BatchStatus,
+  DrawdownView,
   EconomyView,
   GapReason,
   MacroPoint,
@@ -27,6 +29,7 @@ export const valuationView = valuationJson as unknown as ValuationView;
 export const revisions = revisionsJson as unknown as RevisionPoint[];
 export const macro = macroJson as unknown as MacroPoint[];
 export const economy = economyJson as unknown as EconomyView;
+export const drawdown = drawdownJson as unknown as DrawdownView;
 
 /** データの鮮度。画面ヘッダーの表示に使う (screens N-1)。 */
 export interface Freshness {

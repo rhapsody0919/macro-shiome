@@ -20,7 +20,9 @@ import {
 } from '../src/lib/adapters/factset';
 import { fetchEtfField, previousTradingDay } from '../src/lib/adapters/stockanalysis';
 import { TreasuryClient } from '../src/lib/adapters/treasury';
+import { FinnhubClient, readFinnhubApiKeyFromEnv } from '../src/lib/adapters/finnhub';
 import {
+  buildDrawdownView,
   buildEconomyView,
   buildMacroView,
   buildRevisionSeries,
@@ -28,6 +30,8 @@ import {
   type ObservationMap,
 } from '../src/lib/calc/view';
 import { appConfig, indicators } from '../src/lib/data/indicators';
+import { DRAWDOWN_ASSETS } from '../src/lib/data/drawdown-assets';
+import drawdownSeed from '../data/seed/stock-bot-drawdown.json';
 import {
   readObservations,
   recordGaps,
@@ -142,6 +146,33 @@ async function main(): Promise<void> {
     }
   }
 
+  // --- 3c. Finnhub (ETF の終値) ---
+  // 現在値しか取れないので **値が指す日** (直前の取引日) をキーにする (#125 と同じ)。
+  {
+    const finnhubIds = Object.entries(indicators).filter(
+      ([, indicator]) => indicator.source.adapter === 'finnhub',
+    );
+    if (finnhubIds.length > 0) {
+      const observedOn = previousTradingDay(now);
+      try {
+        const finnhub = new FinnhubClient({ apiKey: readFinnhubApiKeyFromEnv() });
+        for (const [id, indicator] of finnhubIds) {
+          if (indicator.source.adapter !== 'finnhub') continue;
+          try {
+            const price = await finnhub.fetchPrice(indicator.source.symbol);
+            observationMap[id] = upsertObservations(id, { [observedOn]: price }, now);
+          } catch (error) {
+            failures.push(`finnhub ${id}: ${message(error)}`);
+          }
+        }
+        console.log(`  finnhub: ${finnhubIds.length} 銘柄 (${observedOn} 時点)`);
+      } catch (error) {
+        // キー未設定などで 1 件も取れない場合。
+        failures.push(`finnhub: ${message(error)}`);
+      }
+    }
+  }
+
   // --- 3b. 米財務省 (国債入札) ---
   // 全期間を毎回取り直す。件数が 400 弱と小さく、差分取得の複雑さに見合わない。
   for (const [id, indicator] of Object.entries(indicators)) {
@@ -200,6 +231,21 @@ async function main(): Promise<void> {
   writeView('macro', buildMacroView({ observations, config: appConfig, start, today: now }));
   // 月次指標は週次グリッドに載せない (#64)。別ビューとして持つ。
   writeView('economy', buildEconomyView({ observations, config: appConfig, start, today: now }));
+  writeView(
+    'drawdown',
+    buildDrawdownView({
+      observations,
+      config: appConfig,
+      start,
+      today: now,
+      seed: drawdownSeed,
+      assets: DRAWDOWN_ASSETS,
+      names: Object.fromEntries(
+        Object.entries(indicators).map(([id, indicator]) => [id, indicator.name]),
+      ),
+    }),
+  );
+
 
   const succeeded = failures.length === 0 && issues.length === 0;
   writeStatus({ now, succeeded, recentGaps: allGaps });

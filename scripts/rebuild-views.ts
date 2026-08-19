@@ -7,6 +7,7 @@
  * 実行: pnpm rebuild:views
  */
 import {
+  buildDrawdownView,
   buildEconomyView,
   buildMacroView,
   buildRevisionSeries,
@@ -14,6 +15,8 @@ import {
   type ObservationMap,
 } from '../src/lib/calc/view';
 import { appConfig, indicators } from '../src/lib/data/indicators';
+import { DRAWDOWN_ASSETS } from '../src/lib/data/drawdown-assets';
+import drawdownSeed from '../data/seed/stock-bot-drawdown.json';
 import { readObservations, writeView } from '../src/lib/data/store';
 
 const VIEW_START_YEARS = 10;
@@ -33,6 +36,20 @@ function main(): void {
   writeView('revisions', buildRevisionSeries(options));
   writeView('macro', buildMacroView(options));
   writeView('economy', buildEconomyView(options));
+  writeView(
+    'drawdown',
+    buildDrawdownView({
+      observations,
+      config: appConfig,
+      start,
+      today: now,
+      seed: drawdownSeed,
+      assets: DRAWDOWN_ASSETS,
+      names: Object.fromEntries(
+        Object.entries(indicators).map(([id, indicator]) => [id, indicator.name]),
+      ),
+    }),
+  );
 
   console.log(`ビューを再生成した (起点 ${start})`);
 }

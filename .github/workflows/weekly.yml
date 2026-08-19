@@ -34,6 +34,7 @@ jobs:
         id: fetch
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
         run: pnpm fetch:weekly
 
       # **取得の直後に一次情報と突き合わせる** (#113)。取得実装と違う経路

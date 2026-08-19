@@ -4,6 +4,7 @@ import {
   buildEconomyView,
   buildMacroView,
   buildRevisionSeries,
+  buildDrawdownView,
   buildValuationView,
   quarterlyGrowth,
   type ObservationMap,
@@ -827,5 +828,58 @@ describe('ゴールド (#119)', () => {
       today: new Date(Date.UTC(2026, 7, 15)),
     });
     expect(view.find((p) => p.date === '2026-08-14')?.gold).toBe(401.48);
+  });
+});
+
+describe('下落率のビュー (#128)', () => {
+  const definitions = [{ id: 'etf-x', group: 'major' }];
+  const names = { 'etf-x': 'テスト資産' };
+  const build = (observations: ObservationMap, seed: Parameters<typeof buildDrawdownView>[0]['seed']) =>
+    buildDrawdownView({
+      observations,
+      config,
+      start: '2026-08-01',
+      today: new Date(Date.UTC(2026, 7, 22)),
+      seed,
+      assets: definitions,
+      names,
+    });
+
+  it('引き継いだ履歴と観測から計算した分が繋がる', () => {
+    // 履歴には価格が無いので、繋ぎ目は引き継いだ最高値で揃える。
+    const view = build(
+      { 'etf-x': { '2026-08-21': 90 } },
+      { assets: { 'etf-x': { seedHigh: 100, drawdown: { '2026-08-14': 5 } } } },
+    );
+    const points = view.assets[0].points;
+    expect(points.find((p) => p.date === '2026-08-14')?.drawdown).toBe(5);
+    // 最高値 100 に対し 90 なので 10%。履歴の 5% から連続している。
+    expect(points.find((p) => p.date === '2026-08-21')?.drawdown).toBeCloseTo(10, 10);
+  });
+
+  it('観測が最高値を更新したら以降の基準が変わる', () => {
+    // **最高値は導出値**。観測から積み上げるので、異常な観測を消せば直せる。
+    const view = build(
+      { 'etf-x': { '2026-08-14': 200, '2026-08-21': 150 } },
+      { assets: { 'etf-x': { seedHigh: 100, drawdown: {} } } },
+    );
+    const points = view.assets[0].points;
+    expect(points.find((p) => p.date === '2026-08-14')?.drawdown).toBe(0);
+    // 新しい最高値 200 に対し 150 なので 25%。引き継いだ 100 は使わない。
+    expect(points.find((p) => p.date === '2026-08-21')?.drawdown).toBeCloseTo(25, 10);
+    expect(view.assets[0].high).toBe(200);
+  });
+
+  it('履歴も観測も無い資産は除外して理由を残す', () => {
+    // 黙って消すと、画面から資産が減ったことに気付けない。
+    const view = build({}, { assets: {} });
+    expect(view.assets).toHaveLength(0);
+    expect(view.excluded).toEqual([{ id: 'etf-x', reason: '履歴も観測も無い' }]);
+  });
+
+  it('最高値の起点を持つ', () => {
+    // 史上最高値ではないことを画面に出すために要る。
+    const view = build({}, { assets: { 'etf-x': { seedHigh: 100, drawdown: { '2026-08-14': 5 } } } });
+    expect(view.seedStart).toBe('2026-08-14');
   });
 });

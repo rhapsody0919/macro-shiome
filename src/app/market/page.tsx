@@ -305,6 +305,84 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
     ],
   },
   {
+    question: 'drawdown',
+    frequency: 'weekly',
+    primaryIndicator: 'etf-spy',
+    drawdownGroup: 'major',
+    title: '主要資産の下落率',
+    subtitle: '最高値から何 % 下げているか。指数・金・長期国債・REIT',
+    notes: [
+      <span key="why">
+        <strong>水準が違う資産を同じ軸に載せるための正規化。</strong>
+        金 (400 ドル) と S&P 500 ETF (770 ドル) は水準では比べられないが、
+        下落率なら並べられる。<strong>上に行くほど最高値に近い</strong> (軸を反転している)。
+      </span>,
+      <span key="baseline">
+        <strong>最高値は「観測を始めてからの最大値」で、史上最高値ではない。</strong>
+        起点は 2024-11-28。それ以前に付けた高値は含まない。
+      </span>,
+      <span key="source">
+        ETF の価格を使っている。<strong>指数そのものではない</strong>ため、
+        信託報酬の分だけ長期では指数から目減りする。出所は Finnhub。
+      </span>,
+    ],
+  },
+  {
+    question: 'drawdown',
+    frequency: 'weekly',
+    primaryIndicator: 'etf-vgt',
+    drawdownGroup: 'sector',
+    title: '米国セクターの下落率',
+    subtitle: 'どのセクターから資金が抜けているか',
+    notes: [
+      <span key="rotation">
+        <strong>セクターの順位が入れ替わるのがローテーション。</strong>
+        景気が減速する局面では生活必需品・公益が相対的に強く、一般消費財・金融が先に売られる
+        傾向があるが、<strong>毎回そうなるとは限らない</strong>。
+      </span>,
+      <span key="etf">
+        Vanguard のセクター ETF。<strong>S&P 500 のセクター指数そのものではない</strong>
+        (S&P DJI の著作権で無料取得の経路が無いため)。構成銘柄と組入比率が違う。
+      </span>,
+    ],
+  },
+  {
+    question: 'drawdown',
+    frequency: 'weekly',
+    primaryIndicator: 'etf-uso',
+    drawdownGroup: 'commodity',
+    title: 'コモディティの下落率',
+    subtitle: '原油・金属・穀物',
+    notes: [
+      <span key="roll">
+        <strong>現物価格ではない。</strong>
+        先物を乗り換える ETF はロールコストで長期に減価する。
+        <strong>USO と UNG は特に大きい</strong>ので、水準そのものを商品価格として読まないこと。
+      </span>,
+      <span key="chain">
+        原油は物価の起点でもある。「物価は落ち着くか」(経済ページ) の WTI と合わせて読む。
+      </span>,
+    ],
+  },
+  {
+    question: 'drawdown',
+    frequency: 'weekly',
+    primaryIndicator: 'etf-eem',
+    drawdownGroup: 'country',
+    title: '各国の下落率',
+    subtitle: '米国の下落が世界共通か固有かを見分ける',
+    notes: [
+      <span key="why">
+        <strong>ドル建ての ETF なので現地通貨ベースの騰落とは一致しない。</strong>
+        現地株が上がっても通貨が下がれば下落率は悪化する。為替の影響を含んだ数字。
+      </span>,
+      <span key="pair">
+        金利の国際比較 (「金融環境は緩いか厳しいか」) と同じ狙い。
+        <strong>揃って下げていれば世界共通の要因</strong>、1 国だけなら固有の事情と読める。
+      </span>,
+    ],
+  },
+  {
     question: 'overseas',
     frequency: 'weekly',
     primaryIndicator: 'nikkei225',
