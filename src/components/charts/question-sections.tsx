@@ -60,6 +60,8 @@ export type QuestionChartDef<K extends string> =
       frequency: 'monthly';
       kind?: ValueKind;
       zeroLine?: boolean;
+      /** 定義から決まる基準線。DI の 50 など (#160)。 */
+      baseline?: { value: number; label: string };
       series: MonthlySeriesDef[];
     })
   /**
@@ -160,6 +162,7 @@ export function QuestionSections<K extends string>({
                   subtitle={chart.subtitle}
                   kind={chart.kind}
                   zeroLine={chart.zeroLine}
+                  baseline={chart.baseline}
                   series={chart.series}
                   notes={chart.notes}
                   badges={<Badges frequency="monthly" cyclePosition={cycleOf(chart)} />}

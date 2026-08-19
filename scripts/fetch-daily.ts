@@ -26,6 +26,7 @@ import { fetchEtfField, previousTradingDay } from '../src/lib/adapters/stockanal
 import { TreasuryClient } from '../src/lib/adapters/treasury';
 import { FinnhubClient, readFinnhubApiKeyFromEnv } from '../src/lib/adapters/finnhub';
 import { fetchEstatIndicator } from '../src/lib/adapters/estat-dashboard';
+import { EstatClient, readEstatAppIdFromEnv } from '../src/lib/adapters/estat-api';
 import {
   buildDrawdownView,
   buildEconomyView,
@@ -203,6 +204,32 @@ async function main(): Promise<void> {
       console.log(`  estat ${id}: ${Object.keys(observations).length} 件`);
     } catch (error) {
       failures.push(`estat ${id}: ${message(error)}`);
+    }
+  }
+
+  // --- 3e. e-Stat 統計 API (統計ダッシュボードに無い表) ---
+  // **appId が要る唯一の経路** (#160)。値もエラーもログに出さない。
+  {
+    const ids = Object.entries(indicators).filter(
+      ([, indicator]) => indicator.source.adapter === 'estat-api',
+    );
+    if (ids.length > 0) {
+      try {
+        const client = new EstatClient({ appId: readEstatAppIdFromEnv() });
+        for (const [id, indicator] of ids) {
+          if (indicator.source.adapter !== 'estat-api') continue;
+          try {
+            const observations = await client.fetchTable(indicator.source);
+            observationMap[id] = upsertObservations(id, observations, now);
+            console.log(`  estat-api ${id}: ${Object.keys(observations).length} 件`);
+          } catch (error) {
+            failures.push(`estat-api ${id}: ${message(error)}`);
+          }
+        }
+      } catch (error) {
+        // appId 未設定はここで 1 回だけ報告する。
+        failures.push(`estat-api: ${message(error)}`);
+      }
     }
   }
 

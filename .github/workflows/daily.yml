@@ -37,6 +37,7 @@ jobs:
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
           FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
+          ESTAT_APP_ID: ${{ secrets.ESTAT_APP_ID }}
         run: pnpm fetch:daily
 
       # **取得の直後に一次情報と突き合わせる** (#113)。取得実装と違う経路
@@ -46,6 +47,10 @@ jobs:
       - name: Verify values
         id: verify
         if: always()
+        # FRED はキー無しの CSV 経路で照合するのでキーを渡さない。
+        # e-Stat 統計 API だけは**キー無しの経路が存在しない** (#160)。
+        env:
+          ESTAT_APP_ID: ${{ secrets.ESTAT_APP_ID }}
         run: pnpm verify
 
       # 取得が一部失敗しても、取れた分はコミットする (次回の差分を小さくするため)。

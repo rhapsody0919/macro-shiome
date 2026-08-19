@@ -1692,5 +1692,45 @@
       "max": 10
     },
     "note": "有効求人倍率 (倍)。**季節調整済み**。前月からの繰り越しを含むため、新規求人倍率に遅れて動く。"
+  },
+  "jp-watcher-current": {
+    "name": "街角景気 現状判断DI (日本)",
+    "source": {
+      "adapter": "estat-api",
+      "statsDataId": "0003348423",
+      "tab": "140",
+      "cat01": "100",
+      "cat02": "100"
+    },
+    "frequency": "monthly",
+    "unit": "diffusion",
+    "attribution": "内閣府 景気ウォッチャー調査 (e-Stat)",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": 0,
+      "max": 100
+    },
+    "note": "景気ウォッチャー調査の DI。**季節調整済み、50 が中立** (#160)。小売・飲食・タクシーなど取引の現場にいる人が答えるため、統計に出る前の実感を拾う。景気動向指数 (ハードデータの合成) とは情報源が別で重複しない。統計ダッシュボードには無く、e-Stat 統計 API (appId 必須) が唯一の経路。 現状判断 (方向性)。いまの景気をどう感じているか。"
+  },
+  "jp-watcher-outlook": {
+    "name": "街角景気 先行き判断DI (日本)",
+    "source": {
+      "adapter": "estat-api",
+      "statsDataId": "0003348423",
+      "tab": "140",
+      "cat01": "100",
+      "cat02": "110"
+    },
+    "frequency": "monthly",
+    "unit": "diffusion",
+    "attribution": "内閣府 景気ウォッチャー調査 (e-Stat)",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": 0,
+      "max": 100
+    },
+    "note": "景気ウォッチャー調査の DI。**季節調整済み、50 が中立** (#160)。小売・飲食・タクシーなど取引の現場にいる人が答えるため、統計に出る前の実感を拾う。景気動向指数 (ハードデータの合成) とは情報源が別で重複しない。統計ダッシュボードには無く、e-Stat 統計 API (appId 必須) が唯一の経路。 先行き判断 (方向性)。**日本ページで唯一の「先を見る」系列**。"
   }
 }
