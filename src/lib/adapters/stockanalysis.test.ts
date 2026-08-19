@@ -144,3 +144,41 @@ describe('値が指す日 (#125 / #172)', () => {
     expect(at('2026-01-15T21:00:00Z')).toBe('2026-01-15');
   });
 });
+
+/** 2026-08 時点の GLD 履歴ページの表構造。Date / Open / High / Low / Close / Adj. Close / Change / Volume。 */
+const GLD_HISTORY_HTML = `
+<table>
+  <tr><th>Date</th><th>Open</th><th>High</th><th>Low</th><th>Close</th><th>Adj. Close</th><th>Change</th><th>Volume</th></tr>
+  <tr><td>Aug 18, 2026</td><td>402.55</td><td>404.32</td><td>397.87</td><td>398.55</td><td>398.55</td><td>-1.71%</td><td>10,378,334</td></tr>
+  <tr><td>Aug 17, 2026</td><td>402.34</td><td>406.23</td><td>402.18</td><td>405.49</td><td>405.49</td><td>1.00%</td><td>9,326,162</td></tr>
+  <tr><td>Aug 14, 2026</td><td>402.18</td><td>403.33</td><td>400.94</td><td>401.48</td><td>401.48</td><td>0.63%</td><td>6,185,747</td></tr>
+</table>`;
+
+describe('履歴ページからの終値 (#133)', () => {
+  it('日付と終値の組を取り出す', () => {
+    // 4 列目 (Low) ではなく 5 列目 (Close) を拾えていること。
+    expect(parseStockAnalysisHistory(GLD_HISTORY_HTML)).toEqual([
+      { date: '2026-08-18', close: 398.55 },
+      { date: '2026-08-17', close: 405.49 },
+      { date: '2026-08-14', close: 401.48 },
+    ]);
+  });
+
+  it('現在値ページの Previous Close とは 1 取引日ずれる', () => {
+    // #133 の原因そのもの。8/18 の引け後に見る `Previous Close` は 8/17 の終値であって
+    // 8/18 の終値ではない。履歴ページはこのずれが起こらない。
+    const rows = parseStockAnalysisHistory(GLD_HISTORY_HTML);
+    const previousCloseOnAug18 = 405.49;
+    expect(rows[0]).toEqual({ date: '2026-08-18', close: 398.55 });
+    expect(rows.find((r) => r.close === previousCloseOnAug18)?.date).toBe('2026-08-17');
+  });
+
+  it('行が無ければ落とす', () => {
+    // 構造変更で取れなくなったときに黙って「照合 0 件で緑」にしない。
+    expect(() => parseStockAnalysisHistory('<table></table>')).toThrow(/履歴の行を抽出できなかった/);
+  });
+
+  it('履歴ページの URL を組み立てる', () => {
+    expect(stockAnalysisHistoryUrl('GLD')).toBe('https://stockanalysis.com/etf/gld/history/');
+  });
+});
