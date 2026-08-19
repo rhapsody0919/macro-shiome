@@ -385,34 +385,6 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
     ],
   },
   {
-    question: 'overseas',
-    frequency: 'daily',
-    primaryIndicator: 'nikkei225',
-    title: '日経平均株価',
-    subtitle: '円建て。S&P 500 とは水準を直接比べられない',
-    series: [{ key: 'nikkei225', label: '日経平均', color: COLORS.nikkei225 }],
-    notes: [
-      <span key="why">
-        <strong>米国だけが動いているのか、世界的な流れなのかを見る。</strong>
-        両方が同じ方向なら世界共通の要因 (金利・景気) が効いていると読める。
-        金利の国際比較 (上のセクション) と同じ狙い。
-      </span>,
-      <span key="not-comparable">
-        <strong>S&P 500 と水準を直接比べられない。</strong>
-        通貨 (円建て) も構成銘柄も違うため、同じ図には載せていない。
-        比べるなら騰落率で見ること。
-      </span>,
-      <span key="fx">
-        <strong>為替の影響を受ける。</strong>
-        円安は輸出企業の円換算の売上を押し上げるため、日経平均は上がりやすい。
-        下の USD/JPY と合わせて読む。
-      </span>,
-      <span key="copyright">
-        著作権は Nikkei Inc. にある。日次 (終値)。日本の休場日は直近の営業日まで遡る。
-      </span>,
-    ],
-  },
-  {
     question: 'risk',
     frequency: 'daily',
     primaryIndicator: 'etf-gld',
@@ -439,22 +411,6 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
         サーバー側で返るのは直近 50 営業日ぶんだけだったため。
         それ以前は無料で取得できる経路が無い。
       </span>,
-    ],
-  },
-  {
-    question: 'overseas',
-    frequency: 'daily',
-    primaryIndicator: 'usdjpy',
-    title: 'USD/JPY',
-    subtitle: '円/ドル (FRB 公表値)',
-    series: [{ key: 'usdjpy', label: 'USD/JPY', color: COLORS.usdjpy }],
-    notes: [
-      <span key="pair">
-        <strong>円安は日経平均の押し上げ要因</strong>になりやすい。輸出企業の円換算の
-        売上が増えるため。上の 2 本を並べて見ると、日本株の動きが業績なのか為替なのかを
-        切り分けやすい。
-      </span>,
-      <span key="daily">日次。FRB が公表する日次値をそのまま並べている。</span>,
     ],
   },
 ];

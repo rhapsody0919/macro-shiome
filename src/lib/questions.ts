@@ -64,15 +64,35 @@ export const MARKET_QUESTIONS = {
     guide:
       '最高値からの下落率で揃えると、水準の違う資産を横断して比べられる。どこから資金が抜けているかが順位で分かる。',
   },
-  overseas: {
-    title: '海外市場も同じ方向か',
+} as const satisfies Record<string, Question>;
+
+/**
+ * 日本ページの問い (#152)。
+ *
+ * **ページを地域で分けた唯一の例外。** 他のページは対象 (バリュエーション / 経済 / 市場) で
+ * 分けているが、日本の指標は出所も単位も米国と違い、同じ問いの中に混ぜると
+ * 「単位が違う」のか「動きが違う」のかを読み分けられない (#116〜#118 と同じ型)。
+ * e-Stat から日本の指標を増やしていく方針のため、分散が広がる前に分けた。
+ *
+ * **国際比較のチャートはここに置かない。** 「10年債利回りの国際比較」(日米独) と
+ * 「各国の下落率」は複数国を並べること自体が目的で、日本ページに置くと何を見る図か
+ * 分からなくなる。
+ */
+export const JAPAN_QUESTIONS = {
+  'jp-market': {
+    title: '日本市場はどう動いているか',
+    guide: '株と為替は連動しやすい。円安は輸出企業の円換算の売上を押し上げる。',
+  },
+  'jp-housing': {
+    title: '日本の住宅は動いているか',
     guide:
-      '米国だけが動いているのか、世界的な流れなのかを見る。日本市場は為替と株が連動しやすい。',
+      '米国のように金利で先行して動く構造ではない。人口と税制の影響が大きく、持家と貸家で動く理由が違う。',
   },
 } as const satisfies Record<string, Question>;
 
 export type EconomyQuestionId = keyof typeof ECONOMY_QUESTIONS;
 export type MarketQuestionId = keyof typeof MARKET_QUESTIONS;
+export type JapanQuestionId = keyof typeof JAPAN_QUESTIONS;
 
 /**
  * 問いごとに項目を束ねる。**空の問いは返さない**。
