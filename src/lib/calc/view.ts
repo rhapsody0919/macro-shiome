@@ -642,6 +642,10 @@ export function buildEconomyView(options: BuildViewOptions): EconomyView {
     buildingPermits: level('building-permits', month),
     housingStarts: level('housing-starts', month),
     newHomeSales: level('new-home-sales', month),
+    // 日本は水準のまま出す。総戸数だけ年率換算なので内訳と同じ図に載せない (#129)。
+    jpHousingStarts: level('jp-housing-starts', month),
+    jpHousingStartsOwned: level('jp-housing-starts-owned', month),
+    jpHousingStartsRented: level('jp-housing-starts-rented', month),
     jobOpenings: level('job-openings', month),
     // 入札日は月内で不定なので、その月に 1 件でもあればその値を載せる。
     bidToCover: latestInMonth(series(observations, 'ten-year-bid-to-cover'), month),
@@ -699,6 +703,9 @@ const MONTHLY_INDICATORS = [
   'building-permits',
   'housing-starts',
   'new-home-sales',
+  'jp-housing-starts',
+  'jp-housing-starts-owned',
+  'jp-housing-starts-rented',
   'job-openings',
   'ten-year-bid-to-cover',
   'ny-fed-survey',

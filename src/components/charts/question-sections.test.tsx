@@ -61,6 +61,27 @@ describe('問いによる画面構成 (#89)', () => {
   });
 });
 
+describe('日本の住宅着工 (#129)', () => {
+  it('総戸数と内訳を別のチャートに分ける', () => {
+    // 総戸数は年率換算、内訳は季調値そのもので水準が 1 桁違う。
+    // 同じ図に載せると内訳が潰れて読めない (#116〜#118 の「重ねずに切り替える」)。
+    render(<EconomyPage />);
+    expect(screen.getByRole('heading', { name: '新設住宅着工戸数 (日本)' })).toBeInTheDocument();
+    expect(
+      screen.getByRole('heading', { name: '新設住宅着工戸数の内訳 (日本)' }),
+    ).toBeInTheDocument();
+  });
+
+  it('米国の住宅着工とは別のチャートにする', () => {
+    // 定義は同じ (季調済年率換算) だが単位が違う (日本=戸 / 米国=千戸)。
+    render(<EconomyPage />);
+    const housing = document.getElementById('q-housing');
+    const titles = Array.from(housing?.querySelectorAll('h3') ?? []).map((h) => h.textContent);
+    expect(titles).toContain('住宅市場');
+    expect(titles).toContain('新設住宅着工戸数 (日本)');
+  });
+});
+
 describe('価格系列の日次表示 (#137)', () => {
   it('日次チャートに日次バッジが出る', () => {
     // 「先週から動いていない」のか「月次だから動かない」のかを判別するための表示 (#64)。
