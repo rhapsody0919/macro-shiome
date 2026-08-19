@@ -882,4 +882,49 @@ describe('下落率のビュー (#128)', () => {
     const view = build({}, { assets: { 'etf-x': { seedHigh: 100, drawdown: { '2026-08-14': 5 } } } });
     expect(view.seedStart).toBe('2026-08-14');
   });
+
+  describe('最高値をグリッドの外の観測からも取る (#138)', () => {
+    it('週の途中で付けた高値を取りこぼさない', () => {
+      // 日次バッチ (#136) では観測が毎営業日入る。金曜だけを見ると
+      // 水曜に付けた 200 を見落とし、最高値 150 で下落率を出してしまう。
+      const view = build(
+        {
+          'etf-x': {
+            '2026-08-14': 150,
+            '2026-08-19': 200, // 水曜。グリッド (金曜) には無い日
+            '2026-08-21': 160,
+          },
+        },
+        { assets: { 'etf-x': { seedHigh: 100, drawdown: {} } } },
+      );
+      const points = view.assets[0].points;
+      // 最高値 200 に対し 160 なので 20%。水曜を見落とすと 150 基準で 0% になる。
+      expect(points.find((p) => p.date === '2026-08-21')?.drawdown).toBeCloseTo(20, 10);
+      expect(view.assets[0].high).toBe(200);
+    });
+
+    it('過去の点は当時の最高値で出す', () => {
+      // 後から付いた高値を過去に遡って適用すると、当時の下落率が実際より深く見える。
+      const view = build(
+        { 'etf-x': { '2026-08-14': 150, '2026-08-21': 200 } },
+        { assets: { 'etf-x': { seedHigh: 100, drawdown: {} } } },
+      );
+      const points = view.assets[0].points;
+      // 08-14 時点の最高値は 150 (まだ 200 は観測されていない) なので 0%。
+      expect(points.find((p) => p.date === '2026-08-14')?.drawdown).toBe(0);
+      expect(points.find((p) => p.date === '2026-08-21')?.drawdown).toBe(0);
+    });
+
+    it('グリッド最終点より後の観測も最高値に含める', () => {
+      // #125 の状況。平日に取れた値がその週の金曜より後になることがある。
+      // 最高値として嘘をつかないため、表示する最高値には含める。
+      const view = build(
+        { 'etf-x': { '2026-08-21': 150, '2026-08-25': 300 } },
+        { assets: { 'etf-x': { seedHigh: 100, drawdown: {} } } },
+      );
+      expect(view.assets[0].high).toBe(300);
+      // ただし各点の下落率はその時点までの最高値で出す (08-21 は 150 が最高値)。
+      expect(view.assets[0].points.find((p) => p.date === '2026-08-21')?.drawdown).toBe(0);
+    });
+  });
 });

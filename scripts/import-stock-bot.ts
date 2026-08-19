@@ -53,10 +53,6 @@ function toIso(value: string): string | null {
   return `${m[1]}-${m[2].padStart(2, '0')}-${m[3].padStart(2, '0')}`;
 }
 
-function isFriday(iso: string): boolean {
-  return new Date(`${iso}T00:00:00Z`).getUTCDay() === 5;
-}
-
 /** シンボル → 最高値。MainETFData / SectorETFData の 3 列目。 */
 function readHighs(paths: readonly string[]): Record<string, number> {
   const highs: Record<string, number> = {};
@@ -77,8 +73,15 @@ function readHighs(paths: readonly string[]): Record<string, number> {
 /**
  * 0 付近から高い下落率へ跳ぶ箇所を探す (#128)。
  *
- * **最高値が誤った値で固定された痕跡**。正常な市場では 1 週間で下落率が
- * 20pt 以上「悪化」することはまず無い。逆向き (高い値 → 0) は最高値の更新なので正常。
+ * **最高値が誤った値で固定された痕跡**。逆向き (高い値 → 0) は最高値の更新なので正常。
+ *
+ * しきい値 20pt は日次で取り込んでも据え置ける (#138)。CSV 全 626 行を実測したところ、
+ * 1 日の下落率悪化は次のように分かれた。
+ *
+ * - **VGT 87.40pt** (2026-04-21) — 汚染。これだけが突出している
+ * - 実在の市場変動の最大は **USO 16.06pt** (2026-04-08)、次いで UNG 15.31 / VDE 14.74
+ *
+ * 20pt は両者の間にあり、約 4pt の余裕がある。
  */
 function findCorruption(series: Array<[string, number]>): string | null {
   for (let i = 1; i < series.length; i++) {
@@ -99,7 +102,7 @@ function main(): void {
 
   for (const row of rows.slice(1)) {
     const iso = toIso(row[0] ?? '');
-    if (iso === null || !isFriday(iso)) continue;
+    if (iso === null) continue;
     for (let col = 1; col < header.length; col++) {
       const symbol = header[col];
       const raw = row[col];
@@ -131,7 +134,7 @@ function main(): void {
     }
     const corrupted = findCorruption(series);
     if (corrupted !== null) {
-      skipped.push(`${symbol}: ${corrupted} に下落率が 20pt 以上悪化 (最高値の汚染を疑う)`);
+      skipped.push(`${symbol}: ${corrupted} に下落率が 1 日で 20pt 以上悪化 (最高値の汚染を疑う)`);
       continue;
     }
     const seedHigh = highs[symbol];
