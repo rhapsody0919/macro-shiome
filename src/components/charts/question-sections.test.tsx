@@ -100,6 +100,24 @@ describe('チャートのバッジ', () => {
   });
 });
 
+describe('日本の景気動向指数 (#154)', () => {
+  it('先行・一致・遅行を 1 枚に重ねる', () => {
+    // 3 本とも同じ基準 (2020年平均 = 100)・同じ単位なので重ねられる。
+    // 位置関係そのものが局面を示すため、分けると読めなくなる。
+    render(<JapanPage />);
+    const section = document.getElementById('q-jp-cycle');
+    expect(section).not.toBeNull();
+    const titles = Array.from(section?.querySelectorAll('h3') ?? []).map((h) => h.textContent);
+    expect(titles).toEqual(['景気動向指数']);
+  });
+
+  it('米国の景気指標と同じ図に載せない', () => {
+    // 米国は LEI が取れず構成要素で代替している (#62)。定義が違うので比べられない。
+    render(<EconomyPage />);
+    expect(screen.queryByRole('heading', { name: '景気動向指数' })).toBeNull();
+  });
+});
+
 describe('日本ページ (#152)', () => {
   it('日経平均と USD/JPY が同じ問いに入る', () => {
     // 円安は日経平均の押し上げ要因。2 つを並べて業績と為替を切り分ける (#118)。

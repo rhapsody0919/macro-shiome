@@ -642,6 +642,10 @@ export function buildEconomyView(options: BuildViewOptions): EconomyView {
     buildingPermits: level('building-permits', month),
     housingStarts: level('housing-starts', month),
     newHomeSales: level('new-home-sales', month),
+    // 景気動向指数は 3 本とも同じ基準・同じ単位なので重ねてよい (#154)。
+    jpDiLeading: level('jp-di-leading', month),
+    jpDiCoincident: level('jp-di-coincident', month),
+    jpDiLagging: level('jp-di-lagging', month),
     // 日本は水準のまま出す。総戸数だけ年率換算なので内訳と同じ図に載せない (#129)。
     jpHousingStarts: level('jp-housing-starts', month),
     jpHousingStartsOwned: level('jp-housing-starts-owned', month),
@@ -703,6 +707,9 @@ const MONTHLY_INDICATORS = [
   'building-permits',
   'housing-starts',
   'new-home-sales',
+  'jp-di-leading',
+  'jp-di-coincident',
+  'jp-di-lagging',
   'jp-housing-starts',
   'jp-housing-starts-owned',
   'jp-housing-starts-rented',

@@ -18,6 +18,51 @@ export const metadata = {
  */
 const CHARTS: QuestionChartDef<JapanQuestionId>[] = [
   {
+    question: 'jp-cycle',
+    frequency: 'monthly',
+    primaryIndicator: 'jp-di-leading',
+    title: '景気動向指数',
+    subtitle: '先行・一致・遅行 (2020年平均 = 100)',
+    series: [
+      {
+        key: 'jpDiLeading',
+        label: '先行',
+        color: COLORS.jpDiLeading,
+        width: 2.4,
+        indicatorId: 'jp-di-leading',
+      },
+      {
+        key: 'jpDiCoincident',
+        label: '一致',
+        color: COLORS.jpDiCoincident,
+        indicatorId: 'jp-di-coincident',
+      },
+      {
+        key: 'jpDiLagging',
+        label: '遅行',
+        color: COLORS.jpDiLagging,
+        indicatorId: 'jp-di-lagging',
+      },
+    ],
+    notes: [
+      <span key="order">
+        <strong>3 本の位置関係が局面を示す。</strong>
+        先行 → 一致 → 遅行の順に動くため、先行が一致を下回れば減速、
+        遅行が一致を追い越していれば局面が進んでいる。
+      </span>,
+      <span key="us">
+        <strong>米国では同じものが取れない。</strong>
+        The Conference Board の景気先行指数は著作権で FRED に収録されておらず、
+        経済ページでは構成要素から代替を組んでいる。日本は本物を無料で取得できる。
+      </span>,
+      <span key="base">
+        <strong>2020年平均 = 100 の CI</strong>。基準が変わると水準も変わるため、
+        古い基準の系列とはつなげていない (2015年基準は 2023-04 が最終)。
+        <strong>季節調整済みの系列は提供されていない</strong>ため原数値を出している。
+      </span>,
+    ],
+  },
+  {
     question: 'jp-market',
     frequency: 'daily',
     primaryIndicator: 'nikkei225',
