@@ -99,18 +99,50 @@ export function readGaps(): Gap[] {
   return readJson<Gap[]>(gapsPath(), []);
 }
 
-/** 欠測を記録する。同じ指標・同じ日付は上書きする (再実行で重複させない)。 */
+/**
+ * 欠測を記録する。同じ指標・同じ日付は上書きする (再実行で重複させない)。
+ *
+ * **`recordedAt` だけは最初の値を残す** (#142)。「いつ欠測を検知したか」は
+ * 最初に検知した時刻であって、再検知した時刻ではない。毎回上書きすると
+ * 「いつから欠測しているか」が失われ、FactSet の夏季休刊のように**継続する欠測の
+ * 長さ**を後から追えなくなる。日次バッチ (#136) では再検知が毎日起きるため、
+ * 差分にも効く (実測で毎回 14 件が書き換わっていた)。
+ */
 export function recordGaps(newGaps: readonly Gap[]): Gap[] {
+  const existing = readGaps();
   const byKey = new Map<string, Gap>();
-  for (const gap of [...readGaps(), ...newGaps]) {
+  for (const gap of existing) {
     byKey.set(`${gap.indicatorId}:${gap.date}`, gap);
+  }
+  for (const gap of newGaps) {
+    const key = `${gap.indicatorId}:${gap.date}`;
+    const before = byKey.get(key);
+    // reason / detail は更新する (欠測の理由が変わることはある)。
+    byKey.set(key, before === undefined ? gap : { ...gap, recordedAt: before.recordedAt });
   }
 
   const merged = [...byKey.values()].sort((a, b) =>
     a.date === b.date ? a.indicatorId.localeCompare(b.indicatorId) : b.date.localeCompare(a.date),
   );
+  // 変化が無ければ書かない (#140 と同じ理由)。
+  if (isSameGaps(existing, merged)) return merged;
   writeJson(gapsPath(), merged);
   return merged;
+}
+
+/** 欠測が同一か。並び順も込みで比べる (並べ替えだけの差分も書き直さないため)。 */
+function isSameGaps(a: readonly Gap[], b: readonly Gap[]): boolean {
+  if (a.length !== b.length) return false;
+  return a.every((gap, i) => {
+    const other = b[i];
+    return (
+      gap.indicatorId === other.indicatorId &&
+      gap.date === other.date &&
+      gap.reason === other.reason &&
+      gap.detail === other.detail &&
+      gap.recordedAt === other.recordedAt
+    );
+  });
 }
 
 export function readStatus(): BatchStatus | null {
