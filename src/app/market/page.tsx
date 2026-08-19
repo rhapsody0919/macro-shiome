@@ -82,7 +82,7 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
   },
   {
     question: 'financial',
-    frequency: 'weekly',
+    frequency: 'daily',
     primaryIndicator: 't10y2y',
     title: 'イールドカーブ (10年債 − 2年債)',
     subtitle: '長短金利差。負なら逆イールド',
@@ -105,7 +105,7 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
         外れた事例もある。The Conference Board の景気先行指数の構成要素は「10 年債 − FF 金利」で、
         本指標とは厳密には別系列。
       </span>,
-      <span key="daily">週次 (金曜時点)。FRED が公表する日次値を金曜に揃えている。</span>,
+      <span key="daily">日次。FRED が公表する日次値をそのまま並べている。</span>,
     ],
   },
   {
@@ -151,7 +151,7 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
   },
   {
     question: 'financial',
-    frequency: 'weekly',
+    frequency: 'daily',
     primaryIndicator: 'hy-spread',
     title: '信用スプレッド',
     subtitle: '社債と国債の利回り差 (拡大がリスク回避)',
