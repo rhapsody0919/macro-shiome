@@ -63,6 +63,65 @@ const CHARTS: QuestionChartDef<JapanQuestionId>[] = [
     ],
   },
   {
+    question: 'jp-labor',
+    frequency: 'monthly',
+    primaryIndicator: 'jp-new-job-ratio',
+    title: '求人倍率',
+    subtitle: '新規と有効 (倍・季節調整済み)',
+    series: [
+      {
+        key: 'jpNewJobRatio',
+        label: '新規求人倍率',
+        color: COLORS.jpNewJobRatio,
+        width: 2.4,
+        indicatorId: 'jp-new-job-ratio',
+      },
+      {
+        key: 'jpJobRatio',
+        label: '有効求人倍率',
+        color: COLORS.jpJobRatio,
+        indicatorId: 'jp-job-ratio',
+      },
+    ],
+    notes: [
+      <span key="lead">
+        <strong>新規が先行、有効が一致。</strong>
+        新規求人倍率はその月に新たに出た求人と新たな求職者の比で、
+        有効求人倍率は前月からの繰り越しを含む。転換点は新規に先に出る。
+      </span>,
+      <span key="unit">
+        単位が揃っている (倍) ため水準のまま並べている。水準の目安となる補助線は引いていない。
+      </span>,
+    ],
+  },
+  {
+    question: 'jp-labor',
+    frequency: 'monthly',
+    primaryIndicator: 'jp-real-wage',
+    title: '実質賃金指数',
+    subtitle: '現金給与総額 (季節調整済み)',
+    series: [
+      {
+        key: 'jpRealWage',
+        label: '実質賃金',
+        color: COLORS.jpRealWage,
+        indicatorId: 'jp-real-wage',
+      },
+    ],
+    notes: [
+      <span key="seasonal">
+        <strong>季節調整済みを出している。</strong>
+        現金給与総額には賞与が入るため原数値は 6 月と 12 月に跳ねる
+        (2026-02 が 82.1 に対し 2026-06 は 144.1)。季調値なら 97.0 と 98.5 で連続して読める。
+      </span>,
+      <span key="substitute">
+        <strong>家計調査の月次消費支出は代わりに使えない。</strong>
+        家計消費指数は 2017-12 で提供が止まっている。家計の余力はこの実質賃金で見ているが、
+        <strong>消費そのものではない</strong>点に注意する。
+      </span>,
+    ],
+  },
+  {
     question: 'jp-trade',
     frequency: 'monthly',
     primaryIndicator: 'jp-import-price',

@@ -488,6 +488,12 @@ export interface MonthlyPoint {
   housingStarts: number | null;
   /** 新築住宅販売件数。連鎖の下流。 */
   newHomeSales: number | null;
+  /** 日本の実質賃金指数 (現金給与総額)。**季節調整済み** (#156)。 */
+  jpRealWage: number | null;
+  /** 日本の新規求人倍率 (倍)。**季節調整済み**。有効求人倍率に先行する (#156)。 */
+  jpNewJobRatio: number | null;
+  /** 日本の有効求人倍率 (倍)。**季節調整済み** (#156)。 */
+  jpJobRatio: number | null;
   /** 日本の輸出物価指数。**2020年基準・円ベース** (#155)。 */
   jpExportPrice: number | null;
   /** 日本の輸入物価指数。**2020年基準・円ベース** (#155)。 */

@@ -642,6 +642,11 @@ export function buildEconomyView(options: BuildViewOptions): EconomyView {
     buildingPermits: level('building-permits', month),
     housingStarts: level('housing-starts', month),
     newHomeSales: level('new-home-sales', month),
+    // 賞与月の跳ねを避けるため季調値を採っている (#156)。
+    jpRealWage: level('jp-real-wage', month),
+    // 求人倍率は同じ単位 (倍) で、新規が先行・有効が一致という関係が読める。
+    jpNewJobRatio: level('jp-new-job-ratio', month),
+    jpJobRatio: level('jp-job-ratio', month),
     // 輸出入物価は同じ基準・同じ円ベースなので重ねてよい (#155)。
     jpExportPrice: level('jp-export-price', month),
     jpImportPrice: level('jp-import-price', month),
@@ -710,6 +715,9 @@ const MONTHLY_INDICATORS = [
   'building-permits',
   'housing-starts',
   'new-home-sales',
+  'jp-real-wage',
+  'jp-new-job-ratio',
+  'jp-job-ratio',
   'jp-export-price',
   'jp-import-price',
   'jp-di-leading',

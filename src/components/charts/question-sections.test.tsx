@@ -100,6 +100,25 @@ describe('チャートのバッジ', () => {
   });
 });
 
+describe('日本の雇用と所得 (#156)', () => {
+  it('求人倍率は 2 本を重ね、実質賃金は分ける', () => {
+    // 求人倍率は同じ単位 (倍) なので重ねられる。実質賃金は指数なので別の軸になる。
+    render(<JapanPage />);
+    const section = document.getElementById('q-jp-labor');
+    expect(section).not.toBeNull();
+    const titles = Array.from(section?.querySelectorAll('h3') ?? []).map((h) => h.textContent);
+    expect(titles).toEqual(['求人倍率', '実質賃金指数']);
+  });
+
+  it('先行する新規求人倍率を先に置く', () => {
+    // 上流 → 下流の順に並べる (#89)。転換点は新規に先に出る。
+    render(<JapanPage />);
+    const section = document.getElementById('q-jp-labor');
+    const labels = section?.textContent ?? '';
+    expect(labels.indexOf('新規求人倍率')).toBeLessThan(labels.indexOf('有効求人倍率'));
+  });
+});
+
 describe('日本の交易条件 (#155)', () => {
   it('輸出物価と輸入物価を 1 枚に重ねる', () => {
     // 同じ基準・同じ円ベースなので重ねられる。2 本の差が交易条件そのもの。
