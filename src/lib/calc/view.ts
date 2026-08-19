@@ -642,6 +642,11 @@ export function buildEconomyView(options: BuildViewOptions): EconomyView {
     buildingPermits: level('building-permits', month),
     housingStarts: level('housing-starts', month),
     newHomeSales: level('new-home-sales', month),
+    // **公表されている前年同月比をそのまま出す** (#162)。日本の CPI 指数は小数 1 桁しか
+    // 公表されず、そこから導出すると丸めで公表値とずれる (2026-06 は 1.50% と 1.6%)。
+    // 米国は指数が小数 3 桁あるため `yoy()` で導出している。経路は違うが値は正しい。
+    jpCpiCore: level('jp-cpi-core', month),
+    jpCpi: level('jp-cpi', month),
     // 街角景気は DI (50 が中立)。景気動向指数とは基準が違うので同じ図に載せない (#160)。
     jpWatcherCurrent: level('jp-watcher-current', month),
     jpWatcherOutlook: level('jp-watcher-outlook', month),
@@ -718,6 +723,8 @@ const MONTHLY_INDICATORS = [
   'building-permits',
   'housing-starts',
   'new-home-sales',
+  'jp-cpi-core',
+  'jp-cpi',
   'jp-watcher-current',
   'jp-watcher-outlook',
   'jp-real-wage',
