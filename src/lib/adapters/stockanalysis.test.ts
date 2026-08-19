@@ -3,7 +3,7 @@ import {
   fetchEtfField,
   parseStockAnalysisField,
   parseStockAnalysisHistory,
-  previousTradingDay,
+  lastClosedTradingDay,
   stockAnalysisEtfUrl,
   stockAnalysisHistoryUrl,
 } from './stockanalysis';
@@ -107,36 +107,43 @@ describe('終値は取らない (#133)', () => {
   });
 });
 
-describe('値が指す日 (#125)', () => {
-  const on = (iso: string) => previousTradingDay(new Date(`${iso}T02:00:00Z`));
+describe('値が指す日 (#125 / #172)', () => {
+  const at = (iso: string) => lastClosedTradingDay(new Date(iso));
 
-  it('定時実行 (UTC 土曜) は金曜を指す', () => {
-    // 週次バッチは UTC 土曜 02:00 = 米東部の金曜 22 時。市場は閉場後なので金曜終値。
-    expect(on('2026-08-15')).toBe('2026-08-14');
+  it('定時実行 (UTC 02:00 = ET 前日 22 時) は前日を指す', () => {
+    // 米国東部の前日 21〜22 時。その日のセッションは閉じている。
+    expect(at('2026-08-20T02:00:00Z')).toBe('2026-08-19');
   });
 
-  it('手動実行した日の直前の取引日を指す', () => {
-    // 火曜に手動実行しても、金曜の値として保存されない。これが #125 の中身。
-    expect(on('2026-08-18')).toBe('2026-08-17');
+  it('引け後に実行しても同じ日を指す (#172)', () => {
+    // ET 19:41 の手動実行。以前は常に前営業日を返していたため 1 日ずれ、
+    // ETF 36 本の観測が壊れた。定時実行と同じ日を返すのが正しい。
+    expect(at('2026-08-19T23:41:00Z')).toBe('2026-08-19');
   });
 
-  it('週末を飛ばす', () => {
-    // 日曜・月曜の実行はどちらも金曜を指す。土日に取引は無い。
-    expect(on('2026-08-16')).toBe('2026-08-14');
-    expect(on('2026-08-17')).toBe('2026-08-14');
+  it('引け前なら前営業日を指す', () => {
+    // ET 14:00。まだその日のセッションは閉じていない。
+    expect(at('2026-08-19T18:00:00Z')).toBe('2026-08-18');
   });
 
-  it('実行日そのものは返さない', () => {
-    // 実行日で保存すると、週次グリッド (金曜から過去に遡る) から見えなくなる。
-    for (const day of ['2026-08-14', '2026-08-15', '2026-08-18']) {
-      expect(on(day)).not.toBe(day);
-    }
+  it('引け直後 (ET 16:00) から当日に切り替わる', () => {
+    expect(at('2026-08-19T19:59:00Z')).toBe('2026-08-18');
+    expect(at('2026-08-19T20:00:00Z')).toBe('2026-08-19');
   });
 
-  it('月をまたぐ', () => {
-    expect(on('2026-09-01')).toBe('2026-08-31');
+  it('土日は直前の金曜を指す', () => {
+    expect(at('2026-08-23T02:00:00Z')).toBe('2026-08-21');
+    expect(at('2026-08-24T02:00:00Z')).toBe('2026-08-21');
   });
-})
+
+  it('夏時間と標準時で境目がずれない', () => {
+    // ET は夏時間 (UTC-4) と標準時 (UTC-5) で切り替わる。UTC からの単純な
+    // 引き算では引けの判定を誤るため、Intl で東部時間を取り出している。
+    // 1 月は標準時: ET 16:00 = UTC 21:00。
+    expect(at('2026-01-15T20:59:00Z')).toBe('2026-01-14');
+    expect(at('2026-01-15T21:00:00Z')).toBe('2026-01-15');
+  });
+});
 
 /** 2026-08 時点の GLD 履歴ページの表構造。Date / Open / High / Low / Close / Adj. Close / Change / Volume。 */
 const GLD_HISTORY_HTML = `

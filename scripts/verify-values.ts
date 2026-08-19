@@ -378,12 +378,12 @@ function verifyDrawdown(): void {
 /**
  * 8. ゴールドの終値が「その日の終値」か (#133)。
  *
- * Finnhub の `c` は**現在値**なので、保存キー (`previousTradingDay`) が指す日と
+ * Finnhub の `c` は**現在値**なので、保存キー (`lastClosedTradingDay`) が指す日と
  * 実際にその値が属する日がずれても気づけない。実際に stockanalysis の
  * `Previous Close` を当日終値と誤認し、**1 取引日ずれた値を保存していた**。
  *
  * 日付が明示されている履歴ページと突き合わせる。**キーのずれは全 ETF に共通**
- * (同じ `previousTradingDay` を使う) なので、画面に価格として出している GLD 1 本で足りる。
+ * (同じ `lastClosedTradingDay` を使う) なので、画面に価格として出している GLD 1 本で足りる。
  */
 async function verifyGoldClose(): Promise<void> {
   console.log('8. ゴールドの終値と日付の照合');
