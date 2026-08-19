@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T01:19:42.447Z",
+  "generatedAt": "2026-08-19T01:24:01.476Z",
   "monthly": [
     {
       "month": "2016-08-01",
@@ -3892,7 +3892,7 @@
       "realDisposableTotal": 0.7894810306803279,
       "retailSales": 4.6793516560958315,
       "manufacturingHours": 41.6,
-      "industrialProduction": 0.8180076419915805,
+      "industrialProduction": 0.7972359848188892,
       "newOrdersConsumerGoods": 1.696763394653411,
       "newOrdersCapitalGoods": 6.185730734108863,
       "buildingPermits": 1540,
@@ -3926,7 +3926,7 @@
       "realDisposableTotal": 0.007765223998990045,
       "retailSales": 4.599046585170141,
       "manufacturingHours": 41.5,
-      "industrialProduction": 0.5708607646050412,
+      "industrialProduction": 0.706549063542905,
       "newOrdersConsumerGoods": 4.654987775555153,
       "newOrdersCapitalGoods": 9.916733745925765,
       "buildingPermits": 1363,
@@ -3947,7 +3947,7 @@
     },
     {
       "month": "2026-04-01",
-      "importPrice": 4.304869442484138,
+      "importPrice": 4.516584333098095,
       "exportPrice": 9.305373525557027,
       "producerPrice": 5.70315939182553,
       "cpi": 3.7792458367415627,
@@ -3960,7 +3960,7 @@
       "realDisposableTotal": -0.9744718164220845,
       "retailSales": 5.097529013585245,
       "manufacturingHours": 41.6,
-      "industrialProduction": 1.2772934076550557,
+      "industrialProduction": 1.3763758567121531,
       "newOrdersConsumerGoods": 8.604671248257233,
       "newOrdersCapitalGoods": 10.916375232812104,
       "buildingPermits": 1423,
@@ -3981,7 +3981,7 @@
     },
     {
       "month": "2026-05-01",
-      "importPrice": 6.595744680851068,
+      "importPrice": 6.80851063829786,
       "exportPrice": 11.345646437994738,
       "producerPrice": 5.825059229310248,
       "cpi": 4.166614684049641,
@@ -3994,11 +3994,11 @@
       "realDisposableTotal": 0.10511153501771009,
       "retailSales": 5.965551413335857,
       "manufacturingHours": 41.6,
-      "industrialProduction": 1.5798465812579376,
+      "industrialProduction": 1.529631408748533,
       "newOrdersConsumerGoods": 11.276276153031661,
       "newOrdersCapitalGoods": 10.928480321897727,
       "buildingPermits": 1410,
-      "housingStarts": 1199,
+      "housingStarts": 1182,
       "newHomeSales": 618,
       "jobOpenings": 7537,
       "bidToCover": 2.4,
@@ -4015,8 +4015,8 @@
     },
     {
       "month": "2026-06-01",
-      "importPrice": 7.102272727272729,
-      "exportPrice": 10.17728168089298,
+      "importPrice": 6.6761363636363535,
+      "exportPrice": 10.045961917268542,
       "producerPrice": 5.535301530395631,
       "cpi": 3.463530729385411,
       "pce": 3.668052673520439,
@@ -4028,11 +4028,11 @@
       "realDisposableTotal": 0.5233241102098329,
       "retailSales": 5.702015939990623,
       "manufacturingHours": 41.7,
-      "industrialProduction": 1.1440847075981697,
+      "industrialProduction": 1.2892386071926554,
       "newOrdersConsumerGoods": 8.61763294649609,
       "newOrdersCapitalGoods": 12.94175219553486,
       "buildingPermits": 1374,
-      "housingStarts": 1427,
+      "housingStarts": 1415,
       "newHomeSales": 628,
       "jobOpenings": 7359,
       "bidToCover": 2.57,
@@ -4049,8 +4049,8 @@
     },
     {
       "month": "2026-07-01",
-      "importPrice": null,
-      "exportPrice": null,
+      "importPrice": 5.9490084985835745,
+      "exportPrice": 8.246073298429323,
       "producerPrice": 4.656510491520538,
       "cpi": 3.303856050706311,
       "pce": null,
@@ -4062,11 +4062,11 @@
       "realDisposableTotal": null,
       "retailSales": 4.751765122301088,
       "manufacturingHours": 41.7,
-      "industrialProduction": null,
+      "industrialProduction": 1.0794551200266955,
       "newOrdersConsumerGoods": null,
       "newOrdersCapitalGoods": null,
-      "buildingPermits": null,
-      "housingStarts": null,
+      "buildingPermits": 1443,
+      "housingStarts": 1239,
       "newHomeSales": null,
       "jobOpenings": null,
       "bidToCover": 2.59,
@@ -4119,11 +4119,11 @@
   "coverage": [
     {
       "indicatorId": "import-price",
-      "latestMonth": "2026-06-01"
+      "latestMonth": "2026-07-01"
     },
     {
       "indicatorId": "export-price",
-      "latestMonth": "2026-06-01"
+      "latestMonth": "2026-07-01"
     },
     {
       "indicatorId": "producer-price",
@@ -4171,7 +4171,7 @@
     },
     {
       "indicatorId": "industrial-production",
-      "latestMonth": "2026-06-01"
+      "latestMonth": "2026-07-01"
     },
     {
       "indicatorId": "new-orders-consumer-goods",
@@ -4183,11 +4183,11 @@
     },
     {
       "indicatorId": "building-permits",
-      "latestMonth": "2026-06-01"
+      "latestMonth": "2026-07-01"
     },
     {
       "indicatorId": "housing-starts",
-      "latestMonth": "2026-06-01"
+      "latestMonth": "2026-07-01"
     },
     {
       "indicatorId": "new-home-sales",
