@@ -7,7 +7,8 @@ import { MonthlyChart, type MonthlySeriesDef } from './monthly-chart';
 import { Badges } from './badges';
 import type { ValueKind } from './chart-frame';
 import { indicators } from '@/lib/data/indicators';
-import { economy, macro, marketDaily } from '@/lib/data/loader';
+import { economy, macro } from '@/lib/data/loader';
+import type { DailyPoint } from '@/lib/data/daily-series';
 import { groupByQuestion, type Question } from '@/lib/questions';
 
 /**
@@ -99,9 +100,15 @@ export function questionAnchor(id: string): string {
 export function QuestionSections<K extends string>({
   charts,
   questions,
+  dailyPoints,
 }: {
   charts: readonly QuestionChartDef<K>[];
   questions: Record<K, Question>;
+  /**
+   * 日次グリッドの系列 (#168)。**ページごとに違うビューを渡す。**
+   * ここで 1 本に固定すると、使わない系列まで全ページに載る。
+   */
+  dailyPoints: readonly DailyPoint[];
 }) {
   // 空の問いは出さない。指標が増えれば自動で現れる。
   const groups = groupByQuestion(charts, questions, (chart) => chart.question);
@@ -131,7 +138,7 @@ export function QuestionSections<K extends string>({
                 />
               ) : chart.frequency === 'daily' ? (
                 <MacroChart
-                  points={marketDaily}
+                  points={dailyPoints}
                   title={chart.title}
                   subtitle={chart.subtitle}
                   kind={chart.kind}

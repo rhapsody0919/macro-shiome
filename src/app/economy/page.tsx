@@ -5,7 +5,7 @@ import {
   type QuestionChartDef,
 } from '@/components/charts/question-sections';
 import { COLORS } from '@/lib/colors';
-import { economy, macro } from '@/lib/data/loader';
+import { economy, economyDaily, macro } from '@/lib/data/loader';
 import { ECONOMY_QUESTIONS, type EconomyQuestionId } from '@/lib/questions';
 
 export const metadata = {
@@ -659,7 +659,7 @@ export default function EconomyPage() {
       {/* 期間フィルターに依存せず常に直近の値を見せる。 */}
       <EconomySummary monthly={economy.monthly} weekly={macro} />
 
-      <QuestionSections charts={CHARTS} questions={ECONOMY_QUESTIONS} />
+      <QuestionSections dailyPoints={economyDaily} charts={CHARTS} questions={ECONOMY_QUESTIONS} />
     </div>
   );
 }

@@ -4,6 +4,7 @@ import {
   type QuestionChartDef,
 } from '@/components/charts/question-sections';
 import { COLORS } from '@/lib/colors';
+import { japanDaily } from '@/lib/data/loader';
 import { JAPAN_QUESTIONS, type JapanQuestionId } from '@/lib/questions';
 
 export const metadata = {
@@ -410,7 +411,7 @@ export default function JapanPage() {
         <QuestionIndex charts={CHARTS} questions={JAPAN_QUESTIONS} />
       </div>
 
-      <QuestionSections charts={CHARTS} questions={JAPAN_QUESTIONS} />
+      <QuestionSections dailyPoints={japanDaily} charts={CHARTS} questions={JAPAN_QUESTIONS} />
     </div>
   );
 }

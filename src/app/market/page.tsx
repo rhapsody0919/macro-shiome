@@ -5,7 +5,7 @@ import {
   type QuestionChartDef,
 } from '@/components/charts/question-sections';
 import { COLORS } from '@/lib/colors';
-import { macro } from '@/lib/data/loader';
+import { macro, marketDaily } from '@/lib/data/loader';
 import { MARKET_QUESTIONS, type MarketQuestionId } from '@/lib/questions';
 
 export const metadata = {
@@ -436,7 +436,7 @@ export default function MarketPage() {
       {/* 期間フィルターに依存せず常に直近の値を見せる。 */}
       <MarketSummary points={macro} />
 
-      <QuestionSections charts={CHARTS} questions={MARKET_QUESTIONS} />
+      <QuestionSections dailyPoints={marketDaily} charts={CHARTS} questions={MARKET_QUESTIONS} />
     </div>
   );
 }

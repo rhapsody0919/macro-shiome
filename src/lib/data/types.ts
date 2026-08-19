@@ -306,34 +306,6 @@ export interface ValuationView {
 }
 
 /** マクロ指標の 1 週分 (spec F-7)。週次 (金曜) に揃える。 */
-/**
- * 日次グリッドの価格系列 (#137)。
- *
- * **`MacroPoint` から Pick する。** 同じ系列を別々に宣言すると型がずれるため。
- *
- * マクロビューと分けるのは、あちらが月次・週次の系列も抱えているから。日次グリッドに
- * 載せても値が動かない日の点が増えるだけで情報が増えず、さらに `MacroPoint` は
- * 経済ページのサマリーも読むため **`/economy` まで巨大になる** (実測 425 KB → 1,348 KB)。
- */
-export type MarketDailyPoint = Pick<
-  MacroPoint,
-  | 'date'
-  | 'nikkei225'
-  | 'vix'
-  | 'usdjpy'
-  | 'wti'
-  | 'dollarIndex'
-  | 'gold'
-  | 'nominalRate'
-  | 'breakeven'
-  | 'realRate'
-  | 'fedFundsRate'
-  | 'termSpread'
-  | 'hySpread'
-  | 'igSpread'
-  | 'newJobPostings'
->;
-
 export interface MacroPoint {
   date: string;
   vix: number | null;

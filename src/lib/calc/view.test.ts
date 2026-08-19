@@ -5,7 +5,7 @@ import {
   buildMacroView,
   buildRevisionSeries,
   buildDrawdownView,
-  buildMarketDailyView,
+  buildDailyView,
   buildValuationView,
   quarterlyGrowth,
   type ObservationMap,
@@ -982,13 +982,12 @@ describe('下落率のビュー (#128)', () => {
 });
 
 describe('価格系列の日次グリッド (#137)', () => {
-  const build = (observations: ObservationMap) =>
-    buildMarketDailyView({
-      observations,
-      config,
-      start: '2026-08-10',
-      today: new Date(Date.UTC(2026, 7, 21)),
-    });
+  // ページ別に分けたので (#168)、系列が属するビューを指定して作る。
+  const build = (observations: ObservationMap, view: 'market' | 'economy' | 'japan' = 'market') =>
+    buildDailyView(
+      { observations, config, start: '2026-08-10', today: new Date(Date.UTC(2026, 7, 21)) },
+      view,
+    );
 
   it('平日だけを並べる', () => {
     // 土日は市場が閉じており、valueAsOf が金曜の値を繰り返すだけで情報が増えない。
@@ -1016,7 +1015,7 @@ describe('価格系列の日次グリッド (#137)', () => {
 
   it('観測が無い日は直近の営業日まで遡る', () => {
     // 祝日は考慮していない。取引所が休みだった日は直前の値が入る。
-    const view = build({ nikkei225: { '2026-08-11': 42000 } });
+    const view = build({ nikkei225: { '2026-08-11': 42000 } }, 'japan');
     expect(view.find((p) => p.date === '2026-08-13')?.nikkei225).toBe(42000);
     // 観測より前の日は埋めない。
     expect(view.find((p) => p.date === '2026-08-10')?.nikkei225).toBeNull();
@@ -1024,7 +1023,7 @@ describe('価格系列の日次グリッド (#137)', () => {
 
   it('ゴールドを日次で載せる (#135)', () => {
     // 履歴ページから 50 営業日ぶんを遡って取り込んだので、週次より細かく描ける。
-    const view = build({ 'etf-gld': { '2026-08-13': 398.96, '2026-08-14': 401.48 } });
+    const view = build({ 'etf-gld': { '2026-08-13': 398.96, '2026-08-14': 401.48 } }, 'market');
     expect(view.find((p) => p.date === '2026-08-13')?.gold).toBe(398.96);
     expect(view.find((p) => p.date === '2026-08-14')?.gold).toBe(401.48);
   });
