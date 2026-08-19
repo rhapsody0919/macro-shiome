@@ -473,7 +473,7 @@ const CHARTS: QuestionChartDef<EconomyQuestionId>[] = [
   },
   {
     question: 'prices',
-    frequency: 'weekly',
+    frequency: 'daily',
     primaryIndicator: 'wti',
     title: '原油価格 (WTI)',
     subtitle: 'ドル/バレル',
@@ -484,7 +484,8 @@ const CHARTS: QuestionChartDef<EconomyQuestionId>[] = [
         エネルギーコストは輸入物価・生産者物価を通じて CPI に波及する。次の図がその連鎖。
       </span>,
       <span key="weekly">
-        週次 (金曜時点)。<strong>この問いで唯一の週次指標</strong>で、物価の変化を最も早く示す。
+        <strong>日次。</strong>この問いで唯一の日次指標で、物価の変化を最も早く示す。
+        他は月次なので、直近の動きはここにしか出ない。
       </span>,
     ],
   },

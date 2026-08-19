@@ -10,6 +10,7 @@ import {
   buildDrawdownView,
   buildEconomyView,
   buildMacroView,
+  buildMarketDailyView,
   buildRevisionSeries,
   buildValuationView,
   type ObservationMap,
@@ -35,6 +36,7 @@ function main(): void {
   writeView('valuation', buildValuationView(options));
   writeView('revisions', buildRevisionSeries(options));
   writeView('macro', buildMacroView(options));
+  writeView('market-daily', buildMarketDailyView(options));
   writeView('economy', buildEconomyView(options));
   writeView(
     'drawdown',

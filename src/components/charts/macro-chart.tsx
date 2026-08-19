@@ -43,9 +43,14 @@ export function MacroChart({
   badges,
   signed = false,
   baseline,
+  changeLabel,
   notes,
 }: {
-  points: MacroPoint[];
+  /**
+   * 週次グリッド (`MacroPoint[]`) と日次グリッド (`MarketDailyPoint[]`) の
+   * どちらも受ける (#137)。日次ビューは `MacroPoint` の一部だけを持つ。
+   */
+  points: ReadonlyArray<Partial<MacroPoint> & { date: string }>;
   title: string;
   subtitle?: string;
   series: SeriesDef[];
@@ -64,6 +69,13 @@ export function MacroChart({
    * 「危険水準」のような恣意的な閾値には使わない。
    */
   baseline?: { value: number; label: string };
+  /**
+   * 直近の変化の呼び名 (#137)。日次グリッドなら「前日比」、週次なら「前週比」。
+   *
+   * **必須にしている。** グリッドの粒度を変えたときに差分の意味が黙って変わり、
+   * 週の変化を日の変化と読み違える事故を防ぐため。
+   */
+  changeLabel: string;
   notes: React.ReactNode[];
 }) {
   const searchParams = useSearchParams();
@@ -101,6 +113,7 @@ export function MacroChart({
                 </span>{' '}
                 <span className="text-xs tabular-nums text-slate-500">
                   {changeMark(diff)} {formatSigned(diff, 2)}
+                  <span className="ml-1 text-slate-400">({changeLabel})</span>
                 </span>
               </div>
             );

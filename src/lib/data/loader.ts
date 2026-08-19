@@ -10,6 +10,7 @@ import statusJson from '../../../data/status.json';
 import valuationJson from '../../../data/views/valuation.json';
 import revisionsJson from '../../../data/views/revisions.json';
 import macroJson from '../../../data/views/macro.json';
+import marketDailyJson from '../../../data/views/market-daily.json';
 import economyJson from '../../../data/views/economy.json';
 import drawdownJson from '../../../data/views/drawdown.json';
 import type {
@@ -18,6 +19,7 @@ import type {
   EconomyView,
   GapReason,
   MacroPoint,
+  MarketDailyPoint,
   RevisionPoint,
   ValuationView,
 } from './types';
@@ -28,6 +30,8 @@ export const status = statusJson as BatchStatus;
 export const valuationView = valuationJson as unknown as ValuationView;
 export const revisions = revisionsJson as unknown as RevisionPoint[];
 export const macro = macroJson as unknown as MacroPoint[];
+/** 価格系列の日次グリッド (#137)。マクロビューと分ける理由は `MarketDailyPoint` の注記。 */
+export const marketDaily = marketDailyJson as unknown as MarketDailyPoint[];
 export const economy = economyJson as unknown as EconomyView;
 export const drawdown = drawdownJson as unknown as DrawdownView;
 

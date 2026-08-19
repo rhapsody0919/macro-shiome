@@ -29,6 +29,7 @@ import {
   buildDrawdownView,
   buildEconomyView,
   buildMacroView,
+  buildMarketDailyView,
   buildRevisionSeries,
   buildValuationView,
   type ObservationMap,
@@ -233,6 +234,11 @@ async function main(): Promise<void> {
   writeView('valuation', buildValuationView({ observations, config: appConfig, start, today: now }));
   writeView('revisions', buildRevisionSeries({ observations, config: appConfig, start, today: now }));
   writeView('macro', buildMacroView({ observations, config: appConfig, start, today: now }));
+  // 価格系列は日次グリッド (#137)。週次グリッドは金曜の値だけを拾うため週内の動きが消える。
+  writeView(
+    'market-daily',
+    buildMarketDailyView({ observations, config: appConfig, start, today: now }),
+  );
   // 月次指標は週次グリッドに載せない (#64)。別ビューとして持つ。
   writeView('economy', buildEconomyView({ observations, config: appConfig, start, today: now }));
   writeView(
