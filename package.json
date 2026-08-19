@@ -11,7 +11,7 @@
     "lint": "eslint .",
     "test": "vitest run",
     "test:watch": "vitest",
-    "fetch:weekly": "tsx scripts/fetch-weekly.ts",
+    "fetch:daily": "tsx scripts/fetch-daily.ts",
     "backfill": "tsx scripts/backfill.ts",
     "rebuild:views": "tsx scripts/rebuild-views.ts",
     "verify": "tsx scripts/verify-values.ts"

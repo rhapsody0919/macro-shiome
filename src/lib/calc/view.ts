@@ -337,7 +337,6 @@ export function buildValuationView(options: BuildViewOptions): ValuationView {
   const weeks = fridaysBetween(options.start, options.today.toISOString().slice(0, 10));
 
   return {
-    generatedAt: options.today.toISOString(),
     sp500: buildSp500Series(options, weeks),
     nasdaq100: buildNasdaqSeries(options, weeks),
   };
@@ -522,7 +521,6 @@ export function buildDrawdownView(
 
   const seedDates = Object.values(seed.assets).flatMap((a) => Object.keys(a.drawdown));
   return {
-    generatedAt: options.today.toISOString(),
     seedStart: seedDates.length === 0 ? null : seedDates.sort()[0],
     excluded,
     assets,
@@ -606,7 +604,6 @@ export function buildEconomyView(options: BuildViewOptions): EconomyView {
   }));
 
   return {
-    generatedAt: options.today.toISOString(),
     monthly,
     coverage,
   };

@@ -16,8 +16,9 @@ S&P 500 / NASDAQ-100 の業績とバリュエーションを週次で蓄積・�
 - 指数と Forward EPS の相関 (直近半年 / 1 年 / 全期間)
 - 期間フィルター (1 年 / 3 年 / 5 年 / 全期間)
 
-データは GitHub Actions が毎週 (JST 土曜 11:00) に取得し、**JSON としてリポジトリに commit** する。
-取得元は FRED・FactSet Earnings Insight (週次 PDF)・stockanalysis.com の 3 つ。
+データは GitHub Actions が**毎日 (UTC 02:00 = JST 11:00)** 取得し、**JSON としてリポジトリに commit** する。
+取得元は FRED・FactSet Earnings Insight (週次 PDF)・stockanalysis.com・米財務省 Fiscal Data・Finnhub の 5 つ。
+値が動かない日は差分が出ないため、commit もビルドも走らない。
 
 ## v2: 市場サマリー
 
@@ -44,7 +45,7 @@ S&P 500 / NASDAQ-100 の業績とバリュエーションを週次で蓄積・�
 
 Cloudflare Workers (Static Assets) の **Git 連携**で配信する
 ([ADR-0005](docs/adr/0005-cloudflare-git-integration.md))。
-`main` への push で自動ビルド・自動公開される。週次バッチの commit もそのままデプロイになる。
+`main` への push で自動ビルド・自動公開される。定期バッチの commit もそのままデプロイになる。
 
 配信の設定は [`wrangler.jsonc`](wrangler.jsonc) にあり、**リポジトリで管理している**
 (`out/` を静的アセットとして配信、404 は `out/404.html`)。Worker スクリプトは持たない。

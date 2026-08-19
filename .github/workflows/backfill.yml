@@ -60,7 +60,7 @@ jobs:
         if: always()
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
-        run: pnpm fetch:weekly
+        run: pnpm fetch:daily
 
       - name: Commit views
         if: always()

@@ -8,7 +8,7 @@
 ## 前提・制約
 
 - **完全無料スタック** (課金しない)。無料枠の制限 (GitHub Actions の実行時間、データソース API のレート制限、Cloudflare Pages のビルド回数) は設計制約として扱う
-- **週次バッチ**: GitHub Actions が **UTC 土曜 02:00 (JST 土曜 11:00)** に実行 → データ取得 → **JSON をリポジトリに commit** → push が Cloudflare Pages のビルドをトリガ
+- **定期バッチ**: GitHub Actions が **UTC 毎日 02:00 (JST 11:00)** に実行 → データ取得 → **JSON をリポジトリに commit** → push が Cloudflare Pages のビルドをトリガ。値が動かない日は差分が出ず commit もビルドも走らない (#136)
 - **公開リポジトリ**。NEVER: API キー・トークンをコード / コミット / ログ / クライアントバンドルに残す。秘密情報は GitHub Actions Secrets のみ。**public リポの Actions ログは誰でも読める**
 - パッケージマネージャは pnpm
 
@@ -56,7 +56,7 @@ SDD Step 2 で確定 (詳細 → `docs/plan.md`、判断の記録 → `docs/adr/
    - NEVER: レビュー前マージ (`/code-review` は省略不可) / 収束前 Done
 
 - Goal 外の問題は触らず Issue 起票のみ (コミット非混入)、完了報告に「新規起票: #N」を併記
-- 週次バッチ (GitHub Actions) を変更した場合は、次回の定時実行を待たず `workflow_dispatch` で手動実行して成否を確認し、報告に含める
+- 定期バッチ (GitHub Actions) を変更した場合は、次回の定時実行を待たず `workflow_dispatch` で手動実行して成否を確認し、報告に含める
 
 ### GitHub Issues
 
@@ -110,7 +110,7 @@ spec + screens → plan → tasks → 実装 (1 タスク = 1 PR)、各ゲート
 | 基盤 | #1 #2 #23 | Next.js 16 静的エクスポート。**TS 6 / ESLint 9 に意図的に固定**。CI |
 | 取得層 | #3 #4 #5 | FRED / FactSet PDF / stockanalysis。**API キーはエラーにも出さない** |
 | 検証・導出 | #6 #7 #8 | 1 件でも落ちたら全体失敗。導出値は実測値で検算済み |
-| バッチ | #9 #10 | 週次 (UTC 土 02:00) + バックフィル |
+| バッチ | #9 #10 **#136** | **日次 (UTC 毎日 02:00)** + バックフィル |
 | 画面基盤 | #11 #12 | 期間フィルターを URL に載せる。鮮度・欠測表示 |
 | チャート | #13〜#20 | バリュエーション 6 種 + サマリーバー + マクロ指標 |
 | 規約 | #21 | 利用規約・出所ページ。出所一覧は指標マスタから自動生成 |
