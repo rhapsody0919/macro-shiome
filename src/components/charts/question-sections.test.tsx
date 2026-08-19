@@ -119,6 +119,23 @@ describe('日本の雇用と所得 (#156)', () => {
   });
 });
 
+describe('日本の鉱工業生産 (#164)', () => {
+  it('景気動向指数と同じ図に載せない', () => {
+    // あちらは原数値しか提供されていない。季調値と重ねると季節性の有無が
+    // 動きの違いに見える (#116〜#118 と同じ型)。
+    render(<JapanPage />);
+    expect(
+      screen.getByRole('heading', { name: '鉱工業生産指数 (日本)' }),
+    ).toBeInTheDocument();
+  });
+
+  it('水準で出していることを画面に書く', () => {
+    // 公表の前年同月比が無く、指数が小数 1 桁なので導出すると丸め誤差が出る (#162 の型)。
+    render(<JapanPage />);
+    expect(screen.getByText(/前年同月比にせず水準で出している/)).toBeInTheDocument();
+  });
+});
+
 describe('日本の消費者物価 (#162)', () => {
   it('コアと総合を 1 枚に重ねる', () => {
     // 同じ基準・同じ単位。2 本の差が生鮮食品の影響を示す。
@@ -153,7 +170,7 @@ describe('街角景気 (#160)', () => {
     render(<JapanPage />);
     const section = document.getElementById('q-jp-cycle');
     const titles = Array.from(section?.querySelectorAll('h3') ?? []).map((h) => h.textContent);
-    expect(titles).toHaveLength(2);
+    expect(titles).toHaveLength(3);
   });
 
   it('現状判断と先行き判断を 1 枚に重ねる', () => {
@@ -191,8 +208,13 @@ describe('日本の景気動向指数 (#154)', () => {
     const section = document.getElementById('q-jp-cycle');
     expect(section).not.toBeNull();
     const titles = Array.from(section?.querySelectorAll('h3') ?? []).map((h) => h.textContent);
-    // 街角景気は基準が違う (DI は 50 が中立) ので別チャートにする (#160)。
-    expect(titles).toEqual(['景気動向指数', '街角景気 (景気ウォッチャー調査)']);
+    // 街角景気は DI (50 が中立)、鉱工業生産は季調値なのでそれぞれ別チャートにする。
+    // 合成 (景気動向指数) / 体感 (街角景気) / 実量 (鉱工業生産) が並ぶ。
+    expect(titles).toEqual([
+      '景気動向指数',
+      '街角景気 (景気ウォッチャー調査)',
+      '鉱工業生産指数 (日本)',
+    ]);
   });
 
   it('米国の景気指標と同じ図に載せない', () => {

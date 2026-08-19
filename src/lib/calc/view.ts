@@ -642,6 +642,9 @@ export function buildEconomyView(options: BuildViewOptions): EconomyView {
     buildingPermits: level('building-permits', month),
     housingStarts: level('housing-starts', month),
     newHomeSales: level('new-home-sales', month),
+    // 前年同月比にせず水準で出す (#164)。公表の前年同月比系列が無く、
+    // 指数が小数 1 桁なので導出すると丸め誤差が出る。
+    jpIndustrialProduction: level('jp-industrial-production', month),
     // **公表されている前年同月比をそのまま出す** (#162)。日本の CPI 指数は小数 1 桁しか
     // 公表されず、そこから導出すると丸めで公表値とずれる (2026-06 は 1.50% と 1.6%)。
     // 米国は指数が小数 3 桁あるため `yoy()` で導出している。経路は違うが値は正しい。
@@ -723,6 +726,7 @@ const MONTHLY_INDICATORS = [
   'building-permits',
   'housing-starts',
   'new-home-sales',
+  'jp-industrial-production',
   'jp-cpi-core',
   'jp-cpi',
   'jp-watcher-current',
