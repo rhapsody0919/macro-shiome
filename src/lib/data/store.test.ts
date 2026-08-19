@@ -134,6 +134,50 @@ describe('recordGaps', () => {
     recordGaps([gap('a', '2026-08-07'), gap('a', '2026-08-14')]);
     expect(readGaps()[0].date).toBe('2026-08-14');
   });
+
+  describe('再検知で書き換えない (#142)', () => {
+    const gapsPath = () => join(dir, 'gaps.json');
+    const later = new Date('2026-08-19T02:00:00Z');
+
+    it('同じ欠測を再検知しても recordedAt を進めない', () => {
+      // 「いつから欠測しているか」は最初に検知した時刻。再検知で上書きすると
+      // FactSet の夏季休刊のような継続欠測の長さを後から追えなくなる。
+      recordGaps([gap('sp500-forward-pe', '2026-08-14')]);
+      const before = readFileSync(gapsPath(), 'utf8');
+      const mtime = statSync(gapsPath()).mtimeMs;
+
+      recordGaps([
+        { ...gap('sp500-forward-pe', '2026-08-14'), recordedAt: later.toISOString() },
+      ]);
+
+      expect(readGaps()[0].recordedAt).toBe(now.toISOString());
+      // 変化が無いのでファイル自体を触らない (日次バッチの無意味な差分を止める)。
+      expect(readFileSync(gapsPath(), 'utf8')).toBe(before);
+      expect(statSync(gapsPath()).mtimeMs).toBe(mtime);
+    });
+
+    it('欠測の理由が変われば更新する。ただし recordedAt は最初のまま', () => {
+      recordGaps([gap('sp500-forward-pe', '2026-08-14', 'publication-break')]);
+      recordGaps([
+        {
+          ...gap('sp500-forward-pe', '2026-08-14', 'not-in-report'),
+          recordedAt: later.toISOString(),
+        },
+      ]);
+
+      const [saved] = readGaps();
+      expect(saved.reason).toBe('not-in-report');
+      expect(saved.recordedAt).toBe(now.toISOString());
+    });
+
+    it('新しい欠測は記録する', () => {
+      recordGaps([gap('a', '2026-08-14')]);
+      recordGaps([{ ...gap('b', '2026-08-14'), recordedAt: later.toISOString() }]);
+
+      expect(readGaps()).toHaveLength(2);
+      expect(readGaps().find((g) => g.indicatorId === 'b')?.recordedAt).toBe(later.toISOString());
+    });
+  });
 });
 
 describe('writeStatus', () => {
