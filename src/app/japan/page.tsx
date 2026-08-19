@@ -107,6 +107,39 @@ const CHARTS: QuestionChartDef<JapanQuestionId>[] = [
     ],
   },
   {
+    question: 'jp-cycle',
+    frequency: 'monthly',
+    kind: 'number',
+    zeroLine: false,
+    primaryIndicator: 'jp-industrial-production',
+    title: '鉱工業生産指数 (日本)',
+    subtitle: '季節調整済み (2020年平均 = 100)',
+    series: [
+      {
+        key: 'jpIndustrialProduction',
+        label: '鉱工業生産',
+        color: COLORS.jpIndustrialProduction,
+        indicatorId: 'jp-industrial-production',
+      },
+    ],
+    notes: [
+      <span key="raw">
+        <strong>加工されていない実量。</strong>
+        上の景気動向指数は多数の統計の合成、街角景気は体感。これは製造業が実際にどれだけ
+        作ったかで、3 つを並べると「合成・体感・実量」が揃う。
+      </span>,
+      <span key="level">
+        <strong>前年同月比にせず水準で出している。</strong>
+        統計ダッシュボードに公表の前年同月比が無く、指数が小数 1 桁しか公表されないため、
+        自分で計算すると丸めで誤差が出る。日本の鉱工業生産は季調済指数の水準で見るのが通例。
+      </span>,
+      <span key="not-di">
+        <strong>景気動向指数と同じ図に載せていない。</strong>
+        あちらは原数値しか提供されておらず、季調値と重ねると季節性の有無が動きの違いに見える。
+      </span>,
+    ],
+  },
+  {
     question: 'jp-price',
     frequency: 'monthly',
     primaryIndicator: 'jp-cpi-core',
