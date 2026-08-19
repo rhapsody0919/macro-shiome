@@ -2,7 +2,7 @@
  * 下落率チャートの資産グループ (#128)。
  *
  * **指標マスタには置かない。** マスタが持つ `group` は取得層の分類 (equity / rates …) で、
- * こちらは画面の並べ方。37 本を 1 枚に重ねると読めないため 4 枚に分ける。
+ * こちらは画面の並べ方。36 本を 1 枚に重ねると読めないため 4 枚に分ける。
  */
 export const DRAWDOWN_GROUPS = {
   major: {
@@ -37,7 +37,7 @@ export const DRAWDOWN_ASSETS: Array<{ id: string; group: DrawdownGroup }> = [
     id,
     group: 'commodity' as const,
   })),
-  ...['etf-eem', 'etf-ewj', 'etf-epi', 'etf-ewu', 'etf-ewg', 'etf-ewz', 'etf-vnm', 'etf-eww', 'etf-mchi', 'etf-eido', 'etf-thd', 'etf-gxg', 'etf-smin'].map(
+  ...['etf-eem', 'etf-ewj', 'etf-epi', 'etf-ewu', 'etf-ewg', 'etf-ewz', 'etf-vnm', 'etf-eww', 'etf-mchi', 'etf-eido', 'etf-thd', 'etf-smin'].map(
     (id) => ({ id, group: 'country' as const }),
   ),
 ];

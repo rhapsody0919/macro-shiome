@@ -1485,23 +1485,6 @@
     },
     "note": "THD の終値 (ドル/株)。各国株式 ETF。ドル建てなので**現地通貨ベースの騰落と一致しない**。為替の影響を含む。 最高値からの下落率を出すために取得する (#128)。"
   },
-  "etf-gxg": {
-    "name": "コロンビア (GXG)",
-    "source": {
-      "adapter": "finnhub",
-      "symbol": "GXG"
-    },
-    "frequency": "weekly",
-    "unit": "index",
-    "attribution": "Finnhub",
-    "copyright": "none",
-    "group": "equity",
-    "range": {
-      "min": 0.01,
-      "max": 100000
-    },
-    "note": "GXG の終値 (ドル/株)。各国株式 ETF。ドル建てなので**現地通貨ベースの騰落と一致しない**。為替の影響を含む。 最高値からの下落率を出すために取得する (#128)。"
-  },
   "etf-smin": {
     "name": "インド小型株 (SMIN)",
     "source": {
