@@ -1,7 +1,11 @@
 /**
- * 週次バッチ本体 (spec F-1)。
+ * 定期バッチ本体 (spec F-1)。**UTC 毎日 02:00** に走る (#136)。
  *
  * 取得 → 検証 → 保存 → ビュー生成 の順で実行する。
+ *
+ * 日次にした理由: 無料枠では日次ヒストリカルを取れる経路が無い
+ * (Finnhub の `/stock/candle` は Basic 以上)。現在値を毎日積み上げるしかない。
+ * 土日は値が動かず `data/` に差分が出ないため、コミットもビルドも走らない。
  *
  * 失敗の扱い:
  * - **FactSet の 404 は欠測**として記録し、処理を続ける (夏季休刊が実在するため)
@@ -10,7 +14,7 @@
  *   「緑だが歯抜け」が最も危険なため (plan 4-2)
  *
  * 実行:
- *   FRED_API_KEY=xxxx pnpm tsx scripts/fetch-weekly.ts [--start YYYY-MM-DD]
+ *   FRED_API_KEY=xxxx pnpm tsx scripts/fetch-daily.ts [--start YYYY-MM-DD]
  */
 import { FredClient, readFredApiKeyFromEnv } from '../src/lib/adapters/fred';
 import {

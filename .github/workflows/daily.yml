@@ -1,10 +1,12 @@
-name: Weekly data fetch
+name: Daily data fetch
 
 on:
   schedule:
-    # UTC 土曜 02:00 = JST 土曜 11:00。
-    # JST 土曜早朝にしないのは、FactSet が金曜発行で当日号がまだ公開されていない恐れがあるため。
-    - cron: '0 2 * * 6'
+    # UTC 毎日 02:00 = 米国東部の前日 21〜22 時 (市場は閉場後)。
+    # この時刻なら `previousTradingDay` が「直前に閉じた取引セッション」を指す (#133)。
+    # 日次にする理由: 無料枠で日次ヒストリカルを取れる経路が無く、
+    # 現在値を毎日積み上げるしかないため (#136)。
+    - cron: '0 2 * * *'
   workflow_dispatch:
 
 # data/ を commit するため書き込み権限が要る。
@@ -35,7 +37,7 @@ jobs:
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
           FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
-        run: pnpm fetch:weekly
+        run: pnpm fetch:daily
 
       # **取得の直後に一次情報と突き合わせる** (#113)。取得実装と違う経路
       # (API キーを使わない CSV) で照合するので、実装の取り違えも検出できる。
@@ -58,7 +60,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data
-          git commit -m "chore(#9): 週次データを更新する [why: 定期取得]"
+          git commit -m "chore(#9): データを更新する [why: 定期取得]"
           # 実行中に別の push があると reject されるため、rebase してから送る。
           # data/ は観測日をキーにした UPSERT で衝突しにくく、rebase で安全に載せられる。
           git pull --rebase origin main

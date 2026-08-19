@@ -291,7 +291,6 @@ export interface ValuationSeries {
 
 /** 画面用ビュー全体。 */
 export interface ValuationView {
-  generatedAt: string;
   sp500: ValuationSeries;
   nasdaq100: ValuationSeries;
 }
@@ -524,7 +523,6 @@ export interface MonthlyCoverage {
 
 /** 月次画面のビュー全体 (#64)。 */
 export interface EconomyView {
-  generatedAt: string;
   /** 月次指標の系列。すべて同じ月グリッドに並ぶ。 */
   monthly: MonthlyPoint[];
   /** 指標ごとの発表状況。画面に「どこまで出ているか」を出す。 */
@@ -572,7 +570,6 @@ export interface DrawdownAsset {
 
 /** 下落率のビュー (#128)。 */
 export interface DrawdownView {
-  generatedAt: string;
   /** 最高値の起点。史上最高値ではないことを画面に出すために持つ。 */
   seedStart: string | null;
   /** 引き継げなかった資産と理由。画面に出して欠落を隠さない。 */

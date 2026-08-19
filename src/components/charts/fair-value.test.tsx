@@ -27,7 +27,6 @@ function series(weeks: number, note: string | null) {
 /** S&P 500 は常に十分な履歴を持たせ、NASDAQ-100 側だけを変える。 */
 function makeView(nasdaqWeeks: number): ValuationView {
   return {
-    generatedAt: '2026-08-17T00:00:00.000Z',
     sp500: series(20, null),
     nasdaq100: { ...series(nasdaqWeeks, NOTE), hasForwardEps: false },
   };

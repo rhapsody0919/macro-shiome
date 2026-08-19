@@ -35,7 +35,7 @@ function makeView(
     spreadDistribution: distribution,
     accumulationNote: note,
   });
-  return { generatedAt: '2026-08-17T00:00:00.000Z', sp500: series, nasdaq100: series };
+  return { sp500: series, nasdaq100: series };
 }
 
 describe('イールドスプレッドの水準表示 (#52)', () => {
