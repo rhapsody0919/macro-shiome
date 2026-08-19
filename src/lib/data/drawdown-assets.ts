@@ -37,7 +37,7 @@ export const DRAWDOWN_ASSETS: Array<{ id: string; group: DrawdownGroup }> = [
     id,
     group: 'commodity' as const,
   })),
-  ...['etf-eem', 'etf-ewj', 'etf-epi', 'etf-ewu', 'etf-ewg', 'etf-ewz', 'etf-vnm', 'etf-eww', 'etf-mchi', 'etf-eido', 'etf-thd', 'etf-gxg', 'etf-smin'].map(
+  ...['etf-eem', 'etf-ewj', 'etf-epi', 'etf-ewu', 'etf-ewg', 'etf-ewz', 'etf-vnm', 'etf-eww', 'etf-mchi', 'etf-eido', 'etf-thd', 'etf-smin'].map(
     (id) => ({ id, group: 'country' as const }),
   ),
 ];
