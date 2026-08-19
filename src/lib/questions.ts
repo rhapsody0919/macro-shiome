@@ -79,6 +79,11 @@ export const MARKET_QUESTIONS = {
  * 分からなくなる。
  */
 export const JAPAN_QUESTIONS = {
+  'jp-cycle': {
+    title: '日本の景気は減速しているか',
+    guide:
+      '内閣府の景気動向指数。先行 → 一致 → 遅行の順に動くため、3 本の位置関係そのものが局面を示す。',
+  },
   'jp-market': {
     title: '日本市場はどう動いているか',
     guide: '株と為替は連動しやすい。円安は輸出企業の円換算の売上を押し上げる。',

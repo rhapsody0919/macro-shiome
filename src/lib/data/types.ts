@@ -488,6 +488,12 @@ export interface MonthlyPoint {
   housingStarts: number | null;
   /** 新築住宅販売件数。連鎖の下流。 */
   newHomeSales: number | null;
+  /** 日本の景気動向指数 (先行)。**2020年基準・原数値** (#154)。 */
+  jpDiLeading: number | null;
+  /** 日本の景気動向指数 (一致)。**2020年基準・原数値** (#154)。 */
+  jpDiCoincident: number | null;
+  /** 日本の景気動向指数 (遅行)。**2020年基準・原数値** (#154)。 */
+  jpDiLagging: number | null;
   /** 日本の新設住宅着工戸数 (総戸数)。**戸・季節調整済み年率換算** (#129)。 */
   jpHousingStarts: number | null;
   /** 日本の新設住宅着工戸数 (持家)。**戸・季調値、年率換算ではない** (#129)。 */
