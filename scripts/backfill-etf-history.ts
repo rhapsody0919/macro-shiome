@@ -12,6 +12,7 @@
  *
  * 実行:
  *   pnpm tsx scripts/backfill-etf-history.ts GLD [SPY ...]
+ *   pnpm tsx scripts/backfill-etf-history.ts --all   # 指標マスタの Finnhub 指標すべて
  */
 import { fetchEtfHistory } from '../src/lib/adapters/stockanalysis';
 import { indicators } from '../src/lib/data/indicators';
@@ -24,12 +25,27 @@ function indicatorIdFor(symbol: string): string {
   throw new Error(`指標マスタに ${symbol} の Finnhub 指標が無い`);
 }
 
+/** 指標マスタに登録された Finnhub 指標の symbol。 */
+function allSymbols(): string[] {
+  return Object.values(indicators)
+    .filter((indicator) => indicator.source.adapter === 'finnhub')
+    .map((indicator) => (indicator.source as { symbol: string }).symbol)
+    .sort();
+}
+
+const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+
 async function main(): Promise<void> {
-  const symbols = process.argv.slice(2);
-  if (symbols.length === 0) throw new Error('symbol を 1 つ以上指定する (例: GLD)');
+  const args = process.argv.slice(2);
+  const symbols = args.includes('--all') ? allSymbols() : args;
+  if (symbols.length === 0) throw new Error('symbol を 1 つ以上指定するか --all を渡す');
 
   const now = new Date();
+  let first = true;
   for (const symbol of symbols) {
+    // 連続で叩かない。FRED の照合 (verify-values.ts) と同じ間隔に合わせる。
+    if (!first) await sleep(250);
+    first = false;
     const id = indicatorIdFor(symbol);
     const before = Object.keys(readObservations(id)).length;
 
