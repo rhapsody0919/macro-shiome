@@ -22,7 +22,7 @@ import {
   fetchFactsetReport,
   previousFriday,
 } from '../src/lib/adapters/factset';
-import { fetchEtfField, previousTradingDay } from '../src/lib/adapters/stockanalysis';
+import { fetchEtfField, lastClosedTradingDay } from '../src/lib/adapters/stockanalysis';
 import { TreasuryClient } from '../src/lib/adapters/treasury';
 import { FinnhubClient, readFinnhubApiKeyFromEnv } from '../src/lib/adapters/finnhub';
 import { fetchEstatIndicator } from '../src/lib/adapters/estat-dashboard';
@@ -146,7 +146,7 @@ async function main(): Promise<void> {
       // **基準日 (金曜) ではなく「値が指す日」で保存する** (#125)。
       // 取れるのは現在値だけなので、基準日で保存すると手動実行のたびに
       // 実行日の値が金曜の値として上書きされる (実測で確認済み)。
-      const observedOn = previousTradingDay(now);
+      const observedOn = lastClosedTradingDay(now);
       observationMap[id] = upsertObservations(id, { [observedOn]: value }, now);
       console.log(`  stockanalysis ${id}: ${value} (${observedOn} 時点)`);
     } catch (error) {
@@ -161,7 +161,7 @@ async function main(): Promise<void> {
       ([, indicator]) => indicator.source.adapter === 'finnhub',
     );
     if (finnhubIds.length > 0) {
-      const observedOn = previousTradingDay(now);
+      const observedOn = lastClosedTradingDay(now);
       try {
         const finnhub = new FinnhubClient({ apiKey: readFinnhubApiKeyFromEnv() });
         for (const [id, indicator] of finnhubIds) {

@@ -27,31 +27,51 @@ const FIELD_LABELS: Record<StockAnalysisField, string> = {
 };
 
 /**
- * 値が指す日 = **直近の取引日** を返す ("YYYY-MM-DD"、#125)。
+ * 値が指す日 = **最後に閉じた取引セッションの日** を返す ("YYYY-MM-DD"、#172)。
  *
- * スクレイピングで取れるのは現在値だけなので、保存するキーは「いつの値か」で決める。
- * PER はページが「価格」として出す**当日の終値**から算出される。バッチが走る
- * **UTC 毎日 02:00** は米国東部の前日 21〜22 時 (市場は閉場後) なので、
- * このとき `previousTradingDay` は直前に閉じた取引セッションを指す (#136)。
- * 土日に走った場合も金曜を指すため、同じ値を上書きするだけで冪等。
+ * スクレイピングや現在値 API で取れるのは「いまの値」だけなので、保存するキーは
+ * 「いつの値か」で決める。ページや API が返す値は、**引け後なら当日の終値、
+ * 引け前なら前営業日の終値**。
  *
- * **`Previous Close` はこの前提が成り立たない** (#133)。同じページでも当日終値ではなく
- * 1 つ前の取引日を指すため、同じキーで保存すると 1 日ずれる。フィールドごとに
- * 「値が指す日」が違いうるので、フィールドを増やすときは実ページで確かめること。
+ * **実行時刻から判定する。** 以前は常に前営業日を返していたため、米国東部の
+ * 16:00〜24:00 に実行すると必ず 1 日ずれた (#172 で ETF 36 本が実際にずれた)。
+ * 定時実行 (UTC 02:00 = ET 前日 21 時) では前営業日が正解になるので気付けなかった。
  *
- * **実行日そのものをキーにしてはいけない。** 表示グリッドは過去にしか遡らないので、
- * まだ閉じていないセッションの日付で保存すると、その点から見えなくなる。
+ * | 実行 (ET) | 返す日 |
+ * | --- | --- |
+ * | 平日 16:00 以降 (引け後) | **当日** |
+ * | 平日 16:00 より前 | 前営業日 |
+ * | 土日 | 直前の金曜 |
  *
- * 祝日は考慮しない。取引所が休みだった日をキーにしても、グリッドは直近の
- * 営業日まで遡るため表示は壊れない。
+ * 夏時間があるため UTC からの単純な引き算では判定できない。`Intl` で東部時間の
+ * 日付と時刻を取り出す。
+ *
+ * 祝日は考慮しない。取引所が休みだった日をキーにしても、表示グリッドは直近の
+ * 営業日まで遡るため壊れない。
  */
-export function previousTradingDay(now: Date): string {
-  const cursor = new Date(
-    Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()),
+export function lastClosedTradingDay(now: Date): string {
+  const parts = Object.fromEntries(
+    new Intl.DateTimeFormat('en-CA', {
+      timeZone: 'America/New_York',
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
+      hour: '2-digit',
+      hourCycle: 'h23',
+    })
+      .formatToParts(now)
+      .map((part) => [part.type, part.value]),
   );
+
+  const cursor = new Date(`${parts.year}-${parts.month}-${parts.day}T00:00:00Z`);
+  const isWeekday = (date: Date) => date.getUTCDay() !== 0 && date.getUTCDay() !== 6;
+
+  // 平日の引け後なら、その日のセッションが最後に閉じたもの。
+  if (Number(parts.hour) >= 16 && isWeekday(cursor)) return cursor.toISOString().slice(0, 10);
+
   do {
     cursor.setUTCDate(cursor.getUTCDate() - 1);
-  } while (cursor.getUTCDay() === 0 || cursor.getUTCDay() === 6);
+  } while (!isWeekday(cursor));
   return cursor.toISOString().slice(0, 10);
 }
 
