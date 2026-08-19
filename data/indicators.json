@@ -872,24 +872,6 @@
     "group": "equity",
     "note": "Nikkei Stock Average, Nikkei 225。円建て、日次。FRED の系列ページに 'Copyright, Nikkei Inc. Reprinted with permission.' の表示があるため copyright は restricted。**S&P 500 と水準を直接比べられない** (通貨も構成銘柄も違う)。日本の休場日は欠測になるので、週次グリッドでは直近の営業日まで遡る。"
   },
-  "gold-etf": {
-    "name": "ゴールド (GLD)",
-    "source": {
-      "adapter": "stockanalysis",
-      "symbol": "GLD",
-      "field": "previousClose"
-    },
-    "frequency": "weekly",
-    "unit": "index",
-    "attribution": "stockanalysis.com",
-    "copyright": "none",
-    "group": "macro",
-    "range": {
-      "min": 1,
-      "max": 10000
-    },
-    "note": "SPDR Gold Shares (GLD) の終値。**金の現物価格ではない** (#119)。FRED は 2022年1月に ICE Benchmark Administration の金価格を削除しており、現物価格の無料経路が無い。GLD 1 株はおよそ金 1/10 オンスに相当するが、信託報酬 (年約 0.4%) の分だけ長期では現物から目減りする。単位はドル/株。"
-  },
   "etf-spy": {
     "name": "S&P 500 (SPY)",
     "source": {
@@ -973,7 +955,7 @@
       "min": 0.01,
       "max": 100000
     },
-    "note": "GLD の終値 (ドル/株)。主要資産。指数・金・長期国債・REIT を横断して「いま何が売られているか」を見る。 最高値からの下落率を出すために取得する (#128)。"
+    "note": "GLD の終値 (ドル/株)。**金の現物価格ではない** (#119)。FRED は 2022年1月に ICE Benchmark Administration の金価格を削除しており、現物価格の無料経路が無い。GLD 1 株はおよそ金 1/10 オンスに相当するが、信託報酬 (年約 0.4%) の分だけ長期では現物から目減りする。下落率の横断比較 (#128) とゴールド単体のチャートの両方に使う。**stockanalysis の `Previous Close` から切り替えた** (#133)。同フィールドは当日終値ではなく 1 つ前の取引日の終値を指しており、保存キーが 1 取引日ずれていた。"
   },
   "etf-gdx": {
     "name": "金鉱株 (GDX)",

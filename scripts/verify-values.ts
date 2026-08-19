@@ -19,6 +19,7 @@ import { indicators } from '../src/lib/data/indicators';
 import { readObservations } from '../src/lib/data/store';
 import { checkRange } from '../src/lib/validation/checks';
 import { TreasuryClient } from '../src/lib/adapters/treasury';
+import { fetchEtfHistory } from '../src/lib/adapters/stockanalysis';
 import type { Observations } from '../src/lib/adapters/fred';
 
 interface Failure {
@@ -290,6 +291,69 @@ function verifyDrawdown(): void {
   }
 }
 
+/**
+ * 8. ゴールドの終値が「その日の終値」か (#133)。
+ *
+ * Finnhub の `c` は**現在値**なので、保存キー (`previousTradingDay`) が指す日と
+ * 実際にその値が属する日がずれても気づけない。実際に stockanalysis の
+ * `Previous Close` を当日終値と誤認し、**1 取引日ずれた値を保存していた**。
+ *
+ * 日付が明示されている履歴ページと突き合わせる。**キーのずれは全 ETF に共通**
+ * (同じ `previousTradingDay` を使う) なので、画面に価格として出している GLD 1 本で足りる。
+ */
+async function verifyGoldClose(): Promise<void> {
+  console.log('8. ゴールドの終値と日付の照合');
+  const stored = readObservations('etf-gld');
+  const dates = Object.keys(stored).sort();
+  if (dates.length === 0) {
+    fail('ゴールドの終値と日付の照合', 'etf-gld の観測が 1 件も無い');
+    return;
+  }
+
+  let history: Awaited<ReturnType<typeof fetchEtfHistory>>;
+  try {
+    history = await fetchEtfHistory('GLD');
+  } catch (error) {
+    // 取得できないことを「検証した」にはしない。落として気づけるようにする。
+    fail('ゴールドの終値と日付の照合', `履歴の取得に失敗 (${String(error)})`);
+    return;
+  }
+  const closes = new Map(history.map((row) => [row.date, row.close]));
+  const oldest = history.reduce((min, row) => (row.date < min ? row.date : min), history[0].date);
+
+  let compared = 0;
+  for (const date of dates) {
+    // 履歴ページは直近 6 か月しか載らない。範囲外は照合できないので飛ばす。
+    if (date < oldest) continue;
+    const expected = closes.get(date);
+    if (expected === undefined) {
+      fail(
+        'ゴールドの終値と日付の照合',
+        `${date} は GLD の取引日として履歴に無い (非営業日をキーにしている可能性)`,
+      );
+      continue;
+    }
+    compared += 1;
+    // 提供元が違うので末尾の丸めは許容する。1 日ずれれば桁違いに外れる。
+    if (differs(stored[date], expected, 1e-3)) {
+      fail(
+        'ゴールドの終値と日付の照合',
+        `${date}: 保存 ${stored[date]} / 履歴 ${expected}`,
+      );
+    }
+  }
+
+  if (compared === 0) {
+    // 照合 0 件で緑になると「検証した」と誤解する。#102 と同じ型の失敗を避ける。
+    fail(
+      'ゴールドの終値と日付の照合',
+      `履歴の範囲 (${oldest} 以降) に照合できる観測が無い。保存済み: ${dates.join(', ')}`,
+    );
+    return;
+  }
+  console.log(`  GLD ${compared} 点を履歴と照合した`);
+}
+
 async function main(): Promise<void> {
   const offline = process.argv.includes('--offline');
   const today = new Date().toISOString().slice(0, 10);
@@ -305,6 +369,11 @@ async function main(): Promise<void> {
   verifyDerived();
   verifyRealRate();
   verifyDrawdown();
+  if (offline) {
+    console.log('8. ゴールドの終値と日付の照合 — --offline のため飛ばす');
+  } else {
+    await verifyGoldClose();
+  }
 
   console.log('');
   if (failures.length === 0) {
