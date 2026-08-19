@@ -7,7 +7,7 @@ import { MonthlyChart, type MonthlySeriesDef } from './monthly-chart';
 import { Badges } from './badges';
 import type { ValueKind } from './chart-frame';
 import { indicators } from '@/lib/data/indicators';
-import { economy, macro } from '@/lib/data/loader';
+import { economy, macro, marketDaily } from '@/lib/data/loader';
 import { groupByQuestion, type Question } from '@/lib/questions';
 
 /**
@@ -36,6 +36,17 @@ interface ChartBase<K extends string> {
  * 「どちらのコンポーネントで描くか」と「何と表示するか」がずれない。
  */
 export type QuestionChartDef<K extends string> =
+  /**
+   * 日次グリッドの価格系列 (#137)。週次グリッドは金曜の値だけを拾うため、
+   * 週内の動きがそもそも図に出ていなかった。
+   */
+  | (ChartBase<K> & {
+      frequency: 'daily';
+      kind?: ValueKind;
+      signed?: boolean;
+      baseline?: { value: number; label: string };
+      series: SeriesDef[];
+    })
   | (ChartBase<K> & {
       frequency: 'weekly';
       kind?: ValueKind;
@@ -116,6 +127,19 @@ export function QuestionSections<K extends string>({
                   notes={chart.notes}
                   badges={<Badges frequency="weekly" cyclePosition={cycleOf(chart)} />}
                 />
+              ) : chart.frequency === 'daily' ? (
+                <MacroChart
+                  points={marketDaily}
+                  title={chart.title}
+                  subtitle={chart.subtitle}
+                  kind={chart.kind}
+                  signed={chart.signed}
+                  baseline={chart.baseline}
+                  series={chart.series}
+                  notes={chart.notes}
+                  changeLabel="前日比"
+                  badges={<Badges frequency="daily" cyclePosition={cycleOf(chart)} />}
+                />
               ) : chart.frequency === 'weekly' ? (
                 <MacroChart
                   points={macro}
@@ -126,6 +150,7 @@ export function QuestionSections<K extends string>({
                   baseline={chart.baseline}
                   series={chart.series}
                   notes={chart.notes}
+                  changeLabel="前週比"
                   badges={<Badges frequency="weekly" cyclePosition={cycleOf(chart)} />}
                 />
               ) : (

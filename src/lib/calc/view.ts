@@ -14,6 +14,7 @@ import type {
   CorrelationSummary,
   EconomyView,
   MacroPoint,
+  MarketDailyPoint,
   MonthlyCoverage,
   MonthlyPoint,
   RevisionPoint,
@@ -37,7 +38,7 @@ import {
   yearOverYear,
   yieldSpread,
 } from './derived';
-import { fridaysBetween, valueAsOf, valueOn } from './weeks';
+import { fridaysBetween, valueAsOf, valueOn, weekdaysBetween } from './weeks';
 import { latestMonthWithValue, monthsBetween, valueForMonth, yearAgo } from './months';
 
 /** 指標 ID → 観測値。存在しない指標は空として扱う。 */
@@ -663,3 +664,34 @@ const MONTHLY_INDICATORS = [
   'personal-saving',
   'consumer-sentiment',
 ] as const;
+
+/**
+ * 日次グリッドの価格系列 (#137)。
+ *
+ * 週次グリッドは「週足に丸める」のではなく「金曜の値だけを拾う」実装なので、
+ * **週内の動きがそもそも図に出ていなかった**。価格系列は FRED から日次で
+ * 取得済み (日経平均 19,181 点など) なので、取得を変えずに密度を上げられる。
+ *
+ * **マクロビューと分ける理由**は `MarketDailyPoint` の注記のとおり。
+ */
+export function buildMarketDailyView(options: BuildViewOptions): MarketDailyPoint[] {
+  const { observations } = options;
+  const days = weekdaysBetween(options.start, options.today.toISOString().slice(0, 10));
+
+  return days.map((date) => {
+    const nominalRate = valueAsOf(series(observations, 'dgs10'), date);
+    const breakeven = valueAsOf(series(observations, 't10yie'), date);
+    return {
+      date,
+      nikkei225: valueAsOf(series(observations, 'nikkei225'), date),
+      vix: valueAsOf(series(observations, 'vix'), date),
+      usdjpy: valueAsOf(series(observations, 'usdjpy'), date),
+      wti: valueAsOf(series(observations, 'wti'), date),
+      dollarIndex: valueAsOf(series(observations, 'dollar-index'), date),
+      nominalRate,
+      breakeven,
+      realRate: realRate(nominalRate, breakeven),
+      fedFundsRate: valueAsOf(series(observations, 'fed-funds-rate'), date),
+    };
+  });
+}

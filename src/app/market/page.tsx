@@ -16,7 +16,7 @@ export const metadata = {
 const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
   {
     question: 'financial',
-    frequency: 'weekly',
+    frequency: 'daily',
     primaryIndicator: 'dgs10',
     title: '金利の内訳',
     subtitle: '名目 10 年債利回り・期待インフレ率・実質金利',
@@ -270,14 +270,16 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
   },
   {
     question: 'risk',
-    frequency: 'weekly',
+    frequency: 'daily',
     primaryIndicator: 'vix',
     title: 'VIX',
     subtitle: 'S&P 500 のインプライド・ボラティリティ指数',
     series: [{ key: 'vix', label: 'VIX', color: COLORS.vix }],
     notes: [
       <span key="weekly">
-        週次 (金曜終値) のため、週の途中の急騰は平滑化される。日中の変動を追う用途には向かない。
+        <strong>日次 (終値)。</strong>
+        週の途中の急騰も図に出る。ただし日中の高値・安値は持っていないので、
+        ザラ場の変動を追う用途には向かない。
       </span>,
       <span key="no-guide">
         水準の目安となる補助線は引いていない。閾値の置き方に定説が無く、恣意的な基準を
@@ -287,7 +289,7 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
   },
   {
     question: 'risk',
-    frequency: 'weekly',
+    frequency: 'daily',
     primaryIndicator: 'dollar-index',
     title: 'ドル指数 (実効為替)',
     subtitle: '主要通貨に対するドルの総合的な強さ (Jan 2006 = 100)',
@@ -384,7 +386,7 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
   },
   {
     question: 'overseas',
-    frequency: 'weekly',
+    frequency: 'daily',
     primaryIndicator: 'nikkei225',
     title: '日経平均株価',
     subtitle: '円建て。S&P 500 とは水準を直接比べられない',
@@ -406,7 +408,7 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
         下の USD/JPY と合わせて読む。
       </span>,
       <span key="copyright">
-        著作権は Nikkei Inc. にある。週次 (金曜時点)。日本の休場日は直近の営業日まで遡る。
+        著作権は Nikkei Inc. にある。日次 (終値)。日本の休場日は直近の営業日まで遡る。
       </span>,
     ],
   },
@@ -439,7 +441,7 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
   },
   {
     question: 'overseas',
-    frequency: 'weekly',
+    frequency: 'daily',
     primaryIndicator: 'usdjpy',
     title: 'USD/JPY',
     subtitle: '円/ドル (FRB 公表値)',
@@ -450,7 +452,7 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
         売上が増えるため。上の 2 本を並べて見ると、日本株の動きが業績なのか為替なのかを
         切り分けやすい。
       </span>,
-      <span key="weekly">週次 (金曜時点)。FRB が公表する日次値を金曜に揃えている。</span>,
+      <span key="daily">日次。FRB が公表する日次値をそのまま並べている。</span>,
     ],
   },
 ];

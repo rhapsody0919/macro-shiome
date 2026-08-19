@@ -5,6 +5,7 @@ import {
   buildMacroView,
   buildRevisionSeries,
   buildDrawdownView,
+  buildMarketDailyView,
   buildValuationView,
   quarterlyGrowth,
   type ObservationMap,
@@ -926,5 +927,54 @@ describe('下落率のビュー (#128)', () => {
       // ただし各点の下落率はその時点までの最高値で出す (08-21 は 150 が最高値)。
       expect(view.assets[0].points.find((p) => p.date === '2026-08-21')?.drawdown).toBe(0);
     });
+  });
+});
+
+describe('価格系列の日次グリッド (#137)', () => {
+  const build = (observations: ObservationMap) =>
+    buildMarketDailyView({
+      observations,
+      config,
+      start: '2026-08-10',
+      today: new Date(Date.UTC(2026, 7, 21)),
+    });
+
+  it('平日だけを並べる', () => {
+    // 土日は市場が閉じており、valueAsOf が金曜の値を繰り返すだけで情報が増えない。
+    const dates = build({}).map((p) => p.date);
+    expect(dates).toEqual([
+      '2026-08-10',
+      '2026-08-11',
+      '2026-08-12',
+      '2026-08-13',
+      '2026-08-14',
+      '2026-08-17',
+      '2026-08-18',
+      '2026-08-19',
+      '2026-08-20',
+      '2026-08-21',
+    ]);
+  });
+
+  it('週の途中の動きが図に出る', () => {
+    // 週次グリッドは金曜の値だけを拾うため、水曜の 20.1 がそもそも図に無かった。
+    const view = build({ vix: { '2026-08-12': 20.1, '2026-08-14': 15.0 } });
+    expect(view.find((p) => p.date === '2026-08-12')?.vix).toBe(20.1);
+    expect(view.find((p) => p.date === '2026-08-14')?.vix).toBe(15.0);
+  });
+
+  it('観測が無い日は直近の営業日まで遡る', () => {
+    // 祝日は考慮していない。取引所が休みだった日は直前の値が入る。
+    const view = build({ nikkei225: { '2026-08-11': 42000 } });
+    expect(view.find((p) => p.date === '2026-08-13')?.nikkei225).toBe(42000);
+    // 観測より前の日は埋めない。
+    expect(view.find((p) => p.date === '2026-08-10')?.nikkei225).toBeNull();
+  });
+
+  it('実質金利を名目と期待インフレ率から出す', () => {
+    // マクロビューと同じ導出。定義がずれると 2 つの図で違う値が出る。
+    const view = build({ dgs10: { '2026-08-14': 4.69 }, t10yie: { '2026-08-14': 2.24 } });
+    const point = view.find((p) => p.date === '2026-08-14');
+    expect(point?.realRate).toBeCloseTo(2.45, 10);
   });
 });

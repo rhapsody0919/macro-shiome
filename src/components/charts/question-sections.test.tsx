@@ -61,6 +61,22 @@ describe('問いによる画面構成 (#89)', () => {
   });
 });
 
+describe('価格系列の日次表示 (#137)', () => {
+  it('日次チャートに日次バッジが出る', () => {
+    // 「先週から動いていない」のか「月次だから動かない」のかを判別するための表示 (#64)。
+    // 日次を週次と表示すると、この判別ができなくなる。
+    render(<MarketPage />);
+    expect(screen.getAllByText('日次').length).toBeGreaterThan(0);
+  });
+
+  it('日次チャートの変化は前日比と明記する', () => {
+    // グリッドの粒度を変えると差分の意味も変わる。週の変化と読み違えないようにする。
+    render(<MarketPage />);
+    expect(screen.getAllByText('(前日比)').length).toBeGreaterThan(0);
+    expect(screen.getAllByText('(前週比)').length).toBeGreaterThan(0);
+  });
+});
+
 describe('チャートのバッジ', () => {
   it('景気サイクルの分類が無ければ頻度だけ出す', () => {
     // 分類の無い指標に分類を付けない (#62)。

@@ -64,3 +64,28 @@ export function valueAsOf(
 export function valueOn(observations: Observations, date: string): number | null {
   return observations[date] ?? null;
 }
+
+/**
+ * 平日を並べる ("YYYY-MM-DD"、#137)。
+ *
+ * 価格系列は日次で取れるため、金曜だけを見ると**その週の途中の動きが消える**。
+ * 週次グリッドは「週足に丸める」のではなく「金曜の値だけを拾う」実装なので、
+ * 週内の高値・安値がそもそも図に出ていなかった。
+ *
+ * **土日は入れない。** 市場が閉じている日は `valueAsOf` が金曜の値を繰り返すだけで、
+ * 点数が 4 割増える割に情報が増えない。
+ *
+ * 祝日は考慮しない。取引所が休みだった日は直前の営業日の値が入る。
+ */
+export function weekdaysBetween(start: string, end: string): string[] {
+  const cursor = toDate(start);
+  const last = toDate(end);
+
+  const result: string[] = [];
+  while (cursor.getTime() <= last.getTime()) {
+    const day = cursor.getUTCDay();
+    if (day !== 0 && day !== 6) result.push(toIso(cursor));
+    cursor.setUTCDate(cursor.getUTCDate() + 1);
+  }
+  return result;
+}
