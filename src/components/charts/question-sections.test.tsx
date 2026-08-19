@@ -1,8 +1,9 @@
 import { render, screen, within } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest';
 import EconomyPage from '@/app/economy/page';
+import JapanPage from '@/app/japan/page';
 import MarketPage from '@/app/market/page';
-import { ECONOMY_QUESTIONS, MARKET_QUESTIONS } from '@/lib/questions';
+import { ECONOMY_QUESTIONS, JAPAN_QUESTIONS, MARKET_QUESTIONS } from '@/lib/questions';
 import { Badges } from './badges';
 
 // チャートは期間フィルター (URL) を読む。ページ全体を描くのでここで差し替える。
@@ -25,7 +26,14 @@ describe('問いによる画面構成 (#89)', () => {
     }
   });
 
-  it('市場ページは 2 つの問いをすべて見出しに出す', () => {
+  it('日本ページは 2 つの問いをすべて見出しに出す', () => {
+    render(<JapanPage />);
+    for (const question of Object.values(JAPAN_QUESTIONS)) {
+      expect(screen.getByRole('heading', { name: question.title })).toBeInTheDocument();
+    }
+  });
+
+  it('市場ページは残りの問いをすべて見出しに出す', () => {
     render(<MarketPage />);
     for (const question of Object.values(MARKET_QUESTIONS)) {
       expect(screen.getByRole('heading', { name: question.title })).toBeInTheDocument();
@@ -61,27 +69,6 @@ describe('問いによる画面構成 (#89)', () => {
   });
 });
 
-describe('日本の住宅着工 (#129)', () => {
-  it('総戸数と内訳を別のチャートに分ける', () => {
-    // 総戸数は年率換算、内訳は季調値そのもので水準が 1 桁違う。
-    // 同じ図に載せると内訳が潰れて読めない (#116〜#118 の「重ねずに切り替える」)。
-    render(<EconomyPage />);
-    expect(screen.getByRole('heading', { name: '新設住宅着工戸数 (日本)' })).toBeInTheDocument();
-    expect(
-      screen.getByRole('heading', { name: '新設住宅着工戸数の内訳 (日本)' }),
-    ).toBeInTheDocument();
-  });
-
-  it('米国の住宅着工とは別のチャートにする', () => {
-    // 定義は同じ (季調済年率換算) だが単位が違う (日本=戸 / 米国=千戸)。
-    render(<EconomyPage />);
-    const housing = document.getElementById('q-housing');
-    const titles = Array.from(housing?.querySelectorAll('h3') ?? []).map((h) => h.textContent);
-    expect(titles).toContain('住宅市場');
-    expect(titles).toContain('新設住宅着工戸数 (日本)');
-  });
-});
-
 describe('価格系列の日次表示 (#137)', () => {
   it('日次チャートに日次バッジが出る', () => {
     // 「先週から動いていない」のか「月次だから動かない」のかを判別するための表示 (#64)。
@@ -113,21 +100,42 @@ describe('チャートのバッジ', () => {
   });
 });
 
-describe('海外市場の問い (#118)', () => {
+describe('日本ページ (#152)', () => {
   it('日経平均と USD/JPY が同じ問いに入る', () => {
-    // 円安は日経平均の押し上げ要因。2 つを並べて業績と為替を切り分ける。
-    render(<MarketPage />);
-    const section = document.getElementById('q-overseas');
+    // 円安は日経平均の押し上げ要因。2 つを並べて業績と為替を切り分ける (#118)。
+    render(<JapanPage />);
+    const section = document.getElementById('q-jp-market');
     expect(section).not.toBeNull();
     const titles = Array.from(section?.querySelectorAll('h3') ?? []).map((h) => h.textContent);
     expect(titles).toEqual(['日経平均株価', 'USD/JPY']);
   });
 
-  it('USD/JPY は「市場は不安か」から外れている', () => {
-    // 本アプリでの USD/JPY の役割は円相場であって恐怖指数ではない。
+  it('住宅は総戸数と内訳を別のチャートに分ける', () => {
+    // 総戸数は年率換算、内訳は季調値そのもので水準が 1 桁違う (#129)。
+    render(<JapanPage />);
+    const section = document.getElementById('q-jp-housing');
+    const titles = Array.from(section?.querySelectorAll('h3') ?? []).map((h) => h.textContent);
+    expect(titles).toEqual(['新設住宅着工戸数 (日本)', '新設住宅着工戸数の内訳 (日本)']);
+  });
+
+  it('市場ページから日本単独のチャートが消える', () => {
+    // 分けた意味が無くなるため、両方に出さない。
     render(<MarketPage />);
-    const risk = document.getElementById('q-risk');
-    const titles = Array.from(risk?.querySelectorAll('h3') ?? []).map((h) => h.textContent);
-    expect(titles).not.toContain('USD/JPY');
+    expect(screen.queryByRole('heading', { name: '日経平均株価' })).toBeNull();
+    expect(screen.queryByRole('heading', { name: 'USD/JPY' })).toBeNull();
+  });
+
+  it('経済ページから日本の住宅が消える', () => {
+    render(<EconomyPage />);
+    expect(screen.queryByRole('heading', { name: '新設住宅着工戸数 (日本)' })).toBeNull();
+  });
+
+  it('国際比較のチャートは市場ページに残る', () => {
+    // 複数国を並べること自体が目的なので、日本ページに置くと何を見る図か分からない。
+    render(<MarketPage />);
+    expect(
+      screen.getByRole('heading', { name: '10年債利回りの国際比較' }),
+    ).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: '各国の下落率' })).toBeInTheDocument();
   });
 });

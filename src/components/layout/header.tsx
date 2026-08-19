@@ -37,6 +37,9 @@ export function Header() {
             <Suspense fallback={<span className="px-3 py-1.5 text-sm">市場</span>}>
               <NavLink href="/market">市場</NavLink>
             </Suspense>
+            <Suspense fallback={<span className="px-3 py-1.5 text-sm">日本</span>}>
+              <NavLink href="/japan">日本</NavLink>
+            </Suspense>
           </nav>
         </div>
 
