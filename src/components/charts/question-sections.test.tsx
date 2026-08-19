@@ -100,6 +100,25 @@ describe('チャートのバッジ', () => {
   });
 });
 
+describe('日本の交易条件 (#155)', () => {
+  it('輸出物価と輸入物価を 1 枚に重ねる', () => {
+    // 同じ基準・同じ円ベースなので重ねられる。2 本の差が交易条件そのもの。
+    render(<JapanPage />);
+    const section = document.getElementById('q-jp-trade');
+    expect(section).not.toBeNull();
+    const titles = Array.from(section?.querySelectorAll('h3') ?? []).map((h) => h.textContent);
+    expect(titles).toEqual(['交易条件 (輸出物価と輸入物価)']);
+  });
+
+  it('米国の交易条件とは別のチャートにする', () => {
+    // 基準年も対象品目も違う (#98)。同じ図に載せると差が定義の違いに見える。
+    render(<EconomyPage />);
+    expect(
+      screen.queryByRole('heading', { name: '交易条件 (輸出物価と輸入物価)' }),
+    ).toBeNull();
+  });
+});
+
 describe('日本の景気動向指数 (#154)', () => {
   it('先行・一致・遅行を 1 枚に重ねる', () => {
     // 3 本とも同じ基準 (2020年平均 = 100)・同じ単位なので重ねられる。

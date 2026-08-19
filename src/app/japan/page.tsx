@@ -63,6 +63,45 @@ const CHARTS: QuestionChartDef<JapanQuestionId>[] = [
     ],
   },
   {
+    question: 'jp-trade',
+    frequency: 'monthly',
+    primaryIndicator: 'jp-import-price',
+    title: '交易条件 (輸出物価と輸入物価)',
+    subtitle: '円ベース (2020年平均 = 100)',
+    series: [
+      {
+        key: 'jpImportPrice',
+        label: '輸入物価',
+        color: COLORS.jpImportPrice,
+        width: 2.4,
+        indicatorId: 'jp-import-price',
+      },
+      {
+        key: 'jpExportPrice',
+        label: '輸出物価',
+        color: COLORS.jpExportPrice,
+        indicatorId: 'jp-export-price',
+      },
+    ],
+    notes: [
+      <span key="gap">
+        <strong>2 本の差が交易条件。</strong>
+        輸入物価が輸出物価を上回って伸びるほど、同じ量を売っても手元に残る所得が減る。
+        水準そのものより<strong>開き方</strong>を見る。
+      </span>,
+      <span key="yen">
+        <strong>円ベースを出している。</strong>
+        契約通貨ベースの系列も存在するが、日本企業の損益に効くのは円換算後。
+        2 つを同じ図に載せると、差が価格の変化なのか為替の変化なのか判別できなくなる。
+      </span>,
+      <span key="not-chain">
+        <strong>物価の連鎖には足していない。</strong>
+        輸入物価は消費者物価の上流に見えるが、交易条件は「所得が海外に出ていくか」を見る別の話。
+        経済ページの米国の交易条件とも基準年と対象品目が違うため、同じ図には載せない。
+      </span>,
+    ],
+  },
+  {
     question: 'jp-market',
     frequency: 'daily',
     primaryIndicator: 'nikkei225',

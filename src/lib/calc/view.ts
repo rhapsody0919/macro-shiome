@@ -642,6 +642,9 @@ export function buildEconomyView(options: BuildViewOptions): EconomyView {
     buildingPermits: level('building-permits', month),
     housingStarts: level('housing-starts', month),
     newHomeSales: level('new-home-sales', month),
+    // 輸出入物価は同じ基準・同じ円ベースなので重ねてよい (#155)。
+    jpExportPrice: level('jp-export-price', month),
+    jpImportPrice: level('jp-import-price', month),
     // 景気動向指数は 3 本とも同じ基準・同じ単位なので重ねてよい (#154)。
     jpDiLeading: level('jp-di-leading', month),
     jpDiCoincident: level('jp-di-coincident', month),
@@ -707,6 +710,8 @@ const MONTHLY_INDICATORS = [
   'building-permits',
   'housing-starts',
   'new-home-sales',
+  'jp-export-price',
+  'jp-import-price',
   'jp-di-leading',
   'jp-di-coincident',
   'jp-di-lagging',

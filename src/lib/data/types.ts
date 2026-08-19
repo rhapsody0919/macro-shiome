@@ -488,6 +488,10 @@ export interface MonthlyPoint {
   housingStarts: number | null;
   /** 新築住宅販売件数。連鎖の下流。 */
   newHomeSales: number | null;
+  /** 日本の輸出物価指数。**2020年基準・円ベース** (#155)。 */
+  jpExportPrice: number | null;
+  /** 日本の輸入物価指数。**2020年基準・円ベース** (#155)。 */
+  jpImportPrice: number | null;
   /** 日本の景気動向指数 (先行)。**2020年基準・原数値** (#154)。 */
   jpDiLeading: number | null;
   /** 日本の景気動向指数 (一致)。**2020年基準・原数値** (#154)。 */
