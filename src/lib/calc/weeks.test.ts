@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { fridaysBetween, valueAsOf, valueOn } from './weeks';
+import { fridaysBetween, sameDayLastYear, valueAsOf, valueOn } from './weeks';
 
 describe('fridaysBetween', () => {
   it('期間内の金曜日を昇順で返す', () => {
@@ -59,5 +59,23 @@ describe('valueOn', () => {
   it('遡らない', () => {
     // 週次系列で遡ると、休刊週が前週の値で埋まって欠測が見えなくなる。
     expect(valueOn(observations, '2026-08-14')).toBeNull();
+  });
+});
+
+describe('sameDayLastYear', () => {
+  it('通常の日付は年だけ引く', () => {
+    expect(sameDayLastYear('2026-08-20')).toBe('2025-08-20');
+    expect(sameDayLastYear('2024-03-01')).toBe('2023-03-01');
+  });
+
+  // #206: 文字列で年だけ引くと存在しない 2023-02-29 になり、new Date が 3/1 に
+  // ロールオーバーする。valueAsOf は過去へしか遡らないので前年 3/1 の値を拾っていた。
+  it('うるう日は前年 2/28 に丸める', () => {
+    expect(sameDayLastYear('2024-02-29')).toBe('2023-02-28');
+  });
+
+  it('うるう日の前年同日比は 2/28 の値を使う', () => {
+    const points = { '2023-02-28': 100, '2023-03-01': 80, '2024-02-29': 120 };
+    expect(valueAsOf(points, sameDayLastYear('2024-02-29'))).toBe(100);
   });
 });

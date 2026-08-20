@@ -40,6 +40,20 @@ export function fridaysBetween(start: string, end: string): string[] {
  * `maxLookbackDays` を超えて遡らないのは、古い値を「その週の値」として
  * 使い回すと欠測が見えなくなるため。
  */
+/**
+ * 1 年前の同月同日を返す。うるう日 (2/29) は 2/28 に丸める。
+ *
+ * 文字列で `2024-02-29` の年だけ引くと `2023-02-29` という存在しない日付になり、
+ * `new Date` が **翌日の 3/1 にロールオーバー**する。`valueAsOf` は「無ければ過去へ遡る」
+ * 設計なので、未来へ飛ばされると前年 3/1 の値を拾ってしまう (#206、実測で NASDAQ 総合が
+ * 40.47% ではなく 41.41% になっていた)。
+ */
+export function sameDayLastYear(date: string): string {
+  const previousYear = Number(date.slice(0, 4)) - 1;
+  const monthDay = date.slice(5);
+  return `${previousYear}-${monthDay === '02-29' ? '02-28' : monthDay}`;
+}
+
 export function valueAsOf(
   observations: Observations,
   date: string,
