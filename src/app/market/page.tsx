@@ -217,6 +217,7 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
     frequency: 'weekly',
     signed: true,
     primaryIndicator: 'nfci',
+    explainIndicators: ['nfci', 'anfci', 'financial-stress'],
     title: '金融環境指数',
     subtitle: '0 が平均、正なら引き締まり',
     series: [

@@ -12,6 +12,7 @@ export function ChartFrame({
   badges,
   summary,
   notes,
+  explanation,
   contentClassName = 'h-64 sm:h-80',
   headingLevel = 2,
   state,
@@ -26,6 +27,13 @@ export function ChartFrame({
   badges?: ReactNode;
   summary?: ReactNode;
   notes: ReactNode[];
+  /**
+   * 指標の読者向け解説 (#208)。折りたたみで注記の下に出す。
+   *
+   * 注記 (`notes`) は「この図を読むときの注意」で、解説は「この指標が何か」。
+   * 宛先が違うので混ぜない — 注記は毎回読ませたいが、解説は初見の人だけが開けばよい。
+   */
+  explanation?: ReactNode;
   /** 図の高さ。2 段構成にする場合などに上書きする。 */
   contentClassName?: string;
   /**
@@ -88,6 +96,8 @@ export function ChartFrame({
           <li key={i}>{note}</li>
         ))}
       </ul>
+
+      {explanation}
     </section>
   );
 }
