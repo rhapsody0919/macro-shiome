@@ -73,6 +73,8 @@ export const COLORS = {
   buildingPermits: '#6366f1',
   housingStarts: '#0ea5e9',
   realConsumption: '#0ea5e9',
+  jpUnemploymentRate: '#f59e0b',
+  jpProducerPrice: '#6366f1',
   jpCurrentAccount: '#0ea5e9',
   jpTradeBalance: '#f59e0b',
   jpMoneyStock: '#6366f1',
