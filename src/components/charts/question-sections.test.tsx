@@ -183,12 +183,14 @@ describe('日本の失業率と企業物価 (#180)', () => {
   });
 });
 
+// #208 以降、凡例と解説の両方に指標名が出るため、名前の照合は getAllByText を使う。
+// ここで見たいのは「この系列が図にある」ことで、出現回数ではない。
 describe('労働市場の質 (#196)', () => {
   it('広義失業率と公式失業率を同じ図に載せない', () => {
     // U-6 は不完全就業を含む別の定義。重ねると差が定義の違いに見える。
     render(<EconomyPage />);
     expect(screen.getByRole('heading', { name: '労働市場の質' })).toBeInTheDocument();
-    expect(screen.getByText('広義失業率 (U-6)')).toBeInTheDocument();
+    expect(screen.getAllByText('広義失業率 (U-6)').length).toBeGreaterThan(0);
   });
 
   it('失業保険は新規と継続を重ねる', () => {
@@ -201,8 +203,8 @@ describe('労働市場の質 (#196)', () => {
   it('JOLTS は求人・採用・離職を重ねる', () => {
     // 同じ調査・同じ単位 (千人)。求人 → 採用 → 離職の順で見る。
     render(<EconomyPage />);
-    expect(screen.getByText('採用')).toBeInTheDocument();
-    expect(screen.getByText('自発的離職')).toBeInTheDocument();
+    expect(screen.getAllByText('採用').length).toBeGreaterThan(0);
+    expect(screen.getAllByText('自発的離職').length).toBeGreaterThan(0);
   });
 });
 
@@ -243,8 +245,8 @@ describe('設備稼働率と在庫循環 (#191)', () => {
     // 同じ単位 (前年同月比 %)。2 本の差が在庫循環を示すので分けると読めない。
     render(<EconomyPage />);
     expect(screen.getByRole('heading', { name: '耐久財受注と在庫' })).toBeInTheDocument();
-    expect(screen.getByText('耐久財新規受注')).toBeInTheDocument();
-    expect(screen.getByText('企業在庫')).toBeInTheDocument();
+    expect(screen.getAllByText('耐久財新規受注').length).toBeGreaterThan(0);
+    expect(screen.getAllByText('企業在庫').length).toBeGreaterThan(0);
   });
 
   it('資本財受注と同じ図に載せない', () => {
