@@ -142,6 +142,33 @@ const CHARTS: QuestionChartDef<JapanQuestionId>[] = [
     ],
   },
   {
+    question: 'jp-cycle',
+    frequency: 'monthly',
+    kind: 'number',
+    zeroLine: false,
+    primaryIndicator: 'jp-inventory-ratio',
+    title: '鉱工業在庫率指数 (日本)',
+    subtitle: '2020年基準・季節調整済み',
+    series: [
+      {
+        key: 'jpInventoryRatio',
+        label: '在庫率',
+        color: COLORS.jpInventoryRatio,
+        indicatorId: 'jp-inventory-ratio',
+      },
+    ],
+    notes: [
+      <span key="ratio">
+        <strong>出荷に対する在庫の比。</strong>
+        在庫の絶対量ではなく<strong>売れ行きに対して多いか少ないか</strong>を示す。
+        上がれば生産調整が近い。上の鉱工業生産と合わせて読む。
+      </span>,
+      <span key="us">
+        米国の新築住宅在庫月数と同じ発想だが、対象が違う (あちらは住宅、こちらは鉱工業)。
+      </span>,
+    ],
+  },
+  {
     question: 'jp-price',
     frequency: 'monthly',
     primaryIndicator: 'jp-cpi-core',
@@ -156,8 +183,19 @@ const CHARTS: QuestionChartDef<JapanQuestionId>[] = [
         indicatorId: 'jp-cpi-core',
       },
       { key: 'jpCpi', label: '総合', color: COLORS.jpCpi, indicatorId: 'jp-cpi' },
-    ],
+          {
+        key: 'jpCpiCoreCore',
+        label: 'コアコア (生鮮・エネルギー除く)',
+        color: COLORS.jpCpiCoreCore,
+        indicatorId: 'jp-cpi-core-core',
+      },
+],
     notes: [
+      <span key="core-core">
+        <strong>コアコアが米国のコア CPI と同じ定義。</strong>
+        日本の「コア」は生鮮のみ除くため、エネルギー高の局面で米国のコアと動きが違う。
+        国際比較にはコアコアを使う。
+      </span>,
       <span key="core">
         <strong>日銀が見るのはコア</strong> (生鮮食品を除く総合)。総合は天候で振れるため、
         政策判断には向かない。2 本の差が生鮮食品の影響を示す。
@@ -343,6 +381,31 @@ const CHARTS: QuestionChartDef<JapanQuestionId>[] = [
     frequency: 'monthly',
     kind: 'number',
     zeroLine: false,
+    primaryIndicator: 'jp-consumption-index',
+    title: '総消費動向指数 (日本)',
+    subtitle: '実質・2020年基準',
+    series: [
+      {
+        key: 'jpConsumptionIndex',
+        label: '総消費動向指数',
+        color: COLORS.jpConsumptionIndex,
+        indicatorId: 'jp-consumption-index',
+      },
+    ],
+    notes: [
+      <span key="wider">
+        <strong>家計調査より広く消費全体を捉える。</strong>
+        家計調査は世帯の申告ベースだが、こちらは供給側の統計も合成しており、
+        単身世帯や施設消費も含む。上の家計の余力と方向が違えば、
+        <strong>世帯の実感と経済全体の消費がずれている</strong>ことになる。
+      </span>,
+    ],
+  },
+  {
+    question: 'jp-labor',
+    frequency: 'monthly',
+    kind: 'number',
+    zeroLine: false,
     primaryIndicator: 'jp-propensity-to-consume',
     title: '平均消費性向 (日本)',
     subtitle: '可処分所得のうち消費に回した割合 (季節調整済み)',
@@ -502,6 +565,30 @@ const CHARTS: QuestionChartDef<JapanQuestionId>[] = [
     ],
   },
 
+  {
+    question: 'jp-market',
+    frequency: 'monthly',
+    kind: 'number',
+    zeroLine: false,
+    primaryIndicator: 'jp-topix',
+    title: 'TOPIX (東証株価指数)',
+    subtitle: '東証全体・時価総額加重',
+    series: [
+      { key: 'jpTopix', label: 'TOPIX', color: COLORS.jpTopix, indicatorId: 'jp-topix' },
+    ],
+    notes: [
+      <span key="vs-nikkei">
+        <strong>日経平均とは構成が違う。</strong>
+        日経平均は 225 銘柄の株価加重で値がさ株の影響が大きく、
+        TOPIX は東証全体の時価総額加重。
+        <strong>2 つの差が「一部の大型株が引っ張っているか」を示す。</strong>
+      </span>,
+      <span key="scale">
+        <strong>水準が桁違いなので同じ図に載せていない</strong>
+        (日経平均は 6 万台、TOPIX は 3 千台)。方向を見比べる。
+      </span>,
+    ],
+  },
   {
     question: 'jp-market',
     frequency: 'daily',

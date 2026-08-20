@@ -731,6 +731,11 @@ export function buildEconomyView(options: BuildViewOptions): EconomyView {
     // 前年同月比にせず水準で出す (#164)。公表の前年同月比系列が無く、
     // 指数が小数 1 桁なので導出すると丸め誤差が出る。
     jpIndustrialProduction: level('jp-industrial-production', month),
+    // 米国のコアと同じ定義。日本のコアは生鮮のみ除くため国際比較にはこちら (#202)。
+    jpCpiCoreCore: level('jp-cpi-core-core', month),
+    jpInventoryRatio: level('jp-inventory-ratio', month),
+    jpTopix: level('jp-topix', month),
+    jpConsumptionIndex: level('jp-consumption-index', month),
     // **公表されている前年同月比をそのまま出す** (#162)。日本の CPI 指数は小数 1 桁しか
     // 公表されず、そこから導出すると丸めで公表値とずれる (2026-06 は 1.50% と 1.6%)。
     // 米国は指数が小数 3 桁あるため `yoy()` で導出している。経路は違うが値は正しい。
@@ -841,6 +846,10 @@ const MONTHLY_INDICATORS = [
   'jp-disposable-income',
   'jp-propensity-to-consume',
   'jp-industrial-production',
+  'jp-cpi-core-core',
+  'jp-inventory-ratio',
+  'jp-topix',
+  'jp-consumption-index',
   'jp-cpi-core',
   'jp-cpi',
   'jp-watcher-current',

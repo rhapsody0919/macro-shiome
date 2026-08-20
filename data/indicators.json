@@ -2526,5 +2526,81 @@
       "max": 20
     },
     "note": "Chinese Yuan Renminbi to One U.S. Dollar (#200)。**管理された変動相場**。中国当局の政策姿勢が出る。市場の需給だけでは決まらない点が他の通貨と違う。"
+  },
+  "jp-cpi-core-core": {
+    "name": "消費者物価指数 コアコア 前年同月比 (日本)",
+    "source": {
+      "adapter": "estat",
+      "indicatorCode": "0703010601010030040",
+      "cycle": "1",
+      "isSeasonal": "1"
+    },
+    "frequency": "monthly",
+    "unit": "percent",
+    "attribution": "総務省 消費者物価指数 (統計ダッシュボード)",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": -10,
+      "max": 30
+    },
+    "note": "生鮮食品**及びエネルギー**を除く総合の前年同月比 (%)、2025年基準 (#202)。**米国のコア CPI と同じ定義。** 日本の「コア」は生鮮のみ除くため、エネルギー高の局面で米国のコアと動きが違う。国際比較にはコアコアを使う。\n\n公表されている前年同月比をそのまま取る (#162 と同じ。指数が小数 1 桁のため導出すると丸めでずれる)。"
+  },
+  "jp-inventory-ratio": {
+    "name": "鉱工業在庫率指数 (日本)",
+    "source": {
+      "adapter": "estat",
+      "indicatorCode": "0502070304000090010",
+      "cycle": "1",
+      "isSeasonal": "2"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "経済産業省 鉱工業指数 (統計ダッシュボード)",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": 0,
+      "max": 300
+    },
+    "note": "鉱工業在庫率指数、2020年基準・**季節調整済み** (#202)。**出荷に対する在庫の比。** 米国の新築住宅在庫月数 (`MSACSR`) と同じ発想で、在庫の絶対量ではなく**売れ行きに対して多いか少ないか**を示す。上がれば生産調整が近い。"
+  },
+  "jp-topix": {
+    "name": "TOPIX (東証株価指数)",
+    "source": {
+      "adapter": "estat",
+      "indicatorCode": "0702020590000090010",
+      "cycle": "1",
+      "isSeasonal": "1"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "東京証券取引所 (統計ダッシュボード)",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": 0,
+      "max": 50000
+    },
+    "note": "東証株価指数 (#202)。**東証全体・時価総額加重。** 日経平均は 225 銘柄の株価加重で、値がさ株の影響が大きい。**2 本の差が「一部の大型株が引っ張っているか」を示す。**"
+  },
+  "jp-consumption-index": {
+    "name": "総消費動向指数 実質 (日本)",
+    "source": {
+      "adapter": "estat",
+      "indicatorCode": "0704050200000290000",
+      "cycle": "1",
+      "isSeasonal": "1"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "総務省 消費動向指数 (統計ダッシュボード)",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": 0,
+      "max": 300
+    },
+    "note": "総消費動向指数 (実質)、2020年基準 (#202)。**家計調査より広く消費全体を捉える。** 家計調査は世帯の申告ベースだが、こちらは供給側の統計も合成しており、単身世帯や施設消費も含む。"
   }
 }

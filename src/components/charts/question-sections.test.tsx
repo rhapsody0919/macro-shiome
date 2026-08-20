@@ -108,10 +108,12 @@ describe('日本の雇用と所得 (#156)', () => {
     expect(section).not.toBeNull();
     const titles = Array.from(section?.querySelectorAll('h3') ?? []).map((h) => h.textContent);
     // 求人 → 失業率 (雇用) → 所得と消費 → 賃金の順 (#170 #180)。
+    // #202 で総消費動向指数が加わった。求人 → 失業率 → 所得と消費 → 賃金の順。
     expect(titles).toEqual([
       '求人倍率',
       '完全失業率 (日本)',
       '家計の余力 (日本)',
+      '総消費動向指数 (日本)',
       '平均消費性向 (日本)',
       '実質賃金指数',
     ]);
@@ -123,6 +125,32 @@ describe('日本の雇用と所得 (#156)', () => {
     const section = document.getElementById('q-jp-labor');
     const labels = section?.textContent ?? '';
     expect(labels.indexOf('新規求人倍率')).toBeLessThan(labels.indexOf('有効求人倍率'));
+  });
+});
+
+describe('日本の走査で見つかった指標 (#202)', () => {
+  it('コアコアを物価チャートに足す', () => {
+    // 日本の「コア」は生鮮のみ除く。米国のコアと同じ定義はコアコア。
+    render(<JapanPage />);
+    expect(screen.getByText('コアコア (生鮮・エネルギー除く)')).toBeInTheDocument();
+    expect(screen.getByText(/米国のコア CPI と同じ定義/)).toBeInTheDocument();
+  });
+
+  it('TOPIX は日経平均と別チャートにする', () => {
+    // 日経 6 万台 / TOPIX 3 千台で水準が桁違い。同じ軸だと片方が潰れる (#118)。
+    render(<JapanPage />);
+    expect(screen.getByRole('heading', { name: 'TOPIX (東証株価指数)' })).toBeInTheDocument();
+    expect(screen.getByText(/水準が桁違いなので同じ図に載せていない/)).toBeInTheDocument();
+  });
+
+  it('在庫率を鉱工業生産の直後に置く', () => {
+    // 生産 → 在庫率の順。作った量と売れ行きに対する在庫を並べる。
+    render(<JapanPage />);
+    const section = document.getElementById('q-jp-cycle');
+    const titles = Array.from(section?.querySelectorAll('h3') ?? []).map((h) => h.textContent);
+    expect(titles.indexOf('鉱工業在庫率指数 (日本)')).toBe(
+      titles.indexOf('鉱工業生産指数 (日本)') + 1,
+    );
   });
 });
 
@@ -389,7 +417,7 @@ describe('街角景気 (#160)', () => {
     render(<JapanPage />);
     const section = document.getElementById('q-jp-cycle');
     const titles = Array.from(section?.querySelectorAll('h3') ?? []).map((h) => h.textContent);
-    expect(titles).toHaveLength(3);
+    expect(titles).toHaveLength(4);
   });
 
   it('現状判断と先行き判断を 1 枚に重ねる', () => {
@@ -420,10 +448,12 @@ describe('日本の景気動向指数 (#154)', () => {
     const titles = Array.from(section?.querySelectorAll('h3') ?? []).map((h) => h.textContent);
     // 街角景気は DI (50 が中立)、鉱工業生産は季調値なのでそれぞれ別チャートにする。
     // 合成 (景気動向指数) / 体感 (街角景気) / 実量 (鉱工業生産) が並ぶ。
+    // #202 で在庫率が加わった。合成 / 体感 / 実量 / 需給の 4 層。
     expect(titles).toEqual([
       '景気動向指数',
       '街角景気 (景気ウォッチャー調査)',
       '鉱工業生産指数 (日本)',
+      '鉱工業在庫率指数 (日本)',
     ]);
   });
 
@@ -441,7 +471,8 @@ describe('日本ページ (#152)', () => {
     const section = document.getElementById('q-jp-market');
     expect(section).not.toBeNull();
     const titles = Array.from(section?.querySelectorAll('h3') ?? []).map((h) => h.textContent);
-    expect(titles).toEqual(['日経平均株価', 'USD/JPY']);
+    // #202 で TOPIX が加わった。水準が桁違いなので日経平均とは別チャート。
+    expect(titles).toEqual(['日経平均株価', 'TOPIX (東証株価指数)', 'USD/JPY']);
   });
 
   it('住宅は総戸数と内訳を別のチャートに分ける', () => {
