@@ -479,14 +479,16 @@ describe('泉さんの記事から追加した指標 (#87)', () => {
     expect(indicators['new-job-postings'].note).toContain('総求人 (IHLIDXUS) とは別系列');
   });
 
-  it('Indeed と ADP は著作権ありとして扱う', () => {
+  it('民間提供のデータは著作権ありとして扱う', () => {
+    // 出所ページ (#21) の分類に効く。Public Domain と混ぜない。
     expect(indicators['new-job-postings'].copyright).toBe('restricted');
-    expect(indicators['adp-employment'].copyright).toBe('restricted');
+    expect(indicators['consumer-sentiment'].copyright).toBe('restricted');
   });
 
-  it('ADP が民間部門のみであることを記録する', () => {
-    // 政府雇用を含む公式統計と対象が違う。同じ「雇用者数」として比べると誤る。
-    expect(indicators['adp-employment'].note).toContain('民間部門のみ');
+  it('提供終了した ADP を持たない (#176)', () => {
+    // FRED で DISCONTINUED になり 2026-06-13 で止まった。取得し続けても増えない指標を
+    // 残すと、バッチが毎回「取れた」ことになり本当の変化と区別できない (#131 と同じ)。
+    expect(indicators['adp-employment']).toBeUndefined();
   });
 
   it('求人件数 (JOLTS) は公式統計で Public Domain', () => {
