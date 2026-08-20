@@ -125,6 +125,22 @@ describe('日本の雇用と所得 (#156)', () => {
   });
 });
 
+describe('米国の家計の余力 (#178)', () => {
+  it('所得と消費を 1 枚に重ねる', () => {
+    // 同じ単位 (前年同月比 %)。2 本の差が買い控えか余力喪失かを分ける (#95)。
+    render(<EconomyPage />);
+    expect(screen.getByRole('heading', { name: '家計の余力' })).toBeInTheDocument();
+    expect(screen.getByText('実質可処分所得')).toBeInTheDocument();
+    expect(screen.getByText('実質消費支出')).toBeInTheDocument();
+  });
+
+  it('日本の家計の余力とは別ページに置く', () => {
+    // 定義は揃えたが対象世帯も基準も違う。同じ図に載せると差が定義の違いに見える。
+    render(<EconomyPage />);
+    expect(screen.queryByRole('heading', { name: '家計の余力 (日本)' })).toBeNull();
+  });
+});
+
 describe('日本の対外収支 (#174)', () => {
   it('経常収支と貿易収支を 1 枚に重ねる', () => {
     // 同じ単位 (億円)。2 本の差が所得収支など貿易以外の寄与を示すので、分けると読めない。

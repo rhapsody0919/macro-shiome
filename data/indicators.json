@@ -1890,5 +1890,18 @@
       "max": 50000000
     },
     "note": "マネーストック M2 (億円)、**原数値** (#174)。季節調整済みの系列は提供されていない。日銀の量的な側面。物価の背景として読む。"
+  },
+  "real-consumption": {
+    "name": "実質個人消費支出",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "PCEC96"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "U.S. Bureau of Economic Analysis via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "note": "Real Personal Consumption Expenditures。10億ドル (連鎖2017年ドル)、季節調整済み年率 (#178)。**実質可処分所得と対で見る。** 所得が増えているのに消費が減っていれば買い控え、所得が減って消費も減っていれば余力そのものが失われている。片方だけでは区別できない (#95)。日本側の `jp-consumption` と定義を揃えてある (どちらも実質・前年同月比で表示)。"
   }
 }
