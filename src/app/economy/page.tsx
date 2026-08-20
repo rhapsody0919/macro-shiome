@@ -385,6 +385,44 @@ const CHARTS: QuestionChartDef<EconomyQuestionId>[] = [
   {
     question: 'consumption',
     frequency: 'monthly',
+    primaryIndicator: 'real-consumption',
+    title: '家計の余力',
+    subtitle: '実質可処分所得と実質消費支出の前年同月比',
+    series: [
+      {
+        key: 'realDisposableTotal',
+        label: '実質可処分所得',
+        color: COLORS.realDisposableTotal,
+        width: 2.4,
+        indicatorId: 'real-disposable-income',
+      },
+      {
+        key: 'realConsumption',
+        label: '実質消費支出',
+        color: COLORS.realConsumption,
+        indicatorId: 'real-consumption',
+      },
+    ],
+    notes: [
+      <span key="gap">
+        <strong>2 本の差が「所得を使っているか」を示す。</strong>
+        所得が増えているのに消費が減っていれば買い控え、所得が減って消費も減っていれば
+        余力そのものが失われている。<strong>片方だけでは区別できない</strong>のが
+        下の貯蓄率だけを見ていたときの問題だった。
+      </span>,
+      <span key="real">
+        どちらも実質 (連鎖2017年ドル)・季節調整済み年率。
+        名目だと、消費が増えたのか値上がりしただけなのか判別できない。
+      </span>,
+      <span key="japan">
+        日本にも同じ図がある (「日本」ページの「家計の余力」)。
+        <strong>定義は揃えてあるが、対象世帯も基準も違うため同じ図には載せていない。</strong>
+      </span>,
+    ],
+  },
+  {
+    question: 'consumption',
+    frequency: 'monthly',
     primaryIndicator: 'savings-rate',
     title: '貯蓄率',
     subtitle: '可処分所得のうち貯蓄に回る割合 (水準)',

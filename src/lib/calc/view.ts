@@ -638,6 +638,8 @@ export function buildEconomyView(options: BuildViewOptions): EconomyView {
     realIncomeExTransfer: yoy('real-income-ex-transfer', month),
     realDisposablePerCapita: yoy('real-disposable-income-per-capita', month),
     realDisposableTotal: yoy('real-disposable-income', month),
+    // 所得と対で見る。片方だけでは買い控えか余力喪失かを区別できない (#95 #178)。
+    realConsumption: yoy('real-consumption', month),
     retailSales: yoy('retail-sales-core', month),
     // 水準そのものが意味を持つ (40 時間が基準)。前年比にすると読めなくなる。
     manufacturingHours: level('manufacturing-hours', month),
@@ -731,6 +733,7 @@ const MONTHLY_INDICATORS = [
   'real-income-ex-transfer',
   'real-disposable-income-per-capita',
   'real-disposable-income',
+  'real-consumption',
   'retail-sales-core',
   'manufacturing-hours',
   'industrial-production',
