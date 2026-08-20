@@ -290,7 +290,13 @@
     "attribution": "U.S. Bureau of Labor Statistics via FRED",
     "copyright": "none",
     "group": "macro",
-    "note": "Import Price Index (End Use): All Commodities。Index 2000=100、季節調整なし。物価の連鎖の起点 (輸入物価 → 生産者物価 → CPI/PCE)。"
+    "note": "Import Price Index (End Use): All Commodities。Index 2000=100、季節調整なし。物価の連鎖の起点 (輸入物価 → 生産者物価 → CPI/PCE)。",
+    "unitLabel": "指数 (2000年=100)",
+    "explanation": {
+      "what": "米国が海外から買うときの価格。",
+      "howToRead": "国内の物価の連鎖の起点。輸入物価 → 生産者物価 → 消費者物価の順に伝わる。",
+      "seeWith": "生産者物価・消費者物価と並べる。上流から下流へどこまで届いているかを見る。"
+    }
   },
   "producer-price": {
     "name": "生産者物価指数",
@@ -303,7 +309,13 @@
     "attribution": "U.S. Bureau of Labor Statistics via FRED",
     "copyright": "none",
     "group": "macro",
-    "note": "Producer Price Index by Commodity: Final Demand。Index Nov 2009=100、季節調整済み。2009-11 以降しか無く、他の物価指標より履歴が短い。"
+    "note": "Producer Price Index by Commodity: Final Demand。Index Nov 2009=100、季節調整済み。2009-11 以降しか無く、他の物価指標より履歴が短い。",
+    "unitLabel": "指数 (2009年11月=100)・季節調整済み",
+    "explanation": {
+      "what": "企業が最終需要向けに売るときの価格。",
+      "howToRead": "消費者に届く 1 段階手前の価格。ここが上がっても消費者物価に転嫁されなければ、企業が差を吸収している。",
+      "seeWith": "生産者物価の総合・消費者物価と並べる。"
+    }
   },
   "cpi": {
     "name": "消費者物価指数 (CPI)",
@@ -334,7 +346,13 @@
     "attribution": "U.S. Bureau of Economic Analysis via FRED",
     "copyright": "none",
     "group": "macro",
-    "note": "Personal Consumption Expenditures: Chain-type Price Index。Index 2017=100、季節調整済み。FRB が最も重視するインフレ指標 (FRED の公式説明に \"the Federal Reserve’s preferred measure of inflation\" と明記)。"
+    "note": "Personal Consumption Expenditures: Chain-type Price Index。Index 2017=100、季節調整済み。FRB が最も重視するインフレ指標 (FRED の公式説明に \"the Federal Reserve’s preferred measure of inflation\" と明記)。",
+    "unitLabel": "指数 (2017年=100)・季節調整済み",
+    "explanation": {
+      "what": "家計が実際に買ったものの価格をまとめた指数の前年同月比。",
+      "howToRead": "消費者物価と違い、値上がりした品目から安い品目へ買い替える動きが反映される。そのぶん上昇率は低めに出やすい。",
+      "seeWith": "消費者物価と並べる。"
+    }
   },
   "t10y2y": {
     "name": "イールドカーブ (10年債 − 2年債)",
@@ -362,7 +380,13 @@
     "copyright": "none",
     "group": "macro",
     "cyclePosition": "coincident",
-    "note": "All Employees, Total Nonfarm。千人、季節調整済み。事業所調査ベースで自営業者と農業従事者を含まない。The Conference Board の景気一致指数 (CEI) の構成要素。"
+    "note": "All Employees, Total Nonfarm。千人、季節調整済み。事業所調査ベースで自営業者と農業従事者を含まない。The Conference Board の景気一致指数 (CEI) の構成要素。",
+    "unitLabel": "千人・季節調整済み",
+    "explanation": {
+      "what": "農業以外で雇われて働いている人の数。事業所に尋ねる調査に基づく。",
+      "howToRead": "ニュースで「雇用統計」と呼ばれるのはこれ。自営業者と農業従事者を含まない。景気の山と谷にほぼ同時に動く。",
+      "seeWith": "就業者数と並べる。含む範囲が違うため 2 本は食い違うことがある。"
+    }
   },
   "employment-level": {
     "name": "就業者数 (自営業・農業を含む)",
@@ -375,7 +399,13 @@
     "attribution": "U.S. Bureau of Labor Statistics via FRED",
     "copyright": "none",
     "group": "macro",
-    "note": "Employment Level。千人、季節調整済み。家計調査ベースで自営業者と農業従事者を含む。非農業部門雇用者数では見えない部分を捉える。"
+    "note": "Employment Level。千人、季節調整済み。家計調査ベースで自営業者と農業従事者を含む。非農業部門雇用者数では見えない部分を捉える。",
+    "unitLabel": "千人・季節調整済み",
+    "explanation": {
+      "what": "働いている人の総数。自営業者と農業従事者を含む。",
+      "howToRead": "世帯に尋ねる調査に基づく。事業所に尋ねる非農業部門雇用者数では数えられない働き方を含む。",
+      "seeWith": "非農業部門雇用者数と並べる。2 本が食い違うときは自営業の増減が効いている。"
+    }
   },
   "full-time-employment": {
     "name": "フルタイム就業者数",
@@ -388,7 +418,13 @@
     "attribution": "U.S. Bureau of Labor Statistics via FRED",
     "copyright": "none",
     "group": "macro",
-    "note": "Employed, Usually Work Full Time。千人、季節調整済み。パートを含む全体では見えない雇用の質を捉える。"
+    "note": "Employed, Usually Work Full Time。千人、季節調整済み。パートを含む全体では見えない雇用の質を捉える。",
+    "unitLabel": "千人・季節調整済み",
+    "explanation": {
+      "what": "ふだんフルタイムで働いている人の数。",
+      "howToRead": "雇用の質を示す。総数が増えていてもフルタイムが減っていれば、短時間の仕事に置き換わっている。",
+      "seeWith": "就業者数と並べる。"
+    }
   },
   "real-income-ex-transfer": {
     "name": "実質個人所得 (移転所得を除く)",
@@ -402,7 +438,13 @@
     "copyright": "none",
     "group": "macro",
     "cyclePosition": "coincident",
-    "note": "Real personal income excluding current transfer receipts。2017 年連鎖 10 億ドル、季節調整済み年率。年金など政府からの移転所得を除いた民間の経済活動による所得。The Conference Board の景気一致指数 (CEI) の構成要素。"
+    "note": "Real personal income excluding current transfer receipts。2017 年連鎖 10 億ドル、季節調整済み年率。年金など政府からの移転所得を除いた民間の経済活動による所得。The Conference Board の景気一致指数 (CEI) の構成要素。",
+    "unitLabel": "10億ドル (2017年連鎖ドル)・季節調整済み年率",
+    "explanation": {
+      "what": "家計の所得から年金や給付などの移転を除き、物価の変動を除いたもの。",
+      "howToRead": "働いて得た所得に近い。給付金が配られた時期は移転を含む所得と大きく食い違う。",
+      "seeWith": "実質可処分所得と並べる。"
+    }
   },
   "real-disposable-income-per-capita": {
     "name": "1人当たり実質可処分所得",
@@ -415,7 +457,13 @@
     "attribution": "U.S. Bureau of Economic Analysis via FRED",
     "copyright": "none",
     "group": "macro",
-    "note": "Real Disposable Personal Income: Per Capita。2017 年連鎖ドル、季節調整済み年率。人口が増え続けるため、全体の所得では実態が見えにくい。"
+    "note": "Real Disposable Personal Income: Per Capita。2017 年連鎖ドル、季節調整済み年率。人口が増え続けるため、全体の所得では実態が見えにくい。",
+    "unitLabel": "ドル (2017年連鎖ドル)・季節調整済み年率",
+    "explanation": {
+      "what": "税と社会保険料を引いた後の所得を人口で割り、物価の変動を除いたもの。",
+      "howToRead": "人口の増減の影響を受けない。1 人の暮らし向きに近い。",
+      "seeWith": "総額と対で見る。2 本が食い違うときは人口の伸びが効いている。"
+    }
   },
   "savings-rate": {
     "name": "貯蓄率",
@@ -428,7 +476,13 @@
     "attribution": "U.S. Bureau of Economic Analysis via FRED",
     "copyright": "none",
     "group": "macro",
-    "note": "Personal Saving Rate。%、季節調整済み年率。可処分所得のうち貯蓄に回る割合。低下は貯蓄を取り崩して消費していることを示す。"
+    "note": "Personal Saving Rate。%、季節調整済み年率。可処分所得のうち貯蓄に回る割合。低下は貯蓄を取り崩して消費していることを示す。",
+    "unitLabel": "% (季節調整済み年率)",
+    "explanation": {
+      "what": "税と社会保険料を引いた後の所得のうち、使わずに残した割合。",
+      "howToRead": "低下は貯蓄を取り崩して消費していることを示す。ただし所得が減っても率は上がるため、金額と併せないと向きを取り違える。",
+      "seeWith": "個人貯蓄額・実質可処分所得と 3 本で見る。"
+    }
   },
   "consumer-sentiment": {
     "name": "ミシガン大学消費者信頼感指数",
@@ -441,7 +495,13 @@
     "attribution": "University of Michigan via FRED",
     "copyright": "restricted",
     "group": "macro",
-    "note": "University of Michigan: Consumer Sentiment。Index 1966:Q1=100、季節調整なし。**著作権は University of Michigan にある**。個人消費の先行きと連動性がある意識調査。"
+    "note": "University of Michigan: Consumer Sentiment。Index 1966:Q1=100、季節調整なし。**著作権は University of Michigan にある**。個人消費の先行きと連動性がある意識調査。",
+    "unitLabel": "指数 (1966年第1四半期=100)",
+    "explanation": {
+      "what": "家計に景況感と暮らし向きを尋ねた意識調査の結果。",
+      "howToRead": "実際の支出ではなく気分を測る。実際の消費より先に動くことがあるが、動いても支出が変わらないこともある。",
+      "seeWith": "小売売上と並べる。気分と実際の支出が食い違う期間は珍しくない。"
+    }
   },
   "mortgage-rate-30y": {
     "name": "住宅ローン金利 (30年固定)",
@@ -454,7 +514,13 @@
     "attribution": "Freddie Mac via FRED",
     "copyright": "restricted",
     "group": "rates",
-    "note": "30-Year Fixed Rate Mortgage Average。%、季節調整なし、週次。**著作権は Freddie Mac にある**。住宅ローン申請者数 (MBA) は FRED に無いため、その代替として住宅需要の背景要因を見る。申請そのものより先行性は落ちる。"
+    "note": "30-Year Fixed Rate Mortgage Average。%、季節調整なし、週次。**著作権は Freddie Mac にある**。住宅ローン申請者数 (MBA) は FRED に無いため、その代替として住宅需要の背景要因を見る。申請そのものより先行性は落ちる。",
+    "unitLabel": "%",
+    "explanation": {
+      "what": "30 年固定の住宅ローン金利の全国平均。週次。",
+      "howToRead": "家計が住宅を買うときの借入コスト。長期金利に連動して動く。",
+      "seeWith": "住宅着工・新築住宅販売と並べる。金利の変化が取引量に届くまでには時間がかかる。"
+    }
   },
   "building-permits": {
     "name": "建設許可件数",
@@ -468,7 +534,13 @@
     "copyright": "none",
     "group": "macro",
     "cyclePosition": "leading",
-    "note": "New Privately-Owned Housing Units Authorized in Permit-Issuing Places: Total Units。千戸、季節調整済み年率。The Conference Board の景気先行指数 (LEI) の構成要素。着工より前の段階を捉える。"
+    "note": "New Privately-Owned Housing Units Authorized in Permit-Issuing Places: Total Units。千戸、季節調整済み年率。The Conference Board の景気先行指数 (LEI) の構成要素。着工より前の段階を捉える。",
+    "unitLabel": "千戸・季節調整済み年率",
+    "explanation": {
+      "what": "住宅を建てる許可が下りた戸数。年率換算なので、その月のペースが 1 年続いた場合の戸数を示す。",
+      "howToRead": "住宅の連鎖の最上流。許可 → 着工 → 完成 → 販売の順に進むため、着工より先に動く。",
+      "seeWith": "着工件数と並べる。許可が伸びても着工が続かなければ、建てる余力か採算の問題。"
+    }
   },
   "housing-starts": {
     "name": "住宅着工件数",
@@ -481,7 +553,13 @@
     "attribution": "U.S. Census Bureau and U.S. Department of Housing and Urban Development via FRED",
     "copyright": "none",
     "group": "macro",
-    "note": "New Privately-Owned Housing Units Started: Total Units。千戸、季節調整済み年率。建設許可の次の段階。"
+    "note": "New Privately-Owned Housing Units Started: Total Units。千戸、季節調整済み年率。建設許可の次の段階。",
+    "unitLabel": "千戸・季節調整済み年率",
+    "explanation": {
+      "what": "着工した住宅の戸数。年率換算。",
+      "howToRead": "許可の次の段階。実際に資材と人が動き始めた量を示す。",
+      "seeWith": "建設許可と並べる。許可からここまでの落差が、着工をためらった量にあたる。"
+    }
   },
   "new-home-sales": {
     "name": "新築住宅販売件数",
@@ -494,7 +572,13 @@
     "attribution": "U.S. Census Bureau and U.S. Department of Housing and Urban Development via FRED",
     "copyright": "none",
     "group": "macro",
-    "note": "New One Family Houses Sold: United States。千戸、季節調整済み年率。住宅の連鎖の下流。中古住宅販売 (NAR) は FRED の提供が 13 点のみで履歴を追えないため採用しない。"
+    "note": "New One Family Houses Sold: United States。千戸、季節調整済み年率。住宅の連鎖の下流。中古住宅販売 (NAR) は FRED の提供が 13 点のみで履歴を追えないため採用しない。",
+    "unitLabel": "千戸・季節調整済み年率",
+    "explanation": {
+      "what": "新しく建てられた一戸建ての販売件数。年率換算。",
+      "howToRead": "住宅の連鎖の下流。許可・着工から数か月遅れて動く。",
+      "seeWith": "中古住宅販売と並べる。件数は中古が 1 桁多い。"
+    }
   },
   "retail-sales-core": {
     "name": "小売売上 (自動車・ガソリンを除く)",
@@ -507,7 +591,13 @@
     "attribution": "U.S. Census Bureau via FRED",
     "copyright": "none",
     "group": "macro",
-    "note": "Advance Retail Sales: Retail Trade and Food Services, Excluding Motor Vehicle and Parts Dealers and Gasoline Stations。百万ドル、季節調整済み。**コントロールグループではない** (建材と外食が含まれる)。FRED の Advance Retail Sales に建材・外食まで除いた系列は存在せず、これが最も近い公式系列。季節調整済み系列を引き算して導出すると公式の季節調整値と一致しないため、導出はしない。"
+    "note": "Advance Retail Sales: Retail Trade and Food Services, Excluding Motor Vehicle and Parts Dealers and Gasoline Stations。百万ドル、季節調整済み。**コントロールグループではない** (建材と外食が含まれる)。FRED の Advance Retail Sales に建材・外食まで除いた系列は存在せず、これが最も近い公式系列。季節調整済み系列を引き算して導出すると公式の季節調整値と一致しないため、導出はしない。",
+    "unitLabel": "百万ドル・季節調整済み",
+    "explanation": {
+      "what": "小売とサービス飲食の売上から、自動車とガソリンを除いた金額。",
+      "howToRead": "振れの大きい 2 項目を外しているため消費の基調に近い。ただし建材と外食は含まれる。",
+      "seeWith": "小売売上の総合と対で見る。差が自動車とガソリンの寄与にあたる。"
+    }
   },
   "initial-claims": {
     "name": "新規失業保険申請件数",
@@ -521,7 +611,13 @@
     "copyright": "none",
     "group": "macro",
     "cyclePosition": "leading",
-    "note": "Initial Claims。人数、季節調整済み、週次。The Conference Board の景気先行指数 (LEI) の構成要素。労働市場の悪化を最も早く捉える。"
+    "note": "Initial Claims。人数、季節調整済み、週次。The Conference Board の景気先行指数 (LEI) の構成要素。労働市場の悪化を最も早く捉える。",
+    "unitLabel": "人・季節調整済み",
+    "explanation": {
+      "what": "失業保険を新たに申請した人数。週次。",
+      "howToRead": "労働市場の変化を最も早く捉える。週次なので月次の統計より 1 か月近く早く動きが見える。",
+      "seeWith": "継続受給者数と対で見る。新規は入口、継続は滞留を示す。"
+    }
   },
   "industrial-production": {
     "name": "鉱工業生産指数",
@@ -535,7 +631,13 @@
     "copyright": "none",
     "group": "macro",
     "cyclePosition": "coincident",
-    "note": "Industrial Production: Total Index。Index 2017=100、季節調整済み。The Conference Board の景気一致指数 (CEI) の構成要素。"
+    "note": "Industrial Production: Total Index。Index 2017=100、季節調整済み。The Conference Board の景気一致指数 (CEI) の構成要素。",
+    "unitLabel": "指数 (2017年=100)・季節調整済み",
+    "explanation": {
+      "what": "製造業・鉱業・電気ガスの生産量をまとめた指数。",
+      "howToRead": "景気の山と谷にほぼ同時に動く。先行きではなく、いまどうなっているかを示す。",
+      "seeWith": "設備稼働率と並べる。稼働率が先に出る。"
+    }
   },
   "new-orders-consumer-goods": {
     "name": "新規受注 (消費財)",
@@ -549,7 +651,13 @@
     "copyright": "none",
     "group": "macro",
     "cyclePosition": "leading",
-    "note": "Manufacturers' New Orders: Consumer Goods。百万ドル、季節調整済み。The Conference Board の景気先行指数 (LEI) の構成要素。**ISM 新規受注指数は FRED に無い** (ISM の著作権) ため、LEI の新規受注系列で代替する。"
+    "note": "Manufacturers' New Orders: Consumer Goods。百万ドル、季節調整済み。The Conference Board の景気先行指数 (LEI) の構成要素。**ISM 新規受注指数は FRED に無い** (ISM の著作権) ため、LEI の新規受注系列で代替する。",
+    "unitLabel": "百万ドル・季節調整済み",
+    "explanation": {
+      "what": "家計向け製品に対する新規受注額。",
+      "howToRead": "消費の先行きを生産側から捉える。実際に売れる前の段階を示す。",
+      "seeWith": "小売売上と並べる。受注から店頭に並ぶまでには時間がかかる。"
+    }
   },
   "new-orders-capital-goods": {
     "name": "新規受注 (非国防資本財・航空機を除く)",
@@ -563,7 +671,13 @@
     "copyright": "none",
     "group": "macro",
     "cyclePosition": "leading",
-    "note": "Manufacturers' New Orders: Nondefense Capital Goods Excluding Aircraft。百万ドル、季節調整済み。The Conference Board の景気先行指数 (LEI) の構成要素。企業の設備投資意欲を示す。"
+    "note": "Manufacturers' New Orders: Nondefense Capital Goods Excluding Aircraft。百万ドル、季節調整済み。The Conference Board の景気先行指数 (LEI) の構成要素。企業の設備投資意欲を示す。",
+    "unitLabel": "百万ドル・季節調整済み",
+    "explanation": {
+      "what": "企業が設備として使う機械への新規受注額。国防と航空機を除く。",
+      "howToRead": "企業の設備投資意欲を示す。大口案件の影響を除くため航空機を外してある。",
+      "seeWith": "耐久財新規受注と分けて見る。あちらは航空機を含む全体。"
+    }
   },
   "manufacturing-hours": {
     "name": "製造業の週平均労働時間",
@@ -577,7 +691,13 @@
     "copyright": "none",
     "group": "macro",
     "cyclePosition": "leading",
-    "note": "Average Weekly Hours of Production and Nonsupervisory Employees, Manufacturing。時間、季節調整済み。The Conference Board の景気先行指数 (LEI) の構成要素。企業は解雇の前に残業を減らすため、雇用者数より早く動く。"
+    "note": "Average Weekly Hours of Production and Nonsupervisory Employees, Manufacturing。時間、季節調整済み。The Conference Board の景気先行指数 (LEI) の構成要素。企業は解雇の前に残業を減らすため、雇用者数より早く動く。",
+    "unitLabel": "時間・季節調整済み",
+    "explanation": {
+      "what": "製造業で働く人の週あたり平均労働時間。",
+      "howToRead": "企業は人を減らす前に残業を削るため、雇用者数より早く動く。",
+      "seeWith": "全産業の労働時間と並べる。製造業に絞ったこちらの方が景気に敏感。"
+    }
   },
   "credit-conditions": {
     "name": "信用状況指数",
@@ -646,7 +766,13 @@
     "attribution": "U.S. Energy Information Administration via FRED",
     "copyright": "none",
     "group": "macro",
-    "note": "Crude Oil Prices: West Texas Intermediate (WTI) - Cushing, Oklahoma。ドル/バレル。物価とコストの起点で、輸入物価・生産者物価に先行して効く。"
+    "note": "Crude Oil Prices: West Texas Intermediate (WTI) - Cushing, Oklahoma。ドル/バレル。物価とコストの起点で、輸入物価・生産者物価に先行して効く。",
+    "unitLabel": "ドル/バレル",
+    "explanation": {
+      "what": "米国の代表的な原油の取引価格。",
+      "howToRead": "物価とコストの起点。輸入物価や生産者物価より先に動く。",
+      "seeWith": "輸入物価・生産者物価と並べる。"
+    }
   },
   "dollar-index": {
     "name": "ドル指数 (実効為替)",
@@ -672,7 +798,13 @@
     "attribution": "U.S. Bureau of Labor Statistics via FRED",
     "copyright": "none",
     "group": "macro",
-    "note": "Unemployment Rate。%、季節調整済み。最も広く見られる労働市場の指標。The Conference Board の景気遅行指数の構成要素は「平均失業期間」で失業率そのものではないため分類しない。"
+    "note": "Unemployment Rate。%、季節調整済み。最も広く見られる労働市場の指標。The Conference Board の景気遅行指数の構成要素は「平均失業期間」で失業率そのものではないため分類しない。",
+    "unitLabel": "% (季節調整済み)",
+    "explanation": {
+      "what": "働く意思があり職を探している人のうち、職に就いていない人の割合。",
+      "howToRead": "分母は職を探している人。探すのをやめた人は分母から外れるため、この数値だけでは下がった理由が分からない。",
+      "seeWith": "労働参加率・就業率と 3 本で見る。"
+    }
   },
   "new-job-postings": {
     "name": "新規求人 (Indeed)",
@@ -685,7 +817,13 @@
     "attribution": "Indeed via FRED",
     "copyright": "restricted",
     "group": "macro",
-    "note": "New Job Postings on Indeed in the United States。Index Feb 1, 2020 = 100、季節調整済み。**著作権は Indeed にある**。**総求人 (IHLIDXUS) とは別系列**で、新規に掲載された求人だけを数える。100 は 2020-02-01 (コロナ前) の水準。公式統計の JOLTS より発表が早い。"
+    "note": "New Job Postings on Indeed in the United States。Index Feb 1, 2020 = 100、季節調整済み。**著作権は Indeed にある**。**総求人 (IHLIDXUS) とは別系列**で、新規に掲載された求人だけを数える。100 は 2020-02-01 (コロナ前) の水準。公式統計の JOLTS より発表が早い。",
+    "unitLabel": "指数 (2020年2月1日=100)・季節調整済み",
+    "explanation": {
+      "what": "求人サイトに新しく掲載された求人の数を指数化したもの。日次。",
+      "howToRead": "100 が感染拡大前の水準。掲載中の求人全体ではなく、新規掲載だけを数える。",
+      "seeWith": "公式統計の求人件数と並べる。こちらの方が 2 か月ほど早く出る。"
+    }
   },
   "federal-deficit": {
     "name": "財政収支",
@@ -715,7 +853,13 @@
     "attribution": "U.S. Bureau of Labor Statistics via FRED",
     "copyright": "none",
     "group": "macro",
-    "note": "Job Openings: Total Nonfarm。千件、季節調整済み。労働省の公式統計。Indeed の新規求人より発表が 2 か月ほど遅いが、調査に基づく公式値。"
+    "note": "Job Openings: Total Nonfarm。千件、季節調整済み。労働省の公式統計。Indeed の新規求人より発表が 2 か月ほど遅いが、調査に基づく公式値。",
+    "unitLabel": "千件・季節調整済み",
+    "explanation": {
+      "what": "企業が埋めようとしている求人の件数。労働省の公式調査。",
+      "howToRead": "労働需要の大きさを示す。求人が減っても採用が保たれていれば、企業は募集を絞っただけで人は動いている。",
+      "seeWith": "採用・自発的離職と 3 本で見る。"
+    }
   },
   "potential-gdp": {
     "name": "潜在GDP (CBO 推計)",
@@ -741,7 +885,13 @@
     "attribution": "Federal Reserve Bank of New York via FRED",
     "copyright": "none",
     "group": "macro",
-    "note": "Current General Business Conditions; Diffusion Index for New York。拡散指数で 0 が「改善と悪化が同数」。季節調整済み。当月分が当月中旬に出るため月次では最も発表が早い。ニューヨーク連銀管内の製造業のみが対象で、全米の製造業を代表しない。ISM 新規受注指数 (著作権で FRED に無い) の代替だが同等ではない。"
+    "note": "Current General Business Conditions; Diffusion Index for New York。拡散指数で 0 が「改善と悪化が同数」。季節調整済み。当月分が当月中旬に出るため月次では最も発表が早い。ニューヨーク連銀管内の製造業のみが対象で、全米の製造業を代表しない。ISM 新規受注指数 (著作権で FRED に無い) の代替だが同等ではない。",
+    "unitLabel": "拡散指数 (0 が中立)・季節調整済み",
+    "explanation": {
+      "what": "ニューヨーク連銀管内の製造業に、前月より良くなったか悪くなったかを尋ねた調査。",
+      "howToRead": "0 は「良くなった企業と悪くなった企業が同数」。水準ではなく 0 からの距離と符号で読む。管内の製造業だけが対象で全米を代表しない。",
+      "seeWith": "フィラデルフィア連銀の同じ調査と並べる。当月分が当月中に出るため月次では最も早い。"
+    }
   },
   "philly-fed-survey": {
     "name": "フィラデルフィア連銀景気指数",
@@ -754,7 +904,13 @@
     "attribution": "Federal Reserve Bank of Philadelphia via FRED",
     "copyright": "none",
     "group": "macro",
-    "note": "Current General Activity; Diffusion Index for Federal Reserve District 3: Philadelphia。拡散指数で 0 が「改善と悪化が同数」。季節調整済み。第3地区 (ペンシルベニア・ニュージャージー・デラウェア) の製造業のみが対象。"
+    "note": "Current General Activity; Diffusion Index for Federal Reserve District 3: Philadelphia。拡散指数で 0 が「改善と悪化が同数」。季節調整済み。第3地区 (ペンシルベニア・ニュージャージー・デラウェア) の製造業のみが対象。",
+    "unitLabel": "拡散指数 (0 が中立)・季節調整済み",
+    "explanation": {
+      "what": "フィラデルフィア連銀管内の製造業に、前月からの変化を尋ねた調査。",
+      "howToRead": "0 は「良くなった企業と悪くなった企業が同数」。管内はペンシルベニア・ニュージャージー・デラウェアの製造業に限られる。",
+      "seeWith": "ニューヨーク連銀の同じ調査と並べる。2 地区が同じ方向なら地域固有の事情ではない。"
+    }
   },
   "personal-saving": {
     "name": "個人貯蓄額",
@@ -767,7 +923,13 @@
     "attribution": "U.S. Bureau of Economic Analysis via FRED",
     "copyright": "none",
     "group": "macro",
-    "note": "Personal Saving。10億ドル、季節調整済み年率。貯蓄率 (PSAVERT) と対で見る。率は所得が減っても上がるため、率だけでは「取り崩している」のか「所得が減った」のか判別できない。"
+    "note": "Personal Saving。10億ドル、季節調整済み年率。貯蓄率 (PSAVERT) と対で見る。率は所得が減っても上がるため、率だけでは「取り崩している」のか「所得が減った」のか判別できない。",
+    "unitLabel": "10億ドル・季節調整済み年率",
+    "explanation": {
+      "what": "家計が所得のうち使わずに残した金額。",
+      "howToRead": "貯蓄率と対で見る。率は所得が減っても上がるため、率だけでは取り崩しているのか所得が減ったのかを判別できない。",
+      "seeWith": "貯蓄率・実質可処分所得と 3 本で見る。"
+    }
   },
   "real-disposable-income": {
     "name": "実質可処分所得 (総額)",
@@ -780,7 +942,13 @@
     "attribution": "U.S. Bureau of Economic Analysis via FRED",
     "copyright": "none",
     "group": "macro",
-    "note": "Real Disposable Personal Income。10億ドル (連鎖2017年ドル)、季節調整済み年率。1人当たり (A229RX0) と対で見る。米国は人口が増え続けるため、総額が横ばいでも 1 人当たりでは減っていることがある。"
+    "note": "Real Disposable Personal Income。10億ドル (連鎖2017年ドル)、季節調整済み年率。1人当たり (A229RX0) と対で見る。米国は人口が増え続けるため、総額が横ばいでも 1 人当たりでは減っていることがある。",
+    "unitLabel": "10億ドル (2017年連鎖ドル)・季節調整済み年率",
+    "explanation": {
+      "what": "税と社会保険料を引いた後の家計の所得から、物価の変動を除いた総額。",
+      "howToRead": "総額なので人口の増減を含む。人口が増え続ける国では、総額が横ばいでも 1 人当たりでは減っていることがある。",
+      "seeWith": "1 人当たりの実質可処分所得と対で見る。"
+    }
   },
   "jp-10y": {
     "name": "日本 10年債利回り",
@@ -832,7 +1000,13 @@
     "attribution": "U.S. Bureau of Labor Statistics via FRED",
     "copyright": "none",
     "group": "macro",
-    "note": "Export Price Index (End Use): All Commodities。2000=100、季節調整なし。輸入物価 (IR) と対になる系列で、米国企業が海外に売るときの価格。輸入物価が仕入れ価格、輸出物価が販売価格にあたるので、両方を並べると交易条件の変化が読める。**物価の連鎖 (輸入物価 → 生産者物価 → CPI) の上流ではない**。"
+    "note": "Export Price Index (End Use): All Commodities。2000=100、季節調整なし。輸入物価 (IR) と対になる系列で、米国企業が海外に売るときの価格。輸入物価が仕入れ価格、輸出物価が販売価格にあたるので、両方を並べると交易条件の変化が読める。**物価の連鎖 (輸入物価 → 生産者物価 → CPI) の上流ではない**。",
+    "unitLabel": "指数 (2000年=100)",
+    "explanation": {
+      "what": "米国企業が海外に売るときの価格。",
+      "howToRead": "輸入物価が仕入れ、輸出物価が販売にあたる。2 本の比が交易条件で、輸出側が上回れば稼ぐ力が増している。",
+      "seeWith": "輸入物価と対で見る。ただし国内の物価の連鎖には足さない。上流ではなく別の話。"
+    }
   },
   "ten-year-bid-to-cover": {
     "name": "10年債入札の応札倍率",
@@ -1907,7 +2081,13 @@
     "attribution": "U.S. Bureau of Economic Analysis via FRED",
     "copyright": "none",
     "group": "macro",
-    "note": "Real Personal Consumption Expenditures。10億ドル (連鎖2017年ドル)、季節調整済み年率 (#178)。**実質可処分所得と対で見る。** 所得が増えているのに消費が減っていれば買い控え、所得が減って消費も減っていれば余力そのものが失われている。片方だけでは区別できない (#95)。日本側の `jp-consumption` と定義を揃えてある (どちらも実質・前年同月比で表示)。"
+    "note": "Real Personal Consumption Expenditures。10億ドル (連鎖2017年ドル)、季節調整済み年率 (#178)。**実質可処分所得と対で見る。** 所得が増えているのに消費が減っていれば買い控え、所得が減って消費も減っていれば余力そのものが失われている。片方だけでは区別できない (#95)。日本側の `jp-consumption` と定義を揃えてある (どちらも実質・前年同月比で表示)。",
+    "unitLabel": "10億ドル (2017年連鎖ドル)・季節調整済み年率",
+    "explanation": {
+      "what": "家計が実際に使った金額から物価の変動を除いたもの。",
+      "howToRead": "実質可処分所得と対で見る。所得が増えているのに消費が減っていれば買い控え、所得も消費も減っていれば余力そのものが失われている。",
+      "seeWith": "実質可処分所得・貯蓄率と並べる。"
+    }
   },
   "jp-unemployment-rate": {
     "name": "完全失業率 (日本)",
@@ -2077,7 +2257,13 @@
       "min": 0,
       "max": 120
     },
-    "note": "Capacity Utilization: Total Index (%)、季節調整済み (#191)。**水準そのものが意味を持つ。** 長期平均は 80% 前後で、下回れば設備に余剰がある。稼働率が上がりきると設備投資が必要になるため、投資サイクルの手前を示す。**生産系で最も速い** — 鉱工業生産より 1 か月早く出る。"
+    "note": "Capacity Utilization: Total Index (%)、季節調整済み (#191)。**水準そのものが意味を持つ。** 長期平均は 80% 前後で、下回れば設備に余剰がある。稼働率が上がりきると設備投資が必要になるため、投資サイクルの手前を示す。**生産系で最も速い** — 鉱工業生産より 1 か月早く出る。",
+    "unitLabel": "% (季節調整済み)",
+    "explanation": {
+      "what": "工場や設備が、能力の何割を実際に使っているかの割合。",
+      "howToRead": "水準そのものが意味を持つ。長期平均は 80% 前後で、下回れば設備に余剰がある。上がりきると新たな設備投資が要る。",
+      "seeWith": "鉱工業生産と並べる。生産系ではこちらが 1 か月早く出る。"
+    }
   },
   "durable-goods-orders": {
     "name": "耐久財新規受注",
@@ -2095,7 +2281,13 @@
       "min": 0,
       "max": 1000000
     },
-    "note": "Manufacturers' New Orders: Durable Goods。百万ドル、季節調整済み (#191)。**資本財新規受注 (`new-orders-capital-goods`) を含む上位概念。** あちらは LEI の構成要素で設備投資に絞った系列、こちらは自動車・航空機を含む耐久財全体。**同じ図に載せると二重計上に見える**ため分けている。"
+    "note": "Manufacturers' New Orders: Durable Goods。百万ドル、季節調整済み (#191)。**資本財新規受注 (`new-orders-capital-goods`) を含む上位概念。** あちらは LEI の構成要素で設備投資に絞った系列、こちらは自動車・航空機を含む耐久財全体。**同じ図に載せると二重計上に見える**ため分けている。",
+    "unitLabel": "百万ドル・季節調整済み",
+    "explanation": {
+      "what": "3 年以上使う製品 (自動車・航空機・機械など) に対する新規受注額。",
+      "howToRead": "自動車と航空機を含むため、大口案件が入った月は大きく振れる。生産の先行きを示す。",
+      "seeWith": "設備投資に絞った新規受注と分けて見る。同じ図に載せると二重計上に見える。"
+    }
   },
   "business-inventories": {
     "name": "企業在庫",
@@ -2112,7 +2304,13 @@
       "min": 0,
       "max": 10000000
     },
-    "note": "Total Business Inventories。百万ドル、季節調整済み (#191)。**在庫循環を見る唯一の指標。** 受注が伸びても在庫が積み上がっていれば生産は続かない。前年同月比で出し、受注の伸びと比べる。"
+    "note": "Total Business Inventories。百万ドル、季節調整済み (#191)。**在庫循環を見る唯一の指標。** 受注が伸びても在庫が積み上がっていれば生産は続かない。前年同月比で出し、受注の伸びと比べる。",
+    "unitLabel": "百万ドル・季節調整済み",
+    "explanation": {
+      "what": "製造・卸売・小売が抱える在庫の合計額。",
+      "howToRead": "受注が伸びていても在庫が積み上がっていれば、その生産は続かない。受注の伸びと在庫の伸びを比べる。",
+      "seeWith": "耐久財新規受注と対で見る。在庫循環はこの 2 本で読む。"
+    }
   },
   "cpi-core": {
     "name": "消費者物価指数 コア (CPI)",
@@ -2151,7 +2349,13 @@
       "min": 0,
       "max": 1000
     },
-    "note": "PCE Excluding Food and Energy。指数、季節調整済み (#194)。**FRB の物価目標そのもの。** 2% の目標はこの系列に対して設定されている。CPI より品目の入れ替えが早く反映され、医療費の扱いも違うため CPI とは水準が異なる。"
+    "note": "PCE Excluding Food and Energy。指数、季節調整済み (#194)。**FRB の物価目標そのもの。** 2% の目標はこの系列に対して設定されている。CPI より品目の入れ替えが早く反映され、医療費の扱いも違うため CPI とは水準が異なる。",
+    "unitLabel": "指数 (季節調整済み)",
+    "explanation": {
+      "what": "個人消費の価格から食品とエネルギーを除いた指数の前年同月比。",
+      "howToRead": "中央銀行が 2% の目標を設定しているのはこの系列。品目の入れ替えが早く反映されるため、消費者物価とは水準が違う。",
+      "seeWith": "コア消費者物価と並べる。2 本の差は品目の重みと医療費の扱いの違いによる。"
+    }
   },
   "cpi-rent": {
     "name": "家賃 CPI",
@@ -2168,7 +2372,13 @@
       "min": 0,
       "max": 1000
     },
-    "note": "CPI: Rent of Primary Residence。指数、季節調整済み (#194)。**CPI で最も粘着的な項目。** 契約更新のタイミングで反映されるため実勢に遅れる。コアの動きの大部分を説明する。"
+    "note": "CPI: Rent of Primary Residence。指数、季節調整済み (#194)。**CPI で最も粘着的な項目。** 契約更新のタイミングで反映されるため実勢に遅れる。コアの動きの大部分を説明する。",
+    "unitLabel": "指数 (季節調整済み)",
+    "explanation": {
+      "what": "持ち家でない世帯が払う家賃の物価指数。",
+      "howToRead": "消費者物価の中で最も動きが遅い項目。契約更新のときにしか改定されないため、実勢の家賃相場から遅れて反映される。",
+      "seeWith": "コア消費者物価と並べる。コアの動きの大部分はこの項目で説明できる。"
+    }
   },
   "breakeven-5y": {
     "name": "期待インフレ率 (5年BEI)",
@@ -2219,7 +2429,13 @@
       "min": 0,
       "max": 1000
     },
-    "note": "PPI by Commodity: All Commodities。指数、季節調整なし (#194)。**最終需要 (`PPIFIS`) の上流。** 商品ベースなので原材料の値動きが直接出る。物価の連鎖の起点として見る。"
+    "note": "PPI by Commodity: All Commodities。指数、季節調整なし (#194)。**最終需要 (`PPIFIS`) の上流。** 商品ベースなので原材料の値動きが直接出る。物価の連鎖の起点として見る。",
+    "unitLabel": "指数 (季節調整なし)",
+    "explanation": {
+      "what": "取引されるあらゆる商品の価格をまとめた指数。",
+      "howToRead": "最終需要向けよりさらに上流。原材料の値動きが直接出るため振れが大きい。",
+      "seeWith": "最終需要の生産者物価と並べる。上流から下流へどこまで伝わったかを見る。"
+    }
   },
   "continued-claims": {
     "name": "継続受給者数",
@@ -2254,7 +2470,13 @@
       "min": 0,
       "max": 40
     },
-    "note": "Total Unemployed Plus Marginally Attached and Part Time for Economic Reasons (%) (#196)。**不完全就業と求職を諦めた人を含む。** 公式失業率 (U-3) より広く、2 つの差が「統計に出ない失業」の大きさを示す。"
+    "note": "Total Unemployed Plus Marginally Attached and Part Time for Economic Reasons (%) (#196)。**不完全就業と求職を諦めた人を含む。** 公式失業率 (U-3) より広く、2 つの差が「統計に出ない失業」の大きさを示す。",
+    "unitLabel": "% (季節調整済み)",
+    "explanation": {
+      "what": "失業者に加え、働きたいが探すのをやめた人と、生活のためにやむなく短時間で働く人を含めた割合。",
+      "howToRead": "公式の失業率より広い。2 つの差が、公式統計に表れない働けていなさの大きさにあたる。",
+      "seeWith": "失業率と対で見る。"
+    }
   },
   "participation-rate": {
     "name": "労働参加率",
@@ -2294,7 +2516,13 @@
       "min": 0,
       "max": 100
     },
-    "note": "Employment-Population Ratio (%)、季節調整済み (#196)。**人口に対する就業者の割合。** 参加率と違い「探しているか」に左右されないため頑健。"
+    "note": "Employment-Population Ratio (%)、季節調整済み (#196)。**人口に対する就業者の割合。** 参加率と違い「探しているか」に左右されないため頑健。",
+    "unitLabel": "% (季節調整済み)",
+    "explanation": {
+      "what": "人口のうち実際に働いている人の割合。",
+      "howToRead": "職を探しているかどうかに左右されない。参加率や失業率と違い、分母が人口で固定されているため解釈がぶれない。",
+      "seeWith": "失業率・労働参加率と 3 本で見る。"
+    }
   },
   "quits": {
     "name": "自発的離職",
@@ -2312,7 +2540,13 @@
       "min": 0,
       "max": 10000000
     },
-    "note": "Quits: Total Nonfarm。人、季節調整済み (#196)。**労働者の自信を示す。** 次が見つかる自信があるときに増える。景気後退の手前で先に落ちることが多い。"
+    "note": "Quits: Total Nonfarm。人、季節調整済み (#196)。**労働者の自信を示す。** 次が見つかる自信があるときに増える。景気後退の手前で先に落ちることが多い。",
+    "unitLabel": "人・季節調整済み",
+    "explanation": {
+      "what": "自分から仕事を辞めた人の数。",
+      "howToRead": "次が見つかる見込みがあるときに増える。景気の転換より前に減り始めることが多い。",
+      "seeWith": "求人件数・採用と 3 本で見る。"
+    }
   },
   "hires": {
     "name": "採用",
@@ -2329,7 +2563,13 @@
       "min": 0,
       "max": 10000000
     },
-    "note": "Hires: Total Nonfarm。人、季節調整済み (#196)。**求人が実際の採用に繋がっているか。** 求人件数が多くても採用が伸びなければ、ミスマッチか企業の様子見。"
+    "note": "Hires: Total Nonfarm。人、季節調整済み (#196)。**求人が実際の採用に繋がっているか。** 求人件数が多くても採用が伸びなければ、ミスマッチか企業の様子見。",
+    "unitLabel": "人・季節調整済み",
+    "explanation": {
+      "what": "実際に採用された人数。",
+      "howToRead": "求人が実際の採用につながっているかを示す。求人が多くても採用が伸びなければ、条件が合っていないか企業が様子を見ている。",
+      "seeWith": "求人件数・自発的離職と 3 本で見る。"
+    }
   },
   "weekly-hours-total": {
     "name": "週平均労働時間 (全産業)",
@@ -2347,7 +2587,13 @@
       "min": 0,
       "max": 60
     },
-    "note": "Average Weekly Hours of All Employees, Total Private。時間、季節調整済み (#196)。**企業は解雇の前に労働時間を削る。** 既に持っている製造業の時間 (`AWHMAN`) はLEI の構成要素で製造業に絞ったもの、こちらは全産業。"
+    "note": "Average Weekly Hours of All Employees, Total Private。時間、季節調整済み (#196)。**企業は解雇の前に労働時間を削る。** 既に持っている製造業の時間 (`AWHMAN`) はLEI の構成要素で製造業に絞ったもの、こちらは全産業。",
+    "unitLabel": "時間・季節調整済み",
+    "explanation": {
+      "what": "民間で働く人の週あたり平均労働時間。全産業。",
+      "howToRead": "企業は人を減らす前に労働時間を削る。時間が減っていれば、時給が上がっても受け取る賃金は伸びない。",
+      "seeWith": "製造業に絞った労働時間と並べる。"
+    }
   },
   "fed-balance-sheet": {
     "name": "FRB バランスシート",
@@ -2439,7 +2685,13 @@
       "min": 0,
       "max": 2000000
     },
-    "note": "Advance Retail Sales: Retail Trade and Food Services。百万ドル、季節調整済み (#200)。**コア (`retail-sales-core`) との差が自動車・ガソリンの寄与。** コアは自動車・ガソリンを除いた系列で、総合は含む。振れの原因を切り分けるために並べる。"
+    "note": "Advance Retail Sales: Retail Trade and Food Services。百万ドル、季節調整済み (#200)。**コア (`retail-sales-core`) との差が自動車・ガソリンの寄与。** コアは自動車・ガソリンを除いた系列で、総合は含む。振れの原因を切り分けるために並べる。",
+    "unitLabel": "百万ドル・季節調整済み",
+    "explanation": {
+      "what": "小売とサービス飲食の売上の合計額。",
+      "howToRead": "自動車とガソリンを含むため、燃料価格や自動車の販売動向で大きく振れる。",
+      "seeWith": "自動車・ガソリンを除いた系列と対で見る。"
+    }
   },
   "vehicle-sales": {
     "name": "自動車販売",
@@ -2457,7 +2709,13 @@
       "min": 0,
       "max": 50
     },
-    "note": "Total Vehicle Sales。**百万台**・季節調整済み年率 (#200)。**小売の中で最も振れる項目。** 金利に敏感で、利上げ局面で先に落ちる。"
+    "note": "Total Vehicle Sales。**百万台**・季節調整済み年率 (#200)。**小売の中で最も振れる項目。** 金利に敏感で、利上げ局面で先に落ちる。",
+    "unitLabel": "百万台・季節調整済み年率",
+    "explanation": {
+      "what": "国内で売れた自動車の台数。年率換算。",
+      "howToRead": "小売の項目の中で最も振れる。ローンで買うことが多いため金利の変化に早く反応する。",
+      "seeWith": "小売売上の総合と並べる。総合の振れの多くはここで説明できる。"
+    }
   },
   "new-home-supply": {
     "name": "新築住宅の在庫月数",
@@ -2474,7 +2732,13 @@
       "min": 0,
       "max": 30
     },
-    "note": "Monthly Supply of New Houses。**か月**・季節調整済み (#200)。**需給バランスを直接示す。** いまの販売ペースで在庫が何か月分あるか。6 か月前後が均衡とされ、積み上がれば値下げ圧力になる。"
+    "note": "Monthly Supply of New Houses。**か月**・季節調整済み (#200)。**需給バランスを直接示す。** いまの販売ペースで在庫が何か月分あるか。6 か月前後が均衡とされ、積み上がれば値下げ圧力になる。",
+    "unitLabel": "か月・季節調整済み",
+    "explanation": {
+      "what": "いまの販売ペースが続いた場合に、新築住宅の在庫が何か月分あるかを示す。",
+      "howToRead": "需給のバランスを直接示す。6 か月前後が需給の釣り合う目安とされる。積み上がれば値引きの圧力になる。",
+      "seeWith": "新築住宅販売・着工と並べる。"
+    }
   },
   "housing-starts-single": {
     "name": "住宅着工 一戸建て",
@@ -2491,7 +2755,13 @@
       "min": 0,
       "max": 5000
     },
-    "note": "New Privately-Owned Housing Units Started: Single-Family Units。千戸・季節調整済み年率 (#200)。**総戸数 (`HOUST`) との差が集合住宅。** 一戸建ては家計の購買力、集合住宅は投資需要で動くため、内訳を見ないと何が動いたか分からない。"
+    "note": "New Privately-Owned Housing Units Started: Single-Family Units。千戸・季節調整済み年率 (#200)。**総戸数 (`HOUST`) との差が集合住宅。** 一戸建ては家計の購買力、集合住宅は投資需要で動くため、内訳を見ないと何が動いたか分からない。",
+    "unitLabel": "千戸・季節調整済み年率",
+    "explanation": {
+      "what": "着工のうち一戸建てだけの戸数。年率換算。",
+      "howToRead": "総戸数との差が集合住宅。一戸建ては家計の購買力で動き、集合住宅は投資需要で動くため、内訳を見ないと何が動いたか分からない。",
+      "seeWith": "着工の総戸数と対で見る。"
+    }
   },
   "nasdaq-composite": {
     "name": "NASDAQ 総合",

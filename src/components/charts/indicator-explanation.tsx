@@ -84,9 +84,14 @@ function Entry({ indicator }: { indicator: Indicator }) {
       {explanation.seeWith !== undefined && (
         <p className="text-slate-600 dark:text-slate-300">{explanation.seeWith}</p>
       )}
-      {/* 単位・頻度・出所は指標マスタから組み立てる。解説の本文には書かせない。 */}
+      {/*
+        単位・頻度・出所は指標マスタから組み立てる。解説の本文には書かせない。
+
+        **「提供元の単位」と書く。** 月次チャートの多くは前年同月比 (%) を表示しており、
+        提供元の系列は指数や金額。ここで「単位」とだけ書くと、画面の縦軸の単位と誤読される。
+      */}
       <p className="text-slate-500">
-        {indicator.unitLabel !== undefined && <>単位: {indicator.unitLabel} / </>}
+        {indicator.unitLabel !== undefined && <>提供元の単位: {indicator.unitLabel} / </>}
         {FREQUENCY_LABELS[indicator.frequency]} / {indicator.attribution}
         {sourceId !== null && <> ({sourceId})</>}
       </p>
