@@ -27,7 +27,10 @@
     "sofr": null,
     "breakeven5y": 1.33,
     "breakeven5y5y": 1.67,
-    "continuedClaims": 2143000
+    "continuedClaims": 2143000,
+    "fedBalanceSheet": 4466793,
+    "termSpread3m": 1.31,
+    "tbill3m": 0.27
   },
   {
     "date": "2016-08-12",
@@ -57,7 +60,10 @@
     "sofr": null,
     "breakeven5y": 1.29,
     "breakeven5y5y": 1.59,
-    "continuedClaims": 2157000
+    "continuedClaims": 2157000,
+    "fedBalanceSheet": 4468929,
+    "termSpread3m": 1.22,
+    "tbill3m": 0.28
   },
   {
     "date": "2016-08-19",
@@ -87,7 +93,10 @@
     "sofr": null,
     "breakeven5y": 1.34,
     "breakeven5y5y": 1.62,
-    "continuedClaims": 2137000
+    "continuedClaims": 2137000,
+    "fedBalanceSheet": 4466476,
+    "termSpread3m": 1.28,
+    "tbill3m": 0.29
   },
   {
     "date": "2016-08-26",
@@ -117,7 +126,10 @@
     "sofr": null,
     "breakeven5y": 1.31,
     "breakeven5y5y": 1.63,
-    "continuedClaims": 2148000
+    "continuedClaims": 2148000,
+    "fedBalanceSheet": 4473840,
+    "termSpread3m": 1.28,
+    "tbill3m": 0.33
   },
   {
     "date": "2016-09-02",
@@ -147,7 +159,10 @@
     "sofr": null,
     "breakeven5y": 1.28,
     "breakeven5y5y": 1.66,
-    "continuedClaims": 2138000
+    "continuedClaims": 2138000,
+    "fedBalanceSheet": 4457907,
+    "termSpread3m": 1.27,
+    "tbill3m": 0.32
   },
   {
     "date": "2016-09-09",
@@ -177,7 +192,10 @@
     "sofr": null,
     "breakeven5y": 1.32,
     "breakeven5y5y": 1.68,
-    "continuedClaims": 2149000
+    "continuedClaims": 2149000,
+    "fedBalanceSheet": 4459394,
+    "termSpread3m": 1.32,
+    "tbill3m": 0.34
   },
   {
     "date": "2016-09-16",
@@ -207,7 +225,10 @@
     "sofr": null,
     "breakeven5y": 1.34,
     "breakeven5y5y": 1.68,
-    "continuedClaims": 2110000
+    "continuedClaims": 2110000,
+    "fedBalanceSheet": 4481635,
+    "termSpread3m": 1.4,
+    "tbill3m": 0.29
   },
   {
     "date": "2016-09-23",
@@ -237,7 +258,10 @@
     "sofr": null,
     "breakeven5y": 1.42,
     "breakeven5y5y": 1.72,
-    "continuedClaims": 2098000
+    "continuedClaims": 2098000,
+    "fedBalanceSheet": 4473032,
+    "termSpread3m": 1.44,
+    "tbill3m": 0.18
   },
   {
     "date": "2016-09-30",
@@ -267,7 +291,10 @@
     "sofr": null,
     "breakeven5y": 1.45,
     "breakeven5y5y": 1.75,
-    "continuedClaims": 2081000
+    "continuedClaims": 2081000,
+    "fedBalanceSheet": 4452002,
+    "termSpread3m": 1.31,
+    "tbill3m": 0.28
   },
   {
     "date": "2016-10-07",
@@ -297,7 +324,10 @@
     "sofr": null,
     "breakeven5y": 1.5,
     "breakeven5y5y": 1.76,
-    "continuedClaims": 2080000
+    "continuedClaims": 2080000,
+    "fedBalanceSheet": 4459407,
+    "termSpread3m": 1.4,
+    "tbill3m": 0.32
   },
   {
     "date": "2016-10-14",
@@ -327,7 +357,10 @@
     "sofr": null,
     "breakeven5y": 1.53,
     "breakeven5y5y": 1.81,
-    "continuedClaims": 2081000
+    "continuedClaims": 2081000,
+    "fedBalanceSheet": 4457698,
+    "termSpread3m": 1.48,
+    "tbill3m": 0.31
   },
   {
     "date": "2016-10-21",
@@ -357,7 +390,10 @@
     "sofr": null,
     "breakeven5y": 1.56,
     "breakeven5y5y": 1.78,
-    "continuedClaims": 2069000
+    "continuedClaims": 2069000,
+    "fedBalanceSheet": 4467382,
+    "termSpread3m": 1.4,
+    "tbill3m": 0.33
   },
   {
     "date": "2016-10-28",
@@ -387,7 +423,10 @@
     "sofr": null,
     "breakeven5y": 1.6,
     "breakeven5y5y": 1.86,
-    "continuedClaims": 2066000
+    "continuedClaims": 2066000,
+    "fedBalanceSheet": 4454326,
+    "termSpread3m": 1.56,
+    "tbill3m": 0.29
   },
   {
     "date": "2016-11-04",
@@ -417,7 +456,10 @@
     "sofr": null,
     "breakeven5y": 1.52,
     "breakeven5y5y": 1.84,
-    "continuedClaims": 2067000
+    "continuedClaims": 2067000,
+    "fedBalanceSheet": 4453087,
+    "termSpread3m": 1.41,
+    "tbill3m": 0.37
   },
   {
     "date": "2016-11-11",
@@ -447,7 +489,10 @@
     "sofr": null,
     "breakeven5y": 1.7,
     "breakeven5y5y": 2.06,
-    "continuedClaims": 2046000
+    "continuedClaims": 2046000,
+    "fedBalanceSheet": 4455087,
+    "termSpread3m": 1.67,
+    "tbill3m": 0.47
   },
   {
     "date": "2016-11-18",
@@ -477,7 +522,10 @@
     "sofr": null,
     "breakeven5y": 1.74,
     "breakeven5y5y": 2.06,
-    "continuedClaims": 2045000
+    "continuedClaims": 2045000,
+    "fedBalanceSheet": 4453633,
+    "termSpread3m": 1.9,
+    "tbill3m": 0.43
   },
   {
     "date": "2016-11-25",
@@ -507,7 +555,10 @@
     "sofr": null,
     "breakeven5y": 1.74,
     "breakeven5y5y": 2.04,
-    "continuedClaims": 2050000
+    "continuedClaims": 2050000,
+    "fedBalanceSheet": 4465782,
+    "termSpread3m": 1.87,
+    "tbill3m": 0.48
   },
   {
     "date": "2016-12-02",
@@ -537,7 +588,10 @@
     "sofr": null,
     "breakeven5y": 1.76,
     "breakeven5y5y": 2.06,
-    "continuedClaims": 2038000
+    "continuedClaims": 2038000,
+    "fedBalanceSheet": 4446307,
+    "termSpread3m": 1.91,
+    "tbill3m": 0.48
   },
   {
     "date": "2016-12-09",
@@ -567,7 +621,10 @@
     "sofr": null,
     "breakeven5y": 1.83,
     "breakeven5y5y": 2.09,
-    "continuedClaims": 2029000
+    "continuedClaims": 2029000,
+    "fedBalanceSheet": 4448618,
+    "termSpread3m": 1.93,
+    "tbill3m": 0.53
   },
   {
     "date": "2016-12-16",
@@ -597,7 +654,10 @@
     "sofr": null,
     "breakeven5y": 1.75,
     "breakeven5y5y": 1.97,
-    "continuedClaims": 2030000
+    "continuedClaims": 2030000,
+    "fedBalanceSheet": 4470973,
+    "termSpread3m": 2.09,
+    "tbill3m": 0.5
   },
   {
     "date": "2016-12-23",
@@ -627,7 +687,10 @@
     "sofr": null,
     "breakeven5y": 1.84,
     "breakeven5y5y": 2.1,
-    "continuedClaims": 2078000
+    "continuedClaims": 2078000,
+    "fedBalanceSheet": 4469089,
+    "termSpread3m": 2.03,
+    "tbill3m": 0.51
   },
   {
     "date": "2016-12-30",
@@ -657,7 +720,10 @@
     "sofr": null,
     "breakeven5y": 1.84,
     "breakeven5y5y": 2.06,
-    "continuedClaims": 2077000
+    "continuedClaims": 2077000,
+    "fedBalanceSheet": 4451451,
+    "termSpread3m": 1.94,
+    "tbill3m": 0.5
   },
   {
     "date": "2017-01-06",
@@ -687,7 +753,10 @@
     "sofr": null,
     "breakeven5y": 1.84,
     "breakeven5y5y": 2.08,
-    "continuedClaims": 2028000
+    "continuedClaims": 2028000,
+    "fedBalanceSheet": 4453101,
+    "termSpread3m": 1.89,
+    "tbill3m": 0.52
   },
   {
     "date": "2017-01-13",
@@ -717,7 +786,10 @@
     "sofr": null,
     "breakeven5y": 1.85,
     "breakeven5y5y": 2.13,
-    "continuedClaims": 2080000
+    "continuedClaims": 2080000,
+    "fedBalanceSheet": 4452509,
+    "termSpread3m": 1.87,
+    "tbill3m": 0.52
   },
   {
     "date": "2017-01-20",
@@ -747,7 +819,10 @@
     "sofr": null,
     "breakeven5y": 1.92,
     "breakeven5y5y": 2.16,
-    "continuedClaims": 2099000
+    "continuedClaims": 2099000,
+    "fedBalanceSheet": 4460758,
+    "termSpread3m": 1.98,
+    "tbill3m": 0.49
   },
   {
     "date": "2017-01-27",
@@ -777,7 +852,10 @@
     "sofr": null,
     "breakeven5y": 1.96,
     "breakeven5y5y": 2.2,
-    "continuedClaims": 2067000
+    "continuedClaims": 2067000,
+    "fedBalanceSheet": 4452838,
+    "termSpread3m": 1.97,
+    "tbill3m": 0.51
   },
   {
     "date": "2017-02-03",
@@ -807,7 +885,10 @@
     "sofr": null,
     "breakeven5y": 1.91,
     "breakeven5y5y": 2.19,
-    "continuedClaims": 2078000
+    "continuedClaims": 2078000,
+    "fedBalanceSheet": 4453881,
+    "termSpread3m": 1.98,
+    "tbill3m": 0.5
   },
   {
     "date": "2017-02-10",
@@ -837,7 +918,10 @@
     "sofr": null,
     "breakeven5y": 1.87,
     "breakeven5y5y": 2.15,
-    "continuedClaims": 2064000
+    "continuedClaims": 2064000,
+    "fedBalanceSheet": 4456236,
+    "termSpread3m": 1.86,
+    "tbill3m": 0.54
   },
   {
     "date": "2017-02-17",
@@ -867,7 +951,10 @@
     "sofr": null,
     "breakeven5y": 1.85,
     "breakeven5y5y": 2.17,
-    "continuedClaims": 2076000
+    "continuedClaims": 2076000,
+    "fedBalanceSheet": 4454676,
+    "termSpread3m": 1.89,
+    "tbill3m": 0.52
   },
   {
     "date": "2017-02-24",
@@ -897,7 +984,10 @@
     "sofr": null,
     "breakeven5y": 1.9,
     "breakeven5y5y": 2.1,
-    "continuedClaims": 2034000
+    "continuedClaims": 2034000,
+    "fedBalanceSheet": 4468702,
+    "termSpread3m": 1.79,
+    "tbill3m": 0.51
   },
   {
     "date": "2017-03-03",
@@ -927,7 +1017,10 @@
     "sofr": null,
     "breakeven5y": 1.92,
     "breakeven5y5y": 2.16,
-    "continuedClaims": 2065000
+    "continuedClaims": 2065000,
+    "fedBalanceSheet": 4458018,
+    "termSpread3m": 1.78,
+    "tbill3m": 0.7
   },
   {
     "date": "2017-03-10",
@@ -957,7 +1050,10 @@
     "sofr": null,
     "breakeven5y": 1.9,
     "breakeven5y5y": 2.12,
-    "continuedClaims": 2020000
+    "continuedClaims": 2020000,
+    "fedBalanceSheet": 4459840,
+    "termSpread3m": 1.83,
+    "tbill3m": 0.73
   },
   {
     "date": "2017-03-17",
@@ -987,7 +1083,10 @@
     "sofr": null,
     "breakeven5y": 1.89,
     "breakeven5y5y": 2.13,
-    "continuedClaims": 2002000
+    "continuedClaims": 2002000,
+    "fedBalanceSheet": 4469577,
+    "termSpread3m": 1.77,
+    "tbill3m": 0.72
   },
   {
     "date": "2017-03-24",
@@ -1017,7 +1116,10 @@
     "sofr": null,
     "breakeven5y": 1.73,
     "breakeven5y5y": 2.23,
-    "continuedClaims": 2021000
+    "continuedClaims": 2021000,
+    "fedBalanceSheet": 4478236,
+    "termSpread3m": 1.62,
+    "tbill3m": 0.77
   },
   {
     "date": "2017-03-31",
@@ -1047,7 +1149,10 @@
     "sofr": null,
     "breakeven5y": 1.77,
     "breakeven5y5y": 2.17,
-    "continuedClaims": 2027000
+    "continuedClaims": 2027000,
+    "fedBalanceSheet": 4469618,
+    "termSpread3m": 1.64,
+    "tbill3m": 0.75
   },
   {
     "date": "2017-04-07",
@@ -1077,7 +1182,10 @@
     "sofr": null,
     "breakeven5y": 1.7,
     "breakeven5y5y": 2.18,
-    "continuedClaims": 1990000
+    "continuedClaims": 1990000,
+    "fedBalanceSheet": 4474634,
+    "termSpread3m": 1.56,
+    "tbill3m": 0.81
   },
   {
     "date": "2017-04-14",
@@ -1107,7 +1215,10 @@
     "sofr": null,
     "breakeven5y": 1.74,
     "breakeven5y5y": 2.1,
-    "continuedClaims": 1968000
+    "continuedClaims": 1968000,
+    "fedBalanceSheet": 4484492,
+    "termSpread3m": 1.43,
+    "tbill3m": 0.8
   },
   {
     "date": "2017-04-21",
@@ -1137,7 +1248,10 @@
     "sofr": null,
     "breakeven5y": 1.79,
     "breakeven5y5y": 1.89,
-    "continuedClaims": 1961000
+    "continuedClaims": 1961000,
+    "fedBalanceSheet": 4479270,
+    "termSpread3m": 1.45,
+    "tbill3m": 0.78
   },
   {
     "date": "2017-04-28",
@@ -1167,7 +1281,10 @@
     "sofr": null,
     "breakeven5y": 1.81,
     "breakeven5y5y": 2.03,
-    "continuedClaims": 1962000
+    "continuedClaims": 1962000,
+    "fedBalanceSheet": 4470142,
+    "termSpread3m": 1.49,
+    "tbill3m": 0.79
   },
   {
     "date": "2017-05-05",
@@ -1197,7 +1314,10 @@
     "sofr": null,
     "breakeven5y": 1.75,
     "breakeven5y5y": 1.97,
-    "continuedClaims": 1896000
+    "continuedClaims": 1896000,
+    "fedBalanceSheet": 4471246,
+    "termSpread3m": 1.46,
+    "tbill3m": 0.88
   },
   {
     "date": "2017-05-12",
@@ -1227,7 +1347,10 @@
     "sofr": null,
     "breakeven5y": 1.75,
     "breakeven5y5y": 1.93,
-    "continuedClaims": 1892000
+    "continuedClaims": 1892000,
+    "fedBalanceSheet": 4473459,
+    "termSpread3m": 1.45,
+    "tbill3m": 0.86
   },
   {
     "date": "2017-05-19",
@@ -1257,7 +1380,10 @@
     "sofr": null,
     "breakeven5y": 1.75,
     "breakeven5y5y": 1.89,
-    "continuedClaims": 1902000
+    "continuedClaims": 1902000,
+    "fedBalanceSheet": 4467108,
+    "termSpread3m": 1.31,
+    "tbill3m": 0.9
   },
   {
     "date": "2017-05-26",
@@ -1287,7 +1413,10 @@
     "sofr": null,
     "breakeven5y": 1.73,
     "breakeven5y5y": 1.89,
-    "continuedClaims": 1900000
+    "continuedClaims": 1900000,
+    "fedBalanceSheet": 4470852,
+    "termSpread3m": 1.31,
+    "tbill3m": 0.92
   },
   {
     "date": "2017-06-02",
@@ -1317,7 +1446,10 @@
     "sofr": null,
     "breakeven5y": 1.72,
     "breakeven5y5y": 1.86,
-    "continuedClaims": 1891000
+    "continuedClaims": 1891000,
+    "fedBalanceSheet": 4459914,
+    "termSpread3m": 1.17,
+    "tbill3m": 0.96
   },
   {
     "date": "2017-06-09",
@@ -1347,7 +1479,10 @@
     "sofr": null,
     "breakeven5y": 1.68,
     "breakeven5y5y": 1.88,
-    "continuedClaims": 1909000
+    "continuedClaims": 1909000,
+    "fedBalanceSheet": 4462443,
+    "termSpread3m": 1.2,
+    "tbill3m": 0.99
   },
   {
     "date": "2017-06-16",
@@ -1377,7 +1512,10 @@
     "sofr": null,
     "breakeven5y": 1.56,
     "breakeven5y5y": 1.78,
-    "continuedClaims": 1914000
+    "continuedClaims": 1914000,
+    "fedBalanceSheet": 4476269,
+    "termSpread3m": 1.13,
+    "tbill3m": 1.01
   },
   {
     "date": "2017-06-23",
@@ -1407,7 +1545,10 @@
     "sofr": null,
     "breakeven5y": 1.59,
     "breakeven5y5y": 1.81,
-    "continuedClaims": 1915000
+    "continuedClaims": 1915000,
+    "fedBalanceSheet": 4474257,
+    "termSpread3m": 1.18,
+    "tbill3m": 0.95
   },
   {
     "date": "2017-06-30",
@@ -1437,7 +1578,10 @@
     "sofr": null,
     "breakeven5y": 1.63,
     "breakeven5y5y": 1.83,
-    "continuedClaims": 1929000
+    "continuedClaims": 1929000,
+    "fedBalanceSheet": 4463347,
+    "termSpread3m": 1.28,
+    "tbill3m": 1.01
   },
   {
     "date": "2017-07-07",
@@ -1467,7 +1611,10 @@
     "sofr": null,
     "breakeven5y": 1.63,
     "breakeven5y5y": 1.83,
-    "continuedClaims": 1911000
+    "continuedClaims": 1911000,
+    "fedBalanceSheet": 4467272,
+    "termSpread3m": 1.34,
+    "tbill3m": 1.03
   },
   {
     "date": "2017-07-14",
@@ -1497,7 +1644,10 @@
     "sofr": null,
     "breakeven5y": 1.62,
     "breakeven5y5y": 1.9,
-    "continuedClaims": 1942000
+    "continuedClaims": 1942000,
+    "fedBalanceSheet": 4466702,
+    "termSpread3m": 1.29,
+    "tbill3m": 1.02
   },
   {
     "date": "2017-07-21",
@@ -1527,7 +1677,10 @@
     "sofr": null,
     "breakeven5y": 1.62,
     "breakeven5y5y": 1.9,
-    "continuedClaims": 1929000
+    "continuedClaims": 1929000,
+    "fedBalanceSheet": 4476903,
+    "termSpread3m": 1.08,
+    "tbill3m": 1.14
   },
   {
     "date": "2017-07-28",
@@ -1557,7 +1710,10 @@
     "sofr": null,
     "breakeven5y": 1.68,
     "breakeven5y5y": 1.98,
-    "continuedClaims": 1928000
+    "continuedClaims": 1928000,
+    "fedBalanceSheet": 4465284,
+    "termSpread3m": 1.22,
+    "tbill3m": 1.06
   },
   {
     "date": "2017-08-04",
@@ -1587,7 +1743,10 @@
     "sofr": null,
     "breakeven5y": 1.65,
     "breakeven5y5y": 1.95,
-    "continuedClaims": 1926000
+    "continuedClaims": 1926000,
+    "fedBalanceSheet": 4466846,
+    "termSpread3m": 1.19,
+    "tbill3m": 1.06
   },
   {
     "date": "2017-08-11",
@@ -1617,7 +1776,10 @@
     "sofr": null,
     "breakeven5y": 1.64,
     "breakeven5y5y": 1.94,
-    "continuedClaims": 1928000
+    "continuedClaims": 1928000,
+    "fedBalanceSheet": 4469083,
+    "termSpread3m": 1.16,
+    "tbill3m": 1.01
   },
   {
     "date": "2017-08-18",
@@ -1647,7 +1809,10 @@
     "sofr": null,
     "breakeven5y": 1.61,
     "breakeven5y5y": 1.91,
-    "continuedClaims": 1926000
+    "continuedClaims": 1926000,
+    "fedBalanceSheet": 4462871,
+    "termSpread3m": 1.17,
+    "tbill3m": 1
   },
   {
     "date": "2017-08-25",
@@ -1677,7 +1842,10 @@
     "sofr": null,
     "breakeven5y": 1.57,
     "breakeven5y5y": 1.93,
-    "continuedClaims": 1928000
+    "continuedClaims": 1928000,
+    "fedBalanceSheet": 4463837,
+    "termSpread3m": 1.14,
+    "tbill3m": 1.01
   },
   {
     "date": "2017-09-01",
@@ -1707,7 +1875,10 @@
     "sofr": null,
     "breakeven5y": 1.63,
     "breakeven5y5y": 1.95,
-    "continuedClaims": 1912000
+    "continuedClaims": 1912000,
+    "fedBalanceSheet": 4452360,
+    "termSpread3m": 1.14,
+    "tbill3m": 1
   },
   {
     "date": "2017-09-08",
@@ -1737,7 +1908,10 @@
     "sofr": null,
     "breakeven5y": 1.63,
     "breakeven5y5y": 1.99,
-    "continuedClaims": 1911000
+    "continuedClaims": 1911000,
+    "fedBalanceSheet": 4453474,
+    "termSpread3m": 1.02,
+    "tbill3m": 1.02
   },
   {
     "date": "2017-09-15",
@@ -1767,7 +1941,10 @@
     "sofr": null,
     "breakeven5y": 1.72,
     "breakeven5y5y": 1.98,
-    "continuedClaims": 1939000
+    "continuedClaims": 1939000,
+    "fedBalanceSheet": 4471174,
+    "termSpread3m": 1.15,
+    "tbill3m": 1.03
   },
   {
     "date": "2017-09-22",
@@ -1797,7 +1974,10 @@
     "sofr": null,
     "breakeven5y": 1.71,
     "breakeven5y5y": 1.97,
-    "continuedClaims": 1872000
+    "continuedClaims": 1872000,
+    "fedBalanceSheet": 4458576,
+    "termSpread3m": 1.23,
+    "tbill3m": 1.01
   },
   {
     "date": "2017-09-29",
@@ -1827,7 +2007,10 @@
     "sofr": null,
     "breakeven5y": 1.68,
     "breakeven5y5y": 2,
-    "continuedClaims": 1871000
+    "continuedClaims": 1871000,
+    "fedBalanceSheet": 4455661,
+    "termSpread3m": 1.27,
+    "tbill3m": 1.04
   },
   {
     "date": "2017-10-06",
@@ -1857,7 +2040,10 @@
     "sofr": null,
     "breakeven5y": 1.78,
     "breakeven5y5y": 1.96,
-    "continuedClaims": 1871000
+    "continuedClaims": 1871000,
+    "fedBalanceSheet": 4460422,
+    "termSpread3m": 1.3,
+    "tbill3m": 1.05
   },
   {
     "date": "2017-10-13",
@@ -1887,7 +2073,10 @@
     "sofr": null,
     "breakeven5y": 1.71,
     "breakeven5y5y": 1.99,
-    "continuedClaims": 1869000
+    "continuedClaims": 1869000,
+    "fedBalanceSheet": 4459415,
+    "termSpread3m": 1.19,
+    "tbill3m": 1.07
   },
   {
     "date": "2017-10-20",
@@ -1917,7 +2106,10 @@
     "sofr": null,
     "breakeven5y": 1.76,
     "breakeven5y5y": 1.98,
-    "continuedClaims": 1902000
+    "continuedClaims": 1902000,
+    "fedBalanceSheet": 4469723,
+    "termSpread3m": 1.28,
+    "tbill3m": 1.09
   },
   {
     "date": "2017-10-27",
@@ -1947,7 +2139,10 @@
     "sofr": null,
     "breakeven5y": 1.76,
     "breakeven5y5y": 2,
-    "continuedClaims": 1913000
+    "continuedClaims": 1913000,
+    "fedBalanceSheet": 4461117,
+    "termSpread3m": 1.32,
+    "tbill3m": 1.08
   },
   {
     "date": "2017-11-03",
@@ -1977,7 +2172,10 @@
     "sofr": null,
     "breakeven5y": 1.74,
     "breakeven5y5y": 1.98,
-    "continuedClaims": 1927000
+    "continuedClaims": 1927000,
+    "fedBalanceSheet": 4455887,
+    "termSpread3m": 1.16,
+    "tbill3m": 1.16
   },
   {
     "date": "2017-11-10",
@@ -2007,7 +2205,10 @@
     "sofr": null,
     "breakeven5y": 1.78,
     "breakeven5y5y": 1.98,
-    "continuedClaims": 1939000
+    "continuedClaims": 1939000,
+    "fedBalanceSheet": 4458552,
+    "termSpread3m": 1.17,
+    "tbill3m": 1.21
   },
   {
     "date": "2017-11-17",
@@ -2037,7 +2238,10 @@
     "sofr": null,
     "breakeven5y": 1.75,
     "breakeven5y5y": 1.97,
-    "continuedClaims": 1944000
+    "continuedClaims": 1944000,
+    "fedBalanceSheet": 4448289,
+    "termSpread3m": 1.06,
+    "tbill3m": 1.26
   },
   {
     "date": "2017-11-24",
@@ -2067,7 +2271,10 @@
     "sofr": null,
     "breakeven5y": 1.71,
     "breakeven5y5y": 1.97,
-    "continuedClaims": 1974000
+    "continuedClaims": 1974000,
+    "fedBalanceSheet": 4450615,
+    "termSpread3m": 1.05,
+    "tbill3m": 1.26
   },
   {
     "date": "2017-12-01",
@@ -2097,7 +2304,10 @@
     "sofr": null,
     "breakeven5y": 1.72,
     "breakeven5y5y": 2,
-    "continuedClaims": 1997000
+    "continuedClaims": 1997000,
+    "fedBalanceSheet": 4438592,
+    "termSpread3m": 1.1,
+    "tbill3m": 1.25
   },
   {
     "date": "2017-12-08",
@@ -2127,7 +2337,10 @@
     "sofr": null,
     "breakeven5y": 1.71,
     "breakeven5y5y": 2.05,
-    "continuedClaims": 1953000
+    "continuedClaims": 1953000,
+    "fedBalanceSheet": 4437148,
+    "termSpread3m": 1.1,
+    "tbill3m": 1.26
   },
   {
     "date": "2017-12-15",
@@ -2157,7 +2370,10 @@
     "sofr": null,
     "breakeven5y": 1.77,
     "breakeven5y5y": 1.99,
-    "continuedClaims": 1984000
+    "continuedClaims": 1984000,
+    "fedBalanceSheet": 4452726,
+    "termSpread3m": 1.04,
+    "tbill3m": 1.29
   },
   {
     "date": "2017-12-22",
@@ -2187,7 +2403,10 @@
     "sofr": null,
     "breakeven5y": 1.82,
     "breakeven5y5y": 2.06,
-    "continuedClaims": 2006000
+    "continuedClaims": 2006000,
+    "fedBalanceSheet": 4447470,
+    "termSpread3m": 1.15,
+    "tbill3m": 1.31
   },
   {
     "date": "2017-12-29",
@@ -2217,7 +2436,10 @@
     "sofr": null,
     "breakeven5y": 1.86,
     "breakeven5y5y": 2.06,
-    "continuedClaims": 1979000
+    "continuedClaims": 1979000,
+    "fedBalanceSheet": 4448680,
+    "termSpread3m": 1.01,
+    "tbill3m": 1.37
   },
   {
     "date": "2018-01-05",
@@ -2247,7 +2469,10 @@
     "sofr": null,
     "breakeven5y": 1.95,
     "breakeven5y5y": 2.07,
-    "continuedClaims": 1933000
+    "continuedClaims": 1933000,
+    "fedBalanceSheet": 4443718,
+    "termSpread3m": 1.08,
+    "tbill3m": 1.37
   },
   {
     "date": "2018-01-12",
@@ -2277,7 +2502,10 @@
     "sofr": null,
     "breakeven5y": 1.92,
     "breakeven5y5y": 2.1,
-    "continuedClaims": 1971000
+    "continuedClaims": 1971000,
+    "fedBalanceSheet": 4446062,
+    "termSpread3m": 1.12,
+    "tbill3m": 1.41
   },
   {
     "date": "2018-01-19",
@@ -2307,7 +2535,10 @@
     "sofr": null,
     "breakeven5y": 2,
     "breakeven5y5y": 2.12,
-    "continuedClaims": 1972000
+    "continuedClaims": 1972000,
+    "fedBalanceSheet": 4439145,
+    "termSpread3m": 1.2,
+    "tbill3m": 1.42
   },
   {
     "date": "2018-01-26",
@@ -2337,7 +2568,10 @@
     "sofr": null,
     "breakeven5y": 1.93,
     "breakeven5y5y": 2.25,
-    "continuedClaims": 1990000
+    "continuedClaims": 1990000,
+    "fedBalanceSheet": 4441317,
+    "termSpread3m": 1.25,
+    "tbill3m": 1.39
   },
   {
     "date": "2018-02-02",
@@ -2367,7 +2601,10 @@
     "sofr": null,
     "breakeven5y": 1.93,
     "breakeven5y5y": 2.35,
-    "continuedClaims": 1985000
+    "continuedClaims": 1985000,
+    "fedBalanceSheet": 4419225,
+    "termSpread3m": 1.36,
+    "tbill3m": 1.46
   },
   {
     "date": "2018-02-09",
@@ -2397,7 +2634,10 @@
     "sofr": null,
     "breakeven5y": 1.83,
     "breakeven5y5y": 2.27,
-    "continuedClaims": 1996000
+    "continuedClaims": 1996000,
+    "fedBalanceSheet": 4420745,
+    "termSpread3m": 1.28,
+    "tbill3m": 1.53
   },
   {
     "date": "2018-02-16",
@@ -2427,7 +2667,10 @@
     "sofr": null,
     "breakeven5y": 2,
     "breakeven5y5y": 2.18,
-    "continuedClaims": 1959000
+    "continuedClaims": 1959000,
+    "fedBalanceSheet": 4434863,
+    "termSpread3m": 1.25,
+    "tbill3m": 1.59
   },
   {
     "date": "2018-02-23",
@@ -2457,7 +2700,10 @@
     "sofr": null,
     "breakeven5y": 2.04,
     "breakeven5y5y": 2.2,
-    "continuedClaims": 1985000
+    "continuedClaims": 1985000,
+    "fedBalanceSheet": 4411660,
+    "termSpread3m": 1.24,
+    "tbill3m": 1.61
   },
   {
     "date": "2018-03-02",
@@ -2487,7 +2733,10 @@
     "sofr": null,
     "breakeven5y": 2.03,
     "breakeven5y5y": 2.21,
-    "continuedClaims": 1957000
+    "continuedClaims": 1957000,
+    "fedBalanceSheet": 4393401,
+    "termSpread3m": 1.21,
+    "tbill3m": 1.62
   },
   {
     "date": "2018-03-09",
@@ -2517,7 +2766,10 @@
     "sofr": null,
     "breakeven5y": 1.96,
     "breakeven5y5y": 2.28,
-    "continuedClaims": 1960000
+    "continuedClaims": 1960000,
+    "fedBalanceSheet": 4396097,
+    "termSpread3m": 1.23,
+    "tbill3m": 1.64
   },
   {
     "date": "2018-03-16",
@@ -2547,7 +2799,10 @@
     "sofr": null,
     "breakeven5y": 2.05,
     "breakeven5y5y": 2.11,
-    "continuedClaims": 1948000
+    "continuedClaims": 1948000,
+    "fedBalanceSheet": 4407258,
+    "termSpread3m": 1.07,
+    "tbill3m": 1.75
   },
   {
     "date": "2018-03-23",
@@ -2577,7 +2832,10 @@
     "sofr": null,
     "breakeven5y": 2.01,
     "breakeven5y5y": 2.13,
-    "continuedClaims": 1959000
+    "continuedClaims": 1959000,
+    "fedBalanceSheet": 4401222,
+    "termSpread3m": 1.08,
+    "tbill3m": 1.71
   },
   {
     "date": "2018-03-30",
@@ -2607,7 +2865,10 @@
     "sofr": null,
     "breakeven5y": 1.92,
     "breakeven5y5y": 2.18,
-    "continuedClaims": 1917000
+    "continuedClaims": 1917000,
+    "fedBalanceSheet": 4392198,
+    "termSpread3m": 1.01,
+    "tbill3m": 1.7
   },
   {
     "date": "2018-04-06",
@@ -2637,7 +2898,10 @@
     "sofr": 1.75,
     "breakeven5y": 2.01,
     "breakeven5y5y": 2.13,
-    "continuedClaims": 1943000
+    "continuedClaims": 1943000,
+    "fedBalanceSheet": 4386104,
+    "termSpread3m": 1.04,
+    "tbill3m": 1.7
   },
   {
     "date": "2018-04-13",
@@ -2667,7 +2931,10 @@
     "sofr": 1.72,
     "breakeven5y": 2.01,
     "breakeven5y5y": 2.25,
-    "continuedClaims": 1949000
+    "continuedClaims": 1949000,
+    "fedBalanceSheet": 4383684,
+    "termSpread3m": 1.06,
+    "tbill3m": 1.73
   },
   {
     "date": "2018-04-20",
@@ -2697,7 +2964,10 @@
     "sofr": 1.72,
     "breakeven5y": 2.1,
     "breakeven5y5y": 2.24,
-    "continuedClaims": 1900000
+    "continuedClaims": 1900000,
+    "fedBalanceSheet": 4385903,
+    "termSpread3m": 1.15,
+    "tbill3m": 1.78
   },
   {
     "date": "2018-04-27",
@@ -2727,7 +2997,10 @@
     "sofr": 1.72,
     "breakeven5y": 2.09,
     "breakeven5y5y": 2.25,
-    "continuedClaims": 1827000
+    "continuedClaims": 1827000,
+    "fedBalanceSheet": 4372886,
+    "termSpread3m": 1.14,
+    "tbill3m": 1.78
   },
   {
     "date": "2018-05-04",
@@ -2757,7 +3030,10 @@
     "sofr": 1.72,
     "breakeven5y": 2.09,
     "breakeven5y5y": 2.23,
-    "continuedClaims": 1834000
+    "continuedClaims": 1834000,
+    "fedBalanceSheet": 4356129,
+    "termSpread3m": 1.11,
+    "tbill3m": 1.8
   },
   {
     "date": "2018-05-11",
@@ -2787,7 +3063,10 @@
     "sofr": 1.73,
     "breakeven5y": 2.13,
     "breakeven5y5y": 2.17,
-    "continuedClaims": 1765000
+    "continuedClaims": 1765000,
+    "fedBalanceSheet": 4358207,
+    "termSpread3m": 1.05,
+    "tbill3m": 1.88
   },
   {
     "date": "2018-05-18",
@@ -2817,7 +3096,10 @@
     "sofr": 1.73,
     "breakeven5y": 2.14,
     "breakeven5y5y": 2.16,
-    "continuedClaims": 1769000
+    "continuedClaims": 1769000,
+    "fedBalanceSheet": 4337609,
+    "termSpread3m": 1.15,
+    "tbill3m": 1.87
   },
   {
     "date": "2018-05-25",
@@ -2847,7 +3129,10 @@
     "sofr": 1.73,
     "breakeven5y": 2.04,
     "breakeven5y5y": 2.14,
-    "continuedClaims": 1751000
+    "continuedClaims": 1751000,
+    "fedBalanceSheet": 4337301,
+    "termSpread3m": 1.03,
+    "tbill3m": 1.86
   },
   {
     "date": "2018-06-01",
@@ -2877,7 +3162,10 @@
     "sofr": 1.81,
     "breakeven5y": 2.06,
     "breakeven5y5y": 2.12,
-    "continuedClaims": 1737000
+    "continuedClaims": 1737000,
+    "fedBalanceSheet": 4327519,
+    "termSpread3m": 0.97,
+    "tbill3m": 1.88
   },
   {
     "date": "2018-06-08",
@@ -2907,7 +3195,10 @@
     "sofr": 1.69,
     "breakeven5y": 2.06,
     "breakeven5y5y": 2.16,
-    "continuedClaims": 1690000
+    "continuedClaims": 1690000,
+    "fedBalanceSheet": 4319191,
+    "termSpread3m": 1,
+    "tbill3m": 1.89
   },
   {
     "date": "2018-06-15",
@@ -2937,7 +3228,10 @@
     "sofr": 1.91,
     "breakeven5y": 2.08,
     "breakeven5y5y": 2.16,
-    "continuedClaims": 1693000
+    "continuedClaims": 1693000,
+    "fedBalanceSheet": 4324906,
+    "termSpread3m": 0.99,
+    "tbill3m": 1.9
   },
   {
     "date": "2018-06-22",
@@ -2967,7 +3261,10 @@
     "sofr": 1.92,
     "breakeven5y": 2.07,
     "breakeven5y5y": 2.17,
-    "continuedClaims": 1671000
+    "continuedClaims": 1671000,
+    "fedBalanceSheet": 4315896,
+    "termSpread3m": 0.97,
+    "tbill3m": 1.89
   },
   {
     "date": "2018-06-29",
@@ -2997,7 +3294,10 @@
     "sofr": 2.12,
     "breakeven5y": 2.06,
     "breakeven5y5y": 2.16,
-    "continuedClaims": 1671000
+    "continuedClaims": 1671000,
+    "fedBalanceSheet": 4305491,
+    "termSpread3m": 0.92,
+    "tbill3m": 1.89
   },
   {
     "date": "2018-07-06",
@@ -3027,7 +3327,10 @@
     "sofr": 1.93,
     "breakeven5y": 2.08,
     "breakeven5y5y": 2.16,
-    "continuedClaims": 1672000
+    "continuedClaims": 1672000,
+    "fedBalanceSheet": 4289764,
+    "termSpread3m": 0.85,
+    "tbill3m": 1.93
   },
   {
     "date": "2018-07-13",
@@ -3057,7 +3360,10 @@
     "sofr": 1.9,
     "breakeven5y": 2.07,
     "breakeven5y5y": 2.15,
-    "continuedClaims": 1676000
+    "continuedClaims": 1676000,
+    "fedBalanceSheet": 4291201,
+    "termSpread3m": 0.85,
+    "tbill3m": 1.94
   },
   {
     "date": "2018-07-20",
@@ -3087,7 +3393,10 @@
     "sofr": 1.88,
     "breakeven5y": 2.02,
     "breakeven5y5y": 2.2,
-    "continuedClaims": 1659000
+    "continuedClaims": 1659000,
+    "fedBalanceSheet": 4291615,
+    "termSpread3m": 0.9,
+    "tbill3m": 1.95
   },
   {
     "date": "2018-07-27",
@@ -3117,7 +3426,10 @@
     "sofr": 1.88,
     "breakeven5y": 2,
     "breakeven5y5y": 2.24,
-    "continuedClaims": 1624000
+    "continuedClaims": 1624000,
+    "fedBalanceSheet": 4277681,
+    "termSpread3m": 0.96,
+    "tbill3m": 1.96
   },
   {
     "date": "2018-08-03",
@@ -3147,7 +3459,10 @@
     "sofr": 1.86,
     "breakeven5y": 2,
     "breakeven5y5y": 2.24,
-    "continuedClaims": 1657000
+    "continuedClaims": 1657000,
+    "fedBalanceSheet": 4255653,
+    "termSpread3m": 0.94,
+    "tbill3m": 1.97
   },
   {
     "date": "2018-08-10",
@@ -3177,7 +3492,10 @@
     "sofr": 1.9,
     "breakeven5y": 1.98,
     "breakeven5y5y": 2.2,
-    "continuedClaims": 1624000
+    "continuedClaims": 1624000,
+    "fedBalanceSheet": 4258030,
+    "termSpread3m": 0.82,
+    "tbill3m": 2.01
   },
   {
     "date": "2018-08-17",
@@ -3207,7 +3525,10 @@
     "sofr": 1.9,
     "breakeven5y": 1.96,
     "breakeven5y5y": 2.2,
-    "continuedClaims": 1625000
+    "continuedClaims": 1625000,
+    "fedBalanceSheet": 4228924,
+    "termSpread3m": 0.82,
+    "tbill3m": 2.01
   },
   {
     "date": "2018-08-24",
@@ -3237,7 +3558,10 @@
     "sofr": 1.95,
     "breakeven5y": 1.99,
     "breakeven5y5y": 2.19,
-    "continuedClaims": 1605000
+    "continuedClaims": 1605000,
+    "fedBalanceSheet": 4228818,
+    "termSpread3m": 0.73,
+    "tbill3m": 2.05
   },
   {
     "date": "2018-08-31",
@@ -3267,7 +3591,10 @@
     "sofr": 1.97,
     "breakeven5y": 1.98,
     "breakeven5y5y": 2.18,
-    "continuedClaims": 1602000
+    "continuedClaims": 1602000,
+    "fedBalanceSheet": 4218914,
+    "termSpread3m": 0.75,
+    "tbill3m": 2.07
   },
   {
     "date": "2018-09-07",
@@ -3297,7 +3624,10 @@
     "sofr": 1.94,
     "breakeven5y": 1.98,
     "breakeven5y5y": 2.22,
-    "continuedClaims": 1575000
+    "continuedClaims": 1575000,
+    "fedBalanceSheet": 4208496,
+    "termSpread3m": 0.8,
+    "tbill3m": 2.1
   },
   {
     "date": "2018-09-14",
@@ -3327,7 +3657,10 @@
     "sofr": 1.95,
     "breakeven5y": 2,
     "breakeven5y5y": 2.2,
-    "continuedClaims": 1538000
+    "continuedClaims": 1538000,
+    "fedBalanceSheet": 4210812,
+    "termSpread3m": 0.83,
+    "tbill3m": 2.12
   },
   {
     "date": "2018-09-21",
@@ -3357,7 +3690,10 @@
     "sofr": 1.92,
     "breakeven5y": 2.02,
     "breakeven5y5y": 2.28,
-    "continuedClaims": 1544000
+    "continuedClaims": 1544000,
+    "fedBalanceSheet": 4208059,
+    "termSpread3m": 0.89,
+    "tbill3m": 2.14
   },
   {
     "date": "2018-09-28",
@@ -3387,7 +3723,10 @@
     "sofr": 2.25,
     "breakeven5y": 2.03,
     "breakeven5y5y": 2.25,
-    "continuedClaims": 1545000
+    "continuedClaims": 1545000,
+    "fedBalanceSheet": 4192909,
+    "termSpread3m": 0.86,
+    "tbill3m": 2.15
   },
   {
     "date": "2018-10-05",
@@ -3417,7 +3756,10 @@
     "sofr": 2.16,
     "breakeven5y": 2.05,
     "breakeven5y5y": 2.27,
-    "continuedClaims": 1553000
+    "continuedClaims": 1553000,
+    "fedBalanceSheet": 4174704,
+    "termSpread3m": 1,
+    "tbill3m": 2.18
   },
   {
     "date": "2018-10-12",
@@ -3447,7 +3789,10 @@
     "sofr": 2.18,
     "breakeven5y": 1.99,
     "breakeven5y5y": 2.25,
-    "continuedClaims": 1565000
+    "continuedClaims": 1565000,
+    "fedBalanceSheet": 4176906,
+    "termSpread3m": 0.87,
+    "tbill3m": 2.23
   },
   {
     "date": "2018-10-19",
@@ -3477,7 +3822,10 @@
     "sofr": 2.19,
     "breakeven5y": 1.98,
     "breakeven5y5y": 2.24,
-    "continuedClaims": 1588000
+    "continuedClaims": 1588000,
+    "fedBalanceSheet": 4175446,
+    "termSpread3m": 0.89,
+    "tbill3m": 2.26
   },
   {
     "date": "2018-10-26",
@@ -3507,7 +3855,10 @@
     "sofr": 2.19,
     "breakeven5y": 1.93,
     "breakeven5y5y": 2.19,
-    "continuedClaims": 1603000
+    "continuedClaims": 1603000,
+    "fedBalanceSheet": 4173070,
+    "termSpread3m": 0.75,
+    "tbill3m": 2.28
   },
   {
     "date": "2018-11-02",
@@ -3537,7 +3888,10 @@
     "sofr": 2.25,
     "breakeven5y": 1.91,
     "breakeven5y5y": 2.21,
-    "continuedClaims": 1615000
+    "continuedClaims": 1615000,
+    "fedBalanceSheet": 4139731,
+    "termSpread3m": 0.89,
+    "tbill3m": 2.28
   },
   {
     "date": "2018-11-09",
@@ -3567,7 +3921,10 @@
     "sofr": 2.2,
     "breakeven5y": 1.9,
     "breakeven5y5y": 2.18,
-    "continuedClaims": 1642000
+    "continuedClaims": 1642000,
+    "fedBalanceSheet": 4141936,
+    "termSpread3m": 0.83,
+    "tbill3m": 2.31
   },
   {
     "date": "2018-11-16",
@@ -3597,7 +3954,10 @@
     "sofr": 2.26,
     "breakeven5y": 1.88,
     "breakeven5y5y": 2.16,
-    "continuedClaims": 1665000
+    "continuedClaims": 1665000,
+    "fedBalanceSheet": 4145892,
+    "termSpread3m": 0.72,
+    "tbill3m": 2.31
   },
   {
     "date": "2018-11-23",
@@ -3627,7 +3987,10 @@
     "sofr": 2.23,
     "breakeven5y": 1.77,
     "breakeven5y5y": 2.15,
-    "continuedClaims": 1749000
+    "continuedClaims": 1749000,
+    "fedBalanceSheet": 4106198,
+    "termSpread3m": 0.64,
+    "tbill3m": 2.36
   },
   {
     "date": "2018-11-30",
@@ -3657,7 +4020,10 @@
     "sofr": 2.28,
     "breakeven5y": 1.77,
     "breakeven5y5y": 2.17,
-    "continuedClaims": 1684000
+    "continuedClaims": 1684000,
+    "fedBalanceSheet": 4097170,
+    "termSpread3m": 0.64,
+    "tbill3m": 2.32
   },
   {
     "date": "2018-12-07",
@@ -3687,7 +4053,10 @@
     "sofr": 2.3,
     "breakeven5y": 1.68,
     "breakeven5y5y": 2.1,
-    "continuedClaims": 1694000
+    "continuedClaims": 1694000,
+    "fedBalanceSheet": 4086044,
+    "termSpread3m": 0.45,
+    "tbill3m": 2.35
   },
   {
     "date": "2018-12-14",
@@ -3717,7 +4086,10 @@
     "sofr": 2.21,
     "breakeven5y": 1.6,
     "breakeven5y5y": 2.04,
-    "continuedClaims": 1745000
+    "continuedClaims": 1745000,
+    "fedBalanceSheet": 4088314,
+    "termSpread3m": 0.47,
+    "tbill3m": 2.37
   },
   {
     "date": "2018-12-21",
@@ -3747,7 +4119,10 @@
     "sofr": 2.4,
     "breakeven5y": 1.55,
     "breakeven5y5y": 1.99,
-    "continuedClaims": 1756000
+    "continuedClaims": 1756000,
+    "fedBalanceSheet": 4084274,
+    "termSpread3m": 0.4,
+    "tbill3m": 2.34
   },
   {
     "date": "2018-12-28",
@@ -3777,7 +4152,10 @@
     "sofr": 2.46,
     "breakeven5y": 1.52,
     "breakeven5y5y": 1.94,
-    "continuedClaims": 1770000
+    "continuedClaims": 1770000,
+    "fedBalanceSheet": 4075636,
+    "termSpread3m": 0.32,
+    "tbill3m": 2.35
   },
   {
     "date": "2019-01-04",
@@ -3807,7 +4185,10 @@
     "sofr": 2.45,
     "breakeven5y": 1.58,
     "breakeven5y5y": 1.94,
-    "continuedClaims": 1783000
+    "continuedClaims": 1783000,
+    "fedBalanceSheet": 4058378,
+    "termSpread3m": 0.25,
+    "tbill3m": 2.37
   },
   {
     "date": "2019-01-11",
@@ -3837,7 +4218,10 @@
     "sofr": 2.41,
     "breakeven5y": 1.66,
     "breakeven5y5y": 2,
-    "continuedClaims": 1766000
+    "continuedClaims": 1766000,
+    "fedBalanceSheet": 4056563,
+    "termSpread3m": 0.28,
+    "tbill3m": 2.38
   },
   {
     "date": "2019-01-18",
@@ -3867,7 +4251,10 @@
     "sofr": 2.42,
     "breakeven5y": 1.67,
     "breakeven5y5y": 1.99,
-    "continuedClaims": 1780000
+    "continuedClaims": 1780000,
+    "fedBalanceSheet": 4050044,
+    "termSpread3m": 0.38,
+    "tbill3m": 2.36
   },
   {
     "date": "2019-01-25",
@@ -3897,7 +4284,10 @@
     "sofr": 2.4,
     "breakeven5y": 1.64,
     "breakeven5y5y": 1.94,
-    "continuedClaims": 1813000
+    "continuedClaims": 1813000,
+    "fedBalanceSheet": 4047052,
+    "termSpread3m": 0.37,
+    "tbill3m": 2.34
   },
   {
     "date": "2019-02-01",
@@ -3927,7 +4317,10 @@
     "sofr": 2.47,
     "breakeven5y": 1.72,
     "breakeven5y5y": 2.04,
-    "continuedClaims": 1759000
+    "continuedClaims": 1759000,
+    "fedBalanceSheet": 4039678,
+    "termSpread3m": 0.3,
+    "tbill3m": 2.35
   },
   {
     "date": "2019-02-08",
@@ -3957,7 +4350,10 @@
     "sofr": 2.37,
     "breakeven5y": 1.69,
     "breakeven5y5y": 1.95,
-    "continuedClaims": 1806000
+    "continuedClaims": 1806000,
+    "fedBalanceSheet": 4026350,
+    "termSpread3m": 0.2,
+    "tbill3m": 2.38
   },
   {
     "date": "2019-02-15",
@@ -3987,7 +4383,10 @@
     "sofr": 2.43,
     "breakeven5y": 1.75,
     "breakeven5y5y": 1.97,
-    "continuedClaims": 1778000
+    "continuedClaims": 1778000,
+    "fedBalanceSheet": 4028431,
+    "termSpread3m": 0.23,
+    "tbill3m": 2.38
   },
   {
     "date": "2019-02-22",
@@ -4017,7 +4416,10 @@
     "sofr": 2.4,
     "breakeven5y": 1.82,
     "breakeven5y5y": 2,
-    "continuedClaims": 1826000
+    "continuedClaims": 1826000,
+    "fedBalanceSheet": 3981420,
+    "termSpread3m": 0.19,
+    "tbill3m": 2.41
   },
   {
     "date": "2019-03-01",
@@ -4047,7 +4449,10 @@
     "sofr": 2.38,
     "breakeven5y": 1.85,
     "breakeven5y5y": 2.07,
-    "continuedClaims": 1796000
+    "continuedClaims": 1796000,
+    "fedBalanceSheet": 3974590,
+    "termSpread3m": 0.32,
+    "tbill3m": 2.39
   },
   {
     "date": "2019-03-08",
@@ -4077,7 +4482,10 @@
     "sofr": 2.39,
     "breakeven5y": 1.8,
     "breakeven5y5y": 2,
-    "continuedClaims": 1807000
+    "continuedClaims": 1807000,
+    "fedBalanceSheet": 3969134,
+    "termSpread3m": 0.16,
+    "tbill3m": 2.41
   },
   {
     "date": "2019-03-15",
@@ -4107,7 +4515,10 @@
     "sofr": 2.46,
     "breakeven5y": 1.86,
     "breakeven5y5y": 2.02,
-    "continuedClaims": 1792000
+    "continuedClaims": 1792000,
+    "fedBalanceSheet": 3971559,
+    "termSpread3m": 0.14,
+    "tbill3m": 2.4
   },
   {
     "date": "2019-03-22",
@@ -4137,7 +4548,10 @@
     "sofr": 2.4,
     "breakeven5y": 1.8,
     "breakeven5y5y": 2,
-    "continuedClaims": 1800000
+    "continuedClaims": 1800000,
+    "fedBalanceSheet": 3962748,
+    "termSpread3m": -0.02,
+    "tbill3m": 2.41
   },
   {
     "date": "2019-03-29",
@@ -4167,7 +4581,10 @@
     "sofr": 2.65,
     "breakeven5y": 1.78,
     "breakeven5y5y": 1.98,
-    "continuedClaims": 1760000
+    "continuedClaims": 1760000,
+    "fedBalanceSheet": 3955617,
+    "termSpread3m": 0.01,
+    "tbill3m": 2.35
   },
   {
     "date": "2019-04-05",
@@ -4197,7 +4614,10 @@
     "sofr": 2.46,
     "breakeven5y": 1.79,
     "breakeven5y5y": 2.01,
-    "continuedClaims": 1742000
+    "continuedClaims": 1742000,
+    "fedBalanceSheet": 3935509,
+    "termSpread3m": 0.06,
+    "tbill3m": 2.39
   },
   {
     "date": "2019-04-12",
@@ -4227,7 +4647,10 @@
     "sofr": 2.44,
     "breakeven5y": 1.86,
     "breakeven5y5y": 2.04,
-    "continuedClaims": 1680000
+    "continuedClaims": 1680000,
+    "fedBalanceSheet": 3936784,
+    "termSpread3m": 0.12,
+    "tbill3m": 2.39
   },
   {
     "date": "2019-04-19",
@@ -4257,7 +4680,10 @@
     "sofr": 2.5,
     "breakeven5y": 1.86,
     "breakeven5y5y": 2.04,
-    "continuedClaims": 1664000
+    "continuedClaims": 1664000,
+    "fedBalanceSheet": 3931827,
+    "termSpread3m": 0.15,
+    "tbill3m": 2.37
   },
   {
     "date": "2019-04-26",
@@ -4287,7 +4713,10 @@
     "sofr": 2.46,
     "breakeven5y": 1.86,
     "breakeven5y5y": 2.08,
-    "continuedClaims": 1659000
+    "continuedClaims": 1659000,
+    "fedBalanceSheet": 3928273,
+    "termSpread3m": 0.09,
+    "tbill3m": 2.37
   },
   {
     "date": "2019-05-03",
@@ -4317,7 +4746,10 @@
     "sofr": 2.43,
     "breakeven5y": 1.8,
     "breakeven5y5y": 2.02,
-    "continuedClaims": 1663000
+    "continuedClaims": 1663000,
+    "fedBalanceSheet": 3889691,
+    "termSpread3m": 0.11,
+    "tbill3m": 2.38
   },
   {
     "date": "2019-05-10",
@@ -4347,7 +4779,10 @@
     "sofr": 2.4,
     "breakeven5y": 1.75,
     "breakeven5y5y": 2.01,
-    "continuedClaims": 1627000
+    "continuedClaims": 1627000,
+    "fedBalanceSheet": 3892216,
+    "termSpread3m": 0.04,
+    "tbill3m": 2.38
   },
   {
     "date": "2019-05-17",
@@ -4377,7 +4812,10 @@
     "sofr": 2.42,
     "breakeven5y": 1.71,
     "breakeven5y5y": 1.91,
-    "continuedClaims": 1635000
+    "continuedClaims": 1635000,
+    "fedBalanceSheet": 3864749,
+    "termSpread3m": 0,
+    "tbill3m": 2.34
   },
   {
     "date": "2019-05-24",
@@ -4407,7 +4845,10 @@
     "sofr": 2.37,
     "breakeven5y": 1.62,
     "breakeven5y5y": 1.9,
-    "continuedClaims": 1621000
+    "continuedClaims": 1621000,
+    "fedBalanceSheet": 3860435,
+    "termSpread3m": -0.03,
+    "tbill3m": 2.3
   },
   {
     "date": "2019-05-31",
@@ -4437,7 +4878,10 @@
     "sofr": 2.49,
     "breakeven5y": 1.58,
     "breakeven5y5y": 1.9,
-    "continuedClaims": 1629000
+    "continuedClaims": 1629000,
+    "fedBalanceSheet": 3851444,
+    "termSpread3m": -0.21,
+    "tbill3m": 2.3
   },
   {
     "date": "2019-06-07",
@@ -4467,7 +4911,10 @@
     "sofr": 2.39,
     "breakeven5y": 1.61,
     "breakeven5y5y": 1.87,
-    "continuedClaims": 1631000
+    "continuedClaims": 1631000,
+    "fedBalanceSheet": 3847645,
+    "termSpread3m": -0.19,
+    "tbill3m": 2.23
   },
   {
     "date": "2019-06-14",
@@ -4497,7 +4944,10 @@
     "sofr": 2.35,
     "breakeven5y": 1.48,
     "breakeven5y5y": 1.78,
-    "continuedClaims": 1608000
+    "continuedClaims": 1608000,
+    "fedBalanceSheet": 3849955,
+    "termSpread3m": -0.11,
+    "tbill3m": 2.15
   },
   {
     "date": "2019-06-21",
@@ -4527,7 +4977,10 @@
     "sofr": 2.37,
     "breakeven5y": 1.6,
     "breakeven5y5y": 1.86,
-    "continuedClaims": 1634000
+    "continuedClaims": 1634000,
+    "fedBalanceSheet": 3844016,
+    "termSpread3m": -0.04,
+    "tbill3m": 2.07
   },
   {
     "date": "2019-06-28",
@@ -4557,7 +5010,10 @@
     "sofr": 2.5,
     "breakeven5y": 1.53,
     "breakeven5y5y": 1.85,
-    "continuedClaims": 1625000
+    "continuedClaims": 1625000,
+    "fedBalanceSheet": 3826817,
+    "termSpread3m": -0.12,
+    "tbill3m": 2.08
   },
   {
     "date": "2019-07-05",
@@ -4587,7 +5043,10 @@
     "sofr": 2.59,
     "breakeven5y": 1.55,
     "breakeven5y5y": 1.83,
-    "continuedClaims": 1657000
+    "continuedClaims": 1657000,
+    "fedBalanceSheet": 3813198,
+    "termSpread3m": -0.19,
+    "tbill3m": 2.18
   },
   {
     "date": "2019-07-12",
@@ -4617,7 +5076,10 @@
     "sofr": 2.36,
     "breakeven5y": 1.62,
     "breakeven5y5y": 1.92,
-    "continuedClaims": 1633000
+    "continuedClaims": 1633000,
+    "fedBalanceSheet": 3815038,
+    "termSpread3m": -0.02,
+    "tbill3m": 2.1
   },
   {
     "date": "2019-07-19",
@@ -4647,7 +5109,10 @@
     "sofr": 2.41,
     "breakeven5y": 1.6,
     "breakeven5y5y": 2,
-    "continuedClaims": 1634000
+    "continuedClaims": 1634000,
+    "fedBalanceSheet": 3808110,
+    "termSpread3m": -0.01,
+    "tbill3m": 2.02
   },
   {
     "date": "2019-07-26",
@@ -4677,7 +5142,10 @@
     "sofr": 2.41,
     "breakeven5y": 1.57,
     "breakeven5y5y": 1.99,
-    "continuedClaims": 1623000
+    "continuedClaims": 1623000,
+    "fedBalanceSheet": 3803436,
+    "termSpread3m": -0.04,
+    "tbill3m": 2.08
   },
   {
     "date": "2019-08-02",
@@ -4707,7 +5175,10 @@
     "sofr": 2.19,
     "breakeven5y": 1.45,
     "breakeven5y5y": 1.87,
-    "continuedClaims": 1634000
+    "continuedClaims": 1634000,
+    "fedBalanceSheet": 3779102,
+    "termSpread3m": -0.2,
+    "tbill3m": 2.02
   },
   {
     "date": "2019-08-09",
@@ -4737,7 +5208,10 @@
     "sofr": 2.11,
     "breakeven5y": 1.44,
     "breakeven5y5y": 1.88,
-    "continuedClaims": 1656000
+    "continuedClaims": 1656000,
+    "fedBalanceSheet": 3781543,
+    "termSpread3m": -0.26,
+    "tbill3m": 1.96
   },
   {
     "date": "2019-08-16",
@@ -4767,7 +5241,10 @@
     "sofr": 2.13,
     "breakeven5y": 1.34,
     "breakeven5y5y": 1.74,
-    "continuedClaims": 1618000
+    "continuedClaims": 1618000,
+    "fedBalanceSheet": 3786018,
+    "termSpread3m": -0.32,
+    "tbill3m": 1.83
   },
   {
     "date": "2019-08-23",
@@ -4797,7 +5274,10 @@
     "sofr": 2.1,
     "breakeven5y": 1.35,
     "breakeven5y5y": 1.73,
-    "continuedClaims": 1629000
+    "continuedClaims": 1629000,
+    "fedBalanceSheet": 3764866,
+    "termSpread3m": -0.45,
+    "tbill3m": 1.93
   },
   {
     "date": "2019-08-30",
@@ -4827,7 +5307,10 @@
     "sofr": 2.16,
     "breakeven5y": 1.35,
     "breakeven5y5y": 1.75,
-    "continuedClaims": 1604000
+    "continuedClaims": 1604000,
+    "fedBalanceSheet": 3759946,
+    "termSpread3m": -0.49,
+    "tbill3m": 1.95
   },
   {
     "date": "2019-09-06",
@@ -4857,7 +5340,10 @@
     "sofr": 2.15,
     "breakeven5y": 1.35,
     "breakeven5y5y": 1.73,
-    "continuedClaims": 1591000
+    "continuedClaims": 1591000,
+    "fedBalanceSheet": 3761508,
+    "termSpread3m": -0.41,
+    "tbill3m": 1.92
   },
   {
     "date": "2019-09-13",
@@ -4887,7 +5373,10 @@
     "sofr": 2.2,
     "breakeven5y": 1.46,
     "breakeven5y5y": 1.88,
-    "continuedClaims": 1596000
+    "continuedClaims": 1596000,
+    "fedBalanceSheet": 3769673,
+    "termSpread3m": -0.06,
+    "tbill3m": 1.92
   },
   {
     "date": "2019-09-20",
@@ -4917,7 +5406,10 @@
     "sofr": 1.86,
     "breakeven5y": 1.42,
     "breakeven5y5y": 1.8,
-    "continuedClaims": 1567000
+    "continuedClaims": 1567000,
+    "fedBalanceSheet": 3844695,
+    "termSpread3m": -0.17,
+    "tbill3m": 1.87
   },
   {
     "date": "2019-09-27",
@@ -4947,7 +5439,10 @@
     "sofr": 1.82,
     "breakeven5y": 1.36,
     "breakeven5y5y": 1.7,
-    "continuedClaims": 1561000
+    "continuedClaims": 1561000,
+    "fedBalanceSheet": 3857715,
+    "termSpread3m": -0.11,
+    "tbill3m": 1.76
   },
   {
     "date": "2019-10-04",
@@ -4977,7 +5472,10 @@
     "sofr": 1.82,
     "breakeven5y": 1.27,
     "breakeven5y5y": 1.73,
-    "continuedClaims": 1600000
+    "continuedClaims": 1600000,
+    "fedBalanceSheet": 3945831,
+    "termSpread3m": -0.19,
+    "tbill3m": 1.68
   },
   {
     "date": "2019-10-11",
@@ -5007,7 +5505,10 @@
     "sofr": 1.85,
     "breakeven5y": 1.34,
     "breakeven5y5y": 1.78,
-    "continuedClaims": 1602000
+    "continuedClaims": 1602000,
+    "fedBalanceSheet": 3949955,
+    "termSpread3m": 0.08,
+    "tbill3m": 1.65
   },
   {
     "date": "2019-10-18",
@@ -5037,7 +5538,10 @@
     "sofr": 1.88,
     "breakeven5y": 1.52,
     "breakeven5y5y": 1.68,
-    "continuedClaims": 1611000
+    "continuedClaims": 1611000,
+    "fedBalanceSheet": 3966471,
+    "termSpread3m": 0.1,
+    "tbill3m": 1.63
   },
   {
     "date": "2019-10-25",
@@ -5067,7 +5571,10 @@
     "sofr": 1.84,
     "breakeven5y": 1.55,
     "breakeven5y5y": 1.75,
-    "continuedClaims": 1628000
+    "continuedClaims": 1628000,
+    "fedBalanceSheet": 3968700,
+    "termSpread3m": 0.14,
+    "tbill3m": 1.63
   },
   {
     "date": "2019-11-01",
@@ -5097,7 +5604,10 @@
     "sofr": 1.58,
     "breakeven5y": 1.5,
     "breakeven5y5y": 1.68,
-    "continuedClaims": 1633000
+    "continuedClaims": 1633000,
+    "fedBalanceSheet": 4019823,
+    "termSpread3m": 0.21,
+    "tbill3m": 1.49
   },
   {
     "date": "2019-11-08",
@@ -5127,7 +5637,10 @@
     "sofr": 1.56,
     "breakeven5y": 1.63,
     "breakeven5y5y": 1.79,
-    "continuedClaims": 1646000
+    "continuedClaims": 1646000,
+    "fedBalanceSheet": 4039443,
+    "termSpread3m": 0.39,
+    "tbill3m": 1.52
   },
   {
     "date": "2019-11-15",
@@ -5157,7 +5670,10 @@
     "sofr": 1.59,
     "breakeven5y": 1.52,
     "breakeven5y5y": 1.74,
-    "continuedClaims": 1668000
+    "continuedClaims": 1668000,
+    "fedBalanceSheet": 4047882,
+    "termSpread3m": 0.27,
+    "tbill3m": 1.54
   },
   {
     "date": "2019-11-22",
@@ -5187,7 +5703,10 @@
     "sofr": 1.58,
     "breakeven5y": 1.53,
     "breakeven5y5y": 1.71,
-    "continuedClaims": 1702000
+    "continuedClaims": 1702000,
+    "fedBalanceSheet": 4030249,
+    "termSpread3m": 0.19,
+    "tbill3m": 1.55
   },
   {
     "date": "2019-11-29",
@@ -5217,7 +5736,10 @@
     "sofr": 1.65,
     "breakeven5y": 1.5,
     "breakeven5y5y": 1.72,
-    "continuedClaims": 1702000
+    "continuedClaims": 1702000,
+    "fedBalanceSheet": 4052875,
+    "termSpread3m": 0.19,
+    "tbill3m": 1.56
   },
   {
     "date": "2019-12-06",
@@ -5247,7 +5769,10 @@
     "sofr": 1.55,
     "breakeven5y": 1.59,
     "breakeven5y5y": 1.79,
-    "continuedClaims": 1708000
+    "continuedClaims": 1708000,
+    "fedBalanceSheet": 4065696,
+    "termSpread3m": 0.31,
+    "tbill3m": 1.5
   },
   {
     "date": "2019-12-13",
@@ -5277,7 +5802,10 @@
     "sofr": 1.54,
     "breakeven5y": 1.62,
     "breakeven5y5y": 1.78,
-    "continuedClaims": 1728000
+    "continuedClaims": 1728000,
+    "fedBalanceSheet": 4095491,
+    "termSpread3m": 0.25,
+    "tbill3m": 1.54
   },
   {
     "date": "2019-12-20",
@@ -5307,7 +5835,10 @@
     "sofr": 1.53,
     "breakeven5y": 1.67,
     "breakeven5y5y": 1.87,
-    "continuedClaims": 1753000
+    "continuedClaims": 1753000,
+    "fedBalanceSheet": 4137052,
+    "termSpread3m": 0.34,
+    "tbill3m": 1.55
   },
   {
     "date": "2019-12-27",
@@ -5337,7 +5868,10 @@
     "sofr": 1.53,
     "breakeven5y": 1.64,
     "breakeven5y5y": 1.82,
-    "continuedClaims": 1754000
+    "continuedClaims": 1754000,
+    "fedBalanceSheet": 4165591,
+    "termSpread3m": 0.31,
+    "tbill3m": 1.54
   },
   {
     "date": "2020-01-03",
@@ -5367,7 +5901,10 @@
     "sofr": 1.55,
     "breakeven5y": 1.69,
     "breakeven5y5y": 1.85,
-    "continuedClaims": 1843000
+    "continuedClaims": 1843000,
+    "fedBalanceSheet": 4173626,
+    "termSpread3m": 0.28,
+    "tbill3m": 1.49
   },
   {
     "date": "2020-01-10",
@@ -5397,7 +5934,10 @@
     "sofr": 1.55,
     "breakeven5y": 1.67,
     "breakeven5y5y": 1.85,
-    "continuedClaims": 1827000
+    "continuedClaims": 1827000,
+    "fedBalanceSheet": 4149544,
+    "termSpread3m": 0.29,
+    "tbill3m": 1.51
   },
   {
     "date": "2020-01-17",
@@ -5427,7 +5967,10 @@
     "sofr": 1.54,
     "breakeven5y": 1.68,
     "breakeven5y5y": 1.82,
-    "continuedClaims": 1804000
+    "continuedClaims": 1804000,
+    "fedBalanceSheet": 4175850,
+    "termSpread3m": 0.28,
+    "tbill3m": 1.53
   },
   {
     "date": "2020-01-24",
@@ -5457,7 +6000,10 @@
     "sofr": 1.53,
     "breakeven5y": 1.62,
     "breakeven5y5y": 1.74,
-    "continuedClaims": 1774000
+    "continuedClaims": 1774000,
+    "fedBalanceSheet": 4145912,
+    "termSpread3m": 0.16,
+    "tbill3m": 1.51
   },
   {
     "date": "2020-01-31",
@@ -5487,7 +6033,10 @@
     "sofr": 1.6,
     "breakeven5y": 1.6,
     "breakeven5y5y": 1.7,
-    "continuedClaims": 1796000
+    "continuedClaims": 1796000,
+    "fedBalanceSheet": 4151630,
+    "termSpread3m": -0.04,
+    "tbill3m": 1.52
   },
   {
     "date": "2020-02-07",
@@ -5517,7 +6066,10 @@
     "sofr": 1.58,
     "breakeven5y": 1.61,
     "breakeven5y5y": 1.71,
-    "continuedClaims": 1755000
+    "continuedClaims": 1755000,
+    "fedBalanceSheet": 4166707,
+    "termSpread3m": 0.03,
+    "tbill3m": 1.53
   },
   {
     "date": "2020-02-14",
@@ -5547,7 +6099,10 @@
     "sofr": 1.58,
     "breakeven5y": 1.64,
     "breakeven5y5y": 1.68,
-    "continuedClaims": 1782000
+    "continuedClaims": 1782000,
+    "fedBalanceSheet": 4182689,
+    "termSpread3m": 0.01,
+    "tbill3m": 1.55
   },
   {
     "date": "2020-02-21",
@@ -5577,7 +6132,10 @@
     "sofr": 1.58,
     "breakeven5y": 1.6,
     "breakeven5y5y": 1.62,
-    "continuedClaims": 1760000
+    "continuedClaims": 1760000,
+    "fedBalanceSheet": 4171570,
+    "termSpread3m": -0.1,
+    "tbill3m": 1.53
   },
   {
     "date": "2020-02-28",
@@ -5607,7 +6165,10 @@
     "sofr": 1.6,
     "breakeven5y": 1.33,
     "breakeven5y5y": 1.49,
-    "continuedClaims": 1783000
+    "continuedClaims": 1783000,
+    "fedBalanceSheet": 4158637,
+    "termSpread3m": -0.14,
+    "tbill3m": 1.25
   },
   {
     "date": "2020-03-06",
@@ -5637,7 +6198,10 @@
     "sofr": 1.1,
     "breakeven5y": 1.14,
     "breakeven5y5y": 1.48,
-    "continuedClaims": 1771000
+    "continuedClaims": 1771000,
+    "fedBalanceSheet": 4241507,
+    "termSpread3m": 0.29,
+    "tbill3m": 0.45
   },
   {
     "date": "2020-03-13",
@@ -5667,7 +6231,10 @@
     "sofr": 1.1,
     "breakeven5y": 0.53,
     "breakeven5y5y": 1.27,
-    "continuedClaims": 1753000
+    "continuedClaims": 1753000,
+    "fedBalanceSheet": 4311911,
+    "termSpread3m": 0.66,
+    "tbill3m": 0.27
   },
   {
     "date": "2020-03-20",
@@ -5697,7 +6264,10 @@
     "sofr": 0.04,
     "breakeven5y": 0.31,
     "breakeven5y5y": 1.19,
-    "continuedClaims": 1844000
+    "continuedClaims": 1844000,
+    "fedBalanceSheet": 4668212,
+    "termSpread3m": 0.87,
+    "tbill3m": 0.05
   },
   {
     "date": "2020-03-27",
@@ -5727,7 +6297,10 @@
     "sofr": 0.01,
     "breakeven5y": 0.54,
     "breakeven5y5y": 1.34,
-    "continuedClaims": 3238000
+    "continuedClaims": 3238000,
+    "fedBalanceSheet": 5254278,
+    "termSpread3m": 0.69,
+    "tbill3m": 0.03
   },
   {
     "date": "2020-04-03",
@@ -5757,7 +6330,10 @@
     "sofr": 0.01,
     "breakeven5y": 0.78,
     "breakeven5y5y": 1.38,
-    "continuedClaims": 8004000
+    "continuedClaims": 8004000,
+    "fedBalanceSheet": 5811607,
+    "termSpread3m": 0.52,
+    "tbill3m": 0.1
   },
   {
     "date": "2020-04-10",
@@ -5787,7 +6363,10 @@
     "sofr": 0.01,
     "breakeven5y": 0.9,
     "breakeven5y5y": 1.56,
-    "continuedClaims": 12396000
+    "continuedClaims": 12396000,
+    "fedBalanceSheet": 6083141,
+    "termSpread3m": 0.48,
+    "tbill3m": 0.25
   },
   {
     "date": "2020-04-17",
@@ -5817,7 +6396,10 @@
     "sofr": 0.03,
     "breakeven5y": 0.67,
     "breakeven5y5y": 1.35,
-    "continuedClaims": 16193000
+    "continuedClaims": 16193000,
+    "fedBalanceSheet": 6367887,
+    "termSpread3m": 0.53,
+    "tbill3m": 0.12
   },
   {
     "date": "2020-04-24",
@@ -5847,7 +6429,10 @@
     "sofr": 0.03,
     "breakeven5y": 0.72,
     "breakeven5y5y": 1.5,
-    "continuedClaims": 17789000
+    "continuedClaims": 17789000,
+    "fedBalanceSheet": 6573136,
+    "termSpread3m": 0.48,
+    "tbill3m": 0.12
   },
   {
     "date": "2020-05-01",
@@ -5877,7 +6462,10 @@
     "sofr": 0.03,
     "breakeven5y": 0.68,
     "breakeven5y5y": 1.44,
-    "continuedClaims": 21750000
+    "continuedClaims": 21750000,
+    "fedBalanceSheet": 6655929,
+    "termSpread3m": 0.52,
+    "tbill3m": 0.12
   },
   {
     "date": "2020-05-08",
@@ -5907,7 +6495,10 @@
     "sofr": 0.06,
     "breakeven5y": 0.74,
     "breakeven5y5y": 1.5,
-    "continuedClaims": 20939000
+    "continuedClaims": 20939000,
+    "fedBalanceSheet": 6721420,
+    "termSpread3m": 0.57,
+    "tbill3m": 0.12
   },
   {
     "date": "2020-05-15",
@@ -5937,7 +6528,10 @@
     "sofr": 0.05,
     "breakeven5y": 0.75,
     "breakeven5y5y": 1.43,
-    "continuedClaims": 23130000
+    "continuedClaims": 23130000,
+    "fedBalanceSheet": 6934227,
+    "termSpread3m": 0.52,
+    "tbill3m": 0.12
   },
   {
     "date": "2020-05-22",
@@ -5967,7 +6561,10 @@
     "sofr": 0.04,
     "breakeven5y": 0.8,
     "breakeven5y5y": 1.44,
-    "continuedClaims": 19153000
+    "continuedClaims": 19153000,
+    "fedBalanceSheet": 7037258,
+    "termSpread3m": 0.54,
+    "tbill3m": 0.12
   },
   {
     "date": "2020-05-29",
@@ -5997,7 +6594,10 @@
     "sofr": 0.06,
     "breakeven5y": 0.83,
     "breakeven5y5y": 1.47,
-    "continuedClaims": 19194000
+    "continuedClaims": 19194000,
+    "fedBalanceSheet": 7097316,
+    "termSpread3m": 0.51,
+    "tbill3m": 0.14
   },
   {
     "date": "2020-06-05",
@@ -6027,7 +6627,10 @@
     "sofr": 0.07,
     "breakeven5y": 0.95,
     "breakeven5y5y": 1.59,
-    "continuedClaims": 19216000
+    "continuedClaims": 19216000,
+    "fedBalanceSheet": 7165217,
+    "termSpread3m": 0.76,
+    "tbill3m": 0.15
   },
   {
     "date": "2020-06-12",
@@ -6057,7 +6660,10 @@
     "sofr": 0.08,
     "breakeven5y": 0.95,
     "breakeven5y5y": 1.47,
-    "continuedClaims": 18743000
+    "continuedClaims": 18743000,
+    "fedBalanceSheet": 7168936,
+    "termSpread3m": 0.55,
+    "tbill3m": 0.16
   },
   {
     "date": "2020-06-19",
@@ -6087,7 +6693,10 @@
     "sofr": 0.09,
     "breakeven5y": 1.06,
     "breakeven5y5y": 1.54,
-    "continuedClaims": 17860000
+    "continuedClaims": 17860000,
+    "fedBalanceSheet": 7094690,
+    "termSpread3m": 0.55,
+    "tbill3m": 0.15
   },
   {
     "date": "2020-06-26",
@@ -6117,7 +6726,10 @@
     "sofr": 0.08,
     "breakeven5y": 1.11,
     "breakeven5y5y": 1.53,
-    "continuedClaims": 17501000
+    "continuedClaims": 17501000,
+    "fedBalanceSheet": 7082302,
+    "termSpread3m": 0.5,
+    "tbill3m": 0.14
   },
   {
     "date": "2020-07-03",
@@ -6147,7 +6759,10 @@
     "sofr": 0.11,
     "breakeven5y": 1.21,
     "breakeven5y5y": 1.61,
-    "continuedClaims": 16610000
+    "continuedClaims": 16610000,
+    "fedBalanceSheet": 7009040,
+    "termSpread3m": 0.54,
+    "tbill3m": 0.14
   },
   {
     "date": "2020-07-10",
@@ -6177,7 +6792,10 @@
     "sofr": 0.1,
     "breakeven5y": 1.25,
     "breakeven5y5y": 1.57,
-    "continuedClaims": 17273000
+    "continuedClaims": 17273000,
+    "fedBalanceSheet": 6920716,
+    "termSpread3m": 0.52,
+    "tbill3m": 0.13
   },
   {
     "date": "2020-07-17",
@@ -6207,7 +6825,10 @@
     "sofr": 0.12,
     "breakeven5y": 1.35,
     "breakeven5y5y": 1.57,
-    "continuedClaims": 16251000
+    "continuedClaims": 16251000,
+    "fedBalanceSheet": 6958604,
+    "termSpread3m": 0.53,
+    "tbill3m": 0.11
   },
   {
     "date": "2020-07-24",
@@ -6237,7 +6858,10 @@
     "sofr": 0.1,
     "breakeven5y": 1.35,
     "breakeven5y5y": 1.67,
-    "continuedClaims": 16799000
+    "continuedClaims": 16799000,
+    "fedBalanceSheet": 6964755,
+    "termSpread3m": 0.48,
+    "tbill3m": 0.11
   },
   {
     "date": "2020-07-31",
@@ -6267,7 +6891,10 @@
     "sofr": 0.1,
     "breakeven5y": 1.4,
     "breakeven5y5y": 1.7,
-    "continuedClaims": 15929000
+    "continuedClaims": 15929000,
+    "fedBalanceSheet": 6949032,
+    "termSpread3m": 0.46,
+    "tbill3m": 0.09
   },
   {
     "date": "2020-08-07",
@@ -6297,7 +6924,10 @@
     "sofr": 0.09,
     "breakeven5y": 1.5,
     "breakeven5y5y": 1.72,
-    "continuedClaims": 15255000
+    "continuedClaims": 15255000,
+    "fedBalanceSheet": 6945237,
+    "termSpread3m": 0.47,
+    "tbill3m": 0.1
   },
   {
     "date": "2020-08-14",
@@ -6327,7 +6957,10 @@
     "sofr": 0.09,
     "breakeven5y": 1.53,
     "breakeven5y5y": 1.77,
-    "continuedClaims": 14184000
+    "continuedClaims": 14184000,
+    "fedBalanceSheet": 6957277,
+    "termSpread3m": 0.61,
+    "tbill3m": 0.1
   },
   {
     "date": "2020-08-21",
@@ -6357,7 +6990,10 @@
     "sofr": 0.07,
     "breakeven5y": 1.52,
     "breakeven5y5y": 1.76,
-    "continuedClaims": 13910000
+    "continuedClaims": 13910000,
+    "fedBalanceSheet": 7010637,
+    "termSpread3m": 0.54,
+    "tbill3m": 0.1
   },
   {
     "date": "2020-08-28",
@@ -6387,7 +7023,10 @@
     "sofr": 0.07,
     "breakeven5y": 1.68,
     "breakeven5y5y": 1.86,
-    "continuedClaims": 13217000
+    "continuedClaims": 13217000,
+    "fedBalanceSheet": 6990418,
+    "termSpread3m": 0.64,
+    "tbill3m": 0.1
   },
   {
     "date": "2020-09-04",
@@ -6417,7 +7056,10 @@
     "sofr": 0.09,
     "breakeven5y": 1.57,
     "breakeven5y5y": 1.83,
-    "continuedClaims": 13501000
+    "continuedClaims": 13501000,
+    "fedBalanceSheet": 7017492,
+    "termSpread3m": 0.61,
+    "tbill3m": 0.11
   },
   {
     "date": "2020-09-11",
@@ -6447,7 +7089,10 @@
     "sofr": 0.09,
     "breakeven5y": 1.53,
     "breakeven5y5y": 1.77,
-    "continuedClaims": 12765000
+    "continuedClaims": 12765000,
+    "fedBalanceSheet": 7010614,
+    "termSpread3m": 0.56,
+    "tbill3m": 0.11
   },
   {
     "date": "2020-09-18",
@@ -6477,7 +7122,10 @@
     "sofr": 0.09,
     "breakeven5y": 1.58,
     "breakeven5y5y": 1.76,
-    "continuedClaims": 12684000
+    "continuedClaims": 12684000,
+    "fedBalanceSheet": 7064475,
+    "termSpread3m": 0.6,
+    "tbill3m": 0.1
   },
   {
     "date": "2020-09-25",
@@ -6507,7 +7155,10 @@
     "sofr": 0.08,
     "breakeven5y": 1.43,
     "breakeven5y5y": 1.73,
-    "continuedClaims": 11367000
+    "continuedClaims": 11367000,
+    "fedBalanceSheet": 7093161,
+    "termSpread3m": 0.56,
+    "tbill3m": 0.1
   },
   {
     "date": "2020-10-02",
@@ -6537,7 +7188,10 @@
     "sofr": 0.1,
     "breakeven5y": 1.48,
     "breakeven5y5y": 1.8,
-    "continuedClaims": 10481000
+    "continuedClaims": 10481000,
+    "fedBalanceSheet": 7056129,
+    "termSpread3m": 0.61,
+    "tbill3m": 0.09
   },
   {
     "date": "2020-10-09",
@@ -6567,7 +7221,10 @@
     "sofr": 0.09,
     "breakeven5y": 1.56,
     "breakeven5y5y": 1.9,
-    "continuedClaims": 9270000
+    "continuedClaims": 9270000,
+    "fedBalanceSheet": 7074649,
+    "termSpread3m": 0.69,
+    "tbill3m": 0.1
   },
   {
     "date": "2020-10-16",
@@ -6597,7 +7254,10 @@
     "sofr": 0.09,
     "breakeven5y": 1.53,
     "breakeven5y5y": 1.89,
-    "continuedClaims": 8425000
+    "continuedClaims": 8425000,
+    "fedBalanceSheet": 7151426,
+    "termSpread3m": 0.65,
+    "tbill3m": 0.11
   },
   {
     "date": "2020-10-23",
@@ -6627,7 +7287,10 @@
     "sofr": 0.08,
     "breakeven5y": 1.66,
     "breakeven5y5y": 1.84,
-    "continuedClaims": 7777000
+    "continuedClaims": 7777000,
+    "fedBalanceSheet": 7177265,
+    "termSpread3m": 0.75,
+    "tbill3m": 0.1
   },
   {
     "date": "2020-10-30",
@@ -6657,7 +7320,10 @@
     "sofr": 0.09,
     "breakeven5y": 1.59,
     "breakeven5y5y": 1.81,
-    "continuedClaims": 7180000
+    "continuedClaims": 7180000,
+    "fedBalanceSheet": 7146306,
+    "termSpread3m": 0.79,
+    "tbill3m": 0.09
   },
   {
     "date": "2020-11-06",
@@ -6687,7 +7353,10 @@
     "sofr": 0.1,
     "breakeven5y": 1.54,
     "breakeven5y5y": 1.76,
-    "continuedClaims": 6705000
+    "continuedClaims": 6705000,
+    "fedBalanceSheet": 7157479,
+    "termSpread3m": 0.73,
+    "tbill3m": 0.1
   },
   {
     "date": "2020-11-13",
@@ -6717,7 +7386,10 @@
     "sofr": 0.09,
     "breakeven5y": 1.64,
     "breakeven5y5y": 1.8,
-    "continuedClaims": 6341000
+    "continuedClaims": 6341000,
+    "fedBalanceSheet": 7175417,
+    "termSpread3m": 0.8,
+    "tbill3m": 0.09
   },
   {
     "date": "2020-11-20",
@@ -6747,7 +7419,10 @@
     "sofr": 0.05,
     "breakeven5y": 1.61,
     "breakeven5y5y": 1.77,
-    "continuedClaims": 6088000
+    "continuedClaims": 6088000,
+    "fedBalanceSheet": 7243080,
+    "termSpread3m": 0.76,
+    "tbill3m": 0.07
   },
   {
     "date": "2020-11-27",
@@ -6777,7 +7452,10 @@
     "sofr": 0.08,
     "breakeven5y": 1.67,
     "breakeven5y5y": 1.83,
-    "continuedClaims": 5580000
+    "continuedClaims": 5580000,
+    "fedBalanceSheet": 7216480,
+    "termSpread3m": 0.75,
+    "tbill3m": 0.09
   },
   {
     "date": "2020-12-04",
@@ -6807,7 +7485,10 @@
     "sofr": 0.09,
     "breakeven5y": 1.83,
     "breakeven5y5y": 1.95,
-    "continuedClaims": 5784000
+    "continuedClaims": 5784000,
+    "fedBalanceSheet": 7222414,
+    "termSpread3m": 0.88,
+    "tbill3m": 0.09
   },
   {
     "date": "2020-12-11",
@@ -6837,7 +7518,10 @@
     "sofr": 0.08,
     "breakeven5y": 1.82,
     "breakeven5y5y": 1.92,
-    "continuedClaims": 5609000
+    "continuedClaims": 5609000,
+    "fedBalanceSheet": 7242658,
+    "termSpread3m": 0.82,
+    "tbill3m": 0.08
   },
   {
     "date": "2020-12-18",
@@ -6867,7 +7551,10 @@
     "sofr": 0.09,
     "breakeven5y": 1.92,
     "breakeven5y5y": 1.98,
-    "continuedClaims": 5416000
+    "continuedClaims": 5416000,
+    "fedBalanceSheet": 7362592,
+    "termSpread3m": 0.87,
+    "tbill3m": 0.08
   },
   {
     "date": "2020-12-25",
@@ -6897,7 +7584,10 @@
     "sofr": 0.08,
     "breakeven5y": 1.92,
     "breakeven5y5y": 2.02,
-    "continuedClaims": 5332000
+    "continuedClaims": 5332000,
+    "fedBalanceSheet": 7404039,
+    "termSpread3m": 0.85,
+    "tbill3m": 0.09
   },
   {
     "date": "2021-01-01",
@@ -6927,7 +7617,10 @@
     "sofr": 0.07,
     "breakeven5y": 1.95,
     "breakeven5y5y": 2.03,
-    "continuedClaims": 5181000
+    "continuedClaims": 5181000,
+    "fedBalanceSheet": 7363351,
+    "termSpread3m": 0.84,
+    "tbill3m": 0.09
   },
   {
     "date": "2021-01-08",
@@ -6957,7 +7650,10 @@
     "sofr": 0.09,
     "breakeven5y": 2.07,
     "breakeven5y5y": 2.05,
-    "continuedClaims": 5330000
+    "continuedClaims": 5330000,
+    "fedBalanceSheet": 7334809,
+    "termSpread3m": 1.05,
+    "tbill3m": 0.08
   },
   {
     "date": "2021-01-15",
@@ -6987,7 +7683,10 @@
     "sofr": 0.08,
     "breakeven5y": 2.09,
     "breakeven5y5y": 2.11,
-    "continuedClaims": 5069000
+    "continuedClaims": 5069000,
+    "fedBalanceSheet": 7333968,
+    "termSpread3m": 1.02,
+    "tbill3m": 0.09
   },
   {
     "date": "2021-01-22",
@@ -7017,7 +7716,10 @@
     "sofr": 0.05,
     "breakeven5y": 2.16,
     "breakeven5y5y": 2.02,
-    "continuedClaims": 4877000
+    "continuedClaims": 4877000,
+    "fedBalanceSheet": 7414942,
+    "termSpread3m": 1.02,
+    "tbill3m": 0.08
   },
   {
     "date": "2021-01-29",
@@ -7047,7 +7749,10 @@
     "sofr": 0.06,
     "breakeven5y": 2.21,
     "breakeven5y5y": 2.05,
-    "continuedClaims": 4789000
+    "continuedClaims": 4789000,
+    "fedBalanceSheet": 7404926,
+    "termSpread3m": 1.05,
+    "tbill3m": 0.06
   },
   {
     "date": "2021-02-05",
@@ -7077,7 +7782,10 @@
     "sofr": 0.02,
     "breakeven5y": 2.28,
     "breakeven5y5y": 2.14,
-    "continuedClaims": 4658000
+    "continuedClaims": 4658000,
+    "fedBalanceSheet": 7410598,
+    "termSpread3m": 1.16,
+    "tbill3m": 0.03
   },
   {
     "date": "2021-02-12",
@@ -7107,7 +7815,10 @@
     "sofr": 0.05,
     "breakeven5y": 2.35,
     "breakeven5y5y": 2.07,
-    "continuedClaims": 4599000
+    "continuedClaims": 4599000,
+    "fedBalanceSheet": 7442225,
+    "termSpread3m": 1.16,
+    "tbill3m": 0.04
   },
   {
     "date": "2021-02-19",
@@ -7137,7 +7848,10 @@
     "sofr": 0.02,
     "breakeven5y": 2.29,
     "breakeven5y5y": 1.99,
-    "continuedClaims": 4495000
+    "continuedClaims": 4495000,
+    "fedBalanceSheet": 7557402,
+    "termSpread3m": 1.3,
+    "tbill3m": 0.04
   },
   {
     "date": "2021-02-26",
@@ -7167,7 +7881,10 @@
     "sofr": 0.01,
     "breakeven5y": 2.39,
     "breakeven5y5y": 1.91,
-    "continuedClaims": 4406000
+    "continuedClaims": 4406000,
+    "fedBalanceSheet": 7590111,
+    "termSpread3m": 1.4,
+    "tbill3m": 0.04
   },
   {
     "date": "2021-03-05",
@@ -7197,7 +7914,10 @@
     "sofr": 0.02,
     "breakeven5y": 2.43,
     "breakeven5y5y": 2.01,
-    "continuedClaims": 4227000
+    "continuedClaims": 4227000,
+    "fedBalanceSheet": 7557524,
+    "termSpread3m": 1.52,
+    "tbill3m": 0.04
   },
   {
     "date": "2021-03-12",
@@ -7227,7 +7947,10 @@
     "sofr": 0.01,
     "breakeven5y": 2.51,
     "breakeven5y5y": 2.01,
-    "continuedClaims": 4185000
+    "continuedClaims": 4185000,
+    "fedBalanceSheet": 7579901,
+    "termSpread3m": 1.6,
+    "tbill3m": 0.04
   },
   {
     "date": "2021-03-19",
@@ -7257,7 +7980,10 @@
     "sofr": 0.01,
     "breakeven5y": 2.51,
     "breakeven5y5y": 2.11,
-    "continuedClaims": 3970000
+    "continuedClaims": 3970000,
+    "fedBalanceSheet": 7693506,
+    "termSpread3m": 1.73,
+    "tbill3m": 0.01
   },
   {
     "date": "2021-03-26",
@@ -7287,7 +8013,10 @@
     "sofr": 0.01,
     "breakeven5y": 2.57,
     "breakeven5y5y": 2.11,
-    "continuedClaims": 3887000
+    "continuedClaims": 3887000,
+    "fedBalanceSheet": 7719622,
+    "termSpread3m": 1.65,
+    "tbill3m": 0.02
   },
   {
     "date": "2021-04-02",
@@ -7317,7 +8046,10 @@
     "sofr": 0.01,
     "breakeven5y": 2.58,
     "breakeven5y5y": 2.14,
-    "continuedClaims": 3859000
+    "continuedClaims": 3859000,
+    "fedBalanceSheet": 7688988,
+    "termSpread3m": 1.7,
+    "tbill3m": 0.02
   },
   {
     "date": "2021-04-09",
@@ -7347,7 +8079,10 @@
     "sofr": 0.01,
     "breakeven5y": 2.51,
     "breakeven5y5y": 2.11,
-    "continuedClaims": 3830000
+    "continuedClaims": 3830000,
+    "fedBalanceSheet": 7708882,
+    "termSpread3m": 1.65,
+    "tbill3m": 0.02
   },
   {
     "date": "2021-04-16",
@@ -7377,7 +8112,10 @@
     "sofr": 0.01,
     "breakeven5y": 2.57,
     "breakeven5y5y": 2.15,
-    "continuedClaims": 3779000
+    "continuedClaims": 3779000,
+    "fedBalanceSheet": 7793104,
+    "termSpread3m": 1.57,
+    "tbill3m": 0.02
   },
   {
     "date": "2021-04-23",
@@ -7407,7 +8145,10 @@
     "sofr": 0.01,
     "breakeven5y": 2.44,
     "breakeven5y5y": 2.24,
-    "continuedClaims": 3776000
+    "continuedClaims": 3776000,
+    "fedBalanceSheet": 7820948,
+    "termSpread3m": 1.55,
+    "tbill3m": 0.03
   },
   {
     "date": "2021-04-30",
@@ -7437,7 +8178,10 @@
     "sofr": 0.01,
     "breakeven5y": 2.57,
     "breakeven5y5y": 2.25,
-    "continuedClaims": 3767000
+    "continuedClaims": 3767000,
+    "fedBalanceSheet": 7780962,
+    "termSpread3m": 1.64,
+    "tbill3m": 0.01
   },
   {
     "date": "2021-05-07",
@@ -7467,7 +8211,10 @@
     "sofr": 0.01,
     "breakeven5y": 2.65,
     "breakeven5y5y": 2.33,
-    "continuedClaims": 3756000
+    "continuedClaims": 3756000,
+    "fedBalanceSheet": 7810486,
+    "termSpread3m": 1.58,
+    "tbill3m": 0.02
   },
   {
     "date": "2021-05-14",
@@ -7497,7 +8244,10 @@
     "sofr": 0.01,
     "breakeven5y": 2.68,
     "breakeven5y5y": 2.34,
-    "continuedClaims": 3737000
+    "continuedClaims": 3737000,
+    "fedBalanceSheet": 7830663,
+    "termSpread3m": 1.62,
+    "tbill3m": 0.01
   },
   {
     "date": "2021-05-21",
@@ -7527,7 +8277,10 @@
     "sofr": 0.01,
     "breakeven5y": 2.62,
     "breakeven5y5y": 2.24,
-    "continuedClaims": 3618000
+    "continuedClaims": 3618000,
+    "fedBalanceSheet": 7922883,
+    "termSpread3m": 1.62,
+    "tbill3m": 0.01
   },
   {
     "date": "2021-05-28",
@@ -7557,7 +8310,10 @@
     "sofr": 0.01,
     "breakeven5y": 2.57,
     "breakeven5y5y": 2.27,
-    "continuedClaims": 3575000
+    "continuedClaims": 3575000,
+    "fedBalanceSheet": 7903541,
+    "termSpread3m": 1.57,
+    "tbill3m": 0.01
   },
   {
     "date": "2021-06-04",
@@ -7587,7 +8343,10 @@
     "sofr": 0.01,
     "breakeven5y": 2.54,
     "breakeven5y5y": 2.26,
-    "continuedClaims": 3422000
+    "continuedClaims": 3422000,
+    "fedBalanceSheet": 7935703,
+    "termSpread3m": 1.54,
+    "tbill3m": 0.02
   },
   {
     "date": "2021-06-11",
@@ -7617,7 +8376,10 @@
     "sofr": 0.01,
     "breakeven5y": 2.43,
     "breakeven5y5y": 2.21,
-    "continuedClaims": 3350000
+    "continuedClaims": 3350000,
+    "fedBalanceSheet": 7952327,
+    "termSpread3m": 1.44,
+    "tbill3m": 0.03
   },
   {
     "date": "2021-06-18",
@@ -7647,7 +8409,10 @@
     "sofr": 0.05,
     "breakeven5y": 2.37,
     "breakeven5y5y": 2.11,
-    "continuedClaims": 3268000
+    "continuedClaims": 3268000,
+    "fedBalanceSheet": 8064257,
+    "termSpread3m": 1.4,
+    "tbill3m": 0.05
   },
   {
     "date": "2021-06-25",
@@ -7677,7 +8442,10 @@
     "sofr": 0.05,
     "breakeven5y": 2.46,
     "breakeven5y5y": 2.22,
-    "continuedClaims": 3263000
+    "continuedClaims": 3263000,
+    "fedBalanceSheet": 8101945,
+    "termSpread3m": 1.48,
+    "tbill3m": 0.06
   },
   {
     "date": "2021-07-02",
@@ -7707,7 +8475,10 @@
     "sofr": 0.05,
     "breakeven5y": 2.49,
     "breakeven5y5y": 2.17,
-    "continuedClaims": 3313000
+    "continuedClaims": 3313000,
+    "fedBalanceSheet": 8078544,
+    "termSpread3m": 1.39,
+    "tbill3m": 0.05
   },
   {
     "date": "2021-07-09",
@@ -7737,7 +8508,10 @@
     "sofr": 0.05,
     "breakeven5y": 2.44,
     "breakeven5y5y": 2.12,
-    "continuedClaims": 3179000
+    "continuedClaims": 3179000,
+    "fedBalanceSheet": 8097773,
+    "termSpread3m": 1.31,
+    "tbill3m": 0.06
   },
   {
     "date": "2021-07-16",
@@ -7767,7 +8541,10 @@
     "sofr": 0.05,
     "breakeven5y": 2.52,
     "breakeven5y5y": 2.14,
-    "continuedClaims": 3061000
+    "continuedClaims": 3061000,
+    "fedBalanceSheet": 8201651,
+    "termSpread3m": 1.26,
+    "tbill3m": 0.05
   },
   {
     "date": "2021-07-23",
@@ -7797,7 +8574,10 @@
     "sofr": 0.05,
     "breakeven5y": 2.53,
     "breakeven5y5y": 2.17,
-    "continuedClaims": 3138000
+    "continuedClaims": 3138000,
+    "fedBalanceSheet": 8240530,
+    "termSpread3m": 1.25,
+    "tbill3m": 0.05
   },
   {
     "date": "2021-07-30",
@@ -7827,7 +8607,10 @@
     "sofr": 0.05,
     "breakeven5y": 2.56,
     "breakeven5y5y": 2.24,
-    "continuedClaims": 2863000
+    "continuedClaims": 2863000,
+    "fedBalanceSheet": 8221473,
+    "termSpread3m": 1.18,
+    "tbill3m": 0.06
   },
   {
     "date": "2021-08-06",
@@ -7857,7 +8640,10 @@
     "sofr": 0.05,
     "breakeven5y": 2.5,
     "breakeven5y5y": 2.24,
-    "continuedClaims": 2793000
+    "continuedClaims": 2793000,
+    "fedBalanceSheet": 8235073,
+    "termSpread3m": 1.25,
+    "tbill3m": 0.06
   },
   {
     "date": "2021-08-13",
@@ -7887,7 +8673,10 @@
     "sofr": 0.05,
     "breakeven5y": 2.52,
     "breakeven5y5y": 2.22,
-    "continuedClaims": 2809000
+    "continuedClaims": 2809000,
+    "fedBalanceSheet": 8257159,
+    "termSpread3m": 1.23,
+    "tbill3m": 0.06
   },
   {
     "date": "2021-08-20",
@@ -7917,7 +8706,10 @@
     "sofr": 0.05,
     "breakeven5y": 2.4,
     "breakeven5y5y": 2.14,
-    "continuedClaims": 2802000
+    "continuedClaims": 2802000,
+    "fedBalanceSheet": 8342598,
+    "termSpread3m": 1.21,
+    "tbill3m": 0.05
   },
   {
     "date": "2021-08-27",
@@ -7947,7 +8739,10 @@
     "sofr": 0.05,
     "breakeven5y": 2.53,
     "breakeven5y5y": 2.25,
-    "continuedClaims": 2733000
+    "continuedClaims": 2733000,
+    "fedBalanceSheet": 8332743,
+    "termSpread3m": 1.26,
+    "tbill3m": 0.05
   },
   {
     "date": "2021-09-03",
@@ -7977,7 +8772,10 @@
     "sofr": 0.05,
     "breakeven5y": 2.48,
     "breakeven5y5y": 2.2,
-    "continuedClaims": 2786000
+    "continuedClaims": 2786000,
+    "fedBalanceSheet": 8349173,
+    "termSpread3m": 1.28,
+    "tbill3m": 0.05
   },
   {
     "date": "2021-09-10",
@@ -8007,7 +8805,10 @@
     "sofr": 0.05,
     "breakeven5y": 2.55,
     "breakeven5y5y": 2.25,
-    "continuedClaims": 2608000
+    "continuedClaims": 2608000,
+    "fedBalanceSheet": 8357314,
+    "termSpread3m": 1.3,
+    "tbill3m": 0.05
   },
   {
     "date": "2021-09-17",
@@ -8037,7 +8838,10 @@
     "sofr": 0.05,
     "breakeven5y": 2.51,
     "breakeven5y5y": 2.15,
-    "continuedClaims": 2756000
+    "continuedClaims": 2756000,
+    "fedBalanceSheet": 8448770,
+    "termSpread3m": 1.33,
+    "tbill3m": 0.04
   },
   {
     "date": "2021-09-24",
@@ -8067,7 +8871,10 @@
     "sofr": 0.05,
     "breakeven5y": 2.47,
     "breakeven5y5y": 2.21,
-    "continuedClaims": 2803000
+    "continuedClaims": 2803000,
+    "fedBalanceSheet": 8489824,
+    "termSpread3m": 1.44,
+    "tbill3m": 0.03
   },
   {
     "date": "2021-10-01",
@@ -8097,7 +8904,10 @@
     "sofr": 0.05,
     "breakeven5y": 2.51,
     "breakeven5y5y": 2.25,
-    "continuedClaims": 2722000
+    "continuedClaims": 2722000,
+    "fedBalanceSheet": 8447981,
+    "termSpread3m": 1.44,
+    "tbill3m": 0.04
   },
   {
     "date": "2021-10-08",
@@ -8127,7 +8937,10 @@
     "sofr": 0.05,
     "breakeven5y": 2.64,
     "breakeven5y5y": 2.36,
-    "continuedClaims": 2624000
+    "continuedClaims": 2624000,
+    "fedBalanceSheet": 8464032,
+    "termSpread3m": 1.56,
+    "tbill3m": 0.05
   },
   {
     "date": "2021-10-15",
@@ -8157,7 +8970,10 @@
     "sofr": 0.05,
     "breakeven5y": 2.71,
     "breakeven5y5y": 2.41,
-    "continuedClaims": 2533000
+    "continuedClaims": 2533000,
+    "fedBalanceSheet": 8480942,
+    "termSpread3m": 1.54,
+    "tbill3m": 0.05
   },
   {
     "date": "2021-10-22",
@@ -8187,7 +9003,10 @@
     "sofr": 0.05,
     "breakeven5y": 2.91,
     "breakeven5y5y": 2.37,
-    "continuedClaims": 2265000
+    "continuedClaims": 2265000,
+    "fedBalanceSheet": 8564943,
+    "termSpread3m": 1.6,
+    "tbill3m": 0.06
   },
   {
     "date": "2021-10-29",
@@ -8217,7 +9036,10 @@
     "sofr": 0.05,
     "breakeven5y": 2.89,
     "breakeven5y5y": 2.13,
-    "continuedClaims": 2168000
+    "continuedClaims": 2168000,
+    "fedBalanceSheet": 8556181,
+    "termSpread3m": 1.5,
+    "tbill3m": 0.05
   },
   {
     "date": "2021-11-05",
@@ -8247,7 +9069,10 @@
     "sofr": 0.05,
     "breakeven5y": 2.87,
     "breakeven5y5y": 2.21,
-    "continuedClaims": 2199000
+    "continuedClaims": 2199000,
+    "fedBalanceSheet": 8574871,
+    "termSpread3m": 1.4,
+    "tbill3m": 0.05
   },
   {
     "date": "2021-11-12",
@@ -8277,7 +9102,10 @@
     "sofr": 0.05,
     "breakeven5y": 3.11,
     "breakeven5y5y": 2.35,
-    "continuedClaims": 2036000
+    "continuedClaims": 2036000,
+    "fedBalanceSheet": 8663117,
+    "termSpread3m": 1.53,
+    "tbill3m": 0.05
   },
   {
     "date": "2021-11-19",
@@ -8307,7 +9135,10 @@
     "sofr": 0.05,
     "breakeven5y": 3.02,
     "breakeven5y5y": 2.28,
-    "continuedClaims": 1968000
+    "continuedClaims": 1968000,
+    "fedBalanceSheet": 8674970,
+    "termSpread3m": 1.49,
+    "tbill3m": 0.05
   },
   {
     "date": "2021-11-26",
@@ -8337,7 +9168,10 @@
     "sofr": 0.05,
     "breakeven5y": 2.92,
     "breakeven5y5y": 2.18,
-    "continuedClaims": 1803000
+    "continuedClaims": 1803000,
+    "fedBalanceSheet": 8681771,
+    "termSpread3m": 1.42,
+    "tbill3m": 0.06
   },
   {
     "date": "2021-12-03",
@@ -8367,7 +9201,10 @@
     "sofr": 0.05,
     "breakeven5y": 2.72,
     "breakeven5y5y": 2.14,
-    "continuedClaims": 1874000
+    "continuedClaims": 1874000,
+    "fedBalanceSheet": 8650402,
+    "termSpread3m": 1.29,
+    "tbill3m": 0.06
   },
   {
     "date": "2021-12-10",
@@ -8397,7 +9234,10 @@
     "sofr": 0.05,
     "breakeven5y": 2.76,
     "breakeven5y5y": 2.12,
-    "continuedClaims": 1767000
+    "continuedClaims": 1767000,
+    "fedBalanceSheet": 8664524,
+    "termSpread3m": 1.42,
+    "tbill3m": 0.06
   },
   {
     "date": "2021-12-17",
@@ -8427,7 +9267,10 @@
     "sofr": 0.05,
     "breakeven5y": 2.65,
     "breakeven5y5y": 2.11,
-    "continuedClaims": 1767000
+    "continuedClaims": 1767000,
+    "fedBalanceSheet": 8756666,
+    "termSpread3m": 1.36,
+    "tbill3m": 0.05
   },
   {
     "date": "2021-12-24",
@@ -8457,7 +9300,10 @@
     "sofr": 0.05,
     "breakeven5y": 2.72,
     "breakeven5y5y": 2.22,
-    "continuedClaims": 1628000
+    "continuedClaims": 1628000,
+    "fedBalanceSheet": 8790495,
+    "termSpread3m": 1.43,
+    "tbill3m": 0.08
   },
   {
     "date": "2021-12-31",
@@ -8487,7 +9333,10 @@
     "sofr": 0.05,
     "breakeven5y": 2.87,
     "breakeven5y5y": 2.25,
-    "continuedClaims": 1703000
+    "continuedClaims": 1703000,
+    "fedBalanceSheet": 8757460,
+    "termSpread3m": 1.46,
+    "tbill3m": 0.06
   },
   {
     "date": "2022-01-07",
@@ -8517,7 +9366,10 @@
     "sofr": 0.05,
     "breakeven5y": 2.78,
     "breakeven5y5y": 2.18,
-    "continuedClaims": 1690000
+    "continuedClaims": 1690000,
+    "fedBalanceSheet": 8765721,
+    "termSpread3m": 1.66,
+    "tbill3m": 0.1
   },
   {
     "date": "2022-01-14",
@@ -8547,7 +9399,10 @@
     "sofr": 0.05,
     "breakeven5y": 2.79,
     "breakeven5y5y": 2.09,
-    "continuedClaims": 1721000
+    "continuedClaims": 1721000,
+    "fedBalanceSheet": 8788278,
+    "termSpread3m": 1.65,
+    "tbill3m": 0.13
   },
   {
     "date": "2022-01-21",
@@ -8577,7 +9432,10 @@
     "sofr": 0.05,
     "breakeven5y": 2.7,
     "breakeven5y5y": 1.98,
-    "continuedClaims": 1700000
+    "continuedClaims": 1700000,
+    "fedBalanceSheet": 8867834,
+    "termSpread3m": 1.58,
+    "tbill3m": 0.17
   },
   {
     "date": "2022-01-28",
@@ -8607,7 +9465,10 @@
     "sofr": 0.05,
     "breakeven5y": 2.8,
     "breakeven5y5y": 2.08,
-    "continuedClaims": 1709000
+    "continuedClaims": 1709000,
+    "fedBalanceSheet": 8860485,
+    "termSpread3m": 1.59,
+    "tbill3m": 0.19
   },
   {
     "date": "2022-02-04",
@@ -8637,7 +9498,10 @@
     "sofr": 0.05,
     "breakeven5y": 2.78,
     "breakeven5y5y": 2.04,
-    "continuedClaims": 1695000
+    "continuedClaims": 1695000,
+    "fedBalanceSheet": 8873211,
+    "termSpread3m": 1.7,
+    "tbill3m": 0.23
   },
   {
     "date": "2022-02-11",
@@ -8667,7 +9531,10 @@
     "sofr": 0.05,
     "breakeven5y": 2.82,
     "breakeven5y5y": 2.04,
-    "continuedClaims": 1671000
+    "continuedClaims": 1671000,
+    "fedBalanceSheet": 8878009,
+    "termSpread3m": 1.56,
+    "tbill3m": 0.37
   },
   {
     "date": "2022-02-18",
@@ -8697,7 +9564,10 @@
     "sofr": 0.05,
     "breakeven5y": 2.86,
     "breakeven5y5y": 1.96,
-    "continuedClaims": 1637000
+    "continuedClaims": 1637000,
+    "fedBalanceSheet": 8911033,
+    "termSpread3m": 1.57,
+    "tbill3m": 0.35
   },
   {
     "date": "2022-02-25",
@@ -8727,7 +9597,10 @@
     "sofr": 0.05,
     "breakeven5y": 3.02,
     "breakeven5y5y": 2.06,
-    "continuedClaims": 1615000
+    "continuedClaims": 1615000,
+    "fedBalanceSheet": 8928129,
+    "termSpread3m": 1.64,
+    "tbill3m": 0.33
   },
   {
     "date": "2022-03-04",
@@ -8757,7 +9630,10 @@
     "sofr": 0.05,
     "breakeven5y": 3.19,
     "breakeven5y5y": 2.15,
-    "continuedClaims": 1613000
+    "continuedClaims": 1613000,
+    "fedBalanceSheet": 8904455,
+    "termSpread3m": 1.4,
+    "tbill3m": 0.33
   },
   {
     "date": "2022-03-11",
@@ -8787,7 +9663,10 @@
     "sofr": 0.05,
     "breakeven5y": 3.52,
     "breakeven5y5y": 2.36,
-    "continuedClaims": 1583000
+    "continuedClaims": 1583000,
+    "fedBalanceSheet": 8910748,
+    "termSpread3m": 1.6,
+    "tbill3m": 0.39
   },
   {
     "date": "2022-03-18",
@@ -8817,7 +9696,10 @@
     "sofr": 0.3,
     "breakeven5y": 3.48,
     "breakeven5y5y": 2.24,
-    "continuedClaims": 1541000
+    "continuedClaims": 1541000,
+    "fedBalanceSheet": 8954306,
+    "termSpread3m": 1.72,
+    "tbill3m": 0.41
   },
   {
     "date": "2022-03-25",
@@ -8847,7 +9729,10 @@
     "sofr": 0.28,
     "breakeven5y": 3.59,
     "breakeven5y5y": 2.31,
-    "continuedClaims": 1518000
+    "continuedClaims": 1518000,
+    "fedBalanceSheet": 8962474,
+    "termSpread3m": 1.93,
+    "tbill3m": 0.53
   },
   {
     "date": "2022-04-01",
@@ -8877,7 +9762,10 @@
     "sofr": 0.3,
     "breakeven5y": 3.28,
     "breakeven5y5y": 2.32,
-    "continuedClaims": 1532000
+    "continuedClaims": 1532000,
+    "fedBalanceSheet": 8937142,
+    "termSpread3m": 1.86,
+    "tbill3m": 0.52
   },
   {
     "date": "2022-04-08",
@@ -8907,7 +9795,10 @@
     "sofr": 0.3,
     "breakeven5y": 3.33,
     "breakeven5y5y": 2.41,
-    "continuedClaims": 1492000
+    "continuedClaims": 1492000,
+    "fedBalanceSheet": 8937592,
+    "termSpread3m": 2.02,
+    "tbill3m": 0.69
   },
   {
     "date": "2022-04-15",
@@ -8937,7 +9828,10 @@
     "sofr": 0.29,
     "breakeven5y": 3.33,
     "breakeven5y5y": 2.45,
-    "continuedClaims": 1432000
+    "continuedClaims": 1432000,
+    "fedBalanceSheet": 8965487,
+    "termSpread3m": 2.04,
+    "tbill3m": 0.78
   },
   {
     "date": "2022-04-22",
@@ -8967,7 +9861,10 @@
     "sofr": 0.27,
     "breakeven5y": 3.37,
     "breakeven5y5y": 2.59,
-    "continuedClaims": 1429000
+    "continuedClaims": 1429000,
+    "fedBalanceSheet": 8955851,
+    "termSpread3m": 2.07,
+    "tbill3m": 0.82
   },
   {
     "date": "2022-04-29",
@@ -8997,7 +9894,10 @@
     "sofr": 0.28,
     "breakeven5y": 3.3,
     "breakeven5y5y": 2.46,
-    "continuedClaims": 1424000
+    "continuedClaims": 1424000,
+    "fedBalanceSheet": 8939199,
+    "termSpread3m": 2.04,
+    "tbill3m": 0.83
   },
   {
     "date": "2022-05-06",
@@ -9027,7 +9927,10 @@
     "sofr": 0.78,
     "breakeven5y": 3.22,
     "breakeven5y5y": 2.5,
-    "continuedClaims": 1385000
+    "continuedClaims": 1385000,
+    "fedBalanceSheet": 8939972,
+    "termSpread3m": 2.27,
+    "tbill3m": 0.84
   },
   {
     "date": "2022-05-13",
@@ -9057,7 +9960,10 @@
     "sofr": 0.79,
     "breakeven5y": 3.03,
     "breakeven5y5y": 2.35,
-    "continuedClaims": 1365000
+    "continuedClaims": 1365000,
+    "fedBalanceSheet": 8942008,
+    "termSpread3m": 1.9,
+    "tbill3m": 1.01
   },
   {
     "date": "2022-05-20",
@@ -9087,7 +9993,10 @@
     "sofr": 0.78,
     "breakeven5y": 2.88,
     "breakeven5y5y": 2.22,
-    "continuedClaims": 1378000
+    "continuedClaims": 1378000,
+    "fedBalanceSheet": 8945898,
+    "termSpread3m": 1.75,
+    "tbill3m": 1.01
   },
   {
     "date": "2022-05-27",
@@ -9117,7 +10026,10 @@
     "sofr": 0.78,
     "breakeven5y": 2.95,
     "breakeven5y5y": 2.31,
-    "continuedClaims": 1362000
+    "continuedClaims": 1362000,
+    "fedBalanceSheet": 8914281,
+    "termSpread3m": 1.66,
+    "tbill3m": 1.06
   },
   {
     "date": "2022-06-03",
@@ -9147,7 +10059,10 @@
     "sofr": 0.78,
     "breakeven5y": 3.04,
     "breakeven5y5y": 2.44,
-    "continuedClaims": 1363000
+    "continuedClaims": 1363000,
+    "fedBalanceSheet": 8915050,
+    "termSpread3m": 1.75,
+    "tbill3m": 1.17
   },
   {
     "date": "2022-06-10",
@@ -9177,7 +10092,10 @@
     "sofr": 0.75,
     "breakeven5y": 3.13,
     "breakeven5y5y": 2.39,
-    "continuedClaims": 1344000
+    "continuedClaims": 1344000,
+    "fedBalanceSheet": 8918254,
+    "termSpread3m": 1.76,
+    "tbill3m": 1.34
   },
   {
     "date": "2022-06-17",
@@ -9207,7 +10125,10 @@
     "sofr": 1.45,
     "breakeven5y": 2.8,
     "breakeven5y5y": 2.36,
-    "continuedClaims": 1356000
+    "continuedClaims": 1356000,
+    "fedBalanceSheet": 8932420,
+    "termSpread3m": 1.62,
+    "tbill3m": 1.58
   },
   {
     "date": "2022-06-24",
@@ -9237,7 +10158,10 @@
     "sofr": 1.46,
     "breakeven5y": 2.82,
     "breakeven5y5y": 2.3,
-    "continuedClaims": 1358000
+    "continuedClaims": 1358000,
+    "fedBalanceSheet": 8934346,
+    "termSpread3m": 1.4,
+    "tbill3m": 1.66
   },
   {
     "date": "2022-07-01",
@@ -9267,7 +10191,10 @@
     "sofr": 1.52,
     "breakeven5y": 2.6,
     "breakeven5y5y": 2.08,
-    "continuedClaims": 1403000
+    "continuedClaims": 1403000,
+    "fedBalanceSheet": 8913553,
+    "termSpread3m": 1.15,
+    "tbill3m": 1.66
   },
   {
     "date": "2022-07-08",
@@ -9297,7 +10224,10 @@
     "sofr": 1.53,
     "breakeven5y": 2.62,
     "breakeven5y5y": 2.12,
-    "continuedClaims": 1360000
+    "continuedClaims": 1360000,
+    "fedBalanceSheet": 8891851,
+    "termSpread3m": 1.11,
+    "tbill3m": 1.91
   },
   {
     "date": "2022-07-15",
@@ -9327,7 +10257,10 @@
     "sofr": 1.54,
     "breakeven5y": 2.59,
     "breakeven5y5y": 2.13,
-    "continuedClaims": 1367000
+    "continuedClaims": 1367000,
+    "fedBalanceSheet": 8895867,
+    "termSpread3m": 0.56,
+    "tbill3m": 2.29
   },
   {
     "date": "2022-07-22",
@@ -9357,7 +10290,10 @@
     "sofr": 1.52,
     "breakeven5y": 2.56,
     "breakeven5y5y": 2.12,
-    "continuedClaims": 1391000
+    "continuedClaims": 1391000,
+    "fedBalanceSheet": 8899213,
+    "termSpread3m": 0.28,
+    "tbill3m": 2.41
   },
   {
     "date": "2022-07-29",
@@ -9387,7 +10323,10 @@
     "sofr": 2.27,
     "breakeven5y": 2.73,
     "breakeven5y5y": 2.33,
-    "continuedClaims": 1418000
+    "continuedClaims": 1418000,
+    "fedBalanceSheet": 8890004,
+    "termSpread3m": 0.26,
+    "tbill3m": 2.34
   },
   {
     "date": "2022-08-05",
@@ -9417,7 +10356,10 @@
     "sofr": 2.28,
     "breakeven5y": 2.64,
     "breakeven5y5y": 2.28,
-    "continuedClaims": 1427000
+    "continuedClaims": 1427000,
+    "fedBalanceSheet": 8874620,
+    "termSpread3m": 0.25,
+    "tbill3m": 2.48
   },
   {
     "date": "2022-08-12",
@@ -9447,7 +10389,10 @@
     "sofr": 2.28,
     "breakeven5y": 2.67,
     "breakeven5y5y": 2.27,
-    "continuedClaims": 1422000
+    "continuedClaims": 1422000,
+    "fedBalanceSheet": 8879138,
+    "termSpread3m": 0.21,
+    "tbill3m": 2.53
   },
   {
     "date": "2022-08-19",
@@ -9477,7 +10422,10 @@
     "sofr": 2.28,
     "breakeven5y": 2.72,
     "breakeven5y5y": 2.38,
-    "continuedClaims": 1410000
+    "continuedClaims": 1410000,
+    "fedBalanceSheet": 8849762,
+    "termSpread3m": 0.24,
+    "tbill3m": 2.64
   },
   {
     "date": "2022-08-26",
@@ -9507,7 +10455,10 @@
     "sofr": 2.28,
     "breakeven5y": 2.73,
     "breakeven5y5y": 2.41,
-    "continuedClaims": 1419000
+    "continuedClaims": 1419000,
+    "fedBalanceSheet": 8851436,
+    "termSpread3m": 0.15,
+    "tbill3m": 2.78
   },
   {
     "date": "2022-09-02",
@@ -9537,7 +10488,10 @@
     "sofr": 2.29,
     "breakeven5y": 2.55,
     "breakeven5y5y": 2.39,
-    "continuedClaims": 1418000
+    "continuedClaims": 1418000,
+    "fedBalanceSheet": 8826093,
+    "termSpread3m": 0.26,
+    "tbill3m": 2.85
   },
   {
     "date": "2022-09-09",
@@ -9567,7 +10521,10 @@
     "sofr": 2.28,
     "breakeven5y": 2.51,
     "breakeven5y5y": 2.33,
-    "continuedClaims": 1397000
+    "continuedClaims": 1397000,
+    "fedBalanceSheet": 8822401,
+    "termSpread3m": 0.25,
+    "tbill3m": 2.98
   },
   {
     "date": "2022-09-16",
@@ -9597,7 +10554,10 @@
     "sofr": 2.27,
     "breakeven5y": 2.49,
     "breakeven5y5y": 2.27,
-    "continuedClaims": 1402000
+    "continuedClaims": 1402000,
+    "fedBalanceSheet": 8832759,
+    "termSpread3m": 0.25,
+    "tbill3m": 3.1
   },
   {
     "date": "2022-09-23",
@@ -9627,7 +10587,10 @@
     "sofr": 2.99,
     "breakeven5y": 2.38,
     "breakeven5y5y": 2.36,
-    "continuedClaims": 1382000
+    "continuedClaims": 1382000,
+    "fedBalanceSheet": 8816802,
+    "termSpread3m": 0.45,
+    "tbill3m": 3.12
   },
   {
     "date": "2022-09-30",
@@ -9657,7 +10620,10 @@
     "sofr": 2.98,
     "breakeven5y": 2.14,
     "breakeven5y5y": 2.16,
-    "continuedClaims": 1397000
+    "continuedClaims": 1397000,
+    "fedBalanceSheet": 8795567,
+    "termSpread3m": 0.5,
+    "tbill3m": 3.22
   },
   {
     "date": "2022-10-07",
@@ -9687,7 +10653,10 @@
     "sofr": 3.05,
     "breakeven5y": 2.36,
     "breakeven5y5y": 2.18,
-    "continuedClaims": 1392000
+    "continuedClaims": 1392000,
+    "fedBalanceSheet": 8759053,
+    "termSpread3m": 0.44,
+    "tbill3m": 3.31
   },
   {
     "date": "2022-10-14",
@@ -9717,7 +10686,10 @@
     "sofr": 3.04,
     "breakeven5y": 2.44,
     "breakeven5y5y": 2.38,
-    "continuedClaims": 1404000
+    "continuedClaims": 1404000,
+    "fedBalanceSheet": 8758969,
+    "termSpread3m": 0.19,
+    "tbill3m": 3.65
   },
   {
     "date": "2022-10-21",
@@ -9747,7 +10719,10 @@
     "sofr": 3.02,
     "breakeven5y": 2.69,
     "breakeven5y5y": 2.35,
-    "continuedClaims": 1402000
+    "continuedClaims": 1402000,
+    "fedBalanceSheet": 8743922,
+    "termSpread3m": 0.12,
+    "tbill3m": 3.9
   },
   {
     "date": "2022-10-28",
@@ -9777,7 +10752,10 @@
     "sofr": 3.05,
     "breakeven5y": 2.62,
     "breakeven5y5y": 2.4,
-    "continuedClaims": 1429000
+    "continuedClaims": 1429000,
+    "fedBalanceSheet": 8723090,
+    "termSpread3m": -0.16,
+    "tbill3m": 3.99
   },
   {
     "date": "2022-11-04",
@@ -9807,7 +10785,10 @@
     "sofr": 3.8,
     "breakeven5y": 2.61,
     "breakeven5y5y": 2.35,
-    "continuedClaims": 1430000
+    "continuedClaims": 1430000,
+    "fedBalanceSheet": 8676870,
+    "termSpread3m": -0.04,
+    "tbill3m": 4.02
   },
   {
     "date": "2022-11-11",
@@ -9837,7 +10818,10 @@
     "sofr": 3.78,
     "breakeven5y": 2.47,
     "breakeven5y5y": 2.31,
-    "continuedClaims": 1406000
+    "continuedClaims": 1406000,
+    "fedBalanceSheet": 8678886,
+    "termSpread3m": -0.46,
+    "tbill3m": 4.09
   },
   {
     "date": "2022-11-18",
@@ -9867,7 +10851,10 @@
     "sofr": 3.8,
     "breakeven5y": 2.28,
     "breakeven5y5y": 2.22,
-    "continuedClaims": 1450000
+    "continuedClaims": 1450000,
+    "fedBalanceSheet": 8625620,
+    "termSpread3m": -0.52,
+    "tbill3m": 4.15
   },
   {
     "date": "2022-11-25",
@@ -9897,7 +10884,10 @@
     "sofr": 3.8,
     "breakeven5y": 2.34,
     "breakeven5y5y": 2.3,
-    "continuedClaims": 1464000
+    "continuedClaims": 1464000,
+    "fedBalanceSheet": 8621390,
+    "termSpread3m": -0.73,
+    "tbill3m": 4.22
   },
   {
     "date": "2022-12-02",
@@ -9927,7 +10917,10 @@
     "sofr": 3.81,
     "breakeven5y": 2.51,
     "breakeven5y5y": 2.35,
-    "continuedClaims": 1512000
+    "continuedClaims": 1512000,
+    "fedBalanceSheet": 8584576,
+    "termSpread3m": -0.83,
+    "tbill3m": 4.22
   },
   {
     "date": "2022-12-09",
@@ -9957,7 +10950,10 @@
     "sofr": 3.8,
     "breakeven5y": 2.3,
     "breakeven5y5y": 2.22,
-    "continuedClaims": 1539000
+    "continuedClaims": 1539000,
+    "fedBalanceSheet": 8582735,
+    "termSpread3m": -0.74,
+    "tbill3m": 4.19
   },
   {
     "date": "2022-12-16",
@@ -9987,7 +10983,10 @@
     "sofr": 4.32,
     "breakeven5y": 2.14,
     "breakeven5y5y": 2.12,
-    "continuedClaims": 1551000
+    "continuedClaims": 1551000,
+    "fedBalanceSheet": 8583413,
+    "termSpread3m": -0.83,
+    "tbill3m": 4.2
   },
   {
     "date": "2022-12-23",
@@ -10017,7 +11016,10 @@
     "sofr": 4.3,
     "breakeven5y": 2.29,
     "breakeven5y5y": 2.11,
-    "continuedClaims": 1558000
+    "continuedClaims": 1558000,
+    "fedBalanceSheet": 8564411,
+    "termSpread3m": -0.59,
+    "tbill3m": 4.23
   },
   {
     "date": "2022-12-30",
@@ -10047,7 +11049,10 @@
     "sofr": 4.3,
     "breakeven5y": 2.33,
     "breakeven5y5y": 2.27,
-    "continuedClaims": 1597000
+    "continuedClaims": 1597000,
+    "fedBalanceSheet": 8551169,
+    "termSpread3m": -0.54,
+    "tbill3m": 4.3
   },
   {
     "date": "2023-01-06",
@@ -10077,7 +11082,10 @@
     "sofr": 4.31,
     "breakeven5y": 2.18,
     "breakeven5y5y": 2.24,
-    "continuedClaims": 1585000
+    "continuedClaims": 1585000,
+    "fedBalanceSheet": 8507429,
+    "termSpread3m": -1.12,
+    "tbill3m": 4.51
   },
   {
     "date": "2023-01-13",
@@ -10107,7 +11115,10 @@
     "sofr": 4.3,
     "breakeven5y": 2.2,
     "breakeven5y5y": 2.16,
-    "continuedClaims": 1584000
+    "continuedClaims": 1584000,
+    "fedBalanceSheet": 8508587,
+    "termSpread3m": -1.18,
+    "tbill3m": 4.51
   },
   {
     "date": "2023-01-20",
@@ -10137,7 +11148,10 @@
     "sofr": 4.3,
     "breakeven5y": 2.23,
     "breakeven5y5y": 2.23,
-    "continuedClaims": 1604000
+    "continuedClaims": 1604000,
+    "fedBalanceSheet": 8489039,
+    "termSpread3m": -1.24,
+    "tbill3m": 4.57
   },
   {
     "date": "2023-01-27",
@@ -10167,7 +11181,10 @@
     "sofr": 4.3,
     "breakeven5y": 2.33,
     "breakeven5y5y": 2.33,
-    "continuedClaims": 1599000
+    "continuedClaims": 1599000,
+    "fedBalanceSheet": 8470557,
+    "termSpread3m": -1.21,
+    "tbill3m": 4.57
   },
   {
     "date": "2023-02-03",
@@ -10197,7 +11214,10 @@
     "sofr": 4.55,
     "breakeven5y": 2.27,
     "breakeven5y5y": 2.17,
-    "continuedClaims": 1629000
+    "continuedClaims": 1629000,
+    "fedBalanceSheet": 8433610,
+    "termSpread3m": -1.17,
+    "tbill3m": 4.57
   },
   {
     "date": "2023-02-10",
@@ -10227,7 +11247,10 @@
     "sofr": 4.55,
     "breakeven5y": 2.47,
     "breakeven5y5y": 2.19,
-    "continuedClaims": 1641000
+    "continuedClaims": 1641000,
+    "fedBalanceSheet": 8435369,
+    "termSpread3m": -1.05,
+    "tbill3m": 4.66
   },
   {
     "date": "2023-02-17",
@@ -10257,7 +11280,10 @@
     "sofr": 4.55,
     "breakeven5y": 2.5,
     "breakeven5y5y": 2.22,
-    "continuedClaims": 1646000
+    "continuedClaims": 1646000,
+    "fedBalanceSheet": 8384767,
+    "termSpread3m": -1.02,
+    "tbill3m": 4.7
   },
   {
     "date": "2023-02-24",
@@ -10287,7 +11313,10 @@
     "sofr": 4.55,
     "breakeven5y": 2.47,
     "breakeven5y5y": 2.29,
-    "continuedClaims": 1637000
+    "continuedClaims": 1637000,
+    "fedBalanceSheet": 8382190,
+    "termSpread3m": -0.91,
+    "tbill3m": 4.72
   },
   {
     "date": "2023-03-03",
@@ -10317,7 +11346,10 @@
     "sofr": 4.55,
     "breakeven5y": 2.71,
     "breakeven5y5y": 2.33,
-    "continuedClaims": 1662000
+    "continuedClaims": 1662000,
+    "fedBalanceSheet": 8339684,
+    "termSpread3m": -0.94,
+    "tbill3m": 4.74
   },
   {
     "date": "2023-03-10",
@@ -10347,7 +11379,10 @@
     "sofr": 4.55,
     "breakeven5y": 2.34,
     "breakeven5y5y": 2.18,
-    "continuedClaims": 1662000
+    "continuedClaims": 1662000,
+    "fedBalanceSheet": 8342283,
+    "termSpread3m": -1.31,
+    "tbill3m": 4.83
   },
   {
     "date": "2023-03-17",
@@ -10377,7 +11412,10 @@
     "sofr": 4.55,
     "breakeven5y": 2.1,
     "breakeven5y5y": 2.1,
-    "continuedClaims": 1676000
+    "continuedClaims": 1676000,
+    "fedBalanceSheet": 8639300,
+    "termSpread3m": -1.13,
+    "tbill3m": 4.36
   },
   {
     "date": "2023-03-24",
@@ -10407,7 +11445,10 @@
     "sofr": 4.8,
     "breakeven5y": 2.21,
     "breakeven5y5y": 2.23,
-    "continuedClaims": 1693000
+    "continuedClaims": 1693000,
+    "fedBalanceSheet": 8733787,
+    "termSpread3m": -1.36,
+    "tbill3m": 4.57
   },
   {
     "date": "2023-03-31",
@@ -10437,7 +11478,10 @@
     "sofr": 4.87,
     "breakeven5y": 2.4,
     "breakeven5y5y": 2.24,
-    "continuedClaims": 1702000
+    "continuedClaims": 1702000,
+    "fedBalanceSheet": 8705942,
+    "termSpread3m": -1.37,
+    "tbill3m": 4.68
   },
   {
     "date": "2023-04-07",
@@ -10467,7 +11511,10 @@
     "sofr": 4.81,
     "breakeven5y": 2.33,
     "breakeven5y5y": 2.17,
-    "continuedClaims": 1694000
+    "continuedClaims": 1694000,
+    "fedBalanceSheet": 8632384,
+    "termSpread3m": -1.56,
+    "tbill3m": 4.81
   },
   {
     "date": "2023-04-14",
@@ -10497,7 +11544,10 @@
     "sofr": 4.8,
     "breakeven5y": 2.31,
     "breakeven5y5y": 2.29,
-    "continuedClaims": 1739000
+    "continuedClaims": 1739000,
+    "fedBalanceSheet": 8614797,
+    "termSpread3m": -1.62,
+    "tbill3m": 4.98
   },
   {
     "date": "2023-04-21",
@@ -10527,7 +11577,10 @@
     "sofr": 4.8,
     "breakeven5y": 2.3,
     "breakeven5y5y": 2.26,
-    "continuedClaims": 1726000
+    "continuedClaims": 1726000,
+    "fedBalanceSheet": 8593263,
+    "termSpread3m": -1.57,
+    "tbill3m": 4.98
   },
   {
     "date": "2023-04-28",
@@ -10557,7 +11610,10 @@
     "sofr": 4.81,
     "breakeven5y": 2.2,
     "breakeven5y5y": 2.16,
-    "continuedClaims": 1708000
+    "continuedClaims": 1708000,
+    "fedBalanceSheet": 8562768,
+    "termSpread3m": -1.66,
+    "tbill3m": 4.95
   },
   {
     "date": "2023-05-05",
@@ -10587,7 +11643,10 @@
     "sofr": 5.06,
     "breakeven5y": 2.19,
     "breakeven5y5y": 2.23,
-    "continuedClaims": 1713000
+    "continuedClaims": 1713000,
+    "fedBalanceSheet": 8503994,
+    "termSpread3m": -1.82,
+    "tbill3m": 5.1
   },
   {
     "date": "2023-05-12",
@@ -10617,7 +11676,10 @@
     "sofr": 5.05,
     "breakeven5y": 2.11,
     "breakeven5y5y": 2.25,
-    "continuedClaims": 1713000
+    "continuedClaims": 1713000,
+    "fedBalanceSheet": 8503017,
+    "termSpread3m": -1.79,
+    "tbill3m": 5.08
   },
   {
     "date": "2023-05-19",
@@ -10647,7 +11709,10 @@
     "sofr": 5.05,
     "breakeven5y": 2.19,
     "breakeven5y5y": 2.29,
-    "continuedClaims": 1716000
+    "continuedClaims": 1716000,
+    "fedBalanceSheet": 8456760,
+    "termSpread3m": -1.59,
+    "tbill3m": 5.12
   },
   {
     "date": "2023-05-26",
@@ -10677,7 +11742,10 @@
     "sofr": 5.06,
     "breakeven5y": 2.13,
     "breakeven5y5y": 2.33,
-    "continuedClaims": 1744000
+    "continuedClaims": 1744000,
+    "fedBalanceSheet": 8436255,
+    "termSpread3m": -1.54,
+    "tbill3m": 5.16
   },
   {
     "date": "2023-06-02",
@@ -10707,7 +11775,10 @@
     "sofr": 5.07,
     "breakeven5y": 2.13,
     "breakeven5y5y": 2.23,
-    "continuedClaims": 1725000
+    "continuedClaims": 1725000,
+    "fedBalanceSheet": 8385854,
+    "termSpread3m": -1.81,
+    "tbill3m": 5.23
   },
   {
     "date": "2023-06-09",
@@ -10737,7 +11808,10 @@
     "sofr": 5.05,
     "breakeven5y": 2.13,
     "breakeven5y5y": 2.27,
-    "continuedClaims": 1751000
+    "continuedClaims": 1751000,
+    "fedBalanceSheet": 8389325,
+    "termSpread3m": -1.62,
+    "tbill3m": 5.11
   },
   {
     "date": "2023-06-16",
@@ -10767,7 +11841,10 @@
     "sofr": 5.05,
     "breakeven5y": 2.17,
     "breakeven5y5y": 2.27,
-    "continuedClaims": 1762000
+    "continuedClaims": 1762000,
+    "fedBalanceSheet": 8388323,
+    "termSpread3m": -1.57,
+    "tbill3m": 5.09
   },
   {
     "date": "2023-06-23",
@@ -10797,7 +11874,10 @@
     "sofr": 5.05,
     "breakeven5y": 2.16,
     "breakeven5y5y": 2.26,
-    "continuedClaims": 1753000
+    "continuedClaims": 1753000,
+    "fedBalanceSheet": 8362060,
+    "termSpread3m": -1.67,
+    "tbill3m": 5.15
   },
   {
     "date": "2023-06-30",
@@ -10827,7 +11907,10 @@
     "sofr": 5.09,
     "breakeven5y": 2.18,
     "breakeven5y5y": 2.26,
-    "continuedClaims": 1775000
+    "continuedClaims": 1775000,
+    "fedBalanceSheet": 8340914,
+    "termSpread3m": -1.62,
+    "tbill3m": 5.17
   },
   {
     "date": "2023-07-07",
@@ -10857,7 +11940,10 @@
     "sofr": 5.06,
     "breakeven5y": 2.22,
     "breakeven5y5y": 2.32,
-    "continuedClaims": 1774000
+    "continuedClaims": 1774000,
+    "fedBalanceSheet": 8298312,
+    "termSpread3m": -1.4,
+    "tbill3m": 5.22
   },
   {
     "date": "2023-07-14",
@@ -10887,7 +11973,10 @@
     "sofr": 5.05,
     "breakeven5y": 2.15,
     "breakeven5y5y": 2.33,
-    "continuedClaims": 1790000
+    "continuedClaims": 1790000,
+    "fedBalanceSheet": 8296923,
+    "termSpread3m": -1.66,
+    "tbill3m": 5.25
   },
   {
     "date": "2023-07-21",
@@ -10917,7 +12006,10 @@
     "sofr": 5.05,
     "breakeven5y": 2.23,
     "breakeven5y5y": 2.47,
-    "continuedClaims": 1770000
+    "continuedClaims": 1770000,
+    "fedBalanceSheet": 8274552,
+    "termSpread3m": -1.66,
+    "tbill3m": 5.27
   },
   {
     "date": "2023-07-28",
@@ -10947,7 +12039,10 @@
     "sofr": 5.3,
     "breakeven5y": 2.28,
     "breakeven5y5y": 2.48,
-    "continuedClaims": 1778000
+    "continuedClaims": 1778000,
+    "fedBalanceSheet": 8243344,
+    "termSpread3m": -1.56,
+    "tbill3m": 5.28
   },
   {
     "date": "2023-08-04",
@@ -10977,7 +12072,10 @@
     "sofr": 5.3,
     "breakeven5y": 2.26,
     "breakeven5y5y": 2.5,
-    "continuedClaims": 1774000
+    "continuedClaims": 1774000,
+    "fedBalanceSheet": 8206764,
+    "termSpread3m": -1.49,
+    "tbill3m": 5.28
   },
   {
     "date": "2023-08-11",
@@ -11007,7 +12105,10 @@
     "sofr": 5.3,
     "breakeven5y": 2.3,
     "breakeven5y5y": 2.42,
-    "continuedClaims": 1805000
+    "continuedClaims": 1805000,
+    "fedBalanceSheet": 8208241,
+    "termSpread3m": -1.38,
+    "tbill3m": 5.28
   },
   {
     "date": "2023-08-18",
@@ -11037,7 +12138,10 @@
     "sofr": 5.3,
     "breakeven5y": 2.22,
     "breakeven5y5y": 2.42,
-    "continuedClaims": 1797000
+    "continuedClaims": 1797000,
+    "fedBalanceSheet": 8145727,
+    "termSpread3m": -1.29,
+    "tbill3m": 5.28
   },
   {
     "date": "2023-08-25",
@@ -11067,7 +12171,10 @@
     "sofr": 5.3,
     "breakeven5y": 2.25,
     "breakeven5y5y": 2.41,
-    "continuedClaims": 1821000
+    "continuedClaims": 1821000,
+    "fedBalanceSheet": 8139066,
+    "termSpread3m": -1.36,
+    "tbill3m": 5.34
   },
   {
     "date": "2023-09-01",
@@ -11097,7 +12204,10 @@
     "sofr": 5.31,
     "breakeven5y": 2.17,
     "breakeven5y5y": 2.35,
-    "continuedClaims": 1804000
+    "continuedClaims": 1804000,
+    "fedBalanceSheet": 8121316,
+    "termSpread3m": -1.35,
+    "tbill3m": 5.3
   },
   {
     "date": "2023-09-08",
@@ -11127,7 +12237,10 @@
     "sofr": 5.3,
     "breakeven5y": 2.26,
     "breakeven5y5y": 2.4,
-    "continuedClaims": 1812000
+    "continuedClaims": 1812000,
+    "fedBalanceSheet": 8101318,
+    "termSpread3m": -1.29,
+    "tbill3m": 5.31
   },
   {
     "date": "2023-09-15",
@@ -11157,7 +12270,10 @@
     "sofr": 5.31,
     "breakeven5y": 2.27,
     "breakeven5y5y": 2.43,
-    "continuedClaims": 1797000
+    "continuedClaims": 1797000,
+    "fedBalanceSheet": 8098779,
+    "termSpread3m": -1.23,
+    "tbill3m": 5.32
   },
   {
     "date": "2023-09-22",
@@ -11187,7 +12303,10 @@
     "sofr": 5.3,
     "breakeven5y": 2.29,
     "breakeven5y5y": 2.45,
-    "continuedClaims": 1801000
+    "continuedClaims": 1801000,
+    "fedBalanceSheet": 8024090,
+    "termSpread3m": -1.12,
+    "tbill3m": 5.32
   },
   {
     "date": "2023-09-29",
@@ -11217,7 +12336,10 @@
     "sofr": 5.31,
     "breakeven5y": 2.22,
     "breakeven5y5y": 2.48,
-    "continuedClaims": 1793000
+    "continuedClaims": 1793000,
+    "fedBalanceSheet": 8002064,
+    "termSpread3m": -0.96,
+    "tbill3m": 5.32
   },
   {
     "date": "2023-10-06",
@@ -11247,7 +12369,10 @@
     "sofr": 5.31,
     "breakeven5y": 2.17,
     "breakeven5y5y": 2.45,
-    "continuedClaims": 1798000
+    "continuedClaims": 1798000,
+    "fedBalanceSheet": 7955782,
+    "termSpread3m": -0.85,
+    "tbill3m": 5.36
   },
   {
     "date": "2023-10-13",
@@ -11277,7 +12402,10 @@
     "sofr": 5.31,
     "breakeven5y": 2.26,
     "breakeven5y5y": 2.42,
-    "continuedClaims": 1806000
+    "continuedClaims": 1806000,
+    "fedBalanceSheet": 7952054,
+    "termSpread3m": -0.99,
+    "tbill3m": 5.35
   },
   {
     "date": "2023-10-20",
@@ -11307,7 +12435,10 @@
     "sofr": 5.3,
     "breakeven5y": 2.47,
     "breakeven5y5y": 2.47,
-    "continuedClaims": 1804000
+    "continuedClaims": 1804000,
+    "fedBalanceSheet": 7933162,
+    "termSpread3m": -0.65,
+    "tbill3m": 5.31
   },
   {
     "date": "2023-10-27",
@@ -11337,7 +12468,10 @@
     "sofr": 5.31,
     "breakeven5y": 2.39,
     "breakeven5y5y": 2.45,
-    "continuedClaims": 1812000
+    "continuedClaims": 1812000,
+    "fedBalanceSheet": 7907830,
+    "termSpread3m": -0.75,
+    "tbill3m": 5.32
   },
   {
     "date": "2023-11-03",
@@ -11367,7 +12501,10 @@
     "sofr": 5.32,
     "breakeven5y": 2.32,
     "breakeven5y5y": 2.46,
-    "continuedClaims": 1819000
+    "continuedClaims": 1819000,
+    "fedBalanceSheet": 7866664,
+    "termSpread3m": -0.96,
+    "tbill3m": 5.27
   },
   {
     "date": "2023-11-10",
@@ -11397,7 +12534,10 @@
     "sofr": 5.32,
     "breakeven5y": 2.28,
     "breakeven5y5y": 2.36,
-    "continuedClaims": 1802000
+    "continuedClaims": 1802000,
+    "fedBalanceSheet": 7860691,
+    "termSpread3m": -0.92,
+    "tbill3m": 5.26
   },
   {
     "date": "2023-11-17",
@@ -11427,7 +12567,10 @@
     "sofr": 5.32,
     "breakeven5y": 2.23,
     "breakeven5y5y": 2.33,
-    "continuedClaims": 1787000
+    "continuedClaims": 1787000,
+    "fedBalanceSheet": 7814991,
+    "termSpread3m": -1.06,
+    "tbill3m": 5.25
   },
   {
     "date": "2023-11-24",
@@ -11457,7 +12600,10 @@
     "sofr": 5.32,
     "breakeven5y": 2.21,
     "breakeven5y5y": 2.31,
-    "continuedClaims": 1803000
+    "continuedClaims": 1803000,
+    "fedBalanceSheet": 7810814,
+    "termSpread3m": -1.07,
+    "tbill3m": 5.28
   },
   {
     "date": "2023-12-01",
@@ -11487,7 +12633,10 @@
     "sofr": 5.39,
     "breakeven5y": 2.12,
     "breakeven5y5y": 2.32,
-    "continuedClaims": 1812000
+    "continuedClaims": 1812000,
+    "fedBalanceSheet": 7796145,
+    "termSpread3m": -1.21,
+    "tbill3m": 5.23
   },
   {
     "date": "2023-12-08",
@@ -11517,7 +12666,10 @@
     "sofr": 5.32,
     "breakeven5y": 2.11,
     "breakeven5y5y": 2.31,
-    "continuedClaims": 1814000
+    "continuedClaims": 1814000,
+    "fedBalanceSheet": 7737385,
+    "termSpread3m": -1.21,
+    "tbill3m": 5.24
   },
   {
     "date": "2023-12-15",
@@ -11547,7 +12699,10 @@
     "sofr": 5.32,
     "breakeven5y": 2.17,
     "breakeven5y5y": 2.27,
-    "continuedClaims": 1801000
+    "continuedClaims": 1801000,
+    "fedBalanceSheet": 7739566,
+    "termSpread3m": -1.53,
+    "tbill3m": 5.24
   },
   {
     "date": "2023-12-22",
@@ -11577,7 +12732,10 @@
     "sofr": 5.32,
     "breakeven5y": 2.16,
     "breakeven5y5y": 2.22,
-    "continuedClaims": 1801000
+    "continuedClaims": 1801000,
+    "fedBalanceSheet": 7724063,
+    "termSpread3m": -1.54,
+    "tbill3m": 5.24
   },
   {
     "date": "2023-12-29",
@@ -11607,7 +12765,10 @@
     "sofr": 5.38,
     "breakeven5y": 2.12,
     "breakeven5y5y": 2.2,
-    "continuedClaims": 1815000
+    "continuedClaims": 1815000,
+    "fedBalanceSheet": 7712781,
+    "termSpread3m": -1.52,
+    "tbill3m": 5.2
   },
   {
     "date": "2024-01-05",
@@ -11637,7 +12798,10 @@
     "sofr": 5.31,
     "breakeven5y": 2.19,
     "breakeven5y5y": 2.25,
-    "continuedClaims": 1751000
+    "continuedClaims": 1751000,
+    "fedBalanceSheet": 7681024,
+    "termSpread3m": -1.42,
+    "tbill3m": 5.24
   },
   {
     "date": "2024-01-12",
@@ -11667,7 +12831,10 @@
     "sofr": 5.31,
     "breakeven5y": 2.22,
     "breakeven5y5y": 2.32,
-    "continuedClaims": 1723000
+    "continuedClaims": 1723000,
+    "fedBalanceSheet": 7686710,
+    "termSpread3m": -1.49,
+    "tbill3m": 5.22
   },
   {
     "date": "2024-01-19",
@@ -11697,7 +12864,10 @@
     "sofr": 5.31,
     "breakeven5y": 2.3,
     "breakeven5y5y": 2.38,
-    "continuedClaims": 1753000
+    "continuedClaims": 1753000,
+    "fedBalanceSheet": 7673741,
+    "termSpread3m": -1.3,
+    "tbill3m": 5.22
   },
   {
     "date": "2024-01-26",
@@ -11727,7 +12897,10 @@
     "sofr": 5.32,
     "breakeven5y": 2.26,
     "breakeven5y5y": 2.34,
-    "continuedClaims": 1829000
+    "continuedClaims": 1829000,
+    "fedBalanceSheet": 7677230,
+    "termSpread3m": -1.29,
+    "tbill3m": 5.21
   },
   {
     "date": "2024-02-02",
@@ -11757,7 +12930,10 @@
     "sofr": 5.32,
     "breakeven5y": 2.19,
     "breakeven5y5y": 2.23,
-    "continuedClaims": 1804000
+    "continuedClaims": 1804000,
+    "fedBalanceSheet": 7630124,
+    "termSpread3m": -1.4,
+    "tbill3m": 5.23
   },
   {
     "date": "2024-02-09",
@@ -11787,7 +12963,10 @@
     "sofr": 5.31,
     "breakeven5y": 2.28,
     "breakeven5y5y": 2.22,
-    "continuedClaims": 1800000
+    "continuedClaims": 1800000,
+    "fedBalanceSheet": 7631300,
+    "termSpread3m": -1.27,
+    "tbill3m": 5.24
   },
   {
     "date": "2024-02-16",
@@ -11817,7 +12996,10 @@
     "sofr": 5.3,
     "breakeven5y": 2.38,
     "breakeven5y5y": 2.28,
-    "continuedClaims": 1784000
+    "continuedClaims": 1784000,
+    "fedBalanceSheet": 7633874,
+    "termSpread3m": -1.14,
+    "tbill3m": 5.24
   },
   {
     "date": "2024-02-23",
@@ -11847,7 +13029,10 @@
     "sofr": 5.31,
     "breakeven5y": 2.34,
     "breakeven5y5y": 2.26,
-    "continuedClaims": 1802000
+    "continuedClaims": 1802000,
+    "fedBalanceSheet": 7581683,
+    "termSpread3m": -1.2,
+    "tbill3m": 5.26
   },
   {
     "date": "2024-03-01",
@@ -11877,7 +13062,10 @@
     "sofr": 5.31,
     "breakeven5y": 2.4,
     "breakeven5y5y": 2.24,
-    "continuedClaims": 1788000
+    "continuedClaims": 1788000,
+    "fedBalanceSheet": 7567807,
+    "termSpread3m": -1.23,
+    "tbill3m": 5.23
   },
   {
     "date": "2024-03-08",
@@ -11907,7 +13095,10 @@
     "sofr": 5.31,
     "breakeven5y": 2.34,
     "breakeven5y5y": 2.22,
-    "continuedClaims": 1800000
+    "continuedClaims": 1800000,
+    "fedBalanceSheet": 7538857,
+    "termSpread3m": -1.37,
+    "tbill3m": 5.24
   },
   {
     "date": "2024-03-15",
@@ -11937,7 +13128,10 @@
     "sofr": 5.31,
     "breakeven5y": 2.39,
     "breakeven5y5y": 2.25,
-    "continuedClaims": 1790000
+    "continuedClaims": 1790000,
+    "fedBalanceSheet": 7541969,
+    "termSpread3m": -1.17,
+    "tbill3m": 5.25
   },
   {
     "date": "2024-03-22",
@@ -11967,7 +13161,10 @@
     "sofr": 5.31,
     "breakeven5y": 2.41,
     "breakeven5y5y": 2.29,
-    "continuedClaims": 1807000
+    "continuedClaims": 1807000,
+    "fedBalanceSheet": 7514348,
+    "termSpread3m": -1.24,
+    "tbill3m": 5.24
   },
   {
     "date": "2024-03-29",
@@ -11997,7 +13194,10 @@
     "sofr": 5.34,
     "breakeven5y": 2.38,
     "breakeven5y5y": 2.26,
-    "continuedClaims": 1788000
+    "continuedClaims": 1788000,
+    "fedBalanceSheet": 7484739,
+    "termSpread3m": -1.26,
+    "tbill3m": 5.23
   },
   {
     "date": "2024-04-05",
@@ -12027,7 +13227,10 @@
     "sofr": 5.32,
     "breakeven5y": 2.45,
     "breakeven5y5y": 2.29,
-    "continuedClaims": 1810000
+    "continuedClaims": 1810000,
+    "fedBalanceSheet": 7439558,
+    "termSpread3m": -1.04,
+    "tbill3m": 5.23
   },
   {
     "date": "2024-04-12",
@@ -12057,7 +13260,10 @@
     "sofr": 5.31,
     "breakeven5y": 2.47,
     "breakeven5y5y": 2.31,
-    "continuedClaims": 1797000
+    "continuedClaims": 1797000,
+    "fedBalanceSheet": 7438176,
+    "termSpread3m": -0.95,
+    "tbill3m": 5.25
   },
   {
     "date": "2024-04-19",
@@ -12087,7 +13293,10 @@
     "sofr": 5.31,
     "breakeven5y": 2.44,
     "breakeven5y5y": 2.38,
-    "continuedClaims": 1781000
+    "continuedClaims": 1781000,
+    "fedBalanceSheet": 7405506,
+    "termSpread3m": -0.83,
+    "tbill3m": 5.25
   },
   {
     "date": "2024-04-26",
@@ -12117,7 +13326,10 @@
     "sofr": 5.32,
     "breakeven5y": 2.44,
     "breakeven5y5y": 2.42,
-    "continuedClaims": 1769000
+    "continuedClaims": 1769000,
+    "fedBalanceSheet": 7402434,
+    "termSpread3m": -0.79,
+    "tbill3m": 5.25
   },
   {
     "date": "2024-05-03",
@@ -12147,7 +13359,10 @@
     "sofr": 5.31,
     "breakeven5y": 2.35,
     "breakeven5y5y": 2.35,
-    "continuedClaims": 1788000
+    "continuedClaims": 1788000,
+    "fedBalanceSheet": 7362474,
+    "termSpread3m": -0.95,
+    "tbill3m": 5.25
   },
   {
     "date": "2024-05-10",
@@ -12177,7 +13392,10 @@
     "sofr": 5.31,
     "breakeven5y": 2.34,
     "breakeven5y5y": 2.34,
-    "continuedClaims": 1792000
+    "continuedClaims": 1792000,
+    "fedBalanceSheet": 7353408,
+    "termSpread3m": -0.97,
+    "tbill3m": 5.26
   },
   {
     "date": "2024-05-17",
@@ -12207,7 +13425,10 @@
     "sofr": 5.31,
     "breakeven5y": 2.32,
     "breakeven5y5y": 2.32,
-    "continuedClaims": 1791000
+    "continuedClaims": 1791000,
+    "fedBalanceSheet": 7304272,
+    "termSpread3m": -1.04,
+    "tbill3m": 5.25
   },
   {
     "date": "2024-05-24",
@@ -12237,7 +13458,10 @@
     "sofr": 5.32,
     "breakeven5y": 2.33,
     "breakeven5y5y": 2.31,
-    "continuedClaims": 1808000
+    "continuedClaims": 1808000,
+    "fedBalanceSheet": 7299566,
+    "termSpread3m": -1,
+    "tbill3m": 5.26
   },
   {
     "date": "2024-05-31",
@@ -12267,7 +13491,10 @@
     "sofr": 5.34,
     "breakeven5y": 2.34,
     "breakeven5y5y": 2.36,
-    "continuedClaims": 1804000
+    "continuedClaims": 1804000,
+    "fedBalanceSheet": 7284319,
+    "termSpread3m": -0.95,
+    "tbill3m": 5.25
   },
   {
     "date": "2024-06-07",
@@ -12297,7 +13524,10 @@
     "sofr": 5.33,
     "breakeven5y": 2.28,
     "breakeven5y5y": 2.32,
-    "continuedClaims": 1821000
+    "continuedClaims": 1821000,
+    "fedBalanceSheet": 7255687,
+    "termSpread3m": -1.09,
+    "tbill3m": 5.26
   },
   {
     "date": "2024-06-14",
@@ -12327,7 +13557,10 @@
     "sofr": 5.31,
     "breakeven5y": 2.11,
     "breakeven5y5y": 2.23,
-    "continuedClaims": 1830000
+    "continuedClaims": 1830000,
+    "fedBalanceSheet": 7258974,
+    "termSpread3m": -1.31,
+    "tbill3m": 5.25
   },
   {
     "date": "2024-06-21",
@@ -12357,7 +13590,10 @@
     "sofr": 5.31,
     "breakeven5y": 2.19,
     "breakeven5y5y": 2.27,
-    "continuedClaims": 1839000
+    "continuedClaims": 1839000,
+    "fedBalanceSheet": 7252542,
+    "termSpread3m": -1.24,
+    "tbill3m": 5.23
   },
   {
     "date": "2024-06-28",
@@ -12387,7 +13623,10 @@
     "sofr": 5.33,
     "breakeven5y": 2.24,
     "breakeven5y5y": 2.32,
-    "continuedClaims": 1862000
+    "continuedClaims": 1862000,
+    "fedBalanceSheet": 7231163,
+    "termSpread3m": -1.12,
+    "tbill3m": 5.22
   },
   {
     "date": "2024-07-05",
@@ -12417,7 +13656,10 @@
     "sofr": 5.32,
     "breakeven5y": 2.22,
     "breakeven5y5y": 2.34,
-    "continuedClaims": 1853000
+    "continuedClaims": 1853000,
+    "fedBalanceSheet": 7221520,
+    "termSpread3m": -1.18,
+    "tbill3m": 5.23
   },
   {
     "date": "2024-07-12",
@@ -12447,7 +13689,10 @@
     "sofr": 5.34,
     "breakeven5y": 2.15,
     "breakeven5y5y": 2.33,
-    "continuedClaims": 1864000
+    "continuedClaims": 1864000,
+    "fedBalanceSheet": 7224079,
+    "termSpread3m": -1.25,
+    "tbill3m": 5.21
   },
   {
     "date": "2024-07-19",
@@ -12477,7 +13722,10 @@
     "sofr": 5.34,
     "breakeven5y": 2.18,
     "breakeven5y5y": 2.46,
-    "continuedClaims": 1848000
+    "continuedClaims": 1848000,
+    "fedBalanceSheet": 7208247,
+    "termSpread3m": -1.18,
+    "tbill3m": 5.2
   },
   {
     "date": "2024-07-26",
@@ -12507,7 +13755,10 @@
     "sofr": 5.35,
     "breakeven5y": 2.13,
     "breakeven5y5y": 2.41,
-    "continuedClaims": 1873000
+    "continuedClaims": 1873000,
+    "fedBalanceSheet": 7205455,
+    "termSpread3m": -1.18,
+    "tbill3m": 5.16
   },
   {
     "date": "2024-08-02",
@@ -12537,7 +13788,10 @@
     "sofr": 5.35,
     "breakeven5y": 1.89,
     "breakeven5y5y": 2.19,
-    "continuedClaims": 1871000
+    "continuedClaims": 1871000,
+    "fedBalanceSheet": 7178391,
+    "termSpread3m": -1.49,
+    "tbill3m": 5.05
   },
   {
     "date": "2024-08-09",
@@ -12567,7 +13821,10 @@
     "sofr": 5.34,
     "breakeven5y": 1.96,
     "breakeven5y5y": 2.24,
-    "continuedClaims": 1863000
+    "continuedClaims": 1863000,
+    "fedBalanceSheet": 7175256,
+    "termSpread3m": -1.39,
+    "tbill3m": 5.09
   },
   {
     "date": "2024-08-16",
@@ -12597,7 +13854,10 @@
     "sofr": 5.32,
     "breakeven5y": 1.97,
     "breakeven5y5y": 2.19,
-    "continuedClaims": 1855000
+    "continuedClaims": 1855000,
+    "fedBalanceSheet": 7177688,
+    "termSpread3m": -1.44,
+    "tbill3m": 5.08
   },
   {
     "date": "2024-08-23",
@@ -12627,7 +13887,10 @@
     "sofr": 5.33,
     "breakeven5y": 2.01,
     "breakeven5y5y": 2.25,
-    "continuedClaims": 1862000
+    "continuedClaims": 1862000,
+    "fedBalanceSheet": 7139952,
+    "termSpread3m": -1.44,
+    "tbill3m": 5.01
   },
   {
     "date": "2024-08-30",
@@ -12657,7 +13920,10 @@
     "sofr": 5.32,
     "breakeven5y": 2.01,
     "breakeven5y5y": 2.29,
-    "continuedClaims": 1847000
+    "continuedClaims": 1847000,
+    "fedBalanceSheet": 7123238,
+    "termSpread3m": -1.3,
+    "tbill3m": 4.98
   },
   {
     "date": "2024-09-06",
@@ -12687,7 +13953,10 @@
     "sofr": 5.34,
     "breakeven5y": 1.86,
     "breakeven5y5y": 2.2,
-    "continuedClaims": 1845000
+    "continuedClaims": 1845000,
+    "fedBalanceSheet": 7112567,
+    "termSpread3m": -1.41,
+    "tbill3m": 4.93
   },
   {
     "date": "2024-09-13",
@@ -12717,7 +13986,10 @@
     "sofr": 5.33,
     "breakeven5y": 1.95,
     "breakeven5y5y": 2.21,
-    "continuedClaims": 1825000
+    "continuedClaims": 1825000,
+    "fedBalanceSheet": 7115001,
+    "termSpread3m": -1.31,
+    "tbill3m": 4.78
   },
   {
     "date": "2024-09-20",
@@ -12747,7 +14019,10 @@
     "sofr": 4.83,
     "breakeven5y": 2.02,
     "breakeven5y5y": 2.28,
-    "continuedClaims": 1831000
+    "continuedClaims": 1831000,
+    "fedBalanceSheet": 7109137,
+    "termSpread3m": -1.02,
+    "tbill3m": 4.56
   },
   {
     "date": "2024-09-27",
@@ -12777,7 +14052,10 @@
     "sofr": 4.84,
     "breakeven5y": 2.03,
     "breakeven5y5y": 2.27,
-    "continuedClaims": 1825000
+    "continuedClaims": 1825000,
+    "fedBalanceSheet": 7080059,
+    "termSpread3m": -0.93,
+    "tbill3m": 4.5
   },
   {
     "date": "2024-10-04",
@@ -12807,7 +14085,10 @@
     "sofr": 4.83,
     "breakeven5y": 2.14,
     "breakeven5y5y": 2.32,
-    "continuedClaims": 1858000
+    "continuedClaims": 1858000,
+    "fedBalanceSheet": 7046925,
+    "termSpread3m": -0.75,
+    "tbill3m": 4.53
   },
   {
     "date": "2024-10-11",
@@ -12837,7 +14118,10 @@
     "sofr": 4.81,
     "breakeven5y": 2.25,
     "breakeven5y5y": 2.41,
-    "continuedClaims": 1869000
+    "continuedClaims": 1869000,
+    "fedBalanceSheet": 7046840,
+    "termSpread3m": -0.65,
+    "tbill3m": 4.53
   },
   {
     "date": "2024-10-18",
@@ -12867,7 +14151,10 @@
     "sofr": 4.84,
     "breakeven5y": 2.23,
     "breakeven5y5y": 2.39,
-    "continuedClaims": 1882000
+    "continuedClaims": 1882000,
+    "fedBalanceSheet": 7039284,
+    "termSpread3m": -0.65,
+    "tbill3m": 4.53
   },
   {
     "date": "2024-10-25",
@@ -12897,7 +14184,10 @@
     "sofr": 4.83,
     "breakeven5y": 2.32,
     "breakeven5y5y": 2.26,
-    "continuedClaims": 1853000
+    "continuedClaims": 1853000,
+    "fedBalanceSheet": 7029408,
+    "termSpread3m": -0.48,
+    "tbill3m": 4.52
   },
   {
     "date": "2024-11-01",
@@ -12927,7 +14217,10 @@
     "sofr": 4.86,
     "breakeven5y": 2.37,
     "breakeven5y5y": 2.29,
-    "continuedClaims": 1876000
+    "continuedClaims": 1876000,
+    "fedBalanceSheet": 7013490,
+    "termSpread3m": -0.24,
+    "tbill3m": 4.41
   },
   {
     "date": "2024-11-08",
@@ -12957,7 +14250,10 @@
     "sofr": 4.6,
     "breakeven5y": 2.43,
     "breakeven5y5y": 2.27,
-    "continuedClaims": 1870000
+    "continuedClaims": 1870000,
+    "fedBalanceSheet": 6994299,
+    "termSpread3m": -0.33,
+    "tbill3m": 4.43
   },
   {
     "date": "2024-11-15",
@@ -12987,7 +14283,10 @@
     "sofr": 4.57,
     "breakeven5y": 2.39,
     "breakeven5y5y": 2.27,
-    "continuedClaims": 1887000
+    "continuedClaims": 1887000,
+    "fedBalanceSheet": 6967108,
+    "termSpread3m": -0.17,
+    "tbill3m": 4.41
   },
   {
     "date": "2024-11-22",
@@ -13017,7 +14316,10 @@
     "sofr": 4.57,
     "breakeven5y": 2.43,
     "breakeven5y5y": 2.25,
-    "continuedClaims": 1887000
+    "continuedClaims": 1887000,
+    "fedBalanceSheet": 6923731,
+    "termSpread3m": -0.22,
+    "tbill3m": 4.43
   },
   {
     "date": "2024-11-29",
@@ -13047,7 +14349,10 @@
     "sofr": 4.59,
     "breakeven5y": 2.33,
     "breakeven5y5y": 2.19,
-    "continuedClaims": 1866000
+    "continuedClaims": 1866000,
+    "fedBalanceSheet": 6905140,
+    "termSpread3m": -0.4,
+    "tbill3m": 4.39
   },
   {
     "date": "2024-12-06",
@@ -13077,7 +14382,10 @@
     "sofr": 4.6,
     "breakeven5y": 2.31,
     "breakeven5y5y": 2.17,
-    "continuedClaims": 1859000
+    "continuedClaims": 1859000,
+    "fedBalanceSheet": 6895827,
+    "termSpread3m": -0.27,
+    "tbill3m": 4.31
   },
   {
     "date": "2024-12-13",
@@ -13107,7 +14415,10 @@
     "sofr": 4.6,
     "breakeven5y": 2.4,
     "breakeven5y5y": 2.26,
-    "continuedClaims": 1865000
+    "continuedClaims": 1865000,
+    "fedBalanceSheet": 6897485,
+    "termSpread3m": 0.06,
+    "tbill3m": 4.23
   },
   {
     "date": "2024-12-20",
@@ -13137,7 +14448,10 @@
     "sofr": 4.3,
     "breakeven5y": 2.34,
     "breakeven5y5y": 2.24,
-    "continuedClaims": 1881000
+    "continuedClaims": 1881000,
+    "fedBalanceSheet": 6889332,
+    "termSpread3m": 0.18,
+    "tbill3m": 4.23
   },
   {
     "date": "2024-12-27",
@@ -13167,7 +14481,10 @@
     "sofr": 4.46,
     "breakeven5y": 2.38,
     "breakeven5y5y": 2.3,
-    "continuedClaims": 1833000
+    "continuedClaims": 1833000,
+    "fedBalanceSheet": 6885963,
+    "termSpread3m": 0.31,
+    "tbill3m": 4.19
   },
   {
     "date": "2025-01-03",
@@ -13197,7 +14514,10 @@
     "sofr": 4.31,
     "breakeven5y": 2.4,
     "breakeven5y5y": 2.28,
-    "continuedClaims": 1868000
+    "continuedClaims": 1868000,
+    "fedBalanceSheet": 6852491,
+    "termSpread3m": 0.26,
+    "tbill3m": 4.2
   },
   {
     "date": "2025-01-10",
@@ -13227,7 +14547,10 @@
     "sofr": 4.3,
     "breakeven5y": 2.51,
     "breakeven5y5y": 2.35,
-    "continuedClaims": 1850000
+    "continuedClaims": 1850000,
+    "fedBalanceSheet": 6853554,
+    "termSpread3m": 0.41,
+    "tbill3m": 4.22
   },
   {
     "date": "2025-01-17",
@@ -13257,7 +14580,10 @@
     "sofr": 4.29,
     "breakeven5y": 2.52,
     "breakeven5y5y": 2.3,
-    "continuedClaims": 1891000
+    "continuedClaims": 1891000,
+    "fedBalanceSheet": 6834070,
+    "termSpread3m": 0.27,
+    "tbill3m": 4.2
   },
   {
     "date": "2025-01-24",
@@ -13287,7 +14613,10 @@
     "sofr": 4.34,
     "breakeven5y": 2.52,
     "breakeven5y5y": 2.34,
-    "continuedClaims": 1854000
+    "continuedClaims": 1854000,
+    "fedBalanceSheet": 6831760,
+    "termSpread3m": 0.28,
+    "tbill3m": 4.21
   },
   {
     "date": "2025-01-31",
@@ -13317,7 +14646,10 @@
     "sofr": 4.38,
     "breakeven5y": 2.54,
     "breakeven5y5y": 2.3,
-    "continuedClaims": 1876000
+    "continuedClaims": 1876000,
+    "fedBalanceSheet": 6818186,
+    "termSpread3m": 0.27,
+    "tbill3m": 4.2
   },
   {
     "date": "2025-02-07",
@@ -13347,7 +14679,10 @@
     "sofr": 4.35,
     "breakeven5y": 2.59,
     "breakeven5y5y": 2.25,
-    "continuedClaims": 1840000
+    "continuedClaims": 1840000,
+    "fedBalanceSheet": 6810935,
+    "termSpread3m": 0.14,
+    "tbill3m": 4.24
   },
   {
     "date": "2025-02-14",
@@ -13377,7 +14712,10 @@
     "sofr": 4.33,
     "breakeven5y": 2.62,
     "breakeven5y5y": 2.24,
-    "continuedClaims": 1862000
+    "continuedClaims": 1862000,
+    "fedBalanceSheet": 6813513,
+    "termSpread3m": 0.13,
+    "tbill3m": 4.22
   },
   {
     "date": "2025-02-21",
@@ -13407,7 +14745,10 @@
     "sofr": 4.34,
     "breakeven5y": 2.61,
     "breakeven5y5y": 2.23,
-    "continuedClaims": 1849000
+    "continuedClaims": 1849000,
+    "fedBalanceSheet": 6782332,
+    "termSpread3m": 0.1,
+    "tbill3m": 4.21
   },
   {
     "date": "2025-02-28",
@@ -13437,7 +14778,10 @@
     "sofr": 4.39,
     "breakeven5y": 2.58,
     "breakeven5y5y": 2.18,
-    "continuedClaims": 1889000
+    "continuedClaims": 1889000,
+    "fedBalanceSheet": 6766101,
+    "termSpread3m": -0.08,
+    "tbill3m": 4.2
   },
   {
     "date": "2025-03-07",
@@ -13467,7 +14811,10 @@
     "sofr": 4.34,
     "breakeven5y": 2.52,
     "breakeven5y5y": 2.14,
-    "continuedClaims": 1857000
+    "continuedClaims": 1857000,
+    "fedBalanceSheet": 6756764,
+    "termSpread3m": -0.02,
+    "tbill3m": 4.2
   },
   {
     "date": "2025-03-14",
@@ -13497,7 +14844,10 @@
     "sofr": 4.3,
     "breakeven5y": 2.48,
     "breakeven5y5y": 2.12,
-    "continuedClaims": 1876000
+    "continuedClaims": 1876000,
+    "fedBalanceSheet": 6759571,
+    "termSpread3m": -0.02,
+    "tbill3m": 4.2
   },
   {
     "date": "2025-03-21",
@@ -13527,7 +14877,10 @@
     "sofr": 4.3,
     "breakeven5y": 2.51,
     "breakeven5y5y": 2.15,
-    "continuedClaims": 1852000
+    "continuedClaims": 1852000,
+    "fedBalanceSheet": 6755982,
+    "termSpread3m": -0.08,
+    "tbill3m": 4.19
   },
   {
     "date": "2025-03-28",
@@ -13557,7 +14910,10 @@
     "sofr": 4.34,
     "breakeven5y": 2.58,
     "breakeven5y5y": 2.16,
-    "continuedClaims": 1889000
+    "continuedClaims": 1889000,
+    "fedBalanceSheet": 6740253,
+    "termSpread3m": -0.06,
+    "tbill3m": 4.2
   },
   {
     "date": "2025-04-04",
@@ -13587,7 +14943,10 @@
     "sofr": 4.35,
     "breakeven5y": 2.34,
     "breakeven5y5y": 2.02,
-    "continuedClaims": 1852000
+    "continuedClaims": 1852000,
+    "fedBalanceSheet": 6723452,
+    "termSpread3m": -0.27,
+    "tbill3m": 4.17
   },
   {
     "date": "2025-04-11",
@@ -13617,7 +14976,10 @@
     "sofr": 4.33,
     "breakeven5y": 2.33,
     "breakeven5y5y": 2.07,
-    "continuedClaims": 1876000
+    "continuedClaims": 1876000,
+    "fedBalanceSheet": 6727416,
+    "termSpread3m": 0.14,
+    "tbill3m": 4.23
   },
   {
     "date": "2025-04-18",
@@ -13647,7 +15009,10 @@
     "sofr": 4.32,
     "breakeven5y": 2.26,
     "breakeven5y5y": 2.2,
-    "continuedClaims": 1840000
+    "continuedClaims": 1840000,
+    "fedBalanceSheet": 6727113,
+    "termSpread3m": 0,
+    "tbill3m": 4.23
   },
   {
     "date": "2025-04-25",
@@ -13677,7 +15042,10 @@
     "sofr": 4.33,
     "breakeven5y": 2.32,
     "breakeven5y5y": 2.22,
-    "continuedClaims": 1906000
+    "continuedClaims": 1906000,
+    "fedBalanceSheet": 6726930,
+    "termSpread3m": -0.03,
+    "tbill3m": 4.21
   },
   {
     "date": "2025-05-02",
@@ -13707,7 +15075,10 @@
     "sofr": 4.36,
     "breakeven5y": 2.31,
     "breakeven5y5y": 2.23,
-    "continuedClaims": 1876000
+    "continuedClaims": 1876000,
+    "fedBalanceSheet": 6709277,
+    "termSpread3m": 0,
+    "tbill3m": 4.22
   },
   {
     "date": "2025-05-09",
@@ -13737,7 +15108,10 @@
     "sofr": 4.28,
     "breakeven5y": 2.39,
     "breakeven5y5y": 2.19,
-    "continuedClaims": 1884000
+    "continuedClaims": 1884000,
+    "fedBalanceSheet": 6710889,
+    "termSpread3m": 0.03,
+    "tbill3m": 4.22
   },
   {
     "date": "2025-05-16",
@@ -13767,7 +15141,10 @@
     "sofr": 4.3,
     "breakeven5y": 2.42,
     "breakeven5y5y": 2.26,
-    "continuedClaims": 1889000
+    "continuedClaims": 1889000,
+    "fedBalanceSheet": 6713270,
+    "termSpread3m": 0.06,
+    "tbill3m": 4.25
   },
   {
     "date": "2025-05-23",
@@ -13797,7 +15174,10 @@
     "sofr": 4.26,
     "breakeven5y": 2.4,
     "breakeven5y5y": 2.26,
-    "continuedClaims": 1917000
+    "continuedClaims": 1917000,
+    "fedBalanceSheet": 6688726,
+    "termSpread3m": 0.15,
+    "tbill3m": 4.24
   },
   {
     "date": "2025-05-30",
@@ -13827,7 +15207,10 @@
     "sofr": 4.35,
     "breakeven5y": 2.39,
     "breakeven5y5y": 2.29,
-    "continuedClaims": 1896000
+    "continuedClaims": 1896000,
+    "fedBalanceSheet": 6673244,
+    "termSpread3m": 0.05,
+    "tbill3m": 4.25
   },
   {
     "date": "2025-06-06",
@@ -13857,7 +15240,10 @@
     "sofr": 4.29,
     "breakeven5y": 2.35,
     "breakeven5y5y": 2.27,
-    "continuedClaims": 1947000
+    "continuedClaims": 1947000,
+    "fedBalanceSheet": 6672885,
+    "termSpread3m": 0.08,
+    "tbill3m": 4.25
   },
   {
     "date": "2025-06-13",
@@ -13887,7 +15273,10 @@
     "sofr": 4.28,
     "breakeven5y": 2.31,
     "breakeven5y5y": 2.25,
-    "continuedClaims": 1935000
+    "continuedClaims": 1935000,
+    "fedBalanceSheet": 6677155,
+    "termSpread3m": -0.04,
+    "tbill3m": 4.26
   },
   {
     "date": "2025-06-20",
@@ -13917,7 +15306,10 @@
     "sofr": 4.29,
     "breakeven5y": 2.37,
     "breakeven5y5y": 2.29,
-    "continuedClaims": 1960000
+    "continuedClaims": 1960000,
+    "fedBalanceSheet": 6681056,
+    "termSpread3m": -0.01,
+    "tbill3m": 4.21
   },
   {
     "date": "2025-06-27",
@@ -13947,7 +15339,10 @@
     "sofr": 4.39,
     "breakeven5y": 2.31,
     "breakeven5y5y": 2.27,
-    "continuedClaims": 1954000
+    "continuedClaims": 1954000,
+    "fedBalanceSheet": 6662200,
+    "termSpread3m": -0.1,
+    "tbill3m": 4.2
   },
   {
     "date": "2025-07-04",
@@ -13977,7 +15372,10 @@
     "sofr": 4.35,
     "breakeven5y": 2.37,
     "breakeven5y5y": 2.29,
-    "continuedClaims": 1952000
+    "continuedClaims": 1952000,
+    "fedBalanceSheet": 6659598,
+    "termSpread3m": -0.07,
+    "tbill3m": 4.26
   },
   {
     "date": "2025-07-11",
@@ -14007,7 +15405,10 @@
     "sofr": 4.31,
     "breakeven5y": 2.44,
     "breakeven5y5y": 2.3,
-    "continuedClaims": 1949000
+    "continuedClaims": 1949000,
+    "fedBalanceSheet": 6661912,
+    "termSpread3m": 0.02,
+    "tbill3m": 4.25
   },
   {
     "date": "2025-07-18",
@@ -14037,7 +15438,10 @@
     "sofr": 4.3,
     "breakeven5y": 2.5,
     "breakeven5y5y": 2.32,
-    "continuedClaims": 1941000
+    "continuedClaims": 1941000,
+    "fedBalanceSheet": 6659273,
+    "termSpread3m": 0.04,
+    "tbill3m": 4.24
   },
   {
     "date": "2025-07-25",
@@ -14067,7 +15471,10 @@
     "sofr": 4.36,
     "breakeven5y": 2.47,
     "breakeven5y5y": 2.41,
-    "continuedClaims": 1936000
+    "continuedClaims": 1936000,
+    "fedBalanceSheet": 6657715,
+    "termSpread3m": -0.02,
+    "tbill3m": 4.25
   },
   {
     "date": "2025-08-01",
@@ -14097,7 +15504,10 @@
     "sofr": 4.34,
     "breakeven5y": 2.38,
     "breakeven5y5y": 2.28,
-    "continuedClaims": 1963000
+    "continuedClaims": 1963000,
+    "fedBalanceSheet": 6642578,
+    "termSpread3m": -0.12,
+    "tbill3m": 4.19
   },
   {
     "date": "2025-08-08",
@@ -14127,7 +15537,10 @@
     "sofr": 4.35,
     "breakeven5y": 2.46,
     "breakeven5y5y": 2.32,
-    "continuedClaims": 1942000
+    "continuedClaims": 1942000,
+    "fedBalanceSheet": 6640843,
+    "termSpread3m": -0.05,
+    "tbill3m": 4.14
   },
   {
     "date": "2025-08-15",
@@ -14157,7 +15570,10 @@
     "sofr": 4.36,
     "breakeven5y": 2.42,
     "breakeven5y5y": 2.34,
-    "continuedClaims": 1957000
+    "continuedClaims": 1957000,
+    "fedBalanceSheet": 6643615,
+    "termSpread3m": 0.03,
+    "tbill3m": 4.12
   },
   {
     "date": "2025-08-22",
@@ -14187,7 +15603,10 @@
     "sofr": 4.36,
     "breakeven5y": 2.48,
     "breakeven5y5y": 2.34,
-    "continuedClaims": 1942000
+    "continuedClaims": 1942000,
+    "fedBalanceSheet": 6618415,
+    "termSpread3m": -0.01,
+    "tbill3m": 4.1
   },
   {
     "date": "2025-08-29",
@@ -14217,7 +15636,10 @@
     "sofr": 4.34,
     "breakeven5y": 2.47,
     "breakeven5y5y": 2.35,
-    "continuedClaims": 1937000
+    "continuedClaims": 1937000,
+    "fedBalanceSheet": 6603384,
+    "termSpread3m": 0,
+    "tbill3m": 4.05
   },
   {
     "date": "2025-09-05",
@@ -14247,7 +15669,10 @@
     "sofr": 4.42,
     "breakeven5y": 2.42,
     "breakeven5y5y": 2.32,
-    "continuedClaims": 1927000
+    "continuedClaims": 1927000,
+    "fedBalanceSheet": 6602071,
+    "termSpread3m": 0.03,
+    "tbill3m": 3.92
   },
   {
     "date": "2025-09-12",
@@ -14277,7 +15702,10 @@
     "sofr": 4.42,
     "breakeven5y": 2.42,
     "breakeven5y5y": 2.3,
-    "continuedClaims": 1925000
+    "continuedClaims": 1925000,
+    "fedBalanceSheet": 6605962,
+    "termSpread3m": -0.02,
+    "tbill3m": 3.94
   },
   {
     "date": "2025-09-19",
@@ -14307,7 +15735,10 @@
     "sofr": 4.14,
     "breakeven5y": 2.43,
     "breakeven5y5y": 2.35,
-    "continuedClaims": 1916000
+    "continuedClaims": 1916000,
+    "fedBalanceSheet": 6608597,
+    "termSpread3m": 0.11,
+    "tbill3m": 3.89
   },
   {
     "date": "2025-09-26",
@@ -14337,7 +15768,10 @@
     "sofr": 4.16,
     "breakeven5y": 2.42,
     "breakeven5y5y": 2.34,
-    "continuedClaims": 1921000
+    "continuedClaims": 1921000,
+    "fedBalanceSheet": 6608395,
+    "termSpread3m": 0.18,
+    "tbill3m": 3.87
   },
   {
     "date": "2025-10-03",
@@ -14367,7 +15801,10 @@
     "sofr": 4.18,
     "breakeven5y": 2.38,
     "breakeven5y5y": 2.28,
-    "continuedClaims": 1929000
+    "continuedClaims": 1929000,
+    "fedBalanceSheet": 6587119,
+    "termSpread3m": 0.1,
+    "tbill3m": 3.87
   },
   {
     "date": "2025-10-10",
@@ -14397,7 +15834,10 @@
     "sofr": 4.15,
     "breakeven5y": 2.35,
     "breakeven5y5y": 2.25,
-    "continuedClaims": 1928000
+    "continuedClaims": 1928000,
+    "fedBalanceSheet": 6590815,
+    "termSpread3m": 0.03,
+    "tbill3m": 3.86
   },
   {
     "date": "2025-10-17",
@@ -14427,7 +15867,10 @@
     "sofr": 4.18,
     "breakeven5y": 2.29,
     "breakeven5y5y": 2.25,
-    "continuedClaims": 1947000
+    "continuedClaims": 1947000,
+    "fedBalanceSheet": 6596454,
+    "termSpread3m": 0.02,
+    "tbill3m": 3.84
   },
   {
     "date": "2025-10-24",
@@ -14457,7 +15900,10 @@
     "sofr": 4.24,
     "breakeven5y": 2.4,
     "breakeven5y5y": 2.18,
-    "continuedClaims": 1953000
+    "continuedClaims": 1953000,
+    "fedBalanceSheet": 6589533,
+    "termSpread3m": 0.09,
+    "tbill3m": 3.77
   },
   {
     "date": "2025-10-31",
@@ -14487,7 +15933,10 @@
     "sofr": 4.22,
     "breakeven5y": 2.4,
     "breakeven5y5y": 2.2,
-    "continuedClaims": 1962000
+    "continuedClaims": 1962000,
+    "fedBalanceSheet": 6587034,
+    "termSpread3m": 0.22,
+    "tbill3m": 3.73
   },
   {
     "date": "2025-11-07",
@@ -14517,7 +15966,10 @@
     "sofr": 3.93,
     "breakeven5y": 2.36,
     "breakeven5y5y": 2.2,
-    "continuedClaims": 1946000
+    "continuedClaims": 1946000,
+    "fedBalanceSheet": 6572732,
+    "termSpread3m": 0.19,
+    "tbill3m": 3.77
   },
   {
     "date": "2025-11-14",
@@ -14547,7 +15999,10 @@
     "sofr": 3.95,
     "breakeven5y": 2.38,
     "breakeven5y5y": 2.18,
-    "continuedClaims": 1949000
+    "continuedClaims": 1949000,
+    "fedBalanceSheet": 6580462,
+    "termSpread3m": 0.19,
+    "tbill3m": 3.8
   },
   {
     "date": "2025-11-21",
@@ -14577,7 +16032,10 @@
     "sofr": 3.93,
     "breakeven5y": 2.32,
     "breakeven5y5y": 2.16,
-    "continuedClaims": 1943000
+    "continuedClaims": 1943000,
+    "fedBalanceSheet": 6555283,
+    "termSpread3m": 0.16,
+    "tbill3m": 3.75
   },
   {
     "date": "2025-11-28",
@@ -14607,7 +16065,10 @@
     "sofr": 4.12,
     "breakeven5y": 2.29,
     "breakeven5y5y": 2.17,
-    "continuedClaims": 1932000
+    "continuedClaims": 1932000,
+    "fedBalanceSheet": 6552419,
+    "termSpread3m": 0.14,
+    "tbill3m": 3.73
   },
   {
     "date": "2025-12-05",
@@ -14637,7 +16098,10 @@
     "sofr": 3.93,
     "breakeven5y": 2.34,
     "breakeven5y5y": 2.18,
-    "continuedClaims": 1894000
+    "continuedClaims": 1894000,
+    "fedBalanceSheet": 6535781,
+    "termSpread3m": 0.43,
+    "tbill3m": 3.62
   },
   {
     "date": "2025-12-12",
@@ -14667,7 +16131,10 @@
     "sofr": 3.67,
     "breakeven5y": 2.32,
     "breakeven5y5y": 2.2,
-    "continuedClaims": 1887000
+    "continuedClaims": 1887000,
+    "fedBalanceSheet": 6539303,
+    "termSpread3m": 0.56,
+    "tbill3m": 3.54
   },
   {
     "date": "2025-12-19",
@@ -14697,7 +16164,10 @@
     "sofr": 3.66,
     "breakeven5y": 2.27,
     "breakeven5y5y": 2.21,
-    "continuedClaims": 1910000
+    "continuedClaims": 1910000,
+    "fedBalanceSheet": 6556861,
+    "termSpread3m": 0.54,
+    "tbill3m": 3.54
   },
   {
     "date": "2025-12-26",
@@ -14727,7 +16197,10 @@
     "sofr": 3.76,
     "breakeven5y": 2.22,
     "breakeven5y5y": 2.24,
-    "continuedClaims": 1860000
+    "continuedClaims": 1860000,
+    "fedBalanceSheet": 6581231,
+    "termSpread3m": 0.5,
+    "tbill3m": 3.56
   },
   {
     "date": "2026-01-02",
@@ -14757,7 +16230,10 @@
     "sofr": 3.75,
     "breakeven5y": 2.28,
     "breakeven5y5y": 2.22,
-    "continuedClaims": 1900000
+    "continuedClaims": 1900000,
+    "fedBalanceSheet": 6640618,
+    "termSpread3m": 0.54,
+    "tbill3m": 3.54
   },
   {
     "date": "2026-01-09",
@@ -14787,7 +16263,10 @@
     "sofr": 3.64,
     "breakeven5y": 2.32,
     "breakeven5y5y": 2.24,
-    "continuedClaims": 1875000
+    "continuedClaims": 1875000,
+    "fedBalanceSheet": 6573602,
+    "termSpread3m": 0.56,
+    "tbill3m": 3.52
   },
   {
     "date": "2026-01-16",
@@ -14817,7 +16296,10 @@
     "sofr": 3.65,
     "breakeven5y": 2.39,
     "breakeven5y5y": 2.27,
-    "continuedClaims": 1865000
+    "continuedClaims": 1865000,
+    "fedBalanceSheet": 6581700,
+    "termSpread3m": 0.57,
+    "tbill3m": 3.57
   },
   {
     "date": "2026-01-23",
@@ -14847,7 +16329,10 @@
     "sofr": 3.65,
     "breakeven5y": 2.46,
     "breakeven5y5y": 2.18,
-    "continuedClaims": 1823000
+    "continuedClaims": 1823000,
+    "fedBalanceSheet": 6584580,
+    "termSpread3m": 0.54,
+    "tbill3m": 3.59
   },
   {
     "date": "2026-01-30",
@@ -14877,7 +16362,10 @@
     "sofr": 3.68,
     "breakeven5y": 2.53,
     "breakeven5y5y": 2.19,
-    "continuedClaims": 1842000
+    "continuedClaims": 1842000,
+    "fedBalanceSheet": 6587568,
+    "termSpread3m": 0.59,
+    "tbill3m": 3.58
   },
   {
     "date": "2026-02-06",
@@ -14907,7 +16395,10 @@
     "sofr": 3.64,
     "breakeven5y": 2.5,
     "breakeven5y5y": 2.18,
-    "continuedClaims": 1859000
+    "continuedClaims": 1859000,
+    "fedBalanceSheet": 6605909,
+    "termSpread3m": 0.54,
+    "tbill3m": 3.6
   },
   {
     "date": "2026-02-13",
@@ -14937,7 +16428,10 @@
     "sofr": 3.66,
     "breakeven5y": 2.42,
     "breakeven5y5y": 2.12,
-    "continuedClaims": 1865000
+    "continuedClaims": 1865000,
+    "fedBalanceSheet": 6622382,
+    "termSpread3m": 0.36,
+    "tbill3m": 3.6
   },
   {
     "date": "2026-02-20",
@@ -14967,7 +16461,10 @@
     "sofr": 3.66,
     "breakeven5y": 2.43,
     "breakeven5y5y": 2.13,
-    "continuedClaims": 1827000
+    "continuedClaims": 1827000,
+    "fedBalanceSheet": 6613395,
+    "termSpread3m": 0.39,
+    "tbill3m": 3.6
   },
   {
     "date": "2026-02-27",
@@ -14997,7 +16494,10 @@
     "sofr": 3.68,
     "breakeven5y": 2.4,
     "breakeven5y5y": 2.1,
-    "continuedClaims": 1871000
+    "continuedClaims": 1871000,
+    "fedBalanceSheet": 6613797,
+    "termSpread3m": 0.3,
+    "tbill3m": 3.59
   },
   {
     "date": "2026-03-06",
@@ -15027,7 +16527,10 @@
     "sofr": 3.65,
     "breakeven5y": 2.56,
     "breakeven5y5y": 2.14,
-    "continuedClaims": 1847000
+    "continuedClaims": 1847000,
+    "fedBalanceSheet": 6628894,
+    "termSpread3m": 0.46,
+    "tbill3m": 3.58
   },
   {
     "date": "2026-03-13",
@@ -15057,7 +16560,10 @@
     "sofr": 3.65,
     "breakeven5y": 2.61,
     "breakeven5y5y": 2.11,
-    "continuedClaims": 1851000
+    "continuedClaims": 1851000,
+    "fedBalanceSheet": 6646344,
+    "termSpread3m": 0.56,
+    "tbill3m": 3.61
   },
   {
     "date": "2026-03-20",
@@ -15087,7 +16593,10 @@
     "sofr": 3.62,
     "breakeven5y": 2.63,
     "breakeven5y5y": 2.13,
-    "continuedClaims": 1816000
+    "continuedClaims": 1816000,
+    "fedBalanceSheet": 6655939,
+    "termSpread3m": 0.65,
+    "tbill3m": 3.63
   },
   {
     "date": "2026-03-27",
@@ -15117,7 +16626,10 @@
     "sofr": 3.63,
     "breakeven5y": 2.56,
     "breakeven5y5y": 2.06,
-    "continuedClaims": 1832000
+    "continuedClaims": 1832000,
+    "fedBalanceSheet": 6657161,
+    "termSpread3m": 0.71,
+    "tbill3m": 3.62
   },
   {
     "date": "2026-04-03",
@@ -15147,7 +16659,10 @@
     "sofr": 3.66,
     "breakeven5y": 2.61,
     "breakeven5y5y": 2.11,
-    "continuedClaims": 1787000
+    "continuedClaims": 1787000,
+    "fedBalanceSheet": 6675344,
+    "termSpread3m": 0.64,
+    "tbill3m": 3.62
   },
   {
     "date": "2026-04-10",
@@ -15177,7 +16692,10 @@
     "sofr": 3.61,
     "breakeven5y": 2.58,
     "breakeven5y5y": 2.14,
-    "continuedClaims": 1809000
+    "continuedClaims": 1809000,
+    "fedBalanceSheet": 6693871,
+    "termSpread3m": 0.62,
+    "tbill3m": 3.6
   },
   {
     "date": "2026-04-17",
@@ -15207,7 +16725,10 @@
     "sofr": 3.65,
     "breakeven5y": 2.56,
     "breakeven5y5y": 2.16,
-    "continuedClaims": 1808000
+    "continuedClaims": 1808000,
+    "fedBalanceSheet": 6705696,
+    "termSpread3m": 0.56,
+    "tbill3m": 3.61
   },
   {
     "date": "2026-04-24",
@@ -15237,7 +16758,10 @@
     "sofr": 3.66,
     "breakeven5y": 2.61,
     "breakeven5y5y": 2.23,
-    "continuedClaims": 1776000
+    "continuedClaims": 1776000,
+    "fedBalanceSheet": 6707419,
+    "termSpread3m": 0.62,
+    "tbill3m": 3.6
   },
   {
     "date": "2026-05-01",
@@ -15267,7 +16791,10 @@
     "sofr": 3.64,
     "breakeven5y": 2.69,
     "breakeven5y5y": 2.27,
-    "continuedClaims": 1758000
+    "continuedClaims": 1758000,
+    "fedBalanceSheet": 6699950,
+    "termSpread3m": 0.71,
+    "tbill3m": 3.59
   },
   {
     "date": "2026-05-08",
@@ -15297,7 +16824,10 @@
     "sofr": 3.6,
     "breakeven5y": 2.62,
     "breakeven5y5y": 2.28,
-    "continuedClaims": 1776000
+    "continuedClaims": 1776000,
+    "fedBalanceSheet": 6709505,
+    "termSpread3m": 0.69,
+    "tbill3m": 3.6
   },
   {
     "date": "2026-05-15",
@@ -15327,7 +16857,10 @@
     "sofr": 3.55,
     "breakeven5y": 2.7,
     "breakeven5y5y": 2.28,
-    "continuedClaims": 1771000
+    "continuedClaims": 1771000,
+    "fedBalanceSheet": 6728502,
+    "termSpread3m": 0.9,
+    "tbill3m": 3.6
   },
   {
     "date": "2026-05-22",
@@ -15357,7 +16890,10 @@
     "sofr": 3.55,
     "breakeven5y": 2.54,
     "breakeven5y5y": 2.26,
-    "continuedClaims": 1785000
+    "continuedClaims": 1785000,
+    "fedBalanceSheet": 6713643,
+    "termSpread3m": 0.88,
+    "tbill3m": 3.59
   },
   {
     "date": "2026-05-29",
@@ -15387,7 +16923,10 @@
     "sofr": 3.63,
     "breakeven5y": 2.52,
     "breakeven5y5y": 2.24,
-    "continuedClaims": 1771000
+    "continuedClaims": 1771000,
+    "fedBalanceSheet": 6704383,
+    "termSpread3m": 0.76,
+    "tbill3m": 3.6
   },
   {
     "date": "2026-06-05",
@@ -15417,7 +16956,10 @@
     "sofr": 3.63,
     "breakeven5y": 2.48,
     "breakeven5y5y": 2.24,
-    "continuedClaims": 1786000
+    "continuedClaims": 1786000,
+    "fedBalanceSheet": 6711495,
+    "termSpread3m": 0.77,
+    "tbill3m": 3.63
   },
   {
     "date": "2026-06-12",
@@ -15447,7 +16989,10 @@
     "sofr": 3.65,
     "breakeven5y": 2.39,
     "breakeven5y5y": 2.23,
-    "continuedClaims": 1800000
+    "continuedClaims": 1800000,
+    "fedBalanceSheet": 6725397,
+    "termSpread3m": 0.7,
+    "tbill3m": 3.63
   },
   {
     "date": "2026-06-19",
@@ -15477,7 +17022,10 @@
     "sofr": 3.62,
     "breakeven5y": 2.27,
     "breakeven5y5y": 2.23,
-    "continuedClaims": 1812000
+    "continuedClaims": 1812000,
+    "fedBalanceSheet": 6736424,
+    "termSpread3m": 0.63,
+    "tbill3m": 3.67
   },
   {
     "date": "2026-06-26",
@@ -15507,7 +17055,10 @@
     "sofr": 3.62,
     "breakeven5y": 2.21,
     "breakeven5y5y": 2.19,
-    "continuedClaims": 1806000
+    "continuedClaims": 1806000,
+    "fedBalanceSheet": 6735645,
+    "termSpread3m": 0.55,
+    "tbill3m": 3.67
   },
   {
     "date": "2026-07-03",
@@ -15537,7 +17088,10 @@
     "sofr": 3.64,
     "breakeven5y": 2.24,
     "breakeven5y5y": 2.22,
-    "continuedClaims": 1821000
+    "continuedClaims": 1821000,
+    "fedBalanceSheet": 6724564,
+    "termSpread3m": 0.67,
+    "tbill3m": 3.68
   },
   {
     "date": "2026-07-10",
@@ -15567,7 +17121,10 @@
     "sofr": 3.55,
     "breakeven5y": 2.28,
     "breakeven5y5y": 2.2,
-    "continuedClaims": 1798000
+    "continuedClaims": 1798000,
+    "fedBalanceSheet": 6735609,
+    "termSpread3m": 0.71,
+    "tbill3m": 3.71
   },
   {
     "date": "2026-07-17",
@@ -15597,7 +17154,10 @@
     "sofr": 3.59,
     "breakeven5y": 2.27,
     "breakeven5y5y": 2.21,
-    "continuedClaims": 1789000
+    "continuedClaims": 1789000,
+    "fedBalanceSheet": 6743028,
+    "termSpread3m": 0.7,
+    "tbill3m": 3.71
   },
   {
     "date": "2026-07-24",
@@ -15627,7 +17187,10 @@
     "sofr": 3.64,
     "breakeven5y": 2.24,
     "breakeven5y5y": 2.28,
-    "continuedClaims": 1777000
+    "continuedClaims": 1777000,
+    "fedBalanceSheet": 6747378,
+    "termSpread3m": 0.73,
+    "tbill3m": 3.81
   },
   {
     "date": "2026-07-31",
@@ -15657,7 +17220,10 @@
     "sofr": 3.66,
     "breakeven5y": 2.26,
     "breakeven5y5y": 2.3,
-    "continuedClaims": 1799000
+    "continuedClaims": 1799000,
+    "fedBalanceSheet": 6738190,
+    "termSpread3m": 0.92,
+    "tbill3m": 3.69
   },
   {
     "date": "2026-08-07",
@@ -15687,7 +17253,10 @@
     "sofr": 3.62,
     "breakeven5y": 2.22,
     "breakeven5y5y": 2.28,
-    "continuedClaims": 1777000
+    "continuedClaims": 1777000,
+    "fedBalanceSheet": 6748567,
+    "termSpread3m": 0.78,
+    "tbill3m": 3.72
   },
   {
     "date": "2026-08-14",
@@ -15717,6 +17286,9 @@
     "sofr": 3.62,
     "breakeven5y": 2.24,
     "breakeven5y5y": 2.3,
-    "continuedClaims": null
+    "continuedClaims": null,
+    "fedBalanceSheet": 6759955,
+    "termSpread3m": 0.82,
+    "tbill3m": 3.71
   }
 ]

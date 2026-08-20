@@ -21,6 +21,31 @@ export const metadata = {
 const CHARTS: QuestionChartDef<EconomyQuestionId>[] = [
   {
     question: 'slowdown',
+    frequency: 'monthly',
+    primaryIndicator: 'commercial-loans',
+    title: '商工業向け貸出',
+    subtitle: '前年同月比',
+    series: [
+      {
+        key: 'commercialLoans',
+        label: '商工業向け貸出',
+        color: COLORS.commercialLoans,
+        indicatorId: 'commercial-loans',
+      },
+    ],
+    notes: [
+      <span key="quantity">
+        <strong>信用の量的 side。</strong>
+        市場ページの信用スプレッドは<strong>価格</strong>で、こちらは<strong>量</strong>。
+        スプレッドが落ち着いていても貸出が縮んでいれば、企業は資金を取れていない。
+      </span>,
+      <span key="lag">
+        銀行の貸出態度は景気に遅れて厳しくなるため、後追いの確認に使う。
+      </span>,
+    ],
+  },
+  {
+    question: 'slowdown',
     frequency: 'daily',
     primaryIndicator: 'new-job-postings',
     title: '新規求人 (Indeed)',

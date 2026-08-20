@@ -113,15 +113,21 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
     kind: 'percent',
     primaryIndicator: 'dgs2',
     title: '短期金利',
-    subtitle: '2年債と SOFR',
+    subtitle: '3か月から 2年までの期間構造',
     series: [
       { key: 'twoYearRate', label: '2年債', color: COLORS.twoYearRate, width: 2.4 },
       { key: 'sofr', label: 'SOFR', color: COLORS.sofr },
-    ],
+          { key: 'tbill3m', label: '3か月 T-Bill', color: COLORS.tbill3m },
+],
     notes: [
       <span key="expectation">
         <strong>2年債は政策金利の織り込みを映す。</strong>
         今後 2 年の利下げ・利上げ見通しが price される。上の「金利の内訳」の FF 金利より先に動く。
+      </span>,
+      <span key="structure">
+        <strong>3か月 → 2年の期間構造。</strong>
+        3か月は政策金利にほぼ連動し、2年は今後の変更を織り込む。
+        2 本の差が利下げ・利上げの織り込みそのもの。
       </span>,
       <span key="actual">
         <strong>SOFR は翌日物の実勢。</strong>
@@ -138,11 +144,14 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
     question: 'financial',
     frequency: 'daily',
     primaryIndicator: 't10y2y',
-    title: 'イールドカーブ (10年債 − 2年債)',
+    title: 'イールドカーブ',
     subtitle: '長短金利差。負なら逆イールド',
     kind: 'percent',
     signed: true,
-    series: [{ key: 'termSpread', label: '10年 − 2年', color: COLORS.termSpread }],
+    series: [
+      { key: 'termSpread', label: '10年 − 2年', color: COLORS.termSpread, width: 2.4 },
+      { key: 'termSpread3m', label: '10年 − 3か月', color: COLORS.termSpread3m },
+    ],
     notes: [
       <span key="vs-spread">
         <strong>イールドスプレッド (バリュエーション画面) とは別物。</strong>
@@ -232,6 +241,24 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
       <span key="zero">
         ゼロ線は長期平均で、定義から決まる。恣意的な「危険水準」は引いていない。
         水準ではなく<strong>0 からの距離</strong>で読む。
+      </span>,
+    ],
+  },
+  {
+    question: 'financial',
+    frequency: 'weekly',
+    kind: 'number',
+    primaryIndicator: 'fed-balance-sheet',
+    title: 'FRB バランスシート',
+    subtitle: '百万ドル',
+    series: [{ key: 'fedBalanceSheet', label: '総資産', color: COLORS.fedBalanceSheet }],
+    notes: [
+      <span key="qt">
+        <strong>量的引き締めの進捗。</strong>
+        縮小が続けば市場から流動性が抜ける。金利 (価格) とは別の経路で効く。
+      </span>,
+      <span key="level">
+        水準そのものより<strong>傾き</strong>を見る。増やしているのか減らしているのか。
       </span>,
     ],
   },

@@ -2320,5 +2320,74 @@
       "max": 60
     },
     "note": "Average Weekly Hours of All Employees, Total Private。時間、季節調整済み (#196)。**企業は解雇の前に労働時間を削る。** 既に持っている製造業の時間 (`AWHMAN`) はLEI の構成要素で製造業に絞ったもの、こちらは全産業。"
+  },
+  "fed-balance-sheet": {
+    "name": "FRB バランスシート",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "WALCL"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "Board of Governors of the Federal Reserve System via FRED",
+    "copyright": "none",
+    "group": "rates",
+    "range": {
+      "min": 0,
+      "max": 20000000
+    },
+    "note": "Assets: Total Assets (Less Eliminations from Consolidation)。百万ドル、週次 (#198)。**量的引き締めの進捗。** 縮小が続けば市場から流動性が抜ける。金利 (価格) とは別の経路で市場に効く。"
+  },
+  "term-spread-3m": {
+    "name": "イールドカーブ (10年債 − 3か月)",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "T10Y3M"
+    },
+    "frequency": "daily",
+    "unit": "percent",
+    "attribution": "Federal Reserve Bank of St. Louis via FRED",
+    "copyright": "none",
+    "group": "rates",
+    "cyclePosition": "leading",
+    "range": {
+      "min": -10,
+      "max": 10
+    },
+    "note": "10-Year Treasury Constant Maturity Minus 3-Month Treasury Constant Maturity (%)、日次 (#198)。**リセッション予測では 10年−2年よりこちらが見られる。** 3か月は政策金利にほぼ連動するため、逆転は「政策が引き締めすぎ」を直接示す。"
+  },
+  "tbill-3m": {
+    "name": "3か月 T-Bill",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "DTB3"
+    },
+    "frequency": "daily",
+    "unit": "percent",
+    "attribution": "Federal Reserve Bank of St. Louis via FRED",
+    "copyright": "none",
+    "group": "rates",
+    "range": {
+      "min": -5,
+      "max": 25
+    },
+    "note": "3-Month Treasury Bill Secondary Market Rate (%)、日次 (#198)。**短期金利の起点。** 政策金利にほぼ連動する。2年債との差が利下げ・利上げの織り込みを示す。"
+  },
+  "commercial-loans": {
+    "name": "商工業向け貸出",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "BUSLOANS"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "Board of Governors of the Federal Reserve System via FRED",
+    "copyright": "none",
+    "group": "rates",
+    "range": {
+      "min": 0,
+      "max": 100000
+    },
+    "note": "Commercial and Industrial Loans, All Commercial Banks。**十億ドル**、季節調整済み (#198)。**信用の量的 side。** 信用スプレッドは価格で、こちらは量。スプレッドが落ち着いていても貸出が縮んでいれば、企業は資金を取れていない。"
   }
 }

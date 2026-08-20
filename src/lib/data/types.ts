@@ -411,6 +411,12 @@ export interface MacroPoint {
   breakeven5y5y: number | null;
   /** 継続受給者数 (人)。新規申請と対で再就職の速さを見る (#196)。 */
   continuedClaims: number | null;
+  /** FRB バランスシート (百万ドル)。量的引き締めの進捗 (#198)。 */
+  fedBalanceSheet: number | null;
+  /** イールドカーブ 10年−3か月 (%)。リセッション予測 (#198)。 */
+  termSpread3m: number | null;
+  /** 3か月 T-Bill (%)。短期金利の起点 (#198)。 */
+  tbill3m: number | null;
 }
 
 /**
@@ -494,6 +500,8 @@ export interface MonthlyPoint {
   newHomeSales: number | null;
   /** 中古住宅販売件数。取引量の大半を占める。**直近 13 か月から積み上げ中** (#188)。 */
   existingHomeSales: number | null;
+  /** 商工業向け貸出の前年同月比 (%)。信用の量的 side (#198)。 */
+  commercialLoans: number | null;
   /** 広義失業率 U-6 (%)。不完全就業を含む (#196)。 */
   u6Rate: number | null;
   /** 労働参加率 (%)。失業率の分母側 (#196)。 */

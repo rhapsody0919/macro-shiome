@@ -463,6 +463,10 @@ export function buildMacroView(options: BuildViewOptions): MacroPoint[] {
       breakeven5y5y: valueAsOf(series(observations, 'breakeven-5y5y'), date),
       // 週次。新規申請と同じグリッドに乗る (#196)。
       continuedClaims: valueAsOf(series(observations, 'continued-claims'), date),
+      // 週次。金利 (価格) とは別の経路で市場に効く (#198)。
+      fedBalanceSheet: valueAsOf(series(observations, 'fed-balance-sheet'), date),
+      termSpread3m: valueAsOf(series(observations, 'term-spread-3m'), date),
+      tbill3m: valueAsOf(series(observations, 'tbill-3m'), date),
     };
   });
 }
@@ -649,6 +653,8 @@ export function buildEconomyView(options: BuildViewOptions): EconomyView {
     realIncomeExTransfer: yoy('real-income-ex-transfer', month),
     realDisposablePerCapita: yoy('real-disposable-income-per-capita', month),
     realDisposableTotal: yoy('real-disposable-income', month),
+    // 信用の量。スプレッド (価格) が落ち着いても量が縮んでいれば資金は取れていない (#198)。
+    commercialLoans: yoy('commercial-loans', month),
     // 労働市場の質。失業率だけでは「探すのをやめた」のか区別できない (#196)。
     u6Rate: level('u6-rate', month),
     participationRate: level('participation-rate', month),
@@ -766,6 +772,7 @@ const MONTHLY_INDICATORS = [
   'real-disposable-income-per-capita',
   'real-disposable-income',
   'real-consumption',
+  'commercial-loans',
   'u6-rate',
   'participation-rate',
   'employment-ratio',
@@ -876,6 +883,9 @@ export function buildDailyView(
       // 市場が織り込む物価。実績ではなく先を見る (#194)。
       breakeven5y: at('breakeven-5y'),
       breakeven5y5y: at('breakeven-5y5y'),
+      // 3か月は政策金利にほぼ連動する。逆転は「政策が引き締めすぎ」を直接示す (#198)。
+      termSpread3m: at('term-spread-3m'),
+      tbill3m: at('tbill-3m'),
     };
 
     const point: DailyPoint = { date };
