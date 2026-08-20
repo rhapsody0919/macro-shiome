@@ -74,9 +74,16 @@ async function verifySources(): Promise<void> {
       fail('一次情報との照合', `${id}: 取得に失敗 (${String(error)})`);
       continue;
     }
+    // **提供元が直近しか保持しない系列がある** (#188)。中古住宅販売は NAR の著作権で
+    // FRED が 13 か月分しか出さないため、積み上げるとこちらの履歴の方が長くなる。
+    // その場合「一次情報に無い過去日付」は正常。重なる期間の値は従来どおり照合する。
+    const oldestLive = Object.keys(live).sort()[0];
     for (const date of dates.slice(-30)) {
       const expected = live[date];
       if (expected === undefined) {
+        if (indicator.historyLimit !== undefined && oldestLive !== undefined && date < oldestLive) {
+          continue;
+        }
         fail('一次情報との照合', `${id}: FRED に無い日付を保存している (${date})`);
         continue;
       }

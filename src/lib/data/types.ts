@@ -100,10 +100,16 @@ export interface Indicator {
   copyright: CopyrightClass;
   group: IndicatorGroup;
   /**
-   * 取得できる履歴の上限。FRED の S&P 500 は契約上 10 年しか提供されない。
-   * 制限が無い場合は省略する。
+   * 取得できる履歴の上限。制限が無い場合は省略する。
+   *
+   * FRED の S&P 500 は契約上 10 年、中古住宅販売は NAR の著作権で**直近 13 か月**しか
+   * 提供されない (#188)。
+   *
+   * **提供元より古い観測を持つことがある。** 毎回取得して積み上げるため、時間が経つほど
+   * こちらの履歴が長くなる。`pnpm verify` はこの指標について「一次情報に無い過去日付」を
+   * 正常として扱う (重なる期間の値は従来どおり照合する)。
    */
-  historyLimit?: '10y' | '5y';
+  historyLimit?: '13m' | '5y' | '10y';
   /**
    * 検証に使う値の範囲 (#102)。単位から決まる既定値を上書きする。
    *
@@ -469,6 +475,8 @@ export interface MonthlyPoint {
   housingStarts: number | null;
   /** 新築住宅販売件数。連鎖の下流。 */
   newHomeSales: number | null;
+  /** 中古住宅販売件数。取引量の大半を占める。**直近 13 か月から積み上げ中** (#188)。 */
+  existingHomeSales: number | null;
   /** 実質個人消費支出の前年同月比 (%)。実質可処分所得と対で見る (#178)。 */
   realConsumption: number | null;
   /** 日本の完全失業率 (%)。**季節調整済み** (#180)。 */

@@ -59,7 +59,7 @@ const FACTSET_FIELDS = [
   'growthCurrentCalendarYear',
   'growthNextCalendarYear',
 ] as const satisfies readonly FactsetField[];
-const HISTORY_LIMITS = ['10y', '5y'] as const;
+const HISTORY_LIMITS = ['13m', '5y', '10y'] as const;
 const CYCLE_POSITIONS = [
   'leading',
   'coincident',

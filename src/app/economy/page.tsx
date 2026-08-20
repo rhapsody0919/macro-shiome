@@ -627,6 +627,39 @@ const CHARTS: QuestionChartDef<EconomyQuestionId>[] = [
     ],
   },
   {
+    question: 'housing',
+    frequency: 'monthly',
+    kind: 'number',
+    zeroLine: false,
+    primaryIndicator: 'existing-home-sales',
+    title: '中古住宅販売件数',
+    subtitle: '件・季節調整済み年率',
+    series: [
+      {
+        key: 'existingHomeSales',
+        label: '中古住宅販売',
+        color: COLORS.existingHomeSales,
+        indicatorId: 'existing-home-sales',
+      },
+    ],
+    notes: [
+      <span key="share">
+        <strong>米国の住宅取引の大半を占める。</strong>
+        上の連鎖に出てくる新築住宅販売は取引量では少数で、市場全体の動きは中古が決める。
+      </span>,
+      <span key="short">
+        <strong>直近 13 か月しか線が引けない。</strong>
+        NAR の著作権で FRED が 13 か月分しか提供しないため。
+        <strong>毎日取得して積み上げている</strong>ので、時間が経つほど伸びる
+        (最高値からの下落率と同じ考え方)。
+      </span>,
+      <span key="not-chain">
+        <strong>上の連鎖と同じ図に載せていない。</strong>
+        あちらは千戸、こちらは件で単位が違い、期間も揃わない。
+      </span>,
+    ],
+  },
+  {
     // 建設許可は The Conference Board の景気先行指数 (LEI) の構成要素。
     question: 'housing',
     frequency: 'monthly',

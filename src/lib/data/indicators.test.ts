@@ -485,6 +485,14 @@ describe('泉さんの記事から追加した指標 (#87)', () => {
     expect(indicators['consumer-sentiment'].copyright).toBe('restricted');
   });
 
+  it('提供元が直近しか保持しない系列を記録する (#188)', () => {
+    // NAR の著作権で FRED は 13 か月分しか出さない。毎日取得して積み上げるため、
+    // 時間が経つとこちらの履歴の方が長くなる。`pnpm verify` はこの印を見て
+    // 「一次情報に無い過去日付」を正常として扱う。
+    expect(indicators['existing-home-sales'].historyLimit).toBe('13m');
+    expect(indicators['existing-home-sales'].copyright).toBe('restricted');
+  });
+
   it('提供終了した ADP を持たない (#176)', () => {
     // FRED で DISCONTINUED になり 2026-06-13 で止まった。取得し続けても増えない指標を
     // 残すと、バッチが毎回「取れた」ことになり本当の変化と区別できない (#131 と同じ)。
@@ -530,5 +538,14 @@ describe('範囲の上書き (#102)', () => {
 
   it('数値以外は落とす', () => {
     expect(() => parseIndicator('t', { ...base, range: { min: '0', max: 5 } })).toThrow(/数値/);
+  });
+});
+
+describe('履歴の上限 (#188)', () => {
+  it('積み上げで一次情報より長くなる系列を印で区別する', () => {
+    // 印が無い系列で過去日付が一次情報に無ければ、それはキーのずれ (#133) の疑い。
+    // 印がある系列だけ正常として扱うので、印を安易に付けない。
+    const limited = Object.entries(indicators).filter(([, i]) => i.historyLimit !== undefined);
+    expect(limited.map(([id]) => id).sort()).toEqual(['existing-home-sales', 'sp500']);
   });
 });
