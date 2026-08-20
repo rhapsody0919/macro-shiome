@@ -447,21 +447,26 @@ async function verifyGoldClose(): Promise<void> {
 }
 
 /**
- * FRED の系列メタデータ。**API キーを使わないテキスト経路**で取る (#212)。
+ * FRED の系列メタデータ。**API キーを使わない系列ページ**から単位を取る (#212)。
  *
  * 取得実装は `fredgraph.csv` を使っており、こちらは別のエンドポイント。
  * 同じ経路で照合すると同じ間違いをする (#113 の要件)。
+ *
+ * `/data/<ID>.txt` は**テキストではなく系列ページの HTML を返す** (実測)。
+ * 単位は `series-meta-value-units` の中にあり、季節調整の有無は別の要素なので混ざらない。
  */
 async function fetchFredUnits(seriesId: string): Promise<string> {
-  const response = await fetch(`https://fred.stlouisfed.org/data/${seriesId}.txt`);
+  const response = await fetch(`https://fred.stlouisfed.org/series/${seriesId}`, {
+    headers: { 'User-Agent': 'macro-shiome-verify' },
+  });
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
   const body = await response.text();
-  const match = body.match(/^Units:\s*(.+?)\s*$/m);
+  const match = body.match(/<span class="series-meta-value-units">([^<]+)<\/span>/);
   if (match === null) {
     // 形式が変わったら黙って飛ばさず、何が返ったかを添えて落とす。
-    throw new Error(`Units 行が無い (先頭: ${JSON.stringify(body.slice(0, 120))})`);
+    throw new Error(`単位の要素が無い (${body.length} bytes)`);
   }
-  return match[1];
+  return match[1].trim();
 }
 
 /**
@@ -477,7 +482,15 @@ const MONEY_SCALES: ReadonlyArray<{ source: string; label: RegExp }> = [
   { source: 'Millions of Dollars', label: /百万ドル/ },
 ];
 
-/** 9. FRED の単位が指標マスタの記録と一致するか (#212)。 */
+/**
+ * 9. FRED の単位が指標マスタの記録と一致するか (#212)。**任意実行 (`--units`)。**
+ *
+ * 日次バッチには入れない。項目 1 で既に FRED へ 84 回取りに行っており、系列ページは
+ * 1 件 79 KB ある。**実測で連続アクセスが弾かれた** (数分後に `fetch failed` に変わった)。
+ * ここを毎日回すと、値そのものを照合している項目 1 を巻き添えで落とす。
+ *
+ * 単位は指標を足したときにしか変わらない。**確かめられることが要件で、毎回回すことではない。**
+ */
 async function verifyFredUnits(): Promise<void> {
   console.log('9. FRED の単位の照合');
   let compared = 0;
@@ -515,7 +528,7 @@ async function verifyFredUnits(): Promise<void> {
         );
       }
     }
-    await sleep(120);
+    await sleep(400);
   }
 
   // 照合 0 件を成功にすると「緑だが検証していない」状態になる (#133 と同じ扱い)。
@@ -543,10 +556,13 @@ async function main(): Promise<void> {
   verifyDrawdown();
   if (offline) {
     console.log('8. ゴールドの終値と日付の照合 — --offline のため飛ばす');
-    console.log('9. FRED の単位の照合 — --offline のため飛ばす');
   } else {
     await verifyGoldClose();
+  }
+  if (process.argv.includes('--units')) {
     await verifyFredUnits();
+  } else {
+    console.log('9. FRED の単位の照合 — --units を付けたときだけ回す');
   }
 
   console.log('');
