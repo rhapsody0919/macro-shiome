@@ -24,7 +24,9 @@
     "anfci": -0.292,
     "financialStress": 0.3645,
     "twoYearRate": 0.72,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.33,
+    "breakeven5y5y": 1.67
   },
   {
     "date": "2016-08-12",
@@ -51,7 +53,9 @@
     "anfci": -0.287,
     "financialStress": 0.2212,
     "twoYearRate": 0.71,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.29,
+    "breakeven5y5y": 1.59
   },
   {
     "date": "2016-08-19",
@@ -78,7 +82,9 @@
     "anfci": -0.274,
     "financialStress": 0.2013,
     "twoYearRate": 0.76,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.34,
+    "breakeven5y5y": 1.62
   },
   {
     "date": "2016-08-26",
@@ -105,7 +111,9 @@
     "anfci": -0.256,
     "financialStress": 0.2792,
     "twoYearRate": 0.84,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.31,
+    "breakeven5y5y": 1.63
   },
   {
     "date": "2016-09-02",
@@ -132,7 +140,9 @@
     "anfci": -0.236,
     "financialStress": 0.2917,
     "twoYearRate": 0.8,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.28,
+    "breakeven5y5y": 1.66
   },
   {
     "date": "2016-09-09",
@@ -159,7 +169,9 @@
     "anfci": -0.22,
     "financialStress": 0.3024,
     "twoYearRate": 0.79,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.32,
+    "breakeven5y5y": 1.68
   },
   {
     "date": "2016-09-16",
@@ -186,7 +198,9 @@
     "anfci": -0.211,
     "financialStress": 0.5061,
     "twoYearRate": 0.77,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.34,
+    "breakeven5y5y": 1.68
   },
   {
     "date": "2016-09-23",
@@ -213,7 +227,9 @@
     "anfci": -0.208,
     "financialStress": 0.3424,
     "twoYearRate": 0.77,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.42,
+    "breakeven5y5y": 1.72
   },
   {
     "date": "2016-09-30",
@@ -240,7 +256,9 @@
     "anfci": -0.214,
     "financialStress": 0.3225,
     "twoYearRate": 0.77,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.45,
+    "breakeven5y5y": 1.75
   },
   {
     "date": "2016-10-07",
@@ -267,7 +285,9 @@
     "anfci": -0.226,
     "financialStress": 0.0947,
     "twoYearRate": 0.83,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.5,
+    "breakeven5y5y": 1.76
   },
   {
     "date": "2016-10-14",
@@ -294,7 +314,9 @@
     "anfci": -0.242,
     "financialStress": 0.2308,
     "twoYearRate": 0.84,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.53,
+    "breakeven5y5y": 1.81
   },
   {
     "date": "2016-10-21",
@@ -321,7 +343,9 @@
     "anfci": -0.263,
     "financialStress": 0.1906,
     "twoYearRate": 0.84,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.56,
+    "breakeven5y5y": 1.78
   },
   {
     "date": "2016-10-28",
@@ -348,7 +372,9 @@
     "anfci": -0.291,
     "financialStress": 0.1135,
     "twoYearRate": 0.86,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.6,
+    "breakeven5y5y": 1.86
   },
   {
     "date": "2016-11-04",
@@ -375,7 +401,9 @@
     "anfci": -0.322,
     "financialStress": 0.502,
     "twoYearRate": 0.8,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.52,
+    "breakeven5y5y": 1.84
   },
   {
     "date": "2016-11-11",
@@ -402,7 +430,9 @@
     "anfci": -0.356,
     "financialStress": -0.0086,
     "twoYearRate": 0.92,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.7,
+    "breakeven5y5y": 2.06
   },
   {
     "date": "2016-11-18",
@@ -429,7 +459,9 @@
     "anfci": -0.385,
     "financialStress": -0.035,
     "twoYearRate": 1.07,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.74,
+    "breakeven5y5y": 2.06
   },
   {
     "date": "2016-11-25",
@@ -456,7 +488,9 @@
     "anfci": -0.406,
     "financialStress": -0.1099,
     "twoYearRate": 1.12,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.74,
+    "breakeven5y5y": 2.04
   },
   {
     "date": "2016-12-02",
@@ -483,7 +517,9 @@
     "anfci": -0.417,
     "financialStress": 0.0014,
     "twoYearRate": 1.11,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.76,
+    "breakeven5y5y": 2.06
   },
   {
     "date": "2016-12-09",
@@ -510,7 +546,9 @@
     "anfci": -0.421,
     "financialStress": -0.2497,
     "twoYearRate": 1.15,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.83,
+    "breakeven5y5y": 2.09
   },
   {
     "date": "2016-12-16",
@@ -537,7 +575,9 @@
     "anfci": -0.418,
     "financialStress": -0.1489,
     "twoYearRate": 1.28,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.75,
+    "breakeven5y5y": 1.97
   },
   {
     "date": "2016-12-23",
@@ -564,7 +604,9 @@
     "anfci": -0.415,
     "financialStress": -0.0904,
     "twoYearRate": 1.22,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.84,
+    "breakeven5y5y": 2.1
   },
   {
     "date": "2016-12-30",
@@ -591,7 +633,9 @@
     "anfci": -0.414,
     "financialStress": -0.046,
     "twoYearRate": 1.2,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.84,
+    "breakeven5y5y": 2.06
   },
   {
     "date": "2017-01-06",
@@ -618,7 +662,9 @@
     "anfci": -0.413,
     "financialStress": -0.0873,
     "twoYearRate": 1.22,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.84,
+    "breakeven5y5y": 2.08
   },
   {
     "date": "2017-01-13",
@@ -645,7 +691,9 @@
     "anfci": -0.414,
     "financialStress": -0.0998,
     "twoYearRate": 1.21,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.85,
+    "breakeven5y5y": 2.13
   },
   {
     "date": "2017-01-20",
@@ -672,7 +720,9 @@
     "anfci": -0.416,
     "financialStress": -0.0802,
     "twoYearRate": 1.2,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.92,
+    "breakeven5y5y": 2.16
   },
   {
     "date": "2017-01-27",
@@ -699,7 +749,9 @@
     "anfci": -0.417,
     "financialStress": -0.1944,
     "twoYearRate": 1.22,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.96,
+    "breakeven5y5y": 2.2
   },
   {
     "date": "2017-02-03",
@@ -726,7 +778,9 @@
     "anfci": -0.419,
     "financialStress": -0.129,
     "twoYearRate": 1.21,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.91,
+    "breakeven5y5y": 2.19
   },
   {
     "date": "2017-02-10",
@@ -753,7 +807,9 @@
     "anfci": -0.424,
     "financialStress": -0.1657,
     "twoYearRate": 1.2,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.87,
+    "breakeven5y5y": 2.15
   },
   {
     "date": "2017-02-17",
@@ -780,7 +836,9 @@
     "anfci": -0.43,
     "financialStress": -0.2938,
     "twoYearRate": 1.21,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.85,
+    "breakeven5y5y": 2.17
   },
   {
     "date": "2017-02-24",
@@ -807,7 +865,9 @@
     "anfci": -0.436,
     "financialStress": -0.2147,
     "twoYearRate": 1.12,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.9,
+    "breakeven5y5y": 2.1
   },
   {
     "date": "2017-03-03",
@@ -834,7 +894,9 @@
     "anfci": -0.443,
     "financialStress": -0.3886,
     "twoYearRate": 1.32,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.92,
+    "breakeven5y5y": 2.16
   },
   {
     "date": "2017-03-10",
@@ -861,7 +923,9 @@
     "anfci": -0.447,
     "financialStress": -0.4066,
     "twoYearRate": 1.36,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.9,
+    "breakeven5y5y": 2.12
   },
   {
     "date": "2017-03-17",
@@ -888,7 +952,9 @@
     "anfci": -0.447,
     "financialStress": -0.3615,
     "twoYearRate": 1.33,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.89,
+    "breakeven5y5y": 2.13
   },
   {
     "date": "2017-03-24",
@@ -915,7 +981,9 @@
     "anfci": -0.447,
     "financialStress": -0.2298,
     "twoYearRate": 1.26,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.73,
+    "breakeven5y5y": 2.23
   },
   {
     "date": "2017-03-31",
@@ -942,7 +1010,9 @@
     "anfci": -0.45,
     "financialStress": -0.404,
     "twoYearRate": 1.27,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.77,
+    "breakeven5y5y": 2.17
   },
   {
     "date": "2017-04-07",
@@ -969,7 +1039,9 @@
     "anfci": -0.454,
     "financialStress": -0.3756,
     "twoYearRate": 1.29,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.7,
+    "breakeven5y5y": 2.18
   },
   {
     "date": "2017-04-14",
@@ -996,7 +1068,9 @@
     "anfci": -0.46,
     "financialStress": -0.2473,
     "twoYearRate": 1.21,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.74,
+    "breakeven5y5y": 2.1
   },
   {
     "date": "2017-04-21",
@@ -1023,7 +1097,9 @@
     "anfci": -0.467,
     "financialStress": -0.2453,
     "twoYearRate": 1.2,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.79,
+    "breakeven5y5y": 1.89
   },
   {
     "date": "2017-04-28",
@@ -1050,7 +1126,9 @@
     "anfci": -0.474,
     "financialStress": -0.5794,
     "twoYearRate": 1.28,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.81,
+    "breakeven5y5y": 2.03
   },
   {
     "date": "2017-05-05",
@@ -1077,7 +1155,9 @@
     "anfci": -0.483,
     "financialStress": -0.4991,
     "twoYearRate": 1.32,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.75,
+    "breakeven5y5y": 1.97
   },
   {
     "date": "2017-05-12",
@@ -1104,7 +1184,9 @@
     "anfci": -0.493,
     "financialStress": -0.6063,
     "twoYearRate": 1.29,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.75,
+    "breakeven5y5y": 1.93
   },
   {
     "date": "2017-05-19",
@@ -1131,7 +1213,9 @@
     "anfci": -0.504,
     "financialStress": -0.4651,
     "twoYearRate": 1.28,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.75,
+    "breakeven5y5y": 1.89
   },
   {
     "date": "2017-05-26",
@@ -1158,7 +1242,9 @@
     "anfci": -0.517,
     "financialStress": -0.6514,
     "twoYearRate": 1.3,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.73,
+    "breakeven5y5y": 1.89
   },
   {
     "date": "2017-06-02",
@@ -1185,7 +1271,9 @@
     "anfci": -0.527,
     "financialStress": -0.618,
     "twoYearRate": 1.28,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.72,
+    "breakeven5y5y": 1.86
   },
   {
     "date": "2017-06-09",
@@ -1212,7 +1300,9 @@
     "anfci": -0.532,
     "financialStress": -0.7086,
     "twoYearRate": 1.35,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.68,
+    "breakeven5y5y": 1.88
   },
   {
     "date": "2017-06-16",
@@ -1239,7 +1329,9 @@
     "anfci": -0.535,
     "financialStress": -0.705,
     "twoYearRate": 1.32,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.56,
+    "breakeven5y5y": 1.78
   },
   {
     "date": "2017-06-23",
@@ -1266,7 +1358,9 @@
     "anfci": -0.538,
     "financialStress": -0.4738,
     "twoYearRate": 1.34,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.59,
+    "breakeven5y5y": 1.81
   },
   {
     "date": "2017-06-30",
@@ -1293,7 +1387,9 @@
     "anfci": -0.545,
     "financialStress": -0.5564,
     "twoYearRate": 1.38,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.63,
+    "breakeven5y5y": 1.83
   },
   {
     "date": "2017-07-07",
@@ -1320,7 +1416,9 @@
     "anfci": -0.559,
     "financialStress": -0.5911,
     "twoYearRate": 1.4,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.63,
+    "breakeven5y5y": 1.83
   },
   {
     "date": "2017-07-14",
@@ -1347,7 +1445,9 @@
     "anfci": -0.574,
     "financialStress": -0.5625,
     "twoYearRate": 1.35,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.62,
+    "breakeven5y5y": 1.9
   },
   {
     "date": "2017-07-21",
@@ -1374,7 +1474,9 @@
     "anfci": -0.587,
     "financialStress": -0.6814,
     "twoYearRate": 1.36,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.62,
+    "breakeven5y5y": 1.9
   },
   {
     "date": "2017-07-28",
@@ -1401,7 +1503,9 @@
     "anfci": -0.59,
     "financialStress": -0.7182,
     "twoYearRate": 1.34,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.68,
+    "breakeven5y5y": 1.98
   },
   {
     "date": "2017-08-04",
@@ -1428,7 +1532,9 @@
     "anfci": -0.581,
     "financialStress": -0.6177,
     "twoYearRate": 1.36,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.65,
+    "breakeven5y5y": 1.95
   },
   {
     "date": "2017-08-11",
@@ -1455,7 +1561,9 @@
     "anfci": -0.563,
     "financialStress": -0.457,
     "twoYearRate": 1.3,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.64,
+    "breakeven5y5y": 1.94
   },
   {
     "date": "2017-08-18",
@@ -1482,7 +1590,9 @@
     "anfci": -0.543,
     "financialStress": -0.4346,
     "twoYearRate": 1.33,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.61,
+    "breakeven5y5y": 1.91
   },
   {
     "date": "2017-08-25",
@@ -1509,7 +1619,9 @@
     "anfci": -0.525,
     "financialStress": -0.4571,
     "twoYearRate": 1.35,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.57,
+    "breakeven5y5y": 1.93
   },
   {
     "date": "2017-09-01",
@@ -1536,7 +1648,9 @@
     "anfci": -0.514,
     "financialStress": -0.5052,
     "twoYearRate": 1.35,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.63,
+    "breakeven5y5y": 1.95
   },
   {
     "date": "2017-09-08",
@@ -1563,7 +1677,9 @@
     "anfci": -0.51,
     "financialStress": -0.4192,
     "twoYearRate": 1.27,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.63,
+    "breakeven5y5y": 1.99
   },
   {
     "date": "2017-09-15",
@@ -1590,7 +1706,9 @@
     "anfci": -0.514,
     "financialStress": -0.671,
     "twoYearRate": 1.39,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.72,
+    "breakeven5y5y": 1.98
   },
   {
     "date": "2017-09-22",
@@ -1617,7 +1735,9 @@
     "anfci": -0.521,
     "financialStress": -0.711,
     "twoYearRate": 1.46,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.71,
+    "breakeven5y5y": 1.97
   },
   {
     "date": "2017-09-29",
@@ -1644,7 +1764,9 @@
     "anfci": -0.529,
     "financialStress": -0.6595,
     "twoYearRate": 1.47,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.68,
+    "breakeven5y5y": 2
   },
   {
     "date": "2017-10-06",
@@ -1671,7 +1793,9 @@
     "anfci": -0.54,
     "financialStress": -0.7054,
     "twoYearRate": 1.54,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.78,
+    "breakeven5y5y": 1.96
   },
   {
     "date": "2017-10-13",
@@ -1698,7 +1822,9 @@
     "anfci": -0.553,
     "financialStress": -0.6665,
     "twoYearRate": 1.51,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.71,
+    "breakeven5y5y": 1.99
   },
   {
     "date": "2017-10-20",
@@ -1725,7 +1851,9 @@
     "anfci": -0.567,
     "financialStress": -0.7349,
     "twoYearRate": 1.6,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.76,
+    "breakeven5y5y": 1.98
   },
   {
     "date": "2017-10-27",
@@ -1752,7 +1880,9 @@
     "anfci": -0.581,
     "financialStress": -0.7414,
     "twoYearRate": 1.59,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.76,
+    "breakeven5y5y": 2
   },
   {
     "date": "2017-11-03",
@@ -1779,7 +1909,9 @@
     "anfci": -0.593,
     "financialStress": -0.6998,
     "twoYearRate": 1.63,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.74,
+    "breakeven5y5y": 1.98
   },
   {
     "date": "2017-11-10",
@@ -1806,7 +1938,9 @@
     "anfci": -0.602,
     "financialStress": -0.6728,
     "twoYearRate": 1.67,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.78,
+    "breakeven5y5y": 1.98
   },
   {
     "date": "2017-11-17",
@@ -1833,7 +1967,9 @@
     "anfci": -0.606,
     "financialStress": -0.6705,
     "twoYearRate": 1.73,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.75,
+    "breakeven5y5y": 1.97
   },
   {
     "date": "2017-11-24",
@@ -1860,7 +1996,9 @@
     "anfci": -0.605,
     "financialStress": -0.8234,
     "twoYearRate": 1.75,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.71,
+    "breakeven5y5y": 1.97
   },
   {
     "date": "2017-12-01",
@@ -1887,7 +2025,9 @@
     "anfci": -0.603,
     "financialStress": -0.7801,
     "twoYearRate": 1.78,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.72,
+    "breakeven5y5y": 2
   },
   {
     "date": "2017-12-08",
@@ -1914,7 +2054,9 @@
     "anfci": -0.601,
     "financialStress": -0.7086,
     "twoYearRate": 1.8,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.71,
+    "breakeven5y5y": 2.05
   },
   {
     "date": "2017-12-15",
@@ -1941,7 +2083,9 @@
     "anfci": -0.602,
     "financialStress": -0.6455,
     "twoYearRate": 1.84,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.77,
+    "breakeven5y5y": 1.99
   },
   {
     "date": "2017-12-22",
@@ -1968,7 +2112,9 @@
     "anfci": -0.609,
     "financialStress": -0.6095,
     "twoYearRate": 1.91,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.82,
+    "breakeven5y5y": 2.06
   },
   {
     "date": "2017-12-29",
@@ -1995,7 +2141,9 @@
     "anfci": -0.618,
     "financialStress": -0.5042,
     "twoYearRate": 1.89,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.86,
+    "breakeven5y5y": 2.06
   },
   {
     "date": "2018-01-05",
@@ -2022,7 +2170,9 @@
     "anfci": -0.627,
     "financialStress": -0.6257,
     "twoYearRate": 1.96,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.95,
+    "breakeven5y5y": 2.07
   },
   {
     "date": "2018-01-12",
@@ -2049,7 +2199,9 @@
     "anfci": -0.63,
     "financialStress": -0.7068,
     "twoYearRate": 1.99,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.92,
+    "breakeven5y5y": 2.1
   },
   {
     "date": "2018-01-19",
@@ -2076,7 +2228,9 @@
     "anfci": -0.624,
     "financialStress": -0.6469,
     "twoYearRate": 2.06,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 2,
+    "breakeven5y5y": 2.12
   },
   {
     "date": "2018-01-26",
@@ -2103,7 +2257,9 @@
     "anfci": -0.609,
     "financialStress": -0.6584,
     "twoYearRate": 2.13,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.93,
+    "breakeven5y5y": 2.25
   },
   {
     "date": "2018-02-02",
@@ -2130,7 +2286,9 @@
     "anfci": -0.589,
     "financialStress": -0.5037,
     "twoYearRate": 2.15,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.93,
+    "breakeven5y5y": 2.35
   },
   {
     "date": "2018-02-09",
@@ -2157,7 +2315,9 @@
     "anfci": -0.567,
     "financialStress": 0.1013,
     "twoYearRate": 2.05,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.83,
+    "breakeven5y5y": 2.27
   },
   {
     "date": "2018-02-16",
@@ -2184,7 +2344,9 @@
     "anfci": -0.551,
     "financialStress": -0.2608,
     "twoYearRate": 2.21,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 2,
+    "breakeven5y5y": 2.18
   },
   {
     "date": "2018-02-23",
@@ -2211,7 +2373,9 @@
     "anfci": -0.538,
     "financialStress": -0.3399,
     "twoYearRate": 2.25,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 2.04,
+    "breakeven5y5y": 2.2
   },
   {
     "date": "2018-03-02",
@@ -2238,7 +2402,9 @@
     "anfci": -0.525,
     "financialStress": -0.0679,
     "twoYearRate": 2.25,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 2.03,
+    "breakeven5y5y": 2.21
   },
   {
     "date": "2018-03-09",
@@ -2265,7 +2431,9 @@
     "anfci": -0.51,
     "financialStress": -0.0948,
     "twoYearRate": 2.27,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.96,
+    "breakeven5y5y": 2.28
   },
   {
     "date": "2018-03-16",
@@ -2292,7 +2460,9 @@
     "anfci": -0.493,
     "financialStress": -0.022,
     "twoYearRate": 2.31,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 2.05,
+    "breakeven5y5y": 2.11
   },
   {
     "date": "2018-03-23",
@@ -2319,7 +2489,9 @@
     "anfci": -0.477,
     "financialStress": 0.2574,
     "twoYearRate": 2.28,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 2.01,
+    "breakeven5y5y": 2.13
   },
   {
     "date": "2018-03-30",
@@ -2346,7 +2518,9 @@
     "anfci": -0.468,
     "financialStress": 0.3426,
     "twoYearRate": 2.27,
-    "sofr": null
+    "sofr": null,
+    "breakeven5y": 1.92,
+    "breakeven5y5y": 2.18
   },
   {
     "date": "2018-04-06",
@@ -2373,7 +2547,9 @@
     "anfci": -0.467,
     "financialStress": 0.3392,
     "twoYearRate": 2.27,
-    "sofr": 1.75
+    "sofr": 1.75,
+    "breakeven5y": 2.01,
+    "breakeven5y5y": 2.13
   },
   {
     "date": "2018-04-13",
@@ -2400,7 +2576,9 @@
     "anfci": -0.479,
     "financialStress": 0.1386,
     "twoYearRate": 2.37,
-    "sofr": 1.72
+    "sofr": 1.72,
+    "breakeven5y": 2.01,
+    "breakeven5y5y": 2.25
   },
   {
     "date": "2018-04-20",
@@ -2427,7 +2605,9 @@
     "anfci": -0.499,
     "financialStress": -0.0655,
     "twoYearRate": 2.46,
-    "sofr": 1.72
+    "sofr": 1.72,
+    "breakeven5y": 2.1,
+    "breakeven5y5y": 2.24
   },
   {
     "date": "2018-04-27",
@@ -2454,7 +2634,9 @@
     "anfci": -0.519,
     "financialStress": -0.0311,
     "twoYearRate": 2.49,
-    "sofr": 1.72
+    "sofr": 1.72,
+    "breakeven5y": 2.09,
+    "breakeven5y5y": 2.25
   },
   {
     "date": "2018-05-04",
@@ -2481,7 +2663,9 @@
     "anfci": -0.536,
     "financialStress": 0.0079,
     "twoYearRate": 2.51,
-    "sofr": 1.72
+    "sofr": 1.72,
+    "breakeven5y": 2.09,
+    "breakeven5y5y": 2.23
   },
   {
     "date": "2018-05-11",
@@ -2508,7 +2692,9 @@
     "anfci": -0.548,
     "financialStress": -0.2373,
     "twoYearRate": 2.54,
-    "sofr": 1.73
+    "sofr": 1.73,
+    "breakeven5y": 2.13,
+    "breakeven5y5y": 2.17
   },
   {
     "date": "2018-05-18",
@@ -2535,7 +2721,9 @@
     "anfci": -0.553,
     "financialStress": -0.2986,
     "twoYearRate": 2.55,
-    "sofr": 1.73
+    "sofr": 1.73,
+    "breakeven5y": 2.14,
+    "breakeven5y5y": 2.16
   },
   {
     "date": "2018-05-25",
@@ -2562,7 +2750,9 @@
     "anfci": -0.553,
     "financialStress": -0.2282,
     "twoYearRate": 2.48,
-    "sofr": 1.73
+    "sofr": 1.73,
+    "breakeven5y": 2.04,
+    "breakeven5y5y": 2.14
   },
   {
     "date": "2018-06-01",
@@ -2589,7 +2779,9 @@
     "anfci": -0.549,
     "financialStress": 0.0683,
     "twoYearRate": 2.47,
-    "sofr": 1.81
+    "sofr": 1.81,
+    "breakeven5y": 2.06,
+    "breakeven5y5y": 2.12
   },
   {
     "date": "2018-06-08",
@@ -2616,7 +2808,9 @@
     "anfci": -0.543,
     "financialStress": -0.3929,
     "twoYearRate": 2.5,
-    "sofr": 1.69
+    "sofr": 1.69,
+    "breakeven5y": 2.06,
+    "breakeven5y5y": 2.16
   },
   {
     "date": "2018-06-15",
@@ -2643,7 +2837,9 @@
     "anfci": -0.536,
     "financialStress": -0.3396,
     "twoYearRate": 2.55,
-    "sofr": 1.91
+    "sofr": 1.91,
+    "breakeven5y": 2.08,
+    "breakeven5y5y": 2.16
   },
   {
     "date": "2018-06-22",
@@ -2670,7 +2866,9 @@
     "anfci": -0.529,
     "financialStress": -0.2713,
     "twoYearRate": 2.56,
-    "sofr": 1.92
+    "sofr": 1.92,
+    "breakeven5y": 2.07,
+    "breakeven5y5y": 2.17
   },
   {
     "date": "2018-06-29",
@@ -2697,7 +2895,9 @@
     "anfci": -0.525,
     "financialStress": -0.0583,
     "twoYearRate": 2.52,
-    "sofr": 2.12
+    "sofr": 2.12,
+    "breakeven5y": 2.06,
+    "breakeven5y5y": 2.16
   },
   {
     "date": "2018-07-06",
@@ -2724,7 +2924,9 @@
     "anfci": -0.528,
     "financialStress": -0.1888,
     "twoYearRate": 2.53,
-    "sofr": 1.93
+    "sofr": 1.93,
+    "breakeven5y": 2.08,
+    "breakeven5y5y": 2.16
   },
   {
     "date": "2018-07-13",
@@ -2751,7 +2953,9 @@
     "anfci": -0.538,
     "financialStress": -0.4182,
     "twoYearRate": 2.59,
-    "sofr": 1.9
+    "sofr": 1.9,
+    "breakeven5y": 2.07,
+    "breakeven5y5y": 2.15
   },
   {
     "date": "2018-07-20",
@@ -2778,7 +2982,9 @@
     "anfci": -0.554,
     "financialStress": -0.4556,
     "twoYearRate": 2.6,
-    "sofr": 1.88
+    "sofr": 1.88,
+    "breakeven5y": 2.02,
+    "breakeven5y5y": 2.2
   },
   {
     "date": "2018-07-27",
@@ -2805,7 +3011,9 @@
     "anfci": -0.574,
     "financialStress": -0.5414,
     "twoYearRate": 2.67,
-    "sofr": 1.88
+    "sofr": 1.88,
+    "breakeven5y": 2,
+    "breakeven5y5y": 2.24
   },
   {
     "date": "2018-08-03",
@@ -2832,7 +3040,9 @@
     "anfci": -0.592,
     "financialStress": -0.4448,
     "twoYearRate": 2.63,
-    "sofr": 1.86
+    "sofr": 1.86,
+    "breakeven5y": 2,
+    "breakeven5y5y": 2.24
   },
   {
     "date": "2018-08-10",
@@ -2859,7 +3069,9 @@
     "anfci": -0.605,
     "financialStress": -0.5501,
     "twoYearRate": 2.61,
-    "sofr": 1.9
+    "sofr": 1.9,
+    "breakeven5y": 1.98,
+    "breakeven5y5y": 2.2
   },
   {
     "date": "2018-08-17",
@@ -2886,7 +3098,9 @@
     "anfci": -0.611,
     "financialStress": -0.4429,
     "twoYearRate": 2.61,
-    "sofr": 1.9
+    "sofr": 1.9,
+    "breakeven5y": 1.96,
+    "breakeven5y5y": 2.2
   },
   {
     "date": "2018-08-24",
@@ -2913,7 +3127,9 @@
     "anfci": -0.614,
     "financialStress": -0.6262,
     "twoYearRate": 2.63,
-    "sofr": 1.95
+    "sofr": 1.95,
+    "breakeven5y": 1.99,
+    "breakeven5y5y": 2.19
   },
   {
     "date": "2018-08-31",
@@ -2940,7 +3156,9 @@
     "anfci": -0.617,
     "financialStress": -0.6736,
     "twoYearRate": 2.62,
-    "sofr": 1.97
+    "sofr": 1.97,
+    "breakeven5y": 1.98,
+    "breakeven5y5y": 2.18
   },
   {
     "date": "2018-09-07",
@@ -2967,7 +3185,9 @@
     "anfci": -0.622,
     "financialStress": -0.6001,
     "twoYearRate": 2.71,
-    "sofr": 1.94
+    "sofr": 1.94,
+    "breakeven5y": 1.98,
+    "breakeven5y5y": 2.22
   },
   {
     "date": "2018-09-14",
@@ -2994,7 +3214,9 @@
     "anfci": -0.629,
     "financialStress": -0.714,
     "twoYearRate": 2.78,
-    "sofr": 1.95
+    "sofr": 1.95,
+    "breakeven5y": 2,
+    "breakeven5y5y": 2.2
   },
   {
     "date": "2018-09-21",
@@ -3021,7 +3243,9 @@
     "anfci": -0.634,
     "financialStress": -0.8143,
     "twoYearRate": 2.81,
-    "sofr": 1.92
+    "sofr": 1.92,
+    "breakeven5y": 2.02,
+    "breakeven5y5y": 2.28
   },
   {
     "date": "2018-09-28",
@@ -3048,7 +3272,9 @@
     "anfci": -0.633,
     "financialStress": -0.7489,
     "twoYearRate": 2.81,
-    "sofr": 2.25
+    "sofr": 2.25,
+    "breakeven5y": 2.03,
+    "breakeven5y5y": 2.25
   },
   {
     "date": "2018-10-05",
@@ -3075,7 +3301,9 @@
     "anfci": -0.625,
     "financialStress": -0.7869,
     "twoYearRate": 2.88,
-    "sofr": 2.16
+    "sofr": 2.16,
+    "breakeven5y": 2.05,
+    "breakeven5y5y": 2.27
   },
   {
     "date": "2018-10-12",
@@ -3102,7 +3330,9 @@
     "anfci": -0.61,
     "financialStress": -0.4418,
     "twoYearRate": 2.85,
-    "sofr": 2.18
+    "sofr": 2.18,
+    "breakeven5y": 1.99,
+    "breakeven5y5y": 2.25
   },
   {
     "date": "2018-10-19",
@@ -3129,7 +3359,9 @@
     "anfci": -0.595,
     "financialStress": -0.5028,
     "twoYearRate": 2.92,
-    "sofr": 2.19
+    "sofr": 2.19,
+    "breakeven5y": 1.98,
+    "breakeven5y5y": 2.24
   },
   {
     "date": "2018-10-26",
@@ -3156,7 +3388,9 @@
     "anfci": -0.583,
     "financialStress": -0.2074,
     "twoYearRate": 2.81,
-    "sofr": 2.19
+    "sofr": 2.19,
+    "breakeven5y": 1.93,
+    "breakeven5y5y": 2.19
   },
   {
     "date": "2018-11-02",
@@ -3183,7 +3417,9 @@
     "anfci": -0.576,
     "financialStress": -0.2223,
     "twoYearRate": 2.91,
-    "sofr": 2.25
+    "sofr": 2.25,
+    "breakeven5y": 1.91,
+    "breakeven5y5y": 2.21
   },
   {
     "date": "2018-11-09",
@@ -3210,7 +3446,9 @@
     "anfci": -0.57,
     "financialStress": -0.4697,
     "twoYearRate": 2.94,
-    "sofr": 2.2
+    "sofr": 2.2,
+    "breakeven5y": 1.9,
+    "breakeven5y5y": 2.18
   },
   {
     "date": "2018-11-16",
@@ -3237,7 +3475,9 @@
     "anfci": -0.556,
     "financialStress": -0.019,
     "twoYearRate": 2.81,
-    "sofr": 2.26
+    "sofr": 2.26,
+    "breakeven5y": 1.88,
+    "breakeven5y5y": 2.16
   },
   {
     "date": "2018-11-23",
@@ -3264,7 +3504,9 @@
     "anfci": -0.533,
     "financialStress": 0.0595,
     "twoYearRate": 2.81,
-    "sofr": 2.23
+    "sofr": 2.23,
+    "breakeven5y": 1.77,
+    "breakeven5y5y": 2.15
   },
   {
     "date": "2018-11-30",
@@ -3291,7 +3533,9 @@
     "anfci": -0.503,
     "financialStress": -0.1417,
     "twoYearRate": 2.8,
-    "sofr": 2.28
+    "sofr": 2.28,
+    "breakeven5y": 1.77,
+    "breakeven5y5y": 2.17
   },
   {
     "date": "2018-12-07",
@@ -3318,7 +3562,9 @@
     "anfci": -0.471,
     "financialStress": 0.213,
     "twoYearRate": 2.72,
-    "sofr": 2.3
+    "sofr": 2.3,
+    "breakeven5y": 1.68,
+    "breakeven5y5y": 2.1
   },
   {
     "date": "2018-12-14",
@@ -3345,7 +3591,9 @@
     "anfci": -0.449,
     "financialStress": 0.2697,
     "twoYearRate": 2.73,
-    "sofr": 2.21
+    "sofr": 2.21,
+    "breakeven5y": 1.6,
+    "breakeven5y5y": 2.04
   },
   {
     "date": "2018-12-21",
@@ -3372,7 +3620,9 @@
     "anfci": -0.443,
     "financialStress": 0.5499,
     "twoYearRate": 2.63,
-    "sofr": 2.4
+    "sofr": 2.4,
+    "breakeven5y": 1.55,
+    "breakeven5y5y": 1.99
   },
   {
     "date": "2018-12-28",
@@ -3399,7 +3649,9 @@
     "anfci": -0.453,
     "financialStress": 0.6761,
     "twoYearRate": 2.52,
-    "sofr": 2.46
+    "sofr": 2.46,
+    "breakeven5y": 1.52,
+    "breakeven5y5y": 1.94
   },
   {
     "date": "2019-01-04",
@@ -3426,7 +3678,9 @@
     "anfci": -0.476,
     "financialStress": 0.3204,
     "twoYearRate": 2.5,
-    "sofr": 2.45
+    "sofr": 2.45,
+    "breakeven5y": 1.58,
+    "breakeven5y5y": 1.94
   },
   {
     "date": "2019-01-11",
@@ -3453,7 +3707,9 @@
     "anfci": -0.499,
     "financialStress": -0.1759,
     "twoYearRate": 2.55,
-    "sofr": 2.41
+    "sofr": 2.41,
+    "breakeven5y": 1.66,
+    "breakeven5y5y": 2
   },
   {
     "date": "2019-01-18",
@@ -3480,7 +3736,9 @@
     "anfci": -0.522,
     "financialStress": -0.1439,
     "twoYearRate": 2.62,
-    "sofr": 2.42
+    "sofr": 2.42,
+    "breakeven5y": 1.67,
+    "breakeven5y5y": 1.99
   },
   {
     "date": "2019-01-25",
@@ -3507,7 +3765,9 @@
     "anfci": -0.541,
     "financialStress": -0.1193,
     "twoYearRate": 2.6,
-    "sofr": 2.4
+    "sofr": 2.4,
+    "breakeven5y": 1.64,
+    "breakeven5y5y": 1.94
   },
   {
     "date": "2019-02-01",
@@ -3534,7 +3794,9 @@
     "anfci": -0.561,
     "financialStress": -0.1389,
     "twoYearRate": 2.52,
-    "sofr": 2.47
+    "sofr": 2.47,
+    "breakeven5y": 1.72,
+    "breakeven5y5y": 2.04
   },
   {
     "date": "2019-02-08",
@@ -3561,7 +3823,9 @@
     "anfci": -0.582,
     "financialStress": -0.2849,
     "twoYearRate": 2.45,
-    "sofr": 2.37
+    "sofr": 2.37,
+    "breakeven5y": 1.69,
+    "breakeven5y5y": 1.95
   },
   {
     "date": "2019-02-15",
@@ -3588,7 +3852,9 @@
     "anfci": -0.606,
     "financialStress": -0.3521,
     "twoYearRate": 2.52,
-    "sofr": 2.43
+    "sofr": 2.43,
+    "breakeven5y": 1.75,
+    "breakeven5y5y": 1.97
   },
   {
     "date": "2019-02-22",
@@ -3615,7 +3881,9 @@
     "anfci": -0.628,
     "financialStress": -0.5182,
     "twoYearRate": 2.48,
-    "sofr": 2.4
+    "sofr": 2.4,
+    "breakeven5y": 1.82,
+    "breakeven5y5y": 2
   },
   {
     "date": "2019-03-01",
@@ -3642,7 +3910,9 @@
     "anfci": -0.644,
     "financialStress": -0.5799,
     "twoYearRate": 2.55,
-    "sofr": 2.38
+    "sofr": 2.38,
+    "breakeven5y": 1.85,
+    "breakeven5y5y": 2.07
   },
   {
     "date": "2019-03-08",
@@ -3669,7 +3939,9 @@
     "anfci": -0.649,
     "financialStress": -0.461,
     "twoYearRate": 2.45,
-    "sofr": 2.39
+    "sofr": 2.39,
+    "breakeven5y": 1.8,
+    "breakeven5y5y": 2
   },
   {
     "date": "2019-03-15",
@@ -3696,7 +3968,9 @@
     "anfci": -0.648,
     "financialStress": -0.5646,
     "twoYearRate": 2.43,
-    "sofr": 2.46
+    "sofr": 2.46,
+    "breakeven5y": 1.86,
+    "breakeven5y5y": 2.02
   },
   {
     "date": "2019-03-22",
@@ -3723,7 +3997,9 @@
     "anfci": -0.645,
     "financialStress": -0.5752,
     "twoYearRate": 2.31,
-    "sofr": 2.4
+    "sofr": 2.4,
+    "breakeven5y": 1.8,
+    "breakeven5y5y": 2
   },
   {
     "date": "2019-03-29",
@@ -3750,7 +4026,9 @@
     "anfci": -0.645,
     "financialStress": -0.3105,
     "twoYearRate": 2.27,
-    "sofr": 2.65
+    "sofr": 2.65,
+    "breakeven5y": 1.78,
+    "breakeven5y5y": 1.98
   },
   {
     "date": "2019-04-05",
@@ -3777,7 +4055,9 @@
     "anfci": -0.652,
     "financialStress": -0.6709,
     "twoYearRate": 2.35,
-    "sofr": 2.46
+    "sofr": 2.46,
+    "breakeven5y": 1.79,
+    "breakeven5y5y": 2.01
   },
   {
     "date": "2019-04-12",
@@ -3804,7 +4084,9 @@
     "anfci": -0.663,
     "financialStress": -0.6515,
     "twoYearRate": 2.4,
-    "sofr": 2.44
+    "sofr": 2.44,
+    "breakeven5y": 1.86,
+    "breakeven5y5y": 2.04
   },
   {
     "date": "2019-04-19",
@@ -3831,7 +4113,9 @@
     "anfci": -0.674,
     "financialStress": -0.771,
     "twoYearRate": 2.38,
-    "sofr": 2.5
+    "sofr": 2.5,
+    "breakeven5y": 1.86,
+    "breakeven5y5y": 2.04
   },
   {
     "date": "2019-04-26",
@@ -3858,7 +4142,9 @@
     "anfci": -0.677,
     "financialStress": -0.629,
     "twoYearRate": 2.28,
-    "sofr": 2.46
+    "sofr": 2.46,
+    "breakeven5y": 1.86,
+    "breakeven5y5y": 2.08
   },
   {
     "date": "2019-05-03",
@@ -3885,7 +4171,9 @@
     "anfci": -0.674,
     "financialStress": -0.6689,
     "twoYearRate": 2.33,
-    "sofr": 2.43
+    "sofr": 2.43,
+    "breakeven5y": 1.8,
+    "breakeven5y5y": 2.02
   },
   {
     "date": "2019-05-10",
@@ -3912,7 +4200,9 @@
     "anfci": -0.665,
     "financialStress": -0.3744,
     "twoYearRate": 2.26,
-    "sofr": 2.4
+    "sofr": 2.4,
+    "breakeven5y": 1.75,
+    "breakeven5y5y": 2.01
   },
   {
     "date": "2019-05-17",
@@ -3939,7 +4229,9 @@
     "anfci": -0.654,
     "financialStress": -0.3492,
     "twoYearRate": 2.2,
-    "sofr": 2.42
+    "sofr": 2.42,
+    "breakeven5y": 1.71,
+    "breakeven5y5y": 1.91
   },
   {
     "date": "2019-05-24",
@@ -3966,7 +4258,9 @@
     "anfci": -0.646,
     "financialStress": -0.4711,
     "twoYearRate": 2.16,
-    "sofr": 2.37
+    "sofr": 2.37,
+    "breakeven5y": 1.62,
+    "breakeven5y5y": 1.9
   },
   {
     "date": "2019-05-31",
@@ -3993,7 +4287,9 @@
     "anfci": -0.641,
     "financialStress": -0.1751,
     "twoYearRate": 1.95,
-    "sofr": 2.49
+    "sofr": 2.49,
+    "breakeven5y": 1.58,
+    "breakeven5y5y": 1.9
   },
   {
     "date": "2019-06-07",
@@ -4020,7 +4316,9 @@
     "anfci": -0.638,
     "financialStress": -0.1985,
     "twoYearRate": 1.85,
-    "sofr": 2.39
+    "sofr": 2.39,
+    "breakeven5y": 1.61,
+    "breakeven5y5y": 1.87
   },
   {
     "date": "2019-06-14",
@@ -4047,7 +4345,9 @@
     "anfci": -0.635,
     "financialStress": -0.4264,
     "twoYearRate": 1.84,
-    "sofr": 2.35
+    "sofr": 2.35,
+    "breakeven5y": 1.48,
+    "breakeven5y5y": 1.78
   },
   {
     "date": "2019-06-21",
@@ -4074,7 +4374,9 @@
     "anfci": -0.631,
     "financialStress": -0.3349,
     "twoYearRate": 1.77,
-    "sofr": 2.37
+    "sofr": 2.37,
+    "breakeven5y": 1.6,
+    "breakeven5y5y": 1.86
   },
   {
     "date": "2019-06-28",
@@ -4101,7 +4403,9 @@
     "anfci": -0.628,
     "financialStress": -0.331,
     "twoYearRate": 1.75,
-    "sofr": 2.5
+    "sofr": 2.5,
+    "breakeven5y": 1.53,
+    "breakeven5y5y": 1.85
   },
   {
     "date": "2019-07-05",
@@ -4128,7 +4432,9 @@
     "anfci": -0.63,
     "financialStress": -0.5213,
     "twoYearRate": 1.87,
-    "sofr": 2.59
+    "sofr": 2.59,
+    "breakeven5y": 1.55,
+    "breakeven5y5y": 1.83
   },
   {
     "date": "2019-07-12",
@@ -4155,7 +4461,9 @@
     "anfci": -0.632,
     "financialStress": -0.4496,
     "twoYearRate": 1.84,
-    "sofr": 2.36
+    "sofr": 2.36,
+    "breakeven5y": 1.62,
+    "breakeven5y5y": 1.92
   },
   {
     "date": "2019-07-19",
@@ -4182,7 +4490,9 @@
     "anfci": -0.633,
     "financialStress": -0.3577,
     "twoYearRate": 1.8,
-    "sofr": 2.41
+    "sofr": 2.41,
+    "breakeven5y": 1.6,
+    "breakeven5y5y": 2
   },
   {
     "date": "2019-07-26",
@@ -4209,7 +4519,9 @@
     "anfci": -0.63,
     "financialStress": -0.4862,
     "twoYearRate": 1.86,
-    "sofr": 2.41
+    "sofr": 2.41,
+    "breakeven5y": 1.57,
+    "breakeven5y5y": 1.99
   },
   {
     "date": "2019-08-02",
@@ -4236,7 +4548,9 @@
     "anfci": -0.617,
     "financialStress": -0.2582,
     "twoYearRate": 1.72,
-    "sofr": 2.19
+    "sofr": 2.19,
+    "breakeven5y": 1.45,
+    "breakeven5y5y": 1.87
   },
   {
     "date": "2019-08-09",
@@ -4263,7 +4577,9 @@
     "anfci": -0.596,
     "financialStress": 0.2573,
     "twoYearRate": 1.63,
-    "sofr": 2.11
+    "sofr": 2.11,
+    "breakeven5y": 1.44,
+    "breakeven5y5y": 1.88
   },
   {
     "date": "2019-08-16",
@@ -4290,7 +4606,9 @@
     "anfci": -0.573,
     "financialStress": 0.2066,
     "twoYearRate": 1.48,
-    "sofr": 2.13
+    "sofr": 2.13,
+    "breakeven5y": 1.34,
+    "breakeven5y5y": 1.74
   },
   {
     "date": "2019-08-23",
@@ -4317,7 +4635,9 @@
     "anfci": -0.556,
     "financialStress": -0.0863,
     "twoYearRate": 1.51,
-    "sofr": 2.1
+    "sofr": 2.1,
+    "breakeven5y": 1.35,
+    "breakeven5y5y": 1.73
   },
   {
     "date": "2019-08-30",
@@ -4344,7 +4664,9 @@
     "anfci": -0.55,
     "financialStress": -0.0441,
     "twoYearRate": 1.5,
-    "sofr": 2.16
+    "sofr": 2.16,
+    "breakeven5y": 1.35,
+    "breakeven5y5y": 1.75
   },
   {
     "date": "2019-09-06",
@@ -4371,7 +4693,9 @@
     "anfci": -0.555,
     "financialStress": -0.0931,
     "twoYearRate": 1.53,
-    "sofr": 2.15
+    "sofr": 2.15,
+    "breakeven5y": 1.35,
+    "breakeven5y5y": 1.73
   },
   {
     "date": "2019-09-13",
@@ -4398,7 +4722,9 @@
     "anfci": -0.563,
     "financialStress": -0.3504,
     "twoYearRate": 1.79,
-    "sofr": 2.2
+    "sofr": 2.2,
+    "breakeven5y": 1.46,
+    "breakeven5y5y": 1.88
   },
   {
     "date": "2019-09-20",
@@ -4425,7 +4751,9 @@
     "anfci": -0.567,
     "financialStress": -0.1484,
     "twoYearRate": 1.69,
-    "sofr": 1.86
+    "sofr": 1.86,
+    "breakeven5y": 1.42,
+    "breakeven5y5y": 1.8
   },
   {
     "date": "2019-09-27",
@@ -4452,7 +4780,9 @@
     "anfci": -0.564,
     "financialStress": 0.1098,
     "twoYearRate": 1.63,
-    "sofr": 1.82
+    "sofr": 1.82,
+    "breakeven5y": 1.36,
+    "breakeven5y5y": 1.7
   },
   {
     "date": "2019-10-04",
@@ -4479,7 +4809,9 @@
     "anfci": -0.554,
     "financialStress": 0.373,
     "twoYearRate": 1.4,
-    "sofr": 1.82
+    "sofr": 1.82,
+    "breakeven5y": 1.27,
+    "breakeven5y5y": 1.73
   },
   {
     "date": "2019-10-11",
@@ -4506,7 +4838,9 @@
     "anfci": -0.547,
     "financialStress": 0.1417,
     "twoYearRate": 1.63,
-    "sofr": 1.85
+    "sofr": 1.85,
+    "breakeven5y": 1.34,
+    "breakeven5y5y": 1.78
   },
   {
     "date": "2019-10-18",
@@ -4533,7 +4867,9 @@
     "anfci": -0.551,
     "financialStress": -0.134,
     "twoYearRate": 1.58,
-    "sofr": 1.88
+    "sofr": 1.88,
+    "breakeven5y": 1.52,
+    "breakeven5y5y": 1.68
   },
   {
     "date": "2019-10-25",
@@ -4560,7 +4896,9 @@
     "anfci": -0.569,
     "financialStress": -0.1278,
     "twoYearRate": 1.63,
-    "sofr": 1.84
+    "sofr": 1.84,
+    "breakeven5y": 1.55,
+    "breakeven5y5y": 1.75
   },
   {
     "date": "2019-11-01",
@@ -4587,7 +4925,9 @@
     "anfci": -0.594,
     "financialStress": -0.0631,
     "twoYearRate": 1.56,
-    "sofr": 1.58
+    "sofr": 1.58,
+    "breakeven5y": 1.5,
+    "breakeven5y5y": 1.68
   },
   {
     "date": "2019-11-08",
@@ -4614,7 +4954,9 @@
     "anfci": -0.617,
     "financialStress": -0.0981,
     "twoYearRate": 1.68,
-    "sofr": 1.56
+    "sofr": 1.56,
+    "breakeven5y": 1.63,
+    "breakeven5y5y": 1.79
   },
   {
     "date": "2019-11-15",
@@ -4641,7 +4983,9 @@
     "anfci": -0.626,
     "financialStress": -0.1024,
     "twoYearRate": 1.61,
-    "sofr": 1.59
+    "sofr": 1.59,
+    "breakeven5y": 1.52,
+    "breakeven5y5y": 1.74
   },
   {
     "date": "2019-11-22",
@@ -4668,7 +5012,9 @@
     "anfci": -0.617,
     "financialStress": -0.0483,
     "twoYearRate": 1.61,
-    "sofr": 1.58
+    "sofr": 1.58,
+    "breakeven5y": 1.53,
+    "breakeven5y5y": 1.71
   },
   {
     "date": "2019-11-29",
@@ -4695,7 +5041,9 @@
     "anfci": -0.593,
     "financialStress": -0.1879,
     "twoYearRate": 1.61,
-    "sofr": 1.65
+    "sofr": 1.65,
+    "breakeven5y": 1.5,
+    "breakeven5y5y": 1.72
   },
   {
     "date": "2019-12-06",
@@ -4722,7 +5070,9 @@
     "anfci": -0.566,
     "financialStress": -0.0919,
     "twoYearRate": 1.61,
-    "sofr": 1.55
+    "sofr": 1.55,
+    "breakeven5y": 1.59,
+    "breakeven5y5y": 1.79
   },
   {
     "date": "2019-12-13",
@@ -4749,7 +5099,9 @@
     "anfci": -0.554,
     "financialStress": -0.2676,
     "twoYearRate": 1.61,
-    "sofr": 1.54
+    "sofr": 1.54,
+    "breakeven5y": 1.62,
+    "breakeven5y5y": 1.78
   },
   {
     "date": "2019-12-20",
@@ -4776,7 +5128,9 @@
     "anfci": -0.557,
     "financialStress": -0.3668,
     "twoYearRate": 1.63,
-    "sofr": 1.53
+    "sofr": 1.53,
+    "breakeven5y": 1.67,
+    "breakeven5y5y": 1.87
   },
   {
     "date": "2019-12-27",
@@ -4803,7 +5157,9 @@
     "anfci": -0.573,
     "financialStress": -0.1801,
     "twoYearRate": 1.59,
-    "sofr": 1.53
+    "sofr": 1.53,
+    "breakeven5y": 1.64,
+    "breakeven5y5y": 1.82
   },
   {
     "date": "2020-01-03",
@@ -4830,7 +5186,9 @@
     "anfci": -0.59,
     "financialStress": -0.2263,
     "twoYearRate": 1.53,
-    "sofr": 1.55
+    "sofr": 1.55,
+    "breakeven5y": 1.69,
+    "breakeven5y5y": 1.85
   },
   {
     "date": "2020-01-10",
@@ -4857,7 +5215,9 @@
     "anfci": -0.603,
     "financialStress": -0.3525,
     "twoYearRate": 1.56,
-    "sofr": 1.55
+    "sofr": 1.55,
+    "breakeven5y": 1.67,
+    "breakeven5y5y": 1.85
   },
   {
     "date": "2020-01-17",
@@ -4884,7 +5244,9 @@
     "anfci": -0.614,
     "financialStress": -0.5204,
     "twoYearRate": 1.58,
-    "sofr": 1.54
+    "sofr": 1.54,
+    "breakeven5y": 1.68,
+    "breakeven5y5y": 1.82
   },
   {
     "date": "2020-01-24",
@@ -4911,7 +5273,9 @@
     "anfci": -0.628,
     "financialStress": -0.4068,
     "twoYearRate": 1.49,
-    "sofr": 1.53
+    "sofr": 1.53,
+    "breakeven5y": 1.62,
+    "breakeven5y5y": 1.74
   },
   {
     "date": "2020-01-31",
@@ -4938,7 +5302,9 @@
     "anfci": -0.65,
     "financialStress": -0.1169,
     "twoYearRate": 1.33,
-    "sofr": 1.6
+    "sofr": 1.6,
+    "breakeven5y": 1.6,
+    "breakeven5y5y": 1.7
   },
   {
     "date": "2020-02-07",
@@ -4965,7 +5331,9 @@
     "anfci": -0.675,
     "financialStress": -0.4613,
     "twoYearRate": 1.41,
-    "sofr": 1.58
+    "sofr": 1.58,
+    "breakeven5y": 1.61,
+    "breakeven5y5y": 1.71
   },
   {
     "date": "2020-02-14",
@@ -4992,7 +5360,9 @@
     "anfci": -0.671,
     "financialStress": -0.5681,
     "twoYearRate": 1.42,
-    "sofr": 1.58
+    "sofr": 1.58,
+    "breakeven5y": 1.64,
+    "breakeven5y5y": 1.68
   },
   {
     "date": "2020-02-21",
@@ -5019,7 +5389,9 @@
     "anfci": -0.602,
     "financialStress": -0.4422,
     "twoYearRate": 1.34,
-    "sofr": 1.58
+    "sofr": 1.58,
+    "breakeven5y": 1.6,
+    "breakeven5y5y": 1.62
   },
   {
     "date": "2020-02-28",
@@ -5046,7 +5418,9 @@
     "anfci": -0.448,
     "financialStress": 0.6758,
     "twoYearRate": 0.86,
-    "sofr": 1.6
+    "sofr": 1.6,
+    "breakeven5y": 1.33,
+    "breakeven5y5y": 1.49
   },
   {
     "date": "2020-03-06",
@@ -5073,7 +5447,9 @@
     "anfci": -0.224,
     "financialStress": 1.3499,
     "twoYearRate": 0.49,
-    "sofr": 1.1
+    "sofr": 1.1,
+    "breakeven5y": 1.14,
+    "breakeven5y5y": 1.48
   },
   {
     "date": "2020-03-13",
@@ -5100,7 +5476,9 @@
     "anfci": 0.035,
     "financialStress": 3.5137,
     "twoYearRate": 0.49,
-    "sofr": 1.1
+    "sofr": 1.1,
+    "breakeven5y": 0.53,
+    "breakeven5y5y": 1.27
   },
   {
     "date": "2020-03-20",
@@ -5127,7 +5505,9 @@
     "anfci": 0.269,
     "financialStress": 5.6565,
     "twoYearRate": 0.37,
-    "sofr": 0.04
+    "sofr": 0.04,
+    "breakeven5y": 0.31,
+    "breakeven5y5y": 1.19
   },
   {
     "date": "2020-03-27",
@@ -5154,7 +5534,9 @@
     "anfci": 0.412,
     "financialStress": 5.3861,
     "twoYearRate": 0.25,
-    "sofr": 0.01
+    "sofr": 0.01,
+    "breakeven5y": 0.54,
+    "breakeven5y5y": 1.34
   },
   {
     "date": "2020-04-03",
@@ -5181,7 +5563,9 @@
     "anfci": 0.453,
     "financialStress": 3.1863,
     "twoYearRate": 0.23,
-    "sofr": 0.01
+    "sofr": 0.01,
+    "breakeven5y": 0.78,
+    "breakeven5y5y": 1.38
   },
   {
     "date": "2020-04-10",
@@ -5208,7 +5592,9 @@
     "anfci": 0.404,
     "financialStress": 2.6259,
     "twoYearRate": 0.23,
-    "sofr": 0.01
+    "sofr": 0.01,
+    "breakeven5y": 0.9,
+    "breakeven5y5y": 1.56
   },
   {
     "date": "2020-04-17",
@@ -5235,7 +5621,9 @@
     "anfci": 0.302,
     "financialStress": 1.9001,
     "twoYearRate": 0.2,
-    "sofr": 0.03
+    "sofr": 0.03,
+    "breakeven5y": 0.67,
+    "breakeven5y5y": 1.35
   },
   {
     "date": "2020-04-24",
@@ -5262,7 +5650,9 @@
     "anfci": 0.192,
     "financialStress": 2.4212,
     "twoYearRate": 0.22,
-    "sofr": 0.03
+    "sofr": 0.03,
+    "breakeven5y": 0.72,
+    "breakeven5y5y": 1.5
   },
   {
     "date": "2020-05-01",
@@ -5289,7 +5679,9 @@
     "anfci": 0.083,
     "financialStress": 1.2542,
     "twoYearRate": 0.2,
-    "sofr": 0.03
+    "sofr": 0.03,
+    "breakeven5y": 0.68,
+    "breakeven5y5y": 1.44
   },
   {
     "date": "2020-05-08",
@@ -5316,7 +5708,9 @@
     "anfci": -0.021,
     "financialStress": 0.9548,
     "twoYearRate": 0.16,
-    "sofr": 0.06
+    "sofr": 0.06,
+    "breakeven5y": 0.74,
+    "breakeven5y5y": 1.5
   },
   {
     "date": "2020-05-15",
@@ -5343,7 +5737,9 @@
     "anfci": -0.121,
     "financialStress": 0.9279,
     "twoYearRate": 0.16,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 0.75,
+    "breakeven5y5y": 1.43
   },
   {
     "date": "2020-05-22",
@@ -5370,7 +5766,9 @@
     "anfci": -0.229,
     "financialStress": 0.443,
     "twoYearRate": 0.17,
-    "sofr": 0.04
+    "sofr": 0.04,
+    "breakeven5y": 0.8,
+    "breakeven5y5y": 1.44
   },
   {
     "date": "2020-05-29",
@@ -5397,7 +5795,9 @@
     "anfci": -0.334,
     "financialStress": 0.2148,
     "twoYearRate": 0.16,
-    "sofr": 0.06
+    "sofr": 0.06,
+    "breakeven5y": 0.83,
+    "breakeven5y5y": 1.47
   },
   {
     "date": "2020-06-05",
@@ -5424,7 +5824,9 @@
     "anfci": -0.418,
     "financialStress": -0.0796,
     "twoYearRate": 0.22,
-    "sofr": 0.07
+    "sofr": 0.07,
+    "breakeven5y": 0.95,
+    "breakeven5y5y": 1.59
   },
   {
     "date": "2020-06-12",
@@ -5451,7 +5853,9 @@
     "anfci": -0.464,
     "financialStress": 0.2872,
     "twoYearRate": 0.19,
-    "sofr": 0.08
+    "sofr": 0.08,
+    "breakeven5y": 0.95,
+    "breakeven5y5y": 1.47
   },
   {
     "date": "2020-06-19",
@@ -5478,7 +5882,9 @@
     "anfci": -0.477,
     "financialStress": 0.4916,
     "twoYearRate": 0.19,
-    "sofr": 0.09
+    "sofr": 0.09,
+    "breakeven5y": 1.06,
+    "breakeven5y5y": 1.54
   },
   {
     "date": "2020-06-26",
@@ -5505,7 +5911,9 @@
     "anfci": -0.471,
     "financialStress": 0.5171,
     "twoYearRate": 0.17,
-    "sofr": 0.08
+    "sofr": 0.08,
+    "breakeven5y": 1.11,
+    "breakeven5y5y": 1.53
   },
   {
     "date": "2020-07-03",
@@ -5532,7 +5940,9 @@
     "anfci": -0.467,
     "financialStress": 0.4284,
     "twoYearRate": 0.16,
-    "sofr": 0.11
+    "sofr": 0.11,
+    "breakeven5y": 1.21,
+    "breakeven5y5y": 1.61
   },
   {
     "date": "2020-07-10",
@@ -5559,7 +5969,9 @@
     "anfci": -0.478,
     "financialStress": 0.1293,
     "twoYearRate": 0.16,
-    "sofr": 0.1
+    "sofr": 0.1,
+    "breakeven5y": 1.25,
+    "breakeven5y5y": 1.57
   },
   {
     "date": "2020-07-17",
@@ -5586,7 +5998,9 @@
     "anfci": -0.503,
     "financialStress": 0.0821,
     "twoYearRate": 0.14,
-    "sofr": 0.12
+    "sofr": 0.12,
+    "breakeven5y": 1.35,
+    "breakeven5y5y": 1.57
   },
   {
     "date": "2020-07-24",
@@ -5613,7 +6027,9 @@
     "anfci": -0.533,
     "financialStress": -0.209,
     "twoYearRate": 0.14,
-    "sofr": 0.1
+    "sofr": 0.1,
+    "breakeven5y": 1.35,
+    "breakeven5y5y": 1.67
   },
   {
     "date": "2020-07-31",
@@ -5640,7 +6056,9 @@
     "anfci": -0.554,
     "financialStress": -0.0607,
     "twoYearRate": 0.11,
-    "sofr": 0.1
+    "sofr": 0.1,
+    "breakeven5y": 1.4,
+    "breakeven5y5y": 1.7
   },
   {
     "date": "2020-08-07",
@@ -5667,7 +6085,9 @@
     "anfci": -0.558,
     "financialStress": -0.1908,
     "twoYearRate": 0.13,
-    "sofr": 0.09
+    "sofr": 0.09,
+    "breakeven5y": 1.5,
+    "breakeven5y5y": 1.72
   },
   {
     "date": "2020-08-14",
@@ -5694,7 +6114,9 @@
     "anfci": -0.557,
     "financialStress": -0.2571,
     "twoYearRate": 0.14,
-    "sofr": 0.09
+    "sofr": 0.09,
+    "breakeven5y": 1.53,
+    "breakeven5y5y": 1.77
   },
   {
     "date": "2020-08-21",
@@ -5721,7 +6143,9 @@
     "anfci": -0.565,
     "financialStress": -0.0547,
     "twoYearRate": 0.16,
-    "sofr": 0.07
+    "sofr": 0.07,
+    "breakeven5y": 1.52,
+    "breakeven5y5y": 1.76
   },
   {
     "date": "2020-08-28",
@@ -5748,7 +6172,9 @@
     "anfci": -0.588,
     "financialStress": -0.2565,
     "twoYearRate": 0.14,
-    "sofr": 0.07
+    "sofr": 0.07,
+    "breakeven5y": 1.68,
+    "breakeven5y5y": 1.86
   },
   {
     "date": "2020-09-04",
@@ -5775,7 +6201,9 @@
     "anfci": -0.625,
     "financialStress": -0.1043,
     "twoYearRate": 0.14,
-    "sofr": 0.09
+    "sofr": 0.09,
+    "breakeven5y": 1.57,
+    "breakeven5y5y": 1.83
   },
   {
     "date": "2020-09-11",
@@ -5802,7 +6230,9 @@
     "anfci": -0.659,
     "financialStress": 0.0663,
     "twoYearRate": 0.13,
-    "sofr": 0.09
+    "sofr": 0.09,
+    "breakeven5y": 1.53,
+    "breakeven5y5y": 1.77
   },
   {
     "date": "2020-09-18",
@@ -5829,7 +6259,9 @@
     "anfci": -0.678,
     "financialStress": -0.1186,
     "twoYearRate": 0.14,
-    "sofr": 0.09
+    "sofr": 0.09,
+    "breakeven5y": 1.58,
+    "breakeven5y5y": 1.76
   },
   {
     "date": "2020-09-25",
@@ -5856,7 +6288,9 @@
     "anfci": -0.668,
     "financialStress": 0.2655,
     "twoYearRate": 0.12,
-    "sofr": 0.08
+    "sofr": 0.08,
+    "breakeven5y": 1.43,
+    "breakeven5y5y": 1.73
   },
   {
     "date": "2020-10-02",
@@ -5883,7 +6317,9 @@
     "anfci": -0.636,
     "financialStress": -0.0635,
     "twoYearRate": 0.13,
-    "sofr": 0.1
+    "sofr": 0.1,
+    "breakeven5y": 1.48,
+    "breakeven5y5y": 1.8
   },
   {
     "date": "2020-10-09",
@@ -5910,7 +6346,9 @@
     "anfci": -0.591,
     "financialStress": -0.2257,
     "twoYearRate": 0.16,
-    "sofr": 0.09
+    "sofr": 0.09,
+    "breakeven5y": 1.56,
+    "breakeven5y5y": 1.9
   },
   {
     "date": "2020-10-16",
@@ -5937,7 +6375,9 @@
     "anfci": -0.557,
     "financialStress": -0.0756,
     "twoYearRate": 0.14,
-    "sofr": 0.09
+    "sofr": 0.09,
+    "breakeven5y": 1.53,
+    "breakeven5y5y": 1.89
   },
   {
     "date": "2020-10-23",
@@ -5964,7 +6404,9 @@
     "anfci": -0.54,
     "financialStress": 0.0212,
     "twoYearRate": 0.18,
-    "sofr": 0.08
+    "sofr": 0.08,
+    "breakeven5y": 1.66,
+    "breakeven5y5y": 1.84
   },
   {
     "date": "2020-10-30",
@@ -5991,7 +6433,9 @@
     "anfci": -0.539,
     "financialStress": 0.4014,
     "twoYearRate": 0.14,
-    "sofr": 0.09
+    "sofr": 0.09,
+    "breakeven5y": 1.59,
+    "breakeven5y5y": 1.81
   },
   {
     "date": "2020-11-06",
@@ -6018,7 +6462,9 @@
     "anfci": -0.55,
     "financialStress": -0.0609,
     "twoYearRate": 0.16,
-    "sofr": 0.1
+    "sofr": 0.1,
+    "breakeven5y": 1.54,
+    "breakeven5y5y": 1.76
   },
   {
     "date": "2020-11-13",
@@ -6045,7 +6491,9 @@
     "anfci": -0.563,
     "financialStress": -0.4707,
     "twoYearRate": 0.17,
-    "sofr": 0.09
+    "sofr": 0.09,
+    "breakeven5y": 1.64,
+    "breakeven5y5y": 1.8
   },
   {
     "date": "2020-11-20",
@@ -6072,7 +6520,9 @@
     "anfci": -0.57,
     "financialStress": -0.1471,
     "twoYearRate": 0.16,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 1.61,
+    "breakeven5y5y": 1.77
   },
   {
     "date": "2020-11-27",
@@ -6099,7 +6549,9 @@
     "anfci": -0.571,
     "financialStress": -0.3854,
     "twoYearRate": 0.16,
-    "sofr": 0.08
+    "sofr": 0.08,
+    "breakeven5y": 1.67,
+    "breakeven5y5y": 1.83
   },
   {
     "date": "2020-12-04",
@@ -6126,7 +6578,9 @@
     "anfci": -0.571,
     "financialStress": -0.4338,
     "twoYearRate": 0.16,
-    "sofr": 0.09
+    "sofr": 0.09,
+    "breakeven5y": 1.83,
+    "breakeven5y5y": 1.95
   },
   {
     "date": "2020-12-11",
@@ -6153,7 +6607,9 @@
     "anfci": -0.575,
     "financialStress": -0.4077,
     "twoYearRate": 0.11,
-    "sofr": 0.08
+    "sofr": 0.08,
+    "breakeven5y": 1.82,
+    "breakeven5y5y": 1.92
   },
   {
     "date": "2020-12-18",
@@ -6180,7 +6636,9 @@
     "anfci": -0.582,
     "financialStress": -0.365,
     "twoYearRate": 0.13,
-    "sofr": 0.09
+    "sofr": 0.09,
+    "breakeven5y": 1.92,
+    "breakeven5y5y": 1.98
   },
   {
     "date": "2020-12-25",
@@ -6207,7 +6665,9 @@
     "anfci": -0.589,
     "financialStress": -0.4068,
     "twoYearRate": 0.13,
-    "sofr": 0.08
+    "sofr": 0.08,
+    "breakeven5y": 1.92,
+    "breakeven5y5y": 2.02
   },
   {
     "date": "2021-01-01",
@@ -6234,7 +6694,9 @@
     "anfci": -0.594,
     "financialStress": -0.4633,
     "twoYearRate": 0.13,
-    "sofr": 0.07
+    "sofr": 0.07,
+    "breakeven5y": 1.95,
+    "breakeven5y5y": 2.03
   },
   {
     "date": "2021-01-08",
@@ -6261,7 +6723,9 @@
     "anfci": -0.595,
     "financialStress": -0.477,
     "twoYearRate": 0.14,
-    "sofr": 0.09
+    "sofr": 0.09,
+    "breakeven5y": 2.07,
+    "breakeven5y5y": 2.05
   },
   {
     "date": "2021-01-15",
@@ -6288,7 +6752,9 @@
     "anfci": -0.595,
     "financialStress": -0.5195,
     "twoYearRate": 0.13,
-    "sofr": 0.08
+    "sofr": 0.08,
+    "breakeven5y": 2.09,
+    "breakeven5y5y": 2.11
   },
   {
     "date": "2021-01-22",
@@ -6315,7 +6781,9 @@
     "anfci": -0.598,
     "financialStress": -0.5033,
     "twoYearRate": 0.13,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 2.16,
+    "breakeven5y5y": 2.02
   },
   {
     "date": "2021-01-29",
@@ -6342,7 +6810,9 @@
     "anfci": -0.606,
     "financialStress": -0.2538,
     "twoYearRate": 0.11,
-    "sofr": 0.06
+    "sofr": 0.06,
+    "breakeven5y": 2.21,
+    "breakeven5y5y": 2.05
   },
   {
     "date": "2021-02-05",
@@ -6369,7 +6839,9 @@
     "anfci": -0.624,
     "financialStress": -0.5669,
     "twoYearRate": 0.09,
-    "sofr": 0.02
+    "sofr": 0.02,
+    "breakeven5y": 2.28,
+    "breakeven5y5y": 2.14
   },
   {
     "date": "2021-02-12",
@@ -6396,7 +6868,9 @@
     "anfci": -0.64,
     "financialStress": -0.7517,
     "twoYearRate": 0.11,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 2.35,
+    "breakeven5y5y": 2.07
   },
   {
     "date": "2021-02-19",
@@ -6423,7 +6897,9 @@
     "anfci": -0.653,
     "financialStress": -0.6442,
     "twoYearRate": 0.11,
-    "sofr": 0.02
+    "sofr": 0.02,
+    "breakeven5y": 2.29,
+    "breakeven5y5y": 1.99
   },
   {
     "date": "2021-02-26",
@@ -6450,7 +6926,9 @@
     "anfci": -0.657,
     "financialStress": -0.4358,
     "twoYearRate": 0.14,
-    "sofr": 0.01
+    "sofr": 0.01,
+    "breakeven5y": 2.39,
+    "breakeven5y5y": 1.91
   },
   {
     "date": "2021-03-05",
@@ -6477,7 +6955,9 @@
     "anfci": -0.656,
     "financialStress": -0.3952,
     "twoYearRate": 0.14,
-    "sofr": 0.02
+    "sofr": 0.02,
+    "breakeven5y": 2.43,
+    "breakeven5y5y": 2.01
   },
   {
     "date": "2021-03-12",
@@ -6504,7 +6984,9 @@
     "anfci": -0.652,
     "financialStress": -0.4893,
     "twoYearRate": 0.14,
-    "sofr": 0.01
+    "sofr": 0.01,
+    "breakeven5y": 2.51,
+    "breakeven5y5y": 2.01
   },
   {
     "date": "2021-03-19",
@@ -6531,7 +7013,9 @@
     "anfci": -0.65,
     "financialStress": -0.5349,
     "twoYearRate": 0.16,
-    "sofr": 0.01
+    "sofr": 0.01,
+    "breakeven5y": 2.51,
+    "breakeven5y5y": 2.11
   },
   {
     "date": "2021-03-26",
@@ -6558,7 +7042,9 @@
     "anfci": -0.653,
     "financialStress": -0.6107,
     "twoYearRate": 0.14,
-    "sofr": 0.01
+    "sofr": 0.01,
+    "breakeven5y": 2.57,
+    "breakeven5y5y": 2.11
   },
   {
     "date": "2021-04-02",
@@ -6585,7 +7071,9 @@
     "anfci": -0.66,
     "financialStress": -0.7059,
     "twoYearRate": 0.19,
-    "sofr": 0.01
+    "sofr": 0.01,
+    "breakeven5y": 2.58,
+    "breakeven5y5y": 2.14
   },
   {
     "date": "2021-04-09",
@@ -6612,7 +7100,9 @@
     "anfci": -0.667,
     "financialStress": -0.8023,
     "twoYearRate": 0.16,
-    "sofr": 0.01
+    "sofr": 0.01,
+    "breakeven5y": 2.51,
+    "breakeven5y5y": 2.11
   },
   {
     "date": "2021-04-16",
@@ -6639,7 +7129,9 @@
     "anfci": -0.669,
     "financialStress": -0.755,
     "twoYearRate": 0.16,
-    "sofr": 0.01
+    "sofr": 0.01,
+    "breakeven5y": 2.57,
+    "breakeven5y5y": 2.15
   },
   {
     "date": "2021-04-23",
@@ -6666,7 +7158,9 @@
     "anfci": -0.666,
     "financialStress": -0.7053,
     "twoYearRate": 0.16,
-    "sofr": 0.01
+    "sofr": 0.01,
+    "breakeven5y": 2.44,
+    "breakeven5y5y": 2.24
   },
   {
     "date": "2021-04-30",
@@ -6693,7 +7187,9 @@
     "anfci": -0.662,
     "financialStress": -0.7951,
     "twoYearRate": 0.16,
-    "sofr": 0.01
+    "sofr": 0.01,
+    "breakeven5y": 2.57,
+    "breakeven5y5y": 2.25
   },
   {
     "date": "2021-05-07",
@@ -6720,7 +7216,9 @@
     "anfci": -0.659,
     "financialStress": -0.7941,
     "twoYearRate": 0.14,
-    "sofr": 0.01
+    "sofr": 0.01,
+    "breakeven5y": 2.65,
+    "breakeven5y5y": 2.33
   },
   {
     "date": "2021-05-14",
@@ -6747,7 +7245,9 @@
     "anfci": -0.66,
     "financialStress": -0.7381,
     "twoYearRate": 0.16,
-    "sofr": 0.01
+    "sofr": 0.01,
+    "breakeven5y": 2.68,
+    "breakeven5y5y": 2.34
   },
   {
     "date": "2021-05-21",
@@ -6774,7 +7274,9 @@
     "anfci": -0.668,
     "financialStress": -0.702,
     "twoYearRate": 0.17,
-    "sofr": 0.01
+    "sofr": 0.01,
+    "breakeven5y": 2.62,
+    "breakeven5y5y": 2.24
   },
   {
     "date": "2021-05-28",
@@ -6801,7 +7303,9 @@
     "anfci": -0.679,
     "financialStress": -0.7991,
     "twoYearRate": 0.14,
-    "sofr": 0.01
+    "sofr": 0.01,
+    "breakeven5y": 2.57,
+    "breakeven5y5y": 2.27
   },
   {
     "date": "2021-06-04",
@@ -6828,7 +7332,9 @@
     "anfci": -0.689,
     "financialStress": -0.8376,
     "twoYearRate": 0.14,
-    "sofr": 0.01
+    "sofr": 0.01,
+    "breakeven5y": 2.54,
+    "breakeven5y5y": 2.26
   },
   {
     "date": "2021-06-11",
@@ -6855,7 +7361,9 @@
     "anfci": -0.695,
     "financialStress": -0.781,
     "twoYearRate": 0.16,
-    "sofr": 0.01
+    "sofr": 0.01,
+    "breakeven5y": 2.43,
+    "breakeven5y5y": 2.21
   },
   {
     "date": "2021-06-18",
@@ -6882,7 +7390,9 @@
     "anfci": -0.696,
     "financialStress": -0.7616,
     "twoYearRate": 0.26,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 2.37,
+    "breakeven5y5y": 2.11
   },
   {
     "date": "2021-06-25",
@@ -6909,7 +7419,9 @@
     "anfci": -0.697,
     "financialStress": -0.7929,
     "twoYearRate": 0.28,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 2.46,
+    "breakeven5y5y": 2.22
   },
   {
     "date": "2021-07-02",
@@ -6936,7 +7448,9 @@
     "anfci": -0.698,
     "financialStress": -0.8327,
     "twoYearRate": 0.24,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 2.49,
+    "breakeven5y5y": 2.17
   },
   {
     "date": "2021-07-09",
@@ -6963,7 +7477,9 @@
     "anfci": -0.7,
     "financialStress": -0.6981,
     "twoYearRate": 0.23,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 2.44,
+    "breakeven5y5y": 2.12
   },
   {
     "date": "2021-07-16",
@@ -6990,7 +7506,9 @@
     "anfci": -0.702,
     "financialStress": -0.7921,
     "twoYearRate": 0.25,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 2.52,
+    "breakeven5y5y": 2.14
   },
   {
     "date": "2021-07-23",
@@ -7017,7 +7535,9 @@
     "anfci": -0.7,
     "financialStress": -0.5563,
     "twoYearRate": 0.22,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 2.53,
+    "breakeven5y5y": 2.17
   },
   {
     "date": "2021-07-30",
@@ -7044,7 +7564,9 @@
     "anfci": -0.695,
     "financialStress": -0.755,
     "twoYearRate": 0.19,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 2.56,
+    "breakeven5y5y": 2.24
   },
   {
     "date": "2021-08-06",
@@ -7071,7 +7593,9 @@
     "anfci": -0.687,
     "financialStress": -0.666,
     "twoYearRate": 0.21,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 2.5,
+    "breakeven5y5y": 2.24
   },
   {
     "date": "2021-08-13",
@@ -7098,7 +7622,9 @@
     "anfci": -0.682,
     "financialStress": -0.8556,
     "twoYearRate": 0.23,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 2.52,
+    "breakeven5y5y": 2.22
   },
   {
     "date": "2021-08-20",
@@ -7125,7 +7651,9 @@
     "anfci": -0.685,
     "financialStress": -0.6074,
     "twoYearRate": 0.23,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 2.4,
+    "breakeven5y5y": 2.14
   },
   {
     "date": "2021-08-27",
@@ -7152,7 +7680,9 @@
     "anfci": -0.696,
     "financialStress": -0.7589,
     "twoYearRate": 0.22,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 2.53,
+    "breakeven5y5y": 2.25
   },
   {
     "date": "2021-09-03",
@@ -7179,7 +7709,9 @@
     "anfci": -0.711,
     "financialStress": -0.7509,
     "twoYearRate": 0.21,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 2.48,
+    "breakeven5y5y": 2.2
   },
   {
     "date": "2021-09-10",
@@ -7206,7 +7738,9 @@
     "anfci": -0.724,
     "financialStress": -0.7035,
     "twoYearRate": 0.23,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 2.55,
+    "breakeven5y5y": 2.25
   },
   {
     "date": "2021-09-17",
@@ -7233,7 +7767,9 @@
     "anfci": -0.73,
     "financialStress": -0.6682,
     "twoYearRate": 0.23,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 2.51,
+    "breakeven5y5y": 2.15
   },
   {
     "date": "2021-09-24",
@@ -7260,7 +7796,9 @@
     "anfci": -0.726,
     "financialStress": -0.5358,
     "twoYearRate": 0.29,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 2.47,
+    "breakeven5y5y": 2.21
   },
   {
     "date": "2021-10-01",
@@ -7287,7 +7825,9 @@
     "anfci": -0.715,
     "financialStress": -0.6258,
     "twoYearRate": 0.27,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 2.51,
+    "breakeven5y5y": 2.25
   },
   {
     "date": "2021-10-08",
@@ -7314,7 +7854,9 @@
     "anfci": -0.701,
     "financialStress": -0.6302,
     "twoYearRate": 0.32,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 2.64,
+    "breakeven5y5y": 2.36
   },
   {
     "date": "2021-10-15",
@@ -7341,7 +7883,9 @@
     "anfci": -0.69,
     "financialStress": -0.7224,
     "twoYearRate": 0.41,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 2.71,
+    "breakeven5y5y": 2.41
   },
   {
     "date": "2021-10-22",
@@ -7368,7 +7912,9 @@
     "anfci": -0.679,
     "financialStress": -0.8984,
     "twoYearRate": 0.48,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 2.91,
+    "breakeven5y5y": 2.37
   },
   {
     "date": "2021-10-29",
@@ -7395,7 +7941,9 @@
     "anfci": -0.664,
     "financialStress": -0.8017,
     "twoYearRate": 0.48,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 2.89,
+    "breakeven5y5y": 2.13
   },
   {
     "date": "2021-11-05",
@@ -7422,7 +7970,9 @@
     "anfci": -0.64,
     "financialStress": -0.6729,
     "twoYearRate": 0.39,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 2.87,
+    "breakeven5y5y": 2.21
   },
   {
     "date": "2021-11-12",
@@ -7449,7 +7999,9 @@
     "anfci": -0.606,
     "financialStress": -0.7793,
     "twoYearRate": 0.53,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 3.11,
+    "breakeven5y5y": 2.35
   },
   {
     "date": "2021-11-19",
@@ -7476,7 +8028,9 @@
     "anfci": -0.568,
     "financialStress": -0.6831,
     "twoYearRate": 0.52,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 3.02,
+    "breakeven5y5y": 2.28
   },
   {
     "date": "2021-11-26",
@@ -7503,7 +8057,9 @@
     "anfci": -0.533,
     "financialStress": -0.4806,
     "twoYearRate": 0.5,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 2.92,
+    "breakeven5y5y": 2.18
   },
   {
     "date": "2021-12-03",
@@ -7530,7 +8086,9 @@
     "anfci": -0.512,
     "financialStress": -0.1563,
     "twoYearRate": 0.6,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 2.72,
+    "breakeven5y5y": 2.14
   },
   {
     "date": "2021-12-10",
@@ -7557,7 +8115,9 @@
     "anfci": -0.511,
     "financialStress": -0.6995,
     "twoYearRate": 0.67,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 2.76,
+    "breakeven5y5y": 2.12
   },
   {
     "date": "2021-12-17",
@@ -7584,7 +8144,9 @@
     "anfci": -0.525,
     "financialStress": -0.4904,
     "twoYearRate": 0.66,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 2.65,
+    "breakeven5y5y": 2.11
   },
   {
     "date": "2021-12-24",
@@ -7611,7 +8173,9 @@
     "anfci": -0.543,
     "financialStress": -0.574,
     "twoYearRate": 0.71,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 2.72,
+    "breakeven5y5y": 2.22
   },
   {
     "date": "2021-12-31",
@@ -7638,7 +8202,9 @@
     "anfci": -0.558,
     "financialStress": -0.7631,
     "twoYearRate": 0.73,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 2.87,
+    "breakeven5y5y": 2.25
   },
   {
     "date": "2022-01-07",
@@ -7665,7 +8231,9 @@
     "anfci": -0.564,
     "financialStress": -0.6984,
     "twoYearRate": 0.87,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 2.78,
+    "breakeven5y5y": 2.18
   },
   {
     "date": "2022-01-14",
@@ -7692,7 +8260,9 @@
     "anfci": -0.56,
     "financialStress": -0.6554,
     "twoYearRate": 0.99,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 2.79,
+    "breakeven5y5y": 2.09
   },
   {
     "date": "2022-01-21",
@@ -7719,7 +8289,9 @@
     "anfci": -0.553,
     "financialStress": -0.3776,
     "twoYearRate": 1.01,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 2.7,
+    "breakeven5y5y": 1.98
   },
   {
     "date": "2022-01-28",
@@ -7746,7 +8318,9 @@
     "anfci": -0.544,
     "financialStress": -0.1939,
     "twoYearRate": 1.15,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 2.8,
+    "breakeven5y5y": 2.08
   },
   {
     "date": "2022-02-04",
@@ -7773,7 +8347,9 @@
     "anfci": -0.532,
     "financialStress": -0.5078,
     "twoYearRate": 1.31,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 2.78,
+    "breakeven5y5y": 2.04
   },
   {
     "date": "2022-02-11",
@@ -7800,7 +8376,9 @@
     "anfci": -0.507,
     "financialStress": -0.5831,
     "twoYearRate": 1.5,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 2.82,
+    "breakeven5y5y": 2.04
   },
   {
     "date": "2022-02-18",
@@ -7827,7 +8405,9 @@
     "anfci": -0.463,
     "financialStress": -0.1602,
     "twoYearRate": 1.47,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 2.86,
+    "breakeven5y5y": 1.96
   },
   {
     "date": "2022-02-25",
@@ -7854,7 +8434,9 @@
     "anfci": -0.405,
     "financialStress": 0.0011,
     "twoYearRate": 1.55,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 3.02,
+    "breakeven5y5y": 2.06
   },
   {
     "date": "2022-03-04",
@@ -7881,7 +8463,9 @@
     "anfci": -0.344,
     "financialStress": 0.3051,
     "twoYearRate": 1.5,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 3.19,
+    "breakeven5y5y": 2.15
   },
   {
     "date": "2022-03-11",
@@ -7908,7 +8492,9 @@
     "anfci": -0.3,
     "financialStress": 0.1528,
     "twoYearRate": 1.75,
-    "sofr": 0.05
+    "sofr": 0.05,
+    "breakeven5y": 3.52,
+    "breakeven5y5y": 2.36
   },
   {
     "date": "2022-03-18",
@@ -7935,7 +8521,9 @@
     "anfci": -0.284,
     "financialStress": -0.3069,
     "twoYearRate": 1.97,
-    "sofr": 0.3
+    "sofr": 0.3,
+    "breakeven5y": 3.48,
+    "breakeven5y5y": 2.24
   },
   {
     "date": "2022-03-25",
@@ -7962,7 +8550,9 @@
     "anfci": -0.296,
     "financialStress": -0.6075,
     "twoYearRate": 2.3,
-    "sofr": 0.28
+    "sofr": 0.28,
+    "breakeven5y": 3.59,
+    "breakeven5y5y": 2.31
   },
   {
     "date": "2022-04-01",
@@ -7989,7 +8579,9 @@
     "anfci": -0.32,
     "financialStress": -0.4678,
     "twoYearRate": 2.44,
-    "sofr": 0.3
+    "sofr": 0.3,
+    "breakeven5y": 3.28,
+    "breakeven5y5y": 2.32
   },
   {
     "date": "2022-04-08",
@@ -8016,7 +8608,9 @@
     "anfci": -0.335,
     "financialStress": -0.3668,
     "twoYearRate": 2.53,
-    "sofr": 0.3
+    "sofr": 0.3,
+    "breakeven5y": 3.33,
+    "breakeven5y5y": 2.41
   },
   {
     "date": "2022-04-15",
@@ -8043,7 +8637,9 @@
     "anfci": -0.324,
     "financialStress": -0.2781,
     "twoYearRate": 2.47,
-    "sofr": 0.29
+    "sofr": 0.29,
+    "breakeven5y": 3.33,
+    "breakeven5y5y": 2.45
   },
   {
     "date": "2022-04-22",
@@ -8070,7 +8666,9 @@
     "anfci": -0.288,
     "financialStress": -0.3825,
     "twoYearRate": 2.72,
-    "sofr": 0.27
+    "sofr": 0.27,
+    "breakeven5y": 3.37,
+    "breakeven5y5y": 2.59
   },
   {
     "date": "2022-04-29",
@@ -8097,7 +8695,9 @@
     "anfci": -0.239,
     "financialStress": 0.1899,
     "twoYearRate": 2.7,
-    "sofr": 0.28
+    "sofr": 0.28,
+    "breakeven5y": 3.3,
+    "breakeven5y5y": 2.46
   },
   {
     "date": "2022-05-06",
@@ -8124,7 +8724,9 @@
     "anfci": -0.195,
     "financialStress": 0.2128,
     "twoYearRate": 2.72,
-    "sofr": 0.78
+    "sofr": 0.78,
+    "breakeven5y": 3.22,
+    "breakeven5y5y": 2.5
   },
   {
     "date": "2022-05-13",
@@ -8151,7 +8753,9 @@
     "anfci": -0.168,
     "financialStress": 0.5701,
     "twoYearRate": 2.61,
-    "sofr": 0.79
+    "sofr": 0.79,
+    "breakeven5y": 3.03,
+    "breakeven5y5y": 2.35
   },
   {
     "date": "2022-05-20",
@@ -8178,7 +8782,9 @@
     "anfci": -0.158,
     "financialStress": 0.3134,
     "twoYearRate": 2.6,
-    "sofr": 0.78
+    "sofr": 0.78,
+    "breakeven5y": 2.88,
+    "breakeven5y5y": 2.22
   },
   {
     "date": "2022-05-27",
@@ -8205,7 +8811,9 @@
     "anfci": -0.148,
     "financialStress": 0.2912,
     "twoYearRate": 2.47,
-    "sofr": 0.78
+    "sofr": 0.78,
+    "breakeven5y": 2.95,
+    "breakeven5y5y": 2.31
   },
   {
     "date": "2022-06-03",
@@ -8232,7 +8840,9 @@
     "anfci": -0.126,
     "financialStress": -0.1564,
     "twoYearRate": 2.66,
-    "sofr": 0.78
+    "sofr": 0.78,
+    "breakeven5y": 3.04,
+    "breakeven5y5y": 2.44
   },
   {
     "date": "2022-06-10",
@@ -8259,7 +8869,9 @@
     "anfci": -0.087,
     "financialStress": -0.0444,
     "twoYearRate": 3.06,
-    "sofr": 0.75
+    "sofr": 0.75,
+    "breakeven5y": 3.13,
+    "breakeven5y5y": 2.39
   },
   {
     "date": "2022-06-17",
@@ -8286,7 +8898,9 @@
     "anfci": -0.042,
     "financialStress": 0.0312,
     "twoYearRate": 3.17,
-    "sofr": 1.45
+    "sofr": 1.45,
+    "breakeven5y": 2.8,
+    "breakeven5y5y": 2.36
   },
   {
     "date": "2022-06-24",
@@ -8313,7 +8927,9 @@
     "anfci": -0.01,
     "financialStress": 0.3895,
     "twoYearRate": 3.04,
-    "sofr": 1.46
+    "sofr": 1.46,
+    "breakeven5y": 2.82,
+    "breakeven5y5y": 2.3
   },
   {
     "date": "2022-07-01",
@@ -8340,7 +8956,9 @@
     "anfci": -0.009,
     "financialStress": 0.6222,
     "twoYearRate": 2.84,
-    "sofr": 1.52
+    "sofr": 1.52,
+    "breakeven5y": 2.6,
+    "breakeven5y5y": 2.08
   },
   {
     "date": "2022-07-08",
@@ -8367,7 +8985,9 @@
     "anfci": -0.042,
     "financialStress": 0.4364,
     "twoYearRate": 3.12,
-    "sofr": 1.53
+    "sofr": 1.53,
+    "breakeven5y": 2.62,
+    "breakeven5y5y": 2.12
   },
   {
     "date": "2022-07-15",
@@ -8394,7 +9014,9 @@
     "anfci": -0.097,
     "financialStress": 0.0741,
     "twoYearRate": 3.13,
-    "sofr": 1.54
+    "sofr": 1.54,
+    "breakeven5y": 2.59,
+    "breakeven5y5y": 2.13
   },
   {
     "date": "2022-07-22",
@@ -8421,7 +9043,9 @@
     "anfci": -0.155,
     "financialStress": -0.2654,
     "twoYearRate": 2.98,
-    "sofr": 1.52
+    "sofr": 1.52,
+    "breakeven5y": 2.56,
+    "breakeven5y5y": 2.12
   },
   {
     "date": "2022-07-29",
@@ -8448,7 +9072,9 @@
     "anfci": -0.196,
     "financialStress": -0.1814,
     "twoYearRate": 2.89,
-    "sofr": 2.27
+    "sofr": 2.27,
+    "breakeven5y": 2.73,
+    "breakeven5y5y": 2.33
   },
   {
     "date": "2022-08-05",
@@ -8475,7 +9101,9 @@
     "anfci": -0.213,
     "financialStress": -0.4754,
     "twoYearRate": 3.24,
-    "sofr": 2.28
+    "sofr": 2.28,
+    "breakeven5y": 2.64,
+    "breakeven5y5y": 2.28
   },
   {
     "date": "2022-08-12",
@@ -8502,7 +9130,9 @@
     "anfci": -0.215,
     "financialStress": -0.4004,
     "twoYearRate": 3.25,
-    "sofr": 2.28
+    "sofr": 2.28,
+    "breakeven5y": 2.67,
+    "breakeven5y5y": 2.27
   },
   {
     "date": "2022-08-19",
@@ -8529,7 +9159,9 @@
     "anfci": -0.209,
     "financialStress": -0.3638,
     "twoYearRate": 3.25,
-    "sofr": 2.28
+    "sofr": 2.28,
+    "breakeven5y": 2.72,
+    "breakeven5y5y": 2.38
   },
   {
     "date": "2022-08-26",
@@ -8556,7 +9188,9 @@
     "anfci": -0.2,
     "financialStress": -0.2025,
     "twoYearRate": 3.37,
-    "sofr": 2.28
+    "sofr": 2.28,
+    "breakeven5y": 2.73,
+    "breakeven5y5y": 2.41
   },
   {
     "date": "2022-09-02",
@@ -8583,7 +9217,9 @@
     "anfci": -0.189,
     "financialStress": -0.1324,
     "twoYearRate": 3.4,
-    "sofr": 2.29
+    "sofr": 2.29,
+    "breakeven5y": 2.55,
+    "breakeven5y5y": 2.39
   },
   {
     "date": "2022-09-09",
@@ -8610,7 +9246,9 @@
     "anfci": -0.171,
     "financialStress": -0.3075,
     "twoYearRate": 3.56,
-    "sofr": 2.28
+    "sofr": 2.28,
+    "breakeven5y": 2.51,
+    "breakeven5y5y": 2.33
   },
   {
     "date": "2022-09-16",
@@ -8637,7 +9275,9 @@
     "anfci": -0.138,
     "financialStress": -0.4342,
     "twoYearRate": 3.85,
-    "sofr": 2.27
+    "sofr": 2.27,
+    "breakeven5y": 2.49,
+    "breakeven5y5y": 2.27
   },
   {
     "date": "2022-09-23",
@@ -8664,7 +9304,9 @@
     "anfci": -0.093,
     "financialStress": 0.1354,
     "twoYearRate": 4.2,
-    "sofr": 2.99
+    "sofr": 2.99,
+    "breakeven5y": 2.38,
+    "breakeven5y5y": 2.36
   },
   {
     "date": "2022-09-30",
@@ -8691,7 +9333,9 @@
     "anfci": -0.048,
     "financialStress": 0.5218,
     "twoYearRate": 4.22,
-    "sofr": 2.98
+    "sofr": 2.98,
+    "breakeven5y": 2.14,
+    "breakeven5y5y": 2.16
   },
   {
     "date": "2022-10-07",
@@ -8718,7 +9362,9 @@
     "anfci": -0.018,
     "financialStress": 0.1751,
     "twoYearRate": 4.3,
-    "sofr": 3.05
+    "sofr": 3.05,
+    "breakeven5y": 2.36,
+    "breakeven5y5y": 2.18
   },
   {
     "date": "2022-10-14",
@@ -8745,7 +9391,9 @@
     "anfci": -0.014,
     "financialStress": 0.2896,
     "twoYearRate": 4.48,
-    "sofr": 3.04
+    "sofr": 3.04,
+    "breakeven5y": 2.44,
+    "breakeven5y5y": 2.38
   },
   {
     "date": "2022-10-21",
@@ -8772,7 +9420,9 @@
     "anfci": -0.037,
     "financialStress": -0.1467,
     "twoYearRate": 4.49,
-    "sofr": 3.02
+    "sofr": 3.02,
+    "breakeven5y": 2.69,
+    "breakeven5y5y": 2.35
   },
   {
     "date": "2022-10-28",
@@ -8799,7 +9449,9 @@
     "anfci": -0.075,
     "financialStress": -0.2858,
     "twoYearRate": 4.41,
-    "sofr": 3.05
+    "sofr": 3.05,
+    "breakeven5y": 2.62,
+    "breakeven5y5y": 2.4
   },
   {
     "date": "2022-11-04",
@@ -8826,7 +9478,9 @@
     "anfci": -0.117,
     "financialStress": -0.3818,
     "twoYearRate": 4.66,
-    "sofr": 3.8
+    "sofr": 3.8,
+    "breakeven5y": 2.61,
+    "breakeven5y5y": 2.35
   },
   {
     "date": "2022-11-11",
@@ -8853,7 +9507,9 @@
     "anfci": -0.147,
     "financialStress": -0.3165,
     "twoYearRate": 4.34,
-    "sofr": 3.78
+    "sofr": 3.78,
+    "breakeven5y": 2.47,
+    "breakeven5y5y": 2.31
   },
   {
     "date": "2022-11-18",
@@ -8880,7 +9536,9 @@
     "anfci": -0.162,
     "financialStress": -0.2084,
     "twoYearRate": 4.51,
-    "sofr": 3.8
+    "sofr": 3.8,
+    "breakeven5y": 2.28,
+    "breakeven5y5y": 2.22
   },
   {
     "date": "2022-11-25",
@@ -8907,7 +9565,9 @@
     "anfci": -0.163,
     "financialStress": -0.2186,
     "twoYearRate": 4.42,
-    "sofr": 3.8
+    "sofr": 3.8,
+    "breakeven5y": 2.34,
+    "breakeven5y5y": 2.3
   },
   {
     "date": "2022-12-02",
@@ -8934,7 +9594,9 @@
     "anfci": -0.161,
     "financialStress": -0.1072,
     "twoYearRate": 4.28,
-    "sofr": 3.81
+    "sofr": 3.81,
+    "breakeven5y": 2.51,
+    "breakeven5y5y": 2.35
   },
   {
     "date": "2022-12-09",
@@ -8961,7 +9623,9 @@
     "anfci": -0.165,
     "financialStress": 0.1341,
     "twoYearRate": 4.33,
-    "sofr": 3.8
+    "sofr": 3.8,
+    "breakeven5y": 2.3,
+    "breakeven5y5y": 2.22
   },
   {
     "date": "2022-12-16",
@@ -8988,7 +9652,9 @@
     "anfci": -0.179,
     "financialStress": 0.0159,
     "twoYearRate": 4.17,
-    "sofr": 4.32
+    "sofr": 4.32,
+    "breakeven5y": 2.14,
+    "breakeven5y5y": 2.12
   },
   {
     "date": "2022-12-23",
@@ -9015,7 +9681,9 @@
     "anfci": -0.2,
     "financialStress": 0.0275,
     "twoYearRate": 4.31,
-    "sofr": 4.3
+    "sofr": 4.3,
+    "breakeven5y": 2.29,
+    "breakeven5y5y": 2.11
   },
   {
     "date": "2022-12-30",
@@ -9042,7 +9710,9 @@
     "anfci": -0.227,
     "financialStress": -0.0387,
     "twoYearRate": 4.41,
-    "sofr": 4.3
+    "sofr": 4.3,
+    "breakeven5y": 2.33,
+    "breakeven5y5y": 2.27
   },
   {
     "date": "2023-01-06",
@@ -9069,7 +9739,9 @@
     "anfci": -0.252,
     "financialStress": -0.1552,
     "twoYearRate": 4.24,
-    "sofr": 4.31
+    "sofr": 4.31,
+    "breakeven5y": 2.18,
+    "breakeven5y5y": 2.24
   },
   {
     "date": "2023-01-13",
@@ -9096,7 +9768,9 @@
     "anfci": -0.275,
     "financialStress": -0.4107,
     "twoYearRate": 4.22,
-    "sofr": 4.3
+    "sofr": 4.3,
+    "breakeven5y": 2.2,
+    "breakeven5y5y": 2.16
   },
   {
     "date": "2023-01-20",
@@ -9123,7 +9797,9 @@
     "anfci": -0.294,
     "financialStress": -0.3819,
     "twoYearRate": 4.14,
-    "sofr": 4.3
+    "sofr": 4.3,
+    "breakeven5y": 2.23,
+    "breakeven5y5y": 2.23
   },
   {
     "date": "2023-01-27",
@@ -9150,7 +9826,9 @@
     "anfci": -0.312,
     "financialStress": -0.5072,
     "twoYearRate": 4.19,
-    "sofr": 4.3
+    "sofr": 4.3,
+    "breakeven5y": 2.33,
+    "breakeven5y5y": 2.33
   },
   {
     "date": "2023-02-03",
@@ -9177,7 +9855,9 @@
     "anfci": -0.326,
     "financialStress": -0.5446,
     "twoYearRate": 4.3,
-    "sofr": 4.55
+    "sofr": 4.55,
+    "breakeven5y": 2.27,
+    "breakeven5y5y": 2.17
   },
   {
     "date": "2023-02-10",
@@ -9204,7 +9884,9 @@
     "anfci": -0.328,
     "financialStress": -0.6114,
     "twoYearRate": 4.5,
-    "sofr": 4.55
+    "sofr": 4.55,
+    "breakeven5y": 2.47,
+    "breakeven5y5y": 2.19
   },
   {
     "date": "2023-02-17",
@@ -9231,7 +9913,9 @@
     "anfci": -0.314,
     "financialStress": -0.4688,
     "twoYearRate": 4.6,
-    "sofr": 4.55
+    "sofr": 4.55,
+    "breakeven5y": 2.5,
+    "breakeven5y5y": 2.22
   },
   {
     "date": "2023-02-24",
@@ -9258,7 +9942,9 @@
     "anfci": -0.277,
     "financialStress": -0.2295,
     "twoYearRate": 4.78,
-    "sofr": 4.55
+    "sofr": 4.55,
+    "breakeven5y": 2.47,
+    "breakeven5y5y": 2.29
   },
   {
     "date": "2023-03-03",
@@ -9285,7 +9971,9 @@
     "anfci": -0.224,
     "financialStress": -0.4439,
     "twoYearRate": 4.86,
-    "sofr": 4.55
+    "sofr": 4.55,
+    "breakeven5y": 2.71,
+    "breakeven5y5y": 2.33
   },
   {
     "date": "2023-03-10",
@@ -9312,7 +10000,9 @@
     "anfci": -0.166,
     "financialStress": -0.0815,
     "twoYearRate": 4.6,
-    "sofr": 4.55
+    "sofr": 4.55,
+    "breakeven5y": 2.34,
+    "breakeven5y5y": 2.18
   },
   {
     "date": "2023-03-17",
@@ -9339,7 +10029,9 @@
     "anfci": -0.118,
     "financialStress": 1.1197,
     "twoYearRate": 3.81,
-    "sofr": 4.55
+    "sofr": 4.55,
+    "breakeven5y": 2.1,
+    "breakeven5y5y": 2.1
   },
   {
     "date": "2023-03-24",
@@ -9366,7 +10058,9 @@
     "anfci": -0.1,
     "financialStress": 0.2775,
     "twoYearRate": 3.76,
-    "sofr": 4.8
+    "sofr": 4.8,
+    "breakeven5y": 2.21,
+    "breakeven5y5y": 2.23
   },
   {
     "date": "2023-03-31",
@@ -9393,7 +10087,9 @@
     "anfci": -0.115,
     "financialStress": -0.2684,
     "twoYearRate": 4.06,
-    "sofr": 4.87
+    "sofr": 4.87,
+    "breakeven5y": 2.4,
+    "breakeven5y5y": 2.24
   },
   {
     "date": "2023-04-07",
@@ -9420,7 +10116,9 @@
     "anfci": -0.148,
     "financialStress": -0.0822,
     "twoYearRate": 3.97,
-    "sofr": 4.81
+    "sofr": 4.81,
+    "breakeven5y": 2.33,
+    "breakeven5y5y": 2.17
   },
   {
     "date": "2023-04-14",
@@ -9447,7 +10145,9 @@
     "anfci": -0.191,
     "financialStress": -0.4819,
     "twoYearRate": 4.08,
-    "sofr": 4.8
+    "sofr": 4.8,
+    "breakeven5y": 2.31,
+    "breakeven5y5y": 2.29
   },
   {
     "date": "2023-04-21",
@@ -9474,7 +10174,9 @@
     "anfci": -0.227,
     "financialStress": -0.6582,
     "twoYearRate": 4.17,
-    "sofr": 4.8
+    "sofr": 4.8,
+    "breakeven5y": 2.3,
+    "breakeven5y5y": 2.26
   },
   {
     "date": "2023-04-28",
@@ -9501,7 +10203,9 @@
     "anfci": -0.249,
     "financialStress": -0.2824,
     "twoYearRate": 4.04,
-    "sofr": 4.81
+    "sofr": 4.81,
+    "breakeven5y": 2.2,
+    "breakeven5y5y": 2.16
   },
   {
     "date": "2023-05-05",
@@ -9528,7 +10232,9 @@
     "anfci": -0.26,
     "financialStress": -0.3261,
     "twoYearRate": 3.92,
-    "sofr": 5.06
+    "sofr": 5.06,
+    "breakeven5y": 2.19,
+    "breakeven5y5y": 2.23
   },
   {
     "date": "2023-05-12",
@@ -9555,7 +10261,9 @@
     "anfci": -0.264,
     "financialStress": -0.5079,
     "twoYearRate": 3.98,
-    "sofr": 5.05
+    "sofr": 5.05,
+    "breakeven5y": 2.11,
+    "breakeven5y5y": 2.25
   },
   {
     "date": "2023-05-19",
@@ -9582,7 +10290,9 @@
     "anfci": -0.267,
     "financialStress": -0.4445,
     "twoYearRate": 4.28,
-    "sofr": 5.05
+    "sofr": 5.05,
+    "breakeven5y": 2.19,
+    "breakeven5y5y": 2.29
   },
   {
     "date": "2023-05-26",
@@ -9609,7 +10319,9 @@
     "anfci": -0.27,
     "financialStress": -0.3225,
     "twoYearRate": 4.54,
-    "sofr": 5.06
+    "sofr": 5.06,
+    "breakeven5y": 2.13,
+    "breakeven5y5y": 2.33
   },
   {
     "date": "2023-06-02",
@@ -9636,7 +10348,9 @@
     "anfci": -0.272,
     "financialStress": -0.4637,
     "twoYearRate": 4.5,
-    "sofr": 5.07
+    "sofr": 5.07,
+    "breakeven5y": 2.13,
+    "breakeven5y5y": 2.23
   },
   {
     "date": "2023-06-09",
@@ -9663,7 +10377,9 @@
     "anfci": -0.268,
     "financialStress": -0.6943,
     "twoYearRate": 4.59,
-    "sofr": 5.05
+    "sofr": 5.05,
+    "breakeven5y": 2.13,
+    "breakeven5y5y": 2.27
   },
   {
     "date": "2023-06-16",
@@ -9690,7 +10406,9 @@
     "anfci": -0.262,
     "financialStress": -0.6078,
     "twoYearRate": 4.7,
-    "sofr": 5.05
+    "sofr": 5.05,
+    "breakeven5y": 2.17,
+    "breakeven5y5y": 2.27
   },
   {
     "date": "2023-06-23",
@@ -9717,7 +10435,9 @@
     "anfci": -0.259,
     "financialStress": -0.5826,
     "twoYearRate": 4.71,
-    "sofr": 5.05
+    "sofr": 5.05,
+    "breakeven5y": 2.16,
+    "breakeven5y5y": 2.26
   },
   {
     "date": "2023-06-30",
@@ -9744,7 +10464,9 @@
     "anfci": -0.259,
     "financialStress": -0.6928,
     "twoYearRate": 4.87,
-    "sofr": 5.09
+    "sofr": 5.09,
+    "breakeven5y": 2.18,
+    "breakeven5y5y": 2.26
   },
   {
     "date": "2023-07-07",
@@ -9771,7 +10493,9 @@
     "anfci": -0.269,
     "financialStress": -0.7503,
     "twoYearRate": 4.94,
-    "sofr": 5.06
+    "sofr": 5.06,
+    "breakeven5y": 2.22,
+    "breakeven5y5y": 2.32
   },
   {
     "date": "2023-07-14",
@@ -9798,7 +10522,9 @@
     "anfci": -0.286,
     "financialStress": -0.6859,
     "twoYearRate": 4.74,
-    "sofr": 5.05
+    "sofr": 5.05,
+    "breakeven5y": 2.15,
+    "breakeven5y5y": 2.33
   },
   {
     "date": "2023-07-21",
@@ -9825,7 +10551,9 @@
     "anfci": -0.304,
     "financialStress": -0.7304,
     "twoYearRate": 4.82,
-    "sofr": 5.05
+    "sofr": 5.05,
+    "breakeven5y": 2.23,
+    "breakeven5y5y": 2.47
   },
   {
     "date": "2023-07-28",
@@ -9852,7 +10580,9 @@
     "anfci": -0.318,
     "financialStress": -0.7574,
     "twoYearRate": 4.87,
-    "sofr": 5.3
+    "sofr": 5.3,
+    "breakeven5y": 2.28,
+    "breakeven5y5y": 2.48
   },
   {
     "date": "2023-08-04",
@@ -9879,7 +10609,9 @@
     "anfci": -0.326,
     "financialStress": -0.717,
     "twoYearRate": 4.78,
-    "sofr": 5.3
+    "sofr": 5.3,
+    "breakeven5y": 2.26,
+    "breakeven5y5y": 2.5
   },
   {
     "date": "2023-08-11",
@@ -9906,7 +10638,9 @@
     "anfci": -0.326,
     "financialStress": -0.6547,
     "twoYearRate": 4.89,
-    "sofr": 5.3
+    "sofr": 5.3,
+    "breakeven5y": 2.3,
+    "breakeven5y5y": 2.42
   },
   {
     "date": "2023-08-18",
@@ -9933,7 +10667,9 @@
     "anfci": -0.322,
     "financialStress": -0.6208,
     "twoYearRate": 4.92,
-    "sofr": 5.3
+    "sofr": 5.3,
+    "breakeven5y": 2.22,
+    "breakeven5y5y": 2.42
   },
   {
     "date": "2023-08-25",
@@ -9960,7 +10696,9 @@
     "anfci": -0.318,
     "financialStress": -0.6749,
     "twoYearRate": 5.03,
-    "sofr": 5.3
+    "sofr": 5.3,
+    "breakeven5y": 2.25,
+    "breakeven5y5y": 2.41
   },
   {
     "date": "2023-09-01",
@@ -9987,7 +10725,9 @@
     "anfci": -0.316,
     "financialStress": -0.6834,
     "twoYearRate": 4.87,
-    "sofr": 5.31
+    "sofr": 5.31,
+    "breakeven5y": 2.17,
+    "breakeven5y5y": 2.35
   },
   {
     "date": "2023-09-08",
@@ -10014,7 +10754,9 @@
     "anfci": -0.313,
     "financialStress": -0.7137,
     "twoYearRate": 4.98,
-    "sofr": 5.3
+    "sofr": 5.3,
+    "breakeven5y": 2.26,
+    "breakeven5y5y": 2.4
   },
   {
     "date": "2023-09-15",
@@ -10041,7 +10783,9 @@
     "anfci": -0.309,
     "financialStress": -0.7083,
     "twoYearRate": 5.02,
-    "sofr": 5.31
+    "sofr": 5.31,
+    "breakeven5y": 2.27,
+    "breakeven5y5y": 2.43
   },
   {
     "date": "2023-09-22",
@@ -10068,7 +10812,9 @@
     "anfci": -0.301,
     "financialStress": -0.716,
     "twoYearRate": 5.1,
-    "sofr": 5.3
+    "sofr": 5.3,
+    "breakeven5y": 2.29,
+    "breakeven5y5y": 2.45
   },
   {
     "date": "2023-09-29",
@@ -10095,7 +10841,9 @@
     "anfci": -0.288,
     "financialStress": -0.4981,
     "twoYearRate": 5.03,
-    "sofr": 5.31
+    "sofr": 5.31,
+    "breakeven5y": 2.22,
+    "breakeven5y5y": 2.48
   },
   {
     "date": "2023-10-06",
@@ -10122,7 +10870,9 @@
     "anfci": -0.276,
     "financialStress": -0.4265,
     "twoYearRate": 5.08,
-    "sofr": 5.31
+    "sofr": 5.31,
+    "breakeven5y": 2.17,
+    "breakeven5y5y": 2.45
   },
   {
     "date": "2023-10-13",
@@ -10149,7 +10899,9 @@
     "anfci": -0.267,
     "financialStress": -0.5311,
     "twoYearRate": 5.04,
-    "sofr": 5.31
+    "sofr": 5.31,
+    "breakeven5y": 2.26,
+    "breakeven5y5y": 2.42
   },
   {
     "date": "2023-10-20",
@@ -10176,7 +10928,9 @@
     "anfci": -0.267,
     "financialStress": -0.3292,
     "twoYearRate": 5.07,
-    "sofr": 5.3
+    "sofr": 5.3,
+    "breakeven5y": 2.47,
+    "breakeven5y5y": 2.47
   },
   {
     "date": "2023-10-27",
@@ -10203,7 +10957,9 @@
     "anfci": -0.278,
     "financialStress": -0.3403,
     "twoYearRate": 4.99,
-    "sofr": 5.31
+    "sofr": 5.31,
+    "breakeven5y": 2.39,
+    "breakeven5y5y": 2.45
   },
   {
     "date": "2023-11-03",
@@ -10230,7 +10986,9 @@
     "anfci": -0.297,
     "financialStress": -0.5977,
     "twoYearRate": 4.83,
-    "sofr": 5.32
+    "sofr": 5.32,
+    "breakeven5y": 2.32,
+    "breakeven5y5y": 2.46
   },
   {
     "date": "2023-11-10",
@@ -10257,7 +11015,9 @@
     "anfci": -0.319,
     "financialStress": -0.721,
     "twoYearRate": 5.04,
-    "sofr": 5.32
+    "sofr": 5.32,
+    "breakeven5y": 2.28,
+    "breakeven5y5y": 2.36
   },
   {
     "date": "2023-11-17",
@@ -10284,7 +11044,9 @@
     "anfci": -0.34,
     "financialStress": -0.6143,
     "twoYearRate": 4.88,
-    "sofr": 5.32
+    "sofr": 5.32,
+    "breakeven5y": 2.23,
+    "breakeven5y5y": 2.33
   },
   {
     "date": "2023-11-24",
@@ -10311,7 +11073,9 @@
     "anfci": -0.356,
     "financialStress": -0.7262,
     "twoYearRate": 4.92,
-    "sofr": 5.32
+    "sofr": 5.32,
+    "breakeven5y": 2.21,
+    "breakeven5y5y": 2.31
   },
   {
     "date": "2023-12-01",
@@ -10338,7 +11102,9 @@
     "anfci": -0.366,
     "financialStress": -0.5233,
     "twoYearRate": 4.56,
-    "sofr": 5.39
+    "sofr": 5.39,
+    "breakeven5y": 2.12,
+    "breakeven5y5y": 2.32
   },
   {
     "date": "2023-12-08",
@@ -10365,7 +11131,9 @@
     "anfci": -0.373,
     "financialStress": -0.4896,
     "twoYearRate": 4.71,
-    "sofr": 5.32
+    "sofr": 5.32,
+    "breakeven5y": 2.11,
+    "breakeven5y5y": 2.31
   },
   {
     "date": "2023-12-15",
@@ -10392,7 +11160,9 @@
     "anfci": -0.38,
     "financialStress": -0.5997,
     "twoYearRate": 4.44,
-    "sofr": 5.32
+    "sofr": 5.32,
+    "breakeven5y": 2.17,
+    "breakeven5y5y": 2.27
   },
   {
     "date": "2023-12-22",
@@ -10419,7 +11189,9 @@
     "anfci": -0.39,
     "financialStress": -0.427,
     "twoYearRate": 4.31,
-    "sofr": 5.32
+    "sofr": 5.32,
+    "breakeven5y": 2.16,
+    "breakeven5y5y": 2.22
   },
   {
     "date": "2023-12-29",
@@ -10446,7 +11218,9 @@
     "anfci": -0.401,
     "financialStress": -0.4115,
     "twoYearRate": 4.23,
-    "sofr": 5.38
+    "sofr": 5.38,
+    "breakeven5y": 2.12,
+    "breakeven5y5y": 2.2
   },
   {
     "date": "2024-01-05",
@@ -10473,7 +11247,9 @@
     "anfci": -0.413,
     "financialStress": -0.5566,
     "twoYearRate": 4.4,
-    "sofr": 5.31
+    "sofr": 5.31,
+    "breakeven5y": 2.19,
+    "breakeven5y5y": 2.25
   },
   {
     "date": "2024-01-12",
@@ -10500,7 +11276,9 @@
     "anfci": -0.424,
     "financialStress": -0.7053,
     "twoYearRate": 4.14,
-    "sofr": 5.31
+    "sofr": 5.31,
+    "breakeven5y": 2.22,
+    "breakeven5y5y": 2.32
   },
   {
     "date": "2024-01-19",
@@ -10527,7 +11305,9 @@
     "anfci": -0.431,
     "financialStress": -0.806,
     "twoYearRate": 4.39,
-    "sofr": 5.31
+    "sofr": 5.31,
+    "breakeven5y": 2.3,
+    "breakeven5y5y": 2.38
   },
   {
     "date": "2024-01-26",
@@ -10554,7 +11334,9 @@
     "anfci": -0.434,
     "financialStress": -0.8289,
     "twoYearRate": 4.34,
-    "sofr": 5.32
+    "sofr": 5.32,
+    "breakeven5y": 2.26,
+    "breakeven5y5y": 2.34
   },
   {
     "date": "2024-02-02",
@@ -10581,7 +11363,9 @@
     "anfci": -0.438,
     "financialStress": -0.7472,
     "twoYearRate": 4.36,
-    "sofr": 5.32
+    "sofr": 5.32,
+    "breakeven5y": 2.19,
+    "breakeven5y5y": 2.23
   },
   {
     "date": "2024-02-09",
@@ -10608,7 +11392,9 @@
     "anfci": -0.442,
     "financialStress": -0.599,
     "twoYearRate": 4.48,
-    "sofr": 5.31
+    "sofr": 5.31,
+    "breakeven5y": 2.28,
+    "breakeven5y5y": 2.22
   },
   {
     "date": "2024-02-16",
@@ -10635,7 +11421,9 @@
     "anfci": -0.45,
     "financialStress": -0.6433,
     "twoYearRate": 4.64,
-    "sofr": 5.3
+    "sofr": 5.3,
+    "breakeven5y": 2.38,
+    "breakeven5y5y": 2.28
   },
   {
     "date": "2024-02-23",
@@ -10662,7 +11450,9 @@
     "anfci": -0.461,
     "financialStress": -0.6691,
     "twoYearRate": 4.67,
-    "sofr": 5.31
+    "sofr": 5.31,
+    "breakeven5y": 2.34,
+    "breakeven5y5y": 2.26
   },
   {
     "date": "2024-03-01",
@@ -10689,7 +11479,9 @@
     "anfci": -0.475,
     "financialStress": -0.7854,
     "twoYearRate": 4.54,
-    "sofr": 5.31
+    "sofr": 5.31,
+    "breakeven5y": 2.4,
+    "breakeven5y5y": 2.24
   },
   {
     "date": "2024-03-08",
@@ -10716,7 +11508,9 @@
     "anfci": -0.488,
     "financialStress": -0.7831,
     "twoYearRate": 4.48,
-    "sofr": 5.31
+    "sofr": 5.31,
+    "breakeven5y": 2.34,
+    "breakeven5y5y": 2.22
   },
   {
     "date": "2024-03-15",
@@ -10743,7 +11537,9 @@
     "anfci": -0.498,
     "financialStress": -0.9213,
     "twoYearRate": 4.72,
-    "sofr": 5.31
+    "sofr": 5.31,
+    "breakeven5y": 2.39,
+    "breakeven5y5y": 2.25
   },
   {
     "date": "2024-03-22",
@@ -10770,7 +11566,9 @@
     "anfci": -0.502,
     "financialStress": -0.9395,
     "twoYearRate": 4.59,
-    "sofr": 5.31
+    "sofr": 5.31,
+    "breakeven5y": 2.41,
+    "breakeven5y5y": 2.29
   },
   {
     "date": "2024-03-29",
@@ -10797,7 +11595,9 @@
     "anfci": -0.5,
     "financialStress": -0.9273,
     "twoYearRate": 4.59,
-    "sofr": 5.34
+    "sofr": 5.34,
+    "breakeven5y": 2.38,
+    "breakeven5y5y": 2.26
   },
   {
     "date": "2024-04-05",
@@ -10824,7 +11624,9 @@
     "anfci": -0.493,
     "financialStress": -0.8437,
     "twoYearRate": 4.73,
-    "sofr": 5.32
+    "sofr": 5.32,
+    "breakeven5y": 2.45,
+    "breakeven5y5y": 2.29
   },
   {
     "date": "2024-04-12",
@@ -10851,7 +11653,9 @@
     "anfci": -0.484,
     "financialStress": -0.7934,
     "twoYearRate": 4.88,
-    "sofr": 5.31
+    "sofr": 5.31,
+    "breakeven5y": 2.47,
+    "breakeven5y5y": 2.31
   },
   {
     "date": "2024-04-19",
@@ -10878,7 +11682,9 @@
     "anfci": -0.478,
     "financialStress": -0.4168,
     "twoYearRate": 4.97,
-    "sofr": 5.31
+    "sofr": 5.31,
+    "breakeven5y": 2.44,
+    "breakeven5y5y": 2.38
   },
   {
     "date": "2024-04-26",
@@ -10905,7 +11711,9 @@
     "anfci": -0.477,
     "financialStress": -0.8359,
     "twoYearRate": 4.96,
-    "sofr": 5.32
+    "sofr": 5.32,
+    "breakeven5y": 2.44,
+    "breakeven5y5y": 2.42
   },
   {
     "date": "2024-05-03",
@@ -10932,7 +11740,9 @@
     "anfci": -0.481,
     "financialStress": -0.8233,
     "twoYearRate": 4.81,
-    "sofr": 5.31
+    "sofr": 5.31,
+    "breakeven5y": 2.35,
+    "breakeven5y5y": 2.35
   },
   {
     "date": "2024-05-10",
@@ -10959,7 +11769,9 @@
     "anfci": -0.487,
     "financialStress": -0.9136,
     "twoYearRate": 4.87,
-    "sofr": 5.31
+    "sofr": 5.31,
+    "breakeven5y": 2.34,
+    "breakeven5y5y": 2.34
   },
   {
     "date": "2024-05-17",
@@ -10986,7 +11798,9 @@
     "anfci": -0.49,
     "financialStress": -0.9032,
     "twoYearRate": 4.83,
-    "sofr": 5.31
+    "sofr": 5.31,
+    "breakeven5y": 2.32,
+    "breakeven5y5y": 2.32
   },
   {
     "date": "2024-05-24",
@@ -11013,7 +11827,9 @@
     "anfci": -0.487,
     "financialStress": -0.9564,
     "twoYearRate": 4.93,
-    "sofr": 5.32
+    "sofr": 5.32,
+    "breakeven5y": 2.33,
+    "breakeven5y5y": 2.31
   },
   {
     "date": "2024-05-31",
@@ -11040,7 +11856,9 @@
     "anfci": -0.475,
     "financialStress": -0.8488,
     "twoYearRate": 4.89,
-    "sofr": 5.34
+    "sofr": 5.34,
+    "breakeven5y": 2.34,
+    "breakeven5y5y": 2.36
   },
   {
     "date": "2024-06-07",
@@ -11067,7 +11885,9 @@
     "anfci": -0.459,
     "financialStress": -0.8322,
     "twoYearRate": 4.87,
-    "sofr": 5.33
+    "sofr": 5.33,
+    "breakeven5y": 2.28,
+    "breakeven5y5y": 2.32
   },
   {
     "date": "2024-06-14",
@@ -11094,7 +11914,9 @@
     "anfci": -0.443,
     "financialStress": -0.8641,
     "twoYearRate": 4.67,
-    "sofr": 5.31
+    "sofr": 5.31,
+    "breakeven5y": 2.11,
+    "breakeven5y5y": 2.23
   },
   {
     "date": "2024-06-21",
@@ -11121,7 +11943,9 @@
     "anfci": -0.431,
     "financialStress": -0.8243,
     "twoYearRate": 4.7,
-    "sofr": 5.31
+    "sofr": 5.31,
+    "breakeven5y": 2.19,
+    "breakeven5y5y": 2.27
   },
   {
     "date": "2024-06-28",
@@ -11148,7 +11972,9 @@
     "anfci": -0.422,
     "financialStress": -0.8324,
     "twoYearRate": 4.71,
-    "sofr": 5.33
+    "sofr": 5.33,
+    "breakeven5y": 2.24,
+    "breakeven5y5y": 2.32
   },
   {
     "date": "2024-07-05",
@@ -11175,7 +12001,9 @@
     "anfci": -0.418,
     "financialStress": -0.8259,
     "twoYearRate": 4.6,
-    "sofr": 5.32
+    "sofr": 5.32,
+    "breakeven5y": 2.22,
+    "breakeven5y5y": 2.34
   },
   {
     "date": "2024-07-12",
@@ -11202,7 +12030,9 @@
     "anfci": -0.412,
     "financialStress": -0.8219,
     "twoYearRate": 4.45,
-    "sofr": 5.34
+    "sofr": 5.34,
+    "breakeven5y": 2.15,
+    "breakeven5y5y": 2.33
   },
   {
     "date": "2024-07-19",
@@ -11229,7 +12059,9 @@
     "anfci": -0.405,
     "financialStress": -0.6578,
     "twoYearRate": 4.49,
-    "sofr": 5.34
+    "sofr": 5.34,
+    "breakeven5y": 2.18,
+    "breakeven5y5y": 2.46
   },
   {
     "date": "2024-07-26",
@@ -11256,7 +12088,9 @@
     "anfci": -0.398,
     "financialStress": -0.6185,
     "twoYearRate": 4.36,
-    "sofr": 5.35
+    "sofr": 5.35,
+    "breakeven5y": 2.13,
+    "breakeven5y5y": 2.41
   },
   {
     "date": "2024-08-02",
@@ -11283,7 +12117,9 @@
     "anfci": -0.394,
     "financialStress": -0.3287,
     "twoYearRate": 3.88,
-    "sofr": 5.35
+    "sofr": 5.35,
+    "breakeven5y": 1.89,
+    "breakeven5y5y": 2.19
   },
   {
     "date": "2024-08-09",
@@ -11310,7 +12146,9 @@
     "anfci": -0.396,
     "financialStress": -0.1522,
     "twoYearRate": 4.05,
-    "sofr": 5.34
+    "sofr": 5.34,
+    "breakeven5y": 1.96,
+    "breakeven5y5y": 2.24
   },
   {
     "date": "2024-08-16",
@@ -11337,7 +12175,9 @@
     "anfci": -0.409,
     "financialStress": -0.7313,
     "twoYearRate": 4.06,
-    "sofr": 5.32
+    "sofr": 5.32,
+    "breakeven5y": 1.97,
+    "breakeven5y5y": 2.19
   },
   {
     "date": "2024-08-23",
@@ -11364,7 +12204,9 @@
     "anfci": -0.427,
     "financialStress": -0.6405,
     "twoYearRate": 3.9,
-    "sofr": 5.33
+    "sofr": 5.33,
+    "breakeven5y": 2.01,
+    "breakeven5y5y": 2.25
   },
   {
     "date": "2024-08-30",
@@ -11391,7 +12233,9 @@
     "anfci": -0.447,
     "financialStress": -0.6449,
     "twoYearRate": 3.91,
-    "sofr": 5.32
+    "sofr": 5.32,
+    "breakeven5y": 2.01,
+    "breakeven5y5y": 2.29
   },
   {
     "date": "2024-09-06",
@@ -11418,7 +12262,9 @@
     "anfci": -0.467,
     "financialStress": -0.3825,
     "twoYearRate": 3.66,
-    "sofr": 5.34
+    "sofr": 5.34,
+    "breakeven5y": 1.86,
+    "breakeven5y5y": 2.2
   },
   {
     "date": "2024-09-13",
@@ -11445,7 +12291,9 @@
     "anfci": -0.482,
     "financialStress": -0.3066,
     "twoYearRate": 3.57,
-    "sofr": 5.33
+    "sofr": 5.33,
+    "breakeven5y": 1.95,
+    "breakeven5y5y": 2.21
   },
   {
     "date": "2024-09-20",
@@ -11472,7 +12320,9 @@
     "anfci": -0.493,
     "financialStress": -0.4383,
     "twoYearRate": 3.55,
-    "sofr": 4.83
+    "sofr": 4.83,
+    "breakeven5y": 2.02,
+    "breakeven5y5y": 2.28
   },
   {
     "date": "2024-09-27",
@@ -11499,7 +12349,9 @@
     "anfci": -0.501,
     "financialStress": -0.2668,
     "twoYearRate": 3.55,
-    "sofr": 4.84
+    "sofr": 4.84,
+    "breakeven5y": 2.03,
+    "breakeven5y5y": 2.27
   },
   {
     "date": "2024-10-04",
@@ -11526,7 +12378,9 @@
     "anfci": -0.51,
     "financialStress": -0.6076,
     "twoYearRate": 3.93,
-    "sofr": 4.83
+    "sofr": 4.83,
+    "breakeven5y": 2.14,
+    "breakeven5y5y": 2.32
   },
   {
     "date": "2024-10-11",
@@ -11553,7 +12407,9 @@
     "anfci": -0.517,
     "financialStress": -0.5895,
     "twoYearRate": 3.95,
-    "sofr": 4.81
+    "sofr": 4.81,
+    "breakeven5y": 2.25,
+    "breakeven5y5y": 2.41
   },
   {
     "date": "2024-10-18",
@@ -11580,7 +12436,9 @@
     "anfci": -0.526,
     "financialStress": -0.5279,
     "twoYearRate": 3.95,
-    "sofr": 4.84
+    "sofr": 4.84,
+    "breakeven5y": 2.23,
+    "breakeven5y5y": 2.39
   },
   {
     "date": "2024-10-25",
@@ -11607,7 +12465,9 @@
     "anfci": -0.535,
     "financialStress": -0.3834,
     "twoYearRate": 4.11,
-    "sofr": 4.83
+    "sofr": 4.83,
+    "breakeven5y": 2.32,
+    "breakeven5y5y": 2.26
   },
   {
     "date": "2024-11-01",
@@ -11634,7 +12494,9 @@
     "anfci": -0.544,
     "financialStress": -0.29,
     "twoYearRate": 4.21,
-    "sofr": 4.86
+    "sofr": 4.86,
+    "breakeven5y": 2.37,
+    "breakeven5y5y": 2.29
   },
   {
     "date": "2024-11-08",
@@ -11661,7 +12523,9 @@
     "anfci": -0.554,
     "financialStress": -0.5594,
     "twoYearRate": 4.26,
-    "sofr": 4.6
+    "sofr": 4.6,
+    "breakeven5y": 2.43,
+    "breakeven5y5y": 2.27
   },
   {
     "date": "2024-11-15",
@@ -11688,7 +12552,9 @@
     "anfci": -0.562,
     "financialStress": -0.7978,
     "twoYearRate": 4.31,
-    "sofr": 4.57
+    "sofr": 4.57,
+    "breakeven5y": 2.39,
+    "breakeven5y5y": 2.27
   },
   {
     "date": "2024-11-22",
@@ -11715,7 +12581,9 @@
     "anfci": -0.565,
     "financialStress": -0.6066,
     "twoYearRate": 4.37,
-    "sofr": 4.57
+    "sofr": 4.57,
+    "breakeven5y": 2.43,
+    "breakeven5y5y": 2.25
   },
   {
     "date": "2024-11-29",
@@ -11742,7 +12610,9 @@
     "anfci": -0.564,
     "financialStress": -0.608,
     "twoYearRate": 4.13,
-    "sofr": 4.59
+    "sofr": 4.59,
+    "breakeven5y": 2.33,
+    "breakeven5y5y": 2.19
   },
   {
     "date": "2024-12-06",
@@ -11769,7 +12639,9 @@
     "anfci": -0.558,
     "financialStress": -0.521,
     "twoYearRate": 4.1,
-    "sofr": 4.6
+    "sofr": 4.6,
+    "breakeven5y": 2.31,
+    "breakeven5y5y": 2.17
   },
   {
     "date": "2024-12-13",
@@ -11796,7 +12668,9 @@
     "anfci": -0.551,
     "financialStress": -0.5764,
     "twoYearRate": 4.25,
-    "sofr": 4.6
+    "sofr": 4.6,
+    "breakeven5y": 2.4,
+    "breakeven5y5y": 2.26
   },
   {
     "date": "2024-12-20",
@@ -11823,7 +12697,9 @@
     "anfci": -0.546,
     "financialStress": -0.4957,
     "twoYearRate": 4.3,
-    "sofr": 4.3
+    "sofr": 4.3,
+    "breakeven5y": 2.34,
+    "breakeven5y5y": 2.24
   },
   {
     "date": "2024-12-27",
@@ -11850,7 +12726,9 @@
     "anfci": -0.546,
     "financialStress": -0.6204,
     "twoYearRate": 4.31,
-    "sofr": 4.46
+    "sofr": 4.46,
+    "breakeven5y": 2.38,
+    "breakeven5y5y": 2.3
   },
   {
     "date": "2025-01-03",
@@ -11877,7 +12755,9 @@
     "anfci": -0.549,
     "financialStress": -0.6138,
     "twoYearRate": 4.28,
-    "sofr": 4.31
+    "sofr": 4.31,
+    "breakeven5y": 2.4,
+    "breakeven5y5y": 2.28
   },
   {
     "date": "2025-01-10",
@@ -11904,7 +12784,9 @@
     "anfci": -0.555,
     "financialStress": -0.7972,
     "twoYearRate": 4.4,
-    "sofr": 4.3
+    "sofr": 4.3,
+    "breakeven5y": 2.51,
+    "breakeven5y5y": 2.35
   },
   {
     "date": "2025-01-17",
@@ -11931,7 +12813,9 @@
     "anfci": -0.558,
     "financialStress": -0.8196,
     "twoYearRate": 4.27,
-    "sofr": 4.29
+    "sofr": 4.29,
+    "breakeven5y": 2.52,
+    "breakeven5y5y": 2.3
   },
   {
     "date": "2025-01-24",
@@ -11958,7 +12842,9 @@
     "anfci": -0.556,
     "financialStress": -0.9666,
     "twoYearRate": 4.27,
-    "sofr": 4.34
+    "sofr": 4.34,
+    "breakeven5y": 2.52,
+    "breakeven5y5y": 2.34
   },
   {
     "date": "2025-01-31",
@@ -11985,7 +12871,9 @@
     "anfci": -0.548,
     "financialStress": -0.7536,
     "twoYearRate": 4.22,
-    "sofr": 4.38
+    "sofr": 4.38,
+    "breakeven5y": 2.54,
+    "breakeven5y5y": 2.3
   },
   {
     "date": "2025-02-07",
@@ -12012,7 +12900,9 @@
     "anfci": -0.532,
     "financialStress": -0.776,
     "twoYearRate": 4.29,
-    "sofr": 4.35
+    "sofr": 4.35,
+    "breakeven5y": 2.59,
+    "breakeven5y5y": 2.25
   },
   {
     "date": "2025-02-14",
@@ -12039,7 +12929,9 @@
     "anfci": -0.514,
     "financialStress": -0.8248,
     "twoYearRate": 4.26,
-    "sofr": 4.33
+    "sofr": 4.33,
+    "breakeven5y": 2.62,
+    "breakeven5y5y": 2.24
   },
   {
     "date": "2025-02-21",
@@ -12066,7 +12958,9 @@
     "anfci": -0.498,
     "financialStress": -0.7536,
     "twoYearRate": 4.19,
-    "sofr": 4.34
+    "sofr": 4.34,
+    "breakeven5y": 2.61,
+    "breakeven5y5y": 2.23
   },
   {
     "date": "2025-02-28",
@@ -12093,7 +12987,9 @@
     "anfci": -0.486,
     "financialStress": -0.4416,
     "twoYearRate": 3.99,
-    "sofr": 4.39
+    "sofr": 4.39,
+    "breakeven5y": 2.58,
+    "breakeven5y5y": 2.18
   },
   {
     "date": "2025-03-07",
@@ -12120,7 +13016,9 @@
     "anfci": -0.477,
     "financialStress": -0.346,
     "twoYearRate": 3.99,
-    "sofr": 4.34
+    "sofr": 4.34,
+    "breakeven5y": 2.52,
+    "breakeven5y5y": 2.14
   },
   {
     "date": "2025-03-14",
@@ -12147,7 +13045,9 @@
     "anfci": -0.469,
     "financialStress": -0.2073,
     "twoYearRate": 4.02,
-    "sofr": 4.3
+    "sofr": 4.3,
+    "breakeven5y": 2.48,
+    "breakeven5y5y": 2.12
   },
   {
     "date": "2025-03-21",
@@ -12174,7 +13074,9 @@
     "anfci": -0.459,
     "financialStress": -0.637,
     "twoYearRate": 3.94,
-    "sofr": 4.3
+    "sofr": 4.3,
+    "breakeven5y": 2.51,
+    "breakeven5y5y": 2.15
   },
   {
     "date": "2025-03-28",
@@ -12201,7 +13103,9 @@
     "anfci": -0.445,
     "financialStress": -0.6186,
     "twoYearRate": 3.89,
-    "sofr": 4.34
+    "sofr": 4.34,
+    "breakeven5y": 2.58,
+    "breakeven5y5y": 2.16
   },
   {
     "date": "2025-04-04",
@@ -12228,7 +13132,9 @@
     "anfci": -0.429,
     "financialStress": 0.1127,
     "twoYearRate": 3.68,
-    "sofr": 4.35
+    "sofr": 4.35,
+    "breakeven5y": 2.34,
+    "breakeven5y5y": 2.02
   },
   {
     "date": "2025-04-11",
@@ -12255,7 +13161,9 @@
     "anfci": -0.417,
     "financialStress": 0.587,
     "twoYearRate": 3.96,
-    "sofr": 4.33
+    "sofr": 4.33,
+    "breakeven5y": 2.33,
+    "breakeven5y5y": 2.07
   },
   {
     "date": "2025-04-18",
@@ -12282,7 +13190,9 @@
     "anfci": -0.418,
     "financialStress": -0.1917,
     "twoYearRate": 3.81,
-    "sofr": 4.32
+    "sofr": 4.32,
+    "breakeven5y": 2.26,
+    "breakeven5y5y": 2.2
   },
   {
     "date": "2025-04-25",
@@ -12309,7 +13219,9 @@
     "anfci": -0.43,
     "financialStress": -0.2589,
     "twoYearRate": 3.74,
-    "sofr": 4.33
+    "sofr": 4.33,
+    "breakeven5y": 2.32,
+    "breakeven5y5y": 2.22
   },
   {
     "date": "2025-05-02",
@@ -12336,7 +13248,9 @@
     "anfci": -0.451,
     "financialStress": -0.3311,
     "twoYearRate": 3.83,
-    "sofr": 4.36
+    "sofr": 4.36,
+    "breakeven5y": 2.31,
+    "breakeven5y5y": 2.23
   },
   {
     "date": "2025-05-09",
@@ -12363,7 +13277,9 @@
     "anfci": -0.477,
     "financialStress": -0.4643,
     "twoYearRate": 3.88,
-    "sofr": 4.28
+    "sofr": 4.28,
+    "breakeven5y": 2.39,
+    "breakeven5y5y": 2.19
   },
   {
     "date": "2025-05-16",
@@ -12390,7 +13306,9 @@
     "anfci": -0.498,
     "financialStress": -0.8942,
     "twoYearRate": 3.98,
-    "sofr": 4.3
+    "sofr": 4.3,
+    "breakeven5y": 2.42,
+    "breakeven5y5y": 2.26
   },
   {
     "date": "2025-05-23",
@@ -12417,7 +13335,9 @@
     "anfci": -0.511,
     "financialStress": -0.4948,
     "twoYearRate": 4,
-    "sofr": 4.26
+    "sofr": 4.26,
+    "breakeven5y": 2.4,
+    "breakeven5y5y": 2.26
   },
   {
     "date": "2025-05-30",
@@ -12444,7 +13364,9 @@
     "anfci": -0.516,
     "financialStress": -0.5276,
     "twoYearRate": 3.89,
-    "sofr": 4.35
+    "sofr": 4.35,
+    "breakeven5y": 2.39,
+    "breakeven5y5y": 2.29
   },
   {
     "date": "2025-06-06",
@@ -12471,7 +13393,9 @@
     "anfci": -0.519,
     "financialStress": -0.8,
     "twoYearRate": 4.04,
-    "sofr": 4.29
+    "sofr": 4.29,
+    "breakeven5y": 2.35,
+    "breakeven5y5y": 2.27
   },
   {
     "date": "2025-06-13",
@@ -12498,7 +13422,9 @@
     "anfci": -0.522,
     "financialStress": -0.7766,
     "twoYearRate": 3.96,
-    "sofr": 4.28
+    "sofr": 4.28,
+    "breakeven5y": 2.31,
+    "breakeven5y5y": 2.25
   },
   {
     "date": "2025-06-20",
@@ -12525,7 +13451,9 @@
     "anfci": -0.529,
     "financialStress": -0.6454,
     "twoYearRate": 3.9,
-    "sofr": 4.29
+    "sofr": 4.29,
+    "breakeven5y": 2.37,
+    "breakeven5y5y": 2.29
   },
   {
     "date": "2025-06-27",
@@ -12552,7 +13480,9 @@
     "anfci": -0.539,
     "financialStress": -0.6948,
     "twoYearRate": 3.73,
-    "sofr": 4.39
+    "sofr": 4.39,
+    "breakeven5y": 2.31,
+    "breakeven5y5y": 2.27
   },
   {
     "date": "2025-07-04",
@@ -12579,7 +13509,9 @@
     "anfci": -0.55,
     "financialStress": -0.8729,
     "twoYearRate": 3.88,
-    "sofr": 4.35
+    "sofr": 4.35,
+    "breakeven5y": 2.37,
+    "breakeven5y5y": 2.29
   },
   {
     "date": "2025-07-11",
@@ -12606,7 +13538,9 @@
     "anfci": -0.558,
     "financialStress": -0.7495,
     "twoYearRate": 3.9,
-    "sofr": 4.31
+    "sofr": 4.31,
+    "breakeven5y": 2.44,
+    "breakeven5y5y": 2.3
   },
   {
     "date": "2025-07-18",
@@ -12633,7 +13567,9 @@
     "anfci": -0.563,
     "financialStress": -0.7135,
     "twoYearRate": 3.88,
-    "sofr": 4.3
+    "sofr": 4.3,
+    "breakeven5y": 2.5,
+    "breakeven5y5y": 2.32
   },
   {
     "date": "2025-07-25",
@@ -12660,7 +13596,9 @@
     "anfci": -0.567,
     "financialStress": -0.7939,
     "twoYearRate": 3.91,
-    "sofr": 4.36
+    "sofr": 4.36,
+    "breakeven5y": 2.47,
+    "breakeven5y5y": 2.41
   },
   {
     "date": "2025-08-01",
@@ -12687,7 +13625,9 @@
     "anfci": -0.57,
     "financialStress": -0.6754,
     "twoYearRate": 3.69,
-    "sofr": 4.34
+    "sofr": 4.34,
+    "breakeven5y": 2.38,
+    "breakeven5y5y": 2.28
   },
   {
     "date": "2025-08-08",
@@ -12714,7 +13654,9 @@
     "anfci": -0.574,
     "financialStress": -0.5631,
     "twoYearRate": 3.76,
-    "sofr": 4.35
+    "sofr": 4.35,
+    "breakeven5y": 2.46,
+    "breakeven5y5y": 2.32
   },
   {
     "date": "2025-08-15",
@@ -12741,7 +13683,9 @@
     "anfci": -0.578,
     "financialStress": -0.8169,
     "twoYearRate": 3.75,
-    "sofr": 4.36
+    "sofr": 4.36,
+    "breakeven5y": 2.42,
+    "breakeven5y5y": 2.34
   },
   {
     "date": "2025-08-22",
@@ -12768,7 +13712,9 @@
     "anfci": -0.579,
     "financialStress": -0.7504,
     "twoYearRate": 3.68,
-    "sofr": 4.36
+    "sofr": 4.36,
+    "breakeven5y": 2.48,
+    "breakeven5y5y": 2.34
   },
   {
     "date": "2025-08-29",
@@ -12795,7 +13741,9 @@
     "anfci": -0.579,
     "financialStress": -0.6033,
     "twoYearRate": 3.59,
-    "sofr": 4.34
+    "sofr": 4.34,
+    "breakeven5y": 2.47,
+    "breakeven5y5y": 2.35
   },
   {
     "date": "2025-09-05",
@@ -12822,7 +13770,9 @@
     "anfci": -0.578,
     "financialStress": -0.4179,
     "twoYearRate": 3.51,
-    "sofr": 4.42
+    "sofr": 4.42,
+    "breakeven5y": 2.42,
+    "breakeven5y5y": 2.32
   },
   {
     "date": "2025-09-12",
@@ -12849,7 +13799,9 @@
     "anfci": -0.579,
     "financialStress": -0.5579,
     "twoYearRate": 3.56,
-    "sofr": 4.42
+    "sofr": 4.42,
+    "breakeven5y": 2.42,
+    "breakeven5y5y": 2.3
   },
   {
     "date": "2025-09-19",
@@ -12876,7 +13828,9 @@
     "anfci": -0.582,
     "financialStress": -0.5903,
     "twoYearRate": 3.57,
-    "sofr": 4.14
+    "sofr": 4.14,
+    "breakeven5y": 2.43,
+    "breakeven5y5y": 2.35
   },
   {
     "date": "2025-09-26",
@@ -12903,7 +13857,9 @@
     "anfci": -0.587,
     "financialStress": -0.5358,
     "twoYearRate": 3.63,
-    "sofr": 4.16
+    "sofr": 4.16,
+    "breakeven5y": 2.42,
+    "breakeven5y5y": 2.34
   },
   {
     "date": "2025-10-03",
@@ -12930,7 +13886,9 @@
     "anfci": -0.592,
     "financialStress": -0.4919,
     "twoYearRate": 3.58,
-    "sofr": 4.18
+    "sofr": 4.18,
+    "breakeven5y": 2.38,
+    "breakeven5y5y": 2.28
   },
   {
     "date": "2025-10-10",
@@ -12957,7 +13915,9 @@
     "anfci": -0.593,
     "financialStress": -0.4823,
     "twoYearRate": 3.52,
-    "sofr": 4.15
+    "sofr": 4.15,
+    "breakeven5y": 2.35,
+    "breakeven5y5y": 2.25
   },
   {
     "date": "2025-10-17",
@@ -12984,7 +13944,9 @@
     "anfci": -0.591,
     "financialStress": -0.3614,
     "twoYearRate": 3.46,
-    "sofr": 4.18
+    "sofr": 4.18,
+    "breakeven5y": 2.29,
+    "breakeven5y5y": 2.25
   },
   {
     "date": "2025-10-24",
@@ -13011,7 +13973,9 @@
     "anfci": -0.586,
     "financialStress": -0.5056,
     "twoYearRate": 3.48,
-    "sofr": 4.24
+    "sofr": 4.24,
+    "breakeven5y": 2.4,
+    "breakeven5y5y": 2.18
   },
   {
     "date": "2025-10-31",
@@ -13038,7 +14002,9 @@
     "anfci": -0.581,
     "financialStress": -0.4592,
     "twoYearRate": 3.6,
-    "sofr": 4.22
+    "sofr": 4.22,
+    "breakeven5y": 2.4,
+    "breakeven5y5y": 2.2
   },
   {
     "date": "2025-11-07",
@@ -13065,7 +14031,9 @@
     "anfci": -0.578,
     "financialStress": -0.3105,
     "twoYearRate": 3.55,
-    "sofr": 3.93
+    "sofr": 3.93,
+    "breakeven5y": 2.36,
+    "breakeven5y5y": 2.2
   },
   {
     "date": "2025-11-14",
@@ -13092,7 +14060,9 @@
     "anfci": -0.574,
     "financialStress": -0.5037,
     "twoYearRate": 3.62,
-    "sofr": 3.95
+    "sofr": 3.95,
+    "breakeven5y": 2.38,
+    "breakeven5y5y": 2.18
   },
   {
     "date": "2025-11-21",
@@ -13119,7 +14089,9 @@
     "anfci": -0.57,
     "financialStress": -0.1273,
     "twoYearRate": 3.51,
-    "sofr": 3.93
+    "sofr": 3.93,
+    "breakeven5y": 2.32,
+    "breakeven5y5y": 2.16
   },
   {
     "date": "2025-11-28",
@@ -13146,7 +14118,9 @@
     "anfci": -0.565,
     "financialStress": -0.3876,
     "twoYearRate": 3.47,
-    "sofr": 4.12
+    "sofr": 4.12,
+    "breakeven5y": 2.29,
+    "breakeven5y5y": 2.17
   },
   {
     "date": "2025-12-05",
@@ -13173,7 +14147,9 @@
     "anfci": -0.558,
     "financialStress": -0.4221,
     "twoYearRate": 3.56,
-    "sofr": 3.93
+    "sofr": 3.93,
+    "breakeven5y": 2.34,
+    "breakeven5y5y": 2.18
   },
   {
     "date": "2025-12-12",
@@ -13200,7 +14176,9 @@
     "anfci": -0.554,
     "financialStress": -0.3549,
     "twoYearRate": 3.52,
-    "sofr": 3.67
+    "sofr": 3.67,
+    "breakeven5y": 2.32,
+    "breakeven5y5y": 2.2
   },
   {
     "date": "2025-12-19",
@@ -13227,7 +14205,9 @@
     "anfci": -0.556,
     "financialStress": -0.3328,
     "twoYearRate": 3.48,
-    "sofr": 3.66
+    "sofr": 3.66,
+    "breakeven5y": 2.27,
+    "breakeven5y5y": 2.21
   },
   {
     "date": "2025-12-26",
@@ -13254,7 +14234,9 @@
     "anfci": -0.565,
     "financialStress": -0.574,
     "twoYearRate": 3.46,
-    "sofr": 3.76
+    "sofr": 3.76,
+    "breakeven5y": 2.22,
+    "breakeven5y5y": 2.24
   },
   {
     "date": "2026-01-02",
@@ -13281,7 +14263,9 @@
     "anfci": -0.577,
     "financialStress": -0.5577,
     "twoYearRate": 3.47,
-    "sofr": 3.75
+    "sofr": 3.75,
+    "breakeven5y": 2.28,
+    "breakeven5y5y": 2.22
   },
   {
     "date": "2026-01-09",
@@ -13308,7 +14292,9 @@
     "anfci": -0.587,
     "financialStress": -0.657,
     "twoYearRate": 3.54,
-    "sofr": 3.64
+    "sofr": 3.64,
+    "breakeven5y": 2.32,
+    "breakeven5y5y": 2.24
   },
   {
     "date": "2026-01-16",
@@ -13335,7 +14321,9 @@
     "anfci": -0.593,
     "financialStress": -0.6436,
     "twoYearRate": 3.59,
-    "sofr": 3.65
+    "sofr": 3.65,
+    "breakeven5y": 2.39,
+    "breakeven5y5y": 2.27
   },
   {
     "date": "2026-01-23",
@@ -13362,7 +14350,9 @@
     "anfci": -0.591,
     "financialStress": -0.7069,
     "twoYearRate": 3.6,
-    "sofr": 3.65
+    "sofr": 3.65,
+    "breakeven5y": 2.46,
+    "breakeven5y5y": 2.18
   },
   {
     "date": "2026-01-30",
@@ -13389,7 +14379,9 @@
     "anfci": -0.583,
     "financialStress": -0.6705,
     "twoYearRate": 3.52,
-    "sofr": 3.68
+    "sofr": 3.68,
+    "breakeven5y": 2.53,
+    "breakeven5y5y": 2.19
   },
   {
     "date": "2026-02-06",
@@ -13416,7 +14408,9 @@
     "anfci": -0.571,
     "financialStress": -0.6502,
     "twoYearRate": 3.5,
-    "sofr": 3.64
+    "sofr": 3.64,
+    "breakeven5y": 2.5,
+    "breakeven5y5y": 2.18
   },
   {
     "date": "2026-02-13",
@@ -13443,7 +14437,9 @@
     "anfci": -0.556,
     "financialStress": -0.6093,
     "twoYearRate": 3.4,
-    "sofr": 3.66
+    "sofr": 3.66,
+    "breakeven5y": 2.42,
+    "breakeven5y5y": 2.12
   },
   {
     "date": "2026-02-20",
@@ -13470,7 +14466,9 @@
     "anfci": -0.538,
     "financialStress": -0.48,
     "twoYearRate": 3.48,
-    "sofr": 3.66
+    "sofr": 3.66,
+    "breakeven5y": 2.43,
+    "breakeven5y5y": 2.13
   },
   {
     "date": "2026-02-27",
@@ -13497,7 +14495,9 @@
     "anfci": -0.516,
     "financialStress": -0.4351,
     "twoYearRate": 3.38,
-    "sofr": 3.68
+    "sofr": 3.68,
+    "breakeven5y": 2.4,
+    "breakeven5y5y": 2.1
   },
   {
     "date": "2026-03-06",
@@ -13524,7 +14524,9 @@
     "anfci": -0.491,
     "financialStress": -0.4255,
     "twoYearRate": 3.56,
-    "sofr": 3.65
+    "sofr": 3.65,
+    "breakeven5y": 2.56,
+    "breakeven5y5y": 2.14
   },
   {
     "date": "2026-03-13",
@@ -13551,7 +14553,9 @@
     "anfci": -0.469,
     "financialStress": -0.2965,
     "twoYearRate": 3.73,
-    "sofr": 3.65
+    "sofr": 3.65,
+    "breakeven5y": 2.61,
+    "breakeven5y5y": 2.11
   },
   {
     "date": "2026-03-20",
@@ -13578,7 +14582,9 @@
     "anfci": -0.456,
     "financialStress": -0.3631,
     "twoYearRate": 3.88,
-    "sofr": 3.62
+    "sofr": 3.62,
+    "breakeven5y": 2.63,
+    "breakeven5y5y": 2.13
   },
   {
     "date": "2026-03-27",
@@ -13605,7 +14611,9 @@
     "anfci": -0.453,
     "financialStress": -0.1777,
     "twoYearRate": 3.88,
-    "sofr": 3.63
+    "sofr": 3.63,
+    "breakeven5y": 2.56,
+    "breakeven5y5y": 2.06
   },
   {
     "date": "2026-04-03",
@@ -13632,7 +14640,9 @@
     "anfci": -0.465,
     "financialStress": -0.2313,
     "twoYearRate": 3.84,
-    "sofr": 3.66
+    "sofr": 3.66,
+    "breakeven5y": 2.61,
+    "breakeven5y5y": 2.11
   },
   {
     "date": "2026-04-10",
@@ -13659,7 +14669,9 @@
     "anfci": -0.485,
     "financialStress": -0.6397,
     "twoYearRate": 3.81,
-    "sofr": 3.61
+    "sofr": 3.61,
+    "breakeven5y": 2.58,
+    "breakeven5y5y": 2.14
   },
   {
     "date": "2026-04-17",
@@ -13686,7 +14698,9 @@
     "anfci": -0.503,
     "financialStress": -0.7503,
     "twoYearRate": 3.71,
-    "sofr": 3.65
+    "sofr": 3.65,
+    "breakeven5y": 2.56,
+    "breakeven5y5y": 2.16
   },
   {
     "date": "2026-04-24",
@@ -13713,7 +14727,9 @@
     "anfci": -0.515,
     "financialStress": -0.6728,
     "twoYearRate": 3.78,
-    "sofr": 3.66
+    "sofr": 3.66,
+    "breakeven5y": 2.61,
+    "breakeven5y5y": 2.23
   },
   {
     "date": "2026-05-01",
@@ -13740,7 +14756,9 @@
     "anfci": -0.517,
     "financialStress": -0.6674,
     "twoYearRate": 3.88,
-    "sofr": 3.64
+    "sofr": 3.64,
+    "breakeven5y": 2.69,
+    "breakeven5y5y": 2.27
   },
   {
     "date": "2026-05-08",
@@ -13767,7 +14785,9 @@
     "anfci": -0.515,
     "financialStress": -0.7575,
     "twoYearRate": 3.9,
-    "sofr": 3.6
+    "sofr": 3.6,
+    "breakeven5y": 2.62,
+    "breakeven5y5y": 2.28
   },
   {
     "date": "2026-05-15",
@@ -13794,7 +14814,9 @@
     "anfci": -0.514,
     "financialStress": -0.7373,
     "twoYearRate": 4.09,
-    "sofr": 3.55
+    "sofr": 3.55,
+    "breakeven5y": 2.7,
+    "breakeven5y5y": 2.28
   },
   {
     "date": "2026-05-22",
@@ -13821,7 +14843,9 @@
     "anfci": -0.518,
     "financialStress": -0.7578,
     "twoYearRate": 4.13,
-    "sofr": 3.55
+    "sofr": 3.55,
+    "breakeven5y": 2.54,
+    "breakeven5y5y": 2.26
   },
   {
     "date": "2026-05-29",
@@ -13848,7 +14872,9 @@
     "anfci": -0.529,
     "financialStress": -0.6804,
     "twoYearRate": 3.98,
-    "sofr": 3.63
+    "sofr": 3.63,
+    "breakeven5y": 2.52,
+    "breakeven5y5y": 2.24
   },
   {
     "date": "2026-06-05",
@@ -13875,7 +14901,9 @@
     "anfci": -0.547,
     "financialStress": -0.8649,
     "twoYearRate": 4.17,
-    "sofr": 3.63
+    "sofr": 3.63,
+    "breakeven5y": 2.48,
+    "breakeven5y5y": 2.24
   },
   {
     "date": "2026-06-12",
@@ -13902,7 +14930,9 @@
     "anfci": -0.561,
     "financialStress": -0.7674,
     "twoYearRate": 4.09,
-    "sofr": 3.65
+    "sofr": 3.65,
+    "breakeven5y": 2.39,
+    "breakeven5y5y": 2.23
   },
   {
     "date": "2026-06-19",
@@ -13929,7 +14959,9 @@
     "anfci": -0.571,
     "financialStress": -0.9525,
     "twoYearRate": 4.19,
-    "sofr": 3.62
+    "sofr": 3.62,
+    "breakeven5y": 2.27,
+    "breakeven5y5y": 2.23
   },
   {
     "date": "2026-06-26",
@@ -13956,7 +14988,9 @@
     "anfci": -0.576,
     "financialStress": -0.6436,
     "twoYearRate": 4.07,
-    "sofr": 3.62
+    "sofr": 3.62,
+    "breakeven5y": 2.21,
+    "breakeven5y5y": 2.19
   },
   {
     "date": "2026-07-03",
@@ -13983,7 +15017,9 @@
     "anfci": -0.579,
     "financialStress": -0.7233,
     "twoYearRate": 4.14,
-    "sofr": 3.64
+    "sofr": 3.64,
+    "breakeven5y": 2.24,
+    "breakeven5y5y": 2.22
   },
   {
     "date": "2026-07-10",
@@ -14010,7 +15046,9 @@
     "anfci": -0.581,
     "financialStress": -0.8825,
     "twoYearRate": 4.21,
-    "sofr": 3.55
+    "sofr": 3.55,
+    "breakeven5y": 2.28,
+    "breakeven5y5y": 2.2
   },
   {
     "date": "2026-07-17",
@@ -14037,7 +15075,9 @@
     "anfci": -0.584,
     "financialStress": -0.7004,
     "twoYearRate": 4.18,
-    "sofr": 3.59
+    "sofr": 3.59,
+    "breakeven5y": 2.27,
+    "breakeven5y5y": 2.21
   },
   {
     "date": "2026-07-24",
@@ -14064,7 +15104,9 @@
     "anfci": -0.589,
     "financialStress": -0.8256,
     "twoYearRate": 4.33,
-    "sofr": 3.64
+    "sofr": 3.64,
+    "breakeven5y": 2.24,
+    "breakeven5y5y": 2.28
   },
   {
     "date": "2026-07-31",
@@ -14091,7 +15133,9 @@
     "anfci": -0.591,
     "financialStress": -0.5056,
     "twoYearRate": 4.28,
-    "sofr": 3.66
+    "sofr": 3.66,
+    "breakeven5y": 2.26,
+    "breakeven5y5y": 2.3
   },
   {
     "date": "2026-08-07",
@@ -14118,7 +15162,9 @@
     "anfci": -0.591,
     "financialStress": -0.7705,
     "twoYearRate": 4.19,
-    "sofr": 3.62
+    "sofr": 3.62,
+    "breakeven5y": 2.22,
+    "breakeven5y5y": 2.28
   },
   {
     "date": "2026-08-14",
@@ -14145,6 +15191,8 @@
     "anfci": -0.587,
     "financialStress": -0.8285,
     "twoYearRate": 4.17,
-    "sofr": 3.62
+    "sofr": 3.62,
+    "breakeven5y": 2.24,
+    "breakeven5y5y": 2.3
   }
 ]

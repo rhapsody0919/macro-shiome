@@ -153,6 +153,30 @@ describe('日本の失業率と企業物価 (#180)', () => {
   });
 });
 
+describe('コア物価と期待インフレ率 (#194)', () => {
+  it('コア PCE を先頭に置く', () => {
+    // FRB の物価目標そのもの。上流 → 下流ではなく「政策に効く順」(#89 の趣旨)。
+    render(<EconomyPage />);
+    const core = screen.getByText('コア PCE');
+    const cpi = screen.getByText('コア CPI');
+    expect(core.compareDocumentPosition(cpi) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+  });
+
+  it('総合物価と同じ図に載せない', () => {
+    // コアは食品・エネルギーを除く別の定義。重ねると差が振れ幅の違いに見える。
+    render(<EconomyPage />);
+    expect(screen.getByRole('heading', { name: 'コア物価' })).toBeInTheDocument();
+    expect(screen.getByText(/定義が違うため同じ図に載せていない/)).toBeInTheDocument();
+  });
+
+  it('期待インフレ率は日次で市場ページに置く', () => {
+    // 実績 (経済ページ) と先行き (市場ページ) を分ける。日次で取れる。
+    render(<MarketPage />);
+    expect(screen.getByRole('heading', { name: '期待インフレ率' })).toBeInTheDocument();
+    expect(screen.getByText('5年先5年')).toBeInTheDocument();
+  });
+});
+
 describe('設備稼働率と在庫循環 (#191)', () => {
   it('稼働率は水準で出す', () => {
     // 前年同月比にすると「80% を割った」という水準の意味が消える。

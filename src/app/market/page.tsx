@@ -84,6 +84,33 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
     question: 'financial',
     frequency: 'daily',
     kind: 'percent',
+    primaryIndicator: 'breakeven-5y5y',
+    title: '期待インフレ率',
+    subtitle: '市場が織り込む物価',
+    series: [
+      { key: 'breakeven5y5y', label: '5年先5年', color: COLORS.breakeven5y5y, width: 2.4 },
+      { key: 'breakeven', label: '10年 BEI', color: COLORS.breakeven },
+      { key: 'breakeven5y', label: '5年 BEI', color: COLORS.breakeven5y },
+    ],
+    notes: [
+      <span key="forward">
+        <strong>5年先5年が FRB の見る指標。</strong>
+        5 年後から始まる 5 年間の期待で、足元の物価変動の影響を受けにくい。
+        ここが動くと「期待が外れた」ことになる。
+      </span>,
+      <span key="market">
+        <strong>実績ではなく 市場が織り込む物価。</strong>
+        名目債と TIPS の利回り差から求める。経済ページのコア物価が実績、こちらが先行き。
+      </span>,
+      <span key="same">
+        3 本とも同じ手法なので重ねられる。期間の違いが「いつの物価を織り込んでいるか」を示す。
+      </span>,
+    ],
+  },
+  {
+    question: 'financial',
+    frequency: 'daily',
+    kind: 'percent',
     primaryIndicator: 'dgs2',
     title: '短期金利',
     subtitle: '2年債と SOFR',

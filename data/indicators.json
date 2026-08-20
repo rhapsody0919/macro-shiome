@@ -2096,5 +2096,107 @@
       "max": 10000000
     },
     "note": "Total Business Inventories。百万ドル、季節調整済み (#191)。**在庫循環を見る唯一の指標。** 受注が伸びても在庫が積み上がっていれば生産は続かない。前年同月比で出し、受注の伸びと比べる。"
+  },
+  "cpi-core": {
+    "name": "消費者物価指数 コア (CPI)",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "CPILFESL"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "U.S. Bureau of Labor Statistics via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": 0,
+      "max": 1000
+    },
+    "note": "CPI for All Urban Consumers: All Items Less Food and Energy。指数、季節調整済み (#194)。**食品とエネルギーを除く。** 総合は天候と原油で振れるため、基調を見るにはコアを使う。前年同月比で表示する (米国は指数の桁数が足りるため導出できる。日本は #162 で公表値を使った)。"
+  },
+  "pce-core": {
+    "name": "PCE 価格指数 コア",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "PCEPILFE"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "U.S. Bureau of Economic Analysis via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": 0,
+      "max": 1000
+    },
+    "note": "PCE Excluding Food and Energy。指数、季節調整済み (#194)。**FRB の物価目標そのもの。** 2% の目標はこの系列に対して設定されている。CPI より品目の入れ替えが早く反映され、医療費の扱いも違うため CPI とは水準が異なる。"
+  },
+  "cpi-rent": {
+    "name": "家賃 CPI",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "CUSR0000SEHA"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "U.S. Bureau of Labor Statistics via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": 0,
+      "max": 1000
+    },
+    "note": "CPI: Rent of Primary Residence。指数、季節調整済み (#194)。**CPI で最も粘着的な項目。** 契約更新のタイミングで反映されるため実勢に遅れる。コアの動きの大部分を説明する。"
+  },
+  "breakeven-5y": {
+    "name": "期待インフレ率 (5年BEI)",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "T5YIE"
+    },
+    "frequency": "daily",
+    "unit": "percent",
+    "attribution": "Federal Reserve Bank of St. Louis via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": -5,
+      "max": 15
+    },
+    "note": "5-Year Breakeven Inflation Rate (%)、日次 (#194)。**市場が織り込む今後 5 年の平均インフレ率。** 名目 5年債と 5年TIPS の差。"
+  },
+  "breakeven-5y5y": {
+    "name": "5年先5年期待インフレ率",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "T5YIFR"
+    },
+    "frequency": "daily",
+    "unit": "percent",
+    "attribution": "Federal Reserve Bank of St. Louis via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": -5,
+      "max": 15
+    },
+    "note": "5-Year, 5-Year Forward Inflation Expectation Rate (%)、日次 (#194)。**FRB が「期待の安定」を測る指標。** 5 年後から始まる 5 年間の期待で、足元の物価変動の影響を受けにくい。ここが動くと「期待が外れた」ことになる。"
+  },
+  "producer-price-all": {
+    "name": "生産者物価指数 総合 (商品)",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "PPIACO"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "U.S. Bureau of Labor Statistics via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": 0,
+      "max": 1000
+    },
+    "note": "PPI by Commodity: All Commodities。指数、季節調整なし (#194)。**最終需要 (`PPIFIS`) の上流。** 商品ベースなので原材料の値動きが直接出る。物価の連鎖の起点として見る。"
   }
 }

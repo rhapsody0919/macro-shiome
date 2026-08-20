@@ -405,6 +405,10 @@ export interface MacroPoint {
   /** SOFR (%)。翌日物の実勢レート (#190)。 */
   sofr: number | null;
 
+  /** 期待インフレ率 5年 BEI (%) (#194)。 */
+  breakeven5y: number | null;
+  /** 5年先5年期待インフレ率 (%)。FRB が期待の安定を測る (#194)。 */
+  breakeven5y5y: number | null;
 }
 
 /**
@@ -488,6 +492,14 @@ export interface MonthlyPoint {
   newHomeSales: number | null;
   /** 中古住宅販売件数。取引量の大半を占める。**直近 13 か月から積み上げ中** (#188)。 */
   existingHomeSales: number | null;
+  /** コア CPI の前年同月比 (%)。食品・エネルギー除く (#194)。 */
+  cpiCore: number | null;
+  /** コア PCE の前年同月比 (%)。**FRB の物価目標** (#194)。 */
+  pceCore: number | null;
+  /** 家賃 CPI の前年同月比 (%)。最も粘着的 (#194)。 */
+  cpiRent: number | null;
+  /** PPI 総合 (商品) の前年同月比 (%)。最終需要の上流 (#194)。 */
+  producerPriceAll: number | null;
   /** 設備稼働率 (%)。**水準で読む。長期平均 80% 前後** (#191)。 */
   capacityUtilization: number | null;
   /** 耐久財新規受注の前年同月比 (%)。資本財受注の上位概念 (#191)。 */
