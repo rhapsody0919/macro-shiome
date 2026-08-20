@@ -469,6 +469,12 @@ export interface MonthlyPoint {
   housingStarts: number | null;
   /** 新築住宅販売件数。連鎖の下流。 */
   newHomeSales: number | null;
+  /** 日本の経常収支 (億円)。**季節調整済み** (#174)。 */
+  jpCurrentAccount: number | null;
+  /** 日本の貿易収支 (億円)。**季節調整済み** (#174)。 */
+  jpTradeBalance: number | null;
+  /** 日本のマネーストック M2 (億円)。**原数値** (#174)。 */
+  jpMoneyStock: number | null;
   /** 日本の実質消費支出の前年同月比 (%)。二人以上の世帯 (#170)。 */
   jpConsumption: number | null;
   /** 日本の実質可処分所得の前年同月比 (%)。勤労者世帯 (#170)。 */

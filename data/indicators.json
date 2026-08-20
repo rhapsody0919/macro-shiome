@@ -1846,5 +1846,62 @@
       "max": 200
     },
     "note": "可処分所得のうち消費に回した割合 (%)。**季節調整済み** (#170)。原数値は賞与の影響で桁が変わる (2026-06 は原数値 38.3 に対し季調値 59.9)。"
+  },
+  "jp-current-account": {
+    "name": "経常収支 (日本)",
+    "source": {
+      "adapter": "estat",
+      "indicatorCode": "1601010100000010000",
+      "cycle": "1",
+      "isSeasonal": "2"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "財務省 国際収支状況 / 日本銀行 マネーストック統計 (統計ダッシュボード)",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": -100000,
+      "max": 100000
+    },
+    "note": "経常収支 (億円)、**季節調整済み** (#174)。日本が海外から純額でどれだけ稼いだかで、**円買い需要の構造的な source**。原数値は月ごとの振れが大きく符号が変わる (2026-06 は原数値 −923 に対し季調値 +13,969)。"
+  },
+  "jp-trade-balance": {
+    "name": "貿易収支 (日本)",
+    "source": {
+      "adapter": "estat",
+      "indicatorCode": "1601010101000010020",
+      "cycle": "1",
+      "isSeasonal": "2"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "財務省 国際収支状況 / 日本銀行 マネーストック統計 (統計ダッシュボード)",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": -100000,
+      "max": 100000
+    },
+    "note": "貿易収支 (億円)、**季節調整済み** (#174)。経常収支の内訳のうち最も振れが大きく、資源価格と円安の影響が直接出る。経常収支との差が所得収支など貿易以外の寄与を示す。"
+  },
+  "jp-money-stock": {
+    "name": "マネーストック M2 (日本)",
+    "source": {
+      "adapter": "estat",
+      "indicatorCode": "0702010200000010010",
+      "cycle": "1",
+      "isSeasonal": "1"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "財務省 国際収支状況 / 日本銀行 マネーストック統計 (統計ダッシュボード)",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": 0,
+      "max": 50000000
+    },
+    "note": "マネーストック M2 (億円)、**原数値** (#174)。季節調整済みの系列は提供されていない。日銀の量的な側面。物価の背景として読む。"
   }
 }

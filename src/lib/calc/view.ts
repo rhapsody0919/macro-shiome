@@ -647,6 +647,10 @@ export function buildEconomyView(options: BuildViewOptions): EconomyView {
     buildingPermits: level('building-permits', month),
     housingStarts: level('housing-starts', month),
     newHomeSales: level('new-home-sales', month),
+    // 原数値だと符号が変わるほど振れるため季調値 (#174)。
+    jpCurrentAccount: level('jp-current-account', month),
+    jpTradeBalance: level('jp-trade-balance', month),
+    jpMoneyStock: level('jp-money-stock', month),
     // 実質で出す。名目だと消費が増えたのか値上がりしただけかを判別できない (#170)。
     jpConsumption: level('jp-consumption', month),
     jpDisposableIncome: level('jp-disposable-income', month),
@@ -735,6 +739,9 @@ const MONTHLY_INDICATORS = [
   'building-permits',
   'housing-starts',
   'new-home-sales',
+  'jp-current-account',
+  'jp-trade-balance',
+  'jp-money-stock',
   'jp-consumption',
   'jp-disposable-income',
   'jp-propensity-to-consume',

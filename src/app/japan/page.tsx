@@ -214,6 +214,34 @@ const CHARTS: QuestionChartDef<JapanQuestionId>[] = [
     ],
   },
   {
+    question: 'jp-price',
+    frequency: 'monthly',
+    kind: 'number',
+    zeroLine: false,
+    primaryIndicator: 'jp-money-stock',
+    title: 'マネーストック M2 (日本)',
+    subtitle: '億円 (原数値)',
+    series: [
+      {
+        key: 'jpMoneyStock',
+        label: 'M2',
+        color: COLORS.jpMoneyStock,
+        indicatorId: 'jp-money-stock',
+      },
+    ],
+    notes: [
+      <span key="why">
+        <strong>物価の背景として読む。</strong>
+        通貨量が増え続けても物価が動かない時期は長かった。上の消費者物価と並べて、
+        量と物価が連動しているかを見る。
+      </span>,
+      <span key="raw">
+        <strong>季節調整済みの系列は提供されていない</strong>ため原数値。
+        水準そのものが大きいので、方向と傾きで読む。
+      </span>,
+    ],
+  },
+  {
     question: 'jp-labor',
     frequency: 'monthly',
     primaryIndicator: 'jp-disposable-income',
@@ -302,6 +330,48 @@ const CHARTS: QuestionChartDef<JapanQuestionId>[] = [
         <strong>賃金であって消費ではない。</strong>
         消費と所得は上の「家計の余力」で見る。こちらは<strong>働いて得た賃金</strong>の
         購買力で、賞与や残業の増減が先に出る。
+      </span>,
+    ],
+  },
+  {
+    question: 'jp-external',
+    frequency: 'monthly',
+    kind: 'number',
+    primaryIndicator: 'jp-current-account',
+    title: '経常収支と貿易収支 (日本)',
+    subtitle: '億円・季節調整済み',
+    series: [
+      {
+        key: 'jpCurrentAccount',
+        label: '経常収支',
+        color: COLORS.jpCurrentAccount,
+        width: 2.4,
+        indicatorId: 'jp-current-account',
+      },
+      {
+        key: 'jpTradeBalance',
+        label: '貿易収支',
+        color: COLORS.jpTradeBalance,
+        indicatorId: 'jp-trade-balance',
+      },
+    ],
+    notes: [
+      <span key="yen">
+        <strong>円買い需要の構造的な source。</strong>
+        黒字が細れば、金利差が同じでも円は支えを失う。下の USD/JPY と合わせて読む。
+      </span>,
+      <span key="gap">
+        <strong>2 本の差が貿易以外の寄与。</strong>
+        貿易収支が赤字でも経常収支が黒字なら、海外投資からの所得収支が支えている。
+        日本は近年この形が続いている。
+      </span>,
+      <span key="seasonal">
+        <strong>季節調整済み。</strong>
+        原数値は月ごとの振れが大きく<strong>符号が変わる</strong>
+        (2026年6月は経常収支が原数値 −923 に対し季調値 +13,969)。
+      </span>,
+      <span key="zero">
+        ゼロ線は黒字と赤字の境目で、定義から決まる。恣意的な閾値は引いていない。
       </span>,
     ],
   },

@@ -94,6 +94,11 @@ export const JAPAN_QUESTIONS = {
     guide:
       '求人は雇用の先行、実質賃金は家計の購買力。物価が賃金を上回れば、名目が増えても消費は伸びない。',
   },
+  'jp-external': {
+    title: '日本は海外から稼げているか',
+    guide:
+      '経常収支は円買い需要の構造的な source。黒字が細れば、金利差が同じでも円は支えを失う。',
+  },
   'jp-trade': {
     title: '輸入コストは日本を圧迫しているか',
     guide:
