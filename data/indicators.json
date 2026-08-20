@@ -682,19 +682,6 @@
     "group": "macro",
     "note": "New Job Postings on Indeed in the United States。Index Feb 1, 2020 = 100、季節調整済み。**著作権は Indeed にある**。**総求人 (IHLIDXUS) とは別系列**で、新規に掲載された求人だけを数える。100 は 2020-02-01 (コロナ前) の水準。公式統計の JOLTS より発表が早い。"
   },
-  "adp-employment": {
-    "name": "ADP 雇用者数",
-    "source": {
-      "adapter": "fred",
-      "seriesId": "ADPWNUSNERSA"
-    },
-    "frequency": "weekly",
-    "unit": "index",
-    "attribution": "Automatic Data Processing, Inc. via FRED",
-    "copyright": "restricted",
-    "group": "macro",
-    "note": "Total Nonfarm Private Payroll Employment。人数、季節調整済み、週次。**著作権は ADP にある**。給与計算サービスの実データが元で、**民間部門のみ**。政府雇用を含む公式の雇用統計とは対象が違う。"
-  },
   "federal-deficit": {
     "name": "財政収支",
     "source": {
