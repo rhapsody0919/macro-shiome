@@ -38,6 +38,7 @@ import {
   yieldSpread,
 } from './derived';
 import { fridaysBetween, sameDayLastYear, valueAsOf, valueOn, weekdaysBetween } from './weeks';
+import { roundViewNumbers } from './round';
 import { DAILY_SERIES, type DailyKey, type DailyPoint, type DailyViewName } from '../data/daily-series';
 import { latestMonthWithValue, monthsBetween, valueForMonth, yearAgo } from './months';
 
@@ -445,7 +446,9 @@ export function buildMacroView(options: BuildViewOptions): MacroPoint[] {
   // 四半期系列なので週ごとに作り直さず 1 度だけ計算する。
   const potentialGrowthSeries = quarterlyGrowth(series(observations, 'potential-gdp'));
 
-  return weeks.map((date) => {
+  // 表示は 2 桁 (#218)。**入力が既に 2 桁**なので、丸めても検証 5 の再計算との差は
+  // 0.000000 のまま (実測)。許容差を緩める必要が無い。
+  return roundViewNumbers(weeks.map((date) => {
     const nominalRate = valueAsOf(series(observations, 'dgs10'), date);
     const breakeven = valueAsOf(series(observations, 't10yie'), date);
     const potentialGrowth = valueAsOf(potentialGrowthSeries, date, QUARTERLY_LOOKBACK_DAYS);
@@ -495,7 +498,7 @@ export function buildMacroView(options: BuildViewOptions): MacroPoint[] {
       usdEur: valueAsOf(series(observations, 'usd-eur'), date),
       cnyUsd: valueAsOf(series(observations, 'cny-usd'), date),
     };
-  });
+  }));
 }
 
 /** 引き継いだ下落率の履歴。ETF の過去価格は無料で取れないため再生成できない (#128)。 */
@@ -640,7 +643,8 @@ export function buildDrawdownView(
     });
   }
 
-  return { seedStart, excluded, assets };
+  // 表示は 2 桁 (#218)。導出した点だけが全桁で、日次で積み上がるほど差が広がっていた。
+  return roundViewNumbers({ seedStart, excluded, assets });
 }
 
 /**
@@ -797,10 +801,11 @@ export function buildEconomyView(options: BuildViewOptions): EconomyView {
         : latestMonthWithValue(months, series(observations, indicatorId)),
   }));
 
-  return {
+  // 表示は 2 桁 (#218)。前年同月比は全桁で保存されており、gzip で 42% ぶん無駄だった。
+  return roundViewNumbers({
     monthly,
     coverage,
-  };
+  });
 }
 
 /** 月次画面が使う指標。発表状況の表示に使う。 */
@@ -914,7 +919,8 @@ export function buildDailyView(
   const days = weekdaysBetween(options.start, options.today.toISOString().slice(0, 10));
   const wanted = new Set<string>(DAILY_SERIES[view]);
 
-  return days.map((date) => {
+  // 表示は 2 桁 (#218)。為替だけは 4 桁で残す (2 桁だと動きが消える)。
+  return roundViewNumbers(days.map((date) => {
     const at = (id: string) => valueAsOf(series(observations, id), date);
     const nominalRate = at('dgs10');
     const breakeven = at('t10yie');
@@ -958,6 +964,6 @@ export function buildDailyView(
       if (wanted.has(key)) point[key] = all[key];
     }
     return point;
-  });
+  }));
 }
 
