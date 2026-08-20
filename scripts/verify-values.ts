@@ -7,6 +7,7 @@
  *
  * **実装と違う経路で照合する**のが要件。同じコードを通すと同じ間違いをする。
  * FRED は API キーを使わない CSV 経路 (`fredgraph.csv`) で取り直す。
+ * 単位は同じくキー不要のテキスト経路 (`/data/<ID>.txt`) で照合する (#212)。
  *
  * 実行:
  *   pnpm verify [--offline]
@@ -445,6 +446,107 @@ async function verifyGoldClose(): Promise<void> {
   console.log(`  GLD ${compared} 点を履歴と照合した`);
 }
 
+/**
+ * FRED の系列メタデータ。**API キーを使わない系列ページ**から単位を取る (#212)。
+ *
+ * 取得実装は `fredgraph.csv` を使っており、こちらは別のエンドポイント。
+ * 同じ経路で照合すると同じ間違いをする (#113 の要件)。
+ *
+ * `/data/<ID>.txt` は**テキストではなく系列ページの HTML を返す** (実測)。
+ * 単位は `series-meta-value-units` の中にあり、季節調整の有無は別の要素なので混ざらない。
+ */
+async function fetchFredUnits(seriesId: string): Promise<string> {
+  const response = await fetch(`https://fred.stlouisfed.org/series/${seriesId}`, {
+    headers: { 'User-Agent': 'macro-shiome-verify' },
+  });
+  if (!response.ok) throw new Error(`HTTP ${response.status}`);
+  const body = await response.text();
+  const match = body.match(/<span class="series-meta-value-units">([^<]+)<\/span>/);
+  if (match === null) {
+    // 形式が変わったら黙って飛ばさず、何が返ったかを添えて落とす。
+    throw new Error(`単位の要素が無い (${body.length} bytes)`);
+  }
+  return match[1].trim();
+}
+
+/**
+ * 桁が変わる単位だけ、日本語の表記とも突き合わせる (#212)。
+ *
+ * `sourceUnits` は原文を写すだけなので、そこから `unitLabel` を書き誤る余地が残る。
+ * **実際に誤ったのは桁**だったので、そこだけ機械で見る。
+ *
+ * - #198: `BUSLOANS` を百万ドルと書いたが十億ドルだった
+ * - #212: `JTSQUL` / `JTSHIL` を「人」と書いたが千人だった (実データも 3,232 で千人単位)
+ *
+ * Percent や Index は日本語の表し方が一意に決まらず、対応表を作ると表記ゆれで壊れるため
+ * 対象にしない。**千の側は「千」が入っているかだけ**を見る (千人・千戸・千件を区別しない)。
+ */
+const SCALE_RULES: ReadonlyArray<{ source: string; label: RegExp; note: string }> = [
+  { source: 'Billions of', label: /10億ドル|十億ドル/, note: '十億' },
+  { source: 'Millions of Dollars', label: /百万ドル/, note: '百万ドル' },
+  { source: 'Millions of U.S. Dollars', label: /百万ドル/, note: '百万ドル' },
+  { source: 'Millions of Units', label: /百万台/, note: '百万台' },
+  { source: 'Thousands', label: /千/, note: '千' },
+  { source: 'Level in Thousands', label: /千/, note: '千' },
+];
+
+/**
+ * 9. FRED の単位が指標マスタの記録と一致するか (#212)。**任意実行 (`--units`)。**
+ *
+ * 日次バッチには入れない。項目 1 で既に FRED へ 84 回取りに行っており、系列ページは
+ * 1 件 79 KB ある。**実測で連続アクセスが弾かれた** (数分後に `fetch failed` に変わった)。
+ * ここを毎日回すと、値そのものを照合している項目 1 を巻き添えで落とす。
+ *
+ * 単位は指標を足したときにしか変わらない。**確かめられることが要件で、毎回回すことではない。**
+ */
+async function verifyFredUnits(): Promise<void> {
+  console.log('9. FRED の単位の照合');
+  let compared = 0;
+  for (const [id, indicator] of Object.entries(indicators)) {
+    if (indicator.source.adapter !== 'fred') continue;
+
+    let live: string;
+    try {
+      live = await fetchFredUnits(indicator.source.seriesId);
+    } catch (error) {
+      fail('FRED の単位の照合', `${id}: 取得に失敗 (${String(error)})`);
+      continue;
+    }
+
+    if (indicator.sourceUnits === undefined) {
+      // 未記入を飛ばすと「照合していない指標」が静かに増える (#102 と同じ形)。
+      fail('FRED の単位の照合', `${id}: sourceUnits が未記入。FRED は "${live}"`);
+      continue;
+    }
+    if (indicator.sourceUnits !== live) {
+      fail(
+        'FRED の単位の照合',
+        `${id}: 記録 "${indicator.sourceUnits}" / FRED "${live}"`,
+      );
+      continue;
+    }
+    compared += 1;
+
+    const scale = SCALE_RULES.find((entry) => live.startsWith(entry.source));
+    if (scale !== undefined && indicator.unitLabel !== undefined) {
+      if (!scale.label.test(indicator.unitLabel)) {
+        fail(
+          'FRED の単位の照合',
+          `${id}: FRED は "${live}" (${scale.note}) だが表示は "${indicator.unitLabel}"`,
+        );
+      }
+    }
+    await sleep(400);
+  }
+
+  // 照合 0 件を成功にすると「緑だが検証していない」状態になる (#133 と同じ扱い)。
+  if (compared === 0) {
+    fail('FRED の単位の照合', '照合できた指標が 1 つも無い');
+    return;
+  }
+  console.log(`  FRED ${compared} 系列の単位を照合した`);
+}
+
 async function main(): Promise<void> {
   const offline = process.argv.includes('--offline');
   const today = new Date().toISOString().slice(0, 10);
@@ -464,6 +566,11 @@ async function main(): Promise<void> {
     console.log('8. ゴールドの終値と日付の照合 — --offline のため飛ばす');
   } else {
     await verifyGoldClose();
+  }
+  if (process.argv.includes('--units')) {
+    await verifyFredUnits();
+  } else {
+    console.log('9. FRED の単位の照合 — --units を付けたときだけ回す');
   }
 
   console.log('');
