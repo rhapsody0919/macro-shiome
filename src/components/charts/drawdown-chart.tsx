@@ -29,6 +29,7 @@ export function DrawdownChart({
   assets,
   colors,
   notes,
+  explanation,
   badges,
 }: {
   title: string;
@@ -37,6 +38,8 @@ export function DrawdownChart({
   /** 資産 ID → 線の色。 */
   colors: Readonly<Record<string, string>>;
   notes: React.ReactNode[];
+  /** 指標の読者向け解説 (#208)。`ChartFrame` にそのまま渡す。 */
+  explanation?: React.ReactNode;
   badges?: React.ReactNode;
 }) {
   const searchParams = useSearchParams();
@@ -90,6 +93,7 @@ export function DrawdownChart({
         </div>
       }
       notes={notes}
+      explanation={explanation}
     >
       <ResponsiveContainer>
         <LineChart data={data} margin={{ top: 8, right: 8, bottom: 0, left: 0 }}>

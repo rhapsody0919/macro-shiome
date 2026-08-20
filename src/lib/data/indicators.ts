@@ -12,6 +12,7 @@ import type {
   FactsetField,
   Frequency,
   Indicator,
+  IndicatorExplanation,
   CyclePosition,
   IndicatorGroup,
   IndicatorMaster,
@@ -194,8 +195,34 @@ export function parseIndicator(id: string, raw: unknown): Indicator {
   if (raw.note !== undefined) {
     indicator.note = requireString(raw.note, `${where}.note`);
   }
+  if (raw.unitLabel !== undefined) {
+    indicator.unitLabel = requireString(raw.unitLabel, `${where}.unitLabel`);
+  }
+  if (raw.explanation !== undefined) {
+    indicator.explanation = parseExplanation(raw.explanation, `${where}.explanation`);
+  }
 
   return indicator;
+}
+
+/**
+ * 読者向け解説をパースする (#208)。
+ *
+ * **`what` と `howToRead` は必須にする。** 片方だけ書かれた解説は
+ * 「何か分かるが読み方が分からない」か逆になり、初見の読者の役に立たない。
+ */
+function parseExplanation(raw: unknown, where: string): IndicatorExplanation {
+  if (!isRecord(raw)) {
+    throw new Error(`${where}: オブジェクトでない`);
+  }
+  const explanation: IndicatorExplanation = {
+    what: requireString(raw.what, `${where}.what`),
+    howToRead: requireString(raw.howToRead, `${where}.howToRead`),
+  };
+  if (raw.seeWith !== undefined) {
+    explanation.seeWith = requireString(raw.seeWith, `${where}.seeWith`);
+  }
+  return explanation;
 }
 
 export function parseIndicatorMaster(raw: unknown): IndicatorMaster {

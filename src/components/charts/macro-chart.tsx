@@ -45,6 +45,7 @@ export function MacroChart({
   baseline,
   changeLabel,
   notes,
+  explanation,
 }: {
   /**
    * 週次グリッド (`MacroPoint[]`) と日次グリッド (`DailyPoint[]`) の
@@ -77,6 +78,8 @@ export function MacroChart({
    */
   changeLabel: string;
   notes: React.ReactNode[];
+  /** 指標の読者向け解説 (#208)。`ChartFrame` にそのまま渡す。 */
+  explanation?: React.ReactNode;
 }) {
   const searchParams = useSearchParams();
   const period = parsePeriod(searchParams.get('period'));
@@ -124,6 +127,7 @@ export function MacroChart({
         </div>
       }
       notes={notes}
+      explanation={explanation}
     >
       <ResponsiveContainer>
         <LineChart data={data} margin={{ top: 8, right: 8, bottom: 0, left: 0 }}>

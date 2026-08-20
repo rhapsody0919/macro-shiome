@@ -52,6 +52,7 @@ export function MonthlyChart({
   zeroLine = true,
   baseline,
   notes,
+  explanation,
   height = 'h-72 sm:h-96',
 }: {
   view: EconomyView;
@@ -73,6 +74,8 @@ export function MonthlyChart({
    */
   baseline?: { value: number; label: string };
   notes: ReactNode[];
+  /** 指標の読者向け解説 (#208)。`ChartFrame` にそのまま渡す。 */
+  explanation?: ReactNode;
   /** 図の高さ。モバイルは低くして縦の圧迫を避ける。 */
   height?: string;
 }) {
@@ -124,6 +127,7 @@ export function MonthlyChart({
         </div>
       }
       notes={notes}
+      explanation={explanation}
     >
       <ResponsiveContainer>
         <LineChart data={points} margin={{ top: 8, right: 8, bottom: 0, left: 0 }}>

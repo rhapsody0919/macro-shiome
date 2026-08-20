@@ -108,6 +108,34 @@ describe('指標マスタの検証', () => {
       parseIndicatorMaster({ a: valid, b: { ...valid, name: '別名' } }),
     ).toThrow(/重複/);
   });
+
+  // #208: what と howToRead は必須。片方だけの解説は「何か分かるが読み方が分からない」か
+  // その逆になり、初見の読者の役に立たない。
+  it('解説に what が無いと落ちる', () => {
+    expect(() =>
+      parseIndicator('x', { ...valid, explanation: { howToRead: '読み方' } }),
+    ).toThrow(/explanation\.what/);
+  });
+
+  it('解説に howToRead が無いと落ちる', () => {
+    expect(() =>
+      parseIndicator('x', { ...valid, explanation: { what: '定義' } }),
+    ).toThrow(/explanation\.howToRead/);
+  });
+
+  it('解説がオブジェクトでないと落ちる', () => {
+    expect(() => parseIndicator('x', { ...valid, explanation: '定義と読み方' })).toThrow(
+      /explanation: オブジェクトでない/,
+    );
+  });
+
+  it('seeWith は省略できる', () => {
+    const parsed = parseIndicator('x', {
+      ...valid,
+      explanation: { what: '定義', howToRead: '読み方' },
+    });
+    expect(parsed.explanation?.seeWith).toBeUndefined();
+  });
 });
 
 describe('基準益回りの設定', () => {

@@ -5,6 +5,7 @@ import { DRAWDOWN_PALETTE } from '@/lib/colors';
 import { drawdown } from '@/lib/data/loader';
 import { MonthlyChart, type MonthlySeriesDef } from './monthly-chart';
 import { Badges } from './badges';
+import { IndicatorExplanations } from './indicator-explanation';
 import type { ValueKind } from './chart-frame';
 import { indicators } from '@/lib/data/indicators';
 import { economy, macro } from '@/lib/data/loader';
@@ -25,6 +26,13 @@ interface ChartBase<K extends string> {
   question: K;
   /** 景気サイクルの分類 (バッジ) の引き元。複数指標を束ねる場合は主となる指標を指す。 */
   primaryIndicator: string;
+  /**
+   * 読者向け解説を出す指標 (#208)。省略すると `primaryIndicator` の 1 件だけになる。
+   *
+   * **総合とコアのように差そのものが意味を持つ図では両方を挙げる。** 片方しか説明しないと、
+   * 読者は「なぜ 2 本あるのか」が分からないまま図を見ることになる。
+   */
+  explainIndicators?: readonly string[];
   title: string;
   subtitle: string;
   notes: ReactNode[];
@@ -85,6 +93,25 @@ function cycleOf<K extends string>(chart: QuestionChartDef<K>) {
   return indicator.cyclePosition;
 }
 
+/**
+ * 解説を出す指標の一覧 (#208)。
+ *
+ * **月次は系列定義から辿る。** `MonthlySeriesDef.indicatorId` が必須なので、
+ * 図に出ている指標をそのまま列挙できる。手書きの一覧と違って**ずれない** — 系列を足したのに
+ * 解説の一覧を直し忘れる、という #109 の型の事故が起きない。
+ *
+ * 日次・週次の `SeriesDef` はビューのキーしか持たず指標 ID を辿れないため、
+ * `explainIndicators` で明示するか、既定の主指標 1 件になる。
+ */
+function explainedIds<K extends string>(chart: QuestionChartDef<K>): readonly string[] {
+  if (chart.explainIndicators !== undefined) return chart.explainIndicators;
+  if (chart.frequency === 'monthly') {
+    // 同じ指標を 2 本の系列で出す図があるため重複を落とす。
+    return [...new Set(chart.series.map((definition) => definition.indicatorId))];
+  }
+  return [chart.primaryIndicator];
+}
+
 /** グループ内の順序で色を割り当てる。系列が 13 本を超えたら一周する。 */
 function paletteFor(assets: ReadonlyArray<{ id: string }>): Record<string, string> {
   return Object.fromEntries(
@@ -134,6 +161,7 @@ export function QuestionSections<K extends string>({
                     drawdown.assets.filter((asset) => asset.group === chart.drawdownGroup),
                   )}
                   notes={chart.notes}
+                  explanation={<IndicatorExplanations ids={explainedIds(chart)} />}
                   badges={<Badges frequency="daily" cyclePosition={cycleOf(chart)} />}
                 />
               ) : chart.frequency === 'daily' ? (
@@ -146,6 +174,7 @@ export function QuestionSections<K extends string>({
                   baseline={chart.baseline}
                   series={chart.series}
                   notes={chart.notes}
+                  explanation={<IndicatorExplanations ids={explainedIds(chart)} />}
                   changeLabel="前日比"
                   badges={<Badges frequency="daily" cyclePosition={cycleOf(chart)} />}
                 />
@@ -159,6 +188,7 @@ export function QuestionSections<K extends string>({
                   baseline={chart.baseline}
                   series={chart.series}
                   notes={chart.notes}
+                  explanation={<IndicatorExplanations ids={explainedIds(chart)} />}
                   changeLabel="前週比"
                   badges={<Badges frequency="weekly" cyclePosition={cycleOf(chart)} />}
                 />
@@ -172,6 +202,7 @@ export function QuestionSections<K extends string>({
                   baseline={chart.baseline}
                   series={chart.series}
                   notes={chart.notes}
+                  explanation={<IndicatorExplanations ids={explainedIds(chart)} />}
                   badges={<Badges frequency="monthly" cyclePosition={cycleOf(chart)} />}
                 />
               )}
