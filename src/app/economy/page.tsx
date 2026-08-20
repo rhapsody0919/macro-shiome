@@ -184,6 +184,68 @@ const CHARTS: QuestionChartDef<EconomyQuestionId>[] = [
     ],
   },
   {
+    question: 'slowdown',
+    frequency: 'monthly',
+    kind: 'number',
+    zeroLine: false,
+    primaryIndicator: 'capacity-utilization',
+    title: '設備稼働率',
+    subtitle: '%・季節調整済み',
+    series: [
+      {
+        key: 'capacityUtilization',
+        label: '設備稼働率',
+        color: COLORS.capacityUtilization,
+        indicatorId: 'capacity-utilization',
+      },
+    ],
+    notes: [
+      <span key="level">
+        <strong>水準で読む。長期平均は 80% 前後。</strong>
+        下回れば設備に余剰があり、上がりきれば設備投資が必要になる。
+        前年同月比にすると「80% を割った」という水準の意味が消える。
+      </span>,
+      <span key="fast">
+        <strong>生産系で最も速い。</strong>
+        鉱工業生産より 1 か月早く出るため、直近の変化はここに先に現れる。
+      </span>,
+    ],
+  },
+  {
+    question: 'slowdown',
+    frequency: 'monthly',
+    primaryIndicator: 'durable-goods-orders',
+    title: '耐久財受注と在庫',
+    subtitle: '前年同月比',
+    series: [
+      {
+        key: 'durableGoodsOrders',
+        label: '耐久財新規受注',
+        color: COLORS.durableGoodsOrders,
+        width: 2.4,
+        indicatorId: 'durable-goods-orders',
+      },
+      {
+        key: 'businessInventories',
+        label: '企業在庫',
+        color: COLORS.businessInventories,
+        indicatorId: 'business-inventories',
+      },
+    ],
+    notes: [
+      <span key="cycle">
+        <strong>受注が伸びても在庫が積み上がっていれば生産は続かない。</strong>
+        2 本の差が在庫循環を示す。在庫が受注を上回って伸びていれば、
+        次に来るのは減産。
+      </span>,
+      <span key="overlap">
+        <strong>上の資本財新規受注とは対象が違う。</strong>
+        あちらは LEI の構成要素で設備投資に絞った系列、こちらは自動車・航空機を含む耐久財全体。
+        <strong>含む関係にあるため同じ図には載せていない</strong> (二重計上に見えるため)。
+      </span>,
+    ],
+  },
+  {
     // 鉱工業生産は景気一致指数 (CEI) の構成要素。
     question: 'slowdown',
     frequency: 'monthly',
