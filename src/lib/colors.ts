@@ -72,6 +72,9 @@ export const COLORS = {
   // --- 住宅 (連鎖の上流 → 下流) ---
   buildingPermits: '#6366f1',
   housingStarts: '#0ea5e9',
+  jpCurrentAccount: '#0ea5e9',
+  jpTradeBalance: '#f59e0b',
+  jpMoneyStock: '#6366f1',
   jpConsumption: '#0ea5e9',
   jpDisposableIncome: '#6366f1',
   jpPropensityToConsume: '#f59e0b',

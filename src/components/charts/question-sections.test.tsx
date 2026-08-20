@@ -125,6 +125,31 @@ describe('日本の雇用と所得 (#156)', () => {
   });
 });
 
+describe('日本の対外収支 (#174)', () => {
+  it('経常収支と貿易収支を 1 枚に重ねる', () => {
+    // 同じ単位 (億円)。2 本の差が所得収支など貿易以外の寄与を示すので、分けると読めない。
+    render(<JapanPage />);
+    const section = document.getElementById('q-jp-external');
+    expect(section).not.toBeNull();
+    const titles = Array.from(section?.querySelectorAll('h3') ?? []).map((h) => h.textContent);
+    expect(titles).toEqual(['経常収支と貿易収支 (日本)']);
+  });
+
+  it('季調値であることと符号が変わる例を書く', () => {
+    // 原数値は月ごとの振れで符号が変わる。方向を読み違えないよう実測値を出す。
+    render(<JapanPage />);
+    expect(screen.getByText(/符号が変わる/)).toBeInTheDocument();
+  });
+
+  it('マネーストックは物価の問いに置く', () => {
+    // 通貨量は物価の背景。対外収支とは別の話。
+    render(<JapanPage />);
+    const section = document.getElementById('q-jp-price');
+    const titles = Array.from(section?.querySelectorAll('h3') ?? []).map((h) => h.textContent);
+    expect(titles).toContain('マネーストック M2 (日本)');
+  });
+});
+
 describe('日本の家計の余力 (#170)', () => {
   it('可処分所得と消費支出を 1 枚に重ねる', () => {
     // 同じ単位 (前年同月比 %)。2 本の差が「所得を使っているか」を示すので、
@@ -173,7 +198,8 @@ describe('日本の消費者物価 (#162)', () => {
     const section = document.getElementById('q-jp-price');
     expect(section).not.toBeNull();
     const titles = Array.from(section?.querySelectorAll('h3') ?? []).map((h) => h.textContent);
-    expect(titles).toEqual(['消費者物価指数 (日本)']);
+    // #174 でマネーストックが加わった。物価とその背景の通貨量を並べる。
+    expect(titles).toEqual(['消費者物価指数 (日本)', 'マネーストック M2 (日本)']);
   });
 
   it('日銀が見るコアを先に置く', () => {

@@ -34097,5 +34097,18 @@
     "termSpread": 0.46,
     "hySpread": 2.75,
     "igSpread": 0.82
+  },
+  {
+    "date": "2026-08-20",
+    "vix": 15.84,
+    "dollarIndex": 118.9028,
+    "gold": 413.84,
+    "nominalRate": 4.71,
+    "breakeven": 2.3,
+    "realRate": 2.41,
+    "fedFundsRate": 3.63,
+    "termSpread": 0.46,
+    "hySpread": 2.75,
+    "igSpread": 0.82
   }
 ]
