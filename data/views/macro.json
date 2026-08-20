@@ -34,7 +34,8 @@
     "nasdaqComposite": 1.58,
     "djia": null,
     "usdEur": 1.108,
-    "cnyUsd": 6.653
+    "cnyUsd": 6.653,
+    "federalDebtPublic": 13.99
   },
   {
     "date": "2016-08-12",
@@ -71,7 +72,8 @@
     "nasdaqComposite": 3.74,
     "djia": null,
     "usdEur": 1.1172,
-    "cnyUsd": 6.6324
+    "cnyUsd": 6.6324,
+    "federalDebtPublic": 14.01
   },
   {
     "date": "2016-08-19",
@@ -108,7 +110,8 @@
     "nasdaqComposite": 4.37,
     "djia": null,
     "usdEur": 1.1326,
-    "cnyUsd": 6.6515
+    "cnyUsd": 6.6515,
+    "federalDebtPublic": 14.05
   },
   {
     "date": "2016-08-26",
@@ -145,7 +148,8 @@
     "nasdaqComposite": 11.1,
     "djia": null,
     "usdEur": 1.1237,
-    "cnyUsd": 6.669
+    "cnyUsd": 6.669,
+    "federalDebtPublic": 14.09
   },
   {
     "date": "2016-09-02",
@@ -182,7 +186,8 @@
     "nasdaqComposite": 10.52,
     "djia": null,
     "usdEur": 1.1158,
-    "cnyUsd": 6.679
+    "cnyUsd": 6.679,
+    "federalDebtPublic": 14.11
   },
   {
     "date": "2016-09-09",
@@ -219,7 +224,8 @@
     "nasdaqComposite": 7.77,
     "djia": null,
     "usdEur": 1.1214,
-    "cnyUsd": 6.6778
+    "cnyUsd": 6.6778,
+    "federalDebtPublic": 14.11
   },
   {
     "date": "2016-09-16",
@@ -256,7 +262,8 @@
     "nasdaqComposite": 7.27,
     "djia": null,
     "usdEur": 1.116,
-    "cnyUsd": 6.6707
+    "cnyUsd": 6.6707,
+    "federalDebtPublic": 14.13
   },
   {
     "date": "2016-09-23",
@@ -293,7 +300,8 @@
     "nasdaqComposite": 11.64,
     "djia": null,
     "usdEur": 1.1223,
-    "cnyUsd": 6.669
+    "cnyUsd": 6.669,
+    "federalDebtPublic": 14.13
   },
   {
     "date": "2016-09-30",
@@ -330,7 +338,8 @@
     "nasdaqComposite": 14.97,
     "djia": null,
     "usdEur": 1.1238,
-    "cnyUsd": 6.6685
+    "cnyUsd": 6.6685,
+    "federalDebtPublic": 14.17
   },
   {
     "date": "2016-10-07",
@@ -367,7 +376,8 @@
     "nasdaqComposite": 10.46,
     "djia": null,
     "usdEur": 1.1156,
-    "cnyUsd": 6.6685
+    "cnyUsd": 6.6685,
+    "federalDebtPublic": 14.19
   },
   {
     "date": "2016-10-14",
@@ -404,7 +414,8 @@
     "nasdaqComposite": 9.02,
     "djia": null,
     "usdEur": 1.0985,
-    "cnyUsd": 6.7277
+    "cnyUsd": 6.7277,
+    "federalDebtPublic": 14.22
   },
   {
     "date": "2016-10-21",
@@ -441,7 +452,8 @@
     "nasdaqComposite": 8.62,
     "djia": null,
     "usdEur": 1.0866,
-    "cnyUsd": 6.7654
+    "cnyUsd": 6.7654,
+    "federalDebtPublic": 14.28
   },
   {
     "date": "2016-10-28",
@@ -478,7 +490,8 @@
     "nasdaqComposite": 1.85,
     "djia": null,
     "usdEur": 1.0934,
-    "cnyUsd": 6.776
+    "cnyUsd": 6.776,
+    "federalDebtPublic": 14.31
   },
   {
     "date": "2016-11-04",
@@ -515,7 +528,8 @@
     "nasdaqComposite": -1.87,
     "djia": null,
     "usdEur": 1.1121,
-    "cnyUsd": 6.7534
+    "cnyUsd": 6.7534,
+    "federalDebtPublic": 14.32
   },
   {
     "date": "2016-11-11",
@@ -552,7 +566,8 @@
     "nasdaqComposite": 3.36,
     "djia": null,
     "usdEur": 1.0882,
-    "cnyUsd": 6.7987
+    "cnyUsd": 6.7987,
+    "federalDebtPublic": 14.37
   },
   {
     "date": "2016-11-18",
@@ -589,7 +604,8 @@
     "nasdaqComposite": 4.85,
     "djia": null,
     "usdEur": 1.06,
-    "cnyUsd": 6.8873
+    "cnyUsd": 6.8873,
+    "federalDebtPublic": 14.41
   },
   {
     "date": "2016-11-25",
@@ -626,7 +642,8 @@
     "nasdaqComposite": 5.53,
     "djia": null,
     "usdEur": 1.0595,
-    "cnyUsd": 6.9176
+    "cnyUsd": 6.9176,
+    "federalDebtPublic": 14.43
   },
   {
     "date": "2016-12-02",
@@ -663,7 +680,8 @@
     "nasdaqComposite": 2.58,
     "djia": null,
     "usdEur": 1.0666,
-    "cnyUsd": 6.883
+    "cnyUsd": 6.883,
+    "federalDebtPublic": 14.42
   },
   {
     "date": "2016-12-09",
@@ -700,7 +718,8 @@
     "nasdaqComposite": 8.39,
     "djia": null,
     "usdEur": 1.0541,
-    "cnyUsd": 6.9042
+    "cnyUsd": 6.9042,
+    "federalDebtPublic": 14.41
   },
   {
     "date": "2016-12-16",
@@ -737,7 +756,8 @@
     "nasdaqComposite": 7.22,
     "djia": null,
     "usdEur": 1.0456,
-    "cnyUsd": 6.958
+    "cnyUsd": 6.958,
+    "federalDebtPublic": 14.41
   },
   {
     "date": "2016-12-23",
@@ -774,7 +794,8 @@
     "nasdaqComposite": 8.26,
     "djia": null,
     "usdEur": 1.0449,
-    "cnyUsd": 6.9432
+    "cnyUsd": 6.9432,
+    "federalDebtPublic": 14.41
   },
   {
     "date": "2016-12-30",
@@ -811,7 +832,8 @@
     "nasdaqComposite": 6.26,
     "djia": null,
     "usdEur": 1.0552,
-    "cnyUsd": 6.943
+    "cnyUsd": 6.943,
+    "federalDebtPublic": 14.43
   },
   {
     "date": "2017-01-06",
@@ -848,7 +870,8 @@
     "nasdaqComposite": 14.17,
     "djia": null,
     "usdEur": 1.056,
-    "cnyUsd": 6.9176
+    "cnyUsd": 6.9176,
+    "federalDebtPublic": 14.43
   },
   {
     "date": "2017-01-13",
@@ -885,7 +908,8 @@
     "nasdaqComposite": 23.16,
     "djia": null,
     "usdEur": 1.0625,
-    "cnyUsd": 6.8985
+    "cnyUsd": 6.8985,
+    "federalDebtPublic": 14.42
   },
   {
     "date": "2017-01-20",
@@ -922,7 +946,8 @@
     "nasdaqComposite": 24.23,
     "djia": null,
     "usdEur": 1.063,
-    "cnyUsd": 6.868
+    "cnyUsd": 6.868,
+    "federalDebtPublic": 14.4
   },
   {
     "date": "2017-01-27",
@@ -959,7 +984,8 @@
     "nasdaqComposite": 26.69,
     "djia": null,
     "usdEur": 1.069,
-    "cnyUsd": 6.8768
+    "cnyUsd": 6.8768,
+    "federalDebtPublic": 14.39
   },
   {
     "date": "2017-02-03",
@@ -996,7 +1022,8 @@
     "nasdaqComposite": 25.81,
     "djia": null,
     "usdEur": 1.0792,
-    "cnyUsd": 6.865
+    "cnyUsd": 6.865,
+    "federalDebtPublic": 14.37
   },
   {
     "date": "2017-02-10",
@@ -1033,7 +1060,8 @@
     "nasdaqComposite": 33.86,
     "djia": null,
     "usdEur": 1.065,
-    "cnyUsd": 6.8775
+    "cnyUsd": 6.8775,
+    "federalDebtPublic": 14.4
   },
   {
     "date": "2017-02-17",
@@ -1070,7 +1098,8 @@
     "nasdaqComposite": 28.77,
     "djia": null,
     "usdEur": 1.0614,
-    "cnyUsd": 6.864
+    "cnyUsd": 6.864,
+    "federalDebtPublic": 14.4
   },
   {
     "date": "2017-02-24",
@@ -1107,7 +1136,8 @@
     "nasdaqComposite": 28.68,
     "djia": null,
     "usdEur": 1.058,
-    "cnyUsd": 6.8645
+    "cnyUsd": 6.8645,
+    "federalDebtPublic": 14.4
   },
   {
     "date": "2017-03-03",
@@ -1144,7 +1174,8 @@
     "nasdaqComposite": 24.71,
     "djia": null,
     "usdEur": 1.0552,
-    "cnyUsd": 6.8954
+    "cnyUsd": 6.8954,
+    "federalDebtPublic": 14.37
   },
   {
     "date": "2017-03-10",
@@ -1181,7 +1212,8 @@
     "nasdaqComposite": 25.73,
     "djia": null,
     "usdEur": 1.0667,
-    "cnyUsd": 6.905
+    "cnyUsd": 6.905,
+    "federalDebtPublic": 14.35
   },
   {
     "date": "2017-03-17",
@@ -1218,7 +1250,8 @@
     "nasdaqComposite": 23.58,
     "djia": null,
     "usdEur": 1.0742,
-    "cnyUsd": 6.9
+    "cnyUsd": 6.9,
+    "federalDebtPublic": 14.36
   },
   {
     "date": "2017-03-24",
@@ -1255,7 +1288,8 @@
     "nasdaqComposite": 22.11,
     "djia": null,
     "usdEur": 1.0806,
-    "cnyUsd": 6.8803
+    "cnyUsd": 6.8803,
+    "federalDebtPublic": 14.36
   },
   {
     "date": "2017-03-31",
@@ -1292,7 +1326,8 @@
     "nasdaqComposite": 21.39,
     "djia": null,
     "usdEur": 1.0698,
-    "cnyUsd": 6.8832
+    "cnyUsd": 6.8832,
+    "federalDebtPublic": 14.37
   },
   {
     "date": "2017-04-07",
@@ -1329,7 +1364,8 @@
     "nasdaqComposite": 21.23,
     "djia": null,
     "usdEur": 1.0616,
-    "cnyUsd": 6.8978
+    "cnyUsd": 6.8978,
+    "federalDebtPublic": 14.36
   },
   {
     "date": "2017-04-14",
@@ -1366,7 +1402,8 @@
     "nasdaqComposite": 17.37,
     "djia": null,
     "usdEur": 1.0625,
-    "cnyUsd": 6.8835
+    "cnyUsd": 6.8835,
+    "federalDebtPublic": 14.35
   },
   {
     "date": "2017-04-21",
@@ -1403,7 +1440,8 @@
     "nasdaqComposite": 19.5,
     "djia": null,
     "usdEur": 1.0694,
-    "cnyUsd": 6.8845
+    "cnyUsd": 6.8845,
+    "federalDebtPublic": 14.32
   },
   {
     "date": "2017-04-28",
@@ -1440,7 +1478,8 @@
     "nasdaqComposite": 25.85,
     "djia": null,
     "usdEur": 1.0895,
-    "cnyUsd": 6.89
+    "cnyUsd": 6.89,
+    "federalDebtPublic": 14.29
   },
   {
     "date": "2017-05-05",
@@ -1477,7 +1516,8 @@
     "nasdaqComposite": 29.33,
     "djia": null,
     "usdEur": 1.0996,
-    "cnyUsd": 6.9021
+    "cnyUsd": 6.9021,
+    "federalDebtPublic": 14.31
   },
   {
     "date": "2017-05-12",
@@ -1514,7 +1554,8 @@
     "nasdaqComposite": 29.21,
     "djia": null,
     "usdEur": 1.0926,
-    "cnyUsd": 6.8972
+    "cnyUsd": 6.8972,
+    "federalDebtPublic": 14.31
   },
   {
     "date": "2017-05-19",
@@ -1551,7 +1592,8 @@
     "nasdaqComposite": 29.1,
     "djia": null,
     "usdEur": 1.119,
-    "cnyUsd": 6.883
+    "cnyUsd": 6.883,
+    "federalDebtPublic": 14.31
   },
   {
     "date": "2017-05-26",
@@ -1588,7 +1630,8 @@
     "nasdaqComposite": 26.69,
     "djia": null,
     "usdEur": 1.117,
-    "cnyUsd": 6.8525
+    "cnyUsd": 6.8525,
+    "federalDebtPublic": 14.31
   },
   {
     "date": "2017-06-02",
@@ -1625,7 +1668,8 @@
     "nasdaqComposite": 26.84,
     "djia": null,
     "usdEur": 1.127,
-    "cnyUsd": 6.8085
+    "cnyUsd": 6.8085,
+    "federalDebtPublic": 14.34
   },
   {
     "date": "2017-06-09",
@@ -1662,7 +1706,8 @@
     "nasdaqComposite": 25.19,
     "djia": null,
     "usdEur": 1.119,
-    "cnyUsd": 6.797
+    "cnyUsd": 6.797,
+    "federalDebtPublic": 14.32
   },
   {
     "date": "2017-06-16",
@@ -1699,7 +1744,8 @@
     "nasdaqComposite": 26.97,
     "djia": null,
     "usdEur": 1.1194,
-    "cnyUsd": 6.8097
+    "cnyUsd": 6.8097,
+    "federalDebtPublic": 14.31
   },
   {
     "date": "2017-06-23",
@@ -1736,7 +1782,8 @@
     "nasdaqComposite": 27.6,
     "djia": null,
     "usdEur": 1.1196,
-    "cnyUsd": 6.8345
+    "cnyUsd": 6.8345,
+    "federalDebtPublic": 14.31
   },
   {
     "date": "2017-06-30",
@@ -1773,7 +1820,8 @@
     "nasdaqComposite": 26.8,
     "djia": null,
     "usdEur": 1.1411,
-    "cnyUsd": 6.7793
+    "cnyUsd": 6.7793,
+    "federalDebtPublic": 14.37
   },
   {
     "date": "2017-07-07",
@@ -1810,7 +1858,8 @@
     "nasdaqComposite": 26.17,
     "djia": null,
     "usdEur": 1.1396,
-    "cnyUsd": 6.8039
+    "cnyUsd": 6.8039,
+    "federalDebtPublic": 14.36
   },
   {
     "date": "2017-07-14",
@@ -1847,7 +1896,8 @@
     "nasdaqComposite": 25.4,
     "djia": null,
     "usdEur": 1.1452,
-    "cnyUsd": 6.7741
+    "cnyUsd": 6.7741,
+    "federalDebtPublic": 14.36
   },
   {
     "date": "2017-07-21",
@@ -1884,7 +1934,8 @@
     "nasdaqComposite": 25.89,
     "djia": null,
     "usdEur": 1.1655,
-    "cnyUsd": 6.7663
+    "cnyUsd": 6.7663,
+    "federalDebtPublic": 14.36
   },
   {
     "date": "2017-07-28",
@@ -1921,7 +1972,8 @@
     "nasdaqComposite": 23.66,
     "djia": null,
     "usdEur": 1.1754,
-    "cnyUsd": 6.7362
+    "cnyUsd": 6.7362,
+    "federalDebtPublic": 14.38
   },
   {
     "date": "2017-08-04",
@@ -1958,7 +2010,8 @@
     "nasdaqComposite": 22.94,
     "djia": null,
     "usdEur": 1.1754,
-    "cnyUsd": 6.7272
+    "cnyUsd": 6.7272,
+    "federalDebtPublic": 14.4
   },
   {
     "date": "2017-08-11",
@@ -1995,7 +2048,8 @@
     "nasdaqComposite": 19.66,
     "djia": null,
     "usdEur": 1.1811,
-    "cnyUsd": 6.6612
+    "cnyUsd": 6.6612,
+    "federalDebtPublic": 14.4
   },
   {
     "date": "2017-08-18",
@@ -2032,7 +2086,8 @@
     "nasdaqComposite": 18.63,
     "djia": null,
     "usdEur": 1.1748,
-    "cnyUsd": 6.67
+    "cnyUsd": 6.67,
+    "federalDebtPublic": 14.39
   },
   {
     "date": "2017-08-25",
@@ -2069,7 +2124,8 @@
     "nasdaqComposite": 20.21,
     "djia": 18.24,
     "usdEur": 1.1874,
-    "cnyUsd": 6.6465
+    "cnyUsd": 6.6465,
+    "federalDebtPublic": 14.4
   },
   {
     "date": "2017-09-01",
@@ -2106,7 +2162,8 @@
     "nasdaqComposite": 23.11,
     "djia": 19.37,
     "usdEur": 1.1878,
-    "cnyUsd": 6.5552
+    "cnyUsd": 6.5552,
+    "federalDebtPublic": 14.43
   },
   {
     "date": "2017-09-08",
@@ -2143,7 +2200,8 @@
     "nasdaqComposite": 20.93,
     "djia": 17.95,
     "usdEur": 1.2041,
-    "cnyUsd": 6.4773
+    "cnyUsd": 6.4773,
+    "federalDebtPublic": 14.62
   },
   {
     "date": "2017-09-15",
@@ -2180,7 +2238,8 @@
     "nasdaqComposite": 22.84,
     "djia": 22.27,
     "usdEur": 1.1959,
-    "cnyUsd": 6.55
+    "cnyUsd": 6.55,
+    "federalDebtPublic": 14.61
   },
   {
     "date": "2017-09-22",
@@ -2217,7 +2276,8 @@
     "nasdaqComposite": 20.37,
     "djia": 21.51,
     "usdEur": 1.1969,
-    "cnyUsd": 6.5899
+    "cnyUsd": 6.5899,
+    "federalDebtPublic": 14.63
   },
   {
     "date": "2017-09-29",
@@ -2254,7 +2314,8 @@
     "nasdaqComposite": 23.28,
     "djia": 23.49,
     "usdEur": 1.1813,
-    "cnyUsd": 6.6533
+    "cnyUsd": 6.6533,
+    "federalDebtPublic": 14.67
   },
   {
     "date": "2017-10-06",
@@ -2291,7 +2352,8 @@
     "nasdaqComposite": 24.18,
     "djia": 24.66,
     "usdEur": 1.1732,
-    "cnyUsd": 6.6533
+    "cnyUsd": 6.6533,
+    "federalDebtPublic": 14.7
   },
   {
     "date": "2017-10-13",
@@ -2328,7 +2390,8 @@
     "nasdaqComposite": 26.71,
     "djia": 26.37,
     "usdEur": 1.1837,
-    "cnyUsd": 6.5785
+    "cnyUsd": 6.5785,
+    "federalDebtPublic": 14.71
   },
   {
     "date": "2017-10-20",
@@ -2365,7 +2428,8 @@
     "nasdaqComposite": 26.46,
     "djia": 28.44,
     "usdEur": 1.177,
-    "cnyUsd": 6.6185
+    "cnyUsd": 6.6185,
+    "federalDebtPublic": 14.75
   },
   {
     "date": "2017-10-27",
@@ -2402,7 +2466,8 @@
     "nasdaqComposite": 28.48,
     "djia": 28.97,
     "usdEur": 1.158,
-    "cnyUsd": 6.6498
+    "cnyUsd": 6.6498,
+    "federalDebtPublic": 14.77
   },
   {
     "date": "2017-11-03",
@@ -2439,7 +2504,8 @@
     "nasdaqComposite": 33.73,
     "djia": 31.28,
     "usdEur": 1.1616,
-    "cnyUsd": 6.636
+    "cnyUsd": 6.636,
+    "federalDebtPublic": 14.82
   },
   {
     "date": "2017-11-10",
@@ -2476,7 +2542,8 @@
     "nasdaqComposite": 29.61,
     "djia": 24.53,
     "usdEur": 1.1648,
-    "cnyUsd": 6.6378
+    "cnyUsd": 6.6378,
+    "federalDebtPublic": 14.84
   },
   {
     "date": "2017-11-17",
@@ -2513,7 +2580,8 @@
     "nasdaqComposite": 27.16,
     "djia": 23.56,
     "usdEur": 1.1799,
-    "cnyUsd": 6.6245
+    "cnyUsd": 6.6245,
+    "federalDebtPublic": 14.88
   },
   {
     "date": "2017-11-24",
@@ -2550,7 +2618,8 @@
     "nasdaqComposite": 28.04,
     "djia": 23.45,
     "usdEur": 1.1936,
-    "cnyUsd": 6.5998
+    "cnyUsd": 6.5998,
+    "federalDebtPublic": 14.9
   },
   {
     "date": "2017-12-01",
@@ -2587,7 +2656,8 @@
     "nasdaqComposite": 30.4,
     "djia": 26.26,
     "usdEur": 1.191,
-    "cnyUsd": 6.6137
+    "cnyUsd": 6.6137,
+    "federalDebtPublic": 14.91
   },
   {
     "date": "2017-12-08",
@@ -2624,7 +2694,8 @@
     "nasdaqComposite": 26.26,
     "djia": 24.03,
     "usdEur": 1.1761,
-    "cnyUsd": 6.6199
+    "cnyUsd": 6.6199,
+    "federalDebtPublic": 14.86
   },
   {
     "date": "2017-12-15",
@@ -2661,7 +2732,8 @@
     "nasdaqComposite": 27.12,
     "djia": 24.18,
     "usdEur": 1.1778,
-    "cnyUsd": 6.6088
+    "cnyUsd": 6.6088,
+    "federalDebtPublic": 14.88
   },
   {
     "date": "2017-12-22",
@@ -2698,7 +2770,8 @@
     "nasdaqComposite": 27.77,
     "djia": 24.27,
     "usdEur": 1.1839,
-    "cnyUsd": 6.575
+    "cnyUsd": 6.575,
+    "federalDebtPublic": 14.87
   },
   {
     "date": "2017-12-29",
@@ -2735,7 +2808,8 @@
     "nasdaqComposite": 27.09,
     "djia": 24.72,
     "usdEur": 1.2022,
-    "cnyUsd": 6.5063
+    "cnyUsd": 6.5063,
+    "federalDebtPublic": 14.81
   },
   {
     "date": "2018-01-05",
@@ -2772,7 +2846,8 @@
     "nasdaqComposite": 30.04,
     "djia": 27.12,
     "usdEur": 1.2039,
-    "cnyUsd": 6.4875
+    "cnyUsd": 6.4875,
+    "federalDebtPublic": 14.83
   },
   {
     "date": "2018-01-12",
@@ -2809,7 +2884,8 @@
     "nasdaqComposite": 30.89,
     "djia": 29.72,
     "usdEur": 1.213,
-    "cnyUsd": 6.4607
+    "cnyUsd": 6.4607,
+    "federalDebtPublic": 14.83
   },
   {
     "date": "2018-01-19",
@@ -2846,7 +2922,8 @@
     "nasdaqComposite": 32.42,
     "djia": 32.13,
     "usdEur": 1.2238,
-    "cnyUsd": 6.399
+    "cnyUsd": 6.399,
+    "federalDebtPublic": 14.81
   },
   {
     "date": "2018-01-26",
@@ -2883,7 +2960,8 @@
     "nasdaqComposite": 32.72,
     "djia": 32.42,
     "usdEur": 1.2422,
-    "cnyUsd": 6.3199
+    "cnyUsd": 6.3199,
+    "federalDebtPublic": 14.81
   },
   {
     "date": "2018-02-02",
@@ -2920,7 +2998,8 @@
     "nasdaqComposite": 28.47,
     "djia": 28.34,
     "usdEur": 1.2446,
-    "cnyUsd": 6.2984
+    "cnyUsd": 6.2984,
+    "federalDebtPublic": 14.84
   },
   {
     "date": "2018-02-09",
@@ -2957,7 +3036,8 @@
     "nasdaqComposite": 20.28,
     "djia": 19.92,
     "usdEur": 1.2226,
-    "cnyUsd": 6.2966
+    "cnyUsd": 6.2966,
+    "federalDebtPublic": 14.98
   },
   {
     "date": "2018-02-16",
@@ -2994,7 +3074,8 @@
     "nasdaqComposite": 24.5,
     "djia": 22.31,
     "usdEur": 1.2442,
-    "cnyUsd": 6.3438
+    "cnyUsd": 6.3438,
+    "federalDebtPublic": 15.07
   },
   {
     "date": "2018-02-23",
@@ -3031,7 +3112,8 @@
     "nasdaqComposite": 25.74,
     "djia": 21.62,
     "usdEur": 1.2298,
-    "cnyUsd": 6.3329
+    "cnyUsd": 6.3329,
+    "federalDebtPublic": 15.13
   },
   {
     "date": "2018-03-02",
@@ -3068,7 +3150,8 @@
     "nasdaqComposite": 23.83,
     "djia": 16.83,
     "usdEur": 1.2314,
-    "cnyUsd": 6.3428
+    "cnyUsd": 6.3428,
+    "federalDebtPublic": 15.21
   },
   {
     "date": "2018-03-09",
@@ -3105,7 +3188,8 @@
     "nasdaqComposite": 29.49,
     "djia": 21.47,
     "usdEur": 1.2326,
-    "cnyUsd": 6.3285
+    "cnyUsd": 6.3285,
+    "federalDebtPublic": 15.28
   },
   {
     "date": "2018-03-16",
@@ -3142,7 +3226,8 @@
     "nasdaqComposite": 26.8,
     "djia": 19.16,
     "usdEur": 1.228,
-    "cnyUsd": 6.33
+    "cnyUsd": 6.33,
+    "federalDebtPublic": 15.36
   },
   {
     "date": "2018-03-23",
@@ -3179,7 +3264,8 @@
     "nasdaqComposite": 20.2,
     "djia": 13.93,
     "usdEur": 1.236,
-    "cnyUsd": 6.311
+    "cnyUsd": 6.311,
+    "federalDebtPublic": 15.39
   },
   {
     "date": "2018-03-30",
@@ -3216,7 +3302,8 @@
     "nasdaqComposite": 19.43,
     "djia": 16.28,
     "usdEur": 1.232,
-    "cnyUsd": 6.2726
+    "cnyUsd": 6.2726,
+    "federalDebtPublic": 15.43
   },
   {
     "date": "2018-04-06",
@@ -3253,7 +3340,8 @@
     "nasdaqComposite": 17.62,
     "djia": 15.82,
     "usdEur": 1.2274,
-    "cnyUsd": 6.3045
+    "cnyUsd": 6.3045,
+    "federalDebtPublic": 15.46
   },
   {
     "date": "2018-04-13",
@@ -3290,7 +3378,8 @@
     "nasdaqComposite": 22.42,
     "djia": 19.1,
     "usdEur": 1.2322,
-    "cnyUsd": 6.2725
+    "cnyUsd": 6.2725,
+    "federalDebtPublic": 15.4
   },
   {
     "date": "2018-04-20",
@@ -3327,7 +3416,8 @@
     "nasdaqComposite": 20.78,
     "djia": 18.87,
     "usdEur": 1.2282,
-    "cnyUsd": 6.2945
+    "cnyUsd": 6.2945,
+    "federalDebtPublic": 15.34
   },
   {
     "date": "2018-04-27",
@@ -3364,7 +3454,8 @@
     "nasdaqComposite": 17.7,
     "djia": 15.87,
     "usdEur": 1.2108,
-    "cnyUsd": 6.3325
+    "cnyUsd": 6.3325,
+    "federalDebtPublic": 15.34
   },
   {
     "date": "2018-05-04",
@@ -3401,7 +3492,8 @@
     "nasdaqComposite": 18.67,
     "djia": 15.8,
     "usdEur": 1.1946,
-    "cnyUsd": 6.3589
+    "cnyUsd": 6.3589,
+    "federalDebtPublic": 15.33
   },
   {
     "date": "2018-05-11",
@@ -3438,7 +3530,8 @@
     "nasdaqComposite": 21.04,
     "djia": 18.7,
     "usdEur": 1.1951,
-    "cnyUsd": 6.3333
+    "cnyUsd": 6.3333,
+    "federalDebtPublic": 15.34
   },
   {
     "date": "2018-05-18",
@@ -3475,7 +3568,8 @@
     "nasdaqComposite": 21.46,
     "djia": 19.61,
     "usdEur": 1.1775,
-    "cnyUsd": 6.3768
+    "cnyUsd": 6.3768,
+    "federalDebtPublic": 15.37
   },
   {
     "date": "2018-05-25",
@@ -3512,7 +3606,8 @@
     "nasdaqComposite": 19.8,
     "djia": 17.41,
     "usdEur": 1.1666,
-    "cnyUsd": 6.3903
+    "cnyUsd": 6.3903,
+    "federalDebtPublic": 15.4
   },
   {
     "date": "2018-06-01",
@@ -3549,7 +3644,8 @@
     "nasdaqComposite": 20.93,
     "djia": 16.51,
     "usdEur": 1.1679,
-    "cnyUsd": 6.418
+    "cnyUsd": 6.418,
+    "federalDebtPublic": 15.42
   },
   {
     "date": "2018-06-08",
@@ -3586,7 +3682,8 @@
     "nasdaqComposite": 20.94,
     "djia": 19.52,
     "usdEur": 1.1773,
-    "cnyUsd": 6.4031
+    "cnyUsd": 6.4031,
+    "federalDebtPublic": 15.42
   },
   {
     "date": "2018-06-15",
@@ -3623,7 +3720,8 @@
     "nasdaqComposite": 25.64,
     "djia": 17.47,
     "usdEur": 1.1616,
-    "cnyUsd": 6.4379
+    "cnyUsd": 6.4379,
+    "federalDebtPublic": 15.45
   },
   {
     "date": "2018-06-22",
@@ -3660,7 +3758,8 @@
     "nasdaqComposite": 23.35,
     "djia": 14.88,
     "usdEur": 1.163,
-    "cnyUsd": 6.5027
+    "cnyUsd": 6.5027,
+    "federalDebtPublic": 15.45
   },
   {
     "date": "2018-06-29",
@@ -3697,7 +3796,8 @@
     "nasdaqComposite": 22.23,
     "djia": 14.02,
     "usdEur": 1.1677,
-    "cnyUsd": 6.6171
+    "cnyUsd": 6.6171,
+    "federalDebtPublic": 15.47
   },
   {
     "date": "2018-07-06",
@@ -3734,7 +3834,8 @@
     "nasdaqComposite": 26.26,
     "djia": 14.71,
     "usdEur": 1.1738,
-    "cnyUsd": 6.6396
+    "cnyUsd": 6.6396,
+    "federalDebtPublic": 15.48
   },
   {
     "date": "2018-07-13",
@@ -3771,7 +3872,8 @@
     "nasdaqComposite": 24.73,
     "djia": 16.08,
     "usdEur": 1.1667,
-    "cnyUsd": 6.69
+    "cnyUsd": 6.69,
+    "federalDebtPublic": 15.48
   },
   {
     "date": "2018-07-20",
@@ -3808,7 +3910,8 @@
     "nasdaqComposite": 22.38,
     "djia": 15.95,
     "usdEur": 1.1708,
-    "cnyUsd": 6.7659
+    "cnyUsd": 6.7659,
+    "federalDebtPublic": 15.54
   },
   {
     "date": "2018-07-27",
@@ -3845,7 +3948,8 @@
     "nasdaqComposite": 21.23,
     "djia": 16.77,
     "usdEur": 1.166,
-    "cnyUsd": 6.8097
+    "cnyUsd": 6.8097,
+    "federalDebtPublic": 15.57
   },
   {
     "date": "2018-08-03",
@@ -3882,7 +3986,8 @@
     "nasdaqComposite": 23.21,
     "djia": 15.6,
     "usdEur": 1.1597,
-    "cnyUsd": 6.8309
+    "cnyUsd": 6.8309,
+    "federalDebtPublic": 15.6
   },
   {
     "date": "2018-08-10",
@@ -3919,7 +4024,8 @@
     "nasdaqComposite": 26.09,
     "djia": 15.88,
     "usdEur": 1.1399,
-    "cnyUsd": 6.8458
+    "cnyUsd": 6.8458,
+    "federalDebtPublic": 15.65
   },
   {
     "date": "2018-08-17",
@@ -3956,7 +4062,8 @@
     "nasdaqComposite": 25.63,
     "djia": 18.02,
     "usdEur": 1.141,
-    "cnyUsd": 6.874
+    "cnyUsd": 6.874,
+    "federalDebtPublic": 15.71
   },
   {
     "date": "2018-08-24",
@@ -3993,7 +4100,8 @@
     "nasdaqComposite": 26.7,
     "djia": 18.39,
     "usdEur": 1.1625,
-    "cnyUsd": 6.803
+    "cnyUsd": 6.803,
+    "federalDebtPublic": 15.73
   },
   {
     "date": "2018-08-31",
@@ -4030,7 +4138,8 @@
     "nasdaqComposite": 26.15,
     "djia": 18.3,
     "usdEur": 1.1596,
-    "cnyUsd": 6.83
+    "cnyUsd": 6.83,
+    "federalDebtPublic": 15.79
   },
   {
     "date": "2018-09-07",
@@ -4067,7 +4176,8 @@
     "nasdaqComposite": 23.52,
     "djia": 18.97,
     "usdEur": 1.1572,
-    "cnyUsd": 6.8419
+    "cnyUsd": 6.8419,
+    "federalDebtPublic": 15.77
   },
   {
     "date": "2018-09-14",
@@ -4104,7 +4214,8 @@
     "nasdaqComposite": 24.59,
     "djia": 17.8,
     "usdEur": 1.1656,
-    "cnyUsd": 6.8673
+    "cnyUsd": 6.8673,
+    "federalDebtPublic": 15.74
   },
   {
     "date": "2018-09-21",
@@ -4141,7 +4252,8 @@
     "nasdaqComposite": 24.36,
     "djia": 19.61,
     "usdEur": 1.1739,
-    "cnyUsd": 6.8559
+    "cnyUsd": 6.8559,
+    "federalDebtPublic": 15.76
   },
   {
     "date": "2018-09-28",
@@ -4178,7 +4290,8 @@
     "nasdaqComposite": 24.68,
     "djia": 18.22,
     "usdEur": 1.1622,
-    "cnyUsd": 6.868
+    "cnyUsd": 6.868,
+    "federalDebtPublic": 15.76
   },
   {
     "date": "2018-10-05",
@@ -4215,7 +4328,8 @@
     "nasdaqComposite": 18.27,
     "djia": 16.12,
     "usdEur": 1.1502,
-    "cnyUsd": 6.868
+    "cnyUsd": 6.868,
+    "federalDebtPublic": 15.76
   },
   {
     "date": "2018-10-12",
@@ -4252,7 +4366,8 @@
     "nasdaqComposite": 13.74,
     "djia": 10.94,
     "usdEur": 1.1559,
-    "cnyUsd": 6.9182
+    "cnyUsd": 6.9182,
+    "federalDebtPublic": 15.76
   },
   {
     "date": "2018-10-19",
@@ -4289,7 +4404,8 @@
     "nasdaqComposite": 12.78,
     "djia": 9.85,
     "usdEur": 1.1513,
-    "cnyUsd": 6.9291
+    "cnyUsd": 6.9291,
+    "federalDebtPublic": 15.83
   },
   {
     "date": "2018-10-26",
@@ -4326,7 +4442,8 @@
     "nasdaqComposite": 9.31,
     "djia": 5.5,
     "usdEur": 1.1388,
-    "cnyUsd": 6.9425
+    "cnyUsd": 6.9425,
+    "federalDebtPublic": 15.85
   },
   {
     "date": "2018-11-02",
@@ -4363,7 +4480,8 @@
     "nasdaqComposite": 9.56,
     "djia": 7.46,
     "usdEur": 1.1378,
-    "cnyUsd": 6.8894
+    "cnyUsd": 6.8894,
+    "federalDebtPublic": 15.86
   },
   {
     "date": "2018-11-09",
@@ -4400,7 +4518,8 @@
     "nasdaqComposite": 9.73,
     "djia": 10.77,
     "usdEur": 1.1325,
-    "cnyUsd": 6.9553
+    "cnyUsd": 6.9553,
+    "federalDebtPublic": 15.9
   },
   {
     "date": "2018-11-16",
@@ -4437,7 +4556,8 @@
     "nasdaqComposite": 6.69,
     "djia": 8.33,
     "usdEur": 1.1402,
-    "cnyUsd": 6.9367
+    "cnyUsd": 6.9367,
+    "federalDebtPublic": 15.94
   },
   {
     "date": "2018-11-23",
@@ -4474,7 +4594,8 @@
     "nasdaqComposite": 1.04,
     "djia": 3.23,
     "usdEur": 1.1332,
-    "cnyUsd": 6.9477
+    "cnyUsd": 6.9477,
+    "federalDebtPublic": 15.97
   },
   {
     "date": "2018-11-30",
@@ -4511,7 +4632,8 @@
     "nasdaqComposite": 6.64,
     "djia": 5.22,
     "usdEur": 1.1323,
-    "cnyUsd": 6.9558
+    "cnyUsd": 6.9558,
+    "federalDebtPublic": 16.04
   },
   {
     "date": "2018-12-07",
@@ -4548,7 +4670,8 @@
     "nasdaqComposite": 2.3,
     "djia": 0.73,
     "usdEur": 1.139,
-    "cnyUsd": 6.8733
+    "cnyUsd": 6.8733,
+    "federalDebtPublic": 16.05
   },
   {
     "date": "2018-12-14",
@@ -4585,7 +4708,8 @@
     "nasdaqComposite": 0.79,
     "djia": -1.67,
     "usdEur": 1.13,
-    "cnyUsd": 6.905
+    "cnyUsd": 6.905,
+    "federalDebtPublic": 16.03
   },
   {
     "date": "2018-12-21",
@@ -4622,7 +4746,8 @@
     "nasdaqComposite": -9.08,
     "djia": -9.43,
     "usdEur": 1.1402,
-    "cnyUsd": 6.9048
+    "cnyUsd": 6.9048,
+    "federalDebtPublic": 16.07
   },
   {
     "date": "2018-12-28",
@@ -4659,7 +4784,8 @@
     "nasdaqComposite": -5.26,
     "djia": -7.15,
     "usdEur": 1.1445,
-    "cnyUsd": 6.8755
+    "cnyUsd": 6.8755,
+    "federalDebtPublic": 16.07
   },
   {
     "date": "2019-01-04",
@@ -4696,7 +4822,8 @@
     "nasdaqComposite": -4.79,
     "djia": -6.55,
     "usdEur": 1.141,
-    "cnyUsd": 6.8663
+    "cnyUsd": 6.8663,
+    "federalDebtPublic": 16.09
   },
   {
     "date": "2019-01-11",
@@ -4733,7 +4860,8 @@
     "nasdaqComposite": -3.33,
     "djia": -6.17,
     "usdEur": 1.1479,
-    "cnyUsd": 6.7596
+    "cnyUsd": 6.7596,
+    "federalDebtPublic": 16.07
   },
   {
     "date": "2019-01-18",
@@ -4770,7 +4898,8 @@
     "nasdaqComposite": -1.9,
     "djia": -5.04,
     "usdEur": 1.1362,
-    "cnyUsd": 6.7765
+    "cnyUsd": 6.7765,
+    "federalDebtPublic": 16.09
   },
   {
     "date": "2019-01-25",
@@ -4807,7 +4936,8 @@
     "nasdaqComposite": -3.32,
     "djia": -6.27,
     "usdEur": 1.1407,
-    "cnyUsd": 6.7448
+    "cnyUsd": 6.7448,
+    "federalDebtPublic": 16.08
   },
   {
     "date": "2019-02-01",
@@ -4844,7 +4974,8 @@
     "nasdaqComposite": -1.65,
     "djia": -4.29,
     "usdEur": 1.1474,
-    "cnyUsd": 6.7426
+    "cnyUsd": 6.7426,
+    "federalDebtPublic": 16.1
   },
   {
     "date": "2019-02-08",
@@ -4881,7 +5012,8 @@
     "nasdaqComposite": 7.69,
     "djia": 5.22,
     "usdEur": 1.1326,
-    "cnyUsd": 6.7426
+    "cnyUsd": 6.7426,
+    "federalDebtPublic": 16.11
   },
   {
     "date": "2019-02-15",
@@ -4918,7 +5050,8 @@
     "nasdaqComposite": 2.98,
     "djia": 2.71,
     "usdEur": 1.1268,
-    "cnyUsd": 6.768
+    "cnyUsd": 6.768,
+    "federalDebtPublic": 16.17
   },
   {
     "date": "2019-02-22",
@@ -4955,7 +5088,8 @@
     "nasdaqComposite": 4.4,
     "djia": 4.28,
     "usdEur": 1.1342,
-    "cnyUsd": 6.7112
+    "cnyUsd": 6.7112,
+    "federalDebtPublic": 16.2
   },
   {
     "date": "2019-03-01",
@@ -4992,7 +5126,8 @@
     "nasdaqComposite": 5.78,
     "djia": 5.76,
     "usdEur": 1.1376,
-    "cnyUsd": 6.7048
+    "cnyUsd": 6.7048,
+    "federalDebtPublic": 16.22
   },
   {
     "date": "2019-03-08",
@@ -5029,7 +5164,8 @@
     "nasdaqComposite": -0.27,
     "djia": 2.23,
     "usdEur": 1.1243,
-    "cnyUsd": 6.7201
+    "cnyUsd": 6.7201,
+    "federalDebtPublic": 16.22
   },
   {
     "date": "2019-03-15",
@@ -5066,7 +5202,8 @@
     "nasdaqComposite": 2.76,
     "djia": 3.92,
     "usdEur": 1.1326,
-    "cnyUsd": 6.7129
+    "cnyUsd": 6.7129,
+    "federalDebtPublic": 16.22
   },
   {
     "date": "2019-03-22",
@@ -5103,7 +5240,8 @@
     "nasdaqComposite": 6.64,
     "djia": 6.45,
     "usdEur": 1.1282,
-    "cnyUsd": 6.7162
+    "cnyUsd": 6.7162,
+    "federalDebtPublic": 16.21
   },
   {
     "date": "2019-03-29",
@@ -5140,7 +5278,8 @@
     "nasdaqComposite": 9.43,
     "djia": 7.57,
     "usdEur": 1.1228,
-    "cnyUsd": 6.7112
+    "cnyUsd": 6.7112,
+    "federalDebtPublic": 16.2
   },
   {
     "date": "2019-04-05",
@@ -5177,7 +5316,8 @@
     "nasdaqComposite": 12.18,
     "djia": 7.83,
     "usdEur": 1.1217,
-    "cnyUsd": 6.7182
+    "cnyUsd": 6.7182,
+    "federalDebtPublic": 16.22
   },
   {
     "date": "2019-04-12",
@@ -5214,7 +5354,8 @@
     "nasdaqComposite": 11.82,
     "djia": 7.88,
     "usdEur": 1.1304,
-    "cnyUsd": 6.7039
+    "cnyUsd": 6.7039,
+    "federalDebtPublic": 16.22
   },
   {
     "date": "2019-04-19",
@@ -5251,7 +5392,8 @@
     "nasdaqComposite": 10.5,
     "djia": 7.68,
     "usdEur": 1.1246,
-    "cnyUsd": 6.7032
+    "cnyUsd": 6.7032,
+    "federalDebtPublic": 16.19
   },
   {
     "date": "2019-04-26",
@@ -5288,7 +5430,8 @@
     "nasdaqComposite": 14.26,
     "djia": 9.13,
     "usdEur": 1.1154,
-    "cnyUsd": 6.7282
+    "cnyUsd": 6.7282,
+    "federalDebtPublic": 16.17
   },
   {
     "date": "2019-05-03",
@@ -5325,7 +5468,8 @@
     "nasdaqComposite": 15.18,
     "djia": 10.76,
     "usdEur": 1.1186,
-    "cnyUsd": 6.7337
+    "cnyUsd": 6.7337,
+    "federalDebtPublic": 16.2
   },
   {
     "date": "2019-05-10",
@@ -5362,7 +5506,8 @@
     "nasdaqComposite": 6.91,
     "djia": 4.86,
     "usdEur": 1.1241,
-    "cnyUsd": 6.8217
+    "cnyUsd": 6.8217,
+    "federalDebtPublic": 16.19
   },
   {
     "date": "2019-05-17",
@@ -5399,7 +5544,8 @@
     "nasdaqComposite": 5.88,
     "djia": 4.25,
     "usdEur": 1.1166,
-    "cnyUsd": 6.9182
+    "cnyUsd": 6.9182,
+    "federalDebtPublic": 16.19
   },
   {
     "date": "2019-05-24",
@@ -5436,7 +5582,8 @@
     "nasdaqComposite": 2.86,
     "djia": 3.12,
     "usdEur": 1.1197,
-    "cnyUsd": 6.8997
+    "cnyUsd": 6.8997,
+    "federalDebtPublic": 16.19
   },
   {
     "date": "2019-05-31",
@@ -5473,7 +5620,8 @@
     "nasdaqComposite": 0.15,
     "djia": 1.64,
     "usdEur": 1.1149,
-    "cnyUsd": 6.9027
+    "cnyUsd": 6.9027,
+    "federalDebtPublic": 16.2
   },
   {
     "date": "2019-06-07",
@@ -5510,7 +5658,8 @@
     "nasdaqComposite": 1.4,
     "djia": 2.94,
     "usdEur": 1.1324,
-    "cnyUsd": 6.9057
+    "cnyUsd": 6.9057,
+    "federalDebtPublic": 16.2
   },
   {
     "date": "2019-06-14",
@@ -5547,7 +5696,8 @@
     "nasdaqComposite": 0.46,
     "djia": 3.63,
     "usdEur": 1.1217,
-    "cnyUsd": 6.9247
+    "cnyUsd": 6.9247,
+    "federalDebtPublic": 16.19
   },
   {
     "date": "2019-06-21",
@@ -5584,7 +5734,8 @@
     "nasdaqComposite": 4.13,
     "djia": 9.23,
     "usdEur": 1.1328,
-    "cnyUsd": 6.8686
+    "cnyUsd": 6.8686,
+    "federalDebtPublic": 16.17
   },
   {
     "date": "2019-06-28",
@@ -5621,7 +5772,8 @@
     "nasdaqComposite": 6.7,
     "djia": 9.84,
     "usdEur": 1.1374,
-    "cnyUsd": 6.865
+    "cnyUsd": 6.865,
+    "federalDebtPublic": 16.19
   },
   {
     "date": "2019-07-05",
@@ -5658,7 +5810,8 @@
     "nasdaqComposite": 7.58,
     "djia": 10.53,
     "usdEur": 1.1216,
-    "cnyUsd": 6.8925
+    "cnyUsd": 6.8925,
+    "federalDebtPublic": 16.21
   },
   {
     "date": "2019-07-12",
@@ -5695,7 +5848,8 @@
     "nasdaqComposite": 5.37,
     "djia": 9.66,
     "usdEur": 1.1254,
-    "cnyUsd": 6.8796
+    "cnyUsd": 6.8796,
+    "federalDebtPublic": 16.22
   },
   {
     "date": "2019-07-19",
@@ -5732,7 +5886,8 @@
     "nasdaqComposite": 4.1,
     "djia": 8.34,
     "usdEur": 1.122,
-    "cnyUsd": 6.8812
+    "cnyUsd": 6.8812,
+    "federalDebtPublic": 16.21
   },
   {
     "date": "2019-07-26",
@@ -5769,7 +5924,8 @@
     "nasdaqComposite": 6.09,
     "djia": 6.52,
     "usdEur": 1.1121,
-    "cnyUsd": 6.8785
+    "cnyUsd": 6.8785,
+    "federalDebtPublic": 16.22
   },
   {
     "date": "2019-08-02",
@@ -5806,7 +5962,8 @@
     "nasdaqComposite": 2.58,
     "djia": 4.58,
     "usdEur": 1.1112,
-    "cnyUsd": 6.9387
+    "cnyUsd": 6.9387,
+    "federalDebtPublic": 16.44
   },
   {
     "date": "2019-08-09",
@@ -5843,7 +6000,8 @@
     "nasdaqComposite": 0.85,
     "djia": 3.05,
     "usdEur": 1.1222,
-    "cnyUsd": 7.0613
+    "cnyUsd": 7.0613,
+    "federalDebtPublic": 16.44
   },
   {
     "date": "2019-08-16",
@@ -5880,7 +6038,8 @@
     "nasdaqComposite": 1.15,
     "djia": 1.28,
     "usdEur": 1.1091,
-    "cnyUsd": 7.0413
+    "cnyUsd": 7.0413,
+    "federalDebtPublic": 16.49
   },
   {
     "date": "2019-08-23",
@@ -5917,7 +6076,8 @@
     "nasdaqComposite": -1.61,
     "djia": -0.11,
     "usdEur": 1.1148,
-    "cnyUsd": 7.0928
+    "cnyUsd": 7.0928,
+    "federalDebtPublic": 16.53
   },
   {
     "date": "2019-08-30",
@@ -5954,7 +6114,8 @@
     "nasdaqComposite": -1.55,
     "djia": 1.6,
     "usdEur": 1.0989,
-    "cnyUsd": 7.1543
+    "cnyUsd": 7.1543,
+    "federalDebtPublic": 16.6
   },
   {
     "date": "2019-09-06",
@@ -5991,7 +6152,8 @@
     "nasdaqComposite": 2.28,
     "djia": 3.08,
     "usdEur": 1.1042,
-    "cnyUsd": 7.1131
+    "cnyUsd": 7.1131,
+    "federalDebtPublic": 16.67
   },
   {
     "date": "2019-09-13",
@@ -6028,7 +6190,8 @@
     "nasdaqComposite": 2.03,
     "djia": 4.11,
     "usdEur": 1.1074,
-    "cnyUsd": 7.0754
+    "cnyUsd": 7.0754,
+    "federalDebtPublic": 16.7
   },
   {
     "date": "2019-09-20",
@@ -6065,7 +6228,8 @@
     "nasdaqComposite": 1.11,
     "djia": 1.04,
     "usdEur": 1.1004,
-    "cnyUsd": 7.0909
+    "cnyUsd": 7.0909,
+    "federalDebtPublic": 16.74
   },
   {
     "date": "2019-09-27",
@@ -6102,7 +6266,8 @@
     "nasdaqComposite": -1.27,
     "djia": 1.44,
     "usdEur": 1.0942,
-    "cnyUsd": 7.1218
+    "cnyUsd": 7.1218,
+    "federalDebtPublic": 16.76
   },
   {
     "date": "2019-10-04",
@@ -6139,7 +6304,8 @@
     "nasdaqComposite": 1.31,
     "djia": -0.2,
     "usdEur": 1.0974,
-    "cnyUsd": 7.1473
+    "cnyUsd": 7.1473,
+    "federalDebtPublic": 16.82
   },
   {
     "date": "2019-10-11",
@@ -6176,7 +6342,8 @@
     "nasdaqComposite": 9.93,
     "djia": 7.04,
     "usdEur": 1.1039,
-    "cnyUsd": 7.0868
+    "cnyUsd": 7.0868,
+    "federalDebtPublic": 16.83
   },
   {
     "date": "2019-10-18",
@@ -6213,7 +6380,8 @@
     "nasdaqComposite": 8.07,
     "djia": 5.48,
     "usdEur": 1.1155,
-    "cnyUsd": 7.0805
+    "cnyUsd": 7.0805,
+    "federalDebtPublic": 16.89
   },
   {
     "date": "2019-10-25",
@@ -6250,7 +6418,8 @@
     "nasdaqComposite": 12.64,
     "djia": 7.9,
     "usdEur": 1.1081,
-    "cnyUsd": 7.0647
+    "cnyUsd": 7.0647,
+    "federalDebtPublic": 16.92
   },
   {
     "date": "2019-11-01",
@@ -6287,7 +6456,8 @@
     "nasdaqComposite": 12.81,
     "djia": 7.75,
     "usdEur": 1.1169,
-    "cnyUsd": 7.0368
+    "cnyUsd": 7.0368,
+    "federalDebtPublic": 16.98
   },
   {
     "date": "2019-11-08",
@@ -6324,7 +6494,8 @@
     "nasdaqComposite": 12.54,
     "djia": 5.69,
     "usdEur": 1.1019,
-    "cnyUsd": 6.9954
+    "cnyUsd": 6.9954,
+    "federalDebtPublic": 17
   },
   {
     "date": "2019-11-15",
@@ -6361,7 +6532,8 @@
     "nasdaqComposite": 17.66,
     "djia": 10.74,
     "usdEur": 1.1046,
-    "cnyUsd": 7.0075
+    "cnyUsd": 7.0075,
+    "federalDebtPublic": 17.05
   },
   {
     "date": "2019-11-22",
@@ -6398,7 +6570,8 @@
     "nasdaqComposite": 22.2,
     "djia": 13.94,
     "usdEur": 1.1029,
-    "cnyUsd": 7.0389
+    "cnyUsd": 7.0389,
+    "federalDebtPublic": 17.06
   },
   {
     "date": "2019-11-29",
@@ -6435,7 +6608,8 @@
     "nasdaqComposite": 19.14,
     "djia": 10.71,
     "usdEur": 1.1019,
-    "cnyUsd": 7.0308
+    "cnyUsd": 7.0308,
+    "federalDebtPublic": 17.11
   },
   {
     "date": "2019-12-06",
@@ -6472,7 +6646,8 @@
     "nasdaqComposite": 20.43,
     "djia": 12.3,
     "usdEur": 1.1052,
-    "cnyUsd": 7.0348
+    "cnyUsd": 7.0348,
+    "federalDebtPublic": 17.12
   },
   {
     "date": "2019-12-13",
@@ -6509,7 +6684,8 @@
     "nasdaqComposite": 23.54,
     "djia": 14.38,
     "usdEur": 1.1128,
-    "cnyUsd": 6.9925
+    "cnyUsd": 6.9925,
+    "federalDebtPublic": 17.09
   },
   {
     "date": "2019-12-20",
@@ -6546,7 +6722,8 @@
     "nasdaqComposite": 36.71,
     "djia": 24.48,
     "usdEur": 1.1076,
-    "cnyUsd": 7.0063
+    "cnyUsd": 7.0063,
+    "federalDebtPublic": 17.13
   },
   {
     "date": "2019-12-27",
@@ -6583,7 +6760,8 @@
     "nasdaqComposite": 36.89,
     "djia": 23.8,
     "usdEur": 1.1174,
-    "cnyUsd": 6.9954
+    "cnyUsd": 6.9954,
+    "federalDebtPublic": 17.13
   },
   {
     "date": "2020-01-03",
@@ -6620,7 +6798,8 @@
     "nasdaqComposite": 39.56,
     "djia": 26.22,
     "usdEur": 1.1173,
-    "cnyUsd": 6.9649
+    "cnyUsd": 6.9649,
+    "federalDebtPublic": 17.16
   },
   {
     "date": "2020-01-10",
@@ -6657,7 +6836,8 @@
     "nasdaqComposite": 31.39,
     "djia": 20.09,
     "usdEur": 1.1119,
-    "cnyUsd": 6.9178
+    "cnyUsd": 6.9178,
+    "federalDebtPublic": 17.16
   },
   {
     "date": "2020-01-17",
@@ -6694,7 +6874,8 @@
     "nasdaqComposite": 32.53,
     "djia": 20.43,
     "usdEur": 1.1093,
-    "cnyUsd": 6.8589
+    "cnyUsd": 6.8589,
+    "federalDebtPublic": 17.18
   },
   {
     "date": "2020-01-24",
@@ -6731,7 +6912,8 @@
     "nasdaqComposite": 31.69,
     "djia": 18.07,
     "usdEur": 1.1026,
-    "cnyUsd": 6.9161
+    "cnyUsd": 6.9161,
+    "federalDebtPublic": 17.18
   },
   {
     "date": "2020-01-31",
@@ -6768,7 +6950,8 @@
     "nasdaqComposite": 25.67,
     "djia": 13.03,
     "usdEur": 1.1082,
-    "cnyUsd": 6.9161
+    "cnyUsd": 6.9161,
+    "federalDebtPublic": 17.21
   },
   {
     "date": "2020-02-07",
@@ -6805,7 +6988,8 @@
     "nasdaqComposite": 30.63,
     "djia": 15.63,
     "usdEur": 1.095,
-    "cnyUsd": 7.0003
+    "cnyUsd": 7.0003,
+    "federalDebtPublic": 17.23
   },
   {
     "date": "2020-02-14",
@@ -6842,7 +7026,8 @@
     "nasdaqComposite": 31.03,
     "djia": 15.56,
     "usdEur": 1.0839,
-    "cnyUsd": 6.9859
+    "cnyUsd": 6.9859,
+    "federalDebtPublic": 17.29
   },
   {
     "date": "2020-02-21",
@@ -6879,7 +7064,8 @@
     "nasdaqComposite": 28.38,
     "djia": 12.15,
     "usdEur": 1.0855,
-    "cnyUsd": 7.0255
+    "cnyUsd": 7.0255,
+    "federalDebtPublic": 17.37
   },
   {
     "date": "2020-02-28",
@@ -6916,7 +7102,8 @@
     "nasdaqComposite": 13.74,
     "djia": -1.95,
     "usdEur": 1.1001,
-    "cnyUsd": 6.9906
+    "cnyUsd": 6.9906,
+    "federalDebtPublic": 17.41
   },
   {
     "date": "2020-03-06",
@@ -6953,7 +7140,8 @@
     "nasdaqComposite": 14.25,
     "djia": 0.75,
     "usdEur": 1.1319,
-    "cnyUsd": 6.9298
+    "cnyUsd": 6.9298,
+    "federalDebtPublic": 17.47
   },
   {
     "date": "2020-03-13",
@@ -6990,7 +7178,8 @@
     "nasdaqComposite": 3.03,
     "djia": -9.79,
     "usdEur": 1.1066,
-    "cnyUsd": 7.0079
+    "cnyUsd": 7.0079,
+    "federalDebtPublic": 17.44
   },
   {
     "date": "2020-03-20",
@@ -7027,7 +7216,8 @@
     "nasdaqComposite": -10.99,
     "djia": -25.53,
     "usdEur": 1.0682,
-    "cnyUsd": 7.095
+    "cnyUsd": 7.095,
+    "federalDebtPublic": 17.51
   },
   {
     "date": "2020-03-27",
@@ -7064,7 +7254,8 @@
     "nasdaqComposite": -1.84,
     "djia": -15.57,
     "usdEur": 1.1059,
-    "cnyUsd": 7.0942
+    "cnyUsd": 7.0942,
+    "federalDebtPublic": 17.55
   },
   {
     "date": "2020-04-03",
@@ -7101,7 +7292,8 @@
     "nasdaqComposite": -6.62,
     "djia": -19.7,
     "usdEur": 1.0797,
-    "cnyUsd": 7.0908
+    "cnyUsd": 7.0908,
+    "federalDebtPublic": 17.92
   },
   {
     "date": "2020-04-10",
@@ -7138,7 +7330,8 @@
     "nasdaqComposite": 2.38,
     "djia": -9.32,
     "usdEur": 1.0951,
-    "cnyUsd": 7.0341
+    "cnyUsd": 7.0341,
+    "federalDebtPublic": 18.23
   },
   {
     "date": "2020-04-17",
@@ -7175,7 +7368,8 @@
     "nasdaqComposite": 8.18,
     "djia": -8.34,
     "usdEur": 1.0883,
-    "cnyUsd": 7.0711
+    "cnyUsd": 7.0711,
+    "federalDebtPublic": 18.52
   },
   {
     "date": "2020-04-24",
@@ -7212,7 +7406,8 @@
     "nasdaqComposite": 6.57,
     "djia": -10.61,
     "usdEur": 1.0798,
-    "cnyUsd": 7.0813
+    "cnyUsd": 7.0813,
+    "federalDebtPublic": 18.78
   },
   {
     "date": "2020-05-01",
@@ -7249,7 +7444,8 @@
     "nasdaqComposite": 6.9,
     "djia": -10.24,
     "usdEur": 1.0998,
-    "cnyUsd": 7.0622
+    "cnyUsd": 7.0622,
+    "federalDebtPublic": 19.05
   },
   {
     "date": "2020-05-08",
@@ -7286,7 +7482,8 @@
     "nasdaqComposite": 14.83,
     "djia": -6.3,
     "usdEur": 1.0854,
-    "cnyUsd": 7.0732
+    "cnyUsd": 7.0732,
+    "federalDebtPublic": 19.22
   },
   {
     "date": "2020-05-15",
@@ -7323,7 +7520,8 @@
     "nasdaqComposite": 15.24,
     "djia": -7.65,
     "usdEur": 1.0816,
-    "cnyUsd": 7.1013
+    "cnyUsd": 7.1013,
+    "federalDebtPublic": 19.38
   },
   {
     "date": "2020-05-22",
@@ -7360,7 +7558,8 @@
     "nasdaqComposite": 20.3,
     "djia": -5.09,
     "usdEur": 1.0894,
-    "cnyUsd": 7.1269
+    "cnyUsd": 7.1269,
+    "federalDebtPublic": 19.57
   },
   {
     "date": "2020-05-29",
@@ -7397,7 +7596,8 @@
     "nasdaqComposite": 25.74,
     "djia": 1.02,
     "usdEur": 1.1107,
-    "cnyUsd": 7.1348
+    "cnyUsd": 7.1348,
+    "federalDebtPublic": 19.81
   },
   {
     "date": "2020-06-05",
@@ -7434,7 +7634,8 @@
     "nasdaqComposite": 29.55,
     "djia": 6.15,
     "usdEur": 1.1297,
-    "cnyUsd": 7.0808
+    "cnyUsd": 7.0808,
+    "federalDebtPublic": 20.03
   },
   {
     "date": "2020-06-12",
@@ -7471,7 +7672,8 @@
     "nasdaqComposite": 23.05,
     "djia": -1.54,
     "usdEur": 1.1253,
-    "cnyUsd": 7.0825
+    "cnyUsd": 7.0825,
+    "federalDebtPublic": 20.17
   },
   {
     "date": "2020-06-19",
@@ -7508,7 +7710,8 @@
     "nasdaqComposite": 24.52,
     "djia": -2.39,
     "usdEur": 1.1189,
-    "cnyUsd": 7.0707
+    "cnyUsd": 7.0707,
+    "federalDebtPublic": 20.34
   },
   {
     "date": "2020-06-26",
@@ -7545,7 +7748,8 @@
     "nasdaqComposite": 23.35,
     "djia": -5.73,
     "usdEur": 1.1215,
-    "cnyUsd": 7.0768
+    "cnyUsd": 7.0768,
+    "federalDebtPublic": 20.43
   },
   {
     "date": "2020-07-03",
@@ -7582,7 +7786,8 @@
     "nasdaqComposite": 24.94,
     "djia": -4.22,
     "usdEur": 1.1237,
-    "cnyUsd": 7.066
+    "cnyUsd": 7.066,
+    "federalDebtPublic": 20.56
   },
   {
     "date": "2020-07-10",
@@ -7619,7 +7824,8 @@
     "nasdaqComposite": 29.44,
     "djia": -2.92,
     "usdEur": 1.1318,
-    "cnyUsd": 6.999
+    "cnyUsd": 6.999,
+    "federalDebtPublic": 20.58
   },
   {
     "date": "2020-07-17",
@@ -7656,7 +7862,8 @@
     "nasdaqComposite": 28.32,
     "djia": -2.01,
     "usdEur": 1.1438,
-    "cnyUsd": 6.9912
+    "cnyUsd": 6.9912,
+    "federalDebtPublic": 20.61
   },
   {
     "date": "2020-07-24",
@@ -7693,7 +7900,8 @@
     "nasdaqComposite": 24.53,
     "djia": -2.93,
     "usdEur": 1.1635,
-    "cnyUsd": 7.0168
+    "cnyUsd": 7.0168,
+    "federalDebtPublic": 20.61
   },
   {
     "date": "2020-07-31",
@@ -7730,7 +7938,8 @@
     "nasdaqComposite": 31.43,
     "djia": -1.62,
     "usdEur": 1.1822,
-    "cnyUsd": 6.9744
+    "cnyUsd": 6.9744,
+    "federalDebtPublic": 20.63
   },
   {
     "date": "2020-08-07",
@@ -7767,7 +7976,8 @@
     "nasdaqComposite": 40.04,
     "djia": 5.48,
     "usdEur": 1.1776,
-    "cnyUsd": 6.967
+    "cnyUsd": 6.967,
+    "federalDebtPublic": 20.6
   },
   {
     "date": "2020-08-14",
@@ -7804,7 +8014,8 @@
     "nasdaqComposite": 41.75,
     "djia": 9.62,
     "usdEur": 1.1833,
-    "cnyUsd": 6.9501
+    "cnyUsd": 6.9501,
+    "federalDebtPublic": 20.61
   },
   {
     "date": "2020-08-21",
@@ -7841,7 +8052,8 @@
     "nasdaqComposite": 41.04,
     "djia": 6.59,
     "usdEur": 1.1775,
-    "cnyUsd": 6.9179
+    "cnyUsd": 6.9179,
+    "federalDebtPublic": 20.69
   },
   {
     "date": "2020-08-28",
@@ -7878,7 +8090,8 @@
     "nasdaqComposite": 48.86,
     "djia": 10.05,
     "usdEur": 1.1901,
-    "cnyUsd": 6.8647
+    "cnyUsd": 6.8647,
+    "federalDebtPublic": 20.73
   },
   {
     "date": "2020-09-04",
@@ -7915,7 +8128,8 @@
     "nasdaqComposite": 41.82,
     "djia": 6.75,
     "usdEur": 1.182,
-    "cnyUsd": 6.8409
+    "cnyUsd": 6.8409,
+    "federalDebtPublic": 20.84
   },
   {
     "date": "2020-09-11",
@@ -7952,7 +8166,8 @@
     "nasdaqComposite": 32.85,
     "djia": 1.95,
     "usdEur": 1.1831,
-    "cnyUsd": 6.833
+    "cnyUsd": 6.833,
+    "federalDebtPublic": 20.83
   },
   {
     "date": "2020-09-18",
@@ -7989,7 +8204,8 @@
     "nasdaqComposite": 31.99,
     "djia": 1.88,
     "usdEur": 1.1857,
-    "cnyUsd": 6.7675
+    "cnyUsd": 6.7675,
+    "federalDebtPublic": 20.9
   },
   {
     "date": "2020-09-25",
@@ -8026,7 +8242,8 @@
     "nasdaqComposite": 35.11,
     "djia": 0.75,
     "usdEur": 1.1618,
-    "cnyUsd": 6.822
+    "cnyUsd": 6.822,
+    "federalDebtPublic": 20.91
   },
   {
     "date": "2020-10-02",
@@ -8063,7 +8280,8 @@
     "nasdaqComposite": 42.26,
     "djia": 6.15,
     "usdEur": 1.1706,
-    "cnyUsd": 6.7898
+    "cnyUsd": 6.7898,
+    "federalDebtPublic": 21.02
   },
   {
     "date": "2020-10-09",
@@ -8100,7 +8318,8 @@
     "nasdaqComposite": 46.51,
     "djia": 8.51,
     "usdEur": 1.1819,
-    "cnyUsd": 6.6933
+    "cnyUsd": 6.6933,
+    "federalDebtPublic": 21.03
   },
   {
     "date": "2020-10-16",
@@ -8137,7 +8356,8 @@
     "nasdaqComposite": 43.67,
     "djia": 5.94,
     "usdEur": 1.1717,
-    "cnyUsd": 6.6962
+    "cnyUsd": 6.6962,
+    "federalDebtPublic": 21.1
   },
   {
     "date": "2020-10-23",
@@ -8174,7 +8394,8 @@
     "nasdaqComposite": 42.22,
     "djia": 5.6,
     "usdEur": 1.1844,
-    "cnyUsd": 6.6861
+    "cnyUsd": 6.6861,
+    "federalDebtPublic": 21.08
   },
   {
     "date": "2020-10-30",
@@ -8211,7 +8432,8 @@
     "nasdaqComposite": 31.4,
     "djia": -2.52,
     "usdEur": 1.1647,
-    "cnyUsd": 6.6919
+    "cnyUsd": 6.6919,
+    "federalDebtPublic": 21.1
   },
   {
     "date": "2020-11-06",
@@ -8248,7 +8470,8 @@
     "nasdaqComposite": 41.43,
     "djia": 3.02,
     "usdEur": 1.1886,
-    "cnyUsd": 6.608
+    "cnyUsd": 6.608,
+    "federalDebtPublic": 21.17
   },
   {
     "date": "2020-11-13",
@@ -8285,7 +8508,8 @@
     "nasdaqComposite": 39.46,
     "djia": 6.11,
     "usdEur": 1.1824,
-    "cnyUsd": 6.6039
+    "cnyUsd": 6.6039,
+    "federalDebtPublic": 21.16
   },
   {
     "date": "2020-11-20",
@@ -8322,7 +8546,8 @@
     "nasdaqComposite": 39.03,
     "djia": 5.18,
     "usdEur": 1.1857,
-    "cnyUsd": 6.5608
+    "cnyUsd": 6.5608,
+    "federalDebtPublic": 21.21
   },
   {
     "date": "2020-11-27",
@@ -8359,7 +8584,8 @@
     "nasdaqComposite": 40.21,
     "djia": 6.2,
     "usdEur": 1.1908,
-    "cnyUsd": 6.575
+    "cnyUsd": 6.575,
+    "federalDebtPublic": 21.22
   },
   {
     "date": "2020-12-04",
@@ -8396,7 +8622,8 @@
     "nasdaqComposite": 45.5,
     "djia": 9.29,
     "usdEur": 1.2142,
-    "cnyUsd": 6.5301
+    "cnyUsd": 6.5301,
+    "federalDebtPublic": 21.36
   },
   {
     "date": "2020-12-11",
@@ -8433,7 +8660,8 @@
     "nasdaqComposite": 43.03,
     "djia": 7.65,
     "usdEur": 1.2112,
-    "cnyUsd": 6.5445
+    "cnyUsd": 6.5445,
+    "federalDebtPublic": 21.35
   },
   {
     "date": "2020-12-18",
@@ -8470,7 +8698,8 @@
     "nasdaqComposite": 44.5,
     "djia": 6.87,
     "usdEur": 1.2236,
-    "cnyUsd": 6.5395
+    "cnyUsd": 6.5395,
+    "federalDebtPublic": 21.45
   },
   {
     "date": "2020-12-25",
@@ -8507,7 +8736,8 @@
     "nasdaqComposite": 43.02,
     "djia": 5.91,
     "usdEur": 1.2194,
-    "cnyUsd": 6.54
+    "cnyUsd": 6.54,
+    "federalDebtPublic": 21.45
   },
   {
     "date": "2021-01-01",
@@ -8544,7 +8774,8 @@
     "nasdaqComposite": 43.64,
     "djia": 7.25,
     "usdEur": 1.223,
-    "cnyUsd": 6.525
+    "cnyUsd": 6.525,
+    "federalDebtPublic": 21.63
   },
   {
     "date": "2021-01-08",
@@ -8581,7 +8812,8 @@
     "nasdaqComposite": 44.61,
     "djia": 8.19,
     "usdEur": 1.2252,
-    "cnyUsd": 6.475
+    "cnyUsd": 6.475,
+    "federalDebtPublic": 21.58
   },
   {
     "date": "2021-01-15",
@@ -8618,7 +8850,8 @@
     "nasdaqComposite": 40.39,
     "djia": 6.15,
     "usdEur": 1.2099,
-    "cnyUsd": 6.48
+    "cnyUsd": 6.48,
+    "federalDebtPublic": 21.64
   },
   {
     "date": "2021-01-22",
@@ -8655,7 +8888,8 @@
     "nasdaqComposite": 44.32,
     "djia": 6.2,
     "usdEur": 1.2179,
-    "cnyUsd": 6.481
+    "cnyUsd": 6.481,
+    "federalDebtPublic": 21.64
   },
   {
     "date": "2021-01-29",
@@ -8692,7 +8926,8 @@
     "nasdaqComposite": 40.92,
     "djia": 4.34,
     "usdEur": 1.2135,
-    "cnyUsd": 6.4282
+    "cnyUsd": 6.4282,
+    "federalDebtPublic": 21.64
   },
   {
     "date": "2021-02-05",
@@ -8729,7 +8964,8 @@
     "nasdaqComposite": 45.72,
     "djia": 6.34,
     "usdEur": 1.2035,
-    "cnyUsd": 6.4664
+    "cnyUsd": 6.4664,
+    "federalDebtPublic": 21.75
   },
   {
     "date": "2021-02-12",
@@ -8766,7 +9002,8 @@
     "nasdaqComposite": 44.93,
     "djia": 6.45,
     "usdEur": 1.2126,
-    "cnyUsd": 6.4567
+    "cnyUsd": 6.4567,
+    "federalDebtPublic": 21.75
   },
   {
     "date": "2021-02-19",
@@ -8803,7 +9040,8 @@
     "nasdaqComposite": 41.33,
     "djia": 7.31,
     "usdEur": 1.2136,
-    "cnyUsd": 6.4555
+    "cnyUsd": 6.4555,
+    "federalDebtPublic": 21.82
   },
   {
     "date": "2021-02-26",
@@ -8840,7 +9078,8 @@
     "nasdaqComposite": 46.9,
     "djia": 14.74,
     "usdEur": 1.2093,
-    "cnyUsd": 6.473
+    "cnyUsd": 6.473,
+    "federalDebtPublic": 21.76
   },
   {
     "date": "2021-03-05",
@@ -8877,7 +9116,8 @@
     "nasdaqComposite": 47.85,
     "djia": 20.58,
     "usdEur": 1.1914,
-    "cnyUsd": 6.496
+    "cnyUsd": 6.496,
+    "federalDebtPublic": 21.84
   },
   {
     "date": "2021-03-12",
@@ -8914,7 +9154,8 @@
     "nasdaqComposite": 84.95,
     "djia": 54.61,
     "usdEur": 1.1952,
-    "cnyUsd": 6.5081
+    "cnyUsd": 6.5081,
+    "federalDebtPublic": 21.79
   },
   {
     "date": "2021-03-19",
@@ -8951,7 +9192,8 @@
     "nasdaqComposite": 84.81,
     "djia": 62.43,
     "usdEur": 1.1909,
-    "cnyUsd": 6.507
+    "cnyUsd": 6.507,
+    "federalDebtPublic": 21.84
   },
   {
     "date": "2021-03-26",
@@ -8988,7 +9230,8 @@
     "nasdaqComposite": 68.5,
     "djia": 46.65,
     "usdEur": 1.1798,
-    "cnyUsd": 6.5412
+    "cnyUsd": 6.5412,
+    "federalDebtPublic": 21.84
   },
   {
     "date": "2021-04-02",
@@ -9025,7 +9268,8 @@
     "nasdaqComposite": 80.04,
     "djia": 54.82,
     "usdEur": 1.1763,
-    "cnyUsd": 6.5646
+    "cnyUsd": 6.5646,
+    "federalDebtPublic": 21.97
   },
   {
     "date": "2021-04-09",
@@ -9062,7 +9306,8 @@
     "nasdaqComposite": 70.48,
     "djia": 42.5,
     "usdEur": 1.1897,
-    "cnyUsd": 6.5522
+    "cnyUsd": 6.5522,
+    "federalDebtPublic": 21.96
   },
   {
     "date": "2021-04-16",
@@ -9099,7 +9344,8 @@
     "nasdaqComposite": 64.69,
     "djia": 45.3,
     "usdEur": 1.198,
-    "cnyUsd": 6.5203
+    "cnyUsd": 6.5203,
+    "federalDebtPublic": 22
   },
   {
     "date": "2021-04-23",
@@ -9136,7 +9382,8 @@
     "nasdaqComposite": 65.01,
     "djia": 44.77,
     "usdEur": 1.2069,
-    "cnyUsd": 6.4945
+    "cnyUsd": 6.4945,
+    "federalDebtPublic": 21.96
   },
   {
     "date": "2021-04-30",
@@ -9173,7 +9420,8 @@
     "nasdaqComposite": 57.07,
     "djia": 39.14,
     "usdEur": 1.203,
-    "cnyUsd": 6.4749
+    "cnyUsd": 6.4749,
+    "federalDebtPublic": 22.06
   },
   {
     "date": "2021-05-07",
@@ -9210,7 +9458,8 @@
     "nasdaqComposite": 53.15,
     "djia": 45.66,
     "usdEur": 1.2165,
-    "cnyUsd": 6.431
+    "cnyUsd": 6.431,
+    "federalDebtPublic": 22.02
   },
   {
     "date": "2021-05-14",
@@ -9247,7 +9496,8 @@
     "nasdaqComposite": 50.16,
     "djia": 45.53,
     "usdEur": 1.2141,
-    "cnyUsd": 6.4367
+    "cnyUsd": 6.4367,
+    "federalDebtPublic": 21.98
   },
   {
     "date": "2021-05-21",
@@ -9284,7 +9534,8 @@
     "nasdaqComposite": 45.09,
     "djia": 39.77,
     "usdEur": 1.2178,
-    "cnyUsd": 6.4339
+    "cnyUsd": 6.4339,
+    "federalDebtPublic": 22.02
   },
   {
     "date": "2021-05-28",
@@ -9321,7 +9572,8 @@
     "nasdaqComposite": 46.75,
     "djia": 35.94,
     "usdEur": 1.2194,
-    "cnyUsd": 6.3674
+    "cnyUsd": 6.3674,
+    "federalDebtPublic": 22.02
   },
   {
     "date": "2021-06-04",
@@ -9358,7 +9610,8 @@
     "nasdaqComposite": 43.66,
     "djia": 32.24,
     "usdEur": 1.2173,
-    "cnyUsd": 6.3945
+    "cnyUsd": 6.3945,
+    "federalDebtPublic": 22.11
   },
   {
     "date": "2021-06-11",
@@ -9395,7 +9648,8 @@
     "nasdaqComposite": 48.21,
     "djia": 37.21,
     "usdEur": 1.2101,
-    "cnyUsd": 6.3967
+    "cnyUsd": 6.3967,
+    "federalDebtPublic": 22.1
   },
   {
     "date": "2021-06-18",
@@ -9432,7 +9686,8 @@
     "nasdaqComposite": 41.11,
     "djia": 27.65,
     "usdEur": 1.1872,
-    "cnyUsd": 6.4525
+    "cnyUsd": 6.4525,
+    "federalDebtPublic": 22.17
   },
   {
     "date": "2021-06-25",
@@ -9469,7 +9724,8 @@
     "nasdaqComposite": 43.36,
     "djia": 33.75,
     "usdEur": 1.194,
-    "cnyUsd": 6.4545
+    "cnyUsd": 6.4545,
+    "federalDebtPublic": 22.21
   },
   {
     "date": "2021-07-02",
@@ -9506,7 +9762,8 @@
     "nasdaqComposite": 43.42,
     "djia": 34.69,
     "usdEur": 1.1848,
-    "cnyUsd": 6.4721
+    "cnyUsd": 6.4721,
+    "federalDebtPublic": 22.33
   },
   {
     "date": "2021-07-09",
@@ -9543,7 +9800,8 @@
     "nasdaqComposite": 39.38,
     "djia": 35.65,
     "usdEur": 1.1861,
-    "cnyUsd": 6.4788
+    "cnyUsd": 6.4788,
+    "federalDebtPublic": 22.32
   },
   {
     "date": "2021-07-16",
@@ -9580,7 +9838,8 @@
     "nasdaqComposite": 37.75,
     "djia": 29.75,
     "usdEur": 1.181,
-    "cnyUsd": 6.4785
+    "cnyUsd": 6.4785,
+    "federalDebtPublic": 22.34
   },
   {
     "date": "2021-07-23",
@@ -9617,7 +9876,8 @@
     "nasdaqComposite": 41.83,
     "djia": 31.55,
     "usdEur": 1.1761,
-    "cnyUsd": 6.4808
+    "cnyUsd": 6.4808,
+    "federalDebtPublic": 22.3
   },
   {
     "date": "2021-07-30",
@@ -9654,7 +9914,8 @@
     "nasdaqComposite": 38.58,
     "djia": 32.77,
     "usdEur": 1.1864,
-    "cnyUsd": 6.4609
+    "cnyUsd": 6.4609,
+    "federalDebtPublic": 22.28
   },
   {
     "date": "2021-08-06",
@@ -9691,7 +9952,8 @@
     "nasdaqComposite": 33.56,
     "djia": 28.56,
     "usdEur": 1.1761,
-    "cnyUsd": 6.4825
+    "cnyUsd": 6.4825,
+    "federalDebtPublic": 22.28
   },
   {
     "date": "2021-08-13",
@@ -9728,7 +9990,8 @@
     "nasdaqComposite": 34.24,
     "djia": 27.31,
     "usdEur": 1.1796,
-    "cnyUsd": 6.4768
+    "cnyUsd": 6.4768,
+    "federalDebtPublic": 22.28
   },
   {
     "date": "2021-08-20",
@@ -9765,7 +10028,8 @@
     "nasdaqComposite": 30.62,
     "djia": 26.61,
     "usdEur": 1.169,
-    "cnyUsd": 6.5012
+    "cnyUsd": 6.5012,
+    "federalDebtPublic": 22.26
   },
   {
     "date": "2021-08-27",
@@ -9802,7 +10066,8 @@
     "nasdaqComposite": 30.14,
     "djia": 24.44,
     "usdEur": 1.1794,
-    "cnyUsd": 6.4711
+    "cnyUsd": 6.4711,
+    "federalDebtPublic": 22.24
   },
   {
     "date": "2021-09-03",
@@ -9839,7 +10104,8 @@
     "nasdaqComposite": 34.08,
     "djia": 25.01,
     "usdEur": 1.1884,
-    "cnyUsd": 6.4528
+    "cnyUsd": 6.4528,
+    "federalDebtPublic": 22.29
   },
   {
     "date": "2021-09-10",
@@ -9876,7 +10142,8 @@
     "nasdaqComposite": 38.43,
     "djia": 25.69,
     "usdEur": 1.1821,
-    "cnyUsd": 6.444
+    "cnyUsd": 6.444,
+    "federalDebtPublic": 22.29
   },
   {
     "date": "2021-09-17",
@@ -9913,7 +10180,8 @@
     "nasdaqComposite": 37.89,
     "djia": 23.95,
     "usdEur": 1.1734,
-    "cnyUsd": 6.4655
+    "cnyUsd": 6.4655,
+    "federalDebtPublic": 22.28
   },
   {
     "date": "2021-09-24",
@@ -9950,7 +10218,8 @@
     "nasdaqComposite": 41,
     "djia": 29.77,
     "usdEur": 1.1715,
-    "cnyUsd": 6.466
+    "cnyUsd": 6.466,
+    "federalDebtPublic": 22.26
   },
   {
     "date": "2021-10-01",
@@ -9987,7 +10256,8 @@
     "nasdaqComposite": 28.61,
     "djia": 23.4,
     "usdEur": 1.1598,
-    "cnyUsd": 6.4434
+    "cnyUsd": 6.4434,
+    "federalDebtPublic": 22.2
   },
   {
     "date": "2021-10-08",
@@ -10024,7 +10294,8 @@
     "nasdaqComposite": 27.65,
     "djia": 22.24,
     "usdEur": 1.1572,
-    "cnyUsd": 6.4435
+    "cnyUsd": 6.4435,
+    "federalDebtPublic": 22.15
   },
   {
     "date": "2021-10-15",
@@ -10061,7 +10332,8 @@
     "nasdaqComposite": 27.18,
     "djia": 23.87,
     "usdEur": 1.1594,
-    "cnyUsd": 6.434
+    "cnyUsd": 6.434,
+    "federalDebtPublic": 22.41
   },
   {
     "date": "2021-10-22",
@@ -10098,7 +10370,8 @@
     "nasdaqComposite": 31.15,
     "djia": 25.78,
     "usdEur": 1.1632,
-    "cnyUsd": 6.3839
+    "cnyUsd": 6.3839,
+    "federalDebtPublic": 22.59
   },
   {
     "date": "2021-10-29",
@@ -10135,7 +10408,8 @@
     "nasdaqComposite": 38.56,
     "djia": 34.36,
     "usdEur": 1.1552,
-    "cnyUsd": 6.405
+    "cnyUsd": 6.405,
+    "federalDebtPublic": 22.64
   },
   {
     "date": "2021-11-05",
@@ -10172,7 +10446,8 @@
     "nasdaqComposite": 34.32,
     "djia": 27.96,
     "usdEur": 1.1554,
-    "cnyUsd": 6.3961
+    "cnyUsd": 6.3961,
+    "federalDebtPublic": 22.67
   },
   {
     "date": "2021-11-12",
@@ -10209,7 +10484,8 @@
     "nasdaqComposite": 35.45,
     "djia": 24.14,
     "usdEur": 1.1443,
-    "cnyUsd": 6.3787
+    "cnyUsd": 6.3787,
+    "federalDebtPublic": 22.68
   },
   {
     "date": "2021-11-19",
@@ -10246,7 +10522,8 @@
     "nasdaqComposite": 34.88,
     "djia": 20.75,
     "usdEur": 1.1318,
-    "cnyUsd": 6.3863
+    "cnyUsd": 6.3863,
+    "federalDebtPublic": 22.67
   },
   {
     "date": "2021-11-26",
@@ -10283,7 +10560,8 @@
     "nasdaqComposite": 28.09,
     "djia": 16.83,
     "usdEur": 1.1302,
-    "cnyUsd": 6.3924
+    "cnyUsd": 6.3924,
+    "federalDebtPublic": 22.65
   },
   {
     "date": "2021-12-03",
@@ -10320,7 +10598,8 @@
     "nasdaqComposite": 21.88,
     "djia": 15.38,
     "usdEur": 1.1308,
-    "cnyUsd": 6.3758
+    "cnyUsd": 6.3758,
+    "federalDebtPublic": 22.69
   },
   {
     "date": "2021-12-10",
@@ -10357,7 +10636,8 @@
     "nasdaqComposite": 25.99,
     "djia": 19.91,
     "usdEur": 1.1312,
-    "cnyUsd": 6.3685
+    "cnyUsd": 6.3685,
+    "federalDebtPublic": 22.69
   },
   {
     "date": "2021-12-17",
@@ -10394,7 +10674,8 @@
     "nasdaqComposite": 18.84,
     "djia": 16.7,
     "usdEur": 1.1277,
-    "cnyUsd": 6.3748
+    "cnyUsd": 6.3748,
+    "federalDebtPublic": 22.8
   },
   {
     "date": "2021-12-24",
@@ -10431,7 +10712,8 @@
     "nasdaqComposite": 22.25,
     "djia": 19.04,
     "usdEur": 1.132,
-    "cnyUsd": 6.3696
+    "cnyUsd": 6.3696,
+    "federalDebtPublic": 22.94
   },
   {
     "date": "2021-12-31",
@@ -10468,7 +10750,8 @@
     "nasdaqComposite": 21.39,
     "djia": 18.73,
     "usdEur": 1.1318,
-    "cnyUsd": 6.3726
+    "cnyUsd": 6.3726,
+    "federalDebtPublic": 23.14
   },
   {
     "date": "2022-01-07",
@@ -10505,7 +10788,8 @@
     "nasdaqComposite": 14.3,
     "djia": 16.72,
     "usdEur": 1.1358,
-    "cnyUsd": 6.3769
+    "cnyUsd": 6.3769,
+    "federalDebtPublic": 23.23
   },
   {
     "date": "2022-01-14",
@@ -10542,7 +10826,8 @@
     "nasdaqComposite": 13.58,
     "djia": 15.88,
     "usdEur": 1.1414,
-    "cnyUsd": 6.3524
+    "cnyUsd": 6.3524,
+    "federalDebtPublic": 23.26
   },
   {
     "date": "2022-01-21",
@@ -10579,7 +10864,8 @@
     "nasdaqComposite": 1.76,
     "djia": 9.91,
     "usdEur": 1.1346,
-    "cnyUsd": 6.3385
+    "cnyUsd": 6.3385,
+    "federalDebtPublic": 23.36
   },
   {
     "date": "2022-01-28",
@@ -10616,7 +10902,8 @@
     "nasdaqComposite": 3.25,
     "djia": 13.47,
     "usdEur": 1.116,
-    "cnyUsd": 6.3605
+    "cnyUsd": 6.3605,
+    "federalDebtPublic": 23.4
   },
   {
     "date": "2022-02-04",
@@ -10653,7 +10940,8 @@
     "nasdaqComposite": 2.32,
     "djia": 12.99,
     "usdEur": 1.1455,
-    "cnyUsd": 6.361
+    "cnyUsd": 6.361,
+    "federalDebtPublic": 23.52
   },
   {
     "date": "2022-02-11",
@@ -10690,7 +10978,8 @@
     "nasdaqComposite": -1.67,
     "djia": 10.52,
     "usdEur": 1.1404,
-    "cnyUsd": 6.354
+    "cnyUsd": 6.354,
+    "federalDebtPublic": 23.55
   },
   {
     "date": "2022-02-18",
@@ -10727,7 +11016,8 @@
     "nasdaqComposite": -2.29,
     "djia": 8.21,
     "usdEur": 1.1327,
-    "cnyUsd": 6.3251
+    "cnyUsd": 6.3251,
+    "federalDebtPublic": 23.64
   },
   {
     "date": "2022-02-25",
@@ -10764,7 +11054,8 @@
     "nasdaqComposite": 4.38,
     "djia": 8.46,
     "usdEur": 1.1261,
-    "cnyUsd": 6.3169
+    "cnyUsd": 6.3169,
+    "federalDebtPublic": 23.67
   },
   {
     "date": "2022-03-04",
@@ -10801,7 +11092,8 @@
     "nasdaqComposite": 4.64,
     "djia": 8.7,
     "usdEur": 1.0912,
-    "cnyUsd": 6.3188
+    "cnyUsd": 6.3188,
+    "federalDebtPublic": 23.77
   },
   {
     "date": "2022-03-11",
@@ -10838,7 +11130,8 @@
     "nasdaqComposite": -4.14,
     "djia": 1.41,
     "usdEur": 1.0937,
-    "cnyUsd": 6.3389
+    "cnyUsd": 6.3389,
+    "federalDebtPublic": 23.7
   },
   {
     "date": "2022-03-18",
@@ -10875,7 +11168,8 @@
     "nasdaqComposite": 5.93,
     "djia": 5.76,
     "usdEur": 1.1044,
-    "cnyUsd": 6.3609
+    "cnyUsd": 6.3609,
+    "federalDebtPublic": 23.79
   },
   {
     "date": "2022-03-25",
@@ -10912,7 +11206,8 @@
     "nasdaqComposite": 9.18,
     "djia": 6.87,
     "usdEur": 1.0985,
-    "cnyUsd": 6.3658
+    "cnyUsd": 6.3658,
+    "federalDebtPublic": 23.8
   },
   {
     "date": "2022-04-01",
@@ -10949,7 +11244,8 @@
     "nasdaqComposite": 5.8,
     "djia": 5.02,
     "usdEur": 1.1043,
-    "cnyUsd": 6.3625
+    "cnyUsd": 6.3625,
+    "federalDebtPublic": 23.88
   },
   {
     "date": "2022-04-08",
@@ -10986,7 +11282,8 @@
     "nasdaqComposite": -0.86,
     "djia": 3.63,
     "usdEur": 1.0874,
-    "cnyUsd": 6.3643
+    "cnyUsd": 6.3643,
+    "federalDebtPublic": 23.85
   },
   {
     "date": "2022-04-15",
@@ -11023,7 +11320,8 @@
     "nasdaqComposite": -4.9,
     "djia": 1.22,
     "usdEur": 1.0812,
-    "cnyUsd": 6.3705
+    "cnyUsd": 6.3705,
+    "federalDebtPublic": 23.74
   },
   {
     "date": "2022-04-22",
@@ -11060,7 +11358,8 @@
     "nasdaqComposite": -7.09,
     "djia": -0.01,
     "usdEur": 1.079,
-    "cnyUsd": 6.501
+    "cnyUsd": 6.501,
+    "federalDebtPublic": 23.85
   },
   {
     "date": "2022-04-29",
@@ -11097,7 +11396,8 @@
     "nasdaqComposite": -12.41,
     "djia": -3.18,
     "usdEur": 1.0537,
-    "cnyUsd": 6.608
+    "cnyUsd": 6.608,
+    "federalDebtPublic": 23.85
   },
   {
     "date": "2022-05-06",
@@ -11134,7 +11434,8 @@
     "nasdaqComposite": -10.92,
     "djia": -4.77,
     "usdEur": 1.0572,
-    "cnyUsd": 6.6651
+    "cnyUsd": 6.6651,
+    "federalDebtPublic": 23.85
   },
   {
     "date": "2022-05-13",
@@ -11171,7 +11472,8 @@
     "nasdaqComposite": -10.06,
     "djia": -5.36,
     "usdEur": 1.041,
-    "cnyUsd": 6.788
+    "cnyUsd": 6.788,
+    "federalDebtPublic": 23.82
   },
   {
     "date": "2022-05-20",
@@ -11208,7 +11510,8 @@
     "nasdaqComposite": -16.11,
     "djia": -8.28,
     "usdEur": 1.0559,
-    "cnyUsd": 6.6921
+    "cnyUsd": 6.6921,
+    "federalDebtPublic": 23.84
   },
   {
     "date": "2022-05-27",
@@ -11245,7 +11548,8 @@
     "nasdaqComposite": -11.69,
     "djia": -3.63,
     "usdEur": 1.0709,
-    "cnyUsd": 6.698
+    "cnyUsd": 6.698,
+    "federalDebtPublic": 23.83
   },
   {
     "date": "2022-06-03",
@@ -11282,7 +11586,8 @@
     "nasdaqComposite": -11.77,
     "djia": -4.85,
     "usdEur": 1.0721,
-    "cnyUsd": 6.6595
+    "cnyUsd": 6.6595,
+    "federalDebtPublic": 23.88
   },
   {
     "date": "2022-06-10",
@@ -11319,7 +11624,8 @@
     "nasdaqComposite": -19.12,
     "djia": -8.92,
     "usdEur": 1.0521,
-    "cnyUsd": 6.7081
+    "cnyUsd": 6.7081,
+    "federalDebtPublic": 23.85
   },
   {
     "date": "2022-06-17",
@@ -11356,7 +11662,8 @@
     "nasdaqComposite": -23.75,
     "djia": -11.63,
     "usdEur": 1.0473,
-    "cnyUsd": 6.716
+    "cnyUsd": 6.716,
+    "federalDebtPublic": 23.88
   },
   {
     "date": "2022-06-24",
@@ -11393,7 +11700,8 @@
     "nasdaqComposite": -19.22,
     "djia": -7.88,
     "usdEur": 1.0539,
-    "cnyUsd": 6.6878
+    "cnyUsd": 6.6878,
+    "federalDebtPublic": 23.88
   },
   {
     "date": "2022-07-01",
@@ -11430,7 +11738,8 @@
     "nasdaqComposite": -23.37,
     "djia": -10.21,
     "usdEur": 1.0409,
-    "cnyUsd": 6.7
+    "cnyUsd": 6.7,
+    "federalDebtPublic": 23.91
   },
   {
     "date": "2022-07-08",
@@ -11467,7 +11776,8 @@
     "nasdaqComposite": -20.09,
     "djia": -8.96,
     "usdEur": 1.0178,
-    "cnyUsd": 6.6945
+    "cnyUsd": 6.6945,
+    "federalDebtPublic": 23.89
   },
   {
     "date": "2022-07-15",
@@ -11504,7 +11814,8 @@
     "nasdaqComposite": -21.25,
     "djia": -10.57,
     "usdEur": 1.0089,
-    "cnyUsd": 6.7565
+    "cnyUsd": 6.7565,
+    "federalDebtPublic": 23.89
   },
   {
     "date": "2022-07-22",
@@ -11541,7 +11852,8 @@
     "nasdaqComposite": -19.41,
     "djia": -8.4,
     "usdEur": 1.0225,
-    "cnyUsd": 6.75
+    "cnyUsd": 6.75,
+    "federalDebtPublic": 23.89
   },
   {
     "date": "2022-07-29",
@@ -11578,7 +11890,8 @@
     "nasdaqComposite": -16.16,
     "djia": -6.38,
     "usdEur": 1.0202,
-    "cnyUsd": 6.7433
+    "cnyUsd": 6.7433,
+    "federalDebtPublic": 23.95
   },
   {
     "date": "2022-08-05",
@@ -11615,7 +11928,8 @@
     "nasdaqComposite": -15.02,
     "djia": -6.45,
     "usdEur": 1.017,
-    "cnyUsd": 6.7607
+    "cnyUsd": 6.7607,
+    "federalDebtPublic": 23.98
   },
   {
     "date": "2022-08-12",
@@ -11652,7 +11966,8 @@
     "nasdaqComposite": -11.94,
     "djia": -4.9,
     "usdEur": 1.0257,
-    "cnyUsd": 6.7425
+    "cnyUsd": 6.7425,
+    "federalDebtPublic": 24.03
   },
   {
     "date": "2022-08-19",
@@ -11689,7 +12004,8 @@
     "nasdaqComposite": -12.63,
     "djia": -3.4,
     "usdEur": 1.0039,
-    "cnyUsd": 6.8164
+    "cnyUsd": 6.8164,
+    "federalDebtPublic": 24.08
   },
   {
     "date": "2022-08-26",
@@ -11726,7 +12042,8 @@
     "nasdaqComposite": -18.76,
     "djia": -8.32,
     "usdEur": 0.9998,
-    "cnyUsd": 6.8715
+    "cnyUsd": 6.8715,
+    "federalDebtPublic": 24.19
   },
   {
     "date": "2022-09-02",
@@ -11763,7 +12080,8 @@
     "nasdaqComposite": -24.14,
     "djia": -11.64,
     "usdEur": 1.003,
-    "cnyUsd": 6.8985
+    "cnyUsd": 6.8985,
+    "federalDebtPublic": 24.27
   },
   {
     "date": "2022-09-09",
@@ -11800,7 +12118,8 @@
     "nasdaqComposite": -20.57,
     "djia": -7.82,
     "usdEur": 1.0046,
-    "cnyUsd": 6.924
+    "cnyUsd": 6.924,
+    "federalDebtPublic": 24.28
   },
   {
     "date": "2022-09-16",
@@ -11837,7 +12156,8 @@
     "nasdaqComposite": -24.59,
     "djia": -11.31,
     "usdEur": 1.0013,
-    "cnyUsd": 6.9799
+    "cnyUsd": 6.9799,
+    "federalDebtPublic": 24.27
   },
   {
     "date": "2022-09-23",
@@ -11874,7 +12194,8 @@
     "nasdaqComposite": -27.8,
     "djia": -14.88,
     "usdEur": 0.9719,
-    "cnyUsd": 7.1266
+    "cnyUsd": 7.1266,
+    "federalDebtPublic": 24.26
   },
   {
     "date": "2022-09-30",
@@ -11911,7 +12232,8 @@
     "nasdaqComposite": -26.81,
     "djia": -15.12,
     "usdEur": 0.9783,
-    "cnyUsd": 7.1135
+    "cnyUsd": 7.1135,
+    "federalDebtPublic": 24.3
   },
   {
     "date": "2022-10-07",
@@ -11948,7 +12270,8 @@
     "nasdaqComposite": -27.31,
     "djia": -15.7,
     "usdEur": 0.9785,
-    "cnyUsd": 7.1103
+    "cnyUsd": 7.1103,
+    "federalDebtPublic": 24.29
   },
   {
     "date": "2022-10-14",
@@ -11985,7 +12308,8 @@
     "nasdaqComposite": -30.37,
     "djia": -15.12,
     "usdEur": 0.9739,
-    "cnyUsd": 7.1895
+    "cnyUsd": 7.1895,
+    "federalDebtPublic": 24.29
   },
   {
     "date": "2022-10-21",
@@ -12022,7 +12346,8 @@
     "nasdaqComposite": -28.63,
     "djia": -12.7,
     "usdEur": 0.9855,
-    "cnyUsd": 7.2399
+    "cnyUsd": 7.2399,
+    "federalDebtPublic": 24.35
   },
   {
     "date": "2022-10-28",
@@ -12059,7 +12384,8 @@
     "nasdaqComposite": -28.13,
     "djia": -8.03,
     "usdEur": 0.9934,
-    "cnyUsd": 7.2499
+    "cnyUsd": 7.2499,
+    "federalDebtPublic": 24.38
   },
   {
     "date": "2022-11-04",
@@ -12096,7 +12422,8 @@
     "nasdaqComposite": -34.28,
     "djia": -10.3,
     "usdEur": 0.9895,
-    "cnyUsd": 7.2996
+    "cnyUsd": 7.2996,
+    "federalDebtPublic": 24.39
   },
   {
     "date": "2022-11-11",
@@ -12133,7 +12460,8 @@
     "nasdaqComposite": -27.9,
     "djia": -6.05,
     "usdEur": 1.0176,
-    "cnyUsd": 7.184
+    "cnyUsd": 7.184,
+    "federalDebtPublic": 24.42
   },
   {
     "date": "2022-11-18",
@@ -12170,7 +12498,8 @@
     "nasdaqComposite": -30.31,
     "djia": -5.92,
     "usdEur": 1.0349,
-    "cnyUsd": 7.1192
+    "cnyUsd": 7.1192,
+    "federalDebtPublic": 24.45
   },
   {
     "date": "2022-11-25",
@@ -12207,7 +12536,8 @@
     "nasdaqComposite": -29.15,
     "djia": -4.07,
     "usdEur": 1.0402,
-    "cnyUsd": 7.1642
+    "cnyUsd": 7.1642,
+    "federalDebtPublic": 24.52
   },
   {
     "date": "2022-12-02",
@@ -12244,7 +12574,8 @@
     "nasdaqComposite": -25.48,
     "djia": -0.61,
     "usdEur": 1.0521,
-    "cnyUsd": 7.019
+    "cnyUsd": 7.019,
+    "federalDebtPublic": 24.55
   },
   {
     "date": "2022-12-09",
@@ -12281,7 +12612,8 @@
     "nasdaqComposite": -29.08,
     "djia": -6.37,
     "usdEur": 1.055,
-    "cnyUsd": 6.9559
+    "cnyUsd": 6.9559,
+    "federalDebtPublic": 24.48
   },
   {
     "date": "2022-12-16",
@@ -12318,7 +12650,8 @@
     "nasdaqComposite": -29.48,
     "djia": -8.29,
     "usdEur": 1.061,
-    "cnyUsd": 6.9708
+    "cnyUsd": 6.9708,
+    "federalDebtPublic": 24.51
   },
   {
     "date": "2022-12-23",
@@ -12355,7 +12688,8 @@
     "nasdaqComposite": -32.94,
     "djia": -7.64,
     "usdEur": 1.0621,
-    "cnyUsd": 6.988
+    "cnyUsd": 6.988,
+    "federalDebtPublic": 24.49
   },
   {
     "date": "2022-12-30",
@@ -12392,7 +12726,8 @@
     "nasdaqComposite": -33.51,
     "djia": -8.93,
     "usdEur": 1.0698,
-    "cnyUsd": 6.8972
+    "cnyUsd": 6.8972,
+    "federalDebtPublic": 24.52
   },
   {
     "date": "2023-01-06",
@@ -12429,7 +12764,8 @@
     "nasdaqComposite": -29.92,
     "djia": -7.19,
     "usdEur": 1.0619,
-    "cnyUsd": 6.837
+    "cnyUsd": 6.837,
+    "federalDebtPublic": 24.51
   },
   {
     "date": "2023-01-13",
@@ -12466,7 +12802,8 @@
     "nasdaqComposite": -25.18,
     "djia": -5.01,
     "usdEur": 1.0811,
-    "cnyUsd": 6.701
+    "cnyUsd": 6.701,
+    "federalDebtPublic": 24.51
   },
   {
     "date": "2023-01-20",
@@ -12503,7 +12840,8 @@
     "nasdaqComposite": -21.29,
     "djia": -3.86,
     "usdEur": 1.0831,
-    "cnyUsd": 6.7825
+    "cnyUsd": 6.7825,
+    "federalDebtPublic": 24.6
   },
   {
     "date": "2023-01-27",
@@ -12540,7 +12878,8 @@
     "nasdaqComposite": -12.96,
     "djia": -0.53,
     "usdEur": 1.0857,
-    "cnyUsd": 6.7899
+    "cnyUsd": 6.7899,
+    "federalDebtPublic": 24.59
   },
   {
     "date": "2023-02-03",
@@ -12577,7 +12916,8 @@
     "nasdaqComposite": -13.49,
     "djia": -3.38,
     "usdEur": 1.0825,
-    "cnyUsd": 6.7733
+    "cnyUsd": 6.7733,
+    "federalDebtPublic": 24.63
   },
   {
     "date": "2023-02-10",
@@ -12614,7 +12954,8 @@
     "nasdaqComposite": -17.39,
     "djia": -3.89,
     "usdEur": 1.067,
-    "cnyUsd": 6.8106
+    "cnyUsd": 6.8106,
+    "federalDebtPublic": 24.63
   },
   {
     "date": "2023-02-17",
@@ -12651,7 +12992,8 @@
     "nasdaqComposite": -14.07,
     "djia": -1.41,
     "usdEur": 1.0678,
-    "cnyUsd": 6.8661
+    "cnyUsd": 6.8661,
+    "federalDebtPublic": 24.62
   },
   {
     "date": "2023-02-24",
@@ -12688,7 +13030,8 @@
     "nasdaqComposite": -15.43,
     "djia": -1.22,
     "usdEur": 1.0545,
-    "cnyUsd": 6.9545
+    "cnyUsd": 6.9545,
+    "federalDebtPublic": 24.61
   },
   {
     "date": "2023-03-03",
@@ -12725,7 +13068,8 @@
     "nasdaqComposite": -13.66,
     "djia": -1.19,
     "usdEur": 1.0616,
-    "cnyUsd": 6.9048
+    "cnyUsd": 6.9048,
+    "federalDebtPublic": 24.66
   },
   {
     "date": "2023-03-10",
@@ -12762,7 +13106,8 @@
     "nasdaqComposite": -15.16,
     "djia": -3.81,
     "usdEur": 1.0659,
-    "cnyUsd": 6.9025
+    "cnyUsd": 6.9025,
+    "federalDebtPublic": 24.69
   },
   {
     "date": "2023-03-17",
@@ -12799,7 +13144,8 @@
     "nasdaqComposite": -14.57,
     "djia": -7.59,
     "usdEur": 1.0647,
-    "cnyUsd": 6.887
+    "cnyUsd": 6.887,
+    "federalDebtPublic": 24.64
   },
   {
     "date": "2023-03-24",
@@ -12836,7 +13182,8 @@
     "nasdaqComposite": -16.68,
     "djia": -7.12,
     "usdEur": 1.0762,
-    "cnyUsd": 6.8675
+    "cnyUsd": 6.8675,
+    "federalDebtPublic": 24.67
   },
   {
     "date": "2023-03-31",
@@ -12873,7 +13220,8 @@
     "nasdaqComposite": -14.05,
     "djia": -4.05,
     "usdEur": 1.0872,
-    "cnyUsd": 6.8676
+    "cnyUsd": 6.8676,
+    "federalDebtPublic": 24.69
   },
   {
     "date": "2023-04-07",
@@ -12910,7 +13258,8 @@
     "nasdaqComposite": -13.02,
     "djia": -3.18,
     "usdEur": 1.0913,
-    "cnyUsd": 6.875
+    "cnyUsd": 6.875,
+    "federalDebtPublic": 24.67
   },
   {
     "date": "2023-04-14",
@@ -12947,7 +13296,8 @@
     "nasdaqComposite": -9.19,
     "djia": -1.64,
     "usdEur": 1.098,
-    "cnyUsd": 6.869
+    "cnyUsd": 6.869,
+    "federalDebtPublic": 24.67
   },
   {
     "date": "2023-04-21",
@@ -12984,7 +13334,8 @@
     "nasdaqComposite": -8.37,
     "djia": -2.83,
     "usdEur": 1.0973,
-    "cnyUsd": 6.892
+    "cnyUsd": 6.892,
+    "federalDebtPublic": 24.62
   },
   {
     "date": "2023-04-28",
@@ -13021,7 +13372,8 @@
     "nasdaqComposite": -5.01,
     "djia": 0.54,
     "usdEur": 1.104,
-    "cnyUsd": 6.911
+    "cnyUsd": 6.911,
+    "federalDebtPublic": 24.61
   },
   {
     "date": "2023-05-05",
@@ -13058,7 +13410,8 @@
     "nasdaqComposite": -0.67,
     "djia": 2.05,
     "usdEur": 1.1026,
-    "cnyUsd": 6.9101
+    "cnyUsd": 6.9101,
+    "federalDebtPublic": 24.64
   },
   {
     "date": "2023-05-12",
@@ -13095,7 +13448,8 @@
     "nasdaqComposite": 8.04,
     "djia": 4.95,
     "usdEur": 1.0856,
-    "cnyUsd": 6.9575
+    "cnyUsd": 6.9575,
+    "federalDebtPublic": 24.64
   },
   {
     "date": "2023-05-19",
@@ -13132,7 +13486,8 @@
     "nasdaqComposite": 11.15,
     "djia": 6.95,
     "usdEur": 1.0819,
-    "cnyUsd": 7.006
+    "cnyUsd": 7.006,
+    "federalDebtPublic": 24.64
   },
   {
     "date": "2023-05-26",
@@ -13169,7 +13524,8 @@
     "nasdaqComposite": 10.52,
     "djia": 1.4,
     "usdEur": 1.0713,
-    "cnyUsd": 7.063
+    "cnyUsd": 7.063,
+    "federalDebtPublic": 24.64
   },
   {
     "date": "2023-06-02",
@@ -13206,7 +13562,8 @@
     "nasdaqComposite": 7.5,
     "djia": 1.55,
     "usdEur": 1.0724,
-    "cnyUsd": 7.0827
+    "cnyUsd": 7.0827,
+    "federalDebtPublic": 24.7
   },
   {
     "date": "2023-06-09",
@@ -13243,7 +13600,8 @@
     "nasdaqComposite": 12.8,
     "djia": 4.97,
     "usdEur": 1.0749,
-    "cnyUsd": 7.1273
+    "cnyUsd": 7.1273,
+    "federalDebtPublic": 25.07
   },
   {
     "date": "2023-06-16",
@@ -13280,7 +13638,8 @@
     "nasdaqComposite": 28.59,
     "djia": 14.61,
     "usdEur": 1.0925,
-    "cnyUsd": 7.125
+    "cnyUsd": 7.125,
+    "federalDebtPublic": 25.18
   },
   {
     "date": "2023-06-23",
@@ -13317,7 +13676,8 @@
     "nasdaqComposite": 20.12,
     "djia": 9.94,
     "usdEur": 1.0887,
-    "cnyUsd": 7.1777
+    "cnyUsd": 7.1777,
+    "federalDebtPublic": 25.3
   },
   {
     "date": "2023-06-30",
@@ -13354,7 +13714,8 @@
     "nasdaqComposite": 25.02,
     "djia": 11.8,
     "usdEur": 1.092,
-    "cnyUsd": 7.2513
+    "cnyUsd": 7.2513,
+    "federalDebtPublic": 25.46
   },
   {
     "date": "2023-07-07",
@@ -13391,7 +13752,8 @@
     "nasdaqComposite": 17.55,
     "djia": 7.49,
     "usdEur": 1.0964,
-    "cnyUsd": 7.2205
+    "cnyUsd": 7.2205,
+    "federalDebtPublic": 25.59
   },
   {
     "date": "2023-07-14",
@@ -13428,7 +13790,8 @@
     "nasdaqComposite": 25.44,
     "djia": 12.66,
     "usdEur": 1.1237,
-    "cnyUsd": 7.1403
+    "cnyUsd": 7.1403,
+    "federalDebtPublic": 25.65
   },
   {
     "date": "2023-07-21",
@@ -13465,7 +13828,8 @@
     "nasdaqComposite": 16.36,
     "djia": 9.96,
     "usdEur": 1.112,
-    "cnyUsd": 7.1861
+    "cnyUsd": 7.1861,
+    "federalDebtPublic": 25.7
   },
   {
     "date": "2023-07-28",
@@ -13502,7 +13866,8 @@
     "nasdaqComposite": 17.71,
     "djia": 9.01,
     "usdEur": 1.1039,
-    "cnyUsd": 7.1488
+    "cnyUsd": 7.1488,
+    "federalDebtPublic": 25.75
   },
   {
     "date": "2023-08-04",
@@ -13539,7 +13904,8 @@
     "nasdaqComposite": 9.21,
     "djia": 7.15,
     "usdEur": 1.1036,
-    "cnyUsd": 7.1709
+    "cnyUsd": 7.1709,
+    "federalDebtPublic": 25.76
   },
   {
     "date": "2023-08-11",
@@ -13576,7 +13942,8 @@
     "nasdaqComposite": 6.77,
     "djia": 5.83,
     "usdEur": 1.0957,
-    "cnyUsd": 7.2367
+    "cnyUsd": 7.2367,
+    "federalDebtPublic": 25.81
   },
   {
     "date": "2023-08-18",
@@ -13613,7 +13980,8 @@
     "nasdaqComposite": 2.51,
     "djia": 1.48,
     "usdEur": 1.0875,
-    "cnyUsd": 7.28
+    "cnyUsd": 7.28,
+    "federalDebtPublic": 25.85
   },
   {
     "date": "2023-08-25",
@@ -13650,7 +14018,8 @@
     "nasdaqComposite": 7.53,
     "djia": 3.17,
     "usdEur": 1.0787,
-    "cnyUsd": 7.289
+    "cnyUsd": 7.289,
+    "federalDebtPublic": 25.95
   },
   {
     "date": "2023-09-01",
@@ -13687,7 +14056,8 @@
     "nasdaqComposite": 19.06,
     "djia": 10.05,
     "usdEur": 1.0787,
-    "cnyUsd": 7.2606
+    "cnyUsd": 7.2606,
+    "federalDebtPublic": 26.04
   },
   {
     "date": "2023-09-08",
@@ -13724,7 +14094,8 @@
     "nasdaqComposite": 16.01,
     "djia": 8.82,
     "usdEur": 1.0709,
-    "cnyUsd": 7.343
+    "cnyUsd": 7.343,
+    "federalDebtPublic": 26.11
   },
   {
     "date": "2023-09-15",
@@ -13761,7 +14132,8 @@
     "nasdaqComposite": 18.66,
     "djia": 11.81,
     "usdEur": 1.0673,
-    "cnyUsd": 7.2744
+    "cnyUsd": 7.2744,
+    "federalDebtPublic": 26.21
   },
   {
     "date": "2023-09-22",
@@ -13798,7 +14170,8 @@
     "nasdaqComposite": 19.38,
     "djia": 12.92,
     "usdEur": 1.066,
-    "cnyUsd": 7.298
+    "cnyUsd": 7.298,
+    "federalDebtPublic": 26.26
   },
   {
     "date": "2023-09-29",
@@ -13835,7 +14208,8 @@
     "nasdaqComposite": 23.11,
     "djia": 14.65,
     "usdEur": 1.0584,
-    "cnyUsd": 7.296
+    "cnyUsd": 7.296,
+    "federalDebtPublic": 26.33
   },
   {
     "date": "2023-10-06",
@@ -13872,7 +14246,8 @@
     "nasdaqComposite": 21.29,
     "djia": 11.63,
     "usdEur": 1.0596,
-    "cnyUsd": 7.296
+    "cnyUsd": 7.296,
+    "federalDebtPublic": 26.4
   },
   {
     "date": "2023-10-13",
@@ -13909,7 +14284,8 @@
     "nasdaqComposite": 25.9,
     "djia": 12.09,
     "usdEur": 1.0502,
-    "cnyUsd": 7.3049
+    "cnyUsd": 7.3049,
+    "federalDebtPublic": 26.43
   },
   {
     "date": "2023-10-20",
@@ -13946,7 +14322,8 @@
     "nasdaqComposite": 22.32,
     "djia": 9.21,
     "usdEur": 1.0592,
-    "cnyUsd": 7.3155
+    "cnyUsd": 7.3155,
+    "federalDebtPublic": 26.51
   },
   {
     "date": "2023-10-27",
@@ -13983,7 +14360,8 @@
     "nasdaqComposite": 17.14,
     "djia": 1.2,
     "usdEur": 1.0592,
-    "cnyUsd": 7.3171
+    "cnyUsd": 7.3171,
+    "federalDebtPublic": 26.56
   },
   {
     "date": "2023-11-03",
@@ -14020,7 +14398,8 @@
     "nasdaqComposite": 30.31,
     "djia": 6.44,
     "usdEur": 1.0733,
-    "cnyUsd": 7.3005
+    "cnyUsd": 7.3005,
+    "federalDebtPublic": 26.63
   },
   {
     "date": "2023-11-10",
@@ -14057,7 +14436,8 @@
     "nasdaqComposite": 24.15,
     "djia": 1.68,
     "usdEur": 1.071,
-    "cnyUsd": 7.2835
+    "cnyUsd": 7.2835,
+    "federalDebtPublic": 26.66
   },
   {
     "date": "2023-11-17",
@@ -14094,7 +14474,8 @@
     "nasdaqComposite": 26.74,
     "djia": 4.18,
     "usdEur": 1.0879,
-    "cnyUsd": 7.212
+    "cnyUsd": 7.212,
+    "federalDebtPublic": 26.69
   },
   {
     "date": "2023-11-24",
@@ -14131,7 +14512,8 @@
     "nasdaqComposite": 26.28,
     "djia": 3.5,
     "usdEur": 1.0934,
-    "cnyUsd": 7.1488
+    "cnyUsd": 7.1488,
+    "federalDebtPublic": 26.77
   },
   {
     "date": "2023-12-01",
@@ -14168,7 +14550,8 @@
     "nasdaqComposite": 24.58,
     "djia": 5.38,
     "usdEur": 1.0878,
-    "cnyUsd": 7.1386
+    "cnyUsd": 7.1386,
+    "federalDebtPublic": 26.84
   },
   {
     "date": "2023-12-08",
@@ -14205,7 +14588,8 @@
     "nasdaqComposite": 29.98,
     "djia": 7.3,
     "usdEur": 1.0746,
-    "cnyUsd": 7.1645
+    "cnyUsd": 7.1645,
+    "federalDebtPublic": 26.85
   },
   {
     "date": "2023-12-15",
@@ -14242,7 +14626,8 @@
     "nasdaqComposite": 37.03,
     "djia": 12.36,
     "usdEur": 1.0906,
-    "cnyUsd": 7.1179
+    "cnyUsd": 7.1179,
+    "federalDebtPublic": 26.88
   },
   {
     "date": "2023-12-22",
@@ -14279,7 +14664,8 @@
     "nasdaqComposite": 43.12,
     "djia": 13.2,
     "usdEur": 1.1008,
-    "cnyUsd": 7.1315
+    "cnyUsd": 7.1315,
+    "federalDebtPublic": 26.88
   },
   {
     "date": "2023-12-29",
@@ -14316,7 +14702,8 @@
     "nasdaqComposite": 43.26,
     "djia": 13.45,
     "usdEur": 1.1062,
-    "cnyUsd": 7.0999
+    "cnyUsd": 7.0999,
+    "federalDebtPublic": 26.94
   },
   {
     "date": "2024-01-05",
@@ -14353,7 +14740,8 @@
     "nasdaqComposite": 40.94,
     "djia": 13.77,
     "usdEur": 1.0957,
-    "cnyUsd": 7.145
+    "cnyUsd": 7.145,
+    "federalDebtPublic": 26.98
   },
   {
     "date": "2024-01-12",
@@ -14390,7 +14778,8 @@
     "nasdaqComposite": 36.1,
     "djia": 9.95,
     "usdEur": 1.0959,
-    "cnyUsd": 7.1665
+    "cnyUsd": 7.1665,
+    "federalDebtPublic": 26.98
   },
   {
     "date": "2024-01-19",
@@ -14427,7 +14816,8 @@
     "nasdaqComposite": 41.09,
     "djia": 14.58,
     "usdEur": 1.0887,
-    "cnyUsd": 7.1931
+    "cnyUsd": 7.1931,
+    "federalDebtPublic": 26.99
   },
   {
     "date": "2024-01-26",
@@ -14464,7 +14854,8 @@
     "nasdaqComposite": 34.25,
     "djia": 12.25,
     "usdEur": 1.0866,
-    "cnyUsd": 7.1763
+    "cnyUsd": 7.1763,
+    "federalDebtPublic": 27.03
   },
   {
     "date": "2024-02-02",
@@ -14501,7 +14892,8 @@
     "nasdaqComposite": 28.1,
     "djia": 13.51,
     "usdEur": 1.0787,
-    "cnyUsd": 7.192
+    "cnyUsd": 7.192,
+    "federalDebtPublic": 27.1
   },
   {
     "date": "2024-02-09",
@@ -14538,7 +14930,8 @@
     "nasdaqComposite": 35.63,
     "djia": 14.75,
     "usdEur": 1.0782,
-    "cnyUsd": 7.1929
+    "cnyUsd": 7.1929,
+    "federalDebtPublic": 27.15
   },
   {
     "date": "2024-02-16",
@@ -14575,7 +14968,8 @@
     "nasdaqComposite": 33.06,
     "djia": 14.63,
     "usdEur": 1.0769,
-    "cnyUsd": 7.1928
+    "cnyUsd": 7.1928,
+    "federalDebtPublic": 27.18
   },
   {
     "date": "2024-02-23",
@@ -14612,7 +15006,8 @@
     "nasdaqComposite": 38.02,
     "djia": 18.03,
     "usdEur": 1.0828,
-    "cnyUsd": 7.197
+    "cnyUsd": 7.197,
+    "federalDebtPublic": 27.27
   },
   {
     "date": "2024-03-01",
@@ -14649,7 +15044,8 @@
     "nasdaqComposite": 43.02,
     "djia": 19.67,
     "usdEur": 1.0832,
-    "cnyUsd": 7.196
+    "cnyUsd": 7.196,
+    "federalDebtPublic": 27.38
   },
   {
     "date": "2024-03-08",
@@ -14686,7 +15082,8 @@
     "nasdaqComposite": 38.95,
     "djia": 18.06,
     "usdEur": 1.0941,
-    "cnyUsd": 7.1855
+    "cnyUsd": 7.1855,
+    "federalDebtPublic": 27.41
   },
   {
     "date": "2024-03-15",
@@ -14723,7 +15120,8 @@
     "nasdaqComposite": 39.7,
     "djia": 21.46,
     "usdEur": 1.0888,
-    "cnyUsd": 7.1953
+    "cnyUsd": 7.1953,
+    "federalDebtPublic": 27.49
   },
   {
     "date": "2024-03-22",
@@ -14760,7 +15158,8 @@
     "nasdaqComposite": 40.78,
     "djia": 23.25,
     "usdEur": 1.0817,
-    "cnyUsd": 7.2289
+    "cnyUsd": 7.2289,
+    "federalDebtPublic": 27.51
   },
   {
     "date": "2024-03-29",
@@ -14797,7 +15196,8 @@
     "nasdaqComposite": 37.34,
     "djia": 21.67,
     "usdEur": 1.0791,
-    "cnyUsd": 7.2203
+    "cnyUsd": 7.2203,
+    "federalDebtPublic": 27.51
   },
   {
     "date": "2024-04-05",
@@ -14834,7 +15234,8 @@
     "nasdaqComposite": 35.44,
     "djia": 16.19,
     "usdEur": 1.0841,
-    "cnyUsd": 7.2339
+    "cnyUsd": 7.2339,
+    "federalDebtPublic": 27.56
   },
   {
     "date": "2024-04-12",
@@ -14871,7 +15272,8 @@
     "nasdaqComposite": 35.59,
     "djia": 12.89,
     "usdEur": 1.0647,
-    "cnyUsd": 7.2374
+    "cnyUsd": 7.2374,
+    "federalDebtPublic": 27.51
   },
   {
     "date": "2024-04-19",
@@ -14908,7 +15310,8 @@
     "nasdaqComposite": 25.7,
     "djia": 12.06,
     "usdEur": 1.0655,
-    "cnyUsd": 7.2403
+    "cnyUsd": 7.2403,
+    "federalDebtPublic": 27.48
   },
   {
     "date": "2024-04-26",
@@ -14945,7 +15348,8 @@
     "nasdaqComposite": 34.36,
     "djia": 14.83,
     "usdEur": 1.0686,
-    "cnyUsd": 7.2464
+    "cnyUsd": 7.2464,
+    "federalDebtPublic": 27.44
   },
   {
     "date": "2024-05-03",
@@ -14982,7 +15386,8 @@
     "nasdaqComposite": 34.35,
     "djia": 15.75,
     "usdEur": 1.077,
-    "cnyUsd": 7.2405
+    "cnyUsd": 7.2405,
+    "federalDebtPublic": 27.46
   },
   {
     "date": "2024-05-10",
@@ -15019,7 +15424,8 @@
     "nasdaqComposite": 32.78,
     "djia": 17.84,
     "usdEur": 1.0773,
-    "cnyUsd": 7.226
+    "cnyUsd": 7.226,
+    "federalDebtPublic": 27.45
   },
   {
     "date": "2024-05-17",
@@ -15056,7 +15462,8 @@
     "nasdaqComposite": 33.48,
     "djia": 19.7,
     "usdEur": 1.0869,
-    "cnyUsd": 7.2233
+    "cnyUsd": 7.2233,
+    "federalDebtPublic": 27.46
   },
   {
     "date": "2024-05-24",
@@ -15093,7 +15500,8 @@
     "nasdaqComposite": 35.54,
     "djia": 19.11,
     "usdEur": 1.0852,
-    "cnyUsd": 7.2425
+    "cnyUsd": 7.2425,
+    "federalDebtPublic": 27.47
   },
   {
     "date": "2024-05-31",
@@ -15130,7 +15538,8 @@
     "nasdaqComposite": 29.37,
     "djia": 17.56,
     "usdEur": 1.0846,
-    "cnyUsd": 7.241
+    "cnyUsd": 7.241,
+    "federalDebtPublic": 27.61
   },
   {
     "date": "2024-06-07",
@@ -15167,7 +15576,8 @@
     "nasdaqComposite": 30.74,
     "djia": 15.25,
     "usdEur": 1.0807,
-    "cnyUsd": 7.2466
+    "cnyUsd": 7.2466,
+    "federalDebtPublic": 27.59
   },
   {
     "date": "2024-06-14",
@@ -15204,7 +15614,8 @@
     "nasdaqComposite": 29.81,
     "djia": 13.57,
     "usdEur": 1.0699,
-    "cnyUsd": 7.2557
+    "cnyUsd": 7.2557,
+    "federalDebtPublic": 27.57
   },
   {
     "date": "2024-06-21",
@@ -15241,7 +15652,8 @@
     "nasdaqComposite": 31.01,
     "djia": 15.31,
     "usdEur": 1.0694,
-    "cnyUsd": 7.2609
+    "cnyUsd": 7.2609,
+    "federalDebtPublic": 27.59
   },
   {
     "date": "2024-06-28",
@@ -15278,7 +15690,8 @@
     "nasdaqComposite": 30.47,
     "djia": 15.56,
     "usdEur": 1.0711,
-    "cnyUsd": 7.2672
+    "cnyUsd": 7.2672,
+    "federalDebtPublic": 27.61
   },
   {
     "date": "2024-07-05",
@@ -15315,7 +15728,8 @@
     "nasdaqComposite": 33.07,
     "djia": 14.84,
     "usdEur": 1.0828,
-    "cnyUsd": 7.268
+    "cnyUsd": 7.268,
+    "federalDebtPublic": 27.69
   },
   {
     "date": "2024-07-12",
@@ -15352,7 +15766,8 @@
     "nasdaqComposite": 32.18,
     "djia": 16.46,
     "usdEur": 1.0902,
-    "cnyUsd": 7.2495
+    "cnyUsd": 7.2495,
+    "federalDebtPublic": 27.73
   },
   {
     "date": "2024-07-19",
@@ -15389,7 +15804,8 @@
     "nasdaqComposite": 23.46,
     "djia": 14.91,
     "usdEur": 1.0888,
-    "cnyUsd": 7.2695
+    "cnyUsd": 7.2695,
+    "federalDebtPublic": 27.79
   },
   {
     "date": "2024-07-26",
@@ -15426,7 +15842,8 @@
     "nasdaqComposite": 22.87,
     "djia": 14.27,
     "usdEur": 1.0859,
-    "cnyUsd": 7.2502
+    "cnyUsd": 7.2502,
+    "federalDebtPublic": 27.83
   },
   {
     "date": "2024-08-02",
@@ -15463,7 +15880,8 @@
     "nasdaqComposite": 20.06,
     "djia": 12.63,
     "usdEur": 1.0914,
-    "cnyUsd": 7.16
+    "cnyUsd": 7.16,
+    "federalDebtPublic": 27.95
   },
   {
     "date": "2024-08-09",
@@ -15500,7 +15918,8 @@
     "nasdaqComposite": 22.18,
     "djia": 12.45,
     "usdEur": 1.0925,
-    "cnyUsd": 7.166
+    "cnyUsd": 7.166,
+    "federalDebtPublic": 27.99
   },
   {
     "date": "2024-08-16",
@@ -15537,7 +15956,8 @@
     "nasdaqComposite": 30.85,
     "djia": 16.95,
     "usdEur": 1.0996,
-    "cnyUsd": 7.1644
+    "cnyUsd": 7.1644,
+    "federalDebtPublic": 28.03
   },
   {
     "date": "2024-08-23",
@@ -15574,7 +15994,8 @@
     "nasdaqComposite": 30.29,
     "djia": 19.44,
     "usdEur": 1.1176,
-    "cnyUsd": 7.1244
+    "cnyUsd": 7.1244,
+    "federalDebtPublic": 28.07
   },
   {
     "date": "2024-08-30",
@@ -15611,7 +16032,8 @@
     "nasdaqComposite": 26.35,
     "djia": 19.13,
     "usdEur": 1.106,
-    "cnyUsd": 7.09
+    "cnyUsd": 7.09,
+    "federalDebtPublic": 28.17
   },
   {
     "date": "2024-09-06",
@@ -15648,7 +16070,8 @@
     "nasdaqComposite": 20.32,
     "djia": 17.14,
     "usdEur": 1.1086,
-    "cnyUsd": 7.0876
+    "cnyUsd": 7.0876,
+    "federalDebtPublic": 28.25
   },
   {
     "date": "2024-09-13",
@@ -15685,7 +16108,8 @@
     "nasdaqComposite": 28.02,
     "djia": 19.72,
     "usdEur": 1.1085,
-    "cnyUsd": 7.093
+    "cnyUsd": 7.093,
+    "federalDebtPublic": 28.19
   },
   {
     "date": "2024-09-20",
@@ -15722,7 +16146,8 @@
     "nasdaqComposite": 33.26,
     "djia": 22.13,
     "usdEur": 1.1159,
-    "cnyUsd": 7.0505
+    "cnyUsd": 7.0505,
+    "federalDebtPublic": 28.21
   },
   {
     "date": "2024-09-27",
@@ -15759,7 +16184,8 @@
     "nasdaqComposite": 38.39,
     "djia": 26.12,
     "usdEur": 1.1159,
-    "cnyUsd": 7.0111
+    "cnyUsd": 7.0111,
+    "federalDebtPublic": 28.21
   },
   {
     "date": "2024-10-04",
@@ -15796,7 +16222,8 @@
     "nasdaqComposite": 37.03,
     "djia": 27.84,
     "usdEur": 1.0961,
-    "cnyUsd": 7.0175
+    "cnyUsd": 7.0175,
+    "federalDebtPublic": 28.32
   },
   {
     "date": "2024-10-11",
@@ -15833,7 +16260,8 @@
     "nasdaqComposite": 34.29,
     "djia": 26.8,
     "usdEur": 1.0942,
-    "cnyUsd": 7.0667
+    "cnyUsd": 7.0667,
+    "federalDebtPublic": 28.35
   },
   {
     "date": "2024-10-18",
@@ -15870,7 +16298,8 @@
     "nasdaqComposite": 38.87,
     "djia": 28.55,
     "usdEur": 1.0854,
-    "cnyUsd": 7.1015
+    "cnyUsd": 7.1015,
+    "federalDebtPublic": 28.4
   },
   {
     "date": "2024-10-25",
@@ -15907,7 +16336,8 @@
     "nasdaqComposite": 44.44,
     "djia": 27.48,
     "usdEur": 1.0813,
-    "cnyUsd": 7.1199
+    "cnyUsd": 7.1199,
+    "federalDebtPublic": 28.45
   },
   {
     "date": "2024-11-01",
@@ -15944,7 +16374,8 @@
     "nasdaqComposite": 39.65,
     "djia": 26.38,
     "usdEur": 1.0848,
-    "cnyUsd": 7.1214
+    "cnyUsd": 7.1214,
+    "federalDebtPublic": 28.57
   },
   {
     "date": "2024-11-08",
@@ -15981,7 +16412,8 @@
     "nasdaqComposite": 41.29,
     "djia": 28.95,
     "usdEur": 1.071,
-    "cnyUsd": 7.1785
+    "cnyUsd": 7.1785,
+    "federalDebtPublic": 28.61
   },
   {
     "date": "2024-11-15",
@@ -16018,7 +16450,8 @@
     "nasdaqComposite": 32.45,
     "djia": 24.16,
     "usdEur": 1.0552,
-    "cnyUsd": 7.2288
+    "cnyUsd": 7.2288,
+    "federalDebtPublic": 28.62
   },
   {
     "date": "2024-11-22",
@@ -16055,7 +16488,8 @@
     "nasdaqComposite": 33.21,
     "djia": 25.58,
     "usdEur": 1.0399,
-    "cnyUsd": 7.2455
+    "cnyUsd": 7.2455,
+    "federalDebtPublic": 28.69
   },
   {
     "date": "2024-11-29",
@@ -16092,7 +16526,8 @@
     "nasdaqComposite": 34.78,
     "djia": 26.76,
     "usdEur": 1.0547,
-    "cnyUsd": 7.2423
+    "cnyUsd": 7.2423,
+    "federalDebtPublic": 28.79
   },
   {
     "date": "2024-12-06",
@@ -16129,7 +16564,8 @@
     "nasdaqComposite": 40.38,
     "djia": 23.82,
     "usdEur": 1.0563,
-    "cnyUsd": 7.27
+    "cnyUsd": 7.27,
+    "federalDebtPublic": 28.87
   },
   {
     "date": "2024-12-13",
@@ -16166,7 +16602,8 @@
     "nasdaqComposite": 35.24,
     "djia": 18.17,
     "usdEur": 1.0498,
-    "cnyUsd": 7.2756
+    "cnyUsd": 7.2756,
+    "federalDebtPublic": 28.85
   },
   {
     "date": "2024-12-20",
@@ -16203,7 +16640,8 @@
     "nasdaqComposite": 32.44,
     "djia": 15.53,
     "usdEur": 1.043,
-    "cnyUsd": 7.2953
+    "cnyUsd": 7.2953,
+    "federalDebtPublic": 28.86
   },
   {
     "date": "2024-12-27",
@@ -16240,7 +16678,8 @@
     "nasdaqComposite": 30.62,
     "djia": 14.17,
     "usdEur": 1.0423,
-    "cnyUsd": 7.298
+    "cnyUsd": 7.298,
+    "federalDebtPublic": 28.82
   },
   {
     "date": "2025-01-03",
@@ -16277,7 +16716,8 @@
     "nasdaqComposite": 34.47,
     "djia": 14.16,
     "usdEur": 1.0292,
-    "cnyUsd": 7.3199
+    "cnyUsd": 7.3199,
+    "federalDebtPublic": 28.83
   },
   {
     "date": "2025-01-10",
@@ -16314,7 +16754,8 @@
     "nasdaqComposite": 28,
     "djia": 11.26,
     "usdEur": 1.0238,
-    "cnyUsd": 7.3326
+    "cnyUsd": 7.3326,
+    "federalDebtPublic": 28.83
   },
   {
     "date": "2025-01-17",
@@ -16351,7 +16792,8 @@
     "nasdaqComposite": 32.14,
     "djia": 16.69,
     "usdEur": 1.0287,
-    "cnyUsd": 7.3249
+    "cnyUsd": 7.3249,
+    "federalDebtPublic": 28.85
   },
   {
     "date": "2025-01-24",
@@ -16388,7 +16830,8 @@
     "nasdaqComposite": 28.89,
     "djia": 17.5,
     "usdEur": 1.0515,
-    "cnyUsd": 7.244
+    "cnyUsd": 7.244,
+    "federalDebtPublic": 28.88
   },
   {
     "date": "2025-01-31",
@@ -16425,7 +16868,8 @@
     "nasdaqComposite": 29.43,
     "djia": 16.76,
     "usdEur": 1.04,
-    "cnyUsd": 7.2422
+    "cnyUsd": 7.2422,
+    "federalDebtPublic": 28.91
   },
   {
     "date": "2025-02-07",
@@ -16462,7 +16906,8 @@
     "nasdaqComposite": 23.91,
     "djia": 14.55,
     "usdEur": 1.0329,
-    "cnyUsd": 7.2943
+    "cnyUsd": 7.2943,
+    "federalDebtPublic": 28.89
   },
   {
     "date": "2025-02-14",
@@ -16499,7 +16944,8 @@
     "nasdaqComposite": 26.28,
     "djia": 15.93,
     "usdEur": 1.0498,
-    "cnyUsd": 7.253
+    "cnyUsd": 7.253,
+    "federalDebtPublic": 28.9
   },
   {
     "date": "2025-02-21",
@@ -16536,7 +16982,8 @@
     "nasdaqComposite": 25.31,
     "djia": 12.47,
     "usdEur": 1.0455,
-    "cnyUsd": 7.2501
+    "cnyUsd": 7.2501,
+    "federalDebtPublic": 28.86
   },
   {
     "date": "2025-02-28",
@@ -16573,7 +17020,8 @@
     "nasdaqComposite": 18.18,
     "djia": 12.56,
     "usdEur": 1.0402,
-    "cnyUsd": 7.2828
+    "cnyUsd": 7.2828,
+    "federalDebtPublic": 28.91
   },
   {
     "date": "2025-03-07",
@@ -16610,7 +17058,8 @@
     "nasdaqComposite": 11.82,
     "djia": 10.34,
     "usdEur": 1.0859,
-    "cnyUsd": 7.234
+    "cnyUsd": 7.234,
+    "federalDebtPublic": 28.91
   },
   {
     "date": "2025-03-14",
@@ -16647,7 +17096,8 @@
     "nasdaqComposite": 10.08,
     "djia": 6.64,
     "usdEur": 1.0872,
-    "cnyUsd": 7.2377
+    "cnyUsd": 7.2377,
+    "federalDebtPublic": 28.94
   },
   {
     "date": "2025-03-21",
@@ -16684,7 +17134,8 @@
     "nasdaqComposite": 8.43,
     "djia": 5.54,
     "usdEur": 1.0806,
-    "cnyUsd": 7.2486
+    "cnyUsd": 7.2486,
+    "federalDebtPublic": 28.93
   },
   {
     "date": "2025-03-28",
@@ -16721,7 +17172,8 @@
     "nasdaqComposite": 5.76,
     "djia": 4.46,
     "usdEur": 1.0826,
-    "cnyUsd": 7.2628
+    "cnyUsd": 7.2628,
+    "federalDebtPublic": 28.92
   },
   {
     "date": "2025-04-04",
@@ -16758,7 +17210,8 @@
     "nasdaqComposite": -2.87,
     "djia": -0.73,
     "usdEur": 1.1014,
-    "cnyUsd": 7.2803
+    "cnyUsd": 7.2803,
+    "federalDebtPublic": 28.96
   },
   {
     "date": "2025-04-11",
@@ -16795,7 +17248,8 @@
     "nasdaqComposite": 1.72,
     "djia": 4.56,
     "usdEur": 1.1325,
-    "cnyUsd": 7.2915
+    "cnyUsd": 7.2915,
+    "federalDebtPublic": 28.95
   },
   {
     "date": "2025-04-18",
@@ -16832,7 +17286,8 @@
     "nasdaqComposite": 4.39,
     "djia": 3.62,
     "usdEur": 1.139,
-    "cnyUsd": 7.2996
+    "cnyUsd": 7.2996,
+    "federalDebtPublic": 28.9
   },
   {
     "date": "2025-04-25",
@@ -16869,7 +17324,8 @@
     "nasdaqComposite": 11.35,
     "djia": 5.32,
     "usdEur": 1.1381,
-    "cnyUsd": 7.2864
+    "cnyUsd": 7.2864,
+    "federalDebtPublic": 28.89
   },
   {
     "date": "2025-05-02",
@@ -16906,7 +17362,8 @@
     "nasdaqComposite": 13.49,
     "djia": 8.09,
     "usdEur": 1.133,
-    "cnyUsd": 7.2706
+    "cnyUsd": 7.2706,
+    "federalDebtPublic": 28.91
   },
   {
     "date": "2025-05-09",
@@ -16943,7 +17400,8 @@
     "nasdaqComposite": 9.68,
     "djia": 4.73,
     "usdEur": 1.127,
-    "cnyUsd": 7.2364
+    "cnyUsd": 7.2364,
+    "federalDebtPublic": 28.88
   },
   {
     "date": "2025-05-16",
@@ -16980,7 +17438,8 @@
     "nasdaqComposite": 15.05,
     "djia": 6.99,
     "usdEur": 1.1141,
-    "cnyUsd": 7.209
+    "cnyUsd": 7.209,
+    "federalDebtPublic": 28.88
   },
   {
     "date": "2025-05-23",
@@ -17017,7 +17476,8 @@
     "nasdaqComposite": 11.96,
     "djia": 6.5,
     "usdEur": 1.135,
-    "cnyUsd": 7.1798
+    "cnyUsd": 7.1798,
+    "federalDebtPublic": 28.86
   },
   {
     "date": "2025-05-30",
@@ -17054,7 +17514,8 @@
     "nasdaqComposite": 14.2,
     "djia": 10.91,
     "usdEur": 1.1347,
-    "cnyUsd": 7.1991
+    "cnyUsd": 7.1991,
+    "federalDebtPublic": 28.95
   },
   {
     "date": "2025-06-06",
@@ -17091,7 +17552,8 @@
     "nasdaqComposite": 13.72,
     "djia": 9.97,
     "usdEur": 1.1397,
-    "cnyUsd": 7.1886
+    "cnyUsd": 7.1886,
+    "federalDebtPublic": 28.95
   },
   {
     "date": "2025-06-13",
@@ -17128,7 +17590,8 @@
     "nasdaqComposite": 9.84,
     "djia": 9.19,
     "usdEur": 1.1557,
-    "cnyUsd": 7.181
+    "cnyUsd": 7.181,
+    "federalDebtPublic": 28.94
   },
   {
     "date": "2025-06-20",
@@ -17165,7 +17628,8 @@
     "nasdaqComposite": 9.74,
     "djia": 7.85,
     "usdEur": 1.152,
-    "cnyUsd": 7.1785
+    "cnyUsd": 7.1785,
+    "federalDebtPublic": 28.9
   },
   {
     "date": "2025-06-27",
@@ -17202,7 +17666,8 @@
     "nasdaqComposite": 13.52,
     "djia": 11.89,
     "usdEur": 1.1724,
-    "cnyUsd": 7.1721
+    "cnyUsd": 7.1721,
+    "federalDebtPublic": 28.89
   },
   {
     "date": "2025-07-04",
@@ -17239,7 +17704,8 @@
     "nasdaqComposite": 13.27,
     "djia": 14.04,
     "usdEur": 1.1758,
-    "cnyUsd": 7.1684
+    "cnyUsd": 7.1684,
+    "federalDebtPublic": 29.03
   },
   {
     "date": "2025-07-11",
@@ -17276,7 +17742,8 @@
     "nasdaqComposite": 12.59,
     "djia": 11.62,
     "usdEur": 1.1696,
-    "cnyUsd": 7.1681
+    "cnyUsd": 7.1681,
+    "federalDebtPublic": 29.24
   },
   {
     "date": "2025-07-18",
@@ -17313,7 +17780,8 @@
     "nasdaqComposite": 16.92,
     "djia": 9.04,
     "usdEur": 1.1645,
-    "cnyUsd": 7.1776
+    "cnyUsd": 7.1776,
+    "federalDebtPublic": 29.3
   },
   {
     "date": "2025-07-25",
@@ -17350,7 +17818,8 @@
     "nasdaqComposite": 22.85,
     "djia": 12.44,
     "usdEur": 1.173,
-    "cnyUsd": 7.1679
+    "cnyUsd": 7.1679,
+    "federalDebtPublic": 29.36
   },
   {
     "date": "2025-08-01",
@@ -17387,7 +17856,8 @@
     "nasdaqComposite": 20.1,
     "djia": 8.03,
     "usdEur": 1.1555,
-    "cnyUsd": 7.2116
+    "cnyUsd": 7.2116,
+    "federalDebtPublic": 29.52
   },
   {
     "date": "2025-08-08",
@@ -17424,7 +17894,8 @@
     "nasdaqComposite": 28.75,
     "djia": 11.99,
     "usdEur": 1.166,
-    "cnyUsd": 7.1839
+    "cnyUsd": 7.1839,
+    "federalDebtPublic": 29.64
   },
   {
     "date": "2025-08-15",
@@ -17461,7 +17932,8 @@
     "nasdaqComposite": 22.9,
     "djia": 10.81,
     "usdEur": 1.1708,
-    "cnyUsd": 7.1817
+    "cnyUsd": 7.1817,
+    "federalDebtPublic": 29.77
   },
   {
     "date": "2025-08-22",
@@ -17498,7 +17970,8 @@
     "nasdaqComposite": 22.01,
     "djia": 12.08,
     "usdEur": 1.1713,
-    "cnyUsd": 7.1651
+    "cnyUsd": 7.1651,
+    "federalDebtPublic": 29.86
   },
   {
     "date": "2025-08-29",
@@ -17535,7 +18008,8 @@
     "nasdaqComposite": 22.49,
     "djia": 10.18,
     "usdEur": 1.1695,
-    "cnyUsd": 7.1304
+    "cnyUsd": 7.1304,
+    "federalDebtPublic": 29.97
   },
   {
     "date": "2025-09-05",
@@ -17572,7 +18046,8 @@
     "nasdaqComposite": 26.7,
     "djia": 11.4,
     "usdEur": 1.1759,
-    "cnyUsd": 7.1323
+    "cnyUsd": 7.1323,
+    "federalDebtPublic": 30.12
   },
   {
     "date": "2025-09-12",
@@ -17609,7 +18084,8 @@
     "nasdaqComposite": 26.02,
     "djia": 11.53,
     "usdEur": 1.1714,
-    "cnyUsd": 7.1242
+    "cnyUsd": 7.1242,
+    "federalDebtPublic": 30.16
   },
   {
     "date": "2025-09-19",
@@ -17646,7 +18122,8 @@
     "nasdaqComposite": 25.63,
     "djia": 10.21,
     "usdEur": 1.1753,
-    "cnyUsd": 7.1142
+    "cnyUsd": 7.1142,
+    "federalDebtPublic": 30.2
   },
   {
     "date": "2025-09-26",
@@ -17683,7 +18160,8 @@
     "nasdaqComposite": 23.6,
     "djia": 9.66,
     "usdEur": 1.1692,
-    "cnyUsd": 7.1328
+    "cnyUsd": 7.1328,
+    "federalDebtPublic": 30.18
   },
   {
     "date": "2025-10-03",
@@ -17720,7 +18198,8 @@
     "nasdaqComposite": 27.13,
     "djia": 11.3,
     "usdEur": 1.1747,
-    "cnyUsd": 7.12
+    "cnyUsd": 7.12,
+    "federalDebtPublic": 30.28
   },
   {
     "date": "2025-10-10",
@@ -17757,7 +18236,8 @@
     "nasdaqComposite": 21.45,
     "djia": 7.13,
     "usdEur": 1.1613,
-    "cnyUsd": 7.134
+    "cnyUsd": 7.134,
+    "federalDebtPublic": 30.32
   },
   {
     "date": "2025-10-17",
@@ -17794,7 +18274,8 @@
     "nasdaqComposite": 23.44,
     "djia": 6.83,
     "usdEur": 1.1674,
-    "cnyUsd": 7.1264
+    "cnyUsd": 7.1264,
+    "federalDebtPublic": 30.41
   },
   {
     "date": "2025-10-24",
@@ -17831,7 +18312,8 @@
     "nasdaqComposite": 26.01,
     "djia": 11.4,
     "usdEur": 1.1626,
-    "cnyUsd": 7.1211
+    "cnyUsd": 7.1211,
+    "federalDebtPublic": 30.46
   },
   {
     "date": "2025-10-31",
@@ -17868,7 +18350,8 @@
     "nasdaqComposite": 31.11,
     "djia": 13.89,
     "usdEur": 1.1541,
-    "cnyUsd": 7.1169
+    "cnyUsd": 7.1169,
+    "federalDebtPublic": 30.57
   },
   {
     "date": "2025-11-07",
@@ -17905,7 +18388,8 @@
     "nasdaqComposite": 19.38,
     "djia": 7.45,
     "usdEur": 1.1578,
-    "cnyUsd": 7.1219
+    "cnyUsd": 7.1219,
+    "federalDebtPublic": 30.61
   },
   {
     "date": "2025-11-14",
@@ -17942,7 +18426,8 @@
     "nasdaqComposite": 19.85,
     "djia": 7.76,
     "usdEur": 1.1617,
-    "cnyUsd": 7.0992
+    "cnyUsd": 7.0992,
+    "federalDebtPublic": 30.65
   },
   {
     "date": "2025-11-21",
@@ -17979,7 +18464,8 @@
     "nasdaqComposite": 17.4,
     "djia": 5.41,
     "usdEur": 1.1506,
-    "cnyUsd": 7.1066
+    "cnyUsd": 7.1066,
+    "federalDebtPublic": 30.71
   },
   {
     "date": "2025-11-28",
@@ -18016,7 +18502,8 @@
     "nasdaqComposite": 22.59,
     "djia": 6.7,
     "usdEur": 1.16,
-    "cnyUsd": 7.0751
+    "cnyUsd": 7.0751,
+    "federalDebtPublic": 30.77
   },
   {
     "date": "2025-12-05",
@@ -18053,7 +18540,8 @@
     "nasdaqComposite": 19.68,
     "djia": 7.12,
     "usdEur": 1.1635,
-    "cnyUsd": 7.0696
+    "cnyUsd": 7.0696,
+    "federalDebtPublic": 30.82
   },
   {
     "date": "2025-12-12",
@@ -18090,7 +18578,8 @@
     "nasdaqComposite": 16.54,
     "djia": 10.35,
     "usdEur": 1.1731,
-    "cnyUsd": 7.0548
+    "cnyUsd": 7.0548,
+    "federalDebtPublic": 30.77
   },
   {
     "date": "2025-12-19",
@@ -18127,7 +18616,8 @@
     "nasdaqComposite": 20.31,
     "djia": 13.68,
     "usdEur": 1.1721,
-    "cnyUsd": 7.0409
+    "cnyUsd": 7.0409,
+    "federalDebtPublic": 30.8
   },
   {
     "date": "2025-12-26",
@@ -18164,7 +18654,8 @@
     "nasdaqComposite": 17.85,
     "djia": 12.43,
     "usdEur": 1.1766,
-    "cnyUsd": 7.0063
+    "cnyUsd": 7.0063,
+    "federalDebtPublic": 30.79
   },
   {
     "date": "2026-01-02",
@@ -18201,7 +18692,8 @@
     "nasdaqComposite": 20.51,
     "djia": 14.13,
     "usdEur": 1.1738,
-    "cnyUsd": 6.9877
+    "cnyUsd": 6.9877,
+    "federalDebtPublic": 30.83
   },
   {
     "date": "2026-01-09",
@@ -18238,7 +18730,8 @@
     "nasdaqComposite": 21.52,
     "djia": 16.11,
     "usdEur": 1.1634,
-    "cnyUsd": 6.9772
+    "cnyUsd": 6.9772,
+    "federalDebtPublic": 30.8
   },
   {
     "date": "2026-01-16",
@@ -18275,7 +18768,8 @@
     "nasdaqComposite": 21.6,
     "djia": 14.38,
     "usdEur": 1.1599,
-    "cnyUsd": 6.9681
+    "cnyUsd": 6.9681,
+    "federalDebtPublic": 30.81
   },
   {
     "date": "2026-01-23",
@@ -18312,7 +18806,8 @@
     "nasdaqComposite": 17.19,
     "djia": 10.17,
     "usdEur": 1.1771,
-    "cnyUsd": 6.9631
+    "cnyUsd": 6.9631,
+    "federalDebtPublic": 30.84
   },
   {
     "date": "2026-01-30",
@@ -18349,7 +18844,8 @@
     "nasdaqComposite": 19.21,
     "djia": 8.94,
     "usdEur": 1.1885,
-    "cnyUsd": 6.951
+    "cnyUsd": 6.951,
+    "federalDebtPublic": 30.92
   },
   {
     "date": "2026-02-06",
@@ -18386,7 +18882,8 @@
     "nasdaqComposite": 16.37,
     "djia": 12,
     "usdEur": 1.1812,
-    "cnyUsd": 6.9388
+    "cnyUsd": 6.9388,
+    "federalDebtPublic": 30.97
   },
   {
     "date": "2026-02-13",
@@ -18423,7 +18920,8 @@
     "nasdaqComposite": 13.04,
     "djia": 10.71,
     "usdEur": 1.187,
-    "cnyUsd": 6.908
+    "cnyUsd": 6.908,
+    "federalDebtPublic": 31.03
   },
   {
     "date": "2026-02-20",
@@ -18460,7 +18958,8 @@
     "nasdaqComposite": 14.65,
     "djia": 12.34,
     "usdEur": 1.1781,
-    "cnyUsd": 6.9031
+    "cnyUsd": 6.9031,
+    "federalDebtPublic": 31.11
   },
   {
     "date": "2026-02-27",
@@ -18497,7 +18996,8 @@
     "nasdaqComposite": 22.24,
     "djia": 13.27,
     "usdEur": 1.1822,
-    "cnyUsd": 6.8579
+    "cnyUsd": 6.8579,
+    "federalDebtPublic": 31.19
   },
   {
     "date": "2026-03-06",
@@ -18534,7 +19034,8 @@
     "nasdaqComposite": 23.9,
     "djia": 11.56,
     "usdEur": 1.1606,
-    "cnyUsd": 6.8965
+    "cnyUsd": 6.8965,
+    "federalDebtPublic": 31.28
   },
   {
     "date": "2026-03-13",
@@ -18571,7 +19072,8 @@
     "nasdaqComposite": 27.75,
     "djia": 14.08,
     "usdEur": 1.1444,
-    "cnyUsd": 6.8961
+    "cnyUsd": 6.8961,
+    "federalDebtPublic": 31.3
   },
   {
     "date": "2026-03-20",
@@ -18608,7 +19110,8 @@
     "nasdaqComposite": 22.36,
     "djia": 8.64,
     "usdEur": 1.1543,
-    "cnyUsd": 6.8857
+    "cnyUsd": 6.8857,
+    "federalDebtPublic": 31.38
   },
   {
     "date": "2026-03-27",
@@ -18645,7 +19148,8 @@
     "nasdaqComposite": 17.66,
     "djia": 6.78,
     "usdEur": 1.152,
-    "cnyUsd": 6.9116
+    "cnyUsd": 6.9116,
+    "federalDebtPublic": 31.39
   },
   {
     "date": "2026-04-03",
@@ -18682,7 +19186,8 @@
     "nasdaqComposite": 32.2,
     "djia": 14.7,
     "usdEur": 1.1523,
-    "cnyUsd": 6.8824
+    "cnyUsd": 6.8824,
+    "federalDebtPublic": 31.41
   },
   {
     "date": "2026-04-10",
@@ -18719,7 +19224,8 @@
     "nasdaqComposite": 39.76,
     "djia": 21.02,
     "usdEur": 1.1723,
-    "cnyUsd": 6.8278
+    "cnyUsd": 6.8278,
+    "federalDebtPublic": 31.36
   },
   {
     "date": "2026-04-17",
@@ -18756,7 +19262,8 @@
     "nasdaqComposite": 50.24,
     "djia": 26.33,
     "usdEur": 1.1801,
-    "cnyUsd": 6.817
+    "cnyUsd": 6.817,
+    "federalDebtPublic": 31.34
   },
   {
     "date": "2026-04-24",
@@ -18793,7 +19300,8 @@
     "nasdaqComposite": 44.68,
     "djia": 22.79,
     "usdEur": 1.1718,
-    "cnyUsd": 6.8359
+    "cnyUsd": 6.8359,
+    "federalDebtPublic": 31.29
   },
   {
     "date": "2026-05-01",
@@ -18830,7 +19338,8 @@
     "nasdaqComposite": 41.8,
     "djia": 21.46,
     "usdEur": 1.1755,
-    "cnyUsd": 6.8276
+    "cnyUsd": 6.8276,
+    "federalDebtPublic": 31.27
   },
   {
     "date": "2026-05-08",
@@ -18867,7 +19376,8 @@
     "nasdaqComposite": 46.4,
     "djia": 19.92,
     "usdEur": 1.1773,
-    "cnyUsd": 6.8005
+    "cnyUsd": 6.8005,
+    "federalDebtPublic": 31.26
   },
   {
     "date": "2026-05-15",
@@ -18904,7 +19414,8 @@
     "nasdaqComposite": 37.22,
     "djia": 17.02,
     "usdEur": 1.1627,
-    "cnyUsd": 6.8092
+    "cnyUsd": 6.8092,
+    "federalDebtPublic": 31.32
   },
   {
     "date": "2026-05-22",
@@ -18941,7 +19452,8 @@
     "nasdaqComposite": 39.2,
     "djia": 20.83,
     "usdEur": 1.1603,
-    "cnyUsd": 6.7945
+    "cnyUsd": 6.7945,
+    "federalDebtPublic": 31.4
   },
   {
     "date": "2026-05-29",
@@ -18978,7 +19490,8 @@
     "nasdaqComposite": 40.66,
     "djia": 20.88,
     "usdEur": 1.1679,
-    "cnyUsd": 6.7662
+    "cnyUsd": 6.7662,
+    "federalDebtPublic": 31.52
   },
   {
     "date": "2026-06-05",
@@ -19015,7 +19528,8 @@
     "nasdaqComposite": 33.22,
     "djia": 20.2,
     "usdEur": 1.1533,
-    "cnyUsd": 6.7655
+    "cnyUsd": 6.7655,
+    "federalDebtPublic": 31.6
   },
   {
     "date": "2026-06-12",
@@ -19052,7 +19566,8 @@
     "nasdaqComposite": 31.67,
     "djia": 19.16,
     "usdEur": 1.1573,
-    "cnyUsd": 6.7626
+    "cnyUsd": 6.7626,
+    "federalDebtPublic": 31.58
   },
   {
     "date": "2026-06-19",
@@ -19089,7 +19604,8 @@
     "nasdaqComposite": 35.67,
     "djia": 22.27,
     "usdEur": 1.147,
-    "cnyUsd": 6.7686
+    "cnyUsd": 6.7686,
+    "federalDebtPublic": 31.61
   },
   {
     "date": "2026-06-26",
@@ -19126,7 +19642,8 @@
     "nasdaqComposite": 25.44,
     "djia": 19.57,
     "usdEur": 1.1403,
-    "cnyUsd": 6.798
+    "cnyUsd": 6.798,
+    "federalDebtPublic": 31.62
   },
   {
     "date": "2026-07-03",
@@ -19163,7 +19680,8 @@
     "nasdaqComposite": 25.39,
     "djia": 18.01,
     "usdEur": 1.1448,
-    "cnyUsd": 6.7886
+    "cnyUsd": 6.7886,
+    "federalDebtPublic": 31.68
   },
   {
     "date": "2026-07-10",
@@ -19200,7 +19718,8 @@
     "nasdaqComposite": 27.39,
     "djia": 17.89,
     "usdEur": 1.1438,
-    "cnyUsd": 6.7766
+    "cnyUsd": 6.7766,
+    "federalDebtPublic": 31.71
   },
   {
     "date": "2026-07-17",
@@ -19237,7 +19756,8 @@
     "nasdaqComposite": 22.19,
     "djia": 17.22,
     "usdEur": 1.144,
-    "cnyUsd": 6.776
+    "cnyUsd": 6.776,
+    "federalDebtPublic": 31.82
   },
   {
     "date": "2026-07-24",
@@ -19274,7 +19794,8 @@
     "nasdaqComposite": 18.61,
     "djia": 16.23,
     "usdEur": 1.1385,
-    "cnyUsd": 6.7719
+    "cnyUsd": 6.7719,
+    "federalDebtPublic": 31.92
   },
   {
     "date": "2026-07-31",
@@ -19311,7 +19832,8 @@
     "nasdaqComposite": 20.13,
     "djia": 18.93,
     "usdEur": 1.1519,
-    "cnyUsd": 6.7509
+    "cnyUsd": 6.7509,
+    "federalDebtPublic": 32.05
   },
   {
     "date": "2026-08-07",
@@ -19348,7 +19870,8 @@
     "nasdaqComposite": 25.65,
     "djia": 22.9,
     "usdEur": 1.1559,
-    "cnyUsd": 6.7474
+    "cnyUsd": 6.7474,
+    "federalDebtPublic": 32.14
   },
   {
     "date": "2026-08-14",
@@ -19385,6 +19908,7 @@
     "nasdaqComposite": 23.12,
     "djia": 19.64,
     "usdEur": 1.1581,
-    "cnyUsd": 6.7412
+    "cnyUsd": 6.7412,
+    "federalDebtPublic": 32.2
   }
 ]

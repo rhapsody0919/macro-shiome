@@ -71,6 +71,17 @@ export type FactsetField =
  * 取得元。判別可能ユニオンにして、アダプタごとに必要な設定を型で強制する。
  * 新しい取得元が必要になったらここに追加する。
  */
+/**
+ * 国債の平均利率の系列 (#222)。
+ *
+ * 1 回のレスポンスに 16 系列が混ざるため、どれを取るかを固定する。
+ * 実際の絞り込み条件は `adapters/treasury.ts` の `AVG_RATE_SERIES`。
+ */
+export type AvgRateId =
+  | 'treasury-avg-rate'
+  | 'treasury-avg-rate-bills'
+  | 'treasury-avg-rate-notes';
+
 export type IndicatorSource =
   | { adapter: 'fred'; seriesId: string }
   | { adapter: 'factset-pdf'; field: FactsetField }
@@ -85,7 +96,15 @@ export type IndicatorSource =
    * 1 つの表に多数の系列が入るため、`tab` / `cat01` / `cat02` をすべて固定する。
    */
   | { adapter: 'estat-api'; statsDataId: string; tab: string; cat01: string; cat02: string }
+  /**
+   * 米財務省 Fiscal Data (#96 #222)。**API キー不要。**
+   *
+   * `dataset` で 3 つの表を出し分ける。`avg-interest-rate` は 1 回のレスポンスに
+   * 16 系列が混ざるため、どの系列かを `series` で固定する (#129 と同じ型)。
+   */
   | { adapter: 'treasury'; auction: 'ten-year-bid-to-cover' }
+  | { adapter: 'treasury'; avgRate: AvgRateId }
+  | { adapter: 'treasury'; debt: 'held-by-public' }
   | { adapter: 'finnhub'; symbol: string };
 
 /** 指標マスタの 1 エントリ。 */
@@ -472,6 +491,13 @@ export interface MacroPoint {
   usdEur: number | null;
   /** 人民元/ドル (#200)。 */
   cnyUsd: number | null;
+  /**
+   * 国債残高のうち市中保有分 (兆ドル、#222)。日次。
+   *
+   * **合計ではなく市中保有分**。政府内保有 (社会保障基金など) は市場に出回らないため、
+   * 発行圧力を見るならこちら (差は 2026-08 時点で 7.78 兆ドル)。
+   */
+  federalDebtPublic: number | null;
 }
 
 /**
@@ -696,6 +722,17 @@ export interface MonthlyPoint {
   deTenYear: number | null;
   /** 財政収支 (百万ドル)。負が赤字。 */
   federalDeficit: number | null;
+  /**
+   * 国債の平均利率 (%) (#222)。**発行済み国債が実際に払っている金利。**
+   *
+   * 市場で取引されている利回りとは別物。10年債利回りがこれを上回っている間は、
+   * 借り換えが進むほど利払いが増える。
+   */
+  treasuryAvgRate: number | null;
+  /** 国債の平均利率 (短期債、%)。政策金利にほぼ連動する。 */
+  treasuryAvgRateBills: number | null;
+  /** 国債の平均利率 (中期債、%)。残高が最も大きく全体を左右する。 */
+  treasuryAvgRateNotes: number | null;
   /** 失業率 (%)。水準そのものが意味を持つ。 */
   unemploymentRate: number | null;
   /** 貯蓄率 (%)。低下は貯蓄の取り崩しを示す。 */

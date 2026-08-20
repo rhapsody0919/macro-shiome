@@ -22,6 +22,12 @@ import type {
   Unit,
 } from './types';
 
+const AVG_RATE_IDS = [
+  'treasury-avg-rate',
+  'treasury-avg-rate-bills',
+  'treasury-avg-rate-notes',
+] as const;
+
 const FREQUENCIES = [
   'daily',
   'weekly',
@@ -116,6 +122,13 @@ function parseSource(raw: unknown, where: string): IndicatorSource {
         field: requireEnum(raw.field, ['peRatio'] as const, `${where}.field`),
       };
     case 'treasury':
+      // 3 つの表を出し分ける (#222)。どれか 1 つだけを持たせる。
+      if (raw.avgRate !== undefined) {
+        return { adapter, avgRate: requireEnum(raw.avgRate, AVG_RATE_IDS, `${where}.avgRate`) };
+      }
+      if (raw.debt !== undefined) {
+        return { adapter, debt: requireEnum(raw.debt, ['held-by-public'] as const, `${where}.debt`) };
+      }
       return {
         adapter,
         auction: requireEnum(raw.auction, ['ten-year-bid-to-cover'] as const, `${where}.auction`),

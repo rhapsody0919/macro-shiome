@@ -497,6 +497,7 @@ export function buildMacroView(options: BuildViewOptions): MacroPoint[] {
       djia: yoyAsOf(observations, 'djia', date),
       usdEur: valueAsOf(series(observations, 'usd-eur'), date),
       cnyUsd: valueAsOf(series(observations, 'cny-usd'), date),
+      federalDebtPublic: valueAsOf(series(observations, 'federal-debt-public'), date),
     };
   }));
 }
@@ -782,6 +783,10 @@ export function buildEconomyView(options: BuildViewOptions): EconomyView {
     jpTenYear: level('jp-10y', month),
     deTenYear: level('de-10y', month),
     federalDeficit: level('federal-deficit', month),
+    // 月末時点の値なので、応札倍率と同じくその月に 1 件あれば載せる (#222)。
+    treasuryAvgRate: latestInMonth(series(observations, 'treasury-avg-rate'), month),
+    treasuryAvgRateBills: latestInMonth(series(observations, 'treasury-avg-rate-bills'), month),
+    treasuryAvgRateNotes: latestInMonth(series(observations, 'treasury-avg-rate-notes'), month),
     unemploymentRate: level('unemployment-rate', month),
     savingsRate: level('savings-rate', month),
     // 貯蓄率と対で見る。金額は前年同月比に揃える (水準は桁が違って並べられない)。
@@ -957,6 +962,8 @@ export function buildDailyView(
       djia: yoyAsOf(observations, 'djia', date),
       usdEur: at('usd-eur'),
       cnyUsd: at('cny-usd'),
+      // 兆ドル。市中保有分だけ (#222)。
+      federalDebtPublic: at('federal-debt-public'),
     };
 
     const point: DailyPoint = { date };

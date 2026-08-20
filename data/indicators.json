@@ -3549,5 +3549,97 @@
       "howToRead": "建設需要のうち政策で動く部分。住宅着工が家計の需要を示すのに対し、こちらは財政支出が実際に動いた量を示す。",
       "seeWith": "住宅着工と並べる。"
     }
+  },
+  "treasury-avg-rate": {
+    "name": "国債の平均利率",
+    "source": {
+      "adapter": "treasury",
+      "avgRate": "treasury-avg-rate"
+    },
+    "frequency": "monthly",
+    "unit": "percent",
+    "attribution": "U.S. Department of the Treasury, Fiscal Data",
+    "copyright": "none",
+    "group": "rates",
+    "range": {
+      "min": 0,
+      "max": 20
+    },
+    "unitLabel": "% (月末時点)",
+    "note": "Average Interest Rates on U.S. Treasury Securities のうち Interest-bearing Debt / Total Interest-bearing Debt (#222)。**発行済み国債が実際に払っている金利**で、FRED に無い。10年債利回りとの差が借り換え圧力を示す。1 回のレスポンスに 16 系列が混ざるため security_type_desc と security_desc の両方で絞る。範囲の根拠: 2001 年以降の実測は 1.6〜6.6%。",
+    "explanation": {
+      "what": "発行済みの国債が実際に払っている金利の平均。月末時点。",
+      "howToRead": "市場で取引されている利回りではなく、過去に発行した分も含めた実績。市場金利がこれを上回っている間は、借り換えが進むほど利払いが増える。",
+      "seeWith": "10年債利回りと並べる。2 本の差が借り換えでどれだけ負担が増えるかを示す。"
+    }
+  },
+  "treasury-avg-rate-bills": {
+    "name": "国債の平均利率 (短期債)",
+    "source": {
+      "adapter": "treasury",
+      "avgRate": "treasury-avg-rate-bills"
+    },
+    "frequency": "monthly",
+    "unit": "percent",
+    "attribution": "U.S. Department of the Treasury, Fiscal Data",
+    "copyright": "none",
+    "group": "rates",
+    "range": {
+      "min": 0,
+      "max": 20
+    },
+    "unitLabel": "% (月末時点)",
+    "note": "Marketable / Treasury Bills の平均利率 (#222)。満期 1 年以内。政策金利にほぼ連動するため、全体の平均より速く動く。",
+    "explanation": {
+      "what": "満期 1 年以内の国債が払っている金利の平均。",
+      "howToRead": "短いぶん入れ替わりが速く、政策金利の変化がすぐ反映される。全体の平均より先に動く。",
+      "seeWith": "中期債の平均利率・全体の平均利率と 3 本で見る。"
+    }
+  },
+  "treasury-avg-rate-notes": {
+    "name": "国債の平均利率 (中期債)",
+    "source": {
+      "adapter": "treasury",
+      "avgRate": "treasury-avg-rate-notes"
+    },
+    "frequency": "monthly",
+    "unit": "percent",
+    "attribution": "U.S. Department of the Treasury, Fiscal Data",
+    "copyright": "none",
+    "group": "rates",
+    "range": {
+      "min": 0,
+      "max": 20
+    },
+    "unitLabel": "% (月末時点)",
+    "note": "Marketable / Treasury Notes の平均利率 (#222)。満期 2〜10 年。残高が最も大きく、全体の平均を最も左右する。",
+    "explanation": {
+      "what": "満期 2〜10 年の国債が払っている金利の平均。",
+      "howToRead": "残高が最も大きい区分なので、全体の平均を最も左右する。入れ替わりに数年かかるため動きは遅い。",
+      "seeWith": "短期債の平均利率・全体の平均利率と 3 本で見る。"
+    }
+  },
+  "federal-debt-public": {
+    "name": "国債残高 (市中保有)",
+    "source": {
+      "adapter": "treasury",
+      "debt": "held-by-public"
+    },
+    "frequency": "daily",
+    "unit": "index",
+    "attribution": "U.S. Department of the Treasury, Fiscal Data",
+    "copyright": "none",
+    "group": "rates",
+    "range": {
+      "min": 0,
+      "max": 100
+    },
+    "unitLabel": "兆ドル",
+    "note": "Debt to the Penny の debt_held_public_amt を兆ドルに換算 (#222)。**合計ではなく市中保有分**を採る。政府内保有 (社会保障基金など) は市場に出回らないため、発行圧力を見るならこちら (差は 2026-08 時点で 7.78 兆ドル)。内訳は **2005-04 以降しか報告されていない** (1993-04〜2005-03 の 2,958 日が null)。範囲の根拠: 実測は 3.7〜32.3 兆ドル。",
+    "explanation": {
+      "what": "政府が発行した国債のうち、市場で保有されている残高。",
+      "howToRead": "政府内で持ち合っている分を除いてある。増えるほど市場が消化しなければならない量が増える。",
+      "seeWith": "財政収支・10年債入札の応札倍率と並べる。発行が増えたときに買い手がついているかが見える。"
+    }
   }
 }

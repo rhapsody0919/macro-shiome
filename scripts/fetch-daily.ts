@@ -24,6 +24,7 @@ import {
 } from '../src/lib/adapters/factset';
 import { fetchEtfField, lastClosedTradingDay } from '../src/lib/adapters/stockanalysis';
 import { TreasuryClient } from '../src/lib/adapters/treasury';
+import type { IndicatorSource } from '../src/lib/data/types';
 import { FinnhubClient, readFinnhubApiKeyFromEnv } from '../src/lib/adapters/finnhub';
 import { fetchEstatIndicator } from '../src/lib/adapters/estat-dashboard';
 import { EstatClient, readEstatAppIdFromEnv } from '../src/lib/adapters/estat-api';
@@ -68,6 +69,22 @@ function parseArgs(argv: readonly string[]): { start?: string } {
   }
   return { start: value };
 }
+
+/**
+ * 財務省の 3 つの表を出し分ける (#222)。
+ *
+ * どの表を引くかは指標マスタが決める。ここで分岐を持たないと、指標を足すたびに
+ * 取得側にも条件を書き足すことになる。
+ */
+async function fetchTreasury(
+  source: Extract<IndicatorSource, { adapter: 'treasury' }>,
+): Promise<Record<string, number>> {
+  const client = new TreasuryClient();
+  if ('avgRate' in source) return client.fetchAvgRate(source.avgRate);
+  if ('debt' in source) return client.fetchDebtHeldByPublic();
+  return client.fetchTenYearBidToCover();
+}
+
 
 async function main(): Promise<void> {
   const now = new Date();
@@ -181,12 +198,13 @@ async function main(): Promise<void> {
     }
   }
 
-  // --- 3b. 米財務省 (国債入札) ---
-  // 全期間を毎回取り直す。件数が 400 弱と小さく、差分取得の複雑さに見合わない。
+  // --- 3b. 米財務省 (国債の入札・平均利率・残高) ---
+  // 全期間を毎回取り直す。最大でも 8,374 件と小さく、差分取得の複雑さに見合わない。
   for (const [id, indicator] of Object.entries(indicators)) {
-    if (indicator.source.adapter !== 'treasury') continue;
+    const source = indicator.source;
+    if (source.adapter !== 'treasury') continue;
     try {
-      const observations = await new TreasuryClient().fetchTenYearBidToCover();
+      const observations = await fetchTreasury(source);
       observationMap[id] = upsertObservations(id, observations, now);
       console.log(`  treasury ${id}: ${Object.keys(observations).length} 件`);
     } catch (error) {
