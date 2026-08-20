@@ -564,6 +564,14 @@ export interface MonthlyPoint {
   jpPropensityToConsume: number | null;
   /** 日本の鉱工業生産指数。**2020年基準・季節調整済みの水準** (#164)。 */
   jpIndustrialProduction: number | null;
+  /** 日本の CPI コアコア (生鮮・エネルギー除く) の前年同月比 (%)。米国のコアと同じ定義 (#202)。 */
+  jpCpiCoreCore: number | null;
+  /** 日本の鉱工業在庫率指数。**出荷に対する在庫の比** (#202)。 */
+  jpInventoryRatio: number | null;
+  /** TOPIX。東証全体・時価総額加重 (#202)。 */
+  jpTopix: number | null;
+  /** 日本の総消費動向指数 (実質)。家計調査より広い (#202)。 */
+  jpConsumptionIndex: number | null;
   /** 日本の CPI コア (生鮮食品を除く総合) の前年同月比 (%)。**2025年基準** (#162)。 */
   jpCpiCore: number | null;
   /** 日本の CPI 総合の前年同月比 (%)。**2025年基準** (#162)。 */
