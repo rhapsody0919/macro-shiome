@@ -26,7 +26,8 @@
     "twoYearRate": 0.72,
     "sofr": null,
     "breakeven5y": 1.33,
-    "breakeven5y5y": 1.67
+    "breakeven5y5y": 1.67,
+    "continuedClaims": 2143000
   },
   {
     "date": "2016-08-12",
@@ -55,7 +56,8 @@
     "twoYearRate": 0.71,
     "sofr": null,
     "breakeven5y": 1.29,
-    "breakeven5y5y": 1.59
+    "breakeven5y5y": 1.59,
+    "continuedClaims": 2157000
   },
   {
     "date": "2016-08-19",
@@ -84,7 +86,8 @@
     "twoYearRate": 0.76,
     "sofr": null,
     "breakeven5y": 1.34,
-    "breakeven5y5y": 1.62
+    "breakeven5y5y": 1.62,
+    "continuedClaims": 2137000
   },
   {
     "date": "2016-08-26",
@@ -113,7 +116,8 @@
     "twoYearRate": 0.84,
     "sofr": null,
     "breakeven5y": 1.31,
-    "breakeven5y5y": 1.63
+    "breakeven5y5y": 1.63,
+    "continuedClaims": 2148000
   },
   {
     "date": "2016-09-02",
@@ -142,7 +146,8 @@
     "twoYearRate": 0.8,
     "sofr": null,
     "breakeven5y": 1.28,
-    "breakeven5y5y": 1.66
+    "breakeven5y5y": 1.66,
+    "continuedClaims": 2138000
   },
   {
     "date": "2016-09-09",
@@ -171,7 +176,8 @@
     "twoYearRate": 0.79,
     "sofr": null,
     "breakeven5y": 1.32,
-    "breakeven5y5y": 1.68
+    "breakeven5y5y": 1.68,
+    "continuedClaims": 2149000
   },
   {
     "date": "2016-09-16",
@@ -200,7 +206,8 @@
     "twoYearRate": 0.77,
     "sofr": null,
     "breakeven5y": 1.34,
-    "breakeven5y5y": 1.68
+    "breakeven5y5y": 1.68,
+    "continuedClaims": 2110000
   },
   {
     "date": "2016-09-23",
@@ -229,7 +236,8 @@
     "twoYearRate": 0.77,
     "sofr": null,
     "breakeven5y": 1.42,
-    "breakeven5y5y": 1.72
+    "breakeven5y5y": 1.72,
+    "continuedClaims": 2098000
   },
   {
     "date": "2016-09-30",
@@ -258,7 +266,8 @@
     "twoYearRate": 0.77,
     "sofr": null,
     "breakeven5y": 1.45,
-    "breakeven5y5y": 1.75
+    "breakeven5y5y": 1.75,
+    "continuedClaims": 2081000
   },
   {
     "date": "2016-10-07",
@@ -287,7 +296,8 @@
     "twoYearRate": 0.83,
     "sofr": null,
     "breakeven5y": 1.5,
-    "breakeven5y5y": 1.76
+    "breakeven5y5y": 1.76,
+    "continuedClaims": 2080000
   },
   {
     "date": "2016-10-14",
@@ -316,7 +326,8 @@
     "twoYearRate": 0.84,
     "sofr": null,
     "breakeven5y": 1.53,
-    "breakeven5y5y": 1.81
+    "breakeven5y5y": 1.81,
+    "continuedClaims": 2081000
   },
   {
     "date": "2016-10-21",
@@ -345,7 +356,8 @@
     "twoYearRate": 0.84,
     "sofr": null,
     "breakeven5y": 1.56,
-    "breakeven5y5y": 1.78
+    "breakeven5y5y": 1.78,
+    "continuedClaims": 2069000
   },
   {
     "date": "2016-10-28",
@@ -374,7 +386,8 @@
     "twoYearRate": 0.86,
     "sofr": null,
     "breakeven5y": 1.6,
-    "breakeven5y5y": 1.86
+    "breakeven5y5y": 1.86,
+    "continuedClaims": 2066000
   },
   {
     "date": "2016-11-04",
@@ -403,7 +416,8 @@
     "twoYearRate": 0.8,
     "sofr": null,
     "breakeven5y": 1.52,
-    "breakeven5y5y": 1.84
+    "breakeven5y5y": 1.84,
+    "continuedClaims": 2067000
   },
   {
     "date": "2016-11-11",
@@ -432,7 +446,8 @@
     "twoYearRate": 0.92,
     "sofr": null,
     "breakeven5y": 1.7,
-    "breakeven5y5y": 2.06
+    "breakeven5y5y": 2.06,
+    "continuedClaims": 2046000
   },
   {
     "date": "2016-11-18",
@@ -461,7 +476,8 @@
     "twoYearRate": 1.07,
     "sofr": null,
     "breakeven5y": 1.74,
-    "breakeven5y5y": 2.06
+    "breakeven5y5y": 2.06,
+    "continuedClaims": 2045000
   },
   {
     "date": "2016-11-25",
@@ -490,7 +506,8 @@
     "twoYearRate": 1.12,
     "sofr": null,
     "breakeven5y": 1.74,
-    "breakeven5y5y": 2.04
+    "breakeven5y5y": 2.04,
+    "continuedClaims": 2050000
   },
   {
     "date": "2016-12-02",
@@ -519,7 +536,8 @@
     "twoYearRate": 1.11,
     "sofr": null,
     "breakeven5y": 1.76,
-    "breakeven5y5y": 2.06
+    "breakeven5y5y": 2.06,
+    "continuedClaims": 2038000
   },
   {
     "date": "2016-12-09",
@@ -548,7 +566,8 @@
     "twoYearRate": 1.15,
     "sofr": null,
     "breakeven5y": 1.83,
-    "breakeven5y5y": 2.09
+    "breakeven5y5y": 2.09,
+    "continuedClaims": 2029000
   },
   {
     "date": "2016-12-16",
@@ -577,7 +596,8 @@
     "twoYearRate": 1.28,
     "sofr": null,
     "breakeven5y": 1.75,
-    "breakeven5y5y": 1.97
+    "breakeven5y5y": 1.97,
+    "continuedClaims": 2030000
   },
   {
     "date": "2016-12-23",
@@ -606,7 +626,8 @@
     "twoYearRate": 1.22,
     "sofr": null,
     "breakeven5y": 1.84,
-    "breakeven5y5y": 2.1
+    "breakeven5y5y": 2.1,
+    "continuedClaims": 2078000
   },
   {
     "date": "2016-12-30",
@@ -635,7 +656,8 @@
     "twoYearRate": 1.2,
     "sofr": null,
     "breakeven5y": 1.84,
-    "breakeven5y5y": 2.06
+    "breakeven5y5y": 2.06,
+    "continuedClaims": 2077000
   },
   {
     "date": "2017-01-06",
@@ -664,7 +686,8 @@
     "twoYearRate": 1.22,
     "sofr": null,
     "breakeven5y": 1.84,
-    "breakeven5y5y": 2.08
+    "breakeven5y5y": 2.08,
+    "continuedClaims": 2028000
   },
   {
     "date": "2017-01-13",
@@ -693,7 +716,8 @@
     "twoYearRate": 1.21,
     "sofr": null,
     "breakeven5y": 1.85,
-    "breakeven5y5y": 2.13
+    "breakeven5y5y": 2.13,
+    "continuedClaims": 2080000
   },
   {
     "date": "2017-01-20",
@@ -722,7 +746,8 @@
     "twoYearRate": 1.2,
     "sofr": null,
     "breakeven5y": 1.92,
-    "breakeven5y5y": 2.16
+    "breakeven5y5y": 2.16,
+    "continuedClaims": 2099000
   },
   {
     "date": "2017-01-27",
@@ -751,7 +776,8 @@
     "twoYearRate": 1.22,
     "sofr": null,
     "breakeven5y": 1.96,
-    "breakeven5y5y": 2.2
+    "breakeven5y5y": 2.2,
+    "continuedClaims": 2067000
   },
   {
     "date": "2017-02-03",
@@ -780,7 +806,8 @@
     "twoYearRate": 1.21,
     "sofr": null,
     "breakeven5y": 1.91,
-    "breakeven5y5y": 2.19
+    "breakeven5y5y": 2.19,
+    "continuedClaims": 2078000
   },
   {
     "date": "2017-02-10",
@@ -809,7 +836,8 @@
     "twoYearRate": 1.2,
     "sofr": null,
     "breakeven5y": 1.87,
-    "breakeven5y5y": 2.15
+    "breakeven5y5y": 2.15,
+    "continuedClaims": 2064000
   },
   {
     "date": "2017-02-17",
@@ -838,7 +866,8 @@
     "twoYearRate": 1.21,
     "sofr": null,
     "breakeven5y": 1.85,
-    "breakeven5y5y": 2.17
+    "breakeven5y5y": 2.17,
+    "continuedClaims": 2076000
   },
   {
     "date": "2017-02-24",
@@ -867,7 +896,8 @@
     "twoYearRate": 1.12,
     "sofr": null,
     "breakeven5y": 1.9,
-    "breakeven5y5y": 2.1
+    "breakeven5y5y": 2.1,
+    "continuedClaims": 2034000
   },
   {
     "date": "2017-03-03",
@@ -896,7 +926,8 @@
     "twoYearRate": 1.32,
     "sofr": null,
     "breakeven5y": 1.92,
-    "breakeven5y5y": 2.16
+    "breakeven5y5y": 2.16,
+    "continuedClaims": 2065000
   },
   {
     "date": "2017-03-10",
@@ -925,7 +956,8 @@
     "twoYearRate": 1.36,
     "sofr": null,
     "breakeven5y": 1.9,
-    "breakeven5y5y": 2.12
+    "breakeven5y5y": 2.12,
+    "continuedClaims": 2020000
   },
   {
     "date": "2017-03-17",
@@ -954,7 +986,8 @@
     "twoYearRate": 1.33,
     "sofr": null,
     "breakeven5y": 1.89,
-    "breakeven5y5y": 2.13
+    "breakeven5y5y": 2.13,
+    "continuedClaims": 2002000
   },
   {
     "date": "2017-03-24",
@@ -983,7 +1016,8 @@
     "twoYearRate": 1.26,
     "sofr": null,
     "breakeven5y": 1.73,
-    "breakeven5y5y": 2.23
+    "breakeven5y5y": 2.23,
+    "continuedClaims": 2021000
   },
   {
     "date": "2017-03-31",
@@ -1012,7 +1046,8 @@
     "twoYearRate": 1.27,
     "sofr": null,
     "breakeven5y": 1.77,
-    "breakeven5y5y": 2.17
+    "breakeven5y5y": 2.17,
+    "continuedClaims": 2027000
   },
   {
     "date": "2017-04-07",
@@ -1041,7 +1076,8 @@
     "twoYearRate": 1.29,
     "sofr": null,
     "breakeven5y": 1.7,
-    "breakeven5y5y": 2.18
+    "breakeven5y5y": 2.18,
+    "continuedClaims": 1990000
   },
   {
     "date": "2017-04-14",
@@ -1070,7 +1106,8 @@
     "twoYearRate": 1.21,
     "sofr": null,
     "breakeven5y": 1.74,
-    "breakeven5y5y": 2.1
+    "breakeven5y5y": 2.1,
+    "continuedClaims": 1968000
   },
   {
     "date": "2017-04-21",
@@ -1099,7 +1136,8 @@
     "twoYearRate": 1.2,
     "sofr": null,
     "breakeven5y": 1.79,
-    "breakeven5y5y": 1.89
+    "breakeven5y5y": 1.89,
+    "continuedClaims": 1961000
   },
   {
     "date": "2017-04-28",
@@ -1128,7 +1166,8 @@
     "twoYearRate": 1.28,
     "sofr": null,
     "breakeven5y": 1.81,
-    "breakeven5y5y": 2.03
+    "breakeven5y5y": 2.03,
+    "continuedClaims": 1962000
   },
   {
     "date": "2017-05-05",
@@ -1157,7 +1196,8 @@
     "twoYearRate": 1.32,
     "sofr": null,
     "breakeven5y": 1.75,
-    "breakeven5y5y": 1.97
+    "breakeven5y5y": 1.97,
+    "continuedClaims": 1896000
   },
   {
     "date": "2017-05-12",
@@ -1186,7 +1226,8 @@
     "twoYearRate": 1.29,
     "sofr": null,
     "breakeven5y": 1.75,
-    "breakeven5y5y": 1.93
+    "breakeven5y5y": 1.93,
+    "continuedClaims": 1892000
   },
   {
     "date": "2017-05-19",
@@ -1215,7 +1256,8 @@
     "twoYearRate": 1.28,
     "sofr": null,
     "breakeven5y": 1.75,
-    "breakeven5y5y": 1.89
+    "breakeven5y5y": 1.89,
+    "continuedClaims": 1902000
   },
   {
     "date": "2017-05-26",
@@ -1244,7 +1286,8 @@
     "twoYearRate": 1.3,
     "sofr": null,
     "breakeven5y": 1.73,
-    "breakeven5y5y": 1.89
+    "breakeven5y5y": 1.89,
+    "continuedClaims": 1900000
   },
   {
     "date": "2017-06-02",
@@ -1273,7 +1316,8 @@
     "twoYearRate": 1.28,
     "sofr": null,
     "breakeven5y": 1.72,
-    "breakeven5y5y": 1.86
+    "breakeven5y5y": 1.86,
+    "continuedClaims": 1891000
   },
   {
     "date": "2017-06-09",
@@ -1302,7 +1346,8 @@
     "twoYearRate": 1.35,
     "sofr": null,
     "breakeven5y": 1.68,
-    "breakeven5y5y": 1.88
+    "breakeven5y5y": 1.88,
+    "continuedClaims": 1909000
   },
   {
     "date": "2017-06-16",
@@ -1331,7 +1376,8 @@
     "twoYearRate": 1.32,
     "sofr": null,
     "breakeven5y": 1.56,
-    "breakeven5y5y": 1.78
+    "breakeven5y5y": 1.78,
+    "continuedClaims": 1914000
   },
   {
     "date": "2017-06-23",
@@ -1360,7 +1406,8 @@
     "twoYearRate": 1.34,
     "sofr": null,
     "breakeven5y": 1.59,
-    "breakeven5y5y": 1.81
+    "breakeven5y5y": 1.81,
+    "continuedClaims": 1915000
   },
   {
     "date": "2017-06-30",
@@ -1389,7 +1436,8 @@
     "twoYearRate": 1.38,
     "sofr": null,
     "breakeven5y": 1.63,
-    "breakeven5y5y": 1.83
+    "breakeven5y5y": 1.83,
+    "continuedClaims": 1929000
   },
   {
     "date": "2017-07-07",
@@ -1418,7 +1466,8 @@
     "twoYearRate": 1.4,
     "sofr": null,
     "breakeven5y": 1.63,
-    "breakeven5y5y": 1.83
+    "breakeven5y5y": 1.83,
+    "continuedClaims": 1911000
   },
   {
     "date": "2017-07-14",
@@ -1447,7 +1496,8 @@
     "twoYearRate": 1.35,
     "sofr": null,
     "breakeven5y": 1.62,
-    "breakeven5y5y": 1.9
+    "breakeven5y5y": 1.9,
+    "continuedClaims": 1942000
   },
   {
     "date": "2017-07-21",
@@ -1476,7 +1526,8 @@
     "twoYearRate": 1.36,
     "sofr": null,
     "breakeven5y": 1.62,
-    "breakeven5y5y": 1.9
+    "breakeven5y5y": 1.9,
+    "continuedClaims": 1929000
   },
   {
     "date": "2017-07-28",
@@ -1505,7 +1556,8 @@
     "twoYearRate": 1.34,
     "sofr": null,
     "breakeven5y": 1.68,
-    "breakeven5y5y": 1.98
+    "breakeven5y5y": 1.98,
+    "continuedClaims": 1928000
   },
   {
     "date": "2017-08-04",
@@ -1534,7 +1586,8 @@
     "twoYearRate": 1.36,
     "sofr": null,
     "breakeven5y": 1.65,
-    "breakeven5y5y": 1.95
+    "breakeven5y5y": 1.95,
+    "continuedClaims": 1926000
   },
   {
     "date": "2017-08-11",
@@ -1563,7 +1616,8 @@
     "twoYearRate": 1.3,
     "sofr": null,
     "breakeven5y": 1.64,
-    "breakeven5y5y": 1.94
+    "breakeven5y5y": 1.94,
+    "continuedClaims": 1928000
   },
   {
     "date": "2017-08-18",
@@ -1592,7 +1646,8 @@
     "twoYearRate": 1.33,
     "sofr": null,
     "breakeven5y": 1.61,
-    "breakeven5y5y": 1.91
+    "breakeven5y5y": 1.91,
+    "continuedClaims": 1926000
   },
   {
     "date": "2017-08-25",
@@ -1621,7 +1676,8 @@
     "twoYearRate": 1.35,
     "sofr": null,
     "breakeven5y": 1.57,
-    "breakeven5y5y": 1.93
+    "breakeven5y5y": 1.93,
+    "continuedClaims": 1928000
   },
   {
     "date": "2017-09-01",
@@ -1650,7 +1706,8 @@
     "twoYearRate": 1.35,
     "sofr": null,
     "breakeven5y": 1.63,
-    "breakeven5y5y": 1.95
+    "breakeven5y5y": 1.95,
+    "continuedClaims": 1912000
   },
   {
     "date": "2017-09-08",
@@ -1679,7 +1736,8 @@
     "twoYearRate": 1.27,
     "sofr": null,
     "breakeven5y": 1.63,
-    "breakeven5y5y": 1.99
+    "breakeven5y5y": 1.99,
+    "continuedClaims": 1911000
   },
   {
     "date": "2017-09-15",
@@ -1708,7 +1766,8 @@
     "twoYearRate": 1.39,
     "sofr": null,
     "breakeven5y": 1.72,
-    "breakeven5y5y": 1.98
+    "breakeven5y5y": 1.98,
+    "continuedClaims": 1939000
   },
   {
     "date": "2017-09-22",
@@ -1737,7 +1796,8 @@
     "twoYearRate": 1.46,
     "sofr": null,
     "breakeven5y": 1.71,
-    "breakeven5y5y": 1.97
+    "breakeven5y5y": 1.97,
+    "continuedClaims": 1872000
   },
   {
     "date": "2017-09-29",
@@ -1766,7 +1826,8 @@
     "twoYearRate": 1.47,
     "sofr": null,
     "breakeven5y": 1.68,
-    "breakeven5y5y": 2
+    "breakeven5y5y": 2,
+    "continuedClaims": 1871000
   },
   {
     "date": "2017-10-06",
@@ -1795,7 +1856,8 @@
     "twoYearRate": 1.54,
     "sofr": null,
     "breakeven5y": 1.78,
-    "breakeven5y5y": 1.96
+    "breakeven5y5y": 1.96,
+    "continuedClaims": 1871000
   },
   {
     "date": "2017-10-13",
@@ -1824,7 +1886,8 @@
     "twoYearRate": 1.51,
     "sofr": null,
     "breakeven5y": 1.71,
-    "breakeven5y5y": 1.99
+    "breakeven5y5y": 1.99,
+    "continuedClaims": 1869000
   },
   {
     "date": "2017-10-20",
@@ -1853,7 +1916,8 @@
     "twoYearRate": 1.6,
     "sofr": null,
     "breakeven5y": 1.76,
-    "breakeven5y5y": 1.98
+    "breakeven5y5y": 1.98,
+    "continuedClaims": 1902000
   },
   {
     "date": "2017-10-27",
@@ -1882,7 +1946,8 @@
     "twoYearRate": 1.59,
     "sofr": null,
     "breakeven5y": 1.76,
-    "breakeven5y5y": 2
+    "breakeven5y5y": 2,
+    "continuedClaims": 1913000
   },
   {
     "date": "2017-11-03",
@@ -1911,7 +1976,8 @@
     "twoYearRate": 1.63,
     "sofr": null,
     "breakeven5y": 1.74,
-    "breakeven5y5y": 1.98
+    "breakeven5y5y": 1.98,
+    "continuedClaims": 1927000
   },
   {
     "date": "2017-11-10",
@@ -1940,7 +2006,8 @@
     "twoYearRate": 1.67,
     "sofr": null,
     "breakeven5y": 1.78,
-    "breakeven5y5y": 1.98
+    "breakeven5y5y": 1.98,
+    "continuedClaims": 1939000
   },
   {
     "date": "2017-11-17",
@@ -1969,7 +2036,8 @@
     "twoYearRate": 1.73,
     "sofr": null,
     "breakeven5y": 1.75,
-    "breakeven5y5y": 1.97
+    "breakeven5y5y": 1.97,
+    "continuedClaims": 1944000
   },
   {
     "date": "2017-11-24",
@@ -1998,7 +2066,8 @@
     "twoYearRate": 1.75,
     "sofr": null,
     "breakeven5y": 1.71,
-    "breakeven5y5y": 1.97
+    "breakeven5y5y": 1.97,
+    "continuedClaims": 1974000
   },
   {
     "date": "2017-12-01",
@@ -2027,7 +2096,8 @@
     "twoYearRate": 1.78,
     "sofr": null,
     "breakeven5y": 1.72,
-    "breakeven5y5y": 2
+    "breakeven5y5y": 2,
+    "continuedClaims": 1997000
   },
   {
     "date": "2017-12-08",
@@ -2056,7 +2126,8 @@
     "twoYearRate": 1.8,
     "sofr": null,
     "breakeven5y": 1.71,
-    "breakeven5y5y": 2.05
+    "breakeven5y5y": 2.05,
+    "continuedClaims": 1953000
   },
   {
     "date": "2017-12-15",
@@ -2085,7 +2156,8 @@
     "twoYearRate": 1.84,
     "sofr": null,
     "breakeven5y": 1.77,
-    "breakeven5y5y": 1.99
+    "breakeven5y5y": 1.99,
+    "continuedClaims": 1984000
   },
   {
     "date": "2017-12-22",
@@ -2114,7 +2186,8 @@
     "twoYearRate": 1.91,
     "sofr": null,
     "breakeven5y": 1.82,
-    "breakeven5y5y": 2.06
+    "breakeven5y5y": 2.06,
+    "continuedClaims": 2006000
   },
   {
     "date": "2017-12-29",
@@ -2143,7 +2216,8 @@
     "twoYearRate": 1.89,
     "sofr": null,
     "breakeven5y": 1.86,
-    "breakeven5y5y": 2.06
+    "breakeven5y5y": 2.06,
+    "continuedClaims": 1979000
   },
   {
     "date": "2018-01-05",
@@ -2172,7 +2246,8 @@
     "twoYearRate": 1.96,
     "sofr": null,
     "breakeven5y": 1.95,
-    "breakeven5y5y": 2.07
+    "breakeven5y5y": 2.07,
+    "continuedClaims": 1933000
   },
   {
     "date": "2018-01-12",
@@ -2201,7 +2276,8 @@
     "twoYearRate": 1.99,
     "sofr": null,
     "breakeven5y": 1.92,
-    "breakeven5y5y": 2.1
+    "breakeven5y5y": 2.1,
+    "continuedClaims": 1971000
   },
   {
     "date": "2018-01-19",
@@ -2230,7 +2306,8 @@
     "twoYearRate": 2.06,
     "sofr": null,
     "breakeven5y": 2,
-    "breakeven5y5y": 2.12
+    "breakeven5y5y": 2.12,
+    "continuedClaims": 1972000
   },
   {
     "date": "2018-01-26",
@@ -2259,7 +2336,8 @@
     "twoYearRate": 2.13,
     "sofr": null,
     "breakeven5y": 1.93,
-    "breakeven5y5y": 2.25
+    "breakeven5y5y": 2.25,
+    "continuedClaims": 1990000
   },
   {
     "date": "2018-02-02",
@@ -2288,7 +2366,8 @@
     "twoYearRate": 2.15,
     "sofr": null,
     "breakeven5y": 1.93,
-    "breakeven5y5y": 2.35
+    "breakeven5y5y": 2.35,
+    "continuedClaims": 1985000
   },
   {
     "date": "2018-02-09",
@@ -2317,7 +2396,8 @@
     "twoYearRate": 2.05,
     "sofr": null,
     "breakeven5y": 1.83,
-    "breakeven5y5y": 2.27
+    "breakeven5y5y": 2.27,
+    "continuedClaims": 1996000
   },
   {
     "date": "2018-02-16",
@@ -2346,7 +2426,8 @@
     "twoYearRate": 2.21,
     "sofr": null,
     "breakeven5y": 2,
-    "breakeven5y5y": 2.18
+    "breakeven5y5y": 2.18,
+    "continuedClaims": 1959000
   },
   {
     "date": "2018-02-23",
@@ -2375,7 +2456,8 @@
     "twoYearRate": 2.25,
     "sofr": null,
     "breakeven5y": 2.04,
-    "breakeven5y5y": 2.2
+    "breakeven5y5y": 2.2,
+    "continuedClaims": 1985000
   },
   {
     "date": "2018-03-02",
@@ -2404,7 +2486,8 @@
     "twoYearRate": 2.25,
     "sofr": null,
     "breakeven5y": 2.03,
-    "breakeven5y5y": 2.21
+    "breakeven5y5y": 2.21,
+    "continuedClaims": 1957000
   },
   {
     "date": "2018-03-09",
@@ -2433,7 +2516,8 @@
     "twoYearRate": 2.27,
     "sofr": null,
     "breakeven5y": 1.96,
-    "breakeven5y5y": 2.28
+    "breakeven5y5y": 2.28,
+    "continuedClaims": 1960000
   },
   {
     "date": "2018-03-16",
@@ -2462,7 +2546,8 @@
     "twoYearRate": 2.31,
     "sofr": null,
     "breakeven5y": 2.05,
-    "breakeven5y5y": 2.11
+    "breakeven5y5y": 2.11,
+    "continuedClaims": 1948000
   },
   {
     "date": "2018-03-23",
@@ -2491,7 +2576,8 @@
     "twoYearRate": 2.28,
     "sofr": null,
     "breakeven5y": 2.01,
-    "breakeven5y5y": 2.13
+    "breakeven5y5y": 2.13,
+    "continuedClaims": 1959000
   },
   {
     "date": "2018-03-30",
@@ -2520,7 +2606,8 @@
     "twoYearRate": 2.27,
     "sofr": null,
     "breakeven5y": 1.92,
-    "breakeven5y5y": 2.18
+    "breakeven5y5y": 2.18,
+    "continuedClaims": 1917000
   },
   {
     "date": "2018-04-06",
@@ -2549,7 +2636,8 @@
     "twoYearRate": 2.27,
     "sofr": 1.75,
     "breakeven5y": 2.01,
-    "breakeven5y5y": 2.13
+    "breakeven5y5y": 2.13,
+    "continuedClaims": 1943000
   },
   {
     "date": "2018-04-13",
@@ -2578,7 +2666,8 @@
     "twoYearRate": 2.37,
     "sofr": 1.72,
     "breakeven5y": 2.01,
-    "breakeven5y5y": 2.25
+    "breakeven5y5y": 2.25,
+    "continuedClaims": 1949000
   },
   {
     "date": "2018-04-20",
@@ -2607,7 +2696,8 @@
     "twoYearRate": 2.46,
     "sofr": 1.72,
     "breakeven5y": 2.1,
-    "breakeven5y5y": 2.24
+    "breakeven5y5y": 2.24,
+    "continuedClaims": 1900000
   },
   {
     "date": "2018-04-27",
@@ -2636,7 +2726,8 @@
     "twoYearRate": 2.49,
     "sofr": 1.72,
     "breakeven5y": 2.09,
-    "breakeven5y5y": 2.25
+    "breakeven5y5y": 2.25,
+    "continuedClaims": 1827000
   },
   {
     "date": "2018-05-04",
@@ -2665,7 +2756,8 @@
     "twoYearRate": 2.51,
     "sofr": 1.72,
     "breakeven5y": 2.09,
-    "breakeven5y5y": 2.23
+    "breakeven5y5y": 2.23,
+    "continuedClaims": 1834000
   },
   {
     "date": "2018-05-11",
@@ -2694,7 +2786,8 @@
     "twoYearRate": 2.54,
     "sofr": 1.73,
     "breakeven5y": 2.13,
-    "breakeven5y5y": 2.17
+    "breakeven5y5y": 2.17,
+    "continuedClaims": 1765000
   },
   {
     "date": "2018-05-18",
@@ -2723,7 +2816,8 @@
     "twoYearRate": 2.55,
     "sofr": 1.73,
     "breakeven5y": 2.14,
-    "breakeven5y5y": 2.16
+    "breakeven5y5y": 2.16,
+    "continuedClaims": 1769000
   },
   {
     "date": "2018-05-25",
@@ -2752,7 +2846,8 @@
     "twoYearRate": 2.48,
     "sofr": 1.73,
     "breakeven5y": 2.04,
-    "breakeven5y5y": 2.14
+    "breakeven5y5y": 2.14,
+    "continuedClaims": 1751000
   },
   {
     "date": "2018-06-01",
@@ -2781,7 +2876,8 @@
     "twoYearRate": 2.47,
     "sofr": 1.81,
     "breakeven5y": 2.06,
-    "breakeven5y5y": 2.12
+    "breakeven5y5y": 2.12,
+    "continuedClaims": 1737000
   },
   {
     "date": "2018-06-08",
@@ -2810,7 +2906,8 @@
     "twoYearRate": 2.5,
     "sofr": 1.69,
     "breakeven5y": 2.06,
-    "breakeven5y5y": 2.16
+    "breakeven5y5y": 2.16,
+    "continuedClaims": 1690000
   },
   {
     "date": "2018-06-15",
@@ -2839,7 +2936,8 @@
     "twoYearRate": 2.55,
     "sofr": 1.91,
     "breakeven5y": 2.08,
-    "breakeven5y5y": 2.16
+    "breakeven5y5y": 2.16,
+    "continuedClaims": 1693000
   },
   {
     "date": "2018-06-22",
@@ -2868,7 +2966,8 @@
     "twoYearRate": 2.56,
     "sofr": 1.92,
     "breakeven5y": 2.07,
-    "breakeven5y5y": 2.17
+    "breakeven5y5y": 2.17,
+    "continuedClaims": 1671000
   },
   {
     "date": "2018-06-29",
@@ -2897,7 +2996,8 @@
     "twoYearRate": 2.52,
     "sofr": 2.12,
     "breakeven5y": 2.06,
-    "breakeven5y5y": 2.16
+    "breakeven5y5y": 2.16,
+    "continuedClaims": 1671000
   },
   {
     "date": "2018-07-06",
@@ -2926,7 +3026,8 @@
     "twoYearRate": 2.53,
     "sofr": 1.93,
     "breakeven5y": 2.08,
-    "breakeven5y5y": 2.16
+    "breakeven5y5y": 2.16,
+    "continuedClaims": 1672000
   },
   {
     "date": "2018-07-13",
@@ -2955,7 +3056,8 @@
     "twoYearRate": 2.59,
     "sofr": 1.9,
     "breakeven5y": 2.07,
-    "breakeven5y5y": 2.15
+    "breakeven5y5y": 2.15,
+    "continuedClaims": 1676000
   },
   {
     "date": "2018-07-20",
@@ -2984,7 +3086,8 @@
     "twoYearRate": 2.6,
     "sofr": 1.88,
     "breakeven5y": 2.02,
-    "breakeven5y5y": 2.2
+    "breakeven5y5y": 2.2,
+    "continuedClaims": 1659000
   },
   {
     "date": "2018-07-27",
@@ -3013,7 +3116,8 @@
     "twoYearRate": 2.67,
     "sofr": 1.88,
     "breakeven5y": 2,
-    "breakeven5y5y": 2.24
+    "breakeven5y5y": 2.24,
+    "continuedClaims": 1624000
   },
   {
     "date": "2018-08-03",
@@ -3042,7 +3146,8 @@
     "twoYearRate": 2.63,
     "sofr": 1.86,
     "breakeven5y": 2,
-    "breakeven5y5y": 2.24
+    "breakeven5y5y": 2.24,
+    "continuedClaims": 1657000
   },
   {
     "date": "2018-08-10",
@@ -3071,7 +3176,8 @@
     "twoYearRate": 2.61,
     "sofr": 1.9,
     "breakeven5y": 1.98,
-    "breakeven5y5y": 2.2
+    "breakeven5y5y": 2.2,
+    "continuedClaims": 1624000
   },
   {
     "date": "2018-08-17",
@@ -3100,7 +3206,8 @@
     "twoYearRate": 2.61,
     "sofr": 1.9,
     "breakeven5y": 1.96,
-    "breakeven5y5y": 2.2
+    "breakeven5y5y": 2.2,
+    "continuedClaims": 1625000
   },
   {
     "date": "2018-08-24",
@@ -3129,7 +3236,8 @@
     "twoYearRate": 2.63,
     "sofr": 1.95,
     "breakeven5y": 1.99,
-    "breakeven5y5y": 2.19
+    "breakeven5y5y": 2.19,
+    "continuedClaims": 1605000
   },
   {
     "date": "2018-08-31",
@@ -3158,7 +3266,8 @@
     "twoYearRate": 2.62,
     "sofr": 1.97,
     "breakeven5y": 1.98,
-    "breakeven5y5y": 2.18
+    "breakeven5y5y": 2.18,
+    "continuedClaims": 1602000
   },
   {
     "date": "2018-09-07",
@@ -3187,7 +3296,8 @@
     "twoYearRate": 2.71,
     "sofr": 1.94,
     "breakeven5y": 1.98,
-    "breakeven5y5y": 2.22
+    "breakeven5y5y": 2.22,
+    "continuedClaims": 1575000
   },
   {
     "date": "2018-09-14",
@@ -3216,7 +3326,8 @@
     "twoYearRate": 2.78,
     "sofr": 1.95,
     "breakeven5y": 2,
-    "breakeven5y5y": 2.2
+    "breakeven5y5y": 2.2,
+    "continuedClaims": 1538000
   },
   {
     "date": "2018-09-21",
@@ -3245,7 +3356,8 @@
     "twoYearRate": 2.81,
     "sofr": 1.92,
     "breakeven5y": 2.02,
-    "breakeven5y5y": 2.28
+    "breakeven5y5y": 2.28,
+    "continuedClaims": 1544000
   },
   {
     "date": "2018-09-28",
@@ -3274,7 +3386,8 @@
     "twoYearRate": 2.81,
     "sofr": 2.25,
     "breakeven5y": 2.03,
-    "breakeven5y5y": 2.25
+    "breakeven5y5y": 2.25,
+    "continuedClaims": 1545000
   },
   {
     "date": "2018-10-05",
@@ -3303,7 +3416,8 @@
     "twoYearRate": 2.88,
     "sofr": 2.16,
     "breakeven5y": 2.05,
-    "breakeven5y5y": 2.27
+    "breakeven5y5y": 2.27,
+    "continuedClaims": 1553000
   },
   {
     "date": "2018-10-12",
@@ -3332,7 +3446,8 @@
     "twoYearRate": 2.85,
     "sofr": 2.18,
     "breakeven5y": 1.99,
-    "breakeven5y5y": 2.25
+    "breakeven5y5y": 2.25,
+    "continuedClaims": 1565000
   },
   {
     "date": "2018-10-19",
@@ -3361,7 +3476,8 @@
     "twoYearRate": 2.92,
     "sofr": 2.19,
     "breakeven5y": 1.98,
-    "breakeven5y5y": 2.24
+    "breakeven5y5y": 2.24,
+    "continuedClaims": 1588000
   },
   {
     "date": "2018-10-26",
@@ -3390,7 +3506,8 @@
     "twoYearRate": 2.81,
     "sofr": 2.19,
     "breakeven5y": 1.93,
-    "breakeven5y5y": 2.19
+    "breakeven5y5y": 2.19,
+    "continuedClaims": 1603000
   },
   {
     "date": "2018-11-02",
@@ -3419,7 +3536,8 @@
     "twoYearRate": 2.91,
     "sofr": 2.25,
     "breakeven5y": 1.91,
-    "breakeven5y5y": 2.21
+    "breakeven5y5y": 2.21,
+    "continuedClaims": 1615000
   },
   {
     "date": "2018-11-09",
@@ -3448,7 +3566,8 @@
     "twoYearRate": 2.94,
     "sofr": 2.2,
     "breakeven5y": 1.9,
-    "breakeven5y5y": 2.18
+    "breakeven5y5y": 2.18,
+    "continuedClaims": 1642000
   },
   {
     "date": "2018-11-16",
@@ -3477,7 +3596,8 @@
     "twoYearRate": 2.81,
     "sofr": 2.26,
     "breakeven5y": 1.88,
-    "breakeven5y5y": 2.16
+    "breakeven5y5y": 2.16,
+    "continuedClaims": 1665000
   },
   {
     "date": "2018-11-23",
@@ -3506,7 +3626,8 @@
     "twoYearRate": 2.81,
     "sofr": 2.23,
     "breakeven5y": 1.77,
-    "breakeven5y5y": 2.15
+    "breakeven5y5y": 2.15,
+    "continuedClaims": 1749000
   },
   {
     "date": "2018-11-30",
@@ -3535,7 +3656,8 @@
     "twoYearRate": 2.8,
     "sofr": 2.28,
     "breakeven5y": 1.77,
-    "breakeven5y5y": 2.17
+    "breakeven5y5y": 2.17,
+    "continuedClaims": 1684000
   },
   {
     "date": "2018-12-07",
@@ -3564,7 +3686,8 @@
     "twoYearRate": 2.72,
     "sofr": 2.3,
     "breakeven5y": 1.68,
-    "breakeven5y5y": 2.1
+    "breakeven5y5y": 2.1,
+    "continuedClaims": 1694000
   },
   {
     "date": "2018-12-14",
@@ -3593,7 +3716,8 @@
     "twoYearRate": 2.73,
     "sofr": 2.21,
     "breakeven5y": 1.6,
-    "breakeven5y5y": 2.04
+    "breakeven5y5y": 2.04,
+    "continuedClaims": 1745000
   },
   {
     "date": "2018-12-21",
@@ -3622,7 +3746,8 @@
     "twoYearRate": 2.63,
     "sofr": 2.4,
     "breakeven5y": 1.55,
-    "breakeven5y5y": 1.99
+    "breakeven5y5y": 1.99,
+    "continuedClaims": 1756000
   },
   {
     "date": "2018-12-28",
@@ -3651,7 +3776,8 @@
     "twoYearRate": 2.52,
     "sofr": 2.46,
     "breakeven5y": 1.52,
-    "breakeven5y5y": 1.94
+    "breakeven5y5y": 1.94,
+    "continuedClaims": 1770000
   },
   {
     "date": "2019-01-04",
@@ -3680,7 +3806,8 @@
     "twoYearRate": 2.5,
     "sofr": 2.45,
     "breakeven5y": 1.58,
-    "breakeven5y5y": 1.94
+    "breakeven5y5y": 1.94,
+    "continuedClaims": 1783000
   },
   {
     "date": "2019-01-11",
@@ -3709,7 +3836,8 @@
     "twoYearRate": 2.55,
     "sofr": 2.41,
     "breakeven5y": 1.66,
-    "breakeven5y5y": 2
+    "breakeven5y5y": 2,
+    "continuedClaims": 1766000
   },
   {
     "date": "2019-01-18",
@@ -3738,7 +3866,8 @@
     "twoYearRate": 2.62,
     "sofr": 2.42,
     "breakeven5y": 1.67,
-    "breakeven5y5y": 1.99
+    "breakeven5y5y": 1.99,
+    "continuedClaims": 1780000
   },
   {
     "date": "2019-01-25",
@@ -3767,7 +3896,8 @@
     "twoYearRate": 2.6,
     "sofr": 2.4,
     "breakeven5y": 1.64,
-    "breakeven5y5y": 1.94
+    "breakeven5y5y": 1.94,
+    "continuedClaims": 1813000
   },
   {
     "date": "2019-02-01",
@@ -3796,7 +3926,8 @@
     "twoYearRate": 2.52,
     "sofr": 2.47,
     "breakeven5y": 1.72,
-    "breakeven5y5y": 2.04
+    "breakeven5y5y": 2.04,
+    "continuedClaims": 1759000
   },
   {
     "date": "2019-02-08",
@@ -3825,7 +3956,8 @@
     "twoYearRate": 2.45,
     "sofr": 2.37,
     "breakeven5y": 1.69,
-    "breakeven5y5y": 1.95
+    "breakeven5y5y": 1.95,
+    "continuedClaims": 1806000
   },
   {
     "date": "2019-02-15",
@@ -3854,7 +3986,8 @@
     "twoYearRate": 2.52,
     "sofr": 2.43,
     "breakeven5y": 1.75,
-    "breakeven5y5y": 1.97
+    "breakeven5y5y": 1.97,
+    "continuedClaims": 1778000
   },
   {
     "date": "2019-02-22",
@@ -3883,7 +4016,8 @@
     "twoYearRate": 2.48,
     "sofr": 2.4,
     "breakeven5y": 1.82,
-    "breakeven5y5y": 2
+    "breakeven5y5y": 2,
+    "continuedClaims": 1826000
   },
   {
     "date": "2019-03-01",
@@ -3912,7 +4046,8 @@
     "twoYearRate": 2.55,
     "sofr": 2.38,
     "breakeven5y": 1.85,
-    "breakeven5y5y": 2.07
+    "breakeven5y5y": 2.07,
+    "continuedClaims": 1796000
   },
   {
     "date": "2019-03-08",
@@ -3941,7 +4076,8 @@
     "twoYearRate": 2.45,
     "sofr": 2.39,
     "breakeven5y": 1.8,
-    "breakeven5y5y": 2
+    "breakeven5y5y": 2,
+    "continuedClaims": 1807000
   },
   {
     "date": "2019-03-15",
@@ -3970,7 +4106,8 @@
     "twoYearRate": 2.43,
     "sofr": 2.46,
     "breakeven5y": 1.86,
-    "breakeven5y5y": 2.02
+    "breakeven5y5y": 2.02,
+    "continuedClaims": 1792000
   },
   {
     "date": "2019-03-22",
@@ -3999,7 +4136,8 @@
     "twoYearRate": 2.31,
     "sofr": 2.4,
     "breakeven5y": 1.8,
-    "breakeven5y5y": 2
+    "breakeven5y5y": 2,
+    "continuedClaims": 1800000
   },
   {
     "date": "2019-03-29",
@@ -4028,7 +4166,8 @@
     "twoYearRate": 2.27,
     "sofr": 2.65,
     "breakeven5y": 1.78,
-    "breakeven5y5y": 1.98
+    "breakeven5y5y": 1.98,
+    "continuedClaims": 1760000
   },
   {
     "date": "2019-04-05",
@@ -4057,7 +4196,8 @@
     "twoYearRate": 2.35,
     "sofr": 2.46,
     "breakeven5y": 1.79,
-    "breakeven5y5y": 2.01
+    "breakeven5y5y": 2.01,
+    "continuedClaims": 1742000
   },
   {
     "date": "2019-04-12",
@@ -4086,7 +4226,8 @@
     "twoYearRate": 2.4,
     "sofr": 2.44,
     "breakeven5y": 1.86,
-    "breakeven5y5y": 2.04
+    "breakeven5y5y": 2.04,
+    "continuedClaims": 1680000
   },
   {
     "date": "2019-04-19",
@@ -4115,7 +4256,8 @@
     "twoYearRate": 2.38,
     "sofr": 2.5,
     "breakeven5y": 1.86,
-    "breakeven5y5y": 2.04
+    "breakeven5y5y": 2.04,
+    "continuedClaims": 1664000
   },
   {
     "date": "2019-04-26",
@@ -4144,7 +4286,8 @@
     "twoYearRate": 2.28,
     "sofr": 2.46,
     "breakeven5y": 1.86,
-    "breakeven5y5y": 2.08
+    "breakeven5y5y": 2.08,
+    "continuedClaims": 1659000
   },
   {
     "date": "2019-05-03",
@@ -4173,7 +4316,8 @@
     "twoYearRate": 2.33,
     "sofr": 2.43,
     "breakeven5y": 1.8,
-    "breakeven5y5y": 2.02
+    "breakeven5y5y": 2.02,
+    "continuedClaims": 1663000
   },
   {
     "date": "2019-05-10",
@@ -4202,7 +4346,8 @@
     "twoYearRate": 2.26,
     "sofr": 2.4,
     "breakeven5y": 1.75,
-    "breakeven5y5y": 2.01
+    "breakeven5y5y": 2.01,
+    "continuedClaims": 1627000
   },
   {
     "date": "2019-05-17",
@@ -4231,7 +4376,8 @@
     "twoYearRate": 2.2,
     "sofr": 2.42,
     "breakeven5y": 1.71,
-    "breakeven5y5y": 1.91
+    "breakeven5y5y": 1.91,
+    "continuedClaims": 1635000
   },
   {
     "date": "2019-05-24",
@@ -4260,7 +4406,8 @@
     "twoYearRate": 2.16,
     "sofr": 2.37,
     "breakeven5y": 1.62,
-    "breakeven5y5y": 1.9
+    "breakeven5y5y": 1.9,
+    "continuedClaims": 1621000
   },
   {
     "date": "2019-05-31",
@@ -4289,7 +4436,8 @@
     "twoYearRate": 1.95,
     "sofr": 2.49,
     "breakeven5y": 1.58,
-    "breakeven5y5y": 1.9
+    "breakeven5y5y": 1.9,
+    "continuedClaims": 1629000
   },
   {
     "date": "2019-06-07",
@@ -4318,7 +4466,8 @@
     "twoYearRate": 1.85,
     "sofr": 2.39,
     "breakeven5y": 1.61,
-    "breakeven5y5y": 1.87
+    "breakeven5y5y": 1.87,
+    "continuedClaims": 1631000
   },
   {
     "date": "2019-06-14",
@@ -4347,7 +4496,8 @@
     "twoYearRate": 1.84,
     "sofr": 2.35,
     "breakeven5y": 1.48,
-    "breakeven5y5y": 1.78
+    "breakeven5y5y": 1.78,
+    "continuedClaims": 1608000
   },
   {
     "date": "2019-06-21",
@@ -4376,7 +4526,8 @@
     "twoYearRate": 1.77,
     "sofr": 2.37,
     "breakeven5y": 1.6,
-    "breakeven5y5y": 1.86
+    "breakeven5y5y": 1.86,
+    "continuedClaims": 1634000
   },
   {
     "date": "2019-06-28",
@@ -4405,7 +4556,8 @@
     "twoYearRate": 1.75,
     "sofr": 2.5,
     "breakeven5y": 1.53,
-    "breakeven5y5y": 1.85
+    "breakeven5y5y": 1.85,
+    "continuedClaims": 1625000
   },
   {
     "date": "2019-07-05",
@@ -4434,7 +4586,8 @@
     "twoYearRate": 1.87,
     "sofr": 2.59,
     "breakeven5y": 1.55,
-    "breakeven5y5y": 1.83
+    "breakeven5y5y": 1.83,
+    "continuedClaims": 1657000
   },
   {
     "date": "2019-07-12",
@@ -4463,7 +4616,8 @@
     "twoYearRate": 1.84,
     "sofr": 2.36,
     "breakeven5y": 1.62,
-    "breakeven5y5y": 1.92
+    "breakeven5y5y": 1.92,
+    "continuedClaims": 1633000
   },
   {
     "date": "2019-07-19",
@@ -4492,7 +4646,8 @@
     "twoYearRate": 1.8,
     "sofr": 2.41,
     "breakeven5y": 1.6,
-    "breakeven5y5y": 2
+    "breakeven5y5y": 2,
+    "continuedClaims": 1634000
   },
   {
     "date": "2019-07-26",
@@ -4521,7 +4676,8 @@
     "twoYearRate": 1.86,
     "sofr": 2.41,
     "breakeven5y": 1.57,
-    "breakeven5y5y": 1.99
+    "breakeven5y5y": 1.99,
+    "continuedClaims": 1623000
   },
   {
     "date": "2019-08-02",
@@ -4550,7 +4706,8 @@
     "twoYearRate": 1.72,
     "sofr": 2.19,
     "breakeven5y": 1.45,
-    "breakeven5y5y": 1.87
+    "breakeven5y5y": 1.87,
+    "continuedClaims": 1634000
   },
   {
     "date": "2019-08-09",
@@ -4579,7 +4736,8 @@
     "twoYearRate": 1.63,
     "sofr": 2.11,
     "breakeven5y": 1.44,
-    "breakeven5y5y": 1.88
+    "breakeven5y5y": 1.88,
+    "continuedClaims": 1656000
   },
   {
     "date": "2019-08-16",
@@ -4608,7 +4766,8 @@
     "twoYearRate": 1.48,
     "sofr": 2.13,
     "breakeven5y": 1.34,
-    "breakeven5y5y": 1.74
+    "breakeven5y5y": 1.74,
+    "continuedClaims": 1618000
   },
   {
     "date": "2019-08-23",
@@ -4637,7 +4796,8 @@
     "twoYearRate": 1.51,
     "sofr": 2.1,
     "breakeven5y": 1.35,
-    "breakeven5y5y": 1.73
+    "breakeven5y5y": 1.73,
+    "continuedClaims": 1629000
   },
   {
     "date": "2019-08-30",
@@ -4666,7 +4826,8 @@
     "twoYearRate": 1.5,
     "sofr": 2.16,
     "breakeven5y": 1.35,
-    "breakeven5y5y": 1.75
+    "breakeven5y5y": 1.75,
+    "continuedClaims": 1604000
   },
   {
     "date": "2019-09-06",
@@ -4695,7 +4856,8 @@
     "twoYearRate": 1.53,
     "sofr": 2.15,
     "breakeven5y": 1.35,
-    "breakeven5y5y": 1.73
+    "breakeven5y5y": 1.73,
+    "continuedClaims": 1591000
   },
   {
     "date": "2019-09-13",
@@ -4724,7 +4886,8 @@
     "twoYearRate": 1.79,
     "sofr": 2.2,
     "breakeven5y": 1.46,
-    "breakeven5y5y": 1.88
+    "breakeven5y5y": 1.88,
+    "continuedClaims": 1596000
   },
   {
     "date": "2019-09-20",
@@ -4753,7 +4916,8 @@
     "twoYearRate": 1.69,
     "sofr": 1.86,
     "breakeven5y": 1.42,
-    "breakeven5y5y": 1.8
+    "breakeven5y5y": 1.8,
+    "continuedClaims": 1567000
   },
   {
     "date": "2019-09-27",
@@ -4782,7 +4946,8 @@
     "twoYearRate": 1.63,
     "sofr": 1.82,
     "breakeven5y": 1.36,
-    "breakeven5y5y": 1.7
+    "breakeven5y5y": 1.7,
+    "continuedClaims": 1561000
   },
   {
     "date": "2019-10-04",
@@ -4811,7 +4976,8 @@
     "twoYearRate": 1.4,
     "sofr": 1.82,
     "breakeven5y": 1.27,
-    "breakeven5y5y": 1.73
+    "breakeven5y5y": 1.73,
+    "continuedClaims": 1600000
   },
   {
     "date": "2019-10-11",
@@ -4840,7 +5006,8 @@
     "twoYearRate": 1.63,
     "sofr": 1.85,
     "breakeven5y": 1.34,
-    "breakeven5y5y": 1.78
+    "breakeven5y5y": 1.78,
+    "continuedClaims": 1602000
   },
   {
     "date": "2019-10-18",
@@ -4869,7 +5036,8 @@
     "twoYearRate": 1.58,
     "sofr": 1.88,
     "breakeven5y": 1.52,
-    "breakeven5y5y": 1.68
+    "breakeven5y5y": 1.68,
+    "continuedClaims": 1611000
   },
   {
     "date": "2019-10-25",
@@ -4898,7 +5066,8 @@
     "twoYearRate": 1.63,
     "sofr": 1.84,
     "breakeven5y": 1.55,
-    "breakeven5y5y": 1.75
+    "breakeven5y5y": 1.75,
+    "continuedClaims": 1628000
   },
   {
     "date": "2019-11-01",
@@ -4927,7 +5096,8 @@
     "twoYearRate": 1.56,
     "sofr": 1.58,
     "breakeven5y": 1.5,
-    "breakeven5y5y": 1.68
+    "breakeven5y5y": 1.68,
+    "continuedClaims": 1633000
   },
   {
     "date": "2019-11-08",
@@ -4956,7 +5126,8 @@
     "twoYearRate": 1.68,
     "sofr": 1.56,
     "breakeven5y": 1.63,
-    "breakeven5y5y": 1.79
+    "breakeven5y5y": 1.79,
+    "continuedClaims": 1646000
   },
   {
     "date": "2019-11-15",
@@ -4985,7 +5156,8 @@
     "twoYearRate": 1.61,
     "sofr": 1.59,
     "breakeven5y": 1.52,
-    "breakeven5y5y": 1.74
+    "breakeven5y5y": 1.74,
+    "continuedClaims": 1668000
   },
   {
     "date": "2019-11-22",
@@ -5014,7 +5186,8 @@
     "twoYearRate": 1.61,
     "sofr": 1.58,
     "breakeven5y": 1.53,
-    "breakeven5y5y": 1.71
+    "breakeven5y5y": 1.71,
+    "continuedClaims": 1702000
   },
   {
     "date": "2019-11-29",
@@ -5043,7 +5216,8 @@
     "twoYearRate": 1.61,
     "sofr": 1.65,
     "breakeven5y": 1.5,
-    "breakeven5y5y": 1.72
+    "breakeven5y5y": 1.72,
+    "continuedClaims": 1702000
   },
   {
     "date": "2019-12-06",
@@ -5072,7 +5246,8 @@
     "twoYearRate": 1.61,
     "sofr": 1.55,
     "breakeven5y": 1.59,
-    "breakeven5y5y": 1.79
+    "breakeven5y5y": 1.79,
+    "continuedClaims": 1708000
   },
   {
     "date": "2019-12-13",
@@ -5101,7 +5276,8 @@
     "twoYearRate": 1.61,
     "sofr": 1.54,
     "breakeven5y": 1.62,
-    "breakeven5y5y": 1.78
+    "breakeven5y5y": 1.78,
+    "continuedClaims": 1728000
   },
   {
     "date": "2019-12-20",
@@ -5130,7 +5306,8 @@
     "twoYearRate": 1.63,
     "sofr": 1.53,
     "breakeven5y": 1.67,
-    "breakeven5y5y": 1.87
+    "breakeven5y5y": 1.87,
+    "continuedClaims": 1753000
   },
   {
     "date": "2019-12-27",
@@ -5159,7 +5336,8 @@
     "twoYearRate": 1.59,
     "sofr": 1.53,
     "breakeven5y": 1.64,
-    "breakeven5y5y": 1.82
+    "breakeven5y5y": 1.82,
+    "continuedClaims": 1754000
   },
   {
     "date": "2020-01-03",
@@ -5188,7 +5366,8 @@
     "twoYearRate": 1.53,
     "sofr": 1.55,
     "breakeven5y": 1.69,
-    "breakeven5y5y": 1.85
+    "breakeven5y5y": 1.85,
+    "continuedClaims": 1843000
   },
   {
     "date": "2020-01-10",
@@ -5217,7 +5396,8 @@
     "twoYearRate": 1.56,
     "sofr": 1.55,
     "breakeven5y": 1.67,
-    "breakeven5y5y": 1.85
+    "breakeven5y5y": 1.85,
+    "continuedClaims": 1827000
   },
   {
     "date": "2020-01-17",
@@ -5246,7 +5426,8 @@
     "twoYearRate": 1.58,
     "sofr": 1.54,
     "breakeven5y": 1.68,
-    "breakeven5y5y": 1.82
+    "breakeven5y5y": 1.82,
+    "continuedClaims": 1804000
   },
   {
     "date": "2020-01-24",
@@ -5275,7 +5456,8 @@
     "twoYearRate": 1.49,
     "sofr": 1.53,
     "breakeven5y": 1.62,
-    "breakeven5y5y": 1.74
+    "breakeven5y5y": 1.74,
+    "continuedClaims": 1774000
   },
   {
     "date": "2020-01-31",
@@ -5304,7 +5486,8 @@
     "twoYearRate": 1.33,
     "sofr": 1.6,
     "breakeven5y": 1.6,
-    "breakeven5y5y": 1.7
+    "breakeven5y5y": 1.7,
+    "continuedClaims": 1796000
   },
   {
     "date": "2020-02-07",
@@ -5333,7 +5516,8 @@
     "twoYearRate": 1.41,
     "sofr": 1.58,
     "breakeven5y": 1.61,
-    "breakeven5y5y": 1.71
+    "breakeven5y5y": 1.71,
+    "continuedClaims": 1755000
   },
   {
     "date": "2020-02-14",
@@ -5362,7 +5546,8 @@
     "twoYearRate": 1.42,
     "sofr": 1.58,
     "breakeven5y": 1.64,
-    "breakeven5y5y": 1.68
+    "breakeven5y5y": 1.68,
+    "continuedClaims": 1782000
   },
   {
     "date": "2020-02-21",
@@ -5391,7 +5576,8 @@
     "twoYearRate": 1.34,
     "sofr": 1.58,
     "breakeven5y": 1.6,
-    "breakeven5y5y": 1.62
+    "breakeven5y5y": 1.62,
+    "continuedClaims": 1760000
   },
   {
     "date": "2020-02-28",
@@ -5420,7 +5606,8 @@
     "twoYearRate": 0.86,
     "sofr": 1.6,
     "breakeven5y": 1.33,
-    "breakeven5y5y": 1.49
+    "breakeven5y5y": 1.49,
+    "continuedClaims": 1783000
   },
   {
     "date": "2020-03-06",
@@ -5449,7 +5636,8 @@
     "twoYearRate": 0.49,
     "sofr": 1.1,
     "breakeven5y": 1.14,
-    "breakeven5y5y": 1.48
+    "breakeven5y5y": 1.48,
+    "continuedClaims": 1771000
   },
   {
     "date": "2020-03-13",
@@ -5478,7 +5666,8 @@
     "twoYearRate": 0.49,
     "sofr": 1.1,
     "breakeven5y": 0.53,
-    "breakeven5y5y": 1.27
+    "breakeven5y5y": 1.27,
+    "continuedClaims": 1753000
   },
   {
     "date": "2020-03-20",
@@ -5507,7 +5696,8 @@
     "twoYearRate": 0.37,
     "sofr": 0.04,
     "breakeven5y": 0.31,
-    "breakeven5y5y": 1.19
+    "breakeven5y5y": 1.19,
+    "continuedClaims": 1844000
   },
   {
     "date": "2020-03-27",
@@ -5536,7 +5726,8 @@
     "twoYearRate": 0.25,
     "sofr": 0.01,
     "breakeven5y": 0.54,
-    "breakeven5y5y": 1.34
+    "breakeven5y5y": 1.34,
+    "continuedClaims": 3238000
   },
   {
     "date": "2020-04-03",
@@ -5565,7 +5756,8 @@
     "twoYearRate": 0.23,
     "sofr": 0.01,
     "breakeven5y": 0.78,
-    "breakeven5y5y": 1.38
+    "breakeven5y5y": 1.38,
+    "continuedClaims": 8004000
   },
   {
     "date": "2020-04-10",
@@ -5594,7 +5786,8 @@
     "twoYearRate": 0.23,
     "sofr": 0.01,
     "breakeven5y": 0.9,
-    "breakeven5y5y": 1.56
+    "breakeven5y5y": 1.56,
+    "continuedClaims": 12396000
   },
   {
     "date": "2020-04-17",
@@ -5623,7 +5816,8 @@
     "twoYearRate": 0.2,
     "sofr": 0.03,
     "breakeven5y": 0.67,
-    "breakeven5y5y": 1.35
+    "breakeven5y5y": 1.35,
+    "continuedClaims": 16193000
   },
   {
     "date": "2020-04-24",
@@ -5652,7 +5846,8 @@
     "twoYearRate": 0.22,
     "sofr": 0.03,
     "breakeven5y": 0.72,
-    "breakeven5y5y": 1.5
+    "breakeven5y5y": 1.5,
+    "continuedClaims": 17789000
   },
   {
     "date": "2020-05-01",
@@ -5681,7 +5876,8 @@
     "twoYearRate": 0.2,
     "sofr": 0.03,
     "breakeven5y": 0.68,
-    "breakeven5y5y": 1.44
+    "breakeven5y5y": 1.44,
+    "continuedClaims": 21750000
   },
   {
     "date": "2020-05-08",
@@ -5710,7 +5906,8 @@
     "twoYearRate": 0.16,
     "sofr": 0.06,
     "breakeven5y": 0.74,
-    "breakeven5y5y": 1.5
+    "breakeven5y5y": 1.5,
+    "continuedClaims": 20939000
   },
   {
     "date": "2020-05-15",
@@ -5739,7 +5936,8 @@
     "twoYearRate": 0.16,
     "sofr": 0.05,
     "breakeven5y": 0.75,
-    "breakeven5y5y": 1.43
+    "breakeven5y5y": 1.43,
+    "continuedClaims": 23130000
   },
   {
     "date": "2020-05-22",
@@ -5768,7 +5966,8 @@
     "twoYearRate": 0.17,
     "sofr": 0.04,
     "breakeven5y": 0.8,
-    "breakeven5y5y": 1.44
+    "breakeven5y5y": 1.44,
+    "continuedClaims": 19153000
   },
   {
     "date": "2020-05-29",
@@ -5797,7 +5996,8 @@
     "twoYearRate": 0.16,
     "sofr": 0.06,
     "breakeven5y": 0.83,
-    "breakeven5y5y": 1.47
+    "breakeven5y5y": 1.47,
+    "continuedClaims": 19194000
   },
   {
     "date": "2020-06-05",
@@ -5826,7 +6026,8 @@
     "twoYearRate": 0.22,
     "sofr": 0.07,
     "breakeven5y": 0.95,
-    "breakeven5y5y": 1.59
+    "breakeven5y5y": 1.59,
+    "continuedClaims": 19216000
   },
   {
     "date": "2020-06-12",
@@ -5855,7 +6056,8 @@
     "twoYearRate": 0.19,
     "sofr": 0.08,
     "breakeven5y": 0.95,
-    "breakeven5y5y": 1.47
+    "breakeven5y5y": 1.47,
+    "continuedClaims": 18743000
   },
   {
     "date": "2020-06-19",
@@ -5884,7 +6086,8 @@
     "twoYearRate": 0.19,
     "sofr": 0.09,
     "breakeven5y": 1.06,
-    "breakeven5y5y": 1.54
+    "breakeven5y5y": 1.54,
+    "continuedClaims": 17860000
   },
   {
     "date": "2020-06-26",
@@ -5913,7 +6116,8 @@
     "twoYearRate": 0.17,
     "sofr": 0.08,
     "breakeven5y": 1.11,
-    "breakeven5y5y": 1.53
+    "breakeven5y5y": 1.53,
+    "continuedClaims": 17501000
   },
   {
     "date": "2020-07-03",
@@ -5942,7 +6146,8 @@
     "twoYearRate": 0.16,
     "sofr": 0.11,
     "breakeven5y": 1.21,
-    "breakeven5y5y": 1.61
+    "breakeven5y5y": 1.61,
+    "continuedClaims": 16610000
   },
   {
     "date": "2020-07-10",
@@ -5971,7 +6176,8 @@
     "twoYearRate": 0.16,
     "sofr": 0.1,
     "breakeven5y": 1.25,
-    "breakeven5y5y": 1.57
+    "breakeven5y5y": 1.57,
+    "continuedClaims": 17273000
   },
   {
     "date": "2020-07-17",
@@ -6000,7 +6206,8 @@
     "twoYearRate": 0.14,
     "sofr": 0.12,
     "breakeven5y": 1.35,
-    "breakeven5y5y": 1.57
+    "breakeven5y5y": 1.57,
+    "continuedClaims": 16251000
   },
   {
     "date": "2020-07-24",
@@ -6029,7 +6236,8 @@
     "twoYearRate": 0.14,
     "sofr": 0.1,
     "breakeven5y": 1.35,
-    "breakeven5y5y": 1.67
+    "breakeven5y5y": 1.67,
+    "continuedClaims": 16799000
   },
   {
     "date": "2020-07-31",
@@ -6058,7 +6266,8 @@
     "twoYearRate": 0.11,
     "sofr": 0.1,
     "breakeven5y": 1.4,
-    "breakeven5y5y": 1.7
+    "breakeven5y5y": 1.7,
+    "continuedClaims": 15929000
   },
   {
     "date": "2020-08-07",
@@ -6087,7 +6296,8 @@
     "twoYearRate": 0.13,
     "sofr": 0.09,
     "breakeven5y": 1.5,
-    "breakeven5y5y": 1.72
+    "breakeven5y5y": 1.72,
+    "continuedClaims": 15255000
   },
   {
     "date": "2020-08-14",
@@ -6116,7 +6326,8 @@
     "twoYearRate": 0.14,
     "sofr": 0.09,
     "breakeven5y": 1.53,
-    "breakeven5y5y": 1.77
+    "breakeven5y5y": 1.77,
+    "continuedClaims": 14184000
   },
   {
     "date": "2020-08-21",
@@ -6145,7 +6356,8 @@
     "twoYearRate": 0.16,
     "sofr": 0.07,
     "breakeven5y": 1.52,
-    "breakeven5y5y": 1.76
+    "breakeven5y5y": 1.76,
+    "continuedClaims": 13910000
   },
   {
     "date": "2020-08-28",
@@ -6174,7 +6386,8 @@
     "twoYearRate": 0.14,
     "sofr": 0.07,
     "breakeven5y": 1.68,
-    "breakeven5y5y": 1.86
+    "breakeven5y5y": 1.86,
+    "continuedClaims": 13217000
   },
   {
     "date": "2020-09-04",
@@ -6203,7 +6416,8 @@
     "twoYearRate": 0.14,
     "sofr": 0.09,
     "breakeven5y": 1.57,
-    "breakeven5y5y": 1.83
+    "breakeven5y5y": 1.83,
+    "continuedClaims": 13501000
   },
   {
     "date": "2020-09-11",
@@ -6232,7 +6446,8 @@
     "twoYearRate": 0.13,
     "sofr": 0.09,
     "breakeven5y": 1.53,
-    "breakeven5y5y": 1.77
+    "breakeven5y5y": 1.77,
+    "continuedClaims": 12765000
   },
   {
     "date": "2020-09-18",
@@ -6261,7 +6476,8 @@
     "twoYearRate": 0.14,
     "sofr": 0.09,
     "breakeven5y": 1.58,
-    "breakeven5y5y": 1.76
+    "breakeven5y5y": 1.76,
+    "continuedClaims": 12684000
   },
   {
     "date": "2020-09-25",
@@ -6290,7 +6506,8 @@
     "twoYearRate": 0.12,
     "sofr": 0.08,
     "breakeven5y": 1.43,
-    "breakeven5y5y": 1.73
+    "breakeven5y5y": 1.73,
+    "continuedClaims": 11367000
   },
   {
     "date": "2020-10-02",
@@ -6319,7 +6536,8 @@
     "twoYearRate": 0.13,
     "sofr": 0.1,
     "breakeven5y": 1.48,
-    "breakeven5y5y": 1.8
+    "breakeven5y5y": 1.8,
+    "continuedClaims": 10481000
   },
   {
     "date": "2020-10-09",
@@ -6348,7 +6566,8 @@
     "twoYearRate": 0.16,
     "sofr": 0.09,
     "breakeven5y": 1.56,
-    "breakeven5y5y": 1.9
+    "breakeven5y5y": 1.9,
+    "continuedClaims": 9270000
   },
   {
     "date": "2020-10-16",
@@ -6377,7 +6596,8 @@
     "twoYearRate": 0.14,
     "sofr": 0.09,
     "breakeven5y": 1.53,
-    "breakeven5y5y": 1.89
+    "breakeven5y5y": 1.89,
+    "continuedClaims": 8425000
   },
   {
     "date": "2020-10-23",
@@ -6406,7 +6626,8 @@
     "twoYearRate": 0.18,
     "sofr": 0.08,
     "breakeven5y": 1.66,
-    "breakeven5y5y": 1.84
+    "breakeven5y5y": 1.84,
+    "continuedClaims": 7777000
   },
   {
     "date": "2020-10-30",
@@ -6435,7 +6656,8 @@
     "twoYearRate": 0.14,
     "sofr": 0.09,
     "breakeven5y": 1.59,
-    "breakeven5y5y": 1.81
+    "breakeven5y5y": 1.81,
+    "continuedClaims": 7180000
   },
   {
     "date": "2020-11-06",
@@ -6464,7 +6686,8 @@
     "twoYearRate": 0.16,
     "sofr": 0.1,
     "breakeven5y": 1.54,
-    "breakeven5y5y": 1.76
+    "breakeven5y5y": 1.76,
+    "continuedClaims": 6705000
   },
   {
     "date": "2020-11-13",
@@ -6493,7 +6716,8 @@
     "twoYearRate": 0.17,
     "sofr": 0.09,
     "breakeven5y": 1.64,
-    "breakeven5y5y": 1.8
+    "breakeven5y5y": 1.8,
+    "continuedClaims": 6341000
   },
   {
     "date": "2020-11-20",
@@ -6522,7 +6746,8 @@
     "twoYearRate": 0.16,
     "sofr": 0.05,
     "breakeven5y": 1.61,
-    "breakeven5y5y": 1.77
+    "breakeven5y5y": 1.77,
+    "continuedClaims": 6088000
   },
   {
     "date": "2020-11-27",
@@ -6551,7 +6776,8 @@
     "twoYearRate": 0.16,
     "sofr": 0.08,
     "breakeven5y": 1.67,
-    "breakeven5y5y": 1.83
+    "breakeven5y5y": 1.83,
+    "continuedClaims": 5580000
   },
   {
     "date": "2020-12-04",
@@ -6580,7 +6806,8 @@
     "twoYearRate": 0.16,
     "sofr": 0.09,
     "breakeven5y": 1.83,
-    "breakeven5y5y": 1.95
+    "breakeven5y5y": 1.95,
+    "continuedClaims": 5784000
   },
   {
     "date": "2020-12-11",
@@ -6609,7 +6836,8 @@
     "twoYearRate": 0.11,
     "sofr": 0.08,
     "breakeven5y": 1.82,
-    "breakeven5y5y": 1.92
+    "breakeven5y5y": 1.92,
+    "continuedClaims": 5609000
   },
   {
     "date": "2020-12-18",
@@ -6638,7 +6866,8 @@
     "twoYearRate": 0.13,
     "sofr": 0.09,
     "breakeven5y": 1.92,
-    "breakeven5y5y": 1.98
+    "breakeven5y5y": 1.98,
+    "continuedClaims": 5416000
   },
   {
     "date": "2020-12-25",
@@ -6667,7 +6896,8 @@
     "twoYearRate": 0.13,
     "sofr": 0.08,
     "breakeven5y": 1.92,
-    "breakeven5y5y": 2.02
+    "breakeven5y5y": 2.02,
+    "continuedClaims": 5332000
   },
   {
     "date": "2021-01-01",
@@ -6696,7 +6926,8 @@
     "twoYearRate": 0.13,
     "sofr": 0.07,
     "breakeven5y": 1.95,
-    "breakeven5y5y": 2.03
+    "breakeven5y5y": 2.03,
+    "continuedClaims": 5181000
   },
   {
     "date": "2021-01-08",
@@ -6725,7 +6956,8 @@
     "twoYearRate": 0.14,
     "sofr": 0.09,
     "breakeven5y": 2.07,
-    "breakeven5y5y": 2.05
+    "breakeven5y5y": 2.05,
+    "continuedClaims": 5330000
   },
   {
     "date": "2021-01-15",
@@ -6754,7 +6986,8 @@
     "twoYearRate": 0.13,
     "sofr": 0.08,
     "breakeven5y": 2.09,
-    "breakeven5y5y": 2.11
+    "breakeven5y5y": 2.11,
+    "continuedClaims": 5069000
   },
   {
     "date": "2021-01-22",
@@ -6783,7 +7016,8 @@
     "twoYearRate": 0.13,
     "sofr": 0.05,
     "breakeven5y": 2.16,
-    "breakeven5y5y": 2.02
+    "breakeven5y5y": 2.02,
+    "continuedClaims": 4877000
   },
   {
     "date": "2021-01-29",
@@ -6812,7 +7046,8 @@
     "twoYearRate": 0.11,
     "sofr": 0.06,
     "breakeven5y": 2.21,
-    "breakeven5y5y": 2.05
+    "breakeven5y5y": 2.05,
+    "continuedClaims": 4789000
   },
   {
     "date": "2021-02-05",
@@ -6841,7 +7076,8 @@
     "twoYearRate": 0.09,
     "sofr": 0.02,
     "breakeven5y": 2.28,
-    "breakeven5y5y": 2.14
+    "breakeven5y5y": 2.14,
+    "continuedClaims": 4658000
   },
   {
     "date": "2021-02-12",
@@ -6870,7 +7106,8 @@
     "twoYearRate": 0.11,
     "sofr": 0.05,
     "breakeven5y": 2.35,
-    "breakeven5y5y": 2.07
+    "breakeven5y5y": 2.07,
+    "continuedClaims": 4599000
   },
   {
     "date": "2021-02-19",
@@ -6899,7 +7136,8 @@
     "twoYearRate": 0.11,
     "sofr": 0.02,
     "breakeven5y": 2.29,
-    "breakeven5y5y": 1.99
+    "breakeven5y5y": 1.99,
+    "continuedClaims": 4495000
   },
   {
     "date": "2021-02-26",
@@ -6928,7 +7166,8 @@
     "twoYearRate": 0.14,
     "sofr": 0.01,
     "breakeven5y": 2.39,
-    "breakeven5y5y": 1.91
+    "breakeven5y5y": 1.91,
+    "continuedClaims": 4406000
   },
   {
     "date": "2021-03-05",
@@ -6957,7 +7196,8 @@
     "twoYearRate": 0.14,
     "sofr": 0.02,
     "breakeven5y": 2.43,
-    "breakeven5y5y": 2.01
+    "breakeven5y5y": 2.01,
+    "continuedClaims": 4227000
   },
   {
     "date": "2021-03-12",
@@ -6986,7 +7226,8 @@
     "twoYearRate": 0.14,
     "sofr": 0.01,
     "breakeven5y": 2.51,
-    "breakeven5y5y": 2.01
+    "breakeven5y5y": 2.01,
+    "continuedClaims": 4185000
   },
   {
     "date": "2021-03-19",
@@ -7015,7 +7256,8 @@
     "twoYearRate": 0.16,
     "sofr": 0.01,
     "breakeven5y": 2.51,
-    "breakeven5y5y": 2.11
+    "breakeven5y5y": 2.11,
+    "continuedClaims": 3970000
   },
   {
     "date": "2021-03-26",
@@ -7044,7 +7286,8 @@
     "twoYearRate": 0.14,
     "sofr": 0.01,
     "breakeven5y": 2.57,
-    "breakeven5y5y": 2.11
+    "breakeven5y5y": 2.11,
+    "continuedClaims": 3887000
   },
   {
     "date": "2021-04-02",
@@ -7073,7 +7316,8 @@
     "twoYearRate": 0.19,
     "sofr": 0.01,
     "breakeven5y": 2.58,
-    "breakeven5y5y": 2.14
+    "breakeven5y5y": 2.14,
+    "continuedClaims": 3859000
   },
   {
     "date": "2021-04-09",
@@ -7102,7 +7346,8 @@
     "twoYearRate": 0.16,
     "sofr": 0.01,
     "breakeven5y": 2.51,
-    "breakeven5y5y": 2.11
+    "breakeven5y5y": 2.11,
+    "continuedClaims": 3830000
   },
   {
     "date": "2021-04-16",
@@ -7131,7 +7376,8 @@
     "twoYearRate": 0.16,
     "sofr": 0.01,
     "breakeven5y": 2.57,
-    "breakeven5y5y": 2.15
+    "breakeven5y5y": 2.15,
+    "continuedClaims": 3779000
   },
   {
     "date": "2021-04-23",
@@ -7160,7 +7406,8 @@
     "twoYearRate": 0.16,
     "sofr": 0.01,
     "breakeven5y": 2.44,
-    "breakeven5y5y": 2.24
+    "breakeven5y5y": 2.24,
+    "continuedClaims": 3776000
   },
   {
     "date": "2021-04-30",
@@ -7189,7 +7436,8 @@
     "twoYearRate": 0.16,
     "sofr": 0.01,
     "breakeven5y": 2.57,
-    "breakeven5y5y": 2.25
+    "breakeven5y5y": 2.25,
+    "continuedClaims": 3767000
   },
   {
     "date": "2021-05-07",
@@ -7218,7 +7466,8 @@
     "twoYearRate": 0.14,
     "sofr": 0.01,
     "breakeven5y": 2.65,
-    "breakeven5y5y": 2.33
+    "breakeven5y5y": 2.33,
+    "continuedClaims": 3756000
   },
   {
     "date": "2021-05-14",
@@ -7247,7 +7496,8 @@
     "twoYearRate": 0.16,
     "sofr": 0.01,
     "breakeven5y": 2.68,
-    "breakeven5y5y": 2.34
+    "breakeven5y5y": 2.34,
+    "continuedClaims": 3737000
   },
   {
     "date": "2021-05-21",
@@ -7276,7 +7526,8 @@
     "twoYearRate": 0.17,
     "sofr": 0.01,
     "breakeven5y": 2.62,
-    "breakeven5y5y": 2.24
+    "breakeven5y5y": 2.24,
+    "continuedClaims": 3618000
   },
   {
     "date": "2021-05-28",
@@ -7305,7 +7556,8 @@
     "twoYearRate": 0.14,
     "sofr": 0.01,
     "breakeven5y": 2.57,
-    "breakeven5y5y": 2.27
+    "breakeven5y5y": 2.27,
+    "continuedClaims": 3575000
   },
   {
     "date": "2021-06-04",
@@ -7334,7 +7586,8 @@
     "twoYearRate": 0.14,
     "sofr": 0.01,
     "breakeven5y": 2.54,
-    "breakeven5y5y": 2.26
+    "breakeven5y5y": 2.26,
+    "continuedClaims": 3422000
   },
   {
     "date": "2021-06-11",
@@ -7363,7 +7616,8 @@
     "twoYearRate": 0.16,
     "sofr": 0.01,
     "breakeven5y": 2.43,
-    "breakeven5y5y": 2.21
+    "breakeven5y5y": 2.21,
+    "continuedClaims": 3350000
   },
   {
     "date": "2021-06-18",
@@ -7392,7 +7646,8 @@
     "twoYearRate": 0.26,
     "sofr": 0.05,
     "breakeven5y": 2.37,
-    "breakeven5y5y": 2.11
+    "breakeven5y5y": 2.11,
+    "continuedClaims": 3268000
   },
   {
     "date": "2021-06-25",
@@ -7421,7 +7676,8 @@
     "twoYearRate": 0.28,
     "sofr": 0.05,
     "breakeven5y": 2.46,
-    "breakeven5y5y": 2.22
+    "breakeven5y5y": 2.22,
+    "continuedClaims": 3263000
   },
   {
     "date": "2021-07-02",
@@ -7450,7 +7706,8 @@
     "twoYearRate": 0.24,
     "sofr": 0.05,
     "breakeven5y": 2.49,
-    "breakeven5y5y": 2.17
+    "breakeven5y5y": 2.17,
+    "continuedClaims": 3313000
   },
   {
     "date": "2021-07-09",
@@ -7479,7 +7736,8 @@
     "twoYearRate": 0.23,
     "sofr": 0.05,
     "breakeven5y": 2.44,
-    "breakeven5y5y": 2.12
+    "breakeven5y5y": 2.12,
+    "continuedClaims": 3179000
   },
   {
     "date": "2021-07-16",
@@ -7508,7 +7766,8 @@
     "twoYearRate": 0.25,
     "sofr": 0.05,
     "breakeven5y": 2.52,
-    "breakeven5y5y": 2.14
+    "breakeven5y5y": 2.14,
+    "continuedClaims": 3061000
   },
   {
     "date": "2021-07-23",
@@ -7537,7 +7796,8 @@
     "twoYearRate": 0.22,
     "sofr": 0.05,
     "breakeven5y": 2.53,
-    "breakeven5y5y": 2.17
+    "breakeven5y5y": 2.17,
+    "continuedClaims": 3138000
   },
   {
     "date": "2021-07-30",
@@ -7566,7 +7826,8 @@
     "twoYearRate": 0.19,
     "sofr": 0.05,
     "breakeven5y": 2.56,
-    "breakeven5y5y": 2.24
+    "breakeven5y5y": 2.24,
+    "continuedClaims": 2863000
   },
   {
     "date": "2021-08-06",
@@ -7595,7 +7856,8 @@
     "twoYearRate": 0.21,
     "sofr": 0.05,
     "breakeven5y": 2.5,
-    "breakeven5y5y": 2.24
+    "breakeven5y5y": 2.24,
+    "continuedClaims": 2793000
   },
   {
     "date": "2021-08-13",
@@ -7624,7 +7886,8 @@
     "twoYearRate": 0.23,
     "sofr": 0.05,
     "breakeven5y": 2.52,
-    "breakeven5y5y": 2.22
+    "breakeven5y5y": 2.22,
+    "continuedClaims": 2809000
   },
   {
     "date": "2021-08-20",
@@ -7653,7 +7916,8 @@
     "twoYearRate": 0.23,
     "sofr": 0.05,
     "breakeven5y": 2.4,
-    "breakeven5y5y": 2.14
+    "breakeven5y5y": 2.14,
+    "continuedClaims": 2802000
   },
   {
     "date": "2021-08-27",
@@ -7682,7 +7946,8 @@
     "twoYearRate": 0.22,
     "sofr": 0.05,
     "breakeven5y": 2.53,
-    "breakeven5y5y": 2.25
+    "breakeven5y5y": 2.25,
+    "continuedClaims": 2733000
   },
   {
     "date": "2021-09-03",
@@ -7711,7 +7976,8 @@
     "twoYearRate": 0.21,
     "sofr": 0.05,
     "breakeven5y": 2.48,
-    "breakeven5y5y": 2.2
+    "breakeven5y5y": 2.2,
+    "continuedClaims": 2786000
   },
   {
     "date": "2021-09-10",
@@ -7740,7 +8006,8 @@
     "twoYearRate": 0.23,
     "sofr": 0.05,
     "breakeven5y": 2.55,
-    "breakeven5y5y": 2.25
+    "breakeven5y5y": 2.25,
+    "continuedClaims": 2608000
   },
   {
     "date": "2021-09-17",
@@ -7769,7 +8036,8 @@
     "twoYearRate": 0.23,
     "sofr": 0.05,
     "breakeven5y": 2.51,
-    "breakeven5y5y": 2.15
+    "breakeven5y5y": 2.15,
+    "continuedClaims": 2756000
   },
   {
     "date": "2021-09-24",
@@ -7798,7 +8066,8 @@
     "twoYearRate": 0.29,
     "sofr": 0.05,
     "breakeven5y": 2.47,
-    "breakeven5y5y": 2.21
+    "breakeven5y5y": 2.21,
+    "continuedClaims": 2803000
   },
   {
     "date": "2021-10-01",
@@ -7827,7 +8096,8 @@
     "twoYearRate": 0.27,
     "sofr": 0.05,
     "breakeven5y": 2.51,
-    "breakeven5y5y": 2.25
+    "breakeven5y5y": 2.25,
+    "continuedClaims": 2722000
   },
   {
     "date": "2021-10-08",
@@ -7856,7 +8126,8 @@
     "twoYearRate": 0.32,
     "sofr": 0.05,
     "breakeven5y": 2.64,
-    "breakeven5y5y": 2.36
+    "breakeven5y5y": 2.36,
+    "continuedClaims": 2624000
   },
   {
     "date": "2021-10-15",
@@ -7885,7 +8156,8 @@
     "twoYearRate": 0.41,
     "sofr": 0.05,
     "breakeven5y": 2.71,
-    "breakeven5y5y": 2.41
+    "breakeven5y5y": 2.41,
+    "continuedClaims": 2533000
   },
   {
     "date": "2021-10-22",
@@ -7914,7 +8186,8 @@
     "twoYearRate": 0.48,
     "sofr": 0.05,
     "breakeven5y": 2.91,
-    "breakeven5y5y": 2.37
+    "breakeven5y5y": 2.37,
+    "continuedClaims": 2265000
   },
   {
     "date": "2021-10-29",
@@ -7943,7 +8216,8 @@
     "twoYearRate": 0.48,
     "sofr": 0.05,
     "breakeven5y": 2.89,
-    "breakeven5y5y": 2.13
+    "breakeven5y5y": 2.13,
+    "continuedClaims": 2168000
   },
   {
     "date": "2021-11-05",
@@ -7972,7 +8246,8 @@
     "twoYearRate": 0.39,
     "sofr": 0.05,
     "breakeven5y": 2.87,
-    "breakeven5y5y": 2.21
+    "breakeven5y5y": 2.21,
+    "continuedClaims": 2199000
   },
   {
     "date": "2021-11-12",
@@ -8001,7 +8276,8 @@
     "twoYearRate": 0.53,
     "sofr": 0.05,
     "breakeven5y": 3.11,
-    "breakeven5y5y": 2.35
+    "breakeven5y5y": 2.35,
+    "continuedClaims": 2036000
   },
   {
     "date": "2021-11-19",
@@ -8030,7 +8306,8 @@
     "twoYearRate": 0.52,
     "sofr": 0.05,
     "breakeven5y": 3.02,
-    "breakeven5y5y": 2.28
+    "breakeven5y5y": 2.28,
+    "continuedClaims": 1968000
   },
   {
     "date": "2021-11-26",
@@ -8059,7 +8336,8 @@
     "twoYearRate": 0.5,
     "sofr": 0.05,
     "breakeven5y": 2.92,
-    "breakeven5y5y": 2.18
+    "breakeven5y5y": 2.18,
+    "continuedClaims": 1803000
   },
   {
     "date": "2021-12-03",
@@ -8088,7 +8366,8 @@
     "twoYearRate": 0.6,
     "sofr": 0.05,
     "breakeven5y": 2.72,
-    "breakeven5y5y": 2.14
+    "breakeven5y5y": 2.14,
+    "continuedClaims": 1874000
   },
   {
     "date": "2021-12-10",
@@ -8117,7 +8396,8 @@
     "twoYearRate": 0.67,
     "sofr": 0.05,
     "breakeven5y": 2.76,
-    "breakeven5y5y": 2.12
+    "breakeven5y5y": 2.12,
+    "continuedClaims": 1767000
   },
   {
     "date": "2021-12-17",
@@ -8146,7 +8426,8 @@
     "twoYearRate": 0.66,
     "sofr": 0.05,
     "breakeven5y": 2.65,
-    "breakeven5y5y": 2.11
+    "breakeven5y5y": 2.11,
+    "continuedClaims": 1767000
   },
   {
     "date": "2021-12-24",
@@ -8175,7 +8456,8 @@
     "twoYearRate": 0.71,
     "sofr": 0.05,
     "breakeven5y": 2.72,
-    "breakeven5y5y": 2.22
+    "breakeven5y5y": 2.22,
+    "continuedClaims": 1628000
   },
   {
     "date": "2021-12-31",
@@ -8204,7 +8486,8 @@
     "twoYearRate": 0.73,
     "sofr": 0.05,
     "breakeven5y": 2.87,
-    "breakeven5y5y": 2.25
+    "breakeven5y5y": 2.25,
+    "continuedClaims": 1703000
   },
   {
     "date": "2022-01-07",
@@ -8233,7 +8516,8 @@
     "twoYearRate": 0.87,
     "sofr": 0.05,
     "breakeven5y": 2.78,
-    "breakeven5y5y": 2.18
+    "breakeven5y5y": 2.18,
+    "continuedClaims": 1690000
   },
   {
     "date": "2022-01-14",
@@ -8262,7 +8546,8 @@
     "twoYearRate": 0.99,
     "sofr": 0.05,
     "breakeven5y": 2.79,
-    "breakeven5y5y": 2.09
+    "breakeven5y5y": 2.09,
+    "continuedClaims": 1721000
   },
   {
     "date": "2022-01-21",
@@ -8291,7 +8576,8 @@
     "twoYearRate": 1.01,
     "sofr": 0.05,
     "breakeven5y": 2.7,
-    "breakeven5y5y": 1.98
+    "breakeven5y5y": 1.98,
+    "continuedClaims": 1700000
   },
   {
     "date": "2022-01-28",
@@ -8320,7 +8606,8 @@
     "twoYearRate": 1.15,
     "sofr": 0.05,
     "breakeven5y": 2.8,
-    "breakeven5y5y": 2.08
+    "breakeven5y5y": 2.08,
+    "continuedClaims": 1709000
   },
   {
     "date": "2022-02-04",
@@ -8349,7 +8636,8 @@
     "twoYearRate": 1.31,
     "sofr": 0.05,
     "breakeven5y": 2.78,
-    "breakeven5y5y": 2.04
+    "breakeven5y5y": 2.04,
+    "continuedClaims": 1695000
   },
   {
     "date": "2022-02-11",
@@ -8378,7 +8666,8 @@
     "twoYearRate": 1.5,
     "sofr": 0.05,
     "breakeven5y": 2.82,
-    "breakeven5y5y": 2.04
+    "breakeven5y5y": 2.04,
+    "continuedClaims": 1671000
   },
   {
     "date": "2022-02-18",
@@ -8407,7 +8696,8 @@
     "twoYearRate": 1.47,
     "sofr": 0.05,
     "breakeven5y": 2.86,
-    "breakeven5y5y": 1.96
+    "breakeven5y5y": 1.96,
+    "continuedClaims": 1637000
   },
   {
     "date": "2022-02-25",
@@ -8436,7 +8726,8 @@
     "twoYearRate": 1.55,
     "sofr": 0.05,
     "breakeven5y": 3.02,
-    "breakeven5y5y": 2.06
+    "breakeven5y5y": 2.06,
+    "continuedClaims": 1615000
   },
   {
     "date": "2022-03-04",
@@ -8465,7 +8756,8 @@
     "twoYearRate": 1.5,
     "sofr": 0.05,
     "breakeven5y": 3.19,
-    "breakeven5y5y": 2.15
+    "breakeven5y5y": 2.15,
+    "continuedClaims": 1613000
   },
   {
     "date": "2022-03-11",
@@ -8494,7 +8786,8 @@
     "twoYearRate": 1.75,
     "sofr": 0.05,
     "breakeven5y": 3.52,
-    "breakeven5y5y": 2.36
+    "breakeven5y5y": 2.36,
+    "continuedClaims": 1583000
   },
   {
     "date": "2022-03-18",
@@ -8523,7 +8816,8 @@
     "twoYearRate": 1.97,
     "sofr": 0.3,
     "breakeven5y": 3.48,
-    "breakeven5y5y": 2.24
+    "breakeven5y5y": 2.24,
+    "continuedClaims": 1541000
   },
   {
     "date": "2022-03-25",
@@ -8552,7 +8846,8 @@
     "twoYearRate": 2.3,
     "sofr": 0.28,
     "breakeven5y": 3.59,
-    "breakeven5y5y": 2.31
+    "breakeven5y5y": 2.31,
+    "continuedClaims": 1518000
   },
   {
     "date": "2022-04-01",
@@ -8581,7 +8876,8 @@
     "twoYearRate": 2.44,
     "sofr": 0.3,
     "breakeven5y": 3.28,
-    "breakeven5y5y": 2.32
+    "breakeven5y5y": 2.32,
+    "continuedClaims": 1532000
   },
   {
     "date": "2022-04-08",
@@ -8610,7 +8906,8 @@
     "twoYearRate": 2.53,
     "sofr": 0.3,
     "breakeven5y": 3.33,
-    "breakeven5y5y": 2.41
+    "breakeven5y5y": 2.41,
+    "continuedClaims": 1492000
   },
   {
     "date": "2022-04-15",
@@ -8639,7 +8936,8 @@
     "twoYearRate": 2.47,
     "sofr": 0.29,
     "breakeven5y": 3.33,
-    "breakeven5y5y": 2.45
+    "breakeven5y5y": 2.45,
+    "continuedClaims": 1432000
   },
   {
     "date": "2022-04-22",
@@ -8668,7 +8966,8 @@
     "twoYearRate": 2.72,
     "sofr": 0.27,
     "breakeven5y": 3.37,
-    "breakeven5y5y": 2.59
+    "breakeven5y5y": 2.59,
+    "continuedClaims": 1429000
   },
   {
     "date": "2022-04-29",
@@ -8697,7 +8996,8 @@
     "twoYearRate": 2.7,
     "sofr": 0.28,
     "breakeven5y": 3.3,
-    "breakeven5y5y": 2.46
+    "breakeven5y5y": 2.46,
+    "continuedClaims": 1424000
   },
   {
     "date": "2022-05-06",
@@ -8726,7 +9026,8 @@
     "twoYearRate": 2.72,
     "sofr": 0.78,
     "breakeven5y": 3.22,
-    "breakeven5y5y": 2.5
+    "breakeven5y5y": 2.5,
+    "continuedClaims": 1385000
   },
   {
     "date": "2022-05-13",
@@ -8755,7 +9056,8 @@
     "twoYearRate": 2.61,
     "sofr": 0.79,
     "breakeven5y": 3.03,
-    "breakeven5y5y": 2.35
+    "breakeven5y5y": 2.35,
+    "continuedClaims": 1365000
   },
   {
     "date": "2022-05-20",
@@ -8784,7 +9086,8 @@
     "twoYearRate": 2.6,
     "sofr": 0.78,
     "breakeven5y": 2.88,
-    "breakeven5y5y": 2.22
+    "breakeven5y5y": 2.22,
+    "continuedClaims": 1378000
   },
   {
     "date": "2022-05-27",
@@ -8813,7 +9116,8 @@
     "twoYearRate": 2.47,
     "sofr": 0.78,
     "breakeven5y": 2.95,
-    "breakeven5y5y": 2.31
+    "breakeven5y5y": 2.31,
+    "continuedClaims": 1362000
   },
   {
     "date": "2022-06-03",
@@ -8842,7 +9146,8 @@
     "twoYearRate": 2.66,
     "sofr": 0.78,
     "breakeven5y": 3.04,
-    "breakeven5y5y": 2.44
+    "breakeven5y5y": 2.44,
+    "continuedClaims": 1363000
   },
   {
     "date": "2022-06-10",
@@ -8871,7 +9176,8 @@
     "twoYearRate": 3.06,
     "sofr": 0.75,
     "breakeven5y": 3.13,
-    "breakeven5y5y": 2.39
+    "breakeven5y5y": 2.39,
+    "continuedClaims": 1344000
   },
   {
     "date": "2022-06-17",
@@ -8900,7 +9206,8 @@
     "twoYearRate": 3.17,
     "sofr": 1.45,
     "breakeven5y": 2.8,
-    "breakeven5y5y": 2.36
+    "breakeven5y5y": 2.36,
+    "continuedClaims": 1356000
   },
   {
     "date": "2022-06-24",
@@ -8929,7 +9236,8 @@
     "twoYearRate": 3.04,
     "sofr": 1.46,
     "breakeven5y": 2.82,
-    "breakeven5y5y": 2.3
+    "breakeven5y5y": 2.3,
+    "continuedClaims": 1358000
   },
   {
     "date": "2022-07-01",
@@ -8958,7 +9266,8 @@
     "twoYearRate": 2.84,
     "sofr": 1.52,
     "breakeven5y": 2.6,
-    "breakeven5y5y": 2.08
+    "breakeven5y5y": 2.08,
+    "continuedClaims": 1403000
   },
   {
     "date": "2022-07-08",
@@ -8987,7 +9296,8 @@
     "twoYearRate": 3.12,
     "sofr": 1.53,
     "breakeven5y": 2.62,
-    "breakeven5y5y": 2.12
+    "breakeven5y5y": 2.12,
+    "continuedClaims": 1360000
   },
   {
     "date": "2022-07-15",
@@ -9016,7 +9326,8 @@
     "twoYearRate": 3.13,
     "sofr": 1.54,
     "breakeven5y": 2.59,
-    "breakeven5y5y": 2.13
+    "breakeven5y5y": 2.13,
+    "continuedClaims": 1367000
   },
   {
     "date": "2022-07-22",
@@ -9045,7 +9356,8 @@
     "twoYearRate": 2.98,
     "sofr": 1.52,
     "breakeven5y": 2.56,
-    "breakeven5y5y": 2.12
+    "breakeven5y5y": 2.12,
+    "continuedClaims": 1391000
   },
   {
     "date": "2022-07-29",
@@ -9074,7 +9386,8 @@
     "twoYearRate": 2.89,
     "sofr": 2.27,
     "breakeven5y": 2.73,
-    "breakeven5y5y": 2.33
+    "breakeven5y5y": 2.33,
+    "continuedClaims": 1418000
   },
   {
     "date": "2022-08-05",
@@ -9103,7 +9416,8 @@
     "twoYearRate": 3.24,
     "sofr": 2.28,
     "breakeven5y": 2.64,
-    "breakeven5y5y": 2.28
+    "breakeven5y5y": 2.28,
+    "continuedClaims": 1427000
   },
   {
     "date": "2022-08-12",
@@ -9132,7 +9446,8 @@
     "twoYearRate": 3.25,
     "sofr": 2.28,
     "breakeven5y": 2.67,
-    "breakeven5y5y": 2.27
+    "breakeven5y5y": 2.27,
+    "continuedClaims": 1422000
   },
   {
     "date": "2022-08-19",
@@ -9161,7 +9476,8 @@
     "twoYearRate": 3.25,
     "sofr": 2.28,
     "breakeven5y": 2.72,
-    "breakeven5y5y": 2.38
+    "breakeven5y5y": 2.38,
+    "continuedClaims": 1410000
   },
   {
     "date": "2022-08-26",
@@ -9190,7 +9506,8 @@
     "twoYearRate": 3.37,
     "sofr": 2.28,
     "breakeven5y": 2.73,
-    "breakeven5y5y": 2.41
+    "breakeven5y5y": 2.41,
+    "continuedClaims": 1419000
   },
   {
     "date": "2022-09-02",
@@ -9219,7 +9536,8 @@
     "twoYearRate": 3.4,
     "sofr": 2.29,
     "breakeven5y": 2.55,
-    "breakeven5y5y": 2.39
+    "breakeven5y5y": 2.39,
+    "continuedClaims": 1418000
   },
   {
     "date": "2022-09-09",
@@ -9248,7 +9566,8 @@
     "twoYearRate": 3.56,
     "sofr": 2.28,
     "breakeven5y": 2.51,
-    "breakeven5y5y": 2.33
+    "breakeven5y5y": 2.33,
+    "continuedClaims": 1397000
   },
   {
     "date": "2022-09-16",
@@ -9277,7 +9596,8 @@
     "twoYearRate": 3.85,
     "sofr": 2.27,
     "breakeven5y": 2.49,
-    "breakeven5y5y": 2.27
+    "breakeven5y5y": 2.27,
+    "continuedClaims": 1402000
   },
   {
     "date": "2022-09-23",
@@ -9306,7 +9626,8 @@
     "twoYearRate": 4.2,
     "sofr": 2.99,
     "breakeven5y": 2.38,
-    "breakeven5y5y": 2.36
+    "breakeven5y5y": 2.36,
+    "continuedClaims": 1382000
   },
   {
     "date": "2022-09-30",
@@ -9335,7 +9656,8 @@
     "twoYearRate": 4.22,
     "sofr": 2.98,
     "breakeven5y": 2.14,
-    "breakeven5y5y": 2.16
+    "breakeven5y5y": 2.16,
+    "continuedClaims": 1397000
   },
   {
     "date": "2022-10-07",
@@ -9364,7 +9686,8 @@
     "twoYearRate": 4.3,
     "sofr": 3.05,
     "breakeven5y": 2.36,
-    "breakeven5y5y": 2.18
+    "breakeven5y5y": 2.18,
+    "continuedClaims": 1392000
   },
   {
     "date": "2022-10-14",
@@ -9393,7 +9716,8 @@
     "twoYearRate": 4.48,
     "sofr": 3.04,
     "breakeven5y": 2.44,
-    "breakeven5y5y": 2.38
+    "breakeven5y5y": 2.38,
+    "continuedClaims": 1404000
   },
   {
     "date": "2022-10-21",
@@ -9422,7 +9746,8 @@
     "twoYearRate": 4.49,
     "sofr": 3.02,
     "breakeven5y": 2.69,
-    "breakeven5y5y": 2.35
+    "breakeven5y5y": 2.35,
+    "continuedClaims": 1402000
   },
   {
     "date": "2022-10-28",
@@ -9451,7 +9776,8 @@
     "twoYearRate": 4.41,
     "sofr": 3.05,
     "breakeven5y": 2.62,
-    "breakeven5y5y": 2.4
+    "breakeven5y5y": 2.4,
+    "continuedClaims": 1429000
   },
   {
     "date": "2022-11-04",
@@ -9480,7 +9806,8 @@
     "twoYearRate": 4.66,
     "sofr": 3.8,
     "breakeven5y": 2.61,
-    "breakeven5y5y": 2.35
+    "breakeven5y5y": 2.35,
+    "continuedClaims": 1430000
   },
   {
     "date": "2022-11-11",
@@ -9509,7 +9836,8 @@
     "twoYearRate": 4.34,
     "sofr": 3.78,
     "breakeven5y": 2.47,
-    "breakeven5y5y": 2.31
+    "breakeven5y5y": 2.31,
+    "continuedClaims": 1406000
   },
   {
     "date": "2022-11-18",
@@ -9538,7 +9866,8 @@
     "twoYearRate": 4.51,
     "sofr": 3.8,
     "breakeven5y": 2.28,
-    "breakeven5y5y": 2.22
+    "breakeven5y5y": 2.22,
+    "continuedClaims": 1450000
   },
   {
     "date": "2022-11-25",
@@ -9567,7 +9896,8 @@
     "twoYearRate": 4.42,
     "sofr": 3.8,
     "breakeven5y": 2.34,
-    "breakeven5y5y": 2.3
+    "breakeven5y5y": 2.3,
+    "continuedClaims": 1464000
   },
   {
     "date": "2022-12-02",
@@ -9596,7 +9926,8 @@
     "twoYearRate": 4.28,
     "sofr": 3.81,
     "breakeven5y": 2.51,
-    "breakeven5y5y": 2.35
+    "breakeven5y5y": 2.35,
+    "continuedClaims": 1512000
   },
   {
     "date": "2022-12-09",
@@ -9625,7 +9956,8 @@
     "twoYearRate": 4.33,
     "sofr": 3.8,
     "breakeven5y": 2.3,
-    "breakeven5y5y": 2.22
+    "breakeven5y5y": 2.22,
+    "continuedClaims": 1539000
   },
   {
     "date": "2022-12-16",
@@ -9654,7 +9986,8 @@
     "twoYearRate": 4.17,
     "sofr": 4.32,
     "breakeven5y": 2.14,
-    "breakeven5y5y": 2.12
+    "breakeven5y5y": 2.12,
+    "continuedClaims": 1551000
   },
   {
     "date": "2022-12-23",
@@ -9683,7 +10016,8 @@
     "twoYearRate": 4.31,
     "sofr": 4.3,
     "breakeven5y": 2.29,
-    "breakeven5y5y": 2.11
+    "breakeven5y5y": 2.11,
+    "continuedClaims": 1558000
   },
   {
     "date": "2022-12-30",
@@ -9712,7 +10046,8 @@
     "twoYearRate": 4.41,
     "sofr": 4.3,
     "breakeven5y": 2.33,
-    "breakeven5y5y": 2.27
+    "breakeven5y5y": 2.27,
+    "continuedClaims": 1597000
   },
   {
     "date": "2023-01-06",
@@ -9741,7 +10076,8 @@
     "twoYearRate": 4.24,
     "sofr": 4.31,
     "breakeven5y": 2.18,
-    "breakeven5y5y": 2.24
+    "breakeven5y5y": 2.24,
+    "continuedClaims": 1585000
   },
   {
     "date": "2023-01-13",
@@ -9770,7 +10106,8 @@
     "twoYearRate": 4.22,
     "sofr": 4.3,
     "breakeven5y": 2.2,
-    "breakeven5y5y": 2.16
+    "breakeven5y5y": 2.16,
+    "continuedClaims": 1584000
   },
   {
     "date": "2023-01-20",
@@ -9799,7 +10136,8 @@
     "twoYearRate": 4.14,
     "sofr": 4.3,
     "breakeven5y": 2.23,
-    "breakeven5y5y": 2.23
+    "breakeven5y5y": 2.23,
+    "continuedClaims": 1604000
   },
   {
     "date": "2023-01-27",
@@ -9828,7 +10166,8 @@
     "twoYearRate": 4.19,
     "sofr": 4.3,
     "breakeven5y": 2.33,
-    "breakeven5y5y": 2.33
+    "breakeven5y5y": 2.33,
+    "continuedClaims": 1599000
   },
   {
     "date": "2023-02-03",
@@ -9857,7 +10196,8 @@
     "twoYearRate": 4.3,
     "sofr": 4.55,
     "breakeven5y": 2.27,
-    "breakeven5y5y": 2.17
+    "breakeven5y5y": 2.17,
+    "continuedClaims": 1629000
   },
   {
     "date": "2023-02-10",
@@ -9886,7 +10226,8 @@
     "twoYearRate": 4.5,
     "sofr": 4.55,
     "breakeven5y": 2.47,
-    "breakeven5y5y": 2.19
+    "breakeven5y5y": 2.19,
+    "continuedClaims": 1641000
   },
   {
     "date": "2023-02-17",
@@ -9915,7 +10256,8 @@
     "twoYearRate": 4.6,
     "sofr": 4.55,
     "breakeven5y": 2.5,
-    "breakeven5y5y": 2.22
+    "breakeven5y5y": 2.22,
+    "continuedClaims": 1646000
   },
   {
     "date": "2023-02-24",
@@ -9944,7 +10286,8 @@
     "twoYearRate": 4.78,
     "sofr": 4.55,
     "breakeven5y": 2.47,
-    "breakeven5y5y": 2.29
+    "breakeven5y5y": 2.29,
+    "continuedClaims": 1637000
   },
   {
     "date": "2023-03-03",
@@ -9973,7 +10316,8 @@
     "twoYearRate": 4.86,
     "sofr": 4.55,
     "breakeven5y": 2.71,
-    "breakeven5y5y": 2.33
+    "breakeven5y5y": 2.33,
+    "continuedClaims": 1662000
   },
   {
     "date": "2023-03-10",
@@ -10002,7 +10346,8 @@
     "twoYearRate": 4.6,
     "sofr": 4.55,
     "breakeven5y": 2.34,
-    "breakeven5y5y": 2.18
+    "breakeven5y5y": 2.18,
+    "continuedClaims": 1662000
   },
   {
     "date": "2023-03-17",
@@ -10031,7 +10376,8 @@
     "twoYearRate": 3.81,
     "sofr": 4.55,
     "breakeven5y": 2.1,
-    "breakeven5y5y": 2.1
+    "breakeven5y5y": 2.1,
+    "continuedClaims": 1676000
   },
   {
     "date": "2023-03-24",
@@ -10060,7 +10406,8 @@
     "twoYearRate": 3.76,
     "sofr": 4.8,
     "breakeven5y": 2.21,
-    "breakeven5y5y": 2.23
+    "breakeven5y5y": 2.23,
+    "continuedClaims": 1693000
   },
   {
     "date": "2023-03-31",
@@ -10089,7 +10436,8 @@
     "twoYearRate": 4.06,
     "sofr": 4.87,
     "breakeven5y": 2.4,
-    "breakeven5y5y": 2.24
+    "breakeven5y5y": 2.24,
+    "continuedClaims": 1702000
   },
   {
     "date": "2023-04-07",
@@ -10118,7 +10466,8 @@
     "twoYearRate": 3.97,
     "sofr": 4.81,
     "breakeven5y": 2.33,
-    "breakeven5y5y": 2.17
+    "breakeven5y5y": 2.17,
+    "continuedClaims": 1694000
   },
   {
     "date": "2023-04-14",
@@ -10147,7 +10496,8 @@
     "twoYearRate": 4.08,
     "sofr": 4.8,
     "breakeven5y": 2.31,
-    "breakeven5y5y": 2.29
+    "breakeven5y5y": 2.29,
+    "continuedClaims": 1739000
   },
   {
     "date": "2023-04-21",
@@ -10176,7 +10526,8 @@
     "twoYearRate": 4.17,
     "sofr": 4.8,
     "breakeven5y": 2.3,
-    "breakeven5y5y": 2.26
+    "breakeven5y5y": 2.26,
+    "continuedClaims": 1726000
   },
   {
     "date": "2023-04-28",
@@ -10205,7 +10556,8 @@
     "twoYearRate": 4.04,
     "sofr": 4.81,
     "breakeven5y": 2.2,
-    "breakeven5y5y": 2.16
+    "breakeven5y5y": 2.16,
+    "continuedClaims": 1708000
   },
   {
     "date": "2023-05-05",
@@ -10234,7 +10586,8 @@
     "twoYearRate": 3.92,
     "sofr": 5.06,
     "breakeven5y": 2.19,
-    "breakeven5y5y": 2.23
+    "breakeven5y5y": 2.23,
+    "continuedClaims": 1713000
   },
   {
     "date": "2023-05-12",
@@ -10263,7 +10616,8 @@
     "twoYearRate": 3.98,
     "sofr": 5.05,
     "breakeven5y": 2.11,
-    "breakeven5y5y": 2.25
+    "breakeven5y5y": 2.25,
+    "continuedClaims": 1713000
   },
   {
     "date": "2023-05-19",
@@ -10292,7 +10646,8 @@
     "twoYearRate": 4.28,
     "sofr": 5.05,
     "breakeven5y": 2.19,
-    "breakeven5y5y": 2.29
+    "breakeven5y5y": 2.29,
+    "continuedClaims": 1716000
   },
   {
     "date": "2023-05-26",
@@ -10321,7 +10676,8 @@
     "twoYearRate": 4.54,
     "sofr": 5.06,
     "breakeven5y": 2.13,
-    "breakeven5y5y": 2.33
+    "breakeven5y5y": 2.33,
+    "continuedClaims": 1744000
   },
   {
     "date": "2023-06-02",
@@ -10350,7 +10706,8 @@
     "twoYearRate": 4.5,
     "sofr": 5.07,
     "breakeven5y": 2.13,
-    "breakeven5y5y": 2.23
+    "breakeven5y5y": 2.23,
+    "continuedClaims": 1725000
   },
   {
     "date": "2023-06-09",
@@ -10379,7 +10736,8 @@
     "twoYearRate": 4.59,
     "sofr": 5.05,
     "breakeven5y": 2.13,
-    "breakeven5y5y": 2.27
+    "breakeven5y5y": 2.27,
+    "continuedClaims": 1751000
   },
   {
     "date": "2023-06-16",
@@ -10408,7 +10766,8 @@
     "twoYearRate": 4.7,
     "sofr": 5.05,
     "breakeven5y": 2.17,
-    "breakeven5y5y": 2.27
+    "breakeven5y5y": 2.27,
+    "continuedClaims": 1762000
   },
   {
     "date": "2023-06-23",
@@ -10437,7 +10796,8 @@
     "twoYearRate": 4.71,
     "sofr": 5.05,
     "breakeven5y": 2.16,
-    "breakeven5y5y": 2.26
+    "breakeven5y5y": 2.26,
+    "continuedClaims": 1753000
   },
   {
     "date": "2023-06-30",
@@ -10466,7 +10826,8 @@
     "twoYearRate": 4.87,
     "sofr": 5.09,
     "breakeven5y": 2.18,
-    "breakeven5y5y": 2.26
+    "breakeven5y5y": 2.26,
+    "continuedClaims": 1775000
   },
   {
     "date": "2023-07-07",
@@ -10495,7 +10856,8 @@
     "twoYearRate": 4.94,
     "sofr": 5.06,
     "breakeven5y": 2.22,
-    "breakeven5y5y": 2.32
+    "breakeven5y5y": 2.32,
+    "continuedClaims": 1774000
   },
   {
     "date": "2023-07-14",
@@ -10524,7 +10886,8 @@
     "twoYearRate": 4.74,
     "sofr": 5.05,
     "breakeven5y": 2.15,
-    "breakeven5y5y": 2.33
+    "breakeven5y5y": 2.33,
+    "continuedClaims": 1790000
   },
   {
     "date": "2023-07-21",
@@ -10553,7 +10916,8 @@
     "twoYearRate": 4.82,
     "sofr": 5.05,
     "breakeven5y": 2.23,
-    "breakeven5y5y": 2.47
+    "breakeven5y5y": 2.47,
+    "continuedClaims": 1770000
   },
   {
     "date": "2023-07-28",
@@ -10582,7 +10946,8 @@
     "twoYearRate": 4.87,
     "sofr": 5.3,
     "breakeven5y": 2.28,
-    "breakeven5y5y": 2.48
+    "breakeven5y5y": 2.48,
+    "continuedClaims": 1778000
   },
   {
     "date": "2023-08-04",
@@ -10611,7 +10976,8 @@
     "twoYearRate": 4.78,
     "sofr": 5.3,
     "breakeven5y": 2.26,
-    "breakeven5y5y": 2.5
+    "breakeven5y5y": 2.5,
+    "continuedClaims": 1774000
   },
   {
     "date": "2023-08-11",
@@ -10640,7 +11006,8 @@
     "twoYearRate": 4.89,
     "sofr": 5.3,
     "breakeven5y": 2.3,
-    "breakeven5y5y": 2.42
+    "breakeven5y5y": 2.42,
+    "continuedClaims": 1805000
   },
   {
     "date": "2023-08-18",
@@ -10669,7 +11036,8 @@
     "twoYearRate": 4.92,
     "sofr": 5.3,
     "breakeven5y": 2.22,
-    "breakeven5y5y": 2.42
+    "breakeven5y5y": 2.42,
+    "continuedClaims": 1797000
   },
   {
     "date": "2023-08-25",
@@ -10698,7 +11066,8 @@
     "twoYearRate": 5.03,
     "sofr": 5.3,
     "breakeven5y": 2.25,
-    "breakeven5y5y": 2.41
+    "breakeven5y5y": 2.41,
+    "continuedClaims": 1821000
   },
   {
     "date": "2023-09-01",
@@ -10727,7 +11096,8 @@
     "twoYearRate": 4.87,
     "sofr": 5.31,
     "breakeven5y": 2.17,
-    "breakeven5y5y": 2.35
+    "breakeven5y5y": 2.35,
+    "continuedClaims": 1804000
   },
   {
     "date": "2023-09-08",
@@ -10756,7 +11126,8 @@
     "twoYearRate": 4.98,
     "sofr": 5.3,
     "breakeven5y": 2.26,
-    "breakeven5y5y": 2.4
+    "breakeven5y5y": 2.4,
+    "continuedClaims": 1812000
   },
   {
     "date": "2023-09-15",
@@ -10785,7 +11156,8 @@
     "twoYearRate": 5.02,
     "sofr": 5.31,
     "breakeven5y": 2.27,
-    "breakeven5y5y": 2.43
+    "breakeven5y5y": 2.43,
+    "continuedClaims": 1797000
   },
   {
     "date": "2023-09-22",
@@ -10814,7 +11186,8 @@
     "twoYearRate": 5.1,
     "sofr": 5.3,
     "breakeven5y": 2.29,
-    "breakeven5y5y": 2.45
+    "breakeven5y5y": 2.45,
+    "continuedClaims": 1801000
   },
   {
     "date": "2023-09-29",
@@ -10843,7 +11216,8 @@
     "twoYearRate": 5.03,
     "sofr": 5.31,
     "breakeven5y": 2.22,
-    "breakeven5y5y": 2.48
+    "breakeven5y5y": 2.48,
+    "continuedClaims": 1793000
   },
   {
     "date": "2023-10-06",
@@ -10872,7 +11246,8 @@
     "twoYearRate": 5.08,
     "sofr": 5.31,
     "breakeven5y": 2.17,
-    "breakeven5y5y": 2.45
+    "breakeven5y5y": 2.45,
+    "continuedClaims": 1798000
   },
   {
     "date": "2023-10-13",
@@ -10901,7 +11276,8 @@
     "twoYearRate": 5.04,
     "sofr": 5.31,
     "breakeven5y": 2.26,
-    "breakeven5y5y": 2.42
+    "breakeven5y5y": 2.42,
+    "continuedClaims": 1806000
   },
   {
     "date": "2023-10-20",
@@ -10930,7 +11306,8 @@
     "twoYearRate": 5.07,
     "sofr": 5.3,
     "breakeven5y": 2.47,
-    "breakeven5y5y": 2.47
+    "breakeven5y5y": 2.47,
+    "continuedClaims": 1804000
   },
   {
     "date": "2023-10-27",
@@ -10959,7 +11336,8 @@
     "twoYearRate": 4.99,
     "sofr": 5.31,
     "breakeven5y": 2.39,
-    "breakeven5y5y": 2.45
+    "breakeven5y5y": 2.45,
+    "continuedClaims": 1812000
   },
   {
     "date": "2023-11-03",
@@ -10988,7 +11366,8 @@
     "twoYearRate": 4.83,
     "sofr": 5.32,
     "breakeven5y": 2.32,
-    "breakeven5y5y": 2.46
+    "breakeven5y5y": 2.46,
+    "continuedClaims": 1819000
   },
   {
     "date": "2023-11-10",
@@ -11017,7 +11396,8 @@
     "twoYearRate": 5.04,
     "sofr": 5.32,
     "breakeven5y": 2.28,
-    "breakeven5y5y": 2.36
+    "breakeven5y5y": 2.36,
+    "continuedClaims": 1802000
   },
   {
     "date": "2023-11-17",
@@ -11046,7 +11426,8 @@
     "twoYearRate": 4.88,
     "sofr": 5.32,
     "breakeven5y": 2.23,
-    "breakeven5y5y": 2.33
+    "breakeven5y5y": 2.33,
+    "continuedClaims": 1787000
   },
   {
     "date": "2023-11-24",
@@ -11075,7 +11456,8 @@
     "twoYearRate": 4.92,
     "sofr": 5.32,
     "breakeven5y": 2.21,
-    "breakeven5y5y": 2.31
+    "breakeven5y5y": 2.31,
+    "continuedClaims": 1803000
   },
   {
     "date": "2023-12-01",
@@ -11104,7 +11486,8 @@
     "twoYearRate": 4.56,
     "sofr": 5.39,
     "breakeven5y": 2.12,
-    "breakeven5y5y": 2.32
+    "breakeven5y5y": 2.32,
+    "continuedClaims": 1812000
   },
   {
     "date": "2023-12-08",
@@ -11133,7 +11516,8 @@
     "twoYearRate": 4.71,
     "sofr": 5.32,
     "breakeven5y": 2.11,
-    "breakeven5y5y": 2.31
+    "breakeven5y5y": 2.31,
+    "continuedClaims": 1814000
   },
   {
     "date": "2023-12-15",
@@ -11162,7 +11546,8 @@
     "twoYearRate": 4.44,
     "sofr": 5.32,
     "breakeven5y": 2.17,
-    "breakeven5y5y": 2.27
+    "breakeven5y5y": 2.27,
+    "continuedClaims": 1801000
   },
   {
     "date": "2023-12-22",
@@ -11191,7 +11576,8 @@
     "twoYearRate": 4.31,
     "sofr": 5.32,
     "breakeven5y": 2.16,
-    "breakeven5y5y": 2.22
+    "breakeven5y5y": 2.22,
+    "continuedClaims": 1801000
   },
   {
     "date": "2023-12-29",
@@ -11220,7 +11606,8 @@
     "twoYearRate": 4.23,
     "sofr": 5.38,
     "breakeven5y": 2.12,
-    "breakeven5y5y": 2.2
+    "breakeven5y5y": 2.2,
+    "continuedClaims": 1815000
   },
   {
     "date": "2024-01-05",
@@ -11249,7 +11636,8 @@
     "twoYearRate": 4.4,
     "sofr": 5.31,
     "breakeven5y": 2.19,
-    "breakeven5y5y": 2.25
+    "breakeven5y5y": 2.25,
+    "continuedClaims": 1751000
   },
   {
     "date": "2024-01-12",
@@ -11278,7 +11666,8 @@
     "twoYearRate": 4.14,
     "sofr": 5.31,
     "breakeven5y": 2.22,
-    "breakeven5y5y": 2.32
+    "breakeven5y5y": 2.32,
+    "continuedClaims": 1723000
   },
   {
     "date": "2024-01-19",
@@ -11307,7 +11696,8 @@
     "twoYearRate": 4.39,
     "sofr": 5.31,
     "breakeven5y": 2.3,
-    "breakeven5y5y": 2.38
+    "breakeven5y5y": 2.38,
+    "continuedClaims": 1753000
   },
   {
     "date": "2024-01-26",
@@ -11336,7 +11726,8 @@
     "twoYearRate": 4.34,
     "sofr": 5.32,
     "breakeven5y": 2.26,
-    "breakeven5y5y": 2.34
+    "breakeven5y5y": 2.34,
+    "continuedClaims": 1829000
   },
   {
     "date": "2024-02-02",
@@ -11365,7 +11756,8 @@
     "twoYearRate": 4.36,
     "sofr": 5.32,
     "breakeven5y": 2.19,
-    "breakeven5y5y": 2.23
+    "breakeven5y5y": 2.23,
+    "continuedClaims": 1804000
   },
   {
     "date": "2024-02-09",
@@ -11394,7 +11786,8 @@
     "twoYearRate": 4.48,
     "sofr": 5.31,
     "breakeven5y": 2.28,
-    "breakeven5y5y": 2.22
+    "breakeven5y5y": 2.22,
+    "continuedClaims": 1800000
   },
   {
     "date": "2024-02-16",
@@ -11423,7 +11816,8 @@
     "twoYearRate": 4.64,
     "sofr": 5.3,
     "breakeven5y": 2.38,
-    "breakeven5y5y": 2.28
+    "breakeven5y5y": 2.28,
+    "continuedClaims": 1784000
   },
   {
     "date": "2024-02-23",
@@ -11452,7 +11846,8 @@
     "twoYearRate": 4.67,
     "sofr": 5.31,
     "breakeven5y": 2.34,
-    "breakeven5y5y": 2.26
+    "breakeven5y5y": 2.26,
+    "continuedClaims": 1802000
   },
   {
     "date": "2024-03-01",
@@ -11481,7 +11876,8 @@
     "twoYearRate": 4.54,
     "sofr": 5.31,
     "breakeven5y": 2.4,
-    "breakeven5y5y": 2.24
+    "breakeven5y5y": 2.24,
+    "continuedClaims": 1788000
   },
   {
     "date": "2024-03-08",
@@ -11510,7 +11906,8 @@
     "twoYearRate": 4.48,
     "sofr": 5.31,
     "breakeven5y": 2.34,
-    "breakeven5y5y": 2.22
+    "breakeven5y5y": 2.22,
+    "continuedClaims": 1800000
   },
   {
     "date": "2024-03-15",
@@ -11539,7 +11936,8 @@
     "twoYearRate": 4.72,
     "sofr": 5.31,
     "breakeven5y": 2.39,
-    "breakeven5y5y": 2.25
+    "breakeven5y5y": 2.25,
+    "continuedClaims": 1790000
   },
   {
     "date": "2024-03-22",
@@ -11568,7 +11966,8 @@
     "twoYearRate": 4.59,
     "sofr": 5.31,
     "breakeven5y": 2.41,
-    "breakeven5y5y": 2.29
+    "breakeven5y5y": 2.29,
+    "continuedClaims": 1807000
   },
   {
     "date": "2024-03-29",
@@ -11597,7 +11996,8 @@
     "twoYearRate": 4.59,
     "sofr": 5.34,
     "breakeven5y": 2.38,
-    "breakeven5y5y": 2.26
+    "breakeven5y5y": 2.26,
+    "continuedClaims": 1788000
   },
   {
     "date": "2024-04-05",
@@ -11626,7 +12026,8 @@
     "twoYearRate": 4.73,
     "sofr": 5.32,
     "breakeven5y": 2.45,
-    "breakeven5y5y": 2.29
+    "breakeven5y5y": 2.29,
+    "continuedClaims": 1810000
   },
   {
     "date": "2024-04-12",
@@ -11655,7 +12056,8 @@
     "twoYearRate": 4.88,
     "sofr": 5.31,
     "breakeven5y": 2.47,
-    "breakeven5y5y": 2.31
+    "breakeven5y5y": 2.31,
+    "continuedClaims": 1797000
   },
   {
     "date": "2024-04-19",
@@ -11684,7 +12086,8 @@
     "twoYearRate": 4.97,
     "sofr": 5.31,
     "breakeven5y": 2.44,
-    "breakeven5y5y": 2.38
+    "breakeven5y5y": 2.38,
+    "continuedClaims": 1781000
   },
   {
     "date": "2024-04-26",
@@ -11713,7 +12116,8 @@
     "twoYearRate": 4.96,
     "sofr": 5.32,
     "breakeven5y": 2.44,
-    "breakeven5y5y": 2.42
+    "breakeven5y5y": 2.42,
+    "continuedClaims": 1769000
   },
   {
     "date": "2024-05-03",
@@ -11742,7 +12146,8 @@
     "twoYearRate": 4.81,
     "sofr": 5.31,
     "breakeven5y": 2.35,
-    "breakeven5y5y": 2.35
+    "breakeven5y5y": 2.35,
+    "continuedClaims": 1788000
   },
   {
     "date": "2024-05-10",
@@ -11771,7 +12176,8 @@
     "twoYearRate": 4.87,
     "sofr": 5.31,
     "breakeven5y": 2.34,
-    "breakeven5y5y": 2.34
+    "breakeven5y5y": 2.34,
+    "continuedClaims": 1792000
   },
   {
     "date": "2024-05-17",
@@ -11800,7 +12206,8 @@
     "twoYearRate": 4.83,
     "sofr": 5.31,
     "breakeven5y": 2.32,
-    "breakeven5y5y": 2.32
+    "breakeven5y5y": 2.32,
+    "continuedClaims": 1791000
   },
   {
     "date": "2024-05-24",
@@ -11829,7 +12236,8 @@
     "twoYearRate": 4.93,
     "sofr": 5.32,
     "breakeven5y": 2.33,
-    "breakeven5y5y": 2.31
+    "breakeven5y5y": 2.31,
+    "continuedClaims": 1808000
   },
   {
     "date": "2024-05-31",
@@ -11858,7 +12266,8 @@
     "twoYearRate": 4.89,
     "sofr": 5.34,
     "breakeven5y": 2.34,
-    "breakeven5y5y": 2.36
+    "breakeven5y5y": 2.36,
+    "continuedClaims": 1804000
   },
   {
     "date": "2024-06-07",
@@ -11887,7 +12296,8 @@
     "twoYearRate": 4.87,
     "sofr": 5.33,
     "breakeven5y": 2.28,
-    "breakeven5y5y": 2.32
+    "breakeven5y5y": 2.32,
+    "continuedClaims": 1821000
   },
   {
     "date": "2024-06-14",
@@ -11916,7 +12326,8 @@
     "twoYearRate": 4.67,
     "sofr": 5.31,
     "breakeven5y": 2.11,
-    "breakeven5y5y": 2.23
+    "breakeven5y5y": 2.23,
+    "continuedClaims": 1830000
   },
   {
     "date": "2024-06-21",
@@ -11945,7 +12356,8 @@
     "twoYearRate": 4.7,
     "sofr": 5.31,
     "breakeven5y": 2.19,
-    "breakeven5y5y": 2.27
+    "breakeven5y5y": 2.27,
+    "continuedClaims": 1839000
   },
   {
     "date": "2024-06-28",
@@ -11974,7 +12386,8 @@
     "twoYearRate": 4.71,
     "sofr": 5.33,
     "breakeven5y": 2.24,
-    "breakeven5y5y": 2.32
+    "breakeven5y5y": 2.32,
+    "continuedClaims": 1862000
   },
   {
     "date": "2024-07-05",
@@ -12003,7 +12416,8 @@
     "twoYearRate": 4.6,
     "sofr": 5.32,
     "breakeven5y": 2.22,
-    "breakeven5y5y": 2.34
+    "breakeven5y5y": 2.34,
+    "continuedClaims": 1853000
   },
   {
     "date": "2024-07-12",
@@ -12032,7 +12446,8 @@
     "twoYearRate": 4.45,
     "sofr": 5.34,
     "breakeven5y": 2.15,
-    "breakeven5y5y": 2.33
+    "breakeven5y5y": 2.33,
+    "continuedClaims": 1864000
   },
   {
     "date": "2024-07-19",
@@ -12061,7 +12476,8 @@
     "twoYearRate": 4.49,
     "sofr": 5.34,
     "breakeven5y": 2.18,
-    "breakeven5y5y": 2.46
+    "breakeven5y5y": 2.46,
+    "continuedClaims": 1848000
   },
   {
     "date": "2024-07-26",
@@ -12090,7 +12506,8 @@
     "twoYearRate": 4.36,
     "sofr": 5.35,
     "breakeven5y": 2.13,
-    "breakeven5y5y": 2.41
+    "breakeven5y5y": 2.41,
+    "continuedClaims": 1873000
   },
   {
     "date": "2024-08-02",
@@ -12119,7 +12536,8 @@
     "twoYearRate": 3.88,
     "sofr": 5.35,
     "breakeven5y": 1.89,
-    "breakeven5y5y": 2.19
+    "breakeven5y5y": 2.19,
+    "continuedClaims": 1871000
   },
   {
     "date": "2024-08-09",
@@ -12148,7 +12566,8 @@
     "twoYearRate": 4.05,
     "sofr": 5.34,
     "breakeven5y": 1.96,
-    "breakeven5y5y": 2.24
+    "breakeven5y5y": 2.24,
+    "continuedClaims": 1863000
   },
   {
     "date": "2024-08-16",
@@ -12177,7 +12596,8 @@
     "twoYearRate": 4.06,
     "sofr": 5.32,
     "breakeven5y": 1.97,
-    "breakeven5y5y": 2.19
+    "breakeven5y5y": 2.19,
+    "continuedClaims": 1855000
   },
   {
     "date": "2024-08-23",
@@ -12206,7 +12626,8 @@
     "twoYearRate": 3.9,
     "sofr": 5.33,
     "breakeven5y": 2.01,
-    "breakeven5y5y": 2.25
+    "breakeven5y5y": 2.25,
+    "continuedClaims": 1862000
   },
   {
     "date": "2024-08-30",
@@ -12235,7 +12656,8 @@
     "twoYearRate": 3.91,
     "sofr": 5.32,
     "breakeven5y": 2.01,
-    "breakeven5y5y": 2.29
+    "breakeven5y5y": 2.29,
+    "continuedClaims": 1847000
   },
   {
     "date": "2024-09-06",
@@ -12264,7 +12686,8 @@
     "twoYearRate": 3.66,
     "sofr": 5.34,
     "breakeven5y": 1.86,
-    "breakeven5y5y": 2.2
+    "breakeven5y5y": 2.2,
+    "continuedClaims": 1845000
   },
   {
     "date": "2024-09-13",
@@ -12293,7 +12716,8 @@
     "twoYearRate": 3.57,
     "sofr": 5.33,
     "breakeven5y": 1.95,
-    "breakeven5y5y": 2.21
+    "breakeven5y5y": 2.21,
+    "continuedClaims": 1825000
   },
   {
     "date": "2024-09-20",
@@ -12322,7 +12746,8 @@
     "twoYearRate": 3.55,
     "sofr": 4.83,
     "breakeven5y": 2.02,
-    "breakeven5y5y": 2.28
+    "breakeven5y5y": 2.28,
+    "continuedClaims": 1831000
   },
   {
     "date": "2024-09-27",
@@ -12351,7 +12776,8 @@
     "twoYearRate": 3.55,
     "sofr": 4.84,
     "breakeven5y": 2.03,
-    "breakeven5y5y": 2.27
+    "breakeven5y5y": 2.27,
+    "continuedClaims": 1825000
   },
   {
     "date": "2024-10-04",
@@ -12380,7 +12806,8 @@
     "twoYearRate": 3.93,
     "sofr": 4.83,
     "breakeven5y": 2.14,
-    "breakeven5y5y": 2.32
+    "breakeven5y5y": 2.32,
+    "continuedClaims": 1858000
   },
   {
     "date": "2024-10-11",
@@ -12409,7 +12836,8 @@
     "twoYearRate": 3.95,
     "sofr": 4.81,
     "breakeven5y": 2.25,
-    "breakeven5y5y": 2.41
+    "breakeven5y5y": 2.41,
+    "continuedClaims": 1869000
   },
   {
     "date": "2024-10-18",
@@ -12438,7 +12866,8 @@
     "twoYearRate": 3.95,
     "sofr": 4.84,
     "breakeven5y": 2.23,
-    "breakeven5y5y": 2.39
+    "breakeven5y5y": 2.39,
+    "continuedClaims": 1882000
   },
   {
     "date": "2024-10-25",
@@ -12467,7 +12896,8 @@
     "twoYearRate": 4.11,
     "sofr": 4.83,
     "breakeven5y": 2.32,
-    "breakeven5y5y": 2.26
+    "breakeven5y5y": 2.26,
+    "continuedClaims": 1853000
   },
   {
     "date": "2024-11-01",
@@ -12496,7 +12926,8 @@
     "twoYearRate": 4.21,
     "sofr": 4.86,
     "breakeven5y": 2.37,
-    "breakeven5y5y": 2.29
+    "breakeven5y5y": 2.29,
+    "continuedClaims": 1876000
   },
   {
     "date": "2024-11-08",
@@ -12525,7 +12956,8 @@
     "twoYearRate": 4.26,
     "sofr": 4.6,
     "breakeven5y": 2.43,
-    "breakeven5y5y": 2.27
+    "breakeven5y5y": 2.27,
+    "continuedClaims": 1870000
   },
   {
     "date": "2024-11-15",
@@ -12554,7 +12986,8 @@
     "twoYearRate": 4.31,
     "sofr": 4.57,
     "breakeven5y": 2.39,
-    "breakeven5y5y": 2.27
+    "breakeven5y5y": 2.27,
+    "continuedClaims": 1887000
   },
   {
     "date": "2024-11-22",
@@ -12583,7 +13016,8 @@
     "twoYearRate": 4.37,
     "sofr": 4.57,
     "breakeven5y": 2.43,
-    "breakeven5y5y": 2.25
+    "breakeven5y5y": 2.25,
+    "continuedClaims": 1887000
   },
   {
     "date": "2024-11-29",
@@ -12612,7 +13046,8 @@
     "twoYearRate": 4.13,
     "sofr": 4.59,
     "breakeven5y": 2.33,
-    "breakeven5y5y": 2.19
+    "breakeven5y5y": 2.19,
+    "continuedClaims": 1866000
   },
   {
     "date": "2024-12-06",
@@ -12641,7 +13076,8 @@
     "twoYearRate": 4.1,
     "sofr": 4.6,
     "breakeven5y": 2.31,
-    "breakeven5y5y": 2.17
+    "breakeven5y5y": 2.17,
+    "continuedClaims": 1859000
   },
   {
     "date": "2024-12-13",
@@ -12670,7 +13106,8 @@
     "twoYearRate": 4.25,
     "sofr": 4.6,
     "breakeven5y": 2.4,
-    "breakeven5y5y": 2.26
+    "breakeven5y5y": 2.26,
+    "continuedClaims": 1865000
   },
   {
     "date": "2024-12-20",
@@ -12699,7 +13136,8 @@
     "twoYearRate": 4.3,
     "sofr": 4.3,
     "breakeven5y": 2.34,
-    "breakeven5y5y": 2.24
+    "breakeven5y5y": 2.24,
+    "continuedClaims": 1881000
   },
   {
     "date": "2024-12-27",
@@ -12728,7 +13166,8 @@
     "twoYearRate": 4.31,
     "sofr": 4.46,
     "breakeven5y": 2.38,
-    "breakeven5y5y": 2.3
+    "breakeven5y5y": 2.3,
+    "continuedClaims": 1833000
   },
   {
     "date": "2025-01-03",
@@ -12757,7 +13196,8 @@
     "twoYearRate": 4.28,
     "sofr": 4.31,
     "breakeven5y": 2.4,
-    "breakeven5y5y": 2.28
+    "breakeven5y5y": 2.28,
+    "continuedClaims": 1868000
   },
   {
     "date": "2025-01-10",
@@ -12786,7 +13226,8 @@
     "twoYearRate": 4.4,
     "sofr": 4.3,
     "breakeven5y": 2.51,
-    "breakeven5y5y": 2.35
+    "breakeven5y5y": 2.35,
+    "continuedClaims": 1850000
   },
   {
     "date": "2025-01-17",
@@ -12815,7 +13256,8 @@
     "twoYearRate": 4.27,
     "sofr": 4.29,
     "breakeven5y": 2.52,
-    "breakeven5y5y": 2.3
+    "breakeven5y5y": 2.3,
+    "continuedClaims": 1891000
   },
   {
     "date": "2025-01-24",
@@ -12844,7 +13286,8 @@
     "twoYearRate": 4.27,
     "sofr": 4.34,
     "breakeven5y": 2.52,
-    "breakeven5y5y": 2.34
+    "breakeven5y5y": 2.34,
+    "continuedClaims": 1854000
   },
   {
     "date": "2025-01-31",
@@ -12873,7 +13316,8 @@
     "twoYearRate": 4.22,
     "sofr": 4.38,
     "breakeven5y": 2.54,
-    "breakeven5y5y": 2.3
+    "breakeven5y5y": 2.3,
+    "continuedClaims": 1876000
   },
   {
     "date": "2025-02-07",
@@ -12902,7 +13346,8 @@
     "twoYearRate": 4.29,
     "sofr": 4.35,
     "breakeven5y": 2.59,
-    "breakeven5y5y": 2.25
+    "breakeven5y5y": 2.25,
+    "continuedClaims": 1840000
   },
   {
     "date": "2025-02-14",
@@ -12931,7 +13376,8 @@
     "twoYearRate": 4.26,
     "sofr": 4.33,
     "breakeven5y": 2.62,
-    "breakeven5y5y": 2.24
+    "breakeven5y5y": 2.24,
+    "continuedClaims": 1862000
   },
   {
     "date": "2025-02-21",
@@ -12960,7 +13406,8 @@
     "twoYearRate": 4.19,
     "sofr": 4.34,
     "breakeven5y": 2.61,
-    "breakeven5y5y": 2.23
+    "breakeven5y5y": 2.23,
+    "continuedClaims": 1849000
   },
   {
     "date": "2025-02-28",
@@ -12989,7 +13436,8 @@
     "twoYearRate": 3.99,
     "sofr": 4.39,
     "breakeven5y": 2.58,
-    "breakeven5y5y": 2.18
+    "breakeven5y5y": 2.18,
+    "continuedClaims": 1889000
   },
   {
     "date": "2025-03-07",
@@ -13018,7 +13466,8 @@
     "twoYearRate": 3.99,
     "sofr": 4.34,
     "breakeven5y": 2.52,
-    "breakeven5y5y": 2.14
+    "breakeven5y5y": 2.14,
+    "continuedClaims": 1857000
   },
   {
     "date": "2025-03-14",
@@ -13047,7 +13496,8 @@
     "twoYearRate": 4.02,
     "sofr": 4.3,
     "breakeven5y": 2.48,
-    "breakeven5y5y": 2.12
+    "breakeven5y5y": 2.12,
+    "continuedClaims": 1876000
   },
   {
     "date": "2025-03-21",
@@ -13076,7 +13526,8 @@
     "twoYearRate": 3.94,
     "sofr": 4.3,
     "breakeven5y": 2.51,
-    "breakeven5y5y": 2.15
+    "breakeven5y5y": 2.15,
+    "continuedClaims": 1852000
   },
   {
     "date": "2025-03-28",
@@ -13105,7 +13556,8 @@
     "twoYearRate": 3.89,
     "sofr": 4.34,
     "breakeven5y": 2.58,
-    "breakeven5y5y": 2.16
+    "breakeven5y5y": 2.16,
+    "continuedClaims": 1889000
   },
   {
     "date": "2025-04-04",
@@ -13134,7 +13586,8 @@
     "twoYearRate": 3.68,
     "sofr": 4.35,
     "breakeven5y": 2.34,
-    "breakeven5y5y": 2.02
+    "breakeven5y5y": 2.02,
+    "continuedClaims": 1852000
   },
   {
     "date": "2025-04-11",
@@ -13163,7 +13616,8 @@
     "twoYearRate": 3.96,
     "sofr": 4.33,
     "breakeven5y": 2.33,
-    "breakeven5y5y": 2.07
+    "breakeven5y5y": 2.07,
+    "continuedClaims": 1876000
   },
   {
     "date": "2025-04-18",
@@ -13192,7 +13646,8 @@
     "twoYearRate": 3.81,
     "sofr": 4.32,
     "breakeven5y": 2.26,
-    "breakeven5y5y": 2.2
+    "breakeven5y5y": 2.2,
+    "continuedClaims": 1840000
   },
   {
     "date": "2025-04-25",
@@ -13221,7 +13676,8 @@
     "twoYearRate": 3.74,
     "sofr": 4.33,
     "breakeven5y": 2.32,
-    "breakeven5y5y": 2.22
+    "breakeven5y5y": 2.22,
+    "continuedClaims": 1906000
   },
   {
     "date": "2025-05-02",
@@ -13250,7 +13706,8 @@
     "twoYearRate": 3.83,
     "sofr": 4.36,
     "breakeven5y": 2.31,
-    "breakeven5y5y": 2.23
+    "breakeven5y5y": 2.23,
+    "continuedClaims": 1876000
   },
   {
     "date": "2025-05-09",
@@ -13279,7 +13736,8 @@
     "twoYearRate": 3.88,
     "sofr": 4.28,
     "breakeven5y": 2.39,
-    "breakeven5y5y": 2.19
+    "breakeven5y5y": 2.19,
+    "continuedClaims": 1884000
   },
   {
     "date": "2025-05-16",
@@ -13308,7 +13766,8 @@
     "twoYearRate": 3.98,
     "sofr": 4.3,
     "breakeven5y": 2.42,
-    "breakeven5y5y": 2.26
+    "breakeven5y5y": 2.26,
+    "continuedClaims": 1889000
   },
   {
     "date": "2025-05-23",
@@ -13337,7 +13796,8 @@
     "twoYearRate": 4,
     "sofr": 4.26,
     "breakeven5y": 2.4,
-    "breakeven5y5y": 2.26
+    "breakeven5y5y": 2.26,
+    "continuedClaims": 1917000
   },
   {
     "date": "2025-05-30",
@@ -13366,7 +13826,8 @@
     "twoYearRate": 3.89,
     "sofr": 4.35,
     "breakeven5y": 2.39,
-    "breakeven5y5y": 2.29
+    "breakeven5y5y": 2.29,
+    "continuedClaims": 1896000
   },
   {
     "date": "2025-06-06",
@@ -13395,7 +13856,8 @@
     "twoYearRate": 4.04,
     "sofr": 4.29,
     "breakeven5y": 2.35,
-    "breakeven5y5y": 2.27
+    "breakeven5y5y": 2.27,
+    "continuedClaims": 1947000
   },
   {
     "date": "2025-06-13",
@@ -13424,7 +13886,8 @@
     "twoYearRate": 3.96,
     "sofr": 4.28,
     "breakeven5y": 2.31,
-    "breakeven5y5y": 2.25
+    "breakeven5y5y": 2.25,
+    "continuedClaims": 1935000
   },
   {
     "date": "2025-06-20",
@@ -13453,7 +13916,8 @@
     "twoYearRate": 3.9,
     "sofr": 4.29,
     "breakeven5y": 2.37,
-    "breakeven5y5y": 2.29
+    "breakeven5y5y": 2.29,
+    "continuedClaims": 1960000
   },
   {
     "date": "2025-06-27",
@@ -13482,7 +13946,8 @@
     "twoYearRate": 3.73,
     "sofr": 4.39,
     "breakeven5y": 2.31,
-    "breakeven5y5y": 2.27
+    "breakeven5y5y": 2.27,
+    "continuedClaims": 1954000
   },
   {
     "date": "2025-07-04",
@@ -13511,7 +13976,8 @@
     "twoYearRate": 3.88,
     "sofr": 4.35,
     "breakeven5y": 2.37,
-    "breakeven5y5y": 2.29
+    "breakeven5y5y": 2.29,
+    "continuedClaims": 1952000
   },
   {
     "date": "2025-07-11",
@@ -13540,7 +14006,8 @@
     "twoYearRate": 3.9,
     "sofr": 4.31,
     "breakeven5y": 2.44,
-    "breakeven5y5y": 2.3
+    "breakeven5y5y": 2.3,
+    "continuedClaims": 1949000
   },
   {
     "date": "2025-07-18",
@@ -13569,7 +14036,8 @@
     "twoYearRate": 3.88,
     "sofr": 4.3,
     "breakeven5y": 2.5,
-    "breakeven5y5y": 2.32
+    "breakeven5y5y": 2.32,
+    "continuedClaims": 1941000
   },
   {
     "date": "2025-07-25",
@@ -13598,7 +14066,8 @@
     "twoYearRate": 3.91,
     "sofr": 4.36,
     "breakeven5y": 2.47,
-    "breakeven5y5y": 2.41
+    "breakeven5y5y": 2.41,
+    "continuedClaims": 1936000
   },
   {
     "date": "2025-08-01",
@@ -13627,7 +14096,8 @@
     "twoYearRate": 3.69,
     "sofr": 4.34,
     "breakeven5y": 2.38,
-    "breakeven5y5y": 2.28
+    "breakeven5y5y": 2.28,
+    "continuedClaims": 1963000
   },
   {
     "date": "2025-08-08",
@@ -13656,7 +14126,8 @@
     "twoYearRate": 3.76,
     "sofr": 4.35,
     "breakeven5y": 2.46,
-    "breakeven5y5y": 2.32
+    "breakeven5y5y": 2.32,
+    "continuedClaims": 1942000
   },
   {
     "date": "2025-08-15",
@@ -13685,7 +14156,8 @@
     "twoYearRate": 3.75,
     "sofr": 4.36,
     "breakeven5y": 2.42,
-    "breakeven5y5y": 2.34
+    "breakeven5y5y": 2.34,
+    "continuedClaims": 1957000
   },
   {
     "date": "2025-08-22",
@@ -13714,7 +14186,8 @@
     "twoYearRate": 3.68,
     "sofr": 4.36,
     "breakeven5y": 2.48,
-    "breakeven5y5y": 2.34
+    "breakeven5y5y": 2.34,
+    "continuedClaims": 1942000
   },
   {
     "date": "2025-08-29",
@@ -13743,7 +14216,8 @@
     "twoYearRate": 3.59,
     "sofr": 4.34,
     "breakeven5y": 2.47,
-    "breakeven5y5y": 2.35
+    "breakeven5y5y": 2.35,
+    "continuedClaims": 1937000
   },
   {
     "date": "2025-09-05",
@@ -13772,7 +14246,8 @@
     "twoYearRate": 3.51,
     "sofr": 4.42,
     "breakeven5y": 2.42,
-    "breakeven5y5y": 2.32
+    "breakeven5y5y": 2.32,
+    "continuedClaims": 1927000
   },
   {
     "date": "2025-09-12",
@@ -13801,7 +14276,8 @@
     "twoYearRate": 3.56,
     "sofr": 4.42,
     "breakeven5y": 2.42,
-    "breakeven5y5y": 2.3
+    "breakeven5y5y": 2.3,
+    "continuedClaims": 1925000
   },
   {
     "date": "2025-09-19",
@@ -13830,7 +14306,8 @@
     "twoYearRate": 3.57,
     "sofr": 4.14,
     "breakeven5y": 2.43,
-    "breakeven5y5y": 2.35
+    "breakeven5y5y": 2.35,
+    "continuedClaims": 1916000
   },
   {
     "date": "2025-09-26",
@@ -13859,7 +14336,8 @@
     "twoYearRate": 3.63,
     "sofr": 4.16,
     "breakeven5y": 2.42,
-    "breakeven5y5y": 2.34
+    "breakeven5y5y": 2.34,
+    "continuedClaims": 1921000
   },
   {
     "date": "2025-10-03",
@@ -13888,7 +14366,8 @@
     "twoYearRate": 3.58,
     "sofr": 4.18,
     "breakeven5y": 2.38,
-    "breakeven5y5y": 2.28
+    "breakeven5y5y": 2.28,
+    "continuedClaims": 1929000
   },
   {
     "date": "2025-10-10",
@@ -13917,7 +14396,8 @@
     "twoYearRate": 3.52,
     "sofr": 4.15,
     "breakeven5y": 2.35,
-    "breakeven5y5y": 2.25
+    "breakeven5y5y": 2.25,
+    "continuedClaims": 1928000
   },
   {
     "date": "2025-10-17",
@@ -13946,7 +14426,8 @@
     "twoYearRate": 3.46,
     "sofr": 4.18,
     "breakeven5y": 2.29,
-    "breakeven5y5y": 2.25
+    "breakeven5y5y": 2.25,
+    "continuedClaims": 1947000
   },
   {
     "date": "2025-10-24",
@@ -13975,7 +14456,8 @@
     "twoYearRate": 3.48,
     "sofr": 4.24,
     "breakeven5y": 2.4,
-    "breakeven5y5y": 2.18
+    "breakeven5y5y": 2.18,
+    "continuedClaims": 1953000
   },
   {
     "date": "2025-10-31",
@@ -14004,7 +14486,8 @@
     "twoYearRate": 3.6,
     "sofr": 4.22,
     "breakeven5y": 2.4,
-    "breakeven5y5y": 2.2
+    "breakeven5y5y": 2.2,
+    "continuedClaims": 1962000
   },
   {
     "date": "2025-11-07",
@@ -14033,7 +14516,8 @@
     "twoYearRate": 3.55,
     "sofr": 3.93,
     "breakeven5y": 2.36,
-    "breakeven5y5y": 2.2
+    "breakeven5y5y": 2.2,
+    "continuedClaims": 1946000
   },
   {
     "date": "2025-11-14",
@@ -14062,7 +14546,8 @@
     "twoYearRate": 3.62,
     "sofr": 3.95,
     "breakeven5y": 2.38,
-    "breakeven5y5y": 2.18
+    "breakeven5y5y": 2.18,
+    "continuedClaims": 1949000
   },
   {
     "date": "2025-11-21",
@@ -14091,7 +14576,8 @@
     "twoYearRate": 3.51,
     "sofr": 3.93,
     "breakeven5y": 2.32,
-    "breakeven5y5y": 2.16
+    "breakeven5y5y": 2.16,
+    "continuedClaims": 1943000
   },
   {
     "date": "2025-11-28",
@@ -14120,7 +14606,8 @@
     "twoYearRate": 3.47,
     "sofr": 4.12,
     "breakeven5y": 2.29,
-    "breakeven5y5y": 2.17
+    "breakeven5y5y": 2.17,
+    "continuedClaims": 1932000
   },
   {
     "date": "2025-12-05",
@@ -14149,7 +14636,8 @@
     "twoYearRate": 3.56,
     "sofr": 3.93,
     "breakeven5y": 2.34,
-    "breakeven5y5y": 2.18
+    "breakeven5y5y": 2.18,
+    "continuedClaims": 1894000
   },
   {
     "date": "2025-12-12",
@@ -14178,7 +14666,8 @@
     "twoYearRate": 3.52,
     "sofr": 3.67,
     "breakeven5y": 2.32,
-    "breakeven5y5y": 2.2
+    "breakeven5y5y": 2.2,
+    "continuedClaims": 1887000
   },
   {
     "date": "2025-12-19",
@@ -14207,7 +14696,8 @@
     "twoYearRate": 3.48,
     "sofr": 3.66,
     "breakeven5y": 2.27,
-    "breakeven5y5y": 2.21
+    "breakeven5y5y": 2.21,
+    "continuedClaims": 1910000
   },
   {
     "date": "2025-12-26",
@@ -14236,7 +14726,8 @@
     "twoYearRate": 3.46,
     "sofr": 3.76,
     "breakeven5y": 2.22,
-    "breakeven5y5y": 2.24
+    "breakeven5y5y": 2.24,
+    "continuedClaims": 1860000
   },
   {
     "date": "2026-01-02",
@@ -14265,7 +14756,8 @@
     "twoYearRate": 3.47,
     "sofr": 3.75,
     "breakeven5y": 2.28,
-    "breakeven5y5y": 2.22
+    "breakeven5y5y": 2.22,
+    "continuedClaims": 1900000
   },
   {
     "date": "2026-01-09",
@@ -14294,7 +14786,8 @@
     "twoYearRate": 3.54,
     "sofr": 3.64,
     "breakeven5y": 2.32,
-    "breakeven5y5y": 2.24
+    "breakeven5y5y": 2.24,
+    "continuedClaims": 1875000
   },
   {
     "date": "2026-01-16",
@@ -14323,7 +14816,8 @@
     "twoYearRate": 3.59,
     "sofr": 3.65,
     "breakeven5y": 2.39,
-    "breakeven5y5y": 2.27
+    "breakeven5y5y": 2.27,
+    "continuedClaims": 1865000
   },
   {
     "date": "2026-01-23",
@@ -14352,7 +14846,8 @@
     "twoYearRate": 3.6,
     "sofr": 3.65,
     "breakeven5y": 2.46,
-    "breakeven5y5y": 2.18
+    "breakeven5y5y": 2.18,
+    "continuedClaims": 1823000
   },
   {
     "date": "2026-01-30",
@@ -14381,7 +14876,8 @@
     "twoYearRate": 3.52,
     "sofr": 3.68,
     "breakeven5y": 2.53,
-    "breakeven5y5y": 2.19
+    "breakeven5y5y": 2.19,
+    "continuedClaims": 1842000
   },
   {
     "date": "2026-02-06",
@@ -14410,7 +14906,8 @@
     "twoYearRate": 3.5,
     "sofr": 3.64,
     "breakeven5y": 2.5,
-    "breakeven5y5y": 2.18
+    "breakeven5y5y": 2.18,
+    "continuedClaims": 1859000
   },
   {
     "date": "2026-02-13",
@@ -14439,7 +14936,8 @@
     "twoYearRate": 3.4,
     "sofr": 3.66,
     "breakeven5y": 2.42,
-    "breakeven5y5y": 2.12
+    "breakeven5y5y": 2.12,
+    "continuedClaims": 1865000
   },
   {
     "date": "2026-02-20",
@@ -14468,7 +14966,8 @@
     "twoYearRate": 3.48,
     "sofr": 3.66,
     "breakeven5y": 2.43,
-    "breakeven5y5y": 2.13
+    "breakeven5y5y": 2.13,
+    "continuedClaims": 1827000
   },
   {
     "date": "2026-02-27",
@@ -14497,7 +14996,8 @@
     "twoYearRate": 3.38,
     "sofr": 3.68,
     "breakeven5y": 2.4,
-    "breakeven5y5y": 2.1
+    "breakeven5y5y": 2.1,
+    "continuedClaims": 1871000
   },
   {
     "date": "2026-03-06",
@@ -14526,7 +15026,8 @@
     "twoYearRate": 3.56,
     "sofr": 3.65,
     "breakeven5y": 2.56,
-    "breakeven5y5y": 2.14
+    "breakeven5y5y": 2.14,
+    "continuedClaims": 1847000
   },
   {
     "date": "2026-03-13",
@@ -14555,7 +15056,8 @@
     "twoYearRate": 3.73,
     "sofr": 3.65,
     "breakeven5y": 2.61,
-    "breakeven5y5y": 2.11
+    "breakeven5y5y": 2.11,
+    "continuedClaims": 1851000
   },
   {
     "date": "2026-03-20",
@@ -14584,7 +15086,8 @@
     "twoYearRate": 3.88,
     "sofr": 3.62,
     "breakeven5y": 2.63,
-    "breakeven5y5y": 2.13
+    "breakeven5y5y": 2.13,
+    "continuedClaims": 1816000
   },
   {
     "date": "2026-03-27",
@@ -14613,7 +15116,8 @@
     "twoYearRate": 3.88,
     "sofr": 3.63,
     "breakeven5y": 2.56,
-    "breakeven5y5y": 2.06
+    "breakeven5y5y": 2.06,
+    "continuedClaims": 1832000
   },
   {
     "date": "2026-04-03",
@@ -14642,7 +15146,8 @@
     "twoYearRate": 3.84,
     "sofr": 3.66,
     "breakeven5y": 2.61,
-    "breakeven5y5y": 2.11
+    "breakeven5y5y": 2.11,
+    "continuedClaims": 1787000
   },
   {
     "date": "2026-04-10",
@@ -14671,7 +15176,8 @@
     "twoYearRate": 3.81,
     "sofr": 3.61,
     "breakeven5y": 2.58,
-    "breakeven5y5y": 2.14
+    "breakeven5y5y": 2.14,
+    "continuedClaims": 1809000
   },
   {
     "date": "2026-04-17",
@@ -14700,7 +15206,8 @@
     "twoYearRate": 3.71,
     "sofr": 3.65,
     "breakeven5y": 2.56,
-    "breakeven5y5y": 2.16
+    "breakeven5y5y": 2.16,
+    "continuedClaims": 1808000
   },
   {
     "date": "2026-04-24",
@@ -14729,7 +15236,8 @@
     "twoYearRate": 3.78,
     "sofr": 3.66,
     "breakeven5y": 2.61,
-    "breakeven5y5y": 2.23
+    "breakeven5y5y": 2.23,
+    "continuedClaims": 1776000
   },
   {
     "date": "2026-05-01",
@@ -14758,7 +15266,8 @@
     "twoYearRate": 3.88,
     "sofr": 3.64,
     "breakeven5y": 2.69,
-    "breakeven5y5y": 2.27
+    "breakeven5y5y": 2.27,
+    "continuedClaims": 1758000
   },
   {
     "date": "2026-05-08",
@@ -14787,7 +15296,8 @@
     "twoYearRate": 3.9,
     "sofr": 3.6,
     "breakeven5y": 2.62,
-    "breakeven5y5y": 2.28
+    "breakeven5y5y": 2.28,
+    "continuedClaims": 1776000
   },
   {
     "date": "2026-05-15",
@@ -14816,7 +15326,8 @@
     "twoYearRate": 4.09,
     "sofr": 3.55,
     "breakeven5y": 2.7,
-    "breakeven5y5y": 2.28
+    "breakeven5y5y": 2.28,
+    "continuedClaims": 1771000
   },
   {
     "date": "2026-05-22",
@@ -14845,7 +15356,8 @@
     "twoYearRate": 4.13,
     "sofr": 3.55,
     "breakeven5y": 2.54,
-    "breakeven5y5y": 2.26
+    "breakeven5y5y": 2.26,
+    "continuedClaims": 1785000
   },
   {
     "date": "2026-05-29",
@@ -14874,7 +15386,8 @@
     "twoYearRate": 3.98,
     "sofr": 3.63,
     "breakeven5y": 2.52,
-    "breakeven5y5y": 2.24
+    "breakeven5y5y": 2.24,
+    "continuedClaims": 1771000
   },
   {
     "date": "2026-06-05",
@@ -14903,7 +15416,8 @@
     "twoYearRate": 4.17,
     "sofr": 3.63,
     "breakeven5y": 2.48,
-    "breakeven5y5y": 2.24
+    "breakeven5y5y": 2.24,
+    "continuedClaims": 1786000
   },
   {
     "date": "2026-06-12",
@@ -14932,7 +15446,8 @@
     "twoYearRate": 4.09,
     "sofr": 3.65,
     "breakeven5y": 2.39,
-    "breakeven5y5y": 2.23
+    "breakeven5y5y": 2.23,
+    "continuedClaims": 1800000
   },
   {
     "date": "2026-06-19",
@@ -14961,7 +15476,8 @@
     "twoYearRate": 4.19,
     "sofr": 3.62,
     "breakeven5y": 2.27,
-    "breakeven5y5y": 2.23
+    "breakeven5y5y": 2.23,
+    "continuedClaims": 1812000
   },
   {
     "date": "2026-06-26",
@@ -14990,7 +15506,8 @@
     "twoYearRate": 4.07,
     "sofr": 3.62,
     "breakeven5y": 2.21,
-    "breakeven5y5y": 2.19
+    "breakeven5y5y": 2.19,
+    "continuedClaims": 1806000
   },
   {
     "date": "2026-07-03",
@@ -15019,7 +15536,8 @@
     "twoYearRate": 4.14,
     "sofr": 3.64,
     "breakeven5y": 2.24,
-    "breakeven5y5y": 2.22
+    "breakeven5y5y": 2.22,
+    "continuedClaims": 1821000
   },
   {
     "date": "2026-07-10",
@@ -15048,7 +15566,8 @@
     "twoYearRate": 4.21,
     "sofr": 3.55,
     "breakeven5y": 2.28,
-    "breakeven5y5y": 2.2
+    "breakeven5y5y": 2.2,
+    "continuedClaims": 1798000
   },
   {
     "date": "2026-07-17",
@@ -15077,7 +15596,8 @@
     "twoYearRate": 4.18,
     "sofr": 3.59,
     "breakeven5y": 2.27,
-    "breakeven5y5y": 2.21
+    "breakeven5y5y": 2.21,
+    "continuedClaims": 1789000
   },
   {
     "date": "2026-07-24",
@@ -15106,7 +15626,8 @@
     "twoYearRate": 4.33,
     "sofr": 3.64,
     "breakeven5y": 2.24,
-    "breakeven5y5y": 2.28
+    "breakeven5y5y": 2.28,
+    "continuedClaims": 1777000
   },
   {
     "date": "2026-07-31",
@@ -15135,7 +15656,8 @@
     "twoYearRate": 4.28,
     "sofr": 3.66,
     "breakeven5y": 2.26,
-    "breakeven5y5y": 2.3
+    "breakeven5y5y": 2.3,
+    "continuedClaims": 1799000
   },
   {
     "date": "2026-08-07",
@@ -15164,7 +15686,8 @@
     "twoYearRate": 4.19,
     "sofr": 3.62,
     "breakeven5y": 2.22,
-    "breakeven5y5y": 2.28
+    "breakeven5y5y": 2.28,
+    "continuedClaims": 1777000
   },
   {
     "date": "2026-08-14",
@@ -15193,6 +15716,7 @@
     "twoYearRate": 4.17,
     "sofr": 3.62,
     "breakeven5y": 2.24,
-    "breakeven5y5y": 2.3
+    "breakeven5y5y": 2.3,
+    "continuedClaims": null
   }
 ]

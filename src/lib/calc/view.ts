@@ -461,6 +461,8 @@ export function buildMacroView(options: BuildViewOptions): MacroPoint[] {
       sofr: valueAsOf(series(observations, 'sofr'), date),
       breakeven5y: valueAsOf(series(observations, 'breakeven-5y'), date),
       breakeven5y5y: valueAsOf(series(observations, 'breakeven-5y5y'), date),
+      // 週次。新規申請と同じグリッドに乗る (#196)。
+      continuedClaims: valueAsOf(series(observations, 'continued-claims'), date),
     };
   });
 }
@@ -647,6 +649,13 @@ export function buildEconomyView(options: BuildViewOptions): EconomyView {
     realIncomeExTransfer: yoy('real-income-ex-transfer', month),
     realDisposablePerCapita: yoy('real-disposable-income-per-capita', month),
     realDisposableTotal: yoy('real-disposable-income', month),
+    // 労働市場の質。失業率だけでは「探すのをやめた」のか区別できない (#196)。
+    u6Rate: level('u6-rate', month),
+    participationRate: level('participation-rate', month),
+    employmentRatio: level('employment-ratio', month),
+    hires: level('hires', month),
+    quits: level('quits', month),
+    weeklyHoursTotal: level('weekly-hours-total', month),
     // FRB が見る物価。総合は食品・エネルギーで振れる (#194)。
     cpiCore: yoy('cpi-core', month),
     pceCore: yoy('pce-core', month),
@@ -757,6 +766,12 @@ const MONTHLY_INDICATORS = [
   'real-disposable-income-per-capita',
   'real-disposable-income',
   'real-consumption',
+  'u6-rate',
+  'participation-rate',
+  'employment-ratio',
+  'hires',
+  'quits',
+  'weekly-hours-total',
   'cpi-core',
   'pce-core',
   'cpi-rent',

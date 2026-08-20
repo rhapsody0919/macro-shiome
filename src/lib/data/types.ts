@@ -409,6 +409,8 @@ export interface MacroPoint {
   breakeven5y: number | null;
   /** 5年先5年期待インフレ率 (%)。FRB が期待の安定を測る (#194)。 */
   breakeven5y5y: number | null;
+  /** 継続受給者数 (人)。新規申請と対で再就職の速さを見る (#196)。 */
+  continuedClaims: number | null;
 }
 
 /**
@@ -492,6 +494,18 @@ export interface MonthlyPoint {
   newHomeSales: number | null;
   /** 中古住宅販売件数。取引量の大半を占める。**直近 13 か月から積み上げ中** (#188)。 */
   existingHomeSales: number | null;
+  /** 広義失業率 U-6 (%)。不完全就業を含む (#196)。 */
+  u6Rate: number | null;
+  /** 労働参加率 (%)。失業率の分母側 (#196)。 */
+  participationRate: number | null;
+  /** 就業率 (%)。人口に対する就業者の割合 (#196)。 */
+  employmentRatio: number | null;
+  /** 採用 (千人)。求人が採用に繋がっているか (#196)。 */
+  hires: number | null;
+  /** 自発的離職 (千人)。労働者の自信を示す (#196)。 */
+  quits: number | null;
+  /** 週平均労働時間 全産業 (時間) (#196)。 */
+  weeklyHoursTotal: number | null;
   /** コア CPI の前年同月比 (%)。食品・エネルギー除く (#194)。 */
   cpiCore: number | null;
   /** コア PCE の前年同月比 (%)。**FRB の物価目標** (#194)。 */

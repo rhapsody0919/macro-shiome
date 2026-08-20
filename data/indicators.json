@@ -2198,5 +2198,127 @@
       "max": 1000
     },
     "note": "PPI by Commodity: All Commodities。指数、季節調整なし (#194)。**最終需要 (`PPIFIS`) の上流。** 商品ベースなので原材料の値動きが直接出る。物価の連鎖の起点として見る。"
+  },
+  "continued-claims": {
+    "name": "継続受給者数",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "CCSA"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "U.S. Employment and Training Administration via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "cyclePosition": "lagging",
+    "range": {
+      "min": 0,
+      "max": 30000000
+    },
+    "note": "Continued Claims (Insured Unemployment)。人、季節調整済み、週次 (#196)。**新規申請と対で見る。** 新規が増えなくても継続が増えていれば、職を失った人が再就職できていない。新規は「入口」、継続は「滞留」。"
+  },
+  "u6-rate": {
+    "name": "広義失業率 (U-6)",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "U6RATE"
+    },
+    "frequency": "monthly",
+    "unit": "percent",
+    "attribution": "U.S. Bureau of Labor Statistics via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": 0,
+      "max": 40
+    },
+    "note": "Total Unemployed Plus Marginally Attached and Part Time for Economic Reasons (%) (#196)。**不完全就業と求職を諦めた人を含む。** 公式失業率 (U-3) より広く、2 つの差が「統計に出ない失業」の大きさを示す。"
+  },
+  "participation-rate": {
+    "name": "労働参加率",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "CIVPART"
+    },
+    "frequency": "monthly",
+    "unit": "percent",
+    "attribution": "U.S. Bureau of Labor Statistics via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": 0,
+      "max": 100
+    },
+    "note": "Labor Force Participation Rate (%)、季節調整済み (#196)。**失業率の分母側。** 参加率が下がれば失業率は自動的に下がるため、失業率の改善が「職が増えた」のか「探すのをやめた」のかを判別する。"
+  },
+  "employment-ratio": {
+    "name": "就業率",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "EMRATIO"
+    },
+    "frequency": "monthly",
+    "unit": "percent",
+    "attribution": "U.S. Bureau of Labor Statistics via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": 0,
+      "max": 100
+    },
+    "note": "Employment-Population Ratio (%)、季節調整済み (#196)。**人口に対する就業者の割合。** 参加率と違い「探しているか」に左右されないため頑健。"
+  },
+  "quits": {
+    "name": "自発的離職",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "JTSQUL"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "U.S. Bureau of Labor Statistics via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "cyclePosition": "leading",
+    "range": {
+      "min": 0,
+      "max": 10000000
+    },
+    "note": "Quits: Total Nonfarm。人、季節調整済み (#196)。**労働者の自信を示す。** 次が見つかる自信があるときに増える。景気後退の手前で先に落ちることが多い。"
+  },
+  "hires": {
+    "name": "採用",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "JTSHIL"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "U.S. Bureau of Labor Statistics via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": 0,
+      "max": 10000000
+    },
+    "note": "Hires: Total Nonfarm。人、季節調整済み (#196)。**求人が実際の採用に繋がっているか。** 求人件数が多くても採用が伸びなければ、ミスマッチか企業の様子見。"
+  },
+  "weekly-hours-total": {
+    "name": "週平均労働時間 (全産業)",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "AWHAETP"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "U.S. Bureau of Labor Statistics via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "cyclePosition": "leading",
+    "range": {
+      "min": 0,
+      "max": 60
+    },
+    "note": "Average Weekly Hours of All Employees, Total Private。時間、季節調整済み (#196)。**企業は解雇の前に労働時間を削る。** 既に持っている製造業の時間 (`AWHMAN`) はLEI の構成要素で製造業に絞ったもの、こちらは全産業。"
   }
 }
