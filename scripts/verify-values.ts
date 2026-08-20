@@ -99,9 +99,18 @@ async function verifySources(): Promise<void> {
   }
 
   for (const [id, indicator] of Object.entries(indicators)) {
-    if (indicator.source.adapter !== 'treasury') continue;
+    const source = indicator.source;
+    if (source.adapter !== 'treasury') continue;
     const stored = readObservations(id);
-    const live = await new TreasuryClient().fetchTenYearBidToCover();
+    // 表ごとに取り直す (#222)。同じ経路だが、**絞り込みが外れれば値と点数が変わる**ので
+    // 混入は検出できる (統計ダッシュボードと同じ扱い)。
+    const client = new TreasuryClient();
+    const live =
+      'avgRate' in source
+        ? await client.fetchAvgRate(source.avgRate)
+        : 'debt' in source
+          ? await client.fetchDebtHeldByPublic()
+          : await client.fetchTenYearBidToCover();
     for (const [date, value] of Object.entries(stored)) {
       if (live[date] === undefined) {
         fail('一次情報との照合', `${id}: 財務省 API に無い日付 (${date})`);

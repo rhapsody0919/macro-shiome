@@ -352,6 +352,71 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
   {
     question: 'financial',
     frequency: 'monthly',
+    primaryIndicator: 'treasury-avg-rate',
+    title: '国債の平均利率',
+    subtitle: '発行済み国債が実際に払っている金利 (%)',
+    zeroLine: false,
+    series: [
+      {
+        key: 'treasuryAvgRate',
+        label: '全体',
+        color: COLORS.treasuryAvgRate,
+        width: 2.4,
+        indicatorId: 'treasury-avg-rate',
+      },
+      {
+        key: 'treasuryAvgRateBills',
+        label: '短期債',
+        color: COLORS.treasuryAvgRateBills,
+        indicatorId: 'treasury-avg-rate-bills',
+      },
+      {
+        key: 'treasuryAvgRateNotes',
+        label: '中期債',
+        color: COLORS.treasuryAvgRateNotes,
+        indicatorId: 'treasury-avg-rate-notes',
+      },
+    ],
+    notes: [
+      <span key="refi">
+        <strong>市場の利回りとは別物。</strong>
+        過去に発行した分も含めた実績なので、市場金利が上がってもすぐには追いつかない。
+        <strong>市場金利がこれを上回っている間は、借り換えが進むほど利払いが増える</strong>。
+      </span>,
+      <span key="split">
+        <strong>短期債が最も速く動く。</strong>
+        満期 1 年以内で入れ替わりが速く、政策金利の変化がすぐ反映される。
+        中期債は残高が最も大きく全体を左右するが、入れ替わりに数年かかる。
+      </span>,
+    ],
+  },
+  {
+    question: 'financial',
+    frequency: 'daily',
+    primaryIndicator: 'federal-debt-public',
+    explainIndicators: ['federal-debt-public'],
+    title: '国債残高 (市中保有)',
+    subtitle: '市場で保有されている国債の残高 (兆ドル)',
+    kind: 'number',
+    series: [
+      { key: 'federalDebtPublic', label: '市中保有', color: COLORS.federalDebtPublic },
+    ],
+    notes: [
+      <span key="why">
+        <strong>政府内で持ち合っている分を除いてある。</strong>
+        社会保障基金などが持つ分は市場に出回らないため、
+        <strong>市場が消化しなければならない量はこちら</strong>
+        (差は 2026-08 時点で 7.78 兆ドル)。
+      </span>,
+      <span key="limit">
+        <strong>内訳は 2005 年 4 月以降しか報告されていない。</strong>
+        それ以前は合計しか無く、市中保有分を切り出せない。
+      </span>,
+    ],
+  },
+  {
+    question: 'financial',
+    frequency: 'monthly',
     primaryIndicator: 'ten-year-bid-to-cover',
     title: '10年債入札の応札倍率',
     subtitle: '応札額 ÷ 落札額。低いほど買い手が弱い',

@@ -19,6 +19,11 @@ export const COLORS = {
   termSpread: '#6366f1',
   /** 10年債入札の応札倍率。 */
   bidToCover: '#0369a1',
+  // 国債の平均利率 3 本 (#222)。全体を太く、内訳を細く。
+  treasuryAvgRate: '#0f766e',
+  treasuryAvgRateBills: '#14b8a6',
+  treasuryAvgRateNotes: '#5eead4',
+  federalDebtPublic: '#b45309',
   /** 輸出物価。輸入物価と対で交易条件を見る。 */
   exportPrice: '#f472b6',
   /** ゴールド (GLD)。現物価格ではなく ETF の価格。 */

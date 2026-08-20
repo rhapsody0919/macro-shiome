@@ -36,6 +36,7 @@ export type DailyKey = Extract<
   | 'tbill3m'
   | 'nasdaqComposite'
   | 'djia'
+  | 'federalDebtPublic'
   | 'usdEur'
   | 'cnyUsd'
 >;
@@ -65,6 +66,7 @@ export const DAILY_SERIES = {
     'tbill3m',
     'nasdaqComposite',
     'djia',
+    'federalDebtPublic',
     'usdEur',
     'cnyUsd',
   ],
