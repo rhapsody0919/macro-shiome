@@ -170,13 +170,28 @@ describe('米国の家計の余力 (#178)', () => {
 });
 
 describe('日本の対外収支 (#174)', () => {
-  it('経常収支と貿易収支を 1 枚に重ねる', () => {
-    // 同じ単位 (億円)。2 本の差が所得収支など貿易以外の寄与を示すので、分けると読めない。
+  it('交易条件と収支を同じ問いに置き、価格を先にする', () => {
+    // どちらも「稼いだ分が海外に流出しているか」を見る (#184)。
+    // 交易条件 (価格) が先に動き、収支に結果が出る。上流 → 下流の順 (#89)。
     render(<JapanPage />);
     const section = document.getElementById('q-jp-external');
     expect(section).not.toBeNull();
     const titles = Array.from(section?.querySelectorAll('h3') ?? []).map((h) => h.textContent);
-    expect(titles).toEqual(['経常収支と貿易収支 (日本)']);
+    expect(titles).toEqual([
+      '交易条件 (輸出物価と輸入物価)',
+      '経常収支と貿易収支 (日本)',
+    ]);
+  });
+
+  it('1 枚だけの問いを作らない (#184)', () => {
+    // 細分化しすぎると、問いが多いだけで読み筋が伝わらなくなる。
+    // #89 が解いた「その他の肥大」の逆方向の失敗。
+    render(<JapanPage />);
+    for (const id of Object.keys(JAPAN_QUESTIONS)) {
+      const section = document.getElementById(`q-${id}`);
+      const charts = section?.querySelectorAll('h3').length ?? 0;
+      expect(charts, id).toBeGreaterThan(1);
+    }
   });
 
   it('季調値であることと符号が変わる例を書く', () => {
@@ -287,15 +302,6 @@ describe('街角景気 (#160)', () => {
 });
 
 describe('日本の交易条件 (#155)', () => {
-  it('輸出物価と輸入物価を 1 枚に重ねる', () => {
-    // 同じ基準・同じ円ベースなので重ねられる。2 本の差が交易条件そのもの。
-    render(<JapanPage />);
-    const section = document.getElementById('q-jp-trade');
-    expect(section).not.toBeNull();
-    const titles = Array.from(section?.querySelectorAll('h3') ?? []).map((h) => h.textContent);
-    expect(titles).toEqual(['交易条件 (輸出物価と輸入物価)']);
-  });
-
   it('米国の交易条件とは別のチャートにする', () => {
     // 基準年も対象品目も違う (#98)。同じ図に載せると差が定義の違いに見える。
     render(<EconomyPage />);
