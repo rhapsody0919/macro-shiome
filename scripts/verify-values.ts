@@ -470,16 +470,24 @@ async function fetchFredUnits(seriesId: string): Promise<string> {
 }
 
 /**
- * 金額の桁だけは日本語の単位表記とも突き合わせる (#212)。
+ * 桁が変わる単位だけ、日本語の表記とも突き合わせる (#212)。
  *
  * `sourceUnits` は原文を写すだけなので、そこから `unitLabel` を書き誤る余地が残る。
- * **#198 で実際に誤ったのは金額の桁**だったので、そこだけ機械で見る。
- * 他の単位 (Percent / Index / Thousands of Units など) は日本語の表し方が一意に決まらず、
- * 対応表を作ると表記ゆれで壊れるため対象にしない。
+ * **実際に誤ったのは桁**だったので、そこだけ機械で見る。
+ *
+ * - #198: `BUSLOANS` を百万ドルと書いたが十億ドルだった
+ * - #212: `JTSQUL` / `JTSHIL` を「人」と書いたが千人だった (実データも 3,232 で千人単位)
+ *
+ * Percent や Index は日本語の表し方が一意に決まらず、対応表を作ると表記ゆれで壊れるため
+ * 対象にしない。**千の側は「千」が入っているかだけ**を見る (千人・千戸・千件を区別しない)。
  */
-const MONEY_SCALES: ReadonlyArray<{ source: string; label: RegExp }> = [
-  { source: 'Billions of Dollars', label: /10億ドル|十億ドル/ },
-  { source: 'Millions of Dollars', label: /百万ドル/ },
+const SCALE_RULES: ReadonlyArray<{ source: string; label: RegExp; note: string }> = [
+  { source: 'Billions of', label: /10億ドル|十億ドル/, note: '十億' },
+  { source: 'Millions of Dollars', label: /百万ドル/, note: '百万ドル' },
+  { source: 'Millions of U.S. Dollars', label: /百万ドル/, note: '百万ドル' },
+  { source: 'Millions of Units', label: /百万台/, note: '百万台' },
+  { source: 'Thousands', label: /千/, note: '千' },
+  { source: 'Level in Thousands', label: /千/, note: '千' },
 ];
 
 /**
@@ -519,12 +527,12 @@ async function verifyFredUnits(): Promise<void> {
     }
     compared += 1;
 
-    const scale = MONEY_SCALES.find((entry) => live.startsWith(entry.source));
+    const scale = SCALE_RULES.find((entry) => live.startsWith(entry.source));
     if (scale !== undefined && indicator.unitLabel !== undefined) {
       if (!scale.label.test(indicator.unitLabel)) {
         fail(
           'FRED の単位の照合',
-          `${id}: FRED は "${live}" だが表示は "${indicator.unitLabel}"`,
+          `${id}: FRED は "${live}" (${scale.note}) だが表示は "${indicator.unitLabel}"`,
         );
       }
     }

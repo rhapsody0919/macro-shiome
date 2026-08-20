@@ -75,6 +75,7 @@ const CHARTS: QuestionChartDef<EconomyQuestionId>[] = [
     question: 'slowdown',
     frequency: 'weekly',
     primaryIndicator: 'initial-claims',
+    explainIndicators: ['initial-claims', 'continued-claims'],
     title: '新規失業保険申請件数',
     subtitle: '労働市場の悪化を最も早く捉える (週次)',
     series: [
