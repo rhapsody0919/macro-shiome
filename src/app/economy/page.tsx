@@ -52,7 +52,10 @@ const CHARTS: QuestionChartDef<EconomyQuestionId>[] = [
     primaryIndicator: 'initial-claims',
     title: '新規失業保険申請件数',
     subtitle: '労働市場の悪化を最も早く捉える (週次)',
-    series: [{ key: 'initialClaims', label: '申請件数', color: COLORS.initialClaims }],
+    series: [
+      { key: 'initialClaims', label: '新規申請', color: COLORS.initialClaims, width: 2.4 },
+      { key: 'continuedClaims', label: '継続受給', color: COLORS.continuedClaims },
+    ],
     notes: [
       <span key="direction">
         <strong>増加が悪化を意味する。</strong>
@@ -126,6 +129,12 @@ const CHARTS: QuestionChartDef<EconomyQuestionId>[] = [
     kind: 'number',
     zeroLine: false,
     series: [
+      {
+        key: 'weeklyHoursTotal',
+        label: '全産業',
+        color: COLORS.weeklyHoursTotal,
+        indicatorId: 'weekly-hours-total',
+      },
       {
         key: 'manufacturingHours',
         label: '週平均労働時間',
@@ -272,6 +281,38 @@ const CHARTS: QuestionChartDef<EconomyQuestionId>[] = [
     ],
   },
   {
+    question: 'labor',
+    frequency: 'monthly',
+    kind: 'number',
+    zeroLine: false,
+    primaryIndicator: 'u6-rate',
+    title: '労働市場の質',
+    subtitle: '広義失業率・参加率・就業率 (%)',
+    series: [
+      { key: 'u6Rate', label: '広義失業率 (U-6)', color: COLORS.u6Rate, width: 2.4, indicatorId: 'u6-rate' },
+      { key: 'participationRate', label: '労働参加率', color: COLORS.participationRate, indicatorId: 'participation-rate' },
+      { key: 'employmentRatio', label: '就業率', color: COLORS.employmentRatio, indicatorId: 'employment-ratio' },
+    ],
+    notes: [
+      <span key="u6">
+        <strong>広義失業率は不完全就業と求職を諦めた人を含む。</strong>
+        公式失業率 (U-3) との差が「統計に出ない失業」の大きさ。
+      </span>,
+      <span key="denominator">
+        <strong>参加率は失業率の分母側。</strong>
+        参加率が下がれば失業率は自動的に下がる。失業率の改善が「職が増えた」のか
+        「探すのをやめた」のかを、この 2 本で判別する。
+      </span>,
+      <span key="ratio">
+        <strong>就業率は「探しているか」に左右されない。</strong>
+        人口に対する就業者の割合なので参加率より頑健。
+      </span>,
+      <span key="not-u3">
+        下の失業率 (U-3) とは<strong>定義が違うため同じ図に載せていない</strong>。
+      </span>,
+    ],
+  },
+  {
     // 非農業部門雇用者数は景気一致指数 (CEI) の構成要素。
     question: 'labor',
     frequency: 'monthly',
@@ -331,7 +372,19 @@ const CHARTS: QuestionChartDef<EconomyQuestionId>[] = [
         color: COLORS.jobOpenings,
         indicatorId: 'job-openings',
       },
-    ],
+          {
+        key: 'hires',
+        label: '採用',
+        color: COLORS.hires,
+        indicatorId: 'hires',
+      },
+      {
+        key: 'quits',
+        label: '自発的離職',
+        color: COLORS.quits,
+        indicatorId: 'quits',
+      },
+],
     notes: [
       <span key="official">
         調査に基づく公式統計。<strong>Indeed の新規求人より発表が 2 か月ほど遅い</strong>が、

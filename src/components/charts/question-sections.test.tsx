@@ -153,6 +153,29 @@ describe('日本の失業率と企業物価 (#180)', () => {
   });
 });
 
+describe('労働市場の質 (#196)', () => {
+  it('広義失業率と公式失業率を同じ図に載せない', () => {
+    // U-6 は不完全就業を含む別の定義。重ねると差が定義の違いに見える。
+    render(<EconomyPage />);
+    expect(screen.getByRole('heading', { name: '労働市場の質' })).toBeInTheDocument();
+    expect(screen.getByText('広義失業率 (U-6)')).toBeInTheDocument();
+  });
+
+  it('失業保険は新規と継続を重ねる', () => {
+    // 同じ単位・同じ週次。2 本の差が再就職の速さを示す。
+    render(<EconomyPage />);
+    expect(screen.getByText('新規申請')).toBeInTheDocument();
+    expect(screen.getByText('継続受給')).toBeInTheDocument();
+  });
+
+  it('JOLTS は求人・採用・離職を重ねる', () => {
+    // 同じ調査・同じ単位 (千人)。求人 → 採用 → 離職の順で見る。
+    render(<EconomyPage />);
+    expect(screen.getByText('採用')).toBeInTheDocument();
+    expect(screen.getByText('自発的離職')).toBeInTheDocument();
+  });
+});
+
 describe('コア物価と期待インフレ率 (#194)', () => {
   it('コア PCE を先頭に置く', () => {
     // FRB の物価目標そのもの。上流 → 下流ではなく「政策に効く順」(#89 の趣旨)。
@@ -166,7 +189,8 @@ describe('コア物価と期待インフレ率 (#194)', () => {
     // コアは食品・エネルギーを除く別の定義。重ねると差が振れ幅の違いに見える。
     render(<EconomyPage />);
     expect(screen.getByRole('heading', { name: 'コア物価' })).toBeInTheDocument();
-    expect(screen.getByText(/定義が違うため同じ図に載せていない/)).toBeInTheDocument();
+    // #196 で労働市場の質にも同じ注記が付いたため 2 か所に出るのが正しい。
+    expect(screen.getAllByText(/定義が違うため同じ図に載せていない/).length).toBe(2);
   });
 
   it('期待インフレ率は日次で市場ページに置く', () => {
