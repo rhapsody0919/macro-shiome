@@ -2389,5 +2389,142 @@
       "max": 100000
     },
     "note": "Commercial and Industrial Loans, All Commercial Banks。**十億ドル**、季節調整済み (#198)。**信用の量的 side。** 信用スプレッドは価格で、こちらは量。スプレッドが落ち着いていても貸出が縮んでいれば、企業は資金を取れていない。"
+  },
+  "retail-sales-total": {
+    "name": "小売売上 総合",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "RSAFS"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "U.S. Census Bureau via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": 0,
+      "max": 2000000
+    },
+    "note": "Advance Retail Sales: Retail Trade and Food Services。百万ドル、季節調整済み (#200)。**コア (`retail-sales-core`) との差が自動車・ガソリンの寄与。** コアは自動車・ガソリンを除いた系列で、総合は含む。振れの原因を切り分けるために並べる。"
+  },
+  "vehicle-sales": {
+    "name": "自動車販売",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "TOTALSA"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "U.S. Bureau of Economic Analysis via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "cyclePosition": "leading",
+    "range": {
+      "min": 0,
+      "max": 50
+    },
+    "note": "Total Vehicle Sales。**百万台**・季節調整済み年率 (#200)。**小売の中で最も振れる項目。** 金利に敏感で、利上げ局面で先に落ちる。"
+  },
+  "new-home-supply": {
+    "name": "新築住宅の在庫月数",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "MSACSR"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "U.S. Census Bureau via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": 0,
+      "max": 30
+    },
+    "note": "Monthly Supply of New Houses。**か月**・季節調整済み (#200)。**需給バランスを直接示す。** いまの販売ペースで在庫が何か月分あるか。6 か月前後が均衡とされ、積み上がれば値下げ圧力になる。"
+  },
+  "housing-starts-single": {
+    "name": "住宅着工 一戸建て",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "HOUST1F"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "U.S. Census Bureau via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": 0,
+      "max": 5000
+    },
+    "note": "New Privately-Owned Housing Units Started: Single-Family Units。千戸・季節調整済み年率 (#200)。**総戸数 (`HOUST`) との差が集合住宅。** 一戸建ては家計の購買力、集合住宅は投資需要で動くため、内訳を見ないと何が動いたか分からない。"
+  },
+  "nasdaq-composite": {
+    "name": "NASDAQ 総合",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "NASDAQCOM"
+    },
+    "frequency": "daily",
+    "unit": "index",
+    "attribution": "Nasdaq OMX Group via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": 0,
+      "max": 100000
+    },
+    "note": "NASDAQ Composite Index (#200)。**NASDAQ-100 より広い**。約 3,000 銘柄を含み、時価総額加重。100 との差が中小型株の動き。"
+  },
+  "djia": {
+    "name": "ダウ平均",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "DJIA"
+    },
+    "frequency": "daily",
+    "unit": "index",
+    "attribution": "S&P Dow Jones Indices LLC via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": 0,
+      "max": 200000
+    },
+    "note": "Dow Jones Industrial Average (#200)。**30 銘柄・株価加重**。S&P 500 の時価総額加重とは構成が違い、値がさ株の影響が大きい。"
+  },
+  "usd-eur": {
+    "name": "ドル/ユーロ",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "DEXUSEU"
+    },
+    "frequency": "daily",
+    "unit": "index",
+    "attribution": "Board of Governors of the Federal Reserve System via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": 0,
+      "max": 10
+    },
+    "note": "U.S. Dollars to One Euro (#200)。**ドル指数は貿易加重の合成**で、こちらは 2 国間レート。ユーロはドル指数で最大の構成比を占めるため、指数の動きの多くをここで説明できる。"
+  },
+  "cny-usd": {
+    "name": "人民元/ドル",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "DEXCHUS"
+    },
+    "frequency": "daily",
+    "unit": "index",
+    "attribution": "Board of Governors of the Federal Reserve System via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": 0,
+      "max": 20
+    },
+    "note": "Chinese Yuan Renminbi to One U.S. Dollar (#200)。**管理された変動相場**。中国当局の政策姿勢が出る。市場の需給だけでは決まらない点が他の通貨と違う。"
   }
 }

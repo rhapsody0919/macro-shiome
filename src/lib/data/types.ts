@@ -417,6 +417,14 @@ export interface MacroPoint {
   termSpread3m: number | null;
   /** 3か月 T-Bill (%)。短期金利の起点 (#198)。 */
   tbill3m: number | null;
+  /** NASDAQ 総合の前年同月比 (%)。水準は桁が違うため率で揃える (#200)。 */
+  nasdaqComposite: number | null;
+  /** ダウ平均の前年同月比 (%) (#200)。 */
+  djia: number | null;
+  /** ドル/ユーロ (#200)。 */
+  usdEur: number | null;
+  /** 人民元/ドル (#200)。 */
+  cnyUsd: number | null;
 }
 
 /**
@@ -500,6 +508,14 @@ export interface MonthlyPoint {
   newHomeSales: number | null;
   /** 中古住宅販売件数。取引量の大半を占める。**直近 13 か月から積み上げ中** (#188)。 */
   existingHomeSales: number | null;
+  /** 小売売上 総合の前年同月比 (%)。コアとの差が自動車・ガソリン (#200)。 */
+  retailSalesTotal: number | null;
+  /** 自動車販売 (百万台)。小売で最も振れる (#200)。 */
+  vehicleSales: number | null;
+  /** 新築住宅の在庫月数 (か月)。需給バランス (#200)。 */
+  newHomeSupply: number | null;
+  /** 住宅着工 一戸建て (千戸)。総戸数との差が集合住宅 (#200)。 */
+  housingStartsSingle: number | null;
   /** 商工業向け貸出の前年同月比 (%)。信用の量的 side (#198)。 */
   commercialLoans: number | null;
   /** 広義失業率 U-6 (%)。不完全就業を含む (#196)。 */

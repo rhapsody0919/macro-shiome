@@ -416,6 +416,30 @@ const QUARTERLY_LOOKBACK_DAYS = 120;
  * 日次系列を週次 (金曜) に落とす。他のチャートと期間軸を揃えるため。
  * 休場日は直近の営業日まで遡る。
  */
+/**
+ * 日次系列の前年同月比 (#200)。
+ *
+ * **水準が桁違いの指数を同じ軸に載せないため**に使う (#118)。NASDAQ 総合 26,331 と
+ * ダウ 53,463 は 2 倍差で、水準のままでは片方が潰れる。指数化は基準日が恣意的になるので、
+ * 前年同日比にして揃える。
+ *
+ * 1 年前が休場なら直前の営業日まで遡る (`valueAsOf` と同じ扱い)。
+ */
+function yoyAsOf(
+  observations: ObservationMap,
+  indicatorId: string,
+  date: string,
+): number | null {
+  const points = series(observations, indicatorId);
+  const current = valueAsOf(points, date);
+  if (current === null) return null;
+
+  const [year, rest] = [date.slice(0, 4), date.slice(4)];
+  const previous = valueAsOf(points, `${Number(year) - 1}${rest}`);
+  if (previous === null || previous === 0) return null;
+  return (current / previous - 1) * 100;
+}
+
 export function buildMacroView(options: BuildViewOptions): MacroPoint[] {
   const { observations } = options;
   const weeks = fridaysBetween(options.start, options.today.toISOString().slice(0, 10));
@@ -467,6 +491,10 @@ export function buildMacroView(options: BuildViewOptions): MacroPoint[] {
       fedBalanceSheet: valueAsOf(series(observations, 'fed-balance-sheet'), date),
       termSpread3m: valueAsOf(series(observations, 'term-spread-3m'), date),
       tbill3m: valueAsOf(series(observations, 'tbill-3m'), date),
+      nasdaqComposite: yoyAsOf(observations, 'nasdaq-composite', date),
+      djia: yoyAsOf(observations, 'djia', date),
+      usdEur: valueAsOf(series(observations, 'usd-eur'), date),
+      cnyUsd: valueAsOf(series(observations, 'cny-usd'), date),
     };
   });
 }
@@ -653,6 +681,11 @@ export function buildEconomyView(options: BuildViewOptions): EconomyView {
     realIncomeExTransfer: yoy('real-income-ex-transfer', month),
     realDisposablePerCapita: yoy('real-disposable-income-per-capita', month),
     realDisposableTotal: yoy('real-disposable-income', month),
+    // 総合とコアの差が自動車・ガソリンの寄与を示す (#200)。
+    retailSalesTotal: yoy('retail-sales-total', month),
+    vehicleSales: level('vehicle-sales', month),
+    newHomeSupply: level('new-home-supply', month),
+    housingStartsSingle: level('housing-starts-single', month),
     // 信用の量。スプレッド (価格) が落ち着いても量が縮んでいれば資金は取れていない (#198)。
     commercialLoans: yoy('commercial-loans', month),
     // 労働市場の質。失業率だけでは「探すのをやめた」のか区別できない (#196)。
@@ -772,6 +805,10 @@ const MONTHLY_INDICATORS = [
   'real-disposable-income-per-capita',
   'real-disposable-income',
   'real-consumption',
+  'retail-sales-total',
+  'vehicle-sales',
+  'new-home-supply',
+  'housing-starts-single',
   'commercial-loans',
   'u6-rate',
   'participation-rate',
@@ -886,6 +923,11 @@ export function buildDailyView(
       // 3か月は政策金利にほぼ連動する。逆転は「政策が引き締めすぎ」を直接示す (#198)。
       termSpread3m: at('term-spread-3m'),
       tbill3m: at('tbill-3m'),
+      // 水準は桁が違うため前年同月比で揃える (#118 #200)。
+      nasdaqComposite: yoyAsOf(observations, 'nasdaq-composite', date),
+      djia: yoyAsOf(observations, 'djia', date),
+      usdEur: at('usd-eur'),
+      cnyUsd: at('cny-usd'),
     };
 
     const point: DailyPoint = { date };
