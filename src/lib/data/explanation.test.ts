@@ -42,6 +42,13 @@ describe('指標の読者向け解説', () => {
     expect(text).not.toMatch(new RegExp(`\\b${sourceId}\\b`));
   });
 
+  // 解説は平文で描画される。note の書き方に引きずられて ** を書くと、
+  // 強調ではなくアスタリスクがそのまま読者に出る (#210 で実際に 2 箇所やった)。
+  it.each(explained)('%s: マークダウンの装飾を書かない', (_id, indicator) => {
+    const text = Object.values(indicator.explanation ?? {}).join('');
+    expect(text).not.toMatch(/\*\*|__/);
+  });
+
   // note は開発メモ。Issue 番号やコード識別子が読者に出ないよう分けている。
   it.each(explained)('%s: 開発メモを混ぜない', (_id, indicator) => {
     const text = Object.values(indicator.explanation ?? {}).join('');
@@ -62,6 +69,10 @@ describe('解説の検査が実際に落ちること', () => {
 
   it('単位の手書きを検知する', () => {
     expect('残高は十億ドル単位で示す').toMatch(/百万ドル|十億ドル|千戸|億円/);
+  });
+
+  it('マークダウンの装飾を検知する', () => {
+    expect('**現物の価格ではない**').toMatch(/\*\*|__/);
   });
 
   it('開発メモの混入を検知する', () => {
