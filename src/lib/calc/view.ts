@@ -452,6 +452,13 @@ export function buildMacroView(options: BuildViewOptions): MacroPoint[] {
       // 保存キーが 1 取引日ずれていたため切り替えた。
       gold: valueAsOf(series(observations, 'etf-gld'), date),
       newJobPostings: valueAsOf(series(observations, 'new-job-postings'), date),
+      // 金融環境指数は週次。0 が平均のスケールで 3 本とも揃う (#190)。
+      nfci: valueAsOf(series(observations, 'nfci'), date),
+      anfci: valueAsOf(series(observations, 'anfci'), date),
+      financialStress: valueAsOf(series(observations, 'financial-stress'), date),
+      // 週次グリッドでも型を満たす。表示は日次ビュー側で行う (#190)。
+      twoYearRate: valueAsOf(series(observations, 'dgs2'), date),
+      sofr: valueAsOf(series(observations, 'sofr'), date),
     };
   });
 }
@@ -830,6 +837,9 @@ export function buildDailyView(
       hySpread: at('hy-spread'),
       igSpread: at('ig-spread'),
       newJobPostings: at('new-job-postings'),
+      // 短期金利。政策金利の織り込みと実勢 (#190)。
+      twoYearRate: at('dgs2'),
+      sofr: at('sofr'),
     };
 
     const point: DailyPoint = { date };

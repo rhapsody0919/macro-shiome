@@ -19,7 +19,12 @@
     "dollarIndex": 112.3589,
     "nikkei225": 16254.45,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.369,
+    "anfci": -0.292,
+    "financialStress": 0.3645,
+    "twoYearRate": 0.72,
+    "sofr": null
   },
   {
     "date": "2016-08-12",
@@ -41,7 +46,12 @@
     "dollarIndex": 111.1787,
     "nikkei225": 16919.92,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.368,
+    "anfci": -0.287,
+    "financialStress": 0.2212,
+    "twoYearRate": 0.71,
+    "sofr": null
   },
   {
     "date": "2016-08-19",
@@ -63,7 +73,12 @@
     "dollarIndex": 110.8163,
     "nikkei225": 16545.82,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.366,
+    "anfci": -0.274,
+    "financialStress": 0.2013,
+    "twoYearRate": 0.76,
+    "sofr": null
   },
   {
     "date": "2016-08-26",
@@ -85,7 +100,12 @@
     "dollarIndex": 111.2035,
     "nikkei225": 16360.71,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.36,
+    "anfci": -0.256,
+    "financialStress": 0.2792,
+    "twoYearRate": 0.84,
+    "sofr": null
   },
   {
     "date": "2016-09-02",
@@ -107,7 +127,12 @@
     "dollarIndex": 112.0009,
     "nikkei225": 16925.68,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.353,
+    "anfci": -0.236,
+    "financialStress": 0.2917,
+    "twoYearRate": 0.8,
+    "sofr": null
   },
   {
     "date": "2016-09-09",
@@ -129,7 +154,12 @@
     "dollarIndex": 111.9879,
     "nikkei225": 16965.76,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.348,
+    "anfci": -0.22,
+    "financialStress": 0.3024,
+    "twoYearRate": 0.79,
+    "sofr": null
   },
   {
     "date": "2016-09-16",
@@ -151,7 +181,12 @@
     "dollarIndex": 113.1765,
     "nikkei225": 16519.29,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.343,
+    "anfci": -0.211,
+    "financialStress": 0.5061,
+    "twoYearRate": 0.77,
+    "sofr": null
   },
   {
     "date": "2016-09-23",
@@ -173,7 +208,12 @@
     "dollarIndex": 112.7166,
     "nikkei225": 16754.02,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.343,
+    "anfci": -0.208,
+    "financialStress": 0.3424,
+    "twoYearRate": 0.77,
+    "sofr": null
   },
   {
     "date": "2016-09-30",
@@ -195,7 +235,12 @@
     "dollarIndex": 112.2795,
     "nikkei225": 16449.84,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.346,
+    "anfci": -0.214,
+    "financialStress": 0.3225,
+    "twoYearRate": 0.77,
+    "sofr": null
   },
   {
     "date": "2016-10-07",
@@ -217,7 +262,12 @@
     "dollarIndex": 113.2915,
     "nikkei225": 16860.09,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.354,
+    "anfci": -0.226,
+    "financialStress": 0.0947,
+    "twoYearRate": 0.83,
+    "sofr": null
   },
   {
     "date": "2016-10-14",
@@ -239,7 +289,12 @@
     "dollarIndex": 113.7119,
     "nikkei225": 16856.37,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.363,
+    "anfci": -0.242,
+    "financialStress": 0.2308,
+    "twoYearRate": 0.84,
+    "sofr": null
   },
   {
     "date": "2016-10-21",
@@ -261,7 +316,12 @@
     "dollarIndex": 113.9015,
     "nikkei225": 17184.59,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.374,
+    "anfci": -0.263,
+    "financialStress": 0.1906,
+    "twoYearRate": 0.84,
+    "sofr": null
   },
   {
     "date": "2016-10-28",
@@ -283,7 +343,12 @@
     "dollarIndex": 114.0931,
     "nikkei225": 17446.41,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.387,
+    "anfci": -0.291,
+    "financialStress": 0.1135,
+    "twoYearRate": 0.86,
+    "sofr": null
   },
   {
     "date": "2016-11-04",
@@ -305,7 +370,12 @@
     "dollarIndex": 113.5828,
     "nikkei225": 16905.36,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.399,
+    "anfci": -0.322,
+    "financialStress": 0.502,
+    "twoYearRate": 0.8,
+    "sofr": null
   },
   {
     "date": "2016-11-11",
@@ -327,7 +397,12 @@
     "dollarIndex": 115.9375,
     "nikkei225": 17374.79,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.413,
+    "anfci": -0.356,
+    "financialStress": -0.0086,
+    "twoYearRate": 0.92,
+    "sofr": null
   },
   {
     "date": "2016-11-18",
@@ -349,7 +424,12 @@
     "dollarIndex": 117.5936,
     "nikkei225": 17967.41,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.425,
+    "anfci": -0.385,
+    "financialStress": -0.035,
+    "twoYearRate": 1.07,
+    "sofr": null
   },
   {
     "date": "2016-11-25",
@@ -371,7 +451,12 @@
     "dollarIndex": 118.02,
     "nikkei225": 18381.22,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.436,
+    "anfci": -0.406,
+    "financialStress": -0.1099,
+    "twoYearRate": 1.12,
+    "sofr": null
   },
   {
     "date": "2016-12-02",
@@ -393,7 +478,12 @@
     "dollarIndex": 117.3116,
     "nikkei225": 18426.08,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.446,
+    "anfci": -0.417,
+    "financialStress": 0.0014,
+    "twoYearRate": 1.11,
+    "sofr": null
   },
   {
     "date": "2016-12-09",
@@ -415,7 +505,12 @@
     "dollarIndex": 117.2834,
     "nikkei225": 18996.37,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.454,
+    "anfci": -0.421,
+    "financialStress": -0.2497,
+    "twoYearRate": 1.15,
+    "sofr": null
   },
   {
     "date": "2016-12-16",
@@ -437,7 +532,12 @@
     "dollarIndex": 118.3584,
     "nikkei225": 19401.15,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.461,
+    "anfci": -0.418,
+    "financialStress": -0.1489,
+    "twoYearRate": 1.28,
+    "sofr": null
   },
   {
     "date": "2016-12-23",
@@ -459,7 +559,12 @@
     "dollarIndex": 118.7856,
     "nikkei225": 19427.67,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.467,
+    "anfci": -0.415,
+    "financialStress": -0.0904,
+    "twoYearRate": 1.22,
+    "sofr": null
   },
   {
     "date": "2016-12-30",
@@ -481,7 +586,12 @@
     "dollarIndex": 118.3466,
     "nikkei225": 19114.37,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.473,
+    "anfci": -0.414,
+    "financialStress": -0.046,
+    "twoYearRate": 1.2,
+    "sofr": null
   },
   {
     "date": "2017-01-06",
@@ -503,7 +613,12 @@
     "dollarIndex": 118.3495,
     "nikkei225": 19454.33,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.478,
+    "anfci": -0.413,
+    "financialStress": -0.0873,
+    "twoYearRate": 1.22,
+    "sofr": null
   },
   {
     "date": "2017-01-13",
@@ -525,7 +640,12 @@
     "dollarIndex": 117.9884,
     "nikkei225": 19287.28,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.484,
+    "anfci": -0.414,
+    "financialStress": -0.0998,
+    "twoYearRate": 1.21,
+    "sofr": null
   },
   {
     "date": "2017-01-20",
@@ -547,7 +667,12 @@
     "dollarIndex": 118.3182,
     "nikkei225": 19137.91,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.489,
+    "anfci": -0.416,
+    "financialStress": -0.0802,
+    "twoYearRate": 1.2,
+    "sofr": null
   },
   {
     "date": "2017-01-27",
@@ -569,7 +694,12 @@
     "dollarIndex": 117.0735,
     "nikkei225": 19467.4,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.492,
+    "anfci": -0.417,
+    "financialStress": -0.1944,
+    "twoYearRate": 1.22,
+    "sofr": null
   },
   {
     "date": "2017-02-03",
@@ -591,7 +721,12 @@
     "dollarIndex": 115.6259,
     "nikkei225": 18918.2,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.495,
+    "anfci": -0.419,
+    "financialStress": -0.129,
+    "twoYearRate": 1.21,
+    "sofr": null
   },
   {
     "date": "2017-02-10",
@@ -613,7 +748,12 @@
     "dollarIndex": 116.148,
     "nikkei225": 19378.93,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.496,
+    "anfci": -0.424,
+    "financialStress": -0.1657,
+    "twoYearRate": 1.2,
+    "sofr": null
   },
   {
     "date": "2017-02-17",
@@ -635,7 +775,12 @@
     "dollarIndex": 116.4035,
     "nikkei225": 19234.62,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.495,
+    "anfci": -0.43,
+    "financialStress": -0.2938,
+    "twoYearRate": 1.21,
+    "sofr": null
   },
   {
     "date": "2017-02-24",
@@ -657,7 +802,12 @@
     "dollarIndex": 115.8143,
     "nikkei225": 19283.54,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.493,
+    "anfci": -0.436,
+    "financialStress": -0.2147,
+    "twoYearRate": 1.12,
+    "sofr": null
   },
   {
     "date": "2017-03-03",
@@ -679,7 +829,12 @@
     "dollarIndex": 116.6438,
     "nikkei225": 19469.17,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.491,
+    "anfci": -0.443,
+    "financialStress": -0.3886,
+    "twoYearRate": 1.32,
+    "sofr": null
   },
   {
     "date": "2017-03-10",
@@ -701,7 +856,12 @@
     "dollarIndex": 116.616,
     "nikkei225": 19604.61,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.488,
+    "anfci": -0.447,
+    "financialStress": -0.4066,
+    "twoYearRate": 1.36,
+    "sofr": null
   },
   {
     "date": "2017-03-17",
@@ -723,7 +883,12 @@
     "dollarIndex": 115.2783,
     "nikkei225": 19521.59,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.486,
+    "anfci": -0.447,
+    "financialStress": -0.3615,
+    "twoYearRate": 1.33,
+    "sofr": null
   },
   {
     "date": "2017-03-24",
@@ -745,7 +910,12 @@
     "dollarIndex": 114.6372,
     "nikkei225": 19262.53,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.485,
+    "anfci": -0.447,
+    "financialStress": -0.2298,
+    "twoYearRate": 1.26,
+    "sofr": null
   },
   {
     "date": "2017-03-31",
@@ -767,7 +937,12 @@
     "dollarIndex": 114.7938,
     "nikkei225": 18909.26,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.486,
+    "anfci": -0.45,
+    "financialStress": -0.404,
+    "twoYearRate": 1.27,
+    "sofr": null
   },
   {
     "date": "2017-04-07",
@@ -789,7 +964,12 @@
     "dollarIndex": 115.0547,
     "nikkei225": 18664.63,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.49,
+    "anfci": -0.454,
+    "financialStress": -0.3756,
+    "twoYearRate": 1.29,
+    "sofr": null
   },
   {
     "date": "2017-04-14",
@@ -811,7 +991,12 @@
     "dollarIndex": 114.5368,
     "nikkei225": 18335.63,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.495,
+    "anfci": -0.46,
+    "financialStress": -0.2473,
+    "twoYearRate": 1.21,
+    "sofr": null
   },
   {
     "date": "2017-04-21",
@@ -833,7 +1018,12 @@
     "dollarIndex": 114.8128,
     "nikkei225": 18620.75,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.503,
+    "anfci": -0.467,
+    "financialStress": -0.2453,
+    "twoYearRate": 1.2,
+    "sofr": null
   },
   {
     "date": "2017-04-28",
@@ -855,7 +1045,12 @@
     "dollarIndex": 114.7877,
     "nikkei225": 19196.74,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.513,
+    "anfci": -0.474,
+    "financialStress": -0.5794,
+    "twoYearRate": 1.28,
+    "sofr": null
   },
   {
     "date": "2017-05-05",
@@ -877,7 +1072,12 @@
     "dollarIndex": 114.7725,
     "nikkei225": 19445.7,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.523,
+    "anfci": -0.483,
+    "financialStress": -0.4991,
+    "twoYearRate": 1.32,
+    "sofr": null
   },
   {
     "date": "2017-05-12",
@@ -899,7 +1099,12 @@
     "dollarIndex": 114.7479,
     "nikkei225": 19883.9,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.532,
+    "anfci": -0.493,
+    "financialStress": -0.6063,
+    "twoYearRate": 1.29,
+    "sofr": null
   },
   {
     "date": "2017-05-19",
@@ -921,7 +1126,12 @@
     "dollarIndex": 113.7001,
     "nikkei225": 19590.76,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.541,
+    "anfci": -0.504,
+    "financialStress": -0.4651,
+    "twoYearRate": 1.28,
+    "sofr": null
   },
   {
     "date": "2017-05-26",
@@ -943,7 +1153,12 @@
     "dollarIndex": 113.4839,
     "nikkei225": 19686.84,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.55,
+    "anfci": -0.517,
+    "financialStress": -0.6514,
+    "twoYearRate": 1.3,
+    "sofr": null
   },
   {
     "date": "2017-06-02",
@@ -965,7 +1180,12 @@
     "dollarIndex": 113.1908,
     "nikkei225": 20177.28,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.556,
+    "anfci": -0.527,
+    "financialStress": -0.618,
+    "twoYearRate": 1.28,
+    "sofr": null
   },
   {
     "date": "2017-06-09",
@@ -987,7 +1207,12 @@
     "dollarIndex": 112.9562,
     "nikkei225": 20013.26,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.562,
+    "anfci": -0.532,
+    "financialStress": -0.7086,
+    "twoYearRate": 1.35,
+    "sofr": null
   },
   {
     "date": "2017-06-16",
@@ -1009,7 +1234,12 @@
     "dollarIndex": 112.6155,
     "nikkei225": 19943.26,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.566,
+    "anfci": -0.535,
+    "financialStress": -0.705,
+    "twoYearRate": 1.32,
+    "sofr": null
   },
   {
     "date": "2017-06-23",
@@ -1031,7 +1261,12 @@
     "dollarIndex": 112.8665,
     "nikkei225": 20132.67,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.568,
+    "anfci": -0.538,
+    "financialStress": -0.4738,
+    "twoYearRate": 1.34,
+    "sofr": null
   },
   {
     "date": "2017-06-30",
@@ -1053,7 +1288,12 @@
     "dollarIndex": 111.9896,
     "nikkei225": 20033.43,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.571,
+    "anfci": -0.545,
+    "financialStress": -0.5564,
+    "twoYearRate": 1.38,
+    "sofr": null
   },
   {
     "date": "2017-07-07",
@@ -1075,7 +1315,12 @@
     "dollarIndex": 112.3137,
     "nikkei225": 19929.09,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.574,
+    "anfci": -0.559,
+    "financialStress": -0.5911,
+    "twoYearRate": 1.4,
+    "sofr": null
   },
   {
     "date": "2017-07-14",
@@ -1097,7 +1342,12 @@
     "dollarIndex": 110.9075,
     "nikkei225": 20118.86,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.577,
+    "anfci": -0.574,
+    "financialStress": -0.5625,
+    "twoYearRate": 1.35,
+    "sofr": null
   },
   {
     "date": "2017-07-21",
@@ -1119,7 +1369,12 @@
     "dollarIndex": 110.191,
     "nikkei225": 20099.75,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.579,
+    "anfci": -0.587,
+    "financialStress": -0.6814,
+    "twoYearRate": 1.36,
+    "sofr": null
   },
   {
     "date": "2017-07-28",
@@ -1141,7 +1396,12 @@
     "dollarIndex": 109.92,
     "nikkei225": 19959.84,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.579,
+    "anfci": -0.59,
+    "financialStress": -0.7182,
+    "twoYearRate": 1.34,
+    "sofr": null
   },
   {
     "date": "2017-08-04",
@@ -1163,7 +1423,12 @@
     "dollarIndex": 110.2808,
     "nikkei225": 19952.33,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.576,
+    "anfci": -0.581,
+    "financialStress": -0.6177,
+    "twoYearRate": 1.36,
+    "sofr": null
   },
   {
     "date": "2017-08-11",
@@ -1185,7 +1450,12 @@
     "dollarIndex": 110.0422,
     "nikkei225": 19729.74,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.571,
+    "anfci": -0.563,
+    "financialStress": -0.457,
+    "twoYearRate": 1.3,
+    "sofr": null
   },
   {
     "date": "2017-08-18",
@@ -1207,7 +1477,12 @@
     "dollarIndex": 110.041,
     "nikkei225": 19470.41,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.566,
+    "anfci": -0.543,
+    "financialStress": -0.4346,
+    "twoYearRate": 1.33,
+    "sofr": null
   },
   {
     "date": "2017-08-25",
@@ -1229,7 +1504,12 @@
     "dollarIndex": 109.3415,
     "nikkei225": 19452.61,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.562,
+    "anfci": -0.525,
+    "financialStress": -0.4571,
+    "twoYearRate": 1.35,
+    "sofr": null
   },
   {
     "date": "2017-09-01",
@@ -1251,7 +1531,12 @@
     "dollarIndex": 109.0504,
     "nikkei225": 19691.47,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.56,
+    "anfci": -0.514,
+    "financialStress": -0.5052,
+    "twoYearRate": 1.35,
+    "sofr": null
   },
   {
     "date": "2017-09-08",
@@ -1273,7 +1558,12 @@
     "dollarIndex": 107.808,
     "nikkei225": 19274.82,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.559,
+    "anfci": -0.51,
+    "financialStress": -0.4192,
+    "twoYearRate": 1.27,
+    "sofr": null
   },
   {
     "date": "2017-09-15",
@@ -1295,7 +1585,12 @@
     "dollarIndex": 108.3147,
     "nikkei225": 19909.5,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.562,
+    "anfci": -0.514,
+    "financialStress": -0.671,
+    "twoYearRate": 1.39,
+    "sofr": null
   },
   {
     "date": "2017-09-22",
@@ -1317,7 +1612,12 @@
     "dollarIndex": 108.7542,
     "nikkei225": 20296.45,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.566,
+    "anfci": -0.521,
+    "financialStress": -0.711,
+    "twoYearRate": 1.46,
+    "sofr": null
   },
   {
     "date": "2017-09-29",
@@ -1339,7 +1639,12 @@
     "dollarIndex": 110.0867,
     "nikkei225": 20356.28,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.572,
+    "anfci": -0.529,
+    "financialStress": -0.6595,
+    "twoYearRate": 1.47,
+    "sofr": null
   },
   {
     "date": "2017-10-06",
@@ -1361,7 +1666,12 @@
     "dollarIndex": 110.7841,
     "nikkei225": 20690.71,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.579,
+    "anfci": -0.54,
+    "financialStress": -0.7054,
+    "twoYearRate": 1.54,
+    "sofr": null
   },
   {
     "date": "2017-10-13",
@@ -1383,7 +1693,12 @@
     "dollarIndex": 110.2669,
     "nikkei225": 21155.18,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.586,
+    "anfci": -0.553,
+    "financialStress": -0.6665,
+    "twoYearRate": 1.51,
+    "sofr": null
   },
   {
     "date": "2017-10-20",
@@ -1405,7 +1720,12 @@
     "dollarIndex": 111.0375,
     "nikkei225": 21457.64,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.592,
+    "anfci": -0.567,
+    "financialStress": -0.7349,
+    "twoYearRate": 1.6,
+    "sofr": null
   },
   {
     "date": "2017-10-27",
@@ -1427,7 +1747,12 @@
     "dollarIndex": 112.1495,
     "nikkei225": 22008.45,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.598,
+    "anfci": -0.581,
+    "financialStress": -0.7414,
+    "twoYearRate": 1.59,
+    "sofr": null
   },
   {
     "date": "2017-11-03",
@@ -1449,7 +1774,12 @@
     "dollarIndex": 111.9383,
     "nikkei225": 22539.12,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.602,
+    "anfci": -0.593,
+    "financialStress": -0.6998,
+    "twoYearRate": 1.63,
+    "sofr": null
   },
   {
     "date": "2017-11-10",
@@ -1471,7 +1801,12 @@
     "dollarIndex": 111.5626,
     "nikkei225": 22681.42,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.604,
+    "anfci": -0.602,
+    "financialStress": -0.6728,
+    "twoYearRate": 1.67,
+    "sofr": null
   },
   {
     "date": "2017-11-17",
@@ -1493,7 +1828,12 @@
     "dollarIndex": 111.0016,
     "nikkei225": 22396.8,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.604,
+    "anfci": -0.606,
+    "financialStress": -0.6705,
+    "twoYearRate": 1.73,
+    "sofr": null
   },
   {
     "date": "2017-11-24",
@@ -1515,7 +1855,12 @@
     "dollarIndex": 110.0253,
     "nikkei225": 22550.85,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.605,
+    "anfci": -0.605,
+    "financialStress": -0.8234,
+    "twoYearRate": 1.75,
+    "sofr": null
   },
   {
     "date": "2017-12-01",
@@ -1537,7 +1882,12 @@
     "dollarIndex": 110.1413,
     "nikkei225": 22819.03,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.605,
+    "anfci": -0.603,
+    "financialStress": -0.7801,
+    "twoYearRate": 1.78,
+    "sofr": null
   },
   {
     "date": "2017-12-08",
@@ -1559,7 +1909,12 @@
     "dollarIndex": 111.2273,
     "nikkei225": 22811.08,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.606,
+    "anfci": -0.601,
+    "financialStress": -0.7086,
+    "twoYearRate": 1.8,
+    "sofr": null
   },
   {
     "date": "2017-12-15",
@@ -1581,7 +1936,12 @@
     "dollarIndex": 111.1286,
     "nikkei225": 22553.22,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.609,
+    "anfci": -0.602,
+    "financialStress": -0.6455,
+    "twoYearRate": 1.84,
+    "sofr": null
   },
   {
     "date": "2017-12-22",
@@ -1603,7 +1963,12 @@
     "dollarIndex": 111.0997,
     "nikkei225": 22902.76,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.612,
+    "anfci": -0.609,
+    "financialStress": -0.6095,
+    "twoYearRate": 1.91,
+    "sofr": null
   },
   {
     "date": "2017-12-29",
@@ -1625,7 +1990,12 @@
     "dollarIndex": 110.0783,
     "nikkei225": 22764.94,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.616,
+    "anfci": -0.618,
+    "financialStress": -0.5042,
+    "twoYearRate": 1.89,
+    "sofr": null
   },
   {
     "date": "2018-01-05",
@@ -1647,7 +2017,12 @@
     "dollarIndex": 109.3496,
     "nikkei225": 23714.53,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.619,
+    "anfci": -0.627,
+    "financialStress": -0.6257,
+    "twoYearRate": 1.96,
+    "sofr": null
   },
   {
     "date": "2018-01-12",
@@ -1669,7 +2044,12 @@
     "dollarIndex": 108.901,
     "nikkei225": 23653.82,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.619,
+    "anfci": -0.63,
+    "financialStress": -0.7068,
+    "twoYearRate": 1.99,
+    "sofr": null
   },
   {
     "date": "2018-01-19",
@@ -1691,7 +2071,12 @@
     "dollarIndex": 107.9455,
     "nikkei225": 23808.06,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.615,
+    "anfci": -0.624,
+    "financialStress": -0.6469,
+    "twoYearRate": 2.06,
+    "sofr": null
   },
   {
     "date": "2018-01-26",
@@ -1713,7 +2098,12 @@
     "dollarIndex": 106.6911,
     "nikkei225": 23631.88,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.606,
+    "anfci": -0.609,
+    "financialStress": -0.6584,
+    "twoYearRate": 2.13,
+    "sofr": null
   },
   {
     "date": "2018-02-02",
@@ -1735,7 +2125,12 @@
     "dollarIndex": 107.1151,
     "nikkei225": 23274.53,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.593,
+    "anfci": -0.589,
+    "financialStress": -0.5037,
+    "twoYearRate": 2.15,
+    "sofr": null
   },
   {
     "date": "2018-02-09",
@@ -1757,7 +2152,12 @@
     "dollarIndex": 108.2582,
     "nikkei225": 21382.62,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.575,
+    "anfci": -0.567,
+    "financialStress": 0.1013,
+    "twoYearRate": 2.05,
+    "sofr": null
   },
   {
     "date": "2018-02-16",
@@ -1779,7 +2179,12 @@
     "dollarIndex": 107.0359,
     "nikkei225": 21720.25,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.559,
+    "anfci": -0.551,
+    "financialStress": -0.2608,
+    "twoYearRate": 2.21,
+    "sofr": null
   },
   {
     "date": "2018-02-23",
@@ -1801,7 +2206,12 @@
     "dollarIndex": 107.6804,
     "nikkei225": 21892.78,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.544,
+    "anfci": -0.538,
+    "financialStress": -0.3399,
+    "twoYearRate": 2.25,
+    "sofr": null
   },
   {
     "date": "2018-03-02",
@@ -1823,7 +2233,12 @@
     "dollarIndex": 108.5358,
     "nikkei225": 21181.64,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.53,
+    "anfci": -0.525,
+    "financialStress": -0.0679,
+    "twoYearRate": 2.25,
+    "sofr": null
   },
   {
     "date": "2018-03-09",
@@ -1845,7 +2260,12 @@
     "dollarIndex": 107.923,
     "nikkei225": 21469.2,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.517,
+    "anfci": -0.51,
+    "financialStress": -0.0948,
+    "twoYearRate": 2.27,
+    "sofr": null
   },
   {
     "date": "2018-03-16",
@@ -1867,7 +2287,12 @@
     "dollarIndex": 108.4332,
     "nikkei225": 21676.51,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.506,
+    "anfci": -0.493,
+    "financialStress": -0.022,
+    "twoYearRate": 2.31,
+    "sofr": null
   },
   {
     "date": "2018-03-23",
@@ -1889,7 +2314,12 @@
     "dollarIndex": 107.7495,
     "nikkei225": 20617.86,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.499,
+    "anfci": -0.477,
+    "financialStress": 0.2574,
+    "twoYearRate": 2.28,
+    "sofr": null
   },
   {
     "date": "2018-03-30",
@@ -1911,7 +2341,12 @@
     "dollarIndex": 107.4784,
     "nikkei225": 21454.3,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.498,
+    "anfci": -0.468,
+    "financialStress": 0.3426,
+    "twoYearRate": 2.27,
+    "sofr": null
   },
   {
     "date": "2018-04-06",
@@ -1933,7 +2368,12 @@
     "dollarIndex": 107.7886,
     "nikkei225": 21567.52,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.502,
+    "anfci": -0.467,
+    "financialStress": 0.3392,
+    "twoYearRate": 2.27,
+    "sofr": 1.75
   },
   {
     "date": "2018-04-13",
@@ -1955,7 +2395,12 @@
     "dollarIndex": 107.2368,
     "nikkei225": 21778.74,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.512,
+    "anfci": -0.479,
+    "financialStress": 0.1386,
+    "twoYearRate": 2.37,
+    "sofr": 1.72
   },
   {
     "date": "2018-04-20",
@@ -1977,7 +2422,12 @@
     "dollarIndex": 108.1787,
     "nikkei225": 22162.24,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.526,
+    "anfci": -0.499,
+    "financialStress": -0.0655,
+    "twoYearRate": 2.46,
+    "sofr": 1.72
   },
   {
     "date": "2018-04-27",
@@ -1999,7 +2449,12 @@
     "dollarIndex": 109.1735,
     "nikkei225": 22467.87,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.54,
+    "anfci": -0.519,
+    "financialStress": -0.0311,
+    "twoYearRate": 2.49,
+    "sofr": 1.72
   },
   {
     "date": "2018-05-04",
@@ -2021,7 +2476,12 @@
     "dollarIndex": 110.25,
     "nikkei225": 22472.78,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.552,
+    "anfci": -0.536,
+    "financialStress": 0.0079,
+    "twoYearRate": 2.51,
+    "sofr": 1.72
   },
   {
     "date": "2018-05-11",
@@ -2043,7 +2503,12 @@
     "dollarIndex": 110.2847,
     "nikkei225": 22758.48,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.561,
+    "anfci": -0.548,
+    "financialStress": -0.2373,
+    "twoYearRate": 2.54,
+    "sofr": 1.73
   },
   {
     "date": "2018-05-18",
@@ -2065,7 +2530,12 @@
     "dollarIndex": 111.7171,
     "nikkei225": 22930.36,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.567,
+    "anfci": -0.553,
+    "financialStress": -0.2986,
+    "twoYearRate": 2.55,
+    "sofr": 1.73
   },
   {
     "date": "2018-05-25",
@@ -2087,7 +2557,12 @@
     "dollarIndex": 111.5843,
     "nikkei225": 22450.79,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.567,
+    "anfci": -0.553,
+    "financialStress": -0.2282,
+    "twoYearRate": 2.48,
+    "sofr": 1.73
   },
   {
     "date": "2018-06-01",
@@ -2109,7 +2584,12 @@
     "dollarIndex": 111.8265,
     "nikkei225": 22171.35,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.563,
+    "anfci": -0.549,
+    "financialStress": 0.0683,
+    "twoYearRate": 2.47,
+    "sofr": 1.81
   },
   {
     "date": "2018-06-08",
@@ -2131,7 +2611,12 @@
     "dollarIndex": 112.1066,
     "nikkei225": 22694.5,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.557,
+    "anfci": -0.543,
+    "financialStress": -0.3929,
+    "twoYearRate": 2.5,
+    "sofr": 1.69
   },
   {
     "date": "2018-06-15",
@@ -2153,7 +2638,12 @@
     "dollarIndex": 113.3379,
     "nikkei225": 22851.75,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.551,
+    "anfci": -0.536,
+    "financialStress": -0.3396,
+    "twoYearRate": 2.55,
+    "sofr": 1.91
   },
   {
     "date": "2018-06-22",
@@ -2175,7 +2665,12 @@
     "dollarIndex": 113.3047,
     "nikkei225": 22516.83,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.546,
+    "anfci": -0.529,
+    "financialStress": -0.2713,
+    "twoYearRate": 2.56,
+    "sofr": 1.92
   },
   {
     "date": "2018-06-29",
@@ -2197,7 +2692,12 @@
     "dollarIndex": 113.2586,
     "nikkei225": 22304.51,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.543,
+    "anfci": -0.525,
+    "financialStress": -0.0583,
+    "twoYearRate": 2.52,
+    "sofr": 2.12
   },
   {
     "date": "2018-07-06",
@@ -2219,7 +2719,12 @@
     "dollarIndex": 112.6428,
     "nikkei225": 21788.14,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.544,
+    "anfci": -0.528,
+    "financialStress": -0.1888,
+    "twoYearRate": 2.53,
+    "sofr": 1.93
   },
   {
     "date": "2018-07-13",
@@ -2241,7 +2746,12 @@
     "dollarIndex": 113.0705,
     "nikkei225": 22597.35,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.549,
+    "anfci": -0.538,
+    "financialStress": -0.4182,
+    "twoYearRate": 2.59,
+    "sofr": 1.9
   },
   {
     "date": "2018-07-20",
@@ -2263,7 +2773,12 @@
     "dollarIndex": 113.3213,
     "nikkei225": 22697.88,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.557,
+    "anfci": -0.554,
+    "financialStress": -0.4556,
+    "twoYearRate": 2.6,
+    "sofr": 1.88
   },
   {
     "date": "2018-07-27",
@@ -2285,7 +2800,12 @@
     "dollarIndex": 112.8125,
     "nikkei225": 22712.75,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.566,
+    "anfci": -0.574,
+    "financialStress": -0.5414,
+    "twoYearRate": 2.67,
+    "sofr": 1.88
   },
   {
     "date": "2018-08-03",
@@ -2307,7 +2827,12 @@
     "dollarIndex": 113.012,
     "nikkei225": 22525.18,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.575,
+    "anfci": -0.592,
+    "financialStress": -0.4448,
+    "twoYearRate": 2.63,
+    "sofr": 1.86
   },
   {
     "date": "2018-08-10",
@@ -2329,7 +2854,12 @@
     "dollarIndex": 114.3005,
     "nikkei225": 22298.08,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.584,
+    "anfci": -0.605,
+    "financialStress": -0.5501,
+    "twoYearRate": 2.61,
+    "sofr": 1.9
   },
   {
     "date": "2018-08-17",
@@ -2351,7 +2881,12 @@
     "dollarIndex": 114.5339,
     "nikkei225": 22270.38,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.591,
+    "anfci": -0.611,
+    "financialStress": -0.4429,
+    "twoYearRate": 2.61,
+    "sofr": 1.9
   },
   {
     "date": "2018-08-24",
@@ -2373,7 +2908,12 @@
     "dollarIndex": 113.5985,
     "nikkei225": 22601.77,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.596,
+    "anfci": -0.614,
+    "financialStress": -0.6262,
+    "twoYearRate": 2.63,
+    "sofr": 1.95
   },
   {
     "date": "2018-08-31",
@@ -2395,7 +2935,12 @@
     "dollarIndex": 114.2755,
     "nikkei225": 22865.15,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.6,
+    "anfci": -0.617,
+    "financialStress": -0.6736,
+    "twoYearRate": 2.62,
+    "sofr": 1.97
   },
   {
     "date": "2018-09-07",
@@ -2417,7 +2962,12 @@
     "dollarIndex": 114.5816,
     "nikkei225": 22307.06,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.603,
+    "anfci": -0.622,
+    "financialStress": -0.6001,
+    "twoYearRate": 2.71,
+    "sofr": 1.94
   },
   {
     "date": "2018-09-14",
@@ -2439,7 +2989,12 @@
     "dollarIndex": 114.0657,
     "nikkei225": 23094.67,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.603,
+    "anfci": -0.629,
+    "financialStress": -0.714,
+    "twoYearRate": 2.78,
+    "sofr": 1.95
   },
   {
     "date": "2018-09-21",
@@ -2461,7 +3016,12 @@
     "dollarIndex": 113.5099,
     "nikkei225": 23869.93,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.6,
+    "anfci": -0.634,
+    "financialStress": -0.8143,
+    "twoYearRate": 2.81,
+    "sofr": 1.92
   },
   {
     "date": "2018-09-28",
@@ -2483,7 +3043,12 @@
     "dollarIndex": 113.8077,
     "nikkei225": 24120.04,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.596,
+    "anfci": -0.633,
+    "financialStress": -0.7489,
+    "twoYearRate": 2.81,
+    "sofr": 2.25
   },
   {
     "date": "2018-10-05",
@@ -2505,7 +3070,12 @@
     "dollarIndex": 114.561,
     "nikkei225": 23783.72,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.589,
+    "anfci": -0.625,
+    "financialStress": -0.7869,
+    "twoYearRate": 2.88,
+    "sofr": 2.16
   },
   {
     "date": "2018-10-12",
@@ -2527,7 +3097,12 @@
     "dollarIndex": 114.3691,
     "nikkei225": 22694.66,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.58,
+    "anfci": -0.61,
+    "financialStress": -0.4418,
+    "twoYearRate": 2.85,
+    "sofr": 2.18
   },
   {
     "date": "2018-10-19",
@@ -2549,7 +3124,12 @@
     "dollarIndex": 114.8567,
     "nikkei225": 22532.08,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.569,
+    "anfci": -0.595,
+    "financialStress": -0.5028,
+    "twoYearRate": 2.92,
+    "sofr": 2.19
   },
   {
     "date": "2018-10-26",
@@ -2571,7 +3151,12 @@
     "dollarIndex": 115.473,
     "nikkei225": 21184.6,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.556,
+    "anfci": -0.583,
+    "financialStress": -0.2074,
+    "twoYearRate": 2.81,
+    "sofr": 2.19
   },
   {
     "date": "2018-11-02",
@@ -2593,7 +3178,12 @@
     "dollarIndex": 115.643,
     "nikkei225": 22243.66,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.541,
+    "anfci": -0.576,
+    "financialStress": -0.2223,
+    "twoYearRate": 2.91,
+    "sofr": 2.25
   },
   {
     "date": "2018-11-09",
@@ -2615,7 +3205,12 @@
     "dollarIndex": 116.4778,
     "nikkei225": 22250.25,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.525,
+    "anfci": -0.57,
+    "financialStress": -0.4697,
+    "twoYearRate": 2.94,
+    "sofr": 2.2
   },
   {
     "date": "2018-11-16",
@@ -2637,7 +3232,12 @@
     "dollarIndex": 115.9258,
     "nikkei225": 21680.34,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.506,
+    "anfci": -0.556,
+    "financialStress": -0.019,
+    "twoYearRate": 2.81,
+    "sofr": 2.26
   },
   {
     "date": "2018-11-23",
@@ -2659,7 +3259,12 @@
     "dollarIndex": 116.4713,
     "nikkei225": 21646.55,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.485,
+    "anfci": -0.533,
+    "financialStress": 0.0595,
+    "twoYearRate": 2.81,
+    "sofr": 2.23
   },
   {
     "date": "2018-11-30",
@@ -2681,7 +3286,12 @@
     "dollarIndex": 116.413,
     "nikkei225": 22351.06,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.466,
+    "anfci": -0.503,
+    "financialStress": -0.1417,
+    "twoYearRate": 2.8,
+    "sofr": 2.28
   },
   {
     "date": "2018-12-07",
@@ -2703,7 +3313,12 @@
     "dollarIndex": 116.0847,
     "nikkei225": 21678.68,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.448,
+    "anfci": -0.471,
+    "financialStress": 0.213,
+    "twoYearRate": 2.72,
+    "sofr": 2.3
   },
   {
     "date": "2018-12-14",
@@ -2725,7 +3340,12 @@
     "dollarIndex": 116.79,
     "nikkei225": 21374.83,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.435,
+    "anfci": -0.449,
+    "financialStress": 0.2697,
+    "twoYearRate": 2.73,
+    "sofr": 2.21
   },
   {
     "date": "2018-12-21",
@@ -2747,7 +3367,12 @@
     "dollarIndex": 116.2227,
     "nikkei225": 20166.19,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.429,
+    "anfci": -0.443,
+    "financialStress": 0.5499,
+    "twoYearRate": 2.63,
+    "sofr": 2.4
   },
   {
     "date": "2018-12-28",
@@ -2769,7 +3394,12 @@
     "dollarIndex": 115.7232,
     "nikkei225": 20014.77,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.433,
+    "anfci": -0.453,
+    "financialStress": 0.6761,
+    "twoYearRate": 2.52,
+    "sofr": 2.46
   },
   {
     "date": "2019-01-04",
@@ -2791,7 +3421,12 @@
     "dollarIndex": 114.9821,
     "nikkei225": 19561.96,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.446,
+    "anfci": -0.476,
+    "financialStress": 0.3204,
+    "twoYearRate": 2.5,
+    "sofr": 2.45
   },
   {
     "date": "2019-01-11",
@@ -2813,7 +3448,12 @@
     "dollarIndex": 114.0404,
     "nikkei225": 20359.7,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.466,
+    "anfci": -0.499,
+    "financialStress": -0.1759,
+    "twoYearRate": 2.55,
+    "sofr": 2.41
   },
   {
     "date": "2019-01-18",
@@ -2835,7 +3475,12 @@
     "dollarIndex": 114.558,
     "nikkei225": 20666.07,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.489,
+    "anfci": -0.522,
+    "financialStress": -0.1439,
+    "twoYearRate": 2.62,
+    "sofr": 2.42
   },
   {
     "date": "2019-01-25",
@@ -2857,7 +3502,12 @@
     "dollarIndex": 114.0197,
     "nikkei225": 20773.56,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.513,
+    "anfci": -0.541,
+    "financialStress": -0.1193,
+    "twoYearRate": 2.6,
+    "sofr": 2.4
   },
   {
     "date": "2019-02-01",
@@ -2879,7 +3529,12 @@
     "dollarIndex": 113.7548,
     "nikkei225": 20788.39,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.536,
+    "anfci": -0.561,
+    "financialStress": -0.1389,
+    "twoYearRate": 2.52,
+    "sofr": 2.47
   },
   {
     "date": "2019-02-08",
@@ -2901,7 +3556,12 @@
     "dollarIndex": 114.5003,
     "nikkei225": 20333.17,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.556,
+    "anfci": -0.582,
+    "financialStress": -0.2849,
+    "twoYearRate": 2.45,
+    "sofr": 2.37
   },
   {
     "date": "2019-02-15",
@@ -2923,7 +3583,12 @@
     "dollarIndex": 114.9923,
     "nikkei225": 20900.63,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.573,
+    "anfci": -0.606,
+    "financialStress": -0.3521,
+    "twoYearRate": 2.52,
+    "sofr": 2.43
   },
   {
     "date": "2019-02-22",
@@ -2945,7 +3610,12 @@
     "dollarIndex": 114.2716,
     "nikkei225": 21425.51,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.586,
+    "anfci": -0.628,
+    "financialStress": -0.5182,
+    "twoYearRate": 2.48,
+    "sofr": 2.4
   },
   {
     "date": "2019-03-01",
@@ -2967,7 +3637,12 @@
     "dollarIndex": 114.537,
     "nikkei225": 21602.69,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.594,
+    "anfci": -0.644,
+    "financialStress": -0.5799,
+    "twoYearRate": 2.55,
+    "sofr": 2.38
   },
   {
     "date": "2019-03-08",
@@ -2989,7 +3664,12 @@
     "dollarIndex": 115.3599,
     "nikkei225": 21025.56,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.6,
+    "anfci": -0.649,
+    "financialStress": -0.461,
+    "twoYearRate": 2.45,
+    "sofr": 2.39
   },
   {
     "date": "2019-03-15",
@@ -3011,7 +3691,12 @@
     "dollarIndex": 114.5815,
     "nikkei225": 21450.85,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.603,
+    "anfci": -0.648,
+    "financialStress": -0.5646,
+    "twoYearRate": 2.43,
+    "sofr": 2.46
   },
   {
     "date": "2019-03-22",
@@ -3033,7 +3718,12 @@
     "dollarIndex": 114.6856,
     "nikkei225": 21627.34,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.607,
+    "anfci": -0.645,
+    "financialStress": -0.5752,
+    "twoYearRate": 2.31,
+    "sofr": 2.4
   },
   {
     "date": "2019-03-29",
@@ -3055,7 +3745,12 @@
     "dollarIndex": 115.1371,
     "nikkei225": 21205.81,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.61,
+    "anfci": -0.645,
+    "financialStress": -0.3105,
+    "twoYearRate": 2.27,
+    "sofr": 2.65
   },
   {
     "date": "2019-04-05",
@@ -3077,7 +3772,12 @@
     "dollarIndex": 114.9726,
     "nikkei225": 21807.5,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.614,
+    "anfci": -0.652,
+    "financialStress": -0.6709,
+    "twoYearRate": 2.35,
+    "sofr": 2.46
   },
   {
     "date": "2019-04-12",
@@ -3099,7 +3799,12 @@
     "dollarIndex": 114.3531,
     "nikkei225": 21870.56,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.618,
+    "anfci": -0.663,
+    "financialStress": -0.6515,
+    "twoYearRate": 2.4,
+    "sofr": 2.44
   },
   {
     "date": "2019-04-19",
@@ -3121,7 +3826,12 @@
     "dollarIndex": 114.6977,
     "nikkei225": 22200.56,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.619,
+    "anfci": -0.674,
+    "financialStress": -0.771,
+    "twoYearRate": 2.38,
+    "sofr": 2.5
   },
   {
     "date": "2019-04-26",
@@ -3143,7 +3853,12 @@
     "dollarIndex": 115.4767,
     "nikkei225": 22258.73,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.618,
+    "anfci": -0.677,
+    "financialStress": -0.629,
+    "twoYearRate": 2.28,
+    "sofr": 2.46
   },
   {
     "date": "2019-05-03",
@@ -3165,7 +3880,12 @@
     "dollarIndex": 115.2646,
     "nikkei225": 22258.73,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.615,
+    "anfci": -0.674,
+    "financialStress": -0.6689,
+    "twoYearRate": 2.33,
+    "sofr": 2.43
   },
   {
     "date": "2019-05-10",
@@ -3187,7 +3907,12 @@
     "dollarIndex": 115.5334,
     "nikkei225": 21344.92,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.608,
+    "anfci": -0.665,
+    "financialStress": -0.3744,
+    "twoYearRate": 2.26,
+    "sofr": 2.4
   },
   {
     "date": "2019-05-17",
@@ -3209,7 +3934,12 @@
     "dollarIndex": 116.448,
     "nikkei225": 21250.09,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.599,
+    "anfci": -0.654,
+    "financialStress": -0.3492,
+    "twoYearRate": 2.2,
+    "sofr": 2.42
   },
   {
     "date": "2019-05-24",
@@ -3231,7 +3961,12 @@
     "dollarIndex": 116.0806,
     "nikkei225": 21117.22,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.591,
+    "anfci": -0.646,
+    "financialStress": -0.4711,
+    "twoYearRate": 2.16,
+    "sofr": 2.37
   },
   {
     "date": "2019-05-31",
@@ -3253,7 +3988,12 @@
     "dollarIndex": 116.7273,
     "nikkei225": 20601.19,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.583,
+    "anfci": -0.641,
+    "financialStress": -0.1751,
+    "twoYearRate": 1.95,
+    "sofr": 2.49
   },
   {
     "date": "2019-06-07",
@@ -3275,7 +4015,12 @@
     "dollarIndex": 115.7368,
     "nikkei225": 20884.71,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.578,
+    "anfci": -0.638,
+    "financialStress": -0.1985,
+    "twoYearRate": 1.85,
+    "sofr": 2.39
   },
   {
     "date": "2019-06-14",
@@ -3297,7 +4042,12 @@
     "dollarIndex": 115.9057,
     "nikkei225": 21116.89,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.576,
+    "anfci": -0.635,
+    "financialStress": -0.4264,
+    "twoYearRate": 1.84,
+    "sofr": 2.35
   },
   {
     "date": "2019-06-21",
@@ -3319,7 +4069,12 @@
     "dollarIndex": 114.8377,
     "nikkei225": 21258.64,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.576,
+    "anfci": -0.631,
+    "financialStress": -0.3349,
+    "twoYearRate": 1.77,
+    "sofr": 2.37
   },
   {
     "date": "2019-06-28",
@@ -3341,7 +4096,12 @@
     "dollarIndex": 114.5821,
     "nikkei225": 21275.92,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.579,
+    "anfci": -0.628,
+    "financialStress": -0.331,
+    "twoYearRate": 1.75,
+    "sofr": 2.5
   },
   {
     "date": "2019-07-05",
@@ -3363,7 +4123,12 @@
     "dollarIndex": 115.1132,
     "nikkei225": 21746.38,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.583,
+    "anfci": -0.63,
+    "financialStress": -0.5213,
+    "twoYearRate": 1.87,
+    "sofr": 2.59
   },
   {
     "date": "2019-07-12",
@@ -3385,7 +4150,12 @@
     "dollarIndex": 114.7685,
     "nikkei225": 21685.9,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.585,
+    "anfci": -0.632,
+    "financialStress": -0.4496,
+    "twoYearRate": 1.84,
+    "sofr": 2.36
   },
   {
     "date": "2019-07-19",
@@ -3407,7 +4177,12 @@
     "dollarIndex": 114.8695,
     "nikkei225": 21466.99,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.584,
+    "anfci": -0.633,
+    "financialStress": -0.3577,
+    "twoYearRate": 1.8,
+    "sofr": 2.41
   },
   {
     "date": "2019-07-26",
@@ -3429,7 +4204,12 @@
     "dollarIndex": 115.5449,
     "nikkei225": 21658.15,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.581,
+    "anfci": -0.63,
+    "financialStress": -0.4862,
+    "twoYearRate": 1.86,
+    "sofr": 2.41
   },
   {
     "date": "2019-08-02",
@@ -3451,7 +4231,12 @@
     "dollarIndex": 116.1864,
     "nikkei225": 21087.16,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.573,
+    "anfci": -0.617,
+    "financialStress": -0.2582,
+    "twoYearRate": 1.72,
+    "sofr": 2.19
   },
   {
     "date": "2019-08-09",
@@ -3473,7 +4258,12 @@
     "dollarIndex": 116.4419,
     "nikkei225": 20684.82,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.562,
+    "anfci": -0.596,
+    "financialStress": 0.2573,
+    "twoYearRate": 1.63,
+    "sofr": 2.11
   },
   {
     "date": "2019-08-16",
@@ -3495,7 +4285,12 @@
     "dollarIndex": 117.0786,
     "nikkei225": 20418.81,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.55,
+    "anfci": -0.573,
+    "financialStress": 0.2066,
+    "twoYearRate": 1.48,
+    "sofr": 2.13
   },
   {
     "date": "2019-08-23",
@@ -3517,7 +4312,12 @@
     "dollarIndex": 117.3009,
     "nikkei225": 20710.91,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.539,
+    "anfci": -0.556,
+    "financialStress": -0.0863,
+    "twoYearRate": 1.51,
+    "sofr": 2.1
   },
   {
     "date": "2019-08-30",
@@ -3539,7 +4339,12 @@
     "dollarIndex": 118.1575,
     "nikkei225": 20704.37,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.53,
+    "anfci": -0.55,
+    "financialStress": -0.0441,
+    "twoYearRate": 1.5,
+    "sofr": 2.16
   },
   {
     "date": "2019-09-06",
@@ -3561,7 +4366,12 @@
     "dollarIndex": 117.1292,
     "nikkei225": 21199.57,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.523,
+    "anfci": -0.555,
+    "financialStress": -0.0931,
+    "twoYearRate": 1.53,
+    "sofr": 2.15
   },
   {
     "date": "2019-09-13",
@@ -3583,7 +4393,12 @@
     "dollarIndex": 116.7677,
     "nikkei225": 21988.29,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.517,
+    "anfci": -0.563,
+    "financialStress": -0.3504,
+    "twoYearRate": 1.79,
+    "sofr": 2.2
   },
   {
     "date": "2019-09-20",
@@ -3605,7 +4420,12 @@
     "dollarIndex": 117.1819,
     "nikkei225": 22079.09,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.513,
+    "anfci": -0.567,
+    "financialStress": -0.1484,
+    "twoYearRate": 1.69,
+    "sofr": 1.86
   },
   {
     "date": "2019-09-27",
@@ -3627,7 +4447,12 @@
     "dollarIndex": 117.7218,
     "nikkei225": 21878.9,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.514,
+    "anfci": -0.564,
+    "financialStress": 0.1098,
+    "twoYearRate": 1.63,
+    "sofr": 1.82
   },
   {
     "date": "2019-10-04",
@@ -3649,7 +4474,12 @@
     "dollarIndex": 117.5288,
     "nikkei225": 21410.2,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.518,
+    "anfci": -0.554,
+    "financialStress": 0.373,
+    "twoYearRate": 1.4,
+    "sofr": 1.82
   },
   {
     "date": "2019-10-11",
@@ -3671,7 +4501,12 @@
     "dollarIndex": 116.8239,
     "nikkei225": 21798.87,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.527,
+    "anfci": -0.547,
+    "financialStress": 0.1417,
+    "twoYearRate": 1.63,
+    "sofr": 1.85
   },
   {
     "date": "2019-10-18",
@@ -3693,7 +4528,12 @@
     "dollarIndex": 116.1344,
     "nikkei225": 22492.68,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.539,
+    "anfci": -0.551,
+    "financialStress": -0.134,
+    "twoYearRate": 1.58,
+    "sofr": 1.88
   },
   {
     "date": "2019-10-25",
@@ -3715,7 +4555,12 @@
     "dollarIndex": 116.0774,
     "nikkei225": 22799.81,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.554,
+    "anfci": -0.569,
+    "financialStress": -0.1278,
+    "twoYearRate": 1.63,
+    "sofr": 1.84
   },
   {
     "date": "2019-11-01",
@@ -3737,7 +4582,12 @@
     "dollarIndex": 115.7312,
     "nikkei225": 22850.77,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.566,
+    "anfci": -0.594,
+    "financialStress": -0.0631,
+    "twoYearRate": 1.56,
+    "sofr": 1.58
   },
   {
     "date": "2019-11-08",
@@ -3759,7 +4609,12 @@
     "dollarIndex": 116.3436,
     "nikkei225": 23391.87,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.575,
+    "anfci": -0.617,
+    "financialStress": -0.0981,
+    "twoYearRate": 1.68,
+    "sofr": 1.56
   },
   {
     "date": "2019-11-15",
@@ -3781,7 +4636,12 @@
     "dollarIndex": 116.4401,
     "nikkei225": 23303.32,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.58,
+    "anfci": -0.626,
+    "financialStress": -0.1024,
+    "twoYearRate": 1.61,
+    "sofr": 1.59
   },
   {
     "date": "2019-11-22",
@@ -3803,7 +4663,12 @@
     "dollarIndex": 116.9137,
     "nikkei225": 23112.88,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.58,
+    "anfci": -0.617,
+    "financialStress": -0.0483,
+    "twoYearRate": 1.61,
+    "sofr": 1.58
   },
   {
     "date": "2019-11-29",
@@ -3825,7 +4690,12 @@
     "dollarIndex": 117.1204,
     "nikkei225": 23293.91,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.574,
+    "anfci": -0.593,
+    "financialStress": -0.1879,
+    "twoYearRate": 1.61,
+    "sofr": 1.65
   },
   {
     "date": "2019-12-06",
@@ -3847,7 +4717,12 @@
     "dollarIndex": 116.5381,
     "nikkei225": 23354.4,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.565,
+    "anfci": -0.566,
+    "financialStress": -0.0919,
+    "twoYearRate": 1.61,
+    "sofr": 1.55
   },
   {
     "date": "2019-12-13",
@@ -3869,7 +4744,12 @@
     "dollarIndex": 115.6967,
     "nikkei225": 24023.1,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.558,
+    "anfci": -0.554,
+    "financialStress": -0.2676,
+    "twoYearRate": 1.61,
+    "sofr": 1.54
   },
   {
     "date": "2019-12-20",
@@ -3891,7 +4771,12 @@
     "dollarIndex": 115.7598,
     "nikkei225": 23816.63,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.554,
+    "anfci": -0.557,
+    "financialStress": -0.3668,
+    "twoYearRate": 1.63,
+    "sofr": 1.53
   },
   {
     "date": "2019-12-27",
@@ -3913,7 +4798,12 @@
     "dollarIndex": 115.22,
     "nikkei225": 23837.72,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.559,
+    "anfci": -0.573,
+    "financialStress": -0.1801,
+    "twoYearRate": 1.59,
+    "sofr": 1.53
   },
   {
     "date": "2020-01-03",
@@ -3935,7 +4825,12 @@
     "dollarIndex": 114.9867,
     "nikkei225": 23656.62,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.573,
+    "anfci": -0.59,
+    "financialStress": -0.2263,
+    "twoYearRate": 1.53,
+    "sofr": 1.55
   },
   {
     "date": "2020-01-10",
@@ -3957,7 +4852,12 @@
     "dollarIndex": 115.0677,
     "nikkei225": 23850.57,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.593,
+    "anfci": -0.603,
+    "financialStress": -0.3525,
+    "twoYearRate": 1.56,
+    "sofr": 1.55
   },
   {
     "date": "2020-01-17",
@@ -3979,7 +4879,12 @@
     "dollarIndex": 115.0656,
     "nikkei225": 24041.26,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.615,
+    "anfci": -0.614,
+    "financialStress": -0.5204,
+    "twoYearRate": 1.58,
+    "sofr": 1.54
   },
   {
     "date": "2020-01-24",
@@ -4001,7 +4906,12 @@
     "dollarIndex": 115.5556,
     "nikkei225": 23827.18,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.629,
+    "anfci": -0.628,
+    "financialStress": -0.4068,
+    "twoYearRate": 1.49,
+    "sofr": 1.53
   },
   {
     "date": "2020-01-31",
@@ -4023,7 +4933,12 @@
     "dollarIndex": 115.7345,
     "nikkei225": 23205.18,
     "gold": null,
-    "newJobPostings": null
+    "newJobPostings": null,
+    "nfci": -0.626,
+    "anfci": -0.65,
+    "financialStress": -0.1169,
+    "twoYearRate": 1.33,
+    "sofr": 1.6
   },
   {
     "date": "2020-02-07",
@@ -4045,7 +4960,12 @@
     "dollarIndex": 116.5086,
     "nikkei225": 23827.98,
     "gold": null,
-    "newJobPostings": 99.86
+    "newJobPostings": 99.86,
+    "nfci": -0.599,
+    "anfci": -0.675,
+    "financialStress": -0.4613,
+    "twoYearRate": 1.41,
+    "sofr": 1.58
   },
   {
     "date": "2020-02-14",
@@ -4067,7 +4987,12 @@
     "dollarIndex": 116.4223,
     "nikkei225": 23687.59,
     "gold": null,
-    "newJobPostings": 104.63
+    "newJobPostings": 104.63,
+    "nfci": -0.537,
+    "anfci": -0.671,
+    "financialStress": -0.5681,
+    "twoYearRate": 1.42,
+    "sofr": 1.58
   },
   {
     "date": "2020-02-21",
@@ -4089,7 +5014,12 @@
     "dollarIndex": 117.0473,
     "nikkei225": 23386.74,
     "gold": null,
-    "newJobPostings": 102.63
+    "newJobPostings": 102.63,
+    "nfci": -0.435,
+    "anfci": -0.602,
+    "financialStress": -0.4422,
+    "twoYearRate": 1.34,
+    "sofr": 1.58
   },
   {
     "date": "2020-02-28",
@@ -4111,7 +5041,12 @@
     "dollarIndex": 117.6568,
     "nikkei225": 21142.96,
     "gold": null,
-    "newJobPostings": 103.03
+    "newJobPostings": 103.03,
+    "nfci": -0.294,
+    "anfci": -0.448,
+    "financialStress": 0.6758,
+    "twoYearRate": 0.86,
+    "sofr": 1.6
   },
   {
     "date": "2020-03-06",
@@ -4133,7 +5068,12 @@
     "dollarIndex": 116.7106,
     "nikkei225": 20749.75,
     "gold": null,
-    "newJobPostings": 102.5
+    "newJobPostings": 102.5,
+    "nfci": -0.131,
+    "anfci": -0.224,
+    "financialStress": 1.3499,
+    "twoYearRate": 0.49,
+    "sofr": 1.1
   },
   {
     "date": "2020-03-13",
@@ -4155,7 +5095,12 @@
     "dollarIndex": 120.4388,
     "nikkei225": 17431.05,
     "gold": null,
-    "newJobPostings": 97.29
+    "newJobPostings": 97.29,
+    "nfci": 0.037,
+    "anfci": 0.035,
+    "financialStress": 3.5137,
+    "twoYearRate": 0.49,
+    "sofr": 1.1
   },
   {
     "date": "2020-03-20",
@@ -4177,7 +5122,12 @@
     "dollarIndex": 124.9362,
     "nikkei225": 16552.83,
     "gold": null,
-    "newJobPostings": 78.45
+    "newJobPostings": 78.45,
+    "nfci": 0.183,
+    "anfci": 0.269,
+    "financialStress": 5.6565,
+    "twoYearRate": 0.37,
+    "sofr": 0.04
   },
   {
     "date": "2020-03-27",
@@ -4199,7 +5149,12 @@
     "dollarIndex": 122.4007,
     "nikkei225": 19389.43,
     "gold": null,
-    "newJobPostings": 57.64
+    "newJobPostings": 57.64,
+    "nfci": 0.276,
+    "anfci": 0.412,
+    "financialStress": 5.3861,
+    "twoYearRate": 0.25,
+    "sofr": 0.01
   },
   {
     "date": "2020-04-03",
@@ -4221,7 +5176,12 @@
     "dollarIndex": 124.4152,
     "nikkei225": 17820.19,
     "gold": null,
-    "newJobPostings": 44.58
+    "newJobPostings": 44.58,
+    "nfci": 0.313,
+    "anfci": 0.453,
+    "financialStress": 3.1863,
+    "twoYearRate": 0.23,
+    "sofr": 0.01
   },
   {
     "date": "2020-04-10",
@@ -4243,7 +5203,12 @@
     "dollarIndex": 122.1592,
     "nikkei225": 19498.5,
     "gold": null,
-    "newJobPostings": 36.88
+    "newJobPostings": 36.88,
+    "nfci": 0.299,
+    "anfci": 0.404,
+    "financialStress": 2.6259,
+    "twoYearRate": 0.23,
+    "sofr": 0.01
   },
   {
     "date": "2020-04-17",
@@ -4265,7 +5230,12 @@
     "dollarIndex": 122.871,
     "nikkei225": 19897.26,
     "gold": null,
-    "newJobPostings": 45.92
+    "newJobPostings": 45.92,
+    "nfci": 0.242,
+    "anfci": 0.302,
+    "financialStress": 1.9001,
+    "twoYearRate": 0.2,
+    "sofr": 0.03
   },
   {
     "date": "2020-04-24",
@@ -4287,7 +5257,12 @@
     "dollarIndex": 124.1615,
     "nikkei225": 19262,
     "gold": null,
-    "newJobPostings": 45.83
+    "newJobPostings": 45.83,
+    "nfci": 0.161,
+    "anfci": 0.192,
+    "financialStress": 2.4212,
+    "twoYearRate": 0.22,
+    "sofr": 0.03
   },
   {
     "date": "2020-05-01",
@@ -4309,7 +5284,12 @@
     "dollarIndex": 123.1492,
     "nikkei225": 19619.35,
     "gold": null,
-    "newJobPostings": 50.34
+    "newJobPostings": 50.34,
+    "nfci": 0.063,
+    "anfci": 0.083,
+    "financialStress": 1.2542,
+    "twoYearRate": 0.2,
+    "sofr": 0.03
   },
   {
     "date": "2020-05-08",
@@ -4331,7 +5311,12 @@
     "dollarIndex": 122.5379,
     "nikkei225": 20179.09,
     "gold": null,
-    "newJobPostings": 54.11
+    "newJobPostings": 54.11,
+    "nfci": -0.037,
+    "anfci": -0.021,
+    "financialStress": 0.9548,
+    "twoYearRate": 0.16,
+    "sofr": 0.06
   },
   {
     "date": "2020-05-15",
@@ -4353,7 +5338,12 @@
     "dollarIndex": 123.5991,
     "nikkei225": 20037.47,
     "gold": null,
-    "newJobPostings": 61.46
+    "newJobPostings": 61.46,
+    "nfci": -0.128,
+    "anfci": -0.121,
+    "financialStress": 0.9279,
+    "twoYearRate": 0.16,
+    "sofr": 0.05
   },
   {
     "date": "2020-05-22",
@@ -4375,7 +5365,12 @@
     "dollarIndex": 122.3211,
     "nikkei225": 20388.16,
     "gold": null,
-    "newJobPostings": 64.33
+    "newJobPostings": 64.33,
+    "nfci": -0.208,
+    "anfci": -0.229,
+    "financialStress": 0.443,
+    "twoYearRate": 0.17,
+    "sofr": 0.04
   },
   {
     "date": "2020-05-29",
@@ -4397,7 +5392,12 @@
     "dollarIndex": 120.9458,
     "nikkei225": 21877.89,
     "gold": null,
-    "newJobPostings": 63.72
+    "newJobPostings": 63.72,
+    "nfci": -0.271,
+    "anfci": -0.334,
+    "financialStress": 0.2148,
+    "twoYearRate": 0.16,
+    "sofr": 0.06
   },
   {
     "date": "2020-06-05",
@@ -4419,7 +5419,12 @@
     "dollarIndex": 118.8138,
     "nikkei225": 22863.73,
     "gold": null,
-    "newJobPostings": 79.79
+    "newJobPostings": 79.79,
+    "nfci": -0.317,
+    "anfci": -0.418,
+    "financialStress": -0.0796,
+    "twoYearRate": 0.22,
+    "sofr": 0.07
   },
   {
     "date": "2020-06-12",
@@ -4441,7 +5446,12 @@
     "dollarIndex": 119.6645,
     "nikkei225": 22305.48,
     "gold": null,
-    "newJobPostings": 76.76
+    "newJobPostings": 76.76,
+    "nfci": -0.347,
+    "anfci": -0.464,
+    "financialStress": 0.2872,
+    "twoYearRate": 0.19,
+    "sofr": 0.08
   },
   {
     "date": "2020-06-19",
@@ -4463,7 +5473,12 @@
     "dollarIndex": 120.2186,
     "nikkei225": 22478.79,
     "gold": null,
-    "newJobPostings": 83.66
+    "newJobPostings": 83.66,
+    "nfci": -0.369,
+    "anfci": -0.477,
+    "financialStress": 0.4916,
+    "twoYearRate": 0.19,
+    "sofr": 0.09
   },
   {
     "date": "2020-06-26",
@@ -4485,7 +5500,12 @@
     "dollarIndex": 120.533,
     "nikkei225": 22512.08,
     "gold": null,
-    "newJobPostings": 86.47
+    "newJobPostings": 86.47,
+    "nfci": -0.387,
+    "anfci": -0.471,
+    "financialStress": 0.5171,
+    "twoYearRate": 0.17,
+    "sofr": 0.08
   },
   {
     "date": "2020-07-03",
@@ -4507,7 +5527,12 @@
     "dollarIndex": 119.8555,
     "nikkei225": 22306.48,
     "gold": null,
-    "newJobPostings": 88.18
+    "newJobPostings": 88.18,
+    "nfci": -0.403,
+    "anfci": -0.467,
+    "financialStress": 0.4284,
+    "twoYearRate": 0.16,
+    "sofr": 0.11
   },
   {
     "date": "2020-07-10",
@@ -4529,7 +5554,12 @@
     "dollarIndex": 119.3509,
     "nikkei225": 22290.81,
     "gold": null,
-    "newJobPostings": 94.21
+    "newJobPostings": 94.21,
+    "nfci": -0.422,
+    "anfci": -0.478,
+    "financialStress": 0.1293,
+    "twoYearRate": 0.16,
+    "sofr": 0.1
   },
   {
     "date": "2020-07-17",
@@ -4551,7 +5581,12 @@
     "dollarIndex": 119.124,
     "nikkei225": 22696.42,
     "gold": null,
-    "newJobPostings": 94.47
+    "newJobPostings": 94.47,
+    "nfci": -0.441,
+    "anfci": -0.503,
+    "financialStress": 0.0821,
+    "twoYearRate": 0.14,
+    "sofr": 0.12
   },
   {
     "date": "2020-07-24",
@@ -4573,7 +5608,12 @@
     "dollarIndex": 118.1329,
     "nikkei225": 22751.61,
     "gold": null,
-    "newJobPostings": 92.52
+    "newJobPostings": 92.52,
+    "nfci": -0.46,
+    "anfci": -0.533,
+    "financialStress": -0.209,
+    "twoYearRate": 0.14,
+    "sofr": 0.1
   },
   {
     "date": "2020-07-31",
@@ -4595,7 +5635,12 @@
     "dollarIndex": 117.2082,
     "nikkei225": 21710,
     "gold": null,
-    "newJobPostings": 97.1
+    "newJobPostings": 97.1,
+    "nfci": -0.478,
+    "anfci": -0.554,
+    "financialStress": -0.0607,
+    "twoYearRate": 0.11,
+    "sofr": 0.1
   },
   {
     "date": "2020-08-07",
@@ -4617,7 +5662,12 @@
     "dollarIndex": 117.6239,
     "nikkei225": 22329.94,
     "gold": null,
-    "newJobPostings": 88.26
+    "newJobPostings": 88.26,
+    "nfci": -0.492,
+    "anfci": -0.558,
+    "financialStress": -0.1908,
+    "twoYearRate": 0.13,
+    "sofr": 0.09
   },
   {
     "date": "2020-08-14",
@@ -4639,7 +5689,12 @@
     "dollarIndex": 116.9395,
     "nikkei225": 23289.36,
     "gold": null,
-    "newJobPostings": 90.62
+    "newJobPostings": 90.62,
+    "nfci": -0.503,
+    "anfci": -0.557,
+    "financialStress": -0.2571,
+    "twoYearRate": 0.14,
+    "sofr": 0.09
   },
   {
     "date": "2020-08-21",
@@ -4661,7 +5716,12 @@
     "dollarIndex": 117.0572,
     "nikkei225": 22920.3,
     "gold": null,
-    "newJobPostings": 92.49
+    "newJobPostings": 92.49,
+    "nfci": -0.509,
+    "anfci": -0.565,
+    "financialStress": -0.0547,
+    "twoYearRate": 0.16,
+    "sofr": 0.07
   },
   {
     "date": "2020-08-28",
@@ -4683,7 +5743,12 @@
     "dollarIndex": 115.9374,
     "nikkei225": 22882.65,
     "gold": null,
-    "newJobPostings": 94.33
+    "newJobPostings": 94.33,
+    "nfci": -0.511,
+    "anfci": -0.588,
+    "financialStress": -0.2565,
+    "twoYearRate": 0.14,
+    "sofr": 0.07
   },
   {
     "date": "2020-09-04",
@@ -4705,7 +5770,12 @@
     "dollarIndex": 116.0347,
     "nikkei225": 23205.43,
     "gold": null,
-    "newJobPostings": 98.93
+    "newJobPostings": 98.93,
+    "nfci": -0.509,
+    "anfci": -0.625,
+    "financialStress": -0.1043,
+    "twoYearRate": 0.14,
+    "sofr": 0.09
   },
   {
     "date": "2020-09-11",
@@ -4727,7 +5797,12 @@
     "dollarIndex": 116.0866,
     "nikkei225": 23406.49,
     "gold": null,
-    "newJobPostings": 103.1
+    "newJobPostings": 103.1,
+    "nfci": -0.505,
+    "anfci": -0.659,
+    "financialStress": 0.0663,
+    "twoYearRate": 0.13,
+    "sofr": 0.09
   },
   {
     "date": "2020-09-18",
@@ -4749,7 +5824,12 @@
     "dollarIndex": 115.2395,
     "nikkei225": 23360.3,
     "gold": null,
-    "newJobPostings": 96.77
+    "newJobPostings": 96.77,
+    "nfci": -0.501,
+    "anfci": -0.678,
+    "financialStress": -0.1186,
+    "twoYearRate": 0.14,
+    "sofr": 0.09
   },
   {
     "date": "2020-09-25",
@@ -4771,7 +5851,12 @@
     "dollarIndex": 117.8679,
     "nikkei225": 23204.62,
     "gold": null,
-    "newJobPostings": 100.51
+    "newJobPostings": 100.51,
+    "nfci": -0.495,
+    "anfci": -0.668,
+    "financialStress": 0.2655,
+    "twoYearRate": 0.12,
+    "sofr": 0.08
   },
   {
     "date": "2020-10-02",
@@ -4793,7 +5878,12 @@
     "dollarIndex": 116.7321,
     "nikkei225": 23029.9,
     "gold": null,
-    "newJobPostings": 104.65
+    "newJobPostings": 104.65,
+    "nfci": -0.492,
+    "anfci": -0.636,
+    "financialStress": -0.0635,
+    "twoYearRate": 0.13,
+    "sofr": 0.1
   },
   {
     "date": "2020-10-09",
@@ -4815,7 +5905,12 @@
     "dollarIndex": 115.2757,
     "nikkei225": 23619.69,
     "gold": null,
-    "newJobPostings": 104.34
+    "newJobPostings": 104.34,
+    "nfci": -0.492,
+    "anfci": -0.591,
+    "financialStress": -0.2257,
+    "twoYearRate": 0.16,
+    "sofr": 0.09
   },
   {
     "date": "2020-10-16",
@@ -4837,7 +5932,12 @@
     "dollarIndex": 115.7679,
     "nikkei225": 23410.63,
     "gold": null,
-    "newJobPostings": 108.73
+    "newJobPostings": 108.73,
+    "nfci": -0.495,
+    "anfci": -0.557,
+    "financialStress": -0.0756,
+    "twoYearRate": 0.14,
+    "sofr": 0.09
   },
   {
     "date": "2020-10-23",
@@ -4859,7 +5959,12 @@
     "dollarIndex": 115.0126,
     "nikkei225": 23516.59,
     "gold": null,
-    "newJobPostings": 107.46
+    "newJobPostings": 107.46,
+    "nfci": -0.501,
+    "anfci": -0.54,
+    "financialStress": 0.0212,
+    "twoYearRate": 0.18,
+    "sofr": 0.08
   },
   {
     "date": "2020-10-30",
@@ -4881,7 +5986,12 @@
     "dollarIndex": 116.1354,
     "nikkei225": 22977.13,
     "gold": null,
-    "newJobPostings": 109.82
+    "newJobPostings": 109.82,
+    "nfci": -0.51,
+    "anfci": -0.539,
+    "financialStress": 0.4014,
+    "twoYearRate": 0.14,
+    "sofr": 0.09
   },
   {
     "date": "2020-11-06",
@@ -4903,7 +6013,12 @@
     "dollarIndex": 113.9919,
     "nikkei225": 24325.23,
     "gold": null,
-    "newJobPostings": 107.45
+    "newJobPostings": 107.45,
+    "nfci": -0.524,
+    "anfci": -0.55,
+    "financialStress": -0.0609,
+    "twoYearRate": 0.16,
+    "sofr": 0.1
   },
   {
     "date": "2020-11-13",
@@ -4925,7 +6040,12 @@
     "dollarIndex": 114.2397,
     "nikkei225": 25385.87,
     "gold": null,
-    "newJobPostings": 108.32
+    "newJobPostings": 108.32,
+    "nfci": -0.541,
+    "anfci": -0.563,
+    "financialStress": -0.4707,
+    "twoYearRate": 0.17,
+    "sofr": 0.09
   },
   {
     "date": "2020-11-20",
@@ -4947,7 +6067,12 @@
     "dollarIndex": 113.489,
     "nikkei225": 25527.37,
     "gold": null,
-    "newJobPostings": 110.68
+    "newJobPostings": 110.68,
+    "nfci": -0.557,
+    "anfci": -0.57,
+    "financialStress": -0.1471,
+    "twoYearRate": 0.16,
+    "sofr": 0.05
   },
   {
     "date": "2020-11-27",
@@ -4969,7 +6094,12 @@
     "dollarIndex": 113.1823,
     "nikkei225": 26644.71,
     "gold": null,
-    "newJobPostings": 114.95
+    "newJobPostings": 114.95,
+    "nfci": -0.572,
+    "anfci": -0.571,
+    "financialStress": -0.3854,
+    "twoYearRate": 0.16,
+    "sofr": 0.08
   },
   {
     "date": "2020-12-04",
@@ -4991,7 +6121,12 @@
     "dollarIndex": 111.7778,
     "nikkei225": 26751.24,
     "gold": null,
-    "newJobPostings": 105.2
+    "newJobPostings": 105.2,
+    "nfci": -0.585,
+    "anfci": -0.571,
+    "financialStress": -0.4338,
+    "twoYearRate": 0.16,
+    "sofr": 0.09
   },
   {
     "date": "2020-12-11",
@@ -5013,7 +6148,12 @@
     "dollarIndex": 112.1417,
     "nikkei225": 26652.52,
     "gold": null,
-    "newJobPostings": 105.66
+    "newJobPostings": 105.66,
+    "nfci": -0.595,
+    "anfci": -0.575,
+    "financialStress": -0.4077,
+    "twoYearRate": 0.11,
+    "sofr": 0.08
   },
   {
     "date": "2020-12-18",
@@ -5035,7 +6175,12 @@
     "dollarIndex": 111.6071,
     "nikkei225": 26763.39,
     "gold": null,
-    "newJobPostings": 109.93
+    "newJobPostings": 109.93,
+    "nfci": -0.602,
+    "anfci": -0.582,
+    "financialStress": -0.365,
+    "twoYearRate": 0.13,
+    "sofr": 0.09
   },
   {
     "date": "2020-12-25",
@@ -5057,7 +6202,12 @@
     "dollarIndex": 111.9807,
     "nikkei225": 26656.61,
     "gold": null,
-    "newJobPostings": 112.64
+    "newJobPostings": 112.64,
+    "nfci": -0.609,
+    "anfci": -0.589,
+    "financialStress": -0.4068,
+    "twoYearRate": 0.13,
+    "sofr": 0.08
   },
   {
     "date": "2021-01-01",
@@ -5079,7 +6229,12 @@
     "dollarIndex": 111.3169,
     "nikkei225": 27444.17,
     "gold": null,
-    "newJobPostings": 116.82
+    "newJobPostings": 116.82,
+    "nfci": -0.614,
+    "anfci": -0.594,
+    "financialStress": -0.4633,
+    "twoYearRate": 0.13,
+    "sofr": 0.07
   },
   {
     "date": "2021-01-08",
@@ -5101,7 +6256,12 @@
     "dollarIndex": 111.2847,
     "nikkei225": 28139.03,
     "gold": null,
-    "newJobPostings": 107.12
+    "newJobPostings": 107.12,
+    "nfci": -0.618,
+    "anfci": -0.595,
+    "financialStress": -0.477,
+    "twoYearRate": 0.14,
+    "sofr": 0.09
   },
   {
     "date": "2021-01-15",
@@ -5123,7 +6283,12 @@
     "dollarIndex": 111.5106,
     "nikkei225": 28519.18,
     "gold": null,
-    "newJobPostings": 121.55
+    "newJobPostings": 121.55,
+    "nfci": -0.621,
+    "anfci": -0.595,
+    "financialStress": -0.5195,
+    "twoYearRate": 0.13,
+    "sofr": 0.08
   },
   {
     "date": "2021-01-22",
@@ -5145,7 +6310,12 @@
     "dollarIndex": 111.5516,
     "nikkei225": 28631.45,
     "gold": null,
-    "newJobPostings": 120.68
+    "newJobPostings": 120.68,
+    "nfci": -0.623,
+    "anfci": -0.598,
+    "financialStress": -0.5033,
+    "twoYearRate": 0.13,
+    "sofr": 0.05
   },
   {
     "date": "2021-01-29",
@@ -5167,7 +6337,12 @@
     "dollarIndex": 111.9511,
     "nikkei225": 27663.39,
     "gold": null,
-    "newJobPostings": 121.15
+    "newJobPostings": 121.15,
+    "nfci": -0.623,
+    "anfci": -0.606,
+    "financialStress": -0.2538,
+    "twoYearRate": 0.11,
+    "sofr": 0.06
   },
   {
     "date": "2021-02-05",
@@ -5189,7 +6364,12 @@
     "dollarIndex": 112.2379,
     "nikkei225": 28779.19,
     "gold": null,
-    "newJobPostings": 125.32
+    "newJobPostings": 125.32,
+    "nfci": -0.626,
+    "anfci": -0.624,
+    "financialStress": -0.5669,
+    "twoYearRate": 0.09,
+    "sofr": 0.02
   },
   {
     "date": "2021-02-12",
@@ -5211,7 +6391,12 @@
     "dollarIndex": 111.4889,
     "nikkei225": 29520.07,
     "gold": null,
-    "newJobPostings": 126.01
+    "newJobPostings": 126.01,
+    "nfci": -0.627,
+    "anfci": -0.64,
+    "financialStress": -0.7517,
+    "twoYearRate": 0.11,
+    "sofr": 0.05
   },
   {
     "date": "2021-02-19",
@@ -5233,7 +6418,12 @@
     "dollarIndex": 111.7058,
     "nikkei225": 30017.92,
     "gold": null,
-    "newJobPostings": 127.09
+    "newJobPostings": 127.09,
+    "nfci": -0.629,
+    "anfci": -0.653,
+    "financialStress": -0.6442,
+    "twoYearRate": 0.11,
+    "sofr": 0.02
   },
   {
     "date": "2021-02-26",
@@ -5255,7 +6445,12 @@
     "dollarIndex": 112.8306,
     "nikkei225": 28966.01,
     "gold": null,
-    "newJobPostings": 126.14
+    "newJobPostings": 126.14,
+    "nfci": -0.631,
+    "anfci": -0.657,
+    "financialStress": -0.4358,
+    "twoYearRate": 0.14,
+    "sofr": 0.01
   },
   {
     "date": "2021-03-05",
@@ -5277,7 +6472,12 @@
     "dollarIndex": 113.7487,
     "nikkei225": 28864.32,
     "gold": null,
-    "newJobPostings": 131.58
+    "newJobPostings": 131.58,
+    "nfci": -0.635,
+    "anfci": -0.656,
+    "financialStress": -0.3952,
+    "twoYearRate": 0.14,
+    "sofr": 0.02
   },
   {
     "date": "2021-03-12",
@@ -5299,7 +6499,12 @@
     "dollarIndex": 113.0269,
     "nikkei225": 29717.83,
     "gold": null,
-    "newJobPostings": 133.34
+    "newJobPostings": 133.34,
+    "nfci": -0.64,
+    "anfci": -0.652,
+    "financialStress": -0.4893,
+    "twoYearRate": 0.14,
+    "sofr": 0.01
   },
   {
     "date": "2021-03-19",
@@ -5321,7 +6526,12 @@
     "dollarIndex": 112.9756,
     "nikkei225": 29792.05,
     "gold": null,
-    "newJobPostings": 138.78
+    "newJobPostings": 138.78,
+    "nfci": -0.646,
+    "anfci": -0.65,
+    "financialStress": -0.5349,
+    "twoYearRate": 0.16,
+    "sofr": 0.01
   },
   {
     "date": "2021-03-26",
@@ -5343,7 +6553,12 @@
     "dollarIndex": 113.7406,
     "nikkei225": 29176.7,
     "gold": null,
-    "newJobPostings": 149.9
+    "newJobPostings": 149.9,
+    "nfci": -0.652,
+    "anfci": -0.653,
+    "financialStress": -0.6107,
+    "twoYearRate": 0.14,
+    "sofr": 0.01
   },
   {
     "date": "2021-04-02",
@@ -5365,7 +6580,12 @@
     "dollarIndex": 113.7315,
     "nikkei225": 29854,
     "gold": null,
-    "newJobPostings": 149.64
+    "newJobPostings": 149.64,
+    "nfci": -0.659,
+    "anfci": -0.66,
+    "financialStress": -0.7059,
+    "twoYearRate": 0.19,
+    "sofr": 0.01
   },
   {
     "date": "2021-04-09",
@@ -5387,7 +6607,12 @@
     "dollarIndex": 113.2028,
     "nikkei225": 29768.06,
     "gold": null,
-    "newJobPostings": 146.24
+    "newJobPostings": 146.24,
+    "nfci": -0.668,
+    "anfci": -0.667,
+    "financialStress": -0.8023,
+    "twoYearRate": 0.16,
+    "sofr": 0.01
   },
   {
     "date": "2021-04-16",
@@ -5409,7 +6634,12 @@
     "dollarIndex": 112.4814,
     "nikkei225": 29683.37,
     "gold": null,
-    "newJobPostings": 163.59
+    "newJobPostings": 163.59,
+    "nfci": -0.675,
+    "anfci": -0.669,
+    "financialStress": -0.755,
+    "twoYearRate": 0.16,
+    "sofr": 0.01
   },
   {
     "date": "2021-04-23",
@@ -5431,7 +6661,12 @@
     "dollarIndex": 112.0889,
     "nikkei225": 29020.63,
     "gold": null,
-    "newJobPostings": 164.69
+    "newJobPostings": 164.69,
+    "nfci": -0.681,
+    "anfci": -0.666,
+    "financialStress": -0.7053,
+    "twoYearRate": 0.16,
+    "sofr": 0.01
   },
   {
     "date": "2021-04-30",
@@ -5453,7 +6688,12 @@
     "dollarIndex": 112.0839,
     "nikkei225": 28812.63,
     "gold": null,
-    "newJobPostings": 159.86
+    "newJobPostings": 159.86,
+    "nfci": -0.686,
+    "anfci": -0.662,
+    "financialStress": -0.7951,
+    "twoYearRate": 0.16,
+    "sofr": 0.01
   },
   {
     "date": "2021-05-07",
@@ -5475,7 +6715,12 @@
     "dollarIndex": 111.0249,
     "nikkei225": 29357.82,
     "gold": null,
-    "newJobPostings": 159.39
+    "newJobPostings": 159.39,
+    "nfci": -0.691,
+    "anfci": -0.659,
+    "financialStress": -0.7941,
+    "twoYearRate": 0.14,
+    "sofr": 0.01
   },
   {
     "date": "2021-05-14",
@@ -5497,7 +6742,12 @@
     "dollarIndex": 111.1353,
     "nikkei225": 28084.47,
     "gold": null,
-    "newJobPostings": 164.46
+    "newJobPostings": 164.46,
+    "nfci": -0.694,
+    "anfci": -0.66,
+    "financialStress": -0.7381,
+    "twoYearRate": 0.16,
+    "sofr": 0.01
   },
   {
     "date": "2021-05-21",
@@ -5519,7 +6769,12 @@
     "dollarIndex": 111.0576,
     "nikkei225": 28317.83,
     "gold": null,
-    "newJobPostings": 163.12
+    "newJobPostings": 163.12,
+    "nfci": -0.696,
+    "anfci": -0.668,
+    "financialStress": -0.702,
+    "twoYearRate": 0.17,
+    "sofr": 0.01
   },
   {
     "date": "2021-05-28",
@@ -5541,7 +6796,12 @@
     "dollarIndex": 110.7576,
     "nikkei225": 29149.41,
     "gold": null,
-    "newJobPostings": 160.56
+    "newJobPostings": 160.56,
+    "nfci": -0.698,
+    "anfci": -0.679,
+    "financialStress": -0.7991,
+    "twoYearRate": 0.14,
+    "sofr": 0.01
   },
   {
     "date": "2021-06-04",
@@ -5563,7 +6823,12 @@
     "dollarIndex": 110.7521,
     "nikkei225": 28941.52,
     "gold": null,
-    "newJobPostings": 162.53
+    "newJobPostings": 162.53,
+    "nfci": -0.699,
+    "anfci": -0.689,
+    "financialStress": -0.8376,
+    "twoYearRate": 0.14,
+    "sofr": 0.01
   },
   {
     "date": "2021-06-11",
@@ -5585,7 +6850,12 @@
     "dollarIndex": 111.0933,
     "nikkei225": 28948.73,
     "gold": null,
-    "newJobPostings": 158.35
+    "newJobPostings": 158.35,
+    "nfci": -0.699,
+    "anfci": -0.695,
+    "financialStress": -0.781,
+    "twoYearRate": 0.16,
+    "sofr": 0.01
   },
   {
     "date": "2021-06-18",
@@ -5607,7 +6877,12 @@
     "dollarIndex": 113.0408,
     "nikkei225": 28964.08,
     "gold": null,
-    "newJobPostings": 166.09
+    "newJobPostings": 166.09,
+    "nfci": -0.695,
+    "anfci": -0.696,
+    "financialStress": -0.7616,
+    "twoYearRate": 0.26,
+    "sofr": 0.05
   },
   {
     "date": "2021-06-25",
@@ -5629,7 +6904,12 @@
     "dollarIndex": 111.9655,
     "nikkei225": 29066.18,
     "gold": null,
-    "newJobPostings": 170.45
+    "newJobPostings": 170.45,
+    "nfci": -0.691,
+    "anfci": -0.697,
+    "financialStress": -0.7929,
+    "twoYearRate": 0.28,
+    "sofr": 0.05
   },
   {
     "date": "2021-07-02",
@@ -5651,7 +6931,12 @@
     "dollarIndex": 112.5425,
     "nikkei225": 28783.28,
     "gold": null,
-    "newJobPostings": 164.57
+    "newJobPostings": 164.57,
+    "nfci": -0.686,
+    "anfci": -0.698,
+    "financialStress": -0.8327,
+    "twoYearRate": 0.24,
+    "sofr": 0.05
   },
   {
     "date": "2021-07-09",
@@ -5673,7 +6958,12 @@
     "dollarIndex": 112.8375,
     "nikkei225": 27940.42,
     "gold": null,
-    "newJobPostings": 164.54
+    "newJobPostings": 164.54,
+    "nfci": -0.679,
+    "anfci": -0.7,
+    "financialStress": -0.6981,
+    "twoYearRate": 0.23,
+    "sofr": 0.05
   },
   {
     "date": "2021-07-16",
@@ -5695,7 +6985,12 @@
     "dollarIndex": 113.0428,
     "nikkei225": 28003.08,
     "gold": null,
-    "newJobPostings": 168.78
+    "newJobPostings": 168.78,
+    "nfci": -0.672,
+    "anfci": -0.702,
+    "financialStress": -0.7921,
+    "twoYearRate": 0.25,
+    "sofr": 0.05
   },
   {
     "date": "2021-07-23",
@@ -5717,7 +7012,12 @@
     "dollarIndex": 113.4398,
     "nikkei225": 27548,
     "gold": null,
-    "newJobPostings": 169.93
+    "newJobPostings": 169.93,
+    "nfci": -0.665,
+    "anfci": -0.7,
+    "financialStress": -0.5563,
+    "twoYearRate": 0.22,
+    "sofr": 0.05
   },
   {
     "date": "2021-07-30",
@@ -5739,7 +7039,12 @@
     "dollarIndex": 112.6714,
     "nikkei225": 27283.59,
     "gold": null,
-    "newJobPostings": 164.6
+    "newJobPostings": 164.6,
+    "nfci": -0.66,
+    "anfci": -0.695,
+    "financialStress": -0.755,
+    "twoYearRate": 0.19,
+    "sofr": 0.05
   },
   {
     "date": "2021-08-06",
@@ -5761,7 +7066,12 @@
     "dollarIndex": 113.3088,
     "nikkei225": 27820.04,
     "gold": null,
-    "newJobPostings": 162.41
+    "newJobPostings": 162.41,
+    "nfci": -0.655,
+    "anfci": -0.687,
+    "financialStress": -0.666,
+    "twoYearRate": 0.21,
+    "sofr": 0.05
   },
   {
     "date": "2021-08-13",
@@ -5783,7 +7093,12 @@
     "dollarIndex": 113.0615,
     "nikkei225": 27977.15,
     "gold": null,
-    "newJobPostings": 163.7
+    "newJobPostings": 163.7,
+    "nfci": -0.652,
+    "anfci": -0.682,
+    "financialStress": -0.8556,
+    "twoYearRate": 0.23,
+    "sofr": 0.05
   },
   {
     "date": "2021-08-20",
@@ -5805,7 +7120,12 @@
     "dollarIndex": 114.5009,
     "nikkei225": 27013.25,
     "gold": null,
-    "newJobPostings": 166.72
+    "newJobPostings": 166.72,
+    "nfci": -0.651,
+    "anfci": -0.685,
+    "financialStress": -0.6074,
+    "twoYearRate": 0.23,
+    "sofr": 0.05
   },
   {
     "date": "2021-08-27",
@@ -5827,7 +7147,12 @@
     "dollarIndex": 113.3404,
     "nikkei225": 27641.14,
     "gold": null,
-    "newJobPostings": 172.74
+    "newJobPostings": 172.74,
+    "nfci": -0.652,
+    "anfci": -0.696,
+    "financialStress": -0.7589,
+    "twoYearRate": 0.22,
+    "sofr": 0.05
   },
   {
     "date": "2021-09-03",
@@ -5849,7 +7174,12 @@
     "dollarIndex": 112.5476,
     "nikkei225": 29128.11,
     "gold": null,
-    "newJobPostings": 164.57
+    "newJobPostings": 164.57,
+    "nfci": -0.653,
+    "anfci": -0.711,
+    "financialStress": -0.7509,
+    "twoYearRate": 0.21,
+    "sofr": 0.05
   },
   {
     "date": "2021-09-10",
@@ -5871,7 +7201,12 @@
     "dollarIndex": 112.9425,
     "nikkei225": 30381.84,
     "gold": null,
-    "newJobPostings": 164.04
+    "newJobPostings": 164.04,
+    "nfci": -0.655,
+    "anfci": -0.724,
+    "financialStress": -0.7035,
+    "twoYearRate": 0.23,
+    "sofr": 0.05
   },
   {
     "date": "2021-09-17",
@@ -5893,7 +7228,12 @@
     "dollarIndex": 113.5989,
     "nikkei225": 30500.05,
     "gold": null,
-    "newJobPostings": 161.33
+    "newJobPostings": 161.33,
+    "nfci": -0.657,
+    "anfci": -0.73,
+    "financialStress": -0.6682,
+    "twoYearRate": 0.23,
+    "sofr": 0.05
   },
   {
     "date": "2021-09-24",
@@ -5915,7 +7255,12 @@
     "dollarIndex": 113.7597,
     "nikkei225": 30248.81,
     "gold": null,
-    "newJobPostings": 171.06
+    "newJobPostings": 171.06,
+    "nfci": -0.658,
+    "anfci": -0.726,
+    "financialStress": -0.5358,
+    "twoYearRate": 0.29,
+    "sofr": 0.05
   },
   {
     "date": "2021-10-01",
@@ -5937,7 +7282,12 @@
     "dollarIndex": 114.3798,
     "nikkei225": 28771.07,
     "gold": null,
-    "newJobPostings": 168.88
+    "newJobPostings": 168.88,
+    "nfci": -0.658,
+    "anfci": -0.715,
+    "financialStress": -0.6258,
+    "twoYearRate": 0.27,
+    "sofr": 0.05
   },
   {
     "date": "2021-10-08",
@@ -5959,7 +7309,12 @@
     "dollarIndex": 114.5986,
     "nikkei225": 28048.94,
     "gold": null,
-    "newJobPostings": 167.63
+    "newJobPostings": 167.63,
+    "nfci": -0.656,
+    "anfci": -0.701,
+    "financialStress": -0.6302,
+    "twoYearRate": 0.32,
+    "sofr": 0.05
   },
   {
     "date": "2021-10-15",
@@ -5981,7 +7336,12 @@
     "dollarIndex": 114.0905,
     "nikkei225": 29068.63,
     "gold": null,
-    "newJobPostings": 167.02
+    "newJobPostings": 167.02,
+    "nfci": -0.65,
+    "anfci": -0.69,
+    "financialStress": -0.7224,
+    "twoYearRate": 0.41,
+    "sofr": 0.05
   },
   {
     "date": "2021-10-22",
@@ -6003,7 +7363,12 @@
     "dollarIndex": 113.67,
     "nikkei225": 28804.85,
     "gold": null,
-    "newJobPostings": 169.71
+    "newJobPostings": 169.71,
+    "nfci": -0.64,
+    "anfci": -0.679,
+    "financialStress": -0.8984,
+    "twoYearRate": 0.48,
+    "sofr": 0.05
   },
   {
     "date": "2021-10-29",
@@ -6025,7 +7390,12 @@
     "dollarIndex": 114.1349,
     "nikkei225": 28892.69,
     "gold": null,
-    "newJobPostings": 169.11
+    "newJobPostings": 169.11,
+    "nfci": -0.625,
+    "anfci": -0.664,
+    "financialStress": -0.8017,
+    "twoYearRate": 0.48,
+    "sofr": 0.05
   },
   {
     "date": "2021-11-05",
@@ -6047,7 +7417,12 @@
     "dollarIndex": 114.0732,
     "nikkei225": 29611.57,
     "gold": null,
-    "newJobPostings": 174.46
+    "newJobPostings": 174.46,
+    "nfci": -0.607,
+    "anfci": -0.64,
+    "financialStress": -0.6729,
+    "twoYearRate": 0.39,
+    "sofr": 0.05
   },
   {
     "date": "2021-11-12",
@@ -6069,7 +7444,12 @@
     "dollarIndex": 114.5144,
     "nikkei225": 29609.97,
     "gold": null,
-    "newJobPostings": 175.38
+    "newJobPostings": 175.38,
+    "nfci": -0.588,
+    "anfci": -0.606,
+    "financialStress": -0.7793,
+    "twoYearRate": 0.53,
+    "sofr": 0.05
   },
   {
     "date": "2021-11-19",
@@ -6091,7 +7471,12 @@
     "dollarIndex": 115.2187,
     "nikkei225": 29745.87,
     "gold": null,
-    "newJobPostings": 171.76
+    "newJobPostings": 171.76,
+    "nfci": -0.57,
+    "anfci": -0.568,
+    "financialStress": -0.6831,
+    "twoYearRate": 0.52,
+    "sofr": 0.05
   },
   {
     "date": "2021-11-26",
@@ -6113,7 +7498,12 @@
     "dollarIndex": 116.5103,
     "nikkei225": 28751.62,
     "gold": null,
-    "newJobPostings": 171.07
+    "newJobPostings": 171.07,
+    "nfci": -0.554,
+    "anfci": -0.533,
+    "financialStress": -0.4806,
+    "twoYearRate": 0.5,
+    "sofr": 0.05
   },
   {
     "date": "2021-12-03",
@@ -6135,7 +7525,12 @@
     "dollarIndex": 116.2377,
     "nikkei225": 28029.57,
     "gold": null,
-    "newJobPostings": 162.73
+    "newJobPostings": 162.73,
+    "nfci": -0.543,
+    "anfci": -0.512,
+    "financialStress": -0.1563,
+    "twoYearRate": 0.6,
+    "sofr": 0.05
   },
   {
     "date": "2021-12-10",
@@ -6157,7 +7552,12 @@
     "dollarIndex": 115.5732,
     "nikkei225": 28437.77,
     "gold": null,
-    "newJobPostings": 175.41
+    "newJobPostings": 175.41,
+    "nfci": -0.541,
+    "anfci": -0.511,
+    "financialStress": -0.6995,
+    "twoYearRate": 0.67,
+    "sofr": 0.05
   },
   {
     "date": "2021-12-17",
@@ -6179,7 +7579,12 @@
     "dollarIndex": 115.791,
     "nikkei225": 28545.68,
     "gold": null,
-    "newJobPostings": 174.53
+    "newJobPostings": 174.53,
+    "nfci": -0.543,
+    "anfci": -0.525,
+    "financialStress": -0.4904,
+    "twoYearRate": 0.66,
+    "sofr": 0.05
   },
   {
     "date": "2021-12-24",
@@ -6201,7 +7606,12 @@
     "dollarIndex": 115.5337,
     "nikkei225": 28782.59,
     "gold": null,
-    "newJobPostings": 172.91
+    "newJobPostings": 172.91,
+    "nfci": -0.55,
+    "anfci": -0.543,
+    "financialStress": -0.574,
+    "twoYearRate": 0.71,
+    "sofr": 0.05
   },
   {
     "date": "2021-12-31",
@@ -6223,7 +7633,12 @@
     "dollarIndex": 115.283,
     "nikkei225": 28791.71,
     "gold": null,
-    "newJobPostings": 166.59
+    "newJobPostings": 166.59,
+    "nfci": -0.559,
+    "anfci": -0.558,
+    "financialStress": -0.7631,
+    "twoYearRate": 0.73,
+    "sofr": 0.05
   },
   {
     "date": "2022-01-07",
@@ -6245,7 +7660,12 @@
     "dollarIndex": 115.0451,
     "nikkei225": 28478.56,
     "gold": null,
-    "newJobPostings": 157.81
+    "newJobPostings": 157.81,
+    "nfci": -0.564,
+    "anfci": -0.564,
+    "financialStress": -0.6984,
+    "twoYearRate": 0.87,
+    "sofr": 0.05
   },
   {
     "date": "2022-01-14",
@@ -6267,7 +7687,12 @@
     "dollarIndex": 114.3825,
     "nikkei225": 28124.28,
     "gold": null,
-    "newJobPostings": 171.4
+    "newJobPostings": 171.4,
+    "nfci": -0.564,
+    "anfci": -0.56,
+    "financialStress": -0.6554,
+    "twoYearRate": 0.99,
+    "sofr": 0.05
   },
   {
     "date": "2022-01-21",
@@ -6289,7 +7714,12 @@
     "dollarIndex": 114.6125,
     "nikkei225": 27522.26,
     "gold": null,
-    "newJobPostings": 173.54
+    "newJobPostings": 173.54,
+    "nfci": -0.557,
+    "anfci": -0.553,
+    "financialStress": -0.3776,
+    "twoYearRate": 1.01,
+    "sofr": 0.05
   },
   {
     "date": "2022-01-28",
@@ -6311,7 +7741,12 @@
     "dollarIndex": 116.0393,
     "nikkei225": 26717.34,
     "gold": null,
-    "newJobPostings": 176.25
+    "newJobPostings": 176.25,
+    "nfci": -0.543,
+    "anfci": -0.544,
+    "financialStress": -0.1939,
+    "twoYearRate": 1.15,
+    "sofr": 0.05
   },
   {
     "date": "2022-02-04",
@@ -6333,7 +7768,12 @@
     "dollarIndex": 115.1362,
     "nikkei225": 27439.99,
     "gold": null,
-    "newJobPostings": 178.31
+    "newJobPostings": 178.31,
+    "nfci": -0.523,
+    "anfci": -0.532,
+    "financialStress": -0.5078,
+    "twoYearRate": 1.31,
+    "sofr": 0.05
   },
   {
     "date": "2022-02-11",
@@ -6355,7 +7795,12 @@
     "dollarIndex": 114.8413,
     "nikkei225": 27696.08,
     "gold": null,
-    "newJobPostings": 179.07
+    "newJobPostings": 179.07,
+    "nfci": -0.497,
+    "anfci": -0.507,
+    "financialStress": -0.5831,
+    "twoYearRate": 1.5,
+    "sofr": 0.05
   },
   {
     "date": "2022-02-18",
@@ -6377,7 +7822,12 @@
     "dollarIndex": 114.7982,
     "nikkei225": 27122.07,
     "gold": null,
-    "newJobPostings": 181.75
+    "newJobPostings": 181.75,
+    "nfci": -0.467,
+    "anfci": -0.463,
+    "financialStress": -0.1602,
+    "twoYearRate": 1.47,
+    "sofr": 0.05
   },
   {
     "date": "2022-02-25",
@@ -6399,7 +7849,12 @@
     "dollarIndex": 115.2577,
     "nikkei225": 26476.5,
     "gold": null,
-    "newJobPostings": 183.9
+    "newJobPostings": 183.9,
+    "nfci": -0.437,
+    "anfci": -0.405,
+    "financialStress": 0.0011,
+    "twoYearRate": 1.55,
+    "sofr": 0.05
   },
   {
     "date": "2022-03-04",
@@ -6421,7 +7876,12 @@
     "dollarIndex": 116.6503,
     "nikkei225": 25985.47,
     "gold": null,
-    "newJobPostings": 179.05
+    "newJobPostings": 179.05,
+    "nfci": -0.41,
+    "anfci": -0.344,
+    "financialStress": 0.3051,
+    "twoYearRate": 1.5,
+    "sofr": 0.05
   },
   {
     "date": "2022-03-11",
@@ -6443,7 +7903,12 @@
     "dollarIndex": 117.0192,
     "nikkei225": 25162.78,
     "gold": null,
-    "newJobPostings": 179.36
+    "newJobPostings": 179.36,
+    "nfci": -0.388,
+    "anfci": -0.3,
+    "financialStress": 0.1528,
+    "twoYearRate": 1.75,
+    "sofr": 0.05
   },
   {
     "date": "2022-03-18",
@@ -6465,7 +7930,12 @@
     "dollarIndex": 116.1378,
     "nikkei225": 26827.43,
     "gold": null,
-    "newJobPostings": 179.55
+    "newJobPostings": 179.55,
+    "nfci": -0.376,
+    "anfci": -0.284,
+    "financialStress": -0.3069,
+    "twoYearRate": 1.97,
+    "sofr": 0.3
   },
   {
     "date": "2022-03-25",
@@ -6487,7 +7957,12 @@
     "dollarIndex": 115.7921,
     "nikkei225": 28149.84,
     "gold": null,
-    "newJobPostings": 178.4
+    "newJobPostings": 178.4,
+    "nfci": -0.37,
+    "anfci": -0.296,
+    "financialStress": -0.6075,
+    "twoYearRate": 2.3,
+    "sofr": 0.28
   },
   {
     "date": "2022-04-01",
@@ -6509,7 +7984,12 @@
     "dollarIndex": 115.4814,
     "nikkei225": 27665.98,
     "gold": null,
-    "newJobPostings": 179.66
+    "newJobPostings": 179.66,
+    "nfci": -0.367,
+    "anfci": -0.32,
+    "financialStress": -0.4678,
+    "twoYearRate": 2.44,
+    "sofr": 0.3
   },
   {
     "date": "2022-04-08",
@@ -6531,7 +8011,12 @@
     "dollarIndex": 116.4176,
     "nikkei225": 26985.8,
     "gold": null,
-    "newJobPostings": 175.18
+    "newJobPostings": 175.18,
+    "nfci": -0.365,
+    "anfci": -0.335,
+    "financialStress": -0.3668,
+    "twoYearRate": 2.53,
+    "sofr": 0.3
   },
   {
     "date": "2022-04-15",
@@ -6553,7 +8038,12 @@
     "dollarIndex": 116.7017,
     "nikkei225": 27093.19,
     "gold": null,
-    "newJobPostings": 175.76
+    "newJobPostings": 175.76,
+    "nfci": -0.358,
+    "anfci": -0.324,
+    "financialStress": -0.2781,
+    "twoYearRate": 2.47,
+    "sofr": 0.29
   },
   {
     "date": "2022-04-22",
@@ -6575,7 +8065,12 @@
     "dollarIndex": 118.0186,
     "nikkei225": 27105.26,
     "gold": null,
-    "newJobPostings": 177.54
+    "newJobPostings": 177.54,
+    "nfci": -0.347,
+    "anfci": -0.288,
+    "financialStress": -0.3825,
+    "twoYearRate": 2.72,
+    "sofr": 0.27
   },
   {
     "date": "2022-04-29",
@@ -6597,7 +8092,12 @@
     "dollarIndex": 119.4933,
     "nikkei225": 26847.9,
     "gold": null,
-    "newJobPostings": 178.98
+    "newJobPostings": 178.98,
+    "nfci": -0.332,
+    "anfci": -0.239,
+    "financialStress": 0.1899,
+    "twoYearRate": 2.7,
+    "sofr": 0.28
   },
   {
     "date": "2022-05-06",
@@ -6619,7 +8119,12 @@
     "dollarIndex": 119.8577,
     "nikkei225": 27003.56,
     "gold": null,
-    "newJobPostings": 182.35
+    "newJobPostings": 182.35,
+    "nfci": -0.314,
+    "anfci": -0.195,
+    "financialStress": 0.2128,
+    "twoYearRate": 2.72,
+    "sofr": 0.78
   },
   {
     "date": "2022-05-13",
@@ -6641,7 +8146,12 @@
     "dollarIndex": 120.8442,
     "nikkei225": 26427.65,
     "gold": null,
-    "newJobPostings": 180.06
+    "newJobPostings": 180.06,
+    "nfci": -0.294,
+    "anfci": -0.168,
+    "financialStress": 0.5701,
+    "twoYearRate": 2.61,
+    "sofr": 0.79
   },
   {
     "date": "2022-05-20",
@@ -6663,7 +8173,12 @@
     "dollarIndex": 119.3677,
     "nikkei225": 26739.03,
     "gold": null,
-    "newJobPostings": 182.01
+    "newJobPostings": 182.01,
+    "nfci": -0.275,
+    "anfci": -0.158,
+    "financialStress": 0.3134,
+    "twoYearRate": 2.6,
+    "sofr": 0.78
   },
   {
     "date": "2022-05-27",
@@ -6685,7 +8200,12 @@
     "dollarIndex": 118.2834,
     "nikkei225": 26781.68,
     "gold": null,
-    "newJobPostings": 181.68
+    "newJobPostings": 181.68,
+    "nfci": -0.252,
+    "anfci": -0.148,
+    "financialStress": 0.2912,
+    "twoYearRate": 2.47,
+    "sofr": 0.78
   },
   {
     "date": "2022-06-03",
@@ -6707,7 +8227,12 @@
     "dollarIndex": 118.2153,
     "nikkei225": 27761.57,
     "gold": null,
-    "newJobPostings": 179.51
+    "newJobPostings": 179.51,
+    "nfci": -0.229,
+    "anfci": -0.126,
+    "financialStress": -0.1564,
+    "twoYearRate": 2.66,
+    "sofr": 0.78
   },
   {
     "date": "2022-06-10",
@@ -6729,7 +8254,12 @@
     "dollarIndex": 119.9981,
     "nikkei225": 27824.29,
     "gold": null,
-    "newJobPostings": 172.92
+    "newJobPostings": 172.92,
+    "nfci": -0.203,
+    "anfci": -0.087,
+    "financialStress": -0.0444,
+    "twoYearRate": 3.06,
+    "sofr": 0.75
   },
   {
     "date": "2022-06-17",
@@ -6751,7 +8281,12 @@
     "dollarIndex": 121.2369,
     "nikkei225": 25963,
     "gold": null,
-    "newJobPostings": 178.22
+    "newJobPostings": 178.22,
+    "nfci": -0.179,
+    "anfci": -0.042,
+    "financialStress": 0.0312,
+    "twoYearRate": 3.17,
+    "sofr": 1.45
   },
   {
     "date": "2022-06-24",
@@ -6773,7 +8308,12 @@
     "dollarIndex": 120.4853,
     "nikkei225": 26491.97,
     "gold": null,
-    "newJobPostings": 178.13
+    "newJobPostings": 178.13,
+    "nfci": -0.163,
+    "anfci": -0.01,
+    "financialStress": 0.3895,
+    "twoYearRate": 3.04,
+    "sofr": 1.46
   },
   {
     "date": "2022-07-01",
@@ -6795,7 +8335,12 @@
     "dollarIndex": 121.5058,
     "nikkei225": 25935.62,
     "gold": null,
-    "newJobPostings": 169.89
+    "newJobPostings": 169.89,
+    "nfci": -0.157,
+    "anfci": -0.009,
+    "financialStress": 0.6222,
+    "twoYearRate": 2.84,
+    "sofr": 1.52
   },
   {
     "date": "2022-07-08",
@@ -6817,7 +8362,12 @@
     "dollarIndex": 122.4662,
     "nikkei225": 26517.19,
     "gold": null,
-    "newJobPostings": 168.75
+    "newJobPostings": 168.75,
+    "nfci": -0.16,
+    "anfci": -0.042,
+    "financialStress": 0.4364,
+    "twoYearRate": 3.12,
+    "sofr": 1.53
   },
   {
     "date": "2022-07-15",
@@ -6839,7 +8389,12 @@
     "dollarIndex": 123.4765,
     "nikkei225": 26788.47,
     "gold": null,
-    "newJobPostings": 173.2
+    "newJobPostings": 173.2,
+    "nfci": -0.174,
+    "anfci": -0.097,
+    "financialStress": 0.0741,
+    "twoYearRate": 3.13,
+    "sofr": 1.54
   },
   {
     "date": "2022-07-22",
@@ -6861,7 +8416,12 @@
     "dollarIndex": 122.451,
     "nikkei225": 27914.66,
     "gold": null,
-    "newJobPostings": 174.4
+    "newJobPostings": 174.4,
+    "nfci": -0.194,
+    "anfci": -0.155,
+    "financialStress": -0.2654,
+    "twoYearRate": 2.98,
+    "sofr": 1.52
   },
   {
     "date": "2022-07-29",
@@ -6883,7 +8443,12 @@
     "dollarIndex": 121.7678,
     "nikkei225": 27801.64,
     "gold": null,
-    "newJobPostings": 172.85
+    "newJobPostings": 172.85,
+    "nfci": -0.212,
+    "anfci": -0.196,
+    "financialStress": -0.1814,
+    "twoYearRate": 2.89,
+    "sofr": 2.27
   },
   {
     "date": "2022-08-05",
@@ -6905,7 +8470,12 @@
     "dollarIndex": 122.321,
     "nikkei225": 28175.87,
     "gold": null,
-    "newJobPostings": 172.84
+    "newJobPostings": 172.84,
+    "nfci": -0.226,
+    "anfci": -0.213,
+    "financialStress": -0.4754,
+    "twoYearRate": 3.24,
+    "sofr": 2.28
   },
   {
     "date": "2022-08-12",
@@ -6927,7 +8497,12 @@
     "dollarIndex": 121.018,
     "nikkei225": 28546.98,
     "gold": null,
-    "newJobPostings": 170.2
+    "newJobPostings": 170.2,
+    "nfci": -0.234,
+    "anfci": -0.215,
+    "financialStress": -0.4004,
+    "twoYearRate": 3.25,
+    "sofr": 2.28
   },
   {
     "date": "2022-08-19",
@@ -6949,7 +8524,12 @@
     "dollarIndex": 123.0501,
     "nikkei225": 28930.33,
     "gold": null,
-    "newJobPostings": 172.24
+    "newJobPostings": 172.24,
+    "nfci": -0.232,
+    "anfci": -0.209,
+    "financialStress": -0.3638,
+    "twoYearRate": 3.25,
+    "sofr": 2.28
   },
   {
     "date": "2022-08-26",
@@ -6971,7 +8551,12 @@
     "dollarIndex": 123.0656,
     "nikkei225": 28641.38,
     "gold": null,
-    "newJobPostings": 173.86
+    "newJobPostings": 173.86,
+    "nfci": -0.219,
+    "anfci": -0.2,
+    "financialStress": -0.2025,
+    "twoYearRate": 3.37,
+    "sofr": 2.28
   },
   {
     "date": "2022-09-02",
@@ -6993,7 +8578,12 @@
     "dollarIndex": 123.7743,
     "nikkei225": 27650.84,
     "gold": null,
-    "newJobPostings": 172.1
+    "newJobPostings": 172.1,
+    "nfci": -0.198,
+    "anfci": -0.189,
+    "financialStress": -0.1324,
+    "twoYearRate": 3.4,
+    "sofr": 2.29
   },
   {
     "date": "2022-09-09",
@@ -7015,7 +8605,12 @@
     "dollarIndex": 123.7874,
     "nikkei225": 28214.75,
     "gold": null,
-    "newJobPostings": 165.8
+    "newJobPostings": 165.8,
+    "nfci": -0.171,
+    "anfci": -0.171,
+    "financialStress": -0.3075,
+    "twoYearRate": 3.56,
+    "sofr": 2.28
   },
   {
     "date": "2022-09-16",
@@ -7037,7 +8632,12 @@
     "dollarIndex": 124.8794,
     "nikkei225": 27567.65,
     "gold": null,
-    "newJobPostings": 169.66
+    "newJobPostings": 169.66,
+    "nfci": -0.142,
+    "anfci": -0.138,
+    "financialStress": -0.4342,
+    "twoYearRate": 3.85,
+    "sofr": 2.27
   },
   {
     "date": "2022-09-23",
@@ -7059,7 +8659,12 @@
     "dollarIndex": 127.2853,
     "nikkei225": 27153.83,
     "gold": null,
-    "newJobPostings": 171.05
+    "newJobPostings": 171.05,
+    "nfci": -0.116,
+    "anfci": -0.093,
+    "financialStress": 0.1354,
+    "twoYearRate": 4.2,
+    "sofr": 2.99
   },
   {
     "date": "2022-09-30",
@@ -7081,7 +8686,12 @@
     "dollarIndex": 127.5148,
     "nikkei225": 25937.21,
     "gold": null,
-    "newJobPostings": 170.52
+    "newJobPostings": 170.52,
+    "nfci": -0.096,
+    "anfci": -0.048,
+    "financialStress": 0.5218,
+    "twoYearRate": 4.22,
+    "sofr": 2.98
   },
   {
     "date": "2022-10-07",
@@ -7103,7 +8713,12 @@
     "dollarIndex": 127.3111,
     "nikkei225": 27116.11,
     "gold": null,
-    "newJobPostings": 160.41
+    "newJobPostings": 160.41,
+    "nfci": -0.089,
+    "anfci": -0.018,
+    "financialStress": 0.1751,
+    "twoYearRate": 4.3,
+    "sofr": 3.05
   },
   {
     "date": "2022-10-14",
@@ -7125,7 +8740,12 @@
     "dollarIndex": 128.3325,
     "nikkei225": 27090.76,
     "gold": null,
-    "newJobPostings": 170.12
+    "newJobPostings": 170.12,
+    "nfci": -0.09,
+    "anfci": -0.014,
+    "financialStress": 0.2896,
+    "twoYearRate": 4.48,
+    "sofr": 3.04
   },
   {
     "date": "2022-10-21",
@@ -7147,7 +8767,12 @@
     "dollarIndex": 127.6735,
     "nikkei225": 26890.58,
     "gold": null,
-    "newJobPostings": 168.99
+    "newJobPostings": 168.99,
+    "nfci": -0.101,
+    "anfci": -0.037,
+    "financialStress": -0.1467,
+    "twoYearRate": 4.49,
+    "sofr": 3.02
   },
   {
     "date": "2022-10-28",
@@ -7169,7 +8794,12 @@
     "dollarIndex": 127.2135,
     "nikkei225": 27105.2,
     "gold": null,
-    "newJobPostings": 166.4
+    "newJobPostings": 166.4,
+    "nfci": -0.117,
+    "anfci": -0.075,
+    "financialStress": -0.2858,
+    "twoYearRate": 4.41,
+    "sofr": 3.05
   },
   {
     "date": "2022-11-04",
@@ -7191,7 +8821,12 @@
     "dollarIndex": 127.1468,
     "nikkei225": 27199.74,
     "gold": null,
-    "newJobPostings": 164.7
+    "newJobPostings": 164.7,
+    "nfci": -0.136,
+    "anfci": -0.117,
+    "financialStress": -0.3818,
+    "twoYearRate": 4.66,
+    "sofr": 3.8
   },
   {
     "date": "2022-11-11",
@@ -7213,7 +8848,12 @@
     "dollarIndex": 124.7044,
     "nikkei225": 28263.57,
     "gold": null,
-    "newJobPostings": 164.47
+    "newJobPostings": 164.47,
+    "nfci": -0.153,
+    "anfci": -0.147,
+    "financialStress": -0.3165,
+    "twoYearRate": 4.34,
+    "sofr": 3.78
   },
   {
     "date": "2022-11-18",
@@ -7235,7 +8875,12 @@
     "dollarIndex": 123.8524,
     "nikkei225": 27899.77,
     "gold": null,
-    "newJobPostings": 165.05
+    "newJobPostings": 165.05,
+    "nfci": -0.167,
+    "anfci": -0.162,
+    "financialStress": -0.2084,
+    "twoYearRate": 4.51,
+    "sofr": 3.8
   },
   {
     "date": "2022-11-25",
@@ -7257,7 +8902,12 @@
     "dollarIndex": 123.3386,
     "nikkei225": 28283.03,
     "gold": null,
-    "newJobPostings": 159.54
+    "newJobPostings": 159.54,
+    "nfci": -0.176,
+    "anfci": -0.163,
+    "financialStress": -0.2186,
+    "twoYearRate": 4.42,
+    "sofr": 3.8
   },
   {
     "date": "2022-12-02",
@@ -7279,7 +8929,12 @@
     "dollarIndex": 122.0102,
     "nikkei225": 27777.9,
     "gold": null,
-    "newJobPostings": 154.76
+    "newJobPostings": 154.76,
+    "nfci": -0.181,
+    "anfci": -0.161,
+    "financialStress": -0.1072,
+    "twoYearRate": 4.28,
+    "sofr": 3.81
   },
   {
     "date": "2022-12-09",
@@ -7301,7 +8956,12 @@
     "dollarIndex": 122.4201,
     "nikkei225": 27901.01,
     "gold": null,
-    "newJobPostings": 156.24
+    "newJobPostings": 156.24,
+    "nfci": -0.184,
+    "anfci": -0.165,
+    "financialStress": 0.1341,
+    "twoYearRate": 4.33,
+    "sofr": 3.8
   },
   {
     "date": "2022-12-16",
@@ -7323,7 +8983,12 @@
     "dollarIndex": 122.6505,
     "nikkei225": 27527.12,
     "gold": null,
-    "newJobPostings": 160.89
+    "newJobPostings": 160.89,
+    "nfci": -0.19,
+    "anfci": -0.179,
+    "financialStress": 0.0159,
+    "twoYearRate": 4.17,
+    "sofr": 4.32
   },
   {
     "date": "2022-12-23",
@@ -7345,7 +9010,12 @@
     "dollarIndex": 121.9743,
     "nikkei225": 26235.25,
     "gold": null,
-    "newJobPostings": 158.64
+    "newJobPostings": 158.64,
+    "nfci": -0.201,
+    "anfci": -0.2,
+    "financialStress": 0.0275,
+    "twoYearRate": 4.31,
+    "sofr": 4.3
   },
   {
     "date": "2022-12-30",
@@ -7367,7 +9037,12 @@
     "dollarIndex": 121.4256,
     "nikkei225": 26094.5,
     "gold": null,
-    "newJobPostings": 157.82
+    "newJobPostings": 157.82,
+    "nfci": -0.218,
+    "anfci": -0.227,
+    "financialStress": -0.0387,
+    "twoYearRate": 4.41,
+    "sofr": 4.3
   },
   {
     "date": "2023-01-06",
@@ -7389,7 +9064,12 @@
     "dollarIndex": 121.0852,
     "nikkei225": 25973.85,
     "gold": null,
-    "newJobPostings": 150.78
+    "newJobPostings": 150.78,
+    "nfci": -0.241,
+    "anfci": -0.252,
+    "financialStress": -0.1552,
+    "twoYearRate": 4.24,
+    "sofr": 4.31
   },
   {
     "date": "2023-01-13",
@@ -7411,7 +9091,12 @@
     "dollarIndex": 119.1673,
     "nikkei225": 26119.52,
     "gold": null,
-    "newJobPostings": 158.66
+    "newJobPostings": 158.66,
+    "nfci": -0.266,
+    "anfci": -0.275,
+    "financialStress": -0.4107,
+    "twoYearRate": 4.22,
+    "sofr": 4.3
   },
   {
     "date": "2023-01-20",
@@ -7433,7 +9118,12 @@
     "dollarIndex": 119.3486,
     "nikkei225": 26553.53,
     "gold": null,
-    "newJobPostings": 158.7
+    "newJobPostings": 158.7,
+    "nfci": -0.287,
+    "anfci": -0.294,
+    "financialStress": -0.3819,
+    "twoYearRate": 4.14,
+    "sofr": 4.3
   },
   {
     "date": "2023-01-27",
@@ -7455,7 +9145,12 @@
     "dollarIndex": 118.9223,
     "nikkei225": 27382.56,
     "gold": null,
-    "newJobPostings": 157.22
+    "newJobPostings": 157.22,
+    "nfci": -0.304,
+    "anfci": -0.312,
+    "financialStress": -0.5072,
+    "twoYearRate": 4.19,
+    "sofr": 4.3
   },
   {
     "date": "2023-02-03",
@@ -7477,7 +9172,12 @@
     "dollarIndex": 119.5095,
     "nikkei225": 27509.46,
     "gold": null,
-    "newJobPostings": 153.84
+    "newJobPostings": 153.84,
+    "nfci": -0.312,
+    "anfci": -0.326,
+    "financialStress": -0.5446,
+    "twoYearRate": 4.3,
+    "sofr": 4.55
   },
   {
     "date": "2023-02-10",
@@ -7499,7 +9199,12 @@
     "dollarIndex": 120.1419,
     "nikkei225": 27670.98,
     "gold": null,
-    "newJobPostings": 149.42
+    "newJobPostings": 149.42,
+    "nfci": -0.308,
+    "anfci": -0.328,
+    "financialStress": -0.6114,
+    "twoYearRate": 4.5,
+    "sofr": 4.55
   },
   {
     "date": "2023-02-17",
@@ -7521,7 +9226,12 @@
     "dollarIndex": 120.5526,
     "nikkei225": 27513.13,
     "gold": null,
-    "newJobPostings": 153.76
+    "newJobPostings": 153.76,
+    "nfci": -0.293,
+    "anfci": -0.314,
+    "financialStress": -0.4688,
+    "twoYearRate": 4.6,
+    "sofr": 4.55
   },
   {
     "date": "2023-02-24",
@@ -7543,7 +9253,12 @@
     "dollarIndex": 121.5681,
     "nikkei225": 27453.48,
     "gold": null,
-    "newJobPostings": 154.53
+    "newJobPostings": 154.53,
+    "nfci": -0.267,
+    "anfci": -0.277,
+    "financialStress": -0.2295,
+    "twoYearRate": 4.78,
+    "sofr": 4.55
   },
   {
     "date": "2023-03-03",
@@ -7565,7 +9280,12 @@
     "dollarIndex": 120.7742,
     "nikkei225": 27927.47,
     "gold": null,
-    "newJobPostings": 148.72
+    "newJobPostings": 148.72,
+    "nfci": -0.235,
+    "anfci": -0.224,
+    "financialStress": -0.4439,
+    "twoYearRate": 4.86,
+    "sofr": 4.55
   },
   {
     "date": "2023-03-10",
@@ -7587,7 +9307,12 @@
     "dollarIndex": 121.2421,
     "nikkei225": 28143.97,
     "gold": null,
-    "newJobPostings": 147.02
+    "newJobPostings": 147.02,
+    "nfci": -0.202,
+    "anfci": -0.166,
+    "financialStress": -0.0815,
+    "twoYearRate": 4.6,
+    "sofr": 4.55
   },
   {
     "date": "2023-03-17",
@@ -7609,7 +9334,12 @@
     "dollarIndex": 121.5643,
     "nikkei225": 27333.79,
     "gold": null,
-    "newJobPostings": 155.68
+    "newJobPostings": 155.68,
+    "nfci": -0.17,
+    "anfci": -0.118,
+    "financialStress": 1.1197,
+    "twoYearRate": 3.81,
+    "sofr": 4.55
   },
   {
     "date": "2023-03-24",
@@ -7631,7 +9361,12 @@
     "dollarIndex": 120.4598,
     "nikkei225": 27385.25,
     "gold": null,
-    "newJobPostings": 151.8
+    "newJobPostings": 151.8,
+    "nfci": -0.151,
+    "anfci": -0.1,
+    "financialStress": 0.2775,
+    "twoYearRate": 3.76,
+    "sofr": 4.8
   },
   {
     "date": "2023-03-31",
@@ -7653,7 +9388,12 @@
     "dollarIndex": 119.3602,
     "nikkei225": 28041.48,
     "gold": null,
-    "newJobPostings": 153.71
+    "newJobPostings": 153.71,
+    "nfci": -0.147,
+    "anfci": -0.115,
+    "financialStress": -0.2684,
+    "twoYearRate": 4.06,
+    "sofr": 4.87
   },
   {
     "date": "2023-04-07",
@@ -7675,7 +9415,12 @@
     "dollarIndex": 119.3547,
     "nikkei225": 27518.31,
     "gold": null,
-    "newJobPostings": 146.23
+    "newJobPostings": 146.23,
+    "nfci": -0.15,
+    "anfci": -0.148,
+    "financialStress": -0.0822,
+    "twoYearRate": 3.97,
+    "sofr": 4.81
   },
   {
     "date": "2023-04-14",
@@ -7697,7 +9442,12 @@
     "dollarIndex": 118.8567,
     "nikkei225": 28493.47,
     "gold": null,
-    "newJobPostings": 153.18
+    "newJobPostings": 153.18,
+    "nfci": -0.161,
+    "anfci": -0.191,
+    "financialStress": -0.4819,
+    "twoYearRate": 4.08,
+    "sofr": 4.8
   },
   {
     "date": "2023-04-21",
@@ -7719,7 +9469,12 @@
     "dollarIndex": 119.3117,
     "nikkei225": 28564.37,
     "gold": null,
-    "newJobPostings": 155.03
+    "newJobPostings": 155.03,
+    "nfci": -0.175,
+    "anfci": -0.227,
+    "financialStress": -0.6582,
+    "twoYearRate": 4.17,
+    "sofr": 4.8
   },
   {
     "date": "2023-04-28",
@@ -7741,7 +9496,12 @@
     "dollarIndex": 119.2248,
     "nikkei225": 28856.44,
     "gold": null,
-    "newJobPostings": 156.51
+    "newJobPostings": 156.51,
+    "nfci": -0.187,
+    "anfci": -0.249,
+    "financialStress": -0.2824,
+    "twoYearRate": 4.04,
+    "sofr": 4.81
   },
   {
     "date": "2023-05-05",
@@ -7763,7 +9523,12 @@
     "dollarIndex": 118.5548,
     "nikkei225": 29157.95,
     "gold": null,
-    "newJobPostings": 153.32
+    "newJobPostings": 153.32,
+    "nfci": -0.196,
+    "anfci": -0.26,
+    "financialStress": -0.3261,
+    "twoYearRate": 3.92,
+    "sofr": 5.06
   },
   {
     "date": "2023-05-12",
@@ -7785,7 +9550,12 @@
     "dollarIndex": 119.3671,
     "nikkei225": 29388.3,
     "gold": null,
-    "newJobPostings": 155.01
+    "newJobPostings": 155.01,
+    "nfci": -0.204,
+    "anfci": -0.264,
+    "financialStress": -0.5079,
+    "twoYearRate": 3.98,
+    "sofr": 5.05
   },
   {
     "date": "2023-05-19",
@@ -7807,7 +9577,12 @@
     "dollarIndex": 119.7751,
     "nikkei225": 30808.35,
     "gold": null,
-    "newJobPostings": 155.24
+    "newJobPostings": 155.24,
+    "nfci": -0.209,
+    "anfci": -0.267,
+    "financialStress": -0.4445,
+    "twoYearRate": 4.28,
+    "sofr": 5.05
   },
   {
     "date": "2023-05-26",
@@ -7829,7 +9604,12 @@
     "dollarIndex": 120.6304,
     "nikkei225": 30916.31,
     "gold": null,
-    "newJobPostings": 155.61
+    "newJobPostings": 155.61,
+    "nfci": -0.212,
+    "anfci": -0.27,
+    "financialStress": -0.3225,
+    "twoYearRate": 4.54,
+    "sofr": 5.06
   },
   {
     "date": "2023-06-02",
@@ -7851,7 +9631,12 @@
     "dollarIndex": 120.0049,
     "nikkei225": 31524.22,
     "gold": null,
-    "newJobPostings": 150.87
+    "newJobPostings": 150.87,
+    "nfci": -0.214,
+    "anfci": -0.272,
+    "financialStress": -0.4637,
+    "twoYearRate": 4.5,
+    "sofr": 5.07
   },
   {
     "date": "2023-06-09",
@@ -7873,7 +9658,12 @@
     "dollarIndex": 119.4322,
     "nikkei225": 32265.17,
     "gold": null,
-    "newJobPostings": 146.05
+    "newJobPostings": 146.05,
+    "nfci": -0.215,
+    "anfci": -0.268,
+    "financialStress": -0.6943,
+    "twoYearRate": 4.59,
+    "sofr": 5.05
   },
   {
     "date": "2023-06-16",
@@ -7895,7 +9685,12 @@
     "dollarIndex": 118.4184,
     "nikkei225": 33706.08,
     "gold": null,
-    "newJobPostings": 154.14
+    "newJobPostings": 154.14,
+    "nfci": -0.217,
+    "anfci": -0.262,
+    "financialStress": -0.6078,
+    "twoYearRate": 4.7,
+    "sofr": 5.05
   },
   {
     "date": "2023-06-23",
@@ -7917,7 +9712,12 @@
     "dollarIndex": 119.152,
     "nikkei225": 32781.54,
     "gold": null,
-    "newJobPostings": 148.66
+    "newJobPostings": 148.66,
+    "nfci": -0.221,
+    "anfci": -0.259,
+    "financialStress": -0.5826,
+    "twoYearRate": 4.71,
+    "sofr": 5.05
   },
   {
     "date": "2023-06-30",
@@ -7939,7 +9739,12 @@
     "dollarIndex": 119.3606,
     "nikkei225": 33189.04,
     "gold": null,
-    "newJobPostings": 149.47
+    "newJobPostings": 149.47,
+    "nfci": -0.228,
+    "anfci": -0.259,
+    "financialStress": -0.6928,
+    "twoYearRate": 4.87,
+    "sofr": 5.09
   },
   {
     "date": "2023-07-07",
@@ -7961,7 +9766,12 @@
     "dollarIndex": 119.0761,
     "nikkei225": 32388.42,
     "gold": null,
-    "newJobPostings": 134.84
+    "newJobPostings": 134.84,
+    "nfci": -0.236,
+    "anfci": -0.269,
+    "financialStress": -0.7503,
+    "twoYearRate": 4.94,
+    "sofr": 5.06
   },
   {
     "date": "2023-07-14",
@@ -7983,7 +9793,12 @@
     "dollarIndex": 117.0463,
     "nikkei225": 32391.26,
     "gold": null,
-    "newJobPostings": 152.93
+    "newJobPostings": 152.93,
+    "nfci": -0.249,
+    "anfci": -0.286,
+    "financialStress": -0.6859,
+    "twoYearRate": 4.74,
+    "sofr": 5.05
   },
   {
     "date": "2023-07-21",
@@ -8005,7 +9820,12 @@
     "dollarIndex": 117.9418,
     "nikkei225": 32304.25,
     "gold": null,
-    "newJobPostings": 151.82
+    "newJobPostings": 151.82,
+    "nfci": -0.264,
+    "anfci": -0.304,
+    "financialStress": -0.7304,
+    "twoYearRate": 4.82,
+    "sofr": 5.05
   },
   {
     "date": "2023-07-28",
@@ -8027,7 +9847,12 @@
     "dollarIndex": 117.788,
     "nikkei225": 32759.23,
     "gold": null,
-    "newJobPostings": 149.25
+    "newJobPostings": 149.25,
+    "nfci": -0.28,
+    "anfci": -0.318,
+    "financialStress": -0.7574,
+    "twoYearRate": 4.87,
+    "sofr": 5.3
   },
   {
     "date": "2023-08-04",
@@ -8049,7 +9874,12 @@
     "dollarIndex": 118.821,
     "nikkei225": 32192.75,
     "gold": null,
-    "newJobPostings": 146.34
+    "newJobPostings": 146.34,
+    "nfci": -0.297,
+    "anfci": -0.326,
+    "financialStress": -0.717,
+    "twoYearRate": 4.78,
+    "sofr": 5.3
   },
   {
     "date": "2023-08-11",
@@ -8071,7 +9901,12 @@
     "dollarIndex": 119.6268,
     "nikkei225": 32473.65,
     "gold": null,
-    "newJobPostings": 147.77
+    "newJobPostings": 147.77,
+    "nfci": -0.313,
+    "anfci": -0.326,
+    "financialStress": -0.6547,
+    "twoYearRate": 4.89,
+    "sofr": 5.3
   },
   {
     "date": "2023-08-18",
@@ -8093,7 +9928,12 @@
     "dollarIndex": 120.4321,
     "nikkei225": 31450.76,
     "gold": null,
-    "newJobPostings": 150.64
+    "newJobPostings": 150.64,
+    "nfci": -0.325,
+    "anfci": -0.322,
+    "financialStress": -0.6208,
+    "twoYearRate": 4.92,
+    "sofr": 5.3
   },
   {
     "date": "2023-08-25",
@@ -8115,7 +9955,12 @@
     "dollarIndex": 120.5137,
     "nikkei225": 31624.28,
     "gold": null,
-    "newJobPostings": 146.67
+    "newJobPostings": 146.67,
+    "nfci": -0.333,
+    "anfci": -0.318,
+    "financialStress": -0.6749,
+    "twoYearRate": 5.03,
+    "sofr": 5.3
   },
   {
     "date": "2023-09-01",
@@ -8137,7 +9982,12 @@
     "dollarIndex": 120.759,
     "nikkei225": 32710.62,
     "gold": null,
-    "newJobPostings": 148.29
+    "newJobPostings": 148.29,
+    "nfci": -0.338,
+    "anfci": -0.316,
+    "financialStress": -0.6834,
+    "twoYearRate": 4.87,
+    "sofr": 5.31
   },
   {
     "date": "2023-09-08",
@@ -8159,7 +10009,12 @@
     "dollarIndex": 121.9475,
     "nikkei225": 32606.84,
     "gold": null,
-    "newJobPostings": 140.77
+    "newJobPostings": 140.77,
+    "nfci": -0.338,
+    "anfci": -0.313,
+    "financialStress": -0.7137,
+    "twoYearRate": 4.98,
+    "sofr": 5.3
   },
   {
     "date": "2023-09-15",
@@ -8181,7 +10036,12 @@
     "dollarIndex": 121.199,
     "nikkei225": 33533.09,
     "gold": null,
-    "newJobPostings": 157.13
+    "newJobPostings": 157.13,
+    "nfci": -0.333,
+    "anfci": -0.309,
+    "financialStress": -0.7083,
+    "twoYearRate": 5.02,
+    "sofr": 5.31
   },
   {
     "date": "2023-09-22",
@@ -8203,7 +10063,12 @@
     "dollarIndex": 121.5306,
     "nikkei225": 32402.41,
     "gold": null,
-    "newJobPostings": 145.66
+    "newJobPostings": 145.66,
+    "nfci": -0.323,
+    "anfci": -0.301,
+    "financialStress": -0.716,
+    "twoYearRate": 5.1,
+    "sofr": 5.3
   },
   {
     "date": "2023-09-29",
@@ -8225,7 +10090,12 @@
     "dollarIndex": 122.3077,
     "nikkei225": 31857.62,
     "gold": null,
-    "newJobPostings": 147.31
+    "newJobPostings": 147.31,
+    "nfci": -0.311,
+    "anfci": -0.288,
+    "financialStress": -0.4981,
+    "twoYearRate": 5.03,
+    "sofr": 5.31
   },
   {
     "date": "2023-10-06",
@@ -8247,7 +10117,12 @@
     "dollarIndex": 123.3563,
     "nikkei225": 30994.67,
     "gold": null,
-    "newJobPostings": 142.96
+    "newJobPostings": 142.96,
+    "nfci": -0.299,
+    "anfci": -0.276,
+    "financialStress": -0.4265,
+    "twoYearRate": 5.08,
+    "sofr": 5.31
   },
   {
     "date": "2023-10-13",
@@ -8269,7 +10144,12 @@
     "dollarIndex": 123.5954,
     "nikkei225": 32315.99,
     "gold": null,
-    "newJobPostings": 151.67
+    "newJobPostings": 151.67,
+    "nfci": -0.29,
+    "anfci": -0.267,
+    "financialStress": -0.5311,
+    "twoYearRate": 5.04,
+    "sofr": 5.31
   },
   {
     "date": "2023-10-20",
@@ -8291,7 +10171,12 @@
     "dollarIndex": 123.612,
     "nikkei225": 31259.36,
     "gold": null,
-    "newJobPostings": 147.06
+    "newJobPostings": 147.06,
+    "nfci": -0.284,
+    "anfci": -0.267,
+    "financialStress": -0.3292,
+    "twoYearRate": 5.07,
+    "sofr": 5.3
   },
   {
     "date": "2023-10-27",
@@ -8313,7 +10198,12 @@
     "dollarIndex": 123.62,
     "nikkei225": 30991.69,
     "gold": null,
-    "newJobPostings": 144.59
+    "newJobPostings": 144.59,
+    "nfci": -0.283,
+    "anfci": -0.278,
+    "financialStress": -0.3403,
+    "twoYearRate": 4.99,
+    "sofr": 5.31
   },
   {
     "date": "2023-11-03",
@@ -8335,7 +10225,12 @@
     "dollarIndex": 121.7564,
     "nikkei225": 31949.89,
     "gold": null,
-    "newJobPostings": 153.41
+    "newJobPostings": 153.41,
+    "nfci": -0.288,
+    "anfci": -0.297,
+    "financialStress": -0.5977,
+    "twoYearRate": 4.83,
+    "sofr": 5.32
   },
   {
     "date": "2023-11-10",
@@ -8357,7 +10252,12 @@
     "dollarIndex": 122.1281,
     "nikkei225": 32568.11,
     "gold": null,
-    "newJobPostings": 143.36
+    "newJobPostings": 143.36,
+    "nfci": -0.297,
+    "anfci": -0.319,
+    "financialStress": -0.721,
+    "twoYearRate": 5.04,
+    "sofr": 5.32
   },
   {
     "date": "2023-11-17",
@@ -8379,7 +10279,12 @@
     "dollarIndex": 120.8477,
     "nikkei225": 33585.2,
     "gold": null,
-    "newJobPostings": 142.35
+    "newJobPostings": 142.35,
+    "nfci": -0.308,
+    "anfci": -0.34,
+    "financialStress": -0.6143,
+    "twoYearRate": 4.88,
+    "sofr": 5.32
   },
   {
     "date": "2023-11-24",
@@ -8401,7 +10306,12 @@
     "dollarIndex": 120.2105,
     "nikkei225": 33625.53,
     "gold": null,
-    "newJobPostings": 135.54
+    "newJobPostings": 135.54,
+    "nfci": -0.32,
+    "anfci": -0.356,
+    "financialStress": -0.7262,
+    "twoYearRate": 4.92,
+    "sofr": 5.32
   },
   {
     "date": "2023-12-01",
@@ -8423,7 +10333,12 @@
     "dollarIndex": 119.9424,
     "nikkei225": 33431.51,
     "gold": null,
-    "newJobPostings": 131.75
+    "newJobPostings": 131.75,
+    "nfci": -0.331,
+    "anfci": -0.366,
+    "financialStress": -0.5233,
+    "twoYearRate": 4.56,
+    "sofr": 5.39
   },
   {
     "date": "2023-12-08",
@@ -8445,7 +10360,12 @@
     "dollarIndex": 120.7607,
     "nikkei225": 32307.86,
     "gold": null,
-    "newJobPostings": 141.76
+    "newJobPostings": 141.76,
+    "nfci": -0.34,
+    "anfci": -0.373,
+    "financialStress": -0.4896,
+    "twoYearRate": 4.71,
+    "sofr": 5.32
   },
   {
     "date": "2023-12-15",
@@ -8467,7 +10387,12 @@
     "dollarIndex": 119.7382,
     "nikkei225": 32970.55,
     "gold": null,
-    "newJobPostings": 141.7
+    "newJobPostings": 141.7,
+    "nfci": -0.349,
+    "anfci": -0.38,
+    "financialStress": -0.5997,
+    "twoYearRate": 4.44,
+    "sofr": 5.32
   },
   {
     "date": "2023-12-22",
@@ -8489,7 +10414,12 @@
     "dollarIndex": 119.0625,
     "nikkei225": 33169.05,
     "gold": null,
-    "newJobPostings": 137.18
+    "newJobPostings": 137.18,
+    "nfci": -0.359,
+    "anfci": -0.39,
+    "financialStress": -0.427,
+    "twoYearRate": 4.31,
+    "sofr": 5.32
   },
   {
     "date": "2023-12-29",
@@ -8511,7 +10441,12 @@
     "dollarIndex": 118.4208,
     "nikkei225": 33464.17,
     "gold": null,
-    "newJobPostings": 139.42
+    "newJobPostings": 139.42,
+    "nfci": -0.367,
+    "anfci": -0.401,
+    "financialStress": -0.4115,
+    "twoYearRate": 4.23,
+    "sofr": 5.38
   },
   {
     "date": "2024-01-05",
@@ -8533,7 +10468,12 @@
     "dollarIndex": 119.388,
     "nikkei225": 33377.42,
     "gold": null,
-    "newJobPostings": 131.67
+    "newJobPostings": 131.67,
+    "nfci": -0.375,
+    "anfci": -0.413,
+    "financialStress": -0.5566,
+    "twoYearRate": 4.4,
+    "sofr": 5.31
   },
   {
     "date": "2024-01-12",
@@ -8555,7 +10495,12 @@
     "dollarIndex": 119.534,
     "nikkei225": 35577.11,
     "gold": null,
-    "newJobPostings": 149.94
+    "newJobPostings": 149.94,
+    "nfci": -0.383,
+    "anfci": -0.424,
+    "financialStress": -0.7053,
+    "twoYearRate": 4.14,
+    "sofr": 5.31
   },
   {
     "date": "2024-01-19",
@@ -8577,7 +10522,12 @@
     "dollarIndex": 120.6442,
     "nikkei225": 35963.27,
     "gold": null,
-    "newJobPostings": 139.81
+    "newJobPostings": 139.81,
+    "nfci": -0.39,
+    "anfci": -0.431,
+    "financialStress": -0.806,
+    "twoYearRate": 4.39,
+    "sofr": 5.31
   },
   {
     "date": "2024-01-26",
@@ -8599,7 +10549,12 @@
     "dollarIndex": 120.6173,
     "nikkei225": 35751.07,
     "gold": null,
-    "newJobPostings": 136.25
+    "newJobPostings": 136.25,
+    "nfci": -0.396,
+    "anfci": -0.434,
+    "financialStress": -0.8289,
+    "twoYearRate": 4.34,
+    "sofr": 5.32
   },
   {
     "date": "2024-02-02",
@@ -8621,7 +10576,12 @@
     "dollarIndex": 120.902,
     "nikkei225": 36158.02,
     "gold": null,
-    "newJobPostings": 135.55
+    "newJobPostings": 135.55,
+    "nfci": -0.404,
+    "anfci": -0.438,
+    "financialStress": -0.7472,
+    "twoYearRate": 4.36,
+    "sofr": 5.32
   },
   {
     "date": "2024-02-09",
@@ -8643,7 +10603,12 @@
     "dollarIndex": 121.039,
     "nikkei225": 36897.42,
     "gold": null,
-    "newJobPostings": 136.34
+    "newJobPostings": 136.34,
+    "nfci": -0.411,
+    "anfci": -0.442,
+    "financialStress": -0.599,
+    "twoYearRate": 4.48,
+    "sofr": 5.31
   },
   {
     "date": "2024-02-16",
@@ -8665,7 +10630,12 @@
     "dollarIndex": 121.1505,
     "nikkei225": 38487.24,
     "gold": null,
-    "newJobPostings": 139.44
+    "newJobPostings": 139.44,
+    "nfci": -0.419,
+    "anfci": -0.45,
+    "financialStress": -0.6433,
+    "twoYearRate": 4.64,
+    "sofr": 5.3
   },
   {
     "date": "2024-02-23",
@@ -8687,7 +10657,12 @@
     "dollarIndex": 121.0369,
     "nikkei225": 39098.68,
     "gold": null,
-    "newJobPostings": 137.92
+    "newJobPostings": 137.92,
+    "nfci": -0.427,
+    "anfci": -0.461,
+    "financialStress": -0.6691,
+    "twoYearRate": 4.67,
+    "sofr": 5.31
   },
   {
     "date": "2024-03-01",
@@ -8709,7 +10684,12 @@
     "dollarIndex": 121.0111,
     "nikkei225": 39910.82,
     "gold": null,
-    "newJobPostings": 137.21
+    "newJobPostings": 137.21,
+    "nfci": -0.434,
+    "anfci": -0.475,
+    "financialStress": -0.7854,
+    "twoYearRate": 4.54,
+    "sofr": 5.31
   },
   {
     "date": "2024-03-08",
@@ -8731,7 +10711,12 @@
     "dollarIndex": 119.975,
     "nikkei225": 39688.94,
     "gold": null,
-    "newJobPostings": 135.54
+    "newJobPostings": 135.54,
+    "nfci": -0.438,
+    "anfci": -0.488,
+    "financialStress": -0.7831,
+    "twoYearRate": 4.48,
+    "sofr": 5.31
   },
   {
     "date": "2024-03-15",
@@ -8753,7 +10738,12 @@
     "dollarIndex": 120.4003,
     "nikkei225": 38707.64,
     "gold": null,
-    "newJobPostings": 138.32
+    "newJobPostings": 138.32,
+    "nfci": -0.44,
+    "anfci": -0.498,
+    "financialStress": -0.9213,
+    "twoYearRate": 4.72,
+    "sofr": 5.31
   },
   {
     "date": "2024-03-22",
@@ -8775,7 +10765,12 @@
     "dollarIndex": 121.1842,
     "nikkei225": 40888.43,
     "gold": null,
-    "newJobPostings": 134.68
+    "newJobPostings": 134.68,
+    "nfci": -0.438,
+    "anfci": -0.502,
+    "financialStress": -0.9395,
+    "twoYearRate": 4.59,
+    "sofr": 5.31
   },
   {
     "date": "2024-03-29",
@@ -8797,7 +10792,12 @@
     "dollarIndex": 121.0191,
     "nikkei225": 40369.44,
     "gold": null,
-    "newJobPostings": 134
+    "newJobPostings": 134,
+    "nfci": -0.433,
+    "anfci": -0.5,
+    "financialStress": -0.9273,
+    "twoYearRate": 4.59,
+    "sofr": 5.34
   },
   {
     "date": "2024-04-05",
@@ -8819,7 +10819,12 @@
     "dollarIndex": 120.9646,
     "nikkei225": 38992.08,
     "gold": null,
-    "newJobPostings": 124.84
+    "newJobPostings": 124.84,
+    "nfci": -0.428,
+    "anfci": -0.493,
+    "financialStress": -0.8437,
+    "twoYearRate": 4.73,
+    "sofr": 5.32
   },
   {
     "date": "2024-04-12",
@@ -8841,7 +10846,12 @@
     "dollarIndex": 122.2885,
     "nikkei225": 39523.55,
     "gold": null,
-    "newJobPostings": 128.24
+    "newJobPostings": 128.24,
+    "nfci": -0.422,
+    "anfci": -0.484,
+    "financialStress": -0.7934,
+    "twoYearRate": 4.88,
+    "sofr": 5.31
   },
   {
     "date": "2024-04-19",
@@ -8863,7 +10873,12 @@
     "dollarIndex": 123.1075,
     "nikkei225": 37068.35,
     "gold": null,
-    "newJobPostings": 130.96
+    "newJobPostings": 130.96,
+    "nfci": -0.416,
+    "anfci": -0.478,
+    "financialStress": -0.4168,
+    "twoYearRate": 4.97,
+    "sofr": 5.31
   },
   {
     "date": "2024-04-26",
@@ -8885,7 +10900,12 @@
     "dollarIndex": 122.9471,
     "nikkei225": 37934.76,
     "gold": null,
-    "newJobPostings": 136.1
+    "newJobPostings": 136.1,
+    "nfci": -0.414,
+    "anfci": -0.477,
+    "financialStress": -0.8359,
+    "twoYearRate": 4.96,
+    "sofr": 5.32
   },
   {
     "date": "2024-05-03",
@@ -8907,7 +10927,12 @@
     "dollarIndex": 122.1375,
     "nikkei225": 38236.07,
     "gold": null,
-    "newJobPostings": 127.94
+    "newJobPostings": 127.94,
+    "nfci": -0.414,
+    "anfci": -0.481,
+    "financialStress": -0.8233,
+    "twoYearRate": 4.81,
+    "sofr": 5.31
   },
   {
     "date": "2024-05-10",
@@ -8929,7 +10954,12 @@
     "dollarIndex": 122.014,
     "nikkei225": 38229.11,
     "gold": null,
-    "newJobPostings": 123.64
+    "newJobPostings": 123.64,
+    "nfci": -0.414,
+    "anfci": -0.487,
+    "financialStress": -0.9136,
+    "twoYearRate": 4.87,
+    "sofr": 5.31
   },
   {
     "date": "2024-05-17",
@@ -8951,7 +10981,12 @@
     "dollarIndex": 121.2354,
     "nikkei225": 38787.38,
     "gold": null,
-    "newJobPostings": 127.38
+    "newJobPostings": 127.38,
+    "nfci": -0.414,
+    "anfci": -0.49,
+    "financialStress": -0.9032,
+    "twoYearRate": 4.83,
+    "sofr": 5.31
   },
   {
     "date": "2024-05-24",
@@ -8973,7 +11008,12 @@
     "dollarIndex": 121.6172,
     "nikkei225": 38646.11,
     "gold": null,
-    "newJobPostings": 127.17
+    "newJobPostings": 127.17,
+    "nfci": -0.413,
+    "anfci": -0.487,
+    "financialStress": -0.9564,
+    "twoYearRate": 4.93,
+    "sofr": 5.32
   },
   {
     "date": "2024-05-31",
@@ -8995,7 +11035,12 @@
     "dollarIndex": 122.098,
     "nikkei225": 38487.9,
     "gold": null,
-    "newJobPostings": 126.57
+    "newJobPostings": 126.57,
+    "nfci": -0.409,
+    "anfci": -0.475,
+    "financialStress": -0.8488,
+    "twoYearRate": 4.89,
+    "sofr": 5.34
   },
   {
     "date": "2024-06-07",
@@ -9017,7 +11062,12 @@
     "dollarIndex": 123.549,
     "nikkei225": 38683.93,
     "gold": null,
-    "newJobPostings": 125.04
+    "newJobPostings": 125.04,
+    "nfci": -0.403,
+    "anfci": -0.459,
+    "financialStress": -0.8322,
+    "twoYearRate": 4.87,
+    "sofr": 5.33
   },
   {
     "date": "2024-06-14",
@@ -9039,7 +11089,12 @@
     "dollarIndex": 124.1694,
     "nikkei225": 38814.56,
     "gold": null,
-    "newJobPostings": 119.45
+    "newJobPostings": 119.45,
+    "nfci": -0.396,
+    "anfci": -0.443,
+    "financialStress": -0.8641,
+    "twoYearRate": 4.67,
+    "sofr": 5.31
   },
   {
     "date": "2024-06-21",
@@ -9061,7 +11116,12 @@
     "dollarIndex": 124.1086,
     "nikkei225": 38596.47,
     "gold": null,
-    "newJobPostings": 125.96
+    "newJobPostings": 125.96,
+    "nfci": -0.388,
+    "anfci": -0.431,
+    "financialStress": -0.8243,
+    "twoYearRate": 4.7,
+    "sofr": 5.31
   },
   {
     "date": "2024-06-28",
@@ -9083,7 +11143,12 @@
     "dollarIndex": 124.2103,
     "nikkei225": 39583.08,
     "gold": null,
-    "newJobPostings": 129.45
+    "newJobPostings": 129.45,
+    "nfci": -0.381,
+    "anfci": -0.422,
+    "financialStress": -0.8324,
+    "twoYearRate": 4.71,
+    "sofr": 5.33
   },
   {
     "date": "2024-07-05",
@@ -9105,7 +11170,12 @@
     "dollarIndex": 123.4762,
     "nikkei225": 40912.37,
     "gold": null,
-    "newJobPostings": 126.53
+    "newJobPostings": 126.53,
+    "nfci": -0.375,
+    "anfci": -0.418,
+    "financialStress": -0.8259,
+    "twoYearRate": 4.6,
+    "sofr": 5.32
   },
   {
     "date": "2024-07-12",
@@ -9127,7 +11197,12 @@
     "dollarIndex": 122.4404,
     "nikkei225": 41190.68,
     "gold": null,
-    "newJobPostings": 113.84
+    "newJobPostings": 113.84,
+    "nfci": -0.369,
+    "anfci": -0.412,
+    "financialStress": -0.8219,
+    "twoYearRate": 4.45,
+    "sofr": 5.34
   },
   {
     "date": "2024-07-19",
@@ -9149,7 +11224,12 @@
     "dollarIndex": 123.147,
     "nikkei225": 40063.79,
     "gold": null,
-    "newJobPostings": 119.38
+    "newJobPostings": 119.38,
+    "nfci": -0.364,
+    "anfci": -0.405,
+    "financialStress": -0.6578,
+    "twoYearRate": 4.49,
+    "sofr": 5.34
   },
   {
     "date": "2024-07-26",
@@ -9171,7 +11251,12 @@
     "dollarIndex": 123.672,
     "nikkei225": 37667.41,
     "gold": null,
-    "newJobPostings": 122.4
+    "newJobPostings": 122.4,
+    "nfci": -0.361,
+    "anfci": -0.398,
+    "financialStress": -0.6185,
+    "twoYearRate": 4.36,
+    "sofr": 5.35
   },
   {
     "date": "2024-08-02",
@@ -9193,7 +11278,12 @@
     "dollarIndex": 123.4681,
     "nikkei225": 35909.7,
     "gold": null,
-    "newJobPostings": 121.36
+    "newJobPostings": 121.36,
+    "nfci": -0.359,
+    "anfci": -0.394,
+    "financialStress": -0.3287,
+    "twoYearRate": 3.88,
+    "sofr": 5.35
   },
   {
     "date": "2024-08-09",
@@ -9215,7 +11305,12 @@
     "dollarIndex": 122.9276,
     "nikkei225": 35025,
     "gold": null,
-    "newJobPostings": 114.42
+    "newJobPostings": 114.42,
+    "nfci": -0.36,
+    "anfci": -0.396,
+    "financialStress": -0.1522,
+    "twoYearRate": 4.05,
+    "sofr": 5.34
   },
   {
     "date": "2024-08-16",
@@ -9237,7 +11332,12 @@
     "dollarIndex": 122.3972,
     "nikkei225": 38062.67,
     "gold": null,
-    "newJobPostings": 114.7
+    "newJobPostings": 114.7,
+    "nfci": -0.369,
+    "anfci": -0.409,
+    "financialStress": -0.7313,
+    "twoYearRate": 4.06,
+    "sofr": 5.32
   },
   {
     "date": "2024-08-23",
@@ -9259,7 +11359,12 @@
     "dollarIndex": 121.4597,
     "nikkei225": 38364.27,
     "gold": null,
-    "newJobPostings": 120.39
+    "newJobPostings": 120.39,
+    "nfci": -0.38,
+    "anfci": -0.427,
+    "financialStress": -0.6405,
+    "twoYearRate": 3.9,
+    "sofr": 5.33
   },
   {
     "date": "2024-08-30",
@@ -9281,7 +11386,12 @@
     "dollarIndex": 122.3262,
     "nikkei225": 38647.75,
     "gold": null,
-    "newJobPostings": 121.2
+    "newJobPostings": 121.2,
+    "nfci": -0.391,
+    "anfci": -0.447,
+    "financialStress": -0.6449,
+    "twoYearRate": 3.91,
+    "sofr": 5.32
   },
   {
     "date": "2024-09-06",
@@ -9303,7 +11413,12 @@
     "dollarIndex": 122.4991,
     "nikkei225": 36391.47,
     "gold": null,
-    "newJobPostings": 113.22
+    "newJobPostings": 113.22,
+    "nfci": -0.403,
+    "anfci": -0.467,
+    "financialStress": -0.3825,
+    "twoYearRate": 3.66,
+    "sofr": 5.34
   },
   {
     "date": "2024-09-13",
@@ -9325,7 +11440,12 @@
     "dollarIndex": 121.6551,
     "nikkei225": 36581.76,
     "gold": null,
-    "newJobPostings": 125.41
+    "newJobPostings": 125.41,
+    "nfci": -0.413,
+    "anfci": -0.482,
+    "financialStress": -0.3066,
+    "twoYearRate": 3.57,
+    "sofr": 5.33
   },
   {
     "date": "2024-09-20",
@@ -9347,7 +11467,12 @@
     "dollarIndex": 121.4052,
     "nikkei225": 37723.91,
     "gold": null,
-    "newJobPostings": 120.24
+    "newJobPostings": 120.24,
+    "nfci": -0.421,
+    "anfci": -0.493,
+    "financialStress": -0.4383,
+    "twoYearRate": 3.55,
+    "sofr": 4.83
   },
   {
     "date": "2024-09-27",
@@ -9369,7 +11494,12 @@
     "dollarIndex": 121.1111,
     "nikkei225": 39829.56,
     "gold": null,
-    "newJobPostings": 121.37
+    "newJobPostings": 121.37,
+    "nfci": -0.428,
+    "anfci": -0.501,
+    "financialStress": -0.2668,
+    "twoYearRate": 3.55,
+    "sofr": 4.84
   },
   {
     "date": "2024-10-04",
@@ -9391,7 +11521,12 @@
     "dollarIndex": 122.2197,
     "nikkei225": 38635.62,
     "gold": null,
-    "newJobPostings": 114.35
+    "newJobPostings": 114.35,
+    "nfci": -0.432,
+    "anfci": -0.51,
+    "financialStress": -0.6076,
+    "twoYearRate": 3.93,
+    "sofr": 4.83
   },
   {
     "date": "2024-10-11",
@@ -9413,7 +11548,12 @@
     "dollarIndex": 122.9805,
     "nikkei225": 39605.8,
     "gold": null,
-    "newJobPostings": 111.62
+    "newJobPostings": 111.62,
+    "nfci": -0.436,
+    "anfci": -0.517,
+    "financialStress": -0.5895,
+    "twoYearRate": 3.95,
+    "sofr": 4.81
   },
   {
     "date": "2024-10-18",
@@ -9435,7 +11575,12 @@
     "dollarIndex": 123.9185,
     "nikkei225": 38981.75,
     "gold": null,
-    "newJobPostings": 114
+    "newJobPostings": 114,
+    "nfci": -0.441,
+    "anfci": -0.526,
+    "financialStress": -0.5279,
+    "twoYearRate": 3.95,
+    "sofr": 4.84
   },
   {
     "date": "2024-10-25",
@@ -9457,7 +11602,12 @@
     "dollarIndex": 124.6105,
     "nikkei225": 37913.92,
     "gold": null,
-    "newJobPostings": 117.79
+    "newJobPostings": 117.79,
+    "nfci": -0.446,
+    "anfci": -0.535,
+    "financialStress": -0.3834,
+    "twoYearRate": 4.11,
+    "sofr": 4.83
   },
   {
     "date": "2024-11-01",
@@ -9479,7 +11629,12 @@
     "dollarIndex": 124.8076,
     "nikkei225": 38053.67,
     "gold": null,
-    "newJobPostings": 117.35
+    "newJobPostings": 117.35,
+    "nfci": -0.452,
+    "anfci": -0.544,
+    "financialStress": -0.29,
+    "twoYearRate": 4.21,
+    "sofr": 4.86
   },
   {
     "date": "2024-11-08",
@@ -9501,7 +11656,12 @@
     "dollarIndex": 125.5811,
     "nikkei225": 39500.37,
     "gold": null,
-    "newJobPostings": 107.25
+    "newJobPostings": 107.25,
+    "nfci": -0.46,
+    "anfci": -0.554,
+    "financialStress": -0.5594,
+    "twoYearRate": 4.26,
+    "sofr": 4.6
   },
   {
     "date": "2024-11-15",
@@ -9523,7 +11683,12 @@
     "dollarIndex": 126.8848,
     "nikkei225": 38642.91,
     "gold": null,
-    "newJobPostings": 108.52
+    "newJobPostings": 108.52,
+    "nfci": -0.468,
+    "anfci": -0.562,
+    "financialStress": -0.7978,
+    "twoYearRate": 4.31,
+    "sofr": 4.57
   },
   {
     "date": "2024-11-22",
@@ -9545,7 +11710,12 @@
     "dollarIndex": 127.4712,
     "nikkei225": 38283.85,
     "gold": null,
-    "newJobPostings": 113.53
+    "newJobPostings": 113.53,
+    "nfci": -0.473,
+    "anfci": -0.565,
+    "financialStress": -0.6066,
+    "twoYearRate": 4.37,
+    "sofr": 4.57
   },
   {
     "date": "2024-11-29",
@@ -9567,7 +11737,12 @@
     "dollarIndex": 126.5798,
     "nikkei225": 38208.03,
     "gold": null,
-    "newJobPostings": 126.62
+    "newJobPostings": 126.62,
+    "nfci": -0.477,
+    "anfci": -0.564,
+    "financialStress": -0.608,
+    "twoYearRate": 4.13,
+    "sofr": 4.59
   },
   {
     "date": "2024-12-06",
@@ -9589,7 +11764,12 @@
     "dollarIndex": 126.688,
     "nikkei225": 39091.17,
     "gold": null,
-    "newJobPostings": 94.46
+    "newJobPostings": 94.46,
+    "nfci": -0.479,
+    "anfci": -0.558,
+    "financialStress": -0.521,
+    "twoYearRate": 4.1,
+    "sofr": 4.6
   },
   {
     "date": "2024-12-13",
@@ -9611,7 +11791,12 @@
     "dollarIndex": 127.3096,
     "nikkei225": 39470.44,
     "gold": null,
-    "newJobPostings": 111.11
+    "newJobPostings": 111.11,
+    "nfci": -0.481,
+    "anfci": -0.551,
+    "financialStress": -0.5764,
+    "twoYearRate": 4.25,
+    "sofr": 4.6
   },
   {
     "date": "2024-12-20",
@@ -9633,7 +11818,12 @@
     "dollarIndex": 127.893,
     "nikkei225": 38701.9,
     "gold": null,
-    "newJobPostings": 117.95
+    "newJobPostings": 117.95,
+    "nfci": -0.482,
+    "anfci": -0.546,
+    "financialStress": -0.4957,
+    "twoYearRate": 4.3,
+    "sofr": 4.3
   },
   {
     "date": "2024-12-27",
@@ -9655,7 +11845,12 @@
     "dollarIndex": 128.45,
     "nikkei225": 40281.16,
     "gold": null,
-    "newJobPostings": 118.77
+    "newJobPostings": 118.77,
+    "nfci": -0.486,
+    "anfci": -0.546,
+    "financialStress": -0.6204,
+    "twoYearRate": 4.31,
+    "sofr": 4.46
   },
   {
     "date": "2025-01-03",
@@ -9677,7 +11872,12 @@
     "dollarIndex": 129.4535,
     "nikkei225": 39894.54,
     "gold": null,
-    "newJobPostings": 110.82
+    "newJobPostings": 110.82,
+    "nfci": -0.49,
+    "anfci": -0.549,
+    "financialStress": -0.6138,
+    "twoYearRate": 4.28,
+    "sofr": 4.31
   },
   {
     "date": "2025-01-10",
@@ -9699,7 +11899,12 @@
     "dollarIndex": 129.8664,
     "nikkei225": 39190.4,
     "gold": null,
-    "newJobPostings": 108.42
+    "newJobPostings": 108.42,
+    "nfci": -0.496,
+    "anfci": -0.555,
+    "financialStress": -0.7972,
+    "twoYearRate": 4.4,
+    "sofr": 4.3
   },
   {
     "date": "2025-01-17",
@@ -9721,7 +11926,12 @@
     "dollarIndex": 129.4859,
     "nikkei225": 38451.46,
     "gold": null,
-    "newJobPostings": 114.47
+    "newJobPostings": 114.47,
+    "nfci": -0.501,
+    "anfci": -0.558,
+    "financialStress": -0.8196,
+    "twoYearRate": 4.27,
+    "sofr": 4.29
   },
   {
     "date": "2025-01-24",
@@ -9743,7 +11953,12 @@
     "dollarIndex": 127.4611,
     "nikkei225": 39931.98,
     "gold": null,
-    "newJobPostings": 118.75
+    "newJobPostings": 118.75,
+    "nfci": -0.506,
+    "anfci": -0.556,
+    "financialStress": -0.9666,
+    "twoYearRate": 4.27,
+    "sofr": 4.34
   },
   {
     "date": "2025-01-31",
@@ -9765,7 +11980,12 @@
     "dollarIndex": 128.4828,
     "nikkei225": 39572.49,
     "gold": null,
-    "newJobPostings": 113.03
+    "newJobPostings": 113.03,
+    "nfci": -0.509,
+    "anfci": -0.548,
+    "financialStress": -0.7536,
+    "twoYearRate": 4.22,
+    "sofr": 4.38
   },
   {
     "date": "2025-02-07",
@@ -9787,7 +12007,12 @@
     "dollarIndex": 128.4292,
     "nikkei225": 38787.02,
     "gold": null,
-    "newJobPostings": 110.42
+    "newJobPostings": 110.42,
+    "nfci": -0.508,
+    "anfci": -0.532,
+    "financialStress": -0.776,
+    "twoYearRate": 4.29,
+    "sofr": 4.35
   },
   {
     "date": "2025-02-14",
@@ -9809,7 +12034,12 @@
     "dollarIndex": 127.1491,
     "nikkei225": 39149.43,
     "gold": null,
-    "newJobPostings": 111.5
+    "newJobPostings": 111.5,
+    "nfci": -0.504,
+    "anfci": -0.514,
+    "financialStress": -0.8248,
+    "twoYearRate": 4.26,
+    "sofr": 4.33
   },
   {
     "date": "2025-02-21",
@@ -9831,7 +12061,12 @@
     "dollarIndex": 127.1408,
     "nikkei225": 38776.94,
     "gold": null,
-    "newJobPostings": 112.75
+    "newJobPostings": 112.75,
+    "nfci": -0.494,
+    "anfci": -0.498,
+    "financialStress": -0.7536,
+    "twoYearRate": 4.19,
+    "sofr": 4.34
   },
   {
     "date": "2025-02-28",
@@ -9853,7 +12088,12 @@
     "dollarIndex": 128.2805,
     "nikkei225": 37155.5,
     "gold": null,
-    "newJobPostings": 112.15
+    "newJobPostings": 112.15,
+    "nfci": -0.48,
+    "anfci": -0.486,
+    "financialStress": -0.4416,
+    "twoYearRate": 3.99,
+    "sofr": 4.39
   },
   {
     "date": "2025-03-07",
@@ -9875,7 +12115,12 @@
     "dollarIndex": 125.9814,
     "nikkei225": 36887.17,
     "gold": null,
-    "newJobPostings": 104.42
+    "newJobPostings": 104.42,
+    "nfci": -0.463,
+    "anfci": -0.477,
+    "financialStress": -0.346,
+    "twoYearRate": 3.99,
+    "sofr": 4.34
   },
   {
     "date": "2025-03-14",
@@ -9897,7 +12142,12 @@
     "dollarIndex": 125.6942,
     "nikkei225": 37053.1,
     "gold": null,
-    "newJobPostings": 105.69
+    "newJobPostings": 105.69,
+    "nfci": -0.445,
+    "anfci": -0.469,
+    "financialStress": -0.2073,
+    "twoYearRate": 4.02,
+    "sofr": 4.3
   },
   {
     "date": "2025-03-21",
@@ -9919,7 +12169,12 @@
     "dollarIndex": 126.2679,
     "nikkei225": 37677.06,
     "gold": null,
-    "newJobPostings": 109.62
+    "newJobPostings": 109.62,
+    "nfci": -0.426,
+    "anfci": -0.459,
+    "financialStress": -0.637,
+    "twoYearRate": 3.94,
+    "sofr": 4.3
   },
   {
     "date": "2025-03-28",
@@ -9941,7 +12196,12 @@
     "dollarIndex": 126.4187,
     "nikkei225": 37120.33,
     "gold": null,
-    "newJobPostings": 109.93
+    "newJobPostings": 109.93,
+    "nfci": -0.409,
+    "anfci": -0.445,
+    "financialStress": -0.6186,
+    "twoYearRate": 3.89,
+    "sofr": 4.34
   },
   {
     "date": "2025-04-04",
@@ -9963,7 +12223,12 @@
     "dollarIndex": 125.8129,
     "nikkei225": 33780.58,
     "gold": null,
-    "newJobPostings": 109.23
+    "newJobPostings": 109.23,
+    "nfci": -0.393,
+    "anfci": -0.429,
+    "financialStress": 0.1127,
+    "twoYearRate": 3.68,
+    "sofr": 4.35
   },
   {
     "date": "2025-04-11",
@@ -9985,7 +12250,12 @@
     "dollarIndex": 124.0163,
     "nikkei225": 33585.58,
     "gold": null,
-    "newJobPostings": 106.97
+    "newJobPostings": 106.97,
+    "nfci": -0.382,
+    "anfci": -0.417,
+    "financialStress": 0.587,
+    "twoYearRate": 3.96,
+    "sofr": 4.33
   },
   {
     "date": "2025-04-18",
@@ -10007,7 +12277,12 @@
     "dollarIndex": 122.9865,
     "nikkei225": 34730.28,
     "gold": null,
-    "newJobPostings": 112.11
+    "newJobPostings": 112.11,
+    "nfci": -0.383,
+    "anfci": -0.418,
+    "financialStress": -0.1917,
+    "twoYearRate": 3.81,
+    "sofr": 4.32
   },
   {
     "date": "2025-04-25",
@@ -10029,7 +12304,12 @@
     "dollarIndex": 122.8858,
     "nikkei225": 35705.74,
     "gold": null,
-    "newJobPostings": 107.15
+    "newJobPostings": 107.15,
+    "nfci": -0.39,
+    "anfci": -0.43,
+    "financialStress": -0.2589,
+    "twoYearRate": 3.74,
+    "sofr": 4.33
   },
   {
     "date": "2025-05-02",
@@ -10051,7 +12331,12 @@
     "dollarIndex": 122.4962,
     "nikkei225": 36830.69,
     "gold": null,
-    "newJobPostings": 107.6
+    "newJobPostings": 107.6,
+    "nfci": -0.403,
+    "anfci": -0.451,
+    "financialStress": -0.3311,
+    "twoYearRate": 3.83,
+    "sofr": 4.36
   },
   {
     "date": "2025-05-09",
@@ -10073,7 +12358,12 @@
     "dollarIndex": 122.5191,
     "nikkei225": 37503.33,
     "gold": null,
-    "newJobPostings": 102.2
+    "newJobPostings": 102.2,
+    "nfci": -0.421,
+    "anfci": -0.477,
+    "financialStress": -0.4643,
+    "twoYearRate": 3.88,
+    "sofr": 4.28
   },
   {
     "date": "2025-05-16",
@@ -10095,7 +12385,12 @@
     "dollarIndex": 123.0737,
     "nikkei225": 37753.72,
     "gold": null,
-    "newJobPostings": 107.79
+    "newJobPostings": 107.79,
+    "nfci": -0.439,
+    "anfci": -0.498,
+    "financialStress": -0.8942,
+    "twoYearRate": 3.98,
+    "sofr": 4.3
   },
   {
     "date": "2025-05-23",
@@ -10117,7 +12412,12 @@
     "dollarIndex": 121.3837,
     "nikkei225": 37160.47,
     "gold": null,
-    "newJobPostings": 108.12
+    "newJobPostings": 108.12,
+    "nfci": -0.454,
+    "anfci": -0.511,
+    "financialStress": -0.4948,
+    "twoYearRate": 4,
+    "sofr": 4.26
   },
   {
     "date": "2025-05-30",
@@ -10139,7 +12439,12 @@
     "dollarIndex": 121.7674,
     "nikkei225": 37965.1,
     "gold": null,
-    "newJobPostings": 104.4
+    "newJobPostings": 104.4,
+    "nfci": -0.466,
+    "anfci": -0.516,
+    "financialStress": -0.5276,
+    "twoYearRate": 3.89,
+    "sofr": 4.35
   },
   {
     "date": "2025-06-06",
@@ -10161,7 +12466,12 @@
     "dollarIndex": 121.161,
     "nikkei225": 37741.61,
     "gold": null,
-    "newJobPostings": 111.65
+    "newJobPostings": 111.65,
+    "nfci": -0.476,
+    "anfci": -0.519,
+    "financialStress": -0.8,
+    "twoYearRate": 4.04,
+    "sofr": 4.29
   },
   {
     "date": "2025-06-13",
@@ -10183,7 +12493,12 @@
     "dollarIndex": 120.3245,
     "nikkei225": 37834.25,
     "gold": null,
-    "newJobPostings": 107.08
+    "newJobPostings": 107.08,
+    "nfci": -0.484,
+    "anfci": -0.522,
+    "financialStress": -0.7766,
+    "twoYearRate": 3.96,
+    "sofr": 4.28
   },
   {
     "date": "2025-06-20",
@@ -10205,7 +12520,12 @@
     "dollarIndex": 121.0408,
     "nikkei225": 38403.23,
     "gold": null,
-    "newJobPostings": 111.02
+    "newJobPostings": 111.02,
+    "nfci": -0.49,
+    "anfci": -0.529,
+    "financialStress": -0.6454,
+    "twoYearRate": 3.9,
+    "sofr": 4.29
   },
   {
     "date": "2025-06-27",
@@ -10227,7 +12547,12 @@
     "dollarIndex": 119.659,
     "nikkei225": 40150.79,
     "gold": null,
-    "newJobPostings": 107.08
+    "newJobPostings": 107.08,
+    "nfci": -0.497,
+    "anfci": -0.539,
+    "financialStress": -0.6948,
+    "twoYearRate": 3.73,
+    "sofr": 4.39
   },
   {
     "date": "2025-07-04",
@@ -10249,7 +12574,12 @@
     "dollarIndex": 119.2382,
     "nikkei225": 39810.88,
     "gold": null,
-    "newJobPostings": 106.39
+    "newJobPostings": 106.39,
+    "nfci": -0.503,
+    "anfci": -0.55,
+    "financialStress": -0.8729,
+    "twoYearRate": 3.88,
+    "sofr": 4.35
   },
   {
     "date": "2025-07-11",
@@ -10271,7 +12601,12 @@
     "dollarIndex": 119.9214,
     "nikkei225": 39569.68,
     "gold": null,
-    "newJobPostings": 109.95
+    "newJobPostings": 109.95,
+    "nfci": -0.51,
+    "anfci": -0.558,
+    "financialStress": -0.7495,
+    "twoYearRate": 3.9,
+    "sofr": 4.31
   },
   {
     "date": "2025-07-18",
@@ -10293,7 +12628,12 @@
     "dollarIndex": 120.356,
     "nikkei225": 39819.11,
     "gold": null,
-    "newJobPostings": 121.01
+    "newJobPostings": 121.01,
+    "nfci": -0.515,
+    "anfci": -0.563,
+    "financialStress": -0.7135,
+    "twoYearRate": 3.88,
+    "sofr": 4.3
   },
   {
     "date": "2025-07-25",
@@ -10315,7 +12655,12 @@
     "dollarIndex": 119.9857,
     "nikkei225": 41456.23,
     "gold": null,
-    "newJobPostings": 109.13
+    "newJobPostings": 109.13,
+    "nfci": -0.519,
+    "anfci": -0.567,
+    "financialStress": -0.7939,
+    "twoYearRate": 3.91,
+    "sofr": 4.36
   },
   {
     "date": "2025-08-01",
@@ -10337,7 +12682,12 @@
     "dollarIndex": 121.2122,
     "nikkei225": 40799.6,
     "gold": null,
-    "newJobPostings": 108.94
+    "newJobPostings": 108.94,
+    "nfci": -0.522,
+    "anfci": -0.57,
+    "financialStress": -0.6754,
+    "twoYearRate": 3.69,
+    "sofr": 4.34
   },
   {
     "date": "2025-08-08",
@@ -10359,7 +12709,12 @@
     "dollarIndex": 120.3329,
     "nikkei225": 41820.48,
     "gold": null,
-    "newJobPostings": 101.86
+    "newJobPostings": 101.86,
+    "nfci": -0.524,
+    "anfci": -0.574,
+    "financialStress": -0.5631,
+    "twoYearRate": 3.76,
+    "sofr": 4.35
   },
   {
     "date": "2025-08-15",
@@ -10381,7 +12736,12 @@
     "dollarIndex": 120.3377,
     "nikkei225": 43378.31,
     "gold": null,
-    "newJobPostings": 107.32
+    "newJobPostings": 107.32,
+    "nfci": -0.526,
+    "anfci": -0.578,
+    "financialStress": -0.8169,
+    "twoYearRate": 3.75,
+    "sofr": 4.36
   },
   {
     "date": "2025-08-22",
@@ -10403,7 +12763,12 @@
     "dollarIndex": 120.2774,
     "nikkei225": 42633.29,
     "gold": null,
-    "newJobPostings": 110.48
+    "newJobPostings": 110.48,
+    "nfci": -0.527,
+    "anfci": -0.579,
+    "financialStress": -0.7504,
+    "twoYearRate": 3.68,
+    "sofr": 4.36
   },
   {
     "date": "2025-08-29",
@@ -10425,7 +12790,12 @@
     "dollarIndex": 120.2082,
     "nikkei225": 42718.47,
     "gold": null,
-    "newJobPostings": 106.67
+    "newJobPostings": 106.67,
+    "nfci": -0.528,
+    "anfci": -0.579,
+    "financialStress": -0.6033,
+    "twoYearRate": 3.59,
+    "sofr": 4.34
   },
   {
     "date": "2025-09-05",
@@ -10447,7 +12817,12 @@
     "dollarIndex": 120.1282,
     "nikkei225": 43018.75,
     "gold": null,
-    "newJobPostings": 99.65
+    "newJobPostings": 99.65,
+    "nfci": -0.528,
+    "anfci": -0.578,
+    "financialStress": -0.4179,
+    "twoYearRate": 3.51,
+    "sofr": 4.42
   },
   {
     "date": "2025-09-12",
@@ -10469,7 +12844,12 @@
     "dollarIndex": 120.0611,
     "nikkei225": 44768.12,
     "gold": null,
-    "newJobPostings": 112.07
+    "newJobPostings": 112.07,
+    "nfci": -0.529,
+    "anfci": -0.579,
+    "financialStress": -0.5579,
+    "twoYearRate": 3.56,
+    "sofr": 4.42
   },
   {
     "date": "2025-09-19",
@@ -10491,7 +12871,12 @@
     "dollarIndex": 119.7858,
     "nikkei225": 45045.81,
     "gold": null,
-    "newJobPostings": 106.13
+    "newJobPostings": 106.13,
+    "nfci": -0.528,
+    "anfci": -0.582,
+    "financialStress": -0.5903,
+    "twoYearRate": 3.57,
+    "sofr": 4.14
   },
   {
     "date": "2025-09-26",
@@ -10513,7 +12898,12 @@
     "dollarIndex": 120.4349,
     "nikkei225": 45354.99,
     "gold": null,
-    "newJobPostings": 103.35
+    "newJobPostings": 103.35,
+    "nfci": -0.527,
+    "anfci": -0.587,
+    "financialStress": -0.5358,
+    "twoYearRate": 3.63,
+    "sofr": 4.16
   },
   {
     "date": "2025-10-03",
@@ -10535,7 +12925,12 @@
     "dollarIndex": 120.0881,
     "nikkei225": 45769.5,
     "gold": null,
-    "newJobPostings": 105.01
+    "newJobPostings": 105.01,
+    "nfci": -0.526,
+    "anfci": -0.592,
+    "financialStress": -0.4919,
+    "twoYearRate": 3.58,
+    "sofr": 4.18
   },
   {
     "date": "2025-10-10",
@@ -10557,7 +12952,12 @@
     "dollarIndex": 121.1163,
     "nikkei225": 48088.8,
     "gold": null,
-    "newJobPostings": 100.3
+    "newJobPostings": 100.3,
+    "nfci": -0.524,
+    "anfci": -0.593,
+    "financialStress": -0.4823,
+    "twoYearRate": 3.52,
+    "sofr": 4.15
   },
   {
     "date": "2025-10-17",
@@ -10579,7 +12979,12 @@
     "dollarIndex": 120.7028,
     "nikkei225": 47582.15,
     "gold": null,
-    "newJobPostings": 104.84
+    "newJobPostings": 104.84,
+    "nfci": -0.521,
+    "anfci": -0.591,
+    "financialStress": -0.3614,
+    "twoYearRate": 3.46,
+    "sofr": 4.18
   },
   {
     "date": "2025-10-24",
@@ -10601,7 +13006,12 @@
     "dollarIndex": 120.9345,
     "nikkei225": 49299.65,
     "gold": null,
-    "newJobPostings": 103.22
+    "newJobPostings": 103.22,
+    "nfci": -0.518,
+    "anfci": -0.586,
+    "financialStress": -0.5056,
+    "twoYearRate": 3.48,
+    "sofr": 4.24
   },
   {
     "date": "2025-10-31",
@@ -10623,7 +13033,12 @@
     "dollarIndex": 121.3859,
     "nikkei225": 52411.34,
     "gold": null,
-    "newJobPostings": 105.45
+    "newJobPostings": 105.45,
+    "nfci": -0.515,
+    "anfci": -0.581,
+    "financialStress": -0.4592,
+    "twoYearRate": 3.6,
+    "sofr": 4.22
   },
   {
     "date": "2025-11-07",
@@ -10645,7 +13060,12 @@
     "dollarIndex": 121.388,
     "nikkei225": 50276.37,
     "gold": null,
-    "newJobPostings": 95.31
+    "newJobPostings": 95.31,
+    "nfci": -0.512,
+    "anfci": -0.578,
+    "financialStress": -0.3105,
+    "twoYearRate": 3.55,
+    "sofr": 3.93
   },
   {
     "date": "2025-11-14",
@@ -10667,7 +13087,12 @@
     "dollarIndex": 120.9666,
     "nikkei225": 50376.53,
     "gold": null,
-    "newJobPostings": 99.09
+    "newJobPostings": 99.09,
+    "nfci": -0.51,
+    "anfci": -0.574,
+    "financialStress": -0.5037,
+    "twoYearRate": 3.62,
+    "sofr": 3.95
   },
   {
     "date": "2025-11-21",
@@ -10689,7 +13114,12 @@
     "dollarIndex": 121.8653,
     "nikkei225": 48625.88,
     "gold": null,
-    "newJobPostings": 101.08
+    "newJobPostings": 101.08,
+    "nfci": -0.509,
+    "anfci": -0.57,
+    "financialStress": -0.1273,
+    "twoYearRate": 3.51,
+    "sofr": 3.93
   },
   {
     "date": "2025-11-28",
@@ -10711,7 +13141,12 @@
     "dollarIndex": 121.0527,
     "nikkei225": 50253.91,
     "gold": null,
-    "newJobPostings": 109.64
+    "newJobPostings": 109.64,
+    "nfci": -0.511,
+    "anfci": -0.565,
+    "financialStress": -0.3876,
+    "twoYearRate": 3.47,
+    "sofr": 4.12
   },
   {
     "date": "2025-12-05",
@@ -10733,7 +13168,12 @@
     "dollarIndex": 120.6863,
     "nikkei225": 50491.87,
     "gold": null,
-    "newJobPostings": 89.72
+    "newJobPostings": 89.72,
+    "nfci": -0.514,
+    "anfci": -0.558,
+    "financialStress": -0.4221,
+    "twoYearRate": 3.56,
+    "sofr": 3.93
   },
   {
     "date": "2025-12-12",
@@ -10755,7 +13195,12 @@
     "dollarIndex": 120.1442,
     "nikkei225": 50836.55,
     "gold": null,
-    "newJobPostings": 100.62
+    "newJobPostings": 100.62,
+    "nfci": -0.519,
+    "anfci": -0.554,
+    "financialStress": -0.3549,
+    "twoYearRate": 3.52,
+    "sofr": 3.67
   },
   {
     "date": "2025-12-19",
@@ -10777,7 +13222,12 @@
     "dollarIndex": 120.1652,
     "nikkei225": 49507.21,
     "gold": null,
-    "newJobPostings": 102.66
+    "newJobPostings": 102.66,
+    "nfci": -0.528,
+    "anfci": -0.556,
+    "financialStress": -0.3328,
+    "twoYearRate": 3.48,
+    "sofr": 3.66
   },
   {
     "date": "2025-12-26",
@@ -10799,7 +13249,12 @@
     "dollarIndex": 119.4723,
     "nikkei225": 50750.39,
     "gold": null,
-    "newJobPostings": 107.74
+    "newJobPostings": 107.74,
+    "nfci": -0.54,
+    "anfci": -0.565,
+    "financialStress": -0.574,
+    "twoYearRate": 3.46,
+    "sofr": 3.76
   },
   {
     "date": "2026-01-02",
@@ -10821,7 +13276,12 @@
     "dollarIndex": 119.6059,
     "nikkei225": 50339.48,
     "gold": null,
-    "newJobPostings": 97.77
+    "newJobPostings": 97.77,
+    "nfci": -0.551,
+    "anfci": -0.577,
+    "financialStress": -0.5577,
+    "twoYearRate": 3.47,
+    "sofr": 3.75
   },
   {
     "date": "2026-01-09",
@@ -10843,7 +13303,12 @@
     "dollarIndex": 120.2215,
     "nikkei225": 51939.89,
     "gold": null,
-    "newJobPostings": 89.02
+    "newJobPostings": 89.02,
+    "nfci": -0.562,
+    "anfci": -0.587,
+    "financialStress": -0.657,
+    "twoYearRate": 3.54,
+    "sofr": 3.64
   },
   {
     "date": "2026-01-16",
@@ -10865,7 +13330,12 @@
     "dollarIndex": 120.0838,
     "nikkei225": 53936.17,
     "gold": null,
-    "newJobPostings": 104.32
+    "newJobPostings": 104.32,
+    "nfci": -0.569,
+    "anfci": -0.593,
+    "financialStress": -0.6436,
+    "twoYearRate": 3.59,
+    "sofr": 3.65
   },
   {
     "date": "2026-01-23",
@@ -10887,7 +13357,12 @@
     "dollarIndex": 118.8976,
     "nikkei225": 53846.87,
     "gold": null,
-    "newJobPostings": 103.16
+    "newJobPostings": 103.16,
+    "nfci": -0.571,
+    "anfci": -0.591,
+    "financialStress": -0.7069,
+    "twoYearRate": 3.6,
+    "sofr": 3.65
   },
   {
     "date": "2026-01-30",
@@ -10909,7 +13384,12 @@
     "dollarIndex": 117.8996,
     "nikkei225": 53322.85,
     "gold": null,
-    "newJobPostings": 98.28
+    "newJobPostings": 98.28,
+    "nfci": -0.567,
+    "anfci": -0.583,
+    "financialStress": -0.6705,
+    "twoYearRate": 3.52,
+    "sofr": 3.68
   },
   {
     "date": "2026-02-06",
@@ -10931,7 +13411,12 @@
     "dollarIndex": 118.2407,
     "nikkei225": 54253.68,
     "gold": null,
-    "newJobPostings": 97.02
+    "newJobPostings": 97.02,
+    "nfci": -0.559,
+    "anfci": -0.571,
+    "financialStress": -0.6502,
+    "twoYearRate": 3.5,
+    "sofr": 3.64
   },
   {
     "date": "2026-02-13",
@@ -10953,7 +13438,12 @@
     "dollarIndex": 117.5258,
     "nikkei225": 56941.97,
     "gold": null,
-    "newJobPostings": 101.59
+    "newJobPostings": 101.59,
+    "nfci": -0.545,
+    "anfci": -0.556,
+    "financialStress": -0.6093,
+    "twoYearRate": 3.4,
+    "sofr": 3.66
   },
   {
     "date": "2026-02-20",
@@ -10975,7 +13465,12 @@
     "dollarIndex": 117.9917,
     "nikkei225": 56825.7,
     "gold": null,
-    "newJobPostings": 103.45
+    "newJobPostings": 103.45,
+    "nfci": -0.528,
+    "anfci": -0.538,
+    "financialStress": -0.48,
+    "twoYearRate": 3.48,
+    "sofr": 3.66
   },
   {
     "date": "2026-02-27",
@@ -10997,7 +13492,12 @@
     "dollarIndex": 117.8223,
     "nikkei225": 58850.27,
     "gold": null,
-    "newJobPostings": 104.78
+    "newJobPostings": 104.78,
+    "nfci": -0.509,
+    "anfci": -0.516,
+    "financialStress": -0.4351,
+    "twoYearRate": 3.38,
+    "sofr": 3.68
   },
   {
     "date": "2026-03-06",
@@ -11019,7 +13519,12 @@
     "dollarIndex": 119.491,
     "nikkei225": 55620.84,
     "gold": null,
-    "newJobPostings": 99.91
+    "newJobPostings": 99.91,
+    "nfci": -0.49,
+    "anfci": -0.491,
+    "financialStress": -0.4255,
+    "twoYearRate": 3.56,
+    "sofr": 3.65
   },
   {
     "date": "2026-03-13",
@@ -11041,7 +13546,12 @@
     "dollarIndex": 120.5518,
     "nikkei225": 53819.61,
     "gold": null,
-    "newJobPostings": 101.15
+    "newJobPostings": 101.15,
+    "nfci": -0.473,
+    "anfci": -0.469,
+    "financialStress": -0.2965,
+    "twoYearRate": 3.73,
+    "sofr": 3.65
   },
   {
     "date": "2026-03-20",
@@ -11063,7 +13573,12 @@
     "dollarIndex": 120.2757,
     "nikkei225": 53372.53,
     "gold": null,
-    "newJobPostings": 100.96
+    "newJobPostings": 100.96,
+    "nfci": -0.464,
+    "anfci": -0.456,
+    "financialStress": -0.3631,
+    "twoYearRate": 3.88,
+    "sofr": 3.62
   },
   {
     "date": "2026-03-27",
@@ -11085,7 +13600,12 @@
     "dollarIndex": 120.8851,
     "nikkei225": 53373.07,
     "gold": null,
-    "newJobPostings": 98.88
+    "newJobPostings": 98.88,
+    "nfci": -0.46,
+    "anfci": -0.453,
+    "financialStress": -0.1777,
+    "twoYearRate": 3.88,
+    "sofr": 3.63
   },
   {
     "date": "2026-04-03",
@@ -11107,7 +13627,12 @@
     "dollarIndex": 120.6565,
     "nikkei225": 53123.49,
     "gold": null,
-    "newJobPostings": 100.52
+    "newJobPostings": 100.52,
+    "nfci": -0.465,
+    "anfci": -0.465,
+    "financialStress": -0.2313,
+    "twoYearRate": 3.84,
+    "sofr": 3.66
   },
   {
     "date": "2026-04-10",
@@ -11129,7 +13654,12 @@
     "dollarIndex": 118.8552,
     "nikkei225": 56924.11,
     "gold": null,
-    "newJobPostings": 96.9
+    "newJobPostings": 96.9,
+    "nfci": -0.475,
+    "anfci": -0.485,
+    "financialStress": -0.6397,
+    "twoYearRate": 3.81,
+    "sofr": 3.61
   },
   {
     "date": "2026-04-17",
@@ -11151,7 +13681,12 @@
     "dollarIndex": 118.0795,
     "nikkei225": 58475.9,
     "gold": null,
-    "newJobPostings": 103.33
+    "newJobPostings": 103.33,
+    "nfci": -0.487,
+    "anfci": -0.503,
+    "financialStress": -0.7503,
+    "twoYearRate": 3.71,
+    "sofr": 3.65
   },
   {
     "date": "2026-04-24",
@@ -11173,7 +13708,12 @@
     "dollarIndex": 118.7294,
     "nikkei225": 59716.18,
     "gold": null,
-    "newJobPostings": 102.79
+    "newJobPostings": 102.79,
+    "nfci": -0.498,
+    "anfci": -0.515,
+    "financialStress": -0.6728,
+    "twoYearRate": 3.78,
+    "sofr": 3.66
   },
   {
     "date": "2026-05-01",
@@ -11195,7 +13735,12 @@
     "dollarIndex": 118.3926,
     "nikkei225": 59513.12,
     "gold": null,
-    "newJobPostings": 100.35
+    "newJobPostings": 100.35,
+    "nfci": -0.505,
+    "anfci": -0.517,
+    "financialStress": -0.6674,
+    "twoYearRate": 3.88,
+    "sofr": 3.64
   },
   {
     "date": "2026-05-08",
@@ -11217,7 +13762,12 @@
     "dollarIndex": 118.0392,
     "nikkei225": 62713.65,
     "gold": null,
-    "newJobPostings": 98.86
+    "newJobPostings": 98.86,
+    "nfci": -0.51,
+    "anfci": -0.515,
+    "financialStress": -0.7575,
+    "twoYearRate": 3.9,
+    "sofr": 3.6
   },
   {
     "date": "2026-05-15",
@@ -11239,7 +13789,12 @@
     "dollarIndex": 119.2825,
     "nikkei225": 61409.29,
     "gold": null,
-    "newJobPostings": 102.35
+    "newJobPostings": 102.35,
+    "nfci": -0.511,
+    "anfci": -0.514,
+    "financialStress": -0.7373,
+    "twoYearRate": 4.09,
+    "sofr": 3.55
   },
   {
     "date": "2026-05-22",
@@ -11261,7 +13816,12 @@
     "dollarIndex": 119.2868,
     "nikkei225": 63339.07,
     "gold": null,
-    "newJobPostings": 102.33
+    "newJobPostings": 102.33,
+    "nfci": -0.51,
+    "anfci": -0.518,
+    "financialStress": -0.7578,
+    "twoYearRate": 4.13,
+    "sofr": 3.55
   },
   {
     "date": "2026-05-29",
@@ -11283,7 +13843,12 @@
     "dollarIndex": 118.8783,
     "nikkei225": 66329.5,
     "gold": null,
-    "newJobPostings": 95.1
+    "newJobPostings": 95.1,
+    "nfci": -0.509,
+    "anfci": -0.529,
+    "financialStress": -0.6804,
+    "twoYearRate": 3.98,
+    "sofr": 3.63
   },
   {
     "date": "2026-06-05",
@@ -11305,7 +13870,12 @@
     "dollarIndex": 120.0831,
     "nikkei225": 66588.12,
     "gold": null,
-    "newJobPostings": 102.59
+    "newJobPostings": 102.59,
+    "nfci": -0.508,
+    "anfci": -0.547,
+    "financialStress": -0.8649,
+    "twoYearRate": 4.17,
+    "sofr": 3.63
   },
   {
     "date": "2026-06-12",
@@ -11327,7 +13897,12 @@
     "dollarIndex": 119.5073,
     "nikkei225": 66020.04,
     "gold": 386.54,
-    "newJobPostings": 98.43
+    "newJobPostings": 98.43,
+    "nfci": -0.508,
+    "anfci": -0.561,
+    "financialStress": -0.7674,
+    "twoYearRate": 4.09,
+    "sofr": 3.65
   },
   {
     "date": "2026-06-19",
@@ -11349,7 +13924,12 @@
     "dollarIndex": 120.3958,
     "nikkei225": 71250.06,
     "gold": 387.12,
-    "newJobPostings": 99.11
+    "newJobPostings": 99.11,
+    "nfci": -0.51,
+    "anfci": -0.571,
+    "financialStress": -0.9525,
+    "twoYearRate": 4.19,
+    "sofr": 3.62
   },
   {
     "date": "2026-06-26",
@@ -11371,7 +13951,12 @@
     "dollarIndex": 120.8866,
     "nikkei225": 69360.88,
     "gold": 373.63,
-    "newJobPostings": 98.25
+    "newJobPostings": 98.25,
+    "nfci": -0.514,
+    "anfci": -0.576,
+    "financialStress": -0.6436,
+    "twoYearRate": 4.07,
+    "sofr": 3.62
   },
   {
     "date": "2026-07-03",
@@ -11393,7 +13978,12 @@
     "dollarIndex": 120.6902,
     "nikkei225": 69744.07,
     "gold": 378.13,
-    "newJobPostings": 97.79
+    "newJobPostings": 97.79,
+    "nfci": -0.521,
+    "anfci": -0.579,
+    "financialStress": -0.7233,
+    "twoYearRate": 4.14,
+    "sofr": 3.64
   },
   {
     "date": "2026-07-10",
@@ -11415,7 +14005,12 @@
     "dollarIndex": 120.5046,
     "nikkei225": 68557.73,
     "gold": 377.01,
-    "newJobPostings": 96.44
+    "newJobPostings": 96.44,
+    "nfci": -0.528,
+    "anfci": -0.581,
+    "financialStress": -0.8825,
+    "twoYearRate": 4.21,
+    "sofr": 3.55
   },
   {
     "date": "2026-07-17",
@@ -11437,7 +14032,12 @@
     "dollarIndex": 120.5315,
     "nikkei225": 64141.12,
     "gold": 368.41,
-    "newJobPostings": 101.58
+    "newJobPostings": 101.58,
+    "nfci": -0.535,
+    "anfci": -0.584,
+    "financialStress": -0.7004,
+    "twoYearRate": 4.18,
+    "sofr": 3.59
   },
   {
     "date": "2026-07-24",
@@ -11459,7 +14059,12 @@
     "dollarIndex": 120.7105,
     "nikkei225": 64611.15,
     "gold": 371.9,
-    "newJobPostings": 97.05
+    "newJobPostings": 97.05,
+    "nfci": -0.543,
+    "anfci": -0.589,
+    "financialStress": -0.8256,
+    "twoYearRate": 4.33,
+    "sofr": 3.64
   },
   {
     "date": "2026-07-31",
@@ -11481,7 +14086,12 @@
     "dollarIndex": 119.7034,
     "nikkei225": 64362.02,
     "gold": 371.54,
-    "newJobPostings": 99.99
+    "newJobPostings": 99.99,
+    "nfci": -0.549,
+    "anfci": -0.591,
+    "financialStress": -0.5056,
+    "twoYearRate": 4.28,
+    "sofr": 3.66
   },
   {
     "date": "2026-08-07",
@@ -11503,7 +14113,12 @@
     "dollarIndex": 119.0649,
     "nikkei225": 65606.71,
     "gold": 398.47,
-    "newJobPostings": 94.65
+    "newJobPostings": 94.65,
+    "nfci": -0.555,
+    "anfci": -0.591,
+    "financialStress": -0.7705,
+    "twoYearRate": 4.19,
+    "sofr": 3.62
   },
   {
     "date": "2026-08-14",
@@ -11525,6 +14140,11 @@
     "dollarIndex": 118.9028,
     "nikkei225": 68713.8,
     "gold": 401.48,
-    "newJobPostings": 97.19
+    "newJobPostings": 97.19,
+    "nfci": -0.559,
+    "anfci": -0.587,
+    "financialStress": -0.8285,
+    "twoYearRate": 4.17,
+    "sofr": 3.62
   }
 ]

@@ -153,6 +153,34 @@ describe('日本の失業率と企業物価 (#180)', () => {
   });
 });
 
+describe('金融環境指数と短期金利 (#190)', () => {
+  it('3 つの指数を 1 枚に重ねる', () => {
+    // いずれも 0 が平均の同じスケール。3 本の差が「何を測っているか」の違いを示す。
+    render(<MarketPage />);
+    expect(screen.getByRole('heading', { name: '金融環境指数' })).toBeInTheDocument();
+    expect(screen.getByText('NFCI (総合)')).toBeInTheDocument();
+    expect(screen.getByText('ANFCI (景気調整済み)')).toBeInTheDocument();
+    expect(screen.getByText('金融ストレス指数')).toBeInTheDocument();
+  });
+
+  it('総合指数を部品より前に置く', () => {
+    // 信用スプレッド・信用状況は NFCI の構成要素にあたる。上流 → 下流 (#89)。
+    render(<MarketPage />);
+    const section = document.getElementById('q-financial');
+    const titles = Array.from(section?.querySelectorAll('h3') ?? []).map((h) => h.textContent);
+    expect(titles.indexOf('金融環境指数')).toBeLessThan(titles.indexOf('信用スプレッド'));
+  });
+
+  it('短期金利は金利の内訳と別チャートにする', () => {
+    // あちらは 10年債を名目・期待インフレ率・実質に分解する図。
+    // 6 本にすると何と何を比べるのか読めなくなる。
+    render(<MarketPage />);
+    expect(screen.getByRole('heading', { name: '短期金利' })).toBeInTheDocument();
+    expect(screen.getByText('2年債')).toBeInTheDocument();
+    expect(screen.getByText('SOFR')).toBeInTheDocument();
+  });
+});
+
 describe('米国の家計の余力 (#178)', () => {
   it('所得と消費を 1 枚に重ねる', () => {
     // 同じ単位 (前年同月比 %)。2 本の差が買い控えか余力喪失かを分ける (#95)。
