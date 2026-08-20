@@ -1,0 +1,21 @@
+# 使い捨て。#212 の sourceUnits を CI 経由で集めるためだけに置く。
+# 開発マシンから FRED に到達できないため、ここでしか原文を取れない。
+# 取り込みが終わったら削除する。
+name: bootstrap fred units
+on:
+  push:
+    branches: [feat/212-verify-fred-units]
+jobs:
+  dump:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - env:
+          ESTAT_APP_ID: ${{ secrets.ESTAT_APP_ID }}
+        run: pnpm verify
