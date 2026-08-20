@@ -18,6 +18,7 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
     question: 'financial',
     frequency: 'daily',
     primaryIndicator: 'dgs10',
+    explainIndicators: ['dgs10', 't10yie', 'fed-funds-rate'],
     title: '金利の内訳',
     subtitle: '名目 10 年債利回り・期待インフレ率・実質金利',
     kind: 'percent',
@@ -45,6 +46,7 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
     question: 'financial',
     frequency: 'weekly',
     primaryIndicator: 'potential-gdp',
+    explainIndicators: ['potential-gdp', 'dgs10', 't10yie'],
     title: '10年債の理論値',
     subtitle: '期待インフレ率 + 潜在成長率。名目がこれを超えると経済を抑制する目安',
     kind: 'percent',
@@ -85,6 +87,7 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
     frequency: 'daily',
     kind: 'percent',
     primaryIndicator: 'breakeven-5y5y',
+    explainIndicators: ['breakeven-5y5y', 't10yie', 'breakeven-5y'],
     title: '期待インフレ率',
     subtitle: '市場が織り込む物価',
     series: [
@@ -112,6 +115,7 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
     frequency: 'daily',
     kind: 'percent',
     primaryIndicator: 'dgs2',
+    explainIndicators: ['dgs2', 'sofr', 'tbill-3m'],
     title: '短期金利',
     subtitle: '3か月から 2年までの期間構造',
     series: [
@@ -144,6 +148,7 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
     question: 'financial',
     frequency: 'daily',
     primaryIndicator: 't10y2y',
+    explainIndicators: ['t10y2y', 'term-spread-3m'],
     title: 'イールドカーブ',
     subtitle: '長短金利差。負なら逆イールド',
     kind: 'percent',
@@ -267,6 +272,7 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
     question: 'financial',
     frequency: 'daily',
     primaryIndicator: 'hy-spread',
+    explainIndicators: ['hy-spread', 'ig-spread'],
     title: '信用スプレッド',
     subtitle: '社債と国債の利回り差 (拡大がリスク回避)',
     kind: 'percent',
@@ -387,6 +393,7 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
     frequency: 'daily',
     kind: 'percent',
     primaryIndicator: 'nasdaq-composite',
+    explainIndicators: ['nasdaq-composite', 'djia'],
     title: '主要株価指数',
     subtitle: '前年同日比',
     series: [
@@ -415,6 +422,7 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
     frequency: 'daily',
     kind: 'number',
     primaryIndicator: 'usd-eur',
+    explainIndicators: ['usd-eur', 'cny-usd'],
     title: '主要通貨',
     subtitle: 'ドル/ユーロ と 人民元/ドル',
     series: [

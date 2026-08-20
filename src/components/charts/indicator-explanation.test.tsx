@@ -34,9 +34,10 @@ describe('IndicatorExplanations', () => {
   });
 
   it('解説のある指標だけを並べる', () => {
-    render(<IndicatorExplanations ids={['nfci', 'anfci']} />);
+    // dfii10 は検算用で画面に出さない指標 (#115)。解説を持たない側の代表として使う。
+    render(<IndicatorExplanations ids={['nfci', 'dfii10']} />);
     expect(screen.getByText(indicators['nfci'].name)).toBeInTheDocument();
-    expect(screen.queryByText(indicators['anfci'].name)).toBeNull();
+    expect(screen.queryByText(indicators['dfii10'].name)).toBeNull();
   });
 
   it('指標マスタに無い ID は落とす', () => {
