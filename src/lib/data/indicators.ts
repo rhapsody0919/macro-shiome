@@ -198,6 +198,9 @@ export function parseIndicator(id: string, raw: unknown): Indicator {
   if (raw.unitLabel !== undefined) {
     indicator.unitLabel = requireString(raw.unitLabel, `${where}.unitLabel`);
   }
+  if (raw.sourceUnits !== undefined) {
+    indicator.sourceUnits = requireString(raw.sourceUnits, `${where}.sourceUnits`);
+  }
   if (raw.explanation !== undefined) {
     indicator.explanation = parseExplanation(raw.explanation, `${where}.explanation`);
   }

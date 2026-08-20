@@ -7,6 +7,7 @@
  *
  * **実装と違う経路で照合する**のが要件。同じコードを通すと同じ間違いをする。
  * FRED は API キーを使わない CSV 経路 (`fredgraph.csv`) で取り直す。
+ * 単位は同じくキー不要のテキスト経路 (`/data/<ID>.txt`) で照合する (#212)。
  *
  * 実行:
  *   pnpm verify [--offline]
@@ -445,6 +446,86 @@ async function verifyGoldClose(): Promise<void> {
   console.log(`  GLD ${compared} 点を履歴と照合した`);
 }
 
+/**
+ * FRED の系列メタデータ。**API キーを使わないテキスト経路**で取る (#212)。
+ *
+ * 取得実装は `fredgraph.csv` を使っており、こちらは別のエンドポイント。
+ * 同じ経路で照合すると同じ間違いをする (#113 の要件)。
+ */
+async function fetchFredUnits(seriesId: string): Promise<string> {
+  const response = await fetch(`https://fred.stlouisfed.org/data/${seriesId}.txt`);
+  if (!response.ok) throw new Error(`HTTP ${response.status}`);
+  const body = await response.text();
+  const match = body.match(/^Units:\s*(.+?)\s*$/m);
+  if (match === null) {
+    // 形式が変わったら黙って飛ばさず、何が返ったかを添えて落とす。
+    throw new Error(`Units 行が無い (先頭: ${JSON.stringify(body.slice(0, 120))})`);
+  }
+  return match[1];
+}
+
+/**
+ * 金額の桁だけは日本語の単位表記とも突き合わせる (#212)。
+ *
+ * `sourceUnits` は原文を写すだけなので、そこから `unitLabel` を書き誤る余地が残る。
+ * **#198 で実際に誤ったのは金額の桁**だったので、そこだけ機械で見る。
+ * 他の単位 (Percent / Index / Thousands of Units など) は日本語の表し方が一意に決まらず、
+ * 対応表を作ると表記ゆれで壊れるため対象にしない。
+ */
+const MONEY_SCALES: ReadonlyArray<{ source: string; label: RegExp }> = [
+  { source: 'Billions of Dollars', label: /10億ドル|十億ドル/ },
+  { source: 'Millions of Dollars', label: /百万ドル/ },
+];
+
+/** 9. FRED の単位が指標マスタの記録と一致するか (#212)。 */
+async function verifyFredUnits(): Promise<void> {
+  console.log('9. FRED の単位の照合');
+  let compared = 0;
+  for (const [id, indicator] of Object.entries(indicators)) {
+    if (indicator.source.adapter !== 'fred') continue;
+
+    let live: string;
+    try {
+      live = await fetchFredUnits(indicator.source.seriesId);
+    } catch (error) {
+      fail('FRED の単位の照合', `${id}: 取得に失敗 (${String(error)})`);
+      continue;
+    }
+
+    if (indicator.sourceUnits === undefined) {
+      // 未記入を飛ばすと「照合していない指標」が静かに増える (#102 と同じ形)。
+      fail('FRED の単位の照合', `${id}: sourceUnits が未記入。FRED は "${live}"`);
+      continue;
+    }
+    if (indicator.sourceUnits !== live) {
+      fail(
+        'FRED の単位の照合',
+        `${id}: 記録 "${indicator.sourceUnits}" / FRED "${live}"`,
+      );
+      continue;
+    }
+    compared += 1;
+
+    const scale = MONEY_SCALES.find((entry) => live.startsWith(entry.source));
+    if (scale !== undefined && indicator.unitLabel !== undefined) {
+      if (!scale.label.test(indicator.unitLabel)) {
+        fail(
+          'FRED の単位の照合',
+          `${id}: FRED は "${live}" だが表示は "${indicator.unitLabel}"`,
+        );
+      }
+    }
+    await sleep(120);
+  }
+
+  // 照合 0 件を成功にすると「緑だが検証していない」状態になる (#133 と同じ扱い)。
+  if (compared === 0) {
+    fail('FRED の単位の照合', '照合できた指標が 1 つも無い');
+    return;
+  }
+  console.log(`  FRED ${compared} 系列の単位を照合した`);
+}
+
 async function main(): Promise<void> {
   const offline = process.argv.includes('--offline');
   const today = new Date().toISOString().slice(0, 10);
@@ -462,8 +543,10 @@ async function main(): Promise<void> {
   verifyDrawdown();
   if (offline) {
     console.log('8. ゴールドの終値と日付の照合 — --offline のため飛ばす');
+    console.log('9. FRED の単位の照合 — --offline のため飛ばす');
   } else {
     await verifyGoldClose();
+    await verifyFredUnits();
   }
 
   console.log('');
