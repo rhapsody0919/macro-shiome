@@ -11119,7 +11119,7 @@
       "jobOpenings": null,
       "bidToCover": 2.53,
       "nyFedSurvey": 20.6,
-      "phillyFedSurvey": null,
+      "phillyFedSurvey": 47.4,
       "usTenYearMonthly": null,
       "jpTenYear": null,
       "deTenYear": null,
@@ -11444,7 +11444,7 @@
     },
     {
       "indicatorId": "philly-fed-survey",
-      "latestMonth": "2026-07-01"
+      "latestMonth": "2026-08-01"
     },
     {
       "indicatorId": "us-10y-monthly",
