@@ -64,9 +64,14 @@ export function SummaryGrid({
   note?: string;
   children: React.ReactNode;
 }) {
+  // 見出しとセクションを結び付ける。支援技術で「最新の状況」の領域として辿れるようにし、
+  // テストからも領域を特定できる (#186)。
+  const headingId = `summary-${title}`;
   return (
-    <section className="space-y-2">
-      <h2 className="text-base font-bold">{title}</h2>
+    <section className="space-y-2" aria-labelledby={headingId}>
+      <h2 id={headingId} className="text-base font-bold">
+        {title}
+      </h2>
       {/* モバイルは 2 列。1 列だと縦に長くなりすぎ、3 列以上だと数値が潰れる。 */}
       <div className="grid grid-cols-2 gap-2 sm:gap-3 lg:grid-cols-5">{children}</div>
       {note !== undefined && <p className="text-[11px] text-slate-500">{note}</p>}
