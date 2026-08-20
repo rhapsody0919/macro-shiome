@@ -1941,5 +1941,23 @@
       "max": 30
     },
     "note": "国内企業物価指数の前年同月比 (%)、**2020年基準** (#180)。**公表されている前年同月比をそのまま取る。** 指数は小数 1 桁しか公表されず、そこから導出すると丸めでずれる (#162 で CPI が実際にずれた)。**消費者物価の上流。** 企業間の取引価格が上がっても、消費者に転嫁されるとは限らない。"
+  },
+  "existing-home-sales": {
+    "name": "中古住宅販売件数",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "EXHOSLUSM495S"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "National Association of Realtors via FRED",
+    "copyright": "restricted",
+    "group": "macro",
+    "historyLimit": "13m",
+    "range": {
+      "min": 0,
+      "max": 20000000
+    },
+    "note": "Existing Home Sales。件・季節調整済み年率 (#188)。**米国の住宅取引の大半を占める。** 新築住宅販売 (`HSN1F`) は取引量では少数で、市場全体の動きは中古が決める。\n\n**NAR の著作権で FRED は直近 13 か月しか提供しない。** 毎日取得して積み上げるため、時間が経つほど自前の履歴が長くなる (#128 の下落率と同じ考え方)。取り込み開始は 2026-08 で、それ以前は 2025-07 まで遡れた 13 点のみ。"
   }
 }

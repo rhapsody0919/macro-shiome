@@ -97,6 +97,7 @@ export const COLORS = {
   jpHousingStarts: '#0ea5e9',
   jpHousingStartsOwned: '#6366f1',
   jpHousingStartsRented: '#f59e0b',
+  existingHomeSales: '#f59e0b',
   newHomeSales: '#10b981',
 
   /** 新規失業保険申請。増加が悪化を意味するため警戒色。 */
