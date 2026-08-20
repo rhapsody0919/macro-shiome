@@ -517,3 +517,32 @@ describe('日本ページ (#152)', () => {
     expect(screen.getByRole('heading', { name: '各国の下落率' })).toBeInTheDocument();
   });
 });
+
+describe('市場ページの問いの分割 (#219)', () => {
+  it('金利と金融環境を別の問いに分け、金利を先に置く', () => {
+    // 12 枚が 1 つの問いに集まり全ページで最大になっていた。金利は「いまどこにあるか」、
+    // 環境指数や信用スプレッドは「緩いか厳しいか」で、目的が違う。
+    // 順序は上流 → 下流 (#89) — 金利の水準を読んでから環境の緩さを測る。
+    render(<MarketPage />);
+    const titles = screen.getAllByRole('heading', { level: 2 }).map((h) => h.textContent);
+    expect(titles).toContain('金利はどこにあるか');
+    expect(titles.indexOf('金利はどこにあるか')).toBeLessThan(
+      titles.indexOf('金融環境は緩いか厳しいか'),
+    );
+  });
+
+  it('どの問いも 2〜9 枚に収まる', () => {
+    // 下限は #184 (1 枚だけの問いを作らない)、上限は #219。
+    // **9 は現時点で最大の問い** (`/economy` の「景気は減速しているか」) に合わせた。
+    //
+    // 全ページで見たいが、重いページを 3 つ描画するとこのファイルがタイムアウトする。
+    // **問題が起きた `/market` で押さえる。**
+    render(<MarketPage />);
+    for (const id of Object.keys(MARKET_QUESTIONS)) {
+      const section = document.getElementById(`q-${id}`);
+      const charts = section?.querySelectorAll('h3').length ?? 0;
+      expect(charts, id).toBeGreaterThan(1);
+      expect(charts, id).toBeLessThanOrEqual(9);
+    }
+  });
+});

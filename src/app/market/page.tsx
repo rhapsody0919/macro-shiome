@@ -15,7 +15,7 @@ export const metadata = {
 /** 市場ページのチャート定義 (#89)。 */
 const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
   {
-    question: 'financial',
+    question: 'rates',
     frequency: 'daily',
     primaryIndicator: 'dgs10',
     explainIndicators: ['dgs10', 't10yie', 'fed-funds-rate'],
@@ -43,7 +43,7 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
     ],
   },
   {
-    question: 'financial',
+    question: 'rates',
     frequency: 'weekly',
     primaryIndicator: 'potential-gdp',
     explainIndicators: ['potential-gdp', 'dgs10', 't10yie'],
@@ -83,7 +83,7 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
     ],
   },
   {
-    question: 'financial',
+    question: 'rates',
     frequency: 'daily',
     kind: 'percent',
     primaryIndicator: 'breakeven-5y5y',
@@ -111,7 +111,7 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
     ],
   },
   {
-    question: 'financial',
+    question: 'rates',
     frequency: 'daily',
     kind: 'percent',
     primaryIndicator: 'dgs2',
@@ -145,7 +145,7 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
     ],
   },
   {
-    question: 'financial',
+    question: 'rates',
     frequency: 'daily',
     primaryIndicator: 't10y2y',
     explainIndicators: ['t10y2y', 'term-spread-3m'],
@@ -177,7 +177,7 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
     ],
   },
   {
-    question: 'financial',
+    question: 'rates',
     frequency: 'monthly',
     primaryIndicator: 'us-10y-monthly',
     title: '10年債利回りの国際比較',
