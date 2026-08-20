@@ -72,6 +72,12 @@ export const COLORS = {
   // --- 住宅 (連鎖の上流 → 下流) ---
   buildingPermits: '#6366f1',
   housingStarts: '#0ea5e9',
+  cpiCore: '#0ea5e9',
+  pceCore: '#6366f1',
+  cpiRent: '#94a3b8',
+  producerPriceAll: '#f59e0b',
+  breakeven5y: '#6366f1',
+  breakeven5y5y: '#f59e0b',
   capacityUtilization: '#0ea5e9',
   durableGoodsOrders: '#6366f1',
   businessInventories: '#f59e0b',

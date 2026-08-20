@@ -573,6 +573,42 @@ const CHARTS: QuestionChartDef<EconomyQuestionId>[] = [
   },
   {
     question: 'prices',
+    frequency: 'monthly',
+    primaryIndicator: 'pce-core',
+    title: 'コア物価',
+    subtitle: '食品・エネルギーを除く前年同月比',
+    series: [
+      {
+        key: 'pceCore',
+        label: 'コア PCE',
+        color: COLORS.pceCore,
+        width: 2.4,
+        indicatorId: 'pce-core',
+      },
+      { key: 'cpiCore', label: 'コア CPI', color: COLORS.cpiCore, indicatorId: 'cpi-core' },
+      { key: 'cpiRent', label: '家賃 CPI', color: COLORS.cpiRent, indicatorId: 'cpi-rent' },
+    ],
+    notes: [
+      <span key="target">
+        <strong>コア PCE が FRB の物価目標そのもの。</strong>
+        2% はこの系列に対して設定されている。総合は天候と原油で振れるため政策判断に向かない。
+      </span>,
+      <span key="cpi-vs-pce">
+        <strong>コア CPI とは水準が違う。</strong>
+        PCE は品目の入れ替えが早く反映され、医療費の扱いも違う。
+        どちらが高いかではなく、2 本が同じ方向を向いているかを見る。
+      </span>,
+      <span key="rent">
+        <strong>家賃は最も粘着的。</strong>
+        契約更新のタイミングで反映されるため実勢に遅れる。コアの動きの大部分を説明する。
+      </span>,
+      <span key="not-total">
+        下の「物価の連鎖」の総合 CPI・PCE とは<strong>定義が違うため同じ図に載せていない</strong>。
+      </span>,
+    ],
+  },
+  {
+    question: 'prices',
     frequency: 'daily',
     primaryIndicator: 'wti',
     title: '原油価格 (WTI)',
@@ -602,6 +638,12 @@ const CHARTS: QuestionChartDef<EconomyQuestionId>[] = [
         color: COLORS.importPrice,
         width: 2.4,
         indicatorId: 'import-price',
+      },
+      {
+        key: 'producerPriceAll',
+        label: 'PPI 総合 (商品)',
+        color: COLORS.producerPriceAll,
+        indicatorId: 'producer-price-all',
       },
       {
         key: 'producerPrice',

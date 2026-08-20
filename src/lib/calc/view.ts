@@ -459,6 +459,8 @@ export function buildMacroView(options: BuildViewOptions): MacroPoint[] {
       // 週次グリッドでも型を満たす。表示は日次ビュー側で行う (#190)。
       twoYearRate: valueAsOf(series(observations, 'dgs2'), date),
       sofr: valueAsOf(series(observations, 'sofr'), date),
+      breakeven5y: valueAsOf(series(observations, 'breakeven-5y'), date),
+      breakeven5y5y: valueAsOf(series(observations, 'breakeven-5y5y'), date),
     };
   });
 }
@@ -645,6 +647,11 @@ export function buildEconomyView(options: BuildViewOptions): EconomyView {
     realIncomeExTransfer: yoy('real-income-ex-transfer', month),
     realDisposablePerCapita: yoy('real-disposable-income-per-capita', month),
     realDisposableTotal: yoy('real-disposable-income', month),
+    // FRB が見る物価。総合は食品・エネルギーで振れる (#194)。
+    cpiCore: yoy('cpi-core', month),
+    pceCore: yoy('pce-core', month),
+    cpiRent: yoy('cpi-rent', month),
+    producerPriceAll: yoy('producer-price-all', month),
     // 稼働率は水準で読む。前年同月比にすると「80% を割った」が見えない (#191)。
     capacityUtilization: level('capacity-utilization', month),
     durableGoodsOrders: yoy('durable-goods-orders', month),
@@ -750,6 +757,10 @@ const MONTHLY_INDICATORS = [
   'real-disposable-income-per-capita',
   'real-disposable-income',
   'real-consumption',
+  'cpi-core',
+  'pce-core',
+  'cpi-rent',
+  'producer-price-all',
   'capacity-utilization',
   'durable-goods-orders',
   'business-inventories',
@@ -847,6 +858,9 @@ export function buildDailyView(
       // 短期金利。政策金利の織り込みと実勢 (#190)。
       twoYearRate: at('dgs2'),
       sofr: at('sofr'),
+      // 市場が織り込む物価。実績ではなく先を見る (#194)。
+      breakeven5y: at('breakeven-5y'),
+      breakeven5y5y: at('breakeven-5y5y'),
     };
 
     const point: DailyPoint = { date };
