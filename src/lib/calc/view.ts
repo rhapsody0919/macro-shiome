@@ -37,7 +37,7 @@ import {
   yearOverYear,
   yieldSpread,
 } from './derived';
-import { fridaysBetween, valueAsOf, valueOn, weekdaysBetween } from './weeks';
+import { fridaysBetween, sameDayLastYear, valueAsOf, valueOn, weekdaysBetween } from './weeks';
 import { DAILY_SERIES, type DailyKey, type DailyPoint, type DailyViewName } from '../data/daily-series';
 import { latestMonthWithValue, monthsBetween, valueForMonth, yearAgo } from './months';
 
@@ -434,8 +434,7 @@ function yoyAsOf(
   const current = valueAsOf(points, date);
   if (current === null) return null;
 
-  const [year, rest] = [date.slice(0, 4), date.slice(4)];
-  const previous = valueAsOf(points, `${Number(year) - 1}${rest}`);
+  const previous = valueAsOf(points, sameDayLastYear(date));
   if (previous === null || previous === 0) return null;
   return (current / previous - 1) * 100;
 }
