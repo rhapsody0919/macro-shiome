@@ -53,7 +53,7 @@ export function pickLatest<T>(
  *
  * 月は「2月前比」だと読みにくいので「2か月前比」にする。
  */
-export function stepLabel(stepsBack: number, unit: '週' | '月'): string {
+export function stepLabel(stepsBack: number, unit: '日' | '週' | '月'): string {
   if (stepsBack === 1) return `前${unit}比`;
   return unit === '月' ? `${stepsBack}か月前比` : `${stepsBack}${unit}前比`;
 }

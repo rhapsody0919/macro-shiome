@@ -3,8 +3,9 @@ import {
   QuestionSections,
   type QuestionChartDef,
 } from '@/components/charts/question-sections';
+import { JapanSummary } from '@/components/japan-summary';
 import { COLORS } from '@/lib/colors';
-import { japanDaily } from '@/lib/data/loader';
+import { economy, japanDaily } from '@/lib/data/loader';
 import { JAPAN_QUESTIONS, type JapanQuestionId } from '@/lib/questions';
 
 export const metadata = {
@@ -588,9 +589,9 @@ const CHARTS: QuestionChartDef<JapanQuestionId>[] = [
 /**
  * 日本ページ (#152)。
  *
- * **サマリーは置いていない。** 4 枚しかなく、1 画面目でほぼ全部が見えるため、
- * 直近の値を別途まとめても同じ数字を 2 回出すだけになる。
- * チャートが増えたら他ページと同じくサマリーを足す (#76)。
+ * **サマリーは問いごとに 1 指標** (#186)。#152 で作ったときはチャートが 4 枚しかなく
+ * 「同じ数字を 2 回出すだけ」として置かなかったが、17 枚に増えて開いた時点では
+ * 何も分からない状態になったため追加した。
  */
 export default function JapanPage() {
   return (
@@ -603,6 +604,9 @@ export default function JapanPage() {
         </p>
         <QuestionIndex charts={CHARTS} questions={JAPAN_QUESTIONS} />
       </div>
+
+      {/* 期間フィルターに依存せず常に直近の値を見せる (#76)。 */}
+      <JapanSummary monthly={economy.monthly} daily={japanDaily} />
 
       <QuestionSections dailyPoints={japanDaily} charts={CHARTS} questions={JAPAN_QUESTIONS} />
     </div>
