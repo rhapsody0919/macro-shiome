@@ -28,6 +28,8 @@ export type DailyKey = Extract<
   | 'hySpread'
   | 'igSpread'
   | 'newJobPostings'
+  | 'twoYearRate'
+  | 'sofr'
 >;
 
 /**
@@ -47,6 +49,8 @@ export const DAILY_SERIES = {
     'termSpread',
     'hySpread',
     'igSpread',
+    'twoYearRate',
+    'sofr',
   ],
   economy: ['wti', 'newJobPostings'],
   japan: ['nikkei225', 'usdjpy'],

@@ -83,6 +83,33 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
   {
     question: 'financial',
     frequency: 'daily',
+    kind: 'percent',
+    primaryIndicator: 'dgs2',
+    title: '短期金利',
+    subtitle: '2年債と SOFR',
+    series: [
+      { key: 'twoYearRate', label: '2年債', color: COLORS.twoYearRate, width: 2.4 },
+      { key: 'sofr', label: 'SOFR', color: COLORS.sofr },
+    ],
+    notes: [
+      <span key="expectation">
+        <strong>2年債は政策金利の織り込みを映す。</strong>
+        今後 2 年の利下げ・利上げ見通しが price される。上の「金利の内訳」の FF 金利より先に動く。
+      </span>,
+      <span key="actual">
+        <strong>SOFR は翌日物の実勢。</strong>
+        国債を担保にした実際の資金調達コストで、FF 金利より市場の実態に近い。
+      </span>,
+      <span key="separate">
+        <strong>「金利の内訳」と分けている。</strong>
+        あちらは 10年債を名目・期待インフレ率・実質に分解する図で、
+        6 本にすると何と何を比べるのか読めなくなる。
+      </span>,
+    ],
+  },
+  {
+    question: 'financial',
+    frequency: 'daily',
     primaryIndicator: 't10y2y',
     title: 'イールドカーブ (10年債 − 2年債)',
     subtitle: '長短金利差。負なら逆イールド',
@@ -146,6 +173,38 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
       <span key="us-diff">
         米国の線は<strong>週次チャートの名目 10 年債とは別系列</strong>
         (日次の DGS10 ではなく月次)。月中平均なので値も一致しない。
+      </span>,
+    ],
+  },
+  {
+    question: 'financial',
+    frequency: 'weekly',
+    signed: true,
+    primaryIndicator: 'nfci',
+    title: '金融環境指数',
+    subtitle: '0 が平均、正なら引き締まり',
+    series: [
+      { key: 'nfci', label: 'NFCI (総合)', color: COLORS.nfci, width: 2.4 },
+      { key: 'anfci', label: 'ANFCI (景気調整済み)', color: COLORS.anfci },
+      { key: 'financialStress', label: '金融ストレス指数', color: COLORS.financialStress },
+    ],
+    notes: [
+      <span key="direct">
+        <strong>この問いに最も直接答える指標。</strong>
+        下の信用スプレッドやイールドカーブは部品で、こちらは株式・債券・信用・
+        シャドーバンキングの 105 指標を合成した総合指数。
+      </span>,
+      <span key="diff">
+        <strong>NFCI と ANFCI の差が「なぜ緩いか」を分ける。</strong>
+        ANFCI は景気循環の影響を除いた分。景気が良いから緩いのか、金融要因で緩いのかが読める。
+      </span>,
+      <span key="third">
+        <strong>金融ストレス指数は別の連銀が別の手法で作る。</strong>
+        3 本が同じ方向を向いていれば、手法によらず環境が動いていることになる。
+      </span>,
+      <span key="zero">
+        ゼロ線は長期平均で、定義から決まる。恣意的な「危険水準」は引いていない。
+        水準ではなく<strong>0 からの距離</strong>で読む。
       </span>,
     ],
   },

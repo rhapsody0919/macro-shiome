@@ -394,6 +394,17 @@ export interface MacroPoint {
    * **総求人とは別系列**で、新規に掲載された求人だけを数える。
    */
   newJobPostings: number | null;
+  /** 金融環境指数 (NFCI)。**0 が平均、正なら引き締まり** (#190)。 */
+  nfci: number | null;
+  /** 金融環境指数 調整済み (ANFCI)。景気循環の影響を除く (#190)。 */
+  anfci: number | null;
+  /** 金融ストレス指数 (STLFSI4)。別の連銀・別の手法 (#190)。 */
+  financialStress: number | null;
+  /** 2年債利回り (%)。政策金利の織り込み (#190)。 */
+  twoYearRate: number | null;
+  /** SOFR (%)。翌日物の実勢レート (#190)。 */
+  sofr: number | null;
+
 }
 
 /**

@@ -1959,5 +1959,90 @@
       "max": 20000000
     },
     "note": "Existing Home Sales。件・季節調整済み年率 (#188)。**米国の住宅取引の大半を占める。** 新築住宅販売 (`HSN1F`) は取引量では少数で、市場全体の動きは中古が決める。\n\n**NAR の著作権で FRED は直近 13 か月しか提供しない。** 毎日取得して積み上げるため、時間が経つほど自前の履歴が長くなる (#128 の下落率と同じ考え方)。取り込み開始は 2026-08 で、それ以前は 2025-07 まで遡れた 13 点のみ。"
+  },
+  "nfci": {
+    "name": "金融環境指数 (NFCI)",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "NFCI"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "Federal Reserve Bank via FRED",
+    "copyright": "none",
+    "group": "rates",
+    "range": {
+      "min": -10,
+      "max": 10
+    },
+    "note": "**0 が平均、正なら引き締まり、負なら緩和**。標準偏差を単位とする指数で、水準そのものではなく 0 からの距離で読む (#190)。 シカゴ連銀。株式・債券・信用・シャドーバンキングの 105 指標を合成した総合指数。**「金融環境は緩いか厳しいか」に最も直接答える指標。** 既に取得している信用状況指数 (`NFCICREDIT`) はこの指数の信用サブ指数で、#83 で LEI の穴埋めとして採ったもの。親指数の存在に気付いていなかった。"
+  },
+  "anfci": {
+    "name": "金融環境指数 調整済み (ANFCI)",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "ANFCI"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "Federal Reserve Bank via FRED",
+    "copyright": "none",
+    "group": "rates",
+    "range": {
+      "min": -10,
+      "max": 10
+    },
+    "note": "**0 が平均、正なら引き締まり、負なら緩和**。標準偏差を単位とする指数で、水準そのものではなく 0 からの距離で読む (#190)。 シカゴ連銀。**景気循環の影響を除いた分**。NFCI との差が「景気が良いから緩いのか、金融要因で緩いのか」を分ける。"
+  },
+  "financial-stress": {
+    "name": "金融ストレス指数 (STLFSI4)",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "STLFSI4"
+    },
+    "frequency": "weekly",
+    "unit": "index",
+    "attribution": "Federal Reserve Bank via FRED",
+    "copyright": "none",
+    "group": "rates",
+    "range": {
+      "min": -10,
+      "max": 10
+    },
+    "note": "**0 が平均、正なら引き締まり、負なら緩和**。標準偏差を単位とする指数で、水準そのものではなく 0 からの距離で読む (#190)。 セントルイス連銀。**別の連銀が別の手法で作る**指数で、ストレスに寄っている。3 本が同じ方向を向いていれば手法によらず環境が動いている。"
+  },
+  "dgs2": {
+    "name": "2年債利回り",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "DGS2"
+    },
+    "frequency": "daily",
+    "unit": "percent",
+    "attribution": "Federal Reserve Bank via FRED",
+    "copyright": "none",
+    "group": "rates",
+    "range": {
+      "min": -5,
+      "max": 25
+    },
+    "note": "2年債利回り (%)、日次 (#190)。**政策金利の織り込みを映す。** イールドカーブ (`T10Y2Y`) は 10年債との差として既に持っているが、水準そのものは持っていなかった。"
+  },
+  "sofr": {
+    "name": "SOFR (翌日物調達金利)",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "SOFR"
+    },
+    "frequency": "daily",
+    "unit": "percent",
+    "attribution": "Federal Reserve Bank via FRED",
+    "copyright": "none",
+    "group": "rates",
+    "range": {
+      "min": -5,
+      "max": 25
+    },
+    "note": "Secured Overnight Financing Rate (%)、日次 (#190)。**FF 金利より市場の実態に近い。** 国債を担保にした翌日物の実勢レートで、実際の資金調達コストを示す。"
   }
 }
