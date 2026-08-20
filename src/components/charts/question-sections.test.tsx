@@ -107,9 +107,10 @@ describe('日本の雇用と所得 (#156)', () => {
     const section = document.getElementById('q-jp-labor');
     expect(section).not.toBeNull();
     const titles = Array.from(section?.querySelectorAll('h3') ?? []).map((h) => h.textContent);
-    // #170 で家計の余力と平均消費性向が加わった。求人 (雇用) → 所得 → 消費の順。
+    // 求人 → 失業率 (雇用) → 所得と消費 → 賃金の順 (#170 #180)。
     expect(titles).toEqual([
       '求人倍率',
+      '完全失業率 (日本)',
       '家計の余力 (日本)',
       '平均消費性向 (日本)',
       '実質賃金指数',
@@ -122,6 +123,33 @@ describe('日本の雇用と所得 (#156)', () => {
     const section = document.getElementById('q-jp-labor');
     const labels = section?.textContent ?? '';
     expect(labels.indexOf('新規求人倍率')).toBeLessThan(labels.indexOf('有効求人倍率'));
+  });
+});
+
+describe('日本の失業率と企業物価 (#180)', () => {
+  it('失業率は求人倍率の直後に置く', () => {
+    // 逆方向に動く関係を見るため隣に置く (#89 の上流 → 下流)。
+    render(<JapanPage />);
+    const section = document.getElementById('q-jp-labor');
+    const titles = Array.from(section?.querySelectorAll('h3') ?? []).map((h) => h.textContent);
+    expect(titles.indexOf('完全失業率 (日本)')).toBe(titles.indexOf('求人倍率') + 1);
+  });
+
+  it('企業物価は消費者物価の直後に置く', () => {
+    // 企業物価は消費者物価の上流。転嫁されているかを並べて読む。
+    render(<JapanPage />);
+    const section = document.getElementById('q-jp-price');
+    const titles = Array.from(section?.querySelectorAll('h3') ?? []).map((h) => h.textContent);
+    expect(titles.indexOf('国内企業物価指数 (日本)')).toBe(
+      titles.indexOf('消費者物価指数 (日本)') + 1,
+    );
+  });
+
+  it('米国の同名指標と同じ図に載せない', () => {
+    // 調査方法も基準年も違う。同じ図に載せると差が定義の違いに見える。
+    render(<EconomyPage />);
+    expect(screen.queryByRole('heading', { name: '完全失業率 (日本)' })).toBeNull();
+    expect(screen.queryByRole('heading', { name: '国内企業物価指数 (日本)' })).toBeNull();
   });
 });
 
@@ -214,8 +242,12 @@ describe('日本の消費者物価 (#162)', () => {
     const section = document.getElementById('q-jp-price');
     expect(section).not.toBeNull();
     const titles = Array.from(section?.querySelectorAll('h3') ?? []).map((h) => h.textContent);
-    // #174 でマネーストックが加わった。物価とその背景の通貨量を並べる。
-    expect(titles).toEqual(['消費者物価指数 (日本)', 'マネーストック M2 (日本)']);
+    // 消費者物価 → 上流の企業物価 → 背景の通貨量の順 (#174 #180)。
+    expect(titles).toEqual([
+      '消費者物価指数 (日本)',
+      '国内企業物価指数 (日本)',
+      'マネーストック M2 (日本)',
+    ]);
   });
 
   it('日銀が見るコアを先に置く', () => {
@@ -230,8 +262,9 @@ describe('日本の消費者物価 (#162)', () => {
 
   it('公表値をそのまま出していることを画面に書く', () => {
     // 指数から導出すると丸めで公表値とずれる。日米で経路が違うことを明記する。
+    // #180 で企業物価にも同じ注記が付いたため、2 か所に出るのが正しい。
     render(<JapanPage />);
-    expect(screen.getByText(/公表されている前年同月比をそのまま出している/)).toBeInTheDocument();
+    expect(screen.getAllByText(/公表されている前年同月比をそのまま出している/).length).toBe(2);
   });
 });
 

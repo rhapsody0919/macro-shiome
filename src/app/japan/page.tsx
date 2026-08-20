@@ -216,6 +216,36 @@ const CHARTS: QuestionChartDef<JapanQuestionId>[] = [
   {
     question: 'jp-price',
     frequency: 'monthly',
+    primaryIndicator: 'jp-producer-price',
+    title: '国内企業物価指数 (日本)',
+    subtitle: '前年同月比 (2020年基準)',
+    series: [
+      {
+        key: 'jpProducerPrice',
+        label: '企業物価',
+        color: COLORS.jpProducerPrice,
+        indicatorId: 'jp-producer-price',
+      },
+    ],
+    notes: [
+      <span key="upstream">
+        <strong>消費者物価の上流。</strong>
+        企業間の取引価格が上がっても、消費者に転嫁されるとは限らない。
+        上の消費者物価と差が開いていれば、企業がコストを吸収している。
+      </span>,
+      <span key="fast">
+        <strong>消費者物価より 1 か月早く出る。</strong>
+        物価系の中で最も速く、直近の変化はここに先に現れる。
+      </span>,
+      <span key="published">
+        公表されている前年同月比をそのまま出している。指数は小数 1 桁しか公表されず、
+        自分で計算すると丸めでずれるため (#162 で消費者物価が実際にずれた)。
+      </span>,
+    ],
+  },
+  {
+    question: 'jp-price',
+    frequency: 'monthly',
     kind: 'number',
     zeroLine: false,
     primaryIndicator: 'jp-money-stock',
@@ -238,6 +268,34 @@ const CHARTS: QuestionChartDef<JapanQuestionId>[] = [
       <span key="raw">
         <strong>季節調整済みの系列は提供されていない</strong>ため原数値。
         水準そのものが大きいので、方向と傾きで読む。
+      </span>,
+    ],
+  },
+  {
+    question: 'jp-labor',
+    frequency: 'monthly',
+    kind: 'number',
+    zeroLine: false,
+    primaryIndicator: 'jp-unemployment-rate',
+    title: '完全失業率 (日本)',
+    subtitle: '％・季節調整済み',
+    series: [
+      {
+        key: 'jpUnemploymentRate',
+        label: '完全失業率',
+        color: COLORS.jpUnemploymentRate,
+        indicatorId: 'jp-unemployment-rate',
+      },
+    ],
+    notes: [
+      <span key="pair">
+        <strong>上の求人倍率と逆方向に動く。</strong>
+        求人が減って失業率が上がれば労働需給の緩みが確かになる。
+        片方だけが動いているうちは統計の振れの可能性がある。
+      </span>,
+      <span key="us">
+        米国の失業率とは<strong>調査方法も定義も違う</strong>ため同じ図には載せていない。
+        日本は水準が低く動きも小さいので、水準ではなく方向で読む。
       </span>,
     ],
   },

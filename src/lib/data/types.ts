@@ -471,6 +471,10 @@ export interface MonthlyPoint {
   newHomeSales: number | null;
   /** 実質個人消費支出の前年同月比 (%)。実質可処分所得と対で見る (#178)。 */
   realConsumption: number | null;
+  /** 日本の完全失業率 (%)。**季節調整済み** (#180)。 */
+  jpUnemploymentRate: number | null;
+  /** 日本の国内企業物価指数の前年同月比 (%)。**2020年基準** (#180)。 */
+  jpProducerPrice: number | null;
   /** 日本の経常収支 (億円)。**季節調整済み** (#174)。 */
   jpCurrentAccount: number | null;
   /** 日本の貿易収支 (億円)。**季節調整済み** (#174)。 */

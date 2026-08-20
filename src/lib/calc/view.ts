@@ -649,6 +649,9 @@ export function buildEconomyView(options: BuildViewOptions): EconomyView {
     buildingPermits: level('building-permits', month),
     housingStarts: level('housing-starts', month),
     newHomeSales: level('new-home-sales', month),
+    // 公表値をそのまま出す。指数が小数 1 桁なので導出すると丸めでずれる (#180)。
+    jpUnemploymentRate: level('jp-unemployment-rate', month),
+    jpProducerPrice: level('jp-producer-price', month),
     // 原数値だと符号が変わるほど振れるため季調値 (#174)。
     jpCurrentAccount: level('jp-current-account', month),
     jpTradeBalance: level('jp-trade-balance', month),
@@ -742,6 +745,8 @@ const MONTHLY_INDICATORS = [
   'building-permits',
   'housing-starts',
   'new-home-sales',
+  'jp-unemployment-rate',
+  'jp-producer-price',
   'jp-current-account',
   'jp-trade-balance',
   'jp-money-stock',

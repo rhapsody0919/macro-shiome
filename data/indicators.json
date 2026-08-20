@@ -1903,5 +1903,43 @@
     "copyright": "none",
     "group": "macro",
     "note": "Real Personal Consumption Expenditures。10億ドル (連鎖2017年ドル)、季節調整済み年率 (#178)。**実質可処分所得と対で見る。** 所得が増えているのに消費が減っていれば買い控え、所得が減って消費も減っていれば余力そのものが失われている。片方だけでは区別できない (#95)。日本側の `jp-consumption` と定義を揃えてある (どちらも実質・前年同月比で表示)。"
+  },
+  "jp-unemployment-rate": {
+    "name": "完全失業率 (日本)",
+    "source": {
+      "adapter": "estat",
+      "indicatorCode": "0301010000020020010",
+      "cycle": "1",
+      "isSeasonal": "2"
+    },
+    "frequency": "monthly",
+    "unit": "percent",
+    "attribution": "総務省 労働力調査 (統計ダッシュボード)",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": 0,
+      "max": 20
+    },
+    "note": "完全失業率 (男女計、%)。**季節調整済み** (#180)。求人倍率と逆方向に動く関係を見る。米国の `UNRATE` とは調査方法も定義も違うため同じ図に載せない。FRED の `LRHUTTTTJPM156S` でも取れるが、既にあるデータソース (統計ダッシュボード) で揃えた。"
+  },
+  "jp-producer-price": {
+    "name": "国内企業物価指数 前年同月比 (日本)",
+    "source": {
+      "adapter": "estat",
+      "indicatorCode": "0703040400000030010",
+      "cycle": "1",
+      "isSeasonal": "1"
+    },
+    "frequency": "monthly",
+    "unit": "percent",
+    "attribution": "日本銀行 企業物価指数 (統計ダッシュボード)",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": -30,
+      "max": 30
+    },
+    "note": "国内企業物価指数の前年同月比 (%)、**2020年基準** (#180)。**公表されている前年同月比をそのまま取る。** 指数は小数 1 桁しか公表されず、そこから導出すると丸めでずれる (#162 で CPI が実際にずれた)。**消費者物価の上流。** 企業間の取引価格が上がっても、消費者に転嫁されるとは限らない。"
   }
 }
