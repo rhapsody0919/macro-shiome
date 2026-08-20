@@ -2602,5 +2602,138 @@
       "max": 300
     },
     "note": "総消費動向指数 (実質)、2020年基準 (#202)。**家計調査より広く消費全体を捉える。** 家計調査は世帯の申告ベースだが、こちらは供給側の統計も合成しており、単身世帯や施設消費も含む。"
+  },
+  "jp-shipments": {
+    "name": "鉱工業出荷指数 (日本)",
+    "source": {
+      "adapter": "estat",
+      "indicatorCode": "0502070302000090010",
+      "cycle": "1",
+      "isSeasonal": "2"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "経済産業省 鉱工業指数 (統計ダッシュボード)",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": 0,
+      "max": 300
+    },
+    "note": "鉱工業出荷指数、2020年基準・季節調整済み (#204)。**生産と在庫の間**。生産が伸びても出荷が伸びなければ在庫が積み上がる。"
+  },
+  "jp-inventory": {
+    "name": "鉱工業在庫指数 (日本)",
+    "source": {
+      "adapter": "estat",
+      "indicatorCode": "0502070303000090010",
+      "cycle": "1",
+      "isSeasonal": "2"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "経済産業省 鉱工業指数 (統計ダッシュボード)",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": 0,
+      "max": 300
+    },
+    "note": "鉱工業在庫指数、2020年基準・季節調整済み (#204)。**在庫の絶対量**。在庫率 (`jp-inventory-ratio`) は出荷に対する比で、こちらは水準そのもの。"
+  },
+  "jp-operating-rate": {
+    "name": "製造工業稼働率指数 (日本)",
+    "source": {
+      "adapter": "estat",
+      "indicatorCode": "0502070306000090010",
+      "cycle": "1",
+      "isSeasonal": "2"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "経済産業省 鉱工業指数 (統計ダッシュボード)",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": 0,
+      "max": 300
+    },
+    "note": "製造工業稼働率指数、2020年基準・季節調整済み (#204)。**米国の設備稼働率 (`TCU`) に対応するが単位が違う。** あちらは % (長期平均 80% 前後)、こちらは 2020年 = 100 の指数。**水準の意味が違うので同じ図に載せない。**"
+  },
+  "jp-bank-lending": {
+    "name": "銀行貸出 (日本)",
+    "source": {
+      "adapter": "estat",
+      "indicatorCode": "0702020201000010000",
+      "cycle": "1",
+      "isSeasonal": "1"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "日本銀行 (統計ダッシュボード)",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": 0,
+      "max": 100000000
+    },
+    "note": "銀行貸出残高。億円 (#204)。**信用の量的 side。** 米国の商工業貸出 (`BUSLOANS`) に対応する。日銀の緩和が実体経済に届いているかを見る。"
+  },
+  "jp-monetary-base": {
+    "name": "マネタリーベース (日本)",
+    "source": {
+      "adapter": "estat",
+      "indicatorCode": "0702010102000010010",
+      "cycle": "1",
+      "isSeasonal": "1"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "日本銀行 (統計ダッシュボード)",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": 0,
+      "max": 100000000
+    },
+    "note": "マネタリーベース平均残高。億円 (#204)。**日銀が直接供給する通貨量。** 米国の FRB バランスシート (`WALCL`) に対応する。マネーストック M2 との差が「銀行を通じて広がったか」を示す。"
+  },
+  "jp-working-hours": {
+    "name": "総実労働時間 (日本)",
+    "source": {
+      "adapter": "estat",
+      "indicatorCode": "0302010000000010000",
+      "cycle": "1",
+      "isSeasonal": "1"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "厚生労働省 毎月勤労統計調査 (統計ダッシュボード)",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": 0,
+      "max": 300
+    },
+    "note": "総実労働時間指数、**原数値** (#204)。季節調整済みの系列は提供されていない。**賃金は時間 × 単価。** 時間が減っていれば、時給が上がっても賃金は伸びない。米国の週平均労働時間 (`AWHAETP`) に対応する。"
+  },
+  "jp-public-works": {
+    "name": "公共工事受注額 (日本)",
+    "source": {
+      "adapter": "estat",
+      "indicatorCode": "0802020202000010010",
+      "cycle": "1",
+      "isSeasonal": "1"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "国土交通省 建設工事受注動態統計調査 (統計ダッシュボード)",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": 0,
+      "max": 100000000
+    },
+    "note": "公共工事受注額。億円 (#204)。**建設需要のうち政策で動く部分。** 住宅着工が家計の需要を示すのに対し、こちらは財政支出の実行状況。"
   }
 }
