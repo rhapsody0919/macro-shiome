@@ -2044,5 +2044,57 @@
       "max": 25
     },
     "note": "Secured Overnight Financing Rate (%)、日次 (#190)。**FF 金利より市場の実態に近い。** 国債を担保にした翌日物の実勢レートで、実際の資金調達コストを示す。"
+  },
+  "capacity-utilization": {
+    "name": "設備稼働率",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "TCU"
+    },
+    "frequency": "monthly",
+    "unit": "percent",
+    "attribution": "U.S. Census Bureau / Federal Reserve via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": 0,
+      "max": 120
+    },
+    "note": "Capacity Utilization: Total Index (%)、季節調整済み (#191)。**水準そのものが意味を持つ。** 長期平均は 80% 前後で、下回れば設備に余剰がある。稼働率が上がりきると設備投資が必要になるため、投資サイクルの手前を示す。**生産系で最も速い** — 鉱工業生産より 1 か月早く出る。"
+  },
+  "durable-goods-orders": {
+    "name": "耐久財新規受注",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "DGORDER"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "U.S. Census Bureau / Federal Reserve via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "cyclePosition": "leading",
+    "range": {
+      "min": 0,
+      "max": 1000000
+    },
+    "note": "Manufacturers' New Orders: Durable Goods。百万ドル、季節調整済み (#191)。**資本財新規受注 (`new-orders-capital-goods`) を含む上位概念。** あちらは LEI の構成要素で設備投資に絞った系列、こちらは自動車・航空機を含む耐久財全体。**同じ図に載せると二重計上に見える**ため分けている。"
+  },
+  "business-inventories": {
+    "name": "企業在庫",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "BUSINV"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "U.S. Census Bureau / Federal Reserve via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": 0,
+      "max": 10000000
+    },
+    "note": "Total Business Inventories。百万ドル、季節調整済み (#191)。**在庫循環を見る唯一の指標。** 受注が伸びても在庫が積み上がっていれば生産は続かない。前年同月比で出し、受注の伸びと比べる。"
   }
 }

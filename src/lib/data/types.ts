@@ -488,6 +488,12 @@ export interface MonthlyPoint {
   newHomeSales: number | null;
   /** 中古住宅販売件数。取引量の大半を占める。**直近 13 か月から積み上げ中** (#188)。 */
   existingHomeSales: number | null;
+  /** 設備稼働率 (%)。**水準で読む。長期平均 80% 前後** (#191)。 */
+  capacityUtilization: number | null;
+  /** 耐久財新規受注の前年同月比 (%)。資本財受注の上位概念 (#191)。 */
+  durableGoodsOrders: number | null;
+  /** 企業在庫の前年同月比 (%)。在庫循環を見る (#191)。 */
+  businessInventories: number | null;
   /** 実質個人消費支出の前年同月比 (%)。実質可処分所得と対で見る (#178)。 */
   realConsumption: number | null;
   /** 日本の完全失業率 (%)。**季節調整済み** (#180)。 */

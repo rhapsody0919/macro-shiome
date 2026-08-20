@@ -153,6 +153,29 @@ describe('日本の失業率と企業物価 (#180)', () => {
   });
 });
 
+describe('設備稼働率と在庫循環 (#191)', () => {
+  it('稼働率は水準で出す', () => {
+    // 前年同月比にすると「80% を割った」という水準の意味が消える。
+    render(<EconomyPage />);
+    expect(screen.getByRole('heading', { name: '設備稼働率' })).toBeInTheDocument();
+    expect(screen.getByText(/水準で読む/)).toBeInTheDocument();
+  });
+
+  it('受注と在庫を 1 枚に重ねる', () => {
+    // 同じ単位 (前年同月比 %)。2 本の差が在庫循環を示すので分けると読めない。
+    render(<EconomyPage />);
+    expect(screen.getByRole('heading', { name: '耐久財受注と在庫' })).toBeInTheDocument();
+    expect(screen.getByText('耐久財新規受注')).toBeInTheDocument();
+    expect(screen.getByText('企業在庫')).toBeInTheDocument();
+  });
+
+  it('資本財受注と同じ図に載せない', () => {
+    // 耐久財は資本財を含む上位概念。重ねると二重計上に見える。
+    render(<EconomyPage />);
+    expect(screen.getByText(/含む関係にあるため同じ図には載せていない/)).toBeInTheDocument();
+  });
+});
+
 describe('金融環境指数と短期金利 (#190)', () => {
   it('3 つの指数を 1 枚に重ねる', () => {
     // いずれも 0 が平均の同じスケール。3 本の差が「何を測っているか」の違いを示す。
