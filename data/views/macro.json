@@ -30,7 +30,11 @@
     "continuedClaims": 2143000,
     "fedBalanceSheet": 4466793,
     "termSpread3m": 1.31,
-    "tbill3m": 0.27
+    "tbill3m": 0.27,
+    "nasdaqComposite": 1.5793958684342746,
+    "djia": null,
+    "usdEur": 1.108,
+    "cnyUsd": 6.653
   },
   {
     "date": "2016-08-12",
@@ -63,7 +67,11 @@
     "continuedClaims": 2157000,
     "fedBalanceSheet": 4468929,
     "termSpread3m": 1.22,
-    "tbill3m": 0.28
+    "tbill3m": 0.28,
+    "nasdaqComposite": 3.73682447233461,
+    "djia": null,
+    "usdEur": 1.1172,
+    "cnyUsd": 6.6324
   },
   {
     "date": "2016-08-19",
@@ -96,7 +104,11 @@
     "continuedClaims": 2137000,
     "fedBalanceSheet": 4466476,
     "termSpread3m": 1.28,
-    "tbill3m": 0.29
+    "tbill3m": 0.29,
+    "nasdaqComposite": 4.369950488638286,
+    "djia": null,
+    "usdEur": 1.1326,
+    "cnyUsd": 6.6515
   },
   {
     "date": "2016-08-26",
@@ -129,7 +141,11 @@
     "continuedClaims": 2148000,
     "fedBalanceSheet": 4473840,
     "termSpread3m": 1.28,
-    "tbill3m": 0.33
+    "tbill3m": 0.33,
+    "nasdaqComposite": 11.09900075358592,
+    "djia": null,
+    "usdEur": 1.1237,
+    "cnyUsd": 6.669
   },
   {
     "date": "2016-09-02",
@@ -162,7 +178,11 @@
     "continuedClaims": 2138000,
     "fedBalanceSheet": 4457907,
     "termSpread3m": 1.27,
-    "tbill3m": 0.32
+    "tbill3m": 0.32,
+    "nasdaqComposite": 10.524675893372182,
+    "djia": null,
+    "usdEur": 1.1158,
+    "cnyUsd": 6.679
   },
   {
     "date": "2016-09-09",
@@ -195,7 +215,11 @@
     "continuedClaims": 2149000,
     "fedBalanceSheet": 4459394,
     "termSpread3m": 1.32,
-    "tbill3m": 0.34
+    "tbill3m": 0.34,
+    "nasdaqComposite": 7.765745196603402,
+    "djia": null,
+    "usdEur": 1.1214,
+    "cnyUsd": 6.6778
   },
   {
     "date": "2016-09-16",
@@ -228,7 +252,11 @@
     "continuedClaims": 2110000,
     "fedBalanceSheet": 4481635,
     "termSpread3m": 1.4,
-    "tbill3m": 0.29
+    "tbill3m": 0.29,
+    "nasdaqComposite": 7.267591691142172,
+    "djia": null,
+    "usdEur": 1.116,
+    "cnyUsd": 6.6707
   },
   {
     "date": "2016-09-23",
@@ -261,7 +289,11 @@
     "continuedClaims": 2098000,
     "fedBalanceSheet": 4473032,
     "termSpread3m": 1.44,
-    "tbill3m": 0.18
+    "tbill3m": 0.18,
+    "nasdaqComposite": 11.635603883233681,
+    "djia": null,
+    "usdEur": 1.1223,
+    "cnyUsd": 6.669
   },
   {
     "date": "2016-09-30",
@@ -294,7 +326,11 @@
     "continuedClaims": 2081000,
     "fedBalanceSheet": 4452002,
     "termSpread3m": 1.31,
-    "tbill3m": 0.28
+    "tbill3m": 0.28,
+    "nasdaqComposite": 14.974373181881152,
+    "djia": null,
+    "usdEur": 1.1238,
+    "cnyUsd": 6.6685
   },
   {
     "date": "2016-10-07",
@@ -327,7 +363,11 @@
     "continuedClaims": 2080000,
     "fedBalanceSheet": 4459407,
     "termSpread3m": 1.4,
-    "tbill3m": 0.32
+    "tbill3m": 0.32,
+    "nasdaqComposite": 10.461997641484832,
+    "djia": null,
+    "usdEur": 1.1156,
+    "cnyUsd": 6.6685
   },
   {
     "date": "2016-10-14",
@@ -360,7 +400,11 @@
     "continuedClaims": 2081000,
     "fedBalanceSheet": 4457698,
     "termSpread3m": 1.48,
-    "tbill3m": 0.31
+    "tbill3m": 0.31,
+    "nasdaqComposite": 9.017845008729086,
+    "djia": null,
+    "usdEur": 1.0985,
+    "cnyUsd": 6.7277
   },
   {
     "date": "2016-10-21",
@@ -393,7 +437,11 @@
     "continuedClaims": 2069000,
     "fedBalanceSheet": 4467382,
     "termSpread3m": 1.4,
-    "tbill3m": 0.33
+    "tbill3m": 0.33,
+    "nasdaqComposite": 8.621273852714385,
+    "djia": null,
+    "usdEur": 1.0866,
+    "cnyUsd": 6.7654
   },
   {
     "date": "2016-10-28",
@@ -426,7 +474,11 @@
     "continuedClaims": 2066000,
     "fedBalanceSheet": 4454326,
     "termSpread3m": 1.56,
-    "tbill3m": 0.29
+    "tbill3m": 0.29,
+    "nasdaqComposite": 1.8527422194050347,
+    "djia": null,
+    "usdEur": 1.0934,
+    "cnyUsd": 6.776
   },
   {
     "date": "2016-11-04",
@@ -459,7 +511,11 @@
     "continuedClaims": 2067000,
     "fedBalanceSheet": 4453087,
     "termSpread3m": 1.41,
-    "tbill3m": 0.37
+    "tbill3m": 0.37,
+    "nasdaqComposite": -1.8689426113470464,
+    "djia": null,
+    "usdEur": 1.1121,
+    "cnyUsd": 6.7534
   },
   {
     "date": "2016-11-11",
@@ -492,7 +548,11 @@
     "continuedClaims": 2046000,
     "fedBalanceSheet": 4455087,
     "termSpread3m": 1.67,
-    "tbill3m": 0.47
+    "tbill3m": 0.47,
+    "nasdaqComposite": 3.3568053806773746,
+    "djia": null,
+    "usdEur": 1.0882,
+    "cnyUsd": 6.7987
   },
   {
     "date": "2016-11-18",
@@ -525,7 +585,11 @@
     "continuedClaims": 2045000,
     "fedBalanceSheet": 4453633,
     "termSpread3m": 1.9,
-    "tbill3m": 0.43
+    "tbill3m": 0.43,
+    "nasdaqComposite": 4.853207755359401,
+    "djia": null,
+    "usdEur": 1.06,
+    "cnyUsd": 6.8873
   },
   {
     "date": "2016-11-25",
@@ -558,7 +622,11 @@
     "continuedClaims": 2050000,
     "fedBalanceSheet": 4465782,
     "termSpread3m": 1.87,
-    "tbill3m": 0.48
+    "tbill3m": 0.48,
+    "nasdaqComposite": 5.527213876086257,
+    "djia": null,
+    "usdEur": 1.0595,
+    "cnyUsd": 6.9176
   },
   {
     "date": "2016-12-02",
@@ -591,7 +659,11 @@
     "continuedClaims": 2038000,
     "fedBalanceSheet": 4446307,
     "termSpread3m": 1.91,
-    "tbill3m": 0.48
+    "tbill3m": 0.48,
+    "nasdaqComposite": 2.58489777913109,
+    "djia": null,
+    "usdEur": 1.0666,
+    "cnyUsd": 6.883
   },
   {
     "date": "2016-12-09",
@@ -624,7 +696,11 @@
     "continuedClaims": 2029000,
     "fedBalanceSheet": 4448618,
     "termSpread3m": 1.93,
-    "tbill3m": 0.53
+    "tbill3m": 0.53,
+    "nasdaqComposite": 8.394204906756508,
+    "djia": null,
+    "usdEur": 1.0541,
+    "cnyUsd": 6.9042
   },
   {
     "date": "2016-12-16",
@@ -657,7 +733,11 @@
     "continuedClaims": 2030000,
     "fedBalanceSheet": 4470973,
     "termSpread3m": 2.09,
-    "tbill3m": 0.5
+    "tbill3m": 0.5,
+    "nasdaqComposite": 7.2179178999552285,
+    "djia": null,
+    "usdEur": 1.0456,
+    "cnyUsd": 6.958
   },
   {
     "date": "2016-12-23",
@@ -690,7 +770,11 @@
     "continuedClaims": 2078000,
     "fedBalanceSheet": 4469089,
     "termSpread3m": 2.03,
-    "tbill3m": 0.51
+    "tbill3m": 0.51,
+    "nasdaqComposite": 8.259329796489423,
+    "djia": null,
+    "usdEur": 1.0449,
+    "cnyUsd": 6.9432
   },
   {
     "date": "2016-12-30",
@@ -723,7 +807,11 @@
     "continuedClaims": 2077000,
     "fedBalanceSheet": 4451451,
     "termSpread3m": 1.94,
-    "tbill3m": 0.5
+    "tbill3m": 0.5,
+    "nasdaqComposite": 6.2629173781300285,
+    "djia": null,
+    "usdEur": 1.0552,
+    "cnyUsd": 6.943
   },
   {
     "date": "2017-01-06",
@@ -756,7 +844,11 @@
     "continuedClaims": 2028000,
     "fedBalanceSheet": 4453101,
     "termSpread3m": 1.89,
-    "tbill3m": 0.52
+    "tbill3m": 0.52,
+    "nasdaqComposite": 14.171505616490476,
+    "djia": null,
+    "usdEur": 1.056,
+    "cnyUsd": 6.9176
   },
   {
     "date": "2017-01-13",
@@ -789,7 +881,11 @@
     "continuedClaims": 2080000,
     "fedBalanceSheet": 4452509,
     "termSpread3m": 1.87,
-    "tbill3m": 0.52
+    "tbill3m": 0.52,
+    "nasdaqComposite": 23.156122543669323,
+    "djia": null,
+    "usdEur": 1.0625,
+    "cnyUsd": 6.8985
   },
   {
     "date": "2017-01-20",
@@ -822,7 +918,11 @@
     "continuedClaims": 2099000,
     "fedBalanceSheet": 4460758,
     "termSpread3m": 1.98,
-    "tbill3m": 0.49
+    "tbill3m": 0.49,
+    "nasdaqComposite": 24.233343545728815,
+    "djia": null,
+    "usdEur": 1.063,
+    "cnyUsd": 6.868
   },
   {
     "date": "2017-01-27",
@@ -855,7 +955,11 @@
     "continuedClaims": 2067000,
     "fedBalanceSheet": 4452838,
     "termSpread3m": 1.97,
-    "tbill3m": 0.51
+    "tbill3m": 0.51,
+    "nasdaqComposite": 26.691240485478396,
+    "djia": null,
+    "usdEur": 1.069,
+    "cnyUsd": 6.8768
   },
   {
     "date": "2017-02-03",
@@ -888,7 +992,11 @@
     "continuedClaims": 2078000,
     "fedBalanceSheet": 4453881,
     "termSpread3m": 1.98,
-    "tbill3m": 0.5
+    "tbill3m": 0.5,
+    "nasdaqComposite": 25.809681544500318,
+    "djia": null,
+    "usdEur": 1.0792,
+    "cnyUsd": 6.865
   },
   {
     "date": "2017-02-10",
@@ -921,7 +1029,11 @@
     "continuedClaims": 2064000,
     "fedBalanceSheet": 4456236,
     "termSpread3m": 1.86,
-    "tbill3m": 0.54
+    "tbill3m": 0.54,
+    "nasdaqComposite": 33.8627179538658,
+    "djia": null,
+    "usdEur": 1.065,
+    "cnyUsd": 6.8775
   },
   {
     "date": "2017-02-17",
@@ -954,7 +1066,11 @@
     "continuedClaims": 2076000,
     "fedBalanceSheet": 4454676,
     "termSpread3m": 1.89,
-    "tbill3m": 0.52
+    "tbill3m": 0.52,
+    "nasdaqComposite": 28.77156455803407,
+    "djia": null,
+    "usdEur": 1.0614,
+    "cnyUsd": 6.864
   },
   {
     "date": "2017-02-24",
@@ -987,7 +1103,11 @@
     "continuedClaims": 2034000,
     "fedBalanceSheet": 4468702,
     "termSpread3m": 1.79,
-    "tbill3m": 0.51
+    "tbill3m": 0.51,
+    "nasdaqComposite": 28.677346283304118,
+    "djia": null,
+    "usdEur": 1.058,
+    "cnyUsd": 6.8645
   },
   {
     "date": "2017-03-03",
@@ -1020,7 +1140,11 @@
     "continuedClaims": 2065000,
     "fedBalanceSheet": 4458018,
     "termSpread3m": 1.78,
-    "tbill3m": 0.7
+    "tbill3m": 0.7,
+    "nasdaqComposite": 24.71268762931711,
+    "djia": null,
+    "usdEur": 1.0552,
+    "cnyUsd": 6.8954
   },
   {
     "date": "2017-03-10",
@@ -1053,7 +1177,11 @@
     "continuedClaims": 2020000,
     "fedBalanceSheet": 4459840,
     "termSpread3m": 1.83,
-    "tbill3m": 0.73
+    "tbill3m": 0.73,
+    "nasdaqComposite": 25.729919179092953,
+    "djia": null,
+    "usdEur": 1.0667,
+    "cnyUsd": 6.905
   },
   {
     "date": "2017-03-17",
@@ -1086,7 +1214,11 @@
     "continuedClaims": 2002000,
     "fedBalanceSheet": 4469577,
     "termSpread3m": 1.77,
-    "tbill3m": 0.72
+    "tbill3m": 0.72,
+    "nasdaqComposite": 23.581410641697676,
+    "djia": null,
+    "usdEur": 1.0742,
+    "cnyUsd": 6.9
   },
   {
     "date": "2017-03-24",
@@ -1119,7 +1251,11 @@
     "continuedClaims": 2021000,
     "fedBalanceSheet": 4478236,
     "termSpread3m": 1.62,
-    "tbill3m": 0.77
+    "tbill3m": 0.77,
+    "nasdaqComposite": 22.106211375301132,
+    "djia": null,
+    "usdEur": 1.0806,
+    "cnyUsd": 6.8803
   },
   {
     "date": "2017-03-31",
@@ -1152,7 +1288,11 @@
     "continuedClaims": 2027000,
     "fedBalanceSheet": 4469618,
     "termSpread3m": 1.64,
-    "tbill3m": 0.75
+    "tbill3m": 0.75,
+    "nasdaqComposite": 21.39470414899842,
+    "djia": null,
+    "usdEur": 1.0698,
+    "cnyUsd": 6.8832
   },
   {
     "date": "2017-04-07",
@@ -1185,7 +1325,11 @@
     "continuedClaims": 1990000,
     "fedBalanceSheet": 4474634,
     "termSpread3m": 1.56,
-    "tbill3m": 0.81
+    "tbill3m": 0.81,
+    "nasdaqComposite": 21.232702949651138,
+    "djia": null,
+    "usdEur": 1.0616,
+    "cnyUsd": 6.8978
   },
   {
     "date": "2017-04-14",
@@ -1218,7 +1362,11 @@
     "continuedClaims": 1968000,
     "fedBalanceSheet": 4484492,
     "termSpread3m": 1.43,
-    "tbill3m": 0.8
+    "tbill3m": 0.8,
+    "nasdaqComposite": 17.373212910113224,
+    "djia": null,
+    "usdEur": 1.0625,
+    "cnyUsd": 6.8835
   },
   {
     "date": "2017-04-21",
@@ -1251,7 +1399,11 @@
     "continuedClaims": 1961000,
     "fedBalanceSheet": 4479270,
     "termSpread3m": 1.45,
-    "tbill3m": 0.78
+    "tbill3m": 0.78,
+    "nasdaqComposite": 19.50270222182684,
+    "djia": null,
+    "usdEur": 1.0694,
+    "cnyUsd": 6.8845
   },
   {
     "date": "2017-04-28",
@@ -1284,7 +1436,11 @@
     "continuedClaims": 1962000,
     "fedBalanceSheet": 4470142,
     "termSpread3m": 1.49,
-    "tbill3m": 0.79
+    "tbill3m": 0.79,
+    "nasdaqComposite": 25.85317431414129,
+    "djia": null,
+    "usdEur": 1.0895,
+    "cnyUsd": 6.89
   },
   {
     "date": "2017-05-05",
@@ -1317,7 +1473,11 @@
     "continuedClaims": 1896000,
     "fedBalanceSheet": 4471246,
     "termSpread3m": 1.46,
-    "tbill3m": 0.88
+    "tbill3m": 0.88,
+    "nasdaqComposite": 29.333126991429047,
+    "djia": null,
+    "usdEur": 1.0996,
+    "cnyUsd": 6.9021
   },
   {
     "date": "2017-05-12",
@@ -1350,7 +1510,11 @@
     "continuedClaims": 1892000,
     "fedBalanceSheet": 4473459,
     "termSpread3m": 1.45,
-    "tbill3m": 0.86
+    "tbill3m": 0.86,
+    "nasdaqComposite": 29.212657762917082,
+    "djia": null,
+    "usdEur": 1.0926,
+    "cnyUsd": 6.8972
   },
   {
     "date": "2017-05-19",
@@ -1383,7 +1547,11 @@
     "continuedClaims": 1902000,
     "fedBalanceSheet": 4467108,
     "termSpread3m": 1.31,
-    "tbill3m": 0.9
+    "tbill3m": 0.9,
+    "nasdaqComposite": 29.09626039515929,
+    "djia": null,
+    "usdEur": 1.119,
+    "cnyUsd": 6.883
   },
   {
     "date": "2017-05-26",
@@ -1416,7 +1584,11 @@
     "continuedClaims": 1900000,
     "fedBalanceSheet": 4470852,
     "termSpread3m": 1.31,
-    "tbill3m": 0.92
+    "tbill3m": 0.92,
+    "nasdaqComposite": 26.692806884043918,
+    "djia": null,
+    "usdEur": 1.117,
+    "cnyUsd": 6.8525
   },
   {
     "date": "2017-06-02",
@@ -1449,7 +1621,11 @@
     "continuedClaims": 1891000,
     "fedBalanceSheet": 4459914,
     "termSpread3m": 1.17,
-    "tbill3m": 0.96
+    "tbill3m": 0.96,
+    "nasdaqComposite": 26.842554150172205,
+    "djia": null,
+    "usdEur": 1.127,
+    "cnyUsd": 6.8085
   },
   {
     "date": "2017-06-09",
@@ -1482,7 +1658,11 @@
     "continuedClaims": 1909000,
     "fedBalanceSheet": 4462443,
     "termSpread3m": 1.2,
-    "tbill3m": 0.99
+    "tbill3m": 0.99,
+    "nasdaqComposite": 25.194509762796912,
+    "djia": null,
+    "usdEur": 1.119,
+    "cnyUsd": 6.797
   },
   {
     "date": "2017-06-16",
@@ -1515,7 +1695,11 @@
     "continuedClaims": 1914000,
     "fedBalanceSheet": 4476269,
     "termSpread3m": 1.13,
-    "tbill3m": 1.01
+    "tbill3m": 1.01,
+    "nasdaqComposite": 26.973669273526248,
+    "djia": null,
+    "usdEur": 1.1194,
+    "cnyUsd": 6.8097
   },
   {
     "date": "2017-06-23",
@@ -1548,7 +1732,11 @@
     "continuedClaims": 1915000,
     "fedBalanceSheet": 4474257,
     "termSpread3m": 1.18,
-    "tbill3m": 0.95
+    "tbill3m": 0.95,
+    "nasdaqComposite": 27.60079347622422,
+    "djia": null,
+    "usdEur": 1.1196,
+    "cnyUsd": 6.8345
   },
   {
     "date": "2017-06-30",
@@ -1581,7 +1769,11 @@
     "continuedClaims": 1929000,
     "fedBalanceSheet": 4463347,
     "termSpread3m": 1.28,
-    "tbill3m": 1.01
+    "tbill3m": 1.01,
+    "nasdaqComposite": 26.798233206061937,
+    "djia": null,
+    "usdEur": 1.1411,
+    "cnyUsd": 6.7793
   },
   {
     "date": "2017-07-07",
@@ -1614,7 +1806,11 @@
     "continuedClaims": 1911000,
     "fedBalanceSheet": 4467272,
     "termSpread3m": 1.34,
-    "tbill3m": 1.03
+    "tbill3m": 1.03,
+    "nasdaqComposite": 26.170180917443965,
+    "djia": null,
+    "usdEur": 1.1396,
+    "cnyUsd": 6.8039
   },
   {
     "date": "2017-07-14",
@@ -1647,7 +1843,11 @@
     "continuedClaims": 1942000,
     "fedBalanceSheet": 4466702,
     "termSpread3m": 1.29,
-    "tbill3m": 1.02
+    "tbill3m": 1.02,
+    "nasdaqComposite": 25.395207844165533,
+    "djia": null,
+    "usdEur": 1.1452,
+    "cnyUsd": 6.7741
   },
   {
     "date": "2017-07-21",
@@ -1680,7 +1880,11 @@
     "continuedClaims": 1929000,
     "fedBalanceSheet": 4476903,
     "termSpread3m": 1.08,
-    "tbill3m": 1.14
+    "tbill3m": 1.14,
+    "nasdaqComposite": 25.89428250458228,
+    "djia": null,
+    "usdEur": 1.1655,
+    "cnyUsd": 6.7663
   },
   {
     "date": "2017-07-28",
@@ -1713,7 +1917,11 @@
     "continuedClaims": 1928000,
     "fedBalanceSheet": 4465284,
     "termSpread3m": 1.22,
-    "tbill3m": 1.06
+    "tbill3m": 1.06,
+    "nasdaqComposite": 23.660615560099174,
+    "djia": null,
+    "usdEur": 1.1754,
+    "cnyUsd": 6.7362
   },
   {
     "date": "2017-08-04",
@@ -1746,7 +1954,11 @@
     "continuedClaims": 1926000,
     "fedBalanceSheet": 4466846,
     "termSpread3m": 1.19,
-    "tbill3m": 1.06
+    "tbill3m": 1.06,
+    "nasdaqComposite": 22.94333413984999,
+    "djia": null,
+    "usdEur": 1.1754,
+    "cnyUsd": 6.7272
   },
   {
     "date": "2017-08-11",
@@ -1779,7 +1991,11 @@
     "continuedClaims": 1928000,
     "fedBalanceSheet": 4469083,
     "termSpread3m": 1.16,
-    "tbill3m": 1.01
+    "tbill3m": 1.01,
+    "nasdaqComposite": 19.664907046132683,
+    "djia": null,
+    "usdEur": 1.1811,
+    "cnyUsd": 6.6612
   },
   {
     "date": "2017-08-18",
@@ -1812,7 +2028,11 @@
     "continuedClaims": 1926000,
     "fedBalanceSheet": 4462871,
     "termSpread3m": 1.17,
-    "tbill3m": 1
+    "tbill3m": 1,
+    "nasdaqComposite": 18.63267272883411,
+    "djia": null,
+    "usdEur": 1.1748,
+    "cnyUsd": 6.67
   },
   {
     "date": "2017-08-25",
@@ -1845,7 +2065,11 @@
     "continuedClaims": 1928000,
     "fedBalanceSheet": 4463837,
     "termSpread3m": 1.14,
-    "tbill3m": 1.01
+    "tbill3m": 1.01,
+    "nasdaqComposite": 20.211043321438172,
+    "djia": 18.241463627488752,
+    "usdEur": 1.1874,
+    "cnyUsd": 6.6465
   },
   {
     "date": "2017-09-01",
@@ -1878,7 +2102,11 @@
     "continuedClaims": 1912000,
     "fedBalanceSheet": 4452360,
     "termSpread3m": 1.14,
-    "tbill3m": 1
+    "tbill3m": 1,
+    "nasdaqComposite": 23.112138215223798,
+    "djia": 19.37239743095558,
+    "usdEur": 1.1878,
+    "cnyUsd": 6.5552
   },
   {
     "date": "2017-09-08",
@@ -1911,7 +2139,11 @@
     "continuedClaims": 1911000,
     "fedBalanceSheet": 4453474,
     "termSpread3m": 1.02,
-    "tbill3m": 1.02
+    "tbill3m": 1.02,
+    "nasdaqComposite": 20.928114566459044,
+    "djia": 17.95398354212765,
+    "usdEur": 1.2041,
+    "cnyUsd": 6.4773
   },
   {
     "date": "2017-09-15",
@@ -1944,7 +2176,11 @@
     "continuedClaims": 1939000,
     "fedBalanceSheet": 4471174,
     "termSpread3m": 1.15,
-    "tbill3m": 1.03
+    "tbill3m": 1.03,
+    "nasdaqComposite": 22.835253129232402,
+    "djia": 22.26967442105634,
+    "usdEur": 1.1959,
+    "cnyUsd": 6.55
   },
   {
     "date": "2017-09-22",
@@ -1977,7 +2213,11 @@
     "continuedClaims": 1872000,
     "fedBalanceSheet": 4458576,
     "termSpread3m": 1.23,
-    "tbill3m": 1.01
+    "tbill3m": 1.01,
+    "nasdaqComposite": 20.36512645331414,
+    "djia": 21.51495775986465,
+    "usdEur": 1.1969,
+    "cnyUsd": 6.5899
   },
   {
     "date": "2017-09-29",
@@ -2010,7 +2250,11 @@
     "continuedClaims": 1871000,
     "fedBalanceSheet": 4455661,
     "termSpread3m": 1.27,
-    "tbill3m": 1.04
+    "tbill3m": 1.04,
+    "nasdaqComposite": 23.282882438343954,
+    "djia": 23.48858679027417,
+    "usdEur": 1.1813,
+    "cnyUsd": 6.6533
   },
   {
     "date": "2017-10-06",
@@ -2043,7 +2287,11 @@
     "continuedClaims": 1871000,
     "fedBalanceSheet": 4460422,
     "termSpread3m": 1.3,
-    "tbill3m": 1.05
+    "tbill3m": 1.05,
+    "nasdaqComposite": 24.18251882001563,
+    "djia": 24.660864329310005,
+    "usdEur": 1.1732,
+    "cnyUsd": 6.6533
   },
   {
     "date": "2017-10-13",
@@ -2076,7 +2324,11 @@
     "continuedClaims": 1869000,
     "fedBalanceSheet": 4459415,
     "termSpread3m": 1.19,
-    "tbill3m": 1.07
+    "tbill3m": 1.07,
+    "nasdaqComposite": 26.7097996865727,
+    "djia": 26.370494625652128,
+    "usdEur": 1.1837,
+    "cnyUsd": 6.5785
   },
   {
     "date": "2017-10-20",
@@ -2109,7 +2361,11 @@
     "continuedClaims": 1902000,
     "fedBalanceSheet": 4469723,
     "termSpread3m": 1.28,
-    "tbill3m": 1.09
+    "tbill3m": 1.09,
+    "nasdaqComposite": 26.464421776364368,
+    "djia": 28.444997481052848,
+    "usdEur": 1.177,
+    "cnyUsd": 6.6185
   },
   {
     "date": "2017-10-27",
@@ -2142,7 +2398,11 @@
     "continuedClaims": 1913000,
     "fedBalanceSheet": 4461117,
     "termSpread3m": 1.32,
-    "tbill3m": 1.08
+    "tbill3m": 1.08,
+    "nasdaqComposite": 28.475815620105173,
+    "djia": 28.97414814129913,
+    "usdEur": 1.158,
+    "cnyUsd": 6.6498
   },
   {
     "date": "2017-11-03",
@@ -2175,7 +2435,11 @@
     "continuedClaims": 1927000,
     "fedBalanceSheet": 4455887,
     "termSpread3m": 1.16,
-    "tbill3m": 1.16
+    "tbill3m": 1.16,
+    "nasdaqComposite": 33.72660579114781,
+    "djia": 31.278920419593923,
+    "usdEur": 1.1616,
+    "cnyUsd": 6.636
   },
   {
     "date": "2017-11-10",
@@ -2208,7 +2472,11 @@
     "continuedClaims": 1939000,
     "fedBalanceSheet": 4458552,
     "termSpread3m": 1.17,
-    "tbill3m": 1.21
+    "tbill3m": 1.21,
+    "nasdaqComposite": 29.60643526340039,
+    "djia": 24.534025100117596,
+    "usdEur": 1.1648,
+    "cnyUsd": 6.6378
   },
   {
     "date": "2017-11-17",
@@ -2241,7 +2509,11 @@
     "continuedClaims": 1944000,
     "fedBalanceSheet": 4448289,
     "termSpread3m": 1.06,
-    "tbill3m": 1.26
+    "tbill3m": 1.26,
+    "nasdaqComposite": 27.16213252043036,
+    "djia": 23.563597198873044,
+    "usdEur": 1.1799,
+    "cnyUsd": 6.6245
   },
   {
     "date": "2017-11-24",
@@ -2274,7 +2546,11 @@
     "continuedClaims": 1974000,
     "fedBalanceSheet": 4450615,
     "termSpread3m": 1.05,
-    "tbill3m": 1.26
+    "tbill3m": 1.26,
+    "nasdaqComposite": 28.035118237843527,
+    "djia": 23.44897443717453,
+    "usdEur": 1.1936,
+    "cnyUsd": 6.5998
   },
   {
     "date": "2017-12-01",
@@ -2307,7 +2583,11 @@
     "continuedClaims": 1997000,
     "fedBalanceSheet": 4438592,
     "termSpread3m": 1.1,
-    "tbill3m": 1.25
+    "tbill3m": 1.25,
+    "nasdaqComposite": 30.40271485457362,
+    "djia": 26.259266264518466,
+    "usdEur": 1.191,
+    "cnyUsd": 6.6137
   },
   {
     "date": "2017-12-08",
@@ -2340,7 +2620,11 @@
     "continuedClaims": 1953000,
     "fedBalanceSheet": 4437148,
     "termSpread3m": 1.1,
-    "tbill3m": 1.26
+    "tbill3m": 1.26,
+    "nasdaqComposite": 26.262238433480523,
+    "djia": 24.034645250196142,
+    "usdEur": 1.1761,
+    "cnyUsd": 6.6199
   },
   {
     "date": "2017-12-15",
@@ -2373,7 +2657,11 @@
     "continuedClaims": 1984000,
     "fedBalanceSheet": 4452726,
     "termSpread3m": 1.04,
-    "tbill3m": 1.29
+    "tbill3m": 1.29,
+    "nasdaqComposite": 27.116926431915832,
+    "djia": 24.176113123758313,
+    "usdEur": 1.1778,
+    "cnyUsd": 6.6088
   },
   {
     "date": "2017-12-22",
@@ -2406,7 +2694,11 @@
     "continuedClaims": 2006000,
     "fedBalanceSheet": 4447470,
     "termSpread3m": 1.15,
-    "tbill3m": 1.31
+    "tbill3m": 1.31,
+    "nasdaqComposite": 27.7661718758605,
+    "djia": 24.27435679114489,
+    "usdEur": 1.1839,
+    "cnyUsd": 6.575
   },
   {
     "date": "2017-12-29",
@@ -2439,7 +2731,11 @@
     "continuedClaims": 1979000,
     "fedBalanceSheet": 4448680,
     "termSpread3m": 1.01,
-    "tbill3m": 1.37
+    "tbill3m": 1.37,
+    "nasdaqComposite": 27.08533916043365,
+    "djia": 24.71995148281163,
+    "usdEur": 1.2022,
+    "cnyUsd": 6.5063
   },
   {
     "date": "2018-01-05",
@@ -2472,7 +2768,11 @@
     "continuedClaims": 1933000,
     "fedBalanceSheet": 4443718,
     "termSpread3m": 1.08,
-    "tbill3m": 1.37
+    "tbill3m": 1.37,
+    "nasdaqComposite": 30.040780329231033,
+    "djia": 27.119460041036625,
+    "usdEur": 1.2039,
+    "cnyUsd": 6.4875
   },
   {
     "date": "2018-01-12",
@@ -2505,7 +2805,11 @@
     "continuedClaims": 1971000,
     "fedBalanceSheet": 4446062,
     "termSpread3m": 1.12,
-    "tbill3m": 1.41
+    "tbill3m": 1.41,
+    "nasdaqComposite": 30.889104802352072,
+    "djia": 29.722940023126032,
+    "usdEur": 1.213,
+    "cnyUsd": 6.4607
   },
   {
     "date": "2018-01-19",
@@ -2538,7 +2842,11 @@
     "continuedClaims": 1972000,
     "fedBalanceSheet": 4439145,
     "termSpread3m": 1.2,
-    "tbill3m": 1.42
+    "tbill3m": 1.42,
+    "nasdaqComposite": 32.42371951307563,
+    "djia": 32.12645192678032,
+    "usdEur": 1.2238,
+    "cnyUsd": 6.399
   },
   {
     "date": "2018-01-26",
@@ -2571,7 +2879,11 @@
     "continuedClaims": 1990000,
     "fedBalanceSheet": 4441317,
     "termSpread3m": 1.25,
-    "tbill3m": 1.39
+    "tbill3m": 1.39,
+    "nasdaqComposite": 32.72380366319021,
+    "djia": 32.4154478578333,
+    "usdEur": 1.2422,
+    "cnyUsd": 6.3199
   },
   {
     "date": "2018-02-02",
@@ -2604,7 +2916,11 @@
     "continuedClaims": 1985000,
     "fedBalanceSheet": 4419225,
     "termSpread3m": 1.36,
-    "tbill3m": 1.46
+    "tbill3m": 1.46,
+    "nasdaqComposite": 28.472197579929738,
+    "djia": 28.343351818036886,
+    "usdEur": 1.2446,
+    "cnyUsd": 6.2984
   },
   {
     "date": "2018-02-09",
@@ -2637,7 +2953,11 @@
     "continuedClaims": 1996000,
     "fedBalanceSheet": 4420745,
     "termSpread3m": 1.28,
-    "tbill3m": 1.53
+    "tbill3m": 1.53,
+    "nasdaqComposite": 20.284750436556664,
+    "djia": 19.920782851817332,
+    "usdEur": 1.2226,
+    "cnyUsd": 6.2966
   },
   {
     "date": "2018-02-16",
@@ -2670,7 +2990,11 @@
     "continuedClaims": 1959000,
     "fedBalanceSheet": 4434863,
     "termSpread3m": 1.25,
-    "tbill3m": 1.59
+    "tbill3m": 1.59,
+    "nasdaqComposite": 24.498615625376207,
+    "djia": 22.306795856597827,
+    "usdEur": 1.2442,
+    "cnyUsd": 6.3438
   },
   {
     "date": "2018-02-23",
@@ -2703,7 +3027,11 @@
     "continuedClaims": 1985000,
     "fedBalanceSheet": 4411660,
     "termSpread3m": 1.24,
-    "tbill3m": 1.61
+    "tbill3m": 1.61,
+    "nasdaqComposite": 25.73691074130624,
+    "djia": 21.622300858420253,
+    "usdEur": 1.2298,
+    "cnyUsd": 6.3329
   },
   {
     "date": "2018-03-02",
@@ -2736,7 +3064,11 @@
     "continuedClaims": 1957000,
     "fedBalanceSheet": 4393401,
     "termSpread3m": 1.21,
-    "tbill3m": 1.62
+    "tbill3m": 1.62,
+    "nasdaqComposite": 23.828656832536566,
+    "djia": 16.83138146652592,
+    "usdEur": 1.2314,
+    "cnyUsd": 6.3428
   },
   {
     "date": "2018-03-09",
@@ -2769,7 +3101,11 @@
     "continuedClaims": 1960000,
     "fedBalanceSheet": 4396097,
     "termSpread3m": 1.23,
-    "tbill3m": 1.64
+    "tbill3m": 1.64,
+    "nasdaqComposite": 29.492310933220978,
+    "djia": 21.46662773711432,
+    "usdEur": 1.2326,
+    "cnyUsd": 6.3285
   },
   {
     "date": "2018-03-16",
@@ -2802,7 +3138,11 @@
     "continuedClaims": 1948000,
     "fedBalanceSheet": 4407258,
     "termSpread3m": 1.07,
-    "tbill3m": 1.75
+    "tbill3m": 1.75,
+    "nasdaqComposite": 26.797056650329786,
+    "djia": 19.164300164082814,
+    "usdEur": 1.228,
+    "cnyUsd": 6.33
   },
   {
     "date": "2018-03-23",
@@ -2835,7 +3175,11 @@
     "continuedClaims": 1959000,
     "fedBalanceSheet": 4401222,
     "termSpread3m": 1.08,
-    "tbill3m": 1.71
+    "tbill3m": 1.71,
+    "nasdaqComposite": 20.196676000268155,
+    "djia": 13.925925782486726,
+    "usdEur": 1.236,
+    "cnyUsd": 6.311
   },
   {
     "date": "2018-03-30",
@@ -2868,7 +3212,11 @@
     "continuedClaims": 1917000,
     "fedBalanceSheet": 4392198,
     "termSpread3m": 1.01,
-    "tbill3m": 1.7
+    "tbill3m": 1.7,
+    "nasdaqComposite": 19.429048718876473,
+    "djia": 16.280105304341987,
+    "usdEur": 1.232,
+    "cnyUsd": 6.2726
   },
   {
     "date": "2018-04-06",
@@ -2901,7 +3249,11 @@
     "continuedClaims": 1943000,
     "fedBalanceSheet": 4386104,
     "termSpread3m": 1.04,
-    "tbill3m": 1.7
+    "tbill3m": 1.7,
+    "nasdaqComposite": 17.62491601391405,
+    "djia": 15.824507149269573,
+    "usdEur": 1.2274,
+    "cnyUsd": 6.3045
   },
   {
     "date": "2018-04-13",
@@ -2934,7 +3286,11 @@
     "continuedClaims": 1949000,
     "fedBalanceSheet": 4383684,
     "termSpread3m": 1.06,
-    "tbill3m": 1.73
+    "tbill3m": 1.73,
+    "nasdaqComposite": 22.419747982394945,
+    "djia": 19.101560876633307,
+    "usdEur": 1.2322,
+    "cnyUsd": 6.2725
   },
   {
     "date": "2018-04-20",
@@ -2967,7 +3323,11 @@
     "continuedClaims": 1900000,
     "fedBalanceSheet": 4385903,
     "termSpread3m": 1.15,
-    "tbill3m": 1.78
+    "tbill3m": 1.78,
+    "nasdaqComposite": 20.7773484902261,
+    "djia": 18.874992650170984,
+    "usdEur": 1.2282,
+    "cnyUsd": 6.2945
   },
   {
     "date": "2018-04-27",
@@ -3000,7 +3360,11 @@
     "continuedClaims": 1827000,
     "fedBalanceSheet": 4372886,
     "termSpread3m": 1.14,
-    "tbill3m": 1.78
+    "tbill3m": 1.78,
+    "nasdaqComposite": 17.703267018684276,
+    "djia": 15.870585897080858,
+    "usdEur": 1.2108,
+    "cnyUsd": 6.3325
   },
   {
     "date": "2018-05-04",
@@ -3033,7 +3397,11 @@
     "continuedClaims": 1834000,
     "fedBalanceSheet": 4356129,
     "termSpread3m": 1.11,
-    "tbill3m": 1.8
+    "tbill3m": 1.8,
+    "nasdaqComposite": 18.670230801897493,
+    "djia": 15.803377996866086,
+    "usdEur": 1.1946,
+    "cnyUsd": 6.3589
   },
   {
     "date": "2018-05-11",
@@ -3066,7 +3434,11 @@
     "continuedClaims": 1765000,
     "fedBalanceSheet": 4358207,
     "termSpread3m": 1.05,
-    "tbill3m": 1.88
+    "tbill3m": 1.88,
+    "nasdaqComposite": 21.041995042479034,
+    "djia": 18.69913219391359,
+    "usdEur": 1.1951,
+    "cnyUsd": 6.3333
   },
   {
     "date": "2018-05-18",
@@ -3099,7 +3471,11 @@
     "continuedClaims": 1769000,
     "fedBalanceSheet": 4337609,
     "termSpread3m": 1.15,
-    "tbill3m": 1.87
+    "tbill3m": 1.87,
+    "nasdaqComposite": 21.45635188674726,
+    "djia": 19.610250582925424,
+    "usdEur": 1.1775,
+    "cnyUsd": 6.3768
   },
   {
     "date": "2018-05-25",
@@ -3132,7 +3508,11 @@
     "continuedClaims": 1751000,
     "fedBalanceSheet": 4337301,
     "termSpread3m": 1.03,
-    "tbill3m": 1.86
+    "tbill3m": 1.86,
+    "nasdaqComposite": 19.799170381257202,
+    "djia": 17.408095166947703,
+    "usdEur": 1.1666,
+    "cnyUsd": 6.3903
   },
   {
     "date": "2018-06-01",
@@ -3165,7 +3545,11 @@
     "continuedClaims": 1737000,
     "fedBalanceSheet": 4327519,
     "termSpread3m": 0.97,
-    "tbill3m": 1.88
+    "tbill3m": 1.88,
+    "nasdaqComposite": 20.930616008439486,
+    "djia": 16.510595350588186,
+    "usdEur": 1.1679,
+    "cnyUsd": 6.418
   },
   {
     "date": "2018-06-08",
@@ -3198,7 +3582,11 @@
     "continuedClaims": 1690000,
     "fedBalanceSheet": 4319191,
     "termSpread3m": 1,
-    "tbill3m": 1.89
+    "tbill3m": 1.89,
+    "nasdaqComposite": 20.93958011692947,
+    "djia": 19.516082356545695,
+    "usdEur": 1.1773,
+    "cnyUsd": 6.4031
   },
   {
     "date": "2018-06-15",
@@ -3231,7 +3619,11 @@
     "continuedClaims": 1693000,
     "fedBalanceSheet": 4324906,
     "termSpread3m": 0.99,
-    "tbill3m": 1.9
+    "tbill3m": 1.9,
+    "nasdaqComposite": 25.640742843240606,
+    "djia": 17.46534393887611,
+    "usdEur": 1.1616,
+    "cnyUsd": 6.4379
   },
   {
     "date": "2018-06-22",
@@ -3264,7 +3656,11 @@
     "continuedClaims": 1671000,
     "fedBalanceSheet": 4315896,
     "termSpread3m": 0.97,
-    "tbill3m": 1.89
+    "tbill3m": 1.89,
+    "nasdaqComposite": 23.34780147802762,
+    "djia": 14.878519663004042,
+    "usdEur": 1.163,
+    "cnyUsd": 6.5027
   },
   {
     "date": "2018-06-29",
@@ -3297,7 +3693,11 @@
     "continuedClaims": 1671000,
     "fedBalanceSheet": 4305491,
     "termSpread3m": 0.92,
-    "tbill3m": 1.89
+    "tbill3m": 1.89,
+    "nasdaqComposite": 22.23099270061113,
+    "djia": 14.01971059372773,
+    "usdEur": 1.1677,
+    "cnyUsd": 6.6171
   },
   {
     "date": "2018-07-06",
@@ -3330,7 +3730,11 @@
     "continuedClaims": 1672000,
     "fedBalanceSheet": 4289764,
     "termSpread3m": 0.85,
-    "tbill3m": 1.93
+    "tbill3m": 1.93,
+    "nasdaqComposite": 26.257336446909907,
+    "djia": 14.711229434841577,
+    "usdEur": 1.1738,
+    "cnyUsd": 6.6396
   },
   {
     "date": "2018-07-13",
@@ -3363,7 +3767,11 @@
     "continuedClaims": 1676000,
     "fedBalanceSheet": 4291201,
     "termSpread3m": 0.85,
-    "tbill3m": 1.94
+    "tbill3m": 1.94,
+    "nasdaqComposite": 24.72794384837531,
+    "djia": 16.082705542453546,
+    "usdEur": 1.1667,
+    "cnyUsd": 6.69
   },
   {
     "date": "2018-07-20",
@@ -3396,7 +3804,11 @@
     "continuedClaims": 1659000,
     "fedBalanceSheet": 4291615,
     "termSpread3m": 0.9,
-    "tbill3m": 1.95
+    "tbill3m": 1.95,
+    "nasdaqComposite": 22.38184663536775,
+    "djia": 15.946580984999859,
+    "usdEur": 1.1708,
+    "cnyUsd": 6.7659
   },
   {
     "date": "2018-07-27",
@@ -3429,7 +3841,11 @@
     "continuedClaims": 1624000,
     "fedBalanceSheet": 4277681,
     "termSpread3m": 0.96,
-    "tbill3m": 1.96
+    "tbill3m": 1.96,
+    "nasdaqComposite": 21.234560550532034,
+    "djia": 16.76646074722836,
+    "usdEur": 1.166,
+    "cnyUsd": 6.8097
   },
   {
     "date": "2018-08-03",
@@ -3462,7 +3878,11 @@
     "continuedClaims": 1657000,
     "fedBalanceSheet": 4255653,
     "termSpread3m": 0.94,
-    "tbill3m": 1.97
+    "tbill3m": 1.97,
+    "nasdaqComposite": 23.211215802307137,
+    "djia": 15.601854163923722,
+    "usdEur": 1.1597,
+    "cnyUsd": 6.8309
   },
   {
     "date": "2018-08-10",
@@ -3495,7 +3915,11 @@
     "continuedClaims": 1624000,
     "fedBalanceSheet": 4258030,
     "termSpread3m": 0.82,
-    "tbill3m": 2.01
+    "tbill3m": 2.01,
+    "nasdaqComposite": 26.094159922919413,
+    "djia": 15.881378922642874,
+    "usdEur": 1.1399,
+    "cnyUsd": 6.8458
   },
   {
     "date": "2018-08-17",
@@ -3528,7 +3952,11 @@
     "continuedClaims": 1625000,
     "fedBalanceSheet": 4228924,
     "termSpread3m": 0.82,
-    "tbill3m": 2.01
+    "tbill3m": 2.01,
+    "nasdaqComposite": 25.62589301356015,
+    "djia": 18.015901075504125,
+    "usdEur": 1.141,
+    "cnyUsd": 6.874
   },
   {
     "date": "2018-08-24",
@@ -3561,7 +3989,11 @@
     "continuedClaims": 1605000,
     "fedBalanceSheet": 4228818,
     "termSpread3m": 0.73,
-    "tbill3m": 2.05
+    "tbill3m": 2.05,
+    "nasdaqComposite": 26.703267090074977,
+    "djia": 18.3945114169505,
+    "usdEur": 1.1625,
+    "cnyUsd": 6.803
   },
   {
     "date": "2018-08-31",
@@ -3594,7 +4026,11 @@
     "continuedClaims": 1602000,
     "fedBalanceSheet": 4218914,
     "termSpread3m": 0.75,
-    "tbill3m": 2.07
+    "tbill3m": 2.07,
+    "nasdaqComposite": 26.14666197932385,
+    "djia": 18.300991885402397,
+    "usdEur": 1.1596,
+    "cnyUsd": 6.83
   },
   {
     "date": "2018-09-07",
@@ -3627,7 +4063,11 @@
     "continuedClaims": 1575000,
     "fedBalanceSheet": 4208496,
     "termSpread3m": 0.8,
-    "tbill3m": 2.1
+    "tbill3m": 2.1,
+    "nasdaqComposite": 23.518295932865165,
+    "djia": 18.966269110819578,
+    "usdEur": 1.1572,
+    "cnyUsd": 6.8419
   },
   {
     "date": "2018-09-14",
@@ -3660,7 +4100,11 @@
     "continuedClaims": 1538000,
     "fedBalanceSheet": 4210812,
     "termSpread3m": 0.83,
-    "tbill3m": 2.12
+    "tbill3m": 2.12,
+    "nasdaqComposite": 24.590765708312844,
+    "djia": 17.795363609668378,
+    "usdEur": 1.1656,
+    "cnyUsd": 6.8673
   },
   {
     "date": "2018-09-21",
@@ -3693,7 +4137,11 @@
     "continuedClaims": 1544000,
     "fedBalanceSheet": 4208059,
     "termSpread3m": 0.89,
-    "tbill3m": 2.14
+    "tbill3m": 2.14,
+    "nasdaqComposite": 24.355371347519505,
+    "djia": 19.608322826859425,
+    "usdEur": 1.1739,
+    "cnyUsd": 6.8559
   },
   {
     "date": "2018-09-28",
@@ -3726,7 +4174,11 @@
     "continuedClaims": 1545000,
     "fedBalanceSheet": 4192909,
     "termSpread3m": 0.86,
-    "tbill3m": 2.15
+    "tbill3m": 2.15,
+    "nasdaqComposite": 24.68292153809204,
+    "djia": 18.216672921916622,
+    "usdEur": 1.1622,
+    "cnyUsd": 6.868
   },
   {
     "date": "2018-10-05",
@@ -3759,7 +4211,11 @@
     "continuedClaims": 1553000,
     "fedBalanceSheet": 4174704,
     "termSpread3m": 1,
-    "tbill3m": 2.18
+    "tbill3m": 2.18,
+    "nasdaqComposite": 18.269160683698395,
+    "djia": 16.121172897588142,
+    "usdEur": 1.1502,
+    "cnyUsd": 6.868
   },
   {
     "date": "2018-10-12",
@@ -3792,7 +4248,11 @@
     "continuedClaims": 1565000,
     "fedBalanceSheet": 4176906,
     "termSpread3m": 0.87,
-    "tbill3m": 2.23
+    "tbill3m": 2.23,
+    "nasdaqComposite": 13.735547696961703,
+    "djia": 10.940759624902775,
+    "usdEur": 1.1559,
+    "cnyUsd": 6.9182
   },
   {
     "date": "2018-10-19",
@@ -3825,7 +4285,11 @@
     "continuedClaims": 1588000,
     "fedBalanceSheet": 4175446,
     "termSpread3m": 0.89,
-    "tbill3m": 2.26
+    "tbill3m": 2.26,
+    "nasdaqComposite": 12.777457316879314,
+    "djia": 9.848879939766109,
+    "usdEur": 1.1513,
+    "cnyUsd": 6.9291
   },
   {
     "date": "2018-10-26",
@@ -3858,7 +4322,11 @@
     "continuedClaims": 1603000,
     "fedBalanceSheet": 4173070,
     "termSpread3m": 0.75,
-    "tbill3m": 2.28
+    "tbill3m": 2.28,
+    "nasdaqComposite": 9.31007187990427,
+    "djia": 5.5017208769250425,
+    "usdEur": 1.1388,
+    "cnyUsd": 6.9425
   },
   {
     "date": "2018-11-02",
@@ -3891,7 +4359,11 @@
     "continuedClaims": 1615000,
     "fedBalanceSheet": 4139731,
     "termSpread3m": 0.89,
-    "tbill3m": 2.28
+    "tbill3m": 2.28,
+    "nasdaqComposite": 9.561515069382608,
+    "djia": 7.461092877864095,
+    "usdEur": 1.1378,
+    "cnyUsd": 6.8894
   },
   {
     "date": "2018-11-09",
@@ -3924,7 +4396,11 @@
     "continuedClaims": 1642000,
     "fedBalanceSheet": 4141936,
     "termSpread3m": 0.83,
-    "tbill3m": 2.31
+    "tbill3m": 2.31,
+    "nasdaqComposite": 9.731039029340515,
+    "djia": 10.772169735324532,
+    "usdEur": 1.1325,
+    "cnyUsd": 6.9553
   },
   {
     "date": "2018-11-16",
@@ -3957,7 +4433,11 @@
     "continuedClaims": 1665000,
     "fedBalanceSheet": 4145892,
     "termSpread3m": 0.72,
-    "tbill3m": 2.31
+    "tbill3m": 2.31,
+    "nasdaqComposite": 6.691603037703375,
+    "djia": 8.33331912375801,
+    "usdEur": 1.1402,
+    "cnyUsd": 6.9367
   },
   {
     "date": "2018-11-23",
@@ -3990,7 +4470,11 @@
     "continuedClaims": 1749000,
     "fedBalanceSheet": 4106198,
     "termSpread3m": 0.64,
-    "tbill3m": 2.36
+    "tbill3m": 2.36,
+    "nasdaqComposite": 1.0429044057687298,
+    "djia": 3.2294660671643216,
+    "usdEur": 1.1332,
+    "cnyUsd": 6.9477
   },
   {
     "date": "2018-11-30",
@@ -4023,7 +4507,11 @@
     "continuedClaims": 1684000,
     "fedBalanceSheet": 4097170,
     "termSpread3m": 0.64,
-    "tbill3m": 2.32
+    "tbill3m": 2.32,
+    "nasdaqComposite": 6.642013276170822,
+    "djia": 5.216264597371079,
+    "usdEur": 1.1323,
+    "cnyUsd": 6.9558
   },
   {
     "date": "2018-12-07",
@@ -4056,7 +4544,11 @@
     "continuedClaims": 1694000,
     "fedBalanceSheet": 4086044,
     "termSpread3m": 0.45,
-    "tbill3m": 2.35
+    "tbill3m": 2.35,
+    "nasdaqComposite": 2.2958120255282655,
+    "djia": 0.7329993870676343,
+    "usdEur": 1.139,
+    "cnyUsd": 6.8733
   },
   {
     "date": "2018-12-14",
@@ -4089,7 +4581,11 @@
     "continuedClaims": 1745000,
     "fedBalanceSheet": 4088314,
     "termSpread3m": 0.47,
-    "tbill3m": 2.37
+    "tbill3m": 2.37,
+    "nasdaqComposite": 0.7894663918921019,
+    "djia": -1.6653297242688936,
+    "usdEur": 1.13,
+    "cnyUsd": 6.905
   },
   {
     "date": "2018-12-21",
@@ -4122,7 +4618,11 @@
     "continuedClaims": 1756000,
     "fedBalanceSheet": 4084274,
     "termSpread3m": 0.4,
-    "tbill3m": 2.34
+    "tbill3m": 2.34,
+    "nasdaqComposite": -9.078784154731412,
+    "djia": -9.429798456881922,
+    "usdEur": 1.1402,
+    "cnyUsd": 6.9048
   },
   {
     "date": "2018-12-28",
@@ -4155,7 +4655,11 @@
     "continuedClaims": 1770000,
     "fedBalanceSheet": 4075636,
     "termSpread3m": 0.32,
-    "tbill3m": 2.35
+    "tbill3m": 2.35,
+    "nasdaqComposite": -5.260886080320448,
+    "djia": -7.146891938845712,
+    "usdEur": 1.1445,
+    "cnyUsd": 6.8755
   },
   {
     "date": "2019-01-04",
@@ -4188,7 +4692,11 @@
     "continuedClaims": 1783000,
     "fedBalanceSheet": 4058378,
     "termSpread3m": 0.25,
-    "tbill3m": 2.37
+    "tbill3m": 2.37,
+    "nasdaqComposite": -4.790255880620132,
+    "djia": -6.548201345317062,
+    "usdEur": 1.141,
+    "cnyUsd": 6.8663
   },
   {
     "date": "2019-01-11",
@@ -4221,7 +4729,11 @@
     "continuedClaims": 1766000,
     "fedBalanceSheet": 4056563,
     "termSpread3m": 0.28,
-    "tbill3m": 2.38
+    "tbill3m": 2.38,
+    "nasdaqComposite": -3.332048398592302,
+    "djia": -6.173203001556615,
+    "usdEur": 1.1479,
+    "cnyUsd": 6.7596
   },
   {
     "date": "2019-01-18",
@@ -4254,7 +4766,11 @@
     "continuedClaims": 1780000,
     "fedBalanceSheet": 4050044,
     "termSpread3m": 0.38,
-    "tbill3m": 2.36
+    "tbill3m": 2.36,
+    "nasdaqComposite": -1.90267336435469,
+    "djia": -5.0406240955714665,
+    "usdEur": 1.1362,
+    "cnyUsd": 6.7765
   },
   {
     "date": "2019-01-25",
@@ -4287,7 +4803,11 @@
     "continuedClaims": 1813000,
     "fedBalanceSheet": 4047052,
     "termSpread3m": 0.37,
-    "tbill3m": 2.34
+    "tbill3m": 2.34,
+    "nasdaqComposite": -3.323366382590587,
+    "djia": -6.272887405992322,
+    "usdEur": 1.1407,
+    "cnyUsd": 6.7448
   },
   {
     "date": "2019-02-01",
@@ -4320,7 +4840,11 @@
     "continuedClaims": 1759000,
     "fedBalanceSheet": 4039678,
     "termSpread3m": 0.3,
-    "tbill3m": 2.35
+    "tbill3m": 2.35,
+    "nasdaqComposite": -1.6516695415293547,
+    "djia": -4.28774748717956,
+    "usdEur": 1.1474,
+    "cnyUsd": 6.7426
   },
   {
     "date": "2019-02-08",
@@ -4353,7 +4877,11 @@
     "continuedClaims": 1806000,
     "fedBalanceSheet": 4026350,
     "termSpread3m": 0.2,
-    "tbill3m": 2.38
+    "tbill3m": 2.38,
+    "nasdaqComposite": 7.688176168188443,
+    "djia": 5.2214835757567135,
+    "usdEur": 1.1326,
+    "cnyUsd": 6.7426
   },
   {
     "date": "2019-02-15",
@@ -4386,7 +4914,11 @@
     "continuedClaims": 1778000,
     "fedBalanceSheet": 4028431,
     "termSpread3m": 0.23,
-    "tbill3m": 2.38
+    "tbill3m": 2.38,
+    "nasdaqComposite": 2.9763947285373016,
+    "djia": 2.7098014830734707,
+    "usdEur": 1.1268,
+    "cnyUsd": 6.768
   },
   {
     "date": "2019-02-22",
@@ -4419,7 +4951,11 @@
     "continuedClaims": 1826000,
     "fedBalanceSheet": 3981420,
     "termSpread3m": 0.19,
-    "tbill3m": 2.41
+    "tbill3m": 2.41,
+    "nasdaqComposite": 4.402857661970927,
+    "djia": 4.283749050575114,
+    "usdEur": 1.1342,
+    "cnyUsd": 6.7112
   },
   {
     "date": "2019-03-01",
@@ -4452,7 +4988,11 @@
     "continuedClaims": 1796000,
     "fedBalanceSheet": 3974590,
     "termSpread3m": 0.32,
-    "tbill3m": 2.39
+    "tbill3m": 2.39,
+    "nasdaqComposite": 5.776568958409922,
+    "djia": 5.759442284889493,
+    "usdEur": 1.1376,
+    "cnyUsd": 6.7048
   },
   {
     "date": "2019-03-08",
@@ -4485,7 +5025,11 @@
     "continuedClaims": 1807000,
     "fedBalanceSheet": 3969134,
     "termSpread3m": 0.16,
-    "tbill3m": 2.41
+    "tbill3m": 2.41,
+    "nasdaqComposite": -0.2666953870179456,
+    "djia": 2.2294650256013293,
+    "usdEur": 1.1243,
+    "cnyUsd": 6.7201
   },
   {
     "date": "2019-03-15",
@@ -4518,7 +5062,11 @@
     "continuedClaims": 1792000,
     "fedBalanceSheet": 3971559,
     "termSpread3m": 0.14,
-    "tbill3m": 2.4
+    "tbill3m": 2.4,
+    "nasdaqComposite": 2.76392924640525,
+    "djia": 3.920653414093467,
+    "usdEur": 1.1326,
+    "cnyUsd": 6.7129
   },
   {
     "date": "2019-03-22",
@@ -4551,7 +5099,11 @@
     "continuedClaims": 1800000,
     "fedBalanceSheet": 3962748,
     "termSpread3m": -0.02,
-    "tbill3m": 2.41
+    "tbill3m": 2.41,
+    "nasdaqComposite": 6.64170857356543,
+    "djia": 6.446435808829576,
+    "usdEur": 1.1282,
+    "cnyUsd": 6.7162
   },
   {
     "date": "2019-03-29",
@@ -4584,7 +5136,11 @@
     "continuedClaims": 1760000,
     "fedBalanceSheet": 3955617,
     "termSpread3m": 0.01,
-    "tbill3m": 2.35
+    "tbill3m": 2.35,
+    "nasdaqComposite": 9.42713465393632,
+    "djia": 7.5740018611706095,
+    "usdEur": 1.1228,
+    "cnyUsd": 6.7112
   },
   {
     "date": "2019-04-05",
@@ -4617,7 +5173,11 @@
     "continuedClaims": 1742000,
     "fedBalanceSheet": 3935509,
     "termSpread3m": 0.06,
-    "tbill3m": 2.39
+    "tbill3m": 2.39,
+    "nasdaqComposite": 12.183055302371915,
+    "djia": 7.834126769724992,
+    "usdEur": 1.1217,
+    "cnyUsd": 6.7182
   },
   {
     "date": "2019-04-12",
@@ -4650,7 +5210,11 @@
     "continuedClaims": 1680000,
     "fedBalanceSheet": 3936784,
     "termSpread3m": 0.12,
-    "tbill3m": 2.39
+    "tbill3m": 2.39,
+    "nasdaqComposite": 11.81905395469347,
+    "djia": 7.8799414288661,
+    "usdEur": 1.1304,
+    "cnyUsd": 6.7039
   },
   {
     "date": "2019-04-19",
@@ -4683,7 +5247,11 @@
     "continuedClaims": 1664000,
     "fedBalanceSheet": 3931827,
     "termSpread3m": 0.15,
-    "tbill3m": 2.37
+    "tbill3m": 2.37,
+    "nasdaqComposite": 10.500092566240117,
+    "djia": 7.681566793932593,
+    "usdEur": 1.1246,
+    "cnyUsd": 6.7032
   },
   {
     "date": "2019-04-26",
@@ -4716,7 +5284,11 @@
     "continuedClaims": 1659000,
     "fedBalanceSheet": 3928273,
     "termSpread3m": 0.09,
-    "tbill3m": 2.37
+    "tbill3m": 2.37,
+    "nasdaqComposite": 14.262194676541151,
+    "djia": 9.13148159264281,
+    "usdEur": 1.1154,
+    "cnyUsd": 6.7282
   },
   {
     "date": "2019-05-03",
@@ -4749,7 +5321,11 @@
     "continuedClaims": 1663000,
     "fedBalanceSheet": 3889691,
     "termSpread3m": 0.11,
-    "tbill3m": 2.38
+    "tbill3m": 2.38,
+    "nasdaqComposite": 15.178149446611599,
+    "djia": 10.7596483933448,
+    "usdEur": 1.1186,
+    "cnyUsd": 6.7337
   },
   {
     "date": "2019-05-10",
@@ -4782,7 +5358,11 @@
     "continuedClaims": 1627000,
     "fedBalanceSheet": 3892216,
     "termSpread3m": 0.04,
-    "tbill3m": 2.38
+    "tbill3m": 2.38,
+    "nasdaqComposite": 6.913870008926426,
+    "djia": 4.862016376220568,
+    "usdEur": 1.1241,
+    "cnyUsd": 6.8217
   },
   {
     "date": "2019-05-17",
@@ -4815,7 +5395,11 @@
     "continuedClaims": 1635000,
     "fedBalanceSheet": 3864749,
     "termSpread3m": 0,
-    "tbill3m": 2.34
+    "tbill3m": 2.34,
+    "nasdaqComposite": 5.876217580294929,
+    "djia": 4.248688394180133,
+    "usdEur": 1.1166,
+    "cnyUsd": 6.9182
   },
   {
     "date": "2019-05-24",
@@ -4848,7 +5432,11 @@
     "continuedClaims": 1621000,
     "fedBalanceSheet": 3860435,
     "termSpread3m": -0.03,
-    "tbill3m": 2.3
+    "tbill3m": 2.3,
+    "nasdaqComposite": 2.8632501080890993,
+    "djia": 3.1192063763312294,
+    "usdEur": 1.1197,
+    "cnyUsd": 6.8997
   },
   {
     "date": "2019-05-31",
@@ -4881,7 +5469,11 @@
     "continuedClaims": 1629000,
     "fedBalanceSheet": 3851444,
     "termSpread3m": -0.21,
-    "tbill3m": 2.3
+    "tbill3m": 2.3,
+    "nasdaqComposite": 0.1482104561603359,
+    "djia": 1.6350041612330335,
+    "usdEur": 1.1149,
+    "cnyUsd": 6.9027
   },
   {
     "date": "2019-06-07",
@@ -4914,7 +5506,11 @@
     "continuedClaims": 1631000,
     "fedBalanceSheet": 3847645,
     "termSpread3m": -0.19,
-    "tbill3m": 2.23
+    "tbill3m": 2.23,
+    "nasdaqComposite": 1.4018208084536354,
+    "djia": 2.941713636441068,
+    "usdEur": 1.1324,
+    "cnyUsd": 6.9057
   },
   {
     "date": "2019-06-14",
@@ -4947,7 +5543,11 @@
     "continuedClaims": 1608000,
     "fedBalanceSheet": 3849955,
     "termSpread3m": -0.11,
-    "tbill3m": 2.15
+    "tbill3m": 2.15,
+    "nasdaqComposite": 0.458959108573076,
+    "djia": 3.631732836656232,
+    "usdEur": 1.1217,
+    "cnyUsd": 6.9247
   },
   {
     "date": "2019-06-21",
@@ -4980,7 +5580,11 @@
     "continuedClaims": 1634000,
     "fedBalanceSheet": 3844016,
     "termSpread3m": -0.04,
-    "tbill3m": 2.07
+    "tbill3m": 2.07,
+    "nasdaqComposite": 4.132789658950209,
+    "djia": 9.228426478944641,
+    "usdEur": 1.1328,
+    "cnyUsd": 6.8686
   },
   {
     "date": "2019-06-28",
@@ -5013,7 +5617,11 @@
     "continuedClaims": 1625000,
     "fedBalanceSheet": 3826817,
     "termSpread3m": -0.12,
-    "tbill3m": 2.08
+    "tbill3m": 2.08,
+    "nasdaqComposite": 6.697513753251738,
+    "djia": 9.844338775316363,
+    "usdEur": 1.1374,
+    "cnyUsd": 6.865
   },
   {
     "date": "2019-07-05",
@@ -5046,7 +5654,11 @@
     "continuedClaims": 1657000,
     "fedBalanceSheet": 3813198,
     "termSpread3m": -0.19,
-    "tbill3m": 2.18
+    "tbill3m": 2.18,
+    "nasdaqComposite": 7.584067868549504,
+    "djia": 10.53252610981601,
+    "usdEur": 1.1216,
+    "cnyUsd": 6.8925
   },
   {
     "date": "2019-07-12",
@@ -5079,7 +5691,11 @@
     "continuedClaims": 1633000,
     "fedBalanceSheet": 3815038,
     "termSpread3m": -0.02,
-    "tbill3m": 2.1
+    "tbill3m": 2.1,
+    "nasdaqComposite": 5.370964938291789,
+    "djia": 9.657575218987935,
+    "usdEur": 1.1254,
+    "cnyUsd": 6.8796
   },
   {
     "date": "2019-07-19",
@@ -5112,7 +5728,11 @@
     "continuedClaims": 1634000,
     "fedBalanceSheet": 3808110,
     "termSpread3m": -0.01,
-    "tbill3m": 2.02
+    "tbill3m": 2.02,
+    "nasdaqComposite": 4.10450717544375,
+    "djia": 8.337289792335767,
+    "usdEur": 1.122,
+    "cnyUsd": 6.8812
   },
   {
     "date": "2019-07-26",
@@ -5145,7 +5765,11 @@
     "continuedClaims": 1623000,
     "fedBalanceSheet": 3803436,
     "termSpread3m": -0.04,
-    "tbill3m": 2.08
+    "tbill3m": 2.08,
+    "nasdaqComposite": 6.08786349778021,
+    "djia": 6.523976312205049,
+    "usdEur": 1.1121,
+    "cnyUsd": 6.8785
   },
   {
     "date": "2019-08-02",
@@ -5178,7 +5802,11 @@
     "continuedClaims": 1634000,
     "fedBalanceSheet": 3779102,
     "termSpread3m": -0.2,
-    "tbill3m": 2.02
+    "tbill3m": 2.02,
+    "nasdaqComposite": 2.580904790527372,
+    "djia": 4.575703541318532,
+    "usdEur": 1.1112,
+    "cnyUsd": 6.9387
   },
   {
     "date": "2019-08-09",
@@ -5211,7 +5839,11 @@
     "continuedClaims": 1656000,
     "fedBalanceSheet": 3781543,
     "termSpread3m": -0.26,
-    "tbill3m": 1.96
+    "tbill3m": 1.96,
+    "nasdaqComposite": 0.8535463482256311,
+    "djia": 3.050699687916869,
+    "usdEur": 1.1222,
+    "cnyUsd": 7.0613
   },
   {
     "date": "2019-08-16",
@@ -5244,7 +5876,11 @@
     "continuedClaims": 1618000,
     "fedBalanceSheet": 3786018,
     "termSpread3m": -0.32,
-    "tbill3m": 1.83
+    "tbill3m": 1.83,
+    "nasdaqComposite": 1.1460932656292444,
+    "djia": 1.2805018089709463,
+    "usdEur": 1.1091,
+    "cnyUsd": 7.0413
   },
   {
     "date": "2019-08-23",
@@ -5277,7 +5913,11 @@
     "continuedClaims": 1629000,
     "fedBalanceSheet": 3764866,
     "termSpread3m": -0.45,
-    "tbill3m": 1.93
+    "tbill3m": 1.93,
+    "nasdaqComposite": -1.6080553813816345,
+    "djia": -0.1094439018154092,
+    "usdEur": 1.1148,
+    "cnyUsd": 7.0928
   },
   {
     "date": "2019-08-30",
@@ -5310,7 +5950,11 @@
     "continuedClaims": 1604000,
     "fedBalanceSheet": 3759946,
     "termSpread3m": -0.49,
-    "tbill3m": 1.95
+    "tbill3m": 1.95,
+    "nasdaqComposite": -1.551365171678798,
+    "djia": 1.6021906405222275,
+    "usdEur": 1.0989,
+    "cnyUsd": 7.1543
   },
   {
     "date": "2019-09-06",
@@ -5343,7 +5987,11 @@
     "continuedClaims": 1591000,
     "fedBalanceSheet": 3761508,
     "termSpread3m": -0.41,
-    "tbill3m": 1.92
+    "tbill3m": 1.92,
+    "nasdaqComposite": 2.2762355905098453,
+    "djia": 3.083528268144131,
+    "usdEur": 1.1042,
+    "cnyUsd": 7.1131
   },
   {
     "date": "2019-09-13",
@@ -5376,7 +6024,11 @@
     "continuedClaims": 1596000,
     "fedBalanceSheet": 3769673,
     "termSpread3m": -0.06,
-    "tbill3m": 1.92
+    "tbill3m": 1.92,
+    "nasdaqComposite": 2.0340142081507917,
+    "djia": 4.1059068713787505,
+    "usdEur": 1.1074,
+    "cnyUsd": 7.0754
   },
   {
     "date": "2019-09-20",
@@ -5409,7 +6061,11 @@
     "continuedClaims": 1567000,
     "fedBalanceSheet": 3844695,
     "termSpread3m": -0.17,
-    "tbill3m": 1.87
+    "tbill3m": 1.87,
+    "nasdaqComposite": 1.114068729969131,
+    "djia": 1.0432164483748618,
+    "usdEur": 1.1004,
+    "cnyUsd": 7.0909
   },
   {
     "date": "2019-09-27",
@@ -5442,7 +6098,11 @@
     "continuedClaims": 1561000,
     "fedBalanceSheet": 3857715,
     "termSpread3m": -0.11,
-    "tbill3m": 1.76
+    "tbill3m": 1.76,
+    "nasdaqComposite": -1.2725737599120657,
+    "djia": 1.4384304345737675,
+    "usdEur": 1.0942,
+    "cnyUsd": 7.1218
   },
   {
     "date": "2019-10-04",
@@ -5475,7 +6135,11 @@
     "continuedClaims": 1600000,
     "fedBalanceSheet": 3945831,
     "termSpread3m": -0.19,
-    "tbill3m": 1.68
+    "tbill3m": 1.68,
+    "nasdaqComposite": 1.306553326285509,
+    "djia": -0.20189668718181286,
+    "usdEur": 1.0974,
+    "cnyUsd": 7.1473
   },
   {
     "date": "2019-10-11",
@@ -5508,7 +6172,11 @@
     "continuedClaims": 1602000,
     "fedBalanceSheet": 3949955,
     "termSpread3m": 0.08,
-    "tbill3m": 1.65
+    "tbill3m": 1.65,
+    "nasdaqComposite": 9.932788106523894,
+    "djia": 7.040162728122934,
+    "usdEur": 1.1039,
+    "cnyUsd": 7.0868
   },
   {
     "date": "2019-10-18",
@@ -5541,7 +6209,11 @@
     "continuedClaims": 1611000,
     "fedBalanceSheet": 3966471,
     "termSpread3m": 0.1,
-    "tbill3m": 1.63
+    "tbill3m": 1.63,
+    "nasdaqComposite": 8.074665270121862,
+    "djia": 5.479827183016184,
+    "usdEur": 1.1155,
+    "cnyUsd": 7.0805
   },
   {
     "date": "2019-10-25",
@@ -5574,7 +6246,11 @@
     "continuedClaims": 1628000,
     "fedBalanceSheet": 3968700,
     "termSpread3m": 0.14,
-    "tbill3m": 1.63
+    "tbill3m": 1.63,
+    "nasdaqComposite": 12.636472205445504,
+    "djia": 7.898921533507708,
+    "usdEur": 1.1081,
+    "cnyUsd": 7.0647
   },
   {
     "date": "2019-11-01",
@@ -5607,7 +6283,11 @@
     "continuedClaims": 1633000,
     "fedBalanceSheet": 4019823,
     "termSpread3m": 0.21,
-    "tbill3m": 1.49
+    "tbill3m": 1.49,
+    "nasdaqComposite": 12.810496552354955,
+    "djia": 7.748473842764225,
+    "usdEur": 1.1169,
+    "cnyUsd": 7.0368
   },
   {
     "date": "2019-11-08",
@@ -5640,7 +6320,11 @@
     "continuedClaims": 1646000,
     "fedBalanceSheet": 4039443,
     "termSpread3m": 0.39,
-    "tbill3m": 1.52
+    "tbill3m": 1.52,
+    "nasdaqComposite": 12.540765488229777,
+    "djia": 5.689005704965244,
+    "usdEur": 1.1019,
+    "cnyUsd": 6.9954
   },
   {
     "date": "2019-11-15",
@@ -5673,7 +6357,11 @@
     "continuedClaims": 1668000,
     "fedBalanceSheet": 4047882,
     "termSpread3m": 0.27,
-    "tbill3m": 1.54
+    "tbill3m": 1.54,
+    "nasdaqComposite": 17.658006648271197,
+    "djia": 10.738230087305789,
+    "usdEur": 1.1046,
+    "cnyUsd": 7.0075
   },
   {
     "date": "2019-11-22",
@@ -5706,7 +6394,11 @@
     "continuedClaims": 1702000,
     "fedBalanceSheet": 4030249,
     "termSpread3m": 0.19,
-    "tbill3m": 1.55
+    "tbill3m": 1.55,
+    "nasdaqComposite": 22.196995231094686,
+    "djia": 13.942257187808217,
+    "usdEur": 1.1029,
+    "cnyUsd": 7.0389
   },
   {
     "date": "2019-11-29",
@@ -5739,7 +6431,11 @@
     "continuedClaims": 1702000,
     "fedBalanceSheet": 4052875,
     "termSpread3m": 0.19,
-    "tbill3m": 1.56
+    "tbill3m": 1.56,
+    "nasdaqComposite": 19.14443399495123,
+    "djia": 10.705186188475867,
+    "usdEur": 1.1019,
+    "cnyUsd": 7.0308
   },
   {
     "date": "2019-12-06",
@@ -5772,7 +6468,11 @@
     "continuedClaims": 1708000,
     "fedBalanceSheet": 4065696,
     "termSpread3m": 0.31,
-    "tbill3m": 1.5
+    "tbill3m": 1.5,
+    "nasdaqComposite": 20.42594452621358,
+    "djia": 12.2952965146645,
+    "usdEur": 1.1052,
+    "cnyUsd": 7.0348
   },
   {
     "date": "2019-12-13",
@@ -5805,7 +6505,11 @@
     "continuedClaims": 1728000,
     "fedBalanceSheet": 4095491,
     "termSpread3m": 0.25,
-    "tbill3m": 1.54
+    "tbill3m": 1.54,
+    "nasdaqComposite": 23.542748358280296,
+    "djia": 14.383645737879402,
+    "usdEur": 1.1128,
+    "cnyUsd": 6.9925
   },
   {
     "date": "2019-12-20",
@@ -5838,7 +6542,11 @@
     "continuedClaims": 1753000,
     "fedBalanceSheet": 4137052,
     "termSpread3m": 0.34,
-    "tbill3m": 1.55
+    "tbill3m": 1.55,
+    "nasdaqComposite": 36.709551023909334,
+    "djia": 24.47763740397908,
+    "usdEur": 1.1076,
+    "cnyUsd": 7.0063
   },
   {
     "date": "2019-12-27",
@@ -5871,7 +6579,11 @@
     "continuedClaims": 1754000,
     "fedBalanceSheet": 4165591,
     "termSpread3m": 0.31,
-    "tbill3m": 1.54
+    "tbill3m": 1.54,
+    "nasdaqComposite": 36.88933336778384,
+    "djia": 23.797410585328027,
+    "usdEur": 1.1174,
+    "cnyUsd": 6.9954
   },
   {
     "date": "2020-01-03",
@@ -5904,7 +6616,11 @@
     "continuedClaims": 1843000,
     "fedBalanceSheet": 4173626,
     "termSpread3m": 0.28,
-    "tbill3m": 1.49
+    "tbill3m": 1.49,
+    "nasdaqComposite": 39.56478688017329,
+    "djia": 26.22146836273298,
+    "usdEur": 1.1173,
+    "cnyUsd": 6.9649
   },
   {
     "date": "2020-01-10",
@@ -5937,7 +6653,11 @@
     "continuedClaims": 1827000,
     "fedBalanceSheet": 4149544,
     "termSpread3m": 0.29,
-    "tbill3m": 1.51
+    "tbill3m": 1.51,
+    "nasdaqComposite": 31.388033615466227,
+    "djia": 20.089434511905722,
+    "usdEur": 1.1119,
+    "cnyUsd": 6.9178
   },
   {
     "date": "2020-01-17",
@@ -5970,7 +6690,11 @@
     "continuedClaims": 1804000,
     "fedBalanceSheet": 4175850,
     "termSpread3m": 0.28,
-    "tbill3m": 1.53
+    "tbill3m": 1.53,
+    "nasdaqComposite": 32.52866132351655,
+    "djia": 20.426670387072686,
+    "usdEur": 1.1093,
+    "cnyUsd": 6.8589
   },
   {
     "date": "2020-01-24",
@@ -6003,7 +6727,11 @@
     "continuedClaims": 1774000,
     "fedBalanceSheet": 4145912,
     "termSpread3m": 0.16,
-    "tbill3m": 1.51
+    "tbill3m": 1.51,
+    "nasdaqComposite": 31.68816958037508,
+    "djia": 18.068857714908493,
+    "usdEur": 1.1026,
+    "cnyUsd": 6.9161
   },
   {
     "date": "2020-01-31",
@@ -6036,7 +6764,11 @@
     "continuedClaims": 1796000,
     "fedBalanceSheet": 4151630,
     "termSpread3m": -0.04,
-    "tbill3m": 1.52
+    "tbill3m": 1.52,
+    "nasdaqComposite": 25.669688838107383,
+    "djia": 13.025611938077585,
+    "usdEur": 1.1082,
+    "cnyUsd": 6.9161
   },
   {
     "date": "2020-02-07",
@@ -6069,7 +6801,11 @@
     "continuedClaims": 1755000,
     "fedBalanceSheet": 4166707,
     "termSpread3m": 0.03,
-    "tbill3m": 1.53
+    "tbill3m": 1.53,
+    "nasdaqComposite": 30.626410641640422,
+    "djia": 15.625957258637735,
+    "usdEur": 1.095,
+    "cnyUsd": 7.0003
   },
   {
     "date": "2020-02-14",
@@ -6102,7 +6838,11 @@
     "continuedClaims": 1782000,
     "fedBalanceSheet": 4182689,
     "termSpread3m": 0.01,
-    "tbill3m": 1.55
+    "tbill3m": 1.55,
+    "nasdaqComposite": 31.02525262725615,
+    "djia": 15.561261492512202,
+    "usdEur": 1.0839,
+    "cnyUsd": 6.9859
   },
   {
     "date": "2020-02-21",
@@ -6135,7 +6875,11 @@
     "continuedClaims": 1760000,
     "fedBalanceSheet": 4171570,
     "termSpread3m": -0.1,
-    "tbill3m": 1.53
+    "tbill3m": 1.53,
+    "nasdaqComposite": 28.377510653899417,
+    "djia": 12.153591614595083,
+    "usdEur": 1.0855,
+    "cnyUsd": 7.0255
   },
   {
     "date": "2020-02-28",
@@ -6168,7 +6912,11 @@
     "continuedClaims": 1783000,
     "fedBalanceSheet": 4158637,
     "termSpread3m": -0.14,
-    "tbill3m": 1.25
+    "tbill3m": 1.25,
+    "nasdaqComposite": 13.738279170477918,
+    "djia": -1.9549313165611926,
+    "usdEur": 1.1001,
+    "cnyUsd": 6.9906
   },
   {
     "date": "2020-03-06",
@@ -6201,7 +6949,11 @@
     "continuedClaims": 1771000,
     "fedBalanceSheet": 4241507,
     "termSpread3m": 0.29,
-    "tbill3m": 0.45
+    "tbill3m": 0.45,
+    "nasdaqComposite": 14.25141754774899,
+    "djia": 0.7452053599320108,
+    "usdEur": 1.1319,
+    "cnyUsd": 6.9298
   },
   {
     "date": "2020-03-13",
@@ -6234,7 +6986,11 @@
     "continuedClaims": 1753000,
     "fedBalanceSheet": 4311911,
     "termSpread3m": 0.66,
-    "tbill3m": 0.27
+    "tbill3m": 0.27,
+    "nasdaqComposite": 3.028360378417494,
+    "djia": -9.793723585168834,
+    "usdEur": 1.1066,
+    "cnyUsd": 7.0079
   },
   {
     "date": "2020-03-20",
@@ -6267,7 +7023,11 @@
     "continuedClaims": 1844000,
     "fedBalanceSheet": 4668212,
     "termSpread3m": 0.87,
-    "tbill3m": 0.05
+    "tbill3m": 0.05,
+    "nasdaqComposite": -10.99046832889764,
+    "djia": -25.525418449005212,
+    "usdEur": 1.0682,
+    "cnyUsd": 7.095
   },
   {
     "date": "2020-03-27",
@@ -6300,7 +7060,11 @@
     "continuedClaims": 3238000,
     "fedBalanceSheet": 5254278,
     "termSpread3m": 0.69,
-    "tbill3m": 0.03
+    "tbill3m": 0.03,
+    "nasdaqComposite": -1.8447336126164116,
+    "djia": -15.565729413449603,
+    "usdEur": 1.1059,
+    "cnyUsd": 7.0942
   },
   {
     "date": "2020-04-03",
@@ -6333,7 +7097,11 @@
     "continuedClaims": 8004000,
     "fedBalanceSheet": 5811607,
     "termSpread3m": 0.52,
-    "tbill3m": 0.1
+    "tbill3m": 0.1,
+    "nasdaqComposite": -6.617271754342635,
+    "djia": -19.70239677658171,
+    "usdEur": 1.0797,
+    "cnyUsd": 7.0908
   },
   {
     "date": "2020-04-10",
@@ -6366,7 +7134,11 @@
     "continuedClaims": 12396000,
     "fedBalanceSheet": 6083141,
     "termSpread3m": 0.48,
-    "tbill3m": 0.25
+    "tbill3m": 0.25,
+    "nasdaqComposite": 2.3773768746296,
+    "djia": -9.319780893644424,
+    "usdEur": 1.0951,
+    "cnyUsd": 7.0341
   },
   {
     "date": "2020-04-17",
@@ -6399,7 +7171,11 @@
     "continuedClaims": 16193000,
     "fedBalanceSheet": 6367887,
     "termSpread3m": 0.53,
-    "tbill3m": 0.12
+    "tbill3m": 0.12,
+    "nasdaqComposite": 8.179758081459898,
+    "djia": -8.344379524180756,
+    "usdEur": 1.0883,
+    "cnyUsd": 7.0711
   },
   {
     "date": "2020-04-24",
@@ -6432,7 +7208,11 @@
     "continuedClaims": 17789000,
     "fedBalanceSheet": 6573136,
     "termSpread3m": 0.48,
-    "tbill3m": 0.12
+    "tbill3m": 0.12,
+    "nasdaqComposite": 6.5725665606436,
+    "djia": -10.609372092017722,
+    "usdEur": 1.0798,
+    "cnyUsd": 7.0813
   },
   {
     "date": "2020-05-01",
@@ -6465,7 +7245,11 @@
     "continuedClaims": 21750000,
     "fedBalanceSheet": 6655929,
     "termSpread3m": 0.52,
-    "tbill3m": 0.12
+    "tbill3m": 0.12,
+    "nasdaqComposite": 6.898569377015629,
+    "djia": -10.240013862961007,
+    "usdEur": 1.0998,
+    "cnyUsd": 7.0622
   },
   {
     "date": "2020-05-08",
@@ -6498,7 +7282,11 @@
     "continuedClaims": 20939000,
     "fedBalanceSheet": 6721420,
     "termSpread3m": 0.57,
-    "tbill3m": 0.12
+    "tbill3m": 0.12,
+    "nasdaqComposite": 14.83007105341343,
+    "djia": -6.300262676216628,
+    "usdEur": 1.0854,
+    "cnyUsd": 7.0732
   },
   {
     "date": "2020-05-15",
@@ -6531,7 +7319,11 @@
     "continuedClaims": 23130000,
     "fedBalanceSheet": 6934227,
     "termSpread3m": 0.52,
-    "tbill3m": 0.12
+    "tbill3m": 0.12,
+    "nasdaqComposite": 15.244018588239804,
+    "djia": -7.652052673071852,
+    "usdEur": 1.0816,
+    "cnyUsd": 7.1013
   },
   {
     "date": "2020-05-22",
@@ -6564,7 +7356,11 @@
     "continuedClaims": 19153000,
     "fedBalanceSheet": 7037258,
     "termSpread3m": 0.54,
-    "tbill3m": 0.12
+    "tbill3m": 0.12,
+    "nasdaqComposite": 20.304250894096644,
+    "djia": -5.08775203566334,
+    "usdEur": 1.0894,
+    "cnyUsd": 7.1269
   },
   {
     "date": "2020-05-29",
@@ -6597,7 +7393,11 @@
     "continuedClaims": 19194000,
     "fedBalanceSheet": 7097316,
     "termSpread3m": 0.51,
-    "tbill3m": 0.14
+    "tbill3m": 0.14,
+    "nasdaqComposite": 25.738441908441544,
+    "djia": 1.0216342087866925,
+    "usdEur": 1.1107,
+    "cnyUsd": 7.1348
   },
   {
     "date": "2020-06-05",
@@ -6630,7 +7430,11 @@
     "continuedClaims": 19216000,
     "fedBalanceSheet": 7165217,
     "termSpread3m": 0.76,
-    "tbill3m": 0.15
+    "tbill3m": 0.15,
+    "nasdaqComposite": 29.550602734084187,
+    "djia": 6.152844390097401,
+    "usdEur": 1.1297,
+    "cnyUsd": 7.0808
   },
   {
     "date": "2020-06-12",
@@ -6663,7 +7467,11 @@
     "continuedClaims": 18743000,
     "fedBalanceSheet": 7168936,
     "termSpread3m": 0.55,
-    "tbill3m": 0.16
+    "tbill3m": 0.16,
+    "nasdaqComposite": 23.04830662464452,
+    "djia": -1.535445530695645,
+    "usdEur": 1.1253,
+    "cnyUsd": 7.0825
   },
   {
     "date": "2020-06-19",
@@ -6696,7 +7504,11 @@
     "continuedClaims": 17860000,
     "fedBalanceSheet": 7094690,
     "termSpread3m": 0.55,
-    "tbill3m": 0.15
+    "tbill3m": 0.15,
+    "nasdaqComposite": 24.523870334480158,
+    "djia": -2.386583157259281,
+    "usdEur": 1.1189,
+    "cnyUsd": 7.0707
   },
   {
     "date": "2020-06-26",
@@ -6729,7 +7541,11 @@
     "continuedClaims": 17501000,
     "fedBalanceSheet": 7082302,
     "termSpread3m": 0.5,
-    "tbill3m": 0.14
+    "tbill3m": 0.14,
+    "nasdaqComposite": 23.35343876146179,
+    "djia": -5.732676334240505,
+    "usdEur": 1.1215,
+    "cnyUsd": 7.0768
   },
   {
     "date": "2020-07-03",
@@ -6762,7 +7578,11 @@
     "continuedClaims": 16610000,
     "fedBalanceSheet": 7009040,
     "termSpread3m": 0.54,
-    "tbill3m": 0.14
+    "tbill3m": 0.14,
+    "nasdaqComposite": 24.936874482113723,
+    "djia": -4.222502410442774,
+    "usdEur": 1.1237,
+    "cnyUsd": 7.066
   },
   {
     "date": "2020-07-10",
@@ -6795,7 +7615,11 @@
     "continuedClaims": 17273000,
     "fedBalanceSheet": 6920716,
     "termSpread3m": 0.52,
-    "tbill3m": 0.13
+    "tbill3m": 0.13,
+    "nasdaqComposite": 29.441038313788546,
+    "djia": -2.9221673703099804,
+    "usdEur": 1.1318,
+    "cnyUsd": 6.999
   },
   {
     "date": "2020-07-17",
@@ -6828,7 +7652,11 @@
     "continuedClaims": 16251000,
     "fedBalanceSheet": 6958604,
     "termSpread3m": 0.53,
-    "tbill3m": 0.11
+    "tbill3m": 0.11,
+    "nasdaqComposite": 28.3191268153169,
+    "djia": -2.0128692847315444,
+    "usdEur": 1.1438,
+    "cnyUsd": 6.9912
   },
   {
     "date": "2020-07-24",
@@ -6861,7 +7689,11 @@
     "continuedClaims": 16799000,
     "fedBalanceSheet": 6964755,
     "termSpread3m": 0.48,
-    "tbill3m": 0.11
+    "tbill3m": 0.11,
+    "nasdaqComposite": 24.5349996995734,
+    "djia": -2.9339232863109244,
+    "usdEur": 1.1635,
+    "cnyUsd": 7.0168
   },
   {
     "date": "2020-07-31",
@@ -6894,7 +7726,11 @@
     "continuedClaims": 15929000,
     "fedBalanceSheet": 6949032,
     "termSpread3m": 0.46,
-    "tbill3m": 0.09
+    "tbill3m": 0.09,
+    "nasdaqComposite": 31.43385905555922,
+    "djia": -1.6227874422048316,
+    "usdEur": 1.1822,
+    "cnyUsd": 6.9744
   },
   {
     "date": "2020-08-07",
@@ -6927,7 +7763,11 @@
     "continuedClaims": 15255000,
     "fedBalanceSheet": 6945237,
     "termSpread3m": 0.47,
-    "tbill3m": 0.1
+    "tbill3m": 0.1,
+    "nasdaqComposite": 40.03838312668593,
+    "djia": 5.484700890950034,
+    "usdEur": 1.1776,
+    "cnyUsd": 6.967
   },
   {
     "date": "2020-08-14",
@@ -6960,7 +7800,11 @@
     "continuedClaims": 14184000,
     "fedBalanceSheet": 6957277,
     "termSpread3m": 0.61,
-    "tbill3m": 0.1
+    "tbill3m": 0.1,
+    "nasdaqComposite": 41.74665613575612,
+    "djia": 9.621883072691606,
+    "usdEur": 1.1833,
+    "cnyUsd": 6.9501
   },
   {
     "date": "2020-08-21",
@@ -6993,7 +7837,11 @@
     "continuedClaims": 13910000,
     "fedBalanceSheet": 7010637,
     "termSpread3m": 0.54,
-    "tbill3m": 0.1
+    "tbill3m": 0.1,
+    "nasdaqComposite": 41.04119468193475,
+    "djia": 6.593206127758444,
+    "usdEur": 1.1775,
+    "cnyUsd": 6.9179
   },
   {
     "date": "2020-08-28",
@@ -7026,7 +7874,11 @@
     "continuedClaims": 13217000,
     "fedBalanceSheet": 6990418,
     "termSpread3m": 0.64,
-    "tbill3m": 0.1
+    "tbill3m": 0.1,
+    "nasdaqComposite": 48.858452719145504,
+    "djia": 10.054386025556816,
+    "usdEur": 1.1901,
+    "cnyUsd": 6.8647
   },
   {
     "date": "2020-09-04",
@@ -7059,7 +7911,11 @@
     "continuedClaims": 13501000,
     "fedBalanceSheet": 7017492,
     "termSpread3m": 0.61,
-    "tbill3m": 0.11
+    "tbill3m": 0.11,
+    "nasdaqComposite": 41.823996349449885,
+    "djia": 6.745620548599596,
+    "usdEur": 1.182,
+    "cnyUsd": 6.8409
   },
   {
     "date": "2020-09-11",
@@ -7092,7 +7948,11 @@
     "continuedClaims": 12765000,
     "fedBalanceSheet": 7010614,
     "termSpread3m": 0.56,
-    "tbill3m": 0.11
+    "tbill3m": 0.11,
+    "nasdaqComposite": 32.85159271844182,
+    "djia": 1.9478911480397265,
+    "usdEur": 1.1831,
+    "cnyUsd": 6.833
   },
   {
     "date": "2020-09-18",
@@ -7125,7 +7985,11 @@
     "continuedClaims": 12684000,
     "fedBalanceSheet": 7064475,
     "termSpread3m": 0.6,
-    "tbill3m": 0.1
+    "tbill3m": 0.1,
+    "nasdaqComposite": 31.989302210118396,
+    "djia": 1.8799075259659404,
+    "usdEur": 1.1857,
+    "cnyUsd": 6.7675
   },
   {
     "date": "2020-09-25",
@@ -7158,7 +8022,11 @@
     "continuedClaims": 11367000,
     "fedBalanceSheet": 7093161,
     "termSpread3m": 0.56,
-    "tbill3m": 0.1
+    "tbill3m": 0.1,
+    "nasdaqComposite": 35.11472779539899,
+    "djia": 0.7535952891117859,
+    "usdEur": 1.1618,
+    "cnyUsd": 6.822
   },
   {
     "date": "2020-10-02",
@@ -7191,7 +8059,11 @@
     "continuedClaims": 10481000,
     "fedBalanceSheet": 7056129,
     "termSpread3m": 0.61,
-    "tbill3m": 0.09
+    "tbill3m": 0.09,
+    "nasdaqComposite": 42.25796797268675,
+    "djia": 6.151360769856695,
+    "usdEur": 1.1706,
+    "cnyUsd": 6.7898
   },
   {
     "date": "2020-10-09",
@@ -7224,7 +8096,11 @@
     "continuedClaims": 9270000,
     "fedBalanceSheet": 7074649,
     "termSpread3m": 0.69,
-    "tbill3m": 0.1
+    "tbill3m": 0.1,
+    "nasdaqComposite": 46.51373465439734,
+    "djia": 8.5056143226242,
+    "usdEur": 1.1819,
+    "cnyUsd": 6.6933
   },
   {
     "date": "2020-10-16",
@@ -7257,7 +8133,11 @@
     "continuedClaims": 8425000,
     "fedBalanceSheet": 7151426,
     "termSpread3m": 0.65,
-    "tbill3m": 0.11
+    "tbill3m": 0.11,
+    "nasdaqComposite": 43.66569918440999,
+    "djia": 5.941527250964573,
+    "usdEur": 1.1717,
+    "cnyUsd": 6.6962
   },
   {
     "date": "2020-10-23",
@@ -7290,7 +8170,11 @@
     "continuedClaims": 7777000,
     "fedBalanceSheet": 7177265,
     "termSpread3m": 0.75,
-    "tbill3m": 0.1
+    "tbill3m": 0.1,
+    "nasdaqComposite": 42.22387524800519,
+    "djia": 5.595970775826897,
+    "usdEur": 1.1844,
+    "cnyUsd": 6.6861
   },
   {
     "date": "2020-10-30",
@@ -7323,7 +8207,11 @@
     "continuedClaims": 7180000,
     "fedBalanceSheet": 7146306,
     "termSpread3m": 0.79,
-    "tbill3m": 0.09
+    "tbill3m": 0.09,
+    "nasdaqComposite": 31.401930158791338,
+    "djia": -2.519946341389845,
+    "usdEur": 1.1647,
+    "cnyUsd": 6.6919
   },
   {
     "date": "2020-11-06",
@@ -7356,7 +8244,11 @@
     "continuedClaims": 6705000,
     "fedBalanceSheet": 7157479,
     "termSpread3m": 0.73,
-    "tbill3m": 0.1
+    "tbill3m": 0.1,
+    "nasdaqComposite": 41.43090351138976,
+    "djia": 3.0220539666004242,
+    "usdEur": 1.1886,
+    "cnyUsd": 6.608
   },
   {
     "date": "2020-11-13",
@@ -7389,7 +8281,11 @@
     "continuedClaims": 6341000,
     "fedBalanceSheet": 7175417,
     "termSpread3m": 0.8,
-    "tbill3m": 0.09
+    "tbill3m": 0.09,
+    "nasdaqComposite": 39.461807807028926,
+    "djia": 6.105114565828251,
+    "usdEur": 1.1824,
+    "cnyUsd": 6.6039
   },
   {
     "date": "2020-11-20",
@@ -7422,7 +8318,11 @@
     "continuedClaims": 6088000,
     "fedBalanceSheet": 7243080,
     "termSpread3m": 0.76,
-    "tbill3m": 0.07
+    "tbill3m": 0.07,
+    "nasdaqComposite": 39.03301734662643,
+    "djia": 5.184520088896583,
+    "usdEur": 1.1857,
+    "cnyUsd": 6.5608
   },
   {
     "date": "2020-11-27",
@@ -7455,7 +8355,11 @@
     "continuedClaims": 5580000,
     "fedBalanceSheet": 7216480,
     "termSpread3m": 0.75,
-    "tbill3m": 0.09
+    "tbill3m": 0.09,
+    "nasdaqComposite": 40.2136429114619,
+    "djia": 6.20071722766653,
+    "usdEur": 1.1908,
+    "cnyUsd": 6.575
   },
   {
     "date": "2020-12-04",
@@ -7488,7 +8392,11 @@
     "continuedClaims": 5784000,
     "fedBalanceSheet": 7222414,
     "termSpread3m": 0.88,
-    "tbill3m": 0.09
+    "tbill3m": 0.09,
+    "nasdaqComposite": 45.49679163548963,
+    "djia": 9.289332501018087,
+    "usdEur": 1.2142,
+    "cnyUsd": 6.5301
   },
   {
     "date": "2020-12-11",
@@ -7521,7 +8429,11 @@
     "continuedClaims": 5609000,
     "fedBalanceSheet": 7242658,
     "termSpread3m": 0.82,
-    "tbill3m": 0.08
+    "tbill3m": 0.08,
+    "nasdaqComposite": 43.02979529815523,
+    "djia": 7.6494824676743844,
+    "usdEur": 1.2112,
+    "cnyUsd": 6.5445
   },
   {
     "date": "2020-12-18",
@@ -7554,7 +8466,11 @@
     "continuedClaims": 5416000,
     "fedBalanceSheet": 7362592,
     "termSpread3m": 0.87,
-    "tbill3m": 0.08
+    "tbill3m": 0.08,
+    "nasdaqComposite": 44.49513068478532,
+    "djia": 6.86904906923973,
+    "usdEur": 1.2236,
+    "cnyUsd": 6.5395
   },
   {
     "date": "2020-12-25",
@@ -7587,7 +8503,11 @@
     "continuedClaims": 5332000,
     "fedBalanceSheet": 7404039,
     "termSpread3m": 0.85,
-    "tbill3m": 0.09
+    "tbill3m": 0.09,
+    "nasdaqComposite": 43.02358570649891,
+    "djia": 5.907043374731935,
+    "usdEur": 1.2194,
+    "cnyUsd": 6.54
   },
   {
     "date": "2021-01-01",
@@ -7620,7 +8540,11 @@
     "continuedClaims": 5181000,
     "fedBalanceSheet": 7363351,
     "termSpread3m": 0.84,
-    "tbill3m": 0.09
+    "tbill3m": 0.09,
+    "nasdaqComposite": 43.64041637875309,
+    "djia": 7.246506816770637,
+    "usdEur": 1.223,
+    "cnyUsd": 6.525
   },
   {
     "date": "2021-01-08",
@@ -7653,7 +8577,11 @@
     "continuedClaims": 5330000,
     "fedBalanceSheet": 7334809,
     "termSpread3m": 1.05,
-    "tbill3m": 0.08
+    "tbill3m": 0.08,
+    "nasdaqComposite": 44.61203780380405,
+    "djia": 8.185328346510667,
+    "usdEur": 1.2252,
+    "cnyUsd": 6.475
   },
   {
     "date": "2021-01-15",
@@ -7686,7 +8614,11 @@
     "continuedClaims": 5069000,
     "fedBalanceSheet": 7333968,
     "termSpread3m": 1.02,
-    "tbill3m": 0.09
+    "tbill3m": 0.09,
+    "nasdaqComposite": 40.39227969369348,
+    "djia": 6.145458077823718,
+    "usdEur": 1.2099,
+    "cnyUsd": 6.48
   },
   {
     "date": "2021-01-22",
@@ -7719,7 +8651,11 @@
     "continuedClaims": 4877000,
     "fedBalanceSheet": 7414942,
     "termSpread3m": 1.02,
-    "tbill3m": 0.08
+    "tbill3m": 0.08,
+    "nasdaqComposite": 44.32429609847639,
+    "djia": 6.203978788656439,
+    "usdEur": 1.2179,
+    "cnyUsd": 6.481
   },
   {
     "date": "2021-01-29",
@@ -7752,7 +8688,11 @@
     "continuedClaims": 4789000,
     "fedBalanceSheet": 7404926,
     "termSpread3m": 1.05,
-    "tbill3m": 0.06
+    "tbill3m": 0.06,
+    "nasdaqComposite": 40.9214504116371,
+    "djia": 4.343810304355911,
+    "usdEur": 1.2135,
+    "cnyUsd": 6.4282
   },
   {
     "date": "2021-02-05",
@@ -7785,7 +8725,11 @@
     "continuedClaims": 4658000,
     "fedBalanceSheet": 7410598,
     "termSpread3m": 1.16,
-    "tbill3m": 0.03
+    "tbill3m": 0.03,
+    "nasdaqComposite": 45.7226449938372,
+    "djia": 6.341195287948298,
+    "usdEur": 1.2035,
+    "cnyUsd": 6.4664
   },
   {
     "date": "2021-02-12",
@@ -7818,7 +8762,11 @@
     "continuedClaims": 4599000,
     "fedBalanceSheet": 7442225,
     "termSpread3m": 1.16,
-    "tbill3m": 0.04
+    "tbill3m": 0.04,
+    "nasdaqComposite": 44.92625920731732,
+    "djia": 6.4530909174584705,
+    "usdEur": 1.2126,
+    "cnyUsd": 6.4567
   },
   {
     "date": "2021-02-19",
@@ -7851,7 +8799,11 @@
     "continuedClaims": 4495000,
     "fedBalanceSheet": 7557402,
     "termSpread3m": 1.3,
-    "tbill3m": 0.04
+    "tbill3m": 0.04,
+    "nasdaqComposite": 41.32846703432145,
+    "djia": 7.313233631013727,
+    "usdEur": 1.2136,
+    "cnyUsd": 6.4555
   },
   {
     "date": "2021-02-26",
@@ -7884,7 +8836,11 @@
     "continuedClaims": 4406000,
     "fedBalanceSheet": 7590111,
     "termSpread3m": 1.4,
-    "tbill3m": 0.04
+    "tbill3m": 0.04,
+    "nasdaqComposite": 46.89553345648536,
+    "djia": 14.744567299970068,
+    "usdEur": 1.2093,
+    "cnyUsd": 6.473
   },
   {
     "date": "2021-03-05",
@@ -7917,7 +8873,11 @@
     "continuedClaims": 4227000,
     "fedBalanceSheet": 7557524,
     "termSpread3m": 1.52,
-    "tbill3m": 0.04
+    "tbill3m": 0.04,
+    "nasdaqComposite": 47.85148650813631,
+    "djia": 20.577169265824647,
+    "usdEur": 1.1914,
+    "cnyUsd": 6.496
   },
   {
     "date": "2021-03-12",
@@ -7950,7 +8910,11 @@
     "continuedClaims": 4185000,
     "fedBalanceSheet": 7579901,
     "termSpread3m": 1.6,
-    "tbill3m": 0.04
+    "tbill3m": 0.04,
+    "nasdaqComposite": 84.95181760115527,
+    "djia": 54.61170475203083,
+    "usdEur": 1.1952,
+    "cnyUsd": 6.5081
   },
   {
     "date": "2021-03-19",
@@ -7983,7 +8947,11 @@
     "continuedClaims": 3970000,
     "fedBalanceSheet": 7693506,
     "termSpread3m": 1.73,
-    "tbill3m": 0.01
+    "tbill3m": 0.01,
+    "nasdaqComposite": 84.81353960098342,
+    "djia": 62.43172887795656,
+    "usdEur": 1.1909,
+    "cnyUsd": 6.507
   },
   {
     "date": "2021-03-26",
@@ -8016,7 +8984,11 @@
     "continuedClaims": 3887000,
     "fedBalanceSheet": 7719622,
     "termSpread3m": 1.65,
-    "tbill3m": 0.02
+    "tbill3m": 0.02,
+    "nasdaqComposite": 68.49826996719477,
+    "djia": 46.650544049641354,
+    "usdEur": 1.1798,
+    "cnyUsd": 6.5412
   },
   {
     "date": "2021-04-02",
@@ -8049,7 +9021,11 @@
     "continuedClaims": 3859000,
     "fedBalanceSheet": 7688988,
     "termSpread3m": 1.7,
-    "tbill3m": 0.02
+    "tbill3m": 0.02,
+    "nasdaqComposite": 80.03942670999331,
+    "djia": 54.8243066037031,
+    "usdEur": 1.1763,
+    "cnyUsd": 6.5646
   },
   {
     "date": "2021-04-09",
@@ -8082,7 +9058,11 @@
     "continuedClaims": 3830000,
     "fedBalanceSheet": 7708882,
     "termSpread3m": 1.65,
-    "tbill3m": 0.02
+    "tbill3m": 0.02,
+    "nasdaqComposite": 70.47959301313043,
+    "djia": 42.502098495870676,
+    "usdEur": 1.1897,
+    "cnyUsd": 6.5522
   },
   {
     "date": "2021-04-16",
@@ -8115,7 +9095,11 @@
     "continuedClaims": 3779000,
     "fedBalanceSheet": 7793104,
     "termSpread3m": 1.57,
-    "tbill3m": 0.02
+    "tbill3m": 0.02,
+    "nasdaqComposite": 64.6946448579291,
+    "djia": 45.301788451538116,
+    "usdEur": 1.198,
+    "cnyUsd": 6.5203
   },
   {
     "date": "2021-04-23",
@@ -8148,7 +9132,11 @@
     "continuedClaims": 3776000,
     "fedBalanceSheet": 7820948,
     "termSpread3m": 1.55,
-    "tbill3m": 0.03
+    "tbill3m": 0.03,
+    "nasdaqComposite": 65.00556225904235,
+    "djia": 44.77190556260062,
+    "usdEur": 1.2069,
+    "cnyUsd": 6.4945
   },
   {
     "date": "2021-04-30",
@@ -8181,7 +9169,11 @@
     "continuedClaims": 3767000,
     "fedBalanceSheet": 7780962,
     "termSpread3m": 1.64,
-    "tbill3m": 0.01
+    "tbill3m": 0.01,
+    "nasdaqComposite": 57.06846803269008,
+    "djia": 39.140883900743106,
+    "usdEur": 1.203,
+    "cnyUsd": 6.4749
   },
   {
     "date": "2021-05-07",
@@ -8214,7 +9206,11 @@
     "continuedClaims": 3756000,
     "fedBalanceSheet": 7810486,
     "termSpread3m": 1.58,
-    "tbill3m": 0.02
+    "tbill3m": 0.02,
+    "nasdaqComposite": 53.14878291605696,
+    "djia": 45.660580610817036,
+    "usdEur": 1.2165,
+    "cnyUsd": 6.431
   },
   {
     "date": "2021-05-14",
@@ -8247,7 +9243,11 @@
     "continuedClaims": 3737000,
     "fedBalanceSheet": 7830663,
     "termSpread3m": 1.62,
-    "tbill3m": 0.01
+    "tbill3m": 0.01,
+    "nasdaqComposite": 50.16100682937301,
+    "djia": 45.53073098630538,
+    "usdEur": 1.2141,
+    "cnyUsd": 6.4367
   },
   {
     "date": "2021-05-21",
@@ -8280,7 +9280,11 @@
     "continuedClaims": 3618000,
     "fedBalanceSheet": 7922883,
     "termSpread3m": 1.62,
-    "tbill3m": 0.01
+    "tbill3m": 0.01,
+    "nasdaqComposite": 45.085235350376095,
+    "djia": 39.77148105835877,
+    "usdEur": 1.2178,
+    "cnyUsd": 6.4339
   },
   {
     "date": "2021-05-28",
@@ -8313,7 +9317,11 @@
     "continuedClaims": 3575000,
     "fedBalanceSheet": 7903541,
     "termSpread3m": 1.57,
-    "tbill3m": 0.01
+    "tbill3m": 0.01,
+    "nasdaqComposite": 46.74730147006241,
+    "djia": 35.93929129344771,
+    "usdEur": 1.2194,
+    "cnyUsd": 6.3674
   },
   {
     "date": "2021-06-04",
@@ -8346,7 +9354,11 @@
     "continuedClaims": 3422000,
     "fedBalanceSheet": 7935703,
     "termSpread3m": 1.54,
-    "tbill3m": 0.02
+    "tbill3m": 0.02,
+    "nasdaqComposite": 43.66434028958559,
+    "djia": 32.244989121757925,
+    "usdEur": 1.2173,
+    "cnyUsd": 6.3945
   },
   {
     "date": "2021-06-11",
@@ -8379,7 +9391,11 @@
     "continuedClaims": 3350000,
     "fedBalanceSheet": 7952327,
     "termSpread3m": 1.44,
-    "tbill3m": 0.03
+    "tbill3m": 0.03,
+    "nasdaqComposite": 48.212579521381116,
+    "djia": 37.21492651474421,
+    "usdEur": 1.2101,
+    "cnyUsd": 6.3967
   },
   {
     "date": "2021-06-18",
@@ -8412,7 +9428,11 @@
     "continuedClaims": 3268000,
     "fedBalanceSheet": 8064257,
     "termSpread3m": 1.4,
-    "tbill3m": 0.05
+    "tbill3m": 0.05,
+    "nasdaqComposite": 41.10740668104857,
+    "djia": 27.64552283158426,
+    "usdEur": 1.1872,
+    "cnyUsd": 6.4525
   },
   {
     "date": "2021-06-25",
@@ -8445,7 +9465,11 @@
     "continuedClaims": 3263000,
     "fedBalanceSheet": 8101945,
     "termSpread3m": 1.48,
-    "tbill3m": 0.06
+    "tbill3m": 0.06,
+    "nasdaqComposite": 43.36018768094239,
+    "djia": 33.74650425703809,
+    "usdEur": 1.194,
+    "cnyUsd": 6.4545
   },
   {
     "date": "2021-07-02",
@@ -8478,7 +9502,11 @@
     "continuedClaims": 3313000,
     "fedBalanceSheet": 8078544,
     "termSpread3m": 1.39,
-    "tbill3m": 0.05
+    "tbill3m": 0.05,
+    "nasdaqComposite": 43.41556267223636,
+    "djia": 34.687982046945564,
+    "usdEur": 1.1848,
+    "cnyUsd": 6.4721
   },
   {
     "date": "2021-07-09",
@@ -8511,7 +9539,11 @@
     "continuedClaims": 3179000,
     "fedBalanceSheet": 8097773,
     "termSpread3m": 1.31,
-    "tbill3m": 0.06
+    "tbill3m": 0.06,
+    "nasdaqComposite": 39.38441847787444,
+    "djia": 35.649412259896394,
+    "usdEur": 1.1861,
+    "cnyUsd": 6.4788
   },
   {
     "date": "2021-07-16",
@@ -8544,7 +9576,11 @@
     "continuedClaims": 3061000,
     "fedBalanceSheet": 8201651,
     "termSpread3m": 1.26,
-    "tbill3m": 0.05
+    "tbill3m": 0.05,
+    "nasdaqComposite": 37.74560022455968,
+    "djia": 29.74836831968628,
+    "usdEur": 1.181,
+    "cnyUsd": 6.4785
   },
   {
     "date": "2021-07-23",
@@ -8577,7 +9613,11 @@
     "continuedClaims": 3138000,
     "fedBalanceSheet": 8240530,
     "termSpread3m": 1.25,
-    "tbill3m": 0.05
+    "tbill3m": 0.05,
+    "nasdaqComposite": 41.8257750859826,
+    "djia": 31.55153789556111,
+    "usdEur": 1.1761,
+    "cnyUsd": 6.4808
   },
   {
     "date": "2021-07-30",
@@ -8610,7 +9650,11 @@
     "continuedClaims": 2863000,
     "fedBalanceSheet": 8221473,
     "termSpread3m": 1.18,
-    "tbill3m": 0.06
+    "tbill3m": 0.06,
+    "nasdaqComposite": 38.58087744302174,
+    "djia": 32.76557984164113,
+    "usdEur": 1.1864,
+    "cnyUsd": 6.4609
   },
   {
     "date": "2021-08-06",
@@ -8643,7 +9687,11 @@
     "continuedClaims": 2793000,
     "fedBalanceSheet": 8235073,
     "termSpread3m": 1.25,
-    "tbill3m": 0.06
+    "tbill3m": 0.06,
+    "nasdaqComposite": 33.55839493269308,
+    "djia": 28.559300806441602,
+    "usdEur": 1.1761,
+    "cnyUsd": 6.4825
   },
   {
     "date": "2021-08-13",
@@ -8676,7 +9724,11 @@
     "continuedClaims": 2809000,
     "fedBalanceSheet": 8257159,
     "termSpread3m": 1.23,
-    "tbill3m": 0.06
+    "tbill3m": 0.06,
+    "nasdaqComposite": 34.23500113199003,
+    "djia": 27.310235755314594,
+    "usdEur": 1.1796,
+    "cnyUsd": 6.4768
   },
   {
     "date": "2021-08-20",
@@ -8709,7 +9761,11 @@
     "continuedClaims": 2802000,
     "fedBalanceSheet": 8342598,
     "termSpread3m": 1.21,
-    "tbill3m": 0.05
+    "tbill3m": 0.05,
+    "nasdaqComposite": 30.623393801126486,
+    "djia": 26.605702362640173,
+    "usdEur": 1.169,
+    "cnyUsd": 6.5012
   },
   {
     "date": "2021-08-27",
@@ -8742,7 +9798,11 @@
     "continuedClaims": 2733000,
     "fedBalanceSheet": 8332743,
     "termSpread3m": 1.26,
-    "tbill3m": 0.05
+    "tbill3m": 0.05,
+    "nasdaqComposite": 30.14243024290042,
+    "djia": 24.440067428814906,
+    "usdEur": 1.1794,
+    "cnyUsd": 6.4711
   },
   {
     "date": "2021-09-03",
@@ -8775,7 +9835,11 @@
     "continuedClaims": 2786000,
     "fedBalanceSheet": 8349173,
     "termSpread3m": 1.28,
-    "tbill3m": 0.05
+    "tbill3m": 0.05,
+    "nasdaqComposite": 34.08435953604874,
+    "djia": 25.011230800279783,
+    "usdEur": 1.1884,
+    "cnyUsd": 6.4528
   },
   {
     "date": "2021-09-10",
@@ -8808,7 +9872,11 @@
     "continuedClaims": 2608000,
     "fedBalanceSheet": 8357314,
     "termSpread3m": 1.3,
-    "tbill3m": 0.05
+    "tbill3m": 0.05,
+    "nasdaqComposite": 38.425435387226074,
+    "djia": 25.68820733782755,
+    "usdEur": 1.1821,
+    "cnyUsd": 6.444
   },
   {
     "date": "2021-09-17",
@@ -8841,7 +9909,11 @@
     "continuedClaims": 2756000,
     "fedBalanceSheet": 8448770,
     "termSpread3m": 1.33,
-    "tbill3m": 0.04
+    "tbill3m": 0.04,
+    "nasdaqComposite": 37.88802853822266,
+    "djia": 23.95134682198181,
+    "usdEur": 1.1734,
+    "cnyUsd": 6.4655
   },
   {
     "date": "2021-09-24",
@@ -8874,7 +9946,11 @@
     "continuedClaims": 2803000,
     "fedBalanceSheet": 8489824,
     "termSpread3m": 1.44,
-    "tbill3m": 0.03
+    "tbill3m": 0.03,
+    "nasdaqComposite": 40.99600559572656,
+    "djia": 29.76852141900339,
+    "usdEur": 1.1715,
+    "cnyUsd": 6.466
   },
   {
     "date": "2021-10-01",
@@ -8907,7 +9983,11 @@
     "continuedClaims": 2722000,
     "fedBalanceSheet": 8447981,
     "termSpread3m": 1.44,
-    "tbill3m": 0.04
+    "tbill3m": 0.04,
+    "nasdaqComposite": 28.60599950029179,
+    "djia": 23.401457387415547,
+    "usdEur": 1.1598,
+    "cnyUsd": 6.4434
   },
   {
     "date": "2021-10-08",
@@ -8940,7 +10020,11 @@
     "continuedClaims": 2624000,
     "fedBalanceSheet": 8464032,
     "termSpread3m": 1.56,
-    "tbill3m": 0.05
+    "tbill3m": 0.05,
+    "nasdaqComposite": 27.65465262479556,
+    "djia": 22.236153370687116,
+    "usdEur": 1.1572,
+    "cnyUsd": 6.4435
   },
   {
     "date": "2021-10-15",
@@ -8973,7 +10057,11 @@
     "continuedClaims": 2533000,
     "fedBalanceSheet": 8480942,
     "termSpread3m": 1.54,
-    "tbill3m": 0.05
+    "tbill3m": 0.05,
+    "nasdaqComposite": 27.17584217818554,
+    "djia": 23.86647107130575,
+    "usdEur": 1.1594,
+    "cnyUsd": 6.434
   },
   {
     "date": "2021-10-22",
@@ -9006,7 +10094,11 @@
     "continuedClaims": 2265000,
     "fedBalanceSheet": 8564943,
     "termSpread3m": 1.6,
-    "tbill3m": 0.06
+    "tbill3m": 0.06,
+    "nasdaqComposite": 31.15058999601079,
+    "djia": 25.78426056439824,
+    "usdEur": 1.1632,
+    "cnyUsd": 6.3839
   },
   {
     "date": "2021-10-29",
@@ -9039,7 +10131,11 @@
     "continuedClaims": 2168000,
     "fedBalanceSheet": 8556181,
     "termSpread3m": 1.5,
-    "tbill3m": 0.05
+    "tbill3m": 0.05,
+    "nasdaqComposite": 38.55675024741654,
+    "djia": 34.36142466871548,
+    "usdEur": 1.1552,
+    "cnyUsd": 6.405
   },
   {
     "date": "2021-11-05",
@@ -9072,7 +10168,11 @@
     "continuedClaims": 2199000,
     "fedBalanceSheet": 8574871,
     "termSpread3m": 1.4,
-    "tbill3m": 0.05
+    "tbill3m": 0.05,
+    "nasdaqComposite": 34.317416720138795,
+    "djia": 27.959562073928357,
+    "usdEur": 1.1554,
+    "cnyUsd": 6.3961
   },
   {
     "date": "2021-11-12",
@@ -9105,7 +10205,11 @@
     "continuedClaims": 2036000,
     "fedBalanceSheet": 8663117,
     "termSpread3m": 1.53,
-    "tbill3m": 0.05
+    "tbill3m": 0.05,
+    "nasdaqComposite": 35.45273574907404,
+    "djia": 24.140642919212652,
+    "usdEur": 1.1443,
+    "cnyUsd": 6.3787
   },
   {
     "date": "2021-11-19",
@@ -9138,7 +10242,11 @@
     "continuedClaims": 1968000,
     "fedBalanceSheet": 8674970,
     "termSpread3m": 1.49,
-    "tbill3m": 0.05
+    "tbill3m": 0.05,
+    "nasdaqComposite": 34.883084090246655,
+    "djia": 20.753323160318615,
+    "usdEur": 1.1318,
+    "cnyUsd": 6.3863
   },
   {
     "date": "2021-11-26",
@@ -9171,7 +10279,11 @@
     "continuedClaims": 1803000,
     "fedBalanceSheet": 8681771,
     "termSpread3m": 1.42,
-    "tbill3m": 0.06
+    "tbill3m": 0.06,
+    "nasdaqComposite": 28.089529038232563,
+    "djia": 16.827768175848856,
+    "usdEur": 1.1302,
+    "cnyUsd": 6.3924
   },
   {
     "date": "2021-12-03",
@@ -9204,7 +10316,11 @@
     "continuedClaims": 1874000,
     "fedBalanceSheet": 8650402,
     "termSpread3m": 1.29,
-    "tbill3m": 0.06
+    "tbill3m": 0.06,
+    "nasdaqComposite": 21.8813170689931,
+    "djia": 15.384163643595228,
+    "usdEur": 1.1308,
+    "cnyUsd": 6.3758
   },
   {
     "date": "2021-12-10",
@@ -9237,7 +10353,11 @@
     "continuedClaims": 1767000,
     "fedBalanceSheet": 8664524,
     "termSpread3m": 1.42,
-    "tbill3m": 0.06
+    "tbill3m": 0.06,
+    "nasdaqComposite": 25.994191431272927,
+    "djia": 19.90625768768963,
+    "usdEur": 1.1312,
+    "cnyUsd": 6.3685
   },
   {
     "date": "2021-12-17",
@@ -9270,7 +10390,11 @@
     "continuedClaims": 1767000,
     "fedBalanceSheet": 8756666,
     "termSpread3m": 1.36,
-    "tbill3m": 0.05
+    "tbill3m": 0.05,
+    "nasdaqComposite": 18.84040032119705,
+    "djia": 16.70464374094367,
+    "usdEur": 1.1277,
+    "cnyUsd": 6.3748
   },
   {
     "date": "2021-12-24",
@@ -9303,7 +10427,11 @@
     "continuedClaims": 1628000,
     "fedBalanceSheet": 8790495,
     "termSpread3m": 1.43,
-    "tbill3m": 0.08
+    "tbill3m": 0.08,
+    "nasdaqComposite": 22.24677911990336,
+    "djia": 19.042101836862212,
+    "usdEur": 1.132,
+    "cnyUsd": 6.3696
   },
   {
     "date": "2021-12-31",
@@ -9336,7 +10464,11 @@
     "continuedClaims": 1703000,
     "fedBalanceSheet": 8757460,
     "termSpread3m": 1.46,
-    "tbill3m": 0.06
+    "tbill3m": 0.06,
+    "nasdaqComposite": 21.389122520615622,
+    "djia": 18.727472090877505,
+    "usdEur": 1.1318,
+    "cnyUsd": 6.3726
   },
   {
     "date": "2022-01-07",
@@ -9369,7 +10501,11 @@
     "continuedClaims": 1690000,
     "fedBalanceSheet": 8765721,
     "termSpread3m": 1.66,
-    "tbill3m": 0.1
+    "tbill3m": 0.1,
+    "nasdaqComposite": 14.298242660405824,
+    "djia": 16.72145956026729,
+    "usdEur": 1.1358,
+    "cnyUsd": 6.3769
   },
   {
     "date": "2022-01-14",
@@ -9402,7 +10538,11 @@
     "continuedClaims": 1721000,
     "fedBalanceSheet": 8788278,
     "termSpread3m": 1.65,
-    "tbill3m": 0.13
+    "tbill3m": 0.13,
+    "nasdaqComposite": 13.583153354320721,
+    "djia": 15.876246147333205,
+    "usdEur": 1.1414,
+    "cnyUsd": 6.3524
   },
   {
     "date": "2022-01-21",
@@ -9435,7 +10575,11 @@
     "continuedClaims": 1700000,
     "fedBalanceSheet": 8867834,
     "termSpread3m": 1.58,
-    "tbill3m": 0.17
+    "tbill3m": 0.17,
+    "nasdaqComposite": 1.7590095566373698,
+    "djia": 9.909414322102172,
+    "usdEur": 1.1346,
+    "cnyUsd": 6.3385
   },
   {
     "date": "2022-01-28",
@@ -9468,7 +10612,11 @@
     "continuedClaims": 1709000,
     "fedBalanceSheet": 8860485,
     "termSpread3m": 1.59,
-    "tbill3m": 0.19
+    "tbill3m": 0.19,
+    "nasdaqComposite": 3.2496423526447993,
+    "djia": 13.469468711932286,
+    "usdEur": 1.116,
+    "cnyUsd": 6.3605
   },
   {
     "date": "2022-02-04",
@@ -9501,7 +10649,11 @@
     "continuedClaims": 1695000,
     "fedBalanceSheet": 8873211,
     "termSpread3m": 1.7,
-    "tbill3m": 0.23
+    "tbill3m": 0.23,
+    "nasdaqComposite": 2.324546696337726,
+    "djia": 12.989110589756647,
+    "usdEur": 1.1455,
+    "cnyUsd": 6.361
   },
   {
     "date": "2022-02-11",
@@ -9534,7 +10686,11 @@
     "continuedClaims": 1671000,
     "fedBalanceSheet": 8878009,
     "termSpread3m": 1.56,
-    "tbill3m": 0.37
+    "tbill3m": 0.37,
+    "nasdaqComposite": -1.6727780364286682,
+    "djia": 10.522705507672425,
+    "usdEur": 1.1404,
+    "cnyUsd": 6.354
   },
   {
     "date": "2022-02-18",
@@ -9567,7 +10723,11 @@
     "continuedClaims": 1637000,
     "fedBalanceSheet": 8911033,
     "termSpread3m": 1.57,
-    "tbill3m": 0.35
+    "tbill3m": 0.35,
+    "nasdaqComposite": -2.2883646728249496,
+    "djia": 8.210751860552111,
+    "usdEur": 1.1327,
+    "cnyUsd": 6.3251
   },
   {
     "date": "2022-02-25",
@@ -9600,7 +10760,11 @@
     "continuedClaims": 1615000,
     "fedBalanceSheet": 8928129,
     "termSpread3m": 1.64,
-    "tbill3m": 0.33
+    "tbill3m": 0.33,
+    "nasdaqComposite": 4.384260596687506,
+    "djia": 8.460413839751023,
+    "usdEur": 1.1261,
+    "cnyUsd": 6.3169
   },
   {
     "date": "2022-03-04",
@@ -9633,7 +10797,11 @@
     "continuedClaims": 1613000,
     "fedBalanceSheet": 8904455,
     "termSpread3m": 1.4,
-    "tbill3m": 0.33
+    "tbill3m": 0.33,
+    "nasdaqComposite": 4.636864000150909,
+    "djia": 8.700840185046378,
+    "usdEur": 1.0912,
+    "cnyUsd": 6.3188
   },
   {
     "date": "2022-03-11",
@@ -9666,7 +10834,11 @@
     "continuedClaims": 1583000,
     "fedBalanceSheet": 8910748,
     "termSpread3m": 1.6,
-    "tbill3m": 0.39
+    "tbill3m": 0.39,
+    "nasdaqComposite": -4.141157293970221,
+    "djia": 1.4117028504022855,
+    "usdEur": 1.0937,
+    "cnyUsd": 6.3389
   },
   {
     "date": "2022-03-18",
@@ -9699,7 +10871,11 @@
     "continuedClaims": 1541000,
     "fedBalanceSheet": 8954306,
     "termSpread3m": 1.72,
-    "tbill3m": 0.41
+    "tbill3m": 0.41,
+    "nasdaqComposite": 5.929093630228954,
+    "djia": 5.759274305206863,
+    "usdEur": 1.1044,
+    "cnyUsd": 6.3609
   },
   {
     "date": "2022-03-25",
@@ -9732,7 +10908,11 @@
     "continuedClaims": 1518000,
     "fedBalanceSheet": 8962474,
     "termSpread3m": 1.93,
-    "tbill3m": 0.53
+    "tbill3m": 0.53,
+    "nasdaqComposite": 9.1820726046566,
+    "djia": 6.872457807420584,
+    "usdEur": 1.0985,
+    "cnyUsd": 6.3658
   },
   {
     "date": "2022-04-01",
@@ -9765,7 +10945,11 @@
     "continuedClaims": 1532000,
     "fedBalanceSheet": 8937142,
     "termSpread3m": 1.86,
-    "tbill3m": 0.52
+    "tbill3m": 0.52,
+    "nasdaqComposite": 5.796614419318535,
+    "djia": 5.022319105751749,
+    "usdEur": 1.1043,
+    "cnyUsd": 6.3625
   },
   {
     "date": "2022-04-08",
@@ -9798,7 +10982,11 @@
     "continuedClaims": 1492000,
     "fedBalanceSheet": 8937592,
     "termSpread3m": 2.02,
-    "tbill3m": 0.69
+    "tbill3m": 0.69,
+    "nasdaqComposite": -0.8555018290861915,
+    "djia": 3.6340903372386935,
+    "usdEur": 1.0874,
+    "cnyUsd": 6.3643
   },
   {
     "date": "2022-04-15",
@@ -9831,7 +11019,11 @@
     "continuedClaims": 1432000,
     "fedBalanceSheet": 8965487,
     "termSpread3m": 2.04,
-    "tbill3m": 0.78
+    "tbill3m": 0.78,
+    "nasdaqComposite": -4.8984383236126305,
+    "djia": 1.2200027088972831,
+    "usdEur": 1.0812,
+    "cnyUsd": 6.3705
   },
   {
     "date": "2022-04-22",
@@ -9864,7 +11056,11 @@
     "continuedClaims": 1429000,
     "fedBalanceSheet": 8955851,
     "termSpread3m": 2.07,
-    "tbill3m": 0.82
+    "tbill3m": 0.82,
+    "nasdaqComposite": -7.085619836146117,
+    "djia": -0.013307349501268106,
+    "usdEur": 1.079,
+    "cnyUsd": 6.501
   },
   {
     "date": "2022-04-29",
@@ -9897,7 +11093,11 @@
     "continuedClaims": 1424000,
     "fedBalanceSheet": 8939199,
     "termSpread3m": 2.04,
-    "tbill3m": 0.83
+    "tbill3m": 0.83,
+    "nasdaqComposite": -12.4118856315085,
+    "djia": -3.1800896995803907,
+    "usdEur": 1.0537,
+    "cnyUsd": 6.608
   },
   {
     "date": "2022-05-06",
@@ -9930,7 +11130,11 @@
     "continuedClaims": 1385000,
     "fedBalanceSheet": 8939972,
     "termSpread3m": 2.27,
-    "tbill3m": 0.84
+    "tbill3m": 0.84,
+    "nasdaqComposite": -10.916140730764834,
+    "djia": -4.773459247035971,
+    "usdEur": 1.0572,
+    "cnyUsd": 6.6651
   },
   {
     "date": "2022-05-13",
@@ -9963,7 +11167,11 @@
     "continuedClaims": 1365000,
     "fedBalanceSheet": 8942008,
     "termSpread3m": 1.9,
-    "tbill3m": 1.01
+    "tbill3m": 1.01,
+    "nasdaqComposite": -10.057074329199489,
+    "djia": -5.363645582419318,
+    "usdEur": 1.041,
+    "cnyUsd": 6.788
   },
   {
     "date": "2022-05-20",
@@ -9996,7 +11204,11 @@
     "continuedClaims": 1378000,
     "fedBalanceSheet": 8945898,
     "termSpread3m": 1.75,
-    "tbill3m": 1.01
+    "tbill3m": 1.01,
+    "nasdaqComposite": -16.113784691490817,
+    "djia": -8.280241695920243,
+    "usdEur": 1.0559,
+    "cnyUsd": 6.6921
   },
   {
     "date": "2022-05-27",
@@ -10029,7 +11241,11 @@
     "continuedClaims": 1362000,
     "fedBalanceSheet": 8914281,
     "termSpread3m": 1.66,
-    "tbill3m": 1.06
+    "tbill3m": 1.06,
+    "nasdaqComposite": -11.685478164393858,
+    "djia": -3.6317802826317025,
+    "usdEur": 1.0709,
+    "cnyUsd": 6.698
   },
   {
     "date": "2022-06-03",
@@ -10062,7 +11278,11 @@
     "continuedClaims": 1363000,
     "fedBalanceSheet": 8915050,
     "termSpread3m": 1.75,
-    "tbill3m": 1.17
+    "tbill3m": 1.17,
+    "nasdaqComposite": -11.765241642923618,
+    "djia": -4.851022528244187,
+    "usdEur": 1.0721,
+    "cnyUsd": 6.6595
   },
   {
     "date": "2022-06-10",
@@ -10095,7 +11315,11 @@
     "continuedClaims": 1344000,
     "fedBalanceSheet": 8918254,
     "termSpread3m": 1.76,
-    "tbill3m": 1.34
+    "tbill3m": 1.34,
+    "nasdaqComposite": -19.11731036288018,
+    "djia": -8.917276732245805,
+    "usdEur": 1.0521,
+    "cnyUsd": 6.7081
   },
   {
     "date": "2022-06-17",
@@ -10128,7 +11352,11 @@
     "continuedClaims": 1356000,
     "fedBalanceSheet": 8932420,
     "termSpread3m": 1.62,
-    "tbill3m": 1.58
+    "tbill3m": 1.58,
+    "nasdaqComposite": -23.747735915008107,
+    "djia": -11.63296470348234,
+    "usdEur": 1.0473,
+    "cnyUsd": 6.716
   },
   {
     "date": "2022-06-24",
@@ -10161,7 +11389,11 @@
     "continuedClaims": 1358000,
     "fedBalanceSheet": 8934346,
     "termSpread3m": 1.4,
-    "tbill3m": 1.66
+    "tbill3m": 1.66,
+    "nasdaqComposite": -19.221612683902446,
+    "djia": -7.884183383133281,
+    "usdEur": 1.0539,
+    "cnyUsd": 6.6878
   },
   {
     "date": "2022-07-01",
@@ -10194,7 +11426,11 @@
     "continuedClaims": 1403000,
     "fedBalanceSheet": 8913553,
     "termSpread3m": 1.15,
-    "tbill3m": 1.66
+    "tbill3m": 1.66,
+    "nasdaqComposite": -23.374474431876855,
+    "djia": -10.210538746700093,
+    "usdEur": 1.0409,
+    "cnyUsd": 6.7
   },
   {
     "date": "2022-07-08",
@@ -10227,7 +11463,11 @@
     "continuedClaims": 1360000,
     "fedBalanceSheet": 8891851,
     "termSpread3m": 1.11,
-    "tbill3m": 1.91
+    "tbill3m": 1.91,
+    "nasdaqComposite": -20.085949100879276,
+    "djia": -8.95876553115993,
+    "usdEur": 1.0178,
+    "cnyUsd": 6.6945
   },
   {
     "date": "2022-07-15",
@@ -10260,7 +11500,11 @@
     "continuedClaims": 1367000,
     "fedBalanceSheet": 8895867,
     "termSpread3m": 0.56,
-    "tbill3m": 2.29
+    "tbill3m": 2.29,
+    "nasdaqComposite": -21.25202758965917,
+    "djia": -10.571806344181356,
+    "usdEur": 1.0089,
+    "cnyUsd": 6.7565
   },
   {
     "date": "2022-07-22",
@@ -10293,7 +11537,11 @@
     "continuedClaims": 1391000,
     "fedBalanceSheet": 8899213,
     "termSpread3m": 0.28,
-    "tbill3m": 2.41
+    "tbill3m": 2.41,
+    "nasdaqComposite": -19.41142421312123,
+    "djia": -8.396837179651007,
+    "usdEur": 1.0225,
+    "cnyUsd": 6.75
   },
   {
     "date": "2022-07-29",
@@ -10326,7 +11574,11 @@
     "continuedClaims": 1418000,
     "fedBalanceSheet": 8890004,
     "termSpread3m": 0.26,
-    "tbill3m": 2.34
+    "tbill3m": 2.34,
+    "nasdaqComposite": -16.155961527270456,
+    "djia": -6.382870170984201,
+    "usdEur": 1.0202,
+    "cnyUsd": 6.7433
   },
   {
     "date": "2022-08-05",
@@ -10359,7 +11611,11 @@
     "continuedClaims": 1427000,
     "fedBalanceSheet": 8874620,
     "termSpread3m": 0.25,
-    "tbill3m": 2.48
+    "tbill3m": 2.48,
+    "nasdaqComposite": -15.022168334326958,
+    "djia": -6.447535595371345,
+    "usdEur": 1.017,
+    "cnyUsd": 6.7607
   },
   {
     "date": "2022-08-12",
@@ -10392,7 +11648,11 @@
     "continuedClaims": 1422000,
     "fedBalanceSheet": 8879138,
     "termSpread3m": 0.21,
-    "tbill3m": 2.53
+    "tbill3m": 2.53,
+    "nasdaqComposite": -11.940057747366739,
+    "djia": -4.8980488649951965,
+    "usdEur": 1.0257,
+    "cnyUsd": 6.7425
   },
   {
     "date": "2022-08-19",
@@ -10425,7 +11685,11 @@
     "continuedClaims": 1410000,
     "fedBalanceSheet": 8849762,
     "termSpread3m": 0.24,
-    "tbill3m": 2.64
+    "tbill3m": 2.64,
+    "nasdaqComposite": -12.62960062000621,
+    "djia": -3.402808266836943,
+    "usdEur": 1.0039,
+    "cnyUsd": 6.8164
   },
   {
     "date": "2022-08-26",
@@ -10458,7 +11722,11 @@
     "continuedClaims": 1419000,
     "fedBalanceSheet": 8851436,
     "termSpread3m": 0.15,
-    "tbill3m": 2.78
+    "tbill3m": 2.78,
+    "nasdaqComposite": -18.761780057420772,
+    "djia": -8.319967103170644,
+    "usdEur": 0.9998,
+    "cnyUsd": 6.8715
   },
   {
     "date": "2022-09-02",
@@ -10491,7 +11759,11 @@
     "continuedClaims": 1418000,
     "fedBalanceSheet": 8826093,
     "termSpread3m": 0.26,
-    "tbill3m": 2.85
+    "tbill3m": 2.85,
+    "nasdaqComposite": -24.135911260581377,
+    "djia": -11.639208189185023,
+    "usdEur": 1.003,
+    "cnyUsd": 6.8985
   },
   {
     "date": "2022-09-09",
@@ -10524,7 +11796,11 @@
     "continuedClaims": 1397000,
     "fedBalanceSheet": 8822401,
     "termSpread3m": 0.25,
-    "tbill3m": 2.98
+    "tbill3m": 2.98,
+    "nasdaqComposite": -20.56590100503337,
+    "djia": -7.820293824030122,
+    "usdEur": 1.0046,
+    "cnyUsd": 6.924
   },
   {
     "date": "2022-09-16",
@@ -10557,7 +11833,11 @@
     "continuedClaims": 1402000,
     "fedBalanceSheet": 8832759,
     "termSpread3m": 0.25,
-    "tbill3m": 3.1
+    "tbill3m": 3.1,
+    "nasdaqComposite": -24.591882976593215,
+    "djia": -11.305757594243904,
+    "usdEur": 1.0013,
+    "cnyUsd": 6.9799
   },
   {
     "date": "2022-09-23",
@@ -10590,7 +11870,11 @@
     "continuedClaims": 1382000,
     "fedBalanceSheet": 8816802,
     "termSpread3m": 0.45,
-    "tbill3m": 3.12
+    "tbill3m": 3.12,
+    "nasdaqComposite": -27.798586788411562,
+    "djia": -14.884040820576661,
+    "usdEur": 0.9719,
+    "cnyUsd": 7.1266
   },
   {
     "date": "2022-09-30",
@@ -10623,7 +11907,11 @@
     "continuedClaims": 1397000,
     "fedBalanceSheet": 8795567,
     "termSpread3m": 0.5,
-    "tbill3m": 3.22
+    "tbill3m": 3.22,
+    "nasdaqComposite": -26.805125486379964,
+    "djia": -15.123573155828286,
+    "usdEur": 0.9783,
+    "cnyUsd": 7.1135
   },
   {
     "date": "2022-10-07",
@@ -10656,7 +11944,11 @@
     "continuedClaims": 1392000,
     "fedBalanceSheet": 8759053,
     "termSpread3m": 0.44,
-    "tbill3m": 3.31
+    "tbill3m": 3.31,
+    "nasdaqComposite": -27.307319083773606,
+    "djia": -15.704673925490887,
+    "usdEur": 0.9785,
+    "cnyUsd": 7.1103
   },
   {
     "date": "2022-10-14",
@@ -10689,7 +11981,11 @@
     "continuedClaims": 1404000,
     "fedBalanceSheet": 8758969,
     "termSpread3m": 0.19,
-    "tbill3m": 3.65
+    "tbill3m": 3.65,
+    "nasdaqComposite": -30.371108441163752,
+    "djia": -15.116995144440848,
+    "usdEur": 0.9739,
+    "cnyUsd": 7.1895
   },
   {
     "date": "2022-10-21",
@@ -10722,7 +12018,11 @@
     "continuedClaims": 1402000,
     "fedBalanceSheet": 8743922,
     "termSpread3m": 0.12,
-    "tbill3m": 3.9
+    "tbill3m": 3.9,
+    "nasdaqComposite": -28.628193247763832,
+    "djia": -12.69699138389151,
+    "usdEur": 0.9855,
+    "cnyUsd": 7.2399
   },
   {
     "date": "2022-10-28",
@@ -10755,7 +12055,11 @@
     "continuedClaims": 1429000,
     "fedBalanceSheet": 8723090,
     "termSpread3m": -0.16,
-    "tbill3m": 3.99
+    "tbill3m": 3.99,
+    "nasdaqComposite": -28.13073694404238,
+    "djia": -8.028663482830344,
+    "usdEur": 0.9934,
+    "cnyUsd": 7.2499
   },
   {
     "date": "2022-11-04",
@@ -10788,7 +12092,11 @@
     "continuedClaims": 1430000,
     "fedBalanceSheet": 8676870,
     "termSpread3m": -0.04,
-    "tbill3m": 4.02
+    "tbill3m": 4.02,
+    "nasdaqComposite": -34.28452771621129,
+    "djia": -10.300593258319978,
+    "usdEur": 0.9895,
+    "cnyUsd": 7.2996
   },
   {
     "date": "2022-11-11",
@@ -10821,7 +12129,11 @@
     "continuedClaims": 1406000,
     "fedBalanceSheet": 8678886,
     "termSpread3m": -0.46,
-    "tbill3m": 4.09
+    "tbill3m": 4.09,
+    "nasdaqComposite": -27.89653521205684,
+    "djia": -6.050377450883504,
+    "usdEur": 1.0176,
+    "cnyUsd": 7.184
   },
   {
     "date": "2022-11-18",
@@ -10854,7 +12166,11 @@
     "continuedClaims": 1450000,
     "fedBalanceSheet": 8625620,
     "termSpread3m": -0.52,
-    "tbill3m": 4.15
+    "tbill3m": 4.15,
+    "nasdaqComposite": -30.309728011824642,
+    "djia": -5.924738541912033,
+    "usdEur": 1.0349,
+    "cnyUsd": 7.1192
   },
   {
     "date": "2022-11-25",
@@ -10887,7 +12203,11 @@
     "continuedClaims": 1464000,
     "fedBalanceSheet": 8621390,
     "termSpread3m": -0.73,
-    "tbill3m": 4.22
+    "tbill3m": 4.22,
+    "nasdaqComposite": -29.149908205813357,
+    "djia": -4.070312067964865,
+    "usdEur": 1.0402,
+    "cnyUsd": 7.1642
   },
   {
     "date": "2022-12-02",
@@ -10920,7 +12240,11 @@
     "continuedClaims": 1512000,
     "fedBalanceSheet": 8584576,
     "termSpread3m": -0.83,
-    "tbill3m": 4.22
+    "tbill3m": 4.22,
+    "nasdaqComposite": -25.484288734646967,
+    "djia": -0.6059794242401662,
+    "usdEur": 1.0521,
+    "cnyUsd": 7.019
   },
   {
     "date": "2022-12-09",
@@ -10953,7 +12277,11 @@
     "continuedClaims": 1539000,
     "fedBalanceSheet": 8582735,
     "termSpread3m": -0.74,
-    "tbill3m": 4.19
+    "tbill3m": 4.19,
+    "nasdaqComposite": -29.081925609816604,
+    "djia": -6.371835415158134,
+    "usdEur": 1.055,
+    "cnyUsd": 6.9559
   },
   {
     "date": "2022-12-16",
@@ -10986,7 +12314,11 @@
     "continuedClaims": 1551000,
     "fedBalanceSheet": 8583413,
     "termSpread3m": -0.83,
-    "tbill3m": 4.2
+    "tbill3m": 4.2,
+    "nasdaqComposite": -29.478875104328406,
+    "djia": -8.293525702525296,
+    "usdEur": 1.061,
+    "cnyUsd": 6.9708
   },
   {
     "date": "2022-12-23",
@@ -11019,7 +12351,11 @@
     "continuedClaims": 1558000,
     "fedBalanceSheet": 8564411,
     "termSpread3m": -0.59,
-    "tbill3m": 4.23
+    "tbill3m": 4.23,
+    "nasdaqComposite": -32.935463737201644,
+    "djia": -7.640020072010001,
+    "usdEur": 1.0621,
+    "cnyUsd": 6.988
   },
   {
     "date": "2022-12-30",
@@ -11052,7 +12388,11 @@
     "continuedClaims": 1597000,
     "fedBalanceSheet": 8551169,
     "termSpread3m": -0.54,
-    "tbill3m": 4.3
+    "tbill3m": 4.3,
+    "nasdaqComposite": -33.51052881671194,
+    "djia": -8.931322751090176,
+    "usdEur": 1.0698,
+    "cnyUsd": 6.8972
   },
   {
     "date": "2023-01-06",
@@ -11085,7 +12425,11 @@
     "continuedClaims": 1585000,
     "fedBalanceSheet": 8507429,
     "termSpread3m": -1.12,
-    "tbill3m": 4.51
+    "tbill3m": 4.51,
+    "nasdaqComposite": -29.915866867008912,
+    "djia": -7.19126338741053,
+    "usdEur": 1.0619,
+    "cnyUsd": 6.837
   },
   {
     "date": "2023-01-13",
@@ -11118,7 +12462,11 @@
     "continuedClaims": 1584000,
     "fedBalanceSheet": 8508587,
     "termSpread3m": -1.18,
-    "tbill3m": 4.51
+    "tbill3m": 4.51,
+    "nasdaqComposite": -25.175240311721424,
+    "djia": -5.014756205553484,
+    "usdEur": 1.0811,
+    "cnyUsd": 6.701
   },
   {
     "date": "2023-01-20",
@@ -11151,7 +12499,11 @@
     "continuedClaims": 1604000,
     "fedBalanceSheet": 8489039,
     "termSpread3m": -1.24,
-    "tbill3m": 4.57
+    "tbill3m": 4.57,
+    "nasdaqComposite": -21.291406964240544,
+    "djia": -3.8596714598338133,
+    "usdEur": 1.0831,
+    "cnyUsd": 6.7825
   },
   {
     "date": "2023-01-27",
@@ -11184,7 +12536,11 @@
     "continuedClaims": 1599000,
     "fedBalanceSheet": 8470557,
     "termSpread3m": -1.21,
-    "tbill3m": 4.57
+    "tbill3m": 4.57,
+    "nasdaqComposite": -12.964116835595297,
+    "djia": -0.5348238535536898,
+    "usdEur": 1.0857,
+    "cnyUsd": 6.7899
   },
   {
     "date": "2023-02-03",
@@ -11217,7 +12573,11 @@
     "continuedClaims": 1629000,
     "fedBalanceSheet": 8433610,
     "termSpread3m": -1.17,
-    "tbill3m": 4.57
+    "tbill3m": 4.57,
+    "nasdaqComposite": -13.48724171075062,
+    "djia": -3.375422515234472,
+    "usdEur": 1.0825,
+    "cnyUsd": 6.7733
   },
   {
     "date": "2023-02-10",
@@ -11250,7 +12610,11 @@
     "continuedClaims": 1641000,
     "fedBalanceSheet": 8435369,
     "termSpread3m": -1.05,
-    "tbill3m": 4.66
+    "tbill3m": 4.66,
+    "nasdaqComposite": -17.394491894620188,
+    "djia": -3.894035428026943,
+    "usdEur": 1.067,
+    "cnyUsd": 6.8106
   },
   {
     "date": "2023-02-17",
@@ -11283,7 +12647,11 @@
     "continuedClaims": 1646000,
     "fedBalanceSheet": 8384767,
     "termSpread3m": -1.02,
-    "tbill3m": 4.7
+    "tbill3m": 4.7,
+    "nasdaqComposite": -14.06640946232043,
+    "djia": -1.4144893205094489,
+    "usdEur": 1.0678,
+    "cnyUsd": 6.8661
   },
   {
     "date": "2023-02-24",
@@ -11316,7 +12684,11 @@
     "continuedClaims": 1637000,
     "fedBalanceSheet": 8382190,
     "termSpread3m": -0.91,
-    "tbill3m": 4.72
+    "tbill3m": 4.72,
+    "nasdaqComposite": -15.427588341340348,
+    "djia": -1.2247534375176006,
+    "usdEur": 1.0545,
+    "cnyUsd": 6.9545
   },
   {
     "date": "2023-03-03",
@@ -11349,7 +12721,11 @@
     "continuedClaims": 1662000,
     "fedBalanceSheet": 8339684,
     "termSpread3m": -0.94,
-    "tbill3m": 4.74
+    "tbill3m": 4.74,
+    "nasdaqComposite": -13.657395438301545,
+    "djia": -1.194537835267473,
+    "usdEur": 1.0616,
+    "cnyUsd": 6.9048
   },
   {
     "date": "2023-03-10",
@@ -11382,7 +12758,11 @@
     "continuedClaims": 1662000,
     "fedBalanceSheet": 8342283,
     "termSpread3m": -1.31,
-    "tbill3m": 4.83
+    "tbill3m": 4.83,
+    "nasdaqComposite": -15.164326471672418,
+    "djia": -3.811500970486892,
+    "usdEur": 1.0659,
+    "cnyUsd": 6.9025
   },
   {
     "date": "2023-03-17",
@@ -11415,7 +12795,11 @@
     "continuedClaims": 1676000,
     "fedBalanceSheet": 8639300,
     "termSpread3m": -1.13,
-    "tbill3m": 4.36
+    "tbill3m": 4.36,
+    "nasdaqComposite": -14.574381664632119,
+    "djia": -7.59490220053155,
+    "usdEur": 1.0647,
+    "cnyUsd": 6.887
   },
   {
     "date": "2023-03-24",
@@ -11448,7 +12832,11 @@
     "continuedClaims": 1693000,
     "fedBalanceSheet": 8733787,
     "termSpread3m": -1.36,
-    "tbill3m": 4.57
+    "tbill3m": 4.57,
+    "nasdaqComposite": -16.684799152188866,
+    "djia": -7.117708512807164,
+    "usdEur": 1.0762,
+    "cnyUsd": 6.8675
   },
   {
     "date": "2023-03-31",
@@ -11481,7 +12869,11 @@
     "continuedClaims": 1702000,
     "fedBalanceSheet": 8705942,
     "termSpread3m": -1.37,
-    "tbill3m": 4.68
+    "tbill3m": 4.68,
+    "nasdaqComposite": -14.054408699541233,
+    "djia": -4.049212260675605,
+    "usdEur": 1.0872,
+    "cnyUsd": 6.8676
   },
   {
     "date": "2023-04-07",
@@ -11514,7 +12906,11 @@
     "continuedClaims": 1694000,
     "fedBalanceSheet": 8632384,
     "termSpread3m": -1.56,
-    "tbill3m": 4.81
+    "tbill3m": 4.81,
+    "nasdaqComposite": -13.01936347348046,
+    "djia": -3.17572766489983,
+    "usdEur": 1.0913,
+    "cnyUsd": 6.875
   },
   {
     "date": "2023-04-14",
@@ -11547,7 +12943,11 @@
     "continuedClaims": 1739000,
     "fedBalanceSheet": 8614797,
     "termSpread3m": -1.62,
-    "tbill3m": 4.98
+    "tbill3m": 4.98,
+    "nasdaqComposite": -9.194836672389052,
+    "djia": -1.6393028637874507,
+    "usdEur": 1.098,
+    "cnyUsd": 6.869
   },
   {
     "date": "2023-04-21",
@@ -11580,7 +12980,11 @@
     "continuedClaims": 1726000,
     "fedBalanceSheet": 8593263,
     "termSpread3m": -1.57,
-    "tbill3m": 4.98
+    "tbill3m": 4.98,
+    "nasdaqComposite": -8.365990747382291,
+    "djia": -2.8275997650085927,
+    "usdEur": 1.0973,
+    "cnyUsd": 6.892
   },
   {
     "date": "2023-04-28",
@@ -11613,7 +13017,11 @@
     "continuedClaims": 1708000,
     "fedBalanceSheet": 8562768,
     "termSpread3m": -1.66,
-    "tbill3m": 4.95
+    "tbill3m": 4.95,
+    "nasdaqComposite": -5.0106708371110535,
+    "djia": 0.5359355756906936,
+    "usdEur": 1.104,
+    "cnyUsd": 6.911
   },
   {
     "date": "2023-05-05",
@@ -11646,7 +13054,11 @@
     "continuedClaims": 1713000,
     "fedBalanceSheet": 8503994,
     "termSpread3m": -1.82,
-    "tbill3m": 5.1
+    "tbill3m": 5.1,
+    "nasdaqComposite": -0.6679823895551884,
+    "djia": 2.0498533697678845,
+    "usdEur": 1.1026,
+    "cnyUsd": 6.9101
   },
   {
     "date": "2023-05-12",
@@ -11679,7 +13091,11 @@
     "continuedClaims": 1713000,
     "fedBalanceSheet": 8503017,
     "termSpread3m": -1.79,
-    "tbill3m": 5.08
+    "tbill3m": 5.08,
+    "nasdaqComposite": 8.036084904001072,
+    "djia": 4.948960457354645,
+    "usdEur": 1.0856,
+    "cnyUsd": 6.9575
   },
   {
     "date": "2023-05-19",
@@ -11712,7 +13128,11 @@
     "continuedClaims": 1716000,
     "fedBalanceSheet": 8456760,
     "termSpread3m": -1.59,
-    "tbill3m": 5.12
+    "tbill3m": 5.12,
+    "nasdaqComposite": 11.146331825964783,
+    "djia": 6.954503436935755,
+    "usdEur": 1.0819,
+    "cnyUsd": 7.006
   },
   {
     "date": "2023-05-26",
@@ -11745,7 +13165,11 @@
     "continuedClaims": 1744000,
     "fedBalanceSheet": 8436255,
     "termSpread3m": -1.54,
-    "tbill3m": 5.16
+    "tbill3m": 5.16,
+    "nasdaqComposite": 10.519349439766978,
+    "djia": 1.3976387060282924,
+    "usdEur": 1.0713,
+    "cnyUsd": 7.063
   },
   {
     "date": "2023-06-02",
@@ -11778,7 +13202,11 @@
     "continuedClaims": 1725000,
     "fedBalanceSheet": 8385854,
     "termSpread3m": -1.81,
-    "tbill3m": 5.23
+    "tbill3m": 5.23,
+    "nasdaqComposite": 7.5008321899179276,
+    "djia": 1.5473883160271873,
+    "usdEur": 1.0724,
+    "cnyUsd": 7.0827
   },
   {
     "date": "2023-06-09",
@@ -11811,7 +13239,11 @@
     "continuedClaims": 1751000,
     "fedBalanceSheet": 8389325,
     "termSpread3m": -1.62,
-    "tbill3m": 5.11
+    "tbill3m": 5.11,
+    "nasdaqComposite": 12.803135552052325,
+    "djia": 4.970100198960181,
+    "usdEur": 1.0749,
+    "cnyUsd": 7.1273
   },
   {
     "date": "2023-06-16",
@@ -11844,7 +13276,11 @@
     "continuedClaims": 1762000,
     "fedBalanceSheet": 8388323,
     "termSpread3m": -1.57,
-    "tbill3m": 5.09
+    "tbill3m": 5.09,
+    "nasdaqComposite": 28.587651816158033,
+    "djia": 14.609014514284224,
+    "usdEur": 1.0925,
+    "cnyUsd": 7.125
   },
   {
     "date": "2023-06-23",
@@ -11877,7 +13313,11 @@
     "continuedClaims": 1753000,
     "fedBalanceSheet": 8362060,
     "termSpread3m": -1.67,
-    "tbill3m": 5.15
+    "tbill3m": 5.15,
+    "nasdaqComposite": 20.123680244012967,
+    "djia": 9.942413558402684,
+    "usdEur": 1.0887,
+    "cnyUsd": 7.1777
   },
   {
     "date": "2023-06-30",
@@ -11910,7 +13350,11 @@
     "continuedClaims": 1775000,
     "fedBalanceSheet": 8340914,
     "termSpread3m": -1.62,
-    "tbill3m": 5.17
+    "tbill3m": 5.17,
+    "nasdaqComposite": 25.0180891017469,
+    "djia": 11.802174656860998,
+    "usdEur": 1.092,
+    "cnyUsd": 7.2513
   },
   {
     "date": "2023-07-07",
@@ -11943,7 +13387,11 @@
     "continuedClaims": 1774000,
     "fedBalanceSheet": 8298312,
     "termSpread3m": -1.4,
-    "tbill3m": 5.22
+    "tbill3m": 5.22,
+    "nasdaqComposite": 17.548477586511012,
+    "djia": 7.48881217031947,
+    "usdEur": 1.0964,
+    "cnyUsd": 7.2205
   },
   {
     "date": "2023-07-14",
@@ -11976,7 +13424,11 @@
     "continuedClaims": 1790000,
     "fedBalanceSheet": 8296923,
     "termSpread3m": -1.66,
-    "tbill3m": 5.25
+    "tbill3m": 5.25,
+    "nasdaqComposite": 25.441842151807936,
+    "djia": 12.66352749592967,
+    "usdEur": 1.1237,
+    "cnyUsd": 7.1403
   },
   {
     "date": "2023-07-21",
@@ -12009,7 +13461,11 @@
     "continuedClaims": 1770000,
     "fedBalanceSheet": 8274552,
     "termSpread3m": -1.66,
-    "tbill3m": 5.27
+    "tbill3m": 5.27,
+    "nasdaqComposite": 16.36205482598525,
+    "djia": 9.95973393180989,
+    "usdEur": 1.112,
+    "cnyUsd": 7.1861
   },
   {
     "date": "2023-07-28",
@@ -12042,7 +13498,11 @@
     "continuedClaims": 1778000,
     "fedBalanceSheet": 8243344,
     "termSpread3m": -1.56,
-    "tbill3m": 5.28
+    "tbill3m": 5.28,
+    "nasdaqComposite": 17.710619201995613,
+    "djia": 9.006127644243112,
+    "usdEur": 1.1039,
+    "cnyUsd": 7.1488
   },
   {
     "date": "2023-08-04",
@@ -12075,7 +13535,11 @@
     "continuedClaims": 1774000,
     "fedBalanceSheet": 8206764,
     "termSpread3m": -1.49,
-    "tbill3m": 5.28
+    "tbill3m": 5.28,
+    "nasdaqComposite": 9.209407118228885,
+    "djia": 7.146432192312013,
+    "usdEur": 1.1036,
+    "cnyUsd": 7.1709
   },
   {
     "date": "2023-08-11",
@@ -12108,7 +13572,11 @@
     "continuedClaims": 1805000,
     "fedBalanceSheet": 8208241,
     "termSpread3m": -1.38,
-    "tbill3m": 5.28
+    "tbill3m": 5.28,
+    "nasdaqComposite": 6.767966284582605,
+    "djia": 5.833606056033802,
+    "usdEur": 1.0957,
+    "cnyUsd": 7.2367
   },
   {
     "date": "2023-08-18",
@@ -12141,7 +13609,11 @@
     "continuedClaims": 1797000,
     "fedBalanceSheet": 8145727,
     "termSpread3m": -1.29,
-    "tbill3m": 5.28
+    "tbill3m": 5.28,
+    "nasdaqComposite": 2.5100768664763073,
+    "djia": 1.4753945993769335,
+    "usdEur": 1.0875,
+    "cnyUsd": 7.28
   },
   {
     "date": "2023-08-25",
@@ -12174,7 +13646,11 @@
     "continuedClaims": 1821000,
     "fedBalanceSheet": 8139066,
     "termSpread3m": -1.36,
-    "tbill3m": 5.34
+    "tbill3m": 5.34,
+    "nasdaqComposite": 7.52717522451849,
+    "djia": 3.169310862921737,
+    "usdEur": 1.0787,
+    "cnyUsd": 7.289
   },
   {
     "date": "2023-09-01",
@@ -12207,7 +13683,11 @@
     "continuedClaims": 1804000,
     "fedBalanceSheet": 8121316,
     "termSpread3m": -1.35,
-    "tbill3m": 5.3
+    "tbill3m": 5.3,
+    "nasdaqComposite": 19.06368449054021,
+    "djia": 10.049430731586195,
+    "usdEur": 1.0787,
+    "cnyUsd": 7.2606
   },
   {
     "date": "2023-09-08",
@@ -12240,7 +13720,11 @@
     "continuedClaims": 1812000,
     "fedBalanceSheet": 8101318,
     "termSpread3m": -1.29,
-    "tbill3m": 5.31
+    "tbill3m": 5.31,
+    "nasdaqComposite": 16.0123013320542,
+    "djia": 8.818606858577226,
+    "usdEur": 1.0709,
+    "cnyUsd": 7.343
   },
   {
     "date": "2023-09-15",
@@ -12273,7 +13757,11 @@
     "continuedClaims": 1797000,
     "fedBalanceSheet": 8098779,
     "termSpread3m": -1.23,
-    "tbill3m": 5.32
+    "tbill3m": 5.32,
+    "nasdaqComposite": 18.662593617234926,
+    "djia": 11.809447894212921,
+    "usdEur": 1.0673,
+    "cnyUsd": 7.2744
   },
   {
     "date": "2023-09-22",
@@ -12306,7 +13794,11 @@
     "continuedClaims": 1801000,
     "fedBalanceSheet": 8024090,
     "termSpread3m": -1.12,
-    "tbill3m": 5.32
+    "tbill3m": 5.32,
+    "nasdaqComposite": 19.38227908493957,
+    "djia": 12.924165832133049,
+    "usdEur": 1.066,
+    "cnyUsd": 7.298
   },
   {
     "date": "2023-09-29",
@@ -12339,7 +13831,11 @@
     "continuedClaims": 1793000,
     "fedBalanceSheet": 8002064,
     "termSpread3m": -0.96,
-    "tbill3m": 5.32
+    "tbill3m": 5.32,
+    "nasdaqComposite": 23.11345926569568,
+    "djia": 14.651156981838875,
+    "usdEur": 1.0584,
+    "cnyUsd": 7.296
   },
   {
     "date": "2023-10-06",
@@ -12372,7 +13868,11 @@
     "continuedClaims": 1798000,
     "fedBalanceSheet": 7955782,
     "termSpread3m": -0.85,
-    "tbill3m": 5.36
+    "tbill3m": 5.36,
+    "nasdaqComposite": 21.294716755875175,
+    "djia": 11.630457373857816,
+    "usdEur": 1.0596,
+    "cnyUsd": 7.296
   },
   {
     "date": "2023-10-13",
@@ -12405,7 +13905,11 @@
     "continuedClaims": 1806000,
     "fedBalanceSheet": 7952054,
     "termSpread3m": -0.99,
-    "tbill3m": 5.35
+    "tbill3m": 5.35,
+    "nasdaqComposite": 25.899531887521544,
+    "djia": 12.089629651330025,
+    "usdEur": 1.0502,
+    "cnyUsd": 7.3049
   },
   {
     "date": "2023-10-20",
@@ -12438,7 +13942,11 @@
     "continuedClaims": 1804000,
     "fedBalanceSheet": 7933162,
     "termSpread3m": -0.65,
-    "tbill3m": 5.31
+    "tbill3m": 5.31,
+    "nasdaqComposite": 22.317529044243713,
+    "djia": 9.20988910313616,
+    "usdEur": 1.0592,
+    "cnyUsd": 7.3155
   },
   {
     "date": "2023-10-27",
@@ -12471,7 +13979,11 @@
     "continuedClaims": 1812000,
     "fedBalanceSheet": 7907830,
     "termSpread3m": -0.75,
-    "tbill3m": 5.32
+    "tbill3m": 5.32,
+    "nasdaqComposite": 17.14441375489104,
+    "djia": 1.1997210401182734,
+    "usdEur": 1.0592,
+    "cnyUsd": 7.3171
   },
   {
     "date": "2023-11-03",
@@ -12504,7 +14016,11 @@
     "continuedClaims": 1819000,
     "fedBalanceSheet": 7866664,
     "termSpread3m": -0.96,
-    "tbill3m": 5.27
+    "tbill3m": 5.27,
+    "nasdaqComposite": 30.313817927977915,
+    "djia": 6.437467286434129,
+    "usdEur": 1.0733,
+    "cnyUsd": 7.3005
   },
   {
     "date": "2023-11-10",
@@ -12537,7 +14053,11 @@
     "continuedClaims": 1802000,
     "fedBalanceSheet": 7860691,
     "termSpread3m": -0.92,
-    "tbill3m": 5.26
+    "tbill3m": 5.26,
+    "nasdaqComposite": 24.149035238862183,
+    "djia": 1.68389075961497,
+    "usdEur": 1.071,
+    "cnyUsd": 7.2835
   },
   {
     "date": "2023-11-17",
@@ -12570,7 +14090,11 @@
     "continuedClaims": 1787000,
     "fedBalanceSheet": 7814991,
     "termSpread3m": -1.06,
-    "tbill3m": 5.25
+    "tbill3m": 5.25,
+    "nasdaqComposite": 26.743209486619968,
+    "djia": 4.176195779447633,
+    "usdEur": 1.0879,
+    "cnyUsd": 7.212
   },
   {
     "date": "2023-11-24",
@@ -12603,7 +14127,11 @@
     "continuedClaims": 1803000,
     "fedBalanceSheet": 7810814,
     "termSpread3m": -1.07,
-    "tbill3m": 5.28
+    "tbill3m": 5.28,
+    "nasdaqComposite": 26.27776615993167,
+    "djia": 3.4979467194009795,
+    "usdEur": 1.0934,
+    "cnyUsd": 7.1488
   },
   {
     "date": "2023-12-01",
@@ -12636,7 +14164,11 @@
     "continuedClaims": 1812000,
     "fedBalanceSheet": 7796145,
     "termSpread3m": -1.21,
-    "tbill3m": 5.23
+    "tbill3m": 5.23,
+    "nasdaqComposite": 24.581687706020915,
+    "djia": 5.380111824360556,
+    "usdEur": 1.0878,
+    "cnyUsd": 7.1386
   },
   {
     "date": "2023-12-08",
@@ -12669,7 +14201,11 @@
     "continuedClaims": 1814000,
     "fedBalanceSheet": 7737385,
     "termSpread3m": -1.21,
-    "tbill3m": 5.24
+    "tbill3m": 5.24,
+    "nasdaqComposite": 29.976267821692826,
+    "djia": 7.3010122706287595,
+    "usdEur": 1.0746,
+    "cnyUsd": 7.1645
   },
   {
     "date": "2023-12-15",
@@ -12702,7 +14238,11 @@
     "continuedClaims": 1801000,
     "fedBalanceSheet": 7739566,
     "termSpread3m": -1.53,
-    "tbill3m": 5.24
+    "tbill3m": 5.24,
+    "nasdaqComposite": 37.03231941449678,
+    "djia": 12.357426702190399,
+    "usdEur": 1.0906,
+    "cnyUsd": 7.1179
   },
   {
     "date": "2023-12-22",
@@ -12735,7 +14275,11 @@
     "continuedClaims": 1801000,
     "fedBalanceSheet": 7724063,
     "termSpread3m": -1.54,
-    "tbill3m": 5.24
+    "tbill3m": 5.24,
+    "nasdaqComposite": 43.11567641455041,
+    "djia": 13.196522048753945,
+    "usdEur": 1.1008,
+    "cnyUsd": 7.1315
   },
   {
     "date": "2023-12-29",
@@ -12768,7 +14312,11 @@
     "continuedClaims": 1815000,
     "fedBalanceSheet": 7712781,
     "termSpread3m": -1.52,
-    "tbill3m": 5.2
+    "tbill3m": 5.2,
+    "nasdaqComposite": 43.264182689784114,
+    "djia": 13.45163271203582,
+    "usdEur": 1.1062,
+    "cnyUsd": 7.0999
   },
   {
     "date": "2024-01-05",
@@ -12801,7 +14349,11 @@
     "continuedClaims": 1751000,
     "fedBalanceSheet": 7681024,
     "termSpread3m": -1.42,
-    "tbill3m": 5.24
+    "tbill3m": 5.24,
+    "nasdaqComposite": 40.938687502668536,
+    "djia": 13.774731188020194,
+    "usdEur": 1.0957,
+    "cnyUsd": 7.145
   },
   {
     "date": "2024-01-12",
@@ -12834,7 +14386,11 @@
     "continuedClaims": 1723000,
     "fedBalanceSheet": 7686710,
     "termSpread3m": -1.49,
-    "tbill3m": 5.22
+    "tbill3m": 5.22,
+    "nasdaqComposite": 36.102389761023886,
+    "djia": 9.953240672630015,
+    "usdEur": 1.0959,
+    "cnyUsd": 7.1665
   },
   {
     "date": "2024-01-19",
@@ -12867,7 +14423,11 @@
     "continuedClaims": 1753000,
     "fedBalanceSheet": 7673741,
     "termSpread3m": -1.3,
-    "tbill3m": 5.22
+    "tbill3m": 5.22,
+    "nasdaqComposite": 41.085413466491325,
+    "djia": 14.584064669040853,
+    "usdEur": 1.0887,
+    "cnyUsd": 7.1931
   },
   {
     "date": "2024-01-26",
@@ -12900,7 +14460,11 @@
     "continuedClaims": 1829000,
     "fedBalanceSheet": 7677230,
     "termSpread3m": -1.29,
-    "tbill3m": 5.21
+    "tbill3m": 5.21,
+    "nasdaqComposite": 34.249561994404296,
+    "djia": 12.253585555684165,
+    "usdEur": 1.0866,
+    "cnyUsd": 7.1763
   },
   {
     "date": "2024-02-02",
@@ -12933,7 +14497,11 @@
     "continuedClaims": 1804000,
     "fedBalanceSheet": 7630124,
     "termSpread3m": -1.4,
-    "tbill3m": 5.23
+    "tbill3m": 5.23,
+    "nasdaqComposite": 28.097537706482022,
+    "djia": 13.50939127748505,
+    "usdEur": 1.0787,
+    "cnyUsd": 7.192
   },
   {
     "date": "2024-02-09",
@@ -12966,7 +14534,11 @@
     "continuedClaims": 1800000,
     "fedBalanceSheet": 7631300,
     "termSpread3m": -1.27,
-    "tbill3m": 5.24
+    "tbill3m": 5.24,
+    "nasdaqComposite": 35.6338393734128,
+    "djia": 14.753197934235974,
+    "usdEur": 1.0782,
+    "cnyUsd": 7.1929
   },
   {
     "date": "2024-02-16",
@@ -12999,7 +14571,11 @@
     "continuedClaims": 1784000,
     "fedBalanceSheet": 7633874,
     "termSpread3m": -1.14,
-    "tbill3m": 5.24
+    "tbill3m": 5.24,
+    "nasdaqComposite": 33.062383654286535,
+    "djia": 14.633830758661425,
+    "usdEur": 1.0769,
+    "cnyUsd": 7.1928
   },
   {
     "date": "2024-02-23",
@@ -13032,7 +14608,11 @@
     "continuedClaims": 1802000,
     "fedBalanceSheet": 7581683,
     "termSpread3m": -1.2,
-    "tbill3m": 5.26
+    "tbill3m": 5.26,
+    "nasdaqComposite": 38.01784235229155,
+    "djia": 18.029909594373628,
+    "usdEur": 1.0828,
+    "cnyUsd": 7.197
   },
   {
     "date": "2024-03-01",
@@ -13065,7 +14645,11 @@
     "continuedClaims": 1788000,
     "fedBalanceSheet": 7567807,
     "termSpread3m": -1.23,
-    "tbill3m": 5.23
+    "tbill3m": 5.23,
+    "nasdaqComposite": 43.02006770080884,
+    "djia": 19.67292718352669,
+    "usdEur": 1.0832,
+    "cnyUsd": 7.196
   },
   {
     "date": "2024-03-08",
@@ -13098,7 +14682,11 @@
     "continuedClaims": 1800000,
     "fedBalanceSheet": 7538857,
     "termSpread3m": -1.37,
-    "tbill3m": 5.24
+    "tbill3m": 5.24,
+    "nasdaqComposite": 38.952228749136154,
+    "djia": 18.062740865408067,
+    "usdEur": 1.0941,
+    "cnyUsd": 7.1855
   },
   {
     "date": "2024-03-15",
@@ -13131,7 +14719,11 @@
     "continuedClaims": 1790000,
     "fedBalanceSheet": 7541969,
     "termSpread3m": -1.17,
-    "tbill3m": 5.25
+    "tbill3m": 5.25,
+    "nasdaqComposite": 39.69826964199039,
+    "djia": 21.45974047649897,
+    "usdEur": 1.0888,
+    "cnyUsd": 7.1953
   },
   {
     "date": "2024-03-22",
@@ -13164,7 +14756,11 @@
     "continuedClaims": 1807000,
     "fedBalanceSheet": 7514348,
     "termSpread3m": -1.24,
-    "tbill3m": 5.24
+    "tbill3m": 5.24,
+    "nasdaqComposite": 40.77871732208167,
+    "djia": 23.24622050938945,
+    "usdEur": 1.0817,
+    "cnyUsd": 7.2289
   },
   {
     "date": "2024-03-29",
@@ -13197,7 +14793,11 @@
     "continuedClaims": 1788000,
     "fedBalanceSheet": 7484739,
     "termSpread3m": -1.26,
-    "tbill3m": 5.23
+    "tbill3m": 5.23,
+    "nasdaqComposite": 37.33968124069278,
+    "djia": 21.66959067902292,
+    "usdEur": 1.0791,
+    "cnyUsd": 7.2203
   },
   {
     "date": "2024-04-05",
@@ -13230,7 +14830,11 @@
     "continuedClaims": 1810000,
     "fedBalanceSheet": 7439558,
     "termSpread3m": -1.04,
-    "tbill3m": 5.23
+    "tbill3m": 5.23,
+    "nasdaqComposite": 35.43977340737492,
+    "djia": 16.19139663683238,
+    "usdEur": 1.0841,
+    "cnyUsd": 7.2339
   },
   {
     "date": "2024-04-12",
@@ -13263,7 +14867,11 @@
     "continuedClaims": 1797000,
     "fedBalanceSheet": 7438176,
     "termSpread3m": -0.95,
-    "tbill3m": 5.25
+    "tbill3m": 5.25,
+    "nasdaqComposite": 35.59082061539029,
+    "djia": 12.889126655075556,
+    "usdEur": 1.0647,
+    "cnyUsd": 7.2374
   },
   {
     "date": "2024-04-19",
@@ -13296,7 +14904,11 @@
     "continuedClaims": 1781000,
     "fedBalanceSheet": 7405506,
     "termSpread3m": -0.83,
-    "tbill3m": 5.25
+    "tbill3m": 5.25,
+    "nasdaqComposite": 25.703059002749807,
+    "djia": 12.064161411286722,
+    "usdEur": 1.0655,
+    "cnyUsd": 7.2403
   },
   {
     "date": "2024-04-26",
@@ -13329,7 +14941,11 @@
     "continuedClaims": 1769000,
     "fedBalanceSheet": 7402434,
     "termSpread3m": -0.79,
-    "tbill3m": 5.25
+    "tbill3m": 5.25,
+    "nasdaqComposite": 34.363334978299086,
+    "djia": 14.827365550342964,
+    "usdEur": 1.0686,
+    "cnyUsd": 7.2464
   },
   {
     "date": "2024-05-03",
@@ -13362,7 +14978,11 @@
     "continuedClaims": 1788000,
     "fedBalanceSheet": 7362474,
     "termSpread3m": -0.95,
-    "tbill3m": 5.25
+    "tbill3m": 5.25,
+    "nasdaqComposite": 34.352487624040265,
+    "djia": 15.746101063498674,
+    "usdEur": 1.077,
+    "cnyUsd": 7.2405
   },
   {
     "date": "2024-05-10",
@@ -13395,7 +15015,11 @@
     "continuedClaims": 1792000,
     "fedBalanceSheet": 7353408,
     "termSpread3m": -0.97,
-    "tbill3m": 5.26
+    "tbill3m": 5.26,
+    "nasdaqComposite": 32.78307942833183,
+    "djia": 17.838570674053166,
+    "usdEur": 1.0773,
+    "cnyUsd": 7.226
   },
   {
     "date": "2024-05-17",
@@ -13428,7 +15052,11 @@
     "continuedClaims": 1791000,
     "fedBalanceSheet": 7304272,
     "termSpread3m": -1.04,
-    "tbill3m": 5.25
+    "tbill3m": 5.25,
+    "nasdaqComposite": 33.48167323570046,
+    "djia": 19.69679334138621,
+    "usdEur": 1.0869,
+    "cnyUsd": 7.2233
   },
   {
     "date": "2024-05-24",
@@ -13461,7 +15089,11 @@
     "continuedClaims": 1808000,
     "fedBalanceSheet": 7299566,
     "termSpread3m": -1,
-    "tbill3m": 5.26
+    "tbill3m": 5.26,
+    "nasdaqComposite": 35.53807384717915,
+    "djia": 19.114894182668742,
+    "usdEur": 1.0852,
+    "cnyUsd": 7.2425
   },
   {
     "date": "2024-05-31",
@@ -13494,7 +15126,11 @@
     "continuedClaims": 1804000,
     "fedBalanceSheet": 7284319,
     "termSpread3m": -0.95,
-    "tbill3m": 5.25
+    "tbill3m": 5.25,
+    "nasdaqComposite": 29.37491157909873,
+    "djia": 17.55804847839162,
+    "usdEur": 1.0846,
+    "cnyUsd": 7.241
   },
   {
     "date": "2024-06-07",
@@ -13527,7 +15163,11 @@
     "continuedClaims": 1821000,
     "fedBalanceSheet": 7255687,
     "termSpread3m": -1.09,
-    "tbill3m": 5.26
+    "tbill3m": 5.26,
+    "nasdaqComposite": 30.73844954059135,
+    "djia": 15.250161740584156,
+    "usdEur": 1.0807,
+    "cnyUsd": 7.2466
   },
   {
     "date": "2024-06-14",
@@ -13560,7 +15200,11 @@
     "continuedClaims": 1830000,
     "fedBalanceSheet": 7258974,
     "termSpread3m": -1.31,
-    "tbill3m": 5.25
+    "tbill3m": 5.25,
+    "nasdaqComposite": 29.81254146338601,
+    "djia": 13.566571206671817,
+    "usdEur": 1.0699,
+    "cnyUsd": 7.2557
   },
   {
     "date": "2024-06-21",
@@ -13593,7 +15237,11 @@
     "continuedClaims": 1839000,
     "fedBalanceSheet": 7252542,
     "termSpread3m": -1.24,
-    "tbill3m": 5.23
+    "tbill3m": 5.23,
+    "nasdaqComposite": 31.010946364296178,
+    "djia": 15.312451401292204,
+    "usdEur": 1.0694,
+    "cnyUsd": 7.2609
   },
   {
     "date": "2024-06-28",
@@ -13626,7 +15274,11 @@
     "continuedClaims": 1862000,
     "fedBalanceSheet": 7231163,
     "termSpread3m": -1.12,
-    "tbill3m": 5.22
+    "tbill3m": 5.22,
+    "nasdaqComposite": 30.465907627788912,
+    "djia": 15.556236939726432,
+    "usdEur": 1.0711,
+    "cnyUsd": 7.2672
   },
   {
     "date": "2024-07-05",
@@ -13659,7 +15311,11 @@
     "continuedClaims": 1853000,
     "fedBalanceSheet": 7221520,
     "termSpread3m": -1.18,
-    "tbill3m": 5.23
+    "tbill3m": 5.23,
+    "nasdaqComposite": 33.071532412727976,
+    "djia": 14.836488119680457,
+    "usdEur": 1.0828,
+    "cnyUsd": 7.268
   },
   {
     "date": "2024-07-12",
@@ -13692,7 +15348,11 @@
     "continuedClaims": 1864000,
     "fedBalanceSheet": 7224079,
     "termSpread3m": -1.25,
-    "tbill3m": 5.21
+    "tbill3m": 5.21,
+    "nasdaqComposite": 32.18264870363878,
+    "djia": 16.459659427211882,
+    "usdEur": 1.0902,
+    "cnyUsd": 7.2495
   },
   {
     "date": "2024-07-19",
@@ -13725,7 +15385,11 @@
     "continuedClaims": 1848000,
     "fedBalanceSheet": 7208247,
     "termSpread3m": -1.18,
-    "tbill3m": 5.2
+    "tbill3m": 5.2,
+    "nasdaqComposite": 23.46368092536435,
+    "djia": 14.906273913535784,
+    "usdEur": 1.0888,
+    "cnyUsd": 7.2695
   },
   {
     "date": "2024-07-26",
@@ -13758,7 +15422,11 @@
     "continuedClaims": 1873000,
     "fedBalanceSheet": 7205455,
     "termSpread3m": -1.18,
-    "tbill3m": 5.16
+    "tbill3m": 5.16,
+    "nasdaqComposite": 22.86781319546296,
+    "djia": 14.27140448849833,
+    "usdEur": 1.0859,
+    "cnyUsd": 7.2502
   },
   {
     "date": "2024-08-02",
@@ -13791,7 +15459,11 @@
     "continuedClaims": 1871000,
     "fedBalanceSheet": 7178391,
     "termSpread3m": -1.49,
-    "tbill3m": 5.05
+    "tbill3m": 5.05,
+    "nasdaqComposite": 20.05739455896718,
+    "djia": 12.625912208084934,
+    "usdEur": 1.0914,
+    "cnyUsd": 7.16
   },
   {
     "date": "2024-08-09",
@@ -13824,7 +15496,11 @@
     "continuedClaims": 1863000,
     "fedBalanceSheet": 7175256,
     "termSpread3m": -1.39,
-    "tbill3m": 5.09
+    "tbill3m": 5.09,
+    "nasdaqComposite": 22.183161280342766,
+    "djia": 12.453762965729931,
+    "usdEur": 1.0925,
+    "cnyUsd": 7.166
   },
   {
     "date": "2024-08-16",
@@ -13857,7 +15533,11 @@
     "continuedClaims": 1855000,
     "fedBalanceSheet": 7177688,
     "termSpread3m": -1.44,
-    "tbill3m": 5.08
+    "tbill3m": 5.08,
+    "nasdaqComposite": 30.85123673154664,
+    "djia": 16.9535295379877,
+    "usdEur": 1.0996,
+    "cnyUsd": 7.1644
   },
   {
     "date": "2024-08-23",
@@ -13890,7 +15570,11 @@
     "continuedClaims": 1862000,
     "fedBalanceSheet": 7139952,
     "termSpread3m": -1.44,
-    "tbill3m": 5.01
+    "tbill3m": 5.01,
+    "nasdaqComposite": 30.294810229261216,
+    "djia": 19.44160324984958,
+    "usdEur": 1.1176,
+    "cnyUsd": 7.1244
   },
   {
     "date": "2024-08-30",
@@ -13923,7 +15607,11 @@
     "continuedClaims": 1847000,
     "fedBalanceSheet": 7123238,
     "termSpread3m": -1.3,
-    "tbill3m": 4.98
+    "tbill3m": 4.98,
+    "nasdaqComposite": 26.35158221053675,
+    "djia": 19.125233876293212,
+    "usdEur": 1.106,
+    "cnyUsd": 7.09
   },
   {
     "date": "2024-09-06",
@@ -13956,7 +15644,11 @@
     "continuedClaims": 1845000,
     "fedBalanceSheet": 7112567,
     "termSpread3m": -1.41,
-    "tbill3m": 4.93
+    "tbill3m": 4.93,
+    "nasdaqComposite": 20.31620900964286,
+    "djia": 17.13610150511611,
+    "usdEur": 1.1086,
+    "cnyUsd": 7.0876
   },
   {
     "date": "2024-09-13",
@@ -13989,7 +15681,11 @@
     "continuedClaims": 1825000,
     "fedBalanceSheet": 7115001,
     "termSpread3m": -1.31,
-    "tbill3m": 4.78
+    "tbill3m": 4.78,
+    "nasdaqComposite": 28.018712007523018,
+    "djia": 19.719871249985175,
+    "usdEur": 1.1085,
+    "cnyUsd": 7.093
   },
   {
     "date": "2024-09-20",
@@ -14022,7 +15718,11 @@
     "continuedClaims": 1831000,
     "fedBalanceSheet": 7109137,
     "termSpread3m": -1.02,
-    "tbill3m": 4.56
+    "tbill3m": 4.56,
+    "nasdaqComposite": 33.25522880839371,
+    "djia": 22.13207095753651,
+    "usdEur": 1.1159,
+    "cnyUsd": 7.0505
   },
   {
     "date": "2024-09-27",
@@ -14055,7 +15755,11 @@
     "continuedClaims": 1825000,
     "fedBalanceSheet": 7080059,
     "termSpread3m": -0.93,
-    "tbill3m": 4.5
+    "tbill3m": 4.5,
+    "nasdaqComposite": 38.39301603546974,
+    "djia": 26.118210076997904,
+    "usdEur": 1.1159,
+    "cnyUsd": 7.0111
   },
   {
     "date": "2024-10-04",
@@ -14088,7 +15792,11 @@
     "continuedClaims": 1858000,
     "fedBalanceSheet": 7046925,
     "termSpread3m": -0.75,
-    "tbill3m": 4.53
+    "tbill3m": 4.53,
+    "nasdaqComposite": 37.03412130997179,
+    "djia": 27.839798608794865,
+    "usdEur": 1.0961,
+    "cnyUsd": 7.0175
   },
   {
     "date": "2024-10-11",
@@ -14121,7 +15829,11 @@
     "continuedClaims": 1869000,
     "fedBalanceSheet": 7046840,
     "termSpread3m": -0.65,
-    "tbill3m": 4.53
+    "tbill3m": 4.53,
+    "nasdaqComposite": 34.28528340341792,
+    "djia": 26.797884446826735,
+    "usdEur": 1.0942,
+    "cnyUsd": 7.0667
   },
   {
     "date": "2024-10-18",
@@ -14154,7 +15866,11 @@
     "continuedClaims": 1882000,
     "fedBalanceSheet": 7039284,
     "termSpread3m": -0.65,
-    "tbill3m": 4.53
+    "tbill3m": 4.53,
+    "nasdaqComposite": 38.869861727616176,
+    "djia": 28.548365249689,
+    "usdEur": 1.0854,
+    "cnyUsd": 7.1015
   },
   {
     "date": "2024-10-25",
@@ -14187,7 +15903,11 @@
     "continuedClaims": 1853000,
     "fedBalanceSheet": 7029408,
     "termSpread3m": -0.48,
-    "tbill3m": 4.52
+    "tbill3m": 4.52,
+    "nasdaqComposite": 44.43719084455302,
+    "djia": 27.480594613198427,
+    "usdEur": 1.0813,
+    "cnyUsd": 7.1199
   },
   {
     "date": "2024-11-01",
@@ -14220,7 +15940,11 @@
     "continuedClaims": 1876000,
     "fedBalanceSheet": 7013490,
     "termSpread3m": -0.24,
-    "tbill3m": 4.41
+    "tbill3m": 4.41,
+    "nasdaqComposite": 39.64676257725968,
+    "djia": 26.379326200360765,
+    "usdEur": 1.0848,
+    "cnyUsd": 7.1214
   },
   {
     "date": "2024-11-08",
@@ -14253,7 +15977,11 @@
     "continuedClaims": 1870000,
     "fedBalanceSheet": 6994299,
     "termSpread3m": -0.33,
-    "tbill3m": 4.43
+    "tbill3m": 4.43,
+    "nasdaqComposite": 41.29084767417241,
+    "djia": 28.953570079036073,
+    "usdEur": 1.071,
+    "cnyUsd": 7.1785
   },
   {
     "date": "2024-11-15",
@@ -14286,7 +16014,11 @@
     "continuedClaims": 1887000,
     "fedBalanceSheet": 6967108,
     "termSpread3m": -0.17,
-    "tbill3m": 4.41
+    "tbill3m": 4.41,
+    "nasdaqComposite": 32.44704988145071,
+    "djia": 24.159724685142358,
+    "usdEur": 1.0552,
+    "cnyUsd": 7.2288
   },
   {
     "date": "2024-11-22",
@@ -14319,7 +16051,11 @@
     "continuedClaims": 1887000,
     "fedBalanceSheet": 6923731,
     "termSpread3m": -0.22,
-    "tbill3m": 4.43
+    "tbill3m": 4.43,
+    "nasdaqComposite": 33.21068621169702,
+    "djia": 25.581811372598274,
+    "usdEur": 1.0399,
+    "cnyUsd": 7.2455
   },
   {
     "date": "2024-11-29",
@@ -14352,7 +16088,11 @@
     "continuedClaims": 1866000,
     "fedBalanceSheet": 6905140,
     "termSpread3m": -0.4,
-    "tbill3m": 4.39
+    "tbill3m": 4.39,
+    "nasdaqComposite": 34.78404796019774,
+    "djia": 26.757317581897144,
+    "usdEur": 1.0547,
+    "cnyUsd": 7.2423
   },
   {
     "date": "2024-12-06",
@@ -14385,7 +16125,11 @@
     "continuedClaims": 1859000,
     "fedBalanceSheet": 6895827,
     "termSpread3m": -0.27,
-    "tbill3m": 4.31
+    "tbill3m": 4.31,
+    "nasdaqComposite": 40.384372055410765,
+    "djia": 23.819791354349505,
+    "usdEur": 1.0563,
+    "cnyUsd": 7.27
   },
   {
     "date": "2024-12-13",
@@ -14418,7 +16162,11 @@
     "continuedClaims": 1865000,
     "fedBalanceSheet": 6897485,
     "termSpread3m": 0.06,
-    "tbill3m": 4.23
+    "tbill3m": 4.23,
+    "nasdaqComposite": 35.24347833169088,
+    "djia": 18.166018877203282,
+    "usdEur": 1.0498,
+    "cnyUsd": 7.2756
   },
   {
     "date": "2024-12-20",
@@ -14451,7 +16199,11 @@
     "continuedClaims": 1881000,
     "fedBalanceSheet": 6889332,
     "termSpread3m": 0.18,
-    "tbill3m": 4.23
+    "tbill3m": 4.23,
+    "nasdaqComposite": 32.444711509181914,
+    "djia": 15.528450461140174,
+    "usdEur": 1.043,
+    "cnyUsd": 7.2953
   },
   {
     "date": "2024-12-27",
@@ -14484,7 +16236,11 @@
     "continuedClaims": 1833000,
     "fedBalanceSheet": 6885963,
     "termSpread3m": 0.31,
-    "tbill3m": 4.19
+    "tbill3m": 4.19,
+    "nasdaqComposite": 30.616563283569032,
+    "djia": 14.169365623801667,
+    "usdEur": 1.0423,
+    "cnyUsd": 7.298
   },
   {
     "date": "2025-01-03",
@@ -14517,7 +16273,11 @@
     "continuedClaims": 1868000,
     "fedBalanceSheet": 6852491,
     "termSpread3m": 0.26,
-    "tbill3m": 4.2
+    "tbill3m": 4.2,
+    "nasdaqComposite": 34.466814827911605,
+    "djia": 14.164875999827942,
+    "usdEur": 1.0292,
+    "cnyUsd": 7.3199
   },
   {
     "date": "2025-01-10",
@@ -14550,7 +16310,11 @@
     "continuedClaims": 1850000,
     "fedBalanceSheet": 6853554,
     "termSpread3m": 0.41,
-    "tbill3m": 4.22
+    "tbill3m": 4.22,
+    "nasdaqComposite": 28.003193127427828,
+    "djia": 11.255173994508105,
+    "usdEur": 1.0238,
+    "cnyUsd": 7.3326
   },
   {
     "date": "2025-01-17",
@@ -14583,7 +16347,11 @@
     "continuedClaims": 1891000,
     "fedBalanceSheet": 6834070,
     "termSpread3m": 0.27,
-    "tbill3m": 4.2
+    "tbill3m": 4.2,
+    "nasdaqComposite": 32.139890492621646,
+    "djia": 16.693629991625226,
+    "usdEur": 1.0287,
+    "cnyUsd": 7.3249
   },
   {
     "date": "2025-01-24",
@@ -14616,7 +16384,11 @@
     "continuedClaims": 1854000,
     "fedBalanceSheet": 6831760,
     "termSpread3m": 0.28,
-    "tbill3m": 4.21
+    "tbill3m": 4.21,
+    "nasdaqComposite": 28.887760691180418,
+    "djia": 17.504607025426132,
+    "usdEur": 1.0515,
+    "cnyUsd": 7.244
   },
   {
     "date": "2025-01-31",
@@ -14649,7 +16421,11 @@
     "continuedClaims": 1876000,
     "fedBalanceSheet": 6818186,
     "termSpread3m": 0.27,
-    "tbill3m": 4.2
+    "tbill3m": 4.2,
+    "nasdaqComposite": 29.43436465684208,
+    "djia": 16.760969114266477,
+    "usdEur": 1.04,
+    "cnyUsd": 7.2422
   },
   {
     "date": "2025-02-07",
@@ -14682,7 +16458,11 @@
     "continuedClaims": 1840000,
     "fedBalanceSheet": 6810935,
     "termSpread3m": 0.14,
-    "tbill3m": 4.24
+    "tbill3m": 4.24,
+    "nasdaqComposite": 23.905858101727297,
+    "djia": 14.54608070457757,
+    "usdEur": 1.0329,
+    "cnyUsd": 7.2943
   },
   {
     "date": "2025-02-14",
@@ -14715,7 +16495,11 @@
     "continuedClaims": 1862000,
     "fedBalanceSheet": 6813513,
     "termSpread3m": 0.13,
-    "tbill3m": 4.22
+    "tbill3m": 4.22,
+    "nasdaqComposite": 26.278961987243953,
+    "djia": 15.93214392882416,
+    "usdEur": 1.0498,
+    "cnyUsd": 7.253
   },
   {
     "date": "2025-02-21",
@@ -14748,7 +16532,11 @@
     "continuedClaims": 1849000,
     "fedBalanceSheet": 6782332,
     "termSpread3m": 0.1,
-    "tbill3m": 4.21
+    "tbill3m": 4.21,
+    "nasdaqComposite": 25.307572683681954,
+    "djia": 12.472159087377467,
+    "usdEur": 1.0455,
+    "cnyUsd": 7.2501
   },
   {
     "date": "2025-02-28",
@@ -14781,7 +16569,11 @@
     "continuedClaims": 1889000,
     "fedBalanceSheet": 6766101,
     "termSpread3m": -0.08,
-    "tbill3m": 4.2
+    "tbill3m": 4.2,
+    "nasdaqComposite": 18.181510358207497,
+    "djia": 12.559725507856179,
+    "usdEur": 1.0402,
+    "cnyUsd": 7.2828
   },
   {
     "date": "2025-03-07",
@@ -14814,7 +16606,11 @@
     "continuedClaims": 1857000,
     "fedBalanceSheet": 6756764,
     "termSpread3m": -0.02,
-    "tbill3m": 4.2
+    "tbill3m": 4.2,
+    "nasdaqComposite": 11.815861240873149,
+    "djia": 10.338309958276781,
+    "usdEur": 1.0859,
+    "cnyUsd": 7.234
   },
   {
     "date": "2025-03-14",
@@ -14847,7 +16643,11 @@
     "continuedClaims": 1876000,
     "fedBalanceSheet": 6759571,
     "termSpread3m": -0.02,
-    "tbill3m": 4.2
+    "tbill3m": 4.2,
+    "nasdaqComposite": 10.07878585339148,
+    "djia": 6.6379287743737025,
+    "usdEur": 1.0872,
+    "cnyUsd": 7.2377
   },
   {
     "date": "2025-03-21",
@@ -14880,7 +16680,11 @@
     "continuedClaims": 1852000,
     "fedBalanceSheet": 6755982,
     "termSpread3m": -0.08,
-    "tbill3m": 4.19
+    "tbill3m": 4.19,
+    "nasdaqComposite": 8.427164269374643,
+    "djia": 5.540231520432792,
+    "usdEur": 1.0806,
+    "cnyUsd": 7.2486
   },
   {
     "date": "2025-03-28",
@@ -14913,7 +16717,11 @@
     "continuedClaims": 1889000,
     "fedBalanceSheet": 6740253,
     "termSpread3m": -0.06,
-    "tbill3m": 4.2
+    "tbill3m": 4.2,
+    "nasdaqComposite": 5.760446315079992,
+    "djia": 4.462816810053005,
+    "usdEur": 1.0826,
+    "cnyUsd": 7.2628
   },
   {
     "date": "2025-04-04",
@@ -14946,7 +16754,11 @@
     "continuedClaims": 1852000,
     "fedBalanceSheet": 6723452,
     "termSpread3m": -0.27,
-    "tbill3m": 4.17
+    "tbill3m": 4.17,
+    "nasdaqComposite": -2.874245751158311,
+    "djia": -0.7309380163940338,
+    "usdEur": 1.1014,
+    "cnyUsd": 7.2803
   },
   {
     "date": "2025-04-11",
@@ -14979,7 +16791,11 @@
     "continuedClaims": 1876000,
     "fedBalanceSheet": 6727416,
     "termSpread3m": 0.14,
-    "tbill3m": 4.23
+    "tbill3m": 4.23,
+    "nasdaqComposite": 1.716680249601632,
+    "djia": 4.559729457906947,
+    "usdEur": 1.1325,
+    "cnyUsd": 7.2915
   },
   {
     "date": "2025-04-18",
@@ -15012,7 +16828,11 @@
     "continuedClaims": 1840000,
     "fedBalanceSheet": 6727113,
     "termSpread3m": 0,
-    "tbill3m": 4.23
+    "tbill3m": 4.23,
+    "nasdaqComposite": 4.390282985610372,
+    "djia": 3.618362012506582,
+    "usdEur": 1.139,
+    "cnyUsd": 7.2996
   },
   {
     "date": "2025-04-25",
@@ -15045,7 +16865,11 @@
     "continuedClaims": 1906000,
     "fedBalanceSheet": 6726930,
     "termSpread3m": -0.03,
-    "tbill3m": 4.21
+    "tbill3m": 4.21,
+    "nasdaqComposite": 11.345165439386706,
+    "djia": 5.324031528811246,
+    "usdEur": 1.1381,
+    "cnyUsd": 7.2864
   },
   {
     "date": "2025-05-02",
@@ -15078,7 +16902,11 @@
     "continuedClaims": 1876000,
     "fedBalanceSheet": 6709277,
     "termSpread3m": 0,
-    "tbill3m": 4.22
+    "tbill3m": 4.22,
+    "nasdaqComposite": 13.488892087348248,
+    "djia": 8.088205671268977,
+    "usdEur": 1.133,
+    "cnyUsd": 7.2706
   },
   {
     "date": "2025-05-09",
@@ -15111,7 +16939,11 @@
     "continuedClaims": 1884000,
     "fedBalanceSheet": 6710889,
     "termSpread3m": 0.03,
-    "tbill3m": 4.22
+    "tbill3m": 4.22,
+    "nasdaqComposite": 9.6820924174704,
+    "djia": 4.7263921583760915,
+    "usdEur": 1.127,
+    "cnyUsd": 7.2364
   },
   {
     "date": "2025-05-16",
@@ -15144,7 +16976,11 @@
     "continuedClaims": 1889000,
     "fedBalanceSheet": 6713270,
     "termSpread3m": 0.06,
-    "tbill3m": 4.25
+    "tbill3m": 4.25,
+    "nasdaqComposite": 15.048100647250727,
+    "djia": 6.986213480119341,
+    "usdEur": 1.1141,
+    "cnyUsd": 7.209
   },
   {
     "date": "2025-05-23",
@@ -15177,7 +17013,11 @@
     "continuedClaims": 1917000,
     "fedBalanceSheet": 6688726,
     "termSpread3m": 0.15,
-    "tbill3m": 4.24
+    "tbill3m": 4.24,
+    "nasdaqComposite": 11.957316042096,
+    "djia": 6.496334594982844,
+    "usdEur": 1.135,
+    "cnyUsd": 7.1798
   },
   {
     "date": "2025-05-30",
@@ -15210,7 +17050,11 @@
     "continuedClaims": 1896000,
     "fedBalanceSheet": 6673244,
     "termSpread3m": 0.05,
-    "tbill3m": 4.25
+    "tbill3m": 4.25,
+    "nasdaqComposite": 14.200147218033244,
+    "djia": 10.91164656948509,
+    "usdEur": 1.1347,
+    "cnyUsd": 7.1991
   },
   {
     "date": "2025-06-06",
@@ -15243,7 +17087,11 @@
     "continuedClaims": 1947000,
     "fedBalanceSheet": 6672885,
     "termSpread3m": 0.08,
-    "tbill3m": 4.25
+    "tbill3m": 4.25,
+    "nasdaqComposite": 13.72394765773488,
+    "djia": 9.969354143131115,
+    "usdEur": 1.1397,
+    "cnyUsd": 7.1886
   },
   {
     "date": "2025-06-13",
@@ -15276,7 +17124,11 @@
     "continuedClaims": 1935000,
     "fedBalanceSheet": 6677155,
     "termSpread3m": -0.04,
-    "tbill3m": 4.26
+    "tbill3m": 4.26,
+    "nasdaqComposite": 9.844426734648138,
+    "djia": 9.187468141205946,
+    "usdEur": 1.1557,
+    "cnyUsd": 7.181
   },
   {
     "date": "2025-06-20",
@@ -15309,7 +17161,11 @@
     "continuedClaims": 1960000,
     "fedBalanceSheet": 6681056,
     "termSpread3m": -0.01,
-    "tbill3m": 4.21
+    "tbill3m": 4.21,
+    "nasdaqComposite": 9.738516690658106,
+    "djia": 7.8499523186037035,
+    "usdEur": 1.152,
+    "cnyUsd": 7.1785
   },
   {
     "date": "2025-06-27",
@@ -15342,7 +17198,11 @@
     "continuedClaims": 1954000,
     "fedBalanceSheet": 6662200,
     "termSpread3m": -0.1,
-    "tbill3m": 4.2
+    "tbill3m": 4.2,
+    "nasdaqComposite": 13.521604060322478,
+    "djia": 11.88643363328521,
+    "usdEur": 1.1724,
+    "cnyUsd": 7.1721
   },
   {
     "date": "2025-07-04",
@@ -15375,7 +17235,11 @@
     "continuedClaims": 1952000,
     "fedBalanceSheet": 6659598,
     "termSpread3m": -0.07,
-    "tbill3m": 4.26
+    "tbill3m": 4.26,
+    "nasdaqComposite": 13.265670788363938,
+    "djia": 14.044291238424744,
+    "usdEur": 1.1758,
+    "cnyUsd": 7.1684
   },
   {
     "date": "2025-07-11",
@@ -15408,7 +17272,11 @@
     "continuedClaims": 1949000,
     "fedBalanceSheet": 6661912,
     "termSpread3m": 0.02,
-    "tbill3m": 4.25
+    "tbill3m": 4.25,
+    "nasdaqComposite": 12.591305451225999,
+    "djia": 11.615910448699807,
+    "usdEur": 1.1696,
+    "cnyUsd": 7.1681
   },
   {
     "date": "2025-07-18",
@@ -15441,7 +17309,11 @@
     "continuedClaims": 1941000,
     "fedBalanceSheet": 6659273,
     "termSpread3m": 0.04,
-    "tbill3m": 4.24
+    "tbill3m": 4.24,
+    "nasdaqComposite": 16.923522848468096,
+    "djia": 9.042587462148077,
+    "usdEur": 1.1645,
+    "cnyUsd": 7.1776
   },
   {
     "date": "2025-07-25",
@@ -15474,7 +17346,11 @@
     "continuedClaims": 1936000,
     "fedBalanceSheet": 6657715,
     "termSpread3m": -0.02,
-    "tbill3m": 4.25
+    "tbill3m": 4.25,
+    "nasdaqComposite": 22.853358103845235,
+    "djia": 12.437313869739054,
+    "usdEur": 1.173,
+    "cnyUsd": 7.1679
   },
   {
     "date": "2025-08-01",
@@ -15507,7 +17383,11 @@
     "continuedClaims": 1963000,
     "fedBalanceSheet": 6642578,
     "termSpread3m": -0.12,
-    "tbill3m": 4.19
+    "tbill3m": 4.19,
+    "nasdaqComposite": 20.09974322662067,
+    "djia": 8.03165561984902,
+    "usdEur": 1.1555,
+    "cnyUsd": 7.2116
   },
   {
     "date": "2025-08-08",
@@ -15540,7 +17420,11 @@
     "continuedClaims": 1942000,
     "fedBalanceSheet": 6640843,
     "termSpread3m": -0.05,
-    "tbill3m": 4.14
+    "tbill3m": 4.14,
+    "nasdaqComposite": 28.75146608467456,
+    "djia": 11.988696586185487,
+    "usdEur": 1.166,
+    "cnyUsd": 7.1839
   },
   {
     "date": "2025-08-15",
@@ -15573,7 +17457,11 @@
     "continuedClaims": 1957000,
     "fedBalanceSheet": 6643615,
     "termSpread3m": 0.03,
-    "tbill3m": 4.12
+    "tbill3m": 4.12,
+    "nasdaqComposite": 22.896245985961517,
+    "djia": 10.805545735454892,
+    "usdEur": 1.1708,
+    "cnyUsd": 7.1817
   },
   {
     "date": "2025-08-22",
@@ -15606,7 +17494,11 @@
     "continuedClaims": 1942000,
     "fedBalanceSheet": 6618415,
     "termSpread3m": -0.01,
-    "tbill3m": 4.1
+    "tbill3m": 4.1,
+    "nasdaqComposite": 22.005238558743656,
+    "djia": 12.082102966193897,
+    "usdEur": 1.1713,
+    "cnyUsd": 7.1651
   },
   {
     "date": "2025-08-29",
@@ -15639,7 +17531,11 @@
     "continuedClaims": 1937000,
     "fedBalanceSheet": 6603384,
     "termSpread3m": 0,
-    "tbill3m": 4.05
+    "tbill3m": 4.05,
+    "nasdaqComposite": 22.48814398824417,
+    "djia": 10.184649589150109,
+    "usdEur": 1.1695,
+    "cnyUsd": 7.1304
   },
   {
     "date": "2025-09-05",
@@ -15672,7 +17568,11 @@
     "continuedClaims": 1927000,
     "fedBalanceSheet": 6602071,
     "termSpread3m": 0.03,
-    "tbill3m": 3.92
+    "tbill3m": 3.92,
+    "nasdaqComposite": 26.697926044772014,
+    "djia": 11.397434717800547,
+    "usdEur": 1.1759,
+    "cnyUsd": 7.1323
   },
   {
     "date": "2025-09-12",
@@ -15705,7 +17605,11 @@
     "continuedClaims": 1925000,
     "fedBalanceSheet": 6605962,
     "termSpread3m": -0.02,
-    "tbill3m": 3.94
+    "tbill3m": 3.94,
+    "nasdaqComposite": 26.018800570072976,
+    "djia": 11.527548272041832,
+    "usdEur": 1.1714,
+    "cnyUsd": 7.1242
   },
   {
     "date": "2025-09-19",
@@ -15738,7 +17642,11 @@
     "continuedClaims": 1916000,
     "fedBalanceSheet": 6608597,
     "termSpread3m": 0.11,
-    "tbill3m": 3.89
+    "tbill3m": 3.89,
+    "nasdaqComposite": 25.63286958240212,
+    "djia": 10.208353608871246,
+    "usdEur": 1.1753,
+    "cnyUsd": 7.1142
   },
   {
     "date": "2025-09-26",
@@ -15771,7 +17679,11 @@
     "continuedClaims": 1921000,
     "fedBalanceSheet": 6608395,
     "termSpread3m": 0.18,
-    "tbill3m": 3.87
+    "tbill3m": 3.87,
+    "nasdaqComposite": 23.604791347471643,
+    "djia": 9.655410501596794,
+    "usdEur": 1.1692,
+    "cnyUsd": 7.1328
   },
   {
     "date": "2025-10-03",
@@ -15804,7 +17716,11 @@
     "continuedClaims": 1929000,
     "fedBalanceSheet": 6587119,
     "termSpread3m": 0.1,
-    "tbill3m": 3.87
+    "tbill3m": 3.87,
+    "nasdaqComposite": 27.134165397957855,
+    "djia": 11.298525002267246,
+    "usdEur": 1.1747,
+    "cnyUsd": 7.12
   },
   {
     "date": "2025-10-10",
@@ -15837,7 +17753,11 @@
     "continuedClaims": 1928000,
     "fedBalanceSheet": 6590815,
     "termSpread3m": 0.03,
-    "tbill3m": 3.86
+    "tbill3m": 3.86,
+    "nasdaqComposite": 21.454814968780855,
+    "djia": 7.126469704236005,
+    "usdEur": 1.1613,
+    "cnyUsd": 7.134
   },
   {
     "date": "2025-10-17",
@@ -15870,7 +17790,11 @@
     "continuedClaims": 1947000,
     "fedBalanceSheet": 6596454,
     "termSpread3m": 0.02,
-    "tbill3m": 3.84
+    "tbill3m": 3.84,
+    "nasdaqComposite": 23.43774576689066,
+    "djia": 6.826144422691982,
+    "usdEur": 1.1674,
+    "cnyUsd": 7.1264
   },
   {
     "date": "2025-10-24",
@@ -15903,7 +17827,11 @@
     "continuedClaims": 1953000,
     "fedBalanceSheet": 6589533,
     "termSpread3m": 0.09,
-    "tbill3m": 3.77
+    "tbill3m": 3.77,
+    "nasdaqComposite": 26.00734490366532,
+    "djia": 11.404915614064738,
+    "usdEur": 1.1626,
+    "cnyUsd": 7.1211
   },
   {
     "date": "2025-10-31",
@@ -15936,7 +17864,11 @@
     "continuedClaims": 1962000,
     "fedBalanceSheet": 6587034,
     "termSpread3m": 0.22,
-    "tbill3m": 3.73
+    "tbill3m": 3.73,
+    "nasdaqComposite": 31.1122593623153,
+    "djia": 13.886325510386355,
+    "usdEur": 1.1541,
+    "cnyUsd": 7.1169
   },
   {
     "date": "2025-11-07",
@@ -15969,7 +17901,11 @@
     "continuedClaims": 1946000,
     "fedBalanceSheet": 6572732,
     "termSpread3m": 0.19,
-    "tbill3m": 3.77
+    "tbill3m": 3.77,
+    "nasdaqComposite": 19.38341811342923,
+    "djia": 7.449826592397701,
+    "usdEur": 1.1578,
+    "cnyUsd": 7.1219
   },
   {
     "date": "2025-11-14",
@@ -16002,7 +17938,11 @@
     "continuedClaims": 1949000,
     "fedBalanceSheet": 6580462,
     "termSpread3m": 0.19,
-    "tbill3m": 3.8
+    "tbill3m": 3.8,
+    "nasdaqComposite": 19.850374064837894,
+    "djia": 7.763550247926565,
+    "usdEur": 1.1617,
+    "cnyUsd": 7.0992
   },
   {
     "date": "2025-11-21",
@@ -16035,7 +17975,11 @@
     "continuedClaims": 1943000,
     "fedBalanceSheet": 6555283,
     "termSpread3m": 0.16,
-    "tbill3m": 3.75
+    "tbill3m": 3.75,
+    "nasdaqComposite": 17.397148070725834,
+    "djia": 5.41381593718766,
+    "usdEur": 1.1506,
+    "cnyUsd": 7.1066
   },
   {
     "date": "2025-11-28",
@@ -16068,7 +18012,11 @@
     "continuedClaims": 1932000,
     "fedBalanceSheet": 6552419,
     "termSpread3m": 0.14,
-    "tbill3m": 3.73
+    "tbill3m": 3.73,
+    "nasdaqComposite": 22.587101688939626,
+    "djia": 6.695487640775055,
+    "usdEur": 1.16,
+    "cnyUsd": 7.0751
   },
   {
     "date": "2025-12-05",
@@ -16101,7 +18049,11 @@
     "continuedClaims": 1894000,
     "fedBalanceSheet": 6535781,
     "termSpread3m": 0.43,
-    "tbill3m": 3.62
+    "tbill3m": 3.62,
+    "nasdaqComposite": 19.68156493772817,
+    "djia": 7.124381585816453,
+    "usdEur": 1.1635,
+    "cnyUsd": 7.0696
   },
   {
     "date": "2025-12-12",
@@ -16134,7 +18086,11 @@
     "continuedClaims": 1887000,
     "fedBalanceSheet": 6539303,
     "termSpread3m": 0.56,
-    "tbill3m": 3.54
+    "tbill3m": 3.54,
+    "nasdaqComposite": 16.54201108987461,
+    "djia": 10.34730970357598,
+    "usdEur": 1.1731,
+    "cnyUsd": 7.0548
   },
   {
     "date": "2025-12-19",
@@ -16167,7 +18123,11 @@
     "continuedClaims": 1910000,
     "fedBalanceSheet": 6556861,
     "termSpread3m": 0.54,
-    "tbill3m": 3.54
+    "tbill3m": 3.54,
+    "nasdaqComposite": 20.31124098412358,
+    "djia": 13.680546895960166,
+    "usdEur": 1.1721,
+    "cnyUsd": 7.0409
   },
   {
     "date": "2025-12-26",
@@ -16200,7 +18160,11 @@
     "continuedClaims": 1860000,
     "fedBalanceSheet": 6581231,
     "termSpread3m": 0.5,
-    "tbill3m": 3.56
+    "tbill3m": 3.56,
+    "nasdaqComposite": 17.84553324715439,
+    "djia": 12.42947620124728,
+    "usdEur": 1.1766,
+    "cnyUsd": 7.0063
   },
   {
     "date": "2026-01-02",
@@ -16233,7 +18197,11 @@
     "continuedClaims": 1900000,
     "fedBalanceSheet": 6640618,
     "termSpread3m": 0.54,
-    "tbill3m": 3.54
+    "tbill3m": 3.54,
+    "nasdaqComposite": 20.511815127907095,
+    "djia": 14.130217608068651,
+    "usdEur": 1.1738,
+    "cnyUsd": 6.9877
   },
   {
     "date": "2026-01-09",
@@ -16266,7 +18234,11 @@
     "continuedClaims": 1875000,
     "fedBalanceSheet": 6573602,
     "termSpread3m": 0.56,
-    "tbill3m": 3.52
+    "tbill3m": 3.52,
+    "nasdaqComposite": 21.523157388925828,
+    "djia": 16.11079577438361,
+    "usdEur": 1.1634,
+    "cnyUsd": 6.9772
   },
   {
     "date": "2026-01-16",
@@ -16299,7 +18271,11 @@
     "continuedClaims": 1865000,
     "fedBalanceSheet": 6581700,
     "termSpread3m": 0.57,
-    "tbill3m": 3.57
+    "tbill3m": 3.57,
+    "nasdaqComposite": 21.600151823144653,
+    "djia": 14.381807298798499,
+    "usdEur": 1.1599,
+    "cnyUsd": 6.9681
   },
   {
     "date": "2026-01-23",
@@ -16332,7 +18308,11 @@
     "continuedClaims": 1823000,
     "fedBalanceSheet": 6584580,
     "termSpread3m": 0.54,
-    "tbill3m": 3.59
+    "tbill3m": 3.59,
+    "nasdaqComposite": 17.1916575910257,
+    "djia": 10.173079499258053,
+    "usdEur": 1.1771,
+    "cnyUsd": 6.9631
   },
   {
     "date": "2026-01-30",
@@ -16365,7 +18345,11 @@
     "continuedClaims": 1842000,
     "fedBalanceSheet": 6587568,
     "termSpread3m": 0.59,
-    "tbill3m": 3.58
+    "tbill3m": 3.58,
+    "nasdaqComposite": 19.205964916737585,
+    "djia": 8.935271120154065,
+    "usdEur": 1.1885,
+    "cnyUsd": 6.951
   },
   {
     "date": "2026-02-06",
@@ -16398,7 +18382,11 @@
     "continuedClaims": 1859000,
     "fedBalanceSheet": 6605909,
     "termSpread3m": 0.54,
-    "tbill3m": 3.6
+    "tbill3m": 3.6,
+    "nasdaqComposite": 16.366317889206684,
+    "djia": 11.996255444143067,
+    "usdEur": 1.1812,
+    "cnyUsd": 6.9388
   },
   {
     "date": "2026-02-13",
@@ -16431,7 +18419,11 @@
     "continuedClaims": 1865000,
     "fedBalanceSheet": 6622382,
     "termSpread3m": 0.36,
-    "tbill3m": 3.6
+    "tbill3m": 3.6,
+    "nasdaqComposite": 13.040594335403632,
+    "djia": 10.712025985301743,
+    "usdEur": 1.187,
+    "cnyUsd": 6.908
   },
   {
     "date": "2026-02-20",
@@ -16464,7 +18456,11 @@
     "continuedClaims": 1827000,
     "fedBalanceSheet": 6613395,
     "termSpread3m": 0.39,
-    "tbill3m": 3.6
+    "tbill3m": 3.6,
+    "nasdaqComposite": 14.646113986522625,
+    "djia": 12.33529477676556,
+    "usdEur": 1.1781,
+    "cnyUsd": 6.9031
   },
   {
     "date": "2026-02-27",
@@ -16497,7 +18493,11 @@
     "continuedClaims": 1871000,
     "fedBalanceSheet": 6613797,
     "termSpread3m": 0.3,
-    "tbill3m": 3.59
+    "tbill3m": 3.59,
+    "nasdaqComposite": 22.237363045056146,
+    "djia": 13.27124504214896,
+    "usdEur": 1.1822,
+    "cnyUsd": 6.8579
   },
   {
     "date": "2026-03-06",
@@ -16530,7 +18530,11 @@
     "continuedClaims": 1847000,
     "fedBalanceSheet": 6628894,
     "termSpread3m": 0.46,
-    "tbill3m": 3.58
+    "tbill3m": 3.58,
+    "nasdaqComposite": 23.89926316849722,
+    "djia": 11.560771158042883,
+    "usdEur": 1.1606,
+    "cnyUsd": 6.8965
   },
   {
     "date": "2026-03-13",
@@ -16563,7 +18567,11 @@
     "continuedClaims": 1851000,
     "fedBalanceSheet": 6646344,
     "termSpread3m": 0.56,
-    "tbill3m": 3.61
+    "tbill3m": 3.61,
+    "nasdaqComposite": 27.75441960676208,
+    "djia": 14.075955619662771,
+    "usdEur": 1.1444,
+    "cnyUsd": 6.8961
   },
   {
     "date": "2026-03-20",
@@ -16596,7 +18604,11 @@
     "continuedClaims": 1816000,
     "fedBalanceSheet": 6655939,
     "termSpread3m": 0.65,
-    "tbill3m": 3.63
+    "tbill3m": 3.63,
+    "nasdaqComposite": 22.36074347021726,
+    "djia": 8.638529680130214,
+    "usdEur": 1.1543,
+    "cnyUsd": 6.8857
   },
   {
     "date": "2026-03-27",
@@ -16629,7 +18641,11 @@
     "continuedClaims": 1832000,
     "fedBalanceSheet": 6657161,
     "termSpread3m": 0.71,
-    "tbill3m": 3.62
+    "tbill3m": 3.62,
+    "nasdaqComposite": 17.66077680165672,
+    "djia": 6.777684002487017,
+    "usdEur": 1.152,
+    "cnyUsd": 6.9116
   },
   {
     "date": "2026-04-03",
@@ -16662,7 +18678,11 @@
     "continuedClaims": 1787000,
     "fedBalanceSheet": 6675344,
     "termSpread3m": 0.64,
-    "tbill3m": 3.62
+    "tbill3m": 3.62,
+    "nasdaqComposite": 32.195610917059845,
+    "djia": 14.696271610985367,
+    "usdEur": 1.1523,
+    "cnyUsd": 6.8824
   },
   {
     "date": "2026-04-10",
@@ -16695,7 +18715,11 @@
     "continuedClaims": 1809000,
     "fedBalanceSheet": 6693871,
     "termSpread3m": 0.62,
-    "tbill3m": 3.6
+    "tbill3m": 3.6,
+    "nasdaqComposite": 39.759911785399794,
+    "djia": 21.020814948655907,
+    "usdEur": 1.1723,
+    "cnyUsd": 6.8278
   },
   {
     "date": "2026-04-17",
@@ -16728,7 +18752,11 @@
     "continuedClaims": 1808000,
     "fedBalanceSheet": 6705696,
     "termSpread3m": 0.56,
-    "tbill3m": 3.61
+    "tbill3m": 3.61,
+    "nasdaqComposite": 50.238265552038655,
+    "djia": 26.32757510238941,
+    "usdEur": 1.1801,
+    "cnyUsd": 6.817
   },
   {
     "date": "2026-04-24",
@@ -16761,7 +18789,11 @@
     "continuedClaims": 1776000,
     "fedBalanceSheet": 6707419,
     "termSpread3m": 0.62,
-    "tbill3m": 3.6
+    "tbill3m": 3.6,
+    "nasdaqComposite": 44.68450498775487,
+    "djia": 22.79006020941101,
+    "usdEur": 1.1718,
+    "cnyUsd": 6.8359
   },
   {
     "date": "2026-05-01",
@@ -16794,7 +18826,11 @@
     "continuedClaims": 1758000,
     "fedBalanceSheet": 6699950,
     "termSpread3m": 0.71,
-    "tbill3m": 3.59
+    "tbill3m": 3.59,
+    "nasdaqComposite": 41.80344807726834,
+    "djia": 21.461778481857507,
+    "usdEur": 1.1755,
+    "cnyUsd": 6.8276
   },
   {
     "date": "2026-05-08",
@@ -16827,7 +18863,11 @@
     "continuedClaims": 1776000,
     "fedBalanceSheet": 6709505,
     "termSpread3m": 0.69,
-    "tbill3m": 3.6
+    "tbill3m": 3.6,
+    "nasdaqComposite": 46.401578747153934,
+    "djia": 19.920277409475105,
+    "usdEur": 1.1773,
+    "cnyUsd": 6.8005
   },
   {
     "date": "2026-05-15",
@@ -16860,7 +18900,11 @@
     "continuedClaims": 1771000,
     "fedBalanceSheet": 6728502,
     "termSpread3m": 0.9,
-    "tbill3m": 3.6
+    "tbill3m": 3.6,
+    "nasdaqComposite": 37.21589006462847,
+    "djia": 17.020207807857467,
+    "usdEur": 1.1627,
+    "cnyUsd": 6.8092
   },
   {
     "date": "2026-05-22",
@@ -16893,7 +18937,11 @@
     "continuedClaims": 1785000,
     "fedBalanceSheet": 6713643,
     "termSpread3m": 0.88,
-    "tbill3m": 3.59
+    "tbill3m": 3.59,
+    "nasdaqComposite": 39.196585812013595,
+    "djia": 20.833252705684725,
+    "usdEur": 1.1603,
+    "cnyUsd": 6.7945
   },
   {
     "date": "2026-05-29",
@@ -16926,7 +18974,11 @@
     "continuedClaims": 1771000,
     "fedBalanceSheet": 6704383,
     "termSpread3m": 0.76,
-    "tbill3m": 3.6
+    "tbill3m": 3.6,
+    "nasdaqComposite": 40.65917217836792,
+    "djia": 20.884940281738572,
+    "usdEur": 1.1679,
+    "cnyUsd": 6.7662
   },
   {
     "date": "2026-06-05",
@@ -16959,7 +19011,11 @@
     "continuedClaims": 1786000,
     "fedBalanceSheet": 6711495,
     "termSpread3m": 0.77,
-    "tbill3m": 3.63
+    "tbill3m": 3.63,
+    "nasdaqComposite": 33.220180895356876,
+    "djia": 20.196343361277734,
+    "usdEur": 1.1533,
+    "cnyUsd": 6.7655
   },
   {
     "date": "2026-06-12",
@@ -16992,7 +19048,11 @@
     "continuedClaims": 1800000,
     "fedBalanceSheet": 6725397,
     "termSpread3m": 0.7,
-    "tbill3m": 3.63
+    "tbill3m": 3.63,
+    "nasdaqComposite": 31.666198770450116,
+    "djia": 19.16475708917551,
+    "usdEur": 1.1573,
+    "cnyUsd": 6.7626
   },
   {
     "date": "2026-06-19",
@@ -17025,7 +19085,11 @@
     "continuedClaims": 1812000,
     "fedBalanceSheet": 6736424,
     "termSpread3m": 0.63,
-    "tbill3m": 3.67
+    "tbill3m": 3.67,
+    "nasdaqComposite": 35.66747005950497,
+    "djia": 22.273346602908184,
+    "usdEur": 1.147,
+    "cnyUsd": 6.7686
   },
   {
     "date": "2026-06-26",
@@ -17058,7 +19122,11 @@
     "continuedClaims": 1806000,
     "fedBalanceSheet": 6735645,
     "termSpread3m": 0.55,
-    "tbill3m": 3.67
+    "tbill3m": 3.67,
+    "nasdaqComposite": 25.43501037043501,
+    "djia": 19.566463010442803,
+    "usdEur": 1.1403,
+    "cnyUsd": 6.798
   },
   {
     "date": "2026-07-03",
@@ -17091,7 +19159,11 @@
     "continuedClaims": 1821000,
     "fedBalanceSheet": 6724564,
     "termSpread3m": 0.67,
-    "tbill3m": 3.68
+    "tbill3m": 3.68,
+    "nasdaqComposite": 25.394614850663324,
+    "djia": 18.005363994759584,
+    "usdEur": 1.1448,
+    "cnyUsd": 6.7886
   },
   {
     "date": "2026-07-10",
@@ -17124,7 +19196,11 @@
     "continuedClaims": 1798000,
     "fedBalanceSheet": 6735609,
     "termSpread3m": 0.71,
-    "tbill3m": 3.71
+    "tbill3m": 3.71,
+    "nasdaqComposite": 27.391028692247367,
+    "djia": 17.886350565187882,
+    "usdEur": 1.1438,
+    "cnyUsd": 6.7766
   },
   {
     "date": "2026-07-17",
@@ -17157,7 +19233,11 @@
     "continuedClaims": 1789000,
     "fedBalanceSheet": 6743028,
     "termSpread3m": 0.7,
-    "tbill3m": 3.71
+    "tbill3m": 3.71,
+    "nasdaqComposite": 22.1903076993055,
+    "djia": 17.223823404516935,
+    "usdEur": 1.144,
+    "cnyUsd": 6.776
   },
   {
     "date": "2026-07-24",
@@ -17190,7 +19270,11 @@
     "continuedClaims": 1777000,
     "fedBalanceSheet": 6747378,
     "termSpread3m": 0.73,
-    "tbill3m": 3.81
+    "tbill3m": 3.81,
+    "nasdaqComposite": 18.60512604259863,
+    "djia": 16.228922463932992,
+    "usdEur": 1.1385,
+    "cnyUsd": 6.7719
   },
   {
     "date": "2026-07-31",
@@ -17223,7 +19307,11 @@
     "continuedClaims": 1799000,
     "fedBalanceSheet": 6738190,
     "termSpread3m": 0.92,
-    "tbill3m": 3.69
+    "tbill3m": 3.69,
+    "nasdaqComposite": 20.12739999384541,
+    "djia": 18.93012573026929,
+    "usdEur": 1.1519,
+    "cnyUsd": 6.7509
   },
   {
     "date": "2026-08-07",
@@ -17256,7 +19344,11 @@
     "continuedClaims": 1777000,
     "fedBalanceSheet": 6748567,
     "termSpread3m": 0.78,
-    "tbill3m": 3.72
+    "tbill3m": 3.72,
+    "nasdaqComposite": 25.6460807712767,
+    "djia": 22.898797870482234,
+    "usdEur": 1.1559,
+    "cnyUsd": 6.7474
   },
   {
     "date": "2026-08-14",
@@ -17289,6 +19381,10 @@
     "continuedClaims": null,
     "fedBalanceSheet": 6759955,
     "termSpread3m": 0.82,
-    "tbill3m": 3.71
+    "tbill3m": 3.71,
+    "nasdaqComposite": 23.115316109544292,
+    "djia": 19.6412881758383,
+    "usdEur": 1.1581,
+    "cnyUsd": 6.7412
   }
 ]

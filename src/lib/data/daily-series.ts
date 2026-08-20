@@ -34,6 +34,10 @@ export type DailyKey = Extract<
   | 'breakeven5y5y'
   | 'termSpread3m'
   | 'tbill3m'
+  | 'nasdaqComposite'
+  | 'djia'
+  | 'usdEur'
+  | 'cnyUsd'
 >;
 
 /**
@@ -59,6 +63,10 @@ export const DAILY_SERIES = {
     'breakeven5y5y',
     'termSpread3m',
     'tbill3m',
+    'nasdaqComposite',
+    'djia',
+    'usdEur',
+    'cnyUsd',
   ],
   economy: ['wti', 'newJobPostings'],
   japan: ['nikkei225', 'usdjpy'],

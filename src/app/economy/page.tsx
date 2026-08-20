@@ -493,6 +493,30 @@ const CHARTS: QuestionChartDef<EconomyQuestionId>[] = [
   {
     question: 'consumption',
     frequency: 'monthly',
+    kind: 'number',
+    zeroLine: false,
+    primaryIndicator: 'vehicle-sales',
+    title: '自動車販売',
+    subtitle: '百万台・季節調整済み年率',
+    series: [
+      {
+        key: 'vehicleSales',
+        label: '自動車販売',
+        color: COLORS.vehicleSales,
+        indicatorId: 'vehicle-sales',
+      },
+    ],
+    notes: [
+      <span key="volatile">
+        <strong>小売の中で最も振れる項目。</strong>
+        金利に敏感で、利上げ局面では先に落ちる。上の小売売上の総合とコアの差も
+        大部分がここで説明できる。
+      </span>,
+    ],
+  },
+  {
+    question: 'consumption',
+    frequency: 'monthly',
     primaryIndicator: 'retail-sales-core',
     title: '小売売上',
     subtitle: '自動車・ガソリンを除く小売売上の前年同月比',
@@ -504,7 +528,13 @@ const CHARTS: QuestionChartDef<EconomyQuestionId>[] = [
         width: 2.4,
         indicatorId: 'retail-sales-core',
       },
-    ],
+          {
+        key: 'retailSalesTotal',
+        label: '総合',
+        color: COLORS.retailSalesTotal,
+        indicatorId: 'retail-sales-total',
+      },
+],
     notes: [
       <span key="not-control">
         <strong>「コントロールグループ」ではない。</strong>
@@ -813,6 +843,34 @@ const CHARTS: QuestionChartDef<EconomyQuestionId>[] = [
     frequency: 'monthly',
     kind: 'number',
     zeroLine: false,
+    primaryIndicator: 'new-home-supply',
+    title: '新築住宅の在庫月数',
+    subtitle: 'か月・季節調整済み',
+    series: [
+      {
+        key: 'newHomeSupply',
+        label: '在庫月数',
+        color: COLORS.newHomeSupply,
+        indicatorId: 'new-home-supply',
+      },
+    ],
+    notes: [
+      <span key="balance">
+        <strong>需給バランスを直接示す。</strong>
+        いまの販売ペースで在庫が何か月分あるか。6 か月前後が均衡とされ、
+        積み上がれば値下げ圧力になる。
+      </span>,
+      <span key="why">
+        着工や販売の件数だけでは需給が分からない。
+        <strong>売れ行きに対して多いか少ないか</strong>はこの指標にしか出ない。
+      </span>,
+    ],
+  },
+  {
+    question: 'housing',
+    frequency: 'monthly',
+    kind: 'number',
+    zeroLine: false,
     primaryIndicator: 'existing-home-sales',
     title: '中古住宅販売件数',
     subtitle: '件・季節調整済み年率',
@@ -863,6 +921,12 @@ const CHARTS: QuestionChartDef<EconomyQuestionId>[] = [
         label: '着工',
         color: COLORS.housingStarts,
         indicatorId: 'housing-starts',
+      },
+      {
+        key: 'housingStartsSingle',
+        label: '着工 (一戸建て)',
+        color: COLORS.housingStartsSingle,
+        indicatorId: 'housing-starts-single',
       },
       {
         key: 'newHomeSales',

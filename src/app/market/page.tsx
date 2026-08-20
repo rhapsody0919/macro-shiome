@@ -384,6 +384,60 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
   {
     question: 'risk',
     frequency: 'daily',
+    kind: 'percent',
+    primaryIndicator: 'nasdaq-composite',
+    title: '主要株価指数',
+    subtitle: '前年同日比',
+    series: [
+      { key: 'nasdaqComposite', label: 'NASDAQ 総合', color: COLORS.nasdaqComposite, width: 2.4 },
+      { key: 'djia', label: 'ダウ平均', color: COLORS.djia },
+    ],
+    notes: [
+      <span key="rate">
+        <strong>水準ではなく前年同日比で並べている。</strong>
+        NASDAQ 総合とダウは水準が 2 倍違い、同じ軸に載せると片方が潰れる。
+        指数化は基準日が恣意的になるため率で揃えた。
+      </span>,
+      <span key="composition">
+        <strong>構成が違う。</strong>
+        NASDAQ 総合は約 3,000 銘柄の時価総額加重、ダウは 30 銘柄の株価加重。
+        2 本の差が「値がさ株か中小型株か」を示す。
+      </span>,
+      <span key="valuation">
+        S&P 500 と NASDAQ-100 は<strong>バリュエーションのページ</strong>で
+        EPS・PER と合わせて見る。ここは指数そのものの比較。
+      </span>,
+    ],
+  },
+  {
+    question: 'risk',
+    frequency: 'daily',
+    kind: 'number',
+    primaryIndicator: 'usd-eur',
+    title: '主要通貨',
+    subtitle: 'ドル/ユーロ と 人民元/ドル',
+    series: [
+      { key: 'usdEur', label: 'ドル/ユーロ', color: COLORS.usdEur, width: 2.4 },
+      { key: 'cnyUsd', label: '人民元/ドル', color: COLORS.cnyUsd },
+    ],
+    notes: [
+      <span key="vs-index">
+        <strong>ドル指数は貿易加重の合成、こちらは 2 国間レート。</strong>
+        ユーロはドル指数で最大の構成比を占めるため、指数の動きの多くをここで説明できる。
+      </span>,
+      <span key="managed">
+        <strong>人民元は管理された変動相場。</strong>
+        中国当局の政策姿勢が出る。市場の需給だけでは決まらない点が他の通貨と違う。
+      </span>,
+      <span key="scale">
+        単位が違う (1 ユーロ = 何ドル / 1 ドル = 何元) ため、
+        <strong>水準ではなく向き</strong>で読む。
+      </span>,
+    ],
+  },
+  {
+    question: 'risk',
+    frequency: 'daily',
     primaryIndicator: 'vix',
     title: 'VIX',
     subtitle: 'S&P 500 のインプライド・ボラティリティ指数',
