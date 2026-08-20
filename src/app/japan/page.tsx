@@ -114,7 +114,7 @@ const CHARTS: QuestionChartDef<JapanQuestionId>[] = [
     kind: 'number',
     zeroLine: false,
     primaryIndicator: 'jp-industrial-production',
-    title: '鉱工業生産指数 (日本)',
+    title: '鉱工業 生産・出荷・在庫 (日本)',
     subtitle: '季節調整済み (2020年平均 = 100)',
     series: [
       {
@@ -123,7 +123,19 @@ const CHARTS: QuestionChartDef<JapanQuestionId>[] = [
         color: COLORS.jpIndustrialProduction,
         indicatorId: 'jp-industrial-production',
       },
-    ],
+          {
+        key: 'jpShipments',
+        label: '出荷',
+        color: COLORS.jpShipments,
+        indicatorId: 'jp-shipments',
+      },
+      {
+        key: 'jpInventory',
+        label: '在庫',
+        color: COLORS.jpInventory,
+        indicatorId: 'jp-inventory',
+      },
+],
     notes: [
       <span key="raw">
         <strong>加工されていない実量。</strong>
@@ -147,7 +159,7 @@ const CHARTS: QuestionChartDef<JapanQuestionId>[] = [
     kind: 'number',
     zeroLine: false,
     primaryIndicator: 'jp-inventory-ratio',
-    title: '鉱工業在庫率指数 (日本)',
+    title: '在庫率と稼働率 (日本)',
     subtitle: '2020年基準・季節調整済み',
     series: [
       {
@@ -156,7 +168,13 @@ const CHARTS: QuestionChartDef<JapanQuestionId>[] = [
         color: COLORS.jpInventoryRatio,
         indicatorId: 'jp-inventory-ratio',
       },
-    ],
+          {
+        key: 'jpOperatingRate',
+        label: '稼働率',
+        color: COLORS.jpOperatingRate,
+        indicatorId: 'jp-operating-rate',
+      },
+],
     notes: [
       <span key="ratio">
         <strong>出荷に対する在庫の比。</strong>
@@ -311,6 +329,41 @@ const CHARTS: QuestionChartDef<JapanQuestionId>[] = [
     ],
   },
   {
+    question: 'jp-price',
+    frequency: 'monthly',
+    kind: 'number',
+    zeroLine: false,
+    primaryIndicator: 'jp-monetary-base',
+    title: 'マネタリーベースと銀行貸出 (日本)',
+    subtitle: '億円',
+    series: [
+      {
+        key: 'jpMonetaryBase',
+        label: 'マネタリーベース',
+        color: COLORS.jpMonetaryBase,
+        width: 2.4,
+        indicatorId: 'jp-monetary-base',
+      },
+      {
+        key: 'jpBankLending',
+        label: '銀行貸出',
+        color: COLORS.jpBankLending,
+        indicatorId: 'jp-bank-lending',
+      },
+    ],
+    notes: [
+      <span key="chain">
+        <strong>日銀が供給した通貨が実体経済に届いているか。</strong>
+        マネタリーベースは日銀が直接供給する分、銀行貸出は銀行を通じて企業に渡った分。
+        <strong>2 本の差が「銀行で止まっているか」を示す。</strong>
+      </span>,
+      <span key="us">
+        米国の FRB バランスシートと商工業貸出に対応する。
+        <strong>単位も規模も違うため同じ図には載せていない。</strong>
+      </span>,
+    ],
+  },
+  {
     question: 'jp-labor',
     frequency: 'monthly',
     kind: 'number',
@@ -425,6 +478,34 @@ const CHARTS: QuestionChartDef<JapanQuestionId>[] = [
       <span key="seasonal">
         <strong>季節調整済み。</strong>
         原数値は賞与の影響で桁が変わる (2026年6月は原数値 38.3 に対し季調値 59.9)。
+      </span>,
+    ],
+  },
+  {
+    question: 'jp-labor',
+    frequency: 'monthly',
+    kind: 'number',
+    zeroLine: false,
+    primaryIndicator: 'jp-working-hours',
+    title: '総実労働時間 (日本)',
+    subtitle: '指数 (原数値)',
+    series: [
+      {
+        key: 'jpWorkingHours',
+        label: '総実労働時間',
+        color: COLORS.jpWorkingHours,
+        indicatorId: 'jp-working-hours',
+      },
+    ],
+    notes: [
+      <span key="wage">
+        <strong>賃金は時間 × 単価。</strong>
+        時間が減っていれば、時給が上がっても賃金は伸びない。
+        下の実質賃金と合わせて、何が効いているかを切り分ける。
+      </span>,
+      <span key="raw">
+        <strong>季節調整済みの系列は提供されていない</strong>ため原数値。
+        月ごとの営業日数で振れるので、前年同月と比べて読む。
       </span>,
     ],
   },
@@ -668,6 +749,33 @@ const CHARTS: QuestionChartDef<JapanQuestionId>[] = [
         <strong>上の総戸数とは単位が違う。</strong>
         こちらは季調値そのもので<strong>年率換算していない</strong>ため、水準が 1 桁小さい。
         内訳どうしは単位が揃っているので水準のまま並べている。
+      </span>,
+    ],
+  },
+  {
+    question: 'jp-housing',
+    frequency: 'monthly',
+    kind: 'number',
+    zeroLine: false,
+    primaryIndicator: 'jp-public-works',
+    title: '公共工事受注額 (日本)',
+    subtitle: '億円',
+    series: [
+      {
+        key: 'jpPublicWorks',
+        label: '公共工事受注額',
+        color: COLORS.jpPublicWorks,
+        indicatorId: 'jp-public-works',
+      },
+    ],
+    notes: [
+      <span key="policy">
+        <strong>建設需要のうち政策で動く部分。</strong>
+        住宅着工が家計の需要を示すのに対し、こちらは財政支出の実行状況。
+        景気対策が実際の工事に繋がっているかが出る。
+      </span>,
+      <span key="unit">
+        単位が億円で住宅着工 (戸) と違うため、<strong>同じ図には載せていない</strong>。
       </span>,
     ],
   },

@@ -566,6 +566,20 @@ export interface MonthlyPoint {
   jpIndustrialProduction: number | null;
   /** 日本の CPI コアコア (生鮮・エネルギー除く) の前年同月比 (%)。米国のコアと同じ定義 (#202)。 */
   jpCpiCoreCore: number | null;
+  /** 日本の鉱工業出荷指数。生産と在庫の間 (#204)。 */
+  jpShipments: number | null;
+  /** 日本の鉱工業在庫指数。在庫の絶対量 (#204)。 */
+  jpInventory: number | null;
+  /** 日本の製造工業稼働率指数。**2020年 = 100 の指数** (#204)。 */
+  jpOperatingRate: number | null;
+  /** 日本の銀行貸出 (億円)。信用の量的 side (#204)。 */
+  jpBankLending: number | null;
+  /** 日本のマネタリーベース (億円)。日銀が直接供給する通貨量 (#204)。 */
+  jpMonetaryBase: number | null;
+  /** 日本の総実労働時間指数。**原数値** (#204)。 */
+  jpWorkingHours: number | null;
+  /** 日本の公共工事受注額 (億円)。財政支出の実行状況 (#204)。 */
+  jpPublicWorks: number | null;
   /** 日本の鉱工業在庫率指数。**出荷に対する在庫の比** (#202)。 */
   jpInventoryRatio: number | null;
   /** TOPIX。東証全体・時価総額加重 (#202)。 */

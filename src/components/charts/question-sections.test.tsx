@@ -109,12 +109,14 @@ describe('日本の雇用と所得 (#156)', () => {
     const titles = Array.from(section?.querySelectorAll('h3') ?? []).map((h) => h.textContent);
     // 求人 → 失業率 (雇用) → 所得と消費 → 賃金の順 (#170 #180)。
     // #202 で総消費動向指数が加わった。求人 → 失業率 → 所得と消費 → 賃金の順。
+    // #204 で総実労働時間が加わった。賃金は時間 × 単価なので実質賃金の手前に置く。
     expect(titles).toEqual([
       '求人倍率',
       '完全失業率 (日本)',
       '家計の余力 (日本)',
       '総消費動向指数 (日本)',
       '平均消費性向 (日本)',
+      '総実労働時間 (日本)',
       '実質賃金指数',
     ]);
   });
@@ -148,8 +150,8 @@ describe('日本の走査で見つかった指標 (#202)', () => {
     render(<JapanPage />);
     const section = document.getElementById('q-jp-cycle');
     const titles = Array.from(section?.querySelectorAll('h3') ?? []).map((h) => h.textContent);
-    expect(titles.indexOf('鉱工業在庫率指数 (日本)')).toBe(
-      titles.indexOf('鉱工業生産指数 (日本)') + 1,
+    expect(titles.indexOf('在庫率と稼働率 (日本)')).toBe(
+      titles.indexOf('鉱工業 生産・出荷・在庫 (日本)') + 1,
     );
   });
 });
@@ -365,8 +367,9 @@ describe('日本の鉱工業生産 (#164)', () => {
     // あちらは原数値しか提供されていない。季調値と重ねると季節性の有無が
     // 動きの違いに見える (#116〜#118 と同じ型)。
     render(<JapanPage />);
+    // #204 で出荷・在庫が加わりチャート名が変わった。
     expect(
-      screen.getByRole('heading', { name: '鉱工業生産指数 (日本)' }),
+      screen.getByRole('heading', { name: '鉱工業 生産・出荷・在庫 (日本)' }),
     ).toBeInTheDocument();
   });
 
@@ -385,10 +388,12 @@ describe('日本の消費者物価 (#162)', () => {
     expect(section).not.toBeNull();
     const titles = Array.from(section?.querySelectorAll('h3') ?? []).map((h) => h.textContent);
     // 消費者物価 → 上流の企業物価 → 背景の通貨量の順 (#174 #180)。
+    // #204 でマネタリーベースと銀行貸出が加わった。
     expect(titles).toEqual([
       '消費者物価指数 (日本)',
       '国内企業物価指数 (日本)',
       'マネーストック M2 (日本)',
+      'マネタリーベースと銀行貸出 (日本)',
     ]);
   });
 
@@ -449,11 +454,12 @@ describe('日本の景気動向指数 (#154)', () => {
     // 街角景気は DI (50 が中立)、鉱工業生産は季調値なのでそれぞれ別チャートにする。
     // 合成 (景気動向指数) / 体感 (街角景気) / 実量 (鉱工業生産) が並ぶ。
     // #202 で在庫率が加わった。合成 / 体感 / 実量 / 需給の 4 層。
+    // #204 で出荷・在庫・稼働率が加わりチャート名が変わった。
     expect(titles).toEqual([
       '景気動向指数',
       '街角景気 (景気ウォッチャー調査)',
-      '鉱工業生産指数 (日本)',
-      '鉱工業在庫率指数 (日本)',
+      '鉱工業 生産・出荷・在庫 (日本)',
+      '在庫率と稼働率 (日本)',
     ]);
   });
 
@@ -480,7 +486,12 @@ describe('日本ページ (#152)', () => {
     render(<JapanPage />);
     const section = document.getElementById('q-jp-housing');
     const titles = Array.from(section?.querySelectorAll('h3') ?? []).map((h) => h.textContent);
-    expect(titles).toEqual(['新設住宅着工戸数 (日本)', '新設住宅着工戸数の内訳 (日本)']);
+    // #204 で公共工事受注額が加わった。家計の需要 → 政策の需要の順。
+    expect(titles).toEqual([
+      '新設住宅着工戸数 (日本)',
+      '新設住宅着工戸数の内訳 (日本)',
+      '公共工事受注額 (日本)',
+    ]);
   });
 
   it('市場ページから日本単独のチャートが消える', () => {

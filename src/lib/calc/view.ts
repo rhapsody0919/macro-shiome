@@ -731,6 +731,14 @@ export function buildEconomyView(options: BuildViewOptions): EconomyView {
     // 前年同月比にせず水準で出す (#164)。公表の前年同月比系列が無く、
     // 指数が小数 1 桁なので導出すると丸め誤差が出る。
     jpIndustrialProduction: level('jp-industrial-production', month),
+    // 生産 → 出荷 → 在庫 の関係が在庫循環そのもの (#204)。
+    jpShipments: level('jp-shipments', month),
+    jpInventory: level('jp-inventory', month),
+    jpOperatingRate: level('jp-operating-rate', month),
+    jpBankLending: level('jp-bank-lending', month),
+    jpMonetaryBase: level('jp-monetary-base', month),
+    jpWorkingHours: level('jp-working-hours', month),
+    jpPublicWorks: level('jp-public-works', month),
     // 米国のコアと同じ定義。日本のコアは生鮮のみ除くため国際比較にはこちら (#202)。
     jpCpiCoreCore: level('jp-cpi-core-core', month),
     jpInventoryRatio: level('jp-inventory-ratio', month),
@@ -846,6 +854,13 @@ const MONTHLY_INDICATORS = [
   'jp-disposable-income',
   'jp-propensity-to-consume',
   'jp-industrial-production',
+  'jp-shipments',
+  'jp-inventory',
+  'jp-operating-rate',
+  'jp-bank-lending',
+  'jp-monetary-base',
+  'jp-working-hours',
+  'jp-public-works',
   'jp-cpi-core-core',
   'jp-inventory-ratio',
   'jp-topix',
