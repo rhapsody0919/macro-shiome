@@ -6,6 +6,7 @@
  *
  * 対象の JSON は週次バッチが生成してリポジトリにコミットするため、常に存在する。
  */
+import changelogJson from '../../../data/changelog.json';
 import statusJson from '../../../data/status.json';
 import valuationJson from '../../../data/views/valuation.json';
 import revisionsJson from '../../../data/views/revisions.json';
@@ -15,9 +16,11 @@ import economyDailyJson from '../../../data/views/economy-daily.json';
 import japanDailyJson from '../../../data/views/japan-daily.json';
 import economyJson from '../../../data/views/economy.json';
 import drawdownJson from '../../../data/views/drawdown.json';
+import { sortChangelog } from './changelog';
 import type { DailyPoint } from './daily-series';
 import type {
   BatchStatus,
+  ChangelogEntry,
   DrawdownView,
   EconomyView,
   GapReason,
@@ -43,6 +46,8 @@ export const economyDaily = economyDailyJson as unknown as DailyPoint[];
 export const japanDaily = japanDailyJson as unknown as DailyPoint[];
 export const economy = economyJson as unknown as EconomyView;
 export const drawdown = drawdownJson as unknown as DrawdownView;
+/** 更新履歴 (#240)。新しい順。 */
+export const changelog = sortChangelog(changelogJson as unknown as ChangelogEntry[]);
 
 /** データの鮮度。画面ヘッダーの表示に使う (screens N-1)。 */
 export interface Freshness {
