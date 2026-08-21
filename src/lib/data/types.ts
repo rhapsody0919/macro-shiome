@@ -678,6 +678,17 @@ export interface MonthlyPoint {
   jpCpi: number | null;
   /** 街角景気の現状判断DI。**季節調整済み、50 が中立** (#160)。 */
   jpWatcherCurrent: number | null;
+  /**
+   * 企業の景況感 BSI (%ポイント、0 が中立、#226)。**四半期**。
+   *
+   * 「上昇」と答えた企業の割合 −「下降」の割合。日銀短観は e-Stat に無いため、
+   * 公的統計で企業の景況感を見る唯一の経路。**四半期の値はその期の最終月に置く。**
+   */
+  jpBsiLarge: number | null;
+  /** 企業の景況感 BSI (中堅企業)。 */
+  jpBsiMid: number | null;
+  /** 企業の景況感 BSI (中小企業)。 */
+  jpBsiSmall: number | null;
   /** 街角景気の先行き判断DI。**季節調整済み、50 が中立** (#160)。 */
   jpWatcherOutlook: number | null;
   /** 日本の実質賃金指数 (現金給与総額)。**季節調整済み** (#156)。 */

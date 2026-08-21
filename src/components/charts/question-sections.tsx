@@ -69,6 +69,12 @@ export type QuestionChartDef<K extends string> =
       frequency: 'monthly';
       kind?: ValueKind;
       zeroLine?: boolean;
+      /**
+       * 欠測を跨いで線を繋ぐか (#226)。**四半期の系列を月次グリッドに載せる場合だけ。**
+       *
+       * 3 か月に 1 点しか無いのは構造的で、取れなかったわけではない。
+       */
+      connectNulls?: boolean;
       /** 定義から決まる基準線。DI の 50 など (#160)。 */
       baseline?: { value: number; label: string };
       series: MonthlySeriesDef[];
@@ -201,6 +207,7 @@ export function QuestionSections<K extends string>({
                   zeroLine={chart.zeroLine}
                   baseline={chart.baseline}
                   series={chart.series}
+                  connectNulls={chart.connectNulls}
                   notes={chart.notes}
                   explanation={<IndicatorExplanations ids={explainedIds(chart)} />}
                   badges={<Badges frequency="monthly" cyclePosition={cycleOf(chart)} />}

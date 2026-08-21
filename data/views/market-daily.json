@@ -62974,5 +62974,29 @@
     "usdEur": 1.1581,
     "cnyUsd": 6.7412,
     "federalDebtPublic": 32.27
+  },
+  {
+    "date": "2026-08-21",
+    "vix": 15.84,
+    "dollarIndex": 118.9,
+    "gold": 413.84,
+    "nominalRate": 4.71,
+    "breakeven": 2.3,
+    "realRate": 2.41,
+    "fedFundsRate": 3.63,
+    "termSpread": 0.46,
+    "hySpread": 2.75,
+    "igSpread": 0.82,
+    "twoYearRate": 4.19,
+    "sofr": 3.62,
+    "breakeven5y": 2.28,
+    "breakeven5y5y": 2.32,
+    "termSpread3m": 0.79,
+    "tbill3m": 3.71,
+    "nasdaqComposite": 24.79,
+    "djia": 19.38,
+    "usdEur": 1.1581,
+    "cnyUsd": 6.7412,
+    "federalDebtPublic": 32.27
   }
 ]

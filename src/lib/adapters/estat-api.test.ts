@@ -5,6 +5,7 @@ import {
   readEstatAppIdFromEnv,
   safeQueryLabel,
   toMonthlyDate,
+  toQuarterlyDate,
 } from './estat-api';
 
 const query = { statsDataId: '0003348423', axes: { tab: '140', cat01: '100', cat02: '100' } } as const;
@@ -113,5 +114,68 @@ describe('日付の変換 (#160)', () => {
 
   it('月が範囲外なら弾く', () => {
     expect(toMonthlyDate('2026001313')).toBeNull();
+  });
+});
+
+describe('四半期の日付コード (#226)', () => {
+  it('末尾 4 桁は開始月と終了月', () => {
+    expect(toQuarterlyDate('2026000406')).toBe('2026-06-01');
+    expect(toQuarterlyDate('2018001012')).toBe('2018-12-01');
+    expect(toQuarterlyDate('2019000103')).toBe('2019-03-01');
+  });
+
+  // 月次と四半期は同じ `YYYY00MMMM` の形。**末尾が繰り返しかどうか**で読み分ける。
+  // 取り違えると全部ずれるので、互いの形式を渡したら null を返すことを固定する。
+  it('月次のコードは四半期として読まない', () => {
+    expect(toQuarterlyDate('2026000707')).toBeNull();
+  });
+
+  it('四半期のコードは月次として読まない', () => {
+    expect(toMonthlyDate('2026000406')).toBeNull();
+  });
+
+  it('3 か月でない期は読まない', () => {
+    // 半期 (1〜6 月) が混ざっても四半期として扱わない。
+    expect(toQuarterlyDate('2026000106')).toBeNull();
+  });
+});
+
+describe('軸の検査 (#226)', () => {
+  const query = { statsDataId: '0003326000', axes: { cat01: '10', cat02: '20' } };
+
+  it('応答に出てきた軸をすべて見る', () => {
+    // cat05 を固定し忘れても、複数値が返れば落ちる。軸を列挙しないのが要点。
+    const body = {
+      GET_STATS_DATA: {
+        RESULT: { STATUS: '0' },
+        STATISTICAL_DATA: {
+          DATA_INF: {
+            VALUE: [
+              { '@cat01': '10', '@cat02': '20', '@cat05': '10', '@time': '2026000406', $: '-0.5' },
+              { '@cat01': '10', '@cat02': '20', '@cat05': '20', '@time': '2026000406', $: '1.2' },
+            ],
+          },
+        },
+      },
+    };
+    expect(() => parseStatsData(body, { ...query, cycle: 'quarterly' })).toThrow(
+      /cat05 が 1 種類に絞れていない/,
+    );
+  });
+
+  it('絞れていれば四半期の値を取り出す', () => {
+    const body = {
+      GET_STATS_DATA: {
+        RESULT: { STATUS: '0' },
+        STATISTICAL_DATA: {
+          DATA_INF: {
+            VALUE: [
+              { '@cat01': '10', '@cat02': '20', '@cat05': '10', '@time': '2026000406', $: '-0.5' },
+            ],
+          },
+        },
+      },
+    };
+    expect(parseStatsData(body, { ...query, cycle: 'quarterly' })).toEqual({ '2026-06-01': -0.5 });
   });
 });

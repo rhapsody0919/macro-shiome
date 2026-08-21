@@ -8384,6 +8384,22 @@
         "overvaluation": null,
         "isForwardEpsHigh": false,
         "isTrailingEpsHigh": false
+      },
+      {
+        "date": "2026-08-21",
+        "index": 7707.98,
+        "forwardPe": null,
+        "trailingPe": null,
+        "forwardEps": null,
+        "trailingEps": null,
+        "earningsYield": null,
+        "realRate": 2.41,
+        "yieldSpread": null,
+        "fairValue": null,
+        "fairValueBasis": null,
+        "overvaluation": null,
+        "isForwardEpsHigh": false,
+        "isTrailingEpsHigh": false
       }
     ],
     "baselines": {
@@ -8396,8 +8412,8 @@
     "targetYield": 3.67,
     "targetYieldContext": {
       "realRateAtSetting": 2.4,
-      "currentRealRate": 2.4099999999999997,
-      "drift": 0.009999999999999787,
+      "currentRealRate": 2.41,
+      "drift": 0.010000000000000231,
       "riskPremium": 1.27
     },
     "correlation": {
@@ -16814,6 +16830,22 @@
         "overvaluation": null,
         "isForwardEpsHigh": false,
         "isTrailingEpsHigh": false
+      },
+      {
+        "date": "2026-08-21",
+        "index": 29426.02,
+        "forwardPe": null,
+        "trailingPe": 32.8,
+        "forwardEps": null,
+        "trailingEps": 897.1347560975611,
+        "earningsYield": 3.0487804878048785,
+        "realRate": 2.41,
+        "yieldSpread": 0.6387804878048784,
+        "fairValue": 27435.31364212725,
+        "fairValueBasis": 29426.02,
+        "overvaluation": 6.7651226970985245,
+        "isForwardEpsHigh": false,
+        "isTrailingEpsHigh": true
       }
     ],
     "baselines": {
@@ -16826,22 +16858,22 @@
     "targetYield": 3.27,
     "targetYieldContext": {
       "realRateAtSetting": 2.4,
-      "currentRealRate": 2.4099999999999997,
-      "drift": 0.009999999999999787,
+      "currentRealRate": 2.41,
+      "drift": 0.010000000000000231,
       "riskPremium": 0.8700000000000001
     },
     "correlation": {
       "halfYear": {
         "kind": "insufficient",
-        "n": 0
+        "n": 1
       },
       "oneYear": {
         "kind": "insufficient",
-        "n": 0
+        "n": 1
       },
       "all": {
         "kind": "insufficient",
-        "n": 0
+        "n": 1
       }
     },
     "spreadDistribution": null,

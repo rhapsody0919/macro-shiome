@@ -53,6 +53,7 @@ export function MonthlyChart({
   baseline,
   notes,
   explanation,
+  connectNulls = false,
   height = 'h-72 sm:h-96',
 }: {
   view: EconomyView;
@@ -76,6 +77,13 @@ export function MonthlyChart({
   notes: ReactNode[];
   /** 指標の読者向け解説 (#208)。`ChartFrame` にそのまま渡す。 */
   explanation?: ReactNode;
+  /**
+   * 欠測を跨いで線を繋ぐか (#226)。**既定は繋がない。**
+   *
+   * 正常な欠測と取得漏れを見分けられなくなるため (#53)。四半期の系列を月次グリッドに
+   * 載せる場合だけ true にする — 3 か月に 1 点なのは**構造的**で、取れなかったのではない。
+   */
+  connectNulls?: boolean;
   /** 図の高さ。モバイルは低くして縦の圧迫を避ける。 */
   height?: string;
 }) {
@@ -162,7 +170,7 @@ export function MonthlyChart({
               name={s.label}
               stroke={s.color}
               strokeWidth={s.width ?? 2}
-              connectNulls={false}
+              connectNulls={connectNulls}
               dot={false}
               activeDot={{ r: 3 }}
               isAnimationActive={false}
