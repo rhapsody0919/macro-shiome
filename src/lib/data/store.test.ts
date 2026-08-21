@@ -5,13 +5,15 @@ import { afterEach, beforeEach, describe, expect, it } from 'vitest';
 import {
   readGaps,
   readObservations,
+  readOhlcvObservations,
   readStatus,
   recordGaps,
   upsertObservations,
+  upsertOhlcvObservations,
   writeStatus,
   writeView,
 } from './store';
-import type { Gap } from './types';
+import type { Gap, OhlcvBar } from './types';
 
 let dir: string;
 const now = new Date('2026-08-16T02:00:00Z');
@@ -107,6 +109,44 @@ describe('upsertObservations', () => {
     mkdirSync(join(dir, 'observations'), { recursive: true });
     writeFileSync(join(dir, 'observations', 'dgs10.json'), '{ broken', 'utf8');
     expect(() => readObservations('dgs10')).toThrow(/壊れている/);
+  });
+});
+
+describe('upsertOhlcvObservations (#229)', () => {
+  const bar: OhlcvBar = { open: 770.1, high: 775.5, low: 768.2, close: 772.6, volume: 12_345_678 };
+  const pathOf = (symbol: string) => join(dir, 'observations', `ohlcv-${symbol.toLowerCase()}.json`);
+
+  it('小文字ファイル名で書き出す', () => {
+    upsertOhlcvObservations('SPY', { '2026-08-20': bar }, now);
+    expect(existsSync(pathOf('SPY'))).toBe(true);
+    expect(readOhlcvObservations('SPY')).toEqual({ '2026-08-20': bar });
+  });
+
+  it('既存の値を消さずにマージする', () => {
+    upsertOhlcvObservations('SPY', { '2026-08-19': bar }, now);
+    const later = { ...bar, close: 780.0 };
+    upsertOhlcvObservations('SPY', { '2026-08-20': later }, now);
+    expect(readOhlcvObservations('SPY')).toEqual({ '2026-08-19': bar, '2026-08-20': later });
+  });
+
+  it('値が変わらなければファイルを触らない (#140 と同じ)', () => {
+    upsertOhlcvObservations('SPY', { '2026-08-20': bar }, now);
+    const mtime = statSync(pathOf('SPY')).mtimeMs;
+
+    const later = new Date('2026-08-21T02:00:00Z');
+    upsertOhlcvObservations('SPY', { '2026-08-20': bar }, later);
+
+    expect(statSync(pathOf('SPY')).mtimeMs).toBe(mtime);
+  });
+
+  it('1 つのフィールドでも変われば書く', () => {
+    upsertOhlcvObservations('SPY', { '2026-08-20': bar }, now);
+    const later = new Date('2026-08-21T02:00:00Z');
+    upsertOhlcvObservations('SPY', { '2026-08-20': { ...bar, volume: 1 } }, later);
+
+    const file = JSON.parse(readFileSync(pathOf('SPY'), 'utf8'));
+    expect(file.updatedAt).toBe(later.toISOString());
+    expect(file.observations['2026-08-20'].volume).toBe(1);
   });
 });
 
