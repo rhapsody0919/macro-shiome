@@ -7,12 +7,7 @@ import {
   toMonthlyDate,
 } from './estat-api';
 
-const query = {
-  statsDataId: '0003348423',
-  tab: '140',
-  cat01: '100',
-  cat02: '100',
-} as const;
+const query = { statsDataId: '0003348423', axes: { tab: '140', cat01: '100', cat02: '100' } } as const;
 
 /** 2026-08 時点の実応答を縮めたもの。 */
 const body = (values: unknown[]) => ({

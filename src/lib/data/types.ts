@@ -95,7 +95,20 @@ export type IndicatorSource =
    * e-Stat 統計 API (#160)。**appId が必要**で、統計ダッシュボードとは別経路。
    * 1 つの表に多数の系列が入るため、`tab` / `cat01` / `cat02` をすべて固定する。
    */
-  | { adapter: 'estat-api'; statsDataId: string; tab: string; cat01: string; cat02: string }
+  | {
+      adapter: 'estat-api';
+      statsDataId: string;
+      /**
+       * 固定する軸 (#160 #226)。**表によって軸の数が違う。**
+       *
+       * 街角景気は `tab` / `cat01` / `cat02` の 3 つ、法人企業景気予測調査の BSI は
+       * `cat01` 〜 `cat05` の 5 つ。**受信側で「応答に出てきた軸がすべて 1 種類か」を
+       * 検査する**ので、ここに書き漏らしても黙って別物を掴むことはない。
+       */
+      axes: Readonly<Record<string, string>>;
+      /** 四半期の表か (#226)。日付コードの読み方が変わる。 */
+      cycle?: 'monthly' | 'quarterly';
+    }
   /**
    * 米財務省 Fiscal Data (#96 #222)。**API キー不要。**
    *

@@ -143,15 +143,29 @@ function parseSource(raw: unknown, where: string): IndicatorSource {
         cycle: requireEnum(raw.cycle, ['1'] as const, `${where}.cycle`),
         isSeasonal: requireEnum(raw.isSeasonal, ['1', '2'] as const, `${where}.isSeasonal`),
       };
-    case 'estat-api':
-      // 軸をすべて必須にする。1 つでも欠けると同じ月に複数の値が返る (#160)。
-      return {
+    case 'estat-api': {
+      // 軸は表によって数が違う (#226)。**1 つ以上を必須**にし、絞り込みが
+      // 足りているかは受信側で見る (応答に出てきた軸が 1 種類に絞れているか)。
+      if (!isRecord(raw.axes)) {
+        throw new Error(`${where}.axes: オブジェクトで指定する`);
+      }
+      const axes: Record<string, string> = {};
+      for (const [axis, value] of Object.entries(raw.axes)) {
+        axes[axis] = requireString(value, `${where}.axes.${axis}`);
+      }
+      if (Object.keys(axes).length === 0) {
+        throw new Error(`${where}.axes: 1 つ以上の軸を固定する`);
+      }
+      const source: Extract<IndicatorSource, { adapter: 'estat-api' }> = {
         adapter,
         statsDataId: requireString(raw.statsDataId, `${where}.statsDataId`),
-        tab: requireString(raw.tab, `${where}.tab`),
-        cat01: requireString(raw.cat01, `${where}.cat01`),
-        cat02: requireString(raw.cat02, `${where}.cat02`),
+        axes,
       };
+      if (raw.cycle !== undefined) {
+        source.cycle = requireEnum(raw.cycle, ['monthly', 'quarterly'] as const, `${where}.cycle`);
+      }
+      return source;
+    }
   }
 }
 
