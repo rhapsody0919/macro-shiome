@@ -41,8 +41,21 @@ export interface TiingoClientOptions {
   fetchImpl?: typeof fetch;
   sleep?: (ms: number) => Promise<void>;
   maxRetries?: number;
-  /** 連続呼び出しの最小間隔 (ms)。無料枠は 1 時間 50 件が上限。 */
+  /**
+   * 連続呼び出しの最小間隔 (ms)。**上限に当てないためではなく、相手に配慮するため** (#237)。
+   *
+   * 無料枠は「1 時間 50 件」という**カウント**の上限で、瞬間のレートではない。
+   * 対象は 36 銘柄なので 1 回の実行では上限に当たらない。間隔を空けても
+   * **消費するのは同じ 36 件**で、所要時間だけが伸びる。
+   */
   intervalMs?: number;
+  /**
+   * 再試行の基準待ち時間 (ms) (#237)。**`intervalMs` とは別に持つ。**
+   *
+   * 429 は 1 時間枠を使い切った状態なので、数秒待っても回復しない。
+   * 呼び出し間隔とは必要な長さが 2 桁違う。
+   */
+  retryBackoffMs?: number;
 }
 
 export class TiingoClient {
@@ -51,6 +64,7 @@ export class TiingoClient {
   private readonly sleep: (ms: number) => Promise<void>;
   private readonly maxRetries: number;
   private readonly intervalMs: number;
+  private readonly retryBackoffMs: number;
   private lastRequestAt = 0;
 
   constructor(options: TiingoClientOptions) {
@@ -58,8 +72,12 @@ export class TiingoClient {
     this.fetchImpl = options.fetchImpl ?? fetch;
     this.sleep = options.sleep ?? ((ms) => new Promise((resolve) => setTimeout(resolve, ms)));
     this.maxRetries = options.maxRetries ?? 2;
-    // 無料枠は 1 時間 50 件。45 件/時間相当まで抑えて安全マージンを持たせる (ADR-0008)。
-    this.intervalMs = options.intervalMs ?? Math.ceil(3_600_000 / 45);
+    // **上限は「1 時間 50 件」というカウント。36 銘柄なら 1 回の実行で当たらない** (#237)。
+    // 以前は 3,600,000 ÷ 45 = 80 秒空けていたが、消費は同じ 36 件で所要時間だけが
+    // 48 分に伸びていた。相手に配慮する最小限の間隔にする。
+    this.intervalMs = options.intervalMs ?? 2_000;
+    // 429 は 1 時間枠の使い切り。呼び出し間隔と同じ長さでは回復しない (#237)。
+    this.retryBackoffMs = options.retryBackoffMs ?? 60_000;
   }
 
   /**
@@ -78,7 +96,7 @@ export class TiingoClient {
    */
   async fetchRecentBars(symbol: string, sinceDate: string): Promise<ParseOhlcvBarsResult> {
     for (let attempt = 0; attempt <= this.maxRetries; attempt++) {
-      if (attempt > 0) await this.sleep(this.intervalMs * 2 ** attempt);
+      if (attempt > 0) await this.sleep(this.retryBackoffMs * 2 ** (attempt - 1));
       await this.waitForSlot();
 
       let response: Response;
