@@ -657,9 +657,15 @@ function symbolOf(indicatorId: string): string | null {
  *
  * 高値は始値・終値・安値のいずれよりも低くてはならず、安値はいずれよりも
  * 高くてはならない (OHLCV の定義から必ず成り立つ)。ネットワーク不要のため
- * `--offline` でも実行する。
+ * `--offline` でもチェック自体は実行する。
+ *
+ * **0 件を失敗にするのは `--offline` でないときだけ。** CI (`pnpm verify --offline`)
+ * は Tiingo を一切呼ばないので、observations が 0 件なのは正常 (まだ取得した
+ * ことが無いだけ)。他の 0 件ガード付き検証 (`verifyGoldClose`/`verifyDrawdownHigh`/
+ * `verifyOhlcvAgainstFinnhub`) はいずれもオンライン限定でこの区別が要らないが、
+ * この項目だけオフラインでも回るため、offline 時は 0 件を許容する必要がある。
  */
-function verifyOhlcvConsistency(): void {
+function verifyOhlcvConsistency(offline: boolean): void {
   console.log('11. OHLCV の内部整合性');
   let checked = 0;
   for (const symbol of TIINGO_SYMBOLS) {
@@ -682,9 +688,13 @@ function verifyOhlcvConsistency(): void {
       }
     }
   }
-  // **0 件も失敗にする** (#102)。TIINGO_API_KEY が未設定のままだと観測が
-  // 1 件も無く、チェック自体が素通りして「検証しているつもり」の緑になる。
   if (checked === 0) {
+    if (offline) {
+      console.log('  0 本を検査 (--offline のため 0 件は許容)');
+      return;
+    }
+    // **0 件も失敗にする** (#102)。TIINGO_API_KEY が未設定のままだと観測が
+    // 1 件も無く、チェック自体が素通りして「検証しているつもり」の緑になる。
     fail('OHLCV の内部整合性', '検査できた観測が 1 つも無い');
     return;
   }
@@ -772,7 +782,7 @@ async function main(): Promise<void> {
   } else {
     console.log('9. FRED の単位の照合 — --units を付けたときだけ回す');
   }
-  verifyOhlcvConsistency();
+  verifyOhlcvConsistency(offline);
   if (offline) {
     console.log('12. Tiingo の終値と Finnhub の照合 — --offline のため飛ばす');
   } else {
