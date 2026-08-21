@@ -11362,12 +11362,12 @@
       "jpMonetaryBase": 5549259,
       "jpWorkingHours": null,
       "jpPublicWorks": null,
-      "jpCpiCoreCore": null,
+      "jpCpiCoreCore": 1.9,
       "jpInventoryRatio": null,
-      "jpTopix": null,
+      "jpTopix": 4003.3,
       "jpConsumptionIndex": null,
-      "jpCpiCore": null,
-      "jpCpi": null,
+      "jpCpiCore": 1.8,
+      "jpCpi": 1.9,
       "jpWatcherCurrent": null,
       "jpBsiLarge": null,
       "jpBsiMid": null,
@@ -11719,7 +11719,7 @@
     },
     {
       "indicatorId": "jp-cpi-core-core",
-      "latestMonth": "2026-06-01"
+      "latestMonth": "2026-07-01"
     },
     {
       "indicatorId": "jp-inventory-ratio",
@@ -11727,7 +11727,7 @@
     },
     {
       "indicatorId": "jp-topix",
-      "latestMonth": "2026-06-01"
+      "latestMonth": "2026-07-01"
     },
     {
       "indicatorId": "jp-consumption-index",
@@ -11735,11 +11735,11 @@
     },
     {
       "indicatorId": "jp-cpi-core",
-      "latestMonth": "2026-06-01"
+      "latestMonth": "2026-07-01"
     },
     {
       "indicatorId": "jp-cpi",
-      "latestMonth": "2026-06-01"
+      "latestMonth": "2026-07-01"
     },
     {
       "indicatorId": "jp-watcher-current",
