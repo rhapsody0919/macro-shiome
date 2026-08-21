@@ -1,8 +1,9 @@
 import { Suspense } from 'react';
-import { status, toFreshness } from '@/lib/data/loader';
+import { changelog, status, toFreshness } from '@/lib/data/loader';
 import { FreshnessBadge } from './freshness-badge';
 import { NavLink } from './nav-link';
 import { PeriodFilter } from './period-filter';
+import { UpdatesLink } from './updates-link';
 
 /**
  * グローバルヘッダー (screens N-1)。
@@ -43,9 +44,14 @@ export function Header() {
           </nav>
         </div>
 
-        <Suspense fallback={null}>
-          <PeriodFilter />
-        </Suspense>
+        <div className="flex items-center gap-1 sm:gap-3">
+          <Suspense fallback={<span className="px-2 py-1.5 text-sm sm:px-3">更新履歴</span>}>
+            <UpdatesLink latestDate={changelog[0]?.date} />
+          </Suspense>
+          <Suspense fallback={null}>
+            <PeriodFilter />
+          </Suspense>
+        </div>
       </div>
 
       <div className="mx-auto max-w-6xl px-6 pb-2">
