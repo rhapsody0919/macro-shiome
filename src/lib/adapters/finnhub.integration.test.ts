@@ -26,10 +26,16 @@ describe.skipIf(!run)('Finnhub (統合)', () => {
   }, 30_000);
 
   it('エラーに API キーを含めない', async () => {
+    // トークンが載っていないことを確認する。公開リポの Actions ログは誰でも読める。
+    //
+    // **`toThrow(expect.not.stringContaining(...))` は使わない** (#232)。toThrow に渡した
+    // matcher は catch した Error インスタンスそのものを受け取るが、StringContaining は
+    // 対象が文字列でないと常に false (= not で反転して常に true) を返すため、実際には
+    // メッセージの中身を一切検証しない (#229 の tiingo.integration.test.ts で実機確認済み)。
+    // `.message` を明示的に検査する toSatisfy を使う。
     const bad = new FinnhubClient({ apiKey: 'invalid-key-for-test' });
-    await expect(bad.fetchPrice('SPY')).rejects.toThrow(
-      // トークンが載っていないことを確認する。公開リポの Actions ログは誰でも読める。
-      expect.not.stringContaining('token='),
+    await expect(bad.fetchPrice('SPY')).rejects.toSatisfy(
+      (error: unknown) => error instanceof Error && !error.message.includes('token='),
     );
   }, 30_000);
 });
