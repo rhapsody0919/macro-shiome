@@ -841,9 +841,13 @@ FRED に対して行ったのと同じ機械的な走査を日本側にも当て
 `unitLabel` の対応を突き合わせる。Percent や Index は日本語の表し方が一意に決まらず、
 対応表を作ると表記ゆれで壊れるため対象にしない。
 
-**FRED は経路によって振る舞いが違う。** `/data/<ID>.txt` はテキストではなく HTML を返し、
-開発マシンからは `fred.stlouisfed.org` に一切到達できない (他 3 ソースは 200)。
-CSV 経路だけが安定している。
+**FRED は経路によって振る舞いが違う。** `/data/<ID>.txt` はテキストではなく HTML を返す
+(単位は系列ページの `series-meta-value-units` から取る)。
+
+**「開発マシンから FRED に到達できない」は誤りだった** (2026-08-21 に訂正)。`curl` の既定
+(HTTP/2) だけが `HTTP/2 stream 1 was not closed cleanly: INTERNAL_ERROR` で落ちており、
+**`node` の `fetch` も `curl --http1.1` も 200 を返す**。`pnpm verify` は `fetch` を使うので
+ローカルで全項目回る。**到達性を curl 1 つで判定しない。**
 
 ### うるう日 (2026-08-20、#206)
 
