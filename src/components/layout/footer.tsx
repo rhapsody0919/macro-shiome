@@ -18,9 +18,12 @@ export function Footer() {
         <p>
           本サイトは指標の提示のみを行い、投資助言ではありません。表示される数値は導出値を含みます。
         </p>
-        <p>
+        <p className="flex flex-wrap gap-x-4">
           <Link href="/terms" className="underline underline-offset-2">
             利用規約・データの出所
+          </Link>
+          <Link href="/updates" className="underline underline-offset-2">
+            更新履歴
           </Link>
         </p>
       </div>

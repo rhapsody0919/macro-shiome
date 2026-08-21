@@ -963,3 +963,16 @@ export interface HighTightFlagView {
   generatedAt: string;
   assets: HighTightFlagAsset[];
 }
+
+/**
+ * 更新履歴の 1 件 (#240)。
+ *
+ * `note` / `explanation` (#208) と同じ「宛先の違い」を適用する。こちらは常に読者向けで、
+ * Issue 番号・コード識別子・評価語・マークダウン装飾を含めない (`changelog.test.ts` で固定)。
+ */
+export interface ChangelogEntry {
+  /** 公開日 (YYYY-MM-DD)。この日付で新しい順に並べる。 */
+  date: string;
+  /** 何が増えた/変わったか。読者が読む 1 文。 */
+  title: string;
+}
