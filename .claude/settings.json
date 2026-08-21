@@ -35,6 +35,15 @@
             "timeout": 120
           }
         ]
+      },
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR/.claude/hooks/no-stray-scripts.sh\"",
+            "statusMessage": "使い捨てスクリプトの残骸チェック"
+          }
+        ]
       }
     ]
   }
