@@ -17,11 +17,13 @@ import japanDailyJson from '../../../data/views/japan-daily.json';
 import economyJson from '../../../data/views/economy.json';
 import drawdownJson from '../../../data/views/drawdown.json';
 import highTightFlagJson from '../../../data/views/high-tight-flag.json';
+import cupWithHandleJson from '../../../data/views/cup-with-handle.json';
 import { sortChangelog } from './changelog';
 import type { DailyPoint } from './daily-series';
 import type {
   BatchStatus,
   ChangelogEntry,
+  CupWithHandleView,
   DrawdownView,
   EconomyView,
   GapReason,
@@ -49,6 +51,7 @@ export const japanDaily = japanDailyJson as unknown as DailyPoint[];
 export const economy = economyJson as unknown as EconomyView;
 export const drawdown = drawdownJson as unknown as DrawdownView;
 export const highTightFlag = highTightFlagJson as unknown as HighTightFlagView;
+export const cupWithHandle = cupWithHandleJson as unknown as CupWithHandleView;
 /** 更新履歴 (#240)。新しい順。 */
 export const changelog = sortChangelog(changelogJson as unknown as ChangelogEntry[]);
 

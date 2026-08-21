@@ -7,6 +7,7 @@
  * 実行: pnpm rebuild:views
  */
 import {
+  buildCupWithHandleView,
   buildDrawdownView,
   buildEconomyView,
   buildHighTightFlagView,
@@ -55,16 +56,19 @@ function main(): void {
       ),
     }),
   );
-  writeView(
-    'high-tight-flag',
-    buildHighTightFlagView({
-      symbols: TIINGO_ASSETS,
-      ohlcvObservations: Object.fromEntries(
-        TIINGO_SYMBOLS.map((symbol) => [symbol, readOhlcvObservations(symbol)]),
-      ),
-      generatedAt: now.toISOString(),
-    }),
-  );
+  {
+    const ohlcvObservations = Object.fromEntries(
+      TIINGO_SYMBOLS.map((symbol) => [symbol, readOhlcvObservations(symbol)]),
+    );
+    writeView(
+      'high-tight-flag',
+      buildHighTightFlagView({ symbols: TIINGO_ASSETS, ohlcvObservations, generatedAt: now.toISOString() }),
+    );
+    writeView(
+      'cup-with-handle',
+      buildCupWithHandleView({ symbols: TIINGO_ASSETS, ohlcvObservations, generatedAt: now.toISOString() }),
+    );
+  }
 
   console.log(`ビューを再生成した (起点 ${start})`);
 }

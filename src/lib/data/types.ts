@@ -976,3 +976,70 @@ export interface ChangelogEntry {
   /** 何が増えた/変わったか。読者が読む 1 文。 */
   title: string;
 }
+
+/**
+ * カップウィズハンドルのカップ区間 (#230)。
+ *
+ * William O'Neil の定義: カップ期間 7〜65 週、深さは直近上昇幅の 1/3 以下が理想、
+ * 1/3〜1/2 まで許容、Dow 理論に基づき最大 2/3。
+ */
+export interface CupWithHandleCup {
+  /** 上昇トレンドの起点 (カップ形成前の安値)。深さを「直近上昇幅」に対する比率で測るための基準。 */
+  advanceStartDate: string;
+  advanceStartPrice: number;
+  /** 左リム (カップ開始点、上昇トレンドの頂点)。 */
+  leftRimDate: string;
+  leftRimPrice: number;
+  /** カップ底 (最安値)。 */
+  cupBottomDate: string;
+  cupBottomPrice: number;
+  /** 右リム (カップ完成、左リム近辺まで回復した高値)。 */
+  rightRimDate: string;
+  rightRimPrice: number;
+  /** 深さ = (左リム − カップ底) ÷ (左リム − 上昇トレンドの起点) × 100 (%)。 */
+  depthPercent: number;
+  /** カップ期間 (週、小数)。左リム→右リム。 */
+  weeks: number;
+}
+
+/**
+ * カップウィズハンドルの検出結果 (#230)。
+ *
+ * William O'Neil の定義: 右リムから 1〜4 週間、カップの上半分に留まる保ち合いがハンドル。
+ */
+export interface CupWithHandleDetection {
+  cup: CupWithHandleCup;
+  /** ハンドル開始日 (右リムの翌観測日)。 */
+  handleStart: string;
+  /** ハンドル終了日 (= 基準日、通常は最新観測日)。 */
+  handleEnd: string;
+  /** ハンドル期間 (週、小数)。 */
+  handleWeeks: number;
+  /** ハンドル中の最安値がカップの上半分 (中間点より上) に留まっているか。 */
+  handleInUpperHalf: boolean;
+  /** カップ形成 (左リム→カップ底) の平均出来高がリバウンド (カップ底→右リム) より多いか。**参考情報** (#230)。 */
+  volumeDecreasedDuringCup: boolean;
+  /** ハンドル期間の平均出来高がカップ全体より少ないか。**参考情報**。 */
+  handleVolumeLight: boolean;
+}
+
+/** カップウィズハンドルチャートの 1 銘柄 (#230)。 */
+export interface CupWithHandleAsset {
+  /** ティッカー。指標マスタを経由しないため symbol を直接持つ (#229 と同じ設計、ADR-0008)。 */
+  symbol: string;
+  name: string;
+  /** 検出されていなければ null (#230: 0 件は正常な状態)。 */
+  detection: CupWithHandleDetection | null;
+}
+
+/**
+ * カップウィズハンドルのビュー全体 (#230)。
+ *
+ * `assets` は対象 36 銘柄すべてを含む (検出の有無に関わらず)。ビューが存在すれば
+ * 「検出を試みて 0 件だった」ことを表せるため、取得・計算の失敗とは区別できる
+ * (#102 / #131 / #231 と同じ「緑だが歯抜け」を避ける設計)。
+ */
+export interface CupWithHandleView {
+  generatedAt: string;
+  assets: CupWithHandleAsset[];
+}

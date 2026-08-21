@@ -2,8 +2,9 @@ import { Suspense, type ReactNode } from 'react';
 import { MacroChart, type SeriesDef } from './macro-chart';
 import { DrawdownChart } from './drawdown-chart';
 import { HighTightFlagList } from './high-tight-flag-list';
+import { CupWithHandleList } from './cup-with-handle-list';
 import { DRAWDOWN_PALETTE } from '@/lib/colors';
-import { drawdown, highTightFlag } from '@/lib/data/loader';
+import { cupWithHandle, drawdown, highTightFlag } from '@/lib/data/loader';
 import { MonthlyChart, type MonthlySeriesDef } from './monthly-chart';
 import { Badges } from './badges';
 import { IndicatorExplanations } from './indicator-explanation';
@@ -89,7 +90,9 @@ export type QuestionChartDef<K extends string> =
    * High Tight Flag の検出結果 (#231)。時系列チャートではなくリスト表示なので
    * `series` を持たない。
    */
-  | (ChartBase<K> & { frequency: 'daily'; highTightFlag: true });
+  | (ChartBase<K> & { frequency: 'daily'; highTightFlag: true })
+  /** カップウィズハンドルの検出結果 (#230)。High Tight Flag と同じくリスト表示。 */
+  | (ChartBase<K> & { frequency: 'daily'; cupWithHandle: true });
 
 /**
  * 景気サイクルの分類を指標マスタから引く。
@@ -181,6 +184,15 @@ export function QuestionSections<K extends string>({
                   title={chart.title}
                   subtitle={chart.subtitle}
                   assets={highTightFlag.assets}
+                  notes={chart.notes}
+                  explanation={<IndicatorExplanations ids={explainedIds(chart)} />}
+                  badges={<Badges frequency="daily" cyclePosition={cycleOf(chart)} />}
+                />
+              ) : 'cupWithHandle' in chart ? (
+                <CupWithHandleList
+                  title={chart.title}
+                  subtitle={chart.subtitle}
+                  assets={cupWithHandle.assets}
                   notes={chart.notes}
                   explanation={<IndicatorExplanations ids={explainedIds(chart)} />}
                   badges={<Badges frequency="daily" cyclePosition={cycleOf(chart)} />}

@@ -32,6 +32,7 @@ import { fetchEstatIndicator } from '../src/lib/adapters/estat-dashboard';
 import { EstatClient, readEstatAppIdFromEnv } from '../src/lib/adapters/estat-api';
 import { DAILY_VIEWS } from '../src/lib/data/daily-series';
 import {
+  buildCupWithHandleView,
   buildDrawdownView,
   buildEconomyView,
   buildHighTightFlagView,
@@ -357,17 +358,21 @@ async function main(): Promise<void> {
       ),
     }),
   );
-  // High Tight Flag (#231)。指標マスタを経由しない (#229 と同じ理由、ADR-0008)。
-  writeView(
-    'high-tight-flag',
-    buildHighTightFlagView({
-      symbols: TIINGO_ASSETS,
-      ohlcvObservations: Object.fromEntries(
-        TIINGO_SYMBOLS.map((symbol) => [symbol, readOhlcvObservations(symbol)]),
-      ),
-      generatedAt: now.toISOString(),
-    }),
-  );
+  // パターン検出 (#230 #231)。指標マスタを経由しない (#229 と同じ理由、ADR-0008)。
+  // OHLCV は 2 つのビューで共通のため 1 回だけ読む。
+  {
+    const ohlcvObservations = Object.fromEntries(
+      TIINGO_SYMBOLS.map((symbol) => [symbol, readOhlcvObservations(symbol)]),
+    );
+    writeView(
+      'high-tight-flag',
+      buildHighTightFlagView({ symbols: TIINGO_ASSETS, ohlcvObservations, generatedAt: now.toISOString() }),
+    );
+    writeView(
+      'cup-with-handle',
+      buildCupWithHandleView({ symbols: TIINGO_ASSETS, ohlcvObservations, generatedAt: now.toISOString() }),
+    );
+  }
 
   const succeeded = failures.length === 0 && issues.length === 0;
   writeStatus({ now, succeeded, recentGaps: allGaps });

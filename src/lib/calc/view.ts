@@ -8,6 +8,8 @@ import type { Observations } from '../adapters/fred';
 import { resolveTargetYield, resolveTargetYieldEntry } from '../data/indicators';
 import type {
   AppConfig,
+  CupWithHandleAsset,
+  CupWithHandleView,
   DrawdownAsset,
   DrawdownView,
   HighTightFlagAsset,
@@ -42,6 +44,7 @@ import {
 } from './derived';
 import { fridaysBetween, sameDayLastYear, valueAsOf, valueOn, weekdaysBetween } from './weeks';
 import { detectHighTightFlag, toSortedBars } from './high-tight-flag';
+import { detectCupWithHandle } from './cup-with-handle';
 import { roundViewNumbers } from './round';
 import { DAILY_SERIES, type DailyKey, type DailyPoint, type DailyViewName } from '../data/daily-series';
 import { latestMonthWithValue, monthsBetween, valueForMonth, yearAgo } from './months';
@@ -669,6 +672,22 @@ export function buildHighTightFlagView(options: {
   const assets: HighTightFlagAsset[] = symbols.map(({ symbol, name }) => {
     const bars = toSortedBars(ohlcvObservations[symbol] ?? {});
     return { symbol, name, detection: detectHighTightFlag(bars) };
+  });
+  return roundViewNumbers({ generatedAt, assets });
+}
+
+/**
+ * カップウィズハンドルのビュー (#230)。`buildHighTightFlagView` (#231) と同じ設計。
+ */
+export function buildCupWithHandleView(options: {
+  symbols: ReadonlyArray<{ symbol: string; name: string }>;
+  ohlcvObservations: Readonly<Record<string, Readonly<Record<string, OhlcvBar>>>>;
+  generatedAt: string;
+}): CupWithHandleView {
+  const { symbols, ohlcvObservations, generatedAt } = options;
+  const assets: CupWithHandleAsset[] = symbols.map(({ symbol, name }) => {
+    const bars = toSortedBars(ohlcvObservations[symbol] ?? {});
+    return { symbol, name, detection: detectCupWithHandle(bars) };
   });
   return roundViewNumbers({ generatedAt, assets });
 }

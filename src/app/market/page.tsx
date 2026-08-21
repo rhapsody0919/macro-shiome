@@ -650,6 +650,35 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
     ],
   },
   {
+    question: 'drawdown',
+    frequency: 'daily',
+    primaryIndicator: 'etf-spy',
+    cupWithHandle: true,
+    title: 'カップウィズハンドル',
+    subtitle: '上昇 → 1/3〜2/3 の押し目 (7〜65 週) → 右肩の回復 → 1〜4 週の保ち合いを形成している銘柄',
+    notes: [
+      <span key="def">
+        <strong>William O&apos;Neil の定義。</strong>
+        「カップ」は直近上昇幅の 1/3 以下の押し目が理想 (1/3〜1/2 まで許容、Dow 理論に基づき
+        最大 2/3)、期間は 7〜65 週。「ハンドル」は右肩 (カップ完成) から 1〜4 週間、カップの
+        上半分に留まる保ち合い。
+      </span>,
+      <span key="shape">
+        <strong>「U 字型」の形状条件は判定に含めていない。</strong>
+        一次情報は定性的にしか説明しておらず、定量化する明確な基準が見当たらないため、
+        恣意的な閾値を追加で作らず、深さ・期間・ハンドルの条件だけで判定している。
+      </span>,
+      <span key="rare">
+        <strong>極めて稀なパターン。</strong>
+        該当銘柄が無い状態が続くのが通常で、異常ではない。
+      </span>,
+      <span key="source">
+        出所は Tiingo の日足 OHLCV (調整済み価格)。取得を始めたばかりのため、
+        カップの判定に必要な最短 7 週間分のデータが蓄積されるまでは検出されない。
+      </span>,
+    ],
+  },
+  {
     question: 'risk',
     frequency: 'daily',
     primaryIndicator: 'etf-gld',
