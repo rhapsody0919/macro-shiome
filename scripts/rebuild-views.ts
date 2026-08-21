@@ -9,6 +9,7 @@
 import {
   buildDrawdownView,
   buildEconomyView,
+  buildHighTightFlagView,
   buildMacroView,
   buildDailyView,
   buildRevisionSeries,
@@ -17,8 +18,9 @@ import {
 } from '../src/lib/calc/view';
 import { appConfig, indicators } from '../src/lib/data/indicators';
 import { DRAWDOWN_ASSETS } from '../src/lib/data/drawdown-assets';
+import { TIINGO_ASSETS, TIINGO_SYMBOLS } from '../src/lib/data/tiingo-assets';
 import drawdownSeed from '../data/seed/stock-bot-drawdown.json';
-import { readObservations, writeView } from '../src/lib/data/store';
+import { readObservations, readOhlcvObservations, writeView } from '../src/lib/data/store';
 import { DAILY_VIEWS } from '../src/lib/data/daily-series';
 
 const VIEW_START_YEARS = 10;
@@ -51,6 +53,16 @@ function main(): void {
       names: Object.fromEntries(
         Object.entries(indicators).map(([id, indicator]) => [id, indicator.name]),
       ),
+    }),
+  );
+  writeView(
+    'high-tight-flag',
+    buildHighTightFlagView({
+      symbols: TIINGO_ASSETS,
+      ohlcvObservations: Object.fromEntries(
+        TIINGO_SYMBOLS.map((symbol) => [symbol, readOhlcvObservations(symbol)]),
+      ),
+      generatedAt: now.toISOString(),
     }),
   );
 

@@ -1,8 +1,9 @@
 import { Suspense, type ReactNode } from 'react';
 import { MacroChart, type SeriesDef } from './macro-chart';
 import { DrawdownChart } from './drawdown-chart';
+import { HighTightFlagList } from './high-tight-flag-list';
 import { DRAWDOWN_PALETTE } from '@/lib/colors';
-import { drawdown } from '@/lib/data/loader';
+import { drawdown, highTightFlag } from '@/lib/data/loader';
 import { MonthlyChart, type MonthlySeriesDef } from './monthly-chart';
 import { Badges } from './badges';
 import { IndicatorExplanations } from './indicator-explanation';
@@ -83,7 +84,12 @@ export type QuestionChartDef<K extends string> =
    * 最高値からの下落率 (#128)。系列は指標マスタではなくグループで決まるため、
    * `series` の代わりに `drawdownGroup` を持つ。
    */
-  | (ChartBase<K> & { frequency: 'weekly'; drawdownGroup: string });
+  | (ChartBase<K> & { frequency: 'weekly'; drawdownGroup: string })
+  /**
+   * High Tight Flag の検出結果 (#231)。時系列チャートではなくリスト表示なので
+   * `series` を持たない。
+   */
+  | (ChartBase<K> & { frequency: 'daily'; highTightFlag: true });
 
 /**
  * 景気サイクルの分類を指標マスタから引く。
@@ -166,6 +172,15 @@ export function QuestionSections<K extends string>({
                   colors={paletteFor(
                     drawdown.assets.filter((asset) => asset.group === chart.drawdownGroup),
                   )}
+                  notes={chart.notes}
+                  explanation={<IndicatorExplanations ids={explainedIds(chart)} />}
+                  badges={<Badges frequency="daily" cyclePosition={cycleOf(chart)} />}
+                />
+              ) : 'highTightFlag' in chart ? (
+                <HighTightFlagList
+                  title={chart.title}
+                  subtitle={chart.subtitle}
+                  assets={highTightFlag.assets}
                   notes={chart.notes}
                   explanation={<IndicatorExplanations ids={explainedIds(chart)} />}
                   badges={<Badges frequency="daily" cyclePosition={cycleOf(chart)} />}
