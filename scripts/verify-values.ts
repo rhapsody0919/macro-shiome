@@ -21,6 +21,7 @@ import { readObservations } from '../src/lib/data/store';
 import { checkRange } from '../src/lib/validation/checks';
 import { TreasuryClient } from '../src/lib/adapters/treasury';
 import { fetchEtfHistory } from '../src/lib/adapters/stockanalysis';
+import { FinnhubClient, readFinnhubApiKeyFromEnv } from '../src/lib/adapters/finnhub';
 import { fetchEstatIndicator } from '../src/lib/adapters/estat-dashboard';
 import { EstatClient, readEstatAppIdFromEnv } from '../src/lib/adapters/estat-api';
 import type { Observations } from '../src/lib/adapters/fred';
@@ -556,6 +557,100 @@ async function verifyFredUnits(): Promise<void> {
   console.log(`  FRED ${compared} 系列の単位を照合した`);
 }
 
+/**
+ * 10. 積み上げた最高値が実際の高値から離れすぎていないか (#224)。
+ *
+ * **最高値は終値からしか積み上げていない。** #166 で日次にしたが、日次でも終値しか
+ * 見ていないので**日中高値は取れない**。提供元の 52 週高値は日中を含むため、
+ * **積み上げ値は必ずこれ以下**になる。問題は差の大きさで、開きすぎていれば
+ * 観測を長期間取りこぼしている (バッチが止まっていた等)。
+ *
+ * **上振れは失敗にする。** 積み上げ値が 52 週高値を超えるのは、52 週より前の高値を
+ * 持っている場合 (正常) か、汚染された値を掴んだ場合 (#131 の VGT)。
+ * seed 起点は 2024-11-28 で 52 週より長いため、超過そのものは異常ではない。
+ */
+async function verifyDrawdownHigh(): Promise<void> {
+  console.log('10. 最高値と 52 週高値の照合');
+  const view = readView('drawdown') as {
+    assets: Array<{ id: string; name: string; high: number | null }>;
+  } | null;
+  if (view === null) return;
+
+  let client: FinnhubClient;
+  try {
+    client = new FinnhubClient({ apiKey: readFinnhubApiKeyFromEnv() });
+  } catch (error) {
+    // キー未設定を飛ばすと「検証しているつもり」で通ってしまう (#102)。
+    fail('最高値と 52 週高値の照合', `Finnhub を照合できない (${String(error)})`);
+    return;
+  }
+
+  const gaps: Array<{ id: string; gap: number }> = [];
+  for (const asset of view.assets) {
+    if (asset.high === null) continue;
+    const symbol = symbolOf(asset.id);
+    if (symbol === null) {
+      fail('最高値と 52 週高値の照合', `${asset.id}: 指標マスタに symbol が無い`);
+      continue;
+    }
+    try {
+      const { high } = await client.fetch52WeekHigh(symbol);
+      // 積み上げ値が 52 週高値をどれだけ下回っているか (%)。
+      gaps.push({ id: asset.id, gap: ((high - asset.high) / high) * 100 });
+    } catch (error) {
+      fail('最高値と 52 週高値の照合', `${asset.id}: 取得に失敗 (${String(error)})`);
+    }
+  }
+
+  if (gaps.length === 0) {
+    fail('最高値と 52 週高値の照合', '照合できた銘柄が 1 つも無い');
+    return;
+  }
+  const below = gaps.filter((g) => g.gap > 0);
+  const worst = [...gaps].sort((a, b) => b.gap - a.gap)[0];
+  console.log(
+    `  ${gaps.length} 本を照合。52 週高値を下回るのは ${below.length} 本、最大 ${worst.gap.toFixed(2)}% (${worst.id})`,
+  );
+
+  for (const { id, gap } of gaps) {
+    if (gap > MAX_HIGH_GAP_PERCENT) {
+      fail(
+        '最高値と 52 週高値の照合',
+        `${id}: 積み上げた最高値が 52 週高値より ${gap.toFixed(2)}% 低い`,
+      );
+    }
+  }
+}
+
+/**
+ * 積み上げた最高値が 52 週高値をどこまで下回ってよいか (#224)。
+ *
+ * **実測で決めた。** 36 本を照合したときの開きは次のとおり。
+ *
+ * | 銘柄 | 開き |
+ * | --- | --- |
+ * | COPX | **4.29%** (最大) |
+ * | GLD | 2.71% |
+ * | VGT | 2.39% |
+ * | SPY | 0.19% |
+ * | (6 本) | **マイナス** = 52 週より前の高値を持っている (正常) |
+ *
+ * 終値ベースなので日中高値には届かず、差はゼロにならない。さらに **seed の履歴は
+ * 金曜だけ**なので、金曜以外に付けた高値は元から拾えない (#166 で日次にしたのは
+ * 2026-08-19 以降の観測だけ)。COPX の 4.29% はこれで説明がつく。
+ *
+ * **10% は実測の最大 (4.29%) の 2 倍以上**。ここを超えるのは観測を長期間
+ * 取りこぼしている場合 (バッチが止まった等) で、そのとき下落率は実際より小さく出る。
+ */
+const MAX_HIGH_GAP_PERCENT = 10;
+
+/** 下落率の資産 ID から Finnhub の symbol を引く。 */
+function symbolOf(indicatorId: string): string | null {
+  const indicator = indicators[indicatorId];
+  if (indicator === undefined || indicator.source.adapter !== 'finnhub') return null;
+  return indicator.source.symbol;
+}
+
 async function main(): Promise<void> {
   const offline = process.argv.includes('--offline');
   const today = new Date().toISOString().slice(0, 10);
@@ -575,6 +670,11 @@ async function main(): Promise<void> {
     console.log('8. ゴールドの終値と日付の照合 — --offline のため飛ばす');
   } else {
     await verifyGoldClose();
+  }
+  if (offline) {
+    console.log('10. 最高値と 52 週高値の照合 — --offline のため飛ばす');
+  } else {
+    await verifyDrawdownHigh();
   }
   if (process.argv.includes('--units')) {
     await verifyFredUnits();

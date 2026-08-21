@@ -48,9 +48,10 @@ jobs:
         id: verify
         if: always()
         # FRED はキー無しの CSV 経路で照合するのでキーを渡さない。
-        # e-Stat 統計 API だけは**キー無しの経路が存在しない** (#160)。
+        # e-Stat 統計 API (#160) と Finnhub (#224) は**キー無しの経路が存在しない**。
         env:
           ESTAT_APP_ID: ${{ secrets.ESTAT_APP_ID }}
+          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
         run: pnpm verify
 
       # 取得が一部失敗しても、取れた分はコミットする (次回の差分を小さくするため)。
