@@ -17,7 +17,8 @@
  */
 import { readFileSync, existsSync } from 'node:fs';
 import { indicators } from '../src/lib/data/indicators';
-import { readObservations } from '../src/lib/data/store';
+import { readObservations, readOhlcvObservations } from '../src/lib/data/store';
+import { TIINGO_SYMBOLS } from '../src/lib/data/tiingo-assets';
 import { checkRange } from '../src/lib/validation/checks';
 import { TreasuryClient } from '../src/lib/adapters/treasury';
 import { fetchEtfHistory } from '../src/lib/adapters/stockanalysis';
@@ -651,6 +652,106 @@ function symbolOf(indicatorId: string): string | null {
   return indicator.source.symbol;
 }
 
+/**
+ * 11. OHLCV の内部整合性 (#229)。
+ *
+ * 高値は始値・終値・安値のいずれよりも低くてはならず、安値はいずれよりも
+ * 高くてはならない (OHLCV の定義から必ず成り立つ)。ネットワーク不要のため
+ * `--offline` でもチェック自体は実行する。
+ *
+ * **0 件を失敗にするのは `--offline` でないときだけ。** CI (`pnpm verify --offline`)
+ * は Tiingo を一切呼ばないので、observations が 0 件なのは正常 (まだ取得した
+ * ことが無いだけ)。他の 0 件ガード付き検証 (`verifyGoldClose`/`verifyDrawdownHigh`/
+ * `verifyOhlcvAgainstFinnhub`) はいずれもオンライン限定でこの区別が要らないが、
+ * この項目だけオフラインでも回るため、offline 時は 0 件を許容する必要がある。
+ */
+function verifyOhlcvConsistency(offline: boolean): void {
+  console.log('11. OHLCV の内部整合性');
+  let checked = 0;
+  for (const symbol of TIINGO_SYMBOLS) {
+    const observations = readOhlcvObservations(symbol);
+    for (const [date, bar] of Object.entries(observations)) {
+      checked += 1;
+      const upperBound = Math.max(bar.open, bar.close, bar.low);
+      const lowerBound = Math.min(bar.open, bar.close, bar.high);
+      if (bar.high < upperBound - 1e-9) {
+        fail(
+          'OHLCV の内部整合性',
+          `${symbol} @${date}: high (${bar.high}) が open/close/low の最大 (${upperBound}) を下回る`,
+        );
+      }
+      if (bar.low > lowerBound + 1e-9) {
+        fail(
+          'OHLCV の内部整合性',
+          `${symbol} @${date}: low (${bar.low}) が open/close/high の最小 (${lowerBound}) を上回る`,
+        );
+      }
+    }
+  }
+  if (checked === 0) {
+    if (offline) {
+      console.log('  0 本を検査 (--offline のため 0 件は許容)');
+      return;
+    }
+    // **0 件も失敗にする** (#102)。TIINGO_API_KEY が未設定のままだと観測が
+    // 1 件も無く、チェック自体が素通りして「検証しているつもり」の緑になる。
+    fail('OHLCV の内部整合性', '検査できた観測が 1 つも無い');
+    return;
+  }
+  console.log(`  ${checked} 本を検査`);
+}
+
+/**
+ * 12. Tiingo の終値を Finnhub の現在値と照合する (#229)。
+ *
+ * **実装と違う経路** (#113)。Tiingo (調整済み終値) と Finnhub (現在値) は
+ * プロバイダも値の定義も異なるため完全一致はしない。直近の観測日どうしを
+ * 突き合わせ、大きく乖離していないかだけを確認する。
+ *
+ * **閾値は暫定値。** Tiingo の API キーをまだ持っていないため実測できていない
+ * (#229 時点)。バッチが実際に走り値が溜まった後、#224 (`MAX_HIGH_GAP_PERCENT`)
+ * と同じように実測して見直す。
+ */
+async function verifyOhlcvAgainstFinnhub(): Promise<void> {
+  console.log('12. Tiingo の終値と Finnhub の照合');
+  let client: FinnhubClient;
+  try {
+    client = new FinnhubClient({ apiKey: readFinnhubApiKeyFromEnv() });
+  } catch (error) {
+    fail('Tiingo の終値と Finnhub の照合', `Finnhub を照合できない (${String(error)})`);
+    return;
+  }
+
+  let checked = 0;
+  for (const symbol of TIINGO_SYMBOLS) {
+    const observations = readOhlcvObservations(symbol);
+    const latestDate = Object.keys(observations).sort().at(-1);
+    if (latestDate === undefined) continue;
+    try {
+      const price = await client.fetchPrice(symbol);
+      const close = observations[latestDate].close;
+      const gapPercent = (Math.abs(close - price) / price) * 100;
+      if (gapPercent > MAX_TIINGO_FINNHUB_GAP_PERCENT) {
+        fail(
+          'Tiingo の終値と Finnhub の照合',
+          `${symbol} @${latestDate}: Tiingo ${close} vs Finnhub ${price} (${gapPercent.toFixed(2)}% 乖離)`,
+        );
+      }
+      checked += 1;
+    } catch (error) {
+      fail('Tiingo の終値と Finnhub の照合', `${symbol}: Finnhub の取得に失敗 (${String(error)})`);
+    }
+  }
+  if (checked === 0) {
+    fail('Tiingo の終値と Finnhub の照合', '照合できた銘柄が 1 つも無い');
+    return;
+  }
+  console.log(`  ${checked} 本を照合`);
+}
+
+/** Tiingo と Finnhub の許容乖離 (%)。暫定値、実測後に見直す (#229)。 */
+const MAX_TIINGO_FINNHUB_GAP_PERCENT = 10;
+
 async function main(): Promise<void> {
   const offline = process.argv.includes('--offline');
   const today = new Date().toISOString().slice(0, 10);
@@ -680,6 +781,12 @@ async function main(): Promise<void> {
     await verifyFredUnits();
   } else {
     console.log('9. FRED の単位の照合 — --units を付けたときだけ回す');
+  }
+  verifyOhlcvConsistency(offline);
+  if (offline) {
+    console.log('12. Tiingo の終値と Finnhub の照合 — --offline のため飛ばす');
+  } else {
+    await verifyOhlcvAgainstFinnhub();
   }
 
   console.log('');

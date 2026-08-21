@@ -234,6 +234,37 @@ export interface ObservationFile {
 }
 
 /**
+ * 日足の 1 本 (OHLCV、#229)。
+ *
+ * **調整済み価格 (Tiingo の `adj*`) を保存する。** 生の価格は株式分割で不連続に
+ * ジャンプし、カップウィズハンドル・ブルフラッグ (#230 #231) の深さ・期間の判定を
+ * 誤らせる。下落率 (#128) は生の終値 (Finnhub) を使っており別物 (ADR-0008)。
+ */
+export interface OhlcvBar {
+  open: number;
+  high: number;
+  low: number;
+  close: number;
+  volume: number;
+}
+
+/**
+ * OHLCV 観測値ファイル (#229)。
+ *
+ * `ObservationFile` (スカラー 1 値) とは別の型にする。指標マスタ (ADR-0004) は
+ * 1 指標 = 1 系列のスカラー値を前提にしており、1 日に 5 つの値を持つ OHLCV は
+ * 質的に違うデータのため、指標マスタには入れない (ADR-0008)。
+ */
+export interface OhlcvObservationFile {
+  /** ETF のティッカー (指標マスタの ID ではない)。 */
+  symbol: string;
+  /** ISO 8601。 */
+  updatedAt: string;
+  /** "YYYY-MM-DD" → 日足 1 本。 */
+  observations: Record<string, OhlcvBar>;
+}
+
+/**
  * 欠測の理由。画面で区別して表示する (screens 共通の状態)。
  *
  * **「異常なもの」と「正常なもの」を混ぜない**。取得失敗だけが調査対象で、

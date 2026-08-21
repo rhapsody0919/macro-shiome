@@ -26,6 +26,8 @@ import { fetchEtfField, lastClosedTradingDay } from '../src/lib/adapters/stockan
 import { TreasuryClient } from '../src/lib/adapters/treasury';
 import type { IndicatorSource } from '../src/lib/data/types';
 import { FinnhubClient, readFinnhubApiKeyFromEnv } from '../src/lib/adapters/finnhub';
+import { TiingoClient, readTiingoApiKeyFromEnv } from '../src/lib/adapters/tiingo';
+import { TIINGO_SYMBOLS } from '../src/lib/data/tiingo-assets';
 import { fetchEstatIndicator } from '../src/lib/adapters/estat-dashboard';
 import { EstatClient, readEstatAppIdFromEnv } from '../src/lib/adapters/estat-api';
 import { DAILY_VIEWS } from '../src/lib/data/daily-series';
@@ -43,8 +45,10 @@ import { DRAWDOWN_ASSETS } from '../src/lib/data/drawdown-assets';
 import drawdownSeed from '../data/seed/stock-bot-drawdown.json';
 import {
   readObservations,
+  readOhlcvObservations,
   recordGaps,
   upsertObservations,
+  upsertOhlcvObservations,
   writeStatus,
   writeView,
 } from '../src/lib/data/store';
@@ -249,6 +253,43 @@ async function main(): Promise<void> {
         // appId 未設定はここで 1 回だけ報告する。
         failures.push(`estat-api: ${message(error)}`);
       }
+    }
+  }
+
+  // --- 3f. Tiingo (ETF の日足 OHLCV、#229、ADR-0008) ---
+  // 指標マスタを経由しない (OHLCV は 1 指標 = 1 系列のスカラー値を前提にした
+  // 指標マスタと型が合わないため、ADR-0008)。36 銘柄を無料枠 (1 時間 50 件)
+  // の間隔で取得すると約 48 分かかるため、他の独立した取得の後・検証の前に置く
+  // (Treasury/e-Stat を巻き添えで遅延させないため)。
+  {
+    const fallbackSinceDate = new Date(now.getTime() - 10 * 24 * 60 * 60 * 1000)
+      .toISOString()
+      .slice(0, 10);
+    try {
+      const tiingo = new TiingoClient({ apiKey: readTiingoApiKeyFromEnv() });
+      let skippedCount = 0;
+      for (const symbol of TIINGO_SYMBOLS) {
+        try {
+          // **既存の最新観測日から取り直す。** 固定 10 日前だと、10 日を超える
+          // 障害 (キー失効など) から復旧しても、それ以前の欠測が永久に埋まらない。
+          const existingDates = Object.keys(readOhlcvObservations(symbol)).sort();
+          const sinceDate = existingDates.at(-1) ?? fallbackSinceDate;
+          const { bars, skipped } = await tiingo.fetchRecentBars(symbol, sinceDate);
+          const observations = Object.fromEntries(bars.map(({ date, bar }) => [date, bar]));
+          upsertOhlcvObservations(symbol, observations, now);
+          for (const { date, reason } of skipped) {
+            failures.push(`tiingo ${symbol} @${date}: ${reason}`);
+            skippedCount += 1;
+          }
+        } catch (error) {
+          failures.push(`tiingo ${symbol}: ${message(error)}`);
+        }
+      }
+      const skippedNote = skippedCount > 0 ? ` (${skippedCount} 日分をスキップ)` : '';
+      console.log(`  tiingo: ${TIINGO_SYMBOLS.length} 銘柄${skippedNote}`);
+    } catch (error) {
+      // キー未設定などで 1 件も取れない場合。
+      failures.push(`tiingo: ${message(error)}`);
     }
   }
 

@@ -7,7 +7,7 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import type { Observations } from '../adapters/fred';
-import type { BatchStatus, Gap, ObservationFile } from './types';
+import type { BatchStatus, Gap, ObservationFile, OhlcvBar, OhlcvObservationFile } from './types';
 
 /**
  * データディレクトリ。既定はリポジトリ直下の `data/`。
@@ -38,6 +38,58 @@ function readJson<T>(path: string, fallback: T): T {
   }
 }
 
+/**
+ * 日付キーのレコードを UPSERT する共通ロジック。
+ *
+ * `upsertObservations` (スカラー値) と `upsertOhlcvObservations` (OHLCV バー、
+ * #229) はどちらも「既存値とマージ → 日付順ソート → 値が変わっていなければ
+ * 書かない (#140) → 書き込み」という手順が同じで、違うのは値の型と等価判定
+ * だけだったため、ここに一般化した。
+ */
+function upsertKeyedRecord<T>(
+  path: string,
+  existing: Record<string, T>,
+  incoming: Record<string, T>,
+  isEqualValue: (a: T, b: T) => boolean,
+  buildFile: (sorted: Record<string, T>) => unknown,
+): Record<string, T> {
+  const merged = { ...existing, ...incoming };
+
+  // 日付順に並べ替えてから書く。Git の差分が読みやすくなる。
+  const sorted: Record<string, T> = {};
+  for (const date of Object.keys(merged).sort()) {
+    sorted[date] = merged[date];
+  }
+
+  // **値が変わっていなければ書かない** (#140)。
+  //
+  // 日次バッチ (#136) では、値が動かない日でも全指標を取り直す。`updatedAt` を
+  // 無条件に現在時刻で書き直していたため、値が 1 つも変わらなくても 89 ファイルが
+  // 差分になり、毎日 commit と Cloudflare のビルドが走っていた (実測 90 files changed)。
+  //
+  // ファイル自体を触らないので、既存ファイルが無く観測も空なら作らない。
+  // 空のファイルは情報を持たず、「取得できていない」と「取得したが空」の区別は
+  // `gaps.json` が担う。
+  if (isSameKeyedRecord(existing, sorted, isEqualValue)) return sorted;
+
+  writeJson(path, buildFile(sorted));
+  return sorted;
+}
+
+/** レコードが同一か。キーの順序には依存させない (並べ替えだけの差分で書き直さないため)。 */
+function isSameKeyedRecord<T>(
+  a: Record<string, T>,
+  b: Record<string, T>,
+  isEqualValue: (x: T, y: T) => boolean,
+): boolean {
+  const keys = Object.keys(a);
+  if (keys.length !== Object.keys(b).length) return false;
+  return keys.every((key) => {
+    const valueB = b[key];
+    return valueB !== undefined && isEqualValue(a[key], valueB);
+  });
+}
+
 function observationPath(indicatorId: string): string {
   return join(dataDir(), 'observations', `${indicatorId}.json`);
 }
@@ -59,40 +111,60 @@ export function upsertObservations(
   incoming: Observations,
   now: Date,
 ): Observations {
-  const existing = readObservations(indicatorId);
-  const merged = { ...existing, ...incoming };
-
-  // 日付順に並べ替えてから書く。Git の差分が読みやすくなる。
-  const sorted: Observations = {};
-  for (const date of Object.keys(merged).sort()) {
-    sorted[date] = merged[date];
-  }
-
-  // **値が変わっていなければ書かない** (#140)。
-  //
-  // 日次バッチ (#136) では、値が動かない日でも全指標を取り直す。`updatedAt` を
-  // 無条件に現在時刻で書き直していたため、値が 1 つも変わらなくても 89 ファイルが
-  // 差分になり、毎日 commit と Cloudflare のビルドが走っていた (実測 90 files changed)。
-  //
-  // ファイル自体を触らないので、既存ファイルが無く観測も空なら作らない。
-  // 空のファイルは情報を持たず、「取得できていない」と「取得したが空」の区別は
-  // `gaps.json` が担う。
-  if (isSameObservations(existing, sorted)) return sorted;
-
-  const file: ObservationFile = {
-    indicatorId,
-    updatedAt: now.toISOString(),
-    observations: sorted,
-  };
-  writeJson(observationPath(indicatorId), file);
-  return sorted;
+  return upsertKeyedRecord(
+    observationPath(indicatorId),
+    readObservations(indicatorId),
+    incoming,
+    Object.is,
+    (sorted): ObservationFile => ({
+      indicatorId,
+      updatedAt: now.toISOString(),
+      observations: sorted,
+    }),
+  );
 }
 
-/** 観測が同一か。キーの順序には依存させない (並べ替えだけの差分で書き直さないため)。 */
-function isSameObservations(a: Observations, b: Observations): boolean {
-  const keys = Object.keys(a);
-  if (keys.length !== Object.keys(b).length) return false;
-  return keys.every((date) => Object.is(a[date], b[date]));
+function ohlcvObservationPath(symbol: string): string {
+  return join(dataDir(), 'observations', `ohlcv-${symbol.toLowerCase()}.json`);
+}
+
+export function readOhlcvObservations(symbol: string): Record<string, OhlcvBar> {
+  const file = readJson<OhlcvObservationFile | null>(ohlcvObservationPath(symbol), null);
+  return file?.observations ?? {};
+}
+
+/** OHLCV バーが同一か。5 フィールドすべてを比較する。 */
+function isSameOhlcvBar(a: OhlcvBar, b: OhlcvBar): boolean {
+  return (
+    Object.is(a.open, b.open) &&
+    Object.is(a.high, b.high) &&
+    Object.is(a.low, b.low) &&
+    Object.is(a.close, b.close) &&
+    Object.is(a.volume, b.volume)
+  );
+}
+
+/**
+ * OHLCV 観測値を UPSERT する (#229)。`upsertObservations` の OHLCV 版。
+ *
+ * 日付をキーにする冪等性・「値が変わっていなければ書かない」(#140) の理由は同じ。
+ */
+export function upsertOhlcvObservations(
+  symbol: string,
+  incoming: Record<string, OhlcvBar>,
+  now: Date,
+): Record<string, OhlcvBar> {
+  return upsertKeyedRecord(
+    ohlcvObservationPath(symbol),
+    readOhlcvObservations(symbol),
+    incoming,
+    isSameOhlcvBar,
+    (sorted): OhlcvObservationFile => ({
+      symbol,
+      updatedAt: now.toISOString(),
+      observations: sorted,
+    }),
+  );
 }
 
 export function readGaps(): Gap[] {
