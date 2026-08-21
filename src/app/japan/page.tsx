@@ -67,6 +67,47 @@ const CHARTS: QuestionChartDef<JapanQuestionId>[] = [
   {
     question: 'jp-cycle',
     frequency: 'monthly',
+    primaryIndicator: 'jp-bsi-large',
+    title: '企業の景況感 (BSI)',
+    subtitle: '前の四半期と比べて上向いたか。0 が中立 (四半期)',
+    kind: 'number',
+    zeroLine: true,
+    // 四半期の系列を月次グリッドに載せているため、3 か月に 1 点しか無い。
+    // 構造的な欠測なので線を繋ぐ (#226)。
+    connectNulls: true,
+    series: [
+      {
+        key: 'jpBsiLarge',
+        label: '大企業',
+        color: COLORS.jpBsiLarge,
+        width: 2.4,
+        indicatorId: 'jp-bsi-large',
+      },
+      { key: 'jpBsiMid', label: '中堅企業', color: COLORS.jpBsiMid, indicatorId: 'jp-bsi-mid' },
+      { key: 'jpBsiSmall', label: '中小企業', color: COLORS.jpBsiSmall, indicatorId: 'jp-bsi-small' },
+    ],
+    notes: [
+      <span key="what">
+        <strong>企業自身に景況感を尋ねた結果。</strong>
+        「上昇」と答えた割合から「下降」と答えた割合を引いた値で、0 が「上昇と下降が同数」。
+        上の街角景気は小売・飲食など<strong>現場で消費者に接する人</strong>の実感で、
+        こちらは<strong>企業の経営側</strong>。情報源が別なので重複しない。
+      </span>,
+      <span key="size">
+        <strong>規模で分かれることがある。</strong>
+        直近は大企業 −0.5 に対し中小企業 −17.6 で、
+        同じ景気でも受け取り方が違う。
+      </span>,
+      <span key="boj">
+        <strong>日銀短観ではない。</strong>
+        短観は日本銀行が公表しており政府統計ではないため、e-Stat から取得できない。
+        こちらは財務省・内閣府の調査で、企業の景況感を公的統計で見る唯一の経路。
+      </span>,
+    ],
+  },
+  {
+    question: 'jp-cycle',
+    frequency: 'monthly',
     kind: 'number',
     zeroLine: false,
     baseline: { value: 50, label: '50 = 横ばい' },

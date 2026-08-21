@@ -18,12 +18,17 @@ const BASE_URL = 'https://api.e-stat.go.jp/rest/3.0/app/json/getStatsData';
 
 export interface EstatTableQuery {
   statsDataId: string;
-  /** 表章項目 (例: DI)。 */
-  tab: string;
-  /** 分類軸 1 (例: 分野 = 合計)。 */
-  cat01: string;
-  /** 分類軸 2 (例: 現状判断 / 先行き判断)。 */
-  cat02: string;
+  /**
+   * 固定する軸。**表によって軸の数が違う** (#226)。
+   *
+   * 街角景気は `tab` / `cat01` / `cat02` の 3 つだが、法人企業景気予測調査の BSI は
+   * `cat01` 〜 `cat05` の 5 つある。ここで列挙せず、**応答に出てきた軸がすべて
+   * 1 種類に絞れているか**を受信側で検査する (`parseStatsData`)。
+   * そうすれば、知らない軸が増えても黙って別物を掴むことがない。
+   */
+  axes: Readonly<Record<string, string>>;
+  /** 四半期の表か (#226)。日付コードの読み方が変わる。 */
+  cycle?: 'monthly' | 'quarterly';
 }
 
 /**
@@ -32,7 +37,10 @@ export interface EstatTableQuery {
  * URL を丸ごと出すと、クエリ文字列に入っている appId がそのままログに残る。
  */
 export function safeQueryLabel(query: EstatTableQuery): string {
-  return `statsDataId=${query.statsDataId} tab=${query.tab} cat01=${query.cat01} cat02=${query.cat02}`;
+  const axes = Object.entries(query.axes)
+    .map(([key, value]) => `${key}=${value}`)
+    .join(' ');
+  return `statsDataId=${query.statsDataId} ${axes}`;
 }
 
 export function readEstatAppIdFromEnv(
@@ -66,10 +74,27 @@ export function toMonthlyDate(time: string): string | null {
 
 interface StatsValue {
   '@time'?: unknown;
-  '@tab'?: unknown;
-  '@cat01'?: unknown;
-  '@cat02'?: unknown;
   $?: unknown;
+  [key: string]: unknown;
+}
+
+/**
+ * 四半期の日付コード (#226)。`YYYY00MMMM` の末尾 4 桁が**開始月と終了月**。
+ *
+ * 月次は同じ形式で末尾 2 桁が繰り返される (`2026000707`)。
+ * **四半期は食い違う** (`2026000406` = 4〜6 月期)。形式で読み分ける。
+ *
+ * 四半期の値は**その期の最終月**に置く。発表はその後なので、前倒しにはならない。
+ */
+export function toQuarterlyDate(time: string): string | null {
+  const m = time.match(/^(\d{4})00(\d{2})(\d{2})$/);
+  if (m === null) return null;
+  const start = Number(m[2]);
+  const end = Number(m[3]);
+  // 3 か月の期でなければ四半期コードではない (月次は start === end)。
+  if (end - start !== 2) return null;
+  if (start < 1 || end > 12) return null;
+  return `${m[1]}-${m[3]}-01`;
 }
 
 /**
@@ -99,19 +124,23 @@ export function parseStatsData(body: unknown, query: EstatTableQuery): Observati
   const raw = (dataInf as Record<string, unknown> | undefined)?.['VALUE'];
   const rows: StatsValue[] = Array.isArray(raw) ? raw : raw === undefined ? [] : [raw as StatsValue];
 
-  const seen: Record<'tab' | 'cat01' | 'cat02', Set<string>> = {
-    tab: new Set(),
-    cat01: new Set(),
-    cat02: new Set(),
-  };
+  // **応答に出てきた軸をすべて見る** (#226)。表ごとに軸の数が違うため、
+  // 列挙すると新しい軸 (BSI の cat05 など) が混ざっても気付けない。
+  const seen = new Map<string, Set<string>>();
   const observations: Observations = {};
+  const toDate = query.cycle === 'quarterly' ? toQuarterlyDate : toMonthlyDate;
 
   for (const row of rows) {
-    seen.tab.add(String(row['@tab']));
-    seen.cat01.add(String(row['@cat01']));
-    seen.cat02.add(String(row['@cat02']));
+    for (const [key, value] of Object.entries(row)) {
+      // 時間・単位・値そのものは軸ではない。
+      if (key === '@time' || key === '@unit' || key === '$') continue;
+      const axis = key.startsWith('@') ? key.slice(1) : key;
+      const values = seen.get(axis) ?? new Set<string>();
+      values.add(String(value));
+      seen.set(axis, values);
+    }
 
-    const date = toMonthlyDate(String(row['@time']));
+    const date = toDate(String(row['@time']));
     if (date === null) continue;
 
     const value = Number(row.$);
@@ -124,7 +153,7 @@ export function parseStatsData(body: unknown, query: EstatTableQuery): Observati
     observations[date] = value;
   }
 
-  for (const [axis, values] of Object.entries(seen)) {
+  for (const [axis, values] of seen) {
     if (values.size > 1) {
       throw new Error(
         `e-Stat: ${axis} が 1 種類に絞れていない (${safeQueryLabel(query)}: ` +
@@ -152,10 +181,11 @@ export class EstatClient {
     const params = new URLSearchParams({
       appId: this.appId,
       statsDataId: query.statsDataId,
-      cdTab: query.tab,
-      cdCat01: query.cat01,
-      cdCat02: query.cat02,
     });
+    // 軸の数は表によって違う (#226)。`tab` → `cdTab`、`cat01` → `cdCat01`。
+    for (const [axis, value] of Object.entries(query.axes)) {
+      params.set(`cd${axis.charAt(0).toUpperCase()}${axis.slice(1)}`, value);
+    }
 
     let response: Response;
     try {

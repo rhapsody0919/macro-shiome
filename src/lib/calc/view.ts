@@ -755,6 +755,10 @@ export function buildEconomyView(options: BuildViewOptions): EconomyView {
     jpCpi: level('jp-cpi', month),
     // 街角景気は DI (50 が中立)。景気動向指数とは基準が違うので同じ図に載せない (#160)。
     jpWatcherCurrent: level('jp-watcher-current', month),
+    // 四半期。その期の最終月にだけ値が入る (#226)。
+    jpBsiLarge: level('jp-bsi-large', month),
+    jpBsiMid: level('jp-bsi-mid', month),
+    jpBsiSmall: level('jp-bsi-small', month),
     jpWatcherOutlook: level('jp-watcher-outlook', month),
     // 賞与月の跳ねを避けるため季調値を採っている (#156)。
     jpRealWage: level('jp-real-wage', month),

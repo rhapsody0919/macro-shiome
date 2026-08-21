@@ -424,7 +424,9 @@ describe('街角景気 (#160)', () => {
     render(<JapanPage />);
     const section = document.getElementById('q-jp-cycle');
     const titles = Array.from(section?.querySelectorAll('h3') ?? []).map((h) => h.textContent);
-    expect(titles).toHaveLength(4);
+    // #226 で企業の景況感 (BSI) が加わって 5 枚。街角景気とは情報源が別
+    // (こちらは経営側、あちらは小売・飲食などの現場) なので重ねない。
+    expect(titles).toHaveLength(5);
   });
 
   it('現状判断と先行き判断を 1 枚に重ねる', () => {
@@ -457,8 +459,10 @@ describe('日本の景気動向指数 (#154)', () => {
     // 合成 (景気動向指数) / 体感 (街角景気) / 実量 (鉱工業生産) が並ぶ。
     // #202 で在庫率が加わった。合成 / 体感 / 実量 / 需給の 4 層。
     // #204 で出荷・在庫・稼働率が加わりチャート名が変わった。
+    // #226 で企業の景況感 (BSI) が加わった。合成 → 体感 (企業 / 現場) → 実量 → 需給の順。
     expect(titles).toEqual([
       '景気動向指数',
+      '企業の景況感 (BSI)',
       '街角景気 (景気ウォッチャー調査)',
       '鉱工業 生産・出荷・在庫 (日本)',
       '在庫率と稼働率 (日本)',

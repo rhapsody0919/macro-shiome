@@ -19,6 +19,10 @@ export const COLORS = {
   termSpread: '#6366f1',
   /** 10年債入札の応札倍率。 */
   bidToCover: '#0369a1',
+  // 企業の景況感 BSI の規模別 3 本 (#226)。
+  jpBsiLarge: '#1d4ed8',
+  jpBsiMid: '#60a5fa',
+  jpBsiSmall: '#93c5fd',
   // 国債の平均利率 3 本 (#222)。全体を太く、内訳を細く。
   treasuryAvgRate: '#0f766e',
   treasuryAvgRateBills: '#14b8a6',
