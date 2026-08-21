@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname, useSearchParams } from 'next/navigation';
+import { isCurrentPath } from '@/lib/path';
 
 /**
  * ナビゲーションのリンク。
@@ -10,7 +11,7 @@ import { usePathname, useSearchParams } from 'next/navigation';
 export function NavLink({ href, children }: { href: string; children: React.ReactNode }) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  const isActive = pathname === href;
+  const isActive = isCurrentPath(pathname, href);
 
   const query = searchParams.toString();
   const target = query.length > 0 ? `${href}?${query}` : href;

@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useSyncExternalStore } from 'react';
+import { isCurrentPath } from '@/lib/path';
 
 /** localStorage のキー。値は最後に既読にした更新履歴の日付 (YYYY-MM-DD)。 */
 const LAST_SEEN_KEY = 'macro-shiome:changelog:lastSeen';
@@ -33,16 +34,6 @@ function markAsRead(date: string): void {
 }
 
 /**
- * `/updates` を表示中かどうか。
- *
- * 静的エクスポート (`trailingSlash: true`) の本番ビルドでは `usePathname()` が
- * 末尾スラッシュ付き (`/updates/`) を返す。開発サーバーでは付かない。両方を許容する。
- */
-function isUpdatesPage(pathname: string): boolean {
-  return pathname === '/updates' || pathname === '/updates/';
-}
-
-/**
  * ヘッダーの更新履歴リンク + 未読バッジ (#243)。
  *
  * フッターのリンク (#240) は画面最下部でスクロールしないと気付けない。
@@ -56,7 +47,7 @@ export function UpdatesLink({ latestDate }: { latestDate: string | undefined }) 
   const lastSeen = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
 
   useEffect(() => {
-    if (latestDate !== undefined && isUpdatesPage(pathname)) {
+    if (latestDate !== undefined && isCurrentPath(pathname, '/updates')) {
       markAsRead(latestDate);
     }
   }, [latestDate, pathname]);
@@ -64,7 +55,9 @@ export function UpdatesLink({ latestDate }: { latestDate: string | undefined }) 
   // 更新履歴が 1 件も無い状態は無い (`changelog.test.ts` で固定済み) が、
   // 型上は undefined になりうるため防御する。未訪問 (lastSeen === null) は未読として扱う。
   const hasUnread =
-    latestDate !== undefined && !isUpdatesPage(pathname) && (lastSeen === null || lastSeen < latestDate);
+    latestDate !== undefined &&
+    !isCurrentPath(pathname, '/updates') &&
+    (lastSeen === null || lastSeen < latestDate);
 
   return (
     <Link
