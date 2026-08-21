@@ -16833,17 +16833,17 @@
       },
       {
         "date": "2026-08-21",
-        "index": 29426.02,
+        "index": 29213.16,
         "forwardPe": null,
         "trailingPe": 32.71,
         "forwardEps": null,
-        "trailingEps": 899.6031794558239,
+        "trailingEps": 893.0956893916233,
         "earningsYield": 3.0571690614490983,
         "realRate": 2.3100000000000005,
         "yieldSpread": 0.7471690614490978,
-        "fairValue": 27510.800594979326,
-        "fairValueBasis": 29426.02,
-        "overvaluation": 6.508591392993934,
+        "fairValue": 27311.79478261845,
+        "fairValueBasis": 29213.16,
+        "overvaluation": 6.508591392993946,
         "isForwardEpsHigh": false,
         "isTrailingEpsHigh": true
       }
