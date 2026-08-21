@@ -27,13 +27,14 @@ import { TreasuryClient } from '../src/lib/adapters/treasury';
 import type { IndicatorSource } from '../src/lib/data/types';
 import { FinnhubClient, readFinnhubApiKeyFromEnv } from '../src/lib/adapters/finnhub';
 import { TiingoClient, readTiingoApiKeyFromEnv } from '../src/lib/adapters/tiingo';
-import { TIINGO_SYMBOLS } from '../src/lib/data/tiingo-assets';
+import { TIINGO_ASSETS, TIINGO_SYMBOLS } from '../src/lib/data/tiingo-assets';
 import { fetchEstatIndicator } from '../src/lib/adapters/estat-dashboard';
 import { EstatClient, readEstatAppIdFromEnv } from '../src/lib/adapters/estat-api';
 import { DAILY_VIEWS } from '../src/lib/data/daily-series';
 import {
   buildDrawdownView,
   buildEconomyView,
+  buildHighTightFlagView,
   buildMacroView,
   buildDailyView,
   buildRevisionSeries,
@@ -356,7 +357,17 @@ async function main(): Promise<void> {
       ),
     }),
   );
-
+  // High Tight Flag (#231)。指標マスタを経由しない (#229 と同じ理由、ADR-0008)。
+  writeView(
+    'high-tight-flag',
+    buildHighTightFlagView({
+      symbols: TIINGO_ASSETS,
+      ohlcvObservations: Object.fromEntries(
+        TIINGO_SYMBOLS.map((symbol) => [symbol, readOhlcvObservations(symbol)]),
+      ),
+      generatedAt: now.toISOString(),
+    }),
+  );
 
   const succeeded = failures.length === 0 && issues.length === 0;
   writeStatus({ now, succeeded, recentGaps: allGaps });

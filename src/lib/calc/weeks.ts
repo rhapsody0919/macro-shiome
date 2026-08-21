@@ -7,13 +7,18 @@
 import type { Observations } from '../adapters/fred';
 
 /** "YYYY-MM-DD" を UTC の Date にする。 */
-function toDate(iso: string): Date {
+export function toDate(iso: string): Date {
   const [year, month, day] = iso.split('-').map((part) => Number.parseInt(part, 10));
   return new Date(Date.UTC(year, month - 1, day));
 }
 
 function toIso(date: Date): string {
   return date.toISOString().slice(0, 10);
+}
+
+/** 2 つの "YYYY-MM-DD" の間の日数 (b − a)。 */
+export function diffDays(a: string, b: string): number {
+  return (toDate(b).getTime() - toDate(a).getTime()) / (24 * 60 * 60 * 1000);
 }
 
 /** start 以降 end 以前の金曜日をすべて返す (昇順)。 */

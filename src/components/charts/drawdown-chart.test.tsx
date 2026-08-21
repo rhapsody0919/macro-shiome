@@ -45,7 +45,7 @@ describe('下落率チャート (#128)', () => {
 });
 
 describe('市場ページへの組み込み (#128)', () => {
-  it('4 つのグループが問いの中に並ぶ', () => {
+  it('4 つの下落率グループと High Tight Flag (#231) が問いの中に並ぶ', () => {
     render(<MarketPage />);
     const section = document.getElementById('q-drawdown');
     expect(section).not.toBeNull();
@@ -55,6 +55,7 @@ describe('市場ページへの組み込み (#128)', () => {
       '米国セクターの下落率',
       'コモディティの下落率',
       '各国の下落率',
+      'High Tight Flag (急騰後の保ち合い)',
     ]);
   });
 

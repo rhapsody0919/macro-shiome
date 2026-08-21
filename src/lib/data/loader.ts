@@ -15,12 +15,14 @@ import economyDailyJson from '../../../data/views/economy-daily.json';
 import japanDailyJson from '../../../data/views/japan-daily.json';
 import economyJson from '../../../data/views/economy.json';
 import drawdownJson from '../../../data/views/drawdown.json';
+import highTightFlagJson from '../../../data/views/high-tight-flag.json';
 import type { DailyPoint } from './daily-series';
 import type {
   BatchStatus,
   DrawdownView,
   EconomyView,
   GapReason,
+  HighTightFlagView,
   MacroPoint,
   RevisionPoint,
   ValuationView,
@@ -43,6 +45,7 @@ export const economyDaily = economyDailyJson as unknown as DailyPoint[];
 export const japanDaily = japanDailyJson as unknown as DailyPoint[];
 export const economy = economyJson as unknown as EconomyView;
 export const drawdown = drawdownJson as unknown as DrawdownView;
+export const highTightFlag = highTightFlagJson as unknown as HighTightFlagView;
 
 /** データの鮮度。画面ヘッダーの表示に使う (screens N-1)。 */
 export interface Freshness {

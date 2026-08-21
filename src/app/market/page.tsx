@@ -626,6 +626,30 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
     ],
   },
   {
+    question: 'drawdown',
+    frequency: 'daily',
+    primaryIndicator: 'etf-spy',
+    highTightFlag: true,
+    title: 'High Tight Flag (急騰後の保ち合い)',
+    subtitle: '8 週間以内に 2 倍以上に急騰し、その後 3〜5 週間 25% 以内の下落で保ち合っている銘柄',
+    notes: [
+      <span key="def">
+        <strong>William O&apos;Neil の定義。</strong>
+        「ポール」は 8 週間以内に 100% 以上の上昇、「フラッグ」はポール高値から
+        25% 以内の下落に留まる 3〜5 週間の保ち合い。一般的な「ブルフラッグ」は
+        形状の自由度が高く恣意的な調整が要るため、この厳格な数値定義を採用している。
+      </span>,
+      <span key="rare">
+        <strong>極めて稀なパターン。</strong>
+        該当銘柄が無い状態が続くのが通常で、異常ではない。
+      </span>,
+      <span key="source">
+        出所は Tiingo の日足 OHLCV (調整済み価格)。取得を始めたばかりのため、
+        ポールの判定に必要な 8 週間分のデータが蓄積されるまでは検出されない。
+      </span>,
+    ],
+  },
+  {
     question: 'risk',
     frequency: 'daily',
     primaryIndicator: 'etf-gld',

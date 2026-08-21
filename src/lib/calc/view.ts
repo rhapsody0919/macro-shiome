@@ -10,12 +10,15 @@ import type {
   AppConfig,
   DrawdownAsset,
   DrawdownView,
+  HighTightFlagAsset,
+  HighTightFlagView,
   IndexKey,
   CorrelationSummary,
   EconomyView,
   MacroPoint,
   MonthlyCoverage,
   MonthlyPoint,
+  OhlcvBar,
   RevisionPoint,
   SpreadDistribution,
   ValuationPoint,
@@ -38,6 +41,7 @@ import {
   yieldSpread,
 } from './derived';
 import { fridaysBetween, sameDayLastYear, valueAsOf, valueOn, weekdaysBetween } from './weeks';
+import { detectHighTightFlag, toSortedBars } from './high-tight-flag';
 import { roundViewNumbers } from './round';
 import { DAILY_SERIES, type DailyKey, type DailyPoint, type DailyViewName } from '../data/daily-series';
 import { latestMonthWithValue, monthsBetween, valueForMonth, yearAgo } from './months';
@@ -646,6 +650,27 @@ export function buildDrawdownView(
 
   // 表示は 2 桁 (#218)。導出した点だけが全桁で、日次で積み上がるほど差が広がっていた。
   return roundViewNumbers({ seedStart, excluded, assets });
+}
+
+/**
+ * High Tight Flag のビュー (#231)。
+ *
+ * 指標マスタを経由しない (#229/ADR-0008 と同じ理由。OHLCV は指標マスタが前提とする
+ * 1 系列 = スカラー値と型が合わない)。`assets` は対象銘柄すべてを含め、検出できなかった
+ * 銘柄も `detection: null` として残す。**ビューが生成されていること自体**が
+ * 「検出を試みて 0 件だった」ことの証明になる (#102 と同じ「緑だが検証していない」を避ける設計)。
+ */
+export function buildHighTightFlagView(options: {
+  symbols: ReadonlyArray<{ symbol: string; name: string }>;
+  ohlcvObservations: Readonly<Record<string, Readonly<Record<string, OhlcvBar>>>>;
+  generatedAt: string;
+}): HighTightFlagView {
+  const { symbols, ohlcvObservations, generatedAt } = options;
+  const assets: HighTightFlagAsset[] = symbols.map(({ symbol, name }) => {
+    const bars = toSortedBars(ohlcvObservations[symbol] ?? {});
+    return { symbol, name, detection: detectHighTightFlag(bars) };
+  });
+  return roundViewNumbers({ generatedAt, assets });
 }
 
 /**

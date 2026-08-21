@@ -907,3 +907,59 @@ export interface ValuationPoint {
   isForwardEpsHigh: boolean;
   isTrailingEpsHigh: boolean;
 }
+
+/**
+ * High Tight Flag のポール (急騰) 区間 (#231)。
+ *
+ * William O'Neil の定義: 8 週間以内に 100% 以上の上昇。
+ */
+export interface HighTightFlagPole {
+  startDate: string;
+  startPrice: number;
+  endDate: string;
+  endPrice: number;
+  /** 安値 → 高値の上昇率 (%)。 */
+  gainPercent: number;
+  /** ポール期間 (週、小数)。 */
+  weeks: number;
+}
+
+/**
+ * High Tight Flag の検出結果 (#231)。
+ *
+ * William O'Neil の定義: ポール高値から 3〜5 週間、25% 以内の下落に留める保ち合い。
+ */
+export interface HighTightFlagDetection {
+  pole: HighTightFlagPole;
+  /** フラッグ開始日 (ポール高値の翌観測日)。 */
+  flagStart: string;
+  /** フラッグ終了日 (= 基準日、通常は最新観測日)。 */
+  flagEnd: string;
+  /** フラッグ期間 (週、小数)。 */
+  flagWeeks: number;
+  /** フラッグ中の最大下落率 (%)。ポール高値からの下げ幅。 */
+  flagLowPercent: number;
+  /** フラッグ期間の平均出来高がポール期間より少ないか。**必須条件ではなく参考情報** (#231)。 */
+  volumeDecreased: boolean;
+}
+
+/** High Tight Flag チャートの 1 銘柄 (#231)。 */
+export interface HighTightFlagAsset {
+  /** ティッカー。指標マスタを経由しないため symbol を直接持つ (#229 と同じ設計、ADR-0008)。 */
+  symbol: string;
+  name: string;
+  /** 検出されていなければ null (#231: 0 件は正常な状態)。 */
+  detection: HighTightFlagDetection | null;
+}
+
+/**
+ * High Tight Flag のビュー全体 (#231)。
+ *
+ * `assets` は対象 36 銘柄すべてを含む (検出の有無に関わらず)。ビューが存在すれば
+ * 「検出を試みて 0 件だった」ことを表せるため、取得・計算の失敗とは区別できる
+ * (#102 / #131 と同じ「緑だが歯抜け」を避ける設計)。
+ */
+export interface HighTightFlagView {
+  generatedAt: string;
+  assets: HighTightFlagAsset[];
+}
