@@ -9,10 +9,11 @@
  */
 
 const BASE_URL = 'https://finnhub.io/api/v1/quote';
+const METRIC_URL = 'https://finnhub.io/api/v1/stock/metric';
 
 /** 例外に載せて安全な URL。**トークンを含めない**。 */
-function safeUrlLabel(symbol: string): string {
-  return `${BASE_URL}?symbol=${symbol}`;
+function safeUrlLabel(symbol: string, base = BASE_URL): string {
+  return `${base}?symbol=${symbol}`;
 }
 
 interface QuoteResponse {
@@ -85,6 +86,33 @@ export class FinnhubClient {
     throw new Error(`Finnhub の取得に失敗 (${safeUrlLabel(symbol)})`);
   }
 
+  /**
+   * 52 週高値と、その高値を付けた日を返す (#224)。
+   *
+   * **無料枠で使える数少ない経路。** `stock/candle` (日次ヒストリカル) は有料だが、
+   * `stock/metric` は 200 を返す (実測)。日中高値を含むため、**終値から積み上げた
+   * 最高値より必ず高いか等しい**。積み上げが取りこぼしていないかの検算に使う。
+   */
+  async fetch52WeekHigh(symbol: string): Promise<{ high: number; date: string }> {
+    await this.waitForSlot();
+    let response: Response;
+    try {
+      response = await this.fetchImpl(
+        `${METRIC_URL}?symbol=${encodeURIComponent(symbol)}&metric=all&token=${this.apiKey}`,
+      );
+    } catch (cause) {
+      throw new Error(
+        `Finnhub への接続に失敗 (${safeUrlLabel(symbol, METRIC_URL)}): ${cause instanceof Error ? cause.message : String(cause)}`,
+      );
+    }
+    if (!response.ok) {
+      throw new Error(
+        `Finnhub が ${response.status} を返した (${safeUrlLabel(symbol, METRIC_URL)})`,
+      );
+    }
+    return parse52WeekHigh(await response.json(), symbol);
+  }
+
   /** 呼び出し間隔を空ける。相手の上限に当てないため。 */
   private async waitForSlot(): Promise<void> {
     const elapsed = Date.now() - this.lastRequestAt;
@@ -114,6 +142,32 @@ export function parsePrice(body: unknown, symbol: string): number {
     );
   }
   return current;
+}
+
+/**
+ * 52 週高値を取り出す (#224)。
+ *
+ * **0 以下は失敗として扱う。** 存在しない symbol でも 200 が返るのは `quote` と同じで、
+ * 空の `metric` を「高値がゼロ」として通すと検算が意味を失う。
+ */
+export function parse52WeekHigh(body: unknown, symbol: string): { high: number; date: string } {
+  if (typeof body !== 'object' || body === null) {
+    throw new Error(`Finnhub: 応答がオブジェクトでない (${symbol})`);
+  }
+  const metric = (body as { metric?: unknown }).metric;
+  if (typeof metric !== 'object' || metric === null) {
+    throw new Error(`Finnhub: metric が無い (${symbol})`);
+  }
+  const record = metric as Record<string, unknown>;
+  const high = record['52WeekHigh'];
+  const date = record['52WeekHighDate'];
+  if (typeof high !== 'number' || !Number.isFinite(high) || high <= 0) {
+    throw new Error(`Finnhub: 52 週高値が数値でない (${symbol}: ${String(high)})`);
+  }
+  if (typeof date !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(date)) {
+    throw new Error(`Finnhub: 52 週高値の日付が不正 (${symbol}: ${String(date)})`);
+  }
+  return { high, date };
 }
 
 export function readFinnhubApiKeyFromEnv(

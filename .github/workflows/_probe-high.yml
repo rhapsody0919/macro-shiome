@@ -1,0 +1,20 @@
+# 使い捨て。#224 の閾値を実測で決めるためだけに置く。終わったら削除する。
+name: probe drawdown high
+on:
+  push:
+    branches: [feat/224-verify-drawdown-high]
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - env:
+          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
+          ESTAT_APP_ID: ${{ secrets.ESTAT_APP_ID }}
+        run: pnpm exec tsx scripts/_probe_high.ts
