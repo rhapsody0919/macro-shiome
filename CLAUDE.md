@@ -1045,6 +1045,11 @@ localStorage の読み出しは素朴な `useState` + `useEffect` ではなく `
 直したが、**既存の `NavLink` も同じ理由でアクティブ表示が本番ビルドで効いていない**ことが
 分かった。スコープ外のため直さず **#245 を新規起票**した。
 
+**#245 を修正した** (2026-08-21)。末尾スラッシュを無視して比較する `isCurrentPath`
+(`src/lib/path.ts`) に切り出し、`NavLink` と `UpdatesLink` の両方をこれに統一。
+`pnpm dev` では再現しないため、テストも開発サーバー相当・本番ビルド相当の両方の
+`pathname` 値で固定した (`nav-link.test.tsx` は今回新規追加。従来テストが無かった)。
+
 ### Tiingo から ETF の日足 OHLCV を取り込む (2026-08-21、#229、ADR-0008)
 
 カップウィズハンドル・ブルフラッグの判定には高値・安値が要るが、既存の下落率 (#128) は
@@ -1084,8 +1089,11 @@ William O'Neil の定義 (ポール: 8 週間以内に 100% 以上の上昇 / �
 
 ### Next Action
 
-- **open Issue 3 件** (2026-08-21 時点): #228 (日銀短観、owner-decision) #230 (カップウィズ
-  ハンドル、#229 の基盤を利用可能) #245 (静的ビルドで NavLink の active 表示が効かない、bug)
+- **open Issue 1 件** (2026-08-21 時点): #228 (日銀短観、owner-decision。ユーザー判断待ち)
+- **複数セッションが同じ Issue に並行着手することがある。** #245 を修正・マージした直後、
+  別セッションが同じ Issue 番号のブランチ名 (`fix/245-...`) で並行着手していた形跡を確認した
+  (作業ディレクトリの共有による #240 の教訓と同種)。Issue の assignee 設定だけでは
+  他セッションの着手を防げないため、着手前に Issue の assignee・関連 PR の有無を確認する
 - `not-in-report` の実データ検証は次に FactSet が発行される週に持ち越し
 - **`MAX_TIINGO_FINNHUB_GAP_PERCENT` (verify-values.ts) は暫定値。** Tiingo データが数週間
   蓄積されたら #224 (`MAX_HIGH_GAP_PERCENT`) と同じように実測して見直す
