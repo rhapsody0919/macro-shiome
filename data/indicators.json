@@ -3664,7 +3664,7 @@
     "unit": "diffusion",
     "attribution": "財務省・内閣府「法人企業景気予測調査」",
     "copyright": "none",
-    "group": "cycle",
+    "group": "macro",
     "range": {
       "min": -100,
       "max": 100
@@ -3695,7 +3695,7 @@
     "unit": "diffusion",
     "attribution": "財務省・内閣府「法人企業景気予測調査」",
     "copyright": "none",
-    "group": "cycle",
+    "group": "macro",
     "range": {
       "min": -100,
       "max": 100
@@ -3726,7 +3726,7 @@
     "unit": "diffusion",
     "attribution": "財務省・内閣府「法人企業景気予測調査」",
     "copyright": "none",
-    "group": "cycle",
+    "group": "macro",
     "range": {
       "min": -100,
       "max": 100
