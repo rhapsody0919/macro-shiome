@@ -718,6 +718,44 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
     ],
   },
   {
+    question: 'drawdown',
+    frequency: 'daily',
+    primaryIndicator: 'etf-spy',
+    headAndShouldersBottom: true,
+    title: 'ヘッド・アンド・ショルダーズ・ボトム (逆三尊)',
+    subtitle: '左肩・頭・右肩の 3 つの安値と、その間のネックライン 2 点を形成している銘柄',
+    notes: [
+      <span key="def">
+        <strong>頭が両肩より深く、ネックライン (間の 2 つの戻り高値) がほぼ水平な形。</strong>
+        「頭が十分深い」「ネックラインがほぼ水平」はどちらも銘柄の平均バー幅 (高値 −
+        安値の平均) を基準にした相対値で判定する。
+      </span>,
+      <span key="asymmetry">
+        <strong>左右の肩の高さそのものを比較する条件は無い。</strong>
+        調査した複数のオープンソース実装のいずれも、教科書で語られる「左右の肩がほぼ
+        同じ高さ」という条件を数値式として持っていなかった。頭と右肩の深さ、
+        ネックライン 2 点の水平性だけで判定するため、左右の肩の高さが大きく違う形も
+        通過することがある。
+      </span>,
+      <span key="path">
+        <strong>右肩の形成から基準日までの経路も検証する。</strong>
+        直近の終値だけでなく、右肩形成後の終値がネックラインを超えず右肩も割っていない
+        ことを区間全体で確認する (ダブルボトムと同じ設計)。
+      </span>,
+      <span key="oss">
+        判定条件はオープンソースのパターン検出ツールの実装 (数値条件のみ、コードは
+        移植していない) を調査して設計した。恣意的な閾値を独自に作らないため。
+      </span>,
+      <span key="rare">
+        <strong>稀なパターン。</strong>
+        該当銘柄が無い状態が続くのが通常で、異常ではない。
+      </span>,
+      <span key="source">
+        出所は Tiingo の日足 OHLCV (調整済み価格)。
+      </span>,
+    ],
+  },
+  {
     question: 'risk',
     frequency: 'daily',
     primaryIndicator: 'etf-gld',

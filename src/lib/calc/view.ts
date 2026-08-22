@@ -12,6 +12,8 @@ import type {
   CupWithHandleView,
   DoubleBottomAsset,
   DoubleBottomView,
+  HeadAndShouldersBottomAsset,
+  HeadAndShouldersBottomView,
   DrawdownAsset,
   DrawdownView,
   HighTightFlagAsset,
@@ -48,6 +50,7 @@ import { fridaysBetween, sameDayLastYear, valueAsOf, valueOn, weekdaysBetween } 
 import { detectHighTightFlag, toSortedBars } from './high-tight-flag';
 import { detectCupWithHandle } from './cup-with-handle';
 import { detectDoubleBottom } from './double-bottom';
+import { detectHeadAndShouldersBottom } from './head-and-shoulders-bottom';
 import { roundViewNumbers } from './round';
 import { DAILY_SERIES, type DailyKey, type DailyPoint, type DailyViewName } from '../data/daily-series';
 import { latestMonthWithValue, monthsBetween, valueForMonth, yearAgo } from './months';
@@ -707,6 +710,23 @@ export function buildDoubleBottomView(options: {
   const assets: DoubleBottomAsset[] = symbols.map(({ symbol, name }) => {
     const bars = toSortedBars(ohlcvObservations[symbol] ?? {});
     return { symbol, name, detection: detectDoubleBottom(bars) };
+  });
+  return roundViewNumbers({ generatedAt, assets });
+}
+
+/**
+ * ヘッド・アンド・ショルダーズ・ボトム (逆三尊) のビュー (#258)。
+ * `buildHighTightFlagView` (#231) と同じ設計。
+ */
+export function buildHeadAndShouldersBottomView(options: {
+  symbols: ReadonlyArray<{ symbol: string; name: string }>;
+  ohlcvObservations: Readonly<Record<string, Readonly<Record<string, OhlcvBar>>>>;
+  generatedAt: string;
+}): HeadAndShouldersBottomView {
+  const { symbols, ohlcvObservations, generatedAt } = options;
+  const assets: HeadAndShouldersBottomAsset[] = symbols.map(({ symbol, name }) => {
+    const bars = toSortedBars(ohlcvObservations[symbol] ?? {});
+    return { symbol, name, detection: detectHeadAndShouldersBottom(bars) };
   });
   return roundViewNumbers({ generatedAt, assets });
 }

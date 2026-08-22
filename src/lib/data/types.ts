@@ -1089,3 +1089,56 @@ export interface DoubleBottomView {
   assets: DoubleBottomAsset[];
 }
 
+/**
+ * ヘッド・アンド・ショルダーズ・ボトム (逆三尊) の検出結果 (#258)。
+ *
+ * ピボット検出 (`pivots.ts`) を土台にする。左肩・頭・右肩の安値 3 点と、その間の
+ * ネックライン (高値) 2 点による 5 点構造で判定する。頭が両肩より低く、頭と右肩の差が
+ * 平均バー幅の 0.6 倍を超え、ネックライン 2 点の差が平均バー幅未満 (ほぼ水平)、
+ * かつ右肩の形成以降 (基準日まで) の終値がネックラインを超えず右肩も割っていない
+ * (経路依存チェック)、という数値条件で判定する。詳細な根拠は
+ * `head-and-shoulders-bottom.ts` 先頭のコメントを参照。
+ *
+ * **出来高条件は無い。** 調査した 4 つの OSS 実装いずれにも逆 H&S の出来高条件は
+ * 存在しなかった (`double-bottom.ts`/`cup-with-handle.ts`/`high-tight-flag.ts` とは異なる)。
+ */
+export interface HeadAndShouldersBottomDetection {
+  leftShoulderDate: string;
+  leftShoulderPrice: number;
+  leftNecklineDate: string;
+  leftNecklinePrice: number;
+  headDate: string;
+  headPrice: number;
+  rightNecklineDate: string;
+  rightNecklinePrice: number;
+  rightShoulderDate: string;
+  rightShoulderPrice: number;
+  /** ネックライン価格 = 左右ネックライン点の低い方 (経路依存チェックの上限に使う)。 */
+  necklinePrice: number;
+  /** 左右のネックライン点の差を平均バー幅で割った比率 (閾値は 1.0)。小さいほど水平に近い。 */
+  necklineDiffRatio: number;
+  /** 頭と右肩の差を平均バー幅で割った比率 (閾値は 0.6)。大きいほど頭が深い。 */
+  shoulderDepthRatio: number;
+}
+
+/** ヘッド・アンド・ショルダーズ・ボトムチャートの 1 銘柄 (#258)。 */
+export interface HeadAndShouldersBottomAsset {
+  /** ティッカー。指標マスタを経由しないため symbol を直接持つ (#229 と同じ設計、ADR-0008)。 */
+  symbol: string;
+  name: string;
+  /** 検出されていなければ null (0 件は正常な状態、#230/#231/#258 と同じ設計)。 */
+  detection: HeadAndShouldersBottomDetection | null;
+}
+
+/**
+ * ヘッド・アンド・ショルダーズ・ボトムのビュー全体 (#258)。
+ *
+ * `assets` は対象銘柄すべてを含む (検出の有無に関わらず)。ビューが存在すれば
+ * 「検出を試みて 0 件だった」ことを表せるため、取得・計算の失敗とは区別できる
+ * (#102 / #131 / #230 / #231 と同じ「緑だが歯抜け」を避ける設計)。
+ */
+export interface HeadAndShouldersBottomView {
+  generatedAt: string;
+  assets: HeadAndShouldersBottomAsset[];
+}
+
