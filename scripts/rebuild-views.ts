@@ -11,6 +11,7 @@ import {
   buildDoubleBottomView,
   buildDrawdownView,
   buildEconomyView,
+  buildHeadAndShouldersBottomView,
   buildHighTightFlagView,
   buildMacroView,
   buildDailyView,
@@ -72,6 +73,14 @@ function main(): void {
     writeView(
       'double-bottom',
       buildDoubleBottomView({ symbols: TIINGO_ASSETS, ohlcvObservations, generatedAt: now.toISOString() }),
+    );
+    writeView(
+      'head-and-shoulders-bottom',
+      buildHeadAndShouldersBottomView({
+        symbols: TIINGO_ASSETS,
+        ohlcvObservations,
+        generatedAt: now.toISOString(),
+      }),
     );
   }
 

@@ -36,6 +36,7 @@ import {
   buildDoubleBottomView,
   buildDrawdownView,
   buildEconomyView,
+  buildHeadAndShouldersBottomView,
   buildHighTightFlagView,
   buildMacroView,
   buildDailyView,
@@ -359,8 +360,8 @@ async function main(): Promise<void> {
       ),
     }),
   );
-  // パターン検出 (#230 #231 #256)。指標マスタを経由しない (#229 と同じ理由、ADR-0008)。
-  // OHLCV は 3 つのビューで共通のため 1 回だけ読む。
+  // パターン検出 (#230 #231 #256 #258)。指標マスタを経由しない (#229 と同じ理由、ADR-0008)。
+  // OHLCV は 4 つのビューで共通のため 1 回だけ読む。
   {
     const ohlcvObservations = Object.fromEntries(
       TIINGO_SYMBOLS.map((symbol) => [symbol, readOhlcvObservations(symbol)]),
@@ -376,6 +377,14 @@ async function main(): Promise<void> {
     writeView(
       'double-bottom',
       buildDoubleBottomView({ symbols: TIINGO_ASSETS, ohlcvObservations, generatedAt: now.toISOString() }),
+    );
+    writeView(
+      'head-and-shoulders-bottom',
+      buildHeadAndShouldersBottomView({
+        symbols: TIINGO_ASSETS,
+        ohlcvObservations,
+        generatedAt: now.toISOString(),
+      }),
     );
   }
 

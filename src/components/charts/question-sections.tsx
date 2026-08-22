@@ -4,8 +4,15 @@ import { DrawdownChart } from './drawdown-chart';
 import { HighTightFlagList } from './high-tight-flag-list';
 import { CupWithHandleList } from './cup-with-handle-list';
 import { DoubleBottomList } from './double-bottom-list';
+import { HeadAndShouldersBottomList } from './head-and-shoulders-bottom-list';
 import { DRAWDOWN_PALETTE } from '@/lib/colors';
-import { cupWithHandle, doubleBottom, drawdown, highTightFlag } from '@/lib/data/loader';
+import {
+  cupWithHandle,
+  doubleBottom,
+  drawdown,
+  headAndShouldersBottom,
+  highTightFlag,
+} from '@/lib/data/loader';
 import { MonthlyChart, type MonthlySeriesDef } from './monthly-chart';
 import { Badges } from './badges';
 import { IndicatorExplanations } from './indicator-explanation';
@@ -95,7 +102,9 @@ export type QuestionChartDef<K extends string> =
   /** カップウィズハンドルの検出結果 (#230)。High Tight Flag と同じくリスト表示。 */
   | (ChartBase<K> & { frequency: 'daily'; cupWithHandle: true })
   /** ダブルボトムの検出結果 (#256)。High Tight Flag と同じくリスト表示。 */
-  | (ChartBase<K> & { frequency: 'daily'; doubleBottom: true });
+  | (ChartBase<K> & { frequency: 'daily'; doubleBottom: true })
+  /** ヘッド・アンド・ショルダーズ・ボトム (逆三尊) の検出結果 (#258)。同じくリスト表示。 */
+  | (ChartBase<K> & { frequency: 'daily'; headAndShouldersBottom: true });
 
 /**
  * 景気サイクルの分類を指標マスタから引く。
@@ -205,6 +214,15 @@ export function QuestionSections<K extends string>({
                   title={chart.title}
                   subtitle={chart.subtitle}
                   assets={doubleBottom.assets}
+                  notes={chart.notes}
+                  explanation={<IndicatorExplanations ids={explainedIds(chart)} />}
+                  badges={<Badges frequency="daily" cyclePosition={cycleOf(chart)} />}
+                />
+              ) : 'headAndShouldersBottom' in chart ? (
+                <HeadAndShouldersBottomList
+                  title={chart.title}
+                  subtitle={chart.subtitle}
+                  assets={headAndShouldersBottom.assets}
                   notes={chart.notes}
                   explanation={<IndicatorExplanations ids={explainedIds(chart)} />}
                   badges={<Badges frequency="daily" cyclePosition={cycleOf(chart)} />}

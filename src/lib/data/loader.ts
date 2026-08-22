@@ -19,6 +19,7 @@ import drawdownJson from '../../../data/views/drawdown.json';
 import highTightFlagJson from '../../../data/views/high-tight-flag.json';
 import cupWithHandleJson from '../../../data/views/cup-with-handle.json';
 import doubleBottomJson from '../../../data/views/double-bottom.json';
+import headAndShouldersBottomJson from '../../../data/views/head-and-shoulders-bottom.json';
 import { sortChangelog } from './changelog';
 import type { DailyPoint } from './daily-series';
 import type {
@@ -29,6 +30,7 @@ import type {
   DrawdownView,
   EconomyView,
   GapReason,
+  HeadAndShouldersBottomView,
   HighTightFlagView,
   MacroPoint,
   RevisionPoint,
@@ -55,6 +57,7 @@ export const drawdown = drawdownJson as unknown as DrawdownView;
 export const highTightFlag = highTightFlagJson as unknown as HighTightFlagView;
 export const cupWithHandle = cupWithHandleJson as unknown as CupWithHandleView;
 export const doubleBottom = doubleBottomJson as unknown as DoubleBottomView;
+export const headAndShouldersBottom = headAndShouldersBottomJson as unknown as HeadAndShouldersBottomView;
 /** 更新履歴 (#240)。新しい順。 */
 export const changelog = sortChangelog(changelogJson as unknown as ChangelogEntry[]);
 

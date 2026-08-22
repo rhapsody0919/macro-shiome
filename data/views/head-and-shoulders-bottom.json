@@ -1,0 +1,213 @@
+{
+  "generatedAt": "2026-08-22T12:25:22.717Z",
+  "assets": [
+    {
+      "symbol": "SPY",
+      "name": "S&P 500 (SPY)",
+      "detection": null
+    },
+    {
+      "symbol": "QQQ",
+      "name": "NASDAQ-100 (QQQ)",
+      "detection": null
+    },
+    {
+      "symbol": "VTI",
+      "name": "米国株式全体 (VTI)",
+      "detection": null
+    },
+    {
+      "symbol": "VIG",
+      "name": "米国増配株 (VIG)",
+      "detection": null
+    },
+    {
+      "symbol": "GLD",
+      "name": "ゴールド (GLD)",
+      "detection": null
+    },
+    {
+      "symbol": "GDX",
+      "name": "金鉱株 (GDX)",
+      "detection": null
+    },
+    {
+      "symbol": "VGLT",
+      "name": "米国長期国債 (VGLT)",
+      "detection": null
+    },
+    {
+      "symbol": "VNQ",
+      "name": "米国REIT (VNQ)",
+      "detection": null
+    },
+    {
+      "symbol": "IWM",
+      "name": "ラッセル2000 (IWM)",
+      "detection": null
+    },
+    {
+      "symbol": "VGT",
+      "name": "情報技術",
+      "detection": null
+    },
+    {
+      "symbol": "VCR",
+      "name": "一般消費財・サービス",
+      "detection": null
+    },
+    {
+      "symbol": "VFH",
+      "name": "金融",
+      "detection": null
+    },
+    {
+      "symbol": "VHT",
+      "name": "ヘルスケア",
+      "detection": null
+    },
+    {
+      "symbol": "VAW",
+      "name": "素材",
+      "detection": null
+    },
+    {
+      "symbol": "VDE",
+      "name": "エネルギー",
+      "detection": null
+    },
+    {
+      "symbol": "VDC",
+      "name": "生活必需品",
+      "detection": null
+    },
+    {
+      "symbol": "VPU",
+      "name": "公益事業",
+      "detection": null
+    },
+    {
+      "symbol": "USO",
+      "name": "原油 (USO)",
+      "detection": {
+        "leftShoulderDate": "2026-05-29",
+        "leftShoulderPrice": 126.55,
+        "leftNecklineDate": "2026-06-03",
+        "leftNecklinePrice": 141.42,
+        "headDate": "2026-07-02",
+        "headPrice": 102.42,
+        "rightNecklineDate": "2026-07-23",
+        "rightNecklinePrice": 142.33,
+        "rightShoulderDate": "2026-08-05",
+        "rightShoulderPrice": 113.86,
+        "necklinePrice": 141.42,
+        "necklineDiffRatio": 0.42,
+        "shoulderDepthRatio": 5.25
+      }
+    },
+    {
+      "symbol": "UNG",
+      "name": "天然ガス (UNG)",
+      "detection": null
+    },
+    {
+      "symbol": "COPX",
+      "name": "銅鉱山 (COPX)",
+      "detection": null
+    },
+    {
+      "symbol": "SLX",
+      "name": "鉄鋼・鉄鉱石 (SLX)",
+      "detection": null
+    },
+    {
+      "symbol": "REMX",
+      "name": "レアアース (REMX)",
+      "detection": null
+    },
+    {
+      "symbol": "CORN",
+      "name": "コーン (CORN)",
+      "detection": null
+    },
+    {
+      "symbol": "WEAT",
+      "name": "小麦 (WEAT)",
+      "detection": null
+    },
+    {
+      "symbol": "EEM",
+      "name": "新興国 (EEM)",
+      "detection": null
+    },
+    {
+      "symbol": "EWJ",
+      "name": "日本 (EWJ)",
+      "detection": null
+    },
+    {
+      "symbol": "EPI",
+      "name": "インド (EPI)",
+      "detection": null
+    },
+    {
+      "symbol": "EWU",
+      "name": "イギリス (EWU)",
+      "detection": null
+    },
+    {
+      "symbol": "EWG",
+      "name": "ドイツ (EWG)",
+      "detection": null
+    },
+    {
+      "symbol": "EWZ",
+      "name": "ブラジル (EWZ)",
+      "detection": null
+    },
+    {
+      "symbol": "VNM",
+      "name": "ベトナム (VNM)",
+      "detection": null
+    },
+    {
+      "symbol": "EWW",
+      "name": "メキシコ (EWW)",
+      "detection": {
+        "leftShoulderDate": "2026-05-19",
+        "leftShoulderPrice": 75.43,
+        "leftNecklineDate": "2026-05-27",
+        "leftNecklinePrice": 78.79,
+        "headDate": "2026-06-09",
+        "headPrice": 72.68,
+        "rightNecklineDate": "2026-06-15",
+        "rightNecklinePrice": 78.99,
+        "rightShoulderDate": "2026-07-17",
+        "rightShoulderPrice": 73.77,
+        "necklinePrice": 78.79,
+        "necklineDiffRatio": 0.18,
+        "shoulderDepthRatio": 0.96
+      }
+    },
+    {
+      "symbol": "MCHI",
+      "name": "中国 (MCHI)",
+      "detection": null
+    },
+    {
+      "symbol": "EIDO",
+      "name": "インドネシア (EIDO)",
+      "detection": null
+    },
+    {
+      "symbol": "THD",
+      "name": "タイ (THD)",
+      "detection": null
+    },
+    {
+      "symbol": "SMIN",
+      "name": "インド小型株 (SMIN)",
+      "detection": null
+    }
+  ]
+}
