@@ -1,8 +1,8 @@
 /**
- * ブレイクアウト (#264) の priceSeries のビュー生成テスト。
+ * ブレイクアウト (#264 #266) の priceSeries のビュー生成テスト。
  *
  * 検出ロジック自体は `breakout.test.ts` で検証済みなので、ここでは
- * `buildBreakoutView` が検出結果から正しい区間 (上抜けた高値の日〜基準日) の
+ * `buildBreakoutView` が検出結果から正しい区間 (基準日から直近 90 営業日) の
  * 終値系列を切り出せているか、検出できない場合は `priceSeries` も `null` になるかを見る。
  */
 import { describe, expect, it } from 'vitest';
@@ -44,8 +44,8 @@ function typicalEntries(): Array<{ date: string } & Parameters<typeof bar>[0]> {
   return entries;
 }
 
-describe('ブレイクアウトの priceSeries (#264)', () => {
-  it('上抜けた高値の日から基準日までの終値系列を切り出す', () => {
+describe('ブレイクアウトの priceSeries (#264 #266)', () => {
+  it('観測が90本以下なら全期間を切り出す (上抜けた高値の日より前も含む)', () => {
     const view = buildBreakoutView({
       symbols,
       ohlcvObservations: { TEST: toObservations(typicalEntries()) },
@@ -55,10 +55,31 @@ describe('ブレイクアウトの priceSeries (#264)', () => {
     expect(asset.detection).not.toBeNull();
     expect(asset.detection!.breakoutDate).toBe(d(20));
     expect(asset.priceSeries).not.toBeNull();
-    expect(asset.priceSeries![0]).toEqual({ date: d(10), close: 60 });
+    expect(asset.priceSeries).toHaveLength(21);
+    expect(asset.priceSeries![0]).toEqual({ date: d(0), close: 50 });
     expect(asset.priceSeries!.at(-1)).toEqual({ date: d(20), close: 61 });
-    // 上抜けた高値の日 (index10) より前は含まれない。
-    expect(asset.priceSeries!.some((p) => p.date === d(0))).toBe(false);
+  });
+
+  it('観測が90本を超えたら直近90本だけに絞る', () => {
+    // typicalEntries (21本) の手前に、判定に影響しない横ばいの観測を100本足す。
+    const padding: Array<{ date: string } & Parameters<typeof bar>[0]> = [];
+    for (let i = 1; i <= 100; i++) {
+      const date = new Date('2026-01-01T00:00:00Z');
+      date.setUTCDate(date.getUTCDate() - i);
+      padding.push({ date: date.toISOString().slice(0, 10), low: 30, high: 35 });
+    }
+    const entries = [...padding.reverse(), ...typicalEntries()];
+    const view = buildBreakoutView({
+      symbols,
+      ohlcvObservations: { TEST: toObservations(entries) },
+      generatedAt,
+    });
+    const asset = view.assets[0];
+    expect(asset.detection).not.toBeNull();
+    expect(asset.priceSeries).toHaveLength(90);
+    expect(asset.priceSeries!.at(-1)).toEqual({ date: d(20), close: 61 });
+    // 100本前に足したパディングの先頭 (最も古い観測) は含まれない。
+    expect(asset.priceSeries!.some((p) => p.date === padding[0]!.date)).toBe(false);
   });
 
   it('検出されなければ priceSeries も null', () => {

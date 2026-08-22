@@ -655,12 +655,18 @@ export function buildDrawdownView(
 }
 
 /**
- * `fromDate` (パターンの起点) から `bars` の末尾 (基準日) までの終値系列を切り出す (#260)。
+ * チャート表示用の直近日数 (営業日、#266)。
  *
- * チャートに表示するための背景の折れ線。検出結果の主要点はすべてこの区間に含まれる。
+ * 検出条件の `lookbackDays` (#264、既定 20) とは別物。上抜けた高値の日から切り出すと、
+ * その日がブレイクアウト直前 (数日前) のことがあり、表示区間がほぼ空になって
+ * 読みにくかった (実データで GLD/CORN が 2 点しか表示されない事例で発覚)。
+ * 表示は判定に使うウィンドウより広く取り、ブレイクアウト前後の流れが見える長さにする。
  */
-function slicePriceSeries(bars: SortedBars, fromDate: string): PatternPricePoint[] {
-  return bars.filter(({ date }) => date >= fromDate).map(({ date, bar }) => ({ date, close: bar.close }));
+const CHART_DISPLAY_DAYS = 90;
+
+/** `bars` の末尾 (基準日) から遡って直近 `days` 本の終値系列を切り出す (#260 #266)。 */
+function sliceRecentPriceSeries(bars: SortedBars, days: number): PatternPricePoint[] {
+  return bars.slice(-days).map(({ date, bar }) => ({ date, close: bar.close }));
 }
 
 /**
@@ -681,7 +687,7 @@ export function buildBreakoutView(options: {
   const assets: BreakoutAsset[] = symbols.map(({ symbol, name }) => {
     const bars = toSortedBars(ohlcvObservations[symbol] ?? {});
     const detection = detectBreakout(bars);
-    const priceSeries = detection === null ? null : slicePriceSeries(bars, detection.priorHighDate);
+    const priceSeries = detection === null ? null : sliceRecentPriceSeries(bars, CHART_DISPLAY_DAYS);
     return { symbol, name, detection, priceSeries };
   });
   return roundViewNumbers({ generatedAt, assets });
