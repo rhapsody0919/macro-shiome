@@ -89,6 +89,48 @@ describe('detectCupWithHandle (#230)', () => {
     expect(detectCupWithHandle(bars(weak))).toBeNull();
   });
 
+  it('左リムの後に左リムを超える高値があれば検出しない (#254)', () => {
+    // 実データ (バックフィル後の VCR/MCHI/SLX/EPI) で発見: 左リム候補の後に
+    // さらに高い値を一度付けているのに、それを無視して古い (低い) 値を
+    // 左リムとして使ってしまうバグ。放物線フィット (R^2) で検証したところ、
+    // このケースは統計的に「上に凸 (山型)」になっていた。
+    const spike = TYPICAL.map((b) => (b.date === '2026-02-20' ? { ...b, low: 100, high: 105 } : b));
+    expect(detectCupWithHandle(bars(spike))).toBeNull();
+  });
+
+  it('カップの深さが 12% 未満なら検出しない (#254)', () => {
+    // previousAdvance = 100-50 = 50、カップ深さ = (100-94.5)/50 = 11% < 12%。
+    // IBD 公式資料 "THE 3 MOST PROFITABLE STOCK CHART PATTERNS" の
+    // Cup-with-Handle 深さ定義 (12-33%) に基づく。12% 未満は IBD の分類で
+    // Flat Base という別パターンになる。
+    const shallow = bars([
+      { date: '2026-01-05', low: 50, high: 52 }, // 上昇トレンドの起点
+      { date: '2026-01-20', low: 60, high: 75 },
+      { date: '2026-02-02', low: 95, high: 100 }, // 左リム
+      { date: '2026-03-16', low: 94.5, high: 95 }, // カップ底 (深さ 11%)
+      { date: '2026-04-27', low: 97, high: 98 }, // 右リム
+      { date: '2026-05-11', low: 97.5, high: 98 }, // 基準日 (ハンドル、2 週間後)
+    ]);
+    expect(detectCupWithHandle(shallow)).toBeNull();
+  });
+
+  it('カップ底が左リムに極端に近い (下落局面が短すぎる) なら検出しない (#254)', () => {
+    // 左リムからカップ底までわずか4日、右リムまで84日 (左側の比率 4.8% < 44.4%)。
+    // Martinelli & Hyman (1998) の「左側 20-120 日・右側 3-25 日」という非対称な
+    // 時間配分に基づく条件。他の条件 (深さ・期間・右リムの回復率) は満たす。
+    // 中間点を挟むと「別のより短いカップの左リム」として再解釈されてしまう
+    // (TYPICAL の注記と同じ理由)。左リム・カップ底・右リムだけの単純な形にする。
+    const shortLeftSide = bars([
+      { date: '2026-01-05', low: 50, high: 52 }, // 上昇トレンドの起点
+      { date: '2026-01-20', low: 60, high: 75 },
+      { date: '2026-02-02', low: 95, high: 100 }, // 左リム
+      { date: '2026-02-06', low: 80, high: 85 }, // カップ底 (左リムの 4 日後)
+      { date: '2026-04-27', low: 93, high: 98 }, // 右リム
+      { date: '2026-05-11', low: 92, high: 95 }, // 基準日 (ハンドル、2 週間後)
+    ]);
+    expect(detectCupWithHandle(shortLeftSide)).toBeNull();
+  });
+
   it('ハンドルの深さが直近上昇幅の 1/3 を超えたら検出しない (#251)', () => {
     // 右リムが左リムを大幅に上回るケース (実データで多い形)。
     // cupMidpoint 条件だけでは弾けないことを確認するデータセット:

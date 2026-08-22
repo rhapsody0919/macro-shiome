@@ -7,7 +7,8 @@
  *
  * | 項目 | 条件 |
  * | --- | --- |
- * | 深さ | 直近上昇幅の 1/3 以下が理想、1/3〜1/2 まで許容、Dow 理論に基づき最大 2/3 |
+ * | 深さ | 12〜33% が理想、1/2 まで許容、Dow 理論に基づき最大 2/3。12% 未満は IBD の
+ *       分類で Flat Base という別パターンになる (#254) |
  * | カップ期間 | 7〜65 週 |
  * | ハンドル期間 | 1〜4 週、カップの上半分で形成 |
  *
@@ -40,12 +41,34 @@ const CUP_MIN_WEEKS = 7;
 const CUP_MAX_WEEKS = 65;
 /** 深さの上限 (%)。Dow 理論に基づく最大許容値 (2/3)。 */
 const CUP_MAX_DEPTH_PERCENT = (2 / 3) * 100;
+/**
+ * 深さの下限 (%) (#254)。IBD 公式資料 "THE 3 MOST PROFITABLE STOCK CHART
+ * PATTERNS" (investors.com/chartreading 発行) は Cup-with-Handle の深さを
+ * 12-33% と定義している。独立した二次情報 (LuxAlgo 等、著者 Christopher Downie)
+ * も「12% 未満は意味のある保ち合いにならず、通常は Flat Base という別の
+ * (IBD が定義する) パターンになる」と一致して説明している。IBD 自身のパターン
+ * 分類でも Flat Base は別カテゴリとして存在するため、12% は恣意的な独自基準
+ * ではなく IBD の分類上の境界線に基づく。
+ */
+const CUP_MIN_DEPTH_PERCENT = 12;
 const HANDLE_MIN_WEEKS = 1;
 const HANDLE_MAX_WEEKS = 4;
 /** 右リムが左リムのこの比率以上に回復していることを要求する (実装上の判断、上記コメント参照)。 */
 const RIGHT_RIM_MIN_RECOVERY_RATIO = 0.95;
 /** ハンドルの深さの上限 (%)。直近上昇幅の 1/3 (#251、StockCharts の定義)。 */
 const HANDLE_MAX_DEPTH_PERCENT = (1 / 3) * 100;
+/**
+ * カップ底が左リム側 (下落局面) にどれだけ寄っているべきかの下限比率 (#254)。
+ *
+ * Martinelli & Hyman (1998, Stocks & Commodities 誌) "Cup-With-Handle And The
+ * Computerized Approach" は、カップの左側 (下落) を 20〜120 日、右側 (回復) を
+ * 3〜25 日と定義しており、左側の方が右側よりずっと長い非対称な形を前提にしている
+ * (本文に "symmetry" という単語は一度も登場しない)。この記事の最小ケース
+ * (20 日 / (20+25) 日) から比率を導出した。**この 1 点は恣意的な数値である**
+ * (この記事は日足・短めの期間を想定しており、週足ベースの長いカップにそのまま
+ * 当てはまるとは限らない)。
+ */
+const CUP_MIN_LEFT_SIDE_RATIO = 20 / (20 + 25);
 
 function average(values: readonly number[]): number {
   return values.reduce((sum, v) => sum + v, 0) / values.length;
@@ -66,19 +89,43 @@ function findBestCup(bars: SortedBars, rightRimIndex: number): CupWithHandleCup 
     if (cupWeeks > CUP_MAX_WEEKS) break; // これより左は必ず範囲外 (日付は昇順)
     if (cupWeeks < CUP_MIN_WEEKS) continue;
 
-    // カップ底: 左リムから右リムまでの最安値。
+    // カップ底: 左リムから右リムまでの最安値。カップ形成の途中 (右リムより前) の
+    // 最高値も同時に記録する (下の「左リムが最高値であること」のチェックに使う)。
+    // **右リム自身は対象に含めない。** 右リムが左リムを超えて新高値を付けるのは
+    // ブレイクアウト前夜として正常な形であり、除外すべきなのは「カップ形成の途中で
+    // 一時的に左リムを超えてから下がり直す」ダマシの動きだけ。
     let cupBottomIndex = -1;
     let cupBottomPrice = Number.POSITIVE_INFINITY;
+    let maxHighBeforeRightRim = Number.NEGATIVE_INFINITY;
     for (let k = leftRimIndex; k <= rightRimIndex; k++) {
       if (bars[k].bar.low < cupBottomPrice) {
         cupBottomPrice = bars[k].bar.low;
         cupBottomIndex = k;
+      }
+      if (k < rightRimIndex && bars[k].bar.high > maxHighBeforeRightRim) {
+        maxHighBeforeRightRim = bars[k].bar.high;
       }
     }
     if (cupBottomIndex === -1) continue;
     // カップ底が左リム・右リムと同じ日では「下落してから回復する」形が無く、
     // カップとして意味をなさない (退化ケース)。両端より内側にあることを要求する。
     if (cupBottomIndex === leftRimIndex || cupBottomIndex === rightRimIndex) continue;
+
+    // 左リムがカップ形成の途中 (右リムより前) で最高値であることを要求する (#254)。
+    // そうでなければ、左リムの後にさらに高い値を付けており、"左リム" が本当の意味での
+    // カップの起点になっていない。放物線フィット (R^2) で検証したところ、この条件が
+    // 破れている銘柄 (VCR/MCHI/SLX/EPI) は実際に「上に凸」または低い R^2 になっていた
+    // (例: VCR は左リム 357.57 のはずが期間中に 411.13 まで急騰していた)。#251 で右リムに
+    // 入れた「ハンドル期間中の最高値であること」と対になる、左リム側の同種の見落とし。
+    if (maxHighBeforeRightRim > leftRimBar.bar.high) continue;
+
+    // カップ底が左リム側 (下落局面) に十分寄っていることを要求する (#254)。
+    // これが無いと「左リム直後にわずかに下落し、そこから右リムまでずっと
+    // 上昇トレンドが続いているだけ」のような、カップと呼べない形も通ってしまう
+    // (実データで確認: バックフィル後の検出 34/36 銘柄中、大半でこの偏りが起きていた)。
+    const leftSideDays = diffDays(leftRimBar.date, bars[cupBottomIndex].date);
+    const totalDays = diffDays(leftRimBar.date, rightRimBar.date);
+    if (leftSideDays / totalDays < CUP_MIN_LEFT_SIDE_RATIO) continue;
 
     // 上昇トレンドの起点: 左リムから遡って CUP_MAX_WEEKS 以内の最安値。
     // 「直近上昇幅」を測るための基準 (#230 のコメント参照)。
@@ -97,7 +144,7 @@ function findBestCup(bars: SortedBars, rightRimIndex: number): CupWithHandleCup 
     if (previousAdvance <= 0) continue; // 上昇が無ければカップの前提が無い
 
     const depthPercent = ((leftRimBar.bar.high - cupBottomPrice) / previousAdvance) * 100;
-    if (depthPercent > CUP_MAX_DEPTH_PERCENT) continue;
+    if (depthPercent > CUP_MAX_DEPTH_PERCENT || depthPercent < CUP_MIN_DEPTH_PERCENT) continue;
 
     const candidate: CupWithHandleCup = {
       advanceStartDate: bars[advanceStartIndex].date,
