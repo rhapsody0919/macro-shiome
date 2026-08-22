@@ -684,6 +684,40 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
     ],
   },
   {
+    question: 'drawdown',
+    frequency: 'daily',
+    primaryIndicator: 'etf-spy',
+    doubleBottom: true,
+    title: 'ダブルボトム',
+    subtitle: '2 つの安値がほぼ同水準で、間に反発があり、まだブレイクアウトしていない銘柄',
+    notes: [
+      <span key="def">
+        <strong>2 つの安値の間 (ネックライン) が最も高い山を挟んで、両安値がほぼ同じ
+          水準にある形。</strong>
+        「ほぼ同じ水準」は固定比率ではなく、その銘柄の平均バー幅 (高値 − 安値の平均) の
+        0.5 倍以内という相対的な基準で判定する。銘柄ごとの値動きの荒さに応じて許容誤差が
+        自動的に変わる。
+      </span>,
+      <span key="path">
+        <strong>2 つの安値の間、および 2 つ目の安値から基準日までの経路も検証する。</strong>
+        「直近の終値がネックライン未満・2 番目の安値以上」という 1 点だけの判定では、
+        過去に一度ネックラインを上抜けて反落した銘柄や、2 つの安値の間により深い下落を
+        挟んだ銘柄まで拾ってしまう。実データで検証し、この経路依存チェックを追加した。
+      </span>,
+      <span key="oss">
+        判定条件はオープンソースのパターン検出ツールの実装 (数値条件のみ、コードは
+        移植していない) を調査して設計した。恣意的な閾値を独自に作らないため。
+      </span>,
+      <span key="rare">
+        <strong>稀なパターン。</strong>
+        該当銘柄が無い状態が続くのが通常で、異常ではない。
+      </span>,
+      <span key="source">
+        出所は Tiingo の日足 OHLCV (調整済み価格)。
+      </span>,
+    ],
+  },
+  {
     question: 'risk',
     frequency: 'daily',
     primaryIndicator: 'etf-gld',

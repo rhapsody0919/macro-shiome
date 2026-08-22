@@ -1045,3 +1045,47 @@ export interface CupWithHandleView {
   generatedAt: string;
   assets: CupWithHandleAsset[];
 }
+
+/**
+ * ダブルボトムの検出結果 (#256)。
+ *
+ * ピボット検出 (`pivots.ts`) を土台にする。2 つの安値ピボットの水準がほぼ同じ
+ * (平均バー幅の 0.5 倍以内)、間のピボット高値 (ネックライン) が両安値より高い、
+ * かつ 2 番目の安値の形成以降 (基準日まで) の終値がネックラインを超えず
+ * 2 番目の安値も割っていない (経路依存チェック)、という数値条件で判定する。
+ * 詳細な根拠は `double-bottom.ts` 先頭のコメントを参照。
+ */
+export interface DoubleBottomDetection {
+  firstBottomDate: string;
+  firstBottomPrice: number;
+  necklineDate: string;
+  necklinePrice: number;
+  secondBottomDate: string;
+  secondBottomPrice: number;
+  /** 2 つの安値の差を平均バー幅で割った比率 (閾値は 0.5)。小さいほど水準が近い。 */
+  bottomDiffRatio: number;
+  /** 2 番目の安値の出来高が 1 番目より少ないか。**参考情報**。 */
+  volumeDecreased: boolean;
+}
+
+/** ダブルボトムチャートの 1 銘柄 (#256)。 */
+export interface DoubleBottomAsset {
+  /** ティッカー。指標マスタを経由しないため symbol を直接持つ (#229 と同じ設計、ADR-0008)。 */
+  symbol: string;
+  name: string;
+  /** 検出されていなければ null (0 件は正常な状態、#230/#231 と同じ設計)。 */
+  detection: DoubleBottomDetection | null;
+}
+
+/**
+ * ダブルボトムのビュー全体 (#256)。
+ *
+ * `assets` は対象銘柄すべてを含む (検出の有無に関わらず)。ビューが存在すれば
+ * 「検出を試みて 0 件だった」ことを表せるため、取得・計算の失敗とは区別できる
+ * (#102 / #131 / #231 / #230 と同じ「緑だが歯抜け」を避ける設計)。
+ */
+export interface DoubleBottomView {
+  generatedAt: string;
+  assets: DoubleBottomAsset[];
+}
+

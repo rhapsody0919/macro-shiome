@@ -8,6 +8,7 @@
  */
 import {
   buildCupWithHandleView,
+  buildDoubleBottomView,
   buildDrawdownView,
   buildEconomyView,
   buildHighTightFlagView,
@@ -67,6 +68,10 @@ function main(): void {
     writeView(
       'cup-with-handle',
       buildCupWithHandleView({ symbols: TIINGO_ASSETS, ohlcvObservations, generatedAt: now.toISOString() }),
+    );
+    writeView(
+      'double-bottom',
+      buildDoubleBottomView({ symbols: TIINGO_ASSETS, ohlcvObservations, generatedAt: now.toISOString() }),
     );
   }
 
