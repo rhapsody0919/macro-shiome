@@ -964,7 +964,7 @@ export interface BreakoutAsset {
   name: string;
   /** 検出されていなければ null (0 件は正常な状態、#230/#231 と同じ設計)。 */
   detection: BreakoutDetection | null;
-  /** 検出時のみ、上抜けた高値の日 (`priorHighDate`) から基準日までの終値系列 (#260)。 */
+  /** 検出時のみ、基準日から直近 90 営業日の終値系列 (#260 #266)。判定に使う `lookbackDays` とは別物。 */
   priceSeries: PatternPricePoint[] | null;
 }
 
