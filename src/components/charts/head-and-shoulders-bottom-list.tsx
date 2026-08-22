@@ -1,12 +1,15 @@
 import { formatDate, formatNumber } from '@/lib/format';
 import type { HeadAndShouldersBottomAsset } from '@/lib/data/types';
 import { ChartFrame } from './chart-frame';
+import { PatternChart } from './pattern-chart';
 
 /**
  * ヘッド・アンド・ショルダーズ・ボトム (逆三尊) の検出結果 (#258)。
  *
- * `DoubleBottomList` (#256) / `CupWithHandleList` (#230) と同じ設計。時系列チャートではなく
- * リスト表示。**0 件は正常** — ビューが生成されていること自体が「検出を試みた」証拠になる。
+ * `DoubleBottomList` (#256) / `CupWithHandleList` (#230) と同じ設計。**検出された銘柄のみ**
+ * `PatternChart` (#260) で主要点 (左肩・左ネックライン・頭・右ネックライン・右肩) を
+ * 視覚化する。0 件はテキストのみ (0 件は正常な状態 — ビューが生成されていること自体が
+ * 「検出を試みた」証拠になる)。
  */
 export function HeadAndShouldersBottomList({
   title,
@@ -71,6 +74,40 @@ export function HeadAndShouldersBottomList({
                   ネックライン: {formatNumber(asset.detection.necklinePrice, 2)}
                 </span>
               </div>
+              {asset.priceSeries && (
+                <div className="mt-3">
+                  <PatternChart
+                    priceSeries={asset.priceSeries}
+                    markers={[
+                      {
+                        date: asset.detection.leftShoulderDate,
+                        price: asset.detection.leftShoulderPrice,
+                        label: '左肩',
+                      },
+                      {
+                        date: asset.detection.leftNecklineDate,
+                        price: asset.detection.leftNecklinePrice,
+                        label: 'ネックライン',
+                      },
+                      {
+                        date: asset.detection.headDate,
+                        price: asset.detection.headPrice,
+                        label: '頭',
+                      },
+                      {
+                        date: asset.detection.rightNecklineDate,
+                        price: asset.detection.rightNecklinePrice,
+                        label: 'ネックライン',
+                      },
+                      {
+                        date: asset.detection.rightShoulderDate,
+                        price: asset.detection.rightShoulderPrice,
+                        label: '右肩',
+                      },
+                    ]}
+                  />
+                </div>
+              )}
             </li>
           ))}
         </ul>

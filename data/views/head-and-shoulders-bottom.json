@@ -1,90 +1,107 @@
 {
-  "generatedAt": "2026-08-22T12:25:22.717Z",
+  "generatedAt": "2026-08-22T20:58:16.892Z",
   "assets": [
     {
       "symbol": "SPY",
       "name": "S&P 500 (SPY)",
-      "detection": null
+      "detection": null,
+      "priceSeries": null
     },
     {
       "symbol": "QQQ",
       "name": "NASDAQ-100 (QQQ)",
-      "detection": null
+      "detection": null,
+      "priceSeries": null
     },
     {
       "symbol": "VTI",
       "name": "米国株式全体 (VTI)",
-      "detection": null
+      "detection": null,
+      "priceSeries": null
     },
     {
       "symbol": "VIG",
       "name": "米国増配株 (VIG)",
-      "detection": null
+      "detection": null,
+      "priceSeries": null
     },
     {
       "symbol": "GLD",
       "name": "ゴールド (GLD)",
-      "detection": null
+      "detection": null,
+      "priceSeries": null
     },
     {
       "symbol": "GDX",
       "name": "金鉱株 (GDX)",
-      "detection": null
+      "detection": null,
+      "priceSeries": null
     },
     {
       "symbol": "VGLT",
       "name": "米国長期国債 (VGLT)",
-      "detection": null
+      "detection": null,
+      "priceSeries": null
     },
     {
       "symbol": "VNQ",
       "name": "米国REIT (VNQ)",
-      "detection": null
+      "detection": null,
+      "priceSeries": null
     },
     {
       "symbol": "IWM",
       "name": "ラッセル2000 (IWM)",
-      "detection": null
+      "detection": null,
+      "priceSeries": null
     },
     {
       "symbol": "VGT",
       "name": "情報技術",
-      "detection": null
+      "detection": null,
+      "priceSeries": null
     },
     {
       "symbol": "VCR",
       "name": "一般消費財・サービス",
-      "detection": null
+      "detection": null,
+      "priceSeries": null
     },
     {
       "symbol": "VFH",
       "name": "金融",
-      "detection": null
+      "detection": null,
+      "priceSeries": null
     },
     {
       "symbol": "VHT",
       "name": "ヘルスケア",
-      "detection": null
+      "detection": null,
+      "priceSeries": null
     },
     {
       "symbol": "VAW",
       "name": "素材",
-      "detection": null
+      "detection": null,
+      "priceSeries": null
     },
     {
       "symbol": "VDE",
       "name": "エネルギー",
-      "detection": null
+      "detection": null,
+      "priceSeries": null
     },
     {
       "symbol": "VDC",
       "name": "生活必需品",
-      "detection": null
+      "detection": null,
+      "priceSeries": null
     },
     {
       "symbol": "VPU",
       "name": "公益事業",
-      "detection": null
+      "detection": null,
+      "priceSeries": null
     },
     {
       "symbol": "USO",
@@ -103,72 +120,323 @@
         "necklinePrice": 141.42,
         "necklineDiffRatio": 0.42,
         "shoulderDepthRatio": 5.25
-      }
+      },
+      "priceSeries": [
+        {
+          "date": "2026-05-29",
+          "close": 129.09
+        },
+        {
+          "date": "2026-06-01",
+          "close": 135.5
+        },
+        {
+          "date": "2026-06-02",
+          "close": 137.27
+        },
+        {
+          "date": "2026-06-03",
+          "close": 140.86
+        },
+        {
+          "date": "2026-06-04",
+          "close": 136.74
+        },
+        {
+          "date": "2026-06-05",
+          "close": 133.02
+        },
+        {
+          "date": "2026-06-08",
+          "close": 135.15
+        },
+        {
+          "date": "2026-06-09",
+          "close": 131.3
+        },
+        {
+          "date": "2026-06-10",
+          "close": 134.3
+        },
+        {
+          "date": "2026-06-11",
+          "close": 128.83
+        },
+        {
+          "date": "2026-06-12",
+          "close": 125.43
+        },
+        {
+          "date": "2026-06-15",
+          "close": 121.21
+        },
+        {
+          "date": "2026-06-16",
+          "close": 115.47
+        },
+        {
+          "date": "2026-06-17",
+          "close": 114.23
+        },
+        {
+          "date": "2026-06-18",
+          "close": 114.87
+        },
+        {
+          "date": "2026-06-22",
+          "close": 112.69
+        },
+        {
+          "date": "2026-06-23",
+          "close": 111.26
+        },
+        {
+          "date": "2026-06-24",
+          "close": 106.29
+        },
+        {
+          "date": "2026-06-25",
+          "close": 109.31
+        },
+        {
+          "date": "2026-06-26",
+          "close": 105.48
+        },
+        {
+          "date": "2026-06-29",
+          "close": 107.08
+        },
+        {
+          "date": "2026-06-30",
+          "close": 106.44
+        },
+        {
+          "date": "2026-07-01",
+          "close": 103.27
+        },
+        {
+          "date": "2026-07-02",
+          "close": 103.98
+        },
+        {
+          "date": "2026-07-06",
+          "close": 104.35
+        },
+        {
+          "date": "2026-07-07",
+          "close": 108.92
+        },
+        {
+          "date": "2026-07-08",
+          "close": 112.21
+        },
+        {
+          "date": "2026-07-09",
+          "close": 109.01
+        },
+        {
+          "date": "2026-07-10",
+          "close": 108.7
+        },
+        {
+          "date": "2026-07-13",
+          "close": 117.79
+        },
+        {
+          "date": "2026-07-14",
+          "close": 120.17
+        },
+        {
+          "date": "2026-07-15",
+          "close": 121.38
+        },
+        {
+          "date": "2026-07-16",
+          "close": 119.3
+        },
+        {
+          "date": "2026-07-17",
+          "close": 123.96
+        },
+        {
+          "date": "2026-07-20",
+          "close": 125.51
+        },
+        {
+          "date": "2026-07-21",
+          "close": 128.85
+        },
+        {
+          "date": "2026-07-22",
+          "close": 131.68
+        },
+        {
+          "date": "2026-07-23",
+          "close": 139.49
+        },
+        {
+          "date": "2026-07-24",
+          "close": 136.69
+        },
+        {
+          "date": "2026-07-27",
+          "close": 124.76
+        },
+        {
+          "date": "2026-07-28",
+          "close": 120.49
+        },
+        {
+          "date": "2026-07-29",
+          "close": 129.31
+        },
+        {
+          "date": "2026-07-30",
+          "close": 127.48
+        },
+        {
+          "date": "2026-07-31",
+          "close": 129.17
+        },
+        {
+          "date": "2026-08-03",
+          "close": 122.12
+        },
+        {
+          "date": "2026-08-04",
+          "close": 115.78
+        },
+        {
+          "date": "2026-08-05",
+          "close": 114.88
+        },
+        {
+          "date": "2026-08-06",
+          "close": 118.87
+        },
+        {
+          "date": "2026-08-07",
+          "close": 117.98
+        },
+        {
+          "date": "2026-08-10",
+          "close": 125.92
+        },
+        {
+          "date": "2026-08-11",
+          "close": 127.61
+        },
+        {
+          "date": "2026-08-12",
+          "close": 127.3
+        },
+        {
+          "date": "2026-08-13",
+          "close": 125.03
+        },
+        {
+          "date": "2026-08-14",
+          "close": 126.6
+        },
+        {
+          "date": "2026-08-17",
+          "close": 130.29
+        },
+        {
+          "date": "2026-08-18",
+          "close": 130.66
+        },
+        {
+          "date": "2026-08-19",
+          "close": 130.91
+        },
+        {
+          "date": "2026-08-20",
+          "close": 134.54
+        },
+        {
+          "date": "2026-08-21",
+          "close": 134.64
+        }
+      ]
     },
     {
       "symbol": "UNG",
       "name": "天然ガス (UNG)",
-      "detection": null
+      "detection": null,
+      "priceSeries": null
     },
     {
       "symbol": "COPX",
       "name": "銅鉱山 (COPX)",
-      "detection": null
+      "detection": null,
+      "priceSeries": null
     },
     {
       "symbol": "SLX",
       "name": "鉄鋼・鉄鉱石 (SLX)",
-      "detection": null
+      "detection": null,
+      "priceSeries": null
     },
     {
       "symbol": "REMX",
       "name": "レアアース (REMX)",
-      "detection": null
+      "detection": null,
+      "priceSeries": null
     },
     {
       "symbol": "CORN",
       "name": "コーン (CORN)",
-      "detection": null
+      "detection": null,
+      "priceSeries": null
     },
     {
       "symbol": "WEAT",
       "name": "小麦 (WEAT)",
-      "detection": null
+      "detection": null,
+      "priceSeries": null
     },
     {
       "symbol": "EEM",
       "name": "新興国 (EEM)",
-      "detection": null
+      "detection": null,
+      "priceSeries": null
     },
     {
       "symbol": "EWJ",
       "name": "日本 (EWJ)",
-      "detection": null
+      "detection": null,
+      "priceSeries": null
     },
     {
       "symbol": "EPI",
       "name": "インド (EPI)",
-      "detection": null
+      "detection": null,
+      "priceSeries": null
     },
     {
       "symbol": "EWU",
       "name": "イギリス (EWU)",
-      "detection": null
+      "detection": null,
+      "priceSeries": null
     },
     {
       "symbol": "EWG",
       "name": "ドイツ (EWG)",
-      "detection": null
+      "detection": null,
+      "priceSeries": null
     },
     {
       "symbol": "EWZ",
       "name": "ブラジル (EWZ)",
-      "detection": null
+      "detection": null,
+      "priceSeries": null
     },
     {
       "symbol": "VNM",
       "name": "ベトナム (VNM)",
-      "detection": null
+      "detection": null,
+      "priceSeries": null
     },
     {
       "symbol": "EWW",
@@ -187,27 +455,297 @@
         "necklinePrice": 78.79,
         "necklineDiffRatio": 0.18,
         "shoulderDepthRatio": 0.96
-      }
+      },
+      "priceSeries": [
+        {
+          "date": "2026-05-19",
+          "close": 76.4
+        },
+        {
+          "date": "2026-05-20",
+          "close": 77.32
+        },
+        {
+          "date": "2026-05-21",
+          "close": 76.68
+        },
+        {
+          "date": "2026-05-22",
+          "close": 76.64
+        },
+        {
+          "date": "2026-05-26",
+          "close": 77.72
+        },
+        {
+          "date": "2026-05-27",
+          "close": 78.41
+        },
+        {
+          "date": "2026-05-28",
+          "close": 77.67
+        },
+        {
+          "date": "2026-05-29",
+          "close": 77.3
+        },
+        {
+          "date": "2026-06-01",
+          "close": 76.75
+        },
+        {
+          "date": "2026-06-02",
+          "close": 77.94
+        },
+        {
+          "date": "2026-06-03",
+          "close": 76.95
+        },
+        {
+          "date": "2026-06-04",
+          "close": 76.25
+        },
+        {
+          "date": "2026-06-05",
+          "close": 74.02
+        },
+        {
+          "date": "2026-06-08",
+          "close": 73.82
+        },
+        {
+          "date": "2026-06-09",
+          "close": 73.68
+        },
+        {
+          "date": "2026-06-10",
+          "close": 73.34
+        },
+        {
+          "date": "2026-06-11",
+          "close": 76.22
+        },
+        {
+          "date": "2026-06-12",
+          "close": 77.34
+        },
+        {
+          "date": "2026-06-15",
+          "close": 77.76
+        },
+        {
+          "date": "2026-06-16",
+          "close": 77.98
+        },
+        {
+          "date": "2026-06-17",
+          "close": 77.31
+        },
+        {
+          "date": "2026-06-18",
+          "close": 77.33
+        },
+        {
+          "date": "2026-06-22",
+          "close": 75.96
+        },
+        {
+          "date": "2026-06-23",
+          "close": 74.73
+        },
+        {
+          "date": "2026-06-24",
+          "close": 73.79
+        },
+        {
+          "date": "2026-06-25",
+          "close": 75.53
+        },
+        {
+          "date": "2026-06-26",
+          "close": 75.37
+        },
+        {
+          "date": "2026-06-29",
+          "close": 76.12
+        },
+        {
+          "date": "2026-06-30",
+          "close": 75.27
+        },
+        {
+          "date": "2026-07-01",
+          "close": 75.27
+        },
+        {
+          "date": "2026-07-02",
+          "close": 75.5
+        },
+        {
+          "date": "2026-07-06",
+          "close": 76.43
+        },
+        {
+          "date": "2026-07-07",
+          "close": 75.04
+        },
+        {
+          "date": "2026-07-08",
+          "close": 74.71
+        },
+        {
+          "date": "2026-07-09",
+          "close": 74.24
+        },
+        {
+          "date": "2026-07-10",
+          "close": 74.86
+        },
+        {
+          "date": "2026-07-13",
+          "close": 74.15
+        },
+        {
+          "date": "2026-07-14",
+          "close": 75.34
+        },
+        {
+          "date": "2026-07-15",
+          "close": 75.39
+        },
+        {
+          "date": "2026-07-16",
+          "close": 75.22
+        },
+        {
+          "date": "2026-07-17",
+          "close": 75.11
+        },
+        {
+          "date": "2026-07-20",
+          "close": 75.09
+        },
+        {
+          "date": "2026-07-21",
+          "close": 75.84
+        },
+        {
+          "date": "2026-07-22",
+          "close": 76.71
+        },
+        {
+          "date": "2026-07-23",
+          "close": 75
+        },
+        {
+          "date": "2026-07-24",
+          "close": 75.45
+        },
+        {
+          "date": "2026-07-27",
+          "close": 76.54
+        },
+        {
+          "date": "2026-07-28",
+          "close": 76.78
+        },
+        {
+          "date": "2026-07-29",
+          "close": 75.57
+        },
+        {
+          "date": "2026-07-30",
+          "close": 77.11
+        },
+        {
+          "date": "2026-07-31",
+          "close": 76.81
+        },
+        {
+          "date": "2026-08-03",
+          "close": 76.55
+        },
+        {
+          "date": "2026-08-04",
+          "close": 77.06
+        },
+        {
+          "date": "2026-08-05",
+          "close": 76.69
+        },
+        {
+          "date": "2026-08-06",
+          "close": 76.63
+        },
+        {
+          "date": "2026-08-07",
+          "close": 77.52
+        },
+        {
+          "date": "2026-08-10",
+          "close": 76.93
+        },
+        {
+          "date": "2026-08-11",
+          "close": 76.24
+        },
+        {
+          "date": "2026-08-12",
+          "close": 76.46
+        },
+        {
+          "date": "2026-08-13",
+          "close": 75.45
+        },
+        {
+          "date": "2026-08-14",
+          "close": 75.01
+        },
+        {
+          "date": "2026-08-17",
+          "close": 74.91
+        },
+        {
+          "date": "2026-08-18",
+          "close": 74.46
+        },
+        {
+          "date": "2026-08-19",
+          "close": 75.14
+        },
+        {
+          "date": "2026-08-20",
+          "close": 75.5
+        },
+        {
+          "date": "2026-08-21",
+          "close": 77.38
+        }
+      ]
     },
     {
       "symbol": "MCHI",
       "name": "中国 (MCHI)",
-      "detection": null
+      "detection": null,
+      "priceSeries": null
     },
     {
       "symbol": "EIDO",
       "name": "インドネシア (EIDO)",
-      "detection": null
+      "detection": null,
+      "priceSeries": null
     },
     {
       "symbol": "THD",
       "name": "タイ (THD)",
-      "detection": null
+      "detection": null,
+      "priceSeries": null
     },
     {
       "symbol": "SMIN",
       "name": "インド小型株 (SMIN)",
-      "detection": null
+      "detection": null,
+      "priceSeries": null
     }
   ]
 }

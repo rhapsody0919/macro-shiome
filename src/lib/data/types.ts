@@ -249,6 +249,17 @@ export interface OhlcvBar {
 }
 
 /**
+ * パターンチャート 1 点分の終値 (#260)。
+ *
+ * 検出された銘柄のみ、パターンの起点から基準日までの終値系列を持つ。
+ * ピボット (主要点) をマーカー表示するための背景の折れ線に使う。
+ */
+export interface PatternPricePoint {
+  date: string;
+  close: number;
+}
+
+/**
  * OHLCV 観測値ファイル (#229)。
  *
  * `ObservationFile` (スカラー 1 値) とは別の型にする。指標マスタ (ADR-0004) は
@@ -1032,6 +1043,8 @@ export interface CupWithHandleAsset {
   name: string;
   /** 検出されていなければ null (#230: 0 件は正常な状態)。 */
   detection: CupWithHandleDetection | null;
+  /** 検出時のみ、上昇起点 (`cup.advanceStartDate`) から基準日までの終値系列 (#260)。 */
+  priceSeries: PatternPricePoint[] | null;
 }
 
 /**
@@ -1075,6 +1088,8 @@ export interface DoubleBottomAsset {
   name: string;
   /** 検出されていなければ null (0 件は正常な状態、#230/#231 と同じ設計)。 */
   detection: DoubleBottomDetection | null;
+  /** 検出時のみ、1 つ目の安値 (`firstBottomDate`) から基準日までの終値系列 (#260)。 */
+  priceSeries: PatternPricePoint[] | null;
 }
 
 /**
@@ -1128,6 +1143,8 @@ export interface HeadAndShouldersBottomAsset {
   name: string;
   /** 検出されていなければ null (0 件は正常な状態、#230/#231/#258 と同じ設計)。 */
   detection: HeadAndShouldersBottomDetection | null;
+  /** 検出時のみ、左肩 (`leftShoulderDate`) から基準日までの終値系列 (#260)。 */
+  priceSeries: PatternPricePoint[] | null;
 }
 
 /**

@@ -1,12 +1,15 @@
 import { formatDate, formatNumber } from '@/lib/format';
 import type { DoubleBottomAsset } from '@/lib/data/types';
 import { ChartFrame } from './chart-frame';
+import { PatternChart } from './pattern-chart';
 
 /**
  * ダブルボトムの検出結果 (#256)。
  *
- * `CupWithHandleList` (#230) / `HighTightFlagList` (#231) と同じ設計。時系列チャートではなく
- * リスト表示。**0 件は正常** — ビューが生成されていること自体が「検出を試みた」証拠になる。
+ * `CupWithHandleList` (#230) / `HighTightFlagList` (#231) と同じ設計。**検出された銘柄のみ**
+ * `PatternChart` (#260) で主要点 (1 つ目の安値・ネックライン・2 つ目の安値) を視覚化する。
+ * 0 件はテキストのみ (0 件は正常な状態 — ビューが生成されていること自体が
+ * 「検出を試みた」証拠になる)。
  */
 export function DoubleBottomList({
   title,
@@ -66,6 +69,30 @@ export function DoubleBottomList({
                 </span>
                 {asset.detection.volumeDecreased && <span>2 つ目の安値は出来高少なめ</span>}
               </div>
+              {asset.priceSeries && (
+                <div className="mt-3">
+                  <PatternChart
+                    priceSeries={asset.priceSeries}
+                    markers={[
+                      {
+                        date: asset.detection.firstBottomDate,
+                        price: asset.detection.firstBottomPrice,
+                        label: '1つ目の安値',
+                      },
+                      {
+                        date: asset.detection.necklineDate,
+                        price: asset.detection.necklinePrice,
+                        label: 'ネックライン',
+                      },
+                      {
+                        date: asset.detection.secondBottomDate,
+                        price: asset.detection.secondBottomPrice,
+                        label: '2つ目の安値',
+                      },
+                    ]}
+                  />
+                </div>
+              )}
             </li>
           ))}
         </ul>

@@ -25,6 +25,7 @@ import type {
   MonthlyCoverage,
   MonthlyPoint,
   OhlcvBar,
+  PatternPricePoint,
   RevisionPoint,
   SpreadDistribution,
   ValuationPoint,
@@ -47,7 +48,7 @@ import {
   yieldSpread,
 } from './derived';
 import { fridaysBetween, sameDayLastYear, valueAsOf, valueOn, weekdaysBetween } from './weeks';
-import { detectHighTightFlag, toSortedBars } from './high-tight-flag';
+import { detectHighTightFlag, toSortedBars, type SortedBars } from './high-tight-flag';
 import { detectCupWithHandle } from './cup-with-handle';
 import { detectDoubleBottom } from './double-bottom';
 import { detectHeadAndShouldersBottom } from './head-and-shoulders-bottom';
@@ -683,6 +684,16 @@ export function buildHighTightFlagView(options: {
 }
 
 /**
+ * `fromDate` (パターンの起点) から `bars` の末尾 (基準日) までの終値系列を切り出す (#260)。
+ *
+ * チャートに表示するための背景の折れ線。検出結果の主要点はすべてこの区間に含まれる
+ * (`fromDate` 自身がピボットの日付のため)。
+ */
+function slicePriceSeries(bars: SortedBars, fromDate: string): PatternPricePoint[] {
+  return bars.filter(({ date }) => date >= fromDate).map(({ date, bar }) => ({ date, close: bar.close }));
+}
+
+/**
  * カップウィズハンドルのビュー (#230)。`buildHighTightFlagView` (#231) と同じ設計。
  */
 export function buildCupWithHandleView(options: {
@@ -693,7 +704,9 @@ export function buildCupWithHandleView(options: {
   const { symbols, ohlcvObservations, generatedAt } = options;
   const assets: CupWithHandleAsset[] = symbols.map(({ symbol, name }) => {
     const bars = toSortedBars(ohlcvObservations[symbol] ?? {});
-    return { symbol, name, detection: detectCupWithHandle(bars) };
+    const detection = detectCupWithHandle(bars);
+    const priceSeries = detection === null ? null : slicePriceSeries(bars, detection.cup.advanceStartDate);
+    return { symbol, name, detection, priceSeries };
   });
   return roundViewNumbers({ generatedAt, assets });
 }
@@ -709,7 +722,9 @@ export function buildDoubleBottomView(options: {
   const { symbols, ohlcvObservations, generatedAt } = options;
   const assets: DoubleBottomAsset[] = symbols.map(({ symbol, name }) => {
     const bars = toSortedBars(ohlcvObservations[symbol] ?? {});
-    return { symbol, name, detection: detectDoubleBottom(bars) };
+    const detection = detectDoubleBottom(bars);
+    const priceSeries = detection === null ? null : slicePriceSeries(bars, detection.firstBottomDate);
+    return { symbol, name, detection, priceSeries };
   });
   return roundViewNumbers({ generatedAt, assets });
 }
@@ -726,7 +741,9 @@ export function buildHeadAndShouldersBottomView(options: {
   const { symbols, ohlcvObservations, generatedAt } = options;
   const assets: HeadAndShouldersBottomAsset[] = symbols.map(({ symbol, name }) => {
     const bars = toSortedBars(ohlcvObservations[symbol] ?? {});
-    return { symbol, name, detection: detectHeadAndShouldersBottom(bars) };
+    const detection = detectHeadAndShouldersBottom(bars);
+    const priceSeries = detection === null ? null : slicePriceSeries(bars, detection.leftShoulderDate);
+    return { symbol, name, detection, priceSeries };
   });
   return roundViewNumbers({ generatedAt, assets });
 }
