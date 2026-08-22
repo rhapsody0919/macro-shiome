@@ -1,0 +1,449 @@
+{
+  "generatedAt": "2026-08-22T21:40:59.813Z",
+  "assets": [
+    {
+      "symbol": "SPY",
+      "name": "S&P 500 (SPY)",
+      "detection": null,
+      "priceSeries": null
+    },
+    {
+      "symbol": "QQQ",
+      "name": "NASDAQ-100 (QQQ)",
+      "detection": null,
+      "priceSeries": null
+    },
+    {
+      "symbol": "VTI",
+      "name": "米国株式全体 (VTI)",
+      "detection": null,
+      "priceSeries": null
+    },
+    {
+      "symbol": "VIG",
+      "name": "米国増配株 (VIG)",
+      "detection": null,
+      "priceSeries": null
+    },
+    {
+      "symbol": "GLD",
+      "name": "ゴールド (GLD)",
+      "detection": {
+        "breakoutDate": "2026-08-21",
+        "breakoutPrice": 423.36,
+        "priorHighDate": "2026-08-20",
+        "priorHighPrice": 416.45,
+        "lookbackDays": 20
+      },
+      "priceSeries": [
+        {
+          "date": "2026-08-20",
+          "close": 415.26
+        },
+        {
+          "date": "2026-08-21",
+          "close": 423.36
+        }
+      ]
+    },
+    {
+      "symbol": "GDX",
+      "name": "金鉱株 (GDX)",
+      "detection": {
+        "breakoutDate": "2026-08-21",
+        "breakoutPrice": 102.83,
+        "priorHighDate": "2026-08-20",
+        "priorHighPrice": 100.33,
+        "lookbackDays": 20
+      },
+      "priceSeries": [
+        {
+          "date": "2026-08-20",
+          "close": 99.85
+        },
+        {
+          "date": "2026-08-21",
+          "close": 102.83
+        }
+      ]
+    },
+    {
+      "symbol": "VGLT",
+      "name": "米国長期国債 (VGLT)",
+      "detection": null,
+      "priceSeries": null
+    },
+    {
+      "symbol": "VNQ",
+      "name": "米国REIT (VNQ)",
+      "detection": null,
+      "priceSeries": null
+    },
+    {
+      "symbol": "IWM",
+      "name": "ラッセル2000 (IWM)",
+      "detection": null,
+      "priceSeries": null
+    },
+    {
+      "symbol": "VGT",
+      "name": "情報技術",
+      "detection": null,
+      "priceSeries": null
+    },
+    {
+      "symbol": "VCR",
+      "name": "一般消費財・サービス",
+      "detection": null,
+      "priceSeries": null
+    },
+    {
+      "symbol": "VFH",
+      "name": "金融",
+      "detection": null,
+      "priceSeries": null
+    },
+    {
+      "symbol": "VHT",
+      "name": "ヘルスケア",
+      "detection": null,
+      "priceSeries": null
+    },
+    {
+      "symbol": "VAW",
+      "name": "素材",
+      "detection": null,
+      "priceSeries": null
+    },
+    {
+      "symbol": "VDE",
+      "name": "エネルギー",
+      "detection": null,
+      "priceSeries": null
+    },
+    {
+      "symbol": "VDC",
+      "name": "生活必需品",
+      "detection": null,
+      "priceSeries": null
+    },
+    {
+      "symbol": "VPU",
+      "name": "公益事業",
+      "detection": null,
+      "priceSeries": null
+    },
+    {
+      "symbol": "USO",
+      "name": "原油 (USO)",
+      "detection": null,
+      "priceSeries": null
+    },
+    {
+      "symbol": "UNG",
+      "name": "天然ガス (UNG)",
+      "detection": null,
+      "priceSeries": null
+    },
+    {
+      "symbol": "COPX",
+      "name": "銅鉱山 (COPX)",
+      "detection": {
+        "breakoutDate": "2026-08-21",
+        "breakoutPrice": 94.59,
+        "priorHighDate": "2026-08-12",
+        "priorHighPrice": 90.25,
+        "lookbackDays": 20
+      },
+      "priceSeries": [
+        {
+          "date": "2026-08-12",
+          "close": 88.3
+        },
+        {
+          "date": "2026-08-13",
+          "close": 85.52
+        },
+        {
+          "date": "2026-08-14",
+          "close": 85.7
+        },
+        {
+          "date": "2026-08-17",
+          "close": 87.34
+        },
+        {
+          "date": "2026-08-18",
+          "close": 85.57
+        },
+        {
+          "date": "2026-08-19",
+          "close": 88.28
+        },
+        {
+          "date": "2026-08-20",
+          "close": 89.93
+        },
+        {
+          "date": "2026-08-21",
+          "close": 94.59
+        }
+      ]
+    },
+    {
+      "symbol": "SLX",
+      "name": "鉄鋼・鉄鉱石 (SLX)",
+      "detection": null,
+      "priceSeries": null
+    },
+    {
+      "symbol": "REMX",
+      "name": "レアアース (REMX)",
+      "detection": {
+        "breakoutDate": "2026-08-21",
+        "breakoutPrice": 80.75,
+        "priorHighDate": "2026-08-17",
+        "priorHighPrice": 79.42,
+        "lookbackDays": 20
+      },
+      "priceSeries": [
+        {
+          "date": "2026-08-17",
+          "close": 78.93
+        },
+        {
+          "date": "2026-08-18",
+          "close": 76.55
+        },
+        {
+          "date": "2026-08-19",
+          "close": 75.99
+        },
+        {
+          "date": "2026-08-20",
+          "close": 75.69
+        },
+        {
+          "date": "2026-08-21",
+          "close": 80.75
+        }
+      ]
+    },
+    {
+      "symbol": "CORN",
+      "name": "コーン (CORN)",
+      "detection": {
+        "breakoutDate": "2026-08-21",
+        "breakoutPrice": 19.01,
+        "priorHighDate": "2026-08-20",
+        "priorHighPrice": 18.98,
+        "lookbackDays": 20
+      },
+      "priceSeries": [
+        {
+          "date": "2026-08-20",
+          "close": 18.83
+        },
+        {
+          "date": "2026-08-21",
+          "close": 19.01
+        }
+      ]
+    },
+    {
+      "symbol": "WEAT",
+      "name": "小麦 (WEAT)",
+      "detection": null,
+      "priceSeries": null
+    },
+    {
+      "symbol": "EEM",
+      "name": "新興国 (EEM)",
+      "detection": null,
+      "priceSeries": null
+    },
+    {
+      "symbol": "EWJ",
+      "name": "日本 (EWJ)",
+      "detection": null,
+      "priceSeries": null
+    },
+    {
+      "symbol": "EPI",
+      "name": "インド (EPI)",
+      "detection": null,
+      "priceSeries": null
+    },
+    {
+      "symbol": "EWU",
+      "name": "イギリス (EWU)",
+      "detection": {
+        "breakoutDate": "2026-08-21",
+        "breakoutPrice": 48.94,
+        "priorHighDate": "2026-08-07",
+        "priorHighPrice": 48.86,
+        "lookbackDays": 20
+      },
+      "priceSeries": [
+        {
+          "date": "2026-08-07",
+          "close": 48.64
+        },
+        {
+          "date": "2026-08-10",
+          "close": 48.49
+        },
+        {
+          "date": "2026-08-11",
+          "close": 48.3
+        },
+        {
+          "date": "2026-08-12",
+          "close": 48.37
+        },
+        {
+          "date": "2026-08-13",
+          "close": 48.26
+        },
+        {
+          "date": "2026-08-14",
+          "close": 48.26
+        },
+        {
+          "date": "2026-08-17",
+          "close": 48.16
+        },
+        {
+          "date": "2026-08-18",
+          "close": 48.16
+        },
+        {
+          "date": "2026-08-19",
+          "close": 48.57
+        },
+        {
+          "date": "2026-08-20",
+          "close": 48.54
+        },
+        {
+          "date": "2026-08-21",
+          "close": 48.94
+        }
+      ]
+    },
+    {
+      "symbol": "EWG",
+      "name": "ドイツ (EWG)",
+      "detection": null,
+      "priceSeries": null
+    },
+    {
+      "symbol": "EWZ",
+      "name": "ブラジル (EWZ)",
+      "detection": null,
+      "priceSeries": null
+    },
+    {
+      "symbol": "VNM",
+      "name": "ベトナム (VNM)",
+      "detection": {
+        "breakoutDate": "2026-08-21",
+        "breakoutPrice": 17.87,
+        "priorHighDate": "2026-08-12",
+        "priorHighPrice": 17.84,
+        "lookbackDays": 20
+      },
+      "priceSeries": [
+        {
+          "date": "2026-08-12",
+          "close": 17.8
+        },
+        {
+          "date": "2026-08-13",
+          "close": 17.52
+        },
+        {
+          "date": "2026-08-14",
+          "close": 17.16
+        },
+        {
+          "date": "2026-08-17",
+          "close": 17.15
+        },
+        {
+          "date": "2026-08-18",
+          "close": 17.11
+        },
+        {
+          "date": "2026-08-19",
+          "close": 17.08
+        },
+        {
+          "date": "2026-08-20",
+          "close": 17.15
+        },
+        {
+          "date": "2026-08-21",
+          "close": 17.87
+        }
+      ]
+    },
+    {
+      "symbol": "EWW",
+      "name": "メキシコ (EWW)",
+      "detection": null,
+      "priceSeries": null
+    },
+    {
+      "symbol": "MCHI",
+      "name": "中国 (MCHI)",
+      "detection": null,
+      "priceSeries": null
+    },
+    {
+      "symbol": "EIDO",
+      "name": "インドネシア (EIDO)",
+      "detection": null,
+      "priceSeries": null
+    },
+    {
+      "symbol": "THD",
+      "name": "タイ (THD)",
+      "detection": {
+        "breakoutDate": "2026-08-21",
+        "breakoutPrice": 74.76,
+        "priorHighDate": "2026-08-17",
+        "priorHighPrice": 73.95,
+        "lookbackDays": 20
+      },
+      "priceSeries": [
+        {
+          "date": "2026-08-17",
+          "close": 73.88
+        },
+        {
+          "date": "2026-08-18",
+          "close": 73.45
+        },
+        {
+          "date": "2026-08-19",
+          "close": 73.81
+        },
+        {
+          "date": "2026-08-20",
+          "close": 73.56
+        },
+        {
+          "date": "2026-08-21",
+          "close": 74.76
+        }
+      ]
+    },
+    {
+      "symbol": "SMIN",
+      "name": "インド小型株 (SMIN)",
+      "detection": null,
+      "priceSeries": null
+    }
+  ]
+}

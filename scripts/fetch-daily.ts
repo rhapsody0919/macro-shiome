@@ -32,12 +32,9 @@ import { fetchEstatIndicator } from '../src/lib/adapters/estat-dashboard';
 import { EstatClient, readEstatAppIdFromEnv } from '../src/lib/adapters/estat-api';
 import { DAILY_VIEWS } from '../src/lib/data/daily-series';
 import {
-  buildCupWithHandleView,
-  buildDoubleBottomView,
+  buildBreakoutView,
   buildDrawdownView,
   buildEconomyView,
-  buildHeadAndShouldersBottomView,
-  buildHighTightFlagView,
   buildMacroView,
   buildDailyView,
   buildRevisionSeries,
@@ -360,31 +357,14 @@ async function main(): Promise<void> {
       ),
     }),
   );
-  // パターン検出 (#230 #231 #256 #258)。指標マスタを経由しない (#229 と同じ理由、ADR-0008)。
-  // OHLCV は 4 つのビューで共通のため 1 回だけ読む。
+  // ブレイクアウト検出 (#264)。指標マスタを経由しない (#229 と同じ理由、ADR-0008)。
   {
     const ohlcvObservations = Object.fromEntries(
       TIINGO_SYMBOLS.map((symbol) => [symbol, readOhlcvObservations(symbol)]),
     );
     writeView(
-      'high-tight-flag',
-      buildHighTightFlagView({ symbols: TIINGO_ASSETS, ohlcvObservations, generatedAt: now.toISOString() }),
-    );
-    writeView(
-      'cup-with-handle',
-      buildCupWithHandleView({ symbols: TIINGO_ASSETS, ohlcvObservations, generatedAt: now.toISOString() }),
-    );
-    writeView(
-      'double-bottom',
-      buildDoubleBottomView({ symbols: TIINGO_ASSETS, ohlcvObservations, generatedAt: now.toISOString() }),
-    );
-    writeView(
-      'head-and-shoulders-bottom',
-      buildHeadAndShouldersBottomView({
-        symbols: TIINGO_ASSETS,
-        ohlcvObservations,
-        generatedAt: now.toISOString(),
-      }),
+      'breakout',
+      buildBreakoutView({ symbols: TIINGO_ASSETS, ohlcvObservations, generatedAt: now.toISOString() }),
     );
   }
 

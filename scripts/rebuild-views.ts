@@ -7,12 +7,9 @@
  * 実行: pnpm rebuild:views
  */
 import {
-  buildCupWithHandleView,
-  buildDoubleBottomView,
+  buildBreakoutView,
   buildDrawdownView,
   buildEconomyView,
-  buildHeadAndShouldersBottomView,
-  buildHighTightFlagView,
   buildMacroView,
   buildDailyView,
   buildRevisionSeries,
@@ -63,24 +60,8 @@ function main(): void {
       TIINGO_SYMBOLS.map((symbol) => [symbol, readOhlcvObservations(symbol)]),
     );
     writeView(
-      'high-tight-flag',
-      buildHighTightFlagView({ symbols: TIINGO_ASSETS, ohlcvObservations, generatedAt: now.toISOString() }),
-    );
-    writeView(
-      'cup-with-handle',
-      buildCupWithHandleView({ symbols: TIINGO_ASSETS, ohlcvObservations, generatedAt: now.toISOString() }),
-    );
-    writeView(
-      'double-bottom',
-      buildDoubleBottomView({ symbols: TIINGO_ASSETS, ohlcvObservations, generatedAt: now.toISOString() }),
-    );
-    writeView(
-      'head-and-shoulders-bottom',
-      buildHeadAndShouldersBottomView({
-        symbols: TIINGO_ASSETS,
-        ohlcvObservations,
-        generatedAt: now.toISOString(),
-      }),
+      'breakout',
+      buildBreakoutView({ symbols: TIINGO_ASSETS, ohlcvObservations, generatedAt: now.toISOString() }),
     );
   }
 

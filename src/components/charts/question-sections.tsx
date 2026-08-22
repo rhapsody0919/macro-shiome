@@ -1,18 +1,9 @@
 import { Suspense, type ReactNode } from 'react';
 import { MacroChart, type SeriesDef } from './macro-chart';
 import { DrawdownChart } from './drawdown-chart';
-import { HighTightFlagList } from './high-tight-flag-list';
-import { CupWithHandleList } from './cup-with-handle-list';
-import { DoubleBottomList } from './double-bottom-list';
-import { HeadAndShouldersBottomList } from './head-and-shoulders-bottom-list';
+import { BreakoutList } from './breakout-list';
 import { DRAWDOWN_PALETTE } from '@/lib/colors';
-import {
-  cupWithHandle,
-  doubleBottom,
-  drawdown,
-  headAndShouldersBottom,
-  highTightFlag,
-} from '@/lib/data/loader';
+import { breakout, drawdown } from '@/lib/data/loader';
 import { MonthlyChart, type MonthlySeriesDef } from './monthly-chart';
 import { Badges } from './badges';
 import { IndicatorExplanations } from './indicator-explanation';
@@ -95,16 +86,10 @@ export type QuestionChartDef<K extends string> =
    */
   | (ChartBase<K> & { frequency: 'weekly'; drawdownGroup: string })
   /**
-   * High Tight Flag の検出結果 (#231)。時系列チャートではなくリスト表示なので
+   * ブレイクアウト (N日高値抜け) の検出結果 (#264)。時系列チャートではなくリスト表示なので
    * `series` を持たない。
    */
-  | (ChartBase<K> & { frequency: 'daily'; highTightFlag: true })
-  /** カップウィズハンドルの検出結果 (#230)。High Tight Flag と同じくリスト表示。 */
-  | (ChartBase<K> & { frequency: 'daily'; cupWithHandle: true })
-  /** ダブルボトムの検出結果 (#256)。High Tight Flag と同じくリスト表示。 */
-  | (ChartBase<K> & { frequency: 'daily'; doubleBottom: true })
-  /** ヘッド・アンド・ショルダーズ・ボトム (逆三尊) の検出結果 (#258)。同じくリスト表示。 */
-  | (ChartBase<K> & { frequency: 'daily'; headAndShouldersBottom: true });
+  | (ChartBase<K> & { frequency: 'daily'; breakout: true });
 
 /**
  * 景気サイクルの分類を指標マスタから引く。
@@ -191,38 +176,11 @@ export function QuestionSections<K extends string>({
                   explanation={<IndicatorExplanations ids={explainedIds(chart)} />}
                   badges={<Badges frequency="daily" cyclePosition={cycleOf(chart)} />}
                 />
-              ) : 'highTightFlag' in chart ? (
-                <HighTightFlagList
+              ) : 'breakout' in chart ? (
+                <BreakoutList
                   title={chart.title}
                   subtitle={chart.subtitle}
-                  assets={highTightFlag.assets}
-                  notes={chart.notes}
-                  explanation={<IndicatorExplanations ids={explainedIds(chart)} />}
-                  badges={<Badges frequency="daily" cyclePosition={cycleOf(chart)} />}
-                />
-              ) : 'cupWithHandle' in chart ? (
-                <CupWithHandleList
-                  title={chart.title}
-                  subtitle={chart.subtitle}
-                  assets={cupWithHandle.assets}
-                  notes={chart.notes}
-                  explanation={<IndicatorExplanations ids={explainedIds(chart)} />}
-                  badges={<Badges frequency="daily" cyclePosition={cycleOf(chart)} />}
-                />
-              ) : 'doubleBottom' in chart ? (
-                <DoubleBottomList
-                  title={chart.title}
-                  subtitle={chart.subtitle}
-                  assets={doubleBottom.assets}
-                  notes={chart.notes}
-                  explanation={<IndicatorExplanations ids={explainedIds(chart)} />}
-                  badges={<Badges frequency="daily" cyclePosition={cycleOf(chart)} />}
-                />
-              ) : 'headAndShouldersBottom' in chart ? (
-                <HeadAndShouldersBottomList
-                  title={chart.title}
-                  subtitle={chart.subtitle}
-                  assets={headAndShouldersBottom.assets}
+                  assets={breakout.assets}
                   notes={chart.notes}
                   explanation={<IndicatorExplanations ids={explainedIds(chart)} />}
                   badges={<Badges frequency="daily" cyclePosition={cycleOf(chart)} />}
