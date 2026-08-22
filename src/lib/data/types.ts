@@ -1015,6 +1015,8 @@ export interface CupWithHandleDetection {
   handleEnd: string;
   /** ハンドル期間 (週、小数)。 */
   handleWeeks: number;
+  /** ハンドルの深さ = (右リム − ハンドル最安値) ÷ 直近上昇幅 × 100 (%) (#251)。 */
+  handleDepthPercent: number;
   /** ハンドル中の最安値がカップの上半分 (中間点より上) に留まっているか。 */
   handleInUpperHalf: boolean;
   /** カップ形成 (左リム→カップ底) の平均出来高がリバウンド (カップ底→右リム) より多いか。**参考情報** (#230)。 */

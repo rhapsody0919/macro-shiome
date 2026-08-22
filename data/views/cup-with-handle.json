@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T03:45:40.636Z",
+  "generatedAt": "2026-08-22T04:33:49.791Z",
   "assets": [
     {
       "symbol": "SPY",
@@ -20,6 +20,7 @@
         "handleStart": "2026-08-17",
         "handleEnd": "2026-08-21",
         "handleWeeks": 1,
+        "handleDepthPercent": 15.08,
         "handleInUpperHalf": true,
         "volumeDecreasedDuringCup": true,
         "handleVolumeLight": true
@@ -28,26 +29,7 @@
     {
       "symbol": "QQQ",
       "name": "NASDAQ-100 (QQQ)",
-      "detection": {
-        "cup": {
-          "advanceStartDate": "2025-04-07",
-          "advanceStartPrice": 400.03,
-          "leftRimDate": "2025-05-16",
-          "leftRimPrice": 518.64,
-          "cupBottomDate": "2025-05-23",
-          "cupBottomPrice": 502.61,
-          "rightRimDate": "2026-08-14",
-          "rightRimPrice": 734.39,
-          "depthPercent": 13.51,
-          "weeks": 65
-        },
-        "handleStart": "2026-08-17",
-        "handleEnd": "2026-08-21",
-        "handleWeeks": 1,
-        "handleInUpperHalf": true,
-        "volumeDecreasedDuringCup": true,
-        "handleVolumeLight": true
-      }
+      "detection": null
     },
     {
       "symbol": "VTI",
@@ -68,6 +50,7 @@
         "handleStart": "2026-08-17",
         "handleEnd": "2026-08-21",
         "handleWeeks": 1,
+        "handleDepthPercent": 15.34,
         "handleInUpperHalf": true,
         "volumeDecreasedDuringCup": false,
         "handleVolumeLight": true
@@ -80,18 +63,19 @@
         "cup": {
           "advanceStartDate": "2025-04-07",
           "advanceStartPrice": 165.89,
-          "leftRimDate": "2025-05-16",
-          "leftRimPrice": 195.07,
+          "leftRimDate": "2025-05-15",
+          "leftRimPrice": 193.74,
           "cupBottomDate": "2025-05-23",
           "cupBottomPrice": 189.1,
-          "rightRimDate": "2026-08-14",
-          "rightRimPrice": 246.21,
-          "depthPercent": 20.46,
+          "rightRimDate": "2026-08-13",
+          "rightRimPrice": 247.45,
+          "depthPercent": 16.66,
           "weeks": 65
         },
-        "handleStart": "2026-08-17",
+        "handleStart": "2026-08-14",
         "handleEnd": "2026-08-21",
-        "handleWeeks": 1,
+        "handleWeeks": 1.14,
+        "handleDepthPercent": 19.21,
         "handleInUpperHalf": true,
         "volumeDecreasedDuringCup": false,
         "handleVolumeLight": true
@@ -100,74 +84,17 @@
     {
       "symbol": "GLD",
       "name": "ゴールド (GLD)",
-      "detection": {
-        "cup": {
-          "advanceStartDate": "2024-08-22",
-          "advanceStartPrice": 228.26,
-          "leftRimDate": "2025-05-21",
-          "leftRimPrice": 306.46,
-          "cupBottomDate": "2025-06-27",
-          "cupBottomPrice": 299.89,
-          "rightRimDate": "2026-08-14",
-          "rightRimPrice": 403.33,
-          "depthPercent": 8.4,
-          "weeks": 64.29
-        },
-        "handleStart": "2026-08-17",
-        "handleEnd": "2026-08-21",
-        "handleWeeks": 1,
-        "handleInUpperHalf": true,
-        "volumeDecreasedDuringCup": false,
-        "handleVolumeLight": false
-      }
+      "detection": null
     },
     {
       "symbol": "GDX",
       "name": "金鉱株 (GDX)",
-      "detection": {
-        "cup": {
-          "advanceStartDate": "2024-12-30",
-          "advanceStartPrice": 33.19,
-          "leftRimDate": "2025-05-21",
-          "leftRimPrice": 49.35,
-          "cupBottomDate": "2025-05-22",
-          "cupBottomPrice": 48.36,
-          "rightRimDate": "2026-08-14",
-          "rightRimPrice": 91.02,
-          "depthPercent": 6.14,
-          "weeks": 64.29
-        },
-        "handleStart": "2026-08-17",
-        "handleEnd": "2026-08-21",
-        "handleWeeks": 1,
-        "handleInUpperHalf": true,
-        "volumeDecreasedDuringCup": false,
-        "handleVolumeLight": false
-      }
+      "detection": null
     },
     {
       "symbol": "VGLT",
       "name": "米国長期国債 (VGLT)",
-      "detection": {
-        "cup": {
-          "advanceStartDate": "2025-01-14",
-          "advanceStartPrice": 50.12,
-          "leftRimDate": "2025-05-27",
-          "leftRimPrice": 51.73,
-          "cupBottomDate": "2025-05-28",
-          "cupBottomPrice": 51.17,
-          "rightRimDate": "2026-08-14",
-          "rightRimPrice": 52.93,
-          "depthPercent": 35.06,
-          "weeks": 63.43
-        },
-        "handleStart": "2026-08-17",
-        "handleEnd": "2026-08-21",
-        "handleWeeks": 1,
-        "handleInUpperHalf": true,
-        "volumeDecreasedDuringCup": true,
-        "handleVolumeLight": false
-      }
+      "detection": null
     },
     {
       "symbol": "VNQ",
@@ -176,18 +103,19 @@
         "cup": {
           "advanceStartDate": "2025-04-09",
           "advanceStartPrice": 73.32,
-          "leftRimDate": "2025-05-16",
-          "leftRimPrice": 86.1,
+          "leftRimDate": "2025-05-08",
+          "leftRimPrice": 85.25,
           "cupBottomDate": "2025-05-22",
           "cupBottomPrice": 82.32,
-          "rightRimDate": "2026-08-14",
-          "rightRimPrice": 99.01,
-          "depthPercent": 29.58,
+          "rightRimDate": "2026-08-06",
+          "rightRimPrice": 99.66,
+          "depthPercent": 24.54,
           "weeks": 65
         },
-        "handleStart": "2026-08-17",
+        "handleStart": "2026-08-07",
         "handleEnd": "2026-08-21",
-        "handleWeeks": 1,
+        "handleWeeks": 2.14,
+        "handleDepthPercent": 28.21,
         "handleInUpperHalf": true,
         "volumeDecreasedDuringCup": false,
         "handleVolumeLight": true
@@ -212,6 +140,7 @@
         "handleStart": "2026-08-17",
         "handleEnd": "2026-08-21",
         "handleWeeks": 1,
+        "handleDepthPercent": 21.48,
         "handleInUpperHalf": true,
         "volumeDecreasedDuringCup": false,
         "handleVolumeLight": true
@@ -236,6 +165,7 @@
         "handleStart": "2026-08-17",
         "handleEnd": "2026-08-21",
         "handleWeeks": 1,
+        "handleDepthPercent": 28.21,
         "handleInUpperHalf": true,
         "volumeDecreasedDuringCup": false,
         "handleVolumeLight": false
@@ -260,6 +190,7 @@
         "handleStart": "2026-08-17",
         "handleEnd": "2026-08-21",
         "handleWeeks": 1,
+        "handleDepthPercent": 13.52,
         "handleInUpperHalf": true,
         "volumeDecreasedDuringCup": false,
         "handleVolumeLight": true
@@ -284,6 +215,7 @@
         "handleStart": "2026-08-17",
         "handleEnd": "2026-08-21",
         "handleWeeks": 1,
+        "handleDepthPercent": 15.48,
         "handleInUpperHalf": true,
         "volumeDecreasedDuringCup": true,
         "handleVolumeLight": false
@@ -292,146 +224,32 @@
     {
       "symbol": "VHT",
       "name": "ヘルスケア",
-      "detection": {
-        "cup": {
-          "advanceStartDate": "2025-04-09",
-          "advanceStartPrice": 229.24,
-          "leftRimDate": "2025-05-16",
-          "leftRimPrice": 239.43,
-          "cupBottomDate": "2025-05-23",
-          "cupBottomPrice": 232.84,
-          "rightRimDate": "2026-08-14",
-          "rightRimPrice": 315.23,
-          "depthPercent": 64.65,
-          "weeks": 65
-        },
-        "handleStart": "2026-08-17",
-        "handleEnd": "2026-08-21",
-        "handleWeeks": 1,
-        "handleInUpperHalf": true,
-        "volumeDecreasedDuringCup": true,
-        "handleVolumeLight": true
-      }
+      "detection": null
     },
     {
       "symbol": "VAW",
       "name": "素材",
-      "detection": {
-        "cup": {
-          "advanceStartDate": "2025-04-08",
-          "advanceStartPrice": 158.39,
-          "leftRimDate": "2025-05-16",
-          "leftRimPrice": 188.77,
-          "cupBottomDate": "2025-05-23",
-          "cupBottomPrice": 184.05,
-          "rightRimDate": "2026-08-14",
-          "rightRimPrice": 235.86,
-          "depthPercent": 15.54,
-          "weeks": 65
-        },
-        "handleStart": "2026-08-17",
-        "handleEnd": "2026-08-21",
-        "handleWeeks": 1,
-        "handleInUpperHalf": true,
-        "volumeDecreasedDuringCup": false,
-        "handleVolumeLight": true
-      }
+      "detection": null
     },
     {
       "symbol": "VDE",
       "name": "エネルギー",
-      "detection": {
-        "cup": {
-          "advanceStartDate": "2025-04-09",
-          "advanceStartPrice": 99.4,
-          "leftRimDate": "2025-05-16",
-          "leftRimPrice": 115.71,
-          "cupBottomDate": "2025-05-22",
-          "cupBottomPrice": 108.71,
-          "rightRimDate": "2026-08-14",
-          "rightRimPrice": 175.33,
-          "depthPercent": 42.92,
-          "weeks": 65
-        },
-        "handleStart": "2026-08-17",
-        "handleEnd": "2026-08-21",
-        "handleWeeks": 1,
-        "handleInUpperHalf": true,
-        "volumeDecreasedDuringCup": false,
-        "handleVolumeLight": true
-      }
+      "detection": null
     },
     {
       "symbol": "VDC",
       "name": "生活必需品",
-      "detection": {
-        "cup": {
-          "advanceStartDate": "2025-04-08",
-          "advanceStartPrice": 197.45,
-          "leftRimDate": "2025-09-23",
-          "leftRimPrice": 210.56,
-          "cupBottomDate": "2025-11-06",
-          "cupBottomPrice": 202.09,
-          "rightRimDate": "2026-08-14",
-          "rightRimPrice": 233.84,
-          "depthPercent": 64.65,
-          "weeks": 46.43
-        },
-        "handleStart": "2026-08-17",
-        "handleEnd": "2026-08-21",
-        "handleWeeks": 1,
-        "handleInUpperHalf": true,
-        "volumeDecreasedDuringCup": false,
-        "handleVolumeLight": false
-      }
+      "detection": null
     },
     {
       "symbol": "VPU",
       "name": "公益事業",
-      "detection": {
-        "cup": {
-          "advanceStartDate": "2025-04-09",
-          "advanceStartPrice": 148.85,
-          "leftRimDate": "2025-05-16",
-          "leftRimPrice": 171.64,
-          "cupBottomDate": "2025-05-22",
-          "cupBottomPrice": 165.45,
-          "rightRimDate": "2026-08-14",
-          "rightRimPrice": 192.14,
-          "depthPercent": 27.15,
-          "weeks": 65
-        },
-        "handleStart": "2026-08-17",
-        "handleEnd": "2026-08-21",
-        "handleWeeks": 1,
-        "handleInUpperHalf": true,
-        "volumeDecreasedDuringCup": false,
-        "handleVolumeLight": true
-      }
+      "detection": null
     },
     {
       "symbol": "USO",
       "name": "原油 (USO)",
-      "detection": {
-        "cup": {
-          "advanceStartDate": "2025-04-09",
-          "advanceStartPrice": 60.67,
-          "leftRimDate": "2025-05-16",
-          "leftRimPrice": 68.54,
-          "cupBottomDate": "2025-05-30",
-          "cupBottomPrice": 65.96,
-          "rightRimDate": "2026-08-14",
-          "rightRimPrice": 126.92,
-          "depthPercent": 32.78,
-          "weeks": 65
-        },
-        "handleStart": "2026-08-17",
-        "handleEnd": "2026-08-21",
-        "handleWeeks": 1,
-        "handleInUpperHalf": true,
-        "volumeDecreasedDuringCup": false,
-        "handleVolumeLight": true
-      }
+      "detection": null
     },
     {
       "symbol": "UNG",
@@ -441,74 +259,17 @@
     {
       "symbol": "COPX",
       "name": "銅鉱山 (COPX)",
-      "detection": {
-        "cup": {
-          "advanceStartDate": "2025-04-08",
-          "advanceStartPrice": 29.81,
-          "leftRimDate": "2025-05-21",
-          "leftRimPrice": 39.58,
-          "cupBottomDate": "2025-05-22",
-          "cupBottomPrice": 38.71,
-          "rightRimDate": "2026-08-14",
-          "rightRimPrice": 86.58,
-          "depthPercent": 8.91,
-          "weeks": 64.29
-        },
-        "handleStart": "2026-08-17",
-        "handleEnd": "2026-08-21",
-        "handleWeeks": 1,
-        "handleInUpperHalf": true,
-        "volumeDecreasedDuringCup": false,
-        "handleVolumeLight": false
-      }
+      "detection": null
     },
     {
       "symbol": "SLX",
       "name": "鉄鋼・鉄鉱石 (SLX)",
-      "detection": {
-        "cup": {
-          "advanceStartDate": "2025-04-07",
-          "advanceStartPrice": 50.9,
-          "leftRimDate": "2025-05-16",
-          "leftRimPrice": 62.59,
-          "cupBottomDate": "2025-05-30",
-          "cupBottomPrice": 60.43,
-          "rightRimDate": "2026-08-14",
-          "rightRimPrice": 108.43,
-          "depthPercent": 18.51,
-          "weeks": 65
-        },
-        "handleStart": "2026-08-17",
-        "handleEnd": "2026-08-21",
-        "handleWeeks": 1,
-        "handleInUpperHalf": true,
-        "volumeDecreasedDuringCup": false,
-        "handleVolumeLight": true
-      }
+      "detection": null
     },
     {
       "symbol": "REMX",
       "name": "レアアース (REMX)",
-      "detection": {
-        "cup": {
-          "advanceStartDate": "2025-04-08",
-          "advanceStartPrice": 31.8,
-          "leftRimDate": "2025-05-16",
-          "leftRimPrice": 38.73,
-          "cupBottomDate": "2025-06-02",
-          "cupBottomPrice": 35.1,
-          "rightRimDate": "2026-08-14",
-          "rightRimPrice": 78.96,
-          "depthPercent": 52.41,
-          "weeks": 65
-        },
-        "handleStart": "2026-08-17",
-        "handleEnd": "2026-08-21",
-        "handleWeeks": 1,
-        "handleInUpperHalf": true,
-        "volumeDecreasedDuringCup": false,
-        "handleVolumeLight": true
-      }
+      "detection": null
     },
     {
       "symbol": "CORN",
@@ -518,74 +279,17 @@
     {
       "symbol": "WEAT",
       "name": "小麦 (WEAT)",
-      "detection": {
-        "cup": {
-          "advanceStartDate": "2026-01-02",
-          "advanceStartPrice": 19.78,
-          "leftRimDate": "2026-01-06",
-          "leftRimPrice": 20.19,
-          "cupBottomDate": "2026-01-13",
-          "cupBottomPrice": 20,
-          "rightRimDate": "2026-08-14",
-          "rightRimPrice": 25.08,
-          "depthPercent": 46.34,
-          "weeks": 31.43
-        },
-        "handleStart": "2026-08-17",
-        "handleEnd": "2026-08-21",
-        "handleWeeks": 1,
-        "handleInUpperHalf": true,
-        "volumeDecreasedDuringCup": false,
-        "handleVolumeLight": true
-      }
+      "detection": null
     },
     {
       "symbol": "EEM",
       "name": "新興国 (EEM)",
-      "detection": {
-        "cup": {
-          "advanceStartDate": "2025-04-08",
-          "advanceStartPrice": 37.1,
-          "leftRimDate": "2025-05-16",
-          "leftRimPrice": 44.98,
-          "cupBottomDate": "2025-05-30",
-          "cupBottomPrice": 43.94,
-          "rightRimDate": "2026-08-14",
-          "rightRimPrice": 67.09,
-          "depthPercent": 13.19,
-          "weeks": 65
-        },
-        "handleStart": "2026-08-17",
-        "handleEnd": "2026-08-21",
-        "handleWeeks": 1,
-        "handleInUpperHalf": true,
-        "volumeDecreasedDuringCup": false,
-        "handleVolumeLight": true
-      }
+      "detection": null
     },
     {
       "symbol": "EWJ",
       "name": "日本 (EWJ)",
-      "detection": {
-        "cup": {
-          "advanceStartDate": "2025-04-07",
-          "advanceStartPrice": 56.89,
-          "leftRimDate": "2025-05-16",
-          "leftRimPrice": 68.96,
-          "cupBottomDate": "2025-06-23",
-          "cupBottomPrice": 68.13,
-          "rightRimDate": "2026-08-14",
-          "rightRimPrice": 98.68,
-          "depthPercent": 6.86,
-          "weeks": 65
-        },
-        "handleStart": "2026-08-17",
-        "handleEnd": "2026-08-21",
-        "handleWeeks": 1,
-        "handleInUpperHalf": true,
-        "volumeDecreasedDuringCup": false,
-        "handleVolumeLight": true
-      }
+      "detection": null
     },
     {
       "symbol": "EPI",
@@ -606,6 +310,7 @@
         "handleStart": "2026-08-17",
         "handleEnd": "2026-08-21",
         "handleWeeks": 1,
+        "handleDepthPercent": 24.61,
         "handleInUpperHalf": true,
         "volumeDecreasedDuringCup": true,
         "handleVolumeLight": true
@@ -614,26 +319,7 @@
     {
       "symbol": "EWU",
       "name": "イギリス (EWU)",
-      "detection": {
-        "cup": {
-          "advanceStartDate": "2025-04-09",
-          "advanceStartPrice": 31.04,
-          "leftRimDate": "2025-05-20",
-          "leftRimPrice": 37.57,
-          "cupBottomDate": "2025-05-22",
-          "cupBottomPrice": 37.21,
-          "rightRimDate": "2026-08-14",
-          "rightRimPrice": 48.41,
-          "depthPercent": 5.52,
-          "weeks": 64.43
-        },
-        "handleStart": "2026-08-17",
-        "handleEnd": "2026-08-21",
-        "handleWeeks": 1,
-        "handleInUpperHalf": true,
-        "volumeDecreasedDuringCup": false,
-        "handleVolumeLight": true
-      }
+      "detection": null
     },
     {
       "symbol": "EWG",
@@ -654,6 +340,7 @@
         "handleStart": "2026-08-17",
         "handleEnd": "2026-08-21",
         "handleWeeks": 1,
+        "handleDepthPercent": 6.39,
         "handleInUpperHalf": true,
         "volumeDecreasedDuringCup": true,
         "handleVolumeLight": true
@@ -662,50 +349,12 @@
     {
       "symbol": "EWZ",
       "name": "ブラジル (EWZ)",
-      "detection": {
-        "cup": {
-          "advanceStartDate": "2025-01-02",
-          "advanceStartPrice": 20.9,
-          "leftRimDate": "2025-05-16",
-          "leftRimPrice": 26.39,
-          "cupBottomDate": "2025-05-23",
-          "cupBottomPrice": 25.13,
-          "rightRimDate": "2026-08-14",
-          "rightRimPrice": 34.05,
-          "depthPercent": 22.95,
-          "weeks": 65
-        },
-        "handleStart": "2026-08-17",
-        "handleEnd": "2026-08-21",
-        "handleWeeks": 1,
-        "handleInUpperHalf": true,
-        "volumeDecreasedDuringCup": false,
-        "handleVolumeLight": true
-      }
+      "detection": null
     },
     {
       "symbol": "VNM",
       "name": "ベトナム (VNM)",
-      "detection": {
-        "cup": {
-          "advanceStartDate": "2025-04-08",
-          "advanceStartPrice": 10.08,
-          "leftRimDate": "2025-05-16",
-          "leftRimPrice": 12.74,
-          "cupBottomDate": "2025-05-19",
-          "cupBottomPrice": 12.6,
-          "rightRimDate": "2026-08-14",
-          "rightRimPrice": 17.26,
-          "depthPercent": 5.43,
-          "weeks": 65
-        },
-        "handleStart": "2026-08-17",
-        "handleEnd": "2026-08-21",
-        "handleWeeks": 1,
-        "handleInUpperHalf": true,
-        "volumeDecreasedDuringCup": false,
-        "handleVolumeLight": true
-      }
+      "detection": null
     },
     {
       "symbol": "EWW",
@@ -714,18 +363,19 @@
         "cup": {
           "advanceStartDate": "2024-12-31",
           "advanceStartPrice": 44.07,
-          "leftRimDate": "2025-05-16",
-          "leftRimPrice": 56.73,
-          "cupBottomDate": "2025-06-23",
-          "cupBottomPrice": 55.38,
-          "rightRimDate": "2026-08-14",
-          "rightRimPrice": 75.99,
-          "depthPercent": 10.66,
+          "leftRimDate": "2025-05-07",
+          "leftRimPrice": 56.33,
+          "cupBottomDate": "2025-05-12",
+          "cupBottomPrice": 54.06,
+          "rightRimDate": "2026-08-05",
+          "rightRimPrice": 78.11,
+          "depthPercent": 18.51,
           "weeks": 65
         },
-        "handleStart": "2026-08-17",
+        "handleStart": "2026-08-06",
         "handleEnd": "2026-08-21",
-        "handleWeeks": 1,
+        "handleWeeks": 2.29,
+        "handleDepthPercent": 30.92,
         "handleInUpperHalf": true,
         "volumeDecreasedDuringCup": true,
         "handleVolumeLight": true
@@ -738,18 +388,19 @@
         "cup": {
           "advanceStartDate": "2024-09-10",
           "advanceStartPrice": 38.4,
-          "leftRimDate": "2025-05-16",
-          "leftRimPrice": 53.07,
+          "leftRimDate": "2025-05-12",
+          "leftRimPrice": 53.7,
           "cupBottomDate": "2026-06-26",
           "cupBottomPrice": 49.88,
-          "rightRimDate": "2026-08-14",
-          "rightRimPrice": 54.73,
-          "depthPercent": 21.72,
+          "rightRimDate": "2026-08-10",
+          "rightRimPrice": 56.96,
+          "depthPercent": 24.95,
           "weeks": 65
         },
-        "handleStart": "2026-08-17",
+        "handleStart": "2026-08-11",
         "handleEnd": "2026-08-21",
-        "handleWeeks": 1,
+        "handleWeeks": 1.57,
+        "handleDepthPercent": 17.02,
         "handleInUpperHalf": true,
         "volumeDecreasedDuringCup": true,
         "handleVolumeLight": true
@@ -766,14 +417,15 @@
           "leftRimPrice": 12,
           "cupBottomDate": "2026-06-30",
           "cupBottomPrice": 11.2,
-          "rightRimDate": "2026-08-14",
-          "rightRimPrice": 12.66,
+          "rightRimDate": "2026-08-07",
+          "rightRimPrice": 12.91,
           "depthPercent": 54.31,
-          "weeks": 9.29
+          "weeks": 8.29
         },
-        "handleStart": "2026-08-17",
+        "handleStart": "2026-08-10",
         "handleEnd": "2026-08-21",
-        "handleWeeks": 1,
+        "handleWeeks": 2,
+        "handleDepthPercent": 31.43,
         "handleInUpperHalf": true,
         "volumeDecreasedDuringCup": true,
         "handleVolumeLight": true
@@ -782,26 +434,7 @@
     {
       "symbol": "THD",
       "name": "タイ (THD)",
-      "detection": {
-        "cup": {
-          "advanceStartDate": "2025-04-08",
-          "advanceStartPrice": 42.62,
-          "leftRimDate": "2025-05-16",
-          "leftRimPrice": 51.96,
-          "cupBottomDate": "2025-06-23",
-          "cupBottomPrice": 46.35,
-          "rightRimDate": "2026-08-14",
-          "rightRimPrice": 72.98,
-          "depthPercent": 60.03,
-          "weeks": 65
-        },
-        "handleStart": "2026-08-17",
-        "handleEnd": "2026-08-21",
-        "handleWeeks": 1,
-        "handleInUpperHalf": true,
-        "volumeDecreasedDuringCup": false,
-        "handleVolumeLight": true
-      }
+      "detection": null
     },
     {
       "symbol": "SMIN",
@@ -814,14 +447,15 @@
           "leftRimPrice": 60.92,
           "cupBottomDate": "2026-04-02",
           "cupBottomPrice": 59.79,
-          "rightRimDate": "2026-08-14",
-          "rightRimPrice": 71.61,
+          "rightRimDate": "2026-08-13",
+          "rightRimPrice": 72.01,
           "depthPercent": 35.94,
-          "weeks": 19.29
+          "weeks": 19.14
         },
-        "handleStart": "2026-08-17",
+        "handleStart": "2026-08-14",
         "handleEnd": "2026-08-21",
-        "handleWeeks": 1,
+        "handleWeeks": 1.14,
+        "handleDepthPercent": 30.53,
         "handleInUpperHalf": true,
         "volumeDecreasedDuringCup": true,
         "handleVolumeLight": true
