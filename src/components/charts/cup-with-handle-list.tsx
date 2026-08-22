@@ -1,12 +1,15 @@
 import { formatDate, formatNumber } from '@/lib/format';
 import type { CupWithHandleAsset } from '@/lib/data/types';
 import { ChartFrame } from './chart-frame';
+import { PatternChart } from './pattern-chart';
 
 /**
  * カップウィズハンドルの検出結果 (#230)。
  *
- * `HighTightFlagList` (#231) と同じ設計。時系列チャートではなくリスト表示。
- * **0 件は正常** — ビューが生成されていること自体が「検出を試みた」証拠になる。
+ * `HighTightFlagList` (#231) と同じ設計。**検出された銘柄のみ** `PatternChart` (#260) で
+ * 主要点 (上昇起点・左リム・カップ底・右リム・ハンドル期間) を視覚化する。
+ * 0 件はテキストのみ (0 件は正常な状態 — ビューが生成されていること自体が
+ * 「検出を試みた」証拠になる)。
  */
 export function CupWithHandleList({
   title,
@@ -65,6 +68,42 @@ export function CupWithHandleList({
                 {asset.detection.volumeDecreasedDuringCup && <span>カップ形成中は出来高減少</span>}
                 {asset.detection.handleVolumeLight && <span>ハンドルは出来高少なめ</span>}
               </div>
+              {asset.priceSeries && (
+                <div className="mt-3">
+                  <PatternChart
+                    priceSeries={asset.priceSeries}
+                    markers={[
+                      {
+                        date: asset.detection.cup.advanceStartDate,
+                        price: asset.detection.cup.advanceStartPrice,
+                        label: '起点',
+                      },
+                      {
+                        date: asset.detection.cup.leftRimDate,
+                        price: asset.detection.cup.leftRimPrice,
+                        label: '左リム',
+                      },
+                      {
+                        date: asset.detection.cup.cupBottomDate,
+                        price: asset.detection.cup.cupBottomPrice,
+                        label: 'カップ底',
+                      },
+                      {
+                        date: asset.detection.cup.rightRimDate,
+                        price: asset.detection.cup.rightRimPrice,
+                        label: '右リム',
+                      },
+                    ]}
+                    periods={[
+                      {
+                        from: asset.detection.handleStart,
+                        to: asset.detection.handleEnd,
+                        label: 'ハンドル',
+                      },
+                    ]}
+                  />
+                </div>
+              )}
             </li>
           ))}
         </ul>
