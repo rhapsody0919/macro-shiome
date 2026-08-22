@@ -10,6 +10,8 @@ import type {
   AppConfig,
   CupWithHandleAsset,
   CupWithHandleView,
+  DoubleBottomAsset,
+  DoubleBottomView,
   DrawdownAsset,
   DrawdownView,
   HighTightFlagAsset,
@@ -45,6 +47,7 @@ import {
 import { fridaysBetween, sameDayLastYear, valueAsOf, valueOn, weekdaysBetween } from './weeks';
 import { detectHighTightFlag, toSortedBars } from './high-tight-flag';
 import { detectCupWithHandle } from './cup-with-handle';
+import { detectDoubleBottom } from './double-bottom';
 import { roundViewNumbers } from './round';
 import { DAILY_SERIES, type DailyKey, type DailyPoint, type DailyViewName } from '../data/daily-series';
 import { latestMonthWithValue, monthsBetween, valueForMonth, yearAgo } from './months';
@@ -688,6 +691,22 @@ export function buildCupWithHandleView(options: {
   const assets: CupWithHandleAsset[] = symbols.map(({ symbol, name }) => {
     const bars = toSortedBars(ohlcvObservations[symbol] ?? {});
     return { symbol, name, detection: detectCupWithHandle(bars) };
+  });
+  return roundViewNumbers({ generatedAt, assets });
+}
+
+/**
+ * ダブルボトムのビュー (#256)。`buildHighTightFlagView` (#231) と同じ設計。
+ */
+export function buildDoubleBottomView(options: {
+  symbols: ReadonlyArray<{ symbol: string; name: string }>;
+  ohlcvObservations: Readonly<Record<string, Readonly<Record<string, OhlcvBar>>>>;
+  generatedAt: string;
+}): DoubleBottomView {
+  const { symbols, ohlcvObservations, generatedAt } = options;
+  const assets: DoubleBottomAsset[] = symbols.map(({ symbol, name }) => {
+    const bars = toSortedBars(ohlcvObservations[symbol] ?? {});
+    return { symbol, name, detection: detectDoubleBottom(bars) };
   });
   return roundViewNumbers({ generatedAt, assets });
 }
