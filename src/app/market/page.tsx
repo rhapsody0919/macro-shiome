@@ -661,7 +661,7 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
         <strong>William O&apos;Neil の定義。</strong>
         「カップ」は直近上昇幅の 1/3 以下の押し目が理想 (1/3〜1/2 まで許容、Dow 理論に基づき
         最大 2/3)、期間は 7〜65 週。「ハンドル」は右肩 (カップ完成) から 1〜4 週間、カップの
-        上半分に留まる保ち合い。
+        上半分に留まり、右肩からの下落が直近上昇幅の 1/3 以内の保ち合い。
       </span>,
       <span key="shape">
         <strong>「U 字型」の形状条件は判定に含めていない。</strong>

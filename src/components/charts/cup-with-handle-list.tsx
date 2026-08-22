@@ -58,7 +58,10 @@ export function CupWithHandleList({
                   {formatNumber(asset.detection.cup.weeks, 1)} 週、深さ{' '}
                   {formatNumber(asset.detection.cup.depthPercent, 0)}%)
                 </span>
-                <span>ハンドル: {formatNumber(asset.detection.handleWeeks, 1)} 週</span>
+                <span>
+                  ハンドル: {formatNumber(asset.detection.handleWeeks, 1)} 週、深さ{' '}
+                  {formatNumber(asset.detection.handleDepthPercent, 0)}%
+                </span>
                 {asset.detection.volumeDecreasedDuringCup && <span>カップ形成中は出来高減少</span>}
                 {asset.detection.handleVolumeLight && <span>ハンドルは出来高少なめ</span>}
               </div>

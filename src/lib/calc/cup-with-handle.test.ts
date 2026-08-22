@@ -51,6 +51,8 @@ describe('detectCupWithHandle (#230)', () => {
     expect(result!.handleStart).toBe('2026-05-11');
     expect(result!.handleEnd).toBe('2026-05-11');
     expect(result!.handleWeeks).toBeCloseTo(2, 5);
+    // previousAdvance = 50、handleDepth = 98 - 92 = 6 → 12%
+    expect(result!.handleDepthPercent).toBeCloseTo(12, 5);
     expect(result!.handleInUpperHalf).toBe(true);
   });
 
@@ -85,6 +87,25 @@ describe('detectCupWithHandle (#230)', () => {
     const weak = TYPICAL.map((b) => (b.date === '2026-04-27' ? { ...b, low: 85, high: 90 } : b));
     // 90 / 100 = 90% < 95%
     expect(detectCupWithHandle(bars(weak))).toBeNull();
+  });
+
+  it('ハンドルの深さが直近上昇幅の 1/3 を超えたら検出しない (#251)', () => {
+    // 右リムが左リムを大幅に上回るケース (実データで多い形)。
+    // cupMidpoint 条件だけでは弾けないことを確認するデータセット:
+    // previousAdvance = 100-50 = 50、cupMidpoint = (100+85)/2 = 92.5。
+    // ハンドル安値 100 は中間点 92.5 以上だが、右リム 150 からの下落 50 は
+    // previousAdvance の 100% (> 33.3%)。
+    const wideHandle = bars([
+      { date: '2026-01-05', low: 50, high: 52 }, // 上昇トレンドの起点
+      { date: '2026-01-20', low: 70, high: 90 },
+      { date: '2026-02-02', low: 95, high: 100 }, // 左リム
+      { date: '2026-02-20', low: 87, high: 92 },
+      { date: '2026-03-16', low: 82, high: 85 }, // カップ底
+      { date: '2026-04-01', low: 100, high: 120 },
+      { date: '2026-04-27', low: 145, high: 150 }, // 右リム (左リムを大幅に上回る)
+      { date: '2026-05-11', low: 98, high: 100 }, // 基準日 (ハンドル、2 週間後)
+    ]);
+    expect(detectCupWithHandle(wideHandle)).toBeNull();
   });
 
   it('ハンドルがカップ中間点より下なら検出しない', () => {
