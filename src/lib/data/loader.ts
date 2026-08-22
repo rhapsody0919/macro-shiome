@@ -16,22 +16,16 @@ import economyDailyJson from '../../../data/views/economy-daily.json';
 import japanDailyJson from '../../../data/views/japan-daily.json';
 import economyJson from '../../../data/views/economy.json';
 import drawdownJson from '../../../data/views/drawdown.json';
-import highTightFlagJson from '../../../data/views/high-tight-flag.json';
-import cupWithHandleJson from '../../../data/views/cup-with-handle.json';
-import doubleBottomJson from '../../../data/views/double-bottom.json';
-import headAndShouldersBottomJson from '../../../data/views/head-and-shoulders-bottom.json';
+import breakoutJson from '../../../data/views/breakout.json';
 import { sortChangelog } from './changelog';
 import type { DailyPoint } from './daily-series';
 import type {
   BatchStatus,
+  BreakoutView,
   ChangelogEntry,
-  CupWithHandleView,
-  DoubleBottomView,
   DrawdownView,
   EconomyView,
   GapReason,
-  HeadAndShouldersBottomView,
-  HighTightFlagView,
   MacroPoint,
   RevisionPoint,
   ValuationView,
@@ -54,10 +48,7 @@ export const economyDaily = economyDailyJson as unknown as DailyPoint[];
 export const japanDaily = japanDailyJson as unknown as DailyPoint[];
 export const economy = economyJson as unknown as EconomyView;
 export const drawdown = drawdownJson as unknown as DrawdownView;
-export const highTightFlag = highTightFlagJson as unknown as HighTightFlagView;
-export const cupWithHandle = cupWithHandleJson as unknown as CupWithHandleView;
-export const doubleBottom = doubleBottomJson as unknown as DoubleBottomView;
-export const headAndShouldersBottom = headAndShouldersBottomJson as unknown as HeadAndShouldersBottomView;
+export const breakout = breakoutJson as unknown as BreakoutView;
 /** 更新履歴 (#240)。新しい順。 */
 export const changelog = sortChangelog(changelogJson as unknown as ChangelogEntry[]);
 

@@ -5,6 +5,7 @@ import {
   LineChart,
   ReferenceArea,
   ReferenceDot,
+  ReferenceLine,
   ResponsiveContainer,
   Tooltip,
   XAxis,
@@ -21,10 +22,16 @@ export interface PatternMarker {
   label: string;
 }
 
-/** チャートに帯で示す期間 (カップウィズハンドルのハンドルなど、単一の点で表せないもの)。 */
+/** チャートに帯で示す期間 (単一の点で表せないもの)。 */
 export interface PatternPeriod {
   from: string;
   to: string;
+  label: string;
+}
+
+/** チャートに水平線で示す価格水準 (ブレイクアウトで上抜けた高値など)。 */
+export interface PatternLevel {
+  value: number;
   label: string;
 }
 
@@ -42,10 +49,12 @@ export function PatternChart({
   priceSeries,
   markers,
   periods = [],
+  levels = [],
 }: {
   priceSeries: ReadonlyArray<PatternPricePoint>;
   markers: ReadonlyArray<PatternMarker>;
   periods?: ReadonlyArray<PatternPeriod>;
+  levels?: ReadonlyArray<PatternLevel>;
 }) {
   return (
     <div className="h-40 w-full sm:h-48">
@@ -68,6 +77,17 @@ export function PatternChart({
               fill="currentColor"
               fillOpacity={0.08}
               label={{ value: period.label, position: 'insideTop', fontSize: 9 }}
+            />
+          ))}
+
+          {levels.map((level) => (
+            <ReferenceLine
+              key={`${level.value}-${level.label}`}
+              y={level.value}
+              stroke="currentColor"
+              strokeOpacity={0.45}
+              strokeDasharray="6 3"
+              label={{ value: level.label, position: 'insideBottomLeft', fontSize: 9 }}
             />
           ))}
 

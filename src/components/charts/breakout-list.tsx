@@ -1,17 +1,17 @@
 import { formatDate, formatNumber } from '@/lib/format';
-import type { DoubleBottomAsset } from '@/lib/data/types';
+import type { BreakoutAsset } from '@/lib/data/types';
 import { ChartFrame } from './chart-frame';
 import { PatternChart } from './pattern-chart';
 
 /**
- * ダブルボトムの検出結果 (#256)。
+ * ブレイクアウト (N日高値抜け) の検出結果 (#264)。
  *
- * `CupWithHandleList` (#230) / `HighTightFlagList` (#231) と同じ設計。**検出された銘柄のみ**
- * `PatternChart` (#260) で主要点 (1 つ目の安値・ネックライン・2 つ目の安値) を視覚化する。
+ * カップウィズハンドル・ダブルボトム・逆三尊・High Tight Flag を置き換える。
+ * **検出された銘柄のみ** `PatternChart` (#260) で上抜けた高値の水準を視覚化する。
  * 0 件はテキストのみ (0 件は正常な状態 — ビューが生成されていること自体が
  * 「検出を試みた」証拠になる)。
  */
-export function DoubleBottomList({
+export function BreakoutList({
   title,
   subtitle,
   assets,
@@ -21,14 +21,14 @@ export function DoubleBottomList({
 }: {
   title: string;
   subtitle: string;
-  assets: DoubleBottomAsset[];
+  assets: BreakoutAsset[];
   notes: React.ReactNode[];
   /** 指標の読者向け解説 (#208)。`ChartFrame` にそのまま渡す。 */
   explanation?: React.ReactNode;
   badges?: React.ReactNode;
 }) {
   const detected = assets.filter(
-    (asset): asset is DoubleBottomAsset & { detection: NonNullable<DoubleBottomAsset['detection']> } =>
+    (asset): asset is BreakoutAsset & { detection: NonNullable<BreakoutAsset['detection']> } =>
       asset.detection !== null,
   );
 
@@ -56,18 +56,13 @@ export function DoubleBottomList({
               <div className="font-semibold">{asset.name}</div>
               <div className="mt-1 flex flex-wrap gap-x-4 gap-y-1 text-xs text-slate-500">
                 <span>
-                  1 つ目の安値: {formatDate(asset.detection.firstBottomDate)} (
-                  {formatNumber(asset.detection.firstBottomPrice, 2)})
+                  ブレイクアウト: {formatDate(asset.detection.breakoutDate)} (
+                  {formatNumber(asset.detection.breakoutPrice, 2)})
                 </span>
                 <span>
-                  ネックライン: {formatDate(asset.detection.necklineDate)} (
-                  {formatNumber(asset.detection.necklinePrice, 2)})
+                  直近{asset.detection.lookbackDays}営業日高値: {formatDate(asset.detection.priorHighDate)} (
+                  {formatNumber(asset.detection.priorHighPrice, 2)})
                 </span>
-                <span>
-                  2 つ目の安値: {formatDate(asset.detection.secondBottomDate)} (
-                  {formatNumber(asset.detection.secondBottomPrice, 2)})
-                </span>
-                {asset.detection.volumeDecreased && <span>2 つ目の安値は出来高少なめ</span>}
               </div>
               {asset.priceSeries && (
                 <div className="mt-3">
@@ -75,21 +70,17 @@ export function DoubleBottomList({
                     priceSeries={asset.priceSeries}
                     markers={[
                       {
-                        date: asset.detection.firstBottomDate,
-                        price: asset.detection.firstBottomPrice,
-                        label: '1つ目の安値',
+                        date: asset.detection.priorHighDate,
+                        price: asset.detection.priorHighPrice,
+                        label: `直近${asset.detection.lookbackDays}営業日高値`,
                       },
                       {
-                        date: asset.detection.necklineDate,
-                        price: asset.detection.necklinePrice,
-                        label: 'ネックライン',
-                      },
-                      {
-                        date: asset.detection.secondBottomDate,
-                        price: asset.detection.secondBottomPrice,
-                        label: '2つ目の安値',
+                        date: asset.detection.breakoutDate,
+                        price: asset.detection.breakoutPrice,
+                        label: 'ブレイクアウト',
                       },
                     ]}
+                    levels={[{ value: asset.detection.priorHighPrice, label: '上抜けた水準' }]}
                   />
                 </div>
               )}

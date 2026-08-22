@@ -920,62 +920,6 @@ export interface ValuationPoint {
 }
 
 /**
- * High Tight Flag のポール (急騰) 区間 (#231)。
- *
- * William O'Neil の定義: 8 週間以内に 100% 以上の上昇。
- */
-export interface HighTightFlagPole {
-  startDate: string;
-  startPrice: number;
-  endDate: string;
-  endPrice: number;
-  /** 安値 → 高値の上昇率 (%)。 */
-  gainPercent: number;
-  /** ポール期間 (週、小数)。 */
-  weeks: number;
-}
-
-/**
- * High Tight Flag の検出結果 (#231)。
- *
- * William O'Neil の定義: ポール高値から 3〜5 週間、25% 以内の下落に留める保ち合い。
- */
-export interface HighTightFlagDetection {
-  pole: HighTightFlagPole;
-  /** フラッグ開始日 (ポール高値の翌観測日)。 */
-  flagStart: string;
-  /** フラッグ終了日 (= 基準日、通常は最新観測日)。 */
-  flagEnd: string;
-  /** フラッグ期間 (週、小数)。 */
-  flagWeeks: number;
-  /** フラッグ中の最大下落率 (%)。ポール高値からの下げ幅。 */
-  flagLowPercent: number;
-  /** フラッグ期間の平均出来高がポール期間より少ないか。**必須条件ではなく参考情報** (#231)。 */
-  volumeDecreased: boolean;
-}
-
-/** High Tight Flag チャートの 1 銘柄 (#231)。 */
-export interface HighTightFlagAsset {
-  /** ティッカー。指標マスタを経由しないため symbol を直接持つ (#229 と同じ設計、ADR-0008)。 */
-  symbol: string;
-  name: string;
-  /** 検出されていなければ null (#231: 0 件は正常な状態)。 */
-  detection: HighTightFlagDetection | null;
-}
-
-/**
- * High Tight Flag のビュー全体 (#231)。
- *
- * `assets` は対象 36 銘柄すべてを含む (検出の有無に関わらず)。ビューが存在すれば
- * 「検出を試みて 0 件だった」ことを表せるため、取得・計算の失敗とは区別できる
- * (#102 / #131 と同じ「緑だが歯抜け」を避ける設計)。
- */
-export interface HighTightFlagView {
-  generatedAt: string;
-  assets: HighTightFlagAsset[];
-}
-
-/**
  * 更新履歴の 1 件 (#240)。
  *
  * `note` / `explanation` (#208) と同じ「宛先の違い」を適用する。こちらは常に読者向けで、
@@ -989,173 +933,50 @@ export interface ChangelogEntry {
 }
 
 /**
- * カップウィズハンドルのカップ区間 (#230)。
+ * N 日高値抜け (Donchian チャネル/タートルズ型) の検出結果 (#264)。
  *
- * William O'Neil の定義: カップ期間 7〜65 週、深さは直近上昇幅の 1/3 以下が理想、
- * 1/3〜1/2 まで許容、Dow 理論に基づき最大 2/3。
- */
-export interface CupWithHandleCup {
-  /** 上昇トレンドの起点 (カップ形成前の安値)。深さを「直近上昇幅」に対する比率で測るための基準。 */
-  advanceStartDate: string;
-  advanceStartPrice: number;
-  /** 左リム (カップ開始点、上昇トレンドの頂点)。 */
-  leftRimDate: string;
-  leftRimPrice: number;
-  /** カップ底 (最安値)。 */
-  cupBottomDate: string;
-  cupBottomPrice: number;
-  /** 右リム (カップ完成、左リム近辺まで回復した高値)。 */
-  rightRimDate: string;
-  rightRimPrice: number;
-  /** 深さ = (左リム − カップ底) ÷ (左リム − 上昇トレンドの起点) × 100 (%)。 */
-  depthPercent: number;
-  /** カップ期間 (週、小数)。左リム→右リム。 */
-  weeks: number;
-}
-
-/**
- * カップウィズハンドルの検出結果 (#230)。
+ * カップウィズハンドル (#230)・ダブルボトム (#256)・逆三尊 (#258)・
+ * High Tight Flag (#231) を置き換える。反転パターンの形状をルールベースで
+ * 検出するアプローチは、条件を厳格化するたびに検出数が乱高下し (カップウィズハンドルは
+ * 34/36 → 14/36 → 2/36)、実際のチャートを見ると「その形に見えない」という問題が
+ * #260 で可視化して初めて表面化した。確立された定義を持つ単純なブレイクアウトに
+ * 一本化する (#52 の「恣意的な閾値を置かない」原則)。
  *
- * William O'Neil の定義: 右リムから 1〜4 週間、カップの上半分に留まる保ち合いがハンドル。
+ * 定義: 直近 `lookbackDays` 営業日の高値 (基準日を含まない) を、基準日の終値が
+ * 上回っていること。タートルズの短期システム (`lookbackDays = 20`) に準拠する。
  */
-export interface CupWithHandleDetection {
-  cup: CupWithHandleCup;
-  /** ハンドル開始日 (右リムの翌観測日)。 */
-  handleStart: string;
-  /** ハンドル終了日 (= 基準日、通常は最新観測日)。 */
-  handleEnd: string;
-  /** ハンドル期間 (週、小数)。 */
-  handleWeeks: number;
-  /** ハンドルの深さ = (右リム − ハンドル最安値) ÷ 直近上昇幅 × 100 (%) (#251)。 */
-  handleDepthPercent: number;
-  /** ハンドル中の最安値がカップの上半分 (中間点より上) に留まっているか。 */
-  handleInUpperHalf: boolean;
-  /** カップ形成 (左リム→カップ底) の平均出来高がリバウンド (カップ底→右リム) より多いか。**参考情報** (#230)。 */
-  volumeDecreasedDuringCup: boolean;
-  /** ハンドル期間の平均出来高がカップ全体より少ないか。**参考情報**。 */
-  handleVolumeLight: boolean;
+export interface BreakoutDetection {
+  /** ブレイクアウトした日 (= 基準日、通常は最新観測日)。 */
+  breakoutDate: string;
+  breakoutPrice: number;
+  /** 上抜けた高値の日。 */
+  priorHighDate: string;
+  /** 上抜けた高値そのもの (直近 `lookbackDays` 営業日の最高値)。 */
+  priorHighPrice: number;
+  /** 判定に使った営業日数。 */
+  lookbackDays: number;
 }
 
-/** カップウィズハンドルチャートの 1 銘柄 (#230)。 */
-export interface CupWithHandleAsset {
-  /** ティッカー。指標マスタを経由しないため symbol を直接持つ (#229 と同じ設計、ADR-0008)。 */
-  symbol: string;
-  name: string;
-  /** 検出されていなければ null (#230: 0 件は正常な状態)。 */
-  detection: CupWithHandleDetection | null;
-  /** 検出時のみ、上昇起点 (`cup.advanceStartDate`) から基準日までの終値系列 (#260)。 */
-  priceSeries: PatternPricePoint[] | null;
-}
-
-/**
- * カップウィズハンドルのビュー全体 (#230)。
- *
- * `assets` は対象 36 銘柄すべてを含む (検出の有無に関わらず)。ビューが存在すれば
- * 「検出を試みて 0 件だった」ことを表せるため、取得・計算の失敗とは区別できる
- * (#102 / #131 / #231 と同じ「緑だが歯抜け」を避ける設計)。
- */
-export interface CupWithHandleView {
-  generatedAt: string;
-  assets: CupWithHandleAsset[];
-}
-
-/**
- * ダブルボトムの検出結果 (#256)。
- *
- * ピボット検出 (`pivots.ts`) を土台にする。2 つの安値ピボットの水準がほぼ同じ
- * (平均バー幅の 0.5 倍以内)、間のピボット高値 (ネックライン) が両安値より高い、
- * かつ 2 番目の安値の形成以降 (基準日まで) の終値がネックラインを超えず
- * 2 番目の安値も割っていない (経路依存チェック)、という数値条件で判定する。
- * 詳細な根拠は `double-bottom.ts` 先頭のコメントを参照。
- */
-export interface DoubleBottomDetection {
-  firstBottomDate: string;
-  firstBottomPrice: number;
-  necklineDate: string;
-  necklinePrice: number;
-  secondBottomDate: string;
-  secondBottomPrice: number;
-  /** 2 つの安値の差を平均バー幅で割った比率 (閾値は 0.5)。小さいほど水準が近い。 */
-  bottomDiffRatio: number;
-  /** 2 番目の安値の出来高が 1 番目より少ないか。**参考情報**。 */
-  volumeDecreased: boolean;
-}
-
-/** ダブルボトムチャートの 1 銘柄 (#256)。 */
-export interface DoubleBottomAsset {
+/** ブレイクアウトチャートの 1 銘柄 (#264)。 */
+export interface BreakoutAsset {
   /** ティッカー。指標マスタを経由しないため symbol を直接持つ (#229 と同じ設計、ADR-0008)。 */
   symbol: string;
   name: string;
   /** 検出されていなければ null (0 件は正常な状態、#230/#231 と同じ設計)。 */
-  detection: DoubleBottomDetection | null;
-  /** 検出時のみ、1 つ目の安値 (`firstBottomDate`) から基準日までの終値系列 (#260)。 */
+  detection: BreakoutDetection | null;
+  /** 検出時のみ、上抜けた高値の日 (`priorHighDate`) から基準日までの終値系列 (#260)。 */
   priceSeries: PatternPricePoint[] | null;
 }
 
 /**
- * ダブルボトムのビュー全体 (#256)。
- *
- * `assets` は対象銘柄すべてを含む (検出の有無に関わらず)。ビューが存在すれば
- * 「検出を試みて 0 件だった」ことを表せるため、取得・計算の失敗とは区別できる
- * (#102 / #131 / #231 / #230 と同じ「緑だが歯抜け」を避ける設計)。
- */
-export interface DoubleBottomView {
-  generatedAt: string;
-  assets: DoubleBottomAsset[];
-}
-
-/**
- * ヘッド・アンド・ショルダーズ・ボトム (逆三尊) の検出結果 (#258)。
- *
- * ピボット検出 (`pivots.ts`) を土台にする。左肩・頭・右肩の安値 3 点と、その間の
- * ネックライン (高値) 2 点による 5 点構造で判定する。頭が両肩より低く、頭と右肩の差が
- * 平均バー幅の 0.6 倍を超え、ネックライン 2 点の差が平均バー幅未満 (ほぼ水平)、
- * かつ右肩の形成以降 (基準日まで) の終値がネックラインを超えず右肩も割っていない
- * (経路依存チェック)、という数値条件で判定する。詳細な根拠は
- * `head-and-shoulders-bottom.ts` 先頭のコメントを参照。
- *
- * **出来高条件は無い。** 調査した 4 つの OSS 実装いずれにも逆 H&S の出来高条件は
- * 存在しなかった (`double-bottom.ts`/`cup-with-handle.ts`/`high-tight-flag.ts` とは異なる)。
- */
-export interface HeadAndShouldersBottomDetection {
-  leftShoulderDate: string;
-  leftShoulderPrice: number;
-  leftNecklineDate: string;
-  leftNecklinePrice: number;
-  headDate: string;
-  headPrice: number;
-  rightNecklineDate: string;
-  rightNecklinePrice: number;
-  rightShoulderDate: string;
-  rightShoulderPrice: number;
-  /** ネックライン価格 = 左右ネックライン点の低い方 (経路依存チェックの上限に使う)。 */
-  necklinePrice: number;
-  /** 左右のネックライン点の差を平均バー幅で割った比率 (閾値は 1.0)。小さいほど水平に近い。 */
-  necklineDiffRatio: number;
-  /** 頭と右肩の差を平均バー幅で割った比率 (閾値は 0.6)。大きいほど頭が深い。 */
-  shoulderDepthRatio: number;
-}
-
-/** ヘッド・アンド・ショルダーズ・ボトムチャートの 1 銘柄 (#258)。 */
-export interface HeadAndShouldersBottomAsset {
-  /** ティッカー。指標マスタを経由しないため symbol を直接持つ (#229 と同じ設計、ADR-0008)。 */
-  symbol: string;
-  name: string;
-  /** 検出されていなければ null (0 件は正常な状態、#230/#231/#258 と同じ設計)。 */
-  detection: HeadAndShouldersBottomDetection | null;
-  /** 検出時のみ、左肩 (`leftShoulderDate`) から基準日までの終値系列 (#260)。 */
-  priceSeries: PatternPricePoint[] | null;
-}
-
-/**
- * ヘッド・アンド・ショルダーズ・ボトムのビュー全体 (#258)。
+ * ブレイクアウトのビュー全体 (#264)。
  *
  * `assets` は対象銘柄すべてを含む (検出の有無に関わらず)。ビューが存在すれば
  * 「検出を試みて 0 件だった」ことを表せるため、取得・計算の失敗とは区別できる
  * (#102 / #131 / #230 / #231 と同じ「緑だが歯抜け」を避ける設計)。
  */
-export interface HeadAndShouldersBottomView {
+export interface BreakoutView {
   generatedAt: string;
-  assets: HeadAndShouldersBottomAsset[];
+  assets: BreakoutAsset[];
 }
 
