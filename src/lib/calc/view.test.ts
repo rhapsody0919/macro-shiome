@@ -1122,6 +1122,21 @@ describe('SPY に対する相対強度 (#274)', () => {
     expect(asset?.relativeStrengthPoints.every((p) => p.value === null)).toBe(true);
     expect(asset?.latestRelativeStrength).toBeNull();
   });
+
+  it('起点は全資産が値を持つ最も遅い日 (#289)', () => {
+    // etf-spy は 08-14 から値があるが、etf-x は 08-17 から。
+    // 08-14 を起点にすると「etf-x もこの日から値がある」と過大に見せてしまう。
+    const view = build({
+      'etf-spy': { '2026-08-14': 500, '2026-08-17': 505, '2026-08-21': 510 },
+      'etf-x': { '2026-08-17': 100, '2026-08-21': 110 },
+    });
+    expect(view.relativeStrengthStart).toBe('2026-08-17');
+  });
+
+  it('どの資産にも値が無ければ起点は null', () => {
+    const view = build({});
+    expect(view.relativeStrengthStart).toBeNull();
+  });
 });
 
 describe('価格系列の日次グリッド (#137)', () => {

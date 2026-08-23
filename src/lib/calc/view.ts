@@ -703,8 +703,21 @@ export function buildDrawdownView(
     });
   }
 
+  // 対SPYの起点 (#289)。下落率と違い引き継いだ履歴が無いため、観測が貯まった
+  // 最初の日から始まる。資産ごとに最初の非null日を求め、**全資産が値を持つ最も遅い日**
+  // (= 最大値) を採る。最も早い日にすると、まだ値が無い資産があるのに
+  // 「この日から出ている」と過大に見せてしまう。
+  const relativeStrengthStartDates = assets
+    .map((asset) => asset.relativeStrengthPoints.find((point) => point.value !== null)?.date)
+    .filter((date): date is string => date !== undefined);
+  const sortedRelativeStrengthStartDates = relativeStrengthStartDates.sort();
+  const relativeStrengthStart =
+    sortedRelativeStrengthStartDates.length === 0
+      ? null
+      : sortedRelativeStrengthStartDates[sortedRelativeStrengthStartDates.length - 1];
+
   // 表示は 2 桁 (#218)。導出した点だけが全桁で、日次で積み上がるほど差が広がっていた。
-  return roundViewNumbers({ seedStart, excluded, assets });
+  return roundViewNumbers({ seedStart, relativeStrengthStart, excluded, assets });
 }
 
 /**

@@ -34,6 +34,7 @@ export function DrawdownChart({
   subtitle,
   assets,
   colors,
+  relativeStrengthStart,
   notes,
   explanation,
   badges,
@@ -43,6 +44,11 @@ export function DrawdownChart({
   assets: DrawdownAsset[];
   /** 資産 ID → 線の色。 */
   colors: Readonly<Record<string, string>>;
+  /**
+   * 対SPY (相対強度) の起点 (#289)。下落率の起点 (2024-11-28、静的な文言) とは別物で、
+   * データの蓄積状況で変わるためここで動的に受け取り、'relative' モードのときだけ出す。
+   */
+  relativeStrengthStart: string | null;
   notes: React.ReactNode[];
   /** 指標の読者向け解説 (#208)。`ChartFrame` にそのまま渡す。 */
   explanation?: React.ReactNode;
@@ -129,21 +135,29 @@ export function DrawdownChart({
         </div>
       }
       summary={
-        <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs">
-          {ranked.map((asset) => (
-            <span key={asset.id} className="tabular-nums">
-              <span className="inline-block h-2 w-2 rounded-full align-middle"
-                    style={{ background: colors[asset.id] }} />{' '}
-              <span className="text-slate-500">{asset.name}</span>{' '}
-              <span className="font-semibold">
-                {mode === 'drawdown'
-                  ? `${formatNumber(asset.latest?.drawdown ?? null, 1)}%`
-                  : `${formatSigned(asset.latestRelativeStrength?.value ?? null, 1)}%`}
+        <div className="space-y-1">
+          <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs">
+            {ranked.map((asset) => (
+              <span key={asset.id} className="tabular-nums">
+                <span className="inline-block h-2 w-2 rounded-full align-middle"
+                      style={{ background: colors[asset.id] }} />{' '}
+                <span className="text-slate-500">{asset.name}</span>{' '}
+                <span className="font-semibold">
+                  {mode === 'drawdown'
+                    ? `${formatNumber(asset.latest?.drawdown ?? null, 1)}%`
+                    : `${formatSigned(asset.latestRelativeStrength?.value ?? null, 1)}%`}
+                </span>
               </span>
-            </span>
-          ))}
-          {rankedDate !== undefined && (
-            <span className="text-[11px] text-slate-500">({formatDate(rankedDate)} 時点)</span>
+            ))}
+            {rankedDate !== undefined && (
+              <span className="text-[11px] text-slate-500">({formatDate(rankedDate)} 時点)</span>
+            )}
+          </div>
+          {mode === 'relative' && relativeStrengthStart !== null && (
+            <p className="text-[11px] text-slate-500">
+              起点は {formatDate(relativeStrengthStart)} (この日の SPY との価格比率を 0% とする)。
+              下落率の起点とは別。
+            </p>
           )}
         </div>
       }

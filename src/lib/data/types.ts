@@ -907,6 +907,14 @@ export interface DrawdownAsset {
 export interface DrawdownView {
   /** 最高値の起点。史上最高値ではないことを画面に出すために持つ。 */
   seedStart: string | null;
+  /**
+   * 対SPY (相対強度) の起点 (#289)。
+   *
+   * `seedStart` (下落率の起点、2024-11-28) とは別物。相対強度は引き継いだ履歴に
+   * 価格が無く計算できないため、観測が貯まった最初の日から始まる。データの蓄積状況で
+   * 変わるため、画面には固定値を書かずここから動的に表示する。
+   */
+  relativeStrengthStart: string | null;
   /** 引き継げなかった資産と理由。画面に出して欠落を隠さない。 */
   excluded: Array<{ id: string; reason: string }>;
   assets: DrawdownAsset[];
