@@ -612,6 +612,37 @@ describe('地区連銀サーベイ (#94)', () => {
   });
 });
 
+describe('S&P500 の前年比 (#287)', () => {
+  it('日次系列を月初時点の前年同日比で拾う', () => {
+    // 地区連銀サーベイ (拡散指数) と重ねて表示するため、桁が違う指数は
+    // 前年同日比に揃える (#118 と同じ理由)。
+    const view = buildEconomyView({
+      observations: {
+        sp500: { '2025-08-01': 5000, '2026-08-01': 5500 },
+      },
+      config,
+      start: '2026-08-01',
+      today: new Date(Date.UTC(2026, 7, 20)),
+    });
+    const august = view.monthly.find((p) => p.month === '2026-08-01');
+    expect(august?.sp500Yoy).toBeCloseTo(10, 10);
+  });
+
+  it('月初が休場でも直近の営業日まで遡る', () => {
+    // 日次系列なので月初ちょうどの観測が無いことがある。
+    const view = buildEconomyView({
+      observations: {
+        sp500: { '2025-07-31': 4900, '2026-07-31': 5390 },
+      },
+      config,
+      start: '2026-08-01',
+      today: new Date(Date.UTC(2026, 7, 20)),
+    });
+    const august = view.monthly.find((p) => p.month === '2026-08-01');
+    expect(august?.sp500Yoy).toBeCloseTo(10, 10);
+  });
+});
+
 describe('家計の余力 (#95)', () => {
   const build = (observations: ObservationMap) =>
     buildEconomyView({

@@ -912,6 +912,8 @@ export function buildEconomyView(options: BuildViewOptions): EconomyView {
     // 拡散指数。水準そのものが意味を持つ (0 が中立) ため前年同月比にしない。
     nyFedSurvey: level('ny-fed-survey', month),
     phillyFedSurvey: level('philly-fed-survey', month),
+    // 日次系列なので valueForMonth ではなく yoyAsOf (直近の営業日まで遡る) で拾う (#287)。
+    sp500Yoy: yoyAsOf(observations, 'sp500', month),
     // 金利は水準そのものが意味を持つ。前年同月比にすると読めなくなる。
     usTenYearMonthly: level('us-10y-monthly', month),
     jpTenYear: level('jp-10y', month),
