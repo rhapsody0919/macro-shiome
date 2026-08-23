@@ -43,7 +43,7 @@ import {
 } from './derived';
 import { fridaysBetween, sameDayLastYear, valueAsOf, valueOn, weekdaysBetween } from './weeks';
 import { toSortedBars, type SortedBars } from './bars';
-import { detectBreakout } from './breakout';
+import { detectChoch } from './choch';
 import { roundViewNumbers } from './round';
 import { DAILY_SERIES, type DailyKey, type DailyPoint, type DailyViewName } from '../data/daily-series';
 import { latestMonthWithValue, monthsBetween, valueForMonth, yearAgo } from './months';
@@ -655,23 +655,30 @@ export function buildDrawdownView(
 }
 
 /**
- * チャート表示用の直近日数 (営業日、#266)。
+ * チャート表示用の最低日数 (営業日、#266)。
  *
- * 検出条件の `lookbackDays` (#264、既定 20) とは別物。上抜けた高値の日から切り出すと、
- * その日がブレイクアウト直前 (数日前) のことがあり、表示区間がほぼ空になって
- * 読みにくかった (実データで GLD/CORN が 2 点しか表示されない事例で発覚)。
- * 表示は判定に使うウィンドウより広く取り、ブレイクアウト前後の流れが見える長さにする。
+ * 検出条件のスイング判定本数とは別物。上抜けた高値の日から切り出すと表示区間が
+ * ほぼ空になって読みにくかった (実データで GLD/CORN が 2 点しか表示されない事例で発覚)。
+ * これを下限に、構造全体 (#268: 1 つ目の安値以降) が入るよう必要ならさらに広げる。
  */
-const CHART_DISPLAY_DAYS = 90;
+const CHART_DISPLAY_MIN_DAYS = 90;
 
-/** `bars` の末尾 (基準日) から遡って直近 `days` 本の終値系列を切り出す (#260 #266)。 */
-function sliceRecentPriceSeries(bars: SortedBars, days: number): PatternPricePoint[] {
-  return bars.slice(-days).map(({ date, bar }) => ({ date, close: bar.close }));
+/**
+ * `bars` の末尾 (基準日) までの終値系列を、CHoCH の構造全体 (`fromDate` = 1 つ目の安値)
+ * と直近 `CHART_DISPLAY_MIN_DAYS` 本のどちらか広い方で切り出す (#260 #266 #268)。
+ */
+function slicePriceSeriesForChart(bars: SortedBars, fromDate: string): PatternPricePoint[] {
+  const structureStartIndex = bars.findIndex((b) => b.date === fromDate);
+  const recentStartIndex = Math.max(0, bars.length - CHART_DISPLAY_MIN_DAYS);
+  const startIndex =
+    structureStartIndex === -1 ? recentStartIndex : Math.min(structureStartIndex, recentStartIndex);
+  return bars.slice(startIndex).map(({ date, bar }) => ({ date, close: bar.close }));
 }
 
 /**
- * ブレイクアウトのビュー (#264)。カップウィズハンドル (#230)・ダブルボトム (#256)・
- * 逆三尊 (#258)・High Tight Flag (#231) を置き換える。
+ * ブレイクアウト (CHoCH) のビュー (#268)。カップウィズハンドル (#230)・
+ * ダブルボトム (#256)・逆三尊 (#258)・High Tight Flag (#231)・N 日高値抜け (#264)
+ * を置き換える。
  *
  * 指標マスタを経由しない (#229/ADR-0008 と同じ理由。OHLCV は指標マスタが前提とする
  * 1 系列 = スカラー値と型が合わない)。`assets` は対象銘柄すべてを含め、検出できなかった
@@ -682,12 +689,15 @@ export function buildBreakoutView(options: {
   symbols: ReadonlyArray<{ symbol: string; name: string }>;
   ohlcvObservations: Readonly<Record<string, Readonly<Record<string, OhlcvBar>>>>;
   generatedAt: string;
+  /** スイング判定の前後本数。省略時は `detectChoch` の既定値 (#268)。 */
+  swingLength?: number;
 }): BreakoutView {
-  const { symbols, ohlcvObservations, generatedAt } = options;
+  const { symbols, ohlcvObservations, generatedAt, swingLength } = options;
   const assets: BreakoutAsset[] = symbols.map(({ symbol, name }) => {
     const bars = toSortedBars(ohlcvObservations[symbol] ?? {});
-    const detection = detectBreakout(bars);
-    const priceSeries = detection === null ? null : sliceRecentPriceSeries(bars, CHART_DISPLAY_DAYS);
+    const detection = detectChoch(bars, swingLength);
+    const priceSeries =
+      detection === null ? null : slicePriceSeriesForChart(bars, detection.firstLowDate);
     return { symbol, name, detection, priceSeries };
   });
   return roundViewNumbers({ generatedAt, assets });

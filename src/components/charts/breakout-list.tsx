@@ -4,10 +4,11 @@ import { ChartFrame } from './chart-frame';
 import { PatternChart } from './pattern-chart';
 
 /**
- * ブレイクアウト (N日高値抜け) の検出結果 (#264)。
+ * CHoCH (Change of Character) の検出結果 (#268)。
  *
- * カップウィズハンドル・ダブルボトム・逆三尊・High Tight Flag を置き換える。
- * **検出された銘柄のみ** `PatternChart` (#260) で上抜けた高値の水準を視覚化する。
+ * カップウィズハンドル・ダブルボトム・逆三尊・High Tight Flag・N日高値抜け (#264) を
+ * 置き換える。**検出された銘柄のみ** `PatternChart` (#260) で下落構造の主要点
+ * (1つ目の安値・前回の高値・2つ目の安値・ブレイクアウト) を視覚化する。
  * 0 件はテキストのみ (0 件は正常な状態 — ビューが生成されていること自体が
  * 「検出を試みた」証拠になる)。
  */
@@ -56,12 +57,20 @@ export function BreakoutList({
               <div className="font-semibold">{asset.name}</div>
               <div className="mt-1 flex flex-wrap gap-x-4 gap-y-1 text-xs text-slate-500">
                 <span>
-                  ブレイクアウト: {formatDate(asset.detection.breakoutDate)} (
-                  {formatNumber(asset.detection.breakoutPrice, 2)})
+                  1つ目の安値: {formatDate(asset.detection.firstLowDate)} (
+                  {formatNumber(asset.detection.firstLowPrice, 2)})
                 </span>
                 <span>
-                  直近{asset.detection.lookbackDays}営業日高値: {formatDate(asset.detection.priorHighDate)} (
+                  前回の高値: {formatDate(asset.detection.priorHighDate)} (
                   {formatNumber(asset.detection.priorHighPrice, 2)})
+                </span>
+                <span>
+                  2つ目の安値: {formatDate(asset.detection.secondLowDate)} (
+                  {formatNumber(asset.detection.secondLowPrice, 2)})
+                </span>
+                <span>
+                  ブレイクアウト: {formatDate(asset.detection.breakoutDate)} (
+                  {formatNumber(asset.detection.breakoutPrice, 2)})
                 </span>
               </div>
               {asset.priceSeries && (
@@ -70,9 +79,19 @@ export function BreakoutList({
                     priceSeries={asset.priceSeries}
                     markers={[
                       {
+                        date: asset.detection.firstLowDate,
+                        price: asset.detection.firstLowPrice,
+                        label: '1つ目の安値',
+                      },
+                      {
                         date: asset.detection.priorHighDate,
                         price: asset.detection.priorHighPrice,
-                        label: `直近${asset.detection.lookbackDays}営業日高値`,
+                        label: '前回の高値',
+                      },
+                      {
+                        date: asset.detection.secondLowDate,
+                        price: asset.detection.secondLowPrice,
+                        label: '2つ目の安値',
                       },
                       {
                         date: asset.detection.breakoutDate,
