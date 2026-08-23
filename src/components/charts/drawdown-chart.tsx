@@ -1,21 +1,27 @@
 'use client';
 
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import {
   CartesianGrid,
   Legend,
   Line,
   LineChart,
+  ReferenceLine,
   ResponsiveContainer,
   Tooltip,
   XAxis,
   YAxis,
 } from 'recharts';
-import { formatDate, formatNumber } from '@/lib/format';
+import { formatDate, formatNumber, formatSigned } from '@/lib/format';
 import type { DrawdownAsset } from '@/lib/data/types';
 import { filterByPeriod, parsePeriod } from '@/lib/period';
 import { ChartFrame, SharedTooltip } from './chart-frame';
+
+/** 相対強度は下落率と別データキーに畳む。同じ日付行に両方を持たせるため。 */
+const relativeKey = (id: string) => `${id}__rs`;
+
+type Mode = 'drawdown' | 'relative';
 
 /**
  * 最高値からの下落率 (#128)。
@@ -44,14 +50,21 @@ export function DrawdownChart({
 }) {
   const searchParams = useSearchParams();
   const period = parsePeriod(searchParams.get('period'));
+  const [mode, setMode] = useState<Mode>('drawdown');
 
   // 資産ごとの系列を 1 つの配列に畳む。Recharts は行 = 日付の形を要る。
+  // 下落率と相対強度は別キーに畳み、切替時にデータの作り直しをしない。
   const data = useMemo(() => {
     const byDate = new Map<string, Record<string, number | null | string>>();
     for (const asset of assets) {
       for (const point of asset.points) {
         const row = byDate.get(point.date) ?? { date: point.date };
         row[asset.id] = point.drawdown;
+        byDate.set(point.date, row);
+      }
+      for (const point of asset.relativeStrengthPoints) {
+        const row = byDate.get(point.date) ?? { date: point.date };
+        row[relativeKey(asset.id)] = point.value;
         byDate.set(point.date, row);
       }
     }
@@ -61,10 +74,20 @@ export function DrawdownChart({
     return filterByPeriod(rows, period, new Date());
   }, [assets, period]);
 
-  // 下落率が大きい順。「いま何が売られているか」がそのまま並ぶ。
-  const ranked = [...assets]
-    .filter((asset) => asset.latest !== null)
-    .sort((a, b) => (b.latest?.drawdown ?? 0) - (a.latest?.drawdown ?? 0));
+  // 下落率が大きい順、または対SPYの相対強度が高い順。「いま何が売られているか」
+  // 「いまどこにSPYより資金が向いているか」がそのまま並ぶ。
+  const ranked =
+    mode === 'drawdown'
+      ? [...assets]
+          .filter((asset) => asset.latest !== null)
+          .sort((a, b) => (b.latest?.drawdown ?? 0) - (a.latest?.drawdown ?? 0))
+      : [...assets]
+          .filter((asset) => asset.latestRelativeStrength !== null)
+          .sort(
+            (a, b) =>
+              (b.latestRelativeStrength?.value ?? 0) - (a.latestRelativeStrength?.value ?? 0),
+          );
+  const rankedDate = mode === 'drawdown' ? ranked[0]?.latest?.date : ranked[0]?.latestRelativeStrength?.date;
 
   return (
     <ChartFrame
@@ -75,6 +98,36 @@ export function DrawdownChart({
       // 問いの見出しと同格に見え、構造が伝わらない。
       headingLevel={3}
       contentClassName="h-64 sm:h-80"
+      actions={
+        <div
+          role="group"
+          aria-label="下落率と対SPYの切替"
+          className="inline-flex rounded-md border border-slate-300 dark:border-slate-700"
+        >
+          {(
+            [
+              { key: 'drawdown', label: '下落率' },
+              { key: 'relative', label: '対SPY' },
+            ] as const
+          ).map((item) => (
+            <button
+              key={item.key}
+              type="button"
+              aria-pressed={item.key === mode}
+              onClick={() => setMode(item.key)}
+              className={[
+                'px-3 py-1 text-xs first:rounded-l-md last:rounded-r-md',
+                'border-r border-slate-300 last:border-r-0 dark:border-slate-700',
+                item.key === mode
+                  ? 'bg-slate-900 font-semibold text-white dark:bg-slate-100 dark:text-slate-900'
+                  : 'text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800',
+              ].join(' ')}
+            >
+              {item.label}
+            </button>
+          ))}
+        </div>
+      }
       summary={
         <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs">
           {ranked.map((asset) => (
@@ -82,13 +135,15 @@ export function DrawdownChart({
               <span className="inline-block h-2 w-2 rounded-full align-middle"
                     style={{ background: colors[asset.id] }} />{' '}
               <span className="text-slate-500">{asset.name}</span>{' '}
-              <span className="font-semibold">{formatNumber(asset.latest?.drawdown ?? null, 1)}%</span>
+              <span className="font-semibold">
+                {mode === 'drawdown'
+                  ? `${formatNumber(asset.latest?.drawdown ?? null, 1)}%`
+                  : `${formatSigned(asset.latestRelativeStrength?.value ?? null, 1)}%`}
+              </span>
             </span>
           ))}
-          {ranked[0]?.latest !== undefined && (
-            <span className="text-[11px] text-slate-500">
-              ({formatDate(ranked[0]?.latest?.date)} 時点)
-            </span>
+          {rankedDate !== undefined && (
+            <span className="text-[11px] text-slate-500">({formatDate(rankedDate)} 時点)</span>
           )}
         </div>
       }
@@ -100,23 +155,27 @@ export function DrawdownChart({
           <CartesianGrid strokeDasharray="3 3" stroke="currentColor" opacity={0.12} />
           <XAxis dataKey="date" tickFormatter={formatDate} minTickGap={48} fontSize={11} />
           {/*
-            **上下を反転させる。** 下落率は「大きいほど悪い」ので、
+            **下落率は上下を反転させる。** 「大きいほど悪い」ので、
             そのまま描くと下げ相場で線が上に伸びて直感と逆になる。
+            対SPYはゼロ (SPYと同じ) を基準に上下均等なので反転しない。
           */}
           <YAxis
-            reversed
-            domain={[0, 'auto']}
+            reversed={mode === 'drawdown'}
+            domain={mode === 'drawdown' ? [0, 'auto'] : ['auto', 'auto']}
             width={48}
             fontSize={11}
             tickFormatter={(value: number) => `${value.toFixed(0)}%`}
           />
           <Tooltip content={<SharedTooltip kind="percent" />} />
           <Legend />
+          {mode === 'relative' && (
+            <ReferenceLine y={0} stroke="currentColor" strokeOpacity={0.4} />
+          )}
           {assets.map((asset) => (
             <Line
               key={asset.id}
               type="monotone"
-              dataKey={asset.id}
+              dataKey={mode === 'drawdown' ? asset.id : relativeKey(asset.id)}
               name={asset.name}
               stroke={colors[asset.id]}
               strokeWidth={1.8}

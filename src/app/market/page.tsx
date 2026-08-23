@@ -568,6 +568,12 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
         ETF の価格を使っている。<strong>指数そのものではない</strong>ため、
         信託報酬の分だけ長期では指数から目減りする。出所は Finnhub。
       </span>,
+      <span key="relative">
+        「対SPY」に切り替えると<strong>SPY を基準にした相対パフォーマンス</strong>を見られる
+        (#274)。下落率が大きくても対SPYがゼロ付近なら市場全体の下げに連動しているだけで、
+        対SPYがマイナスに沈んでいれば SPY より弱い = 資金が抜けている。
+        <strong>SPY 自身は恒等的にゼロ</strong> (基準そのものと比べているため)。
+      </span>,
     ],
   },
   {
@@ -587,6 +593,11 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
         Vanguard のセクター ETF。<strong>S&P 500 のセクター指数そのものではない</strong>
         (S&P DJI の著作権で無料取得の経路が無いため)。構成銘柄と組入比率が違う。
       </span>,
+      <span key="relative">
+        「対SPY」は S&P 500 (SPY) に対する相対パフォーマンス (#274)。プラスなら
+        SPY をアウトパフォーム、マイナスならアンダーパフォームで、ローテーションの
+        方向がそのまま線の傾きに出る。
+      </span>,
     ],
   },
   {
@@ -605,6 +616,10 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
       <span key="chain">
         原油は物価の起点でもある。「物価は落ち着くか」(経済ページ) の WTI と合わせて読む。
       </span>,
+      <span key="relative">
+        「対SPY」は株式 (SPY) との相対パフォーマンス (#274)。コモディティは株式と
+        値動きの要因が違うため、対SPYが大きい値でもローテーションと同じ意味にはならない。
+      </span>,
     ],
   },
   {
@@ -622,6 +637,10 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
       <span key="pair">
         金利の国際比較 (「金融環境は緩いか厳しいか」) と同じ狙い。
         <strong>揃って下げていれば世界共通の要因</strong>、1 国だけなら固有の事情と読める。
+      </span>,
+      <span key="relative">
+        「対SPY」は米国株 (SPY) に対する相対パフォーマンス (#274)。プラスなら
+        米国株より強い、マイナスなら弱いことを意味する。
       </span>,
     ],
   },
