@@ -86,3 +86,40 @@ export function findStructureBreak(
 
   return null;
 }
+
+/**
+ * 出来高の確認に使う平均出来高の基準期間 (#277)。
+ *
+ * IBD (investors.com "THE 3 MOST PROFITABLE STOCK CHART PATTERNS") が
+ * カップウィズハンドル・フラットベースの買いシグナルで共通して使う基準期間。
+ * #251/#254 でカップウィズハンドルの条件を見直した際も同じ一次情報を引用した。
+ */
+export const VOLUME_LOOKBACK_DAYS = 50;
+
+/** ブレイクアウト日の出来高が平均に対して必要な倍率 (IBD の基準、40% 増)。 */
+export const VOLUME_CONFIRMATION_MULTIPLIER = 1.4;
+
+/**
+ * ブレイクアウト日の出来高が確認できるか (#277)。
+ *
+ * ブレイクアウト日の出来高が、**その日を含まない直近 `VOLUME_LOOKBACK_DAYS` 日**の
+ * 平均出来高より `VOLUME_CONFIRMATION_MULTIPLIER` 倍以上あれば確認できたとする。
+ * ブレイクアウト当日を平均に含めると、当日自身の急増が基準を押し上げてしまう。
+ *
+ * 基準期間分の観測が無ければ判定できない。**標本不足で誤解を招く判定をしない**
+ * (#102 と同じ原則) — 呼び出し側は `null` を「確認できない (検出しない)」として扱う。
+ */
+export function hasVolumeConfirmation(bars: SortedBars, breakoutDate: string): boolean | null {
+  const breakoutIndex = bars.findIndex((entry) => entry.date === breakoutDate);
+  if (breakoutIndex === -1) return null;
+
+  const from = breakoutIndex - VOLUME_LOOKBACK_DAYS;
+  if (from < 0) return null;
+  const window = bars.slice(from, breakoutIndex);
+
+  const avgVolume = window.reduce((sum, entry) => sum + entry.bar.volume, 0) / window.length;
+  if (avgVolume <= 0) return null;
+
+  const breakoutVolume = bars[breakoutIndex]!.bar.volume;
+  return breakoutVolume >= avgVolume * VOLUME_CONFIRMATION_MULTIPLIER;
+}
