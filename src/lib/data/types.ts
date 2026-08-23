@@ -360,8 +360,10 @@ export type CorrelationValue =
  * **固定の「危険水準」は置かない**。「1% を切ったら危険」のような線には定説が無く、
  * 恣意的な基準になる (VIX に補助線を引かなかったのと同じ判断。plan U-S1)。
  * 客観的な基準はゼロ (株式益回り = 実質金利) と、実データから求めた分布の 2 つだけ。
+ *
+ * イールドスプレッド専用ではなく、PER (#271) など他の指標の過去分布にも使う汎用型。
  */
-export interface SpreadDistribution {
+export interface HistoricalDistribution {
   /** 集計した窓の年数。 */
   years: number;
   mean: number;
@@ -414,7 +416,11 @@ export interface ValuationSeries {
    * **期間フィルターに追従しない固定窓**。フィルターで基準が動くと
    * 「今が過去に比べてどこか」の比較にならないため。
    */
-  spreadDistribution: SpreadDistribution | null;
+  spreadDistribution: HistoricalDistribution | null;
+  /** Forward P/E の過去分布 (#271)。窓・null の扱いは `spreadDistribution` と同じ。 */
+  forwardPeDistribution: HistoricalDistribution | null;
+  /** 実績 P/E の過去分布 (#271)。窓・null の扱いは `spreadDistribution` と同じ。 */
+  trailingPeDistribution: HistoricalDistribution | null;
   /** Forward EPS を持つか。NASDAQ-100 は取得経路が無いため false (screens C-2)。 */
   hasForwardEps: boolean;
   /**

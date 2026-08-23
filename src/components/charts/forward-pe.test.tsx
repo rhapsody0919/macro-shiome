@@ -44,3 +44,21 @@ describe('P/E と基準線 (#116)', () => {
     expect(document.body.textContent).toContain('Forward と実績は水準が違う');
   });
 });
+
+describe('PER の過去分布 (#271)', () => {
+  it('Forward P/E の過去分布を出す', () => {
+    render(<ForwardPeChart view={valuationView} />);
+    expect(document.body.textContent).toContain('過去 5 年で下位');
+  });
+
+  it('実績に切り替えると分布も切り替わる', () => {
+    render(<ForwardPeChart view={valuationView} />);
+    const forwardText = document.body.textContent ?? '';
+    act(() => {
+      screen.getByRole('button', { name: '実績' }).click();
+    });
+    const trailingText = document.body.textContent ?? '';
+    expect(trailingText).not.toBe(forwardText);
+    expect(trailingText).toContain('過去 5 年で下位');
+  });
+});

@@ -8442,6 +8442,24 @@
       "latestPercentile": 15.773809523809524,
       "latestDate": "2026-08-07"
     },
+    "forwardPeDistribution": {
+      "years": 5,
+      "mean": 19.90773809523809,
+      "sd": 1.8872086609057166,
+      "n": 168,
+      "latest": 20,
+      "latestPercentile": 44.642857142857146,
+      "latestDate": "2026-08-07"
+    },
+    "trailingPeDistribution": {
+      "years": 5,
+      "mean": 24.38292682926829,
+      "sd": 3.429153426373201,
+      "n": 164,
+      "latest": 28.2,
+      "latestPercentile": 87.8048780487805,
+      "latestDate": "2026-08-07"
+    },
     "hasForwardEps": true,
     "accumulationNote": null
   },
@@ -16877,6 +16895,8 @@
       }
     },
     "spreadDistribution": null,
+    "forwardPeDistribution": null,
+    "trailingPeDistribution": null,
     "hasForwardEps": false,
     "accumulationNote": "実績 PER は連動 ETF (QQQ) 経由でしか取れず、提供元が現在値しか出さないため過去に遡れない。"
   }

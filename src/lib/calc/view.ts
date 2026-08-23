@@ -21,7 +21,7 @@ import type {
   OhlcvBar,
   PatternPricePoint,
   RevisionPoint,
-  SpreadDistribution,
+  HistoricalDistribution,
   ValuationPoint,
   ValuationSeries,
   ValuationView,
@@ -172,7 +172,9 @@ function buildSp500Series(options: BuildViewOptions, weeks: readonly string[]): 
       points.map((p) => p.forwardEps),
       options.today,
     ),
-    spreadDistribution: buildSpreadDistribution(points, options.today),
+    spreadDistribution: buildDistribution(points, (p) => p.yieldSpread, options.today),
+    forwardPeDistribution: buildDistribution(points, (p) => p.forwardPe, options.today),
+    trailingPeDistribution: buildDistribution(points, (p) => p.trailingPe, options.today),
     hasForwardEps: true,
     // FactSet の過去号 (PDF) を遡って取得できるため蓄積待ちにならない。
     accumulationNote: null,
@@ -239,7 +241,10 @@ function buildNasdaqSeries(options: BuildViewOptions, weeks: readonly string[]):
       points.map((p) => p.trailingEps),
       options.today,
     ),
-    spreadDistribution: buildSpreadDistribution(points, options.today),
+    spreadDistribution: buildDistribution(points, (p) => p.yieldSpread, options.today),
+    // NASDAQ-100 は Forward PER の取得経路が無いため常に null (自然に null になる)。
+    forwardPeDistribution: buildDistribution(points, (p) => p.forwardPe, options.today),
+    trailingPeDistribution: buildDistribution(points, (p) => p.trailingPe, options.today),
     hasForwardEps: false,
     // 実績 PER は QQQ 経由でしか取れず、stockanalysis.com は現在値しか出さない
     // (src/lib/adapters/stockanalysis.ts)。backfill.ts も FactSet 専用で遡れない。
@@ -277,40 +282,42 @@ function buildTargetYieldContext(
 }
 
 /**
- * イールドスプレッドの過去分布 (#52)。
+ * 過去分布における現在値の位置 (#52、#271 で PER にも横展開)。
  *
  * 窓は 5 年に固定する。期間フィルターに追従させると基準が動いてしまい、
  * 「今が過去に比べてどこか」の比較にならない。
  */
-const SPREAD_WINDOW_YEARS = 5;
+const DISTRIBUTION_WINDOW_YEARS = 5;
 
-function buildSpreadDistribution(
+function buildDistribution(
   points: readonly ValuationPoint[],
+  extract: (point: ValuationPoint) => number | null,
   today: Date,
-): SpreadDistribution | null {
+): HistoricalDistribution | null {
   const from = new Date(
-    Date.UTC(today.getUTCFullYear() - SPREAD_WINDOW_YEARS, today.getUTCMonth(), today.getUTCDate()),
+    Date.UTC(
+      today.getUTCFullYear() - DISTRIBUTION_WINDOW_YEARS,
+      today.getUTCMonth(),
+      today.getUTCDate(),
+    ),
   )
     .toISOString()
     .slice(0, 10);
 
   const within = points.filter((point) => point.date >= from);
-  const stats = distribution(within.map((point) => point.yieldSpread));
+  const stats = distribution(within.map(extract));
   if (stats === null) return null;
 
   // 直近値は窓の中の最後の観測。窓外の古い値を「直近」として出さない。
-  const latest = within.filter((point) => point.yieldSpread !== null).at(-1);
+  const latest = within.filter((point) => extract(point) !== null).at(-1);
   if (latest === undefined) return null;
 
-  const latestValue = latest.yieldSpread as number;
-  const percentile = percentileRank(
-    within.map((point) => point.yieldSpread),
-    latestValue,
-  );
+  const latestValue = extract(latest) as number;
+  const percentile = percentileRank(within.map(extract), latestValue);
   if (percentile === null) return null;
 
   return {
-    years: SPREAD_WINDOW_YEARS,
+    years: DISTRIBUTION_WINDOW_YEARS,
     mean: stats.mean,
     sd: stats.sd,
     n: stats.n,

@@ -1,6 +1,6 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest';
-import type { SpreadDistribution, ValuationView } from '@/lib/data/types';
+import type { HistoricalDistribution, ValuationView } from '@/lib/data/types';
 import { valuationPoint, valuationSeries } from '@/test/fixtures';
 import { YieldSpreadChart } from './yield-spread';
 
@@ -9,7 +9,7 @@ vi.mock('next/navigation', () => ({
 }));
 
 /** 実データ (2026-08-07 時点、S&P 500) をもとにした分布。 */
-const DISTRIBUTION: SpreadDistribution = {
+const DISTRIBUTION: HistoricalDistribution = {
   years: 5,
   mean: 3.7,
   sd: 1.23,
@@ -20,7 +20,7 @@ const DISTRIBUTION: SpreadDistribution = {
 };
 
 function makeView(
-  distribution: SpreadDistribution | null,
+  distribution: HistoricalDistribution | null,
   options: { weeks?: number; note?: string | null } = {},
 ): ValuationView {
   const { weeks = 20, note = null } = options;
@@ -52,7 +52,7 @@ describe('イールドスプレッドの水準表示 (#52)', () => {
   });
 
   it('平均を上回るときは向きが反転する', () => {
-    const above: SpreadDistribution = { ...DISTRIBUTION, latest: 5.0, latestPercentile: 88 };
+    const above: HistoricalDistribution = { ...DISTRIBUTION, latest: 5.0, latestPercentile: 88 };
     const { container } = render(<YieldSpreadChart view={makeView(above)} />);
     expect(container.textContent).toContain('平均 3.70% を 1.30% 上回る');
   });

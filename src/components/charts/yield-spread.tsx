@@ -15,11 +15,12 @@ import {
   YAxis,
 } from 'recharts';
 import { changeMark, formatDate, formatPercent, formatSigned } from '@/lib/format';
-import type { IndexKey, SpreadDistribution, ValuationView } from '@/lib/data/types';
+import type { IndexKey, ValuationView } from '@/lib/data/types';
 import { COLORS } from '@/lib/colors';
 import { filterByPeriod, parsePeriod } from '@/lib/period';
 import { seriesState, withValue } from '@/lib/series-state';
 import { ChartFrame, SharedTooltip } from './chart-frame';
+import { DistributionPosition } from './distribution-position';
 import { IndexSwitch } from '../index-switch';
 
 const SPREAD_COLOR = COLORS.yieldSpread;
@@ -130,7 +131,9 @@ export function YieldSpreadChart({ view }: { view: ValuationView }) {
               {formatPercent(latest.realRate)}
             </div>
             {/* 蓄積中は別途その旨を出すので、ここで「標本不足」を重ねない。 */}
-            {!isAccumulating && <DistributionPosition distribution={series.spreadDistribution} />}
+            {!isAccumulating && (
+              <DistributionPosition distribution={series.spreadDistribution} format={formatPercent} />
+            )}
           </div>
         )
       }
@@ -273,31 +276,5 @@ export function YieldSpreadChart({ view }: { view: ValuationView }) {
         </ComposedChart>
       </ResponsiveContainer>
     </ChartFrame>
-  );
-}
-
-/**
- * 過去分布における現在値の位置 (#52)。
- *
- * **「危険」「割安」といった評価語は使わない** (screens UI/UX 方針 2)。
- * 分位と平均との差という事実だけを出し、判断は読み手に委ねる。
- */
-function DistributionPosition({ distribution }: { distribution: SpreadDistribution | null }) {
-  if (distribution === null) {
-    return <div className="text-xs text-slate-500">過去分布は標本不足で出せない</div>;
-  }
-
-  const gap = distribution.latest - distribution.mean;
-
-  return (
-    <div className="text-xs text-slate-500">
-      過去 {distribution.years} 年で下位{' '}
-      <span className="font-semibold tabular-nums text-slate-700 dark:text-slate-300">
-        {distribution.latestPercentile.toFixed(0)}%
-      </span>{' '}
-      の水準 (平均 {formatPercent(distribution.mean)} を{' '}
-      <span className="tabular-nums">{formatPercent(Math.abs(gap))}</span>{' '}
-      {gap >= 0 ? '上回る' : '下回る'} / n = {distribution.n})
-    </div>
   );
 }

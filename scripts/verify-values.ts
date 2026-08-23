@@ -321,6 +321,97 @@ function verifyDerived(): void {
 }
 
 /**
+ * 過去分布 (イールドスプレッド #52 / PER #271) のパーセンタイルが正しいか。
+ *
+ * `derived.ts` の `percentileRank`/`distribution` を呼ばず、独立に再計算する
+ * (#113 の要件、同じ関数を使うと定義そのものが間違っていた場合に一致してしまう)。
+ *
+ * 窓は「直近 5 年」だが、ビューには生成時点の日付が記録されていないため
+ * 正確な窓の境界は再現できない。代わりに **`latestDate` までの直近 `n` 個の
+ * 非欠測値**を集める。これは窓の中の非欠測値の個数がちょうど `n` である以上、
+ * 窓による集合と一致する (窓の外側に非欠測値が漏れていれば `n` 自体が食い違う)。
+ */
+function verifyDistribution(): void {
+  console.log('13. 過去分布のパーセンタイル');
+  const valuation = readView('valuation') as Record<
+    string,
+    { points: Array<Record<string, unknown>> } & Record<string, unknown>
+  > | null;
+  if (valuation === null) return;
+
+  const fields: Array<
+    ['spreadDistribution' | 'forwardPeDistribution' | 'trailingPeDistribution', string]
+  > = [
+    ['spreadDistribution', 'yieldSpread'],
+    ['forwardPeDistribution', 'forwardPe'],
+    ['trailingPeDistribution', 'trailingPe'],
+  ];
+
+  let checked = 0;
+  for (const key of ['sp500', 'nasdaq100']) {
+    const series = valuation[key];
+    if (series === undefined) continue;
+
+    for (const [distKey, fieldKey] of fields) {
+      const dist = series[distKey] as {
+        mean: number;
+        sd: number;
+        n: number;
+        latest: number;
+        latestPercentile: number;
+        latestDate: string;
+      } | null;
+      if (dist === null || dist === undefined) continue;
+      checked += 1;
+
+      const latestPoint = series.points.find((p) => String(p.date) === dist.latestDate);
+      if (latestPoint === undefined || latestPoint[fieldKey] !== dist.latest) {
+        fail('過去分布のパーセンタイル', `${key}.${distKey}: latestDate の値が latest と一致しない`);
+        continue;
+      }
+
+      const upToLatest = series.points.filter((p) => String(p.date) <= dist.latestDate);
+      const values: number[] = [];
+      for (let i = upToLatest.length - 1; i >= 0 && values.length < dist.n; i--) {
+        const value = upToLatest[i][fieldKey];
+        if (typeof value === 'number') values.push(value);
+      }
+      if (values.length !== dist.n) {
+        fail(
+          '過去分布のパーセンタイル',
+          `${key}.${distKey}: 標本数を再現できない (期待 ${dist.n}, 実際 ${values.length})`,
+        );
+        continue;
+      }
+
+      const mean = values.reduce((sum, v) => sum + v, 0) / values.length;
+      const variance =
+        values.reduce((sum, v) => sum + (v - mean) ** 2, 0) / (values.length - 1);
+      const sd = Math.sqrt(variance);
+      if (differs(dist.mean, mean, 1e-6)) {
+        fail('過去分布のパーセンタイル', `${key}.${distKey}: 平均が再計算と合わない`);
+      }
+      if (differs(dist.sd, sd, 1e-6)) {
+        fail('過去分布のパーセンタイル', `${key}.${distKey}: 標準偏差が再計算と合わない`);
+      }
+
+      const below = values.filter((v) => v < dist.latest).length;
+      const equal = values.filter((v) => v === dist.latest).length;
+      const percentile = ((below + equal / 2) / values.length) * 100;
+      if (differs(dist.latestPercentile, percentile, 1e-6)) {
+        fail('過去分布のパーセンタイル', `${key}.${distKey}: パーセンタイルが再計算と合わない`);
+      }
+    }
+  }
+  // **0 件も失敗にする** (#102)。標本不足で全部 null なら通り抜けてしまうため。
+  if (checked === 0) {
+    fail('過去分布のパーセンタイル', '照合できた分布が 1 つも無い');
+  } else {
+    console.log(`  ${checked} 件を照合`);
+  }
+}
+
+/**
  * 6. 実質金利が市場の実測値と一致するか (#115)。
  *
  * FRED は期待インフレ率を `T10YIE = DGS10 − DFII10` と定義しているので、
@@ -765,6 +856,7 @@ async function main(): Promise<void> {
   verifyRanges();
   verifySeriesOrder();
   verifyDerived();
+  verifyDistribution();
   verifyRealRate();
   verifyDrawdown();
   if (offline) {
