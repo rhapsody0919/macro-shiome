@@ -1063,6 +1063,13 @@ export interface SummaryView {
   generatedAt: string;
   /** 経済状態の要約文。数値を含まない。生成できていなければ null。 */
   economyState: string | null;
+  /**
+   * `economyState` の材料にした指標の件数 (#283)。
+   *
+   * 要約文自体は数値を含まない設計 (#279) のため、根拠の厚みだけを事実として示す。
+   * `economyState` が null (未生成) なら 0。
+   */
+  economyStateFactCount: number;
   warnings: WarningSignal[];
   highlights: SectorHighlight[];
 }
