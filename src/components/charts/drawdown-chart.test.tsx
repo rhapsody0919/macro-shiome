@@ -33,6 +33,7 @@ describe('下落率チャート (#128)', () => {
         subtitle="テスト"
         assets={assets}
         colors={{ a: '#000000', b: '#111111', c: '#222222' }}
+        relativeStrengthStart={null}
         notes={[]}
       />,
     );
@@ -62,6 +63,7 @@ describe('下落率チャート (#128)', () => {
         subtitle="テスト"
         assets={assets}
         colors={{ a: '#000000', b: '#111111' }}
+        relativeStrengthStart="2026-08-14"
         notes={[]}
       />,
     );
@@ -72,6 +74,34 @@ describe('下落率チャート (#128)', () => {
     expect(text.indexOf('強い')).toBeLessThan(text.indexOf('弱い'));
     expect(text).toContain('+8.0%');
     expect(text).toContain('-5.0%');
+  });
+
+  it('対SPYモードでは起点が画面に出る (#289)', () => {
+    // 下落率の起点 (2024-11-28) と混同されないよう、対SPY自身の起点を動的に表示する。
+    const assets = [
+      {
+        id: 'a', name: '銘柄', group: 'major', high: 100,
+        latest: { date: '2026-08-14', drawdown: 10 }, points: [],
+        latestRelativeStrength: { date: '2026-08-14', value: 5 },
+        relativeStrengthPoints: [],
+      },
+    ];
+    render(
+      <DrawdownChart
+        title="テスト"
+        subtitle="テスト"
+        assets={assets}
+        colors={{ a: '#000000' }}
+        relativeStrengthStart="2026-06-08"
+        notes={[]}
+      />,
+    );
+    // 下落率モードでは出ない (対SPY固有の情報のため)。
+    expect(screen.queryByText(/起点は/)).not.toBeInTheDocument();
+    act(() => {
+      screen.getByRole('button', { name: '対SPY' }).click();
+    });
+    expect(screen.getByText(/起点は/).textContent).toContain('2026/06/08');
   });
 
   it('最新値が無い資産は順位に出さない', () => {
@@ -87,6 +117,7 @@ describe('下落率チャート (#128)', () => {
           },
         ]}
         colors={{ x: '#000000' }}
+        relativeStrengthStart={null}
         notes={[]}
       />,
     );

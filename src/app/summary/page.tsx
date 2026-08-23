@@ -1,4 +1,4 @@
-import { summary } from '@/lib/data/loader';
+import { drawdown, summary } from '@/lib/data/loader';
 import { formatDate, formatNumber, formatSigned } from '@/lib/format';
 import type { SectorHighlight, WarningSignal } from '@/lib/data/types';
 
@@ -73,6 +73,11 @@ export default function SummaryPage() {
           下落率が深く (上位1/3以内)、かつSPY (S&P 500 に連動するETF、市場全体の基準として使う)
           に対する相対強度がプラス、またはブレイクアウト検出のどちらかが重なった銘柄。推奨では
           なく、複数シグナルの重なりという事実の提示。
+        </p>
+        <p className="mt-1 text-xs text-slate-500">
+          「対SPY」は資産価格と SPY 価格の比率を、最初に両方の値が揃った日
+          {drawdown.relativeStrengthStart !== null && ` (${formatDate(drawdown.relativeStrengthStart)})`}
+          を 0% として指数化した変化率。詳しい算出方法は「市場」ページの下落率チャートを参照。
         </p>
         {summary.highlights.length === 0 ? (
           <p className="mt-2 text-sm text-slate-500">該当する銘柄は無い。</p>

@@ -175,6 +175,7 @@ export function QuestionSections<K extends string>({
                   colors={paletteFor(
                     drawdown.assets.filter((asset) => asset.group === chart.drawdownGroup),
                   )}
+                  relativeStrengthStart={drawdown.relativeStrengthStart}
                   notes={chart.notes}
                   explanation={<IndicatorExplanations ids={explainedIds(chart)} />}
                   badges={<Badges frequency="daily" cyclePosition={cycleOf(chart)} />}
