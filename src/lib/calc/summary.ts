@@ -38,8 +38,10 @@ const SYSTEM_PROMPT =
 
 function warningBasisLabel(warning: WarningSignal): string {
   if (warning.basis === 'zero-line') return '定義上の基準を超えている';
+  // "5年" のように数字を含む表現を渡すと、LLM が説明文にそのまま数字を書き写し
+  // sanitizeNote に破棄されやすくなる (#279 マージ後の実機確認、highlights と同じ問題)。
   const direction = (warning.percentile ?? 0) >= 50 ? '高い' : '低い';
-  return `過去5年の分布の中で${direction}側の水準にある`;
+  return `過去の分布の中で${direction}側の水準にある`;
 }
 
 /** 警告シグナルの説明文を1回のLLM呼び出しでまとめて生成する。 */
@@ -77,8 +79,11 @@ export async function summarizeHighlights(
   if (highlights.length === 0) return [];
 
   const lines = highlights.map((h) => {
+    // 数字を含む表現 ("1/3以内" 等) を渡すと、LLM が説明文にそのまま数字を
+    // 書き写しやすくなり sanitizeNote に破棄される率が上がる (#279 マージ後の実機確認)。
+    // シグナルの説明はすべて数字を含まない言い回しにする。
     const signals = [
-      '下落率が深い方から1/3以内',
+      '下落率が深い銘柄の一角',
       h.relativeStrength !== null && h.relativeStrength > 0 ? 'SPYに対して相対的に強い' : null,
       h.hasBreakout ? '直近で戻り高値を上抜けている' : null,
     ].filter((s): s is string => s !== null);

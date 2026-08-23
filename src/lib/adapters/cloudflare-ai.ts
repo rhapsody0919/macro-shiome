@@ -62,6 +62,10 @@ export class CloudflareAiClient {
               { role: 'system', content: systemPrompt },
               { role: 'user', content: prompt },
             ],
+            // 実機確認 (#279マージ後) で、複数件をまとめて依頼すると既定の出力上限で
+            // 応答が途中で切れることがあった (最後の1件が文の途中で終わる)。
+            // 明示的に大きめの上限を渡して打ち切りを防ぐ。
+            max_tokens: 1024,
           }),
         });
       } catch (cause) {
