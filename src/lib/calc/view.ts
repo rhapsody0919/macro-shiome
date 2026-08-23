@@ -574,6 +574,40 @@ function startingHigh(
   return prices[firstObserved] / (1 - recorded / 100);
 }
 
+/** 相対強度の基準にする資産 (#274)。S&P 500 (SPY) を使う。 */
+const RELATIVE_STRENGTH_BENCHMARK_ID = 'etf-spy';
+
+/**
+ * SPY に対する相対パフォーマンス (#274)。
+ *
+ * 資産価格と SPY 価格を**最初の共通観測日**で 100 に揃え、以降の比率の変化を
+ * % で表す。プラスは SPY をアウトパフォーム、マイナスはアンダーパフォーム。
+ *
+ * **下落率 (#128) と同じ Finnhub の生の終値を使う。** OHLCV (Tiingo、#229) は
+ * 別プロバイダ・別定義のため混ぜない (types.ts の `DrawdownAsset` の注記と同じ判断)。
+ *
+ * 観測が無い日は前の値を引き継ぐ (`valueAsOf` と同じ考え方)。基準日より前は null。
+ * SPY 自身を渡すと `prices === benchmark` になり、比率は常に 1 → 値は恒等的に 0。
+ */
+function buildRelativeStrength(
+  prices: Observations,
+  benchmark: Observations,
+  weeks: readonly string[],
+): Array<{ date: string; value: number | null }> {
+  let baseRatio: number | null = null;
+  return weeks.map((date) => {
+    const price = valueAsOf(prices, date);
+    const benchmarkPrice = valueAsOf(benchmark, date);
+    if (price === null || benchmarkPrice === null || benchmarkPrice === 0) {
+      return { date, value: null };
+    }
+
+    const ratio = price / benchmarkPrice;
+    if (baseRatio === null) baseRatio = ratio;
+    return { date, value: (ratio / baseRatio - 1) * 100 };
+  });
+}
+
 export function buildDrawdownView(
   options: BuildViewOptions & {
     seed: DrawdownSeed;
@@ -582,6 +616,7 @@ export function buildDrawdownView(
   },
 ): DrawdownView {
   const { observations, seed, assets: definitions, names } = options;
+  const benchmarkPrices = series(observations, RELATIVE_STRENGTH_BENCHMARK_ID);
 
   // **日次グリッドで、起点は引き継いだ履歴の開始日** (#166)。
   //
@@ -647,6 +682,11 @@ export function buildDrawdownView(
 
     const withValue = points.filter((point) => point.drawdown !== null);
     const last = withValue.at(-1);
+
+    const relativeStrengthPoints = buildRelativeStrength(prices, benchmarkPrices, weeks);
+    const withRelativeValue = relativeStrengthPoints.filter((point) => point.value !== null);
+    const lastRelative = withRelativeValue.at(-1);
+
     assets.push({
       id,
       name: names[id] ?? id,
@@ -654,6 +694,9 @@ export function buildDrawdownView(
       high: observedHigh > 0 ? observedHigh : null,
       latest: last === undefined ? null : { date: last.date, drawdown: last.drawdown as number },
       points,
+      latestRelativeStrength:
+        lastRelative === undefined ? null : { date: lastRelative.date, value: lastRelative.value as number },
+      relativeStrengthPoints,
     });
   }
 

@@ -486,6 +486,86 @@ function verifyDrawdown(): void {
 }
 
 /**
+ * SPY に対する相対強度が正しいか (#274)。
+ *
+ * `view.ts` の `buildRelativeStrength` を呼ばず、独立に再計算する (#113 の要件)。
+ * SPY 自身は基準そのものと比べるため、値を持つ全期間で恒等的にゼロになる
+ * (最も強い不変条件のため必ず検証する)。他の資産は Finnhub の生の終値から
+ * 比率を再計算し、保存値と突き合わせる。
+ */
+function verifyRelativeStrength(): void {
+  console.log('14. SPYに対する相対強度');
+  const view = readView('drawdown') as {
+    assets: Array<{
+      id: string;
+      relativeStrengthPoints: Array<{ date: string; value: number | null }>;
+    }>;
+  } | null;
+  if (view === null) return;
+
+  const spy = view.assets.find((asset) => asset.id === 'etf-spy');
+  if (spy === undefined) {
+    fail('SPYに対する相対強度', 'etf-spy がビューに無い');
+    return;
+  }
+  for (const point of spy.relativeStrengthPoints) {
+    if (point.value !== null && point.value !== 0) {
+      fail('SPYに対する相対強度', `etf-spy @${point.date}: 自身との比較なのに ${point.value}`);
+    }
+  }
+
+  // `valueAsOf` (観測が無い日は前の値を引き継ぐ) と同じ規則で、独立に価格を追跡する。
+  const spyPrices = readObservations('etf-spy');
+  let checked = 0;
+  for (const asset of view.assets) {
+    if (asset.id === 'etf-spy') continue;
+    const prices = readObservations(asset.id);
+    let lastPrice: number | null = null;
+    let lastBenchmarkPrice: number | null = null;
+    let baseRatio: number | null = null;
+
+    for (const point of asset.relativeStrengthPoints) {
+      if (prices[point.date] !== undefined) lastPrice = prices[point.date];
+      if (spyPrices[point.date] !== undefined) lastBenchmarkPrice = spyPrices[point.date];
+
+      if (lastPrice === null || lastBenchmarkPrice === null || lastBenchmarkPrice === 0) {
+        if (point.value !== null) {
+          fail(
+            'SPYに対する相対強度',
+            `${asset.id} @${point.date}: 価格を再現できないのに保存値がある`,
+          );
+        }
+        continue;
+      }
+
+      const ratio = lastPrice / lastBenchmarkPrice;
+      if (baseRatio === null) baseRatio = ratio;
+      const expected = (ratio / baseRatio - 1) * 100;
+
+      if (point.value === null) {
+        fail('SPYに対する相対強度', `${asset.id} @${point.date}: 再計算できるのに保存値が null`);
+        continue;
+      }
+      // drawdown.json は表示の2桁に丸めてある (#218) ため、丸め誤差 (最大0.005) を
+      // 許容する絶対誤差で比較する。`differs()` の相対誤差は値がゼロ近傍で
+      // 破綻するため使わない。
+      if (Math.abs(point.value - expected) > 0.006) {
+        fail(
+          'SPYに対する相対強度',
+          `${asset.id} @${point.date}: 再計算 ${expected.toFixed(4)} が保存値 ${point.value} と合わない`,
+        );
+      }
+      checked += 1;
+    }
+  }
+  if (checked === 0) {
+    fail('SPYに対する相対強度', '生の終値が両方揃う日が 1 日も無く照合できない');
+  } else {
+    console.log(`  ${checked} 点を照合`);
+  }
+}
+
+/**
  * 8. ゴールドの終値が「その日の終値」か (#133)。
  *
  * Finnhub の `c` は**現在値**なので、保存キー (`lastClosedTradingDay`) が指す日と
@@ -859,6 +939,7 @@ async function main(): Promise<void> {
   verifyDistribution();
   verifyRealRate();
   verifyDrawdown();
+  verifyRelativeStrength();
   if (offline) {
     console.log('8. ゴールドの終値と日付の照合 — --offline のため飛ばす');
   } else {

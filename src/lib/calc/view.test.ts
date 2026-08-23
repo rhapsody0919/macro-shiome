@@ -1043,6 +1043,56 @@ describe('下落率のビュー (#128)', () => {
   });
 });
 
+describe('SPY に対する相対強度 (#274)', () => {
+  const definitions = [
+    { id: 'etf-x', group: 'major' },
+    { id: 'etf-spy', group: 'major' },
+  ];
+  const names = { 'etf-x': 'テスト資産', 'etf-spy': 'SPY' };
+  const build = (observations: ObservationMap) =>
+    buildDrawdownView({
+      observations,
+      config,
+      start: '2026-08-01',
+      today: new Date(Date.UTC(2026, 7, 22)),
+      seed: { assets: {} },
+      assets: definitions,
+      names,
+    });
+
+  it('最初の共通観測日を基準に、その後の比率変化を % で示す', () => {
+    const view = build({
+      'etf-x': { '2026-08-14': 100, '2026-08-21': 110 }, // +10%
+      'etf-spy': { '2026-08-14': 500, '2026-08-21': 505 }, // +1%
+    });
+    const asset = view.assets.find((a) => a.id === 'etf-x');
+    const point = asset?.relativeStrengthPoints.find((p) => p.date === '2026-08-21');
+    // (1.10 / 1.01 − 1) × 100 ≈ +8.91
+    expect(point?.value).toBeCloseTo(8.91, 1);
+    expect(asset?.latestRelativeStrength?.value).toBeCloseTo(8.91, 1);
+  });
+
+  it('SPY 自身は基準そのものと比べるため恒等的にゼロになる', () => {
+    const view = build({
+      'etf-spy': { '2026-08-14': 500, '2026-08-21': 505 },
+    });
+    const spy = view.assets.find((a) => a.id === 'etf-spy');
+    const values = spy?.relativeStrengthPoints
+      .filter((p) => p.value !== null)
+      .map((p) => p.value);
+    expect(values?.length).toBeGreaterThan(0);
+    expect(values?.every((value) => value === 0)).toBe(true);
+    expect(spy?.latestRelativeStrength?.value).toBe(0);
+  });
+
+  it('SPY の観測が無い期間は null (誤解を招く数値を出さない)', () => {
+    const view = build({ 'etf-x': { '2026-08-21': 100 } });
+    const asset = view.assets.find((a) => a.id === 'etf-x');
+    expect(asset?.relativeStrengthPoints.every((p) => p.value === null)).toBe(true);
+    expect(asset?.latestRelativeStrength).toBeNull();
+  });
+});
+
 describe('価格系列の日次グリッド (#137)', () => {
   // ページ別に分けたので (#168)、系列が属するビューを指定して作る。
   const build = (observations: ObservationMap, view: 'market' | 'economy' | 'japan' = 'market') =>

@@ -879,6 +879,21 @@ export interface DrawdownAsset {
   latest: { date: string; drawdown: number } | null;
   /** 週次の下落率。引き継いだ履歴と、取得値から計算した分が繋がっている。 */
   points: Array<{ date: string; drawdown: number | null }>;
+  /**
+   * SPY (S&P 500) に対する相対パフォーマンス (%) の直近値 (#274)。
+   *
+   * プラスは SPY をアウトパフォーム、マイナスはアンダーパフォームを意味する。
+   * 観測が無ければ null (下落率と違い、引き継いだ履歴が無いため蓄積を待つしかない)。
+   */
+  latestRelativeStrength: { date: string; value: number } | null;
+  /**
+   * SPY に対する相対パフォーマンスの時系列 (#274)。
+   *
+   * 資産価格と SPY 価格を最初の共通観測日で揃え、以降の比率の変化を % で示す。
+   * **下落率と違い、引き継いだ履歴 (Stock Bot) には価格が無いため計算できず、
+   * 観測が貯まった期間しか値を持たない**。SPY 自身は恒等的に 0 になる。
+   */
+  relativeStrengthPoints: Array<{ date: string; value: number | null }>;
 }
 
 /** 下落率のビュー (#128)。 */

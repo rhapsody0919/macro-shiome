@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { act, render, screen } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest';
 import MarketPage from '@/app/market/page';
 import { DrawdownChart } from './drawdown-chart';
@@ -11,9 +11,21 @@ describe('下落率チャート (#128)', () => {
   it('下落率が大きい順に並べる', () => {
     // 「いま何が売られているか」がそのまま順位として読めることが要件。
     const assets = [
-      { id: 'a', name: '小さい', group: 'major', high: 100, latest: { date: '2026-08-14', drawdown: 2 }, points: [] },
-      { id: 'b', name: '大きい', group: 'major', high: 100, latest: { date: '2026-08-14', drawdown: 40 }, points: [] },
-      { id: 'c', name: '中くらい', group: 'major', high: 100, latest: { date: '2026-08-14', drawdown: 20 }, points: [] },
+      {
+        id: 'a', name: '小さい', group: 'major', high: 100,
+        latest: { date: '2026-08-14', drawdown: 2 }, points: [],
+        latestRelativeStrength: null, relativeStrengthPoints: [],
+      },
+      {
+        id: 'b', name: '大きい', group: 'major', high: 100,
+        latest: { date: '2026-08-14', drawdown: 40 }, points: [],
+        latestRelativeStrength: null, relativeStrengthPoints: [],
+      },
+      {
+        id: 'c', name: '中くらい', group: 'major', high: 100,
+        latest: { date: '2026-08-14', drawdown: 20 }, points: [],
+        latestRelativeStrength: null, relativeStrengthPoints: [],
+      },
     ];
     render(
       <DrawdownChart
@@ -29,13 +41,51 @@ describe('下落率チャート (#128)', () => {
     expect(text.indexOf('中くらい')).toBeLessThan(text.indexOf('小さい'));
   });
 
+  it('対SPYに切り替えると相対強度順に並び替わる (#274)', () => {
+    const assets = [
+      {
+        id: 'a', name: '弱い', group: 'major', high: 100,
+        latest: { date: '2026-08-14', drawdown: 10 }, points: [],
+        latestRelativeStrength: { date: '2026-08-14', value: -5 },
+        relativeStrengthPoints: [],
+      },
+      {
+        id: 'b', name: '強い', group: 'major', high: 100,
+        latest: { date: '2026-08-14', drawdown: 10 }, points: [],
+        latestRelativeStrength: { date: '2026-08-14', value: 8 },
+        relativeStrengthPoints: [],
+      },
+    ];
+    render(
+      <DrawdownChart
+        title="テスト"
+        subtitle="テスト"
+        assets={assets}
+        colors={{ a: '#000000', b: '#111111' }}
+        notes={[]}
+      />,
+    );
+    act(() => {
+      screen.getByRole('button', { name: '対SPY' }).click();
+    });
+    const text = document.body.textContent ?? '';
+    expect(text.indexOf('強い')).toBeLessThan(text.indexOf('弱い'));
+    expect(text).toContain('+8.0%');
+    expect(text).toContain('-5.0%');
+  });
+
   it('最新値が無い資産は順位に出さない', () => {
     // 取得前の資産を 0% として並べると「最高値圏」と誤読される。
     render(
       <DrawdownChart
         title="テスト"
         subtitle="テスト"
-        assets={[{ id: 'x', name: '未取得', group: 'major', high: null, latest: null, points: [] }]}
+        assets={[
+          {
+            id: 'x', name: '未取得', group: 'major', high: null, latest: null, points: [],
+            latestRelativeStrength: null, relativeStrengthPoints: [],
+          },
+        ]}
         colors={{ x: '#000000' }}
         notes={[]}
       />,
