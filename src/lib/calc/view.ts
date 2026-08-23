@@ -8,6 +8,8 @@ import type { Observations } from '../adapters/fred';
 import { resolveTargetYield, resolveTargetYieldEntry } from '../data/indicators';
 import type {
   AppConfig,
+  BosAsset,
+  BosView,
   BreakoutAsset,
   BreakoutView,
   DrawdownAsset,
@@ -44,6 +46,7 @@ import {
 import { fridaysBetween, sameDayLastYear, valueAsOf, valueOn, weekdaysBetween } from './weeks';
 import { toSortedBars, type SortedBars } from './bars';
 import { detectChoch } from './choch';
+import { detectBos } from './bos';
 import { roundViewNumbers } from './round';
 import { DAILY_SERIES, type DailyKey, type DailyPoint, type DailyViewName } from '../data/daily-series';
 import { latestMonthWithValue, monthsBetween, valueForMonth, yearAgo } from './months';
@@ -703,6 +706,28 @@ export function buildBreakoutView(options: {
   const assets: BreakoutAsset[] = symbols.map(({ symbol, name }) => {
     const bars = toSortedBars(ohlcvObservations[symbol] ?? {});
     const detection = detectChoch(bars, swingLength);
+    const priceSeries =
+      detection === null ? null : slicePriceSeriesForChart(bars, detection.firstLowDate);
+    return { symbol, name, detection, priceSeries };
+  });
+  return roundViewNumbers({ generatedAt, assets });
+}
+
+/**
+ * BOS (Break of Structure) のビュー (#272)。`buildBreakoutView` (#268) と対になる。
+ * トレンド転換 (CHoCH) ではなく、トレンド継続の確認シグナルを検出する。
+ */
+export function buildBosView(options: {
+  symbols: ReadonlyArray<{ symbol: string; name: string }>;
+  ohlcvObservations: Readonly<Record<string, Readonly<Record<string, OhlcvBar>>>>;
+  generatedAt: string;
+  /** スイング判定の前後本数。省略時は `detectBos` の既定値 (#268 と同じ)。 */
+  swingLength?: number;
+}): BosView {
+  const { symbols, ohlcvObservations, generatedAt, swingLength } = options;
+  const assets: BosAsset[] = symbols.map(({ symbol, name }) => {
+    const bars = toSortedBars(ohlcvObservations[symbol] ?? {});
+    const detection = detectBos(bars, swingLength);
     const priceSeries =
       detection === null ? null : slicePriceSeriesForChart(bars, detection.firstLowDate);
     return { symbol, name, detection, priceSeries };

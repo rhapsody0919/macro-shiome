@@ -7,6 +7,7 @@
  * 実行: pnpm rebuild:views
  */
 import {
+  buildBosView,
   buildBreakoutView,
   buildDrawdownView,
   buildEconomyView,
@@ -62,6 +63,10 @@ function main(): void {
     writeView(
       'breakout',
       buildBreakoutView({ symbols: TIINGO_ASSETS, ohlcvObservations, generatedAt: now.toISOString() }),
+    );
+    writeView(
+      'bos',
+      buildBosView({ symbols: TIINGO_ASSETS, ohlcvObservations, generatedAt: now.toISOString() }),
     );
   }
 

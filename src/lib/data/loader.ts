@@ -17,10 +17,12 @@ import japanDailyJson from '../../../data/views/japan-daily.json';
 import economyJson from '../../../data/views/economy.json';
 import drawdownJson from '../../../data/views/drawdown.json';
 import breakoutJson from '../../../data/views/breakout.json';
+import bosJson from '../../../data/views/bos.json';
 import { sortChangelog } from './changelog';
 import type { DailyPoint } from './daily-series';
 import type {
   BatchStatus,
+  BosView,
   BreakoutView,
   ChangelogEntry,
   DrawdownView,
@@ -49,6 +51,7 @@ export const japanDaily = japanDailyJson as unknown as DailyPoint[];
 export const economy = economyJson as unknown as EconomyView;
 export const drawdown = drawdownJson as unknown as DrawdownView;
 export const breakout = breakoutJson as unknown as BreakoutView;
+export const bos = bosJson as unknown as BosView;
 /** 更新履歴 (#240)。新しい順。 */
 export const changelog = sortChangelog(changelogJson as unknown as ChangelogEntry[]);
 

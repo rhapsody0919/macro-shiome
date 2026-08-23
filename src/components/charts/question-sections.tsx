@@ -2,8 +2,9 @@ import { Suspense, type ReactNode } from 'react';
 import { MacroChart, type SeriesDef } from './macro-chart';
 import { DrawdownChart } from './drawdown-chart';
 import { BreakoutList } from './breakout-list';
+import { BosList } from './bos-list';
 import { DRAWDOWN_PALETTE } from '@/lib/colors';
-import { breakout, drawdown } from '@/lib/data/loader';
+import { bos, breakout, drawdown } from '@/lib/data/loader';
 import { MonthlyChart, type MonthlySeriesDef } from './monthly-chart';
 import { Badges } from './badges';
 import { IndicatorExplanations } from './indicator-explanation';
@@ -86,10 +87,12 @@ export type QuestionChartDef<K extends string> =
    */
   | (ChartBase<K> & { frequency: 'weekly'; drawdownGroup: string })
   /**
-   * ブレイクアウト (N日高値抜け) の検出結果 (#264)。時系列チャートではなくリスト表示なので
+   * ブレイクアウト (CHoCH) の検出結果 (#268)。時系列チャートではなくリスト表示なので
    * `series` を持たない。
    */
-  | (ChartBase<K> & { frequency: 'daily'; breakout: true });
+  | (ChartBase<K> & { frequency: 'daily'; breakout: true })
+  /** BOS (Break of Structure) の検出結果 (#272)。CHoCH と対になる。 */
+  | (ChartBase<K> & { frequency: 'daily'; bos: true });
 
 /**
  * 景気サイクルの分類を指標マスタから引く。
@@ -181,6 +184,15 @@ export function QuestionSections<K extends string>({
                   title={chart.title}
                   subtitle={chart.subtitle}
                   assets={breakout.assets}
+                  notes={chart.notes}
+                  explanation={<IndicatorExplanations ids={explainedIds(chart)} />}
+                  badges={<Badges frequency="daily" cyclePosition={cycleOf(chart)} />}
+                />
+              ) : 'bos' in chart ? (
+                <BosList
+                  title={chart.title}
+                  subtitle={chart.subtitle}
+                  assets={bos.assets}
                   notes={chart.notes}
                   explanation={<IndicatorExplanations ids={explainedIds(chart)} />}
                   badges={<Badges frequency="daily" cyclePosition={cycleOf(chart)} />}
