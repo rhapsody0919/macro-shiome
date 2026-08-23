@@ -933,28 +933,33 @@ export interface ChangelogEntry {
 }
 
 /**
- * N 日高値抜け (Donchian チャネル/タートルズ型) の検出結果 (#264)。
+ * CHoCH (Change of Character) の検出結果 (#268)。
  *
  * カップウィズハンドル (#230)・ダブルボトム (#256)・逆三尊 (#258)・
- * High Tight Flag (#231) を置き換える。反転パターンの形状をルールベースで
- * 検出するアプローチは、条件を厳格化するたびに検出数が乱高下し (カップウィズハンドルは
- * 34/36 → 14/36 → 2/36)、実際のチャートを見ると「その形に見えない」という問題が
- * #260 で可視化して初めて表面化した。確立された定義を持つ単純なブレイクアウトに
- * 一本化する (#52 の「恣意的な閾値を置かない」原則)。
+ * High Tight Flag (#231) を置き換えた N 日高値抜け (#264) を、さらに Smart Money
+ * Concepts (SMC/ICT) の CHoCH に置き換える。N 日高値抜けは機械的な直近 N 日の
+ * 高値比較で、下落トレンドの構造そのものは見ていなかった。CHoCH は「下落トレンド
+ * (安値切り下げ) の途中で、終値が直近の戻り高値 (前回の高値) を上抜けたか」を見る、
+ * トレンド転換シグナルとしてより意味のある定義。詳細な根拠は `choch.ts` 先頭の
+ * コメントを参照。
  *
- * 定義: 直近 `lookbackDays` 営業日の高値 (基準日を含まない) を、基準日の終値が
- * 上回っていること。タートルズの短期システム (`lookbackDays = 20`) に準拠する。
+ * **BOS (Break of Structure、トレンド継続) は対象外**、強気 CHoCH のみ。
  */
 export interface BreakoutDetection {
-  /** ブレイクアウトした日 (= 基準日、通常は最新観測日)。 */
+  /** 1 つ目の安値 (下落構造の起点)。 */
+  firstLowDate: string;
+  firstLowPrice: number;
+  /** 戻り高値 (下落トレンド中の「前回の高値」)。これを終値が上抜けたことを検出する。 */
+  priorHighDate: string;
+  priorHighPrice: number;
+  /** 2 つ目の安値 (1 つ目より低い、下落継続を示す)。 */
+  secondLowDate: string;
+  secondLowPrice: number;
+  /** 前回の高値を終値が上抜けた日。 */
   breakoutDate: string;
   breakoutPrice: number;
-  /** 上抜けた高値の日。 */
-  priorHighDate: string;
-  /** 上抜けた高値そのもの (直近 `lookbackDays` 営業日の最高値)。 */
-  priorHighPrice: number;
-  /** 判定に使った営業日数。 */
-  lookbackDays: number;
+  /** スイング判定に使った前後本数。 */
+  swingLength: number;
 }
 
 /** ブレイクアウトチャートの 1 銘柄 (#264)。 */
@@ -964,7 +969,10 @@ export interface BreakoutAsset {
   name: string;
   /** 検出されていなければ null (0 件は正常な状態、#230/#231 と同じ設計)。 */
   detection: BreakoutDetection | null;
-  /** 検出時のみ、基準日から直近 90 営業日の終値系列 (#260 #266)。判定に使う `lookbackDays` とは別物。 */
+  /**
+   * 検出時のみ、CHoCH の構造全体 (`firstLowDate` 以降) と直近 90 営業日のうち
+   * 広い方の終値系列 (#260 #266 #268)。
+   */
   priceSeries: PatternPricePoint[] | null;
 }
 
