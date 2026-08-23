@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-23T04:24:57.567Z",
-  "economyState": "経済は不安定な状態にあるようであり、金融市場ではリスクへの懸念が高まっているようだ。また、金融環境もやや厳しくなっているようで、企業の経営状況も不安定な傾向にあるようだ。",
+  "generatedAt": "2026-08-23T04:34:40.822Z",
+  "economyState": "経済は、不安定な状態にあり、金融市場ではリスクに対する警戒感が高まっているようだ。金利の格差が広がり、株式市場の不安定さも指摘されている。経済活動も、低調な状況にあるようだ。",
   "warnings": [],
   "highlights": [
     {
@@ -10,7 +10,7 @@
       "relativeStrength": 2.88,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": null
+      "note": "ゴールドがSPYに対して相対的に強い"
     },
     {
       "id": "etf-gdx",
@@ -19,7 +19,7 @@
       "relativeStrength": 26.19,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": null
+      "note": "金鉱株がSPYに対して相対的に強い"
     },
     {
       "id": "etf-corn",
@@ -28,7 +28,7 @@
       "relativeStrength": 7.83,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": null
+      "note": "コーンがSPYに対して相対的に強い"
     },
     {
       "id": "etf-epi",
@@ -37,7 +37,7 @@
       "relativeStrength": 0.15,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": null
+      "note": "インドがSPYに対して相対的に強い"
     },
     {
       "id": "etf-ewz",
@@ -46,7 +46,7 @@
       "relativeStrength": 0.46,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": null
+      "note": "ブラジルがSPYに対して相対的に強い"
     },
     {
       "id": "etf-eido",
@@ -55,7 +55,7 @@
       "relativeStrength": 14.15,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": null
+      "note": "インドネシアがSPYに対して相対的に強い"
     },
     {
       "id": "etf-smin",
@@ -64,7 +64,7 @@
       "relativeStrength": 5.4,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": null
+      "note": "インド小型株がSPYに対して相対的に強い"
     }
   ]
 }
