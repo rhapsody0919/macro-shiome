@@ -184,6 +184,8 @@ export const COLORS = {
   nyFedSurvey: '#8b5cf6',
   /** フィラデルフィア連銀景気指数 (拡散指数)。 */
   phillyFedSurvey: '#d946ef',
+  /** S&P500 の前年同日比 (%)。地区連銀サーベイと重ねて先行関係を見る (#287)。 */
+  sp500Yoy: '#16a34a',
   /** 求人件数 (JOLTS)。 */
   jobOpenings: '#0ea5e9',
   /** 財政収支。赤字が続く側。 */

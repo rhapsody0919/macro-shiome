@@ -143,6 +143,7 @@ export function SharedTooltip({
   payload,
   label,
   kind = 'number',
+  kindOf,
   extra,
   labelFormatter = formatDate,
 }: {
@@ -150,6 +151,11 @@ export function SharedTooltip({
   payload?: Array<{ name?: string; value?: number; color?: string; payload?: unknown }>;
   label?: string;
   kind?: ValueKind;
+  /**
+   * 系列ごとに単位が違う (2軸) チャート用。指定があれば `kind` より優先する。
+   * 未指定の系列は `kind` にフォールバックする。
+   */
+  kindOf?: (name: string | undefined) => ValueKind | undefined;
   /** 系列以外に出したい情報 (最高値の注記など)。 */
   extra?: (point: unknown) => ReactNode;
   /** 見出しの整形。月次系列は日付でなく月として出す (#64)。 */
@@ -164,7 +170,9 @@ export function SharedTooltip({
         <div key={entry.name} className="flex items-center gap-2 tabular-nums">
           <span className="inline-block h-2 w-2 rounded-full" style={{ background: entry.color }} />
           <span>{entry.name}</span>
-          <span className="ml-auto font-semibold">{formatByKind(entry.value, kind)}</span>
+          <span className="ml-auto font-semibold">
+            {formatByKind(entry.value, kindOf?.(entry.name) ?? kind)}
+          </span>
         </div>
       ))}
       {extra?.(payload[0]?.payload)}

@@ -101,8 +101,8 @@ const CHARTS: QuestionChartDef<EconomyQuestionId>[] = [
     question: 'slowdown',
     frequency: 'monthly',
     primaryIndicator: 'ny-fed-survey',
-    title: '地区連銀サーベイ',
-    subtitle: '製造業の景況感 (拡散指数、0 が改善と悪化が同数)',
+    title: '地区連銀サーベイと S&P500',
+    subtitle: '製造業の景況感 (拡散指数、左軸、0 が改善と悪化が同数) と S&P500 の前年比 (右軸)',
     kind: 'number',
     series: [
       {
@@ -117,6 +117,14 @@ const CHARTS: QuestionChartDef<EconomyQuestionId>[] = [
         label: 'フィラデルフィア連銀',
         color: COLORS.phillyFedSurvey,
         indicatorId: 'philly-fed-survey',
+      },
+      {
+        key: 'sp500Yoy',
+        label: 'S&P500 (前年比)',
+        color: COLORS.sp500Yoy,
+        indicatorId: 'sp500',
+        axis: 'right',
+        kind: 'percent',
       },
     ],
     notes: [
@@ -142,6 +150,16 @@ const CHARTS: QuestionChartDef<EconomyQuestionId>[] = [
         回答企業数が少なく単月では上下しやすいので、水準そのものより
         <strong>数か月の方向</strong>を見る。The Conference Board の景気指数の構成要素では
         ないため、景気サイクルのバッジは付けていない。
+      </span>,
+      <span key="sp500-axis">
+        <strong>S&P500 だけ右軸・単位が違う。</strong>
+        水準ではなく前年比 (%) で表示している。景況感の変化が株価に先行するかを見る図で、
+        左軸のサーベイと同じ軸に載せると水準の桁違いで読めなくなる。
+      </span>,
+      <span key="sp500-limit">
+        <strong>S&P500 は直近 10 年分しか表示できない。</strong>
+        FRED が S&P/Dow Jones 系列を 10 年分しか提供していないための制約で、
+        NY連銀・フィラデルフィア連銀の系列より表示期間が短い。
       </span>,
     ],
   },

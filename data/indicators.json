@@ -13,6 +13,12 @@
     "historyLimit": "10y",
     "cyclePosition": "leading",
     "note": "FRED は S&P/Dow Jones 系列を 10 年分しか提供しない。価格指数のため配当を含まない。",
+    "unitLabel": "指数",
+    "explanation": {
+      "what": "主要 500 銘柄を時価総額で加重した株価指数。",
+      "howToRead": "水準が桁違いの指標と並べる場合は前年同日比で揃えて表示する。価格指数のため配当を含まない。",
+      "seeWith": "景気指標と並べ、企業の景況感より株価が先に動いているかを確認する。"
+    },
     "sourceUnits": "Index"
   },
   "nasdaq100": {

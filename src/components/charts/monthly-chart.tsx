@@ -16,7 +16,7 @@ import {
 import { formatNumber, formatPercent } from '@/lib/format';
 import type { EconomyView, MonthlyPoint } from '@/lib/data/types';
 import { filterByMonth, parsePeriod } from '@/lib/period';
-import { ChartFrame, SharedTooltip } from './chart-frame';
+import { ChartFrame, SharedTooltip, type ValueKind } from './chart-frame';
 
 /**
  * 月次指標のチャート (#64 / #66)。
@@ -39,6 +39,15 @@ export interface MonthlySeriesDef {
   width?: number;
   /** この系列に対応する指標マスタの ID。発表状況の表示に使う。 */
   indicatorId: string;
+  /**
+   * 描画する軸 (#287)。省略時は左軸。
+   *
+   * 単位が違う系列を意図して重ねる場合だけ右軸を使う (フィラデルフィア連銀景気指数と
+   * S&P500 前年比のように、水準の違う 2 つの指標を並べて先行関係を見る図)。
+   */
+  axis?: 'left' | 'right';
+  /** この系列だけ単位が違う場合の上書き。省略時はチャート全体の `kind` を使う。 */
+  kind?: ValueKind;
 }
 
 export function MonthlyChart({
@@ -95,6 +104,9 @@ export function MonthlyChart({
     [view.monthly, period],
   );
   const labels = Object.fromEntries(series.map((s) => [s.indicatorId, s.label]));
+  // 系列ごとに単位が違う (2軸) チャート用。ツールチップの表示単位を系列名から引く。
+  const kindByLabel = Object.fromEntries(series.map((s) => [s.label, s.kind ?? kind]));
+  const rightAxisSeries = series.find((s) => s.axis === 'right');
 
   return (
     <ChartFrame
@@ -117,7 +129,7 @@ export function MonthlyChart({
                   </span>{' '}
                   <span className="text-xs text-slate-500">{s.label}</span>{' '}
                   <span className="font-semibold tabular-nums">
-                    {kind === 'percent'
+                    {(s.kind ?? kind) === 'percent'
                       ? formatPercent(last?.[s.key] ?? null)
                       : formatNumber(last?.[s.key] ?? null, 1)}
                   </span>
@@ -142,6 +154,7 @@ export function MonthlyChart({
           <CartesianGrid strokeDasharray="3 3" stroke="currentColor" opacity={0.12} />
           <XAxis dataKey="month" tickFormatter={formatMonth} minTickGap={48} fontSize={11} />
           <YAxis
+            yAxisId="left"
             domain={['auto', 'auto']}
             width={52}
             fontSize={11}
@@ -149,12 +162,35 @@ export function MonthlyChart({
               kind === 'percent' ? `${value.toFixed(0)}%` : value.toLocaleString('ja-JP')
             }
           />
-          <Tooltip content={<SharedTooltip kind={kind} labelFormatter={formatMonth} />} />
+          {rightAxisSeries !== undefined && (
+            <YAxis
+              yAxisId="right"
+              orientation="right"
+              domain={['auto', 'auto']}
+              width={52}
+              fontSize={11}
+              tickFormatter={(value: number) =>
+                (rightAxisSeries.kind ?? kind) === 'percent'
+                  ? `${value.toFixed(0)}%`
+                  : value.toLocaleString('ja-JP')
+              }
+            />
+          )}
+          <Tooltip
+            content={
+              <SharedTooltip
+                kind={kind}
+                kindOf={(name) => kindByLabel[name ?? '']}
+                labelFormatter={formatMonth}
+              />
+            }
+          />
           <Legend />
-          {/* ゼロ線。前年同月比では増減の境目になる。 */}
-          {zeroLine && <ReferenceLine y={0} stroke="currentColor" strokeOpacity={0.4} />}
+          {/* ゼロ線。前年同月比では増減の境目になる。左軸の基準 (#287 の追加後も変えない)。 */}
+          {zeroLine && <ReferenceLine yAxisId="left" y={0} stroke="currentColor" strokeOpacity={0.4} />}
           {baseline !== undefined && (
             <ReferenceLine
+              yAxisId="left"
               y={baseline.value}
               stroke="currentColor"
               strokeOpacity={0.45}
@@ -165,6 +201,7 @@ export function MonthlyChart({
           {series.map((s) => (
             <Line
               key={s.key}
+              yAxisId={s.axis ?? 'left'}
               type="monotone"
               dataKey={s.key}
               name={s.label}
