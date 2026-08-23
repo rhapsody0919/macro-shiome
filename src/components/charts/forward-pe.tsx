@@ -17,6 +17,7 @@ import { changeMark, formatDate, formatNumber, formatSigned } from '@/lib/format
 import type { ValuationView } from '@/lib/data/types';
 import { filterByPeriod, parsePeriod } from '@/lib/period';
 import { ChartFrame, SharedTooltip } from './chart-frame';
+import { DistributionPosition } from './distribution-position';
 
 const LINE_COLOR = '#8b5cf6';
 const AVG_5Y_COLOR = '#94a3b8';
@@ -62,6 +63,8 @@ export function ForwardPeChart({ view }: { view: ValuationView }) {
     measure === 'forward' ? series.baselines.pe5y : series.baselines.trailingPe5y;
   const pe10y =
     measure === 'forward' ? series.baselines.pe10y : series.baselines.trailingPe10y;
+  const peDistribution =
+    measure === 'forward' ? series.forwardPeDistribution : series.trailingPeDistribution;
 
   // 平均を上回っている領域を淡く塗る。位置関係を一目で分かるようにするため。
   // useMemo は使わない。要素数が数百で計算が軽く、依存に毎回新しい配列が入るため
@@ -115,6 +118,7 @@ export function ForwardPeChart({ view }: { view: ValuationView }) {
             {/* 評価語 (割高/買い時) を使わず、事実として差分を示す (screens UI/UX 方針 2)。 */}
             <BaselineRelation label="5年平均" baseline={pe5y} current={latest[dataKey]} />
             <BaselineRelation label="10年平均" baseline={pe10y} current={latest[dataKey]} />
+            <DistributionPosition distribution={peDistribution} format={formatNumber} />
           </div>
         )
       }
@@ -122,6 +126,10 @@ export function ForwardPeChart({ view }: { view: ValuationView }) {
         <>
           基準線は FactSet が毎週公表する値を取得したもの (取得日 {formatDate(asOf)})。
           固定値ではなく毎週更新される。
+        </>,
+        <>
+          過去分布 (下位◯%) は直近 5 年の観測から求めた位置で、固定の「割高/割安」の
+          閾値ではない (#271)。Forward と実績で母集団が違うため、切り替えると値も変わる。
         </>,
         <>淡く塗った領域は 5 年平均を上回る範囲。線が途切れている箇所はレポート休刊による欠測。</>,
         <>

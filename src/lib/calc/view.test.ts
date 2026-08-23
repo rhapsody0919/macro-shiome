@@ -268,6 +268,68 @@ describe('イールドスプレッドの過去分布 (#52)', () => {
   });
 });
 
+describe('PER の過去分布 (#271)', () => {
+  /** Forward/実績 PER が毎週動く系列を作る。 */
+  function buildWithPe(count: number) {
+    const spSeries: Record<string, number> = {};
+    const close: Record<string, number> = {};
+    const forwardPe: Record<string, number> = {};
+    const trailingPe: Record<string, number> = {};
+    const dgs10: Record<string, number> = {};
+    const t10yie: Record<string, number> = {};
+
+    for (let i = 0; i < count; i++) {
+      const date = new Date(Date.UTC(2026, 7, 14 - i * 7)).toISOString().slice(0, 10);
+      spSeries[date] = 7700;
+      close[date] = 7700;
+      forwardPe[date] = 20 - i * 0.1;
+      trailingPe[date] = 25 - i * 0.1;
+      dgs10[date] = 4.0;
+      t10yie[date] = 2.0;
+    }
+
+    return buildValuationView({
+      observations: {
+        sp500: spSeries,
+        'sp500-close-factset': close,
+        'sp500-forward-pe': forwardPe,
+        'sp500-trailing-pe': trailingPe,
+        dgs10,
+        t10yie,
+      },
+      config,
+      start: new Date(Date.UTC(2026, 7, 14 - (count - 1) * 7)).toISOString().slice(0, 10),
+      today: new Date(Date.UTC(2026, 7, 15)),
+    });
+  }
+
+  it('標本が揃えば Forward/実績それぞれの分位を出す', () => {
+    const view = buildWithPe(12);
+    const fwd = view.sp500.forwardPeDistribution;
+    const trl = view.sp500.trailingPeDistribution;
+    expect(fwd).not.toBeNull();
+    expect(trl).not.toBeNull();
+    expect(fwd?.n).toBe(12);
+    expect(trl?.n).toBe(12);
+    // 直近 (i = 0) が最も高い値 → 分位は上位側。
+    expect(fwd?.latestPercentile).toBeGreaterThan(90);
+    expect(trl?.latestPercentile).toBeGreaterThan(90);
+  });
+
+  it('標本が足りなければ null (誤解を招く数値を出さない)', () => {
+    const view = buildWithPe(5);
+    expect(view.sp500.forwardPeDistribution).toBeNull();
+    expect(view.sp500.trailingPeDistribution).toBeNull();
+  });
+
+  it('NASDAQ-100 は Forward PER の取得経路が無いため常に null', () => {
+    // trailingPe (QQQ 経由) も本テストの観測値には含めていないため null になる。
+    const view = buildWithPe(12);
+    expect(view.nasdaq100.forwardPeDistribution).toBeNull();
+    expect(view.nasdaq100.trailingPeDistribution).toBeNull();
+  });
+});
+
 describe('労働市場・所得・消費 (#66)', () => {
   const monthly: ObservationMap = {
     // 2026-07 の実データを模した値。報道される雇用統計はプラスだが、
