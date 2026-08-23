@@ -11,14 +11,18 @@
  */
 import type { BreakoutDetection } from '../data/types';
 import type { SortedBars } from './bars';
-import { findStructureBreak, DEFAULT_SWING_LENGTH } from './structure-break';
+import { findStructureBreak, hasVolumeConfirmation, DEFAULT_SWING_LENGTH } from './structure-break';
 
 export { DEFAULT_SWING_LENGTH };
 
 /**
  * `bars` (日付昇順) の中から、直近の下落構造 (安値 → 戻り高値 → より低い安値) の後、
- * 終値がその戻り高値を上抜けた最初の足を検出する。上抜けが無い、または安値が
- * 切り下がっていなければ `null`。
+ * 終値がその戻り高値を出来高を伴って上抜けた最初の足を検出する。上抜けが無い、
+ * 安値が切り下がっていない、または出来高が確認できなければ `null`。
+ *
+ * **出来高フィルタ (#277) は CHoCH にのみ適用する。** BOS (#272) は本条件の
+ * 検討時点で存在しなかった別スコープのため対象外 (`hasVolumeConfirmation` 自体は
+ * `bos.ts` からも呼べる共有関数だが、あえて呼んでいない)。
  */
 export function detectChoch(
   bars: SortedBars,
@@ -28,5 +32,7 @@ export function detectChoch(
   if (structure === null) return null;
   // 安値切り下げ (下落継続) になっていなければ CHoCH ではない。
   if (structure.secondLowPrice >= structure.firstLowPrice) return null;
+  // 出来高を伴わないブレイクアウトは除外する (#277)。
+  if (hasVolumeConfirmation(bars, structure.breakoutDate) !== true) return null;
   return structure;
 }

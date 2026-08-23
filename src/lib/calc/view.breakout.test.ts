@@ -7,6 +7,8 @@
  */
 import { describe, expect, it } from 'vitest';
 import { buildBreakoutView } from './view';
+import { findStructureBreak, VOLUME_LOOKBACK_DAYS } from './structure-break';
+import type { SortedBars } from './bars';
 import type { OhlcvBar } from '../data/types';
 
 function bar(partial: Partial<OhlcvBar> & { high: number; low: number }): OhlcvBar {
@@ -78,11 +80,49 @@ const STRETCHED_WAYPOINTS = [
   { index: 150, low: 78 },
 ];
 
+const LOW_VOLUME = 100;
+const HIGH_VOLUME = 100_000;
+/** #277 の出来高フィルタが素通りする余裕を持たせる (VOLUME_LOOKBACK_DAYS より長く)。 */
+const PADDING_DAYS = VOLUME_LOOKBACK_DAYS + 5;
+
+/**
+ * 価格・構造だけを見たいテスト向けに、出来高確認 (#277) が必ず通る観測を作る。
+ *
+ * `choch.test.ts` と同じ2段構成 (出来高を考慮しない構造検出でブレイクアウト日を
+ * 特定し、その日だけ出来高を跳ね上げる)。ここでは `buildBreakoutView` の入力形式
+ * (`Record<date, OhlcvBar>`) に合わせる。
+ */
+function withVolumeConfirmation(
+  entries: ReturnType<typeof wave>,
+  swingLength: number,
+): Record<string, OhlcvBar> {
+  const first = entries[0]!;
+  const padding = Array.from({ length: PADDING_DAYS }, (_, i) => ({
+    date: d(-(PADDING_DAYS - i)),
+    low: first.low,
+    high: first.high,
+    volume: LOW_VOLUME,
+  }));
+  const flat = [...padding, ...entries.map((e) => ({ ...e, volume: LOW_VOLUME }))];
+  const observations = toObservations(flat);
+
+  const sorted: SortedBars = Object.entries(observations)
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(([date, bar]) => ({ date, bar }));
+  const structure = findStructureBreak(sorted, swingLength);
+  if (structure === null) return observations;
+
+  return {
+    ...observations,
+    [structure.breakoutDate]: { ...observations[structure.breakoutDate]!, volume: HIGH_VOLUME },
+  };
+}
+
 describe('ブレイクアウト (CHoCH) の priceSeries (#268)', () => {
   it('観測本数がCHART_DISPLAY_MIN_DAYS以下なら全期間を切り出す (構造の起点より前も含む)', () => {
     const view = buildBreakoutView({
       symbols,
-      ohlcvObservations: { TEST: toObservations(wave(TYPICAL_WAYPOINTS)) },
+      ohlcvObservations: { TEST: withVolumeConfirmation(wave(TYPICAL_WAYPOINTS), 3) },
       generatedAt,
       swingLength: 3,
     });
@@ -90,16 +130,16 @@ describe('ブレイクアウト (CHoCH) の priceSeries (#268)', () => {
     expect(asset.detection).not.toBeNull();
     expect(asset.detection!.firstLowDate).toBe(d(6));
     expect(asset.priceSeries).not.toBeNull();
-    // 90本に満たないため、bars全体 (index0〜30、31本) がそのまま入る。
-    expect(asset.priceSeries).toHaveLength(31);
-    expect(asset.priceSeries![0]!.date).toBe(d(0));
+    // 90本に満たないため (出来高確認用のパディング55本 + wave31本 = 86本)、全体がそのまま入る。
+    expect(asset.priceSeries).toHaveLength(PADDING_DAYS + 31);
+    expect(asset.priceSeries![0]!.date).toBe(d(-PADDING_DAYS));
     expect(asset.priceSeries!.at(-1)!.date).toBe(d(30));
   });
 
   it('構造の起点 (firstLowDate) が直近90営業日より前なら、そこまで遡って含める', () => {
     const view = buildBreakoutView({
       symbols,
-      ohlcvObservations: { TEST: toObservations(wave(STRETCHED_WAYPOINTS)) },
+      ohlcvObservations: { TEST: withVolumeConfirmation(wave(STRETCHED_WAYPOINTS), 3) },
       generatedAt,
       swingLength: 3,
     });

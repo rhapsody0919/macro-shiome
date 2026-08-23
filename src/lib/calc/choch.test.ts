@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { detectChoch } from './choch';
+import { findStructureBreak, VOLUME_LOOKBACK_DAYS } from './structure-break';
 import type { SortedBars } from './bars';
 import type { OhlcvBar } from '../data/types';
 
@@ -60,9 +61,58 @@ const TYPICAL_WAYPOINTS = [
   { index: 30, low: 78 }, // 回復。high=83、close はデフォルトで high と同じ
 ];
 
+const LOW_VOLUME = 100;
+const HIGH_VOLUME = 100_000;
+/** #277 の出来高フィルタが素通りする余裕を持たせる (VOLUME_LOOKBACK_DAYS より長く)。 */
+const PADDING_DAYS = VOLUME_LOOKBACK_DAYS + 5;
+
+/**
+ * 出来高確認 (#277) のテスト用に、先頭に平坦な低出来高のパディングを足す。
+ * `withPadding: false` にすると基準期間 (50日) 分の観測が無い状態を作れる。
+ */
+function buildBars(
+  entries: ReturnType<typeof wave>,
+  options: { withPadding?: boolean } = {},
+): SortedBars {
+  const { withPadding = true } = options;
+  const first = entries[0]!;
+  const padding = withPadding
+    ? Array.from({ length: PADDING_DAYS }, (_, i) => ({
+        date: d(-(PADDING_DAYS - i)),
+        low: first.low,
+        high: first.high,
+        volume: LOW_VOLUME,
+      }))
+    : [];
+  return bars([...padding, ...entries.map((e) => ({ ...e, volume: LOW_VOLUME }))]);
+}
+
+/**
+ * 価格・構造だけを見たいテスト向けに、出来高確認 (#277) が必ず通るデータを作る。
+ *
+ * (出来高を考慮しない) 構造検出だけを先に走らせてブレイクアウト日を特定し、
+ * その日だけ出来高を跳ね上げる。ブレイクアウト日は線形補間の結果で決まり、
+ * 手計算では特定しづらいためこの2段構成にしている。
+ */
+function withVolumeConfirmation(
+  entries: ReturnType<typeof wave>,
+  swingLength: number,
+  options: { withPadding?: boolean } = {},
+): SortedBars {
+  const provisional = buildBars(entries, options);
+  const structure = findStructureBreak(provisional, swingLength);
+  if (structure === null) return provisional;
+
+  return provisional.map((entry) =>
+    entry.date === structure.breakoutDate
+      ? { date: entry.date, bar: { ...entry.bar, volume: HIGH_VOLUME } }
+      : entry,
+  );
+}
+
 describe('detectChoch (#268)', () => {
   it('下落構造 (L1→H1→L2) の後、終値がH1を上抜けたら検出する', () => {
-    const result = detectChoch(bars(wave(TYPICAL_WAYPOINTS)), 3);
+    const result = detectChoch(withVolumeConfirmation(wave(TYPICAL_WAYPOINTS), 3), 3);
     expect(result).not.toBeNull();
     expect(result!.firstLowDate).toBe(d(6));
     expect(result!.firstLowPrice).toBe(50);
@@ -92,9 +142,24 @@ describe('detectChoch (#268)', () => {
   });
 
   it('swingLength を指定すればその本数でスイングを判定する', () => {
-    const result = detectChoch(bars(wave(TYPICAL_WAYPOINTS)), 3);
+    const result = detectChoch(withVolumeConfirmation(wave(TYPICAL_WAYPOINTS), 3), 3);
     // 既定値 (50) では waypoint の間隔が足りずスイングが確定しない。
     expect(detectChoch(bars(wave(TYPICAL_WAYPOINTS)))).toBeNull();
     expect(result).not.toBeNull();
+  });
+});
+
+describe('detectChoch の出来高フィルタ (#277)', () => {
+  it('出来高を伴わないブレイクアウトは検出しない', () => {
+    // ブレイクアウト日の出来高を跳ね上げない (パディングと同じ平坦な出来高のまま)。
+    // 価格の構造自体は成立している (最初のテストと同じ TYPICAL_WAYPOINTS)。
+    const flat = buildBars(wave(TYPICAL_WAYPOINTS));
+    expect(detectChoch(flat, 3)).toBeNull();
+  });
+
+  it('基準期間 (50日) 分の観測が無い銘柄は検出しない (誤検出より検出漏れを選ぶ)', () => {
+    // パディング無し。構造・出来高スパイクは成立するが、平均を出す50日分の観測が無い。
+    const withoutPadding = withVolumeConfirmation(wave(TYPICAL_WAYPOINTS), 3, { withPadding: false });
+    expect(detectChoch(withoutPadding, 3)).toBeNull();
   });
 });

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { findStructureBreak } from './structure-break';
+import { findStructureBreak, hasVolumeConfirmation, VOLUME_LOOKBACK_DAYS } from './structure-break';
 import type { SortedBars } from './bars';
 import type { OhlcvBar } from '../data/types';
 
@@ -82,5 +82,39 @@ describe('findStructureBreak (#268 #272)', () => {
   it('スイングが3点未満 (構造が組めない) なら検出しない', () => {
     const short = wave(waypoints(30).slice(0, 2));
     expect(findStructureBreak(bars(short), 3)).toBeNull();
+  });
+});
+
+describe('hasVolumeConfirmation (#277)', () => {
+  /** 末尾の1本だけ出来高を変え、それ以外は平坦にする。 */
+  function flatBars(count: number, volume: number, breakoutVolume: number): SortedBars {
+    return bars(
+      Array.from({ length: count }, (_, i) => ({
+        date: d(i),
+        low: 100,
+        high: 105,
+        volume: i === count - 1 ? breakoutVolume : volume,
+      })),
+    );
+  }
+
+  it('平均出来高の40%以上ならtrue (IBDの基準)', () => {
+    const result = flatBars(VOLUME_LOOKBACK_DAYS + 1, 1000, 1400); // ちょうど40%増
+    expect(hasVolumeConfirmation(result, d(VOLUME_LOOKBACK_DAYS))).toBe(true);
+  });
+
+  it('平均出来高比40%未満ならfalse', () => {
+    const result = flatBars(VOLUME_LOOKBACK_DAYS + 1, 1000, 1399);
+    expect(hasVolumeConfirmation(result, d(VOLUME_LOOKBACK_DAYS))).toBe(false);
+  });
+
+  it('基準期間 (50日) 分の観測が無ければnull (標本不足で誤判定しない)', () => {
+    const result = flatBars(VOLUME_LOOKBACK_DAYS, 1000, 100000);
+    expect(hasVolumeConfirmation(result, d(VOLUME_LOOKBACK_DAYS - 1))).toBeNull();
+  });
+
+  it('該当日の観測が無ければnull', () => {
+    const result = flatBars(VOLUME_LOOKBACK_DAYS + 1, 1000, 1400);
+    expect(hasVolumeConfirmation(result, '2099-01-01')).toBeNull();
   });
 });
