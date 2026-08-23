@@ -170,11 +170,20 @@ export async function buildSummaryView(
   },
   generatedAt: string,
 ): Promise<SummaryView> {
+  const facts = latestMacroFacts(input.macro);
   const [economyState, warnings, highlights] = await Promise.all([
-    summarizeEconomyState(summarizer, latestMacroFacts(input.macro)),
+    summarizeEconomyState(summarizer, facts),
     summarizeWarnings(summarizer, input.warnings),
     summarizeHighlights(summarizer, input.highlights),
   ]);
 
-  return { generatedAt, economyState, warnings, highlights };
+  return {
+    generatedAt,
+    economyState,
+    // 要約文が無ければ (生成失敗・ガードレールで破棄) 材料件数も0にする。
+    // 「材料はあったのに文章だけ無い」状態を作らない。
+    economyStateFactCount: economyState === null ? 0 : facts.length,
+    warnings,
+    highlights,
+  };
 }

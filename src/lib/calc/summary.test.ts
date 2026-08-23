@@ -218,7 +218,21 @@ describe('buildSummaryView (#279)', () => {
     );
     expect(view.generatedAt).toBe('2026-08-23T02:00:00.000Z');
     expect(view.economyState).toBe('景気は緩やかに減速している。');
+    // macro には termSpread しか値が無いため、材料は1件。
+    expect(view.economyStateFactCount).toBe(1);
     expect(view.warnings[0]?.note).toBe('短期金利が長期金利を上回っている。');
     expect(view.highlights[0]?.note).toBe('相対的に底堅い。');
+  });
+
+  it('経済状態が生成できなければ材料件数も0にする (#283)', async () => {
+    // ガードレール違反で economyState が null になるケース。
+    const summarizer: Summarizer = { summarize: async () => 'いま買い時である' };
+    const view = await buildSummaryView(
+      summarizer,
+      { macro: [macroPoint('2026-08-21', { termSpread: -0.1 })], warnings: [], highlights: [] },
+      '2026-08-23T02:00:00.000Z',
+    );
+    expect(view.economyState).toBeNull();
+    expect(view.economyStateFactCount).toBe(0);
   });
 });

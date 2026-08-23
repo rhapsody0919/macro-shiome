@@ -392,6 +392,7 @@ async function main(): Promise<void> {
     let summary: SummaryView = {
       generatedAt: now.toISOString(),
       economyState: null,
+      economyStateFactCount: 0,
       warnings,
       highlights,
     };
