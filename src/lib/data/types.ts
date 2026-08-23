@@ -1010,6 +1010,64 @@ export interface BreakoutView {
 }
 
 /**
+ * 警告シグナル (#279)。
+ *
+ * コード側で機械的に判定する。`basis: 'zero-line'` は逆イールド・NFCI のように
+ * 定義そのものから決まる境界 (#52 の原則)、`basis: 'percentile'` は過去5年分布の
+ * 上位/下位10% (十分位) を機械的な基準にする。**LLM に新しい警告を発明させない** —
+ * ここに無い条件は画面に出ない。
+ */
+export interface WarningSignal {
+  id: string;
+  label: string;
+  value: number;
+  basis: 'zero-line' | 'percentile';
+  /** basis が 'percentile' のときの分位 (0〜100)。'zero-line' なら null。 */
+  percentile: number | null;
+  date: string;
+  /**
+   * LLM が書いた説明文 (#279)。**数値を含まない** — 数値は上の `value`/`percentile`
+   * をコードが直接描画する。生成前・生成失敗時は null (無いことを隠さない)。
+   */
+  note: string | null;
+}
+
+/**
+ * セクター/ETFのハイライト (#279)。
+ *
+ * 「狙い目」を推奨文にせず、複数シグナルの重なりという事実の提示に留める
+ * (下落率が深い方から1/3以内・SPYに対する相対強度がプラス・CHoCH検出、のうち2つ以上)。
+ */
+export interface SectorHighlight {
+  id: string;
+  name: string;
+  drawdown: number;
+  /** SPYに対する相対強度 (%)。算出できていなければ null (#274)。 */
+  relativeStrength: number | null;
+  hasBreakout: boolean;
+  /** 満たしたシグナルの数 (2以上が対象)。 */
+  signalCount: number;
+  /** LLM が書いた説明文。数値を含まない (WarningSignal と同じ扱い)。 */
+  note: string | null;
+}
+
+/**
+ * AI要約のビュー (#279)。
+ *
+ * 日次バッチ内で生成し `data/views/summary.json` に保存する。`warnings`/`highlights`
+ * はネットワーク不要でコードだけから作れる。`economyState`/各 `note` は
+ * Cloudflare Workers AI (ADR-0009) の呼び出しに依存するため、トークン未設定や
+ * 呼び出し失敗時は null のまま保存する (バッチ全体は失敗させない)。
+ */
+export interface SummaryView {
+  generatedAt: string;
+  /** 経済状態の要約文。数値を含まない。生成できていなければ null。 */
+  economyState: string | null;
+  warnings: WarningSignal[];
+  highlights: SectorHighlight[];
+}
+
+/**
  * BOS (Break of Structure) の検出結果 (#272)。
  *
  * CHoCH (`BreakoutDetection`) と対になる。上昇トレンド (安値切り上げ) の途中で、

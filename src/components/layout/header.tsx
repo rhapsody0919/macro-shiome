@@ -29,6 +29,9 @@ export function Header() {
             macro-shiome
           </span>
           <nav aria-label="メイン" className="flex">
+            <Suspense fallback={<span className="px-3 py-1.5 text-sm">AI要約</span>}>
+              <NavLink href="/summary">AI要約</NavLink>
+            </Suspense>
             <Suspense fallback={<span className="px-3 py-1.5 text-sm">バリュエーション</span>}>
               <NavLink href="/">バリュエーション</NavLink>
             </Suspense>

@@ -1,0 +1,70 @@
+{
+  "generatedAt": "2026-08-23T03:46:06.190Z",
+  "economyState": null,
+  "warnings": [],
+  "highlights": [
+    {
+      "id": "etf-gld",
+      "name": "ゴールド (GLD)",
+      "drawdown": 14.63,
+      "relativeStrength": 2.88,
+      "hasBreakout": false,
+      "signalCount": 2,
+      "note": null
+    },
+    {
+      "id": "etf-gdx",
+      "name": "金鉱株 (GDX)",
+      "drawdown": 11.23,
+      "relativeStrength": 26.19,
+      "hasBreakout": false,
+      "signalCount": 2,
+      "note": null
+    },
+    {
+      "id": "etf-corn",
+      "name": "コーン (CORN)",
+      "drawdown": 13.35,
+      "relativeStrength": 7.83,
+      "hasBreakout": false,
+      "signalCount": 2,
+      "note": null
+    },
+    {
+      "id": "etf-epi",
+      "name": "インド (EPI)",
+      "drawdown": 15.67,
+      "relativeStrength": 0.15,
+      "hasBreakout": false,
+      "signalCount": 2,
+      "note": null
+    },
+    {
+      "id": "etf-ewz",
+      "name": "ブラジル (EWZ)",
+      "drawdown": 16.48,
+      "relativeStrength": 0.46,
+      "hasBreakout": false,
+      "signalCount": 2,
+      "note": null
+    },
+    {
+      "id": "etf-eido",
+      "name": "インドネシア (EIDO)",
+      "drawdown": 45.91,
+      "relativeStrength": 14.15,
+      "hasBreakout": false,
+      "signalCount": 2,
+      "note": null
+    },
+    {
+      "id": "etf-smin",
+      "name": "インド小型株 (SMIN)",
+      "drawdown": 17.56,
+      "relativeStrength": 5.4,
+      "hasBreakout": false,
+      "signalCount": 2,
+      "note": null
+    }
+  ]
+}

@@ -39,3 +39,4 @@
 | [0006](0006-treasury-auctions.md) | 国債入札は米財務省 Fiscal Data から取る | 2026-08-18 |
 | [0007](0007-estat-dashboard.md) | 日本の経済指標は統計ダッシュボード API から取る (登録不要) | 2026-08-19 |
 | [0008](0008-tiingo-ohlcv.md) | ETF の日足 OHLCV は Tiingo から取る | 2026-08-21 |
+| [0009](0009-cloudflare-workers-ai.md) | AI要約のLLMはCloudflare Workers AIを使う | 2026-08-23 |
