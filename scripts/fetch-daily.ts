@@ -32,6 +32,7 @@ import { fetchEstatIndicator } from '../src/lib/adapters/estat-dashboard';
 import { EstatClient, readEstatAppIdFromEnv } from '../src/lib/adapters/estat-api';
 import { DAILY_VIEWS } from '../src/lib/data/daily-series';
 import {
+  buildBosView,
   buildBreakoutView,
   buildDrawdownView,
   buildEconomyView,
@@ -357,7 +358,7 @@ async function main(): Promise<void> {
       ),
     }),
   );
-  // ブレイクアウト検出 (#264)。指標マスタを経由しない (#229 と同じ理由、ADR-0008)。
+  // ブレイクアウト検出 (#264 #268 #272)。指標マスタを経由しない (#229 と同じ理由、ADR-0008)。
   {
     const ohlcvObservations = Object.fromEntries(
       TIINGO_SYMBOLS.map((symbol) => [symbol, readOhlcvObservations(symbol)]),
@@ -365,6 +366,10 @@ async function main(): Promise<void> {
     writeView(
       'breakout',
       buildBreakoutView({ symbols: TIINGO_ASSETS, ohlcvObservations, generatedAt: now.toISOString() }),
+    );
+    writeView(
+      'bos',
+      buildBosView({ symbols: TIINGO_ASSETS, ohlcvObservations, generatedAt: now.toISOString() }),
     );
   }
 

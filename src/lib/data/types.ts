@@ -988,3 +988,54 @@ export interface BreakoutView {
   assets: BreakoutAsset[];
 }
 
+/**
+ * BOS (Break of Structure) の検出結果 (#272)。
+ *
+ * CHoCH (`BreakoutDetection`) と対になる。上昇トレンド (安値切り上げ) の途中で、
+ * 終値が直近の戻り高値を上抜けたことを検出する。CHoCH がトレンド転換の兆候であるのに
+ * 対し、BOS は既に上昇トレンドが継続していることの確認シグナル。詳細な根拠は
+ * `bos.ts`/`structure-break.ts` 先頭のコメントを参照。
+ */
+export interface BosDetection {
+  /** 1 つ目の安値。 */
+  firstLowDate: string;
+  firstLowPrice: number;
+  /** 戻り高値。これを終値が上抜けたことを検出する。 */
+  priorHighDate: string;
+  priorHighPrice: number;
+  /** 2 つ目の安値 (1 つ目より高い、上昇継続を示す)。 */
+  secondLowDate: string;
+  secondLowPrice: number;
+  /** 戻り高値を終値が上抜けた日。 */
+  breakoutDate: string;
+  breakoutPrice: number;
+  /** スイング判定に使った前後本数。 */
+  swingLength: number;
+}
+
+/** BOS チャートの 1 銘柄 (#272)。 */
+export interface BosAsset {
+  /** ティッカー。指標マスタを経由しないため symbol を直接持つ (#229 と同じ設計、ADR-0008)。 */
+  symbol: string;
+  name: string;
+  /** 検出されていなければ null (0 件は正常な状態、#268 と同じ設計)。 */
+  detection: BosDetection | null;
+  /**
+   * 検出時のみ、BOS の構造全体 (`firstLowDate` 以降) と直近 90 営業日のうち
+   * 広い方の終値系列 (#260 #266 #268 #272)。
+   */
+  priceSeries: PatternPricePoint[] | null;
+}
+
+/**
+ * BOS のビュー全体 (#272)。
+ *
+ * `assets` は対象銘柄すべてを含む (検出の有無に関わらず)。ビューが存在すれば
+ * 「検出を試みて 0 件だった」ことを表せるため、取得・計算の失敗とは区別できる
+ * (#102 / #131 / #230 / #231 / #268 と同じ「緑だが歯抜け」を避ける設計)。
+ */
+export interface BosView {
+  generatedAt: string;
+  assets: BosAsset[];
+}
+

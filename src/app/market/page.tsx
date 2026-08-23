@@ -664,6 +664,33 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
     ],
   },
   {
+    question: 'drawdown',
+    frequency: 'daily',
+    primaryIndicator: 'etf-spy',
+    bos: true,
+    title: 'BOS (トレンド継続)',
+    subtitle: '上昇トレンド (安値切り上げ) の途中で、終値が前回の高値を上抜けた銘柄',
+    notes: [
+      <span key="def">
+        <strong>Smart Money Concepts (SMC/ICT) の BOS (Break of Structure) に
+          準拠した定義。</strong>
+        1つ目の安値 → 戻り高値 (前回の高値) → より高い2つ目の安値、という上昇構造の
+        形成後に、終値が前回の高値を上抜けたことを検出する。CHoCH がトレンド
+        <strong>転換</strong> (下落 → 上昇) の兆候であるのに対し、BOS は既に上昇
+        トレンドが<strong>継続</strong>していることの確認シグナルとして扱われる。
+      </span>,
+      <span key="swing">
+        安値・高値の判定は CHoCH と同じ前後 50 営業日で未突破かどうかを見る。
+      </span>,
+      <span key="rare">
+        該当銘柄が無い状態が続くのが通常で、異常ではない。
+      </span>,
+      <span key="source">
+        出所は Tiingo の日足 OHLCV (調整済み価格)。
+      </span>,
+    ],
+  },
+  {
     question: 'risk',
     frequency: 'daily',
     primaryIndicator: 'etf-gld',

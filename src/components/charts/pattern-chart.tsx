@@ -56,13 +56,15 @@ export function PatternChart({
   periods?: ReadonlyArray<PatternPeriod>;
   levels?: ReadonlyArray<PatternLevel>;
 }) {
+  const domain = yDomain(priceSeries, markers, levels);
+
   return (
     <div className="h-40 w-full sm:h-48">
       <ResponsiveContainer>
         <LineChart data={priceSeries} margin={{ top: 8, right: 8, bottom: 0, left: 0 }}>
           <XAxis dataKey="date" tickFormatter={formatDate} minTickGap={40} fontSize={10} />
           <YAxis
-            domain={['auto', 'auto']}
+            domain={domain}
             width={48}
             fontSize={10}
             tickFormatter={(value: number) => value.toLocaleString('ja-JP')}
@@ -117,4 +119,29 @@ export function PatternChart({
       </ResponsiveContainer>
     </div>
   );
+}
+
+/**
+ * Y 軸の表示範囲を、終値の折れ線とマーカー・水準線の値**すべて**から計算する (#272)。
+ *
+ * `domain={['auto', 'auto']}` は `<Line dataKey="close">` のデータだけを見て決まる。
+ * マーカー (`ReferenceDot`) は高値・安値 (`bar.high`/`bar.low`) を使うため、終値の
+ * 範囲より外に出ることがあり、その場合 Recharts は範囲外の点を**サイレントに描画しない**。
+ * 実データ (BOS #272) で SPY/VTI/VNQ の「1つ目の安値」マーカーが消えていて発覚した
+ * (安値がその区間のどの終値よりも低かったため)。5% の余白を持たせる。
+ */
+function yDomain(
+  priceSeries: ReadonlyArray<PatternPricePoint>,
+  markers: ReadonlyArray<PatternMarker>,
+  levels: ReadonlyArray<PatternLevel>,
+): [number, number] {
+  const values = [
+    ...priceSeries.map((p) => p.close),
+    ...markers.map((m) => m.price),
+    ...levels.map((l) => l.value),
+  ];
+  const min = Math.min(...values);
+  const max = Math.max(...values);
+  const padding = (max - min) * 0.05 || Math.abs(max) * 0.05 || 1;
+  return [min - padding, max + padding];
 }
