@@ -30,6 +30,9 @@ import { TiingoClient, readTiingoApiKeyFromEnv } from '../src/lib/adapters/tiing
 import { TIINGO_ASSETS, TIINGO_SYMBOLS } from '../src/lib/data/tiingo-assets';
 import { fetchEstatIndicator } from '../src/lib/adapters/estat-dashboard';
 import { EstatClient, readEstatAppIdFromEnv } from '../src/lib/adapters/estat-api';
+import { CloudflareAiClient, readCloudflareAiCredentialsFromEnv } from '../src/lib/adapters/cloudflare-ai';
+import { detectHighlights, detectWarnings } from '../src/lib/calc/signals';
+import { buildSummaryView } from '../src/lib/calc/summary';
 import { DAILY_VIEWS } from '../src/lib/data/daily-series';
 import {
   buildBosView,
@@ -54,7 +57,7 @@ import {
   writeStatus,
   writeView,
 } from '../src/lib/data/store';
-import type { Gap } from '../src/lib/data/types';
+import type { Gap, SummaryView } from '../src/lib/data/types';
 import {
   assertNoIssues,
   checkCloseConsistency,
@@ -337,40 +340,73 @@ async function main(): Promise<void> {
 
   writeView('valuation', buildValuationView({ observations, config: appConfig, start, today: now }));
   writeView('revisions', buildRevisionSeries({ observations, config: appConfig, start, today: now }));
-  writeView('macro', buildMacroView({ observations, config: appConfig, start, today: now }));
+  const macroView = buildMacroView({ observations, config: appConfig, start, today: now });
+  writeView('macro', macroView);
   // 価格系列は日次グリッド (#137)。週次グリッドは金曜の値だけを拾うため週内の動きが消える。
   for (const view of DAILY_VIEWS) {
     writeView(`${view}-daily`, buildDailyView({ observations, config: appConfig, start, today: now }, view));
   }
   // 月次指標は週次グリッドに載せない (#64)。別ビューとして持つ。
   writeView('economy', buildEconomyView({ observations, config: appConfig, start, today: now }));
-  writeView(
-    'drawdown',
-    buildDrawdownView({
-      observations,
-      config: appConfig,
-      start,
-      today: now,
-      seed: drawdownSeed,
-      assets: DRAWDOWN_ASSETS,
-      names: Object.fromEntries(
-        Object.entries(indicators).map(([id, indicator]) => [id, indicator.name]),
-      ),
-    }),
-  );
+  const drawdownView = buildDrawdownView({
+    observations,
+    config: appConfig,
+    start,
+    today: now,
+    seed: drawdownSeed,
+    assets: DRAWDOWN_ASSETS,
+    names: Object.fromEntries(
+      Object.entries(indicators).map(([id, indicator]) => [id, indicator.name]),
+    ),
+  });
+  writeView('drawdown', drawdownView);
   // ブレイクアウト検出 (#264 #268 #272)。指標マスタを経由しない (#229 と同じ理由、ADR-0008)。
+  const ohlcvObservations = Object.fromEntries(
+    TIINGO_SYMBOLS.map((symbol) => [symbol, readOhlcvObservations(symbol)]),
+  );
+  const breakoutView = buildBreakoutView({
+    symbols: TIINGO_ASSETS,
+    ohlcvObservations,
+    generatedAt: now.toISOString(),
+  });
+  writeView('breakout', breakoutView);
+  writeView(
+    'bos',
+    buildBosView({ symbols: TIINGO_ASSETS, ohlcvObservations, generatedAt: now.toISOString() }),
+  );
+
+  // --- AI要約 (#279、ADR-0009) ---
+  //
+  // 警告シグナル・ハイライトの判定 (`signals.ts`) はネットワーク不要で常に行う。
+  // LLM による言語化 (`note`/`economyState`) だけが Cloudflare Workers AI に依存する。
+  // トークン未設定・呼び出し失敗はスキップとして扱い、日次バッチ全体は失敗させない
+  // (警告・ハイライト自体は数値だけでも画面に出す価値があるため)。
   {
-    const ohlcvObservations = Object.fromEntries(
-      TIINGO_SYMBOLS.map((symbol) => [symbol, readOhlcvObservations(symbol)]),
-    );
-    writeView(
-      'breakout',
-      buildBreakoutView({ symbols: TIINGO_ASSETS, ohlcvObservations, generatedAt: now.toISOString() }),
-    );
-    writeView(
-      'bos',
-      buildBosView({ symbols: TIINGO_ASSETS, ohlcvObservations, generatedAt: now.toISOString() }),
-    );
+    const symbolOf = (drawdownId: string): string | null => {
+      const indicator = indicators[drawdownId];
+      return indicator?.source.adapter === 'finnhub' ? indicator.source.symbol : null;
+    };
+    const warnings = detectWarnings(macroView, now);
+    const highlights = detectHighlights(drawdownView.assets, breakoutView.assets, symbolOf);
+
+    let summary: SummaryView = {
+      generatedAt: now.toISOString(),
+      economyState: null,
+      warnings,
+      highlights,
+    };
+    try {
+      const credentials = readCloudflareAiCredentialsFromEnv();
+      const client = new CloudflareAiClient(credentials);
+      summary = await buildSummaryView(
+        client,
+        { macro: macroView, warnings, highlights },
+        now.toISOString(),
+      );
+    } catch (error) {
+      console.log(`  AI要約: 言語化をスキップ (${message(error)})`);
+    }
+    writeView('summary', summary);
   }
 
   const succeeded = failures.length === 0 && issues.length === 0;

@@ -566,6 +566,42 @@ function verifyRelativeStrength(): void {
 }
 
 /**
+ * AI要約テキストのガードレール (#279)。
+ *
+ * `src/lib/data/explanation.test.ts` (#208) と同じ検査を、生成されたテキスト
+ * (`summary.json` の `economyState`/`note`) にも適用する。**LLM の出力は無条件に
+ * 信用しない** — `summary.ts` の `sanitizeNote` が生成直後にも同じ検査をしているが、
+ * 「検査を通ったはずの値が実際に保存されているか」を独立した経路で確認する
+ * (同じ関数を呼ぶと検査自体のバグを見逃す、#113 と同じ理由)。
+ */
+function verifySummaryGuardrails(): void {
+  console.log('15. AI要約テキストのガードレール');
+  const view = readView('summary') as {
+    economyState: string | null;
+    warnings: Array<{ id: string; note: string | null }>;
+    highlights: Array<{ id: string; note: string | null }>;
+  } | null;
+  if (view === null) return;
+
+  const texts: Array<[string, string]> = [];
+  if (view.economyState !== null) texts.push(['economyState', view.economyState]);
+  for (const w of view.warnings) if (w.note !== null) texts.push([`warning:${w.id}`, w.note]);
+  for (const h of view.highlights) if (h.note !== null) texts.push([`highlight:${h.id}`, h.note]);
+
+  for (const [label, text] of texts) {
+    if (/\d/.test(text)) fail('AI要約テキストのガードレール', `${label}: 数値を含んでいる`);
+    if (/危険|悪化のサイン|買い時|売り時|望ましい水準/.test(text)) {
+      fail('AI要約テキストのガードレール', `${label}: 評価語を含んでいる`);
+    }
+    if (/\*\*|__|^#+\s/.test(text)) {
+      fail('AI要約テキストのガードレール', `${label}: マークダウンの装飾を含んでいる`);
+    }
+    if (/#\d+|`/.test(text)) fail('AI要約テキストのガードレール', `${label}: 開発メモを含んでいる`);
+  }
+  console.log(`  ${texts.length} 件のテキストを検査 (0件は未生成のため正常)`);
+}
+
+/**
  * 8. ゴールドの終値が「その日の終値」か (#133)。
  *
  * Finnhub の `c` は**現在値**なので、保存キー (`lastClosedTradingDay`) が指す日と
@@ -940,6 +976,7 @@ async function main(): Promise<void> {
   verifyRealRate();
   verifyDrawdown();
   verifyRelativeStrength();
+  verifySummaryGuardrails();
   if (offline) {
     console.log('8. ゴールドの終値と日付の照合 — --offline のため飛ばす');
   } else {
