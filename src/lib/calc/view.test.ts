@@ -330,6 +330,60 @@ describe('PER の過去分布 (#271)', () => {
   });
 });
 
+describe('シラーPER (CAPE) のビュー (#291)', () => {
+  /** 月次で `count` か月ぶんの CAPE 観測を作る (直近月から遡る)。 */
+  function buildWithCape(count: number, todayDate: Date) {
+    const shillerPe: Record<string, number> = {};
+    for (let i = 0; i < count; i++) {
+      const date = new Date(
+        Date.UTC(todayDate.getUTCFullYear(), todayDate.getUTCMonth() - i, 1),
+      )
+        .toISOString()
+        .slice(0, 10);
+      shillerPe[date] = 20 + i * 0.1;
+    }
+    return buildValuationView({
+      observations: { 'shiller-pe': shillerPe },
+      config,
+      // 直近 1 年しか無くても、シラーPERは観測の最古月から表示する (下の別テストで確認)。
+      start: new Date(Date.UTC(todayDate.getUTCFullYear() - 1, todayDate.getUTCMonth(), 1))
+        .toISOString()
+        .slice(0, 10),
+      today: todayDate,
+    });
+  }
+
+  it('標本が揃えば過去分布を出す', () => {
+    const view = buildWithCape(24, today);
+    expect(view.shillerPe.distribution).not.toBeNull();
+    expect(view.shillerPe.distribution?.n).toBe(24);
+    // 直近 (i = 0) が最も低い値 → 分位は下位側。
+    expect(view.shillerPe.distribution?.latestPercentile).toBeLessThan(10);
+  });
+
+  it('標本が足りなければ null (誤解を招く数値を出さない)', () => {
+    const view = buildWithCape(5, today);
+    expect(view.shillerPe.distribution).toBeNull();
+  });
+
+  it('観測が無ければ空配列と null', () => {
+    const view = buildValuationView({ observations: {}, config, start: '2026-08-01', today });
+    expect(view.shillerPe.points).toEqual([]);
+    expect(view.shillerPe.distribution).toBeNull();
+  });
+
+  it('options.start (10年上限) に縛られず、観測の最古月から表示する', () => {
+    // CAPE の価値は長期の文脈にあるため、他の系列と同じ上限に切り詰めない。
+    const view = buildValuationView({
+      observations: { 'shiller-pe': { '1990-01-01': 18.0, '2026-08-01': 41.0 } },
+      config,
+      start: '2026-01-01',
+      today,
+    });
+    expect(view.shillerPe.points[0]?.date).toBe('1990-01-01');
+  });
+});
+
 describe('労働市場・所得・消費 (#66)', () => {
   const monthly: ObservationMap = {
     // 2026-07 の実データを模した値。報道される雇用統計はプラスだが、

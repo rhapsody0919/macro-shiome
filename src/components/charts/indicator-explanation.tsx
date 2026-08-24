@@ -20,8 +20,10 @@ export function sourceIdOf(indicator: Indicator): string | null {
     case 'stockanalysis':
       return source.symbol;
     // FactSet の PDF と財務省の入札は系列 ID を持たない (項目名で抽出している)。
+    // シラーPERは単一ファイルの唯一の系列で、系列 ID という概念自体が無い (#291)。
     case 'factset-pdf':
     case 'treasury':
+    case 'shiller':
       return null;
   }
 }

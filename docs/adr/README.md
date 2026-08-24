@@ -40,3 +40,4 @@
 | [0007](0007-estat-dashboard.md) | 日本の経済指標は統計ダッシュボード API から取る (登録不要) | 2026-08-19 |
 | [0008](0008-tiingo-ohlcv.md) | ETF の日足 OHLCV は Tiingo から取る | 2026-08-21 |
 | [0009](0009-cloudflare-workers-ai.md) | AI要約のLLMはCloudflare Workers AIを使う | 2026-08-23 |
+| [0010](0010-shiller-cape.md) | シラーPER (CAPE) は Robert Shiller 本人の公開データから取る | 2026-08-24 |

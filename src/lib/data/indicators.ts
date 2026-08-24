@@ -106,7 +106,16 @@ function parseSource(raw: unknown, where: string): IndicatorSource {
   }
   const adapter = requireEnum(
     raw.adapter,
-    ['fred', 'factset-pdf', 'stockanalysis', 'treasury', 'finnhub', 'estat', 'estat-api'] as const,
+    [
+      'fred',
+      'factset-pdf',
+      'stockanalysis',
+      'treasury',
+      'finnhub',
+      'estat',
+      'estat-api',
+      'shiller',
+    ] as const,
     `${where}.adapter`,
   );
 
@@ -166,6 +175,9 @@ function parseSource(raw: unknown, where: string): IndicatorSource {
       }
       return source;
     }
+    case 'shiller':
+      // 唯一の系列 (CAPE) を返すだけなので、パラメータを持たない (#291)。
+      return { adapter };
   }
 }
 

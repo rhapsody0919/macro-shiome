@@ -29,6 +29,7 @@ function makeView(nasdaqWeeks: number): ValuationView {
   return {
     sp500: series(20, null),
     nasdaq100: { ...series(nasdaqWeeks, NOTE), hasForwardEps: false },
+    shillerPe: { points: [], distribution: null },
   };
 }
 

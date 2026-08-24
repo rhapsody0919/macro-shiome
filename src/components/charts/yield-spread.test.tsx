@@ -35,7 +35,7 @@ function makeView(
     spreadDistribution: distribution,
     accumulationNote: note,
   });
-  return { sp500: series, nasdaq100: series };
+  return { sp500: series, nasdaq100: series, shillerPe: { points: [], distribution: null } };
 }
 
 describe('イールドスプレッドの水準表示 (#52)', () => {

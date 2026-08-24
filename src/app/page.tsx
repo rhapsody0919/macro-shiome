@@ -2,6 +2,7 @@ import { Suspense } from 'react';
 import { FairValueChart } from '@/components/charts/fair-value';
 import { CorrelationSummary } from '@/components/charts/correlation-summary';
 import { ForwardPeChart } from '@/components/charts/forward-pe';
+import { ShillerPeChart } from '@/components/charts/shiller-pe';
 import { IndexVsEpsChart } from '@/components/charts/index-vs-eps';
 import { YieldSpreadChart } from '@/components/charts/yield-spread';
 import { SummaryBar } from '@/components/summary-bar';
@@ -23,6 +24,10 @@ export default function ValuationPage() {
 
       <Suspense fallback={<div className="h-64 sm:h-80" />}>
         <ForwardPeChart view={valuationView} />
+      </Suspense>
+
+      <Suspense fallback={<div className="h-64 sm:h-80" />}>
+        <ShillerPeChart view={valuationView} />
       </Suspense>
 
       <Suspense fallback={<div className="h-64 sm:h-80" />}>

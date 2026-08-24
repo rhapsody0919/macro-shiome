@@ -24,6 +24,7 @@ import type {
   PatternPricePoint,
   RevisionPoint,
   HistoricalDistribution,
+  ShillerPeSeries,
   ValuationPoint,
   ValuationSeries,
   ValuationView,
@@ -285,16 +286,18 @@ function buildTargetYieldContext(
 }
 
 /**
- * 過去分布における現在値の位置 (#52、#271 で PER にも横展開)。
+ * 過去分布における現在値の位置 (#52、#271 で PER にも横展開、#291 でシラーPERにも横展開)。
  *
  * 窓は 5 年に固定する。期間フィルターに追従させると基準が動いてしまい、
  * 「今が過去に比べてどこか」の比較にならない。
+ *
+ * `date` さえ持てば `ValuationPoint` 以外の点にも使える (シラーPERは月次の別グリッド)。
  */
 const DISTRIBUTION_WINDOW_YEARS = 5;
 
-function buildDistribution(
-  points: readonly ValuationPoint[],
-  extract: (point: ValuationPoint) => number | null,
+function buildDistribution<T extends { date: string }>(
+  points: readonly T[],
+  extract: (point: T) => number | null,
   today: Date,
 ): HistoricalDistribution | null {
   const from = new Date(
@@ -357,6 +360,36 @@ export function buildValuationView(options: BuildViewOptions): ValuationView {
   return {
     sp500: buildSp500Series(options, weeks),
     nasdaq100: buildNasdaqSeries(options, weeks),
+    shillerPe: buildShillerPeSeries(options),
+  };
+}
+
+/**
+ * シラーPER (CAPE) のビュー (#291、ADR-0010)。
+ *
+ * S&P 500 専用の単一系列で、NASDAQ-100 への切り替えは無い。
+ *
+ * **`options.start` (既定 10 年) には縛られない、独自の月次グリッドを持つ。** CAPE の
+ * 価値は 145 年分の長期文脈にあり、他の系列に合わせて 10 年に切り詰めると
+ * 長期比較という指標の意義そのものが失われる。観測の最古月から今日までを月次で並べる。
+ */
+function buildShillerPeSeries(options: BuildViewOptions): ShillerPeSeries {
+  const { observations, today } = options;
+  const capeObservations = series(observations, 'shiller-pe');
+  const observedMonths = Object.keys(capeObservations).sort();
+  if (observedMonths.length === 0) {
+    return { points: [], distribution: null };
+  }
+
+  const months = monthsBetween(observedMonths[0], today.toISOString().slice(0, 10));
+  const points = months.map((month) => ({
+    date: month,
+    value: valueForMonth(capeObservations, month),
+  }));
+
+  return {
+    points,
+    distribution: buildDistribution(points, (point) => point.value, today),
   };
 }
 
