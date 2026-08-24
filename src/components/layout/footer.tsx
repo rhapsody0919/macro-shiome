@@ -25,6 +25,9 @@ export function Footer() {
           <Link href="/updates" className="underline underline-offset-2">
             更新履歴
           </Link>
+          <Link href="/calendar" className="underline underline-offset-2">
+            発表予定カレンダー
+          </Link>
         </p>
       </div>
     </footer>

@@ -3,8 +3,11 @@ import {
   FactsetNotPublishedError,
   factsetPdfUrl,
   fetchFactsetReport,
+  nextFriday,
+  parseFactsetNextIssueDate,
   parseFactsetText,
   previousFriday,
+  resolveFactsetNextIssueDate,
 } from './factset';
 
 /**
@@ -186,5 +189,94 @@ describe('previousFriday', () => {
   it('木曜なら 6 日前を返す', () => {
     const friday = previousFriday(new Date(Date.UTC(2026, 7, 13)));
     expect(friday.toISOString().slice(0, 10)).toBe('2026-08-07');
+  });
+});
+
+describe('nextFriday (#270)', () => {
+  it('金曜なら翌週の金曜を返す (今日を含めない)', () => {
+    const friday = nextFriday(new Date(Date.UTC(2026, 7, 7)));
+    expect(friday.toISOString().slice(0, 10)).toBe('2026-08-14');
+  });
+
+  it('土曜なら次の金曜を返す', () => {
+    const friday = nextFriday(new Date(Date.UTC(2026, 7, 8)));
+    expect(friday.toISOString().slice(0, 10)).toBe('2026-08-14');
+  });
+
+  it('月曜なら同じ週の金曜を返す', () => {
+    const friday = nextFriday(new Date(Date.UTC(2026, 7, 10)));
+    expect(friday.toISOString().slice(0, 10)).toBe('2026-08-14');
+  });
+});
+
+describe('parseFactsetNextIssueDate (#270)', () => {
+  const reportDate = new Date(Date.UTC(2026, 7, 7)); // 2026-08-07 号
+
+  it('休刊予告の Author\'s Note から次回発行日を取り出す', () => {
+    // 2026-08-07 号の実際の記述。
+    const text = `Author's Note:  The FactSet Earnings Insight report will not be published on August 14 or August 21. The next edition of the report will be published on August 28.`;
+    expect(parseFactsetNextIssueDate(text, reportDate)).toBe('2026-08-28');
+  });
+
+  it('予告が無い通常号では null を返す', () => {
+    // 呼び出し側はこの場合 nextFriday を既定値として使う。
+    expect(parseFactsetNextIssueDate(REPORT_2026_08_07, reportDate)).toBeNull();
+  });
+
+  it('年をまたぐ予告は翌年として解釈する', () => {
+    // 12月号が1月の予定を予告するケース。
+    const decemberReport = new Date(Date.UTC(2026, 11, 18));
+    const text = `The next edition of the report will be published on January 8.`;
+    expect(parseFactsetNextIssueDate(text, decemberReport)).toBe('2027-01-08');
+  });
+});
+
+describe('resolveFactsetNextIssueDate (#270)', () => {
+  /** 実際の PDF バイト列は要らない。テキストをそのままバイト列に往復させるだけ。 */
+  function fakeExtractText(data: Uint8Array): Promise<string> {
+    return Promise.resolve(new TextDecoder().decode(data));
+  }
+
+  function textResponse(text: string): Response {
+    return new Response(new TextEncoder().encode(text));
+  }
+
+  it('予告が無い通常号なら次の金曜日を返す', async () => {
+    const now = new Date(Date.UTC(2026, 7, 14)); // 2026-08-14 (金)
+    const fetchImpl = vi.fn().mockResolvedValue(textResponse('通常のレポート本文。予告なし。'));
+    const date = await resolveFactsetNextIssueDate(now, fetchImpl, fakeExtractText);
+    expect(date).toBe('2026-08-21');
+  });
+
+  it('休刊予告があれば予告日を返す', async () => {
+    const now = new Date(Date.UTC(2026, 7, 7)); // 2026-08-07 (金)
+    const fetchImpl = vi.fn().mockResolvedValue(
+      textResponse('The next edition of the report will be published on August 28.'),
+    );
+    const date = await resolveFactsetNextIssueDate(now, fetchImpl, fakeExtractText);
+    expect(date).toBe('2026-08-28');
+  });
+
+  it('休刊週が続いても直近で取得できた号まで遡って予告を探す', async () => {
+    // 2026-08-21 時点で確認すると、8/21・8/14 号は休刊 (404) で 8/7 号に予告がある。
+    const now = new Date(Date.UTC(2026, 7, 21));
+    const fetchImpl = vi.fn().mockImplementation((url: string) => {
+      if (url.includes('082126') || url.includes('081426')) {
+        return Promise.resolve(new Response(null, { status: 404 }));
+      }
+      return Promise.resolve(
+        textResponse('The next edition of the report will be published on August 28.'),
+      );
+    });
+    const date = await resolveFactsetNextIssueDate(now, fetchImpl, fakeExtractText);
+    expect(date).toBe('2026-08-28');
+    expect(fetchImpl).toHaveBeenCalledTimes(3);
+  });
+
+  it('遡っても1号も取得できなければ null (不明表示に回す)', async () => {
+    const now = new Date(Date.UTC(2026, 7, 21));
+    const fetchImpl = vi.fn().mockResolvedValue(new Response(null, { status: 404 }));
+    const date = await resolveFactsetNextIssueDate(now, fetchImpl, fakeExtractText);
+    expect(date).toBeNull();
   });
 });

@@ -41,3 +41,4 @@
 | [0008](0008-tiingo-ohlcv.md) | ETF の日足 OHLCV は Tiingo から取る | 2026-08-21 |
 | [0009](0009-cloudflare-workers-ai.md) | AI要約のLLMはCloudflare Workers AIを使う | 2026-08-23 |
 | [0010](0010-shiller-cape.md) | シラーPER (CAPE) は Robert Shiller 本人の公開データから取る | 2026-08-24 |
+| [0011](0011-release-calendar.md) | 発表予定カレンダーは FRED の Release API と FactSet の休刊予告から組み立てる | 2026-08-24 |

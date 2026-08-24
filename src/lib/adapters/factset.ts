@@ -50,6 +50,55 @@ export function previousFriday(date: Date): Date {
   return result;
 }
 
+/** 指定日より後で直近の金曜日 (#270、発表予定カレンダーの既定値に使う)。 */
+export function nextFriday(date: Date): Date {
+  const result = new Date(
+    Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate()),
+  );
+  const diff = (5 - result.getUTCDay() + 7) % 7 || 7;
+  result.setUTCDate(result.getUTCDate() + diff);
+  return result;
+}
+
+const MONTH_NAMES = [
+  'January', 'February', 'March', 'April', 'May', 'June',
+  'July', 'August', 'September', 'October', 'November', 'December',
+] as const;
+
+/**
+ * 休刊予告 (Author's Note) から次回発行日を取り出す (#270)。
+ *
+ * FactSet は毎週金曜発行が基本で、休刊週があるときだけ本文冒頭に
+ * "Author's Note: The FactSet Earnings Insight report will not be published on
+ * [日付]. The next edition of the report will be published on [日付]." という
+ * 一貫した書式で予告を載せる (2026-08-07 号で確認)。**通常週はこの文言が無い**ため、
+ * 見つからなければ null を返し、呼び出し側は `nextFriday` を既定値として使う。
+ *
+ * 年はレポート自体の発行日から推定する。予告の月がレポートの発行月より前なら
+ * 年をまたぐとみなし +1 する (12月号が1月の予定を予告するケース)。
+ */
+export function parseFactsetNextIssueDate(text: string, reportDate: Date): string | null {
+  const flat = text.replace(/\s+/g, ' ');
+  const match = flat.match(
+    /next edition of the report will be published on ([A-Z][a-z]+) (\d{1,2})/i,
+  );
+  if (match === null) return null;
+
+  const monthIndex = MONTH_NAMES.findIndex(
+    (name) => name.toLowerCase() === match[1].toLowerCase(),
+  );
+  if (monthIndex === -1) {
+    throw new Error(`FactSet: 次回発行予告の月名を解釈できない (${match[1]})`);
+  }
+  const day = Number.parseInt(match[2], 10);
+
+  const reportYear = reportDate.getUTCFullYear();
+  const reportMonth = reportDate.getUTCMonth();
+  const year = monthIndex < reportMonth ? reportYear + 1 : reportYear;
+
+  return `${year}-${String(monthIndex + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+}
+
 /**
  * 数値を取り出す。
  *
@@ -232,4 +281,49 @@ export async function fetchFactsetReport(friday: Date): Promise<FactsetExtract> 
 
   const text = await extractPdfText(new Uint8Array(await response.arrayBuffer()));
   return parseFactsetText(text);
+}
+
+/** 直近で取得できた号を新しい順に何週まで遡るか (#270)。 */
+const NEXT_ISSUE_LOOKBACK_WEEKS = 8;
+
+/**
+ * 次回発行予定日を求める (#270)。
+ *
+ * **休刊週が連続すると、当該週の号は 404 で予告文が読めない。** 例えば
+ * 8/14・8/21 が休刊で 8/7 号に予告があった場合、8/21 時点で調べても 8/21 号は
+ * 存在しないため、直近で実際に取得できた号 (8/7 号) まで遡って予告を探す必要がある。
+ *
+ * 見つかった最新号に予告が無ければ (通常号)、次の金曜日を既定値として使う。
+ * `NEXT_ISSUE_LOOKBACK_WEEKS` 週たどっても 1 号も取得できなければ null (「不明」表示)。
+ */
+export async function resolveFactsetNextIssueDate(
+  now: Date,
+  fetchImpl: typeof fetch = fetch,
+  extractText: (data: Uint8Array) => Promise<string> = extractPdfText,
+): Promise<string | null> {
+  const friday = previousFriday(now);
+
+  for (let i = 0; i < NEXT_ISSUE_LOOKBACK_WEEKS; i++) {
+    const candidate = new Date(friday);
+    candidate.setUTCDate(candidate.getUTCDate() - i * 7);
+    const url = factsetPdfUrl(candidate);
+
+    let response: Response;
+    try {
+      response = await fetchImpl(url);
+    } catch {
+      continue; // ネットワークエラーはこの号を諦めてもう1週遡る。
+    }
+    if (!response.ok) continue; // 休刊週。もう1週遡る。
+
+    const text = await extractText(new Uint8Array(await response.arrayBuffer()));
+    const announced = parseFactsetNextIssueDate(text, candidate);
+    const todayIso = now.toISOString().slice(0, 10);
+    if (announced !== null && announced >= todayIso) return announced;
+
+    // 予告が無い、または予告が既に過去の日付 (読み終えた古い号) → 通常どおり次の金曜日。
+    return nextFriday(now).toISOString().slice(0, 10);
+  }
+
+  return null;
 }
