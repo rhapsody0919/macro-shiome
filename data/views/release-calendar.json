@@ -1,26 +1,371 @@
 {
-  "generatedAt": "2026-08-24T05:00:00.000Z",
+  "generatedAt": "2026-08-24T06:38:26.431Z",
   "entries": [
     {
+      "label": "Standard & Poors",
+      "indicatorIds": [
+        "sp500"
+      ],
+      "nextReleaseDate": "2026-08-24",
+      "source": "fred"
+    },
+    {
+      "label": "Nasdaq Daily Index Data",
+      "indicatorIds": [
+        "nasdaq100",
+        "nasdaq-composite"
+      ],
+      "nextReleaseDate": "2026-08-24",
+      "source": "fred"
+    },
+    {
+      "label": "H.15 Selected Interest Rates",
+      "indicatorIds": [
+        "dgs10",
+        "dfii10",
+        "fed-funds-rate",
+        "dgs2",
+        "tbill-3m"
+      ],
+      "nextReleaseDate": "2026-08-24",
+      "source": "fred"
+    },
+    {
+      "label": "Interest Rate Spreads",
+      "indicatorIds": [
+        "t10yie",
+        "t10y2y",
+        "breakeven-5y",
+        "breakeven-5y5y",
+        "term-spread-3m"
+      ],
+      "nextReleaseDate": "2026-08-24",
+      "source": "fred"
+    },
+    {
+      "label": "CBOE Market Statistics",
+      "indicatorIds": [
+        "vix"
+      ],
+      "nextReleaseDate": "2026-08-24",
+      "source": "fred"
+    },
+    {
+      "label": "H.10 Foreign Exchange Rates",
+      "indicatorIds": [
+        "usdjpy",
+        "dollar-index",
+        "usd-eur",
+        "cny-usd"
+      ],
+      "nextReleaseDate": "2026-08-24",
+      "source": "fred"
+    },
+    {
+      "label": "U.S. Import and Export Price Indexes",
+      "indicatorIds": [
+        "import-price",
+        "export-price"
+      ],
+      "nextReleaseDate": "2026-09-16",
+      "source": "fred"
+    },
+    {
+      "label": "Producer Price Index",
+      "indicatorIds": [
+        "producer-price",
+        "producer-price-all"
+      ],
+      "nextReleaseDate": "2026-09-10",
+      "source": "fred"
+    },
+    {
       "label": "Consumer Price Index",
-      "indicatorIds": ["cpi", "cpi-core", "cpi-rent"],
+      "indicatorIds": [
+        "cpi",
+        "cpi-core",
+        "cpi-rent"
+      ],
       "nextReleaseDate": "2026-09-11",
+      "source": "fred"
+    },
+    {
+      "label": "Personal Income and Outlays",
+      "indicatorIds": [
+        "pce-price",
+        "real-income-ex-transfer",
+        "real-disposable-income-per-capita",
+        "savings-rate",
+        "personal-saving",
+        "real-disposable-income",
+        "real-consumption",
+        "pce-core"
+      ],
+      "nextReleaseDate": "2026-08-26",
       "source": "fred"
     },
     {
       "label": "Employment Situation",
       "indicatorIds": [
         "payrolls",
-        "unemployment-rate",
         "employment-level",
         "full-time-employment",
+        "manufacturing-hours",
+        "unemployment-rate",
+        "u6-rate",
         "participation-rate",
         "employment-ratio",
-        "u6-rate",
-        "weekly-hours-total",
-        "manufacturing-hours"
+        "weekly-hours-total"
       ],
       "nextReleaseDate": "2026-09-04",
+      "source": "fred"
+    },
+    {
+      "label": "ADP National Employment Report",
+      "indicatorIds": [
+        "adp-employment"
+      ],
+      "nextReleaseDate": "2026-09-02",
+      "source": "fred"
+    },
+    {
+      "label": "Surveys of Consumers",
+      "indicatorIds": [
+        "consumer-sentiment"
+      ],
+      "nextReleaseDate": "2026-08-28",
+      "source": "fred"
+    },
+    {
+      "label": "Visa Spending Momentum Index",
+      "indicatorIds": [
+        "visa-discretionary-spending",
+        "visa-non-discretionary-spending"
+      ],
+      "nextReleaseDate": "2026-09-11",
+      "source": "fred"
+    },
+    {
+      "label": "Primary Mortgage Market Survey",
+      "indicatorIds": [
+        "mortgage-rate-30y"
+      ],
+      "nextReleaseDate": "2026-08-27",
+      "source": "fred"
+    },
+    {
+      "label": "New Residential Construction",
+      "indicatorIds": [
+        "building-permits",
+        "housing-starts",
+        "housing-starts-single"
+      ],
+      "nextReleaseDate": "2026-08-25",
+      "source": "fred"
+    },
+    {
+      "label": "New Residential Sales",
+      "indicatorIds": [
+        "new-home-sales",
+        "new-home-supply"
+      ],
+      "nextReleaseDate": "2026-08-25",
+      "source": "fred"
+    },
+    {
+      "label": "Advance Monthly Sales for Retail and Food Services",
+      "indicatorIds": [
+        "retail-sales-core",
+        "retail-sales-total"
+      ],
+      "nextReleaseDate": "2026-09-16",
+      "source": "fred"
+    },
+    {
+      "label": "Unemployment Insurance Weekly Claims Report",
+      "indicatorIds": [
+        "initial-claims",
+        "continued-claims"
+      ],
+      "nextReleaseDate": "2026-08-27",
+      "source": "fred"
+    },
+    {
+      "label": "G.17 Industrial Production and Capacity Utilization",
+      "indicatorIds": [
+        "industrial-production",
+        "capacity-utilization"
+      ],
+      "nextReleaseDate": "2026-09-18",
+      "source": "fred"
+    },
+    {
+      "label": "Manufacturer's Shipments, Inventories, and Orders (M3) Survey",
+      "indicatorIds": [
+        "new-orders-consumer-goods",
+        "new-orders-capital-goods",
+        "durable-goods-orders"
+      ],
+      "nextReleaseDate": "2026-08-26",
+      "source": "fred"
+    },
+    {
+      "label": "Chicago Fed National Financial Conditions Index",
+      "indicatorIds": [
+        "credit-conditions",
+        "nfci",
+        "anfci"
+      ],
+      "nextReleaseDate": "2026-08-26",
+      "source": "fred"
+    },
+    {
+      "label": "ICE BofA Indices",
+      "indicatorIds": [
+        "hy-spread",
+        "ig-spread"
+      ],
+      "nextReleaseDate": "2026-08-24",
+      "source": "fred"
+    },
+    {
+      "label": "Spot Prices",
+      "indicatorIds": [
+        "wti"
+      ],
+      "nextReleaseDate": "2026-08-26",
+      "source": "fred"
+    },
+    {
+      "label": "Job Postings on Indeed",
+      "indicatorIds": [
+        "new-job-postings"
+      ],
+      "nextReleaseDate": null,
+      "source": "fred"
+    },
+    {
+      "label": "Monthly Treasury Statement",
+      "indicatorIds": [
+        "federal-deficit"
+      ],
+      "nextReleaseDate": "2026-09-11",
+      "source": "fred"
+    },
+    {
+      "label": "Job Openings and Labor Turnover Survey",
+      "indicatorIds": [
+        "job-openings",
+        "quits",
+        "hires"
+      ],
+      "nextReleaseDate": "2026-09-01",
+      "source": "fred"
+    },
+    {
+      "label": "Budget and Economic Outlook",
+      "indicatorIds": [
+        "potential-gdp"
+      ],
+      "nextReleaseDate": null,
+      "source": "fred"
+    },
+    {
+      "label": "Empire State Manufacturing Survey",
+      "indicatorIds": [
+        "ny-fed-survey"
+      ],
+      "nextReleaseDate": "2026-09-15",
+      "source": "fred"
+    },
+    {
+      "label": "Manufacturing Business Outlook Survey",
+      "indicatorIds": [
+        "philly-fed-survey"
+      ],
+      "nextReleaseDate": "2026-09-17",
+      "source": "fred"
+    },
+    {
+      "label": "Main Economic Indicators",
+      "indicatorIds": [
+        "jp-10y",
+        "de-10y",
+        "us-10y-monthly"
+      ],
+      "nextReleaseDate": null,
+      "source": "fred"
+    },
+    {
+      "label": "Nikkei Indexes",
+      "indicatorIds": [
+        "nikkei225"
+      ],
+      "nextReleaseDate": "2026-08-24",
+      "source": "fred"
+    },
+    {
+      "label": "Existing Home Sales",
+      "indicatorIds": [
+        "existing-home-sales"
+      ],
+      "nextReleaseDate": "2026-09-10",
+      "source": "fred"
+    },
+    {
+      "label": "St. Louis Fed Financial Stress Index",
+      "indicatorIds": [
+        "financial-stress"
+      ],
+      "nextReleaseDate": "2026-08-26",
+      "source": "fred"
+    },
+    {
+      "label": "Secured Overnight Financing Rate Data",
+      "indicatorIds": [
+        "sofr"
+      ],
+      "nextReleaseDate": "2026-08-24",
+      "source": "fred"
+    },
+    {
+      "label": "Manufacturing and Trade Inventories and Sales",
+      "indicatorIds": [
+        "business-inventories"
+      ],
+      "nextReleaseDate": "2026-09-16",
+      "source": "fred"
+    },
+    {
+      "label": "H.4.1 Factors Affecting Reserve Balances",
+      "indicatorIds": [
+        "fed-balance-sheet"
+      ],
+      "nextReleaseDate": "2026-08-27",
+      "source": "fred"
+    },
+    {
+      "label": "H.8 Assets and Liabilities of Commercial Banks in the United States",
+      "indicatorIds": [
+        "commercial-loans"
+      ],
+      "nextReleaseDate": "2026-08-28",
+      "source": "fred"
+    },
+    {
+      "label": "Supplemental Estimates, Motor Vehicles",
+      "indicatorIds": [
+        "vehicle-sales"
+      ],
+      "nextReleaseDate": "2026-08-26",
+      "source": "fred"
+    },
+    {
+      "label": "Dow Jones Averages",
+      "indicatorIds": [
+        "djia"
+      ],
+      "nextReleaseDate": "2026-08-24",
       "source": "fred"
     },
     {

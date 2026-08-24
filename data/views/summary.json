@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-24T02:54:52.564Z",
-  "economyState": "経済状況は、不安定な雰囲気が強いようであり、投資家のリスクへの対処も高まっているようだ。金融環境は、現在は安定的ではないようで、企業や個人が新規の投資を慎重に検討しているようだ。経済の成長は、不安定な状況の中で進んでいるようで、政府や金融機関が積極的な政策を実施しているようだ。",
+  "generatedAt": "2026-08-24T06:38:26.431Z",
+  "economyState": "経済は不安定な状態にあり、投資家の不安感が高まっているようだ。金利の格差とハイリスク債の価格が高まっていることは、投資家のリスク回避意識の高まりを示唆している。同時に、金銭的不安が高まっており、失業者が増えていることが窺える。",
   "economyStateFactCount": 5,
   "warnings": [],
   "highlights": [
@@ -11,7 +11,7 @@
       "relativeStrength": 26.19,
       "hasBreakout": true,
       "signalCount": 3,
-      "note": "金鉱株が下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
+      "note": "金鉱株がSPYに対して相対的に強いことや直近で戻り高値を上抜けたことから注目される。"
     },
     {
       "id": "etf-gld",
@@ -20,7 +20,7 @@
       "relativeStrength": 2.88,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "ゴールドが下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
+      "note": "ゴールドがSPYに対して相対的に強いことから注目される。"
     },
     {
       "id": "etf-corn",
@@ -29,7 +29,7 @@
       "relativeStrength": 7.83,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "コーンが下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
+      "note": "コーンがSPYに対して相対的に強いことから注目される。"
     },
     {
       "id": "etf-epi",
@@ -38,7 +38,7 @@
       "relativeStrength": 0.15,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "インドの株価が下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
+      "note": "インドがSPYに対して相対的に強いことから注目される。"
     },
     {
       "id": "etf-ewz",
@@ -47,7 +47,7 @@
       "relativeStrength": 0.46,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "ブラジルの株価が下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
+      "note": "ブラジルがSPYに対して相対的に強いことから注目される。"
     },
     {
       "id": "etf-eido",
@@ -56,7 +56,7 @@
       "relativeStrength": 14.15,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "インドネシアの株価が下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
+      "note": "インドネシアがSPYに対して相対的に強いことから注目される。"
     },
     {
       "id": "etf-smin",
@@ -65,7 +65,7 @@
       "relativeStrength": 5.4,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "インド小型株が下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
+      "note": "インド小型株がSPYに対して相対的に強いことから注目される。"
     }
   ]
 }
