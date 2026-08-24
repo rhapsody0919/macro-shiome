@@ -974,6 +974,9 @@ export function buildEconomyView(options: BuildViewOptions): EconomyView {
     // 貯蓄率と対で見る。金額は前年同月比に揃える (水準は桁が違って並べられない)。
     personalSaving: yoy('personal-saving', month),
     consumerSentiment: level('consumer-sentiment', month),
+    // 100 が基準の指数。水準そのものが意味を持つため前年同月比にしない (#294)。
+    visaDiscretionary: level('visa-discretionary-spending', month),
+    visaNonDiscretionary: level('visa-non-discretionary-spending', month),
   }));
 
   // 発表ラグは指標ごとに違うため、系列単位で「どこまで出ているか」を持つ。
@@ -1083,6 +1086,8 @@ const MONTHLY_INDICATORS = [
   'savings-rate',
   'personal-saving',
   'consumer-sentiment',
+  'visa-discretionary-spending',
+  'visa-non-discretionary-spending',
 ] as const;
 
 /**

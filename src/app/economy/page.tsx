@@ -612,6 +612,47 @@ const CHARTS: QuestionChartDef<EconomyQuestionId>[] = [
   {
     question: 'consumption',
     frequency: 'monthly',
+    primaryIndicator: 'visa-discretionary-spending',
+    title: 'VISA消費指数',
+    subtitle: '裁量的消費と非裁量的消費 (100が基準)',
+    kind: 'number',
+    zeroLine: false,
+    baseline: { value: 100, label: '100 = 基準' },
+    series: [
+      {
+        key: 'visaDiscretionary',
+        label: '裁量的消費 (レジャー・外食・旅行等)',
+        color: COLORS.visaDiscretionary,
+        width: 2.4,
+        indicatorId: 'visa-discretionary-spending',
+      },
+      {
+        key: 'visaNonDiscretionary',
+        label: '非裁量的消費 (生活必需品)',
+        color: COLORS.visaNonDiscretionary,
+        indicatorId: 'visa-non-discretionary-spending',
+      },
+    ],
+    notes: [
+      <span key="gap">
+        <strong>2 本の差が「支出全般を絞っているか、余裕のある部分だけを削っているか」を示す。</strong>
+        裁量的消費だけが沈んでいれば家計にまだ選択の余地がある状態、非裁量的消費まで
+        沈んでいれば生活必需品への支出まで切り詰めている状態。
+      </span>,
+      <span key="source">
+        VISA のカード決済データを集計した指数で、上の「家計の余力」(政府統計) とは
+        <strong>別のデータソース・別の集計方法</strong>。リアルタイム性の高いクレジットカード
+        データという性質上、政府統計より速報性がある。
+      </span>,
+      <span key="baseline">
+        <strong>100 はデータの基準そのもの</strong>であって恣意的な閾値ではない。
+        100 を上回れば拡大、下回れば縮小を意味する。
+      </span>,
+    ],
+  },
+  {
+    question: 'consumption',
+    frequency: 'monthly',
     primaryIndicator: 'savings-rate',
     title: '貯蓄率',
     subtitle: '可処分所得のうち貯蓄に回る割合 (水準)',

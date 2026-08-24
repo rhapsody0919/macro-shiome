@@ -576,6 +576,46 @@
     },
     "sourceUnits": "Index 1966:Q1=100"
   },
+  "visa-discretionary-spending": {
+    "name": "VISA裁量的消費指数",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "VISASMIDSA"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "Visa via FRED",
+    "copyright": "restricted",
+    "group": "macro",
+    "note": "Visa Spending Momentum Index: Discretionary。VISAのカード決済データからレジャー・外食・旅行など生活必需でない消費を集計した指数 (#294)。100が基準。季節調整済み、2014年〜。非裁量的消費 (visa-non-discretionary-spending) と対で見る。",
+    "unitLabel": "指数 (100が基準)・季節調整済み",
+    "explanation": {
+      "what": "VISAのカード決済データのうち、レジャー・外食・旅行など生活必需でない消費を集計した指数。",
+      "howToRead": "100を上回れば拡大、下回れば縮小。非裁量的消費 (生活必需品) と比べ、どちらがより大きく変化しているかで、家計が支出全般を絞っているのか、余裕のある部分だけを削っているのかが読み取れる。",
+      "seeWith": "非裁量的消費と並べる。片方だけでは家計の余力の変化を判別できない。"
+    },
+    "sourceUnits": "Index"
+  },
+  "visa-non-discretionary-spending": {
+    "name": "VISA非裁量的消費指数",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "VISASMINSA"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "Visa via FRED",
+    "copyright": "restricted",
+    "group": "macro",
+    "note": "Visa Spending Momentum Index: Non-discretionary。VISAのカード決済データから生活必需品への消費を集計した指数 (#294)。100が基準。季節調整済み、2014年〜。裁量的消費 (visa-discretionary-spending) と対で見る。",
+    "unitLabel": "指数 (100が基準)・季節調整済み",
+    "explanation": {
+      "what": "VISAのカード決済データのうち、生活必需品への消費を集計した指数。",
+      "howToRead": "100を上回れば拡大、下回れば縮小。裁量的消費 (生活必需でない消費) と比べることで、家計の余力の変化がどこに現れているかを読む。",
+      "seeWith": "裁量的消費と並べる。片方だけでは家計の余力の変化を判別できない。"
+    },
+    "sourceUnits": "Index"
+  },
   "mortgage-rate-30y": {
     "name": "住宅ローン金利 (30年固定)",
     "source": {

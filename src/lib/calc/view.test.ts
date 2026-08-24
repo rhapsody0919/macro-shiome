@@ -394,6 +394,8 @@ describe('労働市場・所得・消費 (#66)', () => {
     'real-income-ex-transfer': { '2025-06-01': 16590, '2026-06-01': 16606.1 },
     'savings-rate': { '2026-06-01': 2.7 },
     'consumer-sentiment': { '2026-06-01': 49.5 },
+    'visa-discretionary-spending': { '2026-06-01': 95.7 },
+    'visa-non-discretionary-spending': { '2026-06-01': 98.2 },
   };
 
   const view = buildEconomyView({
@@ -422,6 +424,13 @@ describe('労働市場・所得・消費 (#66)', () => {
     const june = view.monthly.find((p) => p.month === '2026-06-01');
     expect(june?.savingsRate).toBe(2.7);
     expect(june?.consumerSentiment).toBe(49.5);
+  });
+
+  it('VISA消費指数も水準のまま持つ (#294)', () => {
+    // 100 が基準の指数。前年同月比にすると基準からの位置が読めなくなる。
+    const june = view.monthly.find((p) => p.month === '2026-06-01');
+    expect(june?.visaDiscretionary).toBe(95.7);
+    expect(june?.visaNonDiscretionary).toBe(98.2);
   });
 
   it('発表ラグを指標ごとに持つ', () => {
