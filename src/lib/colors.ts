@@ -72,6 +72,8 @@ export const COLORS = {
   payrolls: '#0ea5e9',
   employmentLevel: '#f97316',
   fullTimeEmployment: '#a855f7',
+  /** ADP雇用者数。BLS 系列との比較用 (#295)。 */
+  adpEmployment: '#14b8a6',
   realIncomeExTransfer: '#10b981',
   realDisposablePerCapita: '#6366f1',
 

@@ -858,6 +858,8 @@ export function buildEconomyView(options: BuildViewOptions): EconomyView {
     payrolls: yoy('payrolls', month),
     employmentLevel: yoy('employment-level', month),
     fullTimeEmployment: yoy('full-time-employment', month),
+    // BLSとは別のデータソース (ADP)。同じ方向を示すかのクロスチェックに使う (#295)。
+    adpEmployment: yoy('adp-employment', month),
     realIncomeExTransfer: yoy('real-income-ex-transfer', month),
     realDisposablePerCapita: yoy('real-disposable-income-per-capita', month),
     realDisposableTotal: yoy('real-disposable-income', month),
@@ -1008,6 +1010,7 @@ const MONTHLY_INDICATORS = [
   'payrolls',
   'employment-level',
   'full-time-employment',
+  'adp-employment',
   'real-income-ex-transfer',
   'real-disposable-income-per-capita',
   'real-disposable-income',

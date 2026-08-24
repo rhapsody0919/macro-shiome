@@ -521,10 +521,16 @@ describe('泉さんの記事から追加した指標 (#87)', () => {
     expect(indicators['existing-home-sales'].copyright).toBe('restricted');
   });
 
-  it('提供終了した ADP を持たない (#176)', () => {
-    // FRED で DISCONTINUED になり 2026-06-13 で止まった。取得し続けても増えない指標を
-    // 残すと、バッチが毎回「取れた」ことになり本当の変化と区別できない (#131 と同じ)。
-    expect(indicators['adp-employment']).toBeUndefined();
+  it('ADP は週次ではなく更新が続く月次系列を使う (#176 #295)', () => {
+    // 週次系列 (ADPWNUSNERSA) は FRED で 2026-06-13 を最後に更新が止まっている
+    // (#176 で除外)。取得し続けても増えない指標を残すと、バッチが毎回「取れた」ことに
+    // なり本当の変化と区別できない (#131 と同じ)。月次系列 (ADPMNUSNERSA) は更新が
+    // 続いているため、#295 でこちらを使って再度追加した。
+    expect(indicators['adp-employment'].source).toEqual({
+      adapter: 'fred',
+      seriesId: 'ADPMNUSNERSA',
+    });
+    expect(indicators['adp-employment'].frequency).toBe('monthly');
   });
 
   it('求人件数 (JOLTS) は公式統計で Public Domain', () => {

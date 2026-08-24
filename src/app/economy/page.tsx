@@ -362,7 +362,7 @@ const CHARTS: QuestionChartDef<EconomyQuestionId>[] = [
     frequency: 'monthly',
     primaryIndicator: 'payrolls',
     title: '労働市場',
-    subtitle: '雇用者数の前年同月比 (3 つの捉え方)',
+    subtitle: '雇用者数の前年同月比 (4 つの捉え方)',
     series: [
       {
         key: 'payrolls',
@@ -383,13 +383,20 @@ const CHARTS: QuestionChartDef<EconomyQuestionId>[] = [
         color: COLORS.fullTimeEmployment,
         indicatorId: 'full-time-employment',
       },
+      {
+        key: 'adpEmployment',
+        label: 'ADP雇用者数',
+        color: COLORS.adpEmployment,
+        indicatorId: 'adp-employment',
+      },
     ],
     notes: [
       <span key="diff">
-        <strong>3 つは調査方法が違う。</strong>
-        ニュースで報じられる「雇用統計」は<strong>非農業部門雇用者数</strong> (事業所調査) で、
+        <strong>4 つは調査方法・集計元が違う。</strong>
+        ニュースで報じられる「雇用統計」は<strong>非農業部門雇用者数</strong> (BLS の事業所調査) で、
         <strong>自営業者と農業従事者を含まない</strong>。就業者数 (家計調査) はそれらを含むため、
-        働いている人の総数に近い。フルタイムは雇用の質を見る。
+        働いている人の総数に近い。フルタイムは雇用の質を見る。ADP雇用者数は政府統計ではなく
+        <strong>給与計算サービス企業のデータ</strong>を集計したもので、母集団も集計方法も異なる。
       </span>,
       <span key="coincident">
         <strong>雇用は「先行」ではなく「一致」指標。</strong>
@@ -397,7 +404,12 @@ const CHARTS: QuestionChartDef<EconomyQuestionId>[] = [
         悪化が見えた時点で、既に景気が転換している可能性がある。
       </span>,
       <span key="yoy">
-        前年同月比で揃えている。水準 (千人) は 3 系列で桁が違い、変化の大きさが比べられないため。
+        前年同月比で揃えている。水準 (人/千人) は系列ごとに桁が違い、変化の大きさが比べられないため。
+      </span>,
+      <span key="crosscheck">
+        <strong>ADP雇用者数は公式統計の代替ではなくクロスチェック。</strong>
+        独立したデータソースが同じ方向を示せば、労働市場の傾向により確信が持てる。
+        逆に方向が食い違えば、どちらか一方の振れに注意が要る。
       </span>,
     ],
   },
