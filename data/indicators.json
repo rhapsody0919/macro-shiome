@@ -213,6 +213,24 @@
     "copyright": "restricted",
     "group": "valuation"
   },
+  "shiller-pe": {
+    "name": "シラーPER (CAPE)",
+    "source": {
+      "adapter": "shiller"
+    },
+    "frequency": "monthly",
+    "unit": "ratio",
+    "attribution": "Robert J. Shiller",
+    "copyright": "restricted",
+    "group": "valuation",
+    "note": "P/E10。インフレ調整後の株価を過去10年平均のインフレ調整後利益で割った値 (#291、ADR-0010)。既存のForward/実績PER (単年の利益) とは定義が違うため重ねない。直近1〜2か月はCPIが推計値のことがあり後日改訂されうる。",
+    "unitLabel": "倍 (P/E10)",
+    "explanation": {
+      "what": "物価変動を除いた株価を、過去10年間の物価変動を除いた平均利益で割った指標。",
+      "howToRead": "単年の利益で計算する通常のPERより変動が緩やかで、好況・不況による利益の振れをならして株価水準を見る。過去10年分の長期の文脈で読む指標のため、直近の変化よりも過去の水準との比較に向く。",
+      "seeWith": "通常のPERと重ねない。単年の利益と過去10年平均利益では定義が違い、同じ軸に並べると水準の差が定義の違いなのか市場の変化なのか判別できなくなる。"
+    }
+  },
   "sp500-blended-growth-today": {
     "name": "S&P 500 blended 増益率 (今週)",
     "source": {

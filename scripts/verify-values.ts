@@ -25,6 +25,7 @@ import { fetchEtfHistory } from '../src/lib/adapters/stockanalysis';
 import { FinnhubClient, readFinnhubApiKeyFromEnv } from '../src/lib/adapters/finnhub';
 import { fetchEstatIndicator } from '../src/lib/adapters/estat-dashboard';
 import { EstatClient, readEstatAppIdFromEnv } from '../src/lib/adapters/estat-api';
+import { fetchShillerCape } from '../src/lib/adapters/shiller';
 import type { Observations } from '../src/lib/adapters/fred';
 
 interface Failure {
@@ -121,6 +122,29 @@ async function verifySources(): Promise<void> {
       }
     }
   }
+  // シラーPER (CAPE、#291、ADR-0010)。取り直して全点を突き合わせる。
+  // 一次情報は毎月更新され、直近1〜2か月は CPI が推計値で後から改訂されることがある
+  // (ADR-0010)。改訂されればこの検証は「保存値が古い」と正しく検知する
+  // (fetch-daily.ts が毎回全期間を取り直すため、通常は検証前に最新化されている)。
+  for (const [id, indicator] of Object.entries(indicators)) {
+    if (indicator.source.adapter !== 'shiller') continue;
+    const stored = readObservations(id);
+    let live: Observations;
+    try {
+      live = await fetchShillerCape();
+    } catch (error) {
+      fail('一次情報との照合', `${id}: 取得に失敗 (${String(error)})`);
+      continue;
+    }
+    for (const [date, value] of Object.entries(stored)) {
+      if (live[date] === undefined) {
+        fail('一次情報との照合', `${id}: 一次情報に無い月を保存している (${date})`);
+      } else if (differs(value, live[date])) {
+        fail('一次情報との照合', `${id} @${date}: 保存 ${value} / 一次情報 ${live[date]}`);
+      }
+    }
+  }
+
   // 統計ダッシュボード (#129)。取り直して全点を突き合わせる。
   // **同じ経路だが、混入の検出が主目的**。cycle / isSeasonal の絞り込みが外れると
   // 同じ月に複数の値が来て件数が変わるため、点数と値の両方を見る。

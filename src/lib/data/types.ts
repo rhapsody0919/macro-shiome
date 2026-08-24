@@ -118,7 +118,9 @@ export type IndicatorSource =
   | { adapter: 'treasury'; auction: 'ten-year-bid-to-cover' }
   | { adapter: 'treasury'; avgRate: AvgRateId }
   | { adapter: 'treasury'; debt: 'held-by-public' }
-  | { adapter: 'finnhub'; symbol: string };
+  | { adapter: 'finnhub'; symbol: string }
+  /** シラーPER (CAPE)。Robert Shiller 本人が公開する唯一の系列 (#291、ADR-0010)。 */
+  | { adapter: 'shiller' };
 
 /** 指標マスタの 1 エントリ。 */
 export interface Indicator {
@@ -432,10 +434,26 @@ export interface ValuationSeries {
   accumulationNote: string | null;
 }
 
+/**
+ * シラーPER (CAPE) の系列 (#291、ADR-0010)。
+ *
+ * `ValuationSeries` (Forward/実績 P/E) とは別の型にする。CAPE は S&P 500 専用の
+ * 単一系列で、NASDAQ-100 への切り替えが無く、月次 (週次グリッドに載せない、#64 と同じ理由)
+ * のため構造そのものが違う。
+ */
+export interface ShillerPeSeries {
+  /** 月次。"YYYY-MM-01"。`date` にしているのは `buildDistribution` (#271) を型を変えずに再利用するため。 */
+  points: Array<{ date: string; value: number | null }>;
+  /** 過去分布 (#271 と同じ `HistoricalDistribution`、窓も揃える)。標本不足なら null。 */
+  distribution: HistoricalDistribution | null;
+}
+
 /** 画面用ビュー全体。 */
 export interface ValuationView {
   sp500: ValuationSeries;
   nasdaq100: ValuationSeries;
+  /** シラーPER (CAPE)。S&P 500 専用で指数の切り替えに追従しない (#291)。 */
+  shillerPe: ShillerPeSeries;
 }
 
 /** マクロ指標の 1 週分 (spec F-7)。週次 (金曜) に揃える。 */
