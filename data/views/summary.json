@@ -1,9 +1,18 @@
 {
-  "generatedAt": "2026-08-23T05:05:54.462Z",
-  "economyState": "経済は、投資家の不安感が高まり、リスク回避が増加しているような状態です。金利の差は広がっており、経済の不安定さが表れます。また、不安感が高まり、株価の変動が大きくなりそうです。",
+  "generatedAt": "2026-08-24T00:50:58.446Z",
+  "economyState": "経済は不安定な状況にあり、金融市場は不安感を示しています。金利の差は広がっており、投資家はリスク回避の傾向にあります。また、経済活動の減速が懸念され、失業保険申請の増加も指摘されています。",
   "economyStateFactCount": 5,
   "warnings": [],
   "highlights": [
+    {
+      "id": "etf-gdx",
+      "name": "金鉱株 (GDX)",
+      "drawdown": 11.23,
+      "relativeStrength": 26.19,
+      "hasBreakout": true,
+      "signalCount": 3,
+      "note": null
+    },
     {
       "id": "etf-gld",
       "name": "ゴールド (GLD)",
@@ -11,16 +20,7 @@
       "relativeStrength": 2.88,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "下落率が深い銘柄の一角、SPYに対して相対的に強い"
-    },
-    {
-      "id": "etf-gdx",
-      "name": "金鉱株 (GDX)",
-      "drawdown": 11.23,
-      "relativeStrength": 26.19,
-      "hasBreakout": false,
-      "signalCount": 2,
-      "note": "下落率が深い銘柄の一角、SPYに対して相対的に強い"
+      "note": null
     },
     {
       "id": "etf-corn",
@@ -29,7 +29,7 @@
       "relativeStrength": 7.83,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "下落率が深い銘柄の一角、SPYに対して相対的に強い"
+      "note": null
     },
     {
       "id": "etf-epi",
@@ -38,7 +38,7 @@
       "relativeStrength": 0.15,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "下落率が深い銘柄の一角、SPYに対して相対的に強い"
+      "note": null
     },
     {
       "id": "etf-ewz",
@@ -47,7 +47,7 @@
       "relativeStrength": 0.46,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "下落率が深い銘柄の一角、SPYに対して相対的に強い"
+      "note": null
     },
     {
       "id": "etf-eido",
@@ -56,7 +56,7 @@
       "relativeStrength": 14.15,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "下落率が深い銘柄の一角、SPYに対して相対的に強い"
+      "note": null
     },
     {
       "id": "etf-smin",
@@ -65,7 +65,7 @@
       "relativeStrength": 5.4,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "下落率が深い銘柄の一角、SPYに対して相対的に強い"
+      "note": null
     }
   ]
 }
