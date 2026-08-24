@@ -1,6 +1,12 @@
 import { describe, expect, it, vi } from 'vitest';
 import { indicators } from '../data/indicators';
-import { FredClient, parseObservations, readFredApiKeyFromEnv } from './fred';
+import {
+  FredClient,
+  parseObservations,
+  parseReleaseDates,
+  parseSeriesRelease,
+  readFredApiKeyFromEnv,
+} from './fred';
 
 const API_KEY = 'test-api-key-0123456789abcdef';
 
@@ -69,6 +75,38 @@ describe('parseObservations', () => {
   });
 });
 
+describe('parseSeriesRelease (#270)', () => {
+  it('release_id と表示名を取り出す', () => {
+    const body = { releases: [{ id: 10, name: 'Consumer Price Index' }] };
+    expect(parseSeriesRelease(body, 'CPIAUCSL')).toEqual({ id: 10, name: 'Consumer Price Index' });
+  });
+
+  it('releases が空なら例外にする', () => {
+    expect(() => parseSeriesRelease({ releases: [] }, 'X')).toThrow(/見つからない/);
+  });
+});
+
+describe('parseReleaseDates (#270)', () => {
+  it('発表予定日の配列に変換する', () => {
+    const body = {
+      release_dates: [
+        { release_id: 10, date: '2026-09-11' },
+        { release_id: 10, date: '2026-10-14' },
+      ],
+    };
+    expect(parseReleaseDates(body, 10)).toEqual([
+      { releaseId: 10, date: '2026-09-11' },
+      { releaseId: 10, date: '2026-10-14' },
+    ]);
+  });
+
+  it('release_dates が無いレスポンスを弾く', () => {
+    expect(() => parseReleaseDates({ error_message: 'Bad Request' }, 10)).toThrow(
+      /release_dates/,
+    );
+  });
+});
+
 describe('FredClient', () => {
   it('series を取得して観測値を返す', async () => {
     const fetchImpl = vi.fn().mockResolvedValue(
@@ -97,6 +135,34 @@ describe('FredClient', () => {
     const result = await client(fetchImpl).fetchSeries('SP500');
     expect(result).toEqual({ '2026-08-14': 1 });
     expect(fetchImpl).toHaveBeenCalledTimes(3);
+  });
+
+  it('系列のリリース (ID・表示名) を取得する (#270)', async () => {
+    const fetchImpl = vi.fn().mockResolvedValue(
+      jsonResponse({ releases: [{ id: 10, name: 'Consumer Price Index' }] }),
+    );
+    const release = await client(fetchImpl).fetchSeriesRelease('CPIAUCSL');
+    expect(release).toEqual({ id: 10, name: 'Consumer Price Index' });
+  });
+
+  it('次回の発表予定日を取得する (#270)', async () => {
+    // include_release_dates_with_no_data=true を付けないと将来の予定日が除外される
+    // (API ドキュメントに明記)。忘れると退行するのでパラメータ自体をテストで固定する。
+    const fetchImpl = vi.fn().mockResolvedValue(
+      jsonResponse({ release_dates: [{ release_id: 10, date: '2026-09-11' }] }),
+    );
+    const date = await client(fetchImpl).fetchNextReleaseDate(10, '2026-08-24');
+    expect(date).toBe('2026-09-11');
+
+    const url = new URL(fetchImpl.mock.calls[0][0] as string);
+    expect(url.searchParams.get('include_release_dates_with_no_data')).toBe('true');
+    expect(url.searchParams.get('realtime_start')).toBe('2026-08-24');
+  });
+
+  it('予定日が無ければ null を返す', async () => {
+    const fetchImpl = vi.fn().mockResolvedValue(jsonResponse({ release_dates: [] }));
+    const date = await client(fetchImpl).fetchNextReleaseDate(10, '2026-08-24');
+    expect(date).toBeNull();
   });
 
   it('4xx は再試行しない', async () => {

@@ -17,11 +17,7 @@
  *   FRED_API_KEY=xxxx pnpm tsx scripts/fetch-daily.ts [--start YYYY-MM-DD]
  */
 import { FredClient, readFredApiKeyFromEnv } from '../src/lib/adapters/fred';
-import {
-  FactsetNotPublishedError,
-  fetchFactsetReport,
-  previousFriday,
-} from '../src/lib/adapters/factset';
+import { FactsetNotPublishedError, fetchFactsetReport, previousFriday } from '../src/lib/adapters/factset';
 import { fetchEtfField, lastClosedTradingDay } from '../src/lib/adapters/stockanalysis';
 import { TreasuryClient } from '../src/lib/adapters/treasury';
 import type { IndicatorSource } from '../src/lib/data/types';
@@ -35,6 +31,7 @@ import { CloudflareAiClient, readCloudflareAiCredentialsFromEnv } from '../src/l
 import { detectHighlights, detectWarnings } from '../src/lib/calc/signals';
 import { buildSummaryView } from '../src/lib/calc/summary';
 import { DAILY_VIEWS } from '../src/lib/data/daily-series';
+import { buildReleaseCalendar } from '../src/lib/calc/release-calendar';
 import {
   buildBosView,
   buildBreakoutView,
@@ -311,6 +308,24 @@ async function main(): Promise<void> {
       // キー未設定などで 1 件も取れない場合。
       failures.push(`tiingo: ${message(error)}`);
     }
+  }
+
+  // --- 3h. 発表予定カレンダー (#270) ---
+  // 「次はいつ更新されるか」が画面から分からず、バッチが壊れていると誤解される
+  // 余地があったための対応。既存の指標取得とは目的が違う (過去の実績ではなく
+  // 未来の予定) ため独立したブロックにする。取れなければ「不明」に倒す (#102 と同じ判断)。
+  try {
+    const fred = new FredClient({ apiKey: readFredApiKeyFromEnv() });
+    const releaseCalendar = await buildReleaseCalendar({
+      indicators,
+      fred,
+      now,
+      onError: (msg) => failures.push(msg),
+    });
+    writeView('release-calendar', releaseCalendar);
+    console.log(`  発表予定カレンダー: ${releaseCalendar.entries.length} 件`);
+  } catch (error) {
+    failures.push(`発表予定カレンダー: ${message(error)}`);
   }
 
   // --- 4. 検証 ---

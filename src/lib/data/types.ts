@@ -1004,6 +1004,29 @@ export interface ChangelogEntry {
 }
 
 /**
+ * 指標の発表予定カレンダーの 1 件 (#270)。
+ *
+ * FRED は複数の指標が同じリリース (発表元の一連の統計、例: CPI 関連系列) に
+ * 属することが多いため、指標単位ではなくリリース単位でまとめる。
+ */
+export interface ReleaseCalendarEntry {
+  /** リリースの表示名。 */
+  label: string;
+  /** このリリースに属する指標マスタの ID。 */
+  indicatorIds: string[];
+  /** 次回発表予定日 ("YYYY-MM-DD")。取得できなければ null (「不明」表示)。 */
+  nextReleaseDate: string | null;
+  /** 出所。FactSet は毎週金曜発行の周期計算、FRED は公式カレンダー API。 */
+  source: 'fred' | 'factset';
+}
+
+/** 発表予定カレンダーのビュー全体 (#270)。 */
+export interface ReleaseCalendarView {
+  generatedAt: string;
+  entries: ReleaseCalendarEntry[];
+}
+
+/**
  * CHoCH (Change of Character) の検出結果 (#268)。
  *
  * カップウィズハンドル (#230)・ダブルボトム (#256)・逆三尊 (#258)・

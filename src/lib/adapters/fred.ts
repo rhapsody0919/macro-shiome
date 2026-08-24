@@ -10,6 +10,10 @@
  */
 
 const BASE_URL = 'https://api.stlouisfed.org/fred/series/observations';
+/** 系列が属するリリース (発表元の一連の統計) を調べる (#270)。 */
+const SERIES_RELEASE_URL = 'https://api.stlouisfed.org/fred/series/release';
+/** リリースの発表日一覧。将来の予定日も含められる (#270)。 */
+const RELEASE_DATES_URL = 'https://api.stlouisfed.org/fred/release/dates';
 
 /** FRED は 120 req/min。1 秒間隔なら 60 req/min で収まる。 */
 const DEFAULT_INTERVAL_MS = 1000;
@@ -45,6 +49,23 @@ function defaultSleep(ms: number): Promise<void> {
 /** URL からクエリを落とす。API キーが載っているのでエラーメッセージにそのまま使えない。 */
 function safeUrlLabel(seriesId: string): string {
   return `${BASE_URL}?series_id=${seriesId}`;
+}
+
+/** 発表予定日の 1 件。 */
+export interface ReleaseDate {
+  releaseId: number;
+  date: string;
+}
+
+interface FredReleaseDateItem {
+  release_id: number;
+  date: string;
+}
+
+/** 系列が属するリリース。 */
+export interface SeriesRelease {
+  id: number;
+  name: string;
 }
 
 export class FredClient {
@@ -85,11 +106,49 @@ export class FredClient {
     if (options.end !== undefined) params.set('observation_end', options.end);
 
     const url = `${BASE_URL}?${params.toString()}`;
-    const body = await this.requestWithRetry(url, seriesId);
+    const body = await this.requestWithRetry(url, safeUrlLabel(seriesId));
     return parseObservations(body, seriesId);
   }
 
-  private async requestWithRetry(url: string, seriesId: string): Promise<unknown> {
+  /**
+   * 系列が属するリリース (ID と表示名) を調べる (#270)。
+   *
+   * 複数の指標が同じリリース (例: CPI の関連系列は全て同じリリース) に属することが多いため、
+   * 発表予定カレンダーではリリース単位でまとめて表示する。
+   */
+  async fetchSeriesRelease(seriesId: string): Promise<SeriesRelease> {
+    const params = new URLSearchParams({ series_id: seriesId, api_key: this.apiKey, file_type: 'json' });
+    const url = `${SERIES_RELEASE_URL}?${params.toString()}`;
+    const body = await this.requestWithRetry(url, `${SERIES_RELEASE_URL}?series_id=${seriesId}`);
+    return parseSeriesRelease(body, seriesId);
+  }
+
+  /**
+   * リリースの発表予定日を、指定日以降で最も早いものだけ返す (#270)。
+   *
+   * `include_release_dates_with_no_data=true` を付けないと、まだデータが無い
+   * **将来の予定日が除外される** (API ドキュメントに明記)。
+   */
+  async fetchNextReleaseDate(releaseId: number, fromDate: string): Promise<string | null> {
+    const params = new URLSearchParams({
+      release_id: String(releaseId),
+      api_key: this.apiKey,
+      file_type: 'json',
+      realtime_start: fromDate,
+      include_release_dates_with_no_data: 'true',
+      sort_order: 'asc',
+      limit: '1',
+    });
+    const url = `${RELEASE_DATES_URL}?${params.toString()}`;
+    const body = await this.requestWithRetry(
+      url,
+      `${RELEASE_DATES_URL}?release_id=${releaseId}`,
+    );
+    const dates = parseReleaseDates(body, releaseId);
+    return dates[0]?.date ?? null;
+  }
+
+  private async requestWithRetry(url: string, label: string): Promise<unknown> {
     let lastError: Error | null = null;
 
     for (let attempt = 0; attempt <= this.maxRetries; attempt++) {
@@ -105,7 +164,7 @@ export class FredClient {
       } catch (cause) {
         // ネットワークエラー。原因は残すが URL は載せない (API キーが含まれるため)。
         lastError = new Error(
-          `FRED への接続に失敗 (${safeUrlLabel(seriesId)}): ${cause instanceof Error ? cause.message : String(cause)}`,
+          `FRED への接続に失敗 (${label}): ${cause instanceof Error ? cause.message : String(cause)}`,
         );
         continue;
       }
@@ -117,15 +176,49 @@ export class FredClient {
       // 4xx は再試行しても直らない。キーの誤りや存在しない series が該当する。
       if (response.status >= 400 && response.status < 500) {
         throw new Error(
-          `FRED が ${response.status} を返した (${safeUrlLabel(seriesId)})。API キーか series_id を確認する`,
+          `FRED が ${response.status} を返した (${label})。API キーか series_id/release_id を確認する`,
         );
       }
 
-      lastError = new Error(`FRED が ${response.status} を返した (${safeUrlLabel(seriesId)})`);
+      lastError = new Error(`FRED が ${response.status} を返した (${label})`);
     }
 
-    throw lastError ?? new Error(`FRED の取得に失敗 (${safeUrlLabel(seriesId)})`);
+    throw lastError ?? new Error(`FRED の取得に失敗 (${label})`);
   }
+}
+
+/** `fred/series/release` のレスポンスから release_id と表示名を取り出す。 */
+export function parseSeriesRelease(body: unknown, seriesId: string): SeriesRelease {
+  if (typeof body !== 'object' || body === null || !('releases' in body)) {
+    throw new Error(`FRED のレスポンスに releases が無い (${seriesId})`);
+  }
+  const releases = (body as { releases: unknown }).releases;
+  if (!Array.isArray(releases) || releases.length === 0) {
+    throw new Error(`FRED: 系列 ${seriesId} のリリースが見つからない`);
+  }
+  const release = releases[0] as { id?: unknown; name?: unknown };
+  if (typeof release.id !== 'number') {
+    throw new Error(`FRED: 系列 ${seriesId} の release_id が数値でない`);
+  }
+  if (typeof release.name !== 'string') {
+    throw new Error(`FRED: 系列 ${seriesId} のリリース名が文字列でない`);
+  }
+  return { id: release.id, name: release.name };
+}
+
+/** `fred/release/dates` のレスポンスから発表予定日を取り出す。 */
+export function parseReleaseDates(body: unknown, releaseId: number): ReleaseDate[] {
+  if (typeof body !== 'object' || body === null || !('release_dates' in body)) {
+    throw new Error(`FRED のレスポンスに release_dates が無い (release_id=${releaseId})`);
+  }
+  const raw = (body as { release_dates: unknown }).release_dates;
+  if (!Array.isArray(raw)) {
+    throw new Error(`FRED の release_dates が配列でない (release_id=${releaseId})`);
+  }
+  return (raw as FredReleaseDateItem[]).map((item) => ({
+    releaseId: item.release_id,
+    date: item.date,
+  }));
 }
 
 /**

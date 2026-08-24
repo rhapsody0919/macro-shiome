@@ -1,0 +1,48 @@
+{
+  "generatedAt": "2026-08-24T05:00:00.000Z",
+  "entries": [
+    {
+      "label": "Consumer Price Index",
+      "indicatorIds": ["cpi", "cpi-core", "cpi-rent"],
+      "nextReleaseDate": "2026-09-11",
+      "source": "fred"
+    },
+    {
+      "label": "Employment Situation",
+      "indicatorIds": [
+        "payrolls",
+        "unemployment-rate",
+        "employment-level",
+        "full-time-employment",
+        "participation-rate",
+        "employment-ratio",
+        "u6-rate",
+        "weekly-hours-total",
+        "manufacturing-hours"
+      ],
+      "nextReleaseDate": "2026-09-04",
+      "source": "fred"
+    },
+    {
+      "label": "S&P 500 Earnings Insight (FactSet)",
+      "indicatorIds": [
+        "sp500-close-factset",
+        "sp500-forward-pe",
+        "sp500-trailing-pe",
+        "sp500-forward-pe-5y-avg",
+        "sp500-forward-pe-10y-avg",
+        "sp500-trailing-pe-5y-avg",
+        "sp500-trailing-pe-10y-avg",
+        "sp500-blended-growth-today",
+        "sp500-blended-growth-last-week",
+        "sp500-blended-growth-quarter-end",
+        "sp500-growth-next-quarter",
+        "sp500-growth-quarter-after-next",
+        "sp500-growth-cy-current",
+        "sp500-growth-cy-next"
+      ],
+      "nextReleaseDate": "2026-08-28",
+      "source": "factset"
+    }
+  ]
+}
