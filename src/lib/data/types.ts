@@ -615,6 +615,13 @@ export interface MonthlyPoint {
   employmentLevel: number | null;
   /** フルタイム就業者数。 */
   fullTimeEmployment: number | null;
+  /**
+   * ADP雇用者数 (#295)。
+   *
+   * BLS の非農業部門雇用者数 (`payrolls`) とは別のデータソース (ADP の給与計算サービス
+   * 利用企業) ・別の集計方法。同じ方向を示すかで労働市場の傾向を確認する。
+   */
+  adpEmployment: number | null;
 
   // --- 所得 (前年同月比 %) ---
   /** 移転所得を除く実質個人所得。景気一致指数の構成要素。 */

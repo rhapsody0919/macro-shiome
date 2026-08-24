@@ -495,6 +495,26 @@
     },
     "sourceUnits": "Thousands of Persons"
   },
+  "adp-employment": {
+    "name": "ADP雇用者数",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "ADPMNUSNERSA"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "Automatic Data Processing, Inc. via FRED",
+    "copyright": "restricted",
+    "group": "macro",
+    "note": "Total Nonfarm Private Payroll Employment (ADP)。人 (千人ではない)、季節調整済み (#295)。週次系列 (ADPWNUSNERSA) は2026-06-13で更新が止まっているため使わず、更新が続いている月次系列を使う。給与計算サービスを利用する企業のデータを集計したもので、BLSの事業所調査 (payrolls) とは母集団・集計方法が異なる。",
+    "unitLabel": "人・季節調整済み",
+    "explanation": {
+      "what": "ADP (給与計算サービス大手) の顧客企業データから集計した、民間の非農業部門雇用者数。",
+      "howToRead": "非農業部門雇用者数 (BLS) と似た概念だが、集計元が違う。両者が同じ方向を示せば労働市場の傾向により確信が持てる。",
+      "seeWith": "非農業部門雇用者数・就業者数・フルタイムと並べる。4つとも前年同月比で揃えている。"
+    },
+    "sourceUnits": "Persons"
+  },
   "real-income-ex-transfer": {
     "name": "実質個人所得 (移転所得を除く)",
     "source": {
