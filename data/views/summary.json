@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-24T00:50:58.446Z",
-  "economyState": "経済は不安定な状況にあり、金融市場は不安感を示しています。金利の差は広がっており、投資家はリスク回避の傾向にあります。また、経済活動の減速が懸念され、失業保険申請の増加も指摘されています。",
+  "generatedAt": "2026-08-24T02:54:52.564Z",
+  "economyState": "経済状況は、不安定な雰囲気が強いようであり、投資家のリスクへの対処も高まっているようだ。金融環境は、現在は安定的ではないようで、企業や個人が新規の投資を慎重に検討しているようだ。経済の成長は、不安定な状況の中で進んでいるようで、政府や金融機関が積極的な政策を実施しているようだ。",
   "economyStateFactCount": 5,
   "warnings": [],
   "highlights": [
@@ -11,7 +11,7 @@
       "relativeStrength": 26.19,
       "hasBreakout": true,
       "signalCount": 3,
-      "note": null
+      "note": "金鉱株が下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
     },
     {
       "id": "etf-gld",
@@ -20,7 +20,7 @@
       "relativeStrength": 2.88,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": null
+      "note": "ゴールドが下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
     },
     {
       "id": "etf-corn",
@@ -29,7 +29,7 @@
       "relativeStrength": 7.83,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": null
+      "note": "コーンが下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
     },
     {
       "id": "etf-epi",
@@ -38,7 +38,7 @@
       "relativeStrength": 0.15,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": null
+      "note": "インドの株価が下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
     },
     {
       "id": "etf-ewz",
@@ -47,7 +47,7 @@
       "relativeStrength": 0.46,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": null
+      "note": "ブラジルの株価が下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
     },
     {
       "id": "etf-eido",
@@ -56,7 +56,7 @@
       "relativeStrength": 14.15,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": null
+      "note": "インドネシアの株価が下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
     },
     {
       "id": "etf-smin",
@@ -65,7 +65,7 @@
       "relativeStrength": 5.4,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": null
+      "note": "インド小型株が下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
     }
   ]
 }
