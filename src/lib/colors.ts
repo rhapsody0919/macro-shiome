@@ -198,6 +198,10 @@ export const COLORS = {
   usdjpy: '#10b981',
   savingsRate: '#ef4444',
   consumerSentiment: '#eab308',
+  /** VISA裁量的消費指数。非裁量的と対で見る (#294)。 */
+  visaDiscretionary: '#f97316',
+  /** VISA非裁量的消費指数。 */
+  visaNonDiscretionary: '#78716c',
 
   // --- 意味を持つ塗り ---
   /** 割高・逆イールドなど、注意を向ける側。 */

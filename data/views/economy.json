@@ -94,7 +94,9 @@
       "unemploymentRate": 4.9,
       "savingsRate": 5.1,
       "personalSaving": -5.57,
-      "consumerSentiment": 89.8
+      "consumerSentiment": 89.8,
+      "visaDiscretionary": 101.29,
+      "visaNonDiscretionary": 98.12
     },
     {
       "month": "2016-09-01",
@@ -190,7 +192,9 @@
       "unemploymentRate": 5,
       "savingsRate": 5.1,
       "personalSaving": -8.71,
-      "consumerSentiment": 91.2
+      "consumerSentiment": 91.2,
+      "visaDiscretionary": 101.95,
+      "visaNonDiscretionary": 98.41
     },
     {
       "month": "2016-10-01",
@@ -286,7 +290,9 @@
       "unemploymentRate": 4.9,
       "savingsRate": 5.3,
       "personalSaving": -6.5,
-      "consumerSentiment": 87.2
+      "consumerSentiment": 87.2,
+      "visaDiscretionary": 102.61,
+      "visaNonDiscretionary": 98.88
     },
     {
       "month": "2016-11-01",
@@ -382,7 +388,9 @@
       "unemploymentRate": 4.7,
       "savingsRate": 5.4,
       "personalSaving": -1.49,
-      "consumerSentiment": 93.8
+      "consumerSentiment": 93.8,
+      "visaDiscretionary": 103.33,
+      "visaNonDiscretionary": 98.52
     },
     {
       "month": "2016-12-01",
@@ -478,7 +486,9 @@
       "unemploymentRate": 4.7,
       "savingsRate": 5,
       "personalSaving": -10.83,
-      "consumerSentiment": 98.2
+      "consumerSentiment": 98.2,
+      "visaDiscretionary": 101.31,
+      "visaNonDiscretionary": 100.54
     },
     {
       "month": "2017-01-01",
@@ -574,7 +584,9 @@
       "unemploymentRate": 4.7,
       "savingsRate": 5.3,
       "personalSaving": -8.65,
-      "consumerSentiment": 98.5
+      "consumerSentiment": 98.5,
+      "visaDiscretionary": 101.97,
+      "visaNonDiscretionary": 98.3
     },
     {
       "month": "2017-02-01",
@@ -670,7 +682,9 @@
       "unemploymentRate": 4.6,
       "savingsRate": 5.6,
       "personalSaving": 4.2,
-      "consumerSentiment": 96.3
+      "consumerSentiment": 96.3,
+      "visaDiscretionary": 100.51,
+      "visaNonDiscretionary": 95.67
     },
     {
       "month": "2017-03-01",
@@ -766,7 +780,9 @@
       "unemploymentRate": 4.4,
       "savingsRate": 5.6,
       "personalSaving": -2.14,
-      "consumerSentiment": 96.9
+      "consumerSentiment": 96.9,
+      "visaDiscretionary": 103.1,
+      "visaNonDiscretionary": 98.73
     },
     {
       "month": "2017-04-01",
@@ -862,7 +878,9 @@
       "unemploymentRate": 4.4,
       "savingsRate": 5.7,
       "personalSaving": 8.12,
-      "consumerSentiment": 97
+      "consumerSentiment": 97,
+      "visaDiscretionary": 103.16,
+      "visaNonDiscretionary": 99.22
     },
     {
       "month": "2017-05-01",
@@ -958,7 +976,9 @@
       "unemploymentRate": 4.4,
       "savingsRate": 6.3,
       "personalSaving": 24.96,
-      "consumerSentiment": 97.1
+      "consumerSentiment": 97.1,
+      "visaDiscretionary": 102.7,
+      "visaNonDiscretionary": 99.32
     },
     {
       "month": "2017-06-01",
@@ -1054,7 +1074,9 @@
       "unemploymentRate": 4.3,
       "savingsRate": 6,
       "personalSaving": 28.13,
-      "consumerSentiment": 95
+      "consumerSentiment": 95,
+      "visaDiscretionary": 102.21,
+      "visaNonDiscretionary": 99.06
     },
     {
       "month": "2017-07-01",
@@ -1150,7 +1172,9 @@
       "unemploymentRate": 4.3,
       "savingsRate": 6,
       "personalSaving": 24.33,
-      "consumerSentiment": 93.4
+      "consumerSentiment": 93.4,
+      "visaDiscretionary": 103.35,
+      "visaNonDiscretionary": 99.77
     },
     {
       "month": "2017-08-01",
@@ -1246,7 +1270,9 @@
       "unemploymentRate": 4.4,
       "savingsRate": 6.1,
       "personalSaving": 26.32,
-      "consumerSentiment": 96.8
+      "consumerSentiment": 96.8,
+      "visaDiscretionary": 101.3,
+      "visaNonDiscretionary": 100.02
     },
     {
       "month": "2017-09-01",
@@ -1342,7 +1368,9 @@
       "unemploymentRate": 4.3,
       "savingsRate": 5.9,
       "personalSaving": 20.75,
-      "consumerSentiment": 95.1
+      "consumerSentiment": 95.1,
+      "visaDiscretionary": 102.98,
+      "visaNonDiscretionary": 100.32
     },
     {
       "month": "2017-10-01",
@@ -1438,7 +1466,9 @@
       "unemploymentRate": 4.2,
       "savingsRate": 6,
       "personalSaving": 19.14,
-      "consumerSentiment": 100.7
+      "consumerSentiment": 100.7,
+      "visaDiscretionary": 102.43,
+      "visaNonDiscretionary": 99.24
     },
     {
       "month": "2017-11-01",
@@ -1534,7 +1564,9 @@
       "unemploymentRate": 4.2,
       "savingsRate": 5.6,
       "personalSaving": 9.6,
-      "consumerSentiment": 98.5
+      "consumerSentiment": 98.5,
+      "visaDiscretionary": 102.56,
+      "visaNonDiscretionary": 99.7
     },
     {
       "month": "2017-12-01",
@@ -1630,7 +1662,9 @@
       "unemploymentRate": 4.1,
       "savingsRate": 5,
       "personalSaving": 5.87,
-      "consumerSentiment": 95.9
+      "consumerSentiment": 95.9,
+      "visaDiscretionary": 102.16,
+      "visaNonDiscretionary": 98.54
     },
     {
       "month": "2018-01-01",
@@ -1726,7 +1760,9 @@
       "unemploymentRate": 4,
       "savingsRate": 5.7,
       "personalSaving": 12.08,
-      "consumerSentiment": 95.7
+      "consumerSentiment": 95.7,
+      "visaDiscretionary": 102.39,
+      "visaNonDiscretionary": 99.75
     },
     {
       "month": "2018-02-01",
@@ -1822,7 +1858,9 @@
       "unemploymentRate": 4.1,
       "savingsRate": 5.8,
       "personalSaving": 10.57,
-      "consumerSentiment": 99.7
+      "consumerSentiment": 99.7,
+      "visaDiscretionary": 103.55,
+      "visaNonDiscretionary": 100.86
     },
     {
       "month": "2018-03-01",
@@ -1918,7 +1956,9 @@
       "unemploymentRate": 4,
       "savingsRate": 5.9,
       "personalSaving": 12.08,
-      "consumerSentiment": 101.4
+      "consumerSentiment": 101.4,
+      "visaDiscretionary": 103.43,
+      "visaNonDiscretionary": 101.11
     },
     {
       "month": "2018-04-01",
@@ -2014,7 +2054,9 @@
       "unemploymentRate": 4,
       "savingsRate": 6,
       "personalSaving": 11.19,
-      "consumerSentiment": 98.8
+      "consumerSentiment": 98.8,
+      "visaDiscretionary": 101.72,
+      "visaNonDiscretionary": 100.45
     },
     {
       "month": "2018-05-01",
@@ -2110,7 +2152,9 @@
       "unemploymentRate": 3.8,
       "savingsRate": 6,
       "personalSaving": 1.38,
-      "consumerSentiment": 98
+      "consumerSentiment": 98,
+      "visaDiscretionary": 103.42,
+      "visaNonDiscretionary": 101.23
     },
     {
       "month": "2018-06-01",
@@ -2206,7 +2250,9 @@
       "unemploymentRate": 4,
       "savingsRate": 6.3,
       "personalSaving": 11.26,
-      "consumerSentiment": 98.2
+      "consumerSentiment": 98.2,
+      "visaDiscretionary": 102.92,
+      "visaNonDiscretionary": 100.87
     },
     {
       "month": "2018-07-01",
@@ -2302,7 +2348,9 @@
       "unemploymentRate": 3.8,
       "savingsRate": 6.5,
       "personalSaving": 13.85,
-      "consumerSentiment": 97.9
+      "consumerSentiment": 97.9,
+      "visaDiscretionary": 102.61,
+      "visaNonDiscretionary": 100.11
     },
     {
       "month": "2018-08-01",
@@ -2398,7 +2446,9 @@
       "unemploymentRate": 3.8,
       "savingsRate": 6.6,
       "personalSaving": 13.86,
-      "consumerSentiment": 96.2
+      "consumerSentiment": 96.2,
+      "visaDiscretionary": 102.97,
+      "visaNonDiscretionary": 101.06
     },
     {
       "month": "2018-09-01",
@@ -2494,7 +2544,9 @@
       "unemploymentRate": 3.7,
       "savingsRate": 6.8,
       "personalSaving": 21.87,
-      "consumerSentiment": 100.1
+      "consumerSentiment": 100.1,
+      "visaDiscretionary": 102.97,
+      "visaNonDiscretionary": 100.71
     },
     {
       "month": "2018-10-01",
@@ -2590,7 +2642,9 @@
       "unemploymentRate": 3.8,
       "savingsRate": 6.7,
       "personalSaving": 18.7,
-      "consumerSentiment": 98.6
+      "consumerSentiment": 98.6,
+      "visaDiscretionary": 103.42,
+      "visaNonDiscretionary": 100.98
     },
     {
       "month": "2018-11-01",
@@ -2686,7 +2740,9 @@
       "unemploymentRate": 3.8,
       "savingsRate": 6.5,
       "personalSaving": 22.77,
-      "consumerSentiment": 97.5
+      "consumerSentiment": 97.5,
+      "visaDiscretionary": 102.03,
+      "visaNonDiscretionary": 101.02
     },
     {
       "month": "2018-12-01",
@@ -2782,7 +2838,9 @@
       "unemploymentRate": 3.9,
       "savingsRate": 8.4,
       "personalSaving": 79,
-      "consumerSentiment": 98.3
+      "consumerSentiment": 98.3,
+      "visaDiscretionary": 102.41,
+      "visaNonDiscretionary": 100.63
     },
     {
       "month": "2019-01-01",
@@ -2878,7 +2936,9 @@
       "unemploymentRate": 4,
       "savingsRate": 8.4,
       "personalSaving": 55.9,
-      "consumerSentiment": 91.2
+      "consumerSentiment": 91.2,
+      "visaDiscretionary": 102.76,
+      "visaNonDiscretionary": 101.1
     },
     {
       "month": "2019-02-01",
@@ -2974,7 +3034,9 @@
       "unemploymentRate": 3.8,
       "savingsRate": 8.5,
       "personalSaving": 52.93,
-      "consumerSentiment": 93.8
+      "consumerSentiment": 93.8,
+      "visaDiscretionary": 102.09,
+      "visaNonDiscretionary": 99.81
     },
     {
       "month": "2019-03-01",
@@ -3070,7 +3132,9 @@
       "unemploymentRate": 3.8,
       "savingsRate": 7.9,
       "personalSaving": 40.29,
-      "consumerSentiment": 98.4
+      "consumerSentiment": 98.4,
+      "visaDiscretionary": 102.34,
+      "visaNonDiscretionary": 100.17
     },
     {
       "month": "2019-04-01",
@@ -3166,7 +3230,9 @@
       "unemploymentRate": 3.7,
       "savingsRate": 7.6,
       "personalSaving": 33.21,
-      "consumerSentiment": 97.2
+      "consumerSentiment": 97.2,
+      "visaDiscretionary": 103.43,
+      "visaNonDiscretionary": 101.27
     },
     {
       "month": "2019-05-01",
@@ -3262,7 +3328,9 @@
       "unemploymentRate": 3.6,
       "savingsRate": 7.3,
       "personalSaving": 25.82,
-      "consumerSentiment": 100
+      "consumerSentiment": 100,
+      "visaDiscretionary": 101.26,
+      "visaNonDiscretionary": 99.42
     },
     {
       "month": "2019-06-01",
@@ -3358,7 +3426,9 @@
       "unemploymentRate": 3.6,
       "savingsRate": 7.1,
       "personalSaving": 17.45,
-      "consumerSentiment": 98.2
+      "consumerSentiment": 98.2,
+      "visaDiscretionary": 101.95,
+      "visaNonDiscretionary": 99.3
     },
     {
       "month": "2019-07-01",
@@ -3454,7 +3524,9 @@
       "unemploymentRate": 3.7,
       "savingsRate": 6.8,
       "personalSaving": 8.88,
-      "consumerSentiment": 98.4
+      "consumerSentiment": 98.4,
+      "visaDiscretionary": 103.1,
+      "visaNonDiscretionary": 100.29
     },
     {
       "month": "2019-08-01",
@@ -3550,7 +3622,9 @@
       "unemploymentRate": 3.6,
       "savingsRate": 6.9,
       "personalSaving": 9.26,
-      "consumerSentiment": 89.8
+      "consumerSentiment": 89.8,
+      "visaDiscretionary": 102.13,
+      "visaNonDiscretionary": 100.25
     },
     {
       "month": "2019-09-01",
@@ -3646,7 +3720,9 @@
       "unemploymentRate": 3.5,
       "savingsRate": 7,
       "personalSaving": 7.78,
-      "consumerSentiment": 93.2
+      "consumerSentiment": 93.2,
+      "visaDiscretionary": 102.59,
+      "visaNonDiscretionary": 100.19
     },
     {
       "month": "2019-10-01",
@@ -3742,7 +3818,9 @@
       "unemploymentRate": 3.6,
       "savingsRate": 7.1,
       "personalSaving": 9.54,
-      "consumerSentiment": 95.5
+      "consumerSentiment": 95.5,
+      "visaDiscretionary": 102.55,
+      "visaNonDiscretionary": 100.93
     },
     {
       "month": "2019-11-01",
@@ -3838,7 +3916,9 @@
       "unemploymentRate": 3.6,
       "savingsRate": 6.9,
       "personalSaving": 10.41,
-      "consumerSentiment": 96.8
+      "consumerSentiment": 96.8,
+      "visaDiscretionary": 100.37,
+      "visaNonDiscretionary": 100.1
     },
     {
       "month": "2019-12-01",
@@ -3934,7 +4014,9 @@
       "unemploymentRate": 3.6,
       "savingsRate": 6.2,
       "personalSaving": -23.81,
-      "consumerSentiment": 99.3
+      "consumerSentiment": 99.3,
+      "visaDiscretionary": 103.94,
+      "visaNonDiscretionary": 100.63
     },
     {
       "month": "2020-01-01",
@@ -4030,7 +4112,9 @@
       "unemploymentRate": 3.6,
       "savingsRate": 6.8,
       "personalSaving": -14.99,
-      "consumerSentiment": 99.8
+      "consumerSentiment": 99.8,
+      "visaDiscretionary": 102.82,
+      "visaNonDiscretionary": 99.92
     },
     {
       "month": "2020-02-01",
@@ -4126,7 +4210,9 @@
       "unemploymentRate": 3.5,
       "savingsRate": 7.5,
       "personalSaving": -7.86,
-      "consumerSentiment": 101
+      "consumerSentiment": 101,
+      "visaDiscretionary": 102.46,
+      "visaNonDiscretionary": 103.88
     },
     {
       "month": "2020-03-01",
@@ -4222,7 +4308,9 @@
       "unemploymentRate": 4.4,
       "savingsRate": 12.4,
       "personalSaving": 60.66,
-      "consumerSentiment": 89.1
+      "consumerSentiment": 89.1,
+      "visaDiscretionary": 89.22,
+      "visaNonDiscretionary": 106.94
     },
     {
       "month": "2020-04-01",
@@ -4318,7 +4406,9 @@
       "unemploymentRate": 14.8,
       "savingsRate": 31.8,
       "personalSaving": 385.98,
-      "consumerSentiment": 71.8
+      "consumerSentiment": 71.8,
+      "visaDiscretionary": 87.8,
+      "visaNonDiscretionary": 93.66
     },
     {
       "month": "2020-05-01",
@@ -4414,7 +4504,9 @@
       "unemploymentRate": 13.2,
       "savingsRate": 22.6,
       "personalSaving": 244.34,
-      "consumerSentiment": 72.3
+      "consumerSentiment": 72.3,
+      "visaDiscretionary": 95.81,
+      "visaNonDiscretionary": 100.65
     },
     {
       "month": "2020-06-01",
@@ -4510,7 +4602,9 @@
       "unemploymentRate": 11,
       "savingsRate": 18.3,
       "personalSaving": 185.48,
-      "consumerSentiment": 78.1
+      "consumerSentiment": 78.1,
+      "visaDiscretionary": 100.85,
+      "visaNonDiscretionary": 104.56
     },
     {
       "month": "2020-07-01",
@@ -4606,7 +4700,9 @@
       "unemploymentRate": 10.2,
       "savingsRate": 17.9,
       "personalSaving": 193.83,
-      "consumerSentiment": 72.5
+      "consumerSentiment": 72.5,
+      "visaDiscretionary": 98.74,
+      "visaNonDiscretionary": 106.43
     },
     {
       "month": "2020-08-01",
@@ -4702,7 +4798,9 @@
       "unemploymentRate": 8.4,
       "savingsRate": 13.9,
       "personalSaving": 115.04,
-      "consumerSentiment": 74.1
+      "consumerSentiment": 74.1,
+      "visaDiscretionary": 99.48,
+      "visaNonDiscretionary": 105.1
     },
     {
       "month": "2020-09-01",
@@ -4798,7 +4896,9 @@
       "unemploymentRate": 7.8,
       "savingsRate": 13.3,
       "personalSaving": 104.39,
-      "consumerSentiment": 80.4
+      "consumerSentiment": 80.4,
+      "visaDiscretionary": 101.71,
+      "visaNonDiscretionary": 105.71
     },
     {
       "month": "2020-10-01",
@@ -4894,7 +4994,9 @@
       "unemploymentRate": 6.9,
       "savingsRate": 12.8,
       "personalSaving": 92.6,
-      "consumerSentiment": 81.8
+      "consumerSentiment": 81.8,
+      "visaDiscretionary": 100.92,
+      "visaNonDiscretionary": 106.24
     },
     {
       "month": "2020-11-01",
@@ -4990,7 +5092,9 @@
       "unemploymentRate": 6.7,
       "savingsRate": 12,
       "personalSaving": 83.95,
-      "consumerSentiment": 76.9
+      "consumerSentiment": 76.9,
+      "visaDiscretionary": 101.6,
+      "visaNonDiscretionary": 104.94
     },
     {
       "month": "2020-12-01",
@@ -5086,7 +5190,9 @@
       "unemploymentRate": 6.7,
       "savingsRate": 11.8,
       "personalSaving": 101.14,
-      "consumerSentiment": 80.7
+      "consumerSentiment": 80.7,
+      "visaDiscretionary": 97.77,
+      "visaNonDiscretionary": 105.43
     },
     {
       "month": "2021-01-01",
@@ -5182,7 +5288,9 @@
       "unemploymentRate": 6.4,
       "savingsRate": 19.5,
       "personalSaving": 232.31,
-      "consumerSentiment": 79
+      "consumerSentiment": 79,
+      "visaDiscretionary": 103.24,
+      "visaNonDiscretionary": 109
     },
     {
       "month": "2021-02-01",
@@ -5278,7 +5386,9 @@
       "unemploymentRate": 6.2,
       "savingsRate": 13,
       "personalSaving": 85.46,
-      "consumerSentiment": 76.8
+      "consumerSentiment": 76.8,
+      "visaDiscretionary": 97.94,
+      "visaNonDiscretionary": 102.03
     },
     {
       "month": "2021-03-01",
@@ -5374,7 +5484,9 @@
       "unemploymentRate": 6.1,
       "savingsRate": 26.2,
       "personalSaving": 183.68,
-      "consumerSentiment": 84.9
+      "consumerSentiment": 84.9,
+      "visaDiscretionary": 118.03,
+      "visaNonDiscretionary": 101.85
     },
     {
       "month": "2021-04-01",
@@ -5470,7 +5582,9 @@
       "unemploymentRate": 6.1,
       "savingsRate": 12.4,
       "personalSaving": -60.97,
-      "consumerSentiment": 88.3
+      "consumerSentiment": 88.3,
+      "visaDiscretionary": 120.61,
+      "visaNonDiscretionary": 108.34
     },
     {
       "month": "2021-05-01",
@@ -5566,7 +5680,9 @@
       "unemploymentRate": 5.8,
       "savingsRate": 10,
       "personalSaving": -54.67,
-      "consumerSentiment": 82.9
+      "consumerSentiment": 82.9,
+      "visaDiscretionary": 111.24,
+      "visaNonDiscretionary": 102.82
     },
     {
       "month": "2021-06-01",
@@ -5662,7 +5778,9 @@
       "unemploymentRate": 5.9,
       "savingsRate": 8.8,
       "personalSaving": -50.75,
-      "consumerSentiment": 85.5
+      "consumerSentiment": 85.5,
+      "visaDiscretionary": 108.82,
+      "visaNonDiscretionary": 100.6
     },
     {
       "month": "2021-07-01",
@@ -5758,7 +5876,9 @@
       "unemploymentRate": 5.4,
       "savingsRate": 9.5,
       "personalSaving": -45.27,
-      "consumerSentiment": 81.2
+      "consumerSentiment": 81.2,
+      "visaDiscretionary": 107.26,
+      "visaNonDiscretionary": 99.89
     },
     {
       "month": "2021-08-01",
@@ -5854,7 +5974,9 @@
       "unemploymentRate": 5.1,
       "savingsRate": 8.7,
       "personalSaving": -32.86,
-      "consumerSentiment": 70.3
+      "consumerSentiment": 70.3,
+      "visaDiscretionary": 106.69,
+      "visaNonDiscretionary": 101.11
     },
     {
       "month": "2021-09-01",
@@ -5950,7 +6072,9 @@
       "unemploymentRate": 4.7,
       "savingsRate": 7.6,
       "personalSaving": -39.81,
-      "consumerSentiment": 72.8
+      "consumerSentiment": 72.8,
+      "visaDiscretionary": 105.45,
+      "visaNonDiscretionary": 99.54
     },
     {
       "month": "2021-10-01",
@@ -6046,7 +6170,9 @@
       "unemploymentRate": 4.5,
       "savingsRate": 7,
       "personalSaving": -41.31,
-      "consumerSentiment": 71.7
+      "consumerSentiment": 71.7,
+      "visaDiscretionary": 106.38,
+      "visaNonDiscretionary": 100.85
     },
     {
       "month": "2021-11-01",
@@ -6142,7 +6268,9 @@
       "unemploymentRate": 4.1,
       "savingsRate": 6.6,
       "personalSaving": -40.6,
-      "consumerSentiment": 67.4
+      "consumerSentiment": 67.4,
+      "visaDiscretionary": 106.91,
+      "visaNonDiscretionary": 99.65
     },
     {
       "month": "2021-12-01",
@@ -6238,7 +6366,9 @@
       "unemploymentRate": 3.9,
       "savingsRate": 6.6,
       "personalSaving": -40.31,
-      "consumerSentiment": 70.6
+      "consumerSentiment": 70.6,
+      "visaDiscretionary": 104.54,
+      "visaNonDiscretionary": 99.83
     },
     {
       "month": "2022-01-01",
@@ -6334,7 +6464,9 @@
       "unemploymentRate": 4,
       "savingsRate": 4.2,
       "personalSaving": -79.75,
-      "consumerSentiment": 67.2
+      "consumerSentiment": 67.2,
+      "visaDiscretionary": 100.63,
+      "visaNonDiscretionary": 98.45
     },
     {
       "month": "2022-02-01",
@@ -6430,7 +6562,9 @@
       "unemploymentRate": 3.9,
       "savingsRate": 4.1,
       "personalSaving": -67.25,
-      "consumerSentiment": 62.8
+      "consumerSentiment": 62.8,
+      "visaDiscretionary": 105.51,
+      "visaNonDiscretionary": 104.91
     },
     {
       "month": "2022-03-01",
@@ -6526,7 +6660,9 @@
       "unemploymentRate": 3.7,
       "savingsRate": 3.2,
       "personalSaving": -89.88,
-      "consumerSentiment": 59.4
+      "consumerSentiment": 59.4,
+      "visaDiscretionary": 96.58,
+      "visaNonDiscretionary": 99.89
     },
     {
       "month": "2022-04-01",
@@ -6622,7 +6758,9 @@
       "unemploymentRate": 3.7,
       "savingsRate": 2.6,
       "personalSaving": -79.35,
-      "consumerSentiment": 65.2
+      "consumerSentiment": 65.2,
+      "visaDiscretionary": 95.96,
+      "visaNonDiscretionary": 97.9
     },
     {
       "month": "2022-05-01",
@@ -6718,7 +6856,9 @@
       "unemploymentRate": 3.6,
       "savingsRate": 2.6,
       "personalSaving": -73.84,
-      "consumerSentiment": 58.4
+      "consumerSentiment": 58.4,
+      "visaDiscretionary": 96.29,
+      "visaNonDiscretionary": 97.92
     },
     {
       "month": "2022-06-01",
@@ -6814,7 +6954,9 @@
       "unemploymentRate": 3.6,
       "savingsRate": 2.2,
       "personalSaving": -73.92,
-      "consumerSentiment": 50
+      "consumerSentiment": 50,
+      "visaDiscretionary": 96.17,
+      "visaNonDiscretionary": 99.19
     },
     {
       "month": "2022-07-01",
@@ -6910,7 +7052,9 @@
       "unemploymentRate": 3.5,
       "savingsRate": 3.3,
       "personalSaving": -64.71,
-      "consumerSentiment": 51.5
+      "consumerSentiment": 51.5,
+      "visaDiscretionary": 97.18,
+      "visaNonDiscretionary": 98.04
     },
     {
       "month": "2022-08-01",
@@ -7006,7 +7150,9 @@
       "unemploymentRate": 3.6,
       "savingsRate": 3.2,
       "personalSaving": -61.87,
-      "consumerSentiment": 58.2
+      "consumerSentiment": 58.2,
+      "visaDiscretionary": 97.24,
+      "visaNonDiscretionary": 99.57
     },
     {
       "month": "2022-09-01",
@@ -7102,7 +7248,9 @@
       "unemploymentRate": 3.5,
       "savingsRate": 3.4,
       "personalSaving": -53.23,
-      "consumerSentiment": 58.6
+      "consumerSentiment": 58.6,
+      "visaDiscretionary": 96.86,
+      "visaNonDiscretionary": 99.26
     },
     {
       "month": "2022-10-01",
@@ -7198,7 +7346,9 @@
       "unemploymentRate": 3.6,
       "savingsRate": 3.4,
       "personalSaving": -48.95,
-      "consumerSentiment": 59.9
+      "consumerSentiment": 59.9,
+      "visaDiscretionary": 96.92,
+      "visaNonDiscretionary": 98.85
     },
     {
       "month": "2022-11-01",
@@ -7294,7 +7444,9 @@
       "unemploymentRate": 3.6,
       "savingsRate": 3.8,
       "personalSaving": -40.49,
-      "consumerSentiment": 56.7
+      "consumerSentiment": 56.7,
+      "visaDiscretionary": 93.85,
+      "visaNonDiscretionary": 98.71
     },
     {
       "month": "2022-12-01",
@@ -7390,7 +7542,9 @@
       "unemploymentRate": 3.5,
       "savingsRate": 4.2,
       "personalSaving": -32.53,
-      "consumerSentiment": 59.8
+      "consumerSentiment": 59.8,
+      "visaDiscretionary": 98.03,
+      "visaNonDiscretionary": 99.25
     },
     {
       "month": "2023-01-01",
@@ -7486,7 +7640,9 @@
       "unemploymentRate": 3.5,
       "savingsRate": 4.9,
       "personalSaving": 29.44,
-      "consumerSentiment": 64.9
+      "consumerSentiment": 64.9,
+      "visaDiscretionary": 99.04,
+      "visaNonDiscretionary": 100.04
     },
     {
       "month": "2023-02-01",
@@ -7582,7 +7738,9 @@
       "unemploymentRate": 3.6,
       "savingsRate": 5.5,
       "personalSaving": 46.44,
-      "consumerSentiment": 66.9
+      "consumerSentiment": 66.9,
+      "visaDiscretionary": 98.63,
+      "visaNonDiscretionary": 100.24
     },
     {
       "month": "2023-03-01",
@@ -7678,7 +7836,9 @@
       "unemploymentRate": 3.5,
       "savingsRate": 6,
       "personalSaving": 110.57,
-      "consumerSentiment": 62
+      "consumerSentiment": 62,
+      "visaDiscretionary": 96.62,
+      "visaNonDiscretionary": 99.48
     },
     {
       "month": "2023-04-01",
@@ -7774,7 +7934,9 @@
       "unemploymentRate": 3.4,
       "savingsRate": 5.8,
       "personalSaving": 149.2,
-      "consumerSentiment": 63.7
+      "consumerSentiment": 63.7,
+      "visaDiscretionary": 98.38,
+      "visaNonDiscretionary": 98.26
     },
     {
       "month": "2023-05-01",
@@ -7870,7 +8032,9 @@
       "unemploymentRate": 3.6,
       "savingsRate": 6.1,
       "personalSaving": 164.04,
-      "consumerSentiment": 59
+      "consumerSentiment": 59,
+      "visaDiscretionary": 99.17,
+      "visaNonDiscretionary": 99.41
     },
     {
       "month": "2023-06-01",
@@ -7966,7 +8130,9 @@
       "unemploymentRate": 3.6,
       "savingsRate": 5.8,
       "personalSaving": 187.68,
-      "consumerSentiment": 64.2
+      "consumerSentiment": 64.2,
+      "visaDiscretionary": 100.63,
+      "visaNonDiscretionary": 99.07
     },
     {
       "month": "2023-07-01",
@@ -8062,7 +8228,9 @@
       "unemploymentRate": 3.5,
       "savingsRate": 5.5,
       "personalSaving": 84.84,
-      "consumerSentiment": 71.5
+      "consumerSentiment": 71.5,
+      "visaDiscretionary": 99.49,
+      "visaNonDiscretionary": 98.86
     },
     {
       "month": "2023-08-01",
@@ -8158,7 +8326,9 @@
       "unemploymentRate": 3.7,
       "savingsRate": 5.6,
       "personalSaving": 87.85,
-      "consumerSentiment": 69.4
+      "consumerSentiment": 69.4,
+      "visaDiscretionary": 100.08,
+      "visaNonDiscretionary": 97.13
     },
     {
       "month": "2023-09-01",
@@ -8254,7 +8424,9 @@
       "unemploymentRate": 3.7,
       "savingsRate": 5.3,
       "personalSaving": 69.21,
-      "consumerSentiment": 67.8
+      "consumerSentiment": 67.8,
+      "visaDiscretionary": 99.48,
+      "visaNonDiscretionary": 97.02
     },
     {
       "month": "2023-10-01",
@@ -8350,7 +8522,9 @@
       "unemploymentRate": 3.9,
       "savingsRate": 5.4,
       "personalSaving": 70.5,
-      "consumerSentiment": 63.8
+      "consumerSentiment": 63.8,
+      "visaDiscretionary": 97.49,
+      "visaNonDiscretionary": 97.04
     },
     {
       "month": "2023-11-01",
@@ -8446,7 +8620,9 @@
       "unemploymentRate": 3.7,
       "savingsRate": 5.6,
       "personalSaving": 61.74,
-      "consumerSentiment": 61.3
+      "consumerSentiment": 61.3,
+      "visaDiscretionary": 98.08,
+      "visaNonDiscretionary": 97.17
     },
     {
       "month": "2023-12-01",
@@ -8542,7 +8718,9 @@
       "unemploymentRate": 3.8,
       "savingsRate": 5.6,
       "personalSaving": 44.55,
-      "consumerSentiment": 69.7
+      "consumerSentiment": 69.7,
+      "visaDiscretionary": 98.37,
+      "visaNonDiscretionary": 97.18
     },
     {
       "month": "2024-01-01",
@@ -8638,7 +8816,9 @@
       "unemploymentRate": 3.7,
       "savingsRate": 6.4,
       "personalSaving": 40.25,
-      "consumerSentiment": 79
+      "consumerSentiment": 79,
+      "visaDiscretionary": 96.7,
+      "visaNonDiscretionary": 98.19
     },
     {
       "month": "2024-02-01",
@@ -8734,7 +8914,9 @@
       "unemploymentRate": 3.9,
       "savingsRate": 6.1,
       "personalSaving": 19.41,
-      "consumerSentiment": 76.9
+      "consumerSentiment": 76.9,
+      "visaDiscretionary": 98.4,
+      "visaNonDiscretionary": 97.4
     },
     {
       "month": "2024-03-01",
@@ -8830,7 +9012,9 @@
       "unemploymentRate": 3.9,
       "savingsRate": 5.9,
       "personalSaving": 4.65,
-      "consumerSentiment": 79.4
+      "consumerSentiment": 79.4,
+      "visaDiscretionary": 99.25,
+      "visaNonDiscretionary": 99.44
     },
     {
       "month": "2024-04-01",
@@ -8926,7 +9110,9 @@
       "unemploymentRate": 3.9,
       "savingsRate": 5.8,
       "personalSaving": 6.29,
-      "consumerSentiment": 77.2
+      "consumerSentiment": 77.2,
+      "visaDiscretionary": 95.21,
+      "visaNonDiscretionary": 98.08
     },
     {
       "month": "2024-05-01",
@@ -9022,7 +9208,9 @@
       "unemploymentRate": 3.9,
       "savingsRate": 5.8,
       "personalSaving": 0.55,
-      "consumerSentiment": 69.1
+      "consumerSentiment": 69.1,
+      "visaDiscretionary": 97,
+      "visaNonDiscretionary": 98.49
     },
     {
       "month": "2024-06-01",
@@ -9118,7 +9306,9 @@
       "unemploymentRate": 4.1,
       "savingsRate": 5.7,
       "personalSaving": 3.9,
-      "consumerSentiment": 68.2
+      "consumerSentiment": 68.2,
+      "visaDiscretionary": 96.08,
+      "visaNonDiscretionary": 98.46
     },
     {
       "month": "2024-07-01",
@@ -9214,7 +9404,9 @@
       "unemploymentRate": 4.2,
       "savingsRate": 5.3,
       "personalSaving": 1.6,
-      "consumerSentiment": 66.4
+      "consumerSentiment": 66.4,
+      "visaDiscretionary": 94.46,
+      "visaNonDiscretionary": 97.76
     },
     {
       "month": "2024-08-01",
@@ -9310,7 +9502,9 @@
       "unemploymentRate": 4.2,
       "savingsRate": 5.2,
       "personalSaving": -1.09,
-      "consumerSentiment": 67.9
+      "consumerSentiment": 67.9,
+      "visaDiscretionary": 97.58,
+      "visaNonDiscretionary": 98.39
     },
     {
       "month": "2024-09-01",
@@ -9406,7 +9600,9 @@
       "unemploymentRate": 4.1,
       "savingsRate": 4.8,
       "personalSaving": -3.39,
-      "consumerSentiment": 70.1
+      "consumerSentiment": 70.1,
+      "visaDiscretionary": 96.95,
+      "visaNonDiscretionary": 98.58
     },
     {
       "month": "2024-10-01",
@@ -9502,7 +9698,9 @@
       "unemploymentRate": 4.1,
       "savingsRate": 5,
       "personalSaving": -3.28,
-      "consumerSentiment": 70.5
+      "consumerSentiment": 70.5,
+      "visaDiscretionary": 98.04,
+      "visaNonDiscretionary": 100.12
     },
     {
       "month": "2024-11-01",
@@ -9598,7 +9796,9 @@
       "unemploymentRate": 4.2,
       "savingsRate": 4.9,
       "personalSaving": -8.24,
-      "consumerSentiment": 71.8
+      "consumerSentiment": 71.8,
+      "visaDiscretionary": 96.46,
+      "visaNonDiscretionary": 98.89
     },
     {
       "month": "2024-12-01",
@@ -9694,7 +9894,9 @@
       "unemploymentRate": 4.1,
       "savingsRate": 4.3,
       "personalSaving": -18.75,
-      "consumerSentiment": 74
+      "consumerSentiment": 74,
+      "visaDiscretionary": 98.89,
+      "visaNonDiscretionary": 98.73
     },
     {
       "month": "2025-01-01",
@@ -9790,7 +9992,9 @@
       "unemploymentRate": 4,
       "savingsRate": 5.1,
       "personalSaving": -16.95,
-      "consumerSentiment": 71.7
+      "consumerSentiment": 71.7,
+      "visaDiscretionary": 98.52,
+      "visaNonDiscretionary": 99.19
     },
     {
       "month": "2025-02-01",
@@ -9886,7 +10090,9 @@
       "unemploymentRate": 4.2,
       "savingsRate": 5.2,
       "personalSaving": -11.11,
-      "consumerSentiment": 64.7
+      "consumerSentiment": 64.7,
+      "visaDiscretionary": 94.53,
+      "visaNonDiscretionary": 96.44
     },
     {
       "month": "2025-03-01",
@@ -9982,7 +10188,9 @@
       "unemploymentRate": 4.2,
       "savingsRate": 5.1,
       "personalSaving": -9.39,
-      "consumerSentiment": 57
+      "consumerSentiment": 57,
+      "visaDiscretionary": 98.39,
+      "visaNonDiscretionary": 98.93
     },
     {
       "month": "2025-04-01",
@@ -10078,7 +10286,9 @@
       "unemploymentRate": 4.2,
       "savingsRate": 5.5,
       "personalSaving": -0.17,
-      "consumerSentiment": 52.2
+      "consumerSentiment": 52.2,
+      "visaDiscretionary": 99.37,
+      "visaNonDiscretionary": 100.29
     },
     {
       "month": "2025-05-01",
@@ -10174,7 +10384,9 @@
       "unemploymentRate": 4.3,
       "savingsRate": 4.9,
       "personalSaving": -12.14,
-      "consumerSentiment": 52.2
+      "consumerSentiment": 52.2,
+      "visaDiscretionary": 98.07,
+      "visaNonDiscretionary": 98.67
     },
     {
       "month": "2025-06-01",
@@ -10270,7 +10482,9 @@
       "unemploymentRate": 4.1,
       "savingsRate": 4.6,
       "personalSaving": -16.85,
-      "consumerSentiment": 60.7
+      "consumerSentiment": 60.7,
+      "visaDiscretionary": 97.58,
+      "visaNonDiscretionary": 98.99
     },
     {
       "month": "2025-07-01",
@@ -10366,7 +10580,9 @@
       "unemploymentRate": 4.3,
       "savingsRate": 4.5,
       "personalSaving": -11.6,
-      "consumerSentiment": 61.7
+      "consumerSentiment": 61.7,
+      "visaDiscretionary": 100.07,
+      "visaNonDiscretionary": 100.25
     },
     {
       "month": "2025-08-01",
@@ -10462,7 +10678,9 @@
       "unemploymentRate": 4.3,
       "savingsRate": 4.4,
       "personalSaving": -12.3,
-      "consumerSentiment": 58.2
+      "consumerSentiment": 58.2,
+      "visaDiscretionary": 97.7,
+      "visaNonDiscretionary": 100.12
     },
     {
       "month": "2025-09-01",
@@ -10558,7 +10776,9 @@
       "unemploymentRate": 4.4,
       "savingsRate": 4.3,
       "personalSaving": -6.18,
-      "consumerSentiment": 55.1
+      "consumerSentiment": 55.1,
+      "visaDiscretionary": 97.84,
+      "visaNonDiscretionary": 99.54
     },
     {
       "month": "2025-10-01",
@@ -10654,7 +10874,9 @@
       "unemploymentRate": null,
       "savingsRate": 3.9,
       "personalSaving": -18.76,
-      "consumerSentiment": 53.6
+      "consumerSentiment": 53.6,
+      "visaDiscretionary": 99.6,
+      "visaNonDiscretionary": 98.7
     },
     {
       "month": "2025-11-01",
@@ -10750,7 +10972,9 @@
       "unemploymentRate": 4.5,
       "savingsRate": 3.8,
       "personalSaving": -19.56,
-      "consumerSentiment": 51
+      "consumerSentiment": 51,
+      "visaDiscretionary": 99.75,
+      "visaNonDiscretionary": 99.08
     },
     {
       "month": "2025-12-01",
@@ -10846,7 +11070,9 @@
       "unemploymentRate": 4.4,
       "savingsRate": 3.6,
       "personalSaving": -13.1,
-      "consumerSentiment": 52.9
+      "consumerSentiment": 52.9,
+      "visaDiscretionary": 96.4,
+      "visaNonDiscretionary": 99.29
     },
     {
       "month": "2026-01-01",
@@ -10942,7 +11168,9 @@
       "unemploymentRate": 4.3,
       "savingsRate": 4.4,
       "personalSaving": -9.57,
-      "consumerSentiment": 56.4
+      "consumerSentiment": 56.4,
+      "visaDiscretionary": 98.73,
+      "visaNonDiscretionary": 99.36
     },
     {
       "month": "2026-02-01",
@@ -11038,7 +11266,9 @@
       "unemploymentRate": 4.4,
       "savingsRate": 3.8,
       "personalSaving": -24.25,
-      "consumerSentiment": 56.6
+      "consumerSentiment": 56.6,
+      "visaDiscretionary": 99.76,
+      "visaNonDiscretionary": 100.66
     },
     {
       "month": "2026-03-01",
@@ -11134,7 +11364,9 @@
       "unemploymentRate": 4.3,
       "savingsRate": 3.5,
       "personalSaving": -29.88,
-      "consumerSentiment": 53.3
+      "consumerSentiment": 53.3,
+      "visaDiscretionary": 98.2,
+      "visaNonDiscretionary": 99.71
     },
     {
       "month": "2026-04-01",
@@ -11230,7 +11462,9 @@
       "unemploymentRate": 4.3,
       "savingsRate": 3,
       "personalSaving": -45.28,
-      "consumerSentiment": 49.8
+      "consumerSentiment": 49.8,
+      "visaDiscretionary": 98.53,
+      "visaNonDiscretionary": 97.98
     },
     {
       "month": "2026-05-01",
@@ -11326,7 +11560,9 @@
       "unemploymentRate": 4.3,
       "savingsRate": 2.8,
       "personalSaving": -39.9,
-      "consumerSentiment": 44.8
+      "consumerSentiment": 44.8,
+      "visaDiscretionary": 97.6,
+      "visaNonDiscretionary": 98.8
     },
     {
       "month": "2026-06-01",
@@ -11422,7 +11658,9 @@
       "unemploymentRate": 4.2,
       "savingsRate": 2.7,
       "personalSaving": -37.93,
-      "consumerSentiment": 49.5
+      "consumerSentiment": 49.5,
+      "visaDiscretionary": 99.28,
+      "visaNonDiscretionary": 98.83
     },
     {
       "month": "2026-07-01",
@@ -11518,7 +11756,9 @@
       "unemploymentRate": 4.1,
       "savingsRate": null,
       "personalSaving": null,
-      "consumerSentiment": null
+      "consumerSentiment": null,
+      "visaDiscretionary": 95.7,
+      "visaNonDiscretionary": 98.24
     },
     {
       "month": "2026-08-01",
@@ -11614,7 +11854,9 @@
       "unemploymentRate": null,
       "savingsRate": null,
       "personalSaving": null,
-      "consumerSentiment": null
+      "consumerSentiment": null,
+      "visaDiscretionary": null,
+      "visaNonDiscretionary": null
     }
   ],
   "coverage": [
@@ -11961,6 +12203,14 @@
     {
       "indicatorId": "consumer-sentiment",
       "latestMonth": "2026-06-01"
+    },
+    {
+      "indicatorId": "visa-discretionary-spending",
+      "latestMonth": "2026-07-01"
+    },
+    {
+      "indicatorId": "visa-non-discretionary-spending",
+      "latestMonth": "2026-07-01"
     }
   ]
 }

@@ -843,6 +843,16 @@ export interface MonthlyPoint {
   personalSaving: number | null;
   /** ミシガン大学消費者信頼感指数 (1966:Q1=100)。 */
   consumerSentiment: number | null;
+  /**
+   * VISA裁量的消費指数 (100が基準、#294)。
+   *
+   * レジャー・外食・旅行など生活必需でない消費の指数。非裁量的消費 (`visaNonDiscretionary`)
+   * と対で見ることで、生活必需品への支出まで削られているのか、余裕がある部分だけを
+   * 削っているのかを判別する。
+   */
+  visaDiscretionary: number | null;
+  /** VISA非裁量的消費指数 (100が基準、#294)。生活必需品への消費。 */
+  visaNonDiscretionary: number | null;
 }
 
 /**
