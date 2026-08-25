@@ -16,7 +16,9 @@ import {
 import { changeMark, formatDate, formatNumber, formatSigned } from '@/lib/format';
 import type { ValuationView } from '@/lib/data/types';
 import { filterByPeriod, parsePeriod } from '@/lib/period';
+import { useChartPeriod } from '@/lib/use-chart-period';
 import { ChartFrame, SharedTooltip } from './chart-frame';
+import { ChartPeriodToggle } from './chart-period-toggle';
 import { DistributionPosition } from './distribution-position';
 
 const LINE_COLOR = '#8b5cf6';
@@ -42,7 +44,8 @@ const MEASURES: Array<{ key: Measure; label: string }> = [
  */
 export function ForwardPeChart({ view }: { view: ValuationView }) {
   const searchParams = useSearchParams();
-  const period = parsePeriod(searchParams.get('period'));
+  const globalPeriod = parsePeriod(searchParams.get('period'));
+  const [period, setPeriod] = useChartPeriod(globalPeriod);
   const [measure, setMeasure] = useState<Measure>('forward');
 
   const series = view.sp500;
@@ -77,29 +80,32 @@ export function ForwardPeChart({ view }: { view: ValuationView }) {
       title="P/E と基準線"
       subtitle="S&P 500 専用 (NASDAQ-100 には基準線が存在しない)"
       actions={
-        <div
-          role="group"
-          aria-label="PER の種類"
-          className="inline-flex rounded-md border border-slate-300 dark:border-slate-700"
-        >
-          {MEASURES.map((item) => (
-            <button
-              key={item.key}
-              type="button"
-              aria-pressed={item.key === measure}
-              onClick={() => setMeasure(item.key)}
-              className={[
-                'px-3 py-1 text-xs first:rounded-l-md last:rounded-r-md',
-                'border-r border-slate-300 last:border-r-0 dark:border-slate-700',
-                item.key === measure
-                  ? 'bg-slate-900 font-semibold text-white dark:bg-slate-100 dark:text-slate-900'
-                  : 'text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800',
-              ].join(' ')}
-            >
-              {item.label}
-            </button>
-          ))}
-        </div>
+        <>
+          <div
+            role="group"
+            aria-label="PER の種類"
+            className="inline-flex rounded-md border border-slate-300 dark:border-slate-700"
+          >
+            {MEASURES.map((item) => (
+              <button
+                key={item.key}
+                type="button"
+                aria-pressed={item.key === measure}
+                onClick={() => setMeasure(item.key)}
+                className={[
+                  'px-3 py-1 text-xs first:rounded-l-md last:rounded-r-md',
+                  'border-r border-slate-300 last:border-r-0 dark:border-slate-700',
+                  item.key === measure
+                    ? 'bg-slate-900 font-semibold text-white dark:bg-slate-100 dark:text-slate-900'
+                    : 'text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800',
+                ].join(' ')}
+              >
+                {item.label}
+              </button>
+            ))}
+          </div>
+          <ChartPeriodToggle period={period} onChange={setPeriod} />
+        </>
       }
       summary={
         latest === null ? (

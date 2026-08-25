@@ -14,7 +14,9 @@ import {
 import { changeMark, formatDate, formatNumber, formatSigned } from '@/lib/format';
 import type { ValuationView } from '@/lib/data/types';
 import { filterByPeriod, parsePeriod } from '@/lib/period';
+import { useChartPeriod } from '@/lib/use-chart-period';
 import { ChartFrame, SharedTooltip } from './chart-frame';
+import { ChartPeriodToggle } from './chart-period-toggle';
 import { DistributionPosition } from './distribution-position';
 
 const LINE_COLOR = '#0d9488';
@@ -28,7 +30,8 @@ const LINE_COLOR = '#0d9488';
  */
 export function ShillerPeChart({ view }: { view: ValuationView }) {
   const searchParams = useSearchParams();
-  const period = parsePeriod(searchParams.get('period'));
+  const globalPeriod = parsePeriod(searchParams.get('period'));
+  const [period, setPeriod] = useChartPeriod(globalPeriod);
 
   const series = view.shillerPe;
   const points = useMemo(
@@ -48,6 +51,7 @@ export function ShillerPeChart({ view }: { view: ValuationView }) {
     <ChartFrame
       title="シラーPER (CAPE)"
       subtitle="S&P 500 専用。過去10年の平均利益で算出する長期の PER"
+      actions={<ChartPeriodToggle period={period} onChange={setPeriod} />}
       summary={
         latest === null || latest.value === null ? (
           <p className="text-xs text-slate-500">この期間に表示できるデータが無い。</p>

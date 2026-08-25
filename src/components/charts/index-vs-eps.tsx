@@ -18,7 +18,9 @@ import type { IndexKey, ValuationView } from '@/lib/data/types';
 import { INDEX_LABELS } from '@/lib/data/indices';
 import { IndexSwitch } from '../index-switch';
 import { filterByPeriod, parsePeriod } from '@/lib/period';
+import { useChartPeriod } from '@/lib/use-chart-period';
 import { describeAccumulation, type SeriesState, seriesState } from '@/lib/series-state';
+import { ChartPeriodToggle } from './chart-period-toggle';
 
 /** 系列の識別子。凡例トグルの対象。 */
 type SeriesKey = 'index' | 'forwardEps' | 'trailingEps';
@@ -33,7 +35,8 @@ const SERIES: Array<{ key: SeriesKey; label: string; color: string; axis: 'left'
 
 export function IndexVsEpsChart({ view }: { view: ValuationView }) {
   const searchParams = useSearchParams();
-  const period = parsePeriod(searchParams.get('period'));
+  const globalPeriod = parsePeriod(searchParams.get('period'));
+  const [period, setPeriod] = useChartPeriod(globalPeriod);
 
   const [indexKey, setIndexKey] = useState<IndexKey>('sp500');
   const [hidden, setHidden] = useState<ReadonlySet<SeriesKey>>(new Set());
@@ -70,7 +73,10 @@ export function IndexVsEpsChart({ view }: { view: ValuationView }) {
     <section className="space-y-3">
       <header className="flex flex-wrap items-baseline justify-between gap-2">
         <h2 className="text-base font-bold">指数と EPS</h2>
-        <IndexSwitch value={indexKey} onChange={setIndexKey} />
+        <div className="flex flex-wrap items-center gap-2">
+          <IndexSwitch value={indexKey} onChange={setIndexKey} />
+          <ChartPeriodToggle period={period} onChange={setPeriod} />
+        </div>
       </header>
 
       <LatestSummary indexKey={indexKey} summary={summary} hasForwardEps={series.hasForwardEps} />

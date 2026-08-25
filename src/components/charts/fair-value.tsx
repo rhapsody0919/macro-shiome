@@ -21,8 +21,10 @@ import type { IndexKey, ValuationView } from '@/lib/data/types';
 import { INDEX_LABELS } from '@/lib/data/indices';
 import { IndexSwitch } from '../index-switch';
 import { filterByPeriod, parsePeriod } from '@/lib/period';
+import { useChartPeriod } from '@/lib/use-chart-period';
 import { seriesState, withValue } from '@/lib/series-state';
 import { ChartFrame, SharedTooltip } from './chart-frame';
+import { ChartPeriodToggle } from './chart-period-toggle';
 
 const INDEX_COLOR = '#64748b';
 const FAIR_COLOR = '#10b981';
@@ -39,7 +41,8 @@ const UNDER_FILL = '#10b981';
  */
 export function FairValueChart({ view }: { view: ValuationView }) {
   const searchParams = useSearchParams();
-  const period = parsePeriod(searchParams.get('period'));
+  const globalPeriod = parsePeriod(searchParams.get('period'));
+  const [period, setPeriod] = useChartPeriod(globalPeriod);
 
   const [indexKey, setIndexKey] = useState<IndexKey>('sp500');
   const series = view[indexKey];
@@ -89,7 +92,12 @@ export function FairValueChart({ view }: { view: ValuationView }) {
       state={state}
       stateLabel="理論値"
       stateNote={series.accumulationNote}
-      actions={<IndexSwitch value={indexKey} onChange={setIndexKey} />}
+      actions={
+        <>
+          <IndexSwitch value={indexKey} onChange={setIndexKey} />
+          <ChartPeriodToggle period={period} onChange={setPeriod} />
+        </>
+      }
       summary={
         <div className="space-y-3">
           {latest === null ? (
