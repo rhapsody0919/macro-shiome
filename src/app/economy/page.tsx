@@ -262,6 +262,12 @@ const CHARTS: QuestionChartDef<EconomyQuestionId>[] = [
         <strong>生産系で最も速い。</strong>
         鉱工業生産より 1 か月早く出るため、直近の変化はここに先に現れる。
       </span>,
+      <span key="seasonal">
+        <strong>「季節調整済み」とは、</strong>
+        年末商戦や夏の生産調整のような毎年同じ時期に起きる変動をあらかじめ
+        取り除いた値のこと。年内の月ごとの水準をそのまま比べられる
+        (このページの他のチャートでも同じ意味で使う)。
+      </span>,
     ],
   },
   {
@@ -769,6 +775,14 @@ const CHARTS: QuestionChartDef<EconomyQuestionId>[] = [
       { key: 'cpiRent', label: '家賃 CPI', color: COLORS.cpiRent, indicatorId: 'cpi-rent' },
     ],
     notes: [
+      <span key="terms">
+        <strong>CPI (消費者物価指数) は家計が実際に買う商品・サービスの価格を、
+          PCE (個人消費支出物価指数) は家計に代わって企業や政府が支払う分も含めた
+          より広い範囲の価格を集計したもの。</strong>
+        どちらも「物価が前年よりどれだけ上がったか」を示す指標で、ニュースでよく
+        使われるのは CPI、FRB が政策判断に使うのは PCE。「コア」は変動の大きい食品・
+        エネルギーを除いた値で、基調的な物価の動きを見るために使う。
+      </span>,
       <span key="target">
         <strong>コア PCE が FRB の物価目標そのもの。</strong>
         2% はこの系列に対して設定されている。総合は天候と原油で振れるため政策判断に向かない。
