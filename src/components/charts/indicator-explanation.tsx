@@ -81,10 +81,23 @@ function Entry({ indicator }: { indicator: Indicator }) {
   return (
     <div className="space-y-1">
       <p className="font-semibold text-slate-700 dark:text-slate-200">{indicator.name}</p>
-      <p className="text-slate-600 dark:text-slate-300">{explanation.what}</p>
-      <p className="text-slate-600 dark:text-slate-300">{explanation.howToRead}</p>
+      {/*
+        3つの文が同じ見た目で並ぶと、どれが定義でどれが読み方の説明か区別できず
+        「つらつらとした文章」に見える。短いラベルを付けて視覚的に構造化する。
+      */}
+      <p className="text-slate-600 dark:text-slate-300">
+        <strong className="text-slate-700 dark:text-slate-200">定義: </strong>
+        {explanation.what}
+      </p>
+      <p className="text-slate-600 dark:text-slate-300">
+        <strong className="text-slate-700 dark:text-slate-200">読み方: </strong>
+        {explanation.howToRead}
+      </p>
       {explanation.seeWith !== undefined && (
-        <p className="text-slate-600 dark:text-slate-300">{explanation.seeWith}</p>
+        <p className="text-slate-600 dark:text-slate-300">
+          <strong className="text-slate-700 dark:text-slate-200">合わせて見る: </strong>
+          {explanation.seeWith}
+        </p>
       )}
       {/*
         単位・頻度・出所は指標マスタから組み立てる。解説の本文には書かせない。
