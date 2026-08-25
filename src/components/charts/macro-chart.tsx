@@ -17,7 +17,9 @@ import {
 import { changeMark, formatDate, formatNumber, formatSigned } from '@/lib/format';
 import type { MacroPoint } from '@/lib/data/types';
 import { filterByPeriod, parsePeriod } from '@/lib/period';
+import { useChartPeriod } from '@/lib/use-chart-period';
 import { ChartFrame, SharedTooltip, type ValueKind } from './chart-frame';
+import { ChartPeriodToggle } from './chart-period-toggle';
 
 export interface SeriesDef {
   key: keyof MacroPoint;
@@ -82,7 +84,8 @@ export function MacroChart({
   explanation?: React.ReactNode;
 }) {
   const searchParams = useSearchParams();
-  const period = parsePeriod(searchParams.get('period'));
+  const globalPeriod = parsePeriod(searchParams.get('period'));
+  const [period, setPeriod] = useChartPeriod(globalPeriod);
 
   const data = useMemo(
     () => filterByPeriod(points, period, new Date()),
@@ -95,6 +98,7 @@ export function MacroChart({
       subtitle={subtitle}
       headingLevel={headingLevel}
       badges={badges}
+      actions={<ChartPeriodToggle period={period} onChange={setPeriod} />}
       contentClassName="h-56 sm:h-64"
       summary={
         <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm">

@@ -18,8 +18,10 @@ import { changeMark, formatDate, formatPercent, formatSigned } from '@/lib/forma
 import type { IndexKey, ValuationView } from '@/lib/data/types';
 import { COLORS } from '@/lib/colors';
 import { filterByPeriod, parsePeriod } from '@/lib/period';
+import { useChartPeriod } from '@/lib/use-chart-period';
 import { seriesState, withValue } from '@/lib/series-state';
 import { ChartFrame, SharedTooltip } from './chart-frame';
+import { ChartPeriodToggle } from './chart-period-toggle';
 import { DistributionPosition } from './distribution-position';
 import { IndexSwitch } from '../index-switch';
 
@@ -53,7 +55,8 @@ const BREAKDOWN = [
  */
 export function YieldSpreadChart({ view }: { view: ValuationView }) {
   const searchParams = useSearchParams();
-  const period = parsePeriod(searchParams.get('period'));
+  const globalPeriod = parsePeriod(searchParams.get('period'));
+  const [period, setPeriod] = useChartPeriod(globalPeriod);
 
   const [indexKey, setIndexKey] = useState<IndexKey>('sp500');
   const [showBreakdown, setShowBreakdown] = useState(false);
@@ -111,6 +114,7 @@ export function YieldSpreadChart({ view }: { view: ValuationView }) {
               内訳を表示
             </button>
           )}
+          <ChartPeriodToggle period={period} onChange={setPeriod} />
         </div>
       }
       summary={

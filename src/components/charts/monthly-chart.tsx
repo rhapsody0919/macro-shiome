@@ -16,7 +16,9 @@ import {
 import { formatNumber, formatPercent } from '@/lib/format';
 import type { EconomyView, MonthlyPoint } from '@/lib/data/types';
 import { filterByMonth, parsePeriod } from '@/lib/period';
+import { useChartPeriod } from '@/lib/use-chart-period';
 import { ChartFrame, SharedTooltip, type ValueKind } from './chart-frame';
+import { ChartPeriodToggle } from './chart-period-toggle';
 
 /**
  * 月次指標のチャート (#64 / #66)。
@@ -97,7 +99,8 @@ export function MonthlyChart({
   height?: string;
 }) {
   const searchParams = useSearchParams();
-  const period = parsePeriod(searchParams.get('period'));
+  const globalPeriod = parsePeriod(searchParams.get('period'));
+  const [period, setPeriod] = useChartPeriod(globalPeriod);
 
   const points = useMemo(
     () => filterByMonth(view.monthly, period, new Date()),
@@ -114,6 +117,7 @@ export function MonthlyChart({
       subtitle={subtitle}
       headingLevel={headingLevel}
       badges={badges}
+      actions={<ChartPeriodToggle period={period} onChange={setPeriod} />}
       contentClassName={height}
       summary={
         <div className="space-y-2">

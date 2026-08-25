@@ -15,7 +15,9 @@ import {
 import { changeMark, formatDate, formatPercent, formatSigned } from '@/lib/format';
 import type { RevisionPoint } from '@/lib/data/types';
 import { filterByPeriod, parsePeriod } from '@/lib/period';
+import { useChartPeriod } from '@/lib/use-chart-period';
 import { ChartFrame, SharedTooltip } from './chart-frame';
+import { ChartPeriodToggle } from './chart-period-toggle';
 
 const CURRENT_YEAR_COLOR = '#0ea5e9';
 const NEXT_YEAR_COLOR = '#a855f7';
@@ -60,7 +62,8 @@ const HORIZON_SERIES: Record<
 
 export function RevisionsChart({ revisions }: { revisions: RevisionPoint[] }) {
   const searchParams = useSearchParams();
-  const period = parsePeriod(searchParams.get('period'));
+  const globalPeriod = parsePeriod(searchParams.get('period'));
+  const [period, setPeriod] = useChartPeriod(globalPeriod);
   const [horizon, setHorizon] = useState<Horizon>('year');
 
   const points = useMemo(
@@ -85,29 +88,32 @@ export function RevisionsChart({ revisions }: { revisions: RevisionPoint[] }) {
       title="予想改定"
       subtitle="アナリストの増益率予想が先週・四半期末と比べてどう変わったか"
       actions={
-        <div
-          role="group"
-          aria-label="予想の対象"
-          className="inline-flex rounded-md border border-slate-300 dark:border-slate-700"
-        >
-          {HORIZONS.map((item) => (
-            <button
-              key={item.key}
-              type="button"
-              aria-pressed={item.key === horizon}
-              onClick={() => setHorizon(item.key)}
-              className={[
-                'px-3 py-1 text-xs first:rounded-l-md last:rounded-r-md',
-                'border-r border-slate-300 last:border-r-0 dark:border-slate-700',
-                item.key === horizon
-                  ? 'bg-slate-900 font-semibold text-white dark:bg-slate-100 dark:text-slate-900'
-                  : 'text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800',
-              ].join(' ')}
-            >
-              {item.label}
-            </button>
-          ))}
-        </div>
+        <>
+          <div
+            role="group"
+            aria-label="予想の対象"
+            className="inline-flex rounded-md border border-slate-300 dark:border-slate-700"
+          >
+            {HORIZONS.map((item) => (
+              <button
+                key={item.key}
+                type="button"
+                aria-pressed={item.key === horizon}
+                onClick={() => setHorizon(item.key)}
+                className={[
+                  'px-3 py-1 text-xs first:rounded-l-md last:rounded-r-md',
+                  'border-r border-slate-300 last:border-r-0 dark:border-slate-700',
+                  item.key === horizon
+                    ? 'bg-slate-900 font-semibold text-white dark:bg-slate-100 dark:text-slate-900'
+                    : 'text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800',
+                ].join(' ')}
+              >
+                {item.label}
+              </button>
+            ))}
+          </div>
+          <ChartPeriodToggle period={period} onChange={setPeriod} />
+        </>
       }
       summary={
         <div className="space-y-3">

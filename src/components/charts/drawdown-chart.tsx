@@ -16,7 +16,9 @@ import {
 import { formatDate, formatNumber, formatSigned } from '@/lib/format';
 import type { DrawdownAsset } from '@/lib/data/types';
 import { filterByPeriod, parsePeriod } from '@/lib/period';
+import { useChartPeriod } from '@/lib/use-chart-period';
 import { ChartFrame, SharedTooltip } from './chart-frame';
+import { ChartPeriodToggle } from './chart-period-toggle';
 
 /** 相対強度は下落率と別データキーに畳む。同じ日付行に両方を持たせるため。 */
 const relativeKey = (id: string) => `${id}__rs`;
@@ -55,7 +57,8 @@ export function DrawdownChart({
   badges?: React.ReactNode;
 }) {
   const searchParams = useSearchParams();
-  const period = parsePeriod(searchParams.get('period'));
+  const globalPeriod = parsePeriod(searchParams.get('period'));
+  const [period, setPeriod] = useChartPeriod(globalPeriod);
   const [mode, setMode] = useState<Mode>('drawdown');
 
   // 資産ごとの系列を 1 つの配列に畳む。Recharts は行 = 日付の形を要る。
@@ -105,34 +108,37 @@ export function DrawdownChart({
       headingLevel={3}
       contentClassName="h-64 sm:h-80"
       actions={
-        <div
-          role="group"
-          aria-label="下落率と対SPYの切替"
-          className="inline-flex rounded-md border border-slate-300 dark:border-slate-700"
-        >
-          {(
-            [
-              { key: 'drawdown', label: '下落率' },
-              { key: 'relative', label: '対SPY' },
-            ] as const
-          ).map((item) => (
-            <button
-              key={item.key}
-              type="button"
-              aria-pressed={item.key === mode}
-              onClick={() => setMode(item.key)}
-              className={[
-                'px-3 py-1 text-xs first:rounded-l-md last:rounded-r-md',
-                'border-r border-slate-300 last:border-r-0 dark:border-slate-700',
-                item.key === mode
-                  ? 'bg-slate-900 font-semibold text-white dark:bg-slate-100 dark:text-slate-900'
-                  : 'text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800',
-              ].join(' ')}
-            >
-              {item.label}
-            </button>
-          ))}
-        </div>
+        <>
+          <div
+            role="group"
+            aria-label="下落率と対SPYの切替"
+            className="inline-flex rounded-md border border-slate-300 dark:border-slate-700"
+          >
+            {(
+              [
+                { key: 'drawdown', label: '下落率' },
+                { key: 'relative', label: '対SPY' },
+              ] as const
+            ).map((item) => (
+              <button
+                key={item.key}
+                type="button"
+                aria-pressed={item.key === mode}
+                onClick={() => setMode(item.key)}
+                className={[
+                  'px-3 py-1 text-xs first:rounded-l-md last:rounded-r-md',
+                  'border-r border-slate-300 last:border-r-0 dark:border-slate-700',
+                  item.key === mode
+                    ? 'bg-slate-900 font-semibold text-white dark:bg-slate-100 dark:text-slate-900'
+                    : 'text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800',
+                ].join(' ')}
+              >
+                {item.label}
+              </button>
+            ))}
+          </div>
+          <ChartPeriodToggle period={period} onChange={setPeriod} />
+        </>
       }
       summary={
         <div className="space-y-1">
