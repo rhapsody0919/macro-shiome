@@ -42,6 +42,18 @@ describe('初見の分かりやすさの改善 (#283)', () => {
     expect(screen.getByText(/S&P 500 に連動するETF/)).toBeInTheDocument();
   });
 
+  it('パーセンタイルの用語説明を含む (#304)', () => {
+    render(<SummaryPage />);
+    expect(screen.getByText(/直近5年間の観測の中で今の値がどの位置にあるか/)).toBeInTheDocument();
+  });
+
+  it('ブレイクアウト検出の用語説明を含む (#304)', () => {
+    render(<SummaryPage />);
+    expect(
+      screen.getByText(/終値が前回の高値を上抜けたことを\s*示す/),
+    ).toBeInTheDocument();
+  });
+
   it('経済状態が生成済みなら材料件数を注記する', () => {
     render(<SummaryPage />);
     if (summary.economyState !== null) {

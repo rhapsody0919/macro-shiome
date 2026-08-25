@@ -51,6 +51,10 @@ export default function SummaryPage() {
           </h2>
           <CountBadge count={summary.warnings.length} />
         </div>
+        <p className="mt-1 text-xs text-slate-500">
+          「過去5年で上位/下位◯%」は、直近5年間の観測の中で今の値がどの位置にあるかを示す
+          (パーセンタイル)。数値が小さいほど、その方向へ大きく振れていることを意味する。
+        </p>
         {summary.warnings.length === 0 ? (
           <p className="mt-2 text-sm text-slate-500">該当する警告シグナルは無い。</p>
         ) : (
@@ -78,6 +82,11 @@ export default function SummaryPage() {
           「対SPY」は資産価格と SPY 価格の比率を、最初に両方の値が揃った日
           {drawdown.relativeStrengthStart !== null && ` (${formatDate(drawdown.relativeStrengthStart)})`}
           を 0% として指数化した変化率。詳しい算出方法は「市場」ページの下落率チャートを参照。
+        </p>
+        <p className="mt-1 text-xs text-slate-500">
+          「ブレイクアウト検出」は、下落トレンドの途中で終値が前回の高値を上抜けたことを
+          示す。プロのトレード手法 (Smart Money Concepts/ICT) によるシグナルで、
+          詳しい定義は「市場」ページのブレイクアウト (CHoCH) チャートを参照。
         </p>
         {summary.highlights.length === 0 ? (
           <p className="mt-2 text-sm text-slate-500">該当する銘柄は無い。</p>
