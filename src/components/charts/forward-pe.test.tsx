@@ -45,6 +45,15 @@ describe('P/E と基準線 (#116)', () => {
   });
 });
 
+describe('GAAP/operatingベースの平易な言い換え (#311)', () => {
+  it('GAAPとoperatingベースの違いを平易に説明する', () => {
+    render(<ForwardPeChart view={valuationView} />);
+    const text = document.body.textContent ?? '';
+    expect(text).toContain('会計基準どおりに算出した利益');
+    expect(text).toContain('本業の利益だけを取り出したもの');
+  });
+});
+
 describe('PER の過去分布 (#271)', () => {
   it('Forward P/E の過去分布を出す', () => {
     render(<ForwardPeChart view={valuationView} />);
