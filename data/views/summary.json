@@ -1,71 +1,62 @@
 {
-  "generatedAt": "2026-08-24T06:38:26.431Z",
-  "economyState": "経済は不安定な状態にあり、投資家の不安感が高まっているようだ。金利の格差とハイリスク債の価格が高まっていることは、投資家のリスク回避意識の高まりを示唆している。同時に、金銭的不安が高まっており、失業者が増えていることが窺える。",
+  "generatedAt": "2026-08-25T02:50:13.493Z",
+  "economyState": "経済は安定しているように見えますが、金融環境がやや不安定な傾向があります。投資市場の不安感はあるものの、現在は比較的穏やかな状況です。",
   "economyStateFactCount": 5,
   "warnings": [],
   "highlights": [
     {
       "id": "etf-gdx",
       "name": "金鉱株 (GDX)",
-      "drawdown": 11.23,
-      "relativeStrength": 26.19,
+      "drawdown": 10.62,
+      "relativeStrength": 27.43,
       "hasBreakout": true,
       "signalCount": 3,
-      "note": "金鉱株がSPYに対して相対的に強いことや直近で戻り高値を上抜けたことから注目される。"
+      "note": "金鉱株がSPYに対して相対的に強いことと直近で戻り高値を上抜けたことから注目に値する。"
     },
     {
       "id": "etf-gld",
       "name": "ゴールド (GLD)",
-      "drawdown": 14.63,
-      "relativeStrength": 2.88,
+      "drawdown": 13.96,
+      "relativeStrength": 3.99,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "ゴールドがSPYに対して相対的に強いことから注目される。"
+      "note": "下落率が深い銘柄の一角であり、SPYに対して相対的に強いことから注目に値する。"
     },
     {
       "id": "etf-corn",
       "name": "コーン (CORN)",
-      "drawdown": 13.35,
-      "relativeStrength": 7.83,
+      "drawdown": 12.4,
+      "relativeStrength": 9.34,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "コーンがSPYに対して相対的に強いことから注目される。"
-    },
-    {
-      "id": "etf-epi",
-      "name": "インド (EPI)",
-      "drawdown": 15.67,
-      "relativeStrength": 0.15,
-      "hasBreakout": false,
-      "signalCount": 2,
-      "note": "インドがSPYに対して相対的に強いことから注目される。"
+      "note": "下落率が深い銘柄の一角であり、SPYに対して相対的に強いことから注目に値する。"
     },
     {
       "id": "etf-ewz",
       "name": "ブラジル (EWZ)",
-      "drawdown": 16.48,
-      "relativeStrength": 0.46,
+      "drawdown": 16.22,
+      "relativeStrength": 1.08,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "ブラジルがSPYに対して相対的に強いことから注目される。"
+      "note": "下落率が深い銘柄の一角であり、SPYに対して相対的に強いことから注目に値する。"
     },
     {
       "id": "etf-eido",
       "name": "インドネシア (EIDO)",
-      "drawdown": 45.91,
-      "relativeStrength": 14.15,
+      "drawdown": 46.42,
+      "relativeStrength": 13.41,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "インドネシアがSPYに対して相対的に強いことから注目される。"
+      "note": "下落率が深い銘柄の一角であり、SPYに対して相対的に強いことから注目に値する。"
     },
     {
       "id": "etf-smin",
       "name": "インド小型株 (SMIN)",
-      "drawdown": 17.56,
-      "relativeStrength": 5.4,
+      "drawdown": 18.14,
+      "relativeStrength": 4.97,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "インド小型株がSPYに対して相対的に強いことから注目される。"
+      "note": "下落率が深い銘柄の一角であり、SPYに対して相対的に強いことから注目に値する。"
     }
   ]
 }
