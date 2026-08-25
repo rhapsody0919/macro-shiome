@@ -53,55 +53,62 @@ export function BosList({
               key={asset.symbol}
               className="rounded border border-slate-200 p-3 text-sm dark:border-slate-800"
             >
-              <div className="font-semibold">{asset.name}</div>
-              <div className="mt-1 flex flex-wrap gap-x-4 gap-y-1 text-xs text-slate-500">
-                <span>
-                  1つ目の安値: {formatDate(asset.detection.firstLowDate)} (
-                  {formatNumber(asset.detection.firstLowPrice, 2)})
-                </span>
-                <span>
-                  前回の高値: {formatDate(asset.detection.priorHighDate)} (
-                  {formatNumber(asset.detection.priorHighPrice, 2)})
-                </span>
-                <span>
-                  2つ目の安値: {formatDate(asset.detection.secondLowDate)} (
-                  {formatNumber(asset.detection.secondLowPrice, 2)})
-                </span>
-                <span>
-                  ブレイクアウト: {formatDate(asset.detection.breakoutDate)} (
-                  {formatNumber(asset.detection.breakoutPrice, 2)})
-                </span>
-              </div>
-              {asset.priceSeries && (
-                <div className="mt-3">
-                  <PatternChart
-                    priceSeries={asset.priceSeries}
-                    markers={[
-                      {
-                        date: asset.detection.firstLowDate,
-                        price: asset.detection.firstLowPrice,
-                        label: '1つ目の安値',
-                      },
-                      {
-                        date: asset.detection.priorHighDate,
-                        price: asset.detection.priorHighPrice,
-                        label: '前回の高値',
-                      },
-                      {
-                        date: asset.detection.secondLowDate,
-                        price: asset.detection.secondLowPrice,
-                        label: '2つ目の安値',
-                      },
-                      {
-                        date: asset.detection.breakoutDate,
-                        price: asset.detection.breakoutPrice,
-                        label: 'ブレイクアウト',
-                      },
-                    ]}
-                    levels={[{ value: asset.detection.priorHighPrice, label: '上抜けた水準' }]}
-                  />
+              {/*
+                銘柄名だけを常時表示し、詳細 (スイング点・チャート) は折りたたむ (#302)。
+                初心者は「該当銘柄がある/ない」が一覧だけで分かればよく、
+                スイング点の詳細は関心のある人だけが開けばよいため。
+              */}
+              <details>
+                <summary className="cursor-pointer font-semibold">{asset.name}</summary>
+                <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs text-slate-500">
+                  <span>
+                    1つ目の安値: {formatDate(asset.detection.firstLowDate)} (
+                    {formatNumber(asset.detection.firstLowPrice, 2)})
+                  </span>
+                  <span>
+                    前回の高値: {formatDate(asset.detection.priorHighDate)} (
+                    {formatNumber(asset.detection.priorHighPrice, 2)})
+                  </span>
+                  <span>
+                    2つ目の安値: {formatDate(asset.detection.secondLowDate)} (
+                    {formatNumber(asset.detection.secondLowPrice, 2)})
+                  </span>
+                  <span>
+                    ブレイクアウト: {formatDate(asset.detection.breakoutDate)} (
+                    {formatNumber(asset.detection.breakoutPrice, 2)})
+                  </span>
                 </div>
-              )}
+                {asset.priceSeries && (
+                  <div className="mt-3">
+                    <PatternChart
+                      priceSeries={asset.priceSeries}
+                      markers={[
+                        {
+                          date: asset.detection.firstLowDate,
+                          price: asset.detection.firstLowPrice,
+                          label: '1つ目の安値',
+                        },
+                        {
+                          date: asset.detection.priorHighDate,
+                          price: asset.detection.priorHighPrice,
+                          label: '前回の高値',
+                        },
+                        {
+                          date: asset.detection.secondLowDate,
+                          price: asset.detection.secondLowPrice,
+                          label: '2つ目の安値',
+                        },
+                        {
+                          date: asset.detection.breakoutDate,
+                          price: asset.detection.breakoutPrice,
+                          label: 'ブレイクアウト',
+                        },
+                      ]}
+                      levels={[{ value: asset.detection.priorHighPrice, label: '上抜けた水準' }]}
+                    />
+                  </div>
+                )}
+              </details>
             </li>
           ))}
         </ul>

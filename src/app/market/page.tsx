@@ -662,6 +662,12 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
     title: 'ブレイクアウト (CHoCH)',
     subtitle: '下落トレンド (安値切り下げ) の途中で、終値が前回の高値を上抜けた銘柄',
     notes: [
+      <span key="scope">
+        <strong>他の指標とは性質が違う。</strong>
+        株価が割高か・景気がどう動いているかではなく、短期の値動きの構造を見る
+        プロのトレード手法 (Smart Money Concepts/ICT) によるシグナル。中長期の
+        投資判断がメインなら読み飛ばしてよい。
+      </span>,
       <span key="def">
         <strong>Smart Money Concepts (SMC/ICT) の CHoCH (Change of Character) に
           準拠した定義。</strong>
@@ -702,6 +708,12 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
     title: 'BOS (トレンド継続)',
     subtitle: '上昇トレンド (安値切り上げ) の途中で、終値が前回の高値を上抜けた銘柄',
     notes: [
+      <span key="scope">
+        <strong>他の指標とは性質が違う。</strong>
+        株価が割高か・景気がどう動いているかではなく、短期の値動きの構造を見る
+        プロのトレード手法 (Smart Money Concepts/ICT) によるシグナル。中長期の
+        投資判断がメインなら読み飛ばしてよい。
+      </span>,
       <span key="def">
         <strong>Smart Money Concepts (SMC/ICT) の BOS (Break of Structure) に
           準拠した定義。</strong>
