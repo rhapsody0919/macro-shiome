@@ -46,4 +46,17 @@ describe('IndicatorExplanations', () => {
       /指標マスタに無い ID/,
     );
   });
+
+  it('定義・読み方・合わせて見るのラベルで構造化する (#328)', () => {
+    // 3文が同じ見た目で並ぶと「つらつらとした文章」に見えるため、ラベルで区別する。
+    render(<IndicatorExplanations ids={['nfci']} />);
+    expect(screen.getByText('定義:')).toBeInTheDocument();
+    expect(screen.getByText('読み方:')).toBeInTheDocument();
+    expect(screen.getByText('合わせて見る:')).toBeInTheDocument();
+  });
+
+  it('NFCIの解説で「シャドーバンキング」を未定義のまま使わない (#328)', () => {
+    render(<IndicatorExplanations ids={['nfci']} />);
+    expect(document.body.textContent).toContain('銀行以外の金融機関');
+  });
 });
