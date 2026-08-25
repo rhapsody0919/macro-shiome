@@ -103,7 +103,9 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
       </span>,
       <span key="market">
         <strong>実績ではなく 市場が織り込む物価。</strong>
-        名目債と TIPS の利回り差から求める。経済ページのコア物価が実績、こちらが先行き。
+        名目債と TIPS (物価連動国債。元本が物価に連動して増減するため、
+        物価上昇分を差し引いた実質の利回りで取引される) の利回り差から求める。
+        経済ページのコア物価が実績、こちらが先行き。
       </span>,
       <span key="same">
         3 本とも同じ手法なので重ねられる。期間の違いが「いつの物価を織り込んでいるか」を示す。
@@ -126,7 +128,7 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
     notes: [
       <span key="expectation">
         <strong>2年債は政策金利の織り込みを映す。</strong>
-        今後 2 年の利下げ・利上げ見通しが price される。上の「金利の内訳」の FF 金利より先に動く。
+        今後 2 年の利下げ・利上げ見通しが織り込まれる。上の「金利の内訳」の FF 金利より先に動く。
       </span>,
       <span key="structure">
         <strong>3か月 → 2年の期間構造。</strong>
@@ -517,6 +519,12 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
     subtitle: 'S&P 500 のインプライド・ボラティリティ指数',
     series: [{ key: 'vix', label: 'VIX', color: COLORS.vix }],
     notes: [
+      <span key="def">
+        <strong>S&P 500 のオプション価格から算出する、今後 30 日間の値動きの大きさ
+          (ボラティリティ) に対する市場の予想値。</strong>
+        数値が高いほど、投資家が大きな値動きを警戒していることを示す。
+        「恐怖指数」とも呼ばれる。
+      </span>,
       <span key="weekly">
         <strong>日次 (終値)。</strong>
         週の途中の急騰も図に出る。ただし日中の高値・安値は持っていないので、
