@@ -45,28 +45,35 @@ export default function CalendarPage() {
         <p className="text-sm text-slate-500">まだ生成されていない。</p>
       ) : (
         <ul className="space-y-3">
-          {sorted.map((entry) => (
-            <li
-              key={entry.label}
-              className="rounded border border-slate-200 px-3 py-2 dark:border-slate-800"
-            >
-              <div className="flex flex-wrap items-baseline justify-between gap-2">
-                <span className="text-sm font-semibold">{entry.label}</span>
-                <span className="text-xs text-slate-500">{SOURCE_LABELS[entry.source]}</span>
-              </div>
-              <div className="mt-1 text-sm">
-                次回:{' '}
-                <span className="font-semibold tabular-nums">
-                  {entry.nextReleaseDate === null ? '不明' : formatDate(entry.nextReleaseDate)}
-                </span>
-              </div>
-              <p className="mt-1 text-xs text-slate-500">
-                {entry.indicatorIds
-                  .map((id) => indicators[id]?.name ?? id)
-                  .join(' / ')}
-              </p>
-            </li>
-          ))}
+          {sorted.map((entry) => {
+            // グループ名 (entry.label) は FRED のリリース名 (英語) をそのまま持つため、
+            // 見出しには指標マスタの日本語名を使う (#307)。英語名は出所の参考として小さく残す。
+            const names = entry.indicatorIds.map((id) => indicators[id]?.name ?? id);
+            const heading =
+              names.length <= 1 ? (names[0] ?? entry.label) : `${names[0]} ほか${names.length - 1}件`;
+
+            return (
+              <li
+                key={entry.label}
+                className="rounded border border-slate-200 px-3 py-2 dark:border-slate-800"
+              >
+                <div className="flex flex-wrap items-baseline justify-between gap-2">
+                  <span className="text-sm font-semibold">{heading}</span>
+                  <span className="text-xs text-slate-500">{SOURCE_LABELS[entry.source]}</span>
+                </div>
+                <div className="mt-1 text-sm">
+                  次回:{' '}
+                  <span className="font-semibold tabular-nums">
+                    {entry.nextReleaseDate === null ? '不明' : formatDate(entry.nextReleaseDate)}
+                  </span>
+                </div>
+                {names.length > 1 && (
+                  <p className="mt-1 text-xs text-slate-500">{names.join(' / ')}</p>
+                )}
+                <p className="mt-1 text-[11px] text-slate-400">{entry.label}</p>
+              </li>
+            );
+          })}
         </ul>
       )}
 
