@@ -192,6 +192,20 @@ describe('summarizeEconomyState (#279)', () => {
     const result = await summarizeEconomyState(summarizer, [{ label: 'VIX', value: 20 }]);
     expect(result).toBe('景気は緩やかに減速している。');
   });
+
+  it('スプレッドを価格の変化と言い換えないよう指示する (#310)', async () => {
+    // 実機確認で「ハイイールド債の価格が高まっている」という、スプレッド拡大 (リスク回避)
+    // を資産価格の上昇と取り違えた生成例が見つかったための回帰防止。
+    let capturedPrompt = '';
+    const summarizer: Summarizer = {
+      summarize: async (prompt) => {
+        capturedPrompt = prompt;
+        return '景気は緩やかに減速している。';
+      },
+    };
+    await summarizeEconomyState(summarizer, [{ label: 'ハイイールド債スプレッド', value: 2.75 }]);
+    expect(capturedPrompt).toContain('資産の価格そのものではない');
+  });
 });
 
 describe('buildSummaryView (#279)', () => {
