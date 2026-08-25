@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-25T02:50:13.493Z",
-  "economyState": "経済は安定しているように見えますが、金融環境がやや不安定な傾向があります。投資市場の不安感はあるものの、現在は比較的穏やかな状況です。",
+  "generatedAt": "2026-08-25T04:12:26.395Z",
+  "economyState": "経済は安定感が低く、不安定な状況にある。インフレ対策の金利上昇が市場の期待を高め、金融不安が生じている。金利の差や不安定性が高まり、経済の不安定性が強まっている。",
   "economyStateFactCount": 5,
   "warnings": [],
   "highlights": [
@@ -11,7 +11,7 @@
       "relativeStrength": 27.43,
       "hasBreakout": true,
       "signalCount": 3,
-      "note": "金鉱株がSPYに対して相対的に強いことと直近で戻り高値を上抜けたことから注目に値する。"
+      "note": "金鉱株の相対的な強さと直近の戻り高値を上抜けたことから注目に値する。"
     },
     {
       "id": "etf-gld",
@@ -20,7 +20,7 @@
       "relativeStrength": 3.99,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "下落率が深い銘柄の一角であり、SPYに対して相対的に強いことから注目に値する。"
+      "note": "下落率が深い銘柄の一角としてSPYに対して相対的に強いことから注目に値する。"
     },
     {
       "id": "etf-corn",
@@ -29,7 +29,7 @@
       "relativeStrength": 9.34,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "下落率が深い銘柄の一角であり、SPYに対して相対的に強いことから注目に値する。"
+      "note": "下落率が深い銘柄の一角としてSPYに対して相対的に強いことから注目に値する。"
     },
     {
       "id": "etf-ewz",
@@ -38,7 +38,7 @@
       "relativeStrength": 1.08,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "下落率が深い銘柄の一角であり、SPYに対して相対的に強いことから注目に値する。"
+      "note": "下落率が深い銘柄の一角としてSPYに対して相対的に強いことから注目に値する。"
     },
     {
       "id": "etf-eido",
@@ -47,7 +47,7 @@
       "relativeStrength": 13.41,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "下落率が深い銘柄の一角であり、SPYに対して相対的に強いことから注目に値する。"
+      "note": "下落率が深い銘柄の一角としてSPYに対して相対的に強いことから注目に値する。"
     },
     {
       "id": "etf-smin",
@@ -56,7 +56,7 @@
       "relativeStrength": 4.97,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "下落率が深い銘柄の一角であり、SPYに対して相対的に強いことから注目に値する。"
+      "note": "下落率が深い銘柄の一角としてSPYに対して相対的に強いことから注目に値する。"
     }
   ]
 }
