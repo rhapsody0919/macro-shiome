@@ -129,6 +129,11 @@ const CHARTS: QuestionChartDef<JapanQuestionId>[] = [
       },
     ],
     notes: [
+      <span key="di">
+        <strong>DI (拡散指数) は、良い/悪いを答えたアンケートの回答を点数化して
+          平均した値。</strong>
+        0〜100 で表され、回答者全員が「良い」なら 100、全員「悪い」なら 0 に近づく。
+      </span>,
       <span key="who">
         <strong>取引の現場にいる人の実感。</strong>
         小売・飲食・タクシーなど、景気の動きを直接見る立場の人が答える。
@@ -358,6 +363,10 @@ const CHARTS: QuestionChartDef<JapanQuestionId>[] = [
       },
     ],
     notes: [
+      <span key="def">
+        <strong>M2 は世の中に出回っている通貨の量を示す代表的な指標。</strong>
+        現金に加えて、いつでも引き出せる預金 (普通・当座預金など) を合計したもの。
+      </span>,
       <span key="why">
         <strong>物価の背景として読む。</strong>
         通貨量が増え続けても物価が動かない時期は長かった。上の消費者物価と並べて、
@@ -640,7 +649,7 @@ const CHARTS: QuestionChartDef<JapanQuestionId>[] = [
     ],
     notes: [
       <span key="yen">
-        <strong>円買い需要の構造的な source。</strong>
+        <strong>円買い需要の構造的な源。</strong>
         黒字が細れば、金利差が同じでも円は支えを失う。下の USD/JPY と合わせて読む。
       </span>,
       <span key="gap">
