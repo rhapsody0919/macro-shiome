@@ -139,7 +139,10 @@ export function ForwardPeChart({ view }: { view: ValuationView }) {
         </>,
         <>淡く塗った領域は 5 年平均を上回る範囲。線が途切れている箇所はレポート休刊による欠測。</>,
         <>
-          PER は as-reported (GAAP) ベース。一般的な投資レポート (operating ベース) より高く出る。
+          PER は as-reported (GAAP) ベース。<strong>会計基準どおりに算出した利益</strong>
+          (一時的な特別損益も含む) を使っている。一般的な投資レポートが使う operating ベース
+          (<strong>本業の利益だけを取り出したもの</strong>) より利益が低めに出やすく、その分
+          PER (株価 ÷ 利益) は高めに出る。
         </>,
         <>
           <strong>Forward と実績は水準が違う</strong> (実績の方が高い)。

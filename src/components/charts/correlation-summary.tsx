@@ -33,6 +33,8 @@ export function CorrelationSummary({ view }: { view: ValuationView }) {
           <h2 className="text-base font-bold">指数と EPS の相関</h2>
           <p className="text-[11px] text-slate-500">
             {INDEX_LABELS[indexKey]} と {epsLabel} のピアソン相関係数
+            (2つの数値がどれくらい同じ方向に動くかを −1〜+1 で表す統計値。+1 に近いほど同じ方向、
+            −1 に近いほど逆方向、0 は無関係)
           </p>
         </div>
         <IndexSwitch value={indexKey} onChange={setIndexKey} />
@@ -54,8 +56,8 @@ export function CorrelationSummary({ view }: { view: ValuationView }) {
           3 つの窓を並べて比べること自体が目的のため。
         </li>
         <li>
-          両方に値がある週だけを使う (片方が欠測の週は除外)。標本数が 10 未満のときは
-          偶然で大きく振れるため数値を出さない。
+          両方に値がある週だけを使う (片方が欠測の週は除外)。「n =」は集計に使った週の数
+          (標本数)。10 未満のときは偶然で大きく振れるため数値を出さない。
         </li>
         <li>
           相関が高いほど、株価の動きが業績で説明できていることを意味する。

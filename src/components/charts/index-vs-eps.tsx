@@ -279,8 +279,9 @@ function Notes({
   return (
     <ul className="space-y-1 text-[11px] text-slate-500">
       <li>
-        EPS は指数 ÷ PER で算出した導出値。PER は as-reported (GAAP) ベースのため、
-        一般的な投資レポート (operating ベース) とは約 9% ずれる。
+        EPS は指数 ÷ PER で算出した導出値。PER は as-reported (GAAP、会計基準どおりの利益) ベース
+        のため、一般的な投資レポートが使う operating ベース (本業の利益だけを取り出したもの) と
+        は約 9% ずれる。
       </li>
       <li>凡例をクリックすると系列を隠せる。指数を隠せば EPS だけを比較できる。</li>
       <li>点は過去最高値を更新した週。線が途切れている箇所はデータの欠測 (補完しない)。</li>
