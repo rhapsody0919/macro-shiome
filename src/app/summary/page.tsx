@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { drawdown, summary } from '@/lib/data/loader';
 import { formatDate, formatNumber, formatSigned } from '@/lib/format';
 import type { SectorHighlight, WarningSignal } from '@/lib/data/types';
@@ -169,6 +170,10 @@ function HighlightItem({ highlight }: { highlight: SectorHighlight }) {
       <p className="mt-1.5 text-xs text-slate-600 dark:text-slate-400">
         {highlight.note ?? 'AIによる説明はまだ生成されていない。'}
       </p>
+      {/* チャートで詳しく見るための導線 (#309)。 */}
+      <Link href="/market#q-drawdown" className="mt-1.5 inline-block text-xs underline">
+        「市場」ページでチャートを見る
+      </Link>
     </li>
   );
 }

@@ -54,6 +54,17 @@ describe('初見の分かりやすさの改善 (#283)', () => {
     ).toBeInTheDocument();
   });
 
+  it('ハイライトの各カードから市場ページの下落率チャートへのリンクを出す (#309)', () => {
+    render(<SummaryPage />);
+    if (summary.highlights.length > 0) {
+      const links = screen.getAllByRole('link', { name: '「市場」ページでチャートを見る' });
+      expect(links).toHaveLength(summary.highlights.length);
+      for (const link of links) {
+        expect(link).toHaveAttribute('href', '/market#q-drawdown');
+      }
+    }
+  });
+
   it('経済状態が生成済みなら材料件数を注記する', () => {
     render(<SummaryPage />);
     if (summary.economyState !== null) {
