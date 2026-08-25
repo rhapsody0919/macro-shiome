@@ -79,10 +79,11 @@ export function JapanSummary({
       <SummaryCard
         label="経常収支"
         value={formatNumber(account.value, 0)}
+        valueUnit="億円"
         delta={account.delta}
         deltaLabel={stepLabel(account.stepsBack, '月')}
         asOf={formatMonth(account.at)}
-        note="海外との取引は円を支えるか。億円・季節調整済み"
+        note="海外との取引は円を支えるか。季節調整済み"
       />
       <SummaryCard
         label="日経平均株価"
@@ -95,10 +96,11 @@ export function JapanSummary({
       <SummaryCard
         label="新設住宅着工戸数"
         value={formatNumber(housing.value, 0)}
+        valueUnit="戸"
         delta={housing.delta}
         deltaLabel={stepLabel(housing.stepsBack, '月')}
         asOf={formatMonth(housing.at)}
-        note="住宅は動いているか。戸・季調済年率換算"
+        note="住宅は動いているか。季調済年率換算"
       />
     </SummaryGrid>
   );

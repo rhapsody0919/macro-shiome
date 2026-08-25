@@ -11,6 +11,7 @@ import { changeMark, formatSigned } from '@/lib/format';
 export function SummaryCard({
   label,
   value,
+  valueUnit,
   delta,
   deltaUnit = '',
   deltaLabel,
@@ -18,8 +19,13 @@ export function SummaryCard({
   note,
 }: {
   label: string;
-  /** 整形済みの値。単位も含めて呼び出し側で作る。 */
+  /** 整形済みの値。%・pt のように値に埋め込む単位は呼び出し側で含める。 */
   value: string;
+  /**
+   * 値に埋め込まれていない単位 (千戸・億円など) を、数値のすぐ右に添える (#306)。
+   * 大きな数値だけが先に目に入り、単位が下の小さい note に埋もれて誤読されるのを防ぐ。
+   */
+  valueUnit?: string;
   /** 前回との差。欠測なら null。 */
   delta: number | null;
   deltaUnit?: string;
@@ -32,7 +38,12 @@ export function SummaryCard({
   return (
     <div className="rounded border border-slate-200 px-3 py-2 dark:border-slate-800">
       <div className="text-[11px] text-slate-500">{label}</div>
-      <div className="mt-0.5 text-lg font-semibold tabular-nums">{value}</div>
+      <div className="mt-0.5 tabular-nums">
+        <span className="text-lg font-semibold">{value}</span>
+        {valueUnit !== undefined && (
+          <span className="ml-1 text-xs text-slate-500">{valueUnit}</span>
+        )}
+      </div>
 
       <div className="text-[11px] tabular-nums text-slate-500">
         {delta === null ? (

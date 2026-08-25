@@ -41,4 +41,11 @@ describe('日本ページの要約 (#186)', () => {
     const summary = screen.getByRole('region', { name: '最新の状況' });
     expect(within(summary).getAllByText(/前日比|日前比/).length).toBeGreaterThan(0);
   });
+
+  it('経常収支・新設住宅着工戸数は単位を数値の近くに表示する (#306)', () => {
+    render(<JapanPage />);
+    const summary = screen.getByRole('region', { name: '最新の状況' });
+    expect(within(summary).getByText('億円')).toBeInTheDocument();
+    expect(within(summary).getByText('戸')).toBeInTheDocument();
+  });
 });

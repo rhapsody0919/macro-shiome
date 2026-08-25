@@ -82,10 +82,11 @@ export function EconomySummary({
       <SummaryCard
         label="建設許可"
         value={formatNumber(permits.value, 0)}
+        valueUnit="千戸"
         delta={permits.delta}
         deltaLabel={stepLabel(permits.stepsBack, '月')}
         asOf={formatMonth(permits.at)}
-        note="住宅は動いているか。千戸"
+        note="住宅は動いているか。"
       />
     </SummaryGrid>
   );
