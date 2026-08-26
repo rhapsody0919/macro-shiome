@@ -11524,7 +11524,7 @@
       "newOrdersCapitalGoods": 10.92,
       "buildingPermits": 1423,
       "housingStarts": 1414,
-      "newHomeSales": 646,
+      "newHomeSales": 641,
       "existingHomeSales": 4040000,
       "jpUnemploymentRate": 2.5,
       "jpProducerPrice": 5.4,
@@ -11560,7 +11560,7 @@
       "jpImportPrice": 188.7,
       "jpDiLeading": 116.1,
       "jpDiCoincident": 118.1,
-      "jpDiLagging": 111.6,
+      "jpDiLagging": 111.7,
       "jpHousingStarts": 723624,
       "jpHousingStartsOwned": 16654,
       "jpHousingStartsRented": 29426,
@@ -11599,7 +11599,7 @@
       "realDisposableTotal": 0.11,
       "retailSalesTotal": 7.23,
       "vehicleSales": 16.75,
-      "newHomeSupply": 9.4,
+      "newHomeSupply": 9.3,
       "housingStartsSingle": 889,
       "commercialLoans": 8.03,
       "u6Rate": 8.1,
@@ -11623,7 +11623,7 @@
       "newOrdersCapitalGoods": 10.93,
       "buildingPermits": 1410,
       "housingStarts": 1182,
-      "newHomeSales": 618,
+      "newHomeSales": 630,
       "existingHomeSales": 4190000,
       "jpUnemploymentRate": 2.5,
       "jpProducerPrice": 6.6,
@@ -11657,9 +11657,9 @@
       "jpJobRatio": 1.17,
       "jpExportPrice": 162,
       "jpImportPrice": 194.3,
-      "jpDiLeading": 116.4,
+      "jpDiLeading": 116.5,
       "jpDiCoincident": 117.9,
-      "jpDiLagging": 111.4,
+      "jpDiLagging": 111.3,
       "jpHousingStarts": 756720,
       "jpHousingStartsOwned": 16650,
       "jpHousingStartsRented": 30167,
@@ -11698,7 +11698,7 @@
       "realDisposableTotal": 0.52,
       "retailSalesTotal": 6.75,
       "vehicleSales": 17.04,
-      "newHomeSupply": 9.3,
+      "newHomeSupply": 8.5,
       "housingStartsSingle": 897,
       "commercialLoans": 8.37,
       "u6Rate": 7.9,
@@ -11722,7 +11722,7 @@
       "newOrdersCapitalGoods": 12.94,
       "buildingPermits": 1374,
       "housingStarts": 1415,
-      "newHomeSales": 628,
+      "newHomeSales": 678,
       "existingHomeSales": 4130000,
       "jpUnemploymentRate": 2.5,
       "jpProducerPrice": 7.3,
@@ -11756,9 +11756,9 @@
       "jpJobRatio": 1.18,
       "jpExportPrice": 162.9,
       "jpImportPrice": 197.2,
-      "jpDiLeading": 116.4,
-      "jpDiCoincident": 118.2,
-      "jpDiLagging": 112.3,
+      "jpDiLeading": 116.5,
+      "jpDiCoincident": 118.5,
+      "jpDiLagging": 111.8,
       "jpHousingStarts": 786432,
       "jpHousingStartsOwned": 17126,
       "jpHousingStartsRented": 30460,
@@ -11797,7 +11797,7 @@
       "realDisposableTotal": null,
       "retailSalesTotal": 5.01,
       "vehicleSales": 16.78,
-      "newHomeSupply": null,
+      "newHomeSupply": 9.6,
       "housingStartsSingle": 808,
       "commercialLoans": 8.64,
       "u6Rate": 7.9,
@@ -11819,9 +11819,9 @@
       "industrialProduction": 1.08,
       "newOrdersConsumerGoods": null,
       "newOrdersCapitalGoods": null,
-      "buildingPermits": 1443,
+      "buildingPermits": 1433,
       "housingStarts": 1239,
-      "newHomeSales": null,
+      "newHomeSales": 607,
       "existingHomeSales": 4060000,
       "jpUnemploymentRate": null,
       "jpProducerPrice": 7.2,
@@ -11845,11 +11845,11 @@
       "jpConsumptionIndex": null,
       "jpCpiCore": 1.8,
       "jpCpi": 1.9,
-      "jpWatcherCurrent": null,
+      "jpWatcherCurrent": 45.7,
       "jpBsiLarge": null,
       "jpBsiMid": null,
       "jpBsiSmall": null,
-      "jpWatcherOutlook": null,
+      "jpWatcherOutlook": 45.8,
       "jpRealWage": null,
       "jpNewJobRatio": null,
       "jpJobRatio": null,
@@ -12043,7 +12043,7 @@
     },
     {
       "indicatorId": "new-home-supply",
-      "latestMonth": "2026-06-01"
+      "latestMonth": "2026-07-01"
     },
     {
       "indicatorId": "housing-starts-single",
@@ -12135,7 +12135,7 @@
     },
     {
       "indicatorId": "new-home-sales",
-      "latestMonth": "2026-06-01"
+      "latestMonth": "2026-07-01"
     },
     {
       "indicatorId": "existing-home-sales",
@@ -12231,11 +12231,11 @@
     },
     {
       "indicatorId": "jp-watcher-current",
-      "latestMonth": "2026-06-01"
+      "latestMonth": "2026-07-01"
     },
     {
       "indicatorId": "jp-watcher-outlook",
-      "latestMonth": "2026-06-01"
+      "latestMonth": "2026-07-01"
     },
     {
       "indicatorId": "jp-real-wage",

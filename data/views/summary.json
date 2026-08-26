@@ -1,62 +1,62 @@
 {
-  "generatedAt": "2026-08-25T04:12:26.395Z",
-  "economyState": "経済は安定感が低く、不安定な状況にある。インフレ対策の金利上昇が市場の期待を高め、金融不安が生じている。金利の差や不安定性が高まり、経済の不安定性が強まっている。",
+  "generatedAt": "2026-08-26T02:56:21.419Z",
+  "economyState": "経済は比較的安定している状態ですが、不安定性の兆候が見られます。金利の差や金融環境の変化が指摘されています。また、失業保険の申請件数が増加していることは、就労状況が悪化していることを示唆しています。",
   "economyStateFactCount": 5,
   "warnings": [],
   "highlights": [
     {
-      "id": "etf-gdx",
-      "name": "金鉱株 (GDX)",
-      "drawdown": 10.62,
-      "relativeStrength": 27.43,
-      "hasBreakout": true,
-      "signalCount": 3,
-      "note": "金鉱株の相対的な強さと直近の戻り高値を上抜けたことから注目に値する。"
-    },
-    {
       "id": "etf-gld",
       "name": "ゴールド (GLD)",
-      "drawdown": 13.96,
-      "relativeStrength": 3.99,
+      "drawdown": 13.68,
+      "relativeStrength": 4,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "下落率が深い銘柄の一角としてSPYに対して相対的に強いことから注目に値する。"
+      "note": "下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
     },
     {
       "id": "etf-corn",
       "name": "コーン (CORN)",
-      "drawdown": 12.4,
-      "relativeStrength": 9.34,
+      "drawdown": 10.71,
+      "relativeStrength": 11.09,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "下落率が深い銘柄の一角としてSPYに対して相対的に強いことから注目に値する。"
+      "note": "下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
+    },
+    {
+      "id": "etf-epi",
+      "name": "インド (EPI)",
+      "drawdown": 14.73,
+      "relativeStrength": 1.24,
+      "hasBreakout": false,
+      "signalCount": 2,
+      "note": "下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
     },
     {
       "id": "etf-ewz",
       "name": "ブラジル (EWZ)",
-      "drawdown": 16.22,
-      "relativeStrength": 1.08,
+      "drawdown": 14.53,
+      "relativeStrength": 2.79,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "下落率が深い銘柄の一角としてSPYに対して相対的に強いことから注目に値する。"
+      "note": "下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
     },
     {
       "id": "etf-eido",
       "name": "インドネシア (EIDO)",
-      "drawdown": 46.42,
-      "relativeStrength": 13.41,
+      "drawdown": 45.83,
+      "relativeStrength": 14.3,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "下落率が深い銘柄の一角としてSPYに対して相対的に強いことから注目に値する。"
+      "note": "下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
     },
     {
       "id": "etf-smin",
       "name": "インド小型株 (SMIN)",
-      "drawdown": 18.14,
-      "relativeStrength": 4.97,
+      "drawdown": 17.09,
+      "relativeStrength": 5.98,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "下落率が深い銘柄の一角としてSPYに対して相対的に強いことから注目に値する。"
+      "note": "下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
     }
   ]
 }

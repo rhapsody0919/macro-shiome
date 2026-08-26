@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-25T04:12:26.395Z",
+  "generatedAt": "2026-08-26T02:56:21.419Z",
   "entries": [
     {
       "label": "Standard & Poors",
       "indicatorIds": [
         "sp500"
       ],
-      "nextReleaseDate": "2026-08-25",
+      "nextReleaseDate": "2026-08-26",
       "source": "fred"
     },
     {
@@ -15,7 +15,7 @@
         "nasdaq100",
         "nasdaq-composite"
       ],
-      "nextReleaseDate": "2026-08-25",
+      "nextReleaseDate": "2026-08-26",
       "source": "fred"
     },
     {
@@ -27,7 +27,7 @@
         "dgs2",
         "tbill-3m"
       ],
-      "nextReleaseDate": "2026-08-25",
+      "nextReleaseDate": "2026-08-26",
       "source": "fred"
     },
     {
@@ -39,7 +39,7 @@
         "breakeven-5y5y",
         "term-spread-3m"
       ],
-      "nextReleaseDate": "2026-08-25",
+      "nextReleaseDate": "2026-08-26",
       "source": "fred"
     },
     {
@@ -47,7 +47,7 @@
       "indicatorIds": [
         "vix"
       ],
-      "nextReleaseDate": "2026-08-25",
+      "nextReleaseDate": "2026-08-26",
       "source": "fred"
     },
     {
@@ -160,7 +160,7 @@
         "housing-starts",
         "housing-starts-single"
       ],
-      "nextReleaseDate": "2026-08-25",
+      "nextReleaseDate": "2026-09-17",
       "source": "fred"
     },
     {
@@ -169,7 +169,7 @@
         "new-home-sales",
         "new-home-supply"
       ],
-      "nextReleaseDate": "2026-08-25",
+      "nextReleaseDate": "2026-09-24",
       "source": "fred"
     },
     {
@@ -225,7 +225,7 @@
         "hy-spread",
         "ig-spread"
       ],
-      "nextReleaseDate": "2026-08-25",
+      "nextReleaseDate": "2026-08-26",
       "source": "fred"
     },
     {
@@ -301,7 +301,7 @@
       "indicatorIds": [
         "nikkei225"
       ],
-      "nextReleaseDate": "2026-08-25",
+      "nextReleaseDate": "2026-08-26",
       "source": "fred"
     },
     {
@@ -325,7 +325,7 @@
       "indicatorIds": [
         "sofr"
       ],
-      "nextReleaseDate": "2026-08-25",
+      "nextReleaseDate": "2026-08-26",
       "source": "fred"
     },
     {
@@ -365,7 +365,7 @@
       "indicatorIds": [
         "djia"
       ],
-      "nextReleaseDate": "2026-08-25",
+      "nextReleaseDate": "2026-08-26",
       "source": "fred"
     },
     {
