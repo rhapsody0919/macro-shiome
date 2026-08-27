@@ -1,0 +1,2371 @@
+{
+  "generatedAt": "2026-08-27T08:22:24.985Z",
+  "entries": [
+    {
+      "indicatorId": "sp500",
+      "name": "S&P 500",
+      "frequency": "daily",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "nasdaq100",
+      "name": "NASDAQ-100",
+      "frequency": "daily",
+      "recentDates": [
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19",
+        "2026-08-18"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "dgs10",
+      "name": "10年債利回り",
+      "frequency": "daily",
+      "recentDates": [
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19",
+        "2026-08-18"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "t10yie",
+      "name": "期待インフレ率 (10年BEI)",
+      "frequency": "daily",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "dfii10",
+      "name": "10年TIPS利回り (実質金利の参照値)",
+      "frequency": "daily",
+      "recentDates": [
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19",
+        "2026-08-18"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "vix",
+      "name": "VIX",
+      "frequency": "daily",
+      "recentDates": [
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19",
+        "2026-08-18"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "usdjpy",
+      "name": "USD/JPY",
+      "frequency": "daily",
+      "recentDates": [
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19",
+        "2026-08-18",
+        "2026-08-17"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "sp500-close-factset",
+      "name": "S&P 500 終値 (FactSet 版)",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-07",
+        "2026-07-31",
+        "2026-07-17",
+        "2026-07-10",
+        "2026-06-12"
+      ],
+      "gapReason": "レポートが公開されていない"
+    },
+    {
+      "indicatorId": "sp500-forward-pe",
+      "name": "S&P 500 Forward 12M P/E",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-07",
+        "2026-07-31",
+        "2026-07-24",
+        "2026-07-17",
+        "2026-07-10"
+      ],
+      "gapReason": "レポートが公開されていない"
+    },
+    {
+      "indicatorId": "sp500-trailing-pe",
+      "name": "S&P 500 Trailing 12M P/E",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-07",
+        "2026-07-31",
+        "2026-07-24",
+        "2026-07-17",
+        "2026-07-10"
+      ],
+      "gapReason": "レポートが公開されていない"
+    },
+    {
+      "indicatorId": "sp500-forward-pe-5y-avg",
+      "name": "S&P 500 Forward P/E 5年平均",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-07",
+        "2026-07-31",
+        "2026-07-24",
+        "2026-07-17",
+        "2026-07-10"
+      ],
+      "gapReason": "レポートが公開されていない"
+    },
+    {
+      "indicatorId": "sp500-forward-pe-10y-avg",
+      "name": "S&P 500 Forward P/E 10年平均",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-07",
+        "2026-07-31",
+        "2026-07-24",
+        "2026-07-17",
+        "2026-07-10"
+      ],
+      "gapReason": "レポートが公開されていない"
+    },
+    {
+      "indicatorId": "sp500-trailing-pe-5y-avg",
+      "name": "S&P 500 Trailing P/E 5年平均",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-07",
+        "2026-07-31",
+        "2026-07-24",
+        "2026-07-17",
+        "2026-07-10"
+      ],
+      "gapReason": "レポートが公開されていない"
+    },
+    {
+      "indicatorId": "sp500-trailing-pe-10y-avg",
+      "name": "S&P 500 Trailing P/E 10年平均",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-07",
+        "2026-07-31",
+        "2026-07-24",
+        "2026-07-17",
+        "2026-07-10"
+      ],
+      "gapReason": "レポートが公開されていない"
+    },
+    {
+      "indicatorId": "shiller-pe",
+      "name": "シラーPER (CAPE)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-08-01",
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "sp500-blended-growth-today",
+      "name": "S&P 500 blended 増益率 (今週)",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-07",
+        "2026-07-31",
+        "2026-07-24",
+        "2026-07-17",
+        "2026-05-15"
+      ],
+      "gapReason": "レポートが公開されていない"
+    },
+    {
+      "indicatorId": "sp500-blended-growth-last-week",
+      "name": "S&P 500 blended 増益率 (先週)",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-07",
+        "2026-07-31",
+        "2026-07-24",
+        "2026-07-17",
+        "2026-05-15"
+      ],
+      "gapReason": "レポートが公開されていない"
+    },
+    {
+      "indicatorId": "sp500-blended-growth-quarter-end",
+      "name": "S&P 500 blended 増益率 (四半期末時点)",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-07",
+        "2026-07-31",
+        "2026-07-24",
+        "2026-07-17",
+        "2026-05-15"
+      ],
+      "gapReason": "レポートが公開されていない"
+    },
+    {
+      "indicatorId": "sp500-growth-next-quarter",
+      "name": "S&P 500 予想増益率 (翌四半期)",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-07",
+        "2026-07-31",
+        "2026-07-24",
+        "2026-07-17",
+        "2026-07-10"
+      ],
+      "gapReason": "レポートが公開されていない"
+    },
+    {
+      "indicatorId": "sp500-growth-quarter-after-next",
+      "name": "S&P 500 予想増益率 (翌々四半期)",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-07",
+        "2026-07-31",
+        "2026-07-24",
+        "2026-07-17",
+        "2026-07-10"
+      ],
+      "gapReason": "レポートが公開されていない"
+    },
+    {
+      "indicatorId": "sp500-growth-cy-current",
+      "name": "S&P 500 予想増益率 (今暦年)",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-07",
+        "2026-07-31",
+        "2026-07-24",
+        "2026-07-17",
+        "2026-07-10"
+      ],
+      "gapReason": "レポートが公開されていない"
+    },
+    {
+      "indicatorId": "sp500-growth-cy-next",
+      "name": "S&P 500 予想増益率 (翌暦年)",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-07",
+        "2026-07-31",
+        "2026-07-24",
+        "2026-07-17",
+        "2026-07-10"
+      ],
+      "gapReason": "レポートが公開されていない"
+    },
+    {
+      "indicatorId": "qqq-trailing-pe",
+      "name": "QQQ Trailing P/E (NASDAQ-100 の代理)",
+      "frequency": "daily",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "import-price",
+      "name": "輸入物価指数",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "producer-price",
+      "name": "生産者物価指数",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "cpi",
+      "name": "消費者物価指数 (CPI)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "pce-price",
+      "name": "PCE 価格指数",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "t10y2y",
+      "name": "イールドカーブ (10年債 − 2年債)",
+      "frequency": "daily",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "payrolls",
+      "name": "非農業部門雇用者数",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "employment-level",
+      "name": "就業者数 (自営業・農業を含む)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "full-time-employment",
+      "name": "フルタイム就業者数",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "adp-employment",
+      "name": "ADP雇用者数",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "real-income-ex-transfer",
+      "name": "実質個人所得 (移転所得を除く)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "real-disposable-income-per-capita",
+      "name": "1人当たり実質可処分所得",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "savings-rate",
+      "name": "貯蓄率",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "consumer-sentiment",
+      "name": "ミシガン大学消費者信頼感指数",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "visa-discretionary-spending",
+      "name": "VISA裁量的消費指数",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "visa-non-discretionary-spending",
+      "name": "VISA非裁量的消費指数",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "mortgage-rate-30y",
+      "name": "住宅ローン金利 (30年固定)",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-20",
+        "2026-08-13",
+        "2026-08-06",
+        "2026-07-30",
+        "2026-07-23"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "building-permits",
+      "name": "建設許可件数",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "housing-starts",
+      "name": "住宅着工件数",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "new-home-sales",
+      "name": "新築住宅販売件数",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "retail-sales-core",
+      "name": "小売売上 (自動車・ガソリンを除く)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "initial-claims",
+      "name": "新規失業保険申請件数",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-15",
+        "2026-08-08",
+        "2026-08-01",
+        "2026-07-25",
+        "2026-07-18"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "industrial-production",
+      "name": "鉱工業生産指数",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "new-orders-consumer-goods",
+      "name": "新規受注 (消費財)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "new-orders-capital-goods",
+      "name": "新規受注 (非国防資本財・航空機を除く)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "manufacturing-hours",
+      "name": "製造業の週平均労働時間",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "credit-conditions",
+      "name": "信用状況指数",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-14",
+        "2026-08-07",
+        "2026-07-31",
+        "2026-07-24",
+        "2026-07-17"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "hy-spread",
+      "name": "ハイイールド債スプレッド",
+      "frequency": "daily",
+      "recentDates": [
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19",
+        "2026-08-18"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "ig-spread",
+      "name": "投資適格債スプレッド",
+      "frequency": "daily",
+      "recentDates": [
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19",
+        "2026-08-18"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "fed-funds-rate",
+      "name": "FF 金利 (実効)",
+      "frequency": "daily",
+      "recentDates": [
+        "2026-08-24",
+        "2026-08-23",
+        "2026-08-22",
+        "2026-08-21",
+        "2026-08-20"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "wti",
+      "name": "原油価格 (WTI)",
+      "frequency": "daily",
+      "recentDates": [
+        "2026-08-18",
+        "2026-08-17",
+        "2026-08-14",
+        "2026-08-13",
+        "2026-08-12"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "dollar-index",
+      "name": "ドル指数 (実効為替)",
+      "frequency": "daily",
+      "recentDates": [
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19",
+        "2026-08-18",
+        "2026-08-17"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "unemployment-rate",
+      "name": "失業率",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "new-job-postings",
+      "name": "新規求人 (Indeed)",
+      "frequency": "daily",
+      "recentDates": [
+        "2026-08-14",
+        "2026-08-13",
+        "2026-08-12",
+        "2026-08-11",
+        "2026-08-10"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "federal-deficit",
+      "name": "財政収支",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "job-openings",
+      "name": "求人件数 (JOLTS)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "potential-gdp",
+      "name": "潜在GDP (CBO 推計)",
+      "frequency": "quarterly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-04-01",
+        "2026-01-01",
+        "2025-10-01",
+        "2025-07-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "ny-fed-survey",
+      "name": "NY連銀景気指数",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-08-01",
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "philly-fed-survey",
+      "name": "フィラデルフィア連銀景気指数",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-08-01",
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "personal-saving",
+      "name": "個人貯蓄額",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "real-disposable-income",
+      "name": "実質可処分所得 (総額)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "jp-10y",
+      "name": "日本 10年債利回り",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "de-10y",
+      "name": "ドイツ 10年債利回り",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "us-10y-monthly",
+      "name": "米国 10年債利回り (月次)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "export-price",
+      "name": "輸出物価指数",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "ten-year-bid-to-cover",
+      "name": "10年債入札の応札倍率",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-08-12",
+        "2026-07-08",
+        "2026-06-10",
+        "2026-05-12",
+        "2026-04-08"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "nikkei225",
+      "name": "日経平均株価",
+      "frequency": "daily",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "etf-spy",
+      "name": "S&P 500 (SPY)",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "etf-qqq",
+      "name": "NASDAQ-100 (QQQ)",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "etf-vti",
+      "name": "米国株式全体 (VTI)",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "etf-vig",
+      "name": "米国増配株 (VIG)",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "etf-gld",
+      "name": "ゴールド (GLD)",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "etf-gdx",
+      "name": "金鉱株 (GDX)",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "etf-vglt",
+      "name": "米国長期国債 (VGLT)",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "etf-vnq",
+      "name": "米国REIT (VNQ)",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "etf-iwm",
+      "name": "ラッセル2000 (IWM)",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "etf-vaw",
+      "name": "素材",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "etf-vcr",
+      "name": "一般消費財・サービス",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "etf-vdc",
+      "name": "生活必需品",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "etf-vde",
+      "name": "エネルギー",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "etf-vfh",
+      "name": "金融",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "etf-vgt",
+      "name": "情報技術",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "etf-vht",
+      "name": "ヘルスケア",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "etf-vpu",
+      "name": "公益事業",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "etf-uso",
+      "name": "原油 (USO)",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "etf-copx",
+      "name": "銅鉱山 (COPX)",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "etf-ung",
+      "name": "天然ガス (UNG)",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "etf-slx",
+      "name": "鉄鋼・鉄鉱石 (SLX)",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "etf-remx",
+      "name": "レアアース (REMX)",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "etf-corn",
+      "name": "コーン (CORN)",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "etf-weat",
+      "name": "小麦 (WEAT)",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "etf-eem",
+      "name": "新興国 (EEM)",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "etf-ewj",
+      "name": "日本 (EWJ)",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "etf-epi",
+      "name": "インド (EPI)",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "etf-ewu",
+      "name": "イギリス (EWU)",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "etf-ewg",
+      "name": "ドイツ (EWG)",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "etf-ewz",
+      "name": "ブラジル (EWZ)",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "etf-vnm",
+      "name": "ベトナム (VNM)",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "etf-eww",
+      "name": "メキシコ (EWW)",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "etf-mchi",
+      "name": "中国 (MCHI)",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "etf-eido",
+      "name": "インドネシア (EIDO)",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "etf-thd",
+      "name": "タイ (THD)",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "etf-smin",
+      "name": "インド小型株 (SMIN)",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "jp-housing-starts",
+      "name": "新設住宅着工戸数 (日本)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "jp-housing-starts-owned",
+      "name": "新設住宅着工戸数 持家 (日本)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "jp-housing-starts-rented",
+      "name": "新設住宅着工戸数 貸家 (日本)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "jp-di-leading",
+      "name": "景気動向指数 先行 (日本)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "jp-di-coincident",
+      "name": "景気動向指数 一致 (日本)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "jp-di-lagging",
+      "name": "景気動向指数 遅行 (日本)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "jp-export-price",
+      "name": "輸出物価指数 (日本)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "jp-import-price",
+      "name": "輸入物価指数 (日本)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "jp-real-wage",
+      "name": "実質賃金指数 (日本)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "jp-new-job-ratio",
+      "name": "新規求人倍率 (日本)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "jp-job-ratio",
+      "name": "有効求人倍率 (日本)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "jp-watcher-current",
+      "name": "街角景気 現状判断DI (日本)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "jp-watcher-outlook",
+      "name": "街角景気 先行き判断DI (日本)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "jp-cpi-core",
+      "name": "消費者物価指数 コア 前年同月比 (日本)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "jp-cpi",
+      "name": "消費者物価指数 総合 前年同月比 (日本)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "jp-industrial-production",
+      "name": "鉱工業生産指数 (日本)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "jp-consumption",
+      "name": "実質消費支出 前年同月比 (日本)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "jp-disposable-income",
+      "name": "実質可処分所得 前年同月比 (日本)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "jp-propensity-to-consume",
+      "name": "平均消費性向 (日本)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "jp-current-account",
+      "name": "経常収支 (日本)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "jp-trade-balance",
+      "name": "貿易収支 (日本)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "jp-money-stock",
+      "name": "マネーストック M2 (日本)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "real-consumption",
+      "name": "実質個人消費支出",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "jp-unemployment-rate",
+      "name": "完全失業率 (日本)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "jp-producer-price",
+      "name": "国内企業物価指数 前年同月比 (日本)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "existing-home-sales",
+      "name": "中古住宅販売件数",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "nfci",
+      "name": "金融環境指数 (NFCI)",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-14",
+        "2026-08-07",
+        "2026-07-31",
+        "2026-07-24",
+        "2026-07-17"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "anfci",
+      "name": "金融環境指数 調整済み (ANFCI)",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-14",
+        "2026-08-07",
+        "2026-07-31",
+        "2026-07-24",
+        "2026-07-17"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "financial-stress",
+      "name": "金融ストレス指数 (STLFSI4)",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-14",
+        "2026-08-07",
+        "2026-07-31",
+        "2026-07-24",
+        "2026-07-17"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "dgs2",
+      "name": "2年債利回り",
+      "frequency": "daily",
+      "recentDates": [
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19",
+        "2026-08-18"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "sofr",
+      "name": "SOFR (翌日物調達金利)",
+      "frequency": "daily",
+      "recentDates": [
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19",
+        "2026-08-18"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "capacity-utilization",
+      "name": "設備稼働率",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "durable-goods-orders",
+      "name": "耐久財新規受注",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "business-inventories",
+      "name": "企業在庫",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "cpi-core",
+      "name": "消費者物価指数 コア (CPI)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "pce-core",
+      "name": "PCE 価格指数 コア",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "cpi-rent",
+      "name": "家賃 CPI",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "breakeven-5y",
+      "name": "期待インフレ率 (5年BEI)",
+      "frequency": "daily",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "breakeven-5y5y",
+      "name": "5年先5年期待インフレ率",
+      "frequency": "daily",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "producer-price-all",
+      "name": "生産者物価指数 総合 (商品)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "continued-claims",
+      "name": "継続受給者数",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-08",
+        "2026-08-01",
+        "2026-07-25",
+        "2026-07-18",
+        "2026-07-11"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "u6-rate",
+      "name": "広義失業率 (U-6)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "participation-rate",
+      "name": "労働参加率",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "employment-ratio",
+      "name": "就業率",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "quits",
+      "name": "自発的離職",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "hires",
+      "name": "採用",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "weekly-hours-total",
+      "name": "週平均労働時間 (全産業)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "fed-balance-sheet",
+      "name": "FRB バランスシート",
+      "frequency": "weekly",
+      "recentDates": [
+        "2026-08-19",
+        "2026-08-12",
+        "2026-08-05",
+        "2026-07-29",
+        "2026-07-22"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "term-spread-3m",
+      "name": "イールドカーブ (10年債 − 3か月)",
+      "frequency": "daily",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "tbill-3m",
+      "name": "3か月 T-Bill",
+      "frequency": "daily",
+      "recentDates": [
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19",
+        "2026-08-18"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "commercial-loans",
+      "name": "商工業向け貸出",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "retail-sales-total",
+      "name": "小売売上 総合",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "vehicle-sales",
+      "name": "自動車販売",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "new-home-supply",
+      "name": "新築住宅の在庫月数",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "housing-starts-single",
+      "name": "住宅着工 一戸建て",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "nasdaq-composite",
+      "name": "NASDAQ 総合",
+      "frequency": "daily",
+      "recentDates": [
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19",
+        "2026-08-18"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "djia",
+      "name": "ダウ平均",
+      "frequency": "daily",
+      "recentDates": [
+        "2026-08-25",
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "usd-eur",
+      "name": "ドル/ユーロ",
+      "frequency": "daily",
+      "recentDates": [
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19",
+        "2026-08-18",
+        "2026-08-17"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "cny-usd",
+      "name": "人民元/ドル",
+      "frequency": "daily",
+      "recentDates": [
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19",
+        "2026-08-18",
+        "2026-08-17"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "jp-cpi-core-core",
+      "name": "消費者物価指数 コアコア 前年同月比 (日本)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "jp-inventory-ratio",
+      "name": "鉱工業在庫率指数 (日本)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "jp-topix",
+      "name": "TOPIX (東証株価指数)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "jp-consumption-index",
+      "name": "総消費動向指数 実質 (日本)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "jp-shipments",
+      "name": "鉱工業出荷指数 (日本)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "jp-inventory",
+      "name": "鉱工業在庫指数 (日本)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "jp-operating-rate",
+      "name": "製造工業稼働率指数 (日本)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "jp-bank-lending",
+      "name": "銀行貸出 (日本)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "jp-monetary-base",
+      "name": "マネタリーベース (日本)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "jp-working-hours",
+      "name": "総実労働時間 (日本)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "jp-public-works",
+      "name": "公共工事受注額 (日本)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "treasury-avg-rate",
+      "name": "国債の平均利率",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-31",
+        "2026-06-30",
+        "2026-05-31",
+        "2026-04-30",
+        "2026-03-31"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "treasury-avg-rate-bills",
+      "name": "国債の平均利率 (短期債)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-31",
+        "2026-06-30",
+        "2026-05-31",
+        "2026-04-30",
+        "2026-03-31"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "treasury-avg-rate-notes",
+      "name": "国債の平均利率 (中期債)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-31",
+        "2026-06-30",
+        "2026-05-31",
+        "2026-04-30",
+        "2026-03-31"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "federal-debt-public",
+      "name": "国債残高 (市中保有)",
+      "frequency": "daily",
+      "recentDates": [
+        "2026-08-24",
+        "2026-08-21",
+        "2026-08-20",
+        "2026-08-19",
+        "2026-08-18"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "jp-bsi-large",
+      "name": "企業の景況感 BSI (大企業)",
+      "frequency": "quarterly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-03-01",
+        "2025-12-01",
+        "2025-09-01",
+        "2025-06-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "jp-bsi-mid",
+      "name": "企業の景況感 BSI (中堅企業)",
+      "frequency": "quarterly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-03-01",
+        "2025-12-01",
+        "2025-09-01",
+        "2025-06-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "jp-bsi-small",
+      "name": "企業の景況感 BSI (中小企業)",
+      "frequency": "quarterly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-03-01",
+        "2025-12-01",
+        "2025-09-01",
+        "2025-06-01"
+      ],
+      "gapReason": null
+    }
+  ]
+}

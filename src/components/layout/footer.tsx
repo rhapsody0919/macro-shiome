@@ -28,6 +28,9 @@ export function Footer() {
           <Link href="/calendar" className="underline underline-offset-2">
             発表予定カレンダー
           </Link>
+          <Link href="/status" className="underline underline-offset-2">
+            指標の取得状況
+          </Link>
         </p>
       </div>
     </footer>

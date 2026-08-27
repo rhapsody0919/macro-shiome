@@ -1027,6 +1027,31 @@ export interface ReleaseCalendarView {
 }
 
 /**
+ * 指標ごとの取得状況の 1 件 (#330)。
+ *
+ * 「◯日空いたら異常」という閾値では判定しない (#52 と同じ判断)。
+ * 直近の観測日をそのまま並べ、間隔が普段と違うかを読み手が判断できるようにする。
+ */
+export interface IndicatorStatusEntry {
+  indicatorId: string;
+  name: string;
+  frequency: Frequency;
+  /** 直近の観測日 (新しい順、最大5件)。観測が無ければ空配列。 */
+  recentDates: string[];
+  /**
+   * gaps.json にある、直近の観測日より新しい欠測の理由。
+   * 過去に解消済みの欠測は含めない (#142 と同じ「いま関係あるものだけ」の判断)。
+   */
+  gapReason: string | null;
+}
+
+/** 指標ごとの取得状況ビュー全体 (#330)。 */
+export interface IndicatorStatusView {
+  generatedAt: string;
+  entries: IndicatorStatusEntry[];
+}
+
+/**
  * CHoCH (Change of Character) の検出結果 (#268)。
  *
  * カップウィズハンドル (#230)・ダブルボトム (#256)・逆三尊 (#258)・
