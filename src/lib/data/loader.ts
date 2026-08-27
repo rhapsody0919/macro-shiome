@@ -20,6 +20,7 @@ import breakoutJson from '../../../data/views/breakout.json';
 import bosJson from '../../../data/views/bos.json';
 import summaryJson from '../../../data/views/summary.json';
 import releaseCalendarJson from '../../../data/views/release-calendar.json';
+import indicatorStatusJson from '../../../data/views/indicator-status.json';
 import { sortChangelog } from './changelog';
 import type { DailyPoint } from './daily-series';
 import type {
@@ -30,6 +31,7 @@ import type {
   DrawdownView,
   EconomyView,
   GapReason,
+  IndicatorStatusView,
   MacroPoint,
   ReleaseCalendarView,
   RevisionPoint,
@@ -59,6 +61,8 @@ export const bos = bosJson as unknown as BosView;
 export const summary = summaryJson as unknown as SummaryView;
 /** 発表予定カレンダー (#270)。 */
 export const releaseCalendar = releaseCalendarJson as unknown as ReleaseCalendarView;
+/** 指標ごとの取得状況 (#330)。 */
+export const indicatorStatus = indicatorStatusJson as unknown as IndicatorStatusView;
 /** 更新履歴 (#240)。新しい順。 */
 export const changelog = sortChangelog(changelogJson as unknown as ChangelogEntry[]);
 

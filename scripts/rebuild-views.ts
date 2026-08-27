@@ -17,11 +17,12 @@ import {
   buildValuationView,
   type ObservationMap,
 } from '../src/lib/calc/view';
+import { buildIndicatorStatusView } from '../src/lib/calc/indicator-status';
 import { appConfig, indicators } from '../src/lib/data/indicators';
 import { DRAWDOWN_ASSETS } from '../src/lib/data/drawdown-assets';
 import { TIINGO_ASSETS, TIINGO_SYMBOLS } from '../src/lib/data/tiingo-assets';
 import drawdownSeed from '../data/seed/stock-bot-drawdown.json';
-import { readObservations, readOhlcvObservations, writeView } from '../src/lib/data/store';
+import { readGaps, readObservations, readOhlcvObservations, writeView } from '../src/lib/data/store';
 import { DAILY_VIEWS } from '../src/lib/data/daily-series';
 
 const VIEW_START_YEARS = 10;
@@ -69,6 +70,11 @@ function main(): void {
       buildBosView({ symbols: TIINGO_ASSETS, ohlcvObservations, generatedAt: now.toISOString() }),
     );
   }
+
+  writeView(
+    'indicator-status',
+    buildIndicatorStatusView(indicators, observations, readGaps(), now.toISOString()),
+  );
 
   console.log(`ビューを再生成した (起点 ${start})`);
 }

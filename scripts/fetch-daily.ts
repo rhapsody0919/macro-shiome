@@ -32,6 +32,7 @@ import { detectHighlights, detectWarnings } from '../src/lib/calc/signals';
 import { buildSummaryView } from '../src/lib/calc/summary';
 import { DAILY_VIEWS } from '../src/lib/data/daily-series';
 import { buildReleaseCalendar } from '../src/lib/calc/release-calendar';
+import { buildIndicatorStatusView } from '../src/lib/calc/indicator-status';
 import {
   buildBosView,
   buildBreakoutView,
@@ -366,6 +367,12 @@ async function main(): Promise<void> {
 
   const observations: ObservationMap = Object.fromEntries(
     Object.keys(indicators).map((id) => [id, observationMap[id] ?? readObservations(id)]),
+  );
+
+  // 指標ごとの取得状況 (#330)。閾値による自動判定はせず、直近の観測日をそのまま出す。
+  writeView(
+    'indicator-status',
+    buildIndicatorStatusView(indicators, observations, allGaps, now.toISOString()),
   );
 
   writeView('valuation', buildValuationView({ observations, config: appConfig, start, today: now }));
