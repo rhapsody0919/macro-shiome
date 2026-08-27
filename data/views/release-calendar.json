@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-26T02:56:21.419Z",
+  "generatedAt": "2026-08-27T08:40:19.752Z",
   "entries": [
     {
       "label": "Standard & Poors",
       "indicatorIds": [
         "sp500"
       ],
-      "nextReleaseDate": "2026-08-26",
+      "nextReleaseDate": "2026-08-27",
       "source": "fred"
     },
     {
@@ -15,7 +15,7 @@
         "nasdaq100",
         "nasdaq-composite"
       ],
-      "nextReleaseDate": "2026-08-26",
+      "nextReleaseDate": "2026-08-27",
       "source": "fred"
     },
     {
@@ -27,7 +27,7 @@
         "dgs2",
         "tbill-3m"
       ],
-      "nextReleaseDate": "2026-08-26",
+      "nextReleaseDate": "2026-08-27",
       "source": "fred"
     },
     {
@@ -39,7 +39,7 @@
         "breakeven-5y5y",
         "term-spread-3m"
       ],
-      "nextReleaseDate": "2026-08-26",
+      "nextReleaseDate": "2026-08-27",
       "source": "fred"
     },
     {
@@ -47,7 +47,7 @@
       "indicatorIds": [
         "vix"
       ],
-      "nextReleaseDate": "2026-08-26",
+      "nextReleaseDate": "2026-08-27",
       "source": "fred"
     },
     {
@@ -101,7 +101,7 @@
         "real-consumption",
         "pce-core"
       ],
-      "nextReleaseDate": "2026-08-26",
+      "nextReleaseDate": "2026-09-30",
       "source": "fred"
     },
     {
@@ -206,7 +206,7 @@
         "new-orders-capital-goods",
         "durable-goods-orders"
       ],
-      "nextReleaseDate": "2026-08-26",
+      "nextReleaseDate": "2026-09-02",
       "source": "fred"
     },
     {
@@ -216,7 +216,7 @@
         "nfci",
         "anfci"
       ],
-      "nextReleaseDate": "2026-08-26",
+      "nextReleaseDate": "2026-09-02",
       "source": "fred"
     },
     {
@@ -225,7 +225,7 @@
         "hy-spread",
         "ig-spread"
       ],
-      "nextReleaseDate": "2026-08-26",
+      "nextReleaseDate": "2026-08-27",
       "source": "fred"
     },
     {
@@ -233,7 +233,7 @@
       "indicatorIds": [
         "wti"
       ],
-      "nextReleaseDate": "2026-08-26",
+      "nextReleaseDate": "2026-09-02",
       "source": "fred"
     },
     {
@@ -301,7 +301,7 @@
       "indicatorIds": [
         "nikkei225"
       ],
-      "nextReleaseDate": "2026-08-26",
+      "nextReleaseDate": "2026-08-27",
       "source": "fred"
     },
     {
@@ -317,7 +317,7 @@
       "indicatorIds": [
         "financial-stress"
       ],
-      "nextReleaseDate": "2026-08-26",
+      "nextReleaseDate": "2026-09-02",
       "source": "fred"
     },
     {
@@ -325,7 +325,7 @@
       "indicatorIds": [
         "sofr"
       ],
-      "nextReleaseDate": "2026-08-26",
+      "nextReleaseDate": "2026-08-27",
       "source": "fred"
     },
     {
@@ -357,7 +357,7 @@
       "indicatorIds": [
         "vehicle-sales"
       ],
-      "nextReleaseDate": "2026-08-26",
+      "nextReleaseDate": "2026-09-30",
       "source": "fred"
     },
     {
@@ -365,7 +365,7 @@
       "indicatorIds": [
         "djia"
       ],
-      "nextReleaseDate": "2026-08-26",
+      "nextReleaseDate": "2026-08-27",
       "source": "fred"
     },
     {
