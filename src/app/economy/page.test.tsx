@@ -23,3 +23,13 @@ describe('経済ページの注記を初心者にも分かるようにする (#3
     expect(screen.getByRole('heading', { name: '経済', level: 1 })).toBeInTheDocument();
   });
 });
+
+describe('JOLTSのレイオフ・解雇 (#335)', () => {
+  it('求人件数のチャートにレイオフ・解雇の系列を出す', () => {
+    render(<EconomyPage />);
+    const text = document.body.textContent ?? '';
+    expect(text).toContain('レイオフ・解雇');
+    // 泉さんの記事のフレームワーク (求人とリストラの均衡) を注記で説明する。
+    expect(text).toContain('求人とレイオフの均衡');
+  });
+});

@@ -876,6 +876,7 @@ export function buildEconomyView(options: BuildViewOptions): EconomyView {
     employmentRatio: level('employment-ratio', month),
     hires: level('hires', month),
     quits: level('quits', month),
+    layoffs: level('layoffs', month),
     weeklyHoursTotal: level('weekly-hours-total', month),
     // FRB が見る物価。総合は食品・エネルギーで振れる (#194)。
     cpiCore: yoy('cpi-core', month),
@@ -1025,6 +1026,7 @@ const MONTHLY_INDICATORS = [
   'employment-ratio',
   'hires',
   'quits',
+  'layoffs',
   'weekly-hours-total',
   'cpi-core',
   'pce-core',

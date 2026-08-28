@@ -446,6 +446,12 @@ const CHARTS: QuestionChartDef<EconomyQuestionId>[] = [
         color: COLORS.quits,
         indicatorId: 'quits',
       },
+      {
+        key: 'layoffs',
+        label: 'レイオフ・解雇',
+        color: COLORS.layoffs,
+        indicatorId: 'layoffs',
+      },
 ],
     notes: [
       <span key="official">
@@ -453,6 +459,11 @@ const CHARTS: QuestionChartDef<EconomyQuestionId>[] = [
         水準の基準になる。速報性を求めるなら「景気は減速しているか」の新規求人を見る。
       </span>,
       <span key="meaning">求人が減ると採用が細り、やがて雇用者数の減少につながる。</span>,
+      <span key="balance">
+        <strong>求人とレイオフの均衡が労働市場の先行きを決める</strong> (#335)。
+        求人が少なくてもレイオフが少なければ失業は急に増えない。
+        レイオフが増え始めると、少ない求人では吸収できず失業の増加が加速しやすい。
+      </span>,
     ],
   },
   {
