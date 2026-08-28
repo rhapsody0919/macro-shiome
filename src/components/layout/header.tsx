@@ -1,4 +1,5 @@
 import { Suspense } from 'react';
+import Link from 'next/link';
 import { changelog, status, toFreshness } from '@/lib/data/loader';
 import { FreshnessBadge } from './freshness-badge';
 import { NavLink } from './nav-link';
@@ -51,6 +52,17 @@ export function Header() {
           <Suspense fallback={<span className="px-2 py-1.5 text-sm sm:px-3">更新履歴</span>}>
             <UpdatesLink latestDate={changelog[0]?.date} />
           </Suspense>
+          {/*
+            指標の取得状況 (#330) へのリンク (#332)。フッターだけでは画面最下部まで
+            スクロールしないと気付けない (#243 と同じ教訓)。都度中身が変わる一覧で
+            「既読/未読」に馴染まないため、更新履歴と違いバッジは付けない。
+          */}
+          <Link
+            href="/status"
+            className="whitespace-nowrap px-2 py-1.5 text-sm text-slate-600 hover:text-slate-900 sm:px-3 dark:text-slate-400 dark:hover:text-slate-100"
+          >
+            取得状況
+          </Link>
           <Suspense fallback={null}>
             <PeriodFilter />
           </Suspense>
