@@ -3,6 +3,7 @@ import {
   estatDashboardUrl,
   parseDashboardData,
   toMonthlyDate,
+  toQuarterlyDate,
 } from './estat-dashboard';
 
 const query = { indicatorCode: '0802010103000010001', cycle: '1', isSeasonal: '2' } as const;
@@ -82,6 +83,45 @@ describe('日付の変換', () => {
 
   it('月が範囲外なら弾く', () => {
     expect(toMonthlyDate('20261300')).toBeNull();
+  });
+});
+
+describe('四半期の日付の変換 (#336)', () => {
+  it('YYYYQQ00 をその期の最終月にする', () => {
+    // BSI (#226) が四半期の値をその期の最終月に置くのと同じ規約。
+    expect(toQuarterlyDate('20261Q00')).toBe('2026-03-01');
+    expect(toQuarterlyDate('20262Q00')).toBe('2026-06-01');
+    expect(toQuarterlyDate('20264Q00')).toBe('2026-12-01');
+  });
+
+  it('月次や年度の形式は弾く', () => {
+    expect(toQuarterlyDate('20260600')).toBeNull();
+    expect(toQuarterlyDate('2025FY00')).toBeNull();
+  });
+
+  it('cycle=2 で四半期の観測だけを取り出す', () => {
+    // 2026-08 時点の実応答 (実質GDP成長率 0705020501000060000) を縮めたもの。
+    const body = {
+      GET_STATS: {
+        RESULT: { status: '0', errorMsg: '正常に終了しました。' },
+        STATISTICAL_DATA: {
+          DATA_INF: {
+            DATA_OBJ: [
+              { VALUE: { '@time': '20261Q00', '@cycle': '2', '@isSeasonal': '2', $: '1.9' } },
+              { VALUE: { '@time': '20262Q00', '@cycle': '2', '@isSeasonal': '2', $: '1.1' } },
+              // 月次の行が混ざっても cycle で弾かれる。
+              { VALUE: { '@time': '20260600', '@cycle': '1', '@isSeasonal': '2', $: '99' } },
+            ],
+          },
+        },
+      },
+    };
+    const quarterly = parseDashboardData(body, {
+      indicatorCode: '0705020501000060000',
+      cycle: '2',
+      isSeasonal: '2',
+    });
+    expect(quarterly).toEqual({ '2026-03-01': 1.9, '2026-06-01': 1.1 });
   });
 });
 

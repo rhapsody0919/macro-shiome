@@ -90,7 +90,7 @@ export type IndicatorSource =
    * 統計ダッシュボード (#129)。**`cycle` と `isSeasonal` の両方が必須。**
    * 片方だけだと同じ月に複数の値が返る (月次/四半期/年度、原数値/季調値が同じ配列に混ざる)。
    */
-  | { adapter: 'estat'; indicatorCode: string; cycle: '1'; isSeasonal: '1' | '2' }
+  | { adapter: 'estat'; indicatorCode: string; cycle: '1' | '2'; isSeasonal: '1' | '2' }
   /**
    * e-Stat 統計 API (#160)。**appId が必要**で、統計ダッシュボードとは別経路。
    * 1 つの表に多数の系列が入るため、`tab` / `cat01` / `cat02` をすべて固定する。
@@ -782,6 +782,8 @@ export interface MonthlyPoint {
   jpDiCoincident: number | null;
   /** 日本の景気動向指数 (遅行)。**2020年基準・原数値** (#154)。 */
   jpDiLagging: number | null;
+  /** 日本の実質GDP成長率 (前期比年率、%)。四半期をその期の最終月に置く (#336)。 */
+  jpGdpGrowth: number | null;
   /** 日本の新設住宅着工戸数 (総戸数)。**戸・季節調整済み年率換算** (#129)。 */
   jpHousingStarts: number | null;
   /** 日本の新設住宅着工戸数 (持家)。**戸・季調値、年率換算ではない** (#129)。 */

@@ -13,7 +13,7 @@
  * 同じ月に 2 つ値が来る (#96 の「10年債入札に TIPS が混入」と同じ型)。
  *
  * メタ情報で確定した意味 (推測ではない):
- * - `cycle`: 1 = 月
+ * - `cycle`: 1 = 月 / 2 = 四半期 (#336 で実データから確認)
  * - `isSeasonal`: 1 = 原数値 / 2 = 季調値
  * - `isProvisional`: 0 = 確報
  */
@@ -24,7 +24,7 @@ const BASE_URL = 'https://dashboard.e-stat.go.jp/api/1.0/Json/getData';
 /** 全国。地域別は扱わない。 */
 const NATIONAL = '00000';
 
-export type EstatCycle = '1';
+export type EstatCycle = '1' | '2';
 export type EstatSeasonal = '1' | '2';
 
 export interface EstatQuery {
@@ -65,6 +65,20 @@ export function toMonthlyDate(time: string): string | null {
   return `${m[1]}-${m[2]}-01`;
 }
 
+/**
+ * 四半期の `2026|2Q|00` を**その期の最終月**に直す (#336)。
+ *
+ * 例: `20262Q00` (2026年4〜6月期) → `2026-06-01`。
+ * BSI (e-Stat 統計 API、#226) が四半期の値をその期の最終月に置くのと同じ規約。
+ * 月次の形式 (`YYYYMM00`) や年度 (`2025FY00`) に一致しないものは弾く。
+ */
+export function toQuarterlyDate(time: string): string | null {
+  const m = time.match(/^(\d{4})([1-4])Q00$/);
+  if (m === null) return null;
+  const lastMonth = Number(m[2]) * 3;
+  return `${m[1]}-${String(lastMonth).padStart(2, '0')}-01`;
+}
+
 /** 応答から観測値を取り出す。条件に合う行が 1 件も無ければ失敗させる。 */
 export function parseDashboardData(body: unknown, query: EstatQuery): Observations {
   const root = (body as Record<string, unknown> | null)?.['GET_STATS'];
@@ -86,7 +100,10 @@ export function parseDashboardData(body: unknown, query: EstatQuery): Observatio
     if (String(value['@cycle']) !== query.cycle) continue;
     if (String(value['@isSeasonal']) !== query.isSeasonal) continue;
 
-    const date = toMonthlyDate(String(value['@time']));
+    const date =
+      query.cycle === '2'
+        ? toQuarterlyDate(String(value['@time']))
+        : toMonthlyDate(String(value['@time']));
     if (date === null) continue;
 
     const parsed = Number(value.$);
