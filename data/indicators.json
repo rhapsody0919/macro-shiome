@@ -3024,6 +3024,31 @@
     },
     "sourceUnits": "Level in Thousands"
   },
+  "layoffs": {
+    "name": "レイオフ・解雇",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "JTSLDL"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "U.S. Bureau of Labor Statistics via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "cyclePosition": "leading",
+    "range": {
+      "min": 0,
+      "max": 10000000
+    },
+    "note": "Layoffs and Discharges: Total Nonfarm。千人、季節調整済み (#335)。**「新規求人 vs リストラ」の均衡を見る** (泉さんの記事のフレームワーク)。求人が減ってもレイオフが少なければ失業は急増しない。増え始めると失業が加速する。過去最大は 2020-03 の 12,985 (千人)。",
+    "unitLabel": "千人・季節調整済み",
+    "explanation": {
+      "what": "会社の都合で仕事を失った人の数。解雇や人員削減を含む。",
+      "howToRead": "少ない間は、求人が減っても失業者は急には増えない。ここが増え始めると失業の増加が加速しやすい。",
+      "seeWith": "求人件数・採用・自発的離職と 4 本で見る。"
+    },
+    "sourceUnits": "Level in Thousands"
+  },
   "hires": {
     "name": "採用",
     "source": {

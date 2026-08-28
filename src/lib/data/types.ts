@@ -687,6 +687,8 @@ export interface MonthlyPoint {
   hires: number | null;
   /** 自発的離職 (千人)。労働者の自信を示す (#196)。 */
   quits: number | null;
+  /** レイオフ・解雇 (千人)。「新規求人 vs リストラ」の均衡を見る (#335)。 */
+  layoffs: number | null;
   /** 週平均労働時間 全産業 (時間) (#196)。 */
   weeklyHoursTotal: number | null;
   /** コア CPI の前年同月比 (%)。食品・エネルギー除く (#194)。 */

@@ -100,6 +100,7 @@ export const COLORS = {
   employmentRatio: '#94a3b8',
   hires: '#6366f1',
   quits: '#f59e0b',
+  layoffs: '#ef4444',
   weeklyHoursTotal: '#94a3b8',
   continuedClaims: '#f59e0b',
   cpiCore: '#0ea5e9',

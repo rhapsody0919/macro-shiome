@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-28T13:31:06.008Z",
+  "generatedAt": "2026-08-28T22:12:28.497Z",
   "entries": [
     {
       "indicatorId": "sp500",
@@ -1949,6 +1949,13 @@
         "2026-03-01",
         "2026-02-01"
       ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "layoffs",
+      "name": "レイオフ・解雇",
+      "frequency": "monthly",
+      "recentDates": [],
       "gapReason": null
     },
     {
