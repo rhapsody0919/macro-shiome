@@ -149,7 +149,8 @@ function parseSource(raw: unknown, where: string): IndicatorSource {
       return {
         adapter,
         indicatorCode: requireString(raw.indicatorCode, `${where}.indicatorCode`),
-        cycle: requireEnum(raw.cycle, ['1'] as const, `${where}.cycle`),
+        // 1 = 月次 / 2 = 四半期 (#336)。
+        cycle: requireEnum(raw.cycle, ['1', '2'] as const, `${where}.cycle`),
         isSeasonal: requireEnum(raw.isSeasonal, ['1', '2'] as const, `${where}.isSeasonal`),
       };
     case 'estat-api': {

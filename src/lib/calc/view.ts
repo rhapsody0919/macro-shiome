@@ -951,6 +951,7 @@ export function buildEconomyView(options: BuildViewOptions): EconomyView {
     jpDiLeading: level('jp-di-leading', month),
     jpDiCoincident: level('jp-di-coincident', month),
     jpDiLagging: level('jp-di-lagging', month),
+    jpGdpGrowth: level('jp-gdp-growth', month),
     // 日本は水準のまま出す。総戸数だけ年率換算なので内訳と同じ図に載せない (#129)。
     jpHousingStarts: level('jp-housing-starts', month),
     jpHousingStartsOwned: level('jp-housing-starts-owned', month),
@@ -1076,6 +1077,7 @@ const MONTHLY_INDICATORS = [
   'jp-di-leading',
   'jp-di-coincident',
   'jp-di-lagging',
+  'jp-gdp-growth',
   'jp-housing-starts',
   'jp-housing-starts-owned',
   'jp-housing-starts-rented',

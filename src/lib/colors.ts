@@ -150,6 +150,7 @@ export const COLORS = {
   jpDiLeading: '#0ea5e9',
   jpDiCoincident: '#6366f1',
   jpDiLagging: '#94a3b8',
+  jpGdpGrowth: '#0d9488',
   jpHousingStarts: '#0ea5e9',
   jpHousingStartsOwned: '#6366f1',
   jpHousingStartsRented: '#f59e0b',

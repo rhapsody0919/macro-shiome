@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-28T22:12:28.497Z",
+  "generatedAt": "2026-08-28T22:27:48.630Z",
   "entries": [
     {
       "indicatorId": "sp500",
@@ -1441,6 +1441,19 @@
         "2026-04-01",
         "2026-03-01",
         "2026-02-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "jp-gdp-growth",
+      "name": "実質GDP成長率 (日本)",
+      "frequency": "quarterly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-03-01",
+        "2025-12-01",
+        "2025-09-01",
+        "2025-06-01"
       ],
       "gapReason": null
     },

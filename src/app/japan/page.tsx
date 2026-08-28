@@ -233,6 +233,45 @@ const CHARTS: QuestionChartDef<JapanQuestionId>[] = [
     ],
   },
   {
+    question: 'jp-cycle',
+    // 四半期の指標だが、チャートは月次グリッドに載せるため 'monthly' (#226 の BSI と同じ)。
+    frequency: 'monthly',
+    primaryIndicator: 'jp-gdp-growth',
+    title: '実質GDP成長率 (日本)',
+    subtitle: '前期比年率・季節調整済み (%・四半期)',
+    zeroLine: true,
+    // 四半期の系列を月次グリッドに載せるため、3 か月に 1 点しか無い。
+    // 構造的な欠測なので線を繋ぐ (#226 の BSI と同じ扱い)。
+    connectNulls: true,
+    series: [
+      {
+        key: 'jpGdpGrowth',
+        label: '実質GDP成長率',
+        color: COLORS.jpGdpGrowth,
+        indicatorId: 'jp-gdp-growth',
+      },
+    ],
+    notes: [
+      <span key="place">
+        <strong>この問いの答え合わせにあたる。</strong>
+        上の景気動向指数・街角景気・鉱工業生産は月次で先に動き、
+        経済全体がどうだったかを最後に確定させるのがこの指標。
+      </span>,
+      <span key="annualized">
+        <strong>前期比年率とは、その四半期のペースが 1 年続いた場合の伸び率。</strong>
+        四半期ごとの実際の伸びを約 4 倍したものにあたるため、単発の振れが大きく見える。
+        1 点ではなく数四半期の方向で読む。
+      </span>,
+      <span key="published">
+        公表されている前期比年率をそのまま使っている。GDPデフレーターは水準が小数 1 桁しか
+        公表されず、前年比を自分で計算すると公表値とずれるため載せていない。
+      </span>,
+      <span key="zero">
+        ゼロ線はプラス成長とマイナス成長の境目で、定義から決まる。恣意的な閾値ではない。
+      </span>,
+    ],
+  },
+  {
     question: 'jp-price',
     frequency: 'monthly',
     primaryIndicator: 'jp-cpi-core',

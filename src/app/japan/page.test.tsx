@@ -29,3 +29,14 @@ describe('日本ページの注記を初心者にも分かるようにする (#3
     expect(screen.getByRole('heading', { name: '日本', level: 1 })).toBeInTheDocument();
   });
 });
+
+describe('実質GDP成長率 (#336)', () => {
+  it('チャートと前期比年率の説明を出す', () => {
+    render(<JapanPage />);
+    const text = document.body.textContent ?? '';
+    expect(
+      screen.getByRole('heading', { name: '実質GDP成長率 (日本)', level: 3 }),
+    ).toBeInTheDocument();
+    expect(text).toContain('その四半期のペースが 1 年続いた場合の伸び率');
+  });
+});
