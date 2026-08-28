@@ -8400,6 +8400,22 @@
         "overvaluation": null,
         "isForwardEpsHigh": false,
         "isTrailingEpsHigh": false
+      },
+      {
+        "date": "2026-08-28",
+        "index": 7730.99,
+        "forwardPe": null,
+        "trailingPe": null,
+        "forwardEps": null,
+        "trailingEps": null,
+        "earningsYield": null,
+        "realRate": 2.33,
+        "yieldSpread": null,
+        "fairValue": null,
+        "fairValueBasis": null,
+        "overvaluation": null,
+        "isForwardEpsHigh": false,
+        "isTrailingEpsHigh": false
       }
     ],
     "baselines": {
@@ -8412,15 +8428,15 @@
     "targetYield": 3.67,
     "targetYieldContext": {
       "realRateAtSetting": 2.4,
-      "currentRealRate": 2.4000000000000004,
-      "drift": 4.440892098500626e-16,
+      "currentRealRate": 2.33,
+      "drift": -0.06999999999999984,
       "riskPremium": 1.27
     },
     "correlation": {
       "halfYear": {
         "kind": "ok",
-        "r": 0.941243160620897,
-        "n": 13
+        "r": 0.924378450172585,
+        "n": 12
       },
       "oneYear": {
         "kind": "ok",
@@ -16864,6 +16880,22 @@
         "overvaluation": 6.736688760745102,
         "isForwardEpsHigh": false,
         "isTrailingEpsHigh": true
+      },
+      {
+        "date": "2026-08-28",
+        "index": 29641.56,
+        "forwardPe": null,
+        "trailingPe": 33.04,
+        "forwardEps": null,
+        "trailingEps": 897.1416464891042,
+        "earningsYield": 3.026634382566586,
+        "realRate": 2.33,
+        "yieldSpread": 0.6966343825665859,
+        "fairValue": 27435.52435746496,
+        "fairValueBasis": 29641.56,
+        "overvaluation": 7.442373621816934,
+        "isForwardEpsHigh": false,
+        "isTrailingEpsHigh": true
       }
     ],
     "baselines": {
@@ -16876,22 +16908,22 @@
     "targetYield": 3.27,
     "targetYieldContext": {
       "realRateAtSetting": 2.4,
-      "currentRealRate": 2.4000000000000004,
-      "drift": 4.440892098500626e-16,
+      "currentRealRate": 2.33,
+      "drift": -0.06999999999999984,
       "riskPremium": 0.8700000000000001
     },
     "correlation": {
       "halfYear": {
         "kind": "insufficient",
-        "n": 1
+        "n": 2
       },
       "oneYear": {
         "kind": "insufficient",
-        "n": 1
+        "n": 2
       },
       "all": {
         "kind": "insufficient",
-        "n": 1
+        "n": 2
       }
     },
     "spreadDistribution": null,

@@ -11823,7 +11823,7 @@
       "housingStarts": 1239,
       "newHomeSales": 607,
       "existingHomeSales": 4060000,
-      "jpUnemploymentRate": null,
+      "jpUnemploymentRate": 2.4,
       "jpProducerPrice": 7.2,
       "jpCurrentAccount": null,
       "jpTradeBalance": null,
@@ -11851,8 +11851,8 @@
       "jpBsiSmall": null,
       "jpWatcherOutlook": 45.8,
       "jpRealWage": null,
-      "jpNewJobRatio": null,
-      "jpJobRatio": null,
+      "jpNewJobRatio": 2.1,
+      "jpJobRatio": 1.18,
       "jpExportPrice": 163,
       "jpImportPrice": 199.7,
       "jpDiLeading": null,
@@ -12143,7 +12143,7 @@
     },
     {
       "indicatorId": "jp-unemployment-rate",
-      "latestMonth": "2026-06-01"
+      "latestMonth": "2026-07-01"
     },
     {
       "indicatorId": "jp-producer-price",
@@ -12243,11 +12243,11 @@
     },
     {
       "indicatorId": "jp-new-job-ratio",
-      "latestMonth": "2026-06-01"
+      "latestMonth": "2026-07-01"
     },
     {
       "indicatorId": "jp-job-ratio",
-      "latestMonth": "2026-06-01"
+      "latestMonth": "2026-07-01"
     },
     {
       "indicatorId": "jp-export-price",

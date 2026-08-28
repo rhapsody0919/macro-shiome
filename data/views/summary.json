@@ -1,71 +1,53 @@
 {
-  "generatedAt": "2026-08-27T12:08:15.794Z",
-  "economyState": "経済は安定して成長している状態ですが、不安定性の兆候も見られます。金融環境が微妙なバランスを保っており、金融市場の不安定性は高まりつつあります。雇用状況も不安定で、失業者が増えているようです。",
+  "generatedAt": "2026-08-28T13:31:06.008Z",
+  "economyState": "経済は安定していて、投資家はリスクを取る気配がなく、金利が安定している傾向があります。金利の差や株価の不安定さも低く、不安定な要素は少なく、経済は穏やかです。",
   "economyStateFactCount": 5,
   "warnings": [],
   "highlights": [
     {
       "id": "etf-gdx",
       "name": "金鉱株 (GDX)",
-      "drawdown": 11.58,
-      "relativeStrength": 25.62,
+      "drawdown": 10.64,
+      "relativeStrength": 26.03,
       "hasBreakout": true,
       "signalCount": 3,
-      "note": null
+      "note": "金鉱株がSPYに対して相対的に強く、直近で戻り高値を上抜けたことから注目に値する。"
     },
     {
       "id": "etf-gld",
       "name": "ゴールド (GLD)",
-      "drawdown": 15.04,
-      "relativeStrength": 2.34,
+      "drawdown": 14.93,
+      "relativeStrength": 1.71,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": null
-    },
-    {
-      "id": "etf-corn",
-      "name": "コーン (CORN)",
-      "drawdown": 8.71,
-      "relativeStrength": 13.56,
-      "hasBreakout": false,
-      "signalCount": 2,
-      "note": null
-    },
-    {
-      "id": "etf-epi",
-      "name": "インド (EPI)",
-      "drawdown": 15.36,
-      "relativeStrength": 0.47,
-      "hasBreakout": false,
-      "signalCount": 2,
-      "note": null
+      "note": "ゴールドがSPYに対して相対的に強いことから注目に値する。"
     },
     {
       "id": "etf-ewz",
       "name": "ブラジル (EWZ)",
-      "drawdown": 14.91,
-      "relativeStrength": 2.31,
+      "drawdown": 15.03,
+      "relativeStrength": 1.41,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": null
+      "note": "ブラジルがSPYに対して相対的に強いことから注目に値する。"
     },
     {
       "id": "etf-eido",
       "name": "インドネシア (EIDO)",
-      "drawdown": 47.06,
-      "relativeStrength": 11.68,
+      "drawdown": 46.08,
+      "relativeStrength": 12.9,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": null
+      "note": "インドネシアがSPYに対して相対的に強いことから注目に値する。"
     },
     {
       "id": "etf-smin",
       "name": "インド小型株 (SMIN)",
-      "drawdown": 17.52,
-      "relativeStrength": 5.41,
+      "drawdown": 17.33,
+      "relativeStrength": 4.87,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": null
+      "note": "インド小型株がSPYに対して相対的に強いことから注目に値する。"
     }
   ]
 }
