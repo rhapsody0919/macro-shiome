@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-28T13:31:06.008Z",
+  "generatedAt": "2026-08-29T08:24:27.320Z",
   "entries": [
     {
       "label": "Standard & Poors",
       "indicatorIds": [
         "sp500"
       ],
-      "nextReleaseDate": "2026-08-28",
+      "nextReleaseDate": "2026-08-31",
       "source": "fred"
     },
     {
@@ -15,7 +15,7 @@
         "nasdaq100",
         "nasdaq-composite"
       ],
-      "nextReleaseDate": "2026-08-28",
+      "nextReleaseDate": "2026-08-31",
       "source": "fred"
     },
     {
@@ -27,7 +27,7 @@
         "dgs2",
         "tbill-3m"
       ],
-      "nextReleaseDate": "2026-08-28",
+      "nextReleaseDate": "2026-08-31",
       "source": "fred"
     },
     {
@@ -39,7 +39,7 @@
         "breakeven-5y5y",
         "term-spread-3m"
       ],
-      "nextReleaseDate": "2026-08-28",
+      "nextReleaseDate": "2026-08-31",
       "source": "fred"
     },
     {
@@ -47,7 +47,7 @@
       "indicatorIds": [
         "vix"
       ],
-      "nextReleaseDate": "2026-08-28",
+      "nextReleaseDate": "2026-08-31",
       "source": "fred"
     },
     {
@@ -133,7 +133,7 @@
       "indicatorIds": [
         "consumer-sentiment"
       ],
-      "nextReleaseDate": "2026-08-28",
+      "nextReleaseDate": "2026-09-25",
       "source": "fred"
     },
     {
@@ -225,7 +225,7 @@
         "hy-spread",
         "ig-spread"
       ],
-      "nextReleaseDate": "2026-08-28",
+      "nextReleaseDate": "2026-08-31",
       "source": "fred"
     },
     {
@@ -234,6 +234,22 @@
         "wti"
       ],
       "nextReleaseDate": "2026-09-02",
+      "source": "fred"
+    },
+    {
+      "label": "Primary Commodity Prices",
+      "indicatorIds": [
+        "copper-price"
+      ],
+      "nextReleaseDate": null,
+      "source": "fred"
+    },
+    {
+      "label": "Sahm Rule Recession Indicator",
+      "indicatorIds": [
+        "sahm-rule"
+      ],
+      "nextReleaseDate": "2026-09-04",
       "source": "fred"
     },
     {
@@ -257,6 +273,7 @@
       "indicatorIds": [
         "job-openings",
         "quits",
+        "layoffs",
         "hires"
       ],
       "nextReleaseDate": "2026-09-01",
@@ -301,7 +318,7 @@
       "indicatorIds": [
         "nikkei225"
       ],
-      "nextReleaseDate": "2026-08-28",
+      "nextReleaseDate": "2026-08-31",
       "source": "fred"
     },
     {
@@ -325,7 +342,7 @@
       "indicatorIds": [
         "sofr"
       ],
-      "nextReleaseDate": "2026-08-28",
+      "nextReleaseDate": "2026-08-31",
       "source": "fred"
     },
     {
@@ -345,11 +362,19 @@
       "source": "fred"
     },
     {
+      "label": "H.6 Money Stock Measures",
+      "indicatorIds": [
+        "money-stock"
+      ],
+      "nextReleaseDate": "2026-09-22",
+      "source": "fred"
+    },
+    {
       "label": "H.8 Assets and Liabilities of Commercial Banks in the United States",
       "indicatorIds": [
         "commercial-loans"
       ],
-      "nextReleaseDate": "2026-08-28",
+      "nextReleaseDate": "2026-09-04",
       "source": "fred"
     },
     {
@@ -361,11 +386,19 @@
       "source": "fred"
     },
     {
+      "label": "Transportation Services Index and Seasonally-Adjusted Transportation Data",
+      "indicatorIds": [
+        "truck-tonnage"
+      ],
+      "nextReleaseDate": "2026-09-01",
+      "source": "fred"
+    },
+    {
       "label": "Dow Jones Averages",
       "indicatorIds": [
         "djia"
       ],
-      "nextReleaseDate": "2026-08-28",
+      "nextReleaseDate": "2026-08-31",
       "source": "fred"
     },
     {
@@ -386,7 +419,7 @@
         "sp500-growth-cy-current",
         "sp500-growth-cy-next"
       ],
-      "nextReleaseDate": "2026-08-28",
+      "nextReleaseDate": "2026-09-04",
       "source": "factset"
     }
   ]

@@ -5251,12 +5251,12 @@
   },
   {
     "date": "2026-08-28",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null,
-    "growthNextQuarter": null,
-    "growthQuarterAfterNext": null
+    "blendedToday": 52,
+    "blendedLastWeek": 51,
+    "blendedQuarterEnd": 23.1,
+    "growthCurrentYear": 31.2,
+    "growthNextYear": 14.4,
+    "growthNextQuarter": 28.2,
+    "growthQuarterAfterNext": 25.8
   }
 ]
