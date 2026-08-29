@@ -33,3 +33,29 @@ describe('JOLTSのレイオフ・解雇 (#335)', () => {
     expect(text).toContain('求人とレイオフの均衡');
   });
 });
+
+describe('著名投資家が参照する定番指標 (#337)', () => {
+  it('サーム・ルール景気後退指標を失業率の直後に表示する', () => {
+    render(<EconomyPage />);
+    expect(
+      screen.getByRole('heading', { name: 'サーム・ルール景気後退指標', level: 3 }),
+    ).toBeInTheDocument();
+    const text = document.body.textContent ?? '';
+    expect(text).toContain('0.5 ポイントを超えると景気後退入りとされる');
+  });
+
+  it('トラック輸送量を消費のセクションに表示する', () => {
+    render(<EconomyPage />);
+    expect(screen.getByRole('heading', { name: 'トラック輸送量', level: 3 })).toBeInTheDocument();
+    const text = document.body.textContent ?? '';
+    expect(text).toContain('物流量そのもの');
+  });
+
+  it('銅価格を原油と別のチャートで表示する', () => {
+    render(<EconomyPage />);
+    expect(screen.getByRole('heading', { name: '銅価格', level: 3 })).toBeInTheDocument();
+    expect(
+      screen.getByRole('heading', { name: '原油価格 (WTI)', level: 3 }),
+    ).toBeInTheDocument();
+  });
+});

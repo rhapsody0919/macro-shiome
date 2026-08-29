@@ -607,6 +607,12 @@ export interface MonthlyPoint {
   cpi: number | null;
   /** FRB が最も重視するインフレ指標。 */
   pce: number | null;
+  /**
+   * 銅価格 (ドル/トン)。原油と同じ上流の商品価格 (#337)。
+   *
+   * 産業需要の体温計。単位が違うため原油とは同じ図に載せない。
+   */
+  copperPrice: number | null;
 
   // --- 労働市場 (前年同月比 %) ---
   /** 非農業部門雇用者数。事業所調査で自営業・農業を含まない。 */
@@ -671,6 +677,8 @@ export interface MonthlyPoint {
   retailSalesTotal: number | null;
   /** 自動車販売 (百万台)。小売で最も振れる (#200)。 */
   vehicleSales: number | null;
+  /** トラック輸送量指数の前年同月比 (%) (#337)。国内貨物輸送の大半を占め、実体経済の物流量を映す。 */
+  truckTonnage: number | null;
   /** 新築住宅の在庫月数 (か月)。需給バランス (#200)。 */
   newHomeSupply: number | null;
   /** 住宅着工 一戸建て (千戸)。総戸数との差が集合住宅 (#200)。 */
@@ -831,6 +839,12 @@ export interface MonthlyPoint {
   /** 財政収支 (百万ドル)。負が赤字。 */
   federalDeficit: number | null;
   /**
+   * マネーストック M2 (米国、十億ドル) (#337)。
+   *
+   * FRB バランスシートが供給側、こちらは市中に出回った結果。水準そのものより傾きを見る。
+   */
+  moneyStock: number | null;
+  /**
    * 国債の平均利率 (%) (#222)。**発行済み国債が実際に払っている金利。**
    *
    * 市場で取引されている利回りとは別物。10年債利回りがこれを上回っている間は、
@@ -843,6 +857,13 @@ export interface MonthlyPoint {
   treasuryAvgRateNotes: number | null;
   /** 失業率 (%)。水準そのものが意味を持つ。 */
   unemploymentRate: number | null;
+  /**
+   * サーム・ルール景気後退指標 (ポイント) (#337)。
+   *
+   * 失業率の直近 3 か月平均 − 過去 12 か月の最低値。0.5pt 超で景気後退入りとされる、
+   * 確立された定義を持つ指標。失業率から作られるためこの直後に置く。
+   */
+  sahmRule: number | null;
   /** 貯蓄率 (%)。低下は貯蓄の取り崩しを示す。 */
   savingsRate: number | null;
   /**

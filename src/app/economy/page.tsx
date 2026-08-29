@@ -496,6 +496,33 @@ const CHARTS: QuestionChartDef<EconomyQuestionId>[] = [
     ],
   },
   {
+    question: 'labor',
+    frequency: 'monthly',
+    kind: 'number',
+    zeroLine: true,
+    primaryIndicator: 'sahm-rule',
+    title: 'サーム・ルール景気後退指標',
+    subtitle: '失業率の3か月平均 − 過去12か月の最低値 (ポイント)',
+    series: [
+      {
+        key: 'sahmRule',
+        label: 'サーム・ルール',
+        color: COLORS.sahmRule,
+        indicatorId: 'sahm-rule',
+      },
+    ],
+    notes: [
+      <span key="derived">
+        <strong>上の失業率から作られる指標。</strong>
+        直近 3 か月平均が、過去 1 年で最も低かった水準からどれだけ上がったかを示す。
+      </span>,
+      <span key="threshold">
+        <strong>0.5 ポイントを超えると景気後退入りとされる、確立された定義を持つ。</strong>
+        この閾値は考案者の定義そのものであり、独自に引いた線ではない。
+      </span>,
+    ],
+  },
+  {
     // 移転所得を除く実質個人所得は景気一致指数 (CEI) の構成要素。
     question: 'labor',
     frequency: 'monthly',
@@ -597,6 +624,28 @@ const CHARTS: QuestionChartDef<EconomyQuestionId>[] = [
       </span>,
       <span key="why-exclude">
         自動車とガソリンを除くのは、価格や販売台数の変動が大きく消費の基調が見えにくいため。
+      </span>,
+    ],
+  },
+  {
+    question: 'consumption',
+    frequency: 'monthly',
+    primaryIndicator: 'truck-tonnage',
+    title: 'トラック輸送量',
+    subtitle: '国内貨物輸送量の前年同月比',
+    series: [
+      {
+        key: 'truckTonnage',
+        label: 'トラック輸送量指数',
+        color: COLORS.truckTonnage,
+        indicatorId: 'truck-tonnage',
+      },
+    ],
+    notes: [
+      <span key="why">
+        <strong>店頭に並ぶ商品の物流量そのもの。</strong>
+        国内貨物輸送の大半をトラックが占めるため、上の小売売上と対で見ると
+        「売れている」という数字の裏で実際にモノが動いているかを確認できる。
       </span>,
     ],
   },
@@ -822,11 +871,30 @@ const CHARTS: QuestionChartDef<EconomyQuestionId>[] = [
     notes: [
       <span key="chain">
         <strong>物価の起点。</strong>
-        エネルギーコストは輸入物価・生産者物価を通じて CPI に波及する。次の図がその連鎖。
+        エネルギーコストは輸入物価・生産者物価を通じて CPI に波及する。「物価の連鎖」の図がその流れ。
       </span>,
       <span key="weekly">
         <strong>日次。</strong>この問いで唯一の日次指標で、物価の変化を最も早く示す。
         他は月次なので、直近の動きはここにしか出ない。
+      </span>,
+    ],
+  },
+  {
+    question: 'prices',
+    frequency: 'monthly',
+    primaryIndicator: 'copper-price',
+    title: '銅価格',
+    subtitle: 'ドル/トン',
+    series: [
+      { key: 'copperPrice', label: '銅', color: COLORS.copperPrice, indicatorId: 'copper-price' },
+    ],
+    notes: [
+      <span key="upstream">
+        <strong>原油と同じく物価の起点にあたる商品価格。</strong>
+        銅は建築・電機・自動車など幅広い産業で使われ、価格の変化が産業界の需要を映す。
+      </span>,
+      <span key="not-mixed">
+        原油とは<strong>単位が違うため同じ図には載せていない</strong>。
       </span>,
     ],
   },

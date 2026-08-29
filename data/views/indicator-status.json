@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-28T22:27:48.630Z",
+  "generatedAt": "2026-08-29T06:59:18.374Z",
   "entries": [
     {
       "indicatorId": "sp500",
@@ -691,6 +691,19 @@
       "gapReason": null
     },
     {
+      "indicatorId": "copper-price",
+      "name": "銅価格",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
       "indicatorId": "dollar-index",
       "name": "ドル指数 (実効為替)",
       "frequency": "daily",
@@ -706,6 +719,19 @@
     {
       "indicatorId": "unemployment-rate",
       "name": "失業率",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "sahm-rule",
+      "name": "サーム・ルール景気後退指標",
       "frequency": "monthly",
       "recentDates": [
         "2026-07-01",
@@ -2011,6 +2037,19 @@
       "gapReason": null
     },
     {
+      "indicatorId": "money-stock",
+      "name": "マネーストック M2 (米国)",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-07-01",
+        "2026-06-01",
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
       "indicatorId": "term-spread-3m",
       "name": "イールドカーブ (10年債 − 3か月)",
       "frequency": "daily",
@@ -2072,6 +2111,19 @@
         "2026-05-01",
         "2026-04-01",
         "2026-03-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "truck-tonnage",
+      "name": "トラック輸送量指数",
+      "frequency": "monthly",
+      "recentDates": [
+        "2026-05-01",
+        "2026-04-01",
+        "2026-03-01",
+        "2026-02-01",
+        "2026-01-01"
       ],
       "gapReason": null
     },

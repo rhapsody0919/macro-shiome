@@ -272,6 +272,31 @@ const CHARTS: QuestionChartDef<MarketQuestionId>[] = [
   },
   {
     question: 'financial',
+    frequency: 'monthly',
+    kind: 'number',
+    primaryIndicator: 'money-stock',
+    title: 'マネーストック M2 (米国)',
+    subtitle: '十億ドル・季節調整済み',
+    series: [
+      { key: 'moneyStock', label: 'M2', color: COLORS.moneyStock, indicatorId: 'money-stock' },
+    ],
+    notes: [
+      <span key="pair">
+        <strong>上のバランスシートが供給側、こちらが市中に出回った結果。</strong>
+        現金・預金・MMF など、すぐ使える資金の総量を示す。
+      </span>,
+      <span key="level">
+        こちらも<strong>水準そのものより傾き</strong>を見る。伸び方が速いか遅いかに
+        金融緩和・引き締めの結果が表れる。
+      </span>,
+      <span key="asymmetry">
+        日本のマネーストック M2 は既に「日本の物価は落ち着くか」に置いているが、
+        <strong>米国側にはこの指標が無かった</strong>。
+      </span>,
+    ],
+  },
+  {
+    question: 'financial',
     frequency: 'daily',
     primaryIndicator: 'hy-spread',
     explainIndicators: ['hy-spread', 'ig-spread'],

@@ -67,6 +67,8 @@ export const COLORS = {
   producerPrice: '#a855f7',
   cpi: '#0ea5e9',
   pce: '#10b981',
+  /** 銅価格。原油と同じ上流の商品価格 (#337)。 */
+  copperPrice: '#b45309',
 
   // --- 労働・所得 ---
   payrolls: '#0ea5e9',
@@ -85,6 +87,8 @@ export const COLORS = {
   housingStarts: '#0ea5e9',
   retailSalesTotal: '#94a3b8',
   vehicleSales: '#0ea5e9',
+  /** トラック輸送量指数。実体経済の物流量 (#337)。 */
+  truckTonnage: '#a855f7',
   newHomeSupply: '#0ea5e9',
   housingStartsSingle: '#94a3b8',
   nasdaqComposite: '#0ea5e9',
@@ -93,6 +97,8 @@ export const COLORS = {
   cnyUsd: '#f59e0b',
   commercialLoans: '#6366f1',
   fedBalanceSheet: '#0ea5e9',
+  /** マネーストック M2 (米国)。バランスシートの供給側に対する結果 (#337)。 */
+  moneyStock: '#6366f1',
   termSpread3m: '#f59e0b',
   tbill3m: '#94a3b8',
   u6Rate: '#f59e0b',
@@ -196,6 +202,8 @@ export const COLORS = {
   federalDeficit: '#f97316',
   /** 失業率。 */
   unemploymentRate: '#ef4444',
+  /** サーム・ルール景気後退指標。失業率から作られる (#337)。 */
+  sahmRule: '#f97316',
 
   // --- その他 ---
   vix: '#ef4444',

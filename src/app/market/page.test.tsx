@@ -29,3 +29,16 @@ describe('市場ページの注記を初心者にも分かるようにする (#3
     expect(screen.getByRole('heading', { name: '市場', level: 1 })).toBeInTheDocument();
   });
 });
+
+describe('著名投資家が参照する定番指標 (#337)', () => {
+  it('マネーストックM2をFRBバランスシートの直後に表示する', () => {
+    render(<MarketPage />);
+    const titles = screen.getAllByRole('heading', { level: 3 }).map((h) => h.textContent);
+    const balanceSheetIndex = titles.indexOf('FRB バランスシート');
+    const m2Index = titles.indexOf('マネーストック M2 (米国)');
+    expect(balanceSheetIndex).toBeGreaterThanOrEqual(0);
+    expect(m2Index).toBe(balanceSheetIndex + 1);
+    const text = document.body.textContent ?? '';
+    expect(text).toContain('米国側にはこの指標が無かった');
+  });
+});
