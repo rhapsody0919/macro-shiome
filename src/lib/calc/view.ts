@@ -855,6 +855,8 @@ export function buildEconomyView(options: BuildViewOptions): EconomyView {
     producerPrice: yoy('producer-price', month),
     cpi: yoy('cpi', month),
     pce: yoy('pce-price', month),
+    // 原油と同じ上流の商品価格。水準そのもの (ドル/トン) で読む (#337)。
+    copperPrice: level('copper-price', month),
     payrolls: yoy('payrolls', month),
     employmentLevel: yoy('employment-level', month),
     fullTimeEmployment: yoy('full-time-employment', month),
@@ -866,6 +868,8 @@ export function buildEconomyView(options: BuildViewOptions): EconomyView {
     // 総合とコアの差が自動車・ガソリンの寄与を示す (#200)。
     retailSalesTotal: yoy('retail-sales-total', month),
     vehicleSales: level('vehicle-sales', month),
+    // 消費財の大半を運ぶ物流量。前年同月比で見る (#337)。
+    truckTonnage: yoy('truck-tonnage', month),
     newHomeSupply: level('new-home-supply', month),
     housingStartsSingle: level('housing-starts-single', month),
     // 信用の量。スプレッド (価格) が落ち着いても量が縮んでいれば資金は取れていない (#198)。
@@ -969,11 +973,15 @@ export function buildEconomyView(options: BuildViewOptions): EconomyView {
     jpTenYear: level('jp-10y', month),
     deTenYear: level('de-10y', month),
     federalDeficit: level('federal-deficit', month),
+    // FRB バランスシートが供給側、こちらが結果。水準そのものより傾きを見る (#337)。
+    moneyStock: level('money-stock', month),
     // 月末時点の値なので、応札倍率と同じくその月に 1 件あれば載せる (#222)。
     treasuryAvgRate: latestInMonth(series(observations, 'treasury-avg-rate'), month),
     treasuryAvgRateBills: latestInMonth(series(observations, 'treasury-avg-rate-bills'), month),
     treasuryAvgRateNotes: latestInMonth(series(observations, 'treasury-avg-rate-notes'), month),
     unemploymentRate: level('unemployment-rate', month),
+    // 失業率から作られる確立された定義の景気後退指標 (#337)。
+    sahmRule: level('sahm-rule', month),
     savingsRate: level('savings-rate', month),
     // 貯蓄率と対で見る。金額は前年同月比に揃える (水準は桁が違って並べられない)。
     personalSaving: yoy('personal-saving', month),
@@ -1009,6 +1017,7 @@ const MONTHLY_INDICATORS = [
   'producer-price',
   'cpi',
   'pce-price',
+  'copper-price',
   'payrolls',
   'employment-level',
   'full-time-employment',
@@ -1019,6 +1028,7 @@ const MONTHLY_INDICATORS = [
   'real-consumption',
   'retail-sales-total',
   'vehicle-sales',
+  'truck-tonnage',
   'new-home-supply',
   'housing-starts-single',
   'commercial-loans',
@@ -1089,7 +1099,9 @@ const MONTHLY_INDICATORS = [
   'jp-10y',
   'de-10y',
   'federal-deficit',
+  'money-stock',
   'unemployment-rate',
+  'sahm-rule',
   'savings-rate',
   'personal-saving',
   'consumer-sentiment',

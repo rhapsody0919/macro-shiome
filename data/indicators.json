@@ -946,6 +946,30 @@
     },
     "sourceUnits": "Dollars per Barrel"
   },
+  "copper-price": {
+    "name": "銅価格",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "PCOPPUSDM"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "International Monetary Fund via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": 0,
+      "max": 15000
+    },
+    "note": "Global price of Copper。ドル/トン (#337)。産業需要の体温計として原油と同じ上流に置くが、単位が違うため同じ図には載せない。銅/金比率で見る手法もあるが、金の現物価格は無料で取れない (#119) ため銅単体で追加した。",
+    "unitLabel": "ドル/トン",
+    "explanation": {
+      "what": "国際市場で取引される銅の価格。",
+      "howToRead": "銅は建築・電機・自動車など幅広い産業で使われるため、価格の変化が産業界の需要を映す。",
+      "seeWith": "原油価格と並べる。どちらも物価の起点になる、産業活動を映す商品価格。"
+    },
+    "sourceUnits": "U.S. Dollars per Metric Ton"
+  },
   "dollar-index": {
     "name": "ドル指数 (実効為替)",
     "source": {
@@ -985,6 +1009,30 @@
       "seeWith": "労働参加率・就業率と 3 本で見る。"
     },
     "sourceUnits": "Percent"
+  },
+  "sahm-rule": {
+    "name": "サーム・ルール景気後退指標",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "SAHMREALTIME"
+    },
+    "frequency": "monthly",
+    "unit": "percent",
+    "attribution": "Federal Reserve Bank of St. Louis via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": -1,
+      "max": 10
+    },
+    "note": "失業率の直近 3 か月平均 − 過去 12 か月の最低値。0.5pt を超えると景気後退入りとされる確立された定義 (#337)。閾値は FRED 側の定義に含まれるため恣意的な線を引いていない (#52)。失業率 (unemployment-rate) から作られる指標のため労働のセクションに置く。",
+    "unitLabel": "ポイント (%pt)",
+    "explanation": {
+      "what": "失業率の直近 3 か月平均が、過去 1 年間で最も低かった水準からどれだけ上がったかを示す指標。",
+      "howToRead": "0.5 ポイントを超えると景気後退が始まっている可能性が高いとされる、確立された定義を持つ。",
+      "seeWith": "失業率と並べる。失業率そのものの動きに対して、この指標がどの局面で反応するかが分かる。"
+    },
+    "sourceUnits": "Percentage Points"
   },
   "new-job-postings": {
     "name": "新規求人 (Indeed)",
@@ -3147,6 +3195,30 @@
     },
     "sourceUnits": "Millions of U.S. Dollars"
   },
+  "money-stock": {
+    "name": "マネーストック M2 (米国)",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "M2SL"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "Board of Governors of the Federal Reserve System via FRED",
+    "copyright": "none",
+    "group": "rates",
+    "range": {
+      "min": 0,
+      "max": 30000
+    },
+    "note": "M2 (現金・預金・MMFなど)。十億ドル、季節調整済み (#337)。日本のマネーストック M2 (jp-money-stock、#202) はあるのに米国が無い非対称だった。FRB バランスシート (fed-balance-sheet) が供給側、こちらが市中に出回った結果にあたる。水準そのものより傾き (伸び率) を見る。",
+    "unitLabel": "十億ドル・季節調整済み",
+    "explanation": {
+      "what": "現金・預金・MMFなど、すぐ使えるお金の量を集計した指標。",
+      "howToRead": "水準そのものより傾きを見る。増え方が速いか遅いかに、金融緩和・引き締めの結果が表れる。",
+      "seeWith": "中央銀行が保有する資産の総額と並べる。あちらは供給の量、こちらは市中に出回った結果にあたる。"
+    },
+    "sourceUnits": "Billions of Dollars"
+  },
   "term-spread-3m": {
     "name": "イールドカーブ (10年債 − 3か月)",
     "source": {
@@ -3268,6 +3340,30 @@
       "seeWith": "小売売上の総合と並べる。総合の振れの多くはここで説明できる。"
     },
     "sourceUnits": "Millions of Units"
+  },
+  "truck-tonnage": {
+    "name": "トラック輸送量指数",
+    "source": {
+      "adapter": "fred",
+      "seriesId": "TRUCKD11"
+    },
+    "frequency": "monthly",
+    "unit": "index",
+    "attribution": "American Trucking Associations via FRED",
+    "copyright": "none",
+    "group": "macro",
+    "range": {
+      "min": 50,
+      "max": 130
+    },
+    "note": "Truck Tonnage Index。指数 (2015年=100)、季節調整済み (#337)。前年同月比で見る。消費財の大半はトラックで運ばれるため、生産・受注と同じ枠に置く。著作権は American Trucking Associations にある。",
+    "unitLabel": "指数 (2015年=100)・季節調整済み",
+    "explanation": {
+      "what": "トラックで運ばれた貨物の量を指数化したもの。",
+      "howToRead": "米国内の貨物輸送の大半を占めるため、店頭に並ぶ商品の流れを映す。前年同月比の伸びが鈍っていないかを見る。",
+      "seeWith": "鉱工業生産や新規受注と並べる。生産された財が実際にどれだけ動いているかが分かる。"
+    },
+    "sourceUnits": "Index 2015=100"
   },
   "new-home-supply": {
     "name": "新築住宅の在庫月数",
