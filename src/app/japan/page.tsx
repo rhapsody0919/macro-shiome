@@ -428,6 +428,31 @@ const CHARTS: QuestionChartDef<JapanQuestionId>[] = [
   {
     question: 'jp-price',
     frequency: 'monthly',
+    primaryIndicator: 'jp-sppi',
+    title: '企業向けサービス価格指数 (日本)',
+    subtitle: '前年比 (2020年基準)',
+    series: [
+      { key: 'jpSppi', label: 'SPPI', color: COLORS.jpSppi, indicatorId: 'jp-sppi' },
+    ],
+    notes: [
+      <span key="what">
+        <strong>上の国内企業物価指数はモノ、こちらは企業間のサービス取引価格。</strong>
+        運輸・情報通信・広告など企業同士でやり取りされるサービスの価格を示す。
+      </span>,
+      <span key="wage">
+        <strong>賃金インフレの代理指標として注目される。</strong>
+        人件費の上昇が企業間のサービス価格に転嫁される構造のため、
+        物価目標 (2%) を上回る水準が続くほど賃金上昇の広がりを示唆する。
+      </span>,
+      <span key="published">
+        公表されている前年比をそのまま出している。指数は小数 1 桁しか公表されず、
+        自分で計算すると丸めでずれる可能性があるため。
+      </span>,
+    ],
+  },
+  {
+    question: 'jp-price',
+    frequency: 'monthly',
     kind: 'number',
     zeroLine: false,
     primaryIndicator: 'jp-money-stock',

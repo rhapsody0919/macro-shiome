@@ -767,6 +767,12 @@ export interface MonthlyPoint {
   jpCpiCore: number | null;
   /** 日本の CPI 総合の前年同月比 (%)。**2025年基準** (#162)。 */
   jpCpi: number | null;
+  /**
+   * 企業向けサービス価格指数 (SPPI) の前年比 (%) (#338、ADR-0012)。
+   *
+   * 賃金インフレが企業間サービス価格に転嫁されているかを示す代理指標。
+   */
+  jpSppi: number | null;
   /** 街角景気の現状判断DI。**季節調整済み、50 が中立** (#160)。 */
   jpWatcherCurrent: number | null;
   /**

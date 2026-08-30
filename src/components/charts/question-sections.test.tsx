@@ -389,11 +389,13 @@ describe('日本の消費者物価 (#162)', () => {
     const section = document.getElementById('q-jp-price');
     expect(section).not.toBeNull();
     const titles = Array.from(section?.querySelectorAll('h3') ?? []).map((h) => h.textContent);
-    // 消費者物価 → 上流の企業物価 → 背景の通貨量の順 (#174 #180)。
+    // 消費者物価 → 上流の企業物価 (モノ→サービス) → 背景の通貨量の順 (#174 #180)。
     // #204 でマネタリーベースと銀行貸出が加わった。
+    // #338 で企業向けサービス価格指数 (SPPI) が国内企業物価指数の直後に加わった。
     expect(titles).toEqual([
       '消費者物価指数 (日本)',
       '国内企業物価指数 (日本)',
+      '企業向けサービス価格指数 (日本)',
       'マネーストック M2 (日本)',
       'マネタリーベースと銀行貸出 (日本)',
     ]);
