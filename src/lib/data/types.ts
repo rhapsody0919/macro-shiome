@@ -120,7 +120,15 @@ export type IndicatorSource =
   | { adapter: 'treasury'; debt: 'held-by-public' }
   | { adapter: 'finnhub'; symbol: string }
   /** シラーPER (CAPE)。Robert Shiller 本人が公開する唯一の系列 (#291、ADR-0010)。 */
-  | { adapter: 'shiller' };
+  | { adapter: 'shiller' }
+  /**
+   * 日本銀行 時系列統計データ検索サイト (#228 #338、ADR-0012)。**キー不要。**
+   *
+   * `db` で短観 (`CO`) / 企業向けサービス価格指数 (`PR02`) を出し分ける。
+   * `expectedName` は `getMetadata` で確認した日本語系列名で、系列が改廃されたら
+   * 取得時に検知するための突き合わせに使う (#66 と同型の取り違え防止)。
+   */
+  | { adapter: 'boj'; db: 'CO' | 'PR02'; code: string; expectedName: string };
 
 /** 指標マスタの 1 エントリ。 */
 export interface Indicator {
@@ -772,6 +780,14 @@ export interface MonthlyPoint {
   jpBsiMid: number | null;
   /** 企業の景況感 BSI (中小企業)。 */
   jpBsiSmall: number | null;
+  /**
+   * 日銀短観 業況判断DI (大企業・製造業) (#228、ADR-0012)。
+   *
+   * BSI (規模のみの分類) を製造業/非製造業で補う。1974Q2〜の長期系列。
+   */
+  jpTankanLargeMfg: number | null;
+  /** 日銀短観 業況判断DI (大企業・非製造業) (#228)。 */
+  jpTankanLargeNonmfg: number | null;
   /** 街角景気の先行き判断DI。**季節調整済み、50 が中立** (#160)。 */
   jpWatcherOutlook: number | null;
   /** 日本の実質賃金指数 (現金給与総額)。**季節調整済み** (#156)。 */

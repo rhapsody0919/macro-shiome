@@ -26,6 +26,7 @@ import { FinnhubClient, readFinnhubApiKeyFromEnv } from '../src/lib/adapters/fin
 import { fetchEstatIndicator } from '../src/lib/adapters/estat-dashboard';
 import { EstatClient, readEstatAppIdFromEnv } from '../src/lib/adapters/estat-api';
 import { fetchShillerCape } from '../src/lib/adapters/shiller';
+import { fetchBojSeries } from '../src/lib/adapters/boj';
 import type { Observations } from '../src/lib/adapters/fred';
 
 interface Failure {
@@ -145,6 +146,26 @@ async function verifySources(): Promise<void> {
     }
   }
 
+  // 日銀 時系列統計データ検索サイト (#228 #338、ADR-0012)。キー不要なので取り直して照合する。
+  for (const [id, indicator] of Object.entries(indicators)) {
+    if (indicator.source.adapter !== 'boj') continue;
+    const stored = readObservations(id);
+    let live: Observations;
+    try {
+      live = await fetchBojSeries(indicator.source);
+    } catch (error) {
+      fail('一次情報との照合', `${id}: 取得に失敗 (${String(error)})`);
+      continue;
+    }
+    for (const [date, value] of Object.entries(stored)) {
+      if (live[date] === undefined) {
+        fail('一次情報との照合', `${id}: 一次情報に無い期を保存している (${date})`);
+      } else if (differs(value, live[date])) {
+        fail('一次情報との照合', `${id} @${date}: 保存 ${value} / 一次情報 ${live[date]}`);
+      }
+    }
+  }
+
   // 統計ダッシュボード (#129)。取り直して全点を突き合わせる。
   // **同じ経路だが、混入の検出が主目的**。cycle / isSeasonal の絞り込みが外れると
   // 同じ月に複数の値が来て件数が変わるため、点数と値の両方を見る。
@@ -227,7 +248,7 @@ async function verifySources(): Promise<void> {
     }
   }
 
-  console.log(`   FRED / 財務省 / 統計ダッシュボード / e-Stat の系列を照合した`);
+  console.log(`   FRED / 財務省 / 統計ダッシュボード / e-Stat / 日銀 の系列を照合した`);
 }
 
 /** 2. 観測に当日より後の日付が無いか (#100 の型)。 */

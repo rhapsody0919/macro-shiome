@@ -115,6 +115,7 @@ function parseSource(raw: unknown, where: string): IndicatorSource {
       'estat',
       'estat-api',
       'shiller',
+      'boj',
     ] as const,
     `${where}.adapter`,
   );
@@ -179,6 +180,14 @@ function parseSource(raw: unknown, where: string): IndicatorSource {
     case 'shiller':
       // 唯一の系列 (CAPE) を返すだけなので、パラメータを持たない (#291)。
       return { adapter };
+    case 'boj':
+      // expectedName は系列が改廃されたことを検知するための突き合わせに使う (#228 #338)。
+      return {
+        adapter,
+        db: requireEnum(raw.db, ['CO', 'PR02'] as const, `${where}.db`),
+        code: requireString(raw.code, `${where}.code`),
+        expectedName: requireString(raw.expectedName, `${where}.expectedName`),
+      };
   }
 }
 

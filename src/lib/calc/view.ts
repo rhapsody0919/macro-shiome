@@ -942,6 +942,9 @@ export function buildEconomyView(options: BuildViewOptions): EconomyView {
     jpBsiLarge: level('jp-bsi-large', month),
     jpBsiMid: level('jp-bsi-mid', month),
     jpBsiSmall: level('jp-bsi-small', month),
+    // 四半期。BSIと同じ規約でその期の最終月に置く (#228)。
+    jpTankanLargeMfg: level('jp-tankan-large-mfg', month),
+    jpTankanLargeNonmfg: level('jp-tankan-large-nonmfg', month),
     jpWatcherOutlook: level('jp-watcher-outlook', month),
     // 賞与月の跳ねを避けるため季調値を採っている (#156)。
     jpRealWage: level('jp-real-wage', month),
@@ -1088,6 +1091,8 @@ const MONTHLY_INDICATORS = [
   'jp-di-coincident',
   'jp-di-lagging',
   'jp-gdp-growth',
+  'jp-tankan-large-mfg',
+  'jp-tankan-large-nonmfg',
   'jp-housing-starts',
   'jp-housing-starts-owned',
   'jp-housing-starts-rented',

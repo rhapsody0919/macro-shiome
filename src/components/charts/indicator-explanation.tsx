@@ -16,6 +16,8 @@ export function sourceIdOf(indicator: Indicator): string | null {
       return source.indicatorCode;
     case 'estat-api':
       return source.statsDataId;
+    case 'boj':
+      return source.code;
     case 'finnhub':
     case 'stockanalysis':
       return source.symbol;

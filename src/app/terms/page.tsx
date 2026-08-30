@@ -63,6 +63,14 @@ export default function TermsPage() {
         </p>
       </Section>
 
+      <Section title="日本銀行 API の利用について">
+        {/* 日本銀行が API 機能利用時の留意点として必須としている文言。文面は変更しない。 */}
+        <p className="rounded border border-slate-300 px-3 py-2 dark:border-slate-700">
+          このサービスは、日本銀行時系列統計データ検索サイトの API 機能を使用しています。
+          サービスの内容は日本銀行によって保証されたものではありません。
+        </p>
+      </Section>
+
       <Section title="データの出所">
         <p>
           本サイトは分析記事の転載ではなく、下記のデータ提供元から取得した数値をもとに表示しています。
