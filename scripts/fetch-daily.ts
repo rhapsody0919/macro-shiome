@@ -27,6 +27,7 @@ import { TIINGO_ASSETS, TIINGO_SYMBOLS } from '../src/lib/data/tiingo-assets';
 import { fetchEstatIndicator } from '../src/lib/adapters/estat-dashboard';
 import { EstatClient, readEstatAppIdFromEnv } from '../src/lib/adapters/estat-api';
 import { fetchShillerCape } from '../src/lib/adapters/shiller';
+import { fetchBojSeries } from '../src/lib/adapters/boj';
 import { CloudflareAiClient, readCloudflareAiCredentialsFromEnv } from '../src/lib/adapters/cloudflare-ai';
 import { detectHighlights, detectWarnings } from '../src/lib/calc/signals';
 import { buildSummaryView } from '../src/lib/calc/summary';
@@ -274,7 +275,20 @@ async function main(): Promise<void> {
     }
   }
 
-  // --- 3g. Tiingo (ETF の日足 OHLCV、#229、ADR-0008) ---
+  // --- 3g. 日銀 時系列統計データ検索サイト (短観・SPPI、#228 #338、ADR-0012) ---
+  // キー不要。四半期・月次でほとんど動かないため、#140 により差分が無ければ書かない。
+  for (const [id, indicator] of Object.entries(indicators)) {
+    if (indicator.source.adapter !== 'boj') continue;
+    try {
+      const observations = await fetchBojSeries(indicator.source);
+      observationMap[id] = upsertObservations(id, observations, now);
+      console.log(`  boj ${id}: ${Object.keys(observations).length} 件`);
+    } catch (error) {
+      failures.push(`boj ${id}: ${message(error)}`);
+    }
+  }
+
+  // --- 3h. Tiingo (ETF の日足 OHLCV、#229、ADR-0008) ---
   // 指標マスタを経由しない (OHLCV は 1 指標 = 1 系列のスカラー値を前提にした
   // 指標マスタと型が合わないため、ADR-0008)。36 銘柄を無料枠 (1 時間 50 件)
   // の間隔で取得すると約 48 分かかるため、他の独立した取得の後・検証の前に置く
@@ -311,7 +325,7 @@ async function main(): Promise<void> {
     }
   }
 
-  // --- 3h. 発表予定カレンダー (#270) ---
+  // --- 3i. 発表予定カレンダー (#270) ---
   // 「次はいつ更新されるか」が画面から分からず、バッチが壊れていると誤解される
   // 余地があったための対応。既存の指標取得とは目的が違う (過去の実績ではなく
   // 未来の予定) ため独立したブロックにする。取れなければ「不明」に倒す (#102 と同じ判断)。

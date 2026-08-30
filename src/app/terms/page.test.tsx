@@ -17,3 +17,12 @@ describe('利用規約ページの更新頻度の記述 (#308)', () => {
     ).toBeInTheDocument();
   });
 });
+
+describe('日銀APIのクレジット表示 (#228 #338、ADR-0012)', () => {
+  it('留意点が定める文言をそのまま表示する', () => {
+    render(<TermsPage />);
+    const text = document.body.textContent ?? '';
+    expect(text).toContain('このサービスは、日本銀行時系列統計データ検索サイトの API 機能を使用しています。');
+    expect(text).toContain('サービスの内容は日本銀行によって保証されたものではありません。');
+  });
+});

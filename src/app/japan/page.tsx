@@ -100,8 +100,48 @@ const CHARTS: QuestionChartDef<JapanQuestionId>[] = [
       </span>,
       <span key="boj">
         <strong>日銀短観ではない。</strong>
-        短観は日本銀行が公表しており政府統計ではないため、e-Stat から取得できない。
-        こちらは財務省・内閣府の調査で、企業の景況感を公的統計で見る唯一の経路。
+        短観は日本銀行が公表しており政府統計ではないため e-Stat からは取得できないが、
+        日本銀行自身が別途、登録不要の API を公開している。次の図がその短観。
+      </span>,
+    ],
+  },
+  {
+    question: 'jp-cycle',
+    frequency: 'monthly',
+    primaryIndicator: 'jp-tankan-large-mfg',
+    title: '日銀短観 業況判断DI (大企業)',
+    subtitle: '「良い」-「悪い」の割合。0 が中立 (四半期)',
+    kind: 'number',
+    zeroLine: true,
+    connectNulls: true,
+    series: [
+      {
+        key: 'jpTankanLargeMfg',
+        label: '製造業',
+        color: COLORS.jpTankanLargeMfg,
+        width: 2.4,
+        indicatorId: 'jp-tankan-large-mfg',
+      },
+      {
+        key: 'jpTankanLargeNonmfg',
+        label: '非製造業',
+        color: COLORS.jpTankanLargeNonmfg,
+        indicatorId: 'jp-tankan-large-nonmfg',
+      },
+    ],
+    notes: [
+      <span key="what">
+        <strong>市場が最も注目する日本の景気指標のひとつ。</strong>
+        企業に「良い」か「悪い」かを尋ね、その差で示す。上の BSI と似た調査だが、
+        <strong>製造業と非製造業を分けられる</strong>のが大きな違い。
+      </span>,
+      <span key="split">
+        <strong>輸出主導の製造業と内需中心の非製造業で向きが分かれることがある。</strong>
+        円相場や海外景気の影響は製造業に先に出やすい。
+      </span>,
+      <span key="not-bsi">
+        BSI は財務省・内閣府の調査で規模のみの分類、こちらは日本銀行の調査で
+        業種を分けられる。<strong>調査主体も分類軸も違うため同じ図には載せていない。</strong>
       </span>,
     ],
   },

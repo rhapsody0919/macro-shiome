@@ -40,3 +40,16 @@ describe('実質GDP成長率 (#336)', () => {
     expect(text).toContain('その四半期のペースが 1 年続いた場合の伸び率');
   });
 });
+
+describe('日銀短観 業況判断DI (#228)', () => {
+  it('BSIの直後に製造業・非製造業のチャートを出す', () => {
+    render(<JapanPage />);
+    const titles = screen.getAllByRole('heading', { level: 3 }).map((h) => h.textContent);
+    const bsiIndex = titles.indexOf('企業の景況感 (BSI)');
+    const tankanIndex = titles.indexOf('日銀短観 業況判断DI (大企業)');
+    expect(bsiIndex).toBeGreaterThanOrEqual(0);
+    expect(tankanIndex).toBe(bsiIndex + 1);
+    const text = document.body.textContent ?? '';
+    expect(text).toContain('製造業と非製造業を分けられる');
+  });
+});

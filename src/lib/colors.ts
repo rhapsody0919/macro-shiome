@@ -23,6 +23,9 @@ export const COLORS = {
   jpBsiLarge: '#1d4ed8',
   jpBsiMid: '#60a5fa',
   jpBsiSmall: '#93c5fd',
+  /** 日銀短観 業況判断DI (大企業・製造業)。BSIを業種で補う (#228)。 */
+  jpTankanLargeMfg: '#0ea5e9',
+  jpTankanLargeNonmfg: '#f97316',
   // 国債の平均利率 3 本 (#222)。全体を太く、内訳を細く。
   treasuryAvgRate: '#0f766e',
   treasuryAvgRateBills: '#14b8a6',

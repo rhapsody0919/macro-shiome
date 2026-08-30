@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-29T08:24:27.320Z",
+  "generatedAt": "2026-08-30T00:45:36.193Z",
   "entries": [
     {
       "indicatorId": "sp500",
@@ -2435,6 +2435,32 @@
     {
       "indicatorId": "jp-bsi-small",
       "name": "企業の景況感 BSI (中小企業)",
+      "frequency": "quarterly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-03-01",
+        "2025-12-01",
+        "2025-09-01",
+        "2025-06-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "jp-tankan-large-mfg",
+      "name": "日銀短観 業況判断DI (大企業・製造業)",
+      "frequency": "quarterly",
+      "recentDates": [
+        "2026-06-01",
+        "2026-03-01",
+        "2025-12-01",
+        "2025-09-01",
+        "2025-06-01"
+      ],
+      "gapReason": null
+    },
+    {
+      "indicatorId": "jp-tankan-large-nonmfg",
+      "name": "日銀短観 業況判断DI (大企業・非製造業)",
       "frequency": "quarterly",
       "recentDates": [
         "2026-06-01",
