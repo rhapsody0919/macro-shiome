@@ -149,6 +149,8 @@ export const COLORS = {
   jpConsumptionIndex: '#0ea5e9',
   jpCpiCore: '#0ea5e9',
   jpCpi: '#94a3b8',
+  /** 企業向けサービス価格指数 (SPPI)。賃金インフレの代理指標 (#338)。 */
+  jpSppi: '#a855f7',
   jpWatcherCurrent: '#0ea5e9',
   jpWatcherOutlook: '#f59e0b',
   jpRealWage: '#0ea5e9',

@@ -936,6 +936,8 @@ export function buildEconomyView(options: BuildViewOptions): EconomyView {
     // 米国は指数が小数 3 桁あるため `yoy()` で導出している。経路は違うが値は正しい。
     jpCpiCore: level('jp-cpi-core', month),
     jpCpi: level('jp-cpi', month),
+    // 公表の前年比をそのまま使う (#162 の教訓と同型)。
+    jpSppi: level('jp-sppi', month),
     // 街角景気は DI (50 が中立)。景気動向指数とは基準が違うので同じ図に載せない (#160)。
     jpWatcherCurrent: level('jp-watcher-current', month),
     // 四半期。その期の最終月にだけ値が入る (#226)。
@@ -1080,6 +1082,7 @@ const MONTHLY_INDICATORS = [
   'jp-consumption-index',
   'jp-cpi-core',
   'jp-cpi',
+  'jp-sppi',
   'jp-watcher-current',
   'jp-watcher-outlook',
   'jp-real-wage',

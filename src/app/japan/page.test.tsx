@@ -53,3 +53,16 @@ describe('日銀短観 業況判断DI (#228)', () => {
     expect(text).toContain('製造業と非製造業を分けられる');
   });
 });
+
+describe('企業向けサービス価格指数 (#338)', () => {
+  it('国内企業物価指数の直後に表示する', () => {
+    render(<JapanPage />);
+    const titles = screen.getAllByRole('heading', { level: 3 }).map((h) => h.textContent);
+    const producerIndex = titles.indexOf('国内企業物価指数 (日本)');
+    const sppiIndex = titles.indexOf('企業向けサービス価格指数 (日本)');
+    expect(producerIndex).toBeGreaterThanOrEqual(0);
+    expect(sppiIndex).toBe(producerIndex + 1);
+    const text = document.body.textContent ?? '';
+    expect(text).toContain('賃金インフレの代理指標として注目される');
+  });
+});
