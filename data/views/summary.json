@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-29T08:24:27.320Z",
-  "economyState": "経済は、安定的な状況を維持しているように見えます。利回り差の広がりや、不安定性の指標が安定していることから、市場は比較的穏やかであると考えられます。ただし、失業保険申請の増加は、経済の不確実性の存在を示唆しています。",
+  "generatedAt": "2026-08-30T07:38:51.700Z",
+  "economyState": "経済は安定した状況ではなく、不安定な兆候が見られる。金利の差が広がり、金融環境が悪化していることが指摘される。また、失業保険の申請件数も増加しているため、雇用の状況も悪化しているようだ。",
   "economyStateFactCount": 5,
   "warnings": [],
   "highlights": [
@@ -11,7 +11,7 @@
       "relativeStrength": 21.71,
       "hasBreakout": true,
       "signalCount": 3,
-      "note": "金鉱株は下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
+      "note": "金鉱株がSPYに対して相対的に強く、直近で戻り高値を上抜けた。"
     },
     {
       "id": "etf-ewz",
@@ -20,7 +20,7 @@
       "relativeStrength": 1.39,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "ブラジルは下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
+      "note": "ブラジルの銘柄がSPYに対して相対的に強い。"
     },
     {
       "id": "etf-eido",
@@ -29,7 +29,7 @@
       "relativeStrength": 12.63,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "インドネシアは下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
+      "note": "インドネシアの銘柄がSPYに対して相対的に強い。"
     },
     {
       "id": "etf-smin",
@@ -38,7 +38,7 @@
       "relativeStrength": 5.03,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "インド小型株は下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
+      "note": "インド小型株がSPYに対して相対的に強い。"
     }
   ]
 }
