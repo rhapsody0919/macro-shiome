@@ -12905,16 +12905,16 @@
       "jpConsumption": null,
       "jpDisposableIncome": null,
       "jpPropensityToConsume": null,
-      "jpIndustrialProduction": null,
-      "jpShipments": null,
-      "jpInventory": null,
+      "jpIndustrialProduction": 104.7,
+      "jpShipments": 103.5,
+      "jpInventory": 98.1,
       "jpOperatingRate": null,
       "jpBankLending": 5993364,
       "jpMonetaryBase": 5549259,
       "jpWorkingHours": null,
       "jpPublicWorks": null,
       "jpCpiCoreCore": 1.9,
-      "jpInventoryRatio": null,
+      "jpInventoryRatio": 104.7,
       "jpTopix": 4003.3,
       "jpConsumptionIndex": null,
       "jpCpiCore": 1.8,
@@ -12936,9 +12936,9 @@
       "jpDiCoincident": null,
       "jpDiLagging": null,
       "jpGdpGrowth": null,
-      "jpHousingStarts": null,
-      "jpHousingStartsOwned": null,
-      "jpHousingStartsRented": null,
+      "jpHousingStarts": 773916,
+      "jpHousingStartsOwned": 16260,
+      "jpHousingStartsRented": 27764,
       "jobOpenings": null,
       "bidToCover": 2.59,
       "nyFedSurvey": 15.6,
@@ -13276,15 +13276,15 @@
     },
     {
       "indicatorId": "jp-industrial-production",
-      "latestMonth": "2026-06-01"
+      "latestMonth": "2026-07-01"
     },
     {
       "indicatorId": "jp-shipments",
-      "latestMonth": "2026-06-01"
+      "latestMonth": "2026-07-01"
     },
     {
       "indicatorId": "jp-inventory",
-      "latestMonth": "2026-06-01"
+      "latestMonth": "2026-07-01"
     },
     {
       "indicatorId": "jp-operating-rate",
@@ -13312,7 +13312,7 @@
     },
     {
       "indicatorId": "jp-inventory-ratio",
-      "latestMonth": "2026-06-01"
+      "latestMonth": "2026-07-01"
     },
     {
       "indicatorId": "jp-topix",
@@ -13388,15 +13388,15 @@
     },
     {
       "indicatorId": "jp-housing-starts",
-      "latestMonth": "2026-06-01"
+      "latestMonth": "2026-07-01"
     },
     {
       "indicatorId": "jp-housing-starts-owned",
-      "latestMonth": "2026-06-01"
+      "latestMonth": "2026-07-01"
     },
     {
       "indicatorId": "jp-housing-starts-rented",
-      "latestMonth": "2026-06-01"
+      "latestMonth": "2026-07-01"
     },
     {
       "indicatorId": "job-openings",
