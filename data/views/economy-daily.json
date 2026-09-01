@@ -1,120 +1,5 @@
 [
   {
-    "date": "2016-08-01",
-    "wti": 40.05,
-    "newJobPostings": null
-  },
-  {
-    "date": "2016-08-02",
-    "wti": 39.5,
-    "newJobPostings": null
-  },
-  {
-    "date": "2016-08-03",
-    "wti": 40.8,
-    "newJobPostings": null
-  },
-  {
-    "date": "2016-08-04",
-    "wti": 41.92,
-    "newJobPostings": null
-  },
-  {
-    "date": "2016-08-05",
-    "wti": 41.83,
-    "newJobPostings": null
-  },
-  {
-    "date": "2016-08-08",
-    "wti": 43.06,
-    "newJobPostings": null
-  },
-  {
-    "date": "2016-08-09",
-    "wti": 42.78,
-    "newJobPostings": null
-  },
-  {
-    "date": "2016-08-10",
-    "wti": 41.75,
-    "newJobPostings": null
-  },
-  {
-    "date": "2016-08-11",
-    "wti": 43.51,
-    "newJobPostings": null
-  },
-  {
-    "date": "2016-08-12",
-    "wti": 44.47,
-    "newJobPostings": null
-  },
-  {
-    "date": "2016-08-15",
-    "wti": 45.72,
-    "newJobPostings": null
-  },
-  {
-    "date": "2016-08-16",
-    "wti": 46.57,
-    "newJobPostings": null
-  },
-  {
-    "date": "2016-08-17",
-    "wti": 46.81,
-    "newJobPostings": null
-  },
-  {
-    "date": "2016-08-18",
-    "wti": 48.2,
-    "newJobPostings": null
-  },
-  {
-    "date": "2016-08-19",
-    "wti": 48.48,
-    "newJobPostings": null
-  },
-  {
-    "date": "2016-08-22",
-    "wti": 46.8,
-    "newJobPostings": null
-  },
-  {
-    "date": "2016-08-23",
-    "wti": 47.54,
-    "newJobPostings": null
-  },
-  {
-    "date": "2016-08-24",
-    "wti": 46.29,
-    "newJobPostings": null
-  },
-  {
-    "date": "2016-08-25",
-    "wti": 46.97,
-    "newJobPostings": null
-  },
-  {
-    "date": "2016-08-26",
-    "wti": 47.64,
-    "newJobPostings": null
-  },
-  {
-    "date": "2016-08-29",
-    "wti": 46.97,
-    "newJobPostings": null
-  },
-  {
-    "date": "2016-08-30",
-    "wti": 46.32,
-    "newJobPostings": null
-  },
-  {
-    "date": "2016-08-31",
-    "wti": 44.68,
-    "newJobPostings": null
-  },
-  {
     "date": "2016-09-01",
     "wti": 43.17,
     "newJobPostings": null
@@ -13151,6 +13036,11 @@
   },
   {
     "date": "2026-08-31",
+    "wti": 83.9,
+    "newJobPostings": null
+  },
+  {
+    "date": "2026-09-01",
     "wti": 83.9,
     "newJobPostings": null
   }

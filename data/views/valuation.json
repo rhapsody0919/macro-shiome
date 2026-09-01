@@ -2,70 +2,6 @@
   "sp500": {
     "points": [
       {
-        "date": "2016-08-05",
-        "index": null,
-        "forwardPe": null,
-        "trailingPe": null,
-        "forwardEps": null,
-        "trailingEps": null,
-        "earningsYield": null,
-        "realRate": 0.09000000000000008,
-        "yieldSpread": null,
-        "fairValue": null,
-        "fairValueBasis": null,
-        "overvaluation": null,
-        "isForwardEpsHigh": false,
-        "isTrailingEpsHigh": false
-      },
-      {
-        "date": "2016-08-12",
-        "index": null,
-        "forwardPe": null,
-        "trailingPe": null,
-        "forwardEps": null,
-        "trailingEps": null,
-        "earningsYield": null,
-        "realRate": 0.07000000000000006,
-        "yieldSpread": null,
-        "fairValue": null,
-        "fairValueBasis": null,
-        "overvaluation": null,
-        "isForwardEpsHigh": false,
-        "isTrailingEpsHigh": false
-      },
-      {
-        "date": "2016-08-19",
-        "index": 2183.87,
-        "forwardPe": null,
-        "trailingPe": null,
-        "forwardEps": null,
-        "trailingEps": null,
-        "earningsYield": null,
-        "realRate": 0.10000000000000009,
-        "yieldSpread": null,
-        "fairValue": null,
-        "fairValueBasis": null,
-        "overvaluation": null,
-        "isForwardEpsHigh": false,
-        "isTrailingEpsHigh": false
-      },
-      {
-        "date": "2016-08-26",
-        "index": 2169.04,
-        "forwardPe": null,
-        "trailingPe": null,
-        "forwardEps": null,
-        "trailingEps": null,
-        "earningsYield": null,
-        "realRate": 0.15000000000000013,
-        "yieldSpread": null,
-        "fairValue": null,
-        "fairValueBasis": null,
-        "overvaluation": null,
-        "isForwardEpsHigh": false,
-        "isTrailingEpsHigh": false
-      },
-      {
         "date": "2016-09-02",
         "index": 2179.98,
         "forwardPe": null,
@@ -8409,8 +8345,8 @@
         "forwardEps": 394.4382653061224,
         "trailingEps": 292.84053030303033,
         "earningsYield": 5.10204081632653,
-        "realRate": 2.36,
-        "yieldSpread": 2.7420408163265297,
+        "realRate": 2.4200000000000004,
+        "yieldSpread": 2.6820408163265292,
         "fairValue": 7979.306002807367,
         "fairValueBasis": 7730.99,
         "overvaluation": -3.2119560729915175,
@@ -8428,8 +8364,8 @@
     "targetYield": 3.67,
     "targetYieldContext": {
       "realRateAtSetting": 2.4,
-      "currentRealRate": 2.36,
-      "drift": -0.040000000000000036,
+      "currentRealRate": 2.4200000000000004,
+      "drift": 0.020000000000000462,
       "riskPremium": 1.27
     },
     "correlation": {
@@ -8451,11 +8387,11 @@
     },
     "spreadDistribution": {
       "years": 5,
-      "mean": 3.6957081295543888,
-      "sd": 1.2309572724495592,
+      "mean": 3.6953530999685906,
+      "sd": 1.2312425834536531,
       "n": 169,
-      "latest": 2.7420408163265297,
-      "latestPercentile": 28.698224852071007,
+      "latest": 2.6820408163265292,
+      "latestPercentile": 25.14792899408284,
       "latestDate": "2026-08-28"
     },
     "forwardPeDistribution": {
@@ -8481,70 +8417,6 @@
   },
   "nasdaq100": {
     "points": [
-      {
-        "date": "2016-08-05",
-        "index": 4791.21,
-        "forwardPe": null,
-        "trailingPe": null,
-        "forwardEps": null,
-        "trailingEps": null,
-        "earningsYield": null,
-        "realRate": 0.09000000000000008,
-        "yieldSpread": null,
-        "fairValue": null,
-        "fairValueBasis": 4791.21,
-        "overvaluation": null,
-        "isForwardEpsHigh": false,
-        "isTrailingEpsHigh": false
-      },
-      {
-        "date": "2016-08-12",
-        "index": 4807.08,
-        "forwardPe": null,
-        "trailingPe": null,
-        "forwardEps": null,
-        "trailingEps": null,
-        "earningsYield": null,
-        "realRate": 0.07000000000000006,
-        "yieldSpread": null,
-        "fairValue": null,
-        "fairValueBasis": 4807.08,
-        "overvaluation": null,
-        "isForwardEpsHigh": false,
-        "isTrailingEpsHigh": false
-      },
-      {
-        "date": "2016-08-19",
-        "index": 4806.14,
-        "forwardPe": null,
-        "trailingPe": null,
-        "forwardEps": null,
-        "trailingEps": null,
-        "earningsYield": null,
-        "realRate": 0.10000000000000009,
-        "yieldSpread": null,
-        "fairValue": null,
-        "fairValueBasis": 4806.14,
-        "overvaluation": null,
-        "isForwardEpsHigh": false,
-        "isTrailingEpsHigh": false
-      },
-      {
-        "date": "2016-08-26",
-        "index": 4783.69,
-        "forwardPe": null,
-        "trailingPe": null,
-        "forwardEps": null,
-        "trailingEps": null,
-        "earningsYield": null,
-        "realRate": 0.15000000000000013,
-        "yieldSpread": null,
-        "fairValue": null,
-        "fairValueBasis": 4783.69,
-        "overvaluation": null,
-        "isForwardEpsHigh": false,
-        "isTrailingEpsHigh": false
-      },
       {
         "date": "2016-09-02",
         "index": 4798.74,
@@ -16889,8 +16761,8 @@
         "forwardEps": null,
         "trailingEps": 894.6331306990882,
         "earningsYield": 3.0395136778115504,
-        "realRate": 2.36,
-        "yieldSpread": 0.6795136778115505,
+        "realRate": 2.4200000000000004,
+        "yieldSpread": 0.61951367781155,
         "fairValue": 27358.811336363553,
         "fairValueBasis": 29433.43,
         "overvaluation": 7.048511381909783,
@@ -16908,8 +16780,8 @@
     "targetYield": 3.27,
     "targetYieldContext": {
       "realRateAtSetting": 2.4,
-      "currentRealRate": 2.36,
-      "drift": -0.040000000000000036,
+      "currentRealRate": 2.4200000000000004,
+      "drift": 0.020000000000000462,
       "riskPremium": 0.8700000000000001
     },
     "correlation": {
@@ -23925,6 +23797,10 @@
       {
         "date": "2026-08-01",
         "value": 41.17762140136851
+      },
+      {
+        "date": "2026-09-01",
+        "value": null
       }
     ],
     "distribution": {
