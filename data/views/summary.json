@@ -1,53 +1,53 @@
 {
-  "generatedAt": "2026-09-01T06:57:25.111Z",
-  "economyState": "経済は安定した状態で、金融市場の不安定さは低いようで、金利の差も広がっていない。失業の兆候も見られないようだ。",
+  "generatedAt": "2026-09-02T06:36:39.324Z",
+  "economyState": "経済は安定した状態にあり、金融市場も穏やかです。短期債と長期債の利回り差は縮小しており、不安定性は低いようです。ただし、失業保険申請の件数が増えているため、雇用状況は多少の不安を感じさせます。",
   "economyStateFactCount": 5,
   "warnings": [],
   "highlights": [
     {
       "id": "etf-gdx",
       "name": "金鉱株 (GDX)",
-      "drawdown": 14.96,
-      "relativeStrength": 20.68,
+      "drawdown": 18.28,
+      "relativeStrength": 16.77,
       "hasBreakout": true,
       "signalCount": 3,
-      "note": "金鉱株がSPYに対して相対的に強く、直近で戻り高値を上抜けたため注目に値する。"
+      "note": "金鉱株 (GDX) は下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
     },
     {
       "id": "etf-epi",
       "name": "インド (EPI)",
-      "drawdown": 15.53,
-      "relativeStrength": 0.14,
+      "drawdown": 15.55,
+      "relativeStrength": 0.81,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "インドがSPYに対して相対的に強いため注目に値する。"
+      "note": "インド (EPI) は下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
     },
     {
       "id": "etf-ewz",
       "name": "ブラジル (EWZ)",
-      "drawdown": 14.17,
-      "relativeStrength": 3.07,
+      "drawdown": 12.89,
+      "relativeStrength": 5.33,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "ブラジルがSPYに対して相対的に強いため注目に値する。"
+      "note": "ブラジル (EWZ) は下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
     },
     {
       "id": "etf-eido",
       "name": "インドネシア (EIDO)",
-      "drawdown": 46.08,
-      "relativeStrength": 13.59,
+      "drawdown": 45.24,
+      "relativeStrength": 16.18,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "インドネシアがSPYに対して相対的に強いため注目に値する。"
+      "note": "インドネシア (EIDO) は下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
     },
     {
       "id": "etf-smin",
       "name": "インド小型株 (SMIN)",
-      "drawdown": 17.38,
-      "relativeStrength": 5.45,
+      "drawdown": 17.6,
+      "relativeStrength": 5.9,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "インド小型株がSPYに対して相対的に強いため注目に値する。"
+      "note": "インド小型株 (SMIN) は下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
     }
   ]
 }
