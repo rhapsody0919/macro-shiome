@@ -12669,14 +12669,14 @@
       "cpiRent": 2.84,
       "producerPriceAll": 9.9,
       "capacityUtilization": 76.2,
-      "durableGoodsOrders": 7.66,
+      "durableGoodsOrders": 7.7,
       "businessInventories": 3.03,
       "realConsumption": 2.63,
       "retailSales": 5.7,
       "manufacturingHours": 41.7,
       "industrialProduction": 1.29,
-      "newOrdersConsumerGoods": 8.62,
-      "newOrdersCapitalGoods": 13.44,
+      "newOrdersConsumerGoods": 9.05,
+      "newOrdersCapitalGoods": 13.42,
       "buildingPermits": 1374,
       "housingStarts": 1415,
       "newHomeSales": 678,
@@ -12755,7 +12755,7 @@
       "payrolls": 0.2,
       "employmentLevel": -0.59,
       "fullTimeEmployment": -0.95,
-      "adpEmployment": 0.58,
+      "adpEmployment": 0.59,
       "realIncomeExTransfer": -0.38,
       "realDisposablePerCapita": 0.21,
       "realDisposableTotal": 0.45,
@@ -12777,14 +12777,14 @@
       "cpiRent": 2.86,
       "producerPriceAll": 8.27,
       "capacityUtilization": 76.29,
-      "durableGoodsOrders": 11.95,
+      "durableGoodsOrders": 12,
       "businessInventories": null,
       "realConsumption": 2.14,
       "retailSales": 4.75,
       "manufacturingHours": 41.7,
       "industrialProduction": 1.08,
-      "newOrdersConsumerGoods": null,
-      "newOrdersCapitalGoods": 12.86,
+      "newOrdersConsumerGoods": 9.88,
+      "newOrdersCapitalGoods": 12.56,
       "buildingPermits": 1433,
       "housingStarts": 1239,
       "newHomeSales": 607,
@@ -12863,7 +12863,7 @@
       "payrolls": null,
       "employmentLevel": null,
       "fullTimeEmployment": null,
-      "adpEmployment": null,
+      "adpEmployment": 0.58,
       "realIncomeExTransfer": null,
       "realDisposablePerCapita": null,
       "realDisposableTotal": null,
@@ -13108,7 +13108,7 @@
     },
     {
       "indicatorId": "adp-employment",
-      "latestMonth": "2026-07-01"
+      "latestMonth": "2026-08-01"
     },
     {
       "indicatorId": "real-income-ex-transfer",
@@ -13220,7 +13220,7 @@
     },
     {
       "indicatorId": "new-orders-consumer-goods",
-      "latestMonth": "2026-06-01"
+      "latestMonth": "2026-07-01"
     },
     {
       "indicatorId": "new-orders-capital-goods",
