@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-03T06:39:09.108Z",
+  "generatedAt": "2026-09-04T06:43:23.340Z",
   "entries": [
     {
       "label": "Standard & Poors",
       "indicatorIds": [
         "sp500"
       ],
-      "nextReleaseDate": "2026-09-03",
+      "nextReleaseDate": "2026-09-04",
       "source": "fred"
     },
     {
@@ -15,7 +15,7 @@
         "nasdaq100",
         "nasdaq-composite"
       ],
-      "nextReleaseDate": "2026-09-03",
+      "nextReleaseDate": "2026-09-04",
       "source": "fred"
     },
     {
@@ -27,7 +27,7 @@
         "dgs2",
         "tbill-3m"
       ],
-      "nextReleaseDate": "2026-09-03",
+      "nextReleaseDate": "2026-09-04",
       "source": "fred"
     },
     {
@@ -39,7 +39,7 @@
         "breakeven-5y5y",
         "term-spread-3m"
       ],
-      "nextReleaseDate": "2026-09-03",
+      "nextReleaseDate": "2026-09-04",
       "source": "fred"
     },
     {
@@ -47,7 +47,7 @@
       "indicatorIds": [
         "vix"
       ],
-      "nextReleaseDate": "2026-09-03",
+      "nextReleaseDate": "2026-09-04",
       "source": "fred"
     },
     {
@@ -150,7 +150,7 @@
       "indicatorIds": [
         "mortgage-rate-30y"
       ],
-      "nextReleaseDate": "2026-09-03",
+      "nextReleaseDate": "2026-09-10",
       "source": "fred"
     },
     {
@@ -187,7 +187,7 @@
         "initial-claims",
         "continued-claims"
       ],
-      "nextReleaseDate": "2026-09-03",
+      "nextReleaseDate": "2026-09-10",
       "source": "fred"
     },
     {
@@ -225,7 +225,7 @@
         "hy-spread",
         "ig-spread"
       ],
-      "nextReleaseDate": "2026-09-03",
+      "nextReleaseDate": "2026-09-04",
       "source": "fred"
     },
     {
@@ -318,7 +318,7 @@
       "indicatorIds": [
         "nikkei225"
       ],
-      "nextReleaseDate": "2026-09-03",
+      "nextReleaseDate": "2026-09-04",
       "source": "fred"
     },
     {
@@ -342,7 +342,7 @@
       "indicatorIds": [
         "sofr"
       ],
-      "nextReleaseDate": "2026-09-03",
+      "nextReleaseDate": "2026-09-04",
       "source": "fred"
     },
     {
@@ -358,7 +358,7 @@
       "indicatorIds": [
         "fed-balance-sheet"
       ],
-      "nextReleaseDate": "2026-09-03",
+      "nextReleaseDate": "2026-09-10",
       "source": "fred"
     },
     {
@@ -398,7 +398,7 @@
       "indicatorIds": [
         "djia"
       ],
-      "nextReleaseDate": "2026-09-03",
+      "nextReleaseDate": "2026-09-04",
       "source": "fred"
     },
     {
@@ -419,7 +419,7 @@
         "sp500-growth-cy-current",
         "sp500-growth-cy-next"
       ],
-      "nextReleaseDate": "2026-09-04",
+      "nextReleaseDate": "2026-09-11",
       "source": "factset"
     }
   ]

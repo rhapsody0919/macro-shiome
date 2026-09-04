@@ -1,53 +1,53 @@
 {
-  "generatedAt": "2026-09-03T06:39:09.108Z",
-  "economyState": "経済は、現在の状況が不安定な印象を与えているようだ。短期債の利回り差やハイリスク資産の価格差が広がり、不安定性が高まっているようだ。失業保険申請の件数も増加していることから、経済の状況は今なお不安定な状態にあるようだ。",
+  "generatedAt": "2026-09-04T06:43:23.340Z",
+  "economyState": "経済は不安定な状態で、金融市場ではリスクが高まっているようだ。インフレ予想や金利の変化に関する不安が高まっているため、投資家はリスク回避の姿勢を取っているようだ。雇用状況も不安定で、失業者が増えている。",
   "economyStateFactCount": 5,
   "warnings": [],
   "highlights": [
     {
       "id": "etf-gdx",
       "name": "金鉱株 (GDX)",
-      "drawdown": 15.72,
-      "relativeStrength": 19.89,
+      "drawdown": 12.39,
+      "relativeStrength": 23.34,
       "hasBreakout": true,
       "signalCount": 3,
-      "note": "金鉱株がSPYに対して相対的に強い状況にある。"
+      "note": "金鉱株は下落率が深い銘柄の中でSPYに対して相対的に強い状況にある。"
     },
     {
       "id": "etf-epi",
       "name": "インド (EPI)",
-      "drawdown": 14.9,
-      "relativeStrength": 1.13,
+      "drawdown": 14.87,
+      "relativeStrength": 0.13,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "インドがSPYに対して相対的に強い状況にある。"
+      "note": "インドの株価は下落率が深い銘柄の中でSPYに対して相対的に強い。"
     },
     {
       "id": "etf-ewz",
       "name": "ブラジル (EWZ)",
-      "drawdown": 9.27,
-      "relativeStrength": 9.23,
+      "drawdown": 9.17,
+      "relativeStrength": 8.21,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "ブラジルがSPYに対して相対的に強い状況にある。"
+      "note": "ブラジルの株価は下落率が深い銘柄の中でSPYに対して相対的に強い。"
     },
     {
       "id": "etf-eido",
       "name": "インドネシア (EIDO)",
-      "drawdown": 44.94,
-      "relativeStrength": 16.29,
+      "drawdown": 44.01,
+      "relativeStrength": 17.03,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "インドネシアがSPYに対して相対的に強い状況にある。"
+      "note": "インドネシアの株価は下落率が深い銘柄の中でSPYに対して相対的に強い。"
     },
     {
       "id": "etf-smin",
       "name": "インド小型株 (SMIN)",
-      "drawdown": 17.24,
-      "relativeStrength": 5.89,
+      "drawdown": 16.67,
+      "relativeStrength": 5.52,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "インド小型株がSPYに対して相対的に強い状況にある。"
+      "note": "インド小型株は下落率が深い銘柄の中でSPYに対して相対的に強い状況にある。"
     }
   ]
 }
