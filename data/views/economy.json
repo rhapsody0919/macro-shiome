@@ -12146,8 +12146,8 @@
       "jpCurrentAccount": 31919,
       "jpTradeBalance": 9233,
       "jpMoneyStock": 12790601,
-      "jpConsumption": -1,
-      "jpDisposableIncome": 1.3,
+      "jpConsumption": -1.1,
+      "jpDisposableIncome": 1.2,
       "jpPropensityToConsume": 63.2,
       "jpIndustrialProduction": 104.5,
       "jpShipments": 102.1,
@@ -12363,7 +12363,7 @@
       "jpTradeBalance": 4082,
       "jpMoneyStock": 12795038,
       "jpConsumption": -2.9,
-      "jpDisposableIncome": 4.7,
+      "jpDisposableIncome": 4.6,
       "jpPropensityToConsume": 61.3,
       "jpIndustrialProduction": 102,
       "jpShipments": 99.7,
@@ -12544,7 +12544,7 @@
       "realDisposablePerCapita": -0.17,
       "realDisposableTotal": 0.11,
       "retailSalesTotal": 7.23,
-      "vehicleSales": 16.75,
+      "vehicleSales": 16.74,
       "truckTonnage": -0.53,
       "newHomeSupply": 9.3,
       "housingStartsSingle": 889,
@@ -12644,7 +12644,7 @@
       "cpi": 3.46,
       "pce": 3.72,
       "copperPrice": 13552.04,
-      "payrolls": 0.25,
+      "payrolls": 0.26,
       "employmentLevel": -0.65,
       "fullTimeEmployment": -1.13,
       "adpEmployment": 0.61,
@@ -12652,7 +12652,7 @@
       "realDisposablePerCapita": 0.26,
       "realDisposableTotal": 0.52,
       "retailSalesTotal": 6.75,
-      "vehicleSales": 17.04,
+      "vehicleSales": 17.22,
       "truckTonnage": -0.26,
       "newHomeSupply": 8.5,
       "housingStartsSingle": 897,
@@ -12752,7 +12752,7 @@
       "cpi": 3.3,
       "pce": 3.7,
       "copperPrice": 13542.82,
-      "payrolls": 0.2,
+      "payrolls": 0.23,
       "employmentLevel": -0.59,
       "fullTimeEmployment": -0.95,
       "adpEmployment": 0.59,
@@ -12860,26 +12860,26 @@
       "cpi": null,
       "pce": null,
       "copperPrice": null,
-      "payrolls": null,
-      "employmentLevel": null,
-      "fullTimeEmployment": null,
+      "payrolls": 0.38,
+      "employmentLevel": -0.38,
+      "fullTimeEmployment": -0.13,
       "adpEmployment": 0.58,
       "realIncomeExTransfer": null,
       "realDisposablePerCapita": null,
       "realDisposableTotal": null,
       "retailSalesTotal": null,
-      "vehicleSales": null,
+      "vehicleSales": 17.19,
       "truckTonnage": null,
       "newHomeSupply": null,
       "housingStartsSingle": null,
       "commercialLoans": null,
-      "u6Rate": null,
-      "participationRate": null,
-      "employmentRatio": null,
+      "u6Rate": 7.7,
+      "participationRate": 61.6,
+      "employmentRatio": 59.1,
       "hires": null,
       "quits": null,
       "layoffs": null,
-      "weeklyHoursTotal": null,
+      "weeklyHoursTotal": 34.4,
       "cpiCore": null,
       "pceCore": null,
       "cpiRent": null,
@@ -12889,7 +12889,7 @@
       "businessInventories": null,
       "realConsumption": null,
       "retailSales": null,
-      "manufacturingHours": null,
+      "manufacturingHours": 41.7,
       "industrialProduction": null,
       "newOrdersConsumerGoods": null,
       "newOrdersCapitalGoods": null,
@@ -12949,11 +12949,11 @@
       "deTenYear": null,
       "federalDeficit": null,
       "moneyStock": null,
-      "treasuryAvgRate": null,
-      "treasuryAvgRateBills": null,
-      "treasuryAvgRateNotes": null,
-      "unemploymentRate": null,
-      "sahmRule": null,
+      "treasuryAvgRate": 3.49,
+      "treasuryAvgRateBills": 3.79,
+      "treasuryAvgRateNotes": 3.35,
+      "unemploymentRate": 4.1,
+      "sahmRule": -0.07,
       "savingsRate": null,
       "personalSaving": null,
       "consumerSentiment": null,
@@ -13096,15 +13096,15 @@
     },
     {
       "indicatorId": "payrolls",
-      "latestMonth": "2026-07-01"
+      "latestMonth": "2026-08-01"
     },
     {
       "indicatorId": "employment-level",
-      "latestMonth": "2026-07-01"
+      "latestMonth": "2026-08-01"
     },
     {
       "indicatorId": "full-time-employment",
-      "latestMonth": "2026-07-01"
+      "latestMonth": "2026-08-01"
     },
     {
       "indicatorId": "adp-employment",
@@ -13132,7 +13132,7 @@
     },
     {
       "indicatorId": "vehicle-sales",
-      "latestMonth": "2026-07-01"
+      "latestMonth": "2026-08-01"
     },
     {
       "indicatorId": "truck-tonnage",
@@ -13152,15 +13152,15 @@
     },
     {
       "indicatorId": "u6-rate",
-      "latestMonth": "2026-07-01"
+      "latestMonth": "2026-08-01"
     },
     {
       "indicatorId": "participation-rate",
-      "latestMonth": "2026-07-01"
+      "latestMonth": "2026-08-01"
     },
     {
       "indicatorId": "employment-ratio",
-      "latestMonth": "2026-07-01"
+      "latestMonth": "2026-08-01"
     },
     {
       "indicatorId": "hires",
@@ -13176,7 +13176,7 @@
     },
     {
       "indicatorId": "weekly-hours-total",
-      "latestMonth": "2026-07-01"
+      "latestMonth": "2026-08-01"
     },
     {
       "indicatorId": "cpi-core",
@@ -13212,7 +13212,7 @@
     },
     {
       "indicatorId": "manufacturing-hours",
-      "latestMonth": "2026-07-01"
+      "latestMonth": "2026-08-01"
     },
     {
       "indicatorId": "industrial-production",
@@ -13436,11 +13436,11 @@
     },
     {
       "indicatorId": "unemployment-rate",
-      "latestMonth": "2026-07-01"
+      "latestMonth": "2026-08-01"
     },
     {
       "indicatorId": "sahm-rule",
-      "latestMonth": "2026-07-01"
+      "latestMonth": "2026-08-01"
     },
     {
       "indicatorId": "savings-rate",

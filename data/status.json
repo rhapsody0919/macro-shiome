@@ -1,26 +1,26 @@
 {
-  "lastSuccessAt": "2026-09-04T06:43:23.340Z",
-  "lastRunAt": "2026-09-04T06:43:23.340Z",
+  "lastSuccessAt": "2026-09-05T06:29:52.639Z",
+  "lastRunAt": "2026-09-05T06:29:52.639Z",
   "recentGaps": [
     {
       "indicatorId": "sp500-blended-growth-last-week",
       "date": "2026-09-04",
-      "reason": "publication-break",
-      "detail": "レポートが公開されていない",
+      "reason": "fetch-failed",
+      "detail": "本文から該当項目を抽出できなかった",
       "recordedAt": "2026-09-04T06:43:23.340Z"
     },
     {
       "indicatorId": "sp500-blended-growth-quarter-end",
       "date": "2026-09-04",
-      "reason": "publication-break",
-      "detail": "レポートが公開されていない",
+      "reason": "fetch-failed",
+      "detail": "本文から該当項目を抽出できなかった",
       "recordedAt": "2026-09-04T06:43:23.340Z"
     },
     {
       "indicatorId": "sp500-blended-growth-today",
       "date": "2026-09-04",
-      "reason": "publication-break",
-      "detail": "レポートが公開されていない",
+      "reason": "fetch-failed",
+      "detail": "本文から該当項目を抽出できなかった",
       "recordedAt": "2026-09-04T06:43:23.340Z"
     },
     {
@@ -68,15 +68,15 @@
     {
       "indicatorId": "sp500-growth-next-quarter",
       "date": "2026-09-04",
-      "reason": "publication-break",
-      "detail": "レポートが公開されていない",
+      "reason": "fetch-failed",
+      "detail": "本文から該当項目を抽出できなかった",
       "recordedAt": "2026-09-04T06:43:23.340Z"
     },
     {
       "indicatorId": "sp500-growth-quarter-after-next",
       "date": "2026-09-04",
-      "reason": "publication-break",
-      "detail": "レポートが公開されていない",
+      "reason": "fetch-failed",
+      "detail": "本文から該当項目を抽出できなかった",
       "recordedAt": "2026-09-04T06:43:23.340Z"
     },
     {

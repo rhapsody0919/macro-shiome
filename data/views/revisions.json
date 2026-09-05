@@ -5224,8 +5224,8 @@
     "blendedToday": null,
     "blendedLastWeek": null,
     "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null,
+    "growthCurrentYear": 31.5,
+    "growthNextYear": 15,
     "growthNextQuarter": null,
     "growthQuarterAfterNext": null
   }
