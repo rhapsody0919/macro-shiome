@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-07T06:46:07.415Z",
-  "economyState": "経済は安定しているように見えます。金利の差や不安定性の指標は比較的安定しており、インフレや経済の不安定性の兆候も見られません。ただし、失業保険申請の件数は一定の水準を超えており、雇用の状況は注意が必要です。",
+  "generatedAt": "2026-09-08T06:43:18.856Z",
+  "economyState": "経済は安定した状況ではありません。インフレの懸念が高まっており、長期金利と短期金利の差が広がっています。金融環境は不安定で、株価の変動が予測不能であることも示唆されています。",
   "economyStateFactCount": 5,
   "warnings": [],
   "highlights": [
@@ -11,7 +11,7 @@
       "relativeStrength": 21.1,
       "hasBreakout": true,
       "signalCount": 3,
-      "note": "金鉱株がSPYに対して相対的に強いことと、直近で戻り高値を上抜けたことによる注目。"
+      "note": "金鉱株がSPYに対して相対的に強く、直近で戻り高値を上抜けている。"
     },
     {
       "id": "etf-corn",
@@ -20,7 +20,7 @@
       "relativeStrength": 13.18,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "コーンがSPYに対して相対的に強いことによる注目。"
+      "note": "コーンがSPYに対して相対的に強い。"
     },
     {
       "id": "etf-epi",
@@ -29,7 +29,7 @@
       "relativeStrength": 0.36,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "インドがSPYに対して相対的に強いことによる注目。"
+      "note": "インドがSPYに対して相対的に強い。"
     },
     {
       "id": "etf-ewz",
@@ -38,7 +38,7 @@
       "relativeStrength": 7.86,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "ブラジルがSPYに対して相対的に強いことによる注目。"
+      "note": "ブラジルがSPYに対して相対的に強い。"
     },
     {
       "id": "etf-eido",
@@ -47,7 +47,7 @@
       "relativeStrength": 16.06,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "インドネシアがSPYに対して相対的に強いことによる注目。"
+      "note": "インドネシアがSPYに対して相対的に強い。"
     },
     {
       "id": "etf-smin",
@@ -56,7 +56,7 @@
       "relativeStrength": 5.78,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "インド小型株がSPYに対して相対的に強いことによる注目。"
+      "note": "インド小型株がSPYに対して相対的に強い。"
     }
   ]
 }

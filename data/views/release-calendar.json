@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-07T06:46:07.415Z",
+  "generatedAt": "2026-09-08T06:43:18.856Z",
   "entries": [
     {
       "label": "Standard & Poors",
@@ -225,7 +225,7 @@
         "hy-spread",
         "ig-spread"
       ],
-      "nextReleaseDate": "2026-09-07",
+      "nextReleaseDate": "2026-09-08",
       "source": "fred"
     },
     {
@@ -318,7 +318,7 @@
       "indicatorIds": [
         "nikkei225"
       ],
-      "nextReleaseDate": "2026-09-07",
+      "nextReleaseDate": "2026-09-08",
       "source": "fred"
     },
     {
