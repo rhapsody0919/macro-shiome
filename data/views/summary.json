@@ -1,62 +1,44 @@
 {
-  "generatedAt": "2026-09-08T06:43:18.856Z",
-  "economyState": "経済は安定した状況ではありません。インフレの懸念が高まっており、長期金利と短期金利の差が広がっています。金融環境は不安定で、株価の変動が予測不能であることも示唆されています。",
+  "generatedAt": "2026-09-09T06:52:17.533Z",
+  "economyState": "経済は不安定な状況にあり、金利や株価の変化が期待されます。金利の差は拡大し、株式市場の不安定さも高まります。雇用状況も悪化傾向にあるようで、失業保険申請の件数が増えているようです。",
   "economyStateFactCount": 5,
   "warnings": [],
   "highlights": [
     {
       "id": "etf-gdx",
       "name": "金鉱株 (GDX)",
-      "drawdown": 14.31,
-      "relativeStrength": 21.1,
+      "drawdown": 15.05,
+      "relativeStrength": 20.73,
       "hasBreakout": true,
       "signalCount": 3,
-      "note": "金鉱株がSPYに対して相対的に強く、直近で戻り高値を上抜けている。"
+      "note": "金鉱株 (GDX) は、SPYに対して相対的に強い下落率の銘柄の一角に位置している。"
     },
     {
       "id": "etf-corn",
       "name": "コーン (CORN)",
-      "drawdown": 8.52,
-      "relativeStrength": 13.18,
+      "drawdown": 8.98,
+      "relativeStrength": 13.24,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "コーンがSPYに対して相対的に強い。"
-    },
-    {
-      "id": "etf-epi",
-      "name": "インド (EPI)",
-      "drawdown": 15,
-      "relativeStrength": 0.36,
-      "hasBreakout": false,
-      "signalCount": 2,
-      "note": "インドがSPYに対して相対的に強い。"
-    },
-    {
-      "id": "etf-ewz",
-      "name": "ブラジル (EWZ)",
-      "drawdown": 9.81,
-      "relativeStrength": 7.86,
-      "hasBreakout": false,
-      "signalCount": 2,
-      "note": "ブラジルがSPYに対して相対的に強い。"
+      "note": "コーン (CORN) は、SPYに対して相対的に強い下落率の銘柄の一角に位置している。"
     },
     {
       "id": "etf-eido",
       "name": "インドネシア (EIDO)",
-      "drawdown": 44.68,
-      "relativeStrength": 16.06,
+      "drawdown": 44.01,
+      "relativeStrength": 18.13,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "インドネシアがSPYに対して相対的に強い。"
+      "note": "インドネシア (EIDO) は、SPYに対して相対的に強い下落率の銘柄の一角に位置している。"
     },
     {
       "id": "etf-smin",
       "name": "インド小型株 (SMIN)",
-      "drawdown": 16.78,
-      "relativeStrength": 5.78,
+      "drawdown": 17.25,
+      "relativeStrength": 5.77,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "インド小型株がSPYに対して相対的に強い。"
+      "note": "インド小型株 (SMIN) は、SPYに対して相対的に強い下落率の銘柄の一角に位置している。"
     }
   ]
 }
