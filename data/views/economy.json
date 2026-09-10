@@ -12804,7 +12804,7 @@
       "jpBankLending": 5989219,
       "jpMonetaryBase": 5549259,
       "jpWorkingHours": 141.6,
-      "jpPublicWorks": null,
+      "jpPublicWorks": 2142843,
       "jpCpiCoreCore": 1.9,
       "jpInventoryRatio": 104.7,
       "jpTopix": 4003.3,
@@ -13048,7 +13048,7 @@
       "jpHousingStartsOwned": null,
       "jpHousingStartsRented": null,
       "jobOpenings": null,
-      "bidToCover": null,
+      "bidToCover": 2.71,
       "nyFedSurvey": null,
       "phillyFedSurvey": null,
       "sp500Yoy": 18.13,
@@ -13304,7 +13304,7 @@
     },
     {
       "indicatorId": "jp-public-works",
-      "latestMonth": "2026-06-01"
+      "latestMonth": "2026-07-01"
     },
     {
       "indicatorId": "jp-cpi-core-core",
@@ -13404,7 +13404,7 @@
     },
     {
       "indicatorId": "ten-year-bid-to-cover",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "ny-fed-survey",
