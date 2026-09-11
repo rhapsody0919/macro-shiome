@@ -12424,7 +12424,7 @@
       "month": "2026-04-01",
       "importPrice": 4.52,
       "exportPrice": 9.31,
-      "producerPrice": 5.7,
+      "producerPrice": 5.69,
       "cpi": 3.78,
       "pce": 3.8,
       "copperPrice": 12890.69,
@@ -12451,7 +12451,7 @@
       "cpiCore": 2.74,
       "pceCore": 3.33,
       "cpiRent": 2.79,
-      "producerPriceAll": 9.43,
+      "producerPriceAll": 9.42,
       "capacityUtilization": 76.14,
       "durableGoodsOrders": 17.8,
       "businessInventories": 2.77,
@@ -12532,7 +12532,7 @@
       "month": "2026-05-01",
       "importPrice": 6.81,
       "exportPrice": 11.35,
-      "producerPrice": 5.83,
+      "producerPrice": 5.88,
       "cpi": 4.17,
       "pce": 4.11,
       "copperPrice": 13512.16,
@@ -12559,7 +12559,7 @@
       "cpiCore": 2.82,
       "pceCore": 3.46,
       "cpiRent": 2.92,
-      "producerPriceAll": 12.31,
+      "producerPriceAll": 12.19,
       "capacityUtilization": 76.06,
       "durableGoodsOrders": -2.97,
       "businessInventories": 3.2,
@@ -12640,7 +12640,7 @@
       "month": "2026-06-01",
       "importPrice": 6.68,
       "exportPrice": 10.05,
-      "producerPrice": 5.54,
+      "producerPrice": 5.58,
       "cpi": 3.46,
       "pce": 3.72,
       "copperPrice": 13552.04,
@@ -12667,7 +12667,7 @@
       "cpiCore": 2.57,
       "pceCore": 3.34,
       "cpiRent": 2.84,
-      "producerPriceAll": 9.9,
+      "producerPriceAll": 9.8,
       "capacityUtilization": 76.2,
       "durableGoodsOrders": 7.7,
       "businessInventories": 3.03,
@@ -12748,7 +12748,7 @@
       "month": "2026-07-01",
       "importPrice": 5.95,
       "exportPrice": 8.25,
-      "producerPrice": 4.66,
+      "producerPrice": 4.8,
       "cpi": 3.3,
       "pce": 3.7,
       "copperPrice": 13542.82,
@@ -12775,7 +12775,7 @@
       "cpiCore": 2.47,
       "pceCore": 3.34,
       "cpiRent": 2.86,
-      "producerPriceAll": 8.27,
+      "producerPriceAll": 8.7,
       "capacityUtilization": 76.29,
       "durableGoodsOrders": 12,
       "businessInventories": null,
@@ -12856,7 +12856,7 @@
       "month": "2026-08-01",
       "importPrice": null,
       "exportPrice": null,
-      "producerPrice": null,
+      "producerPrice": 5.41,
       "cpi": null,
       "pce": null,
       "copperPrice": null,
@@ -12883,7 +12883,7 @@
       "cpiCore": null,
       "pceCore": null,
       "cpiRent": null,
-      "producerPriceAll": null,
+      "producerPriceAll": 9.85,
       "capacityUtilization": null,
       "durableGoodsOrders": null,
       "businessInventories": null,
@@ -12896,7 +12896,7 @@
       "buildingPermits": null,
       "housingStarts": null,
       "newHomeSales": null,
-      "existingHomeSales": null,
+      "existingHomeSales": 3980000,
       "jpUnemploymentRate": null,
       "jpProducerPrice": null,
       "jpCurrentAccount": null,
@@ -13029,9 +13029,9 @@
       "jpCpi": null,
       "jpSppi": null,
       "jpWatcherCurrent": null,
-      "jpBsiLarge": null,
-      "jpBsiMid": null,
-      "jpBsiSmall": null,
+      "jpBsiLarge": 5.3,
+      "jpBsiMid": 0.8,
+      "jpBsiSmall": -10.9,
       "jpTankanLargeMfg": null,
       "jpTankanLargeNonmfg": null,
       "jpWatcherOutlook": null,
@@ -13080,7 +13080,7 @@
     },
     {
       "indicatorId": "producer-price",
-      "latestMonth": "2026-07-01"
+      "latestMonth": "2026-08-01"
     },
     {
       "indicatorId": "cpi",
@@ -13192,7 +13192,7 @@
     },
     {
       "indicatorId": "producer-price-all",
-      "latestMonth": "2026-07-01"
+      "latestMonth": "2026-08-01"
     },
     {
       "indicatorId": "capacity-utilization",
@@ -13240,7 +13240,7 @@
     },
     {
       "indicatorId": "existing-home-sales",
-      "latestMonth": "2026-07-01"
+      "latestMonth": "2026-08-01"
     },
     {
       "indicatorId": "jp-unemployment-rate",

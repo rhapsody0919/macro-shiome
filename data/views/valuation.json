@@ -8368,6 +8368,22 @@
         "overvaluation": -2.8224769934707794,
         "isForwardEpsHigh": true,
         "isTrailingEpsHigh": false
+      },
+      {
+        "date": "2026-09-11",
+        "index": 7591.7,
+        "forwardPe": null,
+        "trailingPe": null,
+        "forwardEps": null,
+        "trailingEps": null,
+        "earningsYield": null,
+        "realRate": 2.43,
+        "yieldSpread": null,
+        "fairValue": null,
+        "fairValueBasis": null,
+        "overvaluation": null,
+        "isForwardEpsHigh": false,
+        "isTrailingEpsHigh": false
       }
     ],
     "baselines": {
@@ -8403,20 +8419,20 @@
     },
     "spreadDistribution": {
       "years": 5,
-      "mean": 3.677562386639915,
-      "sd": 1.223733037765841,
-      "n": 169,
+      "mean": 3.6648579677395294,
+      "sd": 1.2161617620660368,
+      "n": 168,
       "latest": 2.6982051282051276,
-      "latestPercentile": 25.7396449704142,
+      "latestPercentile": 25.892857142857146,
       "latestDate": "2026-09-04"
     },
     "forwardPeDistribution": {
       "years": 5,
-      "mean": 19.895266272189346,
-      "sd": 1.8788867857529608,
-      "n": 169,
+      "mean": 19.888690476190476,
+      "sd": 1.8825522742537533,
+      "n": 168,
       "latest": 19.5,
-      "latestPercentile": 39.053254437869825,
+      "latestPercentile": 39.285714285714285,
       "latestDate": "2026-09-04"
     },
     "trailingPeDistribution": {
@@ -16800,6 +16816,22 @@
         "overvaluation": 7.693812993203508,
         "isForwardEpsHigh": false,
         "isTrailingEpsHigh": false
+      },
+      {
+        "date": "2026-09-11",
+        "index": 29103.51,
+        "forwardPe": null,
+        "trailingPe": 29.75,
+        "forwardEps": null,
+        "trailingEps": 978.2692436974789,
+        "earningsYield": 3.361344537815126,
+        "realRate": 2.43,
+        "yieldSpread": 0.9313445378151259,
+        "fairValue": 29916.490632950427,
+        "fairValueBasis": 29103.51,
+        "overvaluation": -2.7934109423585873,
+        "isForwardEpsHigh": false,
+        "isTrailingEpsHigh": true
       }
     ],
     "baselines": {
@@ -16819,15 +16851,15 @@
     "correlation": {
       "halfYear": {
         "kind": "insufficient",
-        "n": 3
+        "n": 4
       },
       "oneYear": {
         "kind": "insufficient",
-        "n": 3
+        "n": 4
       },
       "all": {
         "kind": "insufficient",
-        "n": 3
+        "n": 4
       }
     },
     "spreadDistribution": null,
