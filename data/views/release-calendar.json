@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-11T06:48:25.877Z",
+  "generatedAt": "2026-09-12T06:40:34.844Z",
   "entries": [
     {
       "label": "Standard & Poors",
       "indicatorIds": [
         "sp500"
       ],
-      "nextReleaseDate": "2026-09-11",
+      "nextReleaseDate": "2026-09-14",
       "source": "fred"
     },
     {
@@ -15,7 +15,7 @@
         "nasdaq100",
         "nasdaq-composite"
       ],
-      "nextReleaseDate": "2026-09-11",
+      "nextReleaseDate": "2026-09-14",
       "source": "fred"
     },
     {
@@ -27,7 +27,7 @@
         "dgs2",
         "tbill-3m"
       ],
-      "nextReleaseDate": "2026-09-11",
+      "nextReleaseDate": "2026-09-14",
       "source": "fred"
     },
     {
@@ -39,7 +39,7 @@
         "breakeven-5y5y",
         "term-spread-3m"
       ],
-      "nextReleaseDate": "2026-09-11",
+      "nextReleaseDate": "2026-09-14",
       "source": "fred"
     },
     {
@@ -47,7 +47,7 @@
       "indicatorIds": [
         "vix"
       ],
-      "nextReleaseDate": "2026-09-11",
+      "nextReleaseDate": "2026-09-14",
       "source": "fred"
     },
     {
@@ -86,7 +86,7 @@
         "cpi-core",
         "cpi-rent"
       ],
-      "nextReleaseDate": "2026-09-11",
+      "nextReleaseDate": "2026-10-14",
       "source": "fred"
     },
     {
@@ -142,7 +142,7 @@
         "visa-discretionary-spending",
         "visa-non-discretionary-spending"
       ],
-      "nextReleaseDate": "2026-09-11",
+      "nextReleaseDate": "2026-10-09",
       "source": "fred"
     },
     {
@@ -225,7 +225,7 @@
         "hy-spread",
         "ig-spread"
       ],
-      "nextReleaseDate": "2026-09-11",
+      "nextReleaseDate": "2026-09-14",
       "source": "fred"
     },
     {
@@ -265,7 +265,7 @@
       "indicatorIds": [
         "federal-deficit"
       ],
-      "nextReleaseDate": "2026-09-11",
+      "nextReleaseDate": "2026-10-13",
       "source": "fred"
     },
     {
@@ -318,7 +318,7 @@
       "indicatorIds": [
         "nikkei225"
       ],
-      "nextReleaseDate": "2026-09-11",
+      "nextReleaseDate": "2026-09-14",
       "source": "fred"
     },
     {
@@ -342,7 +342,7 @@
       "indicatorIds": [
         "sofr"
       ],
-      "nextReleaseDate": "2026-09-11",
+      "nextReleaseDate": "2026-09-14",
       "source": "fred"
     },
     {
@@ -374,7 +374,7 @@
       "indicatorIds": [
         "commercial-loans"
       ],
-      "nextReleaseDate": "2026-09-11",
+      "nextReleaseDate": "2026-09-18",
       "source": "fred"
     },
     {
@@ -398,7 +398,7 @@
       "indicatorIds": [
         "djia"
       ],
-      "nextReleaseDate": "2026-09-11",
+      "nextReleaseDate": "2026-09-14",
       "source": "fred"
     },
     {
