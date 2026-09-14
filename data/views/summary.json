@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-13T06:57:54.321Z",
-  "economyState": "経済は不安定な状況にあり、金融市場は不安感を表しています。金利の差や株価の不安定さが指摘されています。雇用状況も悪化しているため、経済の回復が困難な可能性があります。",
+  "generatedAt": "2026-09-14T07:20:08.409Z",
+  "economyState": "経済は不安定な状態にあり、金融市場ではリスクへの関心が高まっています。金利の差や株価の不安定さが顕在化しています。また、雇用状況も不安定で、失業者が増えています。",
   "economyStateFactCount": 5,
   "warnings": [],
   "highlights": [
@@ -11,7 +11,7 @@
       "relativeStrength": 19.38,
       "hasBreakout": true,
       "signalCount": 3,
-      "note": "金鉱株がSPYに対して相対的に強く、直近で戻り高値を上抜けている"
+      "note": "金鉱株 (GDX) は、下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
     },
     {
       "id": "etf-corn",
@@ -20,7 +20,7 @@
       "relativeStrength": 13.2,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "コーンがSPYに対して相対的に強い"
+      "note": "コーン (CORN) は、下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
     },
     {
       "id": "etf-eido",
@@ -29,7 +29,7 @@
       "relativeStrength": 14.18,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "インドネシアがSPYに対して相対的に強い"
+      "note": "インドネシア (EIDO) は、下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
     },
     {
       "id": "etf-smin",
@@ -38,7 +38,7 @@
       "relativeStrength": 5.07,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "インド小型株がSPYに対して相対的に強い"
+      "note": "インド小型株 (SMIN) は、下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
     }
   ]
 }
