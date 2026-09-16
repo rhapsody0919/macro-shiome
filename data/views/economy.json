@@ -12730,7 +12730,7 @@
       "sp500Yoy": 28.56,
       "usTenYearMonthly": 4.47,
       "jpTenYear": 2.67,
-      "deTenYear": 2.97,
+      "deTenYear": 2.96,
       "federalDeficit": -120305.28,
       "moneyStock": 23115.2,
       "treasuryAvgRate": 3.41,
@@ -12836,9 +12836,9 @@
       "nyFedSurvey": 15.6,
       "phillyFedSurvey": 41.4,
       "sp500Yoy": 20.74,
-      "usTenYearMonthly": null,
-      "jpTenYear": null,
-      "deTenYear": null,
+      "usTenYearMonthly": 4.6,
+      "jpTenYear": 2.79,
+      "deTenYear": 3.07,
       "federalDeficit": -432307.87,
       "moneyStock": 23218,
       "treasuryAvgRate": 3.45,
@@ -12944,9 +12944,9 @@
       "nyFedSurvey": 20.6,
       "phillyFedSurvey": 47.4,
       "sp500Yoy": 20.07,
-      "usTenYearMonthly": null,
-      "jpTenYear": null,
-      "deTenYear": null,
+      "usTenYearMonthly": 4.68,
+      "jpTenYear": 2.94,
+      "deTenYear": 3.18,
       "federalDeficit": -166796.95,
       "moneyStock": null,
       "treasuryAvgRate": 3.49,
@@ -13049,7 +13049,7 @@
       "jpHousingStartsRented": null,
       "jobOpenings": null,
       "bidToCover": 2.71,
-      "nyFedSurvey": null,
+      "nyFedSurvey": 7.6,
       "phillyFedSurvey": null,
       "sp500Yoy": 18.13,
       "usTenYearMonthly": null,
@@ -13408,7 +13408,7 @@
     },
     {
       "indicatorId": "ny-fed-survey",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "philly-fed-survey",
@@ -13416,15 +13416,15 @@
     },
     {
       "indicatorId": "us-10y-monthly",
-      "latestMonth": "2026-06-01"
+      "latestMonth": "2026-08-01"
     },
     {
       "indicatorId": "jp-10y",
-      "latestMonth": "2026-06-01"
+      "latestMonth": "2026-08-01"
     },
     {
       "indicatorId": "de-10y",
-      "latestMonth": "2026-06-01"
+      "latestMonth": "2026-08-01"
     },
     {
       "indicatorId": "federal-deficit",

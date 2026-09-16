@@ -1,44 +1,44 @@
 {
-  "generatedAt": "2026-09-15T06:56:31.950Z",
-  "economyState": "経済は、安定した状況から離れつつある様子が見受けられます。金利の差や不安定感の指標が上昇している一方、金融環境の指標は微妙な減少傾向にあります。経済の不安定さは、失業保険申請の件数も増加していることを示しています。",
+  "generatedAt": "2026-09-16T06:58:39.380Z",
+  "economyState": "経済は不安定な状態にあります。金融環境は厳しい状況にあり、金利の差が広がっています。また、株式市場の不安定さも指されているVIXは高い値を示しています。失業保険の申請件数も増えているため、経済の状況は不安定です。",
   "economyStateFactCount": 5,
   "warnings": [],
   "highlights": [
     {
       "id": "etf-gdx",
       "name": "金鉱株 (GDX)",
-      "drawdown": 18.73,
-      "relativeStrength": 16.26,
+      "drawdown": 18.74,
+      "relativeStrength": 16.78,
       "hasBreakout": true,
       "signalCount": 3,
-      "note": "金鉱株がSPYに対して相対的に強いことと、直近で戻り高値を上抜けたことから注目に値する。"
+      "note": "金鉱株 (GDX) は、下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
     },
     {
       "id": "etf-copx",
       "name": "銅鉱山 (COPX)",
-      "drawdown": 11.68,
-      "relativeStrength": 2.33,
+      "drawdown": 12.74,
+      "relativeStrength": 1.56,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "銅鉱山がSPYに対して相対的に強いことから注目に値する。"
+      "note": "銅鉱山 (COPX) は、下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
     },
     {
       "id": "etf-eido",
       "name": "インドネシア (EIDO)",
-      "drawdown": 45.28,
-      "relativeStrength": 16.22,
+      "drawdown": 45.83,
+      "relativeStrength": 15.58,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "インドネシアがSPYに対して相対的に強いことから注目に値する。"
+      "note": "インドネシア (EIDO) は、下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
     },
     {
       "id": "etf-smin",
       "name": "インド小型株 (SMIN)",
-      "drawdown": 18.53,
-      "relativeStrength": 4.83,
+      "drawdown": 20.33,
+      "relativeStrength": 2.98,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "インド小型株がSPYに対して相対的に強いことから注目に値する。"
+      "note": "インド小型株 (SMIN) は、下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
     }
   ]
 }
