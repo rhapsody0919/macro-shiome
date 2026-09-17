@@ -11463,7 +11463,7 @@
       "realIncomeExTransfer": 1.24,
       "realDisposablePerCapita": 1.16,
       "realDisposableTotal": 1.68,
-      "retailSalesTotal": 4.06,
+      "retailSalesTotal": 4.15,
       "vehicleSales": 17,
       "truckTonnage": 0.35,
       "newHomeSupply": 9.2,
@@ -11482,9 +11482,9 @@
       "producerPriceAll": 1.96,
       "capacityUtilization": 76.4,
       "durableGoodsOrders": 3.34,
-      "businessInventories": 1.39,
+      "businessInventories": 1.32,
       "realConsumption": 2.63,
-      "retailSales": 4.57,
+      "retailSales": 4.68,
       "manufacturingHours": 41.1,
       "industrialProduction": 1.92,
       "newOrdersConsumerGoods": 0.04,
@@ -11571,7 +11571,7 @@
       "realIncomeExTransfer": 1.24,
       "realDisposablePerCapita": 1.33,
       "realDisposableTotal": 1.83,
-      "retailSalesTotal": 4.97,
+      "retailSalesTotal": 4.73,
       "vehicleSales": 16.9,
       "truckTonnage": 0.52,
       "newHomeSupply": 8.5,
@@ -11592,7 +11592,7 @@
       "durableGoodsOrders": 7.66,
       "businessInventories": 1.05,
       "realConsumption": 2.79,
-      "retailSales": 5.4,
+      "retailSales": 5.15,
       "manufacturingHours": 41,
       "industrialProduction": 1.19,
       "newOrdersConsumerGoods": 0.19,
@@ -12530,7 +12530,7 @@
     },
     {
       "month": "2026-05-01",
-      "importPrice": 6.81,
+      "importPrice": 6.88,
       "exportPrice": 11.35,
       "producerPrice": 5.88,
       "cpi": 4.17,
@@ -12638,7 +12638,7 @@
     },
     {
       "month": "2026-06-01",
-      "importPrice": 6.68,
+      "importPrice": 6.75,
       "exportPrice": 10.05,
       "producerPrice": 5.58,
       "cpi": 3.46,
@@ -12651,7 +12651,7 @@
       "realIncomeExTransfer": 0,
       "realDisposablePerCapita": 0.26,
       "realDisposableTotal": 0.52,
-      "retailSalesTotal": 6.75,
+      "retailSalesTotal": 6.82,
       "vehicleSales": 17.22,
       "truckTonnage": -0.26,
       "newHomeSupply": 8.5,
@@ -12670,9 +12670,9 @@
       "producerPriceAll": 9.8,
       "capacityUtilization": 76.2,
       "durableGoodsOrders": 7.7,
-      "businessInventories": 3.03,
+      "businessInventories": 3.12,
       "realConsumption": 2.63,
-      "retailSales": 5.7,
+      "retailSales": 5.74,
       "manufacturingHours": 41.7,
       "industrialProduction": 1.29,
       "newOrdersConsumerGoods": 9.05,
@@ -12746,8 +12746,8 @@
     },
     {
       "month": "2026-07-01",
-      "importPrice": 5.95,
-      "exportPrice": 8.25,
+      "importPrice": 6.09,
+      "exportPrice": 8.12,
       "producerPrice": 4.8,
       "cpi": 3.3,
       "pce": 3.7,
@@ -12759,7 +12759,7 @@
       "realIncomeExTransfer": -0.38,
       "realDisposablePerCapita": 0.21,
       "realDisposableTotal": 0.45,
-      "retailSalesTotal": 5.01,
+      "retailSalesTotal": 5.03,
       "vehicleSales": 16.76,
       "truckTonnage": null,
       "newHomeSupply": 9.6,
@@ -12778,9 +12778,9 @@
       "producerPriceAll": 8.7,
       "capacityUtilization": 76.29,
       "durableGoodsOrders": 12,
-      "businessInventories": null,
+      "businessInventories": 3.82,
       "realConsumption": 2.14,
-      "retailSales": 4.75,
+      "retailSales": 4.67,
       "manufacturingHours": 41.7,
       "industrialProduction": 1.08,
       "newOrdersConsumerGoods": 9.88,
@@ -12854,8 +12854,8 @@
     },
     {
       "month": "2026-08-01",
-      "importPrice": null,
-      "exportPrice": null,
+      "importPrice": 6.95,
+      "exportPrice": 8.63,
       "producerPrice": 5.41,
       "cpi": 3.35,
       "pce": null,
@@ -12867,7 +12867,7 @@
       "realIncomeExTransfer": null,
       "realDisposablePerCapita": null,
       "realDisposableTotal": null,
-      "retailSalesTotal": null,
+      "retailSalesTotal": 6.01,
       "vehicleSales": 17.19,
       "truckTonnage": null,
       "newHomeSupply": null,
@@ -12888,7 +12888,7 @@
       "durableGoodsOrders": null,
       "businessInventories": null,
       "realConsumption": null,
-      "retailSales": null,
+      "retailSales": 5.59,
       "manufacturingHours": 41.7,
       "industrialProduction": null,
       "newOrdersConsumerGoods": null,
@@ -13072,11 +13072,11 @@
   "coverage": [
     {
       "indicatorId": "import-price",
-      "latestMonth": "2026-07-01"
+      "latestMonth": "2026-08-01"
     },
     {
       "indicatorId": "export-price",
-      "latestMonth": "2026-07-01"
+      "latestMonth": "2026-08-01"
     },
     {
       "indicatorId": "producer-price",
@@ -13128,7 +13128,7 @@
     },
     {
       "indicatorId": "retail-sales-total",
-      "latestMonth": "2026-07-01"
+      "latestMonth": "2026-08-01"
     },
     {
       "indicatorId": "vehicle-sales",
@@ -13204,11 +13204,11 @@
     },
     {
       "indicatorId": "business-inventories",
-      "latestMonth": "2026-06-01"
+      "latestMonth": "2026-07-01"
     },
     {
       "indicatorId": "retail-sales-core",
-      "latestMonth": "2026-07-01"
+      "latestMonth": "2026-08-01"
     },
     {
       "indicatorId": "manufacturing-hours",
