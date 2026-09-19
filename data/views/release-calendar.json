@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-18T06:51:04.126Z",
+  "generatedAt": "2026-09-19T06:50:09.214Z",
   "entries": [
     {
       "label": "Standard & Poors",
       "indicatorIds": [
         "sp500"
       ],
-      "nextReleaseDate": "2026-09-18",
+      "nextReleaseDate": "2026-09-21",
       "source": "fred"
     },
     {
@@ -15,7 +15,7 @@
         "nasdaq100",
         "nasdaq-composite"
       ],
-      "nextReleaseDate": "2026-09-18",
+      "nextReleaseDate": "2026-09-21",
       "source": "fred"
     },
     {
@@ -27,7 +27,7 @@
         "dgs2",
         "tbill-3m"
       ],
-      "nextReleaseDate": "2026-09-18",
+      "nextReleaseDate": "2026-09-21",
       "source": "fred"
     },
     {
@@ -39,7 +39,7 @@
         "breakeven-5y5y",
         "term-spread-3m"
       ],
-      "nextReleaseDate": "2026-09-18",
+      "nextReleaseDate": "2026-09-21",
       "source": "fred"
     },
     {
@@ -47,7 +47,7 @@
       "indicatorIds": [
         "vix"
       ],
-      "nextReleaseDate": "2026-09-18",
+      "nextReleaseDate": "2026-09-21",
       "source": "fred"
     },
     {
@@ -196,7 +196,7 @@
         "industrial-production",
         "capacity-utilization"
       ],
-      "nextReleaseDate": "2026-09-18",
+      "nextReleaseDate": "2026-10-16",
       "source": "fred"
     },
     {
@@ -225,7 +225,7 @@
         "hy-spread",
         "ig-spread"
       ],
-      "nextReleaseDate": "2026-09-18",
+      "nextReleaseDate": "2026-09-21",
       "source": "fred"
     },
     {
@@ -318,7 +318,7 @@
       "indicatorIds": [
         "nikkei225"
       ],
-      "nextReleaseDate": "2026-09-18",
+      "nextReleaseDate": "2026-09-24",
       "source": "fred"
     },
     {
@@ -342,7 +342,7 @@
       "indicatorIds": [
         "sofr"
       ],
-      "nextReleaseDate": "2026-09-18",
+      "nextReleaseDate": "2026-09-21",
       "source": "fred"
     },
     {
@@ -374,7 +374,7 @@
       "indicatorIds": [
         "commercial-loans"
       ],
-      "nextReleaseDate": "2026-09-18",
+      "nextReleaseDate": "2026-09-25",
       "source": "fred"
     },
     {
@@ -398,7 +398,7 @@
       "indicatorIds": [
         "djia"
       ],
-      "nextReleaseDate": "2026-09-18",
+      "nextReleaseDate": "2026-09-21",
       "source": "fred"
     },
     {
