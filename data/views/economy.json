@@ -12546,7 +12546,7 @@
       "retailSalesTotal": 7.23,
       "vehicleSales": 16.74,
       "truckTonnage": -0.53,
-      "newHomeSupply": 9.3,
+      "newHomeSupply": 9.2,
       "housingStartsSingle": 889,
       "commercialLoans": 8.05,
       "u6Rate": 8.1,
@@ -12571,7 +12571,7 @@
       "newOrdersCapitalGoods": 10.93,
       "buildingPermits": 1410,
       "housingStarts": 1182,
-      "newHomeSales": 630,
+      "newHomeSales": 636,
       "existingHomeSales": 4190000,
       "jpUnemploymentRate": 2.5,
       "jpProducerPrice": 6.8,
@@ -12654,7 +12654,7 @@
       "retailSalesTotal": 6.82,
       "vehicleSales": 17.22,
       "truckTonnage": -0.26,
-      "newHomeSupply": 8.5,
+      "newHomeSupply": 8.6,
       "housingStartsSingle": 902,
       "commercialLoans": 8.4,
       "u6Rate": 7.9,
@@ -12679,7 +12679,7 @@
       "newOrdersCapitalGoods": 13.42,
       "buildingPermits": 1374,
       "housingStarts": 1439,
-      "newHomeSales": 678,
+      "newHomeSales": 672,
       "existingHomeSales": 4130000,
       "jpUnemploymentRate": 2.5,
       "jpProducerPrice": 7.4,
@@ -12762,7 +12762,7 @@
       "retailSalesTotal": 5.03,
       "vehicleSales": 16.76,
       "truckTonnage": null,
-      "newHomeSupply": 9.6,
+      "newHomeSupply": 9,
       "housingStartsSingle": 853,
       "commercialLoans": 8.67,
       "u6Rate": 7.9,
@@ -12787,7 +12787,7 @@
       "newOrdersCapitalGoods": 12.56,
       "buildingPermits": 1433,
       "housingStarts": 1309,
-      "newHomeSales": 607,
+      "newHomeSales": 643,
       "existingHomeSales": 4060000,
       "jpUnemploymentRate": 2.4,
       "jpProducerPrice": 7.7,
@@ -12870,7 +12870,7 @@
       "retailSalesTotal": 6.01,
       "vehicleSales": 17.19,
       "truckTonnage": null,
-      "newHomeSupply": null,
+      "newHomeSupply": 8.5,
       "housingStartsSingle": 918,
       "commercialLoans": 9.8,
       "u6Rate": 7.7,
@@ -12893,9 +12893,9 @@
       "industrialProduction": 1.42,
       "newOrdersConsumerGoods": null,
       "newOrdersCapitalGoods": null,
-      "buildingPermits": 1394,
+      "buildingPermits": 1403,
       "housingStarts": 1275,
-      "newHomeSales": null,
+      "newHomeSales": 684,
       "existingHomeSales": 3980000,
       "jpUnemploymentRate": null,
       "jpProducerPrice": 7.6,
@@ -12920,13 +12920,13 @@
       "jpCpiCore": 1.7,
       "jpCpi": 1.9,
       "jpSppi": null,
-      "jpWatcherCurrent": null,
+      "jpWatcherCurrent": 46.4,
       "jpBsiLarge": null,
       "jpBsiMid": null,
       "jpBsiSmall": null,
       "jpTankanLargeMfg": null,
       "jpTankanLargeNonmfg": null,
-      "jpWatcherOutlook": null,
+      "jpWatcherOutlook": 48.3,
       "jpRealWage": null,
       "jpNewJobRatio": null,
       "jpJobRatio": null,
@@ -13140,7 +13140,7 @@
     },
     {
       "indicatorId": "new-home-supply",
-      "latestMonth": "2026-07-01"
+      "latestMonth": "2026-08-01"
     },
     {
       "indicatorId": "housing-starts-single",
@@ -13236,7 +13236,7 @@
     },
     {
       "indicatorId": "new-home-sales",
-      "latestMonth": "2026-07-01"
+      "latestMonth": "2026-08-01"
     },
     {
       "indicatorId": "existing-home-sales",
@@ -13336,11 +13336,11 @@
     },
     {
       "indicatorId": "jp-watcher-current",
-      "latestMonth": "2026-07-01"
+      "latestMonth": "2026-08-01"
     },
     {
       "indicatorId": "jp-watcher-outlook",
-      "latestMonth": "2026-07-01"
+      "latestMonth": "2026-08-01"
     },
     {
       "indicatorId": "jp-real-wage",
