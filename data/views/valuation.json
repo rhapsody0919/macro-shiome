@@ -8403,17 +8403,17 @@
       },
       {
         "date": "2026-09-25",
-        "index": 7704.13,
-        "forwardPe": null,
-        "trailingPe": null,
-        "forwardEps": null,
-        "trailingEps": null,
-        "earningsYield": null,
-        "realRate": 2.7800000000000002,
-        "yieldSpread": null,
-        "fairValue": null,
-        "fairValueBasis": null,
-        "overvaluation": null,
+        "index": 7743.41,
+        "forwardPe": 19.2,
+        "trailingPe": 25.8,
+        "forwardEps": 0.36458333333333337,
+        "trailingEps": 0.2713178294573643,
+        "earningsYield": 5.208333333333334,
+        "realRate": 2.84,
+        "yieldSpread": 2.368333333333334,
+        "fairValue": 7.392856388484042,
+        "fairValueBasis": 7,
+        "overvaluation": -5.612234121200599,
         "isForwardEpsHigh": false,
         "isTrailingEpsHigh": false
       }
@@ -8423,58 +8423,58 @@
       "pe10y": 19,
       "trailingPe5y": 24.4,
       "trailingPe10y": 23.6,
-      "asOf": "2026-09-18"
+      "asOf": "2026-09-25"
     },
     "targetYield": 3.67,
     "targetYieldContext": {
       "realRateAtSetting": 2.4,
-      "currentRealRate": 2.7800000000000002,
-      "drift": 0.38000000000000034,
+      "currentRealRate": 2.84,
+      "drift": 0.43999999999999995,
       "riskPremium": 1.27
     },
     "correlation": {
       "halfYear": {
         "kind": "ok",
-        "r": -0.225256185976113,
-        "n": 15
+        "r": -0.3527757873411607,
+        "n": 16
       },
       "oneYear": {
         "kind": "ok",
-        "r": -0.02443066230670609,
-        "n": 31
+        "r": -0.16817587091027325,
+        "n": 32
       },
       "all": {
         "kind": "ok",
-        "r": 0.6073362521603801,
-        "n": 171
+        "r": 0.4944256728046638,
+        "n": 172
       }
     },
     "spreadDistribution": {
       "years": 5,
-      "mean": 3.6277676277727084,
-      "sd": 1.2005057707800926,
-      "n": 168,
-      "latest": 2.555602094240837,
-      "latestPercentile": 9.821428571428571,
-      "latestDate": "2026-09-18"
+      "mean": 3.6203153538411144,
+      "sd": 1.2008418295705638,
+      "n": 169,
+      "latest": 2.368333333333334,
+      "latestPercentile": 1.4792899408284024,
+      "latestDate": "2026-09-25"
     },
     "forwardPeDistribution": {
       "years": 5,
-      "mean": 19.86785714285714,
-      "sd": 1.881467175892433,
-      "n": 168,
-      "latest": 19.1,
-      "latestPercentile": 33.63095238095239,
-      "latestDate": "2026-09-18"
+      "mean": 19.86390532544378,
+      "sd": 1.8765625592029762,
+      "n": 169,
+      "latest": 19.2,
+      "latestPercentile": 36.09467455621302,
+      "latestDate": "2026-09-25"
     },
     "trailingPeDistribution": {
       "years": 5,
-      "mean": 24.40120481927711,
-      "sd": 3.4128098785144387,
-      "n": 166,
-      "latest": 25.5,
-      "latestPercentile": 50.903614457831324,
-      "latestDate": "2026-09-18"
+      "mean": 24.409580838323354,
+      "sd": 3.4042360842369583,
+      "n": 167,
+      "latest": 25.8,
+      "latestPercentile": 57.18562874251497,
+      "latestDate": "2026-09-25"
     },
     "hasForwardEps": true,
     "accumulationNote": null
@@ -16883,17 +16883,17 @@
       },
       {
         "date": "2026-09-25",
-        "index": 30478.86,
+        "index": 30608.13,
         "forwardPe": null,
-        "trailingPe": 30.96,
+        "trailingPe": 31.15,
         "forwardEps": null,
-        "trailingEps": 984.4593023255813,
-        "earningsYield": 3.229974160206718,
-        "realRate": 2.7800000000000002,
-        "yieldSpread": 0.44997416020671777,
-        "fairValue": 30105.789061944382,
-        "fairValueBasis": 30478.86,
-        "overvaluation": 1.2240317979596904,
+        "trailingEps": 982.6044943820225,
+        "earningsYield": 3.210272873194222,
+        "realRate": 2.84,
+        "yieldSpread": 0.3702728731942222,
+        "fairValue": 30049.067106483868,
+        "fairValueBasis": 30608.13,
+        "overvaluation": 1.8265176393204463,
         "isForwardEpsHigh": false,
         "isTrailingEpsHigh": false
       }
@@ -16908,8 +16908,8 @@
     "targetYield": 3.27,
     "targetYieldContext": {
       "realRateAtSetting": 2.4,
-      "currentRealRate": 2.7800000000000002,
-      "drift": 0.38000000000000034,
+      "currentRealRate": 2.84,
+      "drift": 0.43999999999999995,
       "riskPremium": 0.8700000000000001
     },
     "correlation": {

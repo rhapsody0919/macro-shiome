@@ -12777,14 +12777,14 @@
       "cpiRent": 2.86,
       "producerPriceAll": 8.7,
       "capacityUtilization": 76.33,
-      "durableGoodsOrders": 12,
+      "durableGoodsOrders": 11.76,
       "businessInventories": 3.82,
       "realConsumption": 2.14,
       "retailSales": 4.67,
       "manufacturingHours": 41.7,
       "industrialProduction": 1.13,
       "newOrdersConsumerGoods": 9.88,
-      "newOrdersCapitalGoods": 12.56,
+      "newOrdersCapitalGoods": 13.27,
       "buildingPermits": 1433,
       "housingStarts": 1309,
       "newHomeSales": 643,
@@ -12885,14 +12885,14 @@
       "cpiRent": 2.75,
       "producerPriceAll": 9.85,
       "capacityUtilization": 76.27,
-      "durableGoodsOrders": null,
+      "durableGoodsOrders": 8.48,
       "businessInventories": null,
       "realConsumption": null,
       "retailSales": 5.59,
       "manufacturingHours": 41.7,
       "industrialProduction": 1.42,
       "newOrdersConsumerGoods": null,
-      "newOrdersCapitalGoods": null,
+      "newOrdersCapitalGoods": 14.09,
       "buildingPermits": 1403,
       "housingStarts": 1275,
       "newHomeSales": 684,
@@ -12956,7 +12956,7 @@
       "sahmRule": -0.07,
       "savingsRate": null,
       "personalSaving": null,
-      "consumerSentiment": null,
+      "consumerSentiment": 51.7,
       "visaDiscretionary": 98.62,
       "visaNonDiscretionary": 98.96
     },
@@ -13200,7 +13200,7 @@
     },
     {
       "indicatorId": "durable-goods-orders",
-      "latestMonth": "2026-07-01"
+      "latestMonth": "2026-08-01"
     },
     {
       "indicatorId": "business-inventories",
@@ -13224,7 +13224,7 @@
     },
     {
       "indicatorId": "new-orders-capital-goods",
-      "latestMonth": "2026-07-01"
+      "latestMonth": "2026-08-01"
     },
     {
       "indicatorId": "building-permits",
@@ -13452,7 +13452,7 @@
     },
     {
       "indicatorId": "consumer-sentiment",
-      "latestMonth": "2026-07-01"
+      "latestMonth": "2026-08-01"
     },
     {
       "indicatorId": "visa-discretionary-spending",

@@ -1,44 +1,44 @@
 {
-  "generatedAt": "2026-09-25T06:49:41.456Z",
-  "economyState": "経済は安定した状況ですが、金融市場では不安定さの兆候が見られます。金利の差や不安定性の指標は、不安定な傾向を示しています。経済の基本的な指標は安定していますが、金融市場には注意が必要です。",
+  "generatedAt": "2026-09-26T06:49:22.359Z",
+  "economyState": "経済の状況は、不安定な雰囲気を感じさせる。金利の差や不安定性の指標は、広がりや緊張の傾向を示しています。また、金融環境も不安定な状態にあり、企業や雇用の状況も改善されていないようで、失業保険の申請件数が増えていることがわかります。",
   "economyStateFactCount": 5,
   "warnings": [],
   "highlights": [
     {
       "id": "etf-gdx",
       "name": "金鉱株 (GDX)",
-      "drawdown": 20.28,
-      "relativeStrength": 13.11,
+      "drawdown": 19.83,
+      "relativeStrength": 13.13,
       "hasBreakout": true,
       "signalCount": 3,
-      "note": "金鉱株は直近で戻り高値を上抜けているため注目に値する。"
+      "note": "金鉱株 (GDX) は下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
     },
     {
       "id": "etf-ewz",
       "name": "ブラジル (EWZ)",
-      "drawdown": 12.08,
-      "relativeStrength": 5.56,
+      "drawdown": 12.29,
+      "relativeStrength": 4.74,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "ブラジルの下落率が深い銘柄の一角であり、SPYに対して相対的に強いため注目に値する。"
+      "note": "ブラジル (EWZ) は下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
     },
     {
       "id": "etf-eido",
       "name": "インドネシア (EIDO)",
-      "drawdown": 48.96,
-      "relativeStrength": 7.51,
+      "drawdown": 49.17,
+      "relativeStrength": 6.48,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "インドネシアの下落率が深い銘柄の一角であり、SPYに対して相対的に強いため注目に値する。"
+      "note": "インドネシア (EIDO) は下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
     },
     {
       "id": "etf-smin",
       "name": "インド小型株 (SMIN)",
-      "drawdown": 19.55,
-      "relativeStrength": 2.66,
+      "drawdown": 19.34,
+      "relativeStrength": 2.37,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "インド小型株は下落率が深い銘柄の一角であり、SPYに対して相対的に強いため注目に値する。"
+      "note": "インド小型株 (SMIN) は下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
     }
   ]
 }
