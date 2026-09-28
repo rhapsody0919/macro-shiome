@@ -11083,7 +11083,7 @@
       "jpConsumptionIndex": 104.9,
       "jpCpiCore": 3.2,
       "jpCpi": 3.6,
-      "jpSppi": 3.4,
+      "jpSppi": 3.5,
       "jpWatcherCurrent": 45.4,
       "jpBsiLarge": 2,
       "jpBsiMid": 0.7,
@@ -11947,7 +11947,7 @@
       "jpConsumptionIndex": 105.6,
       "jpCpiCore": 3,
       "jpCpi": 2.9,
-      "jpSppi": 2.7,
+      "jpSppi": 2.8,
       "jpWatcherCurrent": 48,
       "jpBsiLarge": null,
       "jpBsiMid": null,
@@ -12379,7 +12379,7 @@
       "jpConsumptionIndex": 106,
       "jpCpiCore": 1.7,
       "jpCpi": 1.5,
-      "jpSppi": 3.3,
+      "jpSppi": 3.2,
       "jpWatcherCurrent": 42.2,
       "jpBsiLarge": 4.4,
       "jpBsiMid": 0.2,
@@ -12819,7 +12819,7 @@
       "jpTankanLargeMfg": null,
       "jpTankanLargeNonmfg": null,
       "jpWatcherOutlook": 45.8,
-      "jpRealWage": 98.6,
+      "jpRealWage": 98.3,
       "jpNewJobRatio": 2.1,
       "jpJobRatio": 1.18,
       "jpExportPrice": 163.3,
@@ -12919,7 +12919,7 @@
       "jpConsumptionIndex": null,
       "jpCpiCore": 1.7,
       "jpCpi": 1.9,
-      "jpSppi": null,
+      "jpSppi": 3.7,
       "jpWatcherCurrent": 46.4,
       "jpBsiLarge": null,
       "jpBsiMid": null,
@@ -13332,7 +13332,7 @@
     },
     {
       "indicatorId": "jp-sppi",
-      "latestMonth": "2026-07-01"
+      "latestMonth": "2026-08-01"
     },
     {
       "indicatorId": "jp-watcher-current",
