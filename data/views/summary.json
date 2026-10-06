@@ -1,35 +1,35 @@
 {
-  "generatedAt": "2026-10-05T07:53:23.217Z",
-  "economyState": "経済は不安定な状況にある。金利の差が拡大しており、金融環境が不安定な傾向がある。株価の不安定さも指摘できる。",
+  "generatedAt": "2026-10-06T08:17:32.984Z",
+  "economyState": "経済は不安定な状況にあり、金利の格差が広がり、市場への不安が高まっています。インフレの懸念や経済の成長が鈍化している兆候が見られます。さらに、失業保険の申請件数も増加しており、雇用の不安定さも指摘されています。",
   "economyStateFactCount": 5,
   "warnings": [],
   "highlights": [
     {
       "id": "etf-gdx",
       "name": "金鉱株 (GDX)",
-      "drawdown": 24.22,
-      "relativeStrength": 7.17,
+      "drawdown": 24.53,
+      "relativeStrength": 6.02,
       "hasBreakout": true,
       "signalCount": 3,
-      "note": "金鉱株 (GDX) は下落率が深い中で SPY に比べて相対的に強い傾向にある。"
+      "note": "金鉱株がSPYに対して相対的に強く、直近で戻り高値を上抜けているため注目に値する。"
     },
     {
       "id": "etf-corn",
       "name": "コーン (CORN)",
-      "drawdown": 14.08,
-      "relativeStrength": 6.37,
+      "drawdown": 13.86,
+      "relativeStrength": 5.94,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "コーン (CORN) は下落率が深い中で SPY に比べて相対的に強い傾向にある。"
+      "note": "コーンがSPYに対して相対的に強いため注目に値する。"
     },
     {
       "id": "etf-eido",
       "name": "インドネシア (EIDO)",
-      "drawdown": 50.53,
-      "relativeStrength": 3.87,
+      "drawdown": 49.51,
+      "relativeStrength": 5.3,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "インドネシア (EIDO) は下落率が深い中で SPY に比べて相対的に強い傾向にある。"
+      "note": "インドネシアがSPYに対して相対的に強いため注目に値する。"
     }
   ]
 }
