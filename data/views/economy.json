@@ -11960,7 +11960,7 @@
       "jpJobRatio": 1.2,
       "jpExportPrice": 145.6,
       "jpImportPrice": 163.9,
-      "jpDiLeading": 110.4,
+      "jpDiLeading": 110.5,
       "jpDiCoincident": 114.6,
       "jpDiLagging": 111.8,
       "jpGdpGrowth": 1.1,
@@ -12716,7 +12716,7 @@
       "jpJobRatio": 1.18,
       "jpExportPrice": 163.3,
       "jpImportPrice": 199.7,
-      "jpDiLeading": 117.7,
+      "jpDiLeading": 117.6,
       "jpDiCoincident": 120.6,
       "jpDiLagging": 113,
       "jpGdpGrowth": null,
@@ -12803,7 +12803,7 @@
       "jpOperatingRate": null,
       "jpBankLending": 6003055,
       "jpMonetaryBase": 5430070,
-      "jpWorkingHours": null,
+      "jpWorkingHours": 129.8,
       "jpPublicWorks": null,
       "jpCpiCoreCore": 1.9,
       "jpInventoryRatio": 106.3,
@@ -12819,14 +12819,14 @@
       "jpTankanLargeMfg": null,
       "jpTankanLargeNonmfg": null,
       "jpWatcherOutlook": 48.3,
-      "jpRealWage": null,
+      "jpRealWage": 96.2,
       "jpNewJobRatio": 2.06,
       "jpJobRatio": 1.18,
       "jpExportPrice": 162.1,
       "jpImportPrice": 193.7,
-      "jpDiLeading": null,
-      "jpDiCoincident": null,
-      "jpDiLagging": null,
+      "jpDiLeading": 118,
+      "jpDiCoincident": 118.7,
+      "jpDiLagging": 112.1,
       "jpGdpGrowth": null,
       "jpHousingStarts": 753108,
       "jpHousingStartsOwned": 16452,
@@ -12949,9 +12949,9 @@
       "deTenYear": null,
       "federalDeficit": null,
       "moneyStock": null,
-      "treasuryAvgRate": null,
-      "treasuryAvgRateBills": null,
-      "treasuryAvgRateNotes": null,
+      "treasuryAvgRate": 3.53,
+      "treasuryAvgRateBills": 3.87,
+      "treasuryAvgRateNotes": 3.38,
       "unemploymentRate": 4.2,
       "sahmRule": 0,
       "savingsRate": null,
@@ -13300,7 +13300,7 @@
     },
     {
       "indicatorId": "jp-working-hours",
-      "latestMonth": "2026-07-01"
+      "latestMonth": "2026-08-01"
     },
     {
       "indicatorId": "jp-public-works",
@@ -13344,7 +13344,7 @@
     },
     {
       "indicatorId": "jp-real-wage",
-      "latestMonth": "2026-07-01"
+      "latestMonth": "2026-08-01"
     },
     {
       "indicatorId": "jp-new-job-ratio",
@@ -13364,15 +13364,15 @@
     },
     {
       "indicatorId": "jp-di-leading",
-      "latestMonth": "2026-07-01"
+      "latestMonth": "2026-08-01"
     },
     {
       "indicatorId": "jp-di-coincident",
-      "latestMonth": "2026-07-01"
+      "latestMonth": "2026-08-01"
     },
     {
       "indicatorId": "jp-di-lagging",
-      "latestMonth": "2026-07-01"
+      "latestMonth": "2026-08-01"
     },
     {
       "indicatorId": "jp-gdp-growth",
