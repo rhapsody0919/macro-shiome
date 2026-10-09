@@ -12794,9 +12794,9 @@
       "jpCurrentAccount": 29794,
       "jpTradeBalance": -4852,
       "jpMoneyStock": 12963895,
-      "jpConsumption": null,
-      "jpDisposableIncome": null,
-      "jpPropensityToConsume": null,
+      "jpConsumption": -3.1,
+      "jpDisposableIncome": -0.8,
+      "jpPropensityToConsume": 59.8,
       "jpIndustrialProduction": 102.6,
       "jpShipments": 100.8,
       "jpInventory": 97.6,
@@ -13264,15 +13264,15 @@
     },
     {
       "indicatorId": "jp-consumption",
-      "latestMonth": "2026-07-01"
+      "latestMonth": "2026-08-01"
     },
     {
       "indicatorId": "jp-disposable-income",
-      "latestMonth": "2026-07-01"
+      "latestMonth": "2026-08-01"
     },
     {
       "indicatorId": "jp-propensity-to-consume",
-      "latestMonth": "2026-07-01"
+      "latestMonth": "2026-08-01"
     },
     {
       "indicatorId": "jp-industrial-production",

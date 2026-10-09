@@ -1,26 +1,26 @@
 {
-  "generatedAt": "2026-10-08T08:09:13.758Z",
-  "economyState": "経済は安定的な状態にあるが、不安定な要素が存在しています。金利の差は広がっており、市場の不安定性も高まりつつあります。経済の成長は緩やかながらも続いています。",
+  "generatedAt": "2026-10-09T08:08:42.085Z",
+  "economyState": "経済は安定しているようで、金融環境が穏健な傾向を示しています。金利の差は広がっており、株価の不安定性は低いですが、失業保険の申請件数は増加しているため、経済活動の変化が感じられます。",
   "economyStateFactCount": 5,
   "warnings": [],
   "highlights": [
     {
       "id": "etf-gdx",
       "name": "金鉱株 (GDX)",
-      "drawdown": 26.23,
-      "relativeStrength": 3.32,
+      "drawdown": 25.14,
+      "relativeStrength": 5.29,
       "hasBreakout": true,
       "signalCount": 3,
-      "note": "金鉱株がSPYに対して相対的に強く、直近で戻り高値を上抜けている。"
+      "note": "金鉱株はSPYに対して相対的に強い傾向にある。"
     },
     {
       "id": "etf-eido",
       "name": "インドネシア (EIDO)",
-      "drawdown": 49.77,
-      "relativeStrength": 4.45,
+      "drawdown": 50.57,
+      "relativeStrength": 3.21,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "インドネシアがSPYに対して相対的に強く、下落率が深い銘柄の一角である。"
+      "note": "インドネシアは下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
     }
   ]
 }
