@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-11T07:59:53.515Z",
-  "economyState": "経済は安定して成長しているように見えます。市場の不安定性は低く、投資への期待も高まっています。また、金融環境も比較的安定しており、企業の経済活動も活発です。ただし、雇用状況はやや不安定な印象を受けます。",
+  "generatedAt": "2026-10-12T08:15:25.783Z",
+  "economyState": "経済は安定した状態を維持しており、金融環境も穏健な傾向を示しています。金利の差や不安定性の指標も、安定した方向に動いています。ただし、失業保険申請件数は増加しており、労働市場の状況は多少の懸念を引き起こしています。",
   "economyStateFactCount": 5,
   "warnings": [],
   "highlights": [
@@ -11,7 +11,7 @@
       "relativeStrength": 7.75,
       "hasBreakout": true,
       "signalCount": 3,
-      "note": "金鉱株がSPYに対して相対的に強く、直近で戻り高値を上抜けているため。"
+      "note": "金鉱株がSPYに対して相対的に強い上に直近で戻り高値を上抜けたため注目に値する。"
     },
     {
       "id": "etf-corn",
@@ -20,7 +20,7 @@
       "relativeStrength": 2.76,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "コーンがSPYに対して相対的に強い。"
+      "note": "コーンがSPYに対して相対的に強いことから注目に値する。"
     },
     {
       "id": "etf-eido",
@@ -29,7 +29,7 @@
       "relativeStrength": 4.53,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "インドネシアがSPYに対して相対的に強い。"
+      "note": "インドネシアがSPYに対して相対的に強いことから注目に値する。"
     }
   ]
 }
