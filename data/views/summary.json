@@ -1,35 +1,44 @@
 {
-  "generatedAt": "2026-10-12T08:15:25.783Z",
-  "economyState": "経済は安定した状態を維持しており、金融環境も穏健な傾向を示しています。金利の差や不安定性の指標も、安定した方向に動いています。ただし、失業保険申請件数は増加しており、労働市場の状況は多少の懸念を引き起こしています。",
+  "generatedAt": "2026-10-13T08:42:36.765Z",
+  "economyState": "経済は不安定な状態にあり、金融市場ではリスクの高まりが感じられます。金利の差や不安定性の指標が高い値を示しており、金融環境も不安定な傾向があります。失業保険申請の件数も高い値を示しているため、雇用状況も不安定な状態にあります。",
   "economyStateFactCount": 5,
   "warnings": [],
   "highlights": [
     {
       "id": "etf-gdx",
       "name": "金鉱株 (GDX)",
-      "drawdown": 22.93,
-      "relativeStrength": 7.75,
+      "drawdown": 23.58,
+      "relativeStrength": 6.91,
       "hasBreakout": true,
       "signalCount": 3,
-      "note": "金鉱株がSPYに対して相対的に強い上に直近で戻り高値を上抜けたため注目に値する。"
+      "note": "金鉱株がSPYに対して相対的に強く、直近で戻り高値を上抜けているため注目に値する。"
     },
     {
       "id": "etf-corn",
       "name": "コーン (CORN)",
-      "drawdown": 16.04,
-      "relativeStrength": 2.76,
+      "drawdown": 15.86,
+      "relativeStrength": 3.04,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "コーンがSPYに対して相対的に強いことから注目に値する。"
+      "note": "コーンが下落率が深い銘柄の一角であり、SPYに対して相対的に強いため注目に値する。"
+    },
+    {
+      "id": "etf-weat",
+      "name": "小麦 (WEAT)",
+      "drawdown": 12.64,
+      "relativeStrength": 3.97,
+      "hasBreakout": false,
+      "signalCount": 2,
+      "note": "小麦が下落率が深い銘柄の一角であり、SPYに対して相対的に強いため注目に値する。"
     },
     {
       "id": "etf-eido",
       "name": "インドネシア (EIDO)",
-      "drawdown": 49.64,
-      "relativeStrength": 4.53,
+      "drawdown": 50.57,
+      "relativeStrength": 2.66,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "インドネシアがSPYに対して相対的に強いことから注目に値する。"
+      "note": "インドネシアが下落率が深い銘柄の一角であり、SPYに対して相対的に強いため注目に値する。"
     }
   ]
 }

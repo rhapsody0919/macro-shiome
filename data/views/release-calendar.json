@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-12T08:15:25.783Z",
+  "generatedAt": "2026-10-13T08:42:36.765Z",
   "entries": [
     {
       "label": "Standard & Poors",
       "indicatorIds": [
         "sp500"
       ],
-      "nextReleaseDate": "2026-10-12",
+      "nextReleaseDate": "2026-10-13",
       "source": "fred"
     },
     {
@@ -15,7 +15,7 @@
         "nasdaq100",
         "nasdaq-composite"
       ],
-      "nextReleaseDate": "2026-10-12",
+      "nextReleaseDate": "2026-10-13",
       "source": "fred"
     },
     {
@@ -47,7 +47,7 @@
       "indicatorIds": [
         "vix"
       ],
-      "nextReleaseDate": "2026-10-12",
+      "nextReleaseDate": "2026-10-13",
       "source": "fred"
     },
     {
@@ -225,7 +225,7 @@
         "hy-spread",
         "ig-spread"
       ],
-      "nextReleaseDate": "2026-10-12",
+      "nextReleaseDate": "2026-10-13",
       "source": "fred"
     },
     {
@@ -398,7 +398,7 @@
       "indicatorIds": [
         "djia"
       ],
-      "nextReleaseDate": "2026-10-12",
+      "nextReleaseDate": "2026-10-13",
       "source": "fred"
     },
     {
