@@ -12577,7 +12577,7 @@
       "jpProducerPrice": 7.5,
       "jpCurrentAccount": 15481,
       "jpTradeBalance": -5779,
-      "jpMoneyStock": 12961165,
+      "jpMoneyStock": 12961159,
       "jpConsumption": -3.3,
       "jpDisposableIncome": 2.5,
       "jpPropensityToConsume": 59.9,
@@ -12685,7 +12685,7 @@
       "jpProducerPrice": 7.7,
       "jpCurrentAccount": 25231,
       "jpTradeBalance": -4294,
-      "jpMoneyStock": 12966394,
+      "jpMoneyStock": 12966407,
       "jpConsumption": -3.6,
       "jpDisposableIncome": -3.1,
       "jpPropensityToConsume": 63,
@@ -12788,12 +12788,12 @@
       "buildingPermits": 1403,
       "housingStarts": 1275,
       "newHomeSales": 684,
-      "existingHomeSales": 3980000,
+      "existingHomeSales": 3930000,
       "jpUnemploymentRate": 2.5,
       "jpProducerPrice": 7.6,
       "jpCurrentAccount": 29794,
       "jpTradeBalance": -4852,
-      "jpMoneyStock": 12963895,
+      "jpMoneyStock": 12964539,
       "jpConsumption": -3.1,
       "jpDisposableIncome": -0.8,
       "jpPropensityToConsume": 59.8,
@@ -12896,12 +12896,12 @@
       "buildingPermits": null,
       "housingStarts": null,
       "newHomeSales": null,
-      "existingHomeSales": null,
+      "existingHomeSales": 3990000,
       "jpUnemploymentRate": null,
       "jpProducerPrice": 6.8,
       "jpCurrentAccount": null,
       "jpTradeBalance": null,
-      "jpMoneyStock": null,
+      "jpMoneyStock": 12956351,
       "jpConsumption": null,
       "jpDisposableIncome": null,
       "jpPropensityToConsume": null,
@@ -13240,7 +13240,7 @@
     },
     {
       "indicatorId": "existing-home-sales",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "jp-unemployment-rate",
@@ -13260,7 +13260,7 @@
     },
     {
       "indicatorId": "jp-money-stock",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "jp-consumption",
