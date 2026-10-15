@@ -12797,10 +12797,10 @@
       "jpConsumption": -3.1,
       "jpDisposableIncome": -0.8,
       "jpPropensityToConsume": 59.8,
-      "jpIndustrialProduction": 102.6,
-      "jpShipments": 100.8,
-      "jpInventory": 97.6,
-      "jpOperatingRate": null,
+      "jpIndustrialProduction": 101.9,
+      "jpShipments": 100.4,
+      "jpInventory": 97.5,
+      "jpOperatingRate": 103.2,
       "jpBankLending": 5999075,
       "jpMonetaryBase": 5430070,
       "jpWorkingHours": 129.8,
@@ -12857,7 +12857,7 @@
       "importPrice": null,
       "exportPrice": null,
       "producerPrice": null,
-      "cpi": null,
+      "cpi": 3.72,
       "pce": null,
       "copperPrice": null,
       "payrolls": 0.31,
@@ -12880,9 +12880,9 @@
       "quits": null,
       "layoffs": null,
       "weeklyHoursTotal": 34.4,
-      "cpiCore": null,
+      "cpiCore": 2.57,
       "pceCore": null,
-      "cpiRent": null,
+      "cpiRent": 2.78,
       "producerPriceAll": null,
       "capacityUtilization": null,
       "durableGoodsOrders": null,
@@ -13084,7 +13084,7 @@
     },
     {
       "indicatorId": "cpi",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "pce-price",
@@ -13180,7 +13180,7 @@
     },
     {
       "indicatorId": "cpi-core",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "pce-core",
@@ -13188,7 +13188,7 @@
     },
     {
       "indicatorId": "cpi-rent",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "producer-price-all",
@@ -13288,7 +13288,7 @@
     },
     {
       "indicatorId": "jp-operating-rate",
-      "latestMonth": "2026-07-01"
+      "latestMonth": "2026-08-01"
     },
     {
       "indicatorId": "jp-bank-lending",

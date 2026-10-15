@@ -1,53 +1,44 @@
 {
-  "generatedAt": "2026-10-14T06:53:13.401Z",
-  "economyState": "経済は穏やかで安定している状態にあり、金融市場も相対的に安定しているようだ。インフレや株価の変動などが起こりやすい要因は少ないようだ。経済の成長はやや鈍化しているが、危機的な状況は見られないようだ。",
+  "generatedAt": "2026-10-15T06:41:31.335Z",
+  "economyState": "経済は不安定な状況にあり、金融市場が変化に敏感であることがわかります。金融環境指数の低値や新規失業保険申請件数の増加は、経済の安定性が低いことを示しています。市場の不安定さは、VIXの高い値やハイイールド債スプレッドの拡大によって裏付けられています。",
   "economyStateFactCount": 5,
   "warnings": [],
   "highlights": [
     {
       "id": "etf-gdx",
       "name": "金鉱株 (GDX)",
-      "drawdown": 24.69,
-      "relativeStrength": 5.36,
+      "drawdown": 28,
+      "relativeStrength": 1.83,
       "hasBreakout": true,
       "signalCount": 3,
-      "note": "金鉱株が下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
+      "note": "金鉱株がSPYに対して相対的に強く、直近で戻り高値を上抜けているため注目に値する。"
     },
     {
       "id": "etf-corn",
       "name": "コーン (CORN)",
-      "drawdown": 15.77,
-      "relativeStrength": 3.16,
+      "drawdown": 16.04,
+      "relativeStrength": 3.95,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "コーンが下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
-    },
-    {
-      "id": "etf-weat",
-      "name": "小麦 (WEAT)",
-      "drawdown": 13.29,
-      "relativeStrength": 3.22,
-      "hasBreakout": false,
-      "signalCount": 2,
-      "note": "小麦が下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
+      "note": "下落率が深いコーンがSPYに対して相対的に強い。"
     },
     {
       "id": "etf-eido",
       "name": "インドネシア (EIDO)",
-      "drawdown": 50.4,
-      "relativeStrength": 3.02,
+      "drawdown": 50.57,
+      "relativeStrength": 3.79,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "インドネシアが下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
+      "note": "下落率が深いインドネシアがSPYに対して相対的に強い。"
     },
     {
       "id": "etf-smin",
       "name": "インド小型株 (SMIN)",
-      "drawdown": 19.84,
-      "relativeStrength": 0.87,
+      "drawdown": 20.03,
+      "relativeStrength": 1.73,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "インド小型株が下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
+      "note": "下落率が深いインド小型株がSPYに対して相対的に強い。"
     }
   ]
 }
