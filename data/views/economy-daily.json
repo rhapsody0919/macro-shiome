@@ -13052,46 +13052,51 @@
   {
     "date": "2026-10-05",
     "wti": 96.13,
-    "newJobPostings": 99.4
+    "newJobPostings": 97.6
   },
   {
     "date": "2026-10-06",
     "wti": 96.24,
-    "newJobPostings": 99.4
+    "newJobPostings": 96.47
   },
   {
     "date": "2026-10-07",
-    "wti": 96.24,
-    "newJobPostings": 99.4
+    "wti": 95.02,
+    "newJobPostings": 95.4
   },
   {
     "date": "2026-10-08",
-    "wti": 96.24,
-    "newJobPostings": 99.4
+    "wti": 98.26,
+    "newJobPostings": 95.38
   },
   {
     "date": "2026-10-09",
-    "wti": 96.24,
-    "newJobPostings": 99.4
+    "wti": 98.73,
+    "newJobPostings": 95.67
   },
   {
     "date": "2026-10-12",
-    "wti": 96.24,
-    "newJobPostings": null
+    "wti": 98.73,
+    "newJobPostings": 95.67
   },
   {
     "date": "2026-10-13",
-    "wti": 96.24,
-    "newJobPostings": null
+    "wti": 100.86,
+    "newJobPostings": 95.67
   },
   {
     "date": "2026-10-14",
-    "wti": null,
-    "newJobPostings": null
+    "wti": 101.91,
+    "newJobPostings": 95.67
   },
   {
     "date": "2026-10-15",
-    "wti": null,
-    "newJobPostings": null
+    "wti": 101.91,
+    "newJobPostings": 95.67
+  },
+  {
+    "date": "2026-10-16",
+    "wti": 101.91,
+    "newJobPostings": 95.67
   }
 ]
