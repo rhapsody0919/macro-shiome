@@ -12451,14 +12451,14 @@
       "cpiCore": 2.82,
       "pceCore": 3.16,
       "cpiRent": 2.92,
-      "producerPriceAll": 12.19,
-      "capacityUtilization": 76.16,
+      "producerPriceAll": 12.22,
+      "capacityUtilization": 76.22,
       "durableGoodsOrders": -2.97,
       "businessInventories": 3.34,
       "realConsumption": 2.66,
       "retailSales": 5.17,
       "manufacturingHours": 41.6,
-      "industrialProduction": 1.66,
+      "industrialProduction": 1.74,
       "newOrdersConsumerGoods": 11.28,
       "newOrdersCapitalGoods": 10.93,
       "buildingPermits": 1410,
@@ -12531,7 +12531,7 @@
     {
       "month": "2026-06-01",
       "importPrice": 6.75,
-      "exportPrice": 10.05,
+      "exportPrice": 9.98,
       "producerPrice": 5.59,
       "cpi": 3.46,
       "pce": 3.45,
@@ -12559,14 +12559,14 @@
       "cpiCore": 2.57,
       "pceCore": 3.04,
       "cpiRent": 2.84,
-      "producerPriceAll": 9.8,
-      "capacityUtilization": 76.24,
+      "producerPriceAll": 9.81,
+      "capacityUtilization": 76.33,
       "durableGoodsOrders": 7.7,
       "businessInventories": 3.24,
       "realConsumption": 2.69,
       "retailSales": 4.59,
       "manufacturingHours": 41.7,
-      "industrialProduction": 1.34,
+      "industrialProduction": 1.46,
       "newOrdersConsumerGoods": 9.05,
       "newOrdersCapitalGoods": 13.42,
       "buildingPermits": 1374,
@@ -12638,7 +12638,7 @@
     },
     {
       "month": "2026-07-01",
-      "importPrice": 6.09,
+      "importPrice": 6.02,
       "exportPrice": 8.12,
       "producerPrice": 4.9,
       "cpi": 3.3,
@@ -12667,14 +12667,14 @@
       "cpiCore": 2.47,
       "pceCore": 2.98,
       "cpiRent": 2.86,
-      "producerPriceAll": 8.7,
-      "capacityUtilization": 76.33,
+      "producerPriceAll": 8.62,
+      "capacityUtilization": 76.44,
       "durableGoodsOrders": 11.77,
       "businessInventories": 4.04,
       "realConsumption": 2.25,
       "retailSales": 3.93,
       "manufacturingHours": 41.8,
-      "industrialProduction": 1.13,
+      "industrialProduction": 1.28,
       "newOrdersConsumerGoods": 9.64,
       "newOrdersCapitalGoods": 13.32,
       "buildingPermits": 1433,
@@ -12746,8 +12746,8 @@
     },
     {
       "month": "2026-08-01",
-      "importPrice": 6.95,
-      "exportPrice": 8.63,
+      "importPrice": 6.74,
+      "exportPrice": 9.28,
       "producerPrice": 5.58,
       "cpi": 3.35,
       "pce": 3.42,
@@ -12775,14 +12775,14 @@
       "cpiCore": 2.45,
       "pceCore": 3.01,
       "cpiRent": 2.75,
-      "producerPriceAll": 9.85,
-      "capacityUtilization": 76.27,
+      "producerPriceAll": 9.78,
+      "capacityUtilization": 76.42,
       "durableGoodsOrders": 8.43,
       "businessInventories": 4.58,
       "realConsumption": 2.57,
       "retailSales": 4.83,
       "manufacturingHours": 41.8,
-      "industrialProduction": 1.42,
+      "industrialProduction": 1.62,
       "newOrdersConsumerGoods": 9.63,
       "newOrdersCapitalGoods": 14.11,
       "buildingPermits": 1403,
@@ -12854,8 +12854,8 @@
     },
     {
       "month": "2026-09-01",
-      "importPrice": null,
-      "exportPrice": null,
+      "importPrice": 8.1,
+      "exportPrice": 11.63,
       "producerPrice": 6.35,
       "cpi": 3.72,
       "pce": null,
@@ -12872,7 +12872,7 @@
       "truckTonnage": null,
       "newHomeSupply": null,
       "housingStartsSingle": null,
-      "commercialLoans": 9.96,
+      "commercialLoans": 9.98,
       "u6Rate": 7.6,
       "participationRate": 61.8,
       "employmentRatio": 59.2,
@@ -12883,14 +12883,14 @@
       "cpiCore": 2.57,
       "pceCore": null,
       "cpiRent": 2.78,
-      "producerPriceAll": null,
-      "capacityUtilization": null,
+      "producerPriceAll": 12.84,
+      "capacityUtilization": 76.85,
       "durableGoodsOrders": null,
       "businessInventories": null,
       "realConsumption": null,
       "retailSales": 5.02,
       "manufacturingHours": 42,
-      "industrialProduction": null,
+      "industrialProduction": 2.25,
       "newOrdersConsumerGoods": null,
       "newOrdersCapitalGoods": null,
       "buildingPermits": null,
@@ -12947,7 +12947,7 @@
       "usTenYearMonthly": 4.99,
       "jpTenYear": 3.05,
       "deTenYear": 3.47,
-      "federalDeficit": null,
+      "federalDeficit": -26900.35,
       "moneyStock": null,
       "treasuryAvgRate": 3.53,
       "treasuryAvgRateBills": 3.87,
@@ -13072,11 +13072,11 @@
   "coverage": [
     {
       "indicatorId": "import-price",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "export-price",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "producer-price",
@@ -13192,11 +13192,11 @@
     },
     {
       "indicatorId": "producer-price-all",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "capacity-utilization",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "durable-goods-orders",
@@ -13216,7 +13216,7 @@
     },
     {
       "indicatorId": "industrial-production",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "new-orders-consumer-goods",
@@ -13428,7 +13428,7 @@
     },
     {
       "indicatorId": "federal-deficit",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "money-stock",

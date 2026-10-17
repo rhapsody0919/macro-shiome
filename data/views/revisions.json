@@ -5231,11 +5231,11 @@
   },
   {
     "date": "2026-10-16",
-    "blendedToday": null,
-    "blendedLastWeek": null,
-    "blendedQuarterEnd": null,
-    "growthCurrentYear": null,
-    "growthNextYear": null,
+    "blendedToday": 29,
+    "blendedLastWeek": 29.4,
+    "blendedQuarterEnd": 29.2,
+    "growthCurrentYear": 32.8,
+    "growthNextYear": 16,
     "growthNextQuarter": null,
     "growthQuarterAfterNext": null
   }
