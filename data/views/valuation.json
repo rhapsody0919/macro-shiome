@@ -8403,13 +8403,13 @@
     "correlation": {
       "halfYear": {
         "kind": "ok",
-        "r": -0.5140463027815654,
-        "n": 19
+        "r": -0.5215967188843382,
+        "n": 18
       },
       "oneYear": {
         "kind": "ok",
-        "r": -0.39426967040511723,
-        "n": 33
+        "r": -0.40070262395325557,
+        "n": 32
       },
       "all": {
         "kind": "ok",
@@ -16821,15 +16821,15 @@
         "date": "2026-10-16",
         "index": 29935.59,
         "forwardPe": null,
-        "trailingPe": 29.74,
+        "trailingPe": 29.05,
         "forwardEps": null,
-        "trailingEps": 1006.5766644250168,
-        "earningsYield": 3.362474781439139,
+        "trailingEps": 1030.4850258175559,
+        "earningsYield": 3.4423407917383817,
         "realRate": 2.7499999999999996,
-        "yieldSpread": 0.6124747814391394,
-        "fairValue": 30782.16099159073,
+        "yieldSpread": 0.6923407917383821,
+        "fairValue": 31513.303541821282,
         "fairValueBasis": 29935.59,
-        "overvaluation": -2.827974967557778,
+        "overvaluation": -5.27036060362025,
         "isForwardEpsHigh": false,
         "isTrailingEpsHigh": false
       }
