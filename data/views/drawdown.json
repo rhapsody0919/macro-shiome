@@ -9,7 +9,7 @@
       "group": "major",
       "high": 779.09,
       "latest": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "drawdown": 2.03
       },
       "points": [
@@ -1980,10 +1980,14 @@
         {
           "date": "2026-10-16",
           "drawdown": 2.03
+        },
+        {
+          "date": "2026-10-19",
+          "drawdown": 2.03
         }
       ],
       "latestRelativeStrength": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "value": 0
       },
       "relativeStrengthPoints": [
@@ -3954,6 +3958,10 @@
         {
           "date": "2026-10-16",
           "value": 0
+        },
+        {
+          "date": "2026-10-19",
+          "value": 0
         }
       ]
     },
@@ -3963,7 +3971,7 @@
       "group": "major",
       "high": 759.66,
       "latest": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "drawdown": 6.56
       },
       "points": [
@@ -5934,10 +5942,14 @@
         {
           "date": "2026-10-16",
           "drawdown": 6.56
+        },
+        {
+          "date": "2026-10-19",
+          "drawdown": 6.56
         }
       ],
       "latestRelativeStrength": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "value": -4
       },
       "relativeStrengthPoints": [
@@ -7908,6 +7920,10 @@
         {
           "date": "2026-10-16",
           "value": -4
+        },
+        {
+          "date": "2026-10-19",
+          "value": -4
         }
       ]
     },
@@ -7917,7 +7933,7 @@
       "group": "major",
       "high": 384.3,
       "latest": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "drawdown": 2.66
       },
       "points": [
@@ -9888,10 +9904,14 @@
         {
           "date": "2026-10-16",
           "drawdown": 2.66
+        },
+        {
+          "date": "2026-10-19",
+          "drawdown": 2.66
         }
       ],
       "latestRelativeStrength": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "value": -0.6
       },
       "relativeStrengthPoints": [
@@ -11862,6 +11882,10 @@
         {
           "date": "2026-10-16",
           "value": -0.6
+        },
+        {
+          "date": "2026-10-19",
+          "value": -0.6
         }
       ]
     },
@@ -11871,7 +11895,7 @@
       "group": "major",
       "high": 246.61,
       "latest": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "drawdown": 1.96
       },
       "points": [
@@ -13842,10 +13866,14 @@
         {
           "date": "2026-10-16",
           "drawdown": 1.96
+        },
+        {
+          "date": "2026-10-19",
+          "drawdown": 1.96
         }
       ],
       "latestRelativeStrength": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "value": 0.35
       },
       "relativeStrengthPoints": [
@@ -15816,6 +15844,10 @@
         {
           "date": "2026-10-16",
           "value": 0.35
+        },
+        {
+          "date": "2026-10-19",
+          "value": 0.35
         }
       ]
     },
@@ -15825,7 +15857,7 @@
       "group": "major",
       "high": 495.9,
       "latest": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "drawdown": 22.97
       },
       "points": [
@@ -17796,10 +17828,14 @@
         {
           "date": "2026-10-16",
           "drawdown": 22.97
+        },
+        {
+          "date": "2026-10-19",
+          "drawdown": 22.97
         }
       ],
       "latestRelativeStrength": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "value": -6.87
       },
       "relativeStrengthPoints": [
@@ -19770,6 +19806,10 @@
         {
           "date": "2026-10-16",
           "value": -6.87
+        },
+        {
+          "date": "2026-10-19",
+          "value": -6.87
         }
       ]
     },
@@ -19779,7 +19819,7 @@
       "group": "major",
       "high": 115.84,
       "latest": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "drawdown": 24.28
       },
       "points": [
@@ -21750,10 +21790,14 @@
         {
           "date": "2026-10-16",
           "drawdown": 24.28
+        },
+        {
+          "date": "2026-10-19",
+          "drawdown": 24.28
         }
       ],
       "latestRelativeStrength": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "value": 7.98
       },
       "relativeStrengthPoints": [
@@ -23724,6 +23768,10 @@
         {
           "date": "2026-10-16",
           "value": 7.98
+        },
+        {
+          "date": "2026-10-19",
+          "value": 7.98
         }
       ]
     },
@@ -23733,7 +23781,7 @@
       "group": "major",
       "high": 63.41,
       "latest": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "drawdown": 18.96
       },
       "points": [
@@ -25704,10 +25752,14 @@
         {
           "date": "2026-10-16",
           "drawdown": 18.96
+        },
+        {
+          "date": "2026-10-19",
+          "drawdown": 18.96
         }
       ],
       "latestRelativeStrength": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "value": -8.03
       },
       "relativeStrengthPoints": [
@@ -27678,6 +27730,10 @@
         {
           "date": "2026-10-16",
           "value": -8.03
+        },
+        {
+          "date": "2026-10-19",
+          "value": -8.03
         }
       ]
     },
@@ -27687,7 +27743,7 @@
       "group": "major",
       "high": 100.95,
       "latest": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "drawdown": 9.1
       },
       "points": [
@@ -29658,10 +29714,14 @@
         {
           "date": "2026-10-16",
           "drawdown": 9.1
+        },
+        {
+          "date": "2026-10-19",
+          "drawdown": 9.1
         }
       ],
       "latestRelativeStrength": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "value": -6.91
       },
       "relativeStrengthPoints": [
@@ -31632,6 +31692,10 @@
         {
           "date": "2026-10-16",
           "value": -6.91
+        },
+        {
+          "date": "2026-10-19",
+          "value": -6.91
         }
       ]
     },
@@ -31641,7 +31705,7 @@
       "group": "major",
       "high": 305.09,
       "latest": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "drawdown": 11.36
       },
       "points": [
@@ -33612,10 +33676,14 @@
         {
           "date": "2026-10-16",
           "drawdown": 11.36
+        },
+        {
+          "date": "2026-10-19",
+          "drawdown": 11.36
         }
       ],
       "latestRelativeStrength": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "value": -7.81
       },
       "relativeStrengthPoints": [
@@ -35586,6 +35654,10 @@
         {
           "date": "2026-10-16",
           "value": -7.81
+        },
+        {
+          "date": "2026-10-19",
+          "value": -7.81
         }
       ]
     },
@@ -35595,7 +35667,7 @@
       "group": "sector",
       "high": 129.8,
       "latest": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "drawdown": 8.45
       },
       "points": [
@@ -37566,10 +37638,14 @@
         {
           "date": "2026-10-16",
           "drawdown": 8.45
+        },
+        {
+          "date": "2026-10-19",
+          "drawdown": 8.45
         }
       ],
       "latestRelativeStrength": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "value": -1.84
       },
       "relativeStrengthPoints": [
@@ -39540,6 +39616,10 @@
         {
           "date": "2026-10-16",
           "value": -1.84
+        },
+        {
+          "date": "2026-10-19",
+          "value": -1.84
         }
       ]
     },
@@ -39549,7 +39629,7 @@
       "group": "sector",
       "high": 412.7,
       "latest": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "drawdown": 8.93
       },
       "points": [
@@ -41520,10 +41600,14 @@
         {
           "date": "2026-10-16",
           "drawdown": 8.93
+        },
+        {
+          "date": "2026-10-19",
+          "drawdown": 8.93
         }
       ],
       "latestRelativeStrength": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "value": -5.7
       },
       "relativeStrengthPoints": [
@@ -43494,6 +43578,10 @@
         {
           "date": "2026-10-16",
           "value": -5.7
+        },
+        {
+          "date": "2026-10-19",
+          "value": -5.7
         }
       ]
     },
@@ -43503,7 +43591,7 @@
       "group": "sector",
       "high": 143.09,
       "latest": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "drawdown": 5.83
       },
       "points": [
@@ -45474,10 +45562,14 @@
         {
           "date": "2026-10-16",
           "drawdown": 5.83
+        },
+        {
+          "date": "2026-10-19",
+          "drawdown": 5.83
         }
       ],
       "latestRelativeStrength": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "value": 2.44
       },
       "relativeStrengthPoints": [
@@ -47448,6 +47540,10 @@
         {
           "date": "2026-10-16",
           "value": 2.44
+        },
+        {
+          "date": "2026-10-19",
+          "value": 2.44
         }
       ]
     },
@@ -47457,7 +47553,7 @@
       "group": "sector",
       "high": 329.48,
       "latest": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "drawdown": 0.71
       },
       "points": [
@@ -49428,10 +49524,14 @@
         {
           "date": "2026-10-16",
           "drawdown": 0.71
+        },
+        {
+          "date": "2026-10-19",
+          "drawdown": 0.71
         }
       ],
       "latestRelativeStrength": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "value": 11.83
       },
       "relativeStrengthPoints": [
@@ -51402,6 +51502,10 @@
         {
           "date": "2026-10-16",
           "value": 11.83
+        },
+        {
+          "date": "2026-10-19",
+          "value": 11.83
         }
       ]
     },
@@ -51411,7 +51515,7 @@
       "group": "sector",
       "high": 244.13,
       "latest": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "drawdown": 7.79
       },
       "points": [
@@ -53382,10 +53486,14 @@
         {
           "date": "2026-10-16",
           "drawdown": 7.79
+        },
+        {
+          "date": "2026-10-19",
+          "drawdown": 7.79
         }
       ],
       "latestRelativeStrength": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "value": -3.33
       },
       "relativeStrengthPoints": [
@@ -55356,6 +55464,10 @@
         {
           "date": "2026-10-16",
           "value": -3.33
+        },
+        {
+          "date": "2026-10-19",
+          "value": -3.33
         }
       ]
     },
@@ -55365,7 +55477,7 @@
       "group": "sector",
       "high": 190.14,
       "latest": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "drawdown": 0
       },
       "points": [
@@ -57336,10 +57448,14 @@
         {
           "date": "2026-10-16",
           "drawdown": 0
+        },
+        {
+          "date": "2026-10-19",
+          "drawdown": 0
         }
       ],
       "latestRelativeStrength": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "value": 12
       },
       "relativeStrengthPoints": [
@@ -59310,6 +59426,10 @@
         {
           "date": "2026-10-16",
           "value": 12
+        },
+        {
+          "date": "2026-10-19",
+          "value": 12
         }
       ]
     },
@@ -59319,7 +59439,7 @@
       "group": "sector",
       "high": 244.19,
       "latest": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "drawdown": 2.77
       },
       "points": [
@@ -61290,10 +61410,14 @@
         {
           "date": "2026-10-16",
           "drawdown": 2.77
+        },
+        {
+          "date": "2026-10-19",
+          "drawdown": 2.77
         }
       ],
       "latestRelativeStrength": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "value": 2.12
       },
       "relativeStrengthPoints": [
@@ -63264,6 +63388,10 @@
         {
           "date": "2026-10-16",
           "value": 2.12
+        },
+        {
+          "date": "2026-10-19",
+          "value": 2.12
         }
       ]
     },
@@ -63273,7 +63401,7 @@
       "group": "sector",
       "high": 205.87,
       "latest": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "drawdown": 11.4
       },
       "points": [
@@ -65244,10 +65372,14 @@
         {
           "date": "2026-10-16",
           "drawdown": 11.4
+        },
+        {
+          "date": "2026-10-19",
+          "drawdown": 11.4
         }
       ],
       "latestRelativeStrength": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "value": -6.41
       },
       "relativeStrengthPoints": [
@@ -67218,6 +67350,10 @@
         {
           "date": "2026-10-16",
           "value": -6.41
+        },
+        {
+          "date": "2026-10-19",
+          "value": -6.41
         }
       ]
     },
@@ -67227,7 +67363,7 @@
       "group": "commodity",
       "high": 161.86,
       "latest": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "drawdown": 0.06
       },
       "points": [
@@ -69198,10 +69334,14 @@
         {
           "date": "2026-10-16",
           "drawdown": 0.06
+        },
+        {
+          "date": "2026-10-19",
+          "drawdown": 0.06
         }
       ],
       "latestRelativeStrength": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "value": 15.92
       },
       "relativeStrengthPoints": [
@@ -71172,6 +71312,10 @@
         {
           "date": "2026-10-16",
           "value": 15.92
+        },
+        {
+          "date": "2026-10-19",
+          "value": 15.92
         }
       ]
     },
@@ -71181,7 +71325,7 @@
       "group": "commodity",
       "high": 27.44,
       "latest": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "drawdown": 61.15
       },
       "points": [
@@ -73152,10 +73296,14 @@
         {
           "date": "2026-10-16",
           "drawdown": 61.15
+        },
+        {
+          "date": "2026-10-19",
+          "drawdown": 61.15
         }
       ],
       "latestRelativeStrength": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "value": -9.2
       },
       "relativeStrengthPoints": [
@@ -75126,6 +75274,10 @@
         {
           "date": "2026-10-16",
           "value": -9.2
+        },
+        {
+          "date": "2026-10-19",
+          "value": -9.2
         }
       ]
     },
@@ -75135,7 +75287,7 @@
       "group": "commodity",
       "high": 96.94,
       "latest": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "drawdown": 17.5
       },
       "points": [
@@ -77106,10 +77258,14 @@
         {
           "date": "2026-10-16",
           "drawdown": 17.5
+        },
+        {
+          "date": "2026-10-19",
+          "drawdown": 17.5
         }
       ],
       "latestRelativeStrength": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "value": -4.71
       },
       "relativeStrengthPoints": [
@@ -79080,6 +79236,10 @@
         {
           "date": "2026-10-16",
           "value": -4.71
+        },
+        {
+          "date": "2026-10-19",
+          "value": -4.71
         }
       ]
     },
@@ -79089,7 +79249,7 @@
       "group": "commodity",
       "high": 113.57,
       "latest": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "drawdown": 9.79
       },
       "points": [
@@ -81060,10 +81220,14 @@
         {
           "date": "2026-10-16",
           "drawdown": 9.79
+        },
+        {
+          "date": "2026-10-19",
+          "drawdown": 9.79
         }
       ],
       "latestRelativeStrength": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "value": -6.69
       },
       "relativeStrengthPoints": [
@@ -83034,6 +83198,10 @@
         {
           "date": "2026-10-16",
           "value": -6.69
+        },
+        {
+          "date": "2026-10-19",
+          "value": -6.69
         }
       ]
     },
@@ -83043,7 +83211,7 @@
       "group": "commodity",
       "high": 110.63,
       "latest": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "drawdown": 50.98
       },
       "points": [
@@ -85014,10 +85182,14 @@
         {
           "date": "2026-10-16",
           "drawdown": 50.98
+        },
+        {
+          "date": "2026-10-19",
+          "drawdown": 50.98
         }
       ],
       "latestRelativeStrength": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "value": -39.92
       },
       "relativeStrengthPoints": [
@@ -86988,6 +87160,10 @@
         {
           "date": "2026-10-16",
           "value": -39.92
+        },
+        {
+          "date": "2026-10-19",
+          "value": -39.92
         }
       ]
     },
@@ -86997,7 +87173,7 @@
       "group": "commodity",
       "high": 21.94,
       "latest": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "drawdown": 17.09
       },
       "points": [
@@ -88968,10 +89144,14 @@
         {
           "date": "2026-10-16",
           "drawdown": 17.09
+        },
+        {
+          "date": "2026-10-19",
+          "drawdown": 17.09
         }
       ],
       "latestRelativeStrength": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "value": 3.51
       },
       "relativeStrengthPoints": [
@@ -90942,6 +91122,10 @@
         {
           "date": "2026-10-16",
           "value": 3.51
+        },
+        {
+          "date": "2026-10-19",
+          "value": 3.51
         }
       ]
     },
@@ -90951,7 +91135,7 @@
       "group": "commodity",
       "high": 28,
       "latest": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "drawdown": 14.29
       },
       "points": [
@@ -92922,10 +93106,14 @@
         {
           "date": "2026-10-16",
           "drawdown": 14.29
+        },
+        {
+          "date": "2026-10-19",
+          "drawdown": 14.29
         }
       ],
       "latestRelativeStrength": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "value": 4
       },
       "relativeStrengthPoints": [
@@ -94896,6 +95084,10 @@
         {
           "date": "2026-10-16",
           "value": 4
+        },
+        {
+          "date": "2026-10-19",
+          "value": 4
         }
       ]
     },
@@ -94905,7 +95097,7 @@
       "group": "country",
       "high": 71.21,
       "latest": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "drawdown": 11.74
       },
       "points": [
@@ -96876,10 +97068,14 @@
         {
           "date": "2026-10-16",
           "drawdown": 11.74
+        },
+        {
+          "date": "2026-10-19",
+          "drawdown": 11.74
         }
       ],
       "latestRelativeStrength": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "value": -7.42
       },
       "relativeStrengthPoints": [
@@ -98850,6 +99046,10 @@
         {
           "date": "2026-10-16",
           "value": -7.42
+        },
+        {
+          "date": "2026-10-19",
+          "value": -7.42
         }
       ]
     },
@@ -98859,7 +99059,7 @@
       "group": "country",
       "high": 99.32,
       "latest": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "drawdown": 4.47
       },
       "points": [
@@ -100830,10 +101030,14 @@
         {
           "date": "2026-10-16",
           "drawdown": 4.47
+        },
+        {
+          "date": "2026-10-19",
+          "drawdown": 4.47
         }
       ],
       "latestRelativeStrength": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "value": -0.06
       },
       "relativeStrengthPoints": [
@@ -102804,6 +103008,10 @@
         {
           "date": "2026-10-16",
           "value": -0.06
+        },
+        {
+          "date": "2026-10-19",
+          "value": -0.06
         }
       ]
     },
@@ -102813,7 +103021,7 @@
       "group": "country",
       "high": 50.99,
       "latest": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "drawdown": 18.98
       },
       "points": [
@@ -104784,10 +104992,14 @@
         {
           "date": "2026-10-16",
           "drawdown": 18.98
+        },
+        {
+          "date": "2026-10-19",
+          "drawdown": 18.98
         }
       ],
       "latestRelativeStrength": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "value": -3.48
       },
       "relativeStrengthPoints": [
@@ -106758,6 +106970,10 @@
         {
           "date": "2026-10-16",
           "value": -3.48
+        },
+        {
+          "date": "2026-10-19",
+          "value": -3.48
         }
       ]
     },
@@ -106767,7 +106983,7 @@
       "group": "country",
       "high": 49.39,
       "latest": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "drawdown": 2.79
       },
       "points": [
@@ -108738,10 +108954,14 @@
         {
           "date": "2026-10-16",
           "drawdown": 2.79
+        },
+        {
+          "date": "2026-10-19",
+          "drawdown": 2.79
         }
       ],
       "latestRelativeStrength": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "value": 0.15
       },
       "relativeStrengthPoints": [
@@ -110712,6 +110932,10 @@
         {
           "date": "2026-10-16",
           "value": 0.15
+        },
+        {
+          "date": "2026-10-19",
+          "value": 0.15
         }
       ]
     },
@@ -110721,7 +110945,7 @@
       "group": "country",
       "high": 44.8,
       "latest": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "drawdown": 7.21
       },
       "points": [
@@ -112692,10 +112916,14 @@
         {
           "date": "2026-10-16",
           "drawdown": 7.21
+        },
+        {
+          "date": "2026-10-19",
+          "drawdown": 7.21
         }
       ],
       "latestRelativeStrength": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "value": -4.46
       },
       "relativeStrengthPoints": [
@@ -114666,6 +114894,10 @@
         {
           "date": "2026-10-16",
           "value": -4.46
+        },
+        {
+          "date": "2026-10-19",
+          "value": -4.46
         }
       ]
     },
@@ -114675,7 +114907,7 @@
       "group": "country",
       "high": 43.54,
       "latest": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "drawdown": 3.93
       },
       "points": [
@@ -116646,10 +116878,14 @@
         {
           "date": "2026-10-16",
           "drawdown": 3.93
+        },
+        {
+          "date": "2026-10-19",
+          "drawdown": 3.93
         }
       ],
       "latestRelativeStrength": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "value": 20.25
       },
       "relativeStrengthPoints": [
@@ -118620,6 +118856,10 @@
         {
           "date": "2026-10-16",
           "value": 20.25
+        },
+        {
+          "date": "2026-10-19",
+          "value": 20.25
         }
       ]
     },
@@ -118629,7 +118869,7 @@
       "group": "country",
       "high": 19.8,
       "latest": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "drawdown": 16.92
       },
       "points": [
@@ -120600,10 +120840,14 @@
         {
           "date": "2026-10-16",
           "drawdown": 16.92
+        },
+        {
+          "date": "2026-10-19",
+          "drawdown": 16.92
         }
       ],
       "latestRelativeStrength": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "value": -10.29
       },
       "relativeStrengthPoints": [
@@ -122574,6 +122818,10 @@
         {
           "date": "2026-10-16",
           "value": -10.29
+        },
+        {
+          "date": "2026-10-19",
+          "value": -10.29
         }
       ]
     },
@@ -122583,7 +122831,7 @@
       "group": "country",
       "high": 81.23,
       "latest": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "drawdown": 7.74
       },
       "points": [
@@ -124554,10 +124802,14 @@
         {
           "date": "2026-10-16",
           "drawdown": 7.74
+        },
+        {
+          "date": "2026-10-19",
+          "drawdown": 7.74
         }
       ],
       "latestRelativeStrength": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "value": -3.1
       },
       "relativeStrengthPoints": [
@@ -126528,6 +126780,10 @@
         {
           "date": "2026-10-16",
           "value": -3.1
+        },
+        {
+          "date": "2026-10-19",
+          "value": -3.1
         }
       ]
     },
@@ -126537,7 +126793,7 @@
       "group": "country",
       "high": 67.14,
       "latest": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "drawdown": 23.74
       },
       "points": [
@@ -128508,10 +128764,14 @@
         {
           "date": "2026-10-16",
           "drawdown": 23.74
+        },
+        {
+          "date": "2026-10-19",
+          "drawdown": 23.74
         }
       ],
       "latestRelativeStrength": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "value": -8.05
       },
       "relativeStrengthPoints": [
@@ -130482,6 +130742,10 @@
         {
           "date": "2026-10-16",
           "value": -8.05
+        },
+        {
+          "date": "2026-10-19",
+          "value": -8.05
         }
       ]
     },
@@ -130491,7 +130755,7 @@
       "group": "country",
       "high": 23.61,
       "latest": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "drawdown": 57.9
       },
       "points": [
@@ -132462,10 +132726,14 @@
         {
           "date": "2026-10-16",
           "drawdown": 57.9
+        },
+        {
+          "date": "2026-10-19",
+          "drawdown": 57.9
         }
       ],
       "latestRelativeStrength": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "value": -10.86
       },
       "relativeStrengthPoints": [
@@ -134436,6 +134704,10 @@
         {
           "date": "2026-10-16",
           "value": -10.86
+        },
+        {
+          "date": "2026-10-19",
+          "value": -10.86
         }
       ]
     },
@@ -134445,7 +134717,7 @@
       "group": "country",
       "high": 75.06,
       "latest": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "drawdown": 4.28
       },
       "points": [
@@ -136416,10 +136688,14 @@
         {
           "date": "2026-10-16",
           "drawdown": 4.28
+        },
+        {
+          "date": "2026-10-19",
+          "drawdown": 4.28
         }
       ],
       "latestRelativeStrength": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "value": -4.45
       },
       "relativeStrengthPoints": [
@@ -138390,6 +138666,10 @@
         {
           "date": "2026-10-16",
           "value": -4.45
+        },
+        {
+          "date": "2026-10-19",
+          "value": -4.45
         }
       ]
     },
@@ -138399,7 +138679,7 @@
       "group": "country",
       "high": 87,
       "latest": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "drawdown": 20.6
       },
       "points": [
@@ -140370,10 +140650,14 @@
         {
           "date": "2026-10-16",
           "drawdown": 20.6
+        },
+        {
+          "date": "2026-10-19",
+          "drawdown": 20.6
         }
       ],
       "latestRelativeStrength": {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "value": 1.85
       },
       "relativeStrengthPoints": [
@@ -142343,6 +142627,10 @@
         },
         {
           "date": "2026-10-16",
+          "value": 1.85
+        },
+        {
+          "date": "2026-10-19",
           "value": 1.85
         }
       ]
