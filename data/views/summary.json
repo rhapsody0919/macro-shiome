@@ -1,35 +1,35 @@
 {
-  "generatedAt": "2026-10-19T07:05:40.315Z",
-  "economyState": "経済は、不安定な状況にあるようで、金融環境が不安定になり、株価の変動が激しいようだ。金融環境指数が負の値を示しており、ハイイールド債スプレッドが拡大していることから、金利の不安定化が指摘される。新規失業保険申請件数も増加していることから、就職や雇用の不安定さも指摘される。",
+  "generatedAt": "2026-10-20T06:50:24.145Z",
+  "economyState": "経済は不安定な状況にあるようで、短期的には不安定な要素が多く存在しています。金融環境は厳しく、市場は不安定感を感じています。経済活動はやや低調な傾向があり、雇用状況も悪化しているようです。",
   "economyStateFactCount": 5,
   "warnings": [],
   "highlights": [
     {
       "id": "etf-gdx",
       "name": "金鉱株 (GDX)",
-      "drawdown": 24.28,
-      "relativeStrength": 7.98,
+      "drawdown": 25.35,
+      "relativeStrength": 6.01,
       "hasBreakout": true,
       "signalCount": 3,
-      "note": "金鉱株が下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
+      "note": "金鉱株 (GDX) は下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
     },
     {
       "id": "etf-corn",
       "name": "コーン (CORN)",
-      "drawdown": 17.09,
-      "relativeStrength": 3.51,
+      "drawdown": 17.91,
+      "relativeStrength": 2.05,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "コーンが下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
+      "note": "コーン (CORN) は下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
     },
     {
       "id": "etf-smin",
       "name": "インド小型株 (SMIN)",
-      "drawdown": 20.6,
-      "relativeStrength": 1.85,
+      "drawdown": 21.25,
+      "relativeStrength": 0.58,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "インド小型株が下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
+      "note": "インド小型株 (SMIN) は下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
     }
   ]
 }
