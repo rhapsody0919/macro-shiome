@@ -12655,7 +12655,7 @@
       "vehicleSales": 16.6,
       "truckTonnage": -0.35,
       "newHomeSupply": 9,
-      "housingStartsSingle": 853,
+      "housingStartsSingle": 875,
       "commercialLoans": 8.35,
       "u6Rate": 7.9,
       "participationRate": 61.4,
@@ -12678,7 +12678,7 @@
       "newOrdersConsumerGoods": 9.64,
       "newOrdersCapitalGoods": 13.32,
       "buildingPermits": 1433,
-      "housingStarts": 1309,
+      "housingStarts": 1369,
       "newHomeSales": 643,
       "existingHomeSales": 4060000,
       "jpUnemploymentRate": 2.4,
@@ -12763,7 +12763,7 @@
       "vehicleSales": 16.98,
       "truckTonnage": null,
       "newHomeSupply": 8.5,
-      "housingStartsSingle": 918,
+      "housingStartsSingle": 900,
       "commercialLoans": 9.52,
       "u6Rate": 7.7,
       "participationRate": 61.6,
@@ -12786,7 +12786,7 @@
       "newOrdersConsumerGoods": 9.63,
       "newOrdersCapitalGoods": 14.11,
       "buildingPermits": 1403,
-      "housingStarts": 1275,
+      "housingStarts": 1288,
       "newHomeSales": 684,
       "existingHomeSales": 3930000,
       "jpUnemploymentRate": 2.5,
@@ -12871,7 +12871,7 @@
       "vehicleSales": 16.38,
       "truckTonnage": null,
       "newHomeSupply": null,
-      "housingStartsSingle": null,
+      "housingStartsSingle": 859,
       "commercialLoans": 9.98,
       "u6Rate": 7.6,
       "participationRate": 61.8,
@@ -12893,8 +12893,8 @@
       "industrialProduction": 2.25,
       "newOrdersConsumerGoods": null,
       "newOrdersCapitalGoods": null,
-      "buildingPermits": null,
-      "housingStarts": null,
+      "buildingPermits": 1400,
+      "housingStarts": 1221,
       "newHomeSales": null,
       "existingHomeSales": 3990000,
       "jpUnemploymentRate": null,
@@ -12915,7 +12915,7 @@
       "jpPublicWorks": null,
       "jpCpiCoreCore": null,
       "jpInventoryRatio": null,
-      "jpTopix": null,
+      "jpTopix": 4108.65,
       "jpConsumptionIndex": null,
       "jpCpiCore": null,
       "jpCpi": null,
@@ -13144,7 +13144,7 @@
     },
     {
       "indicatorId": "housing-starts-single",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "commercial-loans",
@@ -13228,11 +13228,11 @@
     },
     {
       "indicatorId": "building-permits",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "housing-starts",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "new-home-sales",
@@ -13316,7 +13316,7 @@
     },
     {
       "indicatorId": "jp-topix",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "jp-consumption-index",
