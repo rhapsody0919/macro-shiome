@@ -8384,6 +8384,22 @@
         "overvaluation": -4.799832320268282,
         "isForwardEpsHigh": false,
         "isTrailingEpsHigh": false
+      },
+      {
+        "date": "2026-10-23",
+        "index": 7757.17,
+        "forwardPe": null,
+        "trailingPe": null,
+        "forwardEps": null,
+        "trailingEps": null,
+        "earningsYield": null,
+        "realRate": 2.81,
+        "yieldSpread": null,
+        "fairValue": null,
+        "fairValueBasis": null,
+        "overvaluation": null,
+        "isForwardEpsHigh": false,
+        "isTrailingEpsHigh": false
       }
     ],
     "baselines": {
@@ -8396,8 +8412,8 @@
     "targetYield": 3.67,
     "targetYieldContext": {
       "realRateAtSetting": 2.4,
-      "currentRealRate": 2.7399999999999998,
-      "drift": 0.33999999999999986,
+      "currentRealRate": 2.81,
+      "drift": 0.41000000000000014,
       "riskPremium": 1.27
     },
     "correlation": {
@@ -8419,29 +8435,29 @@
     },
     "spreadDistribution": {
       "years": 5,
-      "mean": 3.5591475215969317,
-      "sd": 1.173206083935588,
-      "n": 169,
+      "mean": 3.546154918976052,
+      "sd": 1.164454881889929,
+      "n": 168,
       "latest": 2.523157894736842,
-      "latestPercentile": 9.763313609467456,
+      "latestPercentile": 9.821428571428571,
       "latestDate": "2026-10-16"
     },
     "forwardPeDistribution": {
       "years": 5,
-      "mean": 19.841420118343187,
-      "sd": 1.8786869451630768,
-      "n": 169,
+      "mean": 19.8345238095238,
+      "sd": 1.882156620565859,
+      "n": 168,
       "latest": 19,
-      "latestPercentile": 32.544378698224854,
+      "latestPercentile": 32.73809523809524,
       "latestDate": "2026-10-16"
     },
     "trailingPeDistribution": {
       "years": 5,
-      "mean": 24.413772455089823,
-      "sd": 3.4058757904125962,
-      "n": 167,
+      "mean": 24.39939759036145,
+      "sd": 3.41109592249749,
+      "n": 166,
       "latest": 26,
-      "latestPercentile": 60.778443113772454,
+      "latestPercentile": 61.14457831325302,
       "latestDate": "2026-10-16"
     },
     "hasForwardEps": true,
@@ -16832,6 +16848,22 @@
         "overvaluation": -5.488236479309028,
         "isForwardEpsHigh": false,
         "isTrailingEpsHigh": false
+      },
+      {
+        "date": "2026-10-23",
+        "index": 28958.69,
+        "forwardPe": null,
+        "trailingPe": 28.55,
+        "forwardEps": null,
+        "trailingEps": 1014.3148861646234,
+        "earningsYield": 3.502626970227671,
+        "realRate": 2.81,
+        "yieldSpread": 0.6926269702276708,
+        "fairValue": 31018.803858245366,
+        "fairValueBasis": 28958.69,
+        "overvaluation": -7.113974624699426,
+        "isForwardEpsHigh": false,
+        "isTrailingEpsHigh": false
       }
     ],
     "baselines": {
@@ -16844,27 +16876,46 @@
     "targetYield": 3.27,
     "targetYieldContext": {
       "realRateAtSetting": 2.4,
-      "currentRealRate": 2.7399999999999998,
-      "drift": 0.33999999999999986,
+      "currentRealRate": 2.81,
+      "drift": 0.41000000000000014,
       "riskPremium": 0.8700000000000001
     },
     "correlation": {
       "halfYear": {
-        "kind": "insufficient",
-        "n": 9
+        "kind": "ok",
+        "r": 0.3305870119489906,
+        "n": 10
       },
       "oneYear": {
-        "kind": "insufficient",
-        "n": 9
+        "kind": "ok",
+        "r": 0.3305870119489906,
+        "n": 10
       },
       "all": {
-        "kind": "insufficient",
-        "n": 9
+        "kind": "ok",
+        "r": 0.3305870119489906,
+        "n": 10
       }
     },
-    "spreadDistribution": null,
+    "spreadDistribution": {
+      "years": 5,
+      "mean": 0.5782898699758766,
+      "sd": 0.15739758260538933,
+      "n": 10,
+      "latest": 0.6926269702276708,
+      "latestPercentile": 75,
+      "latestDate": "2026-10-23"
+    },
     "forwardPeDistribution": null,
-    "trailingPeDistribution": null,
+    "trailingPeDistribution": {
+      "years": 5,
+      "mean": 30.830000000000002,
+      "sd": 1.6867852395739196,
+      "n": 10,
+      "latest": 28.55,
+      "latestPercentile": 5,
+      "latestDate": "2026-10-23"
+    },
     "hasForwardEps": false,
     "accumulationNote": "実績 PER は連動 ETF (QQQ) 経由でしか取れず、提供元が現在値しか出さないため過去に遡れない。"
   },

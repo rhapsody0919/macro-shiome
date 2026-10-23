@@ -12751,7 +12751,7 @@
       "producerPrice": 5.58,
       "cpi": 3.35,
       "pce": 3.42,
-      "copperPrice": null,
+      "copperPrice": 14331.26,
       "payrolls": 0.34,
       "employmentLevel": -0.38,
       "fullTimeEmployment": -0.13,
@@ -12803,7 +12803,7 @@
       "jpOperatingRate": 103.2,
       "jpBankLending": 5999075,
       "jpMonetaryBase": 5430070,
-      "jpWorkingHours": 129.8,
+      "jpWorkingHours": 129.4,
       "jpPublicWorks": 1784401,
       "jpCpiCoreCore": 1.9,
       "jpInventoryRatio": 106.3,
@@ -12819,7 +12819,7 @@
       "jpTankanLargeMfg": null,
       "jpTankanLargeNonmfg": null,
       "jpWatcherOutlook": 48.3,
-      "jpRealWage": 96.2,
+      "jpRealWage": 96.3,
       "jpNewJobRatio": 2.06,
       "jpJobRatio": 1.18,
       "jpExportPrice": 162.2,
@@ -12859,7 +12859,7 @@
       "producerPrice": 6.35,
       "cpi": 3.72,
       "pce": null,
-      "copperPrice": null,
+      "copperPrice": 14473.06,
       "payrolls": 0.31,
       "employmentLevel": -0.31,
       "fullTimeEmployment": -0.58,
@@ -12913,20 +12913,20 @@
       "jpMonetaryBase": 5328464,
       "jpWorkingHours": null,
       "jpPublicWorks": null,
-      "jpCpiCoreCore": null,
+      "jpCpiCoreCore": 2.4,
       "jpInventoryRatio": null,
       "jpTopix": 4108.65,
       "jpConsumptionIndex": null,
-      "jpCpiCore": null,
-      "jpCpi": null,
+      "jpCpiCore": 2.1,
+      "jpCpi": 2.1,
       "jpSppi": null,
-      "jpWatcherCurrent": null,
+      "jpWatcherCurrent": 47,
       "jpBsiLarge": 5.3,
       "jpBsiMid": 0.8,
       "jpBsiSmall": -10.9,
       "jpTankanLargeMfg": 24,
       "jpTankanLargeNonmfg": 35,
-      "jpWatcherOutlook": null,
+      "jpWatcherOutlook": 47.4,
       "jpRealWage": null,
       "jpNewJobRatio": null,
       "jpJobRatio": null,
@@ -13092,7 +13092,7 @@
     },
     {
       "indicatorId": "copper-price",
-      "latestMonth": "2026-07-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "payrolls",
@@ -13308,7 +13308,7 @@
     },
     {
       "indicatorId": "jp-cpi-core-core",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "jp-inventory-ratio",
@@ -13324,11 +13324,11 @@
     },
     {
       "indicatorId": "jp-cpi-core",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "jp-cpi",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "jp-sppi",
@@ -13336,11 +13336,11 @@
     },
     {
       "indicatorId": "jp-watcher-current",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "jp-watcher-outlook",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "jp-real-wage",
