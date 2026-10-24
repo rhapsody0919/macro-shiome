@@ -12764,7 +12764,7 @@
       "truckTonnage": null,
       "newHomeSupply": 8.5,
       "housingStartsSingle": 900,
-      "commercialLoans": 9.52,
+      "commercialLoans": 9.5,
       "u6Rate": 7.7,
       "participationRate": 61.6,
       "employmentRatio": 59.1,
@@ -12872,7 +12872,7 @@
       "truckTonnage": null,
       "newHomeSupply": null,
       "housingStartsSingle": 859,
-      "commercialLoans": 9.98,
+      "commercialLoans": 9.96,
       "u6Rate": 7.6,
       "participationRate": 61.8,
       "employmentRatio": 59.2,
@@ -12956,7 +12956,7 @@
       "sahmRule": 0,
       "savingsRate": null,
       "personalSaving": null,
-      "consumerSentiment": null,
+      "consumerSentiment": 48.1,
       "visaDiscretionary": 99.03,
       "visaNonDiscretionary": 99.75
     },
@@ -13452,7 +13452,7 @@
     },
     {
       "indicatorId": "consumer-sentiment",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "visa-discretionary-spending",
