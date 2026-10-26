@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-25T07:05:20.683Z",
-  "economyState": "経済は不安定な状況にある。短期金利と長期金利の差は広がっており、市場への不安感が高まり、株価の不安定化につながっている。失業保険の申請件数も増加している。",
+  "generatedAt": "2026-10-26T07:12:21.710Z",
+  "economyState": "経済は安定しているように見えます。金利の差や不安定性の指標は安定しており、金融環境も安定しています。ただし、失業保険申請件数は一定の数値で、低迷の兆候はありません。",
   "economyStateFactCount": 5,
   "warnings": [],
   "highlights": [
@@ -11,7 +11,7 @@
       "relativeStrength": -0.84,
       "hasBreakout": true,
       "signalCount": 2,
-      "note": "金鉱株が直近で戻り高値を上抜けているため注目に値する。"
+      "note": null
     },
     {
       "id": "etf-corn",
@@ -20,7 +20,7 @@
       "relativeStrength": 1.04,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "コーンがSPYに対して相対的に強いため注目に値する。"
+      "note": null
     }
   ]
 }
