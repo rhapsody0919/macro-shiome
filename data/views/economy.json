@@ -12811,7 +12811,7 @@
       "jpConsumptionIndex": null,
       "jpCpiCore": 1.7,
       "jpCpi": 1.9,
-      "jpSppi": 3.7,
+      "jpSppi": 3.5,
       "jpWatcherCurrent": 46.4,
       "jpBsiLarge": null,
       "jpBsiMid": null,
@@ -12919,7 +12919,7 @@
       "jpConsumptionIndex": null,
       "jpCpiCore": 2.1,
       "jpCpi": 2.1,
-      "jpSppi": null,
+      "jpSppi": 3.7,
       "jpWatcherCurrent": 47,
       "jpBsiLarge": 5.3,
       "jpBsiMid": 0.8,
@@ -13332,7 +13332,7 @@
     },
     {
       "indicatorId": "jp-sppi",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "jp-watcher-current",

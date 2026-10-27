@@ -1,26 +1,26 @@
 {
-  "generatedAt": "2026-10-26T07:12:21.710Z",
-  "economyState": "経済は安定しているように見えます。金利の差や不安定性の指標は安定しており、金融環境も安定しています。ただし、失業保険申請件数は一定の数値で、低迷の兆候はありません。",
+  "generatedAt": "2026-10-27T07:00:09.763Z",
+  "economyState": "経済は安定した状況ではありません。短期債と長期債の金利の差は拡大し、リスクが高まりつつあります。金融環境も不安定で、企業や雇用者の状況も悪化しています。",
   "economyStateFactCount": 5,
   "warnings": [],
   "highlights": [
     {
       "id": "etf-gdx",
       "name": "金鉱株 (GDX)",
-      "drawdown": 30.77,
-      "relativeStrength": -0.84,
+      "drawdown": 30.06,
+      "relativeStrength": -0.53,
       "hasBreakout": true,
       "signalCount": 2,
-      "note": null
+      "note": "金鉱株が直近で戻り高値を上抜けたことで注目に値する。"
     },
     {
       "id": "etf-corn",
       "name": "コーン (CORN)",
-      "drawdown": 19.42,
-      "relativeStrength": 1.04,
+      "drawdown": 19.64,
+      "relativeStrength": 0.04,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": null
+      "note": "コーンが下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
     }
   ]
 }
