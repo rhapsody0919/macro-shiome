@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-27T07:00:09.763Z",
+  "generatedAt": "2026-10-28T07:42:39.539Z",
   "entries": [
     {
       "label": "Standard & Poors",
       "indicatorIds": [
         "sp500"
       ],
-      "nextReleaseDate": "2026-10-27",
+      "nextReleaseDate": "2026-10-28",
       "source": "fred"
     },
     {
@@ -15,7 +15,7 @@
         "nasdaq100",
         "nasdaq-composite"
       ],
-      "nextReleaseDate": "2026-10-27",
+      "nextReleaseDate": "2026-10-28",
       "source": "fred"
     },
     {
@@ -27,7 +27,7 @@
         "dgs2",
         "tbill-3m"
       ],
-      "nextReleaseDate": "2026-10-27",
+      "nextReleaseDate": "2026-10-28",
       "source": "fred"
     },
     {
@@ -39,7 +39,7 @@
         "breakeven-5y5y",
         "term-spread-3m"
       ],
-      "nextReleaseDate": "2026-10-27",
+      "nextReleaseDate": "2026-10-28",
       "source": "fred"
     },
     {
@@ -47,7 +47,7 @@
       "indicatorIds": [
         "vix"
       ],
-      "nextReleaseDate": "2026-10-27",
+      "nextReleaseDate": "2026-10-28",
       "source": "fred"
     },
     {
@@ -160,7 +160,7 @@
         "housing-starts",
         "housing-starts-single"
       ],
-      "nextReleaseDate": "2026-10-27",
+      "nextReleaseDate": "2026-11-18",
       "source": "fred"
     },
     {
@@ -169,7 +169,7 @@
         "new-home-sales",
         "new-home-supply"
       ],
-      "nextReleaseDate": "2026-10-27",
+      "nextReleaseDate": "2026-11-25",
       "source": "fred"
     },
     {
@@ -206,7 +206,7 @@
         "new-orders-capital-goods",
         "durable-goods-orders"
       ],
-      "nextReleaseDate": "2026-10-27",
+      "nextReleaseDate": "2026-11-03",
       "source": "fred"
     },
     {
@@ -225,7 +225,7 @@
         "hy-spread",
         "ig-spread"
       ],
-      "nextReleaseDate": "2026-10-27",
+      "nextReleaseDate": "2026-10-28",
       "source": "fred"
     },
     {
@@ -318,7 +318,7 @@
       "indicatorIds": [
         "nikkei225"
       ],
-      "nextReleaseDate": "2026-10-27",
+      "nextReleaseDate": "2026-10-28",
       "source": "fred"
     },
     {
@@ -342,7 +342,7 @@
       "indicatorIds": [
         "sofr"
       ],
-      "nextReleaseDate": "2026-10-27",
+      "nextReleaseDate": "2026-10-28",
       "source": "fred"
     },
     {
@@ -366,7 +366,7 @@
       "indicatorIds": [
         "money-stock"
       ],
-      "nextReleaseDate": "2026-10-27",
+      "nextReleaseDate": "2026-11-24",
       "source": "fred"
     },
     {
@@ -398,7 +398,7 @@
       "indicatorIds": [
         "djia"
       ],
-      "nextReleaseDate": "2026-10-27",
+      "nextReleaseDate": "2026-10-28",
       "source": "fred"
     },
     {
