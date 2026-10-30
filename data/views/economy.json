@@ -12642,14 +12642,14 @@
       "exportPrice": 8.12,
       "producerPrice": 4.9,
       "cpi": 3.3,
-      "pce": 3.36,
+      "pce": 3.37,
       "copperPrice": 13542.82,
       "payrolls": 0.21,
       "employmentLevel": -0.59,
       "fullTimeEmployment": -0.95,
       "adpEmployment": 0.58,
-      "realIncomeExTransfer": 0.92,
-      "realDisposablePerCapita": 1.25,
+      "realIncomeExTransfer": 0.97,
+      "realDisposablePerCapita": 1.24,
       "realDisposableTotal": 1.49,
       "retailSalesTotal": 4.53,
       "vehicleSales": 16.6,
@@ -12665,13 +12665,13 @@
       "layoffs": 1702,
       "weeklyHoursTotal": 34.3,
       "cpiCore": 2.47,
-      "pceCore": 2.98,
+      "pceCore": 3,
       "cpiRent": 2.86,
       "producerPriceAll": 8.62,
       "capacityUtilization": 76.44,
       "durableGoodsOrders": 11.77,
       "businessInventories": 4.04,
-      "realConsumption": 2.25,
+      "realConsumption": 2.37,
       "retailSales": 3.93,
       "manufacturingHours": 41.8,
       "industrialProduction": 1.28,
@@ -12738,8 +12738,8 @@
       "treasuryAvgRateNotes": 3.31,
       "unemploymentRate": 4.1,
       "sahmRule": -0.03,
-      "savingsRate": 4.6,
-      "personalSaving": -8.99,
+      "savingsRate": 4.5,
+      "personalSaving": -11.31,
       "consumerSentiment": 55.2,
       "visaDiscretionary": 95.7,
       "visaNonDiscretionary": 98.24
@@ -12750,15 +12750,15 @@
       "exportPrice": 9.28,
       "producerPrice": 5.58,
       "cpi": 3.35,
-      "pce": 3.42,
+      "pce": 3.44,
       "copperPrice": 14331.26,
       "payrolls": 0.34,
       "employmentLevel": -0.38,
       "fullTimeEmployment": -0.13,
       "adpEmployment": 0.57,
-      "realIncomeExTransfer": 0.8,
-      "realDisposablePerCapita": 1.06,
-      "realDisposableTotal": 1.3,
+      "realIncomeExTransfer": 0.93,
+      "realDisposablePerCapita": 1.09,
+      "realDisposableTotal": 1.33,
       "retailSalesTotal": 5.56,
       "vehicleSales": 16.98,
       "truckTonnage": null,
@@ -12773,13 +12773,13 @@
       "layoffs": 1641,
       "weeklyHoursTotal": 34.4,
       "cpiCore": 2.45,
-      "pceCore": 3.01,
+      "pceCore": 3.03,
       "cpiRent": 2.75,
       "producerPriceAll": 9.78,
       "capacityUtilization": 76.42,
       "durableGoodsOrders": 8.64,
       "businessInventories": 4.58,
-      "realConsumption": 2.57,
+      "realConsumption": 2.69,
       "retailSales": 4.83,
       "manufacturingHours": 41.8,
       "industrialProduction": 1.62,
@@ -12846,8 +12846,8 @@
       "treasuryAvgRateNotes": 3.35,
       "unemploymentRate": 4.1,
       "sahmRule": -0.07,
-      "savingsRate": 4.1,
-      "personalSaving": -17.77,
+      "savingsRate": 4,
+      "personalSaving": -19.33,
       "consumerSentiment": 51.7,
       "visaDiscretionary": 98.62,
       "visaNonDiscretionary": 98.96
@@ -12858,15 +12858,15 @@
       "exportPrice": 11.63,
       "producerPrice": 6.35,
       "cpi": 3.72,
-      "pce": null,
+      "pce": 3.65,
       "copperPrice": 14473.06,
       "payrolls": 0.31,
       "employmentLevel": -0.31,
       "fullTimeEmployment": -0.58,
       "adpEmployment": 0.58,
-      "realIncomeExTransfer": null,
-      "realDisposablePerCapita": null,
-      "realDisposableTotal": null,
+      "realIncomeExTransfer": 0.54,
+      "realDisposablePerCapita": 0.71,
+      "realDisposableTotal": 0.95,
       "retailSalesTotal": 6.29,
       "vehicleSales": 16.38,
       "truckTonnage": null,
@@ -12881,13 +12881,13 @@
       "layoffs": null,
       "weeklyHoursTotal": 34.4,
       "cpiCore": 2.57,
-      "pceCore": null,
+      "pceCore": 3.12,
       "cpiRent": 2.78,
       "producerPriceAll": 12.84,
       "capacityUtilization": 76.85,
       "durableGoodsOrders": 9.94,
       "businessInventories": null,
-      "realConsumption": null,
+      "realConsumption": 2.54,
       "retailSales": 5.02,
       "manufacturingHours": 42,
       "industrialProduction": 2.25,
@@ -12954,8 +12954,8 @@
       "treasuryAvgRateNotes": 3.38,
       "unemploymentRate": 4.2,
       "sahmRule": 0,
-      "savingsRate": null,
-      "personalSaving": null,
+      "savingsRate": 3.8,
+      "personalSaving": -23.43,
       "consumerSentiment": 48.1,
       "visaDiscretionary": 99.03,
       "visaNonDiscretionary": 99.75
@@ -13088,7 +13088,7 @@
     },
     {
       "indicatorId": "pce-price",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "copper-price",
@@ -13112,19 +13112,19 @@
     },
     {
       "indicatorId": "real-income-ex-transfer",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "real-disposable-income-per-capita",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "real-disposable-income",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "real-consumption",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "retail-sales-total",
@@ -13184,7 +13184,7 @@
     },
     {
       "indicatorId": "pce-core",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "cpi-rent",
@@ -13444,11 +13444,11 @@
     },
     {
       "indicatorId": "savings-rate",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "personal-saving",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "consumer-sentiment",
