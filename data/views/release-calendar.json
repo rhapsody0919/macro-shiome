@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T07:46:22.176Z",
+  "generatedAt": "2026-11-01T08:22:14.087Z",
   "entries": [
     {
       "label": "Standard & Poors",
@@ -225,7 +225,7 @@
         "hy-spread",
         "ig-spread"
       ],
-      "nextReleaseDate": "2026-10-31",
+      "nextReleaseDate": "2026-11-02",
       "source": "fred"
     },
     {

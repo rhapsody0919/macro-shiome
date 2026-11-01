@@ -2,70 +2,6 @@
   "sp500": {
     "points": [
       {
-        "date": "2016-10-07",
-        "index": 2153.74,
-        "forwardPe": null,
-        "trailingPe": null,
-        "forwardEps": null,
-        "trailingEps": null,
-        "earningsYield": null,
-        "realRate": 0.10000000000000009,
-        "yieldSpread": null,
-        "fairValue": null,
-        "fairValueBasis": null,
-        "overvaluation": null,
-        "isForwardEpsHigh": false,
-        "isTrailingEpsHigh": false
-      },
-      {
-        "date": "2016-10-14",
-        "index": 2132.98,
-        "forwardPe": null,
-        "trailingPe": null,
-        "forwardEps": null,
-        "trailingEps": null,
-        "earningsYield": null,
-        "realRate": 0.13000000000000012,
-        "yieldSpread": null,
-        "fairValue": null,
-        "fairValueBasis": null,
-        "overvaluation": null,
-        "isForwardEpsHigh": false,
-        "isTrailingEpsHigh": false
-      },
-      {
-        "date": "2016-10-21",
-        "index": 2141.16,
-        "forwardPe": null,
-        "trailingPe": null,
-        "forwardEps": null,
-        "trailingEps": null,
-        "earningsYield": null,
-        "realRate": 0.07000000000000006,
-        "yieldSpread": null,
-        "fairValue": null,
-        "fairValueBasis": null,
-        "overvaluation": null,
-        "isForwardEpsHigh": false,
-        "isTrailingEpsHigh": false
-      },
-      {
-        "date": "2016-10-28",
-        "index": 2126.41,
-        "forwardPe": null,
-        "trailingPe": null,
-        "forwardEps": null,
-        "trailingEps": null,
-        "earningsYield": null,
-        "realRate": 0.13000000000000012,
-        "yieldSpread": null,
-        "fairValue": null,
-        "fairValueBasis": null,
-        "overvaluation": null,
-        "isForwardEpsHigh": false,
-        "isTrailingEpsHigh": false
-      },
-      {
         "date": "2016-11-04",
         "index": 2085.18,
         "forwardPe": null,
@@ -8482,70 +8418,6 @@
   "nasdaq100": {
     "points": [
       {
-        "date": "2016-10-07",
-        "index": 4864.52,
-        "forwardPe": null,
-        "trailingPe": null,
-        "forwardEps": null,
-        "trailingEps": null,
-        "earningsYield": null,
-        "realRate": 0.10000000000000009,
-        "yieldSpread": null,
-        "fairValue": null,
-        "fairValueBasis": 4864.52,
-        "overvaluation": null,
-        "isForwardEpsHigh": false,
-        "isTrailingEpsHigh": false
-      },
-      {
-        "date": "2016-10-14",
-        "index": 4808.49,
-        "forwardPe": null,
-        "trailingPe": null,
-        "forwardEps": null,
-        "trailingEps": null,
-        "earningsYield": null,
-        "realRate": 0.13000000000000012,
-        "yieldSpread": null,
-        "fairValue": null,
-        "fairValueBasis": 4808.49,
-        "overvaluation": null,
-        "isForwardEpsHigh": false,
-        "isTrailingEpsHigh": false
-      },
-      {
-        "date": "2016-10-21",
-        "index": 4851.86,
-        "forwardPe": null,
-        "trailingPe": null,
-        "forwardEps": null,
-        "trailingEps": null,
-        "earningsYield": null,
-        "realRate": 0.07000000000000006,
-        "yieldSpread": null,
-        "fairValue": null,
-        "fairValueBasis": 4851.86,
-        "overvaluation": null,
-        "isForwardEpsHigh": false,
-        "isTrailingEpsHigh": false
-      },
-      {
-        "date": "2016-10-28",
-        "index": 4805.59,
-        "forwardPe": null,
-        "trailingPe": null,
-        "forwardEps": null,
-        "trailingEps": null,
-        "earningsYield": null,
-        "realRate": 0.13000000000000012,
-        "yieldSpread": null,
-        "fairValue": null,
-        "fairValueBasis": 4805.59,
-        "overvaluation": null,
-        "isForwardEpsHigh": false,
-        "isTrailingEpsHigh": false
-      },
-      {
         "date": "2016-11-04",
         "index": 4660.46,
         "forwardPe": null,
@@ -16885,15 +16757,15 @@
         "date": "2026-10-30",
         "index": 29402.51,
         "forwardPe": null,
-        "trailingPe": 27.66,
+        "trailingPe": 27.57,
         "forwardEps": null,
-        "trailingEps": 1062.9974692697035,
-        "earningsYield": 3.6153289949385394,
+        "trailingEps": 1066.467537178092,
+        "earningsYield": 3.6271309394269133,
         "realRate": 2.6400000000000006,
-        "yieldSpread": 0.9753289949385389,
-        "fairValue": 32507.56786757503,
+        "yieldSpread": 0.9871309394269128,
+        "fairValue": 32613.68615223523,
         "fairValueBasis": 29402.51,
-        "overvaluation": -10.560519722891115,
+        "overvaluation": -10.921435456480522,
         "isForwardEpsHigh": false,
         "isTrailingEpsHigh": true
       }
@@ -16915,36 +16787,36 @@
     "correlation": {
       "halfYear": {
         "kind": "ok",
-        "r": 0.2069496913170171,
+        "r": 0.2023226335462002,
         "n": 11
       },
       "oneYear": {
         "kind": "ok",
-        "r": 0.2069496913170171,
+        "r": 0.2023226335462002,
         "n": 11
       },
       "all": {
         "kind": "ok",
-        "r": 0.2069496913170171,
+        "r": 0.2023226335462002,
         "n": 11
       }
     },
     "spreadDistribution": {
       "years": 5,
-      "mean": 0.6280206995179367,
-      "sd": 0.20253455962884015,
+      "mean": 0.6290936035623343,
+      "sd": 0.20457930697556553,
       "n": 11,
-      "latest": 0.9753289949385389,
+      "latest": 0.9871309394269128,
       "latestPercentile": 95.45454545454545,
       "latestDate": "2026-10-30"
     },
     "forwardPeDistribution": null,
     "trailingPeDistribution": {
       "years": 5,
-      "mean": 30.541818181818186,
-      "sd": 1.8639357187511492,
+      "mean": 30.533636363636365,
+      "sd": 1.877995062439051,
       "n": 11,
-      "latest": 27.66,
+      "latest": 27.57,
       "latestPercentile": 4.545454545454546,
       "latestDate": "2026-10-30"
     },
@@ -23951,6 +23823,10 @@
       },
       {
         "date": "2026-10-01",
+        "value": null
+      },
+      {
+        "date": "2026-11-01",
         "value": null
       }
     ],
