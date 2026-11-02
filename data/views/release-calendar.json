@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T08:22:14.087Z",
+  "generatedAt": "2026-11-02T08:36:06.430Z",
   "entries": [
     {
       "label": "Standard & Poors",
@@ -390,7 +390,7 @@
       "indicatorIds": [
         "truck-tonnage"
       ],
-      "nextReleaseDate": "2026-11-01",
+      "nextReleaseDate": "2026-12-01",
       "source": "fred"
     },
     {
