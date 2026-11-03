@@ -1,17 +1,35 @@
 {
-  "generatedAt": "2026-11-02T08:36:06.430Z",
-  "economyState": "経済は安定しているように見えます。利回り差は拡大し、不安定な要因の指標も低い値を示しています。失業保険申請件数も安定しています。",
+  "generatedAt": "2026-11-03T08:48:30.863Z",
+  "economyState": "経済は不安定な状況にあるようで、金利の差や株価の不安定さが指摘されています。金融環境も悪化しているようで、投資家はリスクを避けているようです。失業保険申請件数も増加しているため、雇用状況も不安定な状態にあります。",
   "economyStateFactCount": 5,
   "warnings": [],
   "highlights": [
     {
       "id": "etf-gdx",
       "name": "金鉱株 (GDX)",
-      "drawdown": 33.45,
-      "relativeStrength": -4.15,
+      "drawdown": 31.67,
+      "relativeStrength": -1.11,
       "hasBreakout": true,
       "signalCount": 2,
-      "note": "金鉱株が直近で戻り高値を上抜けたため注目に値する。"
+      "note": "金鉱株が直近で戻り高値を上抜けているため注目に値する。"
+    },
+    {
+      "id": "etf-corn",
+      "name": "コーン (CORN)",
+      "drawdown": 20.88,
+      "relativeStrength": 0.25,
+      "hasBreakout": false,
+      "signalCount": 2,
+      "note": "SPYに対して相対的に強いため注目に値する。"
+    },
+    {
+      "id": "etf-smin",
+      "name": "インド小型株 (SMIN)",
+      "drawdown": 22.02,
+      "relativeStrength": 1.5,
+      "hasBreakout": false,
+      "signalCount": 2,
+      "note": "SPYに対して相対的に強いため注目に値する。"
     }
   ]
 }
