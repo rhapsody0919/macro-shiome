@@ -12660,23 +12660,23 @@
       "u6Rate": 7.7,
       "participationRate": 61.6,
       "employmentRatio": 59.1,
-      "hires": 5192,
-      "quits": 3066,
-      "layoffs": 1641,
+      "hires": 5271,
+      "quits": 3044,
+      "layoffs": 1768,
       "weeklyHoursTotal": 34.4,
       "cpiCore": 2.45,
       "pceCore": 3.03,
       "cpiRent": 2.75,
       "producerPriceAll": 9.78,
       "capacityUtilization": 76.42,
-      "durableGoodsOrders": 8.64,
+      "durableGoodsOrders": 8.67,
       "businessInventories": 4.58,
       "realConsumption": 2.69,
       "retailSales": 4.83,
       "manufacturingHours": 41.8,
       "industrialProduction": 1.62,
-      "newOrdersConsumerGoods": 9.63,
-      "newOrdersCapitalGoods": 14.1,
+      "newOrdersConsumerGoods": 9.86,
+      "newOrdersCapitalGoods": 14.07,
       "buildingPermits": 1403,
       "housingStarts": 1288,
       "newHomeSales": 680,
@@ -12723,7 +12723,7 @@
       "jpHousingStarts": 753108,
       "jpHousingStartsOwned": 16452,
       "jpHousingStartsRented": 27216,
-      "jobOpenings": 7079,
+      "jobOpenings": 7190,
       "bidToCover": 2.53,
       "nyFedSurvey": 20.6,
       "phillyFedSurvey": 47.4,
@@ -12768,23 +12768,23 @@
       "u6Rate": 7.6,
       "participationRate": 61.8,
       "employmentRatio": 59.2,
-      "hires": null,
-      "quits": null,
-      "layoffs": null,
+      "hires": 5402,
+      "quits": 3365,
+      "layoffs": 1641,
       "weeklyHoursTotal": 34.4,
       "cpiCore": 2.57,
       "pceCore": 3.12,
       "cpiRent": 2.78,
       "producerPriceAll": 12.84,
       "capacityUtilization": 76.85,
-      "durableGoodsOrders": 9.94,
+      "durableGoodsOrders": 10.04,
       "businessInventories": null,
       "realConsumption": 2.54,
       "retailSales": 5.02,
       "manufacturingHours": 42,
       "industrialProduction": 2.25,
-      "newOrdersConsumerGoods": null,
-      "newOrdersCapitalGoods": 13.47,
+      "newOrdersConsumerGoods": 11.84,
+      "newOrdersCapitalGoods": 13.65,
       "buildingPermits": 1398,
       "housingStarts": 1221,
       "newHomeSales": 676,
@@ -12831,7 +12831,7 @@
       "jpHousingStarts": null,
       "jpHousingStartsOwned": null,
       "jpHousingStartsRented": null,
-      "jobOpenings": null,
+      "jobOpenings": 7523,
       "bidToCover": 2.71,
       "nyFedSurvey": 7.6,
       "phillyFedSurvey": 37.8,
@@ -13164,15 +13164,15 @@
     },
     {
       "indicatorId": "hires",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "quits",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "layoffs",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "weekly-hours-total",
@@ -13220,7 +13220,7 @@
     },
     {
       "indicatorId": "new-orders-consumer-goods",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "new-orders-capital-goods",
@@ -13400,7 +13400,7 @@
     },
     {
       "indicatorId": "job-openings",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "ten-year-bid-to-cover",

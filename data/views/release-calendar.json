@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-03T08:48:30.863Z",
+  "generatedAt": "2026-11-04T08:16:59.981Z",
   "entries": [
     {
       "label": "Standard & Poors",
       "indicatorIds": [
         "sp500"
       ],
-      "nextReleaseDate": "2026-11-03",
+      "nextReleaseDate": "2026-11-04",
       "source": "fred"
     },
     {
@@ -15,7 +15,7 @@
         "nasdaq100",
         "nasdaq-composite"
       ],
-      "nextReleaseDate": "2026-11-03",
+      "nextReleaseDate": "2026-11-04",
       "source": "fred"
     },
     {
@@ -27,7 +27,7 @@
         "dgs2",
         "tbill-3m"
       ],
-      "nextReleaseDate": "2026-11-03",
+      "nextReleaseDate": "2026-11-04",
       "source": "fred"
     },
     {
@@ -39,7 +39,7 @@
         "breakeven-5y5y",
         "term-spread-3m"
       ],
-      "nextReleaseDate": "2026-11-03",
+      "nextReleaseDate": "2026-11-04",
       "source": "fred"
     },
     {
@@ -47,7 +47,7 @@
       "indicatorIds": [
         "vix"
       ],
-      "nextReleaseDate": "2026-11-03",
+      "nextReleaseDate": "2026-11-04",
       "source": "fred"
     },
     {
@@ -206,7 +206,7 @@
         "new-orders-capital-goods",
         "durable-goods-orders"
       ],
-      "nextReleaseDate": "2026-11-03",
+      "nextReleaseDate": "2026-11-25",
       "source": "fred"
     },
     {
@@ -225,7 +225,7 @@
         "hy-spread",
         "ig-spread"
       ],
-      "nextReleaseDate": "2026-11-03",
+      "nextReleaseDate": "2026-11-04",
       "source": "fred"
     },
     {
@@ -276,7 +276,7 @@
         "layoffs",
         "hires"
       ],
-      "nextReleaseDate": "2026-11-03",
+      "nextReleaseDate": "2026-12-01",
       "source": "fred"
     },
     {
@@ -342,7 +342,7 @@
       "indicatorIds": [
         "sofr"
       ],
-      "nextReleaseDate": "2026-11-03",
+      "nextReleaseDate": "2026-11-04",
       "source": "fred"
     },
     {
@@ -398,7 +398,7 @@
       "indicatorIds": [
         "djia"
       ],
-      "nextReleaseDate": "2026-11-03",
+      "nextReleaseDate": "2026-11-04",
       "source": "fred"
     },
     {
