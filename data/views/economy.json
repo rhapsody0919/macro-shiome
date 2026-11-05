@@ -12755,7 +12755,7 @@
       "payrolls": 0.31,
       "employmentLevel": -0.31,
       "fullTimeEmployment": -0.58,
-      "adpEmployment": 0.58,
+      "adpEmployment": 0.57,
       "realIncomeExTransfer": 0.54,
       "realDisposablePerCapita": 0.71,
       "realDisposableTotal": 0.95,
@@ -12863,7 +12863,7 @@
       "payrolls": null,
       "employmentLevel": null,
       "fullTimeEmployment": null,
-      "adpEmployment": null,
+      "adpEmployment": 0.62,
       "realIncomeExTransfer": null,
       "realDisposablePerCapita": null,
       "realDisposableTotal": null,
@@ -13108,7 +13108,7 @@
     },
     {
       "indicatorId": "adp-employment",
-      "latestMonth": "2026-09-01"
+      "latestMonth": "2026-10-01"
     },
     {
       "indicatorId": "real-income-ex-transfer",
