@@ -5218,5 +5218,15 @@
     "growthNextYear": 16.3,
     "growthNextQuarter": null,
     "growthQuarterAfterNext": null
+  },
+  {
+    "date": "2026-11-06",
+    "blendedToday": null,
+    "blendedLastWeek": null,
+    "blendedQuarterEnd": null,
+    "growthCurrentYear": null,
+    "growthNextYear": null,
+    "growthNextQuarter": null,
+    "growthQuarterAfterNext": null
   }
 ]

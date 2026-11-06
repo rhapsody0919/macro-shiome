@@ -12789,7 +12789,7 @@
       "housingStarts": 1221,
       "newHomeSales": 676,
       "existingHomeSales": 3990000,
-      "jpUnemploymentRate": null,
+      "jpUnemploymentRate": 2.4,
       "jpProducerPrice": 6.8,
       "jpCurrentAccount": null,
       "jpTradeBalance": null,
@@ -12797,16 +12797,16 @@
       "jpConsumption": null,
       "jpDisposableIncome": null,
       "jpPropensityToConsume": null,
-      "jpIndustrialProduction": null,
-      "jpShipments": null,
-      "jpInventory": null,
+      "jpIndustrialProduction": 104.1,
+      "jpShipments": 101,
+      "jpInventory": 99.9,
       "jpOperatingRate": null,
       "jpBankLending": 6017466,
       "jpMonetaryBase": 5328464,
-      "jpWorkingHours": null,
+      "jpWorkingHours": 132.7,
       "jpPublicWorks": null,
       "jpCpiCoreCore": 2.4,
-      "jpInventoryRatio": null,
+      "jpInventoryRatio": 108.4,
       "jpTopix": 4108.65,
       "jpConsumptionIndex": null,
       "jpCpiCore": 2.1,
@@ -12819,18 +12819,18 @@
       "jpTankanLargeMfg": 24,
       "jpTankanLargeNonmfg": 35,
       "jpWatcherOutlook": 47.4,
-      "jpRealWage": null,
-      "jpNewJobRatio": null,
-      "jpJobRatio": null,
+      "jpRealWage": 97.5,
+      "jpNewJobRatio": 2.19,
+      "jpJobRatio": 1.19,
       "jpExportPrice": 163,
       "jpImportPrice": 193.8,
       "jpDiLeading": null,
       "jpDiCoincident": null,
       "jpDiLagging": null,
       "jpGdpGrowth": null,
-      "jpHousingStarts": null,
-      "jpHousingStartsOwned": null,
-      "jpHousingStartsRented": null,
+      "jpHousingStarts": 713784,
+      "jpHousingStartsOwned": 16516,
+      "jpHousingStartsRented": 26015,
       "jobOpenings": 7523,
       "bidToCover": 2.71,
       "nyFedSurvey": 7.6,
@@ -12910,7 +12910,7 @@
       "jpInventory": null,
       "jpOperatingRate": null,
       "jpBankLending": null,
-      "jpMonetaryBase": null,
+      "jpMonetaryBase": 5325717,
       "jpWorkingHours": null,
       "jpPublicWorks": null,
       "jpCpiCoreCore": null,
@@ -12949,9 +12949,9 @@
       "deTenYear": null,
       "federalDeficit": null,
       "moneyStock": null,
-      "treasuryAvgRate": null,
-      "treasuryAvgRateBills": null,
-      "treasuryAvgRateNotes": null,
+      "treasuryAvgRate": 3.58,
+      "treasuryAvgRateBills": 4.01,
+      "treasuryAvgRateNotes": 3.4,
       "unemploymentRate": null,
       "sahmRule": null,
       "savingsRate": null,
@@ -13244,7 +13244,7 @@
     },
     {
       "indicatorId": "jp-unemployment-rate",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "jp-producer-price",
@@ -13276,15 +13276,15 @@
     },
     {
       "indicatorId": "jp-industrial-production",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "jp-shipments",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "jp-inventory",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "jp-operating-rate",
@@ -13296,11 +13296,11 @@
     },
     {
       "indicatorId": "jp-monetary-base",
-      "latestMonth": "2026-09-01"
+      "latestMonth": "2026-10-01"
     },
     {
       "indicatorId": "jp-working-hours",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "jp-public-works",
@@ -13312,7 +13312,7 @@
     },
     {
       "indicatorId": "jp-inventory-ratio",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "jp-topix",
@@ -13344,15 +13344,15 @@
     },
     {
       "indicatorId": "jp-real-wage",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "jp-new-job-ratio",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "jp-job-ratio",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "jp-export-price",
@@ -13388,15 +13388,15 @@
     },
     {
       "indicatorId": "jp-housing-starts",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "jp-housing-starts-owned",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "jp-housing-starts-rented",
-      "latestMonth": "2026-08-01"
+      "latestMonth": "2026-09-01"
     },
     {
       "indicatorId": "job-openings",
