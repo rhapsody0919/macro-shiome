@@ -1,35 +1,45 @@
 {
-  "generatedAt": "2026-11-06T08:43:44.291Z",
-  "economyState": "経済は安定しているように見えます。インフレに対する対策や金融政策が効果的であることを示す指標が多くありますが、一方で、金融市場の不安定さや失業の問題もあるようです。",
+  "generatedAt": "2026-11-07T07:58:24.542Z",
+  "economyState": "経済の動向は、不安定で不確実なものとなっています。金利の差や株価の不安定さなど、さまざまな指標が不安定な傾向を示しています。また、失業率の増加も懸念のある点となっています。",
   "economyStateFactCount": 5,
-  "warnings": [],
+  "warnings": [
+    {
+      "id": "vix-spike",
+      "label": "VIX",
+      "value": 28.18,
+      "basis": "percentile",
+      "percentile": 91.76245210727969,
+      "date": "2026-11-06",
+      "note": "VIXが過去の分布の中で高い水準にあることを意味します。"
+    }
+  ],
   "highlights": [
     {
       "id": "etf-gdx",
       "name": "金鉱株 (GDX)",
-      "drawdown": 25.98,
-      "relativeStrength": 9.92,
+      "drawdown": 24.38,
+      "relativeStrength": 11.95,
       "hasBreakout": true,
       "signalCount": 3,
-      "note": "金鉱株はSPYに対して相対的に強く、直近で戻り高値を上抜けている。"
+      "note": "金鉱株が下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
     },
     {
       "id": "etf-corn",
       "name": "コーン (CORN)",
-      "drawdown": 21.83,
-      "relativeStrength": 1.62,
+      "drawdown": 21.65,
+      "relativeStrength": 1.54,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "コーンは下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
+      "note": "コーンが下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
     },
     {
       "id": "etf-smin",
       "name": "インド小型株 (SMIN)",
-      "drawdown": 20.49,
-      "relativeStrength": 6.19,
+      "drawdown": 20.44,
+      "relativeStrength": 5.94,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "インド小型株は下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
+      "note": "インド小型株が下落率が深い銘柄の一角であり、SPYに対して相対的に強い。"
     }
   ]
 }
