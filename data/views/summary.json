@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-08T08:16:22.600Z",
-  "economyState": "経済は不安定な状況にあります。利回り差が広がり、株価の不安定さも見られます。金融環境も不安定で、失業保険申請の件数が増えていることが指摘されています。",
+  "generatedAt": "2026-11-09T08:50:23.648Z",
+  "economyState": "経済は不安定な状況にあり、投資家の不安感が高まっているようだ。金融環境が厳しくなり、企業や個人に金融コストがかかり、投資家のリスクへの対処が必要とされるようになった。",
   "economyStateFactCount": 5,
   "warnings": [
     {
@@ -10,7 +10,7 @@
       "basis": "percentile",
       "percentile": 91.76245210727969,
       "date": "2026-11-06",
-      "note": "VIXが過去のデータの中で極めて高くなったことを示しています。"
+      "note": "VIXの値が過去の範囲の中で高い水準に達していることを示しています。"
     }
   ],
   "highlights": [
@@ -21,7 +21,7 @@
       "relativeStrength": 11.95,
       "hasBreakout": true,
       "signalCount": 3,
-      "note": "金鉱株がSPYに対して相対的に強く、直近で戻り高値を上抜けているため注目に値する。"
+      "note": "金鉱株がSPYに対して相対的に強い状態であり、直近で戻り高値を上抜けている。"
     },
     {
       "id": "etf-corn",
@@ -30,7 +30,7 @@
       "relativeStrength": 1.54,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "コーンがSPYに対して相対的に強いため注目に値する。"
+      "note": "コーンがSPYに対して相対的に強い状態である。"
     },
     {
       "id": "etf-smin",
@@ -39,7 +39,7 @@
       "relativeStrength": 5.94,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "インド小型株がSPYに対して相対的に強いため注目に値する。"
+      "note": "インド小型株がSPYに対して相対的に強い状態である。"
     }
   ]
 }

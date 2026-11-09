@@ -13068,5 +13068,10 @@
     "date": "2026-11-06",
     "wti": 99.64,
     "newJobPostings": 99.03
+  },
+  {
+    "date": "2026-11-09",
+    "wti": 99.64,
+    "newJobPostings": null
   }
 ]
