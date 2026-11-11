@@ -12577,7 +12577,7 @@
       "jpProducerPrice": 7.7,
       "jpCurrentAccount": 24542,
       "jpTradeBalance": -4294,
-      "jpMoneyStock": 12966407,
+      "jpMoneyStock": 12966413,
       "jpConsumption": -3.6,
       "jpDisposableIncome": -3.1,
       "jpPropensityToConsume": 63,
@@ -12685,7 +12685,7 @@
       "jpProducerPrice": 7.6,
       "jpCurrentAccount": 29105,
       "jpTradeBalance": -4852,
-      "jpMoneyStock": 12964539,
+      "jpMoneyStock": 12964453,
       "jpConsumption": -3.1,
       "jpDisposableIncome": -0.8,
       "jpPropensityToConsume": 59.8,
@@ -12793,7 +12793,7 @@
       "jpProducerPrice": 6.8,
       "jpCurrentAccount": 18177,
       "jpTradeBalance": -7019,
-      "jpMoneyStock": 12956351,
+      "jpMoneyStock": 12948920,
       "jpConsumption": -6.8,
       "jpDisposableIncome": 1.7,
       "jpPropensityToConsume": 59,
@@ -12901,7 +12901,7 @@
       "jpProducerPrice": null,
       "jpCurrentAccount": null,
       "jpTradeBalance": null,
-      "jpMoneyStock": null,
+      "jpMoneyStock": 12913808,
       "jpConsumption": null,
       "jpDisposableIncome": null,
       "jpPropensityToConsume": null,
@@ -13084,7 +13084,7 @@
     },
     {
       "indicatorId": "cpi",
-      "latestMonth": "2026-09-01"
+      "latestMonth": "2026-10-01"
     },
     {
       "indicatorId": "pce-price",
@@ -13180,7 +13180,7 @@
     },
     {
       "indicatorId": "cpi-core",
-      "latestMonth": "2026-09-01"
+      "latestMonth": "2026-10-01"
     },
     {
       "indicatorId": "pce-core",
@@ -13188,7 +13188,7 @@
     },
     {
       "indicatorId": "cpi-rent",
-      "latestMonth": "2026-09-01"
+      "latestMonth": "2026-10-01"
     },
     {
       "indicatorId": "producer-price-all",
@@ -13260,7 +13260,7 @@
     },
     {
       "indicatorId": "jp-money-stock",
-      "latestMonth": "2026-09-01"
+      "latestMonth": "2026-10-01"
     },
     {
       "indicatorId": "jp-consumption",
