@@ -12606,7 +12606,7 @@
       "jpRealWage": 98.3,
       "jpNewJobRatio": 2.1,
       "jpJobRatio": 1.18,
-      "jpExportPrice": 163.4,
+      "jpExportPrice": 163.6,
       "jpImportPrice": 199.9,
       "jpDiLeading": 117.6,
       "jpDiCoincident": 120.6,
@@ -12714,7 +12714,7 @@
       "jpRealWage": 96.3,
       "jpNewJobRatio": 2.06,
       "jpJobRatio": 1.18,
-      "jpExportPrice": 162.2,
+      "jpExportPrice": 162.4,
       "jpImportPrice": 194.1,
       "jpDiLeading": 118,
       "jpDiCoincident": 118.8,
@@ -12822,8 +12822,8 @@
       "jpRealWage": 97.5,
       "jpNewJobRatio": 2.19,
       "jpJobRatio": 1.19,
-      "jpExportPrice": 163,
-      "jpImportPrice": 193.8,
+      "jpExportPrice": 163.5,
+      "jpImportPrice": 192.7,
       "jpDiLeading": 116.4,
       "jpDiCoincident": 119.5,
       "jpDiLagging": 116,
@@ -12898,7 +12898,7 @@
       "newHomeSales": null,
       "existingHomeSales": null,
       "jpUnemploymentRate": null,
-      "jpProducerPrice": null,
+      "jpProducerPrice": 7.1,
       "jpCurrentAccount": null,
       "jpTradeBalance": null,
       "jpMoneyStock": 12913808,
@@ -12930,8 +12930,8 @@
       "jpRealWage": null,
       "jpNewJobRatio": null,
       "jpJobRatio": null,
-      "jpExportPrice": null,
-      "jpImportPrice": null,
+      "jpExportPrice": 165.3,
+      "jpImportPrice": 199,
       "jpDiLeading": null,
       "jpDiCoincident": null,
       "jpDiLagging": null,
@@ -13248,7 +13248,7 @@
     },
     {
       "indicatorId": "jp-producer-price",
-      "latestMonth": "2026-09-01"
+      "latestMonth": "2026-10-01"
     },
     {
       "indicatorId": "jp-current-account",
@@ -13356,11 +13356,11 @@
     },
     {
       "indicatorId": "jp-export-price",
-      "latestMonth": "2026-09-01"
+      "latestMonth": "2026-10-01"
     },
     {
       "indicatorId": "jp-import-price",
-      "latestMonth": "2026-09-01"
+      "latestMonth": "2026-10-01"
     },
     {
       "indicatorId": "jp-di-leading",
