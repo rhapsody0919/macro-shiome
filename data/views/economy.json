@@ -12788,7 +12788,7 @@
       "buildingPermits": 1398,
       "housingStarts": 1221,
       "newHomeSales": 676,
-      "existingHomeSales": 3990000,
+      "existingHomeSales": 3970000,
       "jpUnemploymentRate": 2.4,
       "jpProducerPrice": 6.8,
       "jpCurrentAccount": 18177,
@@ -12896,7 +12896,7 @@
       "buildingPermits": null,
       "housingStarts": null,
       "newHomeSales": null,
-      "existingHomeSales": null,
+      "existingHomeSales": 3750000,
       "jpUnemploymentRate": null,
       "jpProducerPrice": 7.1,
       "jpCurrentAccount": null,
@@ -12947,7 +12947,7 @@
       "usTenYearMonthly": null,
       "jpTenYear": null,
       "deTenYear": null,
-      "federalDeficit": null,
+      "federalDeficit": -404063.55,
       "moneyStock": null,
       "treasuryAvgRate": 3.58,
       "treasuryAvgRateBills": 4.01,
@@ -13240,7 +13240,7 @@
     },
     {
       "indicatorId": "existing-home-sales",
-      "latestMonth": "2026-09-01"
+      "latestMonth": "2026-10-01"
     },
     {
       "indicatorId": "jp-unemployment-rate",
@@ -13428,7 +13428,7 @@
     },
     {
       "indicatorId": "federal-deficit",
-      "latestMonth": "2026-09-01"
+      "latestMonth": "2026-10-01"
     },
     {
       "indicatorId": "money-stock",

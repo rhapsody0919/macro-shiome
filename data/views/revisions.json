@@ -5228,5 +5228,15 @@
     "growthNextYear": null,
     "growthNextQuarter": null,
     "growthQuarterAfterNext": null
+  },
+  {
+    "date": "2026-11-13",
+    "blendedToday": null,
+    "blendedLastWeek": null,
+    "blendedQuarterEnd": null,
+    "growthCurrentYear": null,
+    "growthNextYear": null,
+    "growthNextQuarter": null,
+    "growthQuarterAfterNext": null
   }
 ]
