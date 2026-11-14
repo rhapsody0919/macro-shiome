@@ -1,26 +1,26 @@
 {
-  "generatedAt": "2026-11-13T08:53:04.262Z",
-  "economyState": "経済は安定感が低く、不安定な状態にあることが示唆されます。金利の差が広がり、不安定な市場が続いている可能性があります。労働市場や失業状況も不安定な傾向にあります。",
+  "generatedAt": "2026-11-14T08:17:14.113Z",
+  "economyState": "経済は安定した状態ですが、金融市場の不安定さが指摘されています。金利の差や市場の不安定性が増大しており、経済の変化が予測される可能性があります。労働市場では、失業が続いています。",
   "economyStateFactCount": 5,
   "warnings": [],
   "highlights": [
     {
       "id": "etf-gdx",
       "name": "金鉱株 (GDX)",
-      "drawdown": 29.35,
-      "relativeStrength": 1.57,
+      "drawdown": 29.52,
+      "relativeStrength": 1.69,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "金鉱株がSPYに対して相対的に強いことから注目に値する。"
+      "note": "金鉱株がSPYに対して相対的に強いため注目に値する。"
     },
     {
       "id": "etf-smin",
       "name": "インド小型株 (SMIN)",
-      "drawdown": 18.09,
-      "relativeStrength": 5.91,
+      "drawdown": 18.24,
+      "relativeStrength": 6.11,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "インド小型株がSPYに対して相対的に強いことから注目に値する。"
+      "note": "インド小型株がSPYに対して相対的に強いため注目に値する。"
     }
   ]
 }
