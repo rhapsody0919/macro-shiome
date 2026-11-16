@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-15T08:36:42.211Z",
-  "economyState": "経済は不安定な状況にあり、金融環境も緊張しています。インフレリスクの懸念が高まり、金利の差は広がっています。雇用状況も不安定で、失業保険の申請件数が増えています。",
+  "generatedAt": "2026-11-16T08:45:39.932Z",
+  "economyState": "経済は安定していて、金融環境は穏健な方向に向かっているように見えます。金利の差は広がっており、株価の不安定さは高まっていません。失業保険の申請件数も比較的安定しています。",
   "economyStateFactCount": 5,
   "warnings": [],
   "highlights": [
@@ -11,7 +11,7 @@
       "relativeStrength": 1.69,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "金鉱株の市場状況がSPYとの相対的な強さを示している。"
+      "note": "金鉱株がSPYに対して相対的に強いことから注目に値する。"
     },
     {
       "id": "etf-smin",
@@ -20,7 +20,7 @@
       "relativeStrength": 6.11,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "インド小型株の市場状況がSPYとの相対的な強さを示している。"
+      "note": "インド小型株がSPYに対して相対的に強いことから注目に値する。"
     }
   ]
 }
