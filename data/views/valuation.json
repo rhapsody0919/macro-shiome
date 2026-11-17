@@ -8377,8 +8377,8 @@
         "forwardEps": 0.3825136612021858,
         "trailingEps": 0.2755905511811024,
         "earningsYield": 5.46448087431694,
-        "realRate": 2.8599999999999994,
-        "yieldSpread": 2.6044808743169403,
+        "realRate": 2.91,
+        "yieldSpread": 2.5544808743169396,
         "fairValue": 7.50927932373576,
         "fairValueBasis": 7,
         "overvaluation": -7.275418910510867,
@@ -8396,8 +8396,8 @@
     "targetYield": 3.67,
     "targetYieldContext": {
       "realRateAtSetting": 2.4,
-      "currentRealRate": 2.8599999999999994,
-      "drift": 0.4599999999999995,
+      "currentRealRate": 2.91,
+      "drift": 0.5100000000000002,
       "riskPremium": 1.27
     },
     "correlation": {
@@ -8419,11 +8419,11 @@
     },
     "spreadDistribution": {
       "years": 5,
-      "mean": 3.490859997659767,
-      "sd": 1.130036444790607,
+      "mean": 3.4905623786121485,
+      "sd": 1.130277847898249,
       "n": 168,
-      "latest": 2.6044808743169403,
-      "latestPercentile": 19.940476190476193,
+      "latest": 2.5544808743169396,
+      "latestPercentile": 11.607142857142858,
       "latestDate": "2026-11-13"
     },
     "forwardPeDistribution": {
@@ -16825,8 +16825,8 @@
         "forwardEps": null,
         "trailingEps": 1047.3665667166417,
         "earningsYield": 3.7481259370314843,
-        "realRate": 2.8599999999999994,
-        "yieldSpread": 0.8881259370314849,
+        "realRate": 2.91,
+        "yieldSpread": 0.8381259370314842,
         "fairValue": 32029.55861518782,
         "fairValueBasis": 27943.74,
         "overvaluation": -14.621588288424592,
@@ -16844,8 +16844,8 @@
     "targetYield": 3.27,
     "targetYieldContext": {
       "realRateAtSetting": 2.4,
-      "currentRealRate": 2.8599999999999994,
-      "drift": 0.4599999999999995,
+      "currentRealRate": 2.91,
+      "drift": 0.5100000000000002,
       "riskPremium": 0.8700000000000001
     },
     "correlation": {
@@ -16867,11 +16867,11 @@
     },
     "spreadDistribution": {
       "years": 5,
-      "mean": 0.6989713484458077,
-      "sd": 0.26200062795024837,
+      "mean": 0.6951251945996538,
+      "sd": 0.25934600151230053,
       "n": 13,
-      "latest": 0.8881259370314849,
-      "latestPercentile": 80.76923076923077,
+      "latest": 0.8381259370314842,
+      "latestPercentile": 73.07692307692307,
       "latestDate": "2026-11-13"
     },
     "forwardPeDistribution": null,
