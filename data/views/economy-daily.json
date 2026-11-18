@@ -4512,7 +4512,7 @@
   {
     "date": "2020-04-16",
     "wti": 19.82,
-    "newJobPostings": 46.3
+    "newJobPostings": 46.29
   },
   {
     "date": "2020-04-17",
@@ -4687,7 +4687,7 @@
   {
     "date": "2020-06-04",
     "wti": 37.42,
-    "newJobPostings": 78.96
+    "newJobPostings": 78.95
   },
   {
     "date": "2020-06-05",
@@ -4762,7 +4762,7 @@
   {
     "date": "2020-06-25",
     "wti": 38.66,
-    "newJobPostings": 85.73
+    "newJobPostings": 85.72
   },
   {
     "date": "2020-06-26",
@@ -4857,7 +4857,7 @@
   {
     "date": "2020-07-22",
     "wti": 41.88,
-    "newJobPostings": 91.68
+    "newJobPostings": 91.67
   },
   {
     "date": "2020-07-23",
@@ -5042,12 +5042,12 @@
   {
     "date": "2020-09-11",
     "wti": 37.33,
-    "newJobPostings": 103.1
+    "newJobPostings": 103.09
   },
   {
     "date": "2020-09-14",
     "wti": 37.23,
-    "newJobPostings": 95.43
+    "newJobPostings": 95.42
   },
   {
     "date": "2020-09-15",
@@ -5237,12 +5237,12 @@
   {
     "date": "2020-11-05",
     "wti": 38.56,
-    "newJobPostings": 108.15
+    "newJobPostings": 108.14
   },
   {
     "date": "2020-11-06",
     "wti": 36.97,
-    "newJobPostings": 107.45
+    "newJobPostings": 107.44
   },
   {
     "date": "2020-11-09",
@@ -5482,7 +5482,7 @@
   {
     "date": "2021-01-13",
     "wti": 52.81,
-    "newJobPostings": 120
+    "newJobPostings": 119.99
   },
   {
     "date": "2021-01-14",
@@ -5762,7 +5762,7 @@
   {
     "date": "2021-04-01",
     "wti": 61.41,
-    "newJobPostings": 150.62
+    "newJobPostings": 150.61
   },
   {
     "date": "2021-04-02",
@@ -5917,7 +5917,7 @@
   {
     "date": "2021-05-14",
     "wti": 65.32,
-    "newJobPostings": 164.46
+    "newJobPostings": 164.45
   },
   {
     "date": "2021-05-17",
@@ -6262,7 +6262,7 @@
   {
     "date": "2021-08-19",
     "wti": 63.69,
-    "newJobPostings": 166.5
+    "newJobPostings": 166.49
   },
   {
     "date": "2021-08-20",
@@ -6392,7 +6392,7 @@
   {
     "date": "2021-09-24",
     "wti": 74.18,
-    "newJobPostings": 171.06
+    "newJobPostings": 171.05
   },
   {
     "date": "2021-09-27",
@@ -6807,7 +6807,7 @@
   {
     "date": "2022-01-19",
     "wti": 86.84,
-    "newJobPostings": 172.91
+    "newJobPostings": 172.9
   },
   {
     "date": "2022-01-20",
@@ -6837,7 +6837,7 @@
   {
     "date": "2022-01-27",
     "wti": 87.61,
-    "newJobPostings": 175.74
+    "newJobPostings": 175.73
   },
   {
     "date": "2022-01-28",
@@ -7087,7 +7087,7 @@
   {
     "date": "2022-04-07",
     "wti": 96.05,
-    "newJobPostings": 175.28
+    "newJobPostings": 175.27
   },
   {
     "date": "2022-04-08",
@@ -7447,7 +7447,7 @@
   {
     "date": "2022-07-18",
     "wti": 104.48,
-    "newJobPostings": 173.57
+    "newJobPostings": 173.56
   },
   {
     "date": "2022-07-19",
@@ -7547,7 +7547,7 @@
   {
     "date": "2022-08-15",
     "wti": 92.24,
-    "newJobPostings": 170.92
+    "newJobPostings": 170.91
   },
   {
     "date": "2022-08-16",
@@ -7597,7 +7597,7 @@
   {
     "date": "2022-08-29",
     "wti": 97.4,
-    "newJobPostings": 172.66
+    "newJobPostings": 172.65
   },
   {
     "date": "2022-08-30",
@@ -7727,7 +7727,7 @@
   {
     "date": "2022-10-04",
     "wti": 86.87,
-    "newJobPostings": 164.61
+    "newJobPostings": 164.6
   },
   {
     "date": "2022-10-05",
@@ -7752,12 +7752,12 @@
   {
     "date": "2022-10-11",
     "wti": 89.75,
-    "newJobPostings": 164.79
+    "newJobPostings": 164.78
   },
   {
     "date": "2022-10-12",
     "wti": 87.83,
-    "newJobPostings": 166.39
+    "newJobPostings": 166.38
   },
   {
     "date": "2022-10-13",
@@ -7787,7 +7787,7 @@
   {
     "date": "2022-10-20",
     "wti": 86.02,
-    "newJobPostings": 169.69
+    "newJobPostings": 169.68
   },
   {
     "date": "2022-10-21",
@@ -7897,7 +7897,7 @@
   {
     "date": "2022-11-21",
     "wti": 79.74,
-    "newJobPostings": 164.11
+    "newJobPostings": 164.1
   },
   {
     "date": "2022-11-22",
@@ -8052,7 +8052,7 @@
   {
     "date": "2023-01-03",
     "wti": 76.87,
-    "newJobPostings": 154.48
+    "newJobPostings": 154.47
   },
   {
     "date": "2023-01-04",
@@ -8652,7 +8652,7 @@
   {
     "date": "2023-06-20",
     "wti": 70.94,
-    "newJobPostings": 150.18
+    "newJobPostings": 150.17
   },
   {
     "date": "2023-06-21",
@@ -8757,7 +8757,7 @@
   {
     "date": "2023-07-19",
     "wti": 75.4,
-    "newJobPostings": 154.33
+    "newJobPostings": 154.32
   },
   {
     "date": "2023-07-20",
@@ -8767,7 +8767,7 @@
   {
     "date": "2023-07-21",
     "wti": 77.06,
-    "newJobPostings": 151.82
+    "newJobPostings": 151.81
   },
   {
     "date": "2023-07-24",
@@ -10382,7 +10382,7 @@
   {
     "date": "2024-10-16",
     "wti": 70.97,
-    "newJobPostings": 112.92
+    "newJobPostings": 112.91
   },
   {
     "date": "2024-10-17",
@@ -10407,7 +10407,7 @@
   {
     "date": "2024-10-23",
     "wti": 71.37,
-    "newJobPostings": 116.54
+    "newJobPostings": 116.53
   },
   {
     "date": "2024-10-24",
@@ -10457,7 +10457,7 @@
   {
     "date": "2024-11-06",
     "wti": 71.98,
-    "newJobPostings": 109.12
+    "newJobPostings": 109.11
   },
   {
     "date": "2024-11-07",
@@ -10917,7 +10917,7 @@
   {
     "date": "2025-03-14",
     "wti": 67.43,
-    "newJobPostings": 105.69
+    "newJobPostings": 105.68
   },
   {
     "date": "2025-03-17",
@@ -11822,7 +11822,7 @@
   {
     "date": "2025-11-24",
     "wti": 59.11,
-    "newJobPostings": 102.3
+    "newJobPostings": 102.29
   },
   {
     "date": "2025-11-25",
@@ -12232,7 +12232,7 @@
   {
     "date": "2026-03-18",
     "wti": 96.12,
-    "newJobPostings": 101.61
+    "newJobPostings": 101.6
   },
   {
     "date": "2026-03-19",
@@ -12292,7 +12292,7 @@
   {
     "date": "2026-04-03",
     "wti": 113.23,
-    "newJobPostings": 100.52
+    "newJobPostings": 100.51
   },
   {
     "date": "2026-04-06",
@@ -12557,12 +12557,12 @@
   {
     "date": "2026-06-17",
     "wti": 80.65,
-    "newJobPostings": 98.61
+    "newJobPostings": 98.6
   },
   {
     "date": "2026-06-18",
     "wti": 80.35,
-    "newJobPostings": 98.85
+    "newJobPostings": 98.84
   },
   {
     "date": "2026-06-19",
@@ -12637,7 +12637,7 @@
   {
     "date": "2026-07-09",
     "wti": 73.15,
-    "newJobPostings": 95.53
+    "newJobPostings": 95.52
   },
   {
     "date": "2026-07-10",
@@ -12737,22 +12737,22 @@
   {
     "date": "2026-08-06",
     "wti": 78.88,
-    "newJobPostings": 95.3
+    "newJobPostings": 95.29
   },
   {
     "date": "2026-08-07",
     "wti": 79.77,
-    "newJobPostings": 94.65
+    "newJobPostings": 94.64
   },
   {
     "date": "2026-08-10",
     "wti": 83.76,
-    "newJobPostings": 95.41
+    "newJobPostings": 95.4
   },
   {
     "date": "2026-08-11",
     "wti": 84.77,
-    "newJobPostings": 95.6
+    "newJobPostings": 95.59
   },
   {
     "date": "2026-08-12",
@@ -12957,12 +12957,12 @@
   {
     "date": "2026-10-07",
     "wti": 95.02,
-    "newJobPostings": 95.4
+    "newJobPostings": 95.39
   },
   {
     "date": "2026-10-08",
     "wti": 98.26,
-    "newJobPostings": 95.38
+    "newJobPostings": 95.37
   },
   {
     "date": "2026-10-09",
@@ -12972,7 +12972,7 @@
   {
     "date": "2026-10-12",
     "wti": 94.99,
-    "newJobPostings": 97.12
+    "newJobPostings": 97.11
   },
   {
     "date": "2026-10-13",
@@ -13072,36 +13072,41 @@
   {
     "date": "2026-11-09",
     "wti": 90.4,
-    "newJobPostings": 94.39
+    "newJobPostings": 95.03
   },
   {
     "date": "2026-11-10",
     "wti": 89.62,
-    "newJobPostings": 94.39
+    "newJobPostings": 94.73
   },
   {
     "date": "2026-11-11",
     "wti": 89.62,
-    "newJobPostings": 94.39
+    "newJobPostings": 94.55
   },
   {
     "date": "2026-11-12",
     "wti": 89.62,
-    "newJobPostings": 94.39
+    "newJobPostings": 94.08
   },
   {
     "date": "2026-11-13",
     "wti": 89.62,
-    "newJobPostings": 94.39
+    "newJobPostings": 93.29
   },
   {
     "date": "2026-11-16",
     "wti": 89.62,
-    "newJobPostings": null
+    "newJobPostings": 93.29
   },
   {
     "date": "2026-11-17",
     "wti": 89.62,
-    "newJobPostings": null
+    "newJobPostings": 93.29
+  },
+  {
+    "date": "2026-11-18",
+    "wti": 89.62,
+    "newJobPostings": 93.29
   }
 ]
