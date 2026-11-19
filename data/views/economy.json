@@ -12655,7 +12655,7 @@
       "vehicleSales": 16.98,
       "truckTonnage": -1.57,
       "newHomeSupply": 8.5,
-      "housingStartsSingle": 900,
+      "housingStartsSingle": 882,
       "commercialLoans": 9.5,
       "u6Rate": 7.7,
       "participationRate": 61.6,
@@ -12678,7 +12678,7 @@
       "newOrdersConsumerGoods": 9.86,
       "newOrdersCapitalGoods": 14.07,
       "buildingPermits": 1403,
-      "housingStarts": 1288,
+      "housingStarts": 1280,
       "newHomeSales": 680,
       "existingHomeSales": 3930000,
       "jpUnemploymentRate": 2.5,
@@ -12763,7 +12763,7 @@
       "vehicleSales": 16.41,
       "truckTonnage": null,
       "newHomeSupply": 8.4,
-      "housingStartsSingle": 859,
+      "housingStartsSingle": 831,
       "commercialLoans": 9.96,
       "u6Rate": 7.6,
       "participationRate": 61.8,
@@ -12786,7 +12786,7 @@
       "newOrdersConsumerGoods": 11.84,
       "newOrdersCapitalGoods": 13.65,
       "buildingPermits": 1398,
-      "housingStarts": 1221,
+      "housingStarts": 1191,
       "newHomeSales": 676,
       "existingHomeSales": 3970000,
       "jpUnemploymentRate": 2.4,
@@ -12871,7 +12871,7 @@
       "vehicleSales": 16,
       "truckTonnage": null,
       "newHomeSupply": null,
-      "housingStartsSingle": null,
+      "housingStartsSingle": 864,
       "commercialLoans": 11.16,
       "u6Rate": 7.9,
       "participationRate": 61.9,
@@ -12893,8 +12893,8 @@
       "industrialProduction": 2.15,
       "newOrdersConsumerGoods": null,
       "newOrdersCapitalGoods": null,
-      "buildingPermits": null,
-      "housingStarts": null,
+      "buildingPermits": 1295,
+      "housingStarts": 1309,
       "newHomeSales": null,
       "existingHomeSales": 3750000,
       "jpUnemploymentRate": null,
@@ -13144,7 +13144,7 @@
     },
     {
       "indicatorId": "housing-starts-single",
-      "latestMonth": "2026-09-01"
+      "latestMonth": "2026-10-01"
     },
     {
       "indicatorId": "commercial-loans",
@@ -13228,11 +13228,11 @@
     },
     {
       "indicatorId": "building-permits",
-      "latestMonth": "2026-09-01"
+      "latestMonth": "2026-10-01"
     },
     {
       "indicatorId": "housing-starts",
-      "latestMonth": "2026-09-01"
+      "latestMonth": "2026-10-01"
     },
     {
       "indicatorId": "new-home-sales",
