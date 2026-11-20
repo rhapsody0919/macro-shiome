@@ -12913,12 +12913,12 @@
       "jpMonetaryBase": 5325717,
       "jpWorkingHours": null,
       "jpPublicWorks": null,
-      "jpCpiCoreCore": null,
+      "jpCpiCoreCore": 2.2,
       "jpInventoryRatio": null,
       "jpTopix": null,
       "jpConsumptionIndex": null,
-      "jpCpiCore": null,
-      "jpCpi": null,
+      "jpCpiCore": 2.2,
+      "jpCpi": 2.3,
       "jpSppi": null,
       "jpWatcherCurrent": null,
       "jpBsiLarge": null,
@@ -13050,7 +13050,7 @@
       "jobOpenings": null,
       "bidToCover": null,
       "nyFedSurvey": 7.8,
-      "phillyFedSurvey": null,
+      "phillyFedSurvey": 6.3,
       "sp500Yoy": 10.82,
       "usTenYearMonthly": null,
       "jpTenYear": null,
@@ -13308,7 +13308,7 @@
     },
     {
       "indicatorId": "jp-cpi-core-core",
-      "latestMonth": "2026-09-01"
+      "latestMonth": "2026-10-01"
     },
     {
       "indicatorId": "jp-inventory-ratio",
@@ -13324,11 +13324,11 @@
     },
     {
       "indicatorId": "jp-cpi-core",
-      "latestMonth": "2026-09-01"
+      "latestMonth": "2026-10-01"
     },
     {
       "indicatorId": "jp-cpi",
-      "latestMonth": "2026-09-01"
+      "latestMonth": "2026-10-01"
     },
     {
       "indicatorId": "jp-sppi",
@@ -13412,7 +13412,7 @@
     },
     {
       "indicatorId": "philly-fed-survey",
-      "latestMonth": "2026-10-01"
+      "latestMonth": "2026-11-01"
     },
     {
       "indicatorId": "us-10y-monthly",

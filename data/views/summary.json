@@ -1,35 +1,17 @@
 {
-  "generatedAt": "2026-11-19T09:41:53.786Z",
-  "economyState": "経済の状況は、不安定な雰囲気が広がっています。金融環境が不安定になり、投資家のリスク回避の意欲が高まり、株価や金利の変動が激しくなっています。また、雇用状況も悪化し、失業者が増えているようです。",
+  "generatedAt": "2026-11-20T09:23:21.665Z",
+  "economyState": "経済の状況は不安定で、金融市場が緊張しています。金利の差や不安定感が高まり、経済の展開が不安定な兆候が見られます。新規失業保険申請の件数も増加しているため、経済の状況は厳しいものです。",
   "economyStateFactCount": 5,
   "warnings": [],
   "highlights": [
     {
-      "id": "etf-uso",
-      "name": "原油 (USO)",
-      "drawdown": 19.71,
-      "relativeStrength": 1.95,
-      "hasBreakout": false,
-      "signalCount": 2,
-      "note": "原油の価格が低下しているため注目に値する。"
-    },
-    {
       "id": "etf-corn",
       "name": "コーン (CORN)",
-      "drawdown": 23.06,
-      "relativeStrength": 0.4,
+      "drawdown": 22.2,
+      "relativeStrength": 3.57,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "コーンの価格が低下しているため注目に値する。"
-    },
-    {
-      "id": "etf-smin",
-      "name": "インド小型株 (SMIN)",
-      "drawdown": 19.18,
-      "relativeStrength": 8.36,
-      "hasBreakout": false,
-      "signalCount": 2,
-      "note": "インド小型株の市場が他の銘柄に比べて安定しているため注目に値する。"
+      "note": "コーンはSPYに対して相対的に強いため、注目に値する。"
     }
   ]
 }

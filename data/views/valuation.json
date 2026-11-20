@@ -8384,6 +8384,22 @@
         "overvaluation": -7.275418910510867,
         "isForwardEpsHigh": false,
         "isTrailingEpsHigh": false
+      },
+      {
+        "date": "2026-11-20",
+        "index": 7323.63,
+        "forwardPe": null,
+        "trailingPe": null,
+        "forwardEps": null,
+        "trailingEps": null,
+        "earningsYield": null,
+        "realRate": 2.91,
+        "yieldSpread": null,
+        "fairValue": null,
+        "fairValueBasis": null,
+        "overvaluation": null,
+        "isForwardEpsHigh": false,
+        "isTrailingEpsHigh": false
       }
     ],
     "baselines": {
@@ -8419,29 +8435,29 @@
     },
     "spreadDistribution": {
       "years": 5,
-      "mean": 3.4905623786121485,
-      "sd": 1.130277847898249,
-      "n": 168,
+      "mean": 3.476835822817841,
+      "sd": 1.119544102211113,
+      "n": 167,
       "latest": 2.5544808743169396,
-      "latestPercentile": 11.607142857142858,
+      "latestPercentile": 11.676646706586826,
       "latestDate": "2026-11-13"
     },
     "forwardPeDistribution": {
       "years": 5,
-      "mean": 19.786904761904754,
-      "sd": 1.8799783258977885,
-      "n": 168,
+      "mean": 19.77724550898203,
+      "sd": 1.88144640100221,
+      "n": 167,
       "latest": 18.3,
-      "latestPercentile": 23.511904761904763,
+      "latestPercentile": 23.652694610778443,
       "latestDate": "2026-11-13"
     },
     "trailingPeDistribution": {
       "years": 5,
-      "mean": 24.371686746987955,
-      "sd": 3.394359784961323,
-      "n": 166,
+      "mean": 24.36666666666667,
+      "sd": 3.4040745551817406,
+      "n": 165,
       "latest": 25.4,
-      "latestPercentile": 49.6987951807229,
+      "latestPercentile": 49.3939393939394,
       "latestDate": "2026-11-13"
     },
     "hasForwardEps": true,
@@ -16832,6 +16848,22 @@
         "overvaluation": -14.621588288424592,
         "isForwardEpsHigh": false,
         "isTrailingEpsHigh": true
+      },
+      {
+        "date": "2026-11-20",
+        "index": 26517.05,
+        "forwardPe": null,
+        "trailingPe": 24.92,
+        "forwardEps": null,
+        "trailingEps": 1064.0870786516853,
+        "earningsYield": 4.012841091492777,
+        "realRate": 2.91,
+        "yieldSpread": 1.1028410914927766,
+        "fairValue": 32540.88925540322,
+        "fairValueBasis": 26517.05,
+        "overvaluation": -22.716852950849443,
+        "isForwardEpsHigh": false,
+        "isTrailingEpsHigh": true
       }
     ],
     "baselines": {
@@ -16851,38 +16883,38 @@
     "correlation": {
       "halfYear": {
         "kind": "ok",
-        "r": -0.2953124124081985,
-        "n": 13
+        "r": -0.43195133262818125,
+        "n": 14
       },
       "oneYear": {
         "kind": "ok",
-        "r": -0.2953124124081985,
-        "n": 13
+        "r": -0.43195133262818125,
+        "n": 14
       },
       "all": {
         "kind": "ok",
-        "r": -0.2953124124081985,
-        "n": 13
+        "r": -0.43195133262818125,
+        "n": 14
       }
     },
     "spreadDistribution": {
       "years": 5,
-      "mean": 0.6951251945996538,
-      "sd": 0.25934600151230053,
-      "n": 13,
-      "latest": 0.8381259370314842,
-      "latestPercentile": 73.07692307692307,
-      "latestDate": "2026-11-13"
+      "mean": 0.7242477586634484,
+      "sd": 0.27195626094272024,
+      "n": 14,
+      "latest": 1.1028410914927766,
+      "latestPercentile": 89.28571428571429,
+      "latestDate": "2026-11-20"
     },
     "forwardPeDistribution": null,
     "trailingPeDistribution": {
       "years": 5,
-      "mean": 29.87692307692308,
-      "sd": 2.353172980663146,
-      "n": 13,
-      "latest": 26.68,
-      "latestPercentile": 11.538461538461538,
-      "latestDate": "2026-11-13"
+      "mean": 29.522857142857145,
+      "sd": 2.620409329655398,
+      "n": 14,
+      "latest": 24.92,
+      "latestPercentile": 3.571428571428571,
+      "latestDate": "2026-11-20"
     },
     "hasForwardEps": false,
     "accumulationNote": "実績 PER は連動 ETF (QQQ) 経由でしか取れず、提供元が現在値しか出さないため過去に遡れない。"
