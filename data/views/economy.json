@@ -12915,7 +12915,7 @@
       "jpPublicWorks": null,
       "jpCpiCoreCore": 2.2,
       "jpInventoryRatio": null,
-      "jpTopix": null,
+      "jpTopix": 3965.07,
       "jpConsumptionIndex": null,
       "jpCpiCore": 2.2,
       "jpCpi": 2.3,
@@ -13316,7 +13316,7 @@
     },
     {
       "indicatorId": "jp-topix",
-      "latestMonth": "2026-09-01"
+      "latestMonth": "2026-10-01"
     },
     {
       "indicatorId": "jp-consumption-index",

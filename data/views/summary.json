@@ -1,36 +1,45 @@
 {
-  "generatedAt": "2026-11-23T09:58:15.877Z",
-  "economyState": "経済は不安定な状態にあるようで、投資リスクが高まっているようだ。金利の差や株価の不安定さが指摘されている。雇用状況も悪化の兆候が見られるようだ。",
+  "generatedAt": "2026-11-24T11:46:51.553Z",
+  "economyState": "経済は不安定な状況にあり、金融市場の不安が高まっています。短期債の利率と長期債の利率の差は拡大し、ハイリスク資産への投資のリスクが高まっています。雇用状況も悪化し、失業者の数が増加しています。",
   "economyStateFactCount": 5,
   "warnings": [
     {
       "id": "vix-spike",
       "label": "VIX",
-      "value": 28.44,
+      "value": 35.89,
       "basis": "percentile",
-      "percentile": 92.1455938697318,
+      "percentile": 99.04214559386973,
       "date": "2026-11-20",
-      "note": "VIXが過去の分布の中で高い値を示しているため、市場が不安定な状態にある可能性があります。"
+      "note": "VIXは過去の値の分布の中で非常に高い水準にあるため、市場の不安定さが高まっている可能性があります。"
     }
   ],
   "highlights": [
     {
-      "id": "etf-weat",
-      "name": "小麦 (WEAT)",
-      "drawdown": 23.43,
-      "relativeStrength": 2.8,
+      "id": "etf-uso",
+      "name": "原油 (USO)",
+      "drawdown": 21.34,
+      "relativeStrength": 0.99,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "小麦の価格がSPYの市場状況に対して比較的安定しているため注目に値する。"
+      "note": null
+    },
+    {
+      "id": "etf-corn",
+      "name": "コーン (CORN)",
+      "drawdown": 22.56,
+      "relativeStrength": 2.16,
+      "hasBreakout": false,
+      "signalCount": 2,
+      "note": null
     },
     {
       "id": "etf-eido",
       "name": "インドネシア (EIDO)",
-      "drawdown": 57.18,
-      "relativeStrength": 0.32,
+      "drawdown": 55.02,
+      "relativeStrength": 0.64,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "インドネシアの市場がSPYの市場状況に対して比較的安定しているため注目に値する。"
+      "note": null
     }
   ]
 }
