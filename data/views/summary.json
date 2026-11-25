@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-24T11:46:51.553Z",
-  "economyState": "経済は不安定な状況にあり、金融市場の不安が高まっています。短期債の利率と長期債の利率の差は拡大し、ハイリスク資産への投資のリスクが高まっています。雇用状況も悪化し、失業者の数が増加しています。",
+  "generatedAt": "2026-11-25T10:40:25.191Z",
+  "economyState": "経済は不安定な状況にあるようで、金融市場の不安が高まり、投資リスクが増大しています。利回り差が広がり、短期債の価格が高くなっている一方、長期債の価格は低くなっています。また、株価の変動のリスクも高まっており、株式市場への投資もリスクが増しています。",
   "economyStateFactCount": 5,
   "warnings": [
     {
@@ -10,36 +10,27 @@
       "basis": "percentile",
       "percentile": 99.04214559386973,
       "date": "2026-11-20",
-      "note": "VIXは過去の値の分布の中で非常に高い水準にあるため、市場の不安定さが高まっている可能性があります。"
+      "note": "VIXが過去の分布の中で高い水準にあるため、市場が不安定な状況にある可能性が高くなります。"
     }
   ],
   "highlights": [
     {
-      "id": "etf-uso",
-      "name": "原油 (USO)",
-      "drawdown": 21.34,
-      "relativeStrength": 0.99,
-      "hasBreakout": false,
-      "signalCount": 2,
-      "note": null
-    },
-    {
       "id": "etf-corn",
       "name": "コーン (CORN)",
-      "drawdown": 22.56,
-      "relativeStrength": 2.16,
+      "drawdown": 22.52,
+      "relativeStrength": 2.72,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": null
+      "note": "コーンが下落率が深い銘柄の一角であり、SPYに対して相対的に強いため注目に値する。"
     },
     {
       "id": "etf-eido",
       "name": "インドネシア (EIDO)",
-      "drawdown": 55.02,
-      "relativeStrength": 0.64,
+      "drawdown": 55.06,
+      "relativeStrength": 1.03,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": null
+      "note": "インドネシアが下落率が深い銘柄の一角であり、SPYに対して相対的に強いため注目に値する。"
     }
   ]
 }
