@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T10:11:21.542Z",
+  "generatedAt": "2026-11-27T10:17:04.636Z",
   "entries": [
     {
       "label": "Standard & Poors",
@@ -225,7 +225,7 @@
         "hy-spread",
         "ig-spread"
       ],
-      "nextReleaseDate": "2026-11-26",
+      "nextReleaseDate": "2026-11-27",
       "source": "fred"
     },
     {
@@ -318,7 +318,7 @@
       "indicatorIds": [
         "nikkei225"
       ],
-      "nextReleaseDate": "2026-11-26",
+      "nextReleaseDate": "2026-11-27",
       "source": "fred"
     },
     {
