@@ -1,26 +1,44 @@
 {
-  "generatedAt": "2026-11-27T10:17:04.636Z",
-  "economyState": "経済は不安定な状況にあり、企業や消費者の信頼が低下しているようだ。金利や株価の不安定さも目立っており、投資家のリスク回避の傾向が強まっているようだ。経済の成長はやや鈍化しているように見える。",
+  "generatedAt": "2026-11-28T09:35:27.912Z",
+  "economyState": "経済が今は、不安定で不確実な状況にあります。金利の差や株価の不安定さが示すように、投資のリスクが高まっています。雇用や消費の状況は、まだやや不安定な状態ですが、悪化の兆候は見られていません。",
   "economyStateFactCount": 5,
   "warnings": [],
   "highlights": [
     {
-      "id": "etf-corn",
-      "name": "コーン (CORN)",
-      "drawdown": 21.51,
-      "relativeStrength": 4.35,
+      "id": "etf-gdx",
+      "name": "金鉱株 (GDX)",
+      "drawdown": 31.65,
+      "relativeStrength": 2.15,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "コーンがSPYと比較して相対的に強い下落率を示している。"
+      "note": "金鉱株は、下落率が深い中でもSPYに対して相対的に強い傾向にある。"
+    },
+    {
+      "id": "etf-uso",
+      "name": "原油 (USO)",
+      "drawdown": 18.73,
+      "relativeStrength": 3.46,
+      "hasBreakout": false,
+      "signalCount": 2,
+      "note": "原油は、下落率が深い中でもSPYに対して相対的に強い傾向にある。"
+    },
+    {
+      "id": "etf-corn",
+      "name": "コーン (CORN)",
+      "drawdown": 20.37,
+      "relativeStrength": 4.18,
+      "hasBreakout": false,
+      "signalCount": 2,
+      "note": "コーンは、下落率が深い中でもSPYに対して相対的に強い傾向にある。"
     },
     {
       "id": "etf-eido",
       "name": "インドネシア (EIDO)",
-      "drawdown": 55.53,
-      "relativeStrength": 0.28,
+      "drawdown": 54.34,
+      "relativeStrength": 1.31,
       "hasBreakout": false,
       "signalCount": 2,
-      "note": "インドネシアがSPYと比較して相対的に強い下落率を示している。"
+      "note": "インドネシアは、下落率が深い中でもSPYに対して相対的に強い傾向にある。"
     }
   ]
 }

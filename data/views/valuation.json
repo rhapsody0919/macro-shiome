@@ -8403,13 +8403,13 @@
       },
       {
         "date": "2026-11-27",
-        "index": 7201.09,
+        "index": 7182.78,
         "forwardPe": null,
         "trailingPe": null,
         "forwardEps": null,
         "trailingEps": null,
         "earningsYield": null,
-        "realRate": 2.79,
+        "realRate": 2.6999999999999997,
         "yieldSpread": null,
         "fairValue": null,
         "fairValueBasis": null,
@@ -8428,8 +8428,8 @@
     "targetYield": 3.67,
     "targetYieldContext": {
       "realRateAtSetting": 2.4,
-      "currentRealRate": 2.79,
-      "drift": 0.3900000000000001,
+      "currentRealRate": 2.6999999999999997,
+      "drift": 0.2999999999999998,
       "riskPremium": 1.27
     },
     "correlation": {
@@ -16883,17 +16883,17 @@
       },
       {
         "date": "2026-11-27",
-        "index": 26046.9,
+        "index": 26726.39,
         "forwardPe": null,
-        "trailingPe": 24.43,
+        "trailingPe": 25.11,
         "forwardEps": null,
-        "trailingEps": 1066.1850184199754,
-        "earningsYield": 4.093327875562832,
-        "realRate": 2.79,
-        "yieldSpread": 1.3033278755628324,
-        "fairValue": 32605.046434861633,
-        "fairValueBasis": 26046.9,
-        "overvaluation": -25.178222494276213,
+        "trailingEps": 1064.3723616089208,
+        "earningsYield": 3.982477100756671,
+        "realRate": 2.6999999999999997,
+        "yieldSpread": 1.282477100756671,
+        "fairValue": 32549.61350485996,
+        "fairValueBasis": 26726.39,
+        "overvaluation": -21.788290543017453,
         "isForwardEpsHigh": false,
         "isTrailingEpsHigh": true
       }
@@ -16908,43 +16908,43 @@
     "targetYield": 3.27,
     "targetYieldContext": {
       "realRateAtSetting": 2.4,
-      "currentRealRate": 2.79,
-      "drift": 0.3900000000000001,
+      "currentRealRate": 2.6999999999999997,
+      "drift": 0.2999999999999998,
       "riskPremium": 0.8700000000000001
     },
     "correlation": {
       "halfYear": {
         "kind": "ok",
-        "r": -0.5276495536874736,
+        "r": -0.5141932505030352,
         "n": 15
       },
       "oneYear": {
         "kind": "ok",
-        "r": -0.5276495536874736,
+        "r": -0.5141932505030352,
         "n": 15
       },
       "all": {
         "kind": "ok",
-        "r": -0.5276495536874736,
+        "r": -0.5141932505030352,
         "n": 15
       }
     },
     "spreadDistribution": {
       "years": 5,
-      "mean": 0.7881104057086961,
-      "sd": 0.34496810779318804,
+      "mean": 0.7867203540549519,
+      "sd": 0.3427788062082285,
       "n": 15,
-      "latest": 1.3033278755628324,
+      "latest": 1.282477100756671,
       "latestPercentile": 90,
       "latestDate": "2026-11-27"
     },
     "forwardPeDistribution": null,
     "trailingPeDistribution": {
       "years": 5,
-      "mean": 29.09,
-      "sd": 3.0147233940872824,
+      "mean": 29.135333333333335,
+      "sd": 2.9439256266485563,
       "n": 15,
-      "latest": 24.43,
+      "latest": 25.11,
       "latestPercentile": 10,
       "latestDate": "2026-11-27"
     },
